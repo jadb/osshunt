@@ -1,0 +1,180 @@
+{
+  "category": {
+    "id": "video-calls",
+    "name": "Video calls",
+    "description": "Browser and app video meetings, screen sharing, and virtual classrooms.",
+    "audience": "Businesses holding internal meetings, customer calls, and remote training.",
+    "audienceReach": "universal",
+    "audienceRationale": "Meeting tools serve staff across functions and industries; classroom software is a narrower training use case.",
+    "audienceSources": [
+      "https://www.zoom.com/en/products/virtual-meetings/",
+      "https://workspace.google.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "url": "https://zoom.us/pricing",
+      "categories": [
+        "video-calls"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 14.16,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Workplace Pro displayed annual-equivalent USD/user/month; monthly plan $16.99. Basic free plan exists. Tax excluded.",
+        "source": "https://zoom.us/pricing"
+      }
+    },
+    {
+      "id": "google-meet",
+      "name": "Google Meet",
+      "url": "https://workspace.google.com/pricing",
+      "categories": [
+        "video-calls"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 7,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Workspace Business Starter standard USD/user/month with one-year commitment, billed monthly; bundled suite, not standalone Meet. Promotions excluded.",
+        "source": "https://workspace.google.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "jitsi-meet",
+      "name": "Jitsi Meet",
+      "url": "https://jitsi.org/jitsi-meet/",
+      "categories": [
+        "video-calls"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/jitsi/jitsi-meet",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Official FAQ describes entire Jitsi offering as 100% OSS; self-hostable meeting implementation, recorder Jibri and SIP bridge Jigasi available as OSS projects. Hosting/support and third-party phone service incur separate costs; no verified self-hosted edition license gates. JaaS managed service is separate.",
+      "sources": {
+        "license": "https://github.com/jitsi/jitsi-meet/blob/master/LICENSE",
+        "features": "https://jitsi.org/user-faq/",
+        "hosting": "https://jitsi.org/about/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:24:56Z",
+        "lastRelease": "stable/jitsi-meet_11248",
+        "lastReleaseAt": "2026-09-14T13:07:11Z",
+        "commit": "55430513980db97d73e0f605df591b8028c23342",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/jitsi/jitsi-meet",
+        "rsx": "unavailable: rsx cache backup write denied; GitHub metadata/release fallback"
+      }
+    },
+    {
+      "id": "bigbluebutton",
+      "name": "BigBlueButton",
+      "url": "https://bigbluebutton.org/",
+      "categories": [
+        "video-calls"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/bigbluebutton/bigbluebutton",
+      "license": "LGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "Commercial hosted Enhanced offering advertises additional plugins and enterprise analytics; precise OSS availability of all enhancements not established."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core conferencing/virtual classroom software is LGPL and supports self-hosting without proprietary restrictions. Commercial Enterprise comparison primarily sells operations/support, but Enhanced plugins/analytics licensing needs item-by-item verification before claiming all functionality is OSS. Tier U concerns feature parity, not core OSS license.",
+      "sources": {
+        "license": "https://github.com/bigbluebutton/bigbluebutton/blob/v4.0.x-develop/LICENSE",
+        "features": "https://bigbluebutton.com/enterprise",
+        "hosting": "https://bigbluebutton.com/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:04:21Z",
+        "lastRelease": "v4.0.0",
+        "lastReleaseAt": "2026-10-14T23:32:13Z",
+        "commit": "63e66ed7587ff377b56e396974b423d7423d0ee6",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/bigbluebutton/bigbluebutton",
+        "rsx": "unavailable: rsx cache backup write denied; GitHub metadata/release fallback"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "zoom--jitsi-meet",
+      "from": "zoom",
+      "to": "jitsi-meet",
+      "fit": "partial",
+      "migrationNotes": "Suitable for browser meetings with screen sharing and chat. Recreate meeting URLs/calendar invitations; existing incumbent links and cloud recording libraries are not automatically migrated. Recording needs Jibri; PSTN access needs Jigasi plus SIP provider. Operate and size the deployment.",
+      "sources": [
+        "https://jitsi.org/user-faq/",
+        "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+      ]
+    },
+    {
+      "id": "zoom--bigbluebutton",
+      "from": "zoom",
+      "to": "bigbluebutton",
+      "fit": "different-approach",
+      "migrationNotes": "Strongest for training and classrooms using polls, breakout rooms, and shared notes. Integrate through an LMS/front-end/API and recreate sessions/invitations. Does not replace the surrounding Workspace or Zoom suite. Dedicated Ubuntu server and operational capacity required.",
+      "sources": [
+        "https://docs.bigbluebutton.org/4.0/testing/release-testing/",
+        "https://docs.bigbluebutton.org/administration/install/",
+        "https://bigbluebutton.org/global-community/"
+      ]
+    },
+    {
+      "id": "google-meet--jitsi-meet",
+      "from": "google-meet",
+      "to": "jitsi-meet",
+      "fit": "partial",
+      "migrationNotes": "Suitable for browser meetings with screen sharing and chat. Recreate meeting URLs/calendar invitations; existing incumbent links and cloud recording libraries are not automatically migrated. Recording needs Jibri; PSTN access needs Jigasi plus SIP provider. Operate and size the deployment.",
+      "sources": [
+        "https://jitsi.org/user-faq/",
+        "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+      ]
+    },
+    {
+      "id": "google-meet--bigbluebutton",
+      "from": "google-meet",
+      "to": "bigbluebutton",
+      "fit": "different-approach",
+      "migrationNotes": "Strongest for training and classrooms using polls, breakout rooms, and shared notes. Integrate through an LMS/front-end/API and recreate sessions/invitations. Does not replace the surrounding Workspace or Zoom suite. Dedicated Ubuntu server and operational capacity required.",
+      "sources": [
+        "https://docs.bigbluebutton.org/4.0/testing/release-testing/",
+        "https://docs.bigbluebutton.org/administration/install/",
+        "https://bigbluebutton.org/global-community/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "SHA-pinned LICENSE retrieval failed via web cache, GitHub API web access, and sandbox DNS. Default-branch LICENSE content decoded from centrally fetched GitHub API; SHA health pin known but exact license-at-SHA still unconfirmed.",
+    "Jitsi JaaS pricing page component failed to render; hosted price intentionally omitted.",
+    "BigBlueButton commercial Enhanced plugins and enterprise analytics need license/edition parity verification; do not infer Tier A from LGPL root license.",
+    "Google pricing extraction contains future-dated promotional copy. Only standard USD $7 annual commitment retained, corroborated by official Google Workspace business-edition documentation.",
+    "No live migration or deployment test performed. Capacity depends on server resources, bandwidth, configuration, and concurrent workloads."
+  ]
+}

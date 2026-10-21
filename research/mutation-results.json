@@ -1,0 +1,90 @@
+[
+  {
+    "guard": "runner-store-contract",
+    "command": [
+      "node",
+      "--test",
+      "--test-name-pattern=YAML 1.2",
+      "test/collections.test.mjs"
+    ],
+    "mutationExit": 1,
+    "output": "\u2716 YAML 1.2 override parser rejects duplicates and retains no/on/yes strings (7.906042ms)\n\u2139 tests 1\n\u2139 suites 0\n\u2139 pass 0\n\u2139 fail 1\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 136.870208\n\n\u2716 failing tests:\n\ntest at test/collections.test.mjs:41:1\n\u2716 YAML 1.2 override parser rejects duplicates and retains no/on/yes strings (7.906042ms)\n  TypeError [Error]: Cannot read properties of undefined (reading 'data')\n      at file://lib/run-loader.mjs:17:43\n      at Array.map (<anonymous>)\n      at runLoader (file://lib/run-loader.mjs:17:32)\n      at async TestContext.<anonymous> (file://test/collections.test.mjs:48:20)\n      at async Test.run (node:internal/test_runner/test:1409:7)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)\n",
+    "restoredExit": 0
+  },
+  {
+    "guard": "pinned-license-provenance",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "test",
+      "-p",
+      "*_test.py"
+    ],
+    "mutationExit": 1,
+    "output": "owner/repo: metadata=0 license=0\nF\n======================================================================\nFAIL: test_license_uses_observed_sha_and_release_404_kept (capture_test.EvidenceContract.test_license_uses_observed_sha_and_release_404_kept)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test/capture_test.py\", line 27, in test_license_uses_observed_sha_and_release_404_kept\n    self.assertIn(['gh', 'api', 'repos/owner/repo/license?ref=abc123'], calls)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ['gh', 'api', 'repos/owner/repo/license?ref=abc123'] not found in [['gh', 'api', 'repos/owner/repo'], ['gh', 'api', 'repos/owner/repo/commits/HEAD'], ['gh', 'api', 'repos/owner/repo/license'], ['gh', 'api', 'repos/owner/repo/releases/latest']]\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nFAILED (failures=1)\n",
+    "restoredExit": 0
+  },
+  {
+    "guard": "schema-defaults",
+    "command": [
+      "node",
+      "--test",
+      "--test-name-pattern=schema defaults",
+      "test/collections.test.mjs"
+    ],
+    "mutationExit": 1,
+    "restoredExit": 0,
+    "output": "\u2716 graph validation applies schema defaults before checking parent references (9.412167ms)\n\u2139 tests 1\n\u2139 suites 0\n\u2139 pass 0\n\u2139 fail 1\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 125.317541\n\n\u2716 failing tests:\n\ntest at test/collections.test.mjs:64:1\n\u2716 graph validation applies schema defaults before checking parent references (9.412167ms)\n  Error: invalid parent: chat\n      at validateCollections (file://lib/validate.mjs:20:87)\n      at TestContext.<anonymous> (file://test/collections.test.mjs:67:16)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.start (node:internal/test_runner/test:1262:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)\n"
+  },
+  {
+    "guard": "duplicate-products-edges",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "test",
+      "-p",
+      "assemble_test.py"
+    ],
+    "mutationExit": 1,
+    "restoredExit": 0,
+    "output": ".\n======================================================================\nFAIL: test_duplicate_product_or_edge_in_one_category_must_fail (assemble_test.AssemblyEvidenceContract) (duplicate='product')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test/assemble_test.py\", line 26, in test_duplicate_product_or_edge_in_one_category_must_fail\n    self.assertNotEqual(result.returncode, 0, f'{duplicate} silently collapsed')\nAssertionError: 0 == 0 : product silently collapsed\n\n----------------------------------------------------------------------\nRan 2 tests in 0.100s\n\nFAILED (failures=1)\n"
+  },
+  {
+    "guard": "shared-product-restrictions",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "test",
+      "-p",
+      "assemble_test.py"
+    ],
+    "mutationExit": 1,
+    "restoredExit": 0,
+    "output": ".F\n======================================================================\nFAIL: test_explicit_evidence_location_and_canonical_repo_alias (assemble_test.AssemblyEvidenceContract)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test/assemble_test.py\", line 57, in test_explicit_evidence_location_and_canonical_repo_alias\n    self.assertEqual(actual['locked'], ['office restriction', 'CRM restriction'])\nAssertionError: Lists differ: ['office restriction'] != ['office restriction', 'CRM restriction']\n\nSecond list contains 1 additional elements.\nFirst extra element 1:\n'CRM restriction'\n\n- ['office restriction']\n+ ['office restriction', 'CRM restriction']\n\n----------------------------------------------------------------------\nRan 2 tests in 0.102s\n\nFAILED (failures=1)\n"
+  },
+  {
+    "guard": "duplicate-edges",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "test",
+      "-p",
+      "assemble_test.py"
+    ],
+    "mutationExit": 1,
+    "restoredExit": 0,
+    "output": ".\n======================================================================\nFAIL: test_duplicate_product_or_edge_in_one_category_must_fail (assemble_test.AssemblyEvidenceContract) (duplicate='edge')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test/assemble_test.py\", line 26, in test_duplicate_product_or_edge_in_one_category_must_fail\n    self.assertNotEqual(result.returncode, 0, f'{duplicate} silently collapsed')\nAssertionError: 0 == 0 : edge silently collapsed\n\n----------------------------------------------------------------------\nRan 2 tests in 0.097s\n\nFAILED (failures=1)\n"
+  }
+]

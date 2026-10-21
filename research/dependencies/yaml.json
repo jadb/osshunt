@@ -1,0 +1,19 @@
+{
+  "package": "yaml",
+  "version": "2.9.1",
+  "publishedAt": "2026-09-11T20:30:10.905Z",
+  "license": {
+    "spdx": "ISC",
+    "commercial_compatible": true,
+    "copyleft": false,
+    "unknown": false
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "repository": "https://github.com/eemeli/yaml",
+  "overallScore": 6.3,
+  "observedAt": "2026-10-21T21:26:21.00434Z"
+}

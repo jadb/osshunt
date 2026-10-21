@@ -1,0 +1,231 @@
+{
+  "category": {
+    "id": "whiteboard-design",
+    "name": "Whiteboards and UI design",
+    "description": "Collaborative visual thinking, sketching and interface design; whiteboard and UI-design mappings are distinct.",
+    "audience": "Cross-functional workshop participants, product teams, designers and engineers.",
+    "audienceReach": "broad",
+    "audienceRationale": "Whiteboarding spans operations, marketing and product collaboration; professional interface design has a narrower designer/developer audience.",
+    "audienceSources": [
+      "https://miro.com/pricing/",
+      "https://www.figma.com/pricing/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "miro",
+      "name": "Miro",
+      "url": "https://miro.com",
+      "categories": [
+        "whiteboard-design"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 8,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Starter per member monthly equivalent, billed yearly; free plan also exists.",
+        "source": "https://miro.com/pricing/"
+      }
+    },
+    {
+      "id": "figma",
+      "name": "Figma Design",
+      "url": "https://www.figma.com",
+      "categories": [
+        "whiteboard-design"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 16,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Professional Full seat monthly equivalent with annual billing; free Starter also exists.",
+        "source": "https://www.figma.com/pricing/"
+      }
+    },
+    {
+      "id": "figjam",
+      "name": "FigJam",
+      "url": "https://www.figma.com/figjam/",
+      "categories": [
+        "whiteboard-design"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 3,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Professional Collab seat monthly equivalent with annual billing; covers FigJam, not Figma Design editing.",
+        "source": "https://www.figma.com/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "penpot",
+      "name": "Penpot",
+      "url": "https://penpot.app",
+      "categories": [
+        "whiteboard-design"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/penpot/penpot",
+      "license": "MPL-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Enterprise centralized administration, multi-organization management and advanced team/user permissions",
+        "Enterprise SSO/identity governance and extended recovery/version retention"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core Professional edition is MPL-2.0 and self-hostable with all design/prototyping features and unlimited users/teams/files. Current self-host pricing explicitly gates governance extras; hosted storage limits are separate service limits.",
+      "sources": {
+        "license": "https://github.com/penpot/penpot/blob/6acb360f4ad5dc24faec9d67f1fc8725456755de/LICENSE",
+        "features": "https://penpot.app/pricing/self-host",
+        "hosting": "https://penpot.app/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T16:57:59Z",
+        "lastRelease": "2.18.3",
+        "lastReleaseAt": "2026-10-06T12:46:50Z",
+        "commit": "6acb360f4ad5dc24faec9d67f1fc8725456755de",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/penpot/penpot",
+        "rsx": "Overall score 6.3/10. Activity 6.0, maintenance 10.0, security 0.0, and license 10.0 are the main decision signals."
+      }
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com",
+      "categories": [
+        "whiteboard-design"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/excalidraw/excalidraw",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Excalidraw+ comments, presentations and PDF/PPTX frame export",
+        "Excalidraw+ workspace access management and team organization"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT editor and app source are available. Commercial Plus adds workflow features as well as cloud persistence; cloud storage alone is not the reason for C. Self-host collaboration requires separately configured backend services.",
+      "sources": {
+        "license": "https://github.com/excalidraw/excalidraw/blob/1d4dc2c0e6e476911d0760e9c3cf3694f2d43384/LICENSE",
+        "features": "https://plus.excalidraw.com/pricing",
+        "hosting": "https://plus.excalidraw.com"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T16:42:17Z",
+        "lastRelease": "v0.18.1",
+        "lastReleaseAt": "2026-04-21T08:43:20Z",
+        "commit": "1d4dc2c0e6e476911d0760e9c3cf3694f2d43384",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/excalidraw/excalidraw",
+        "rsx": "Overall score 6.8/10. Activity 4.8, maintenance 9.0, security 4.9, and license 10.0 are the main decision signals."
+      }
+    },
+    {
+      "id": "tldraw",
+      "name": "tldraw SDK",
+      "url": "https://tldraw.dev",
+      "categories": [
+        "whiteboard-design"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/tldraw/tldraw",
+      "license": "LicenseRef-tldraw",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "S",
+      "locked": [
+        "Production deployment requires an active trial, commercial or hobby license key; default source license permits development only"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Current default core license is custom, development-only and not OSI OSS. SDK can be deployed with separately granted production rights; public tldraw.com is a hosted application, not proof of OSS rights.",
+      "sources": {
+        "license": "https://github.com/tldraw/tldraw/blob/e8eb1cf5635d28a2d516f0c0d823ed35f3ea9dc9/LICENSE.md",
+        "features": "https://tldraw.dev/community/license",
+        "hosting": "https://www.tldraw.com"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T17:13:42Z",
+        "lastRelease": "v5.5.2",
+        "lastReleaseAt": "2026-10-02T13:35:52Z",
+        "commit": "e8eb1cf5635d28a2d516f0c0d823ed35f3ea9dc9",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/tldraw/tldraw",
+        "rsx": "Overall score 6.8/10. Activity 7.1, maintenance 10.0, security 5.6, and license 3.0 are the main decision signals."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "figma--penpot",
+      "to": "penpot",
+      "fit": "partial",
+      "migrationNotes": "Interface design/prototyping alternative; evaluate Figma file conversion, libraries, plugins and developer handoff before migration. No lossless import or full feature parity claimed.",
+      "sources": [
+        "https://penpot.app/pricing/self-host",
+        "https://www.figma.com/pricing/"
+      ],
+      "from": "figma"
+    },
+    {
+      "id": "miro--excalidraw",
+      "to": "excalidraw",
+      "fit": "partial",
+      "migrationNotes": "Sketching and diagramming alternative for simpler whiteboards. Excalidraw supports its own JSON and image exports; no native lossless Miro import verified. Miro integrations/facilitation workflows require separate review.",
+      "sources": [
+        "https://github.com/excalidraw/excalidraw",
+        "https://miro.com/pricing/"
+      ],
+      "from": "miro"
+    },
+    {
+      "id": "figjam--excalidraw",
+      "to": "excalidraw",
+      "fit": "partial",
+      "migrationNotes": "Collaborative sketching alternative; not a Figma Design editor. Excalidraw JSON/PNG/SVG portability does not establish native FigJam import, voting or workshop feature parity.",
+      "sources": [
+        "https://github.com/excalidraw/excalidraw",
+        "https://www.figma.com/pricing/"
+      ],
+      "from": "figjam"
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "tldraw SDK (OSS recommendations)",
+      "reason": "Custom development-only default license; retained as S comparison record, excluded from OSS recommendations and paid-to-OSS edges.",
+      "sources": [
+        "https://tldraw.dev/community/license"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Penpot self-host pricing inconsistently labels audit logs as available versus coming soon; omitted from confirmed locked list.",
+    "No hands-on migration/import testing performed.",
+    "Excalidraw separately configured collaboration infrastructure not deployment-tested."
+  ]
+}

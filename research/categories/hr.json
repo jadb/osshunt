@@ -1,0 +1,140 @@
+{
+  "category": {
+    "id": "hr",
+    "name": "Human resources",
+    "description": "Employee records, leave, recruiting, onboarding, attendance, performance and payroll administration.",
+    "audience": "Employers, HR teams, managers and employee self-service users.",
+    "audienceReach": "broad",
+    "audienceRationale": "Employee administration spans industries and company sizes; HR staff manage the system while employees use leave and attendance workflows.",
+    "audienceSources": [
+      "https://docs.frappe.io/hr/introduction",
+      "https://www.bamboohr.com/pricing/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "bamboohr",
+      "name": "BambooHR",
+      "url": "https://www.bamboohr.com/",
+      "categories": [
+        "hr"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "organization",
+        "billing": "monthly",
+        "note": "Official page conflicts: Core headline $10/employee/month; FAQ $10.25/employee/month for >25 employees. <=25 employees Core $250/month flat; Pro $425, Elite $650. Month-to-month available; payroll/benefits/time add-ons extra. Single entry amount withheld pending clarification.",
+        "source": "https://www.bamboohr.com/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "frappe-hr",
+      "name": "Frappe HR",
+      "url": "https://frappe.io/hr",
+      "categories": [
+        "hr"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/frappe/hrms",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified.",
+      "sources": {
+        "license": "https://github.com/frappe/hrms/blob/7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2/license.txt",
+        "features": "https://docs.frappe.io/hr/introduction",
+        "hosting": "https://frappe.io/hr/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T13:17:00Z",
+        "lastRelease": "v15.64.6",
+        "lastReleaseAt": "2026-10-21T13:17:01Z",
+        "commit": "7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/frappe/hrms",
+        "rsx": "Central quick analysis: score 6.5/10; balanced policy passed. Commercial-use warning on GPL not accepted as a legal conclusion."
+      }
+    },
+    {
+      "id": "orangehrm-starter",
+      "name": "OrangeHRM Starter",
+      "url": "https://orangehrm.com/orangehrm-starter-open-source-software",
+      "categories": [
+        "hr"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/orangehrm/orangehrm",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Onboarding and offboarding templates/automation require Advanced",
+        "Automated PTO accrual requires Advanced",
+        "Roster and shift management require Advanced",
+        "Recruiting e-signatures and customizable application questions require Advanced",
+        "Goal tracking and custom performance review questions require Advanced"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPLv3 Starter supplies employee database, leave requests, ATS, time tracking and basic reviews. Official edition comparison reserves everyday onboarding, PTO accrual, roster and recruiting enhancements for Advanced; therefore C rather than enterprise-only B.",
+      "sources": {
+        "license": "https://github.com/orangehrm/orangehrm/blob/56e23b3b09e7af29317a0943523b825843fff527/LICENSE",
+        "features": "https://orangehrm.com/orangehrm-starter-open-source-software",
+        "hosting": "https://orangehrm.com/orangehrm-starter-open-source-software"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-06-28T23:52:36Z",
+        "lastRelease": "v5.9",
+        "lastReleaseAt": "2026-06-28T23:46:59Z",
+        "commit": "56e23b3b09e7af29317a0943523b825843fff527",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/orangehrm/orangehrm",
+        "rsx": "Central quick analysis: score 4/10; balanced policy passed. Commercial-use warning on GPL not accepted as a legal conclusion."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "bamboohr--frappe-hr",
+      "from": "bamboohr",
+      "to": "frappe-hr",
+      "fit": "partial",
+      "migrationNotes": "Broad HR records, recruiting, onboarding, leave, performance and configurable payroll overlap. Rebuild workflows and employee data mapping; validate jurisdiction-specific tax filing, benefit carriers and payroll services separately. No automatic BambooHR migration established.",
+      "sources": [
+        "https://docs.frappe.io/hr/introduction",
+        "https://www.bamboohr.com/pricing/"
+      ]
+    },
+    {
+      "id": "bamboohr--orangehrm-starter",
+      "from": "bamboohr",
+      "to": "orangehrm-starter",
+      "fit": "partial",
+      "migrationNotes": "Fits employee records, leave approvals, ATS and timesheets. Starter lacks Advanced onboarding workflows, automated PTO accrual and payroll integrations. Rebuild policies and map employee records; not a payroll-service replacement.",
+      "sources": [
+        "https://orangehrm.com/orangehrm-starter-open-source-software",
+        "https://www.bamboohr.com/pricing/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "BambooHR headline and FAQ give different current Core per-employee prices; no single entryAmount asserted.",
+    "Frappe pricing labels self-hosting AGPL-3.0; pinned HRMS root license is GPLv3. Record identifies repository core license, not every dependency.",
+    "OrangeHRM Starter page text says 180-degree performance reviews while comparison row labels 360-degree as included. Review breadth needs product validation; no restriction asserted for that row.",
+    "Source comparison uses image icons; no hands-on deployment or import/migration validation performed."
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "repo": {
+    "owner": "ToolJet",
+    "name": "ToolJet",
+    "url": "https://github.com/ToolJet/ToolJet",
+    "description": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from Claude Code, Codex and Cursor over MCP \ud83d\ude80",
+    "homepage": "https://tooljet.com",
+    "topics": [
+      "ai-app-builder",
+      "docker",
+      "internal-applications",
+      "internal-project",
+      "internal-tool",
+      "internal-tools",
+      "javascript",
+      "kubernetes",
+      "low-code",
+      "low-code-development-platform",
+      "low-code-framework",
+      "no-code",
+      "nodejs",
+      "reactjs",
+      "self-hosted",
+      "typescript",
+      "web-development-tools",
+      "workflow-automation"
+    ]
+  },
+  "scores": {
+    "overall": 6.5,
+    "categories": {
+      "activity": {
+        "id": "activity",
+        "label": "Activity",
+        "score": 5.6,
+        "weight": 0.16,
+        "multiplier": 1,
+        "reason": "Current pace of work and maintainer activity",
+        "metrics": {
+          "commit_cadence_30d": 12,
+          "merged_pr_velocity_30d": 12,
+          "open_prs": 36,
+          "stars": 41115
+        }
+      },
+      "adoption": {
+        "id": "adoption",
+        "label": "Adoption",
+        "score": 2.6,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "External usage and registry reach",
+        "metrics": {
+          "dependents": 2055
+        }
+      },
+      "community": {
+        "id": "community",
+        "label": "Community",
+        "score": 9,
+        "weight": 0.09,
+        "multiplier": 1,
+        "reason": "Contributor and support surface",
+        "metrics": {
+          "code_of_conduct": 1,
+          "contributors": 100,
+          "security_policy": 1,
+          "support_channels": 0
+        }
+      },
+      "docs": {
+        "id": "docs",
+        "label": "Docs",
+        "score": 7,
+        "weight": 0.08,
+        "multiplier": 1,
+        "reason": "Documentation and maintainer guidance",
+        "metrics": {
+          "has_changelog": 0,
+          "has_homepage": 1,
+          "has_maintainer_docs": 1,
+          "has_roadmap": 0
+        }
+      },
+      "license": {
+        "id": "license",
+        "label": "License",
+        "score": 5,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "Commercial fit and legal clarity",
+        "metrics": {
+          "commercial_compatible": 0,
+          "unknown": 1
+        }
+      },
+      "maintenance": {
+        "id": "maintenance",
+        "label": "Maintenance",
+        "score": 10,
+        "weight": 0.18,
+        "multiplier": 1,
+        "reason": "Sustainability and freshness",
+        "metrics": {
+          "active_maintainers": 3,
+          "stale_issues": 0,
+          "stale_prs": 0
+        }
+      },
+      "release_hygiene": {
+        "id": "release_hygiene",
+        "label": "Release hygiene",
+        "score": 8,
+        "weight": 0.07,
+        "multiplier": 1,
+        "reason": "Release cadence and publication quality",
+        "metrics": {
+          "release_cadence_90d": 20,
+          "signed_releases": 1
+        }
+      },
+      "security": {
+        "id": "security",
+        "label": "Security",
+        "score": 4.6,
+        "weight": 0.22,
+        "multiplier": 1.1,
+        "reason": "Security posture and vulnerability evidence",
+        "metrics": {
+          "critical_vulns": 1,
+          "high_vulns": 1
+        }
+      }
+    },
+    "applied_multipliers": {
+      "security": 1.1
+    },
+    "raw_weights": {
+      "activity": 0.16,
+      "adoption": 0.1,
+      "community": 0.09,
+      "docs": 0.08,
+      "license": 0.1,
+      "maintenance": 0.18,
+      "release_hygiene": 0.07,
+      "security": 0.22
+    }
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "activity": {
+    "stars": 41115,
+    "forks": 5504,
+    "watchers": 208,
+    "open_issues": 891,
+    "open_prs": 36,
+    "merged_pr_velocity_30d": 12,
+    "issue_close_rate_30d": 0.3333333333333333,
+    "time_to_merge_hours": 1.001087962962963,
+    "latest_accepted_contribution_at": "2026-10-21T14:25:38Z",
+    "latest_maintainer_activity_at": "2026-10-21T14:25:38Z",
+    "commit_cadence_30d": 12,
+    "release_cadence_90d": 20,
+    "last_release": "v3.21.79-beta",
+    "last_release_published_at": "2026-10-21T17:34:35Z",
+    "latest_tag_age_days": 0
+  },
+  "maintenance": {
+    "bus_factor_proxy": 5,
+    "active_maintainers": 3,
+    "stale_issues": 0,
+    "stale_prs": 0,
+    "archived": false,
+    "disabled": false,
+    "has_changelog": false,
+    "has_roadmap": false,
+    "has_maintainer_docs": true
+  },
+  "adoption": {
+    "dependents_count": 2055,
+    "docs_healthy": true
+  },
+  "community": {
+    "contributors": 100,
+    "support_links": [
+      "https://tooljet.com"
+    ],
+    "has_code_of_conduct": true,
+    "has_security_policy": true
+  },
+  "security": {
+    "checks": [
+      {
+        "name": "repository_visibility",
+        "score": 10,
+        "status": "ok"
+      },
+      {
+        "name": "security_policy",
+        "score": 7,
+        "details": [
+          "SECURITY.md detected in repository metadata"
+        ],
+        "status": "detected"
+      },
+      {
+        "name": "code_of_conduct",
+        "score": 6,
+        "details": [
+          "CODE_OF_CONDUCT.md detected in repository metadata"
+        ],
+        "status": "detected"
+      },
+      {
+        "name": "release_hygiene",
+        "score": 8,
+        "status": "derived"
+      }
+    ],
+    "critical_vulnerabilities": 1,
+    "high_vulnerabilities": 1,
+    "has_sast": true,
+    "has_fuzzing": false,
+    "has_signed_releases": true
+  },
+  "license": {
+    "spdx": "AGPL-3.0",
+    "commercial_compatible": false,
+    "copyleft": true,
+    "unknown": false,
+    "risk_notes": [
+      "license may not be suitable for commercial use"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "github",
+      "key": "open_prs",
+      "value": "36",
+      "source": "github/pulls",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "open_issues",
+      "value": "2",
+      "source": "github/issues",
+      "sample_window": "latest 50 issues",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "merged_pr_velocity_30d",
+      "value": "12",
+      "source": "github/pulls",
+      "method": "merge time approximated by PR last-update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "time_to_merge_hours",
+      "value": "1.0",
+      "source": "github/pulls",
+      "method": "merge time approximated by PR last-update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "issue_close_rate_30d",
+      "value": "0.33",
+      "source": "github/issues",
+      "sample_window": "latest 50 issues",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "commit_cadence_30d",
+      "value": "12",
+      "source": "github/pulls",
+      "method": "merged-PR velocity stand-in; commits not sampled",
+      "sample_window": "latest 50 PRs",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "latest_maintainer_activity_at",
+      "value": "2026-10-21T14:25:38Z",
+      "source": "github/pulls",
+      "method": "last merged-PR update stand-in; maintainer actions not sampled",
+      "sample_window": "latest 50 PRs",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.5
+    },
+    {
+      "type": "github",
+      "key": "latest_accepted_contribution_at",
+      "value": "2026-10-21T14:25:38Z",
+      "source": "github/pulls",
+      "method": "last merged-PR update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "security_advisories",
+      "value": "checked: 1 critical, 1 high",
+      "source": "github/security-advisories",
+      "method": "published, non-withdrawn repository advisories counted by severity",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "stars",
+      "value": "41115",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "forks",
+      "value": "5504",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "watchers",
+      "value": "208",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "contributors",
+      "value": "100",
+      "source": "github/contributors",
+      "sample_window": "first 100 contributors",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "active_maintainers",
+      "value": "3",
+      "source": "github/contributors",
+      "method": "min(3, contributor count); maintainer roles not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "bus_factor_proxy",
+      "value": "5",
+      "source": "github/contributors",
+      "method": "min(5, contributor count); commit distribution not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "dependents_count",
+      "value": "2055",
+      "source": "github/repos",
+      "method": "stars/20 estimate; dependents not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.3
+    },
+    {
+      "type": "github",
+      "key": "docs_healthy",
+      "value": "true",
+      "source": "github/repos",
+      "method": "homepage URL present; docs content not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "last_release",
+      "value": "v3.21.79-beta",
+      "source": "github/releases",
+      "sample_window": "latest 20 releases",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "release_cadence_90d",
+      "value": "20",
+      "source": "github/releases",
+      "sample_window": "latest 20 releases",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "has_signed_releases",
+      "value": "true",
+      "source": "github/releases",
+      "method": "releases exist; signatures not verified",
+      "sample_window": "latest 20 releases",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.2
+    },
+    {
+      "type": "github",
+      "key": "has_sast",
+      "value": "true",
+      "source": "github/contents",
+      "method": "workflow filename match; workflow content not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.6
+    },
+    {
+      "type": "github",
+      "key": "has_maintainer_docs",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "code_of_conduct",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "security_policy",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "license_spdx",
+      "value": "AGPL-3.0",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:55.21764Z",
+      "confidence": 1
+    }
+  ],
+  "summary": {
+    "deterministic": "Overall score 6.5/10. Activity 5.6, maintenance 10.0, security 4.6, and license 5.0 are the main decision signals.",
+    "ai_enabled": false
+  },
+  "observed_at": "2026-10-21T21:32:55.21764Z",
+  "mode": "quick"
+}

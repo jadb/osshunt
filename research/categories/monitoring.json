@@ -1,0 +1,239 @@
+{
+  "category": {
+    "id": "monitoring",
+    "name": "Monitoring and observability",
+    "description": "Infrastructure dashboards, website uptime, and application error tracking; mappings scoped by capability.",
+    "audience": "Engineering, IT operations, site reliability and website owners",
+    "audienceReach": "specialist",
+    "audienceRationale": "Relevant to organizations operating software or websites; specialized users manage it even where business impact is broad.",
+    "audienceSources": [
+      "https://www.datadoghq.com/pricing/",
+      "https://www.pingdom.com/pricing/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "url": "https://www.datadoghq.com/",
+      "categories": [
+        "monitoring"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 15,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "annual",
+        "note": "Infrastructure Pro starts at $15 per host/month billed annually; other modules priced separately.",
+        "source": "https://www.datadoghq.com/pricing/"
+      }
+    },
+    {
+      "id": "pingdom",
+      "name": "Pingdom",
+      "url": "https://www.pingdom.com/",
+      "categories": [
+        "monitoring"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "annual",
+        "note": "Official pricing calculator returned currency placeholders without numeric price; amount unverified.",
+        "source": "https://www.pingdom.com/pricing/"
+      }
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "url": "https://sentry.io/",
+      "categories": [
+        "monitoring"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "annual",
+        "note": "Official pricing page unsupported text/markdown in fetch; paid plan entry amount not independently verified.",
+        "source": "https://sentry.io/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "url": "https://uptime.kuma.pet/",
+      "categories": [
+        "monitoring"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/louislam/uptime-kuma",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "MIT project; upstream README publishes self-hosted monitoring, notifications, and status pages without commercial edition or feature tiers. No first-party paid hosting identified.",
+      "sources": {
+        "license": "https://github.com/louislam/uptime-kuma/blob/2adb5bc32cb53a93722a7c348364a8290acd74d4/LICENSE",
+        "features": "https://github.com/louislam/uptime-kuma#-features",
+        "hosting": "https://github.com/louislam/uptime-kuma#-how-to-install"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T00:06:24Z",
+        "lastRelease": "2.5.6",
+        "lastReleaseAt": "2026-10-09T15:46:26Z",
+        "commit": "2adb5bc32cb53a93722a7c348364a8290acd74d4",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/louislam/uptime-kuma",
+        "rsx": "Shared rsx analyze report available; no score used as license or feature evidence."
+      }
+    },
+    {
+      "id": "glitchtip",
+      "name": "GlitchTip",
+      "url": "https://glitchtip.com/",
+      "categories": [
+        "monitoring"
+      ],
+      "kind": "oss",
+      "repo": "https://gitlab.com/glitchtip/glitchtip-backend",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Backend and frontend MIT licenses verified at canonical GitLab commits. Maintainer describes software as 100% open source; paid hosting quotas and support are service costs, not software feature restrictions.",
+      "sources": {
+        "license": "https://gitlab.com/glitchtip/glitchtip-backend/-/raw/5c6889940436df182d929634bc455ecaccb10e93/LICENSE",
+        "features": "https://glitchtip.com/blog/2026-06-22-glitchtip-6-2-released/",
+        "hosting": "https://glitchtip.com/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": null,
+        "lastRelease": null,
+        "lastReleaseAt": null,
+        "commit": "5c6889940436df182d929634bc455ecaccb10e93",
+        "checkedAt": "2026-10-21",
+        "source": "https://gitlab.com/api/v4/projects/glitchtip%2Fglitchtip-backend",
+        "rsx": "GitHub profile placeholder is not canonical health evidence. Canonical GitLab commit 5c6889940436df182d929634bc455ecaccb10e93 dated 2026-10-21T06:21:41.000+00:00 verified. Latest GitLab Releases API entry v6.1.8 (2026-06-05) conflicts with later visible v6.2.6 tag (2026-08-07); latest release left null rather than conflating channels. No pushed_at field in captured GitLab API."
+      }
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana OSS",
+      "url": "https://grafana.com/oss/grafana/",
+      "categories": [
+        "monitoring"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/grafana/grafana",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Enterprise data-source plugins",
+        "Scheduled reporting",
+        "SAML authentication and team synchronization",
+        "Data-source permissions and usage insights"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "OSS dashboards and alerting are AGPL. Commercial edition includes both enterprise administration and routine workflow extensions such as proprietary data-source integrations and reporting; conservative tier C, not feature-complete A.",
+      "sources": {
+        "license": "https://github.com/grafana/grafana/blob/7de573e4db635ab9d34cd2771bde39471e1c0e82/LICENSE",
+        "features": "https://grafana.com/products/grafana-enterprise/",
+        "hosting": "https://grafana.com/products/cloud/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:16:15Z",
+        "lastRelease": "v13.2.4",
+        "lastReleaseAt": "2026-10-13T11:41:03Z",
+        "commit": "7de573e4db635ab9d34cd2771bde39471e1c0e82",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/grafana/grafana",
+        "rsx": "Shared rsx analyze report available; no score used as license or feature evidence."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "datadog--grafana",
+      "from": "datadog",
+      "to": "grafana",
+      "fit": "partial",
+      "migrationNotes": "Replaces dashboarding/alerting workflow when paired with separately operated telemetry stores and collectors. Grafana alone is not a full Datadog APM/logs/security replacement; dashboards and alert rules require rebuilding.",
+      "sources": [
+        "https://grafana.com/oss/grafana/",
+        "https://www.datadoghq.com/pricing/"
+      ]
+    },
+    {
+      "id": "pingdom--uptime-kuma",
+      "from": "pingdom",
+      "to": "uptime-kuma",
+      "fit": "partial",
+      "migrationNotes": "HTTP/TCP/DNS/push checks, alert delivery and status pages. Operate your own external vantage points; no claim of Pingdom transaction or real-user-monitoring parity or check import.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma#-features",
+        "https://www.pingdom.com/pricing/"
+      ]
+    },
+    {
+      "id": "sentry--glitchtip",
+      "from": "sentry",
+      "to": "glitchtip",
+      "fit": "partial",
+      "migrationNotes": "Supports Sentry client SDKs for error and basic performance monitoring. Reconfigure DSNs and validate SDK compatibility; existing Sentry issue history, replay and advanced tracing migration not established.",
+      "sources": [
+        "https://glitchtip.com/",
+        "https://gitlab.com/glitchtip/glitchtip-backend/-/raw/master/README.md"
+      ]
+    },
+    {
+      "id": "pingdom--glitchtip",
+      "from": "pingdom",
+      "to": "glitchtip",
+      "fit": "partial",
+      "migrationNotes": "Basic site availability pings, heartbeat checks and email/webhook alerts; partial uptime alternative, without established Pingdom browser transactions/RUM parity.",
+      "sources": [
+        "https://glitchtip.com/",
+        "https://www.pingdom.com/pricing/"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Sentry current server core",
+      "reason": "Current root license is Functional Source License 1.1 with a future Apache-2.0 conversion and competing-use restrictions; excluded from current OSI OSS recommendations, retained as paid incumbent.",
+      "sources": [
+        "https://raw.githubusercontent.com/getsentry/sentry/master/LICENSE.md"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Pingdom pricing calculator omitted numerical price; Sentry pricing fetch failed. Amounts intentionally null.",
+    "No feature or historical-event migration parity asserted.",
+    "GitLab release/tag channels differ: published API record v6.1.8 is older than v6.2.6 tag; latest release not asserted. Canonical source SHAs and MIT licenses now verified and raw responses retained."
+  ]
+}

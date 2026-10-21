@@ -1,0 +1,196 @@
+{
+  "category": {
+    "id": "kanban",
+    "name": "Kanban",
+    "description": "Visual boards for team tasks and workflow stages.",
+    "audience": "Teams across business functions managing shared tasks.",
+    "audienceReach": "broad",
+    "audienceRationale": "Trello explicitly targets marketing, product, engineering, design, startups and remote teams; useful across functions without requiring a specialist role.",
+    "audienceSources": [
+      "https://trello.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "trello",
+      "name": "Trello",
+      "url": "https://trello.com/",
+      "categories": [
+        "kanban"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 5,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Standard USD5 per user/month annually; USD6 billed monthly. Free tier also available.",
+        "source": "https://trello.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "wekan",
+      "name": "WeKan",
+      "url": "https://wekan.fi/",
+      "categories": [
+        "kanban"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/wekan/wekan",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Official commercial-support page explicitly states all code is MIT and no proprietary code. Hosting/support and funded features commercial; released self-hosted functionality not edition-gated.",
+      "sources": {
+        "license": "https://github.com/wekan/wekan/blob/70ede2148acd2f16a73a755a0f5b765f68916905/LICENSE",
+        "features": "https://wekan.fi/commercial-support/",
+        "hosting": "https://wekan.fi/saas/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T15:30:59Z",
+        "lastRelease": "v12.58",
+        "lastReleaseAt": "2026-10-21T15:38:28Z",
+        "commit": "70ede2148acd2f16a73a755a0f5b765f68916905",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/wekan/wekan",
+        "rsx": "Central analysis pending; GitHub metadata and release fallback inspected."
+      }
+    },
+    {
+      "id": "kanboard",
+      "name": "Kanboard",
+      "url": "https://kanboard.org/",
+      "categories": [
+        "kanban"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/kanboard/kanboard",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Single free MIT self-hosted product; documented automation, LDAP/OAuth, task management and analytics available without a paid edition. Third-party plugin licenses and services must be checked separately. No first-party managed hosting identified.",
+      "sources": {
+        "license": "https://github.com/kanboard/kanboard/blob/e197e71af4ff9f371b931ab0338b2b41827e6394/LICENSE",
+        "features": "https://kanboard.org/",
+        "hosting": "https://docs.kanboard.org/v1/admin/faq/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:27:19Z",
+        "lastRelease": "v1.2.55",
+        "lastReleaseAt": "2026-10-21T00:57:56Z",
+        "commit": "e197e71af4ff9f371b931ab0338b2b41827e6394",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/kanboard/kanboard",
+        "rsx": "Central analysis pending; GitHub metadata and release fallback inspected."
+      }
+    },
+    {
+      "id": "planka",
+      "name": "PLANKA",
+      "url": "https://planka.app/",
+      "categories": [
+        "kanban"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/plankanban/planka",
+      "license": "LicenseRef-PLANKA-Community-1.1",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "S",
+      "locked": [
+        "Commercial third-party hosting or business account sharing across organizations requires commercial license",
+        "Guest/worker roles and OIDC SSO",
+        "Calendar and timeline views",
+        "Board/card templates and recurring cards",
+        "Public boards",
+        "PDF and HTML export",
+        "Advanced global search"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Source-available candidate retained for explicitly labelled comparison only; hidden by default from OSS recommendations. Current custom Community/Fair Use License restricts fields of use; Pro files separately commercial.",
+      "sources": {
+        "license": "https://github.com/plankanban/planka/blob/627701dda3459fa25830b0fd5bb2f5668d033284/LICENSE.md",
+        "features": "https://planka.app/features",
+        "hosting": "https://planka.app/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T07:14:22Z",
+        "lastRelease": "v2.2.1",
+        "lastReleaseAt": "2026-08-10T16:30:06Z",
+        "commit": "627701dda3459fa25830b0fd5bb2f5668d033284",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/plankanban/planka",
+        "rsx": "Central analysis pending; GitHub metadata and release fallback inspected."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "trello--wekan",
+      "from": "trello",
+      "to": "wekan",
+      "fit": "partial",
+      "migrationNotes": "Comparable boards, lists, cards, labels, due dates and checklists. Trello Power-Ups and Butler rules require replacement; official page describes a Trello JSON/attachment downloader and import work, so test attachment import rather than assuming full migration.",
+      "sources": [
+        "https://wekan.fi/",
+        "https://trello.com/pricing"
+      ]
+    },
+    {
+      "id": "trello--kanboard",
+      "from": "trello",
+      "to": "kanboard",
+      "fit": "partial",
+      "migrationNotes": "Boards and task automation fit visual team workflows. Kanboard offers APIs/plugins; Trello Power-Ups and rules require rebuilding. No validated direct Trello importer in this review; no official native mobile client, responsive web UI available.",
+      "sources": [
+        "https://kanboard.org/",
+        "https://docs.kanboard.org/v1/admin/plugins/",
+        "https://docs.kanboard.org/v1/admin/faq/"
+      ]
+    },
+    {
+      "id": "trello--planka",
+      "from": "trello",
+      "to": "planka",
+      "fit": "partial",
+      "migrationNotes": "Source-available comparison only, hidden by default from OSS recommendations. Boards/cards/checklists and board import available, but Pro required for calendar, templates, public boards and exports; commercial third-party hosting and cross-organization business use restricted by license. Test import coverage before migration.",
+      "sources": [
+        "https://planka.app/features",
+        "https://github.com/plankanban/planka/blob/627701dda3459fa25830b0fd5bb2f5668d033284/LICENSE.md"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "PLANKA",
+      "reason": "Tier S: current default branch uses custom PLANKA Community License/Fair Use License, not OSI. Commercial third-party hosting and business account sharing across organizations restricted. Pro files separately commercial; everyday calendar, templates, recurring cards, public boards and exports are paid features. Not recommended as OSS despite historical reputation.",
+      "sources": [
+        "https://github.com/plankanban/planka/blob/627701dda3459fa25830b0fd5bb2f5668d033284/LICENSE.md",
+        "https://planka.app/",
+        "https://planka.app/features"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Three candidates retained: Wekan and Kanboard OSI recommendations; PLANKA tier S source-available comparison, hidden by default.",
+    "Kanboard hostedOffer=false means no first-party offer identified in official site and FAQ, not that third-party hosting is unavailable.",
+    "Central rsx results pending; integrate if available.",
+    "Wekan attachment-import fidelity requires a migration test."
+  ]
+}

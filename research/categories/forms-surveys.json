@@ -1,0 +1,186 @@
+{
+  "category": {
+    "id": "forms-surveys",
+    "name": "Forms and surveys",
+    "description": "Collect leads, feedback, questionnaires, polls and research responses.",
+    "audience": "Marketing, customer success, HR, operations, product and research teams across business sizes.",
+    "audienceReach": "broad",
+    "audienceRationale": "Forms and feedback span multiple business functions and industries; adoption is broad but not required by every employee.",
+    "audienceSources": [
+      "https://www.typeform.com/pricing",
+      "https://www.limesurvey.org/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "typeform",
+      "name": "Typeform",
+      "url": "https://www.typeform.com",
+      "categories": [
+        "forms-surveys"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 28,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Basic $28/month billed annually; $39/month monthly billing. Includes one user and 100 responses/month. Free plan is distinct from paid Basic.",
+        "source": "https://www.typeform.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "limesurvey",
+      "name": "LimeSurvey Community Edition",
+      "url": "https://community.limesurvey.org/",
+      "categories": [
+        "forms-surveys"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/LimeSurvey/LimeSurvey",
+      "license": "GPL-2.0-or-later",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "ComfortUpdate automated updates require paid subscription after trial; manual updates remain available",
+        "Cloud has exclusive features; complete current Cloud-versus-CE feature list not established"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPL CE is self-hostable with mature research survey functionality. Current official site explicitly says Cloud includes exclusive features; older forum assertions of full parity are superseded. Exact exclusives not sufficiently enumerated to assign A/B/C confidently.",
+      "sources": {
+        "license": "https://github.com/LimeSurvey/LimeSurvey/blob/f485440ff59329d51277cf065e974d82114b9bbc/LICENSE",
+        "features": "https://community.limesurvey.org/comfort-update-extension/",
+        "hosting": "https://www.limesurvey.org/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:02:31Z",
+        "lastRelease": null,
+        "lastReleaseAt": null,
+        "commit": "f485440ff59329d51277cf065e974d82114b9bbc",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/LimeSurvey/LimeSurvey",
+        "rsx": "Central authenticated rsx analysis; overall score 5.6/10; full category evidence retained."
+      }
+    },
+    {
+      "id": "heyform",
+      "name": "HeyForm",
+      "url": "https://heyform.net",
+      "categories": [
+        "forms-surveys"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/heyform/heyform",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "Self-hosted versus hosted feature parity not fully verified; published cloud plan limits must not be interpreted as OSS limits"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL repository documents conversational forms, logic, custom CSS, analytics and CSV export. Self-host configuration is documented; hosted pricing gates collaboration, domains and branding, but official sources inspected do not establish whether those gates apply to self-hosted edition.",
+      "sources": {
+        "license": "https://github.com/heyform/heyform/blob/938c7dfef82969a557da9d479ca249179ff1c206/LICENSE",
+        "features": "https://github.com/heyform/heyform#features",
+        "hosting": "https://heyform.net/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-19T01:57:00Z",
+        "lastRelease": "v3.0.4",
+        "lastReleaseAt": "2026-10-15T03:34:57Z",
+        "commit": "938c7dfef82969a557da9d479ca249179ff1c206",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/heyform/heyform",
+        "rsx": "Central authenticated rsx analysis; overall score 4.8/10; full category evidence retained."
+      }
+    },
+    {
+      "id": "formbricks",
+      "name": "Formbricks Community Edition",
+      "url": "https://formbricks.com",
+      "categories": [
+        "forms-surveys"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/formbricks/formbricks",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Community Edition limited to one workspace",
+        "Enterprise license required for contact management and segments, workflows, Unify Feedback and dashboards",
+        "Enterprise license required for branding removal, white-label follow-ups, RBAC, SSO and audit logging"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "OSI AGPL core; MIT SDK/survey packages and separately licensed apps/web/modules/ee. Paid gates include routine feedback workflows and segmentation, not only enterprise administration. Community docs specify unlimited surveys, responses and users; hosted response quotas differ.",
+      "sources": {
+        "license": "https://github.com/formbricks/formbricks/blob/fd98f4b0ea7d8b6b187e2e894af7b202c91f7a24/LICENSE",
+        "features": "https://formbricks.com/docs/self-hosting/advanced/license",
+        "hosting": "https://formbricks.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T18:56:24Z",
+        "lastRelease": "6.1.0",
+        "lastReleaseAt": "2026-10-19T12:09:29Z",
+        "commit": "fd98f4b0ea7d8b6b187e2e894af7b202c91f7a24",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/formbricks/formbricks",
+        "rsx": "Central authenticated rsx analysis; overall score 6.2/10; full category evidence retained."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "typeform--limesurvey",
+      "from": "typeform",
+      "to": "limesurvey",
+      "fit": "partial",
+      "migrationNotes": "Research-oriented survey workflows differ from Typeform conversational forms. Rebuild questions, branching, styling and integrations; LSS supports LimeSurvey survey interchange rather than Typeform imports.",
+      "sources": [
+        "https://community.limesurvey.org/"
+      ]
+    },
+    {
+      "id": "typeform--heyform",
+      "from": "typeform",
+      "to": "heyform",
+      "fit": "partial",
+      "migrationNotes": "Conversational forms, logic, CSS and CSV export overlap Typeform; recreate existing forms and integrations. No verified automatic Typeform import.",
+      "sources": [
+        "https://docs.heyform.net/introduction",
+        "https://github.com/heyform/heyform#features"
+      ]
+    },
+    {
+      "id": "typeform--formbricks",
+      "from": "typeform",
+      "to": "formbricks",
+      "fit": "partial",
+      "migrationNotes": "Link surveys and embedded/in-app feedback overlap Typeform. Recreate Typeform forms and automations; current CE has one workspace and paid workflow/segmentation gates.",
+      "sources": [
+        "https://formbricks.com/docs/self-hosting/advanced/license",
+        "https://formbricks.com/open-source-form-builder"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "HeyForm lacks a verified current self-hosted/hosted edition feature matrix; tier U pending source/code entitlement inspection.",
+    "LimeSurvey Cloud-exclusive features are acknowledged officially but not fully enumerated against CE; tier U pending precise matrix.",
+    "LimeSurvey latest GitHub release endpoint returned 404; null is not evidence of inactivity.",
+    "Formbricks current license page says CE one workspace, conflicting with older marketing page claiming unlimited workspaces; current self-host license documentation prioritized."
+  ]
+}

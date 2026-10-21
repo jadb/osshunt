@@ -1,0 +1,184 @@
+{
+  "category": {
+    "id": "screen-recording",
+    "name": "Screen recording and asynchronous video",
+    "description": "Record demonstrations, tutorials, feedback and asynchronous team video.",
+    "audience": "Knowledge workers, support, sales, product and training teams",
+    "audienceReach": "broad",
+    "audienceRationale": "Cross-functional business communication and demonstrations, with adoption dependent on video workflows.",
+    "audienceSources": [
+      "https://www.loom.com/pricing",
+      "https://github.com/alyssaxuu/screenity"
+    ]
+  },
+  "paid": [
+    {
+      "id": "loom",
+      "name": "Loom",
+      "url": "https://www.loom.com",
+      "categories": [
+        "screen-recording"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "monthly",
+        "note": "Business displays $18 per user/month; pricing page has monthly/annual toggle without unambiguous captured state, so entry amount not asserted.",
+        "source": "https://www.loom.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "obs-studio",
+      "name": "OBS Studio",
+      "url": "https://obsproject.com",
+      "categories": [
+        "screen-recording"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/obsproject/obs-studio",
+      "license": "GPL-2.0-or-later",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Full local video recorder and streaming application offered free with no paid first-party feature edition; GPL COPYING at pinned SHA. Local installation, not a hosted video collaboration platform.",
+      "sources": {
+        "license": "https://github.com/obsproject/obs-studio/blob/95d5223b66da1c162acdb61c1bae2b9123a60f0e/COPYING",
+        "features": "https://obsproject.com",
+        "hosting": "https://obsproject.com"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T23:09:59Z",
+        "lastRelease": "32.2.2",
+        "lastReleaseAt": "2026-08-14T22:43:31Z",
+        "commit": "95d5223b66da1c162acdb61c1bae2b9123a60f0e",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/obsproject/obs-studio",
+        "rsx": "Unavailable: cache backup write outside permitted directory denied; GitHub metadata fallback used"
+      }
+    },
+    {
+      "id": "screenity",
+      "name": "Screenity",
+      "url": "https://screenity.io",
+      "categories": [
+        "screen-recording"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/alyssaxuu/screenity",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Pro platform link sharing and cloud media library",
+        "Pro multi-scene editing and captions; self-hosted extension is local-only with platform features disabled"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPL recorder provides unlimited local capture, annotations and exports. Paid separate Pro platform adds everyday sharing/editing/caption workflows; rank by the local extension, not hosted platform parity.",
+      "sources": {
+        "license": "https://github.com/alyssaxuu/screenity/blob/c5b344fbb3d9a126c4b3a39f0979c7976392fa96/LICENSE",
+        "features": "https://github.com/alyssaxuu/screenity",
+        "hosting": "https://screenity.io"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T19:22:14Z",
+        "lastRelease": "v4.7.0",
+        "lastReleaseAt": "2026-10-20T19:22:15Z",
+        "commit": "c5b344fbb3d9a126c4b3a39f0979c7976392fa96",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/alyssaxuu/screenity",
+        "rsx": "Central quick analysis completed; overall score 5; qualitative signal, not security assurance"
+      }
+    },
+    {
+      "id": "cap",
+      "name": "Cap",
+      "url": "https://cap.so",
+      "categories": [
+        "screen-recording"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/CapSoftware/Cap",
+      "license": "AGPL-3.0-only AND MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "Official distributed desktop binaries require a paid commercial license for business use; self-built source versions exempt",
+        "Cap Pro cloud plan gates unlimited sharing, transcription, analytics, custom domains and Loom importer; self-host parity not fully verified"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Pinned root LICENSE states AGPLv3 except MIT cap-camera/scap crate families. Commercial-license docs explicitly exempt self-built versions; core qualifies as OSS. U reflects unverified self-host feature gates, not license uncertainty.",
+      "sources": {
+        "license": "https://github.com/CapSoftware/Cap/blob/d16fd199bbe8bd2a1c52fb19bcb3d383e9a2ff61/LICENSE",
+        "features": "https://cap.so/docs/commercial-license",
+        "hosting": "https://cap.so/docs/self-hosting"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:29:20Z",
+        "lastRelease": "cap-v0.6.1",
+        "lastReleaseAt": "2026-10-20T14:14:57Z",
+        "commit": "d16fd199bbe8bd2a1c52fb19bcb3d383e9a2ff61",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/CapSoftware/Cap",
+        "rsx": "Central quick analysis completed; overall score 5.8; qualitative signal, not security assurance"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "loom--obs-studio",
+      "from": "loom",
+      "to": "obs-studio",
+      "fit": "different-approach",
+      "migrationNotes": "Captures screen, camera and audio locally with scenes; upload/export files into another service for Loom-style link sharing and team feedback. No Loom library importer established.",
+      "sources": [
+        "https://obsproject.com",
+        "https://www.loom.com/pricing"
+      ]
+    },
+    {
+      "id": "loom--screenity",
+      "from": "loom",
+      "to": "screenity",
+      "fit": "partial",
+      "migrationNotes": "Browser extension handles unlimited capture, annotations and MP4/GIF/WebM exports. Self-host is local-only; sharing via external storage or paid Pro. No migration preserving Loom comments/analytics established.",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity",
+        "https://screenity.io"
+      ]
+    },
+    {
+      "id": "loom--cap",
+      "from": "loom",
+      "to": "cap",
+      "fit": "partial",
+      "migrationNotes": "Closer capture-and-sharing workflow with own-server deployment. Loom importer supports URLs/CSV but is Pro-gated, requires download access and maps space labels rather than nested folder hierarchy. Build desktop from source for commercial-license exemption.",
+      "sources": [
+        "https://cap.so/docs/migrating-to-cap",
+        "https://cap.so/docs/commercial-license",
+        "https://cap.so/docs/self-hosting"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Cap OSS source is AGPL with MIT capture crates; official desktop binaries require paid commercial rights, while self-built versions are exempt. Full self-host subscription-feature parity remains unverified.",
+    "Screenity Pro is a separate hosted platform; do not imply its web editor/sharing/caption features are in the GPL extension.",
+    "Loom displayed price billing-toggle state requires verification before numeric pricing publication."
+  ]
+}

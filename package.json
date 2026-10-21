@@ -1,0 +1,26 @@
+{
+  "name": "osshunt-collections",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    "./schemas": "./lib/schemas.mjs",
+    "./loaders": "./lib/loaders.mjs"
+  },
+  "scripts": {
+    "build": "python3 scripts/assemble.py research/categories && node scripts/sync.mjs && node scripts/render.mjs",
+    "check": "node scripts/validate.mjs",
+    "test": "node --test test/*.test.mjs && python3 -m unittest discover -s test -p '*_test.py'"
+  },
+  "dependencies": {
+    "zod": "4.6.5",
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}

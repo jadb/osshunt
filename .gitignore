@@ -1,0 +1,7 @@
+node_modules/
+.astro/
+.DS_Store
+tracks/
+
+.local/
+__pycache__/

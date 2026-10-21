@@ -1,0 +1,310 @@
+{
+  "category": {
+    "id": "automation",
+    "name": "Workflow automation",
+    "description": "Connect business apps and automate multi-step processes with triggers, actions and orchestration.",
+    "audience": "Business operations, sales, marketing, IT and other teams connecting everyday applications.",
+    "audienceReach": "broad",
+    "audienceRationale": "Cross-department workflow integration; relevant across industries, but requires processes that benefit from automation.",
+    "audienceSources": [
+      "https://zapier.com/pricing",
+      "https://www.make.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "url": "https://zapier.com/pricing",
+      "categories": [
+        "automation"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": 19.99,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Professional advertised from USD19.99/month; yearly toggle, usage tiers apply. Free plan is 100 tasks and two-step Zaps.",
+        "source": "https://zapier.com/pricing"
+      }
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "url": "https://www.make.com/pricing",
+      "categories": [
+        "automation"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "monthly",
+        "note": "Usage credits verified; plan-price widget absent from retrieved page. Entry amount and billing basis need verification; monthly is provisional.",
+        "source": "https://www.make.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "node-red",
+      "name": "Node-RED",
+      "url": "https://nodered.org",
+      "categories": [
+        "automation"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/node-red/node-red",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Node-RED editor/runtime are Apache-2.0, self-hostable and commercially hostable. No paid core edition identified in official product documentation. FlowFuse hosting and enterprise fleet management are a separate platform, outside this record. Third-party nodes have independent licenses.",
+      "sources": {
+        "license": "https://github.com/node-red/node-red/blob/df0a87cce1a243e21a2e0eb0fdbdbb8c4732392f/LICENSE",
+        "features": "https://nodered.org/about/",
+        "hosting": "https://flowfuse.com/product/hub/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T12:16:00Z",
+        "lastRelease": "5.0.9",
+        "lastReleaseAt": "2026-10-21T10:29:19Z",
+        "commit": "df0a87cce1a243e21a2e0eb0fdbdbb8c4732392f",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/node-red/node-red",
+        "rsx": "Central rsx quick analysis available; overall 7.6/10. Signals only, not license proof."
+      }
+    },
+    {
+      "id": "activepieces",
+      "name": "Activepieces",
+      "url": "https://www.activepieces.com",
+      "categories": [
+        "automation"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/activepieces/activepieces",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "Commercial cloud/on-prem plans gate projects, shared global connections, Git releases and governance; exact boundaries of MIT Community Edition still need confirmation."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core outside packages/ee and server API ee paths is MIT; enterprise paths use a different license. Official installation distinguishes Community from EE; current pricing combines cloud/on-prem paid plans without an unambiguous MIT Community matrix. Do not impose hosted credit/BYO-key limits on MIT source without verification. Commercial use/hosting of MIT core permitted; enterprise embedding requires separate terms.",
+      "sources": {
+        "license": "https://github.com/activepieces/activepieces/blob/252ea9e53984357ad2edc6605d7cec89087c8f92/LICENSE",
+        "features": "https://www.activepieces.com/pricing",
+        "hosting": "https://www.activepieces.com/docs/install/options/docker-compose"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:08:38Z",
+        "lastRelease": "0.92.3",
+        "lastReleaseAt": "2026-10-12T18:43:34Z",
+        "commit": "252ea9e53984357ad2edc6605d7cec89087c8f92",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/activepieces/activepieces",
+        "rsx": "Central rsx quick analysis available; overall 5.7/10. Signals only, not license proof."
+      }
+    },
+    {
+      "id": "windmill",
+      "name": "Windmill (OSS source build)",
+      "url": "https://www.windmill.dev",
+      "categories": [
+        "automation"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/windmill-labs/windmill",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Kafka/NATS/SQS/cloud-event triggers and SQL Server/Oracle runtimes paid.",
+        "Content search, workspace error handlers, some Git/deployment features and enterprise governance paid.",
+        "Published free edition has workspace/user/group quotas; vendor Community Docker/release binaries include proprietary code with resale, hosting and modification restrictions."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Non-enterprise source build is AGPLv3 with Apache client/spec components; proprietary snippets excluded. Commercial hosting of AGPL build is possible subject to AGPL. Vendor Community binaries are separately restricted, not the OSS artifact identified here. Workflow features are paid, so C.",
+      "sources": {
+        "license": "https://github.com/windmill-labs/windmill/blob/01084cd405ed930b340c729a73f904287b2e353e/LICENSE",
+        "features": "https://www.windmill.dev/pricing",
+        "hosting": "https://www.windmill.dev/docs/advanced/self_host"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T20:42:23Z",
+        "lastRelease": "v1.846.1",
+        "lastReleaseAt": "2026-10-21T20:05:13Z",
+        "commit": "01084cd405ed930b340c729a73f904287b2e353e",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/windmill-labs/windmill",
+        "rsx": "Central rsx quick analysis available; overall 6.5/10. Signals only, not license proof."
+      }
+    },
+    {
+      "id": "n8n",
+      "name": "n8n (source available)",
+      "url": "https://n8n.io",
+      "categories": [
+        "automation"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/n8n-io/n8n",
+      "license": "LicenseRef-Sustainable-Use-1.0",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "S",
+      "locked": [
+        "Workflow and credential sharing, projects, custom variables, Git environments and SSO require paid plans.",
+        "Sustainable Use License restricts commercial redistribution/hosted resale; internal business use permitted."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Root core license restricts use and distribution by purpose, so not OSI OSS. EE files separately licensed; self-hosting does not change classification. Retained as a clearly marked source-available comparison, excluded from OSS recommendations.",
+      "sources": {
+        "license": "https://github.com/n8n-io/n8n/blob/58f11bf0cf5e384efa7f6818fc940ff5ed8200a9/LICENSE.md",
+        "features": "https://docs.n8n.io/deploy/host-n8n/community-edition-features.md",
+        "hosting": "https://n8n.io/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:28:25Z",
+        "lastRelease": "n8n@2.44.5",
+        "lastReleaseAt": "2026-10-21T07:26:46Z",
+        "commit": "58f11bf0cf5e384efa7f6818fc940ff5ed8200a9",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/n8n-io/n8n",
+        "rsx": "Central rsx quick analysis available; overall 5.6/10. Signals only, not license proof."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "zapier--node-red",
+      "from": "zapier",
+      "to": "node-red",
+      "fit": "different-approach",
+      "migrationNotes": "Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators.",
+      "sources": [
+        "https://nodered.org/about/",
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "id": "zapier--activepieces",
+      "from": "zapier",
+      "to": "activepieces",
+      "fit": "partial",
+      "migrationNotes": "Visual trigger/step workflow model overlaps; rebuild incumbent automations and verify every integration/action. MIT Community paid-feature boundaries unresolved; no automatic Zap/Make import verified.",
+      "sources": [
+        "https://www.activepieces.com/pricing",
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "id": "zapier--windmill",
+      "from": "zapier",
+      "to": "windmill",
+      "fit": "different-approach",
+      "migrationNotes": "Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid.",
+      "sources": [
+        "https://www.windmill.dev/pricing",
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "id": "zapier--n8n",
+      "from": "zapier",
+      "to": "n8n",
+      "fit": "partial",
+      "migrationNotes": "Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified.",
+      "sources": [
+        "https://docs.n8n.io/deploy/host-n8n/community-edition-features.md",
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "id": "make--node-red",
+      "from": "make",
+      "to": "node-red",
+      "fit": "different-approach",
+      "migrationNotes": "Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators.",
+      "sources": [
+        "https://nodered.org/about/",
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "id": "make--activepieces",
+      "from": "make",
+      "to": "activepieces",
+      "fit": "partial",
+      "migrationNotes": "Visual trigger/step workflow model overlaps; rebuild incumbent automations and verify every integration/action. MIT Community paid-feature boundaries unresolved; no automatic Zap/Make import verified.",
+      "sources": [
+        "https://www.activepieces.com/pricing",
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "id": "make--windmill",
+      "from": "make",
+      "to": "windmill",
+      "fit": "different-approach",
+      "migrationNotes": "Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid.",
+      "sources": [
+        "https://www.windmill.dev/pricing",
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "id": "make--n8n",
+      "from": "make",
+      "to": "n8n",
+      "fit": "partial",
+      "migrationNotes": "Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified.",
+      "sources": [
+        "https://docs.n8n.io/deploy/host-n8n/community-edition-features.md",
+        "https://www.make.com/pricing"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "n8n from OSS recommendations",
+      "reason": "Sustainable Use License is purpose-restricted, non-OSI. Source-available comparison retained with explicit S tier.",
+      "sources": [
+        "https://github.com/n8n-io/n8n/blob/58f11bf0cf5e384efa7f6818fc940ff5ed8200a9/LICENSE.md"
+      ]
+    },
+    {
+      "name": "Windmill distributed Community binary as unrestricted OSS",
+      "reason": "Includes proprietary/non-public features; license prohibits paid managed hosting, resale, modification or wrapping without agreement. Recommend AGPL source-build record with paid gates disclosed.",
+      "sources": [
+        "https://github.com/windmill-labs/windmill/blob/01084cd405ed930b340c729a73f904287b2e353e/LICENSE"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Activepieces current MIT Community feature boundary unresolved: exact source-backed edition matrix needed before assigning A/B/C. Current commercial on-prem free tier is not automatically identical to Community source.",
+    "Windmill documented free-edition quotas and features apply to vendor edition; source build may differ. Source/binary licensing distinction is explicit in pinned LICENSE.",
+    "Make entry price unavailable in retrieved pricing widget; monthly billing marked provisional, not a verified offer.",
+    "Zapier billing toggle suggests yearly advertised starting price; confirm checkout before cost comparisons.",
+    "No end-to-end deployment or incumbent workflow import tests performed; mappings are capability matches, not verified migration tools."
+  ]
+}

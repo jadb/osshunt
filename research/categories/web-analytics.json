@@ -1,0 +1,238 @@
+{
+  "category": {
+    "id": "web-analytics",
+    "name": "Web analytics",
+    "description": "Website traffic, acquisition, conversion and visitor behavior measurement.",
+    "audience": "Website owners and marketing, product and growth teams across industries.",
+    "audienceReach": "broad",
+    "audienceRationale": "Relevant to organizations with websites or digital products; specialist staff often operate the tools.",
+    "audienceSources": [
+      "https://marketingplatform.google.com/about/analytics/",
+      "https://plausible.io/self-hosted-web-analytics"
+    ]
+  },
+  "paid": [
+    {
+      "id": "google-analytics-360",
+      "name": "Google Analytics 360",
+      "url": "https://marketingplatform.google.com/about/analytics-360/",
+      "categories": [
+        "web-analytics"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Enterprise edition; contact sales. Standard Google Analytics is free and must not be presented as a paid subscription.",
+        "source": "https://marketingplatform.google.com/about/analytics-360/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "umami",
+      "name": "Umami",
+      "url": "https://umami.is",
+      "categories": [
+        "web-analytics"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/umami-software/umami",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Email reports available only in Cloud",
+        "Streaming API available only in Cloud"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT self-host core includes funnels, retention, session replay and heatmaps; official Cloud FAQ nevertheless reserves email reports and streaming API.",
+      "sources": {
+        "license": "https://github.com/umami-software/umami/blob/e92fdab99508a8ed05249f6c5f07e140deab79e1/LICENSE",
+        "features": "https://umami.is/pricing",
+        "hosting": "https://umami.is/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T23:27:19Z",
+        "lastRelease": "v3.4.0",
+        "lastReleaseAt": "2026-09-17T04:21:49Z",
+        "commit": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/umami-software/umami",
+        "rsx": "Shared rsx analyze evidence collected successfully; see rsx/umami-software__umami.json"
+      }
+    },
+    {
+      "id": "matomo",
+      "name": "Matomo",
+      "url": "https://matomo.org",
+      "categories": [
+        "web-analytics"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/matomo-org/matomo",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Funnels premium plugin",
+        "Custom Reports premium plugin",
+        "Heatmaps and Session Recording premium plugin",
+        "Users Flow and Form Analytics premium plugins",
+        "Cohorts and multi-channel attribution premium plugins"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPLv3 analytics core is free; standard ecommerce/event tracking included, but routine conversion and behavior analysis needs premium plugins.",
+      "sources": {
+        "license": "https://github.com/matomo-org/matomo/blob/48cb7b1a4c17319cb286f9dc2221a29b707166fb/LICENSE",
+        "features": "https://matomo.org/pricing/",
+        "hosting": "https://matomo.org/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:39:12Z",
+        "lastRelease": "5.14.1",
+        "lastReleaseAt": "2026-10-04T19:50:07Z",
+        "commit": "48cb7b1a4c17319cb286f9dc2221a29b707166fb",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/matomo-org/matomo",
+        "rsx": "Shared rsx analyze evidence collected successfully; see rsx/matomo-org__matomo.json"
+      }
+    },
+    {
+      "id": "plausible",
+      "name": "Plausible Community Edition",
+      "url": "https://plausible.io",
+      "categories": [
+        "web-analytics"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/plausible/analytics",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Marketing funnels unavailable in CE",
+        "User journeys unavailable in CE",
+        "Ecommerce revenue goals unavailable in CE",
+        "SSO and Sites API unavailable in CE"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL Community Edition; official comparison explicitly withholds everyday funnel, journey and revenue functions and releases CE twice yearly.",
+      "sources": {
+        "license": "https://github.com/plausible/analytics/blob/be3bc8ac721cc6a9721316ff3c8d23addce0ab8a/LICENSE.md",
+        "features": "https://plausible.io/self-hosted-web-analytics",
+        "hosting": "https://plausible.io/self-hosted-web-analytics"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:00:30Z",
+        "lastRelease": "v3.2.1",
+        "lastReleaseAt": "2026-05-15T09:15:56Z",
+        "commit": "be3bc8ac721cc6a9721316ff3c8d23addce0ab8a",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/plausible/analytics",
+        "rsx": "Shared rsx analyze evidence collected successfully; see rsx/plausible__analytics.json"
+      }
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog core",
+      "url": "https://posthog.com",
+      "categories": [
+        "web-analytics"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/PostHog/posthog",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Paid-plan features are Cloud-only per self-host documentation",
+        "Platform packages reserve high-frequency/real-time alerts and white labeling",
+        "Platform packages reserve SAML, RBAC and property access controls"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT applies outside ee/ and third-party exceptions; ee/ has a separate license. Self-host documentation limits deployment to free-plan functions; packages include daily alert and branding gates as well as enterprise controls. Officially unsupported self-host; no application release cadence guarantee.",
+      "sources": {
+        "license": "https://github.com/PostHog/posthog/blob/72bb72904c3c22aa744412855ec58bf525276d41/LICENSE",
+        "features": "https://posthog.com/platform-packages",
+        "hosting": "https://posthog.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:28:15Z",
+        "lastRelease": "posthog-cli/v0.18.12",
+        "lastReleaseAt": "2026-10-21T18:12:40Z",
+        "commit": "72bb72904c3c22aa744412855ec58bf525276d41",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/PostHog/posthog",
+        "rsx": "Shared rsx analyze evidence collected successfully; see rsx/PostHog__posthog.json"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "google-analytics-360--umami",
+      "from": "google-analytics-360",
+      "to": "umami",
+      "fit": "partial",
+      "migrationNotes": "Traffic and events require replacing tracking instrumentation; no feature flags or experimentation assignment engine. Anonymous cross-device users are separate unless identified.",
+      "sources": [
+        "https://umami.is/product-analytics",
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "id": "google-analytics-360--matomo",
+      "from": "google-analytics-360",
+      "to": "matomo",
+      "fit": "partial",
+      "migrationNotes": "Core covers traffic, events and ecommerce; configure own tracker and tags. Premium features require separately licensed plugins; Google advertising attribution/integrations are not assumed equivalent.",
+      "sources": [
+        "https://matomo.org/pricing/",
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "id": "google-analytics-360--plausible",
+      "from": "google-analytics-360",
+      "to": "plausible",
+      "fit": "partial",
+      "migrationNotes": "Simpler traffic and conversion reporting with different tracking/privacy model; CE excludes richer funnel, journey and ecommerce revenue analysis. Not an enterprise Google advertising stack replacement.",
+      "sources": [
+        "https://plausible.io/self-hosted-web-analytics",
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "id": "google-analytics-360--posthog",
+      "from": "google-analytics-360",
+      "to": "posthog",
+      "fit": "partial",
+      "migrationNotes": "Product-oriented analytics and instrumentation differ from Google Analytics 360. Self-host requires substantial infrastructure ownership; no supported self-host guarantees or paid-plan features.",
+      "sources": [
+        "https://posthog.com/docs/self-host",
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "No numeric public Analytics 360 entry price verified; quote required. Standard GA4 is free.",
+    "PostHog ee/LICENSE retrieval failed (web cache miss; raw host unavailable from shell). Root license explicitly excludes ee/; MIT designation applies only to core. GitHub latest release is a CLI tag, not a supported self-host application release."
+  ]
+}

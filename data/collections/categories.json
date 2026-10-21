@@ -1,0 +1,340 @@
+[
+  {
+    "id": "accounting-erp",
+    "name": "Accounting and ERP",
+    "description": "Invoicing, bookkeeping and connected business operations.",
+    "parent": null,
+    "audience": "Business owners, finance teams and bookkeepers across industries",
+    "audienceReach": "broad",
+    "audienceRank": 12,
+    "audienceRationale": "Financial record keeping spans business sizes and sectors; finance users operate software directly.",
+    "audienceSources": [
+      "https://quickbooks.intuit.com/pricing/",
+      "https://www.xero.com/us/pricing-plans/"
+    ]
+  },
+  {
+    "id": "automation",
+    "name": "Workflow automation",
+    "description": "Connect business apps and automate multi-step processes with triggers, actions and orchestration.",
+    "parent": null,
+    "audience": "Business operations, sales, marketing, IT and other teams connecting everyday applications.",
+    "audienceReach": "broad",
+    "audienceRank": 17,
+    "audienceRationale": "Cross-department workflow integration; relevant across industries, but requires processes that benefit from automation.",
+    "audienceSources": [
+      "https://zapier.com/pricing",
+      "https://www.make.com/pricing"
+    ]
+  },
+  {
+    "id": "crm",
+    "name": "CRM",
+    "description": "Manage contacts, sales opportunities, pipelines, and customer relationships.",
+    "parent": null,
+    "audience": "Sales teams, account managers, founders, and customer-facing staff across industries.",
+    "audienceReach": "broad",
+    "audienceRank": 13,
+    "audienceRationale": "Cross-industry sales and customer operations, from small businesses to enterprise teams; less universal than email or file storage.",
+    "audienceSources": [
+      "https://www.hubspot.com/pricing/sales",
+      "https://www.salesforce.com/sales/pricing/"
+    ]
+  },
+  {
+    "id": "docs-wiki",
+    "name": "Docs and wiki",
+    "description": "Team documentation, internal wikis and shared knowledge workspaces.",
+    "parent": null,
+    "audience": "Employees and teams documenting decisions, procedures, project plans and institutional knowledge.",
+    "audienceReach": "broad",
+    "audienceRank": 5,
+    "audienceRationale": "Documentation spans business functions; adoption does not require a specialist department. Qualitative potential reach, not a headcount estimate.",
+    "audienceSources": [
+      "https://www.notion.com/pricing",
+      "https://www.atlassian.com/en/software/confluence/pricing"
+    ]
+  },
+  {
+    "id": "e-signature",
+    "name": "E-signature",
+    "description": "Send business documents for electronic signature and track completion.",
+    "parent": null,
+    "audience": "Businesses sending contracts, offers, purchase agreements, waivers, and approvals.",
+    "audienceReach": "broad",
+    "audienceRank": 10,
+    "audienceRationale": "Agreement workflows span sales, HR, procurement, operations, and customer onboarding; use varies with document volume.",
+    "audienceSources": [
+      "https://www.docusign.com/products/electronic-signature",
+      "https://docs.opensignlabs.com/docs/API-docs/v1.2/intro/"
+    ]
+  },
+  {
+    "id": "email-marketing",
+    "name": "Email marketing",
+    "description": "Newsletters, subscriber segmentation, campaigns and marketing automation.",
+    "parent": null,
+    "audience": "Businesses, charities and publishers communicating with prospects and customers.",
+    "audienceReach": "broad",
+    "audienceRank": 15,
+    "audienceRationale": "Customer communication spans industries and organization sizes, although primarily used by marketing and business owners.",
+    "audienceSources": [
+      "https://mailchimp.com/pricing/marketing/",
+      "https://listmonk.app/",
+      "https://mautic.org/about/"
+    ]
+  },
+  {
+    "id": "forms-surveys",
+    "name": "Forms and surveys",
+    "description": "Collect leads, feedback, questionnaires, polls and research responses.",
+    "parent": null,
+    "audience": "Marketing, customer success, HR, operations, product and research teams across business sizes.",
+    "audienceReach": "broad",
+    "audienceRank": 8,
+    "audienceRationale": "Forms and feedback span multiple business functions and industries; adoption is broad but not required by every employee.",
+    "audienceSources": [
+      "https://www.typeform.com/pricing",
+      "https://www.limesurvey.org/pricing"
+    ]
+  },
+  {
+    "id": "hosting-backend",
+    "name": "Application hosting and backends",
+    "description": "Deployment platforms and backend services for business web and mobile applications.",
+    "parent": null,
+    "audience": "Software teams and businesses building their own applications",
+    "audienceReach": "functional",
+    "audienceRank": 22,
+    "audienceRationale": "Relevant across industries but directly used by software delivery teams rather than every employee.",
+    "audienceSources": [
+      "https://www.heroku.com/",
+      "https://firebase.google.com/"
+    ]
+  },
+  {
+    "id": "hr",
+    "name": "Human resources",
+    "description": "Employee records, leave, recruiting, onboarding, attendance, performance and payroll administration.",
+    "parent": null,
+    "audience": "Employers, HR teams, managers and employee self-service users.",
+    "audienceReach": "broad",
+    "audienceRank": 20,
+    "audienceRationale": "Employee administration spans industries and company sizes; HR staff manage the system while employees use leave and attendance workflows.",
+    "audienceSources": [
+      "https://docs.frappe.io/hr/introduction",
+      "https://www.bamboohr.com/pricing/"
+    ]
+  },
+  {
+    "id": "internal-tools",
+    "name": "Internal tools and low-code apps",
+    "description": "Build admin panels, operational apps and workflows over databases and APIs.",
+    "parent": null,
+    "audience": "Operations and IT teams, developers and business teams building bespoke internal software",
+    "audienceReach": "functional",
+    "audienceRank": 24,
+    "audienceRationale": "Cross-industry use, but direct buyers are teams creating custom internal software rather than every employee.",
+    "audienceSources": [
+      "https://tooljet.com/pricing",
+      "https://www.appsmith.com/pricing"
+    ]
+  },
+  {
+    "id": "kanban",
+    "name": "Kanban",
+    "description": "Visual boards for team tasks and workflow stages.",
+    "parent": null,
+    "audience": "Teams across business functions managing shared tasks.",
+    "audienceReach": "broad",
+    "audienceRank": 7,
+    "audienceRationale": "Trello explicitly targets marketing, product, engineering, design, startups and remote teams; useful across functions without requiring a specialist role.",
+    "audienceSources": [
+      "https://trello.com/pricing"
+    ]
+  },
+  {
+    "id": "login-sso",
+    "name": "Login and single sign-on",
+    "description": "Workforce SSO, application/customer identity and web access authentication; distinct use cases with partial overlap.",
+    "parent": null,
+    "audience": "IT/security teams managing employee application access and software teams implementing customer login.",
+    "audienceReach": "broad",
+    "audienceRank": 21,
+    "audienceRationale": "Employee access spans industries; customer IAM also serves businesses operating applications. Deployment requires identity and security expertise.",
+    "audienceSources": [
+      "https://www.okta.com/pricing/",
+      "https://auth0.com/pricing"
+    ]
+  },
+  {
+    "id": "monitoring",
+    "name": "Monitoring and observability",
+    "description": "Infrastructure dashboards, website uptime, and application error tracking; mappings scoped by capability.",
+    "parent": null,
+    "audience": "Engineering, IT operations, site reliability and website owners",
+    "audienceReach": "specialist",
+    "audienceRank": 23,
+    "audienceRationale": "Relevant to organizations operating software or websites; specialized users manage it even where business impact is broad.",
+    "audienceSources": [
+      "https://www.datadoghq.com/pricing/",
+      "https://www.pingdom.com/pricing/"
+    ]
+  },
+  {
+    "id": "office-files",
+    "name": "Office suite and files",
+    "description": "Business document editing, office collaboration and file sync/share; distinguish integrated hubs from file platforms and editor components.",
+    "parent": null,
+    "audience": "Business teams across functions creating, storing and collaborating on documents.",
+    "audienceReach": "universal",
+    "audienceRank": 1,
+    "audienceRationale": "Documents, spreadsheets and shared files recur across most office-based businesses; broad suite and storage incumbents address small teams through enterprises. This is qualitative reach, not a measured market-size ranking.",
+    "audienceSources": [
+      "https://workspace.google.com/pricing",
+      "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+      "https://www.dropbox.com/plans"
+    ]
+  },
+  {
+    "id": "passwords",
+    "name": "Password managers",
+    "description": "Store, share and administer business credentials.",
+    "parent": null,
+    "audience": "Employees and organizations using online accounts",
+    "audienceReach": "universal",
+    "audienceRank": 2,
+    "audienceRationale": "Credentials and controlled sharing apply across industries and company sizes; qualitative reach, not a market-size estimate.",
+    "audienceSources": [
+      "https://1password.com/pricing/business",
+      "https://bitwarden.com/pricing/business/"
+    ]
+  },
+  {
+    "id": "project-management",
+    "name": "Project management",
+    "description": "Plan projects, track work and coordinate delivery across teams.",
+    "parent": null,
+    "audience": "Business teams, project managers and product/development teams",
+    "audienceReach": "broad",
+    "audienceRank": 6,
+    "audienceRationale": "Cross-functional work coordination spans operations, marketing, services and technical teams; specialist agile use cases are a subset.",
+    "audienceSources": [
+      "https://asana.com/pricing",
+      "https://www.openproject.org/pricing/"
+    ]
+  },
+  {
+    "id": "scheduling",
+    "name": "Appointment scheduling",
+    "description": "Booking links, availability, appointments and service-provider scheduling.",
+    "parent": null,
+    "audience": "Sales, recruiting, customer-facing teams and service businesses.",
+    "audienceReach": "broad",
+    "audienceRank": 9,
+    "audienceRationale": "Cross-industry need for customer and colleague bookings, especially customer-facing teams; less universal than office communication.",
+    "audienceSources": [
+      "https://calendly.com/pricing",
+      "https://easyappointments.org/"
+    ]
+  },
+  {
+    "id": "screen-recording",
+    "name": "Screen recording and asynchronous video",
+    "description": "Record demonstrations, tutorials, feedback and asynchronous team video.",
+    "parent": null,
+    "audience": "Knowledge workers, support, sales, product and training teams",
+    "audienceReach": "broad",
+    "audienceRank": 19,
+    "audienceRationale": "Cross-functional business communication and demonstrations, with adoption dependent on video workflows.",
+    "audienceSources": [
+      "https://www.loom.com/pricing",
+      "https://github.com/alyssaxuu/screenity"
+    ]
+  },
+  {
+    "id": "spreadsheet-database",
+    "name": "Spreadsheet databases",
+    "description": "Relational business data with spreadsheet editing, forms and configurable views.",
+    "parent": null,
+    "audience": "Operations, marketing, sales, HR, finance and project teams building shared business trackers and lightweight internal apps.",
+    "audienceReach": "broad",
+    "audienceRank": 16,
+    "audienceRationale": "Cross-functional business records and workflows apply across many industries; requires structured-data collaboration rather than every employee role.",
+    "audienceSources": [
+      "https://airtable.com/pricing",
+      "https://baserow.io/pricing"
+    ]
+  },
+  {
+    "id": "support-helpdesk",
+    "name": "Support and helpdesk",
+    "description": "Customer support ticketing, shared inboxes, chat and self-service.",
+    "parent": null,
+    "audience": "Businesses handling customer questions and service requests; dedicated support teams.",
+    "audienceReach": "broad",
+    "audienceRank": 14,
+    "audienceRationale": "Support crosses retail, software and services and spans small businesses through enterprises; dedicated tooling becomes relevant once shared inbox workflows become insufficient.",
+    "audienceSources": [
+      "https://www.zendesk.com/pricing/",
+      "https://www.intercom.com/pricing",
+      "https://zammad.com/en/pricing"
+    ]
+  },
+  {
+    "id": "team-chat",
+    "name": "Team chat",
+    "description": "Persistent team messaging, channels, direct messages, and collaborative conversations.",
+    "parent": null,
+    "audience": "Employees and external collaborators across business functions and industries.",
+    "audienceReach": "universal",
+    "audienceRank": 3,
+    "audienceRationale": "A cross-functional communication need shared by distributed and office-based teams; reach ranking is qualitative, not a headcount estimate.",
+    "audienceSources": [
+      "https://slack.com/pricing",
+      "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+    ]
+  },
+  {
+    "id": "video-calls",
+    "name": "Video calls",
+    "description": "Browser and app video meetings, screen sharing, and virtual classrooms.",
+    "parent": null,
+    "audience": "Businesses holding internal meetings, customer calls, and remote training.",
+    "audienceReach": "universal",
+    "audienceRank": 4,
+    "audienceRationale": "Meeting tools serve staff across functions and industries; classroom software is a narrower training use case.",
+    "audienceSources": [
+      "https://www.zoom.com/en/products/virtual-meetings/",
+      "https://workspace.google.com/pricing"
+    ]
+  },
+  {
+    "id": "web-analytics",
+    "name": "Web analytics",
+    "description": "Website traffic, acquisition, conversion and visitor behavior measurement.",
+    "parent": null,
+    "audience": "Website owners and marketing, product and growth teams across industries.",
+    "audienceReach": "broad",
+    "audienceRank": 18,
+    "audienceRationale": "Relevant to organizations with websites or digital products; specialist staff often operate the tools.",
+    "audienceSources": [
+      "https://marketingplatform.google.com/about/analytics/",
+      "https://plausible.io/self-hosted-web-analytics"
+    ]
+  },
+  {
+    "id": "whiteboard-design",
+    "name": "Whiteboards and UI design",
+    "description": "Collaborative visual thinking, sketching and interface design; whiteboard and UI-design mappings are distinct.",
+    "parent": null,
+    "audience": "Cross-functional workshop participants, product teams, designers and engineers.",
+    "audienceReach": "broad",
+    "audienceRank": 11,
+    "audienceRationale": "Whiteboarding spans operations, marketing and product collaboration; professional interface design has a narrower designer/developer audience.",
+    "audienceSources": [
+      "https://miro.com/pricing/",
+      "https://www.figma.com/pricing/"
+    ]
+  }
+]

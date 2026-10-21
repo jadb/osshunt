@@ -1,0 +1,19 @@
+{
+  "package": "ajv-formats",
+  "version": "3.0.1",
+  "publishedAt": "2024-03-30T11:30:26.728Z",
+  "license": {
+    "spdx": "MIT",
+    "commercial_compatible": true,
+    "copyleft": false,
+    "unknown": false
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "repository": "https://github.com/ajv-validator/ajv-formats",
+  "overallScore": 5.1,
+  "observedAt": "2026-10-21T21:26:27.423711Z"
+}

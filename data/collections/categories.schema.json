@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "Stable category identifier"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "parent": {
+        "default": null,
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "audience": {
+        "type": "string",
+        "minLength": 1
+      },
+      "audienceReach": {
+        "type": "string",
+        "enum": [
+          "universal",
+          "broad",
+          "functional",
+          "specialist"
+        ]
+      },
+      "audienceRank": {
+        "type": "integer",
+        "exclusiveMinimum": 0,
+        "maximum": 9007199254740991,
+        "description": "Editorial reach estimate; not measured market share"
+      },
+      "audienceRationale": {
+        "type": "string",
+        "minLength": 1
+      },
+      "audienceSources": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "description",
+      "audience",
+      "audienceReach",
+      "audienceRank",
+      "audienceRationale",
+      "audienceSources"
+    ],
+    "additionalProperties": false,
+    "title": "categories",
+    "description": "Business software categories, with audience reach estimates",
+    "x-key": "id",
+    "x-key-case": "insensitive",
+    "x-source": "research/categories/*.json"
+  }
+}

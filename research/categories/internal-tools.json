@@ -1,0 +1,192 @@
+{
+  "category": {
+    "id": "internal-tools",
+    "name": "Internal tools and low-code apps",
+    "description": "Build admin panels, operational apps and workflows over databases and APIs.",
+    "audience": "Operations and IT teams, developers and business teams building bespoke internal software",
+    "audienceReach": "functional",
+    "audienceRationale": "Cross-industry use, but direct buyers are teams creating custom internal software rather than every employee.",
+    "audienceSources": [
+      "https://tooljet.com/pricing",
+      "https://www.appsmith.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "retool",
+      "name": "Retool",
+      "url": "https://retool.com",
+      "categories": [
+        "internal-tools"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 10,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Team: $10/builder/month and $5/internal user/month, billed annually; free plan for up to five users. Usage and higher tiers differ.",
+        "source": "https://retool.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "appsmith",
+      "name": "Appsmith",
+      "url": "https://www.appsmith.com",
+      "categories": [
+        "internal-tools"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/appsmithorg/appsmith",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Workflows and reusable packages",
+        "Premium integrations",
+        "More than three Git repositories and custom environments",
+        "Custom access roles, audit logs, SAML/OIDC SSO and SCIM"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Apache-2.0 Community core; commercial editions separately gate workflow building and reusable packages, so C rather than enterprise-only B.",
+      "sources": {
+        "license": "https://github.com/appsmithorg/appsmith/blob/67bcbe12c962a5c5feef9793ad87d66c331b8d59/LICENSE",
+        "features": "https://www.appsmith.com/pricing",
+        "hosting": "https://www.appsmith.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:22:59Z",
+        "lastRelease": "v2.5.1",
+        "lastReleaseAt": "2026-10-21T02:29:46Z",
+        "commit": "67bcbe12c962a5c5feef9793ad87d66c331b8d59",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/appsmithorg/appsmith",
+        "rsx": "Central analysis available; overall 6/10. Automated dependency findings not independently validated; not a security endorsement."
+      }
+    },
+    {
+      "id": "tooljet",
+      "name": "ToolJet",
+      "url": "https://tooljet.com",
+      "categories": [
+        "internal-tools"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/ToolJet/ToolJet",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Self-host free plan: two builders, up to 50 end users, up to ten apps",
+        "Version control, Git sync, custom styling, themes and modules",
+        "Scheduled workflow triggers",
+        "Custom groups, audit logs, SSO and air-gapped deployment"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL Community core, not a claim about commercial Enterprise code. Official self-host pricing gates ordinary development and deployment functions, therefore C. Pricing-plan caps may depend on distributed edition; source-build entitlements need confirmation.",
+      "sources": {
+        "license": "https://github.com/ToolJet/ToolJet/blob/a743e91bf48b9b6377aca69699b39698e06fb5f3/LICENSE",
+        "features": "https://tooljet.com/pricing",
+        "hosting": "https://tooljet.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T20:19:45Z",
+        "lastRelease": "v3.20.247-lts",
+        "lastReleaseAt": "2026-10-21T14:25:43Z",
+        "commit": "a743e91bf48b9b6377aca69699b39698e06fb5f3",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/ToolJet/ToolJet",
+        "rsx": "Central analysis available; overall 6.5/10. Automated dependency findings not independently validated; not a security endorsement."
+      }
+    },
+    {
+      "id": "budibase",
+      "name": "Budibase",
+      "url": "https://budibase.com",
+      "categories": [
+        "internal-tools"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/Budibase/budibase",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Open source limited to one workspace",
+        "Built-in backups and restore, environment variables and custom branding",
+        "Enforced SSO, user groups, Active Directory/SCIM and audit logs"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPLv3 core and MPL-2.0 generated-app packages; paid packages/pro uses non-OSI BSL. Unlimited OSS apps/users/actions, but one workspace plus paid backup/environment capabilities warrant C.",
+      "sources": {
+        "license": "https://github.com/Budibase/budibase/blob/90aa490bb1692934be473907b77077d94aef6fc1/LICENSE",
+        "features": "https://budibase.com/pricing/",
+        "hosting": "https://budibase.com/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T15:20:53Z",
+        "lastRelease": "v3.50.0",
+        "lastReleaseAt": "2026-10-19T08:09:46Z",
+        "commit": "90aa490bb1692934be473907b77077d94aef6fc1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/Budibase/budibase",
+        "rsx": "Central analysis available; overall 5.5/10. Automated dependency findings not independently validated; not a security endorsement."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "retool--appsmith",
+      "from": "retool",
+      "to": "appsmith",
+      "fit": "partial",
+      "migrationNotes": "Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import.",
+      "sources": [
+        "https://www.appsmith.com/pricing",
+        "https://retool.com/pricing"
+      ]
+    },
+    {
+      "id": "retool--tooljet",
+      "from": "retool",
+      "to": "tooljet",
+      "fit": "partial",
+      "migrationNotes": "Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import.",
+      "sources": [
+        "https://tooljet.com/pricing",
+        "https://retool.com/pricing"
+      ]
+    },
+    {
+      "id": "retool--budibase",
+      "from": "retool",
+      "to": "budibase",
+      "fit": "partial",
+      "migrationNotes": "Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import.",
+      "sources": [
+        "https://budibase.com/pricing/",
+        "https://retool.com/pricing"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "No candidate qualifies as tier A: all three have material paid feature gates.",
+    "No supported Retool import/migration path verified; alternatives require rebuilding app UI, queries, permissions and workflows.",
+    "ToolJet free self-host plan limits are vendor-packaged edition limits; applicability to a standalone AGPL source build is not established.",
+    "Budibase root licensing guidelines identify BSL paid packages; individual pro license fetch failed, so no broader rights inferred."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "categories": 24,
+  "products": 125,
+  "paid": 43,
+  "eligibleOss": 66,
+  "labelledSourceAvailableOrUnresolved": 16,
+  "mappings": 122,
+  "categoryAudits": 24,
+  "suggestedNextCategories": 24,
+  "contractTests": 17,
+  "mutationGuards": 6,
+  "deterministicSnapshots": {
+    "alternatives.json": "e0c59165084ea4dff43f655c766ed178ac1bca5e79a0c33f9dacf24d8f053a3f",
+    "alternatives.schema.json": "e96d16748223d1b42ae129ef77280a59b9d673f6020eecb28fd29caf474f61fe",
+    "categories.json": "d4cc928a5d2cfcd663d689e1761c63a395a8d3a217711b4617fcb5c8e9c10245",
+    "categories.schema.json": "4465e27d9a22df038e78fc2182cbd69206e4fbad15e55c15cdc80be09089a70b",
+    "products.json": "976118699ec095e123dc734ec058eb31ffe8863f3ffb8fc451329157394d6a71",
+    "products.schema.json": "ea7edd9b16a67429005cdbfe93a02a6b18173d5bbb5879e0475e010b45a1f3f7"
+  }
+}

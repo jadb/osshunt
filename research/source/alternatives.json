@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "1password--bitwarden",
+    "from": "1password",
+    "to": "bitwarden",
+    "fit": "partial",
+    "migrationNotes": "Official 1Password import documented. Review shared-vault permissions, attachments, passkeys and paid organization requirements before replacing business administration.",
+    "sources": [
+      "https://bitwarden.com/help/import-from-1password/",
+      "https://bitwarden.com/pricing/business/"
+    ]
+  },
+  {
+    "id": "1password--passbolt",
+    "from": "1password",
+    "to": "passbolt",
+    "fit": "different-approach",
+    "migrationNotes": "Team password sharing and browser workflows overlap; rebuild access groups and evaluate CE versus Pro needs. Direct 1Password import parity was not established.",
+    "sources": [
+      "https://www.passbolt.com/pricing/pro"
+    ]
+  },
+  {
+    "id": "1password--vaultwarden",
+    "from": "1password",
+    "to": "vaultwarden",
+    "fit": "partial",
+    "migrationNotes": "Use Bitwarden-compatible clients with this unofficial server. Verify import and administration requirements on a test instance; upstream API and client compatibility may vary.",
+    "sources": [
+      "https://github.com/dani-garcia/vaultwarden",
+      "https://github.com/dani-garcia/vaultwarden/wiki"
+    ]
+  },
+  {
+    "id": "airtable--baserow",
+    "from": "airtable",
+    "to": "baserow",
+    "fit": "partial",
+    "migrationNotes": "Official importer transfers tables, records, relationships, attachments and grid views. Automations, interfaces, integrations and permissions need rebuilding; comments and revision history do not transfer. Free edition lacks several workflow views and export formats.",
+    "sources": [
+      "https://baserow.io/user-docs/import-airtable-to-baserow",
+      "https://baserow.io/user-docs/pricing-plans"
+    ]
+  },
+  {
+    "id": "airtable--grist",
+    "from": "airtable",
+    "to": "grist",
+    "fit": "different-approach",
+    "migrationNotes": "Relational spreadsheets and Python formulas suit business trackers. Plan formula, interface and automation rebuilding; commercial self-hosted features remain gated.",
+    "sources": [
+      "https://www.getgrist.com/pricing/"
+    ]
+  },
+  {
+    "id": "asana--huly",
+    "to": "huly",
+    "fit": "partial",
+    "migrationNotes": "Projects, action items and team planning overlap. Validate portfolio/reporting and integration requirements; migration requires field/workflow mapping.",
+    "sources": [
+      "https://docs.huly.io/getting-started/introduction-huly/"
+    ],
+    "from": "asana"
+  },
+  {
+    "id": "asana--openproject",
+    "to": "openproject",
+    "fit": "partial",
+    "migrationNotes": "Schedules, tasks and project planning overlap; model projects as work packages. Check advanced planning and paid Enterprise add-ons.",
+    "sources": [
+      "https://www.openproject.org/pricing/"
+    ],
+    "from": "asana"
+  },
+  {
+    "id": "asana--plane",
+    "to": "plane",
+    "fit": "partial",
+    "migrationNotes": "Project/task tracking overlaps; evaluate portfolio/reporting and workflow gaps. No drop-in Asana migration claimed.",
+    "sources": [
+      "https://plane.so/blog/plane-and-its-editions"
+    ],
+    "from": "asana"
+  },
+  {
+    "id": "asana--taiga",
+    "to": "taiga",
+    "fit": "partial",
+    "migrationNotes": "Tasks and Kanban overlap; agile-first workflow differs from broad work-management portfolios. Plan export transformation; no native Asana importer verified.",
+    "sources": [
+      "https://taiga.io/"
+    ],
+    "from": "asana"
+  },
+  {
+    "id": "auth0--authentik",
+    "from": "auth0",
+    "to": "authentik",
+    "fit": "partial",
+    "migrationNotes": "Supports SAML/OIDC and directory/proxy protocols. Recreate app integrations, policy flows and user stores. Some workplace provisioning/security integrations require Enterprise.",
+    "sources": [
+      "https://goauthentik.io/pricing/"
+    ]
+  },
+  {
+    "id": "auth0--keycloak",
+    "from": "auth0",
+    "to": "keycloak",
+    "fit": "partial",
+    "migrationNotes": "Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately.",
+    "sources": [
+      "https://www.keycloak.org/"
+    ]
+  },
+  {
+    "id": "auth0--zitadel",
+    "from": "auth0",
+    "to": "zitadel",
+    "fit": "partial",
+    "migrationNotes": "Customer and B2B identity infrastructure with managed or self-hosted deployment. Adapt application issuer/client settings and migrate users, organizations and policies; not an SDK-compatible swap.",
+    "sources": [
+      "https://zitadel.com/docs"
+    ]
+  },
+  {
+    "id": "bamboohr--frappe-hr",
+    "from": "bamboohr",
+    "to": "frappe-hr",
+    "fit": "partial",
+    "migrationNotes": "Broad HR records, recruiting, onboarding, leave, performance and configurable payroll overlap. Rebuild workflows and employee data mapping; validate jurisdiction-specific tax filing, benefit carriers and payroll services separately. No automatic BambooHR migration established.",
+    "sources": [
+      "https://docs.frappe.io/hr/introduction",
+      "https://www.bamboohr.com/pricing/"
+    ]
+  },
+  {
+    "id": "bamboohr--orangehrm-starter",
+    "from": "bamboohr",
+    "to": "orangehrm-starter",
+    "fit": "partial",
+    "migrationNotes": "Fits employee records, leave approvals, ATS and timesheets. Starter lacks Advanced onboarding workflows, automated PTO accrual and payroll integrations. Rebuild policies and map employee records; not a payroll-service replacement.",
+    "sources": [
+      "https://orangehrm.com/orangehrm-starter-open-source-software",
+      "https://www.bamboohr.com/pricing/"
+    ]
+  },
+  {
+    "id": "cal-com--cal-diy",
+    "from": "cal-com",
+    "to": "cal-diy",
+    "fit": "partial",
+    "migrationNotes": "Individual scheduling with calendar/video integrations, paid events and embeds. Team scheduling, workflows and routing excluded; vendor recommends personal/non-production use. Reconfigure credentials and booking pages; native migration parity unverified.",
+    "sources": [
+      "https://www.cal.diy/"
+    ]
+  },
+  {
+    "id": "cal-com--easyappointments",
+    "from": "cal-com",
+    "to": "easyappointments",
+    "fit": "partial",
+    "migrationNotes": "Service/provider appointment booking, group sessions, Google/CalDAV sync and API/webhooks. Rebuild booking links, availability and integrations; no verified native import or equivalent sales routing/round-robin claim.",
+    "sources": [
+      "https://easyappointments.org/features/"
+    ]
+  },
+  {
+    "id": "calendly--cal-diy",
+    "from": "calendly",
+    "to": "cal-diy",
+    "fit": "partial",
+    "migrationNotes": "Individual scheduling with calendar/video integrations, paid events and embeds. Team scheduling, workflows and routing excluded; vendor recommends personal/non-production use. Reconfigure credentials and booking pages; native migration parity unverified.",
+    "sources": [
+      "https://www.cal.diy/"
+    ]
+  },
+  {
+    "id": "calendly--easyappointments",
+    "from": "calendly",
+    "to": "easyappointments",
+    "fit": "partial",
+    "migrationNotes": "Service/provider appointment booking, group sessions, Google/CalDAV sync and API/webhooks. Rebuild booking links, availability and integrations; no verified native import or equivalent sales routing/round-robin claim.",
+    "sources": [
+      "https://easyappointments.org/features/"
+    ]
+  },
+  {
+    "id": "confluence--affine",
+    "from": "confluence",
+    "to": "affine",
+    "fit": "different-approach",
+    "migrationNotes": "Docs/whiteboards for shared knowledge; verify EE/CE license scope and procurement before production. Migration compatibility not independently tested.",
+    "sources": [
+      "https://affine.pro/about-us",
+      "https://affine.pro/enterprise"
+    ]
+  },
+  {
+    "id": "confluence--bookstack",
+    "from": "confluence",
+    "to": "bookstack",
+    "fit": "partial",
+    "migrationNotes": "Documentation/wiki use case covered with book/chapter/page hierarchy, roles, API and export options; validate Confluence macros/integrations and rebuild unsupported content.",
+    "sources": [
+      "https://www.bookstackapp.com/about/confluence-alternative/",
+      "https://www.bookstackapp.com/"
+    ]
+  },
+  {
+    "id": "confluence--docmost",
+    "from": "confluence",
+    "to": "docmost",
+    "fit": "partial",
+    "migrationNotes": "Confluence HTML space ZIP importer is Business-gated; docs claim formatting, hierarchy, internal links, images/attachments and Draw.io diagrams preserved. Test macros and integrations separately.",
+    "sources": [
+      "https://docmost.com/docs/user-guide/import-export",
+      "https://docmost.com/pricing"
+    ]
+  },
+  {
+    "id": "confluence--outline",
+    "from": "confluence",
+    "to": "outline",
+    "fit": "partial",
+    "migrationNotes": "Knowledge-base replacement candidate under BSL rather than OSS; Confluence importer listed among on-premise features but exact paid-tier placement not verified. API export capabilities documented.",
+    "sources": [
+      "https://www.getoutline.com/pricing",
+      "https://www.getoutline.com/developers"
+    ]
+  },
+  {
+    "id": "datadog--grafana",
+    "from": "datadog",
+    "to": "grafana",
+    "fit": "partial",
+    "migrationNotes": "Replaces dashboarding/alerting workflow when paired with separately operated telemetry stores and collectors. Grafana alone is not a full Datadog APM/logs/security replacement; dashboards and alert rules require rebuilding.",
+    "sources": [
+      "https://grafana.com/oss/grafana/",
+      "https://www.datadoghq.com/pricing/"
+    ]
+  },
+  {
+    "id": "docusign--documenso",
+    "from": "docusign",
+    "to": "documenso",
+    "fit": "partial",
+    "migrationNotes": "PDF signing, templates and API suit basic agreement flows. Recreate templates and integrations; enterprise SSO and embedded editor needs require edition review.",
+    "sources": [
+      "https://docs.documenso.com/docs/policies/community-edition",
+      "https://docs.documenso.com/docs/self-hosting"
+    ]
+  },
+  {
+    "id": "docusign--docuseal",
+    "from": "docusign",
+    "to": "docuseal",
+    "fit": "partial",
+    "migrationNotes": "Basic PDF document signing and templates; official pricing offers DocuSign template import with Pro. Reminders, bulk sends, API/embedding require Pro; no archive migration verified.",
+    "sources": [
+      "https://www.docuseal.com/pricing"
+    ]
+  },
+  {
+    "id": "docusign--opensign",
+    "from": "docusign",
+    "to": "opensign",
+    "fit": "partial",
+    "migrationNotes": "PDF signing, templates, signing order and completion tracking fit basic workflows. Free self-hosted API token generation unavailable; paid integration and premium-credit workflows need separate evaluation.",
+    "sources": [
+      "https://github.com/OpenSignLabs/OpenSign",
+      "https://docs.opensignlabs.com/docs/help/Settings/APIToken/"
+    ]
+  },
+  {
+    "id": "dropbox--nextcloud",
+    "from": "dropbox",
+    "to": "nextcloud",
+    "fit": "partial",
+    "migrationNotes": "Self-hosted file sync/share alternative with desktop/mobile clients, sharing and versioning; own server/storage/backup operations required. Dropbox signatures, Replay, AI connectors and complex team policies need independent replacement or evaluation.",
+    "sources": [
+      "https://nextcloud.com/",
+      "https://nextcloud.com/enterprises/",
+      "https://www.dropbox.com/plans"
+    ]
+  },
+  {
+    "id": "dropbox--owncloud-ocis",
+    "from": "dropbox",
+    "to": "owncloud-ocis",
+    "fit": "partial",
+    "migrationNotes": "File sync/share with team-owned spaces, desktop/mobile clients and WebDAV. Recreate sharing/permissions and evaluate editor integrations; does not cover all Dropbox PDF/signing/video/AI bundles. Separate source rights from vendor stable binary EULA.",
+    "sources": [
+      "https://github.com/owncloud/ocis",
+      "https://owncloud.com/features/spaces/"
+    ]
+  },
+  {
+    "id": "dropbox--seafile",
+    "from": "dropbox",
+    "to": "seafile",
+    "fit": "partial",
+    "migrationNotes": "File sync/share and library versioning fit; libraries replace Dropbox folder model, so permissions, shares and links need recreation/testing. Pro is needed for full-text search and granular folder permissions; Dropbox bundled signatures/video review not covered.",
+    "sources": [
+      "https://github.com/haiwen/seafile",
+      "https://www.seafile.com/en/product/seafile_on_premise/"
+    ]
+  },
+  {
+    "id": "figjam--excalidraw",
+    "to": "excalidraw",
+    "fit": "partial",
+    "migrationNotes": "Collaborative sketching alternative; not a Figma Design editor. Excalidraw JSON/PNG/SVG portability does not establish native FigJam import, voting or workshop feature parity.",
+    "sources": [
+      "https://github.com/excalidraw/excalidraw",
+      "https://www.figma.com/pricing/"
+    ],
+    "from": "figjam"
+  },
+  {
+    "id": "figma--penpot",
+    "to": "penpot",
+    "fit": "partial",
+    "migrationNotes": "Interface design/prototyping alternative; evaluate Figma file conversion, libraries, plugins and developer handoff before migration. No lossless import or full feature parity claimed.",
+    "sources": [
+      "https://penpot.app/pricing/self-host",
+      "https://www.figma.com/pricing/"
+    ],
+    "from": "figma"
+  },
+  {
+    "id": "firebase--appwrite",
+    "from": "firebase",
+    "to": "appwrite",
+    "fit": "partial",
+    "migrationNotes": "Backend auth, databases, files, functions and realtime overlap; replace Firebase SDKs, migrate users/data and reimplement security/permissions. Firebase analytics and mobile services require separate evaluation.",
+    "sources": [
+      "https://appwrite.io/docs/advanced/self-hosting",
+      "https://appwrite.io/enterprise"
+    ]
+  },
+  {
+    "id": "firebase--pocketbase",
+    "from": "firebase",
+    "to": "pocketbase",
+    "fit": "different-approach",
+    "migrationNotes": "Small single-server auth/realtime/file backend using SQLite; no Cloud Functions and vertical scaling only. Rewrite client calls and rules; FAQ reports no built-in data import/export helpers.",
+    "sources": [
+      "https://pocketbase.io/faq/"
+    ]
+  },
+  {
+    "id": "firebase--supabase",
+    "from": "firebase",
+    "to": "supabase",
+    "fit": "different-approach",
+    "migrationNotes": "Postgres relational backend with auth, realtime and storage; rewrite Firebase SDK calls, security rules and document data into SQL schemas; self-hosting requires production operations.",
+    "sources": [
+      "https://supabase.com/docs/guides/self-hosting"
+    ]
+  },
+  {
+    "id": "google-analytics-360--matomo",
+    "from": "google-analytics-360",
+    "to": "matomo",
+    "fit": "partial",
+    "migrationNotes": "Core covers traffic, events and ecommerce; configure own tracker and tags. Premium features require separately licensed plugins; Google advertising attribution/integrations are not assumed equivalent.",
+    "sources": [
+      "https://matomo.org/pricing/",
+      "https://marketingplatform.google.com/about/analytics-360/"
+    ]
+  },
+  {
+    "id": "google-analytics-360--plausible",
+    "from": "google-analytics-360",
+    "to": "plausible",
+    "fit": "partial",
+    "migrationNotes": "Simpler traffic and conversion reporting with different tracking/privacy model; CE excludes richer funnel, journey and ecommerce revenue analysis. Not an enterprise Google advertising stack replacement.",
+    "sources": [
+      "https://plausible.io/self-hosted-web-analytics",
+      "https://marketingplatform.google.com/about/analytics-360/"
+    ]
+  },
+  {
+    "id": "google-analytics-360--posthog",
+    "from": "google-analytics-360",
+    "to": "posthog",
+    "fit": "partial",
+    "migrationNotes": "Product-oriented analytics and instrumentation differ from Google Analytics 360. Self-host requires substantial infrastructure ownership; no supported self-host guarantees or paid-plan features.",
+    "sources": [
+      "https://posthog.com/docs/self-host",
+      "https://marketingplatform.google.com/about/analytics-360/"
+    ]
+  },
+  {
+    "id": "google-analytics-360--umami",
+    "from": "google-analytics-360",
+    "to": "umami",
+    "fit": "partial",
+    "migrationNotes": "Traffic and events require replacing tracking instrumentation; no feature flags or experimentation assignment engine. Anonymous cross-device users are separate unless identified.",
+    "sources": [
+      "https://umami.is/product-analytics",
+      "https://marketingplatform.google.com/about/analytics-360/"
+    ]
+  },
+  {
+    "id": "google-meet--bigbluebutton",
+    "from": "google-meet",
+    "to": "bigbluebutton",
+    "fit": "different-approach",
+    "migrationNotes": "Strongest for training and classrooms using polls, breakout rooms, and shared notes. Integrate through an LMS/front-end/API and recreate sessions/invitations. Does not replace the surrounding Workspace or Zoom suite. Dedicated Ubuntu server and operational capacity required.",
+    "sources": [
+      "https://docs.bigbluebutton.org/4.0/testing/release-testing/",
+      "https://docs.bigbluebutton.org/administration/install/",
+      "https://bigbluebutton.org/global-community/"
+    ]
+  },
+  {
+    "id": "google-meet--jitsi-meet",
+    "from": "google-meet",
+    "to": "jitsi-meet",
+    "fit": "partial",
+    "migrationNotes": "Suitable for browser meetings with screen sharing and chat. Recreate meeting URLs/calendar invitations; existing incumbent links and cloud recording libraries are not automatically migrated. Recording needs Jibri; PSTN access needs Jigasi plus SIP provider. Operate and size the deployment.",
+    "sources": [
+      "https://jitsi.org/user-faq/",
+      "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+    ]
+  },
+  {
+    "id": "google-workspace--collabora-online",
+    "from": "google-workspace",
+    "to": "collabora-online",
+    "fit": "partial",
+    "migrationNotes": "Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat.",
+    "sources": [
+      "https://www.collaboraonline.com/de/code/",
+      "https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/"
+    ]
+  },
+  {
+    "id": "google-workspace--nextcloud",
+    "from": "google-workspace",
+    "to": "nextcloud",
+    "fit": "partial",
+    "migrationNotes": "Broad collaboration hub: file sync/share, groupware, calls and document collaboration via apps. Configure an office engine and existing email server/provider; not a replacement for all proprietary desktop features, advanced formulas/macros, tenant identity or compliance services. Export native cloud document formats to portable Office/ODF files and pilot fidelity before migrating.",
+    "sources": [
+      "https://nextcloud.com/",
+      "https://nextcloud.com/enterprises/",
+      "https://docs.nextcloud.com/server/stable/admin_manual/office/index.html"
+    ]
+  },
+  {
+    "id": "google-workspace--onlyoffice-docs",
+    "from": "google-workspace",
+    "to": "onlyoffice-docs",
+    "fit": "partial",
+    "migrationNotes": "Office editing component, typically integrated with sync/share storage. Not the complete mail/calendar/file suite; Docs Community has 20-editing-connection ceiling and no mobile browser editing. Export native Google documents first; test complex Office documents and integrations.",
+    "sources": [
+      "https://www.onlyoffice.com/docs",
+      "https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx"
+    ]
+  },
+  {
+    "id": "google-workspace--owncloud-ocis",
+    "from": "google-workspace",
+    "to": "owncloud-ocis",
+    "fit": "partial",
+    "migrationNotes": "Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms.",
+    "sources": [
+      "https://github.com/owncloud/ocis",
+      "https://owncloud.com/features/spaces/"
+    ]
+  },
+  {
+    "id": "google-workspace--seafile",
+    "from": "google-workspace",
+    "to": "seafile",
+    "fit": "partial",
+    "migrationNotes": "Replaces Drive/OneDrive-style file sync/share portion only; Office editing requires an external editor integration. Email, meetings and full suite absent; full-text file search and fine-grained permissions are paid Professional features.",
+    "sources": [
+      "https://www.seafile.com/en/product/seafile_on_premise/",
+      "https://github.com/haiwen/seafile"
+    ]
+  },
+  {
+    "id": "heroku--coolify",
+    "from": "heroku",
+    "to": "coolify",
+    "fit": "partial",
+    "migrationNotes": "Git/container app deployment on your own servers; move environment variables, domains and databases; operate backups, security and scaling yourself. Heroku add-ons need replacements.",
+    "sources": [
+      "https://coolify.io/",
+      "https://coolify.io/docs/"
+    ]
+  },
+  {
+    "id": "heroku--dokku",
+    "from": "heroku",
+    "to": "dokku",
+    "fit": "partial",
+    "migrationNotes": "Supports Heroku-compatible apps/buildpacks and git push, but owner operates host and datastores; audit buildpack/plugin compatibility, migrate add-on data and configure backups.",
+    "sources": [
+      "https://dokku.com/"
+    ]
+  },
+  {
+    "id": "hubspot--espocrm",
+    "from": "hubspot",
+    "to": "espocrm",
+    "fit": "partial",
+    "migrationNotes": "Core contact/sales records overlap with paid CRM use cases; reporting, workflows, quotes and integrations can require paid packs. Migration requires mapping source data and customizations; no verified one-click full migration.",
+    "sources": [
+      "https://www.espocrm.com/extensions/",
+      "https://www.espocrm.com/cloud/"
+    ]
+  },
+  {
+    "id": "hubspot--odoo-ce",
+    "from": "hubspot",
+    "to": "odoo-ce",
+    "fit": "partial",
+    "migrationNotes": "CRM pipeline and lead handling are part of a broader modular ERP. Reconfigure workflows and integrations; Community lacks paid Enterprise modules and Studio. Not a full Salesforce/HubSpot suite replacement.",
+    "sources": [
+      "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/email_manual.html",
+      "https://www.odoo.com/page/editions"
+    ]
+  },
+  {
+    "id": "hubspot--suitecrm",
+    "from": "hubspot",
+    "to": "suitecrm",
+    "fit": "partial",
+    "migrationNotes": "Contacts, opportunities, campaigns, cases and workflows cover core CRM needs. Map custom fields, automations and integrations during migration; hosted capacity limits differ from self-hosted product.",
+    "sources": [
+      "https://suitecrm.com/suitecrms-list-of-features/",
+      "https://suitecrm.com/suitecrmhosted/"
+    ]
+  },
+  {
+    "id": "hubspot--twenty",
+    "from": "hubspot",
+    "to": "twenty",
+    "fit": "partial",
+    "migrationNotes": "Vendor explicitly supports HubSpot/Salesforce migration through CSV or API (API recommended above 50,000 records). Rebuild existing automations/custom data models; SSO and row permissions require commercial licensing.",
+    "sources": [
+      "https://twenty.com/pricing"
+    ]
+  },
+  {
+    "id": "intercom--chatwoot",
+    "from": "intercom",
+    "to": "chatwoot",
+    "fit": "partial",
+    "migrationNotes": "Shared support inbox and chat alternative. Community excludes voice, AI, agent capacity, SSO and SLA. Verify channel integrations and historical message import separately; no migration parity established.",
+    "sources": [
+      "https://www.chatwoot.com/pricing/self-hosted-plans",
+      "https://www.chatwoot.com/pricing/"
+    ]
+  },
+  {
+    "id": "jira--huly",
+    "to": "huly",
+    "fit": "partial",
+    "migrationNotes": "Issue/project workflows overlap. Rebuild Jira-specific workflows and apps; Huly adds integrated collaboration. Cloud/self-host data movement may require manual guidance.",
+    "sources": [
+      "https://docs.huly.io/getting-started/introduction-huly/",
+      "https://docs.huly.io/getting-started/self-host/"
+    ],
+    "from": "jira"
+  },
+  {
+    "id": "jira--openproject",
+    "to": "openproject",
+    "fit": "partial",
+    "migrationNotes": "Agile planning and work packages overlap; official guided Jira migrator available. Check app/custom-field migration and Enterprise workflow requirements.",
+    "sources": [
+      "https://www.openproject.org/pricing/"
+    ],
+    "from": "jira"
+  },
+  {
+    "id": "jira--plane",
+    "to": "plane",
+    "fit": "partial",
+    "migrationNotes": "Tasks, cycles and modules overlap; validate Jira custom workflows/apps and paid work-management feature requirements.",
+    "sources": [
+      "https://github.com/makeplane/plane",
+      "https://plane.so/blog/plane-and-its-editions"
+    ],
+    "from": "jira"
+  },
+  {
+    "id": "jira--taiga",
+    "to": "taiga",
+    "fit": "partial",
+    "migrationNotes": "Scrum, Kanban and issue tracking overlap; official Jira importer exists. Test field/status and attachment fidelity before switching.",
+    "sources": [
+      "https://docs.taiga.io/"
+    ],
+    "from": "jira"
+  },
+  {
+    "id": "linear--huly",
+    "to": "huly",
+    "fit": "partial",
+    "migrationNotes": "Issue tracking and planning overlap; evaluate existing Linear integrations and rebuild unsupported automation. Huly combines tasks with documents and collaboration.",
+    "sources": [
+      "https://docs.huly.io/getting-started/introduction-huly/"
+    ],
+    "from": "linear"
+  },
+  {
+    "id": "linear--openproject",
+    "to": "openproject",
+    "fit": "partial",
+    "migrationNotes": "Issue/work-package tracking overlaps; interface and project planning differ. Recreate cycles/workflows and validate integrations; no native Linear importer verified.",
+    "sources": [
+      "https://www.openproject.org/pricing/"
+    ],
+    "from": "linear"
+  },
+  {
+    "id": "linear--plane",
+    "to": "plane",
+    "fit": "partial",
+    "migrationNotes": "Issues and cycles overlap; verify importer field fidelity and note native time tracking/work-item types require Commercial Edition.",
+    "sources": [
+      "https://github.com/makeplane/plane",
+      "https://plane.so/blog/plane-and-its-editions"
+    ],
+    "from": "linear"
+  },
+  {
+    "id": "linear--taiga",
+    "to": "taiga",
+    "fit": "partial",
+    "migrationNotes": "Agile issue/backlog workflows overlap. No native Linear importer verified; plan data transformation and integration replacement.",
+    "sources": [
+      "https://taiga.io/"
+    ],
+    "from": "linear"
+  },
+  {
+    "id": "loom--cap",
+    "from": "loom",
+    "to": "cap",
+    "fit": "partial",
+    "migrationNotes": "Closer capture-and-sharing workflow with own-server deployment. Loom importer supports URLs/CSV but is Pro-gated, requires download access and maps space labels rather than nested folder hierarchy. Build desktop from source for commercial-license exemption.",
+    "sources": [
+      "https://cap.so/docs/migrating-to-cap",
+      "https://cap.so/docs/commercial-license",
+      "https://cap.so/docs/self-hosting"
+    ]
+  },
+  {
+    "id": "loom--obs-studio",
+    "from": "loom",
+    "to": "obs-studio",
+    "fit": "different-approach",
+    "migrationNotes": "Captures screen, camera and audio locally with scenes; upload/export files into another service for Loom-style link sharing and team feedback. No Loom library importer established.",
+    "sources": [
+      "https://obsproject.com",
+      "https://www.loom.com/pricing"
+    ]
+  },
+  {
+    "id": "loom--screenity",
+    "from": "loom",
+    "to": "screenity",
+    "fit": "partial",
+    "migrationNotes": "Browser extension handles unlimited capture, annotations and MP4/GIF/WebM exports. Self-host is local-only; sharing via external storage or paid Pro. No migration preserving Loom comments/analytics established.",
+    "sources": [
+      "https://github.com/alyssaxuu/screenity",
+      "https://screenity.io"
+    ]
+  },
+  {
+    "id": "mailchimp--keila",
+    "from": "mailchimp",
+    "to": "keila",
+    "fit": "partial",
+    "migrationNotes": "Newsletter campaigns, signup forms, segmentation and CSV/API portability. Marketing automation and A/B tests are not yet available per official comparison; smaller native integration ecosystem; rebuild templates and integrations.",
+    "sources": [
+      "https://www.keila.io/open-source-mailchimp-alternative/",
+      "https://www.keila.io/"
+    ]
+  },
+  {
+    "id": "mailchimp--listmonk",
+    "from": "mailchimp",
+    "to": "listmonk",
+    "fit": "partial",
+    "migrationNotes": "Newsletter and list-management fit, with segmentation, templates and transactional API. Rebuild Mailchimp automations and integrations; app is focused on one-way campaigns. Import subscribers using CSV/API and preserve consent/unsubscribe status.",
+    "sources": [
+      "https://listmonk.app/",
+      "https://listmonk.app/docs/",
+      "https://listmonk.app/docs/apis/import/"
+    ]
+  },
+  {
+    "id": "mailchimp--mautic",
+    "from": "mailchimp",
+    "to": "mautic",
+    "fit": "partial",
+    "migrationNotes": "Campaign automation, segmentation and forms offer a deeper customization approach. Rebuild journeys and integrations; deployment, cron jobs, email transport and upgrades become operational responsibilities.",
+    "sources": [
+      "https://mautic.org/mautic-vs-mailchimp/",
+      "https://mautic.org/download/"
+    ]
+  },
+  {
+    "id": "make--activepieces",
+    "from": "make",
+    "to": "activepieces",
+    "fit": "partial",
+    "migrationNotes": "Visual trigger/step workflow model overlaps; rebuild incumbent automations and verify every integration/action. MIT Community paid-feature boundaries unresolved; no automatic Zap/Make import verified.",
+    "sources": [
+      "https://www.activepieces.com/pricing",
+      "https://www.make.com/pricing"
+    ]
+  },
+  {
+    "id": "make--n8n",
+    "from": "make",
+    "to": "n8n",
+    "fit": "partial",
+    "migrationNotes": "Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified.",
+    "sources": [
+      "https://docs.n8n.io/deploy/host-n8n/community-edition-features.md",
+      "https://www.make.com/pricing"
+    ]
+  },
+  {
+    "id": "make--node-red",
+    "from": "make",
+    "to": "node-red",
+    "fit": "different-approach",
+    "migrationNotes": "Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators.",
+    "sources": [
+      "https://nodered.org/about/",
+      "https://www.make.com/pricing"
+    ]
+  },
+  {
+    "id": "make--windmill",
+    "from": "make",
+    "to": "windmill",
+    "fit": "different-approach",
+    "migrationNotes": "Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid.",
+    "sources": [
+      "https://www.windmill.dev/pricing",
+      "https://www.make.com/pricing"
+    ]
+  },
+  {
+    "id": "microsoft-365--collabora-online",
+    "from": "microsoft-365",
+    "to": "collabora-online",
+    "fit": "partial",
+    "migrationNotes": "Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat.",
+    "sources": [
+      "https://www.collaboraonline.com/de/code/",
+      "https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/"
+    ]
+  },
+  {
+    "id": "microsoft-365--nextcloud",
+    "from": "microsoft-365",
+    "to": "nextcloud",
+    "fit": "partial",
+    "migrationNotes": "Broad collaboration hub: file sync/share, groupware, calls and document collaboration via apps. Configure an office engine and existing email server/provider; not a replacement for all proprietary desktop features, advanced formulas/macros, tenant identity or compliance services. Export native cloud document formats to portable Office/ODF files and pilot fidelity before migrating.",
+    "sources": [
+      "https://nextcloud.com/",
+      "https://nextcloud.com/enterprises/",
+      "https://docs.nextcloud.com/server/stable/admin_manual/office/index.html"
+    ]
+  },
+  {
+    "id": "microsoft-365--onlyoffice-docs",
+    "from": "microsoft-365",
+    "to": "onlyoffice-docs",
+    "fit": "partial",
+    "migrationNotes": "Office editing component, typically integrated with sync/share storage. Not the complete mail/calendar/file suite; Docs Community has 20-editing-connection ceiling and no mobile browser editing. Export native Google documents first; test complex Office documents and integrations.",
+    "sources": [
+      "https://www.onlyoffice.com/docs",
+      "https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx"
+    ]
+  },
+  {
+    "id": "microsoft-365--owncloud-ocis",
+    "from": "microsoft-365",
+    "to": "owncloud-ocis",
+    "fit": "partial",
+    "migrationNotes": "Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms.",
+    "sources": [
+      "https://github.com/owncloud/ocis",
+      "https://owncloud.com/features/spaces/"
+    ]
+  },
+  {
+    "id": "microsoft-365--seafile",
+    "from": "microsoft-365",
+    "to": "seafile",
+    "fit": "partial",
+    "migrationNotes": "Replaces Drive/OneDrive-style file sync/share portion only; Office editing requires an external editor integration. Email, meetings and full suite absent; full-text file search and fine-grained permissions are paid Professional features.",
+    "sources": [
+      "https://www.seafile.com/en/product/seafile_on_premise/",
+      "https://github.com/haiwen/seafile"
+    ]
+  },
+  {
+    "id": "microsoft-teams--element",
+    "from": "microsoft-teams",
+    "to": "element",
+    "fit": "different-approach",
+    "migrationNotes": "Matrix rooms, federation and encryption provide a different messaging architecture. Plan identities and history transfer separately; no verified one-click history importer or bridge parity claimed. Does not reproduce Microsoft 365 applications.",
+    "sources": [
+      "https://github.com/element-hq/ess-helm#editions"
+    ]
+  },
+  {
+    "id": "microsoft-teams--mattermost",
+    "from": "microsoft-teams",
+    "to": "mattermost",
+    "fit": "partial",
+    "migrationNotes": "Partial replacement for persistent channels/DMs. Team lacks group calls and SSO; no verified Teams history importer; meetings and Office-file workflows need separate replacements.",
+    "sources": [
+      "https://docs.mattermost.com/product-overview/plans"
+    ]
+  },
+  {
+    "id": "microsoft-teams--rocket-chat",
+    "from": "microsoft-teams",
+    "to": "rocket-chat",
+    "fit": "partial",
+    "migrationNotes": "Core messaging replacement with Community concurrency/push/integration limits. No verified Teams history import; Microsoft 365 apps and meeting workflows need separate replacements.",
+    "sources": [
+      "https://docs.rocket.chat/docs/our-plans"
+    ]
+  },
+  {
+    "id": "microsoft-teams--zulip",
+    "from": "microsoft-teams",
+    "to": "zulip",
+    "fit": "different-approach",
+    "migrationNotes": "Beta Teams importer maps teams to channels; excludes DMs and private-channel messages. Keep Microsoft tenant active through migration; does not replace Office applications.",
+    "sources": [
+      "https://zulip.com/plans/",
+      "https://zulip.com/help/import-from-microsoft-teams"
+    ]
+  },
+  {
+    "id": "miro--excalidraw",
+    "to": "excalidraw",
+    "fit": "partial",
+    "migrationNotes": "Sketching and diagramming alternative for simpler whiteboards. Excalidraw supports its own JSON and image exports; no native lossless Miro import verified. Miro integrations/facilitation workflows require separate review.",
+    "sources": [
+      "https://github.com/excalidraw/excalidraw",
+      "https://miro.com/pricing/"
+    ],
+    "from": "miro"
+  },
+  {
+    "id": "notion--affine",
+    "from": "notion",
+    "to": "affine",
+    "fit": "different-approach",
+    "migrationNotes": "Docs and canvas approach; local MIT editor is useful, but full self-hosted collaboration has mixed licensing and seat/plan questions. Pilot database parity and export/import round trips.",
+    "sources": [
+      "https://affine.pro/pricing",
+      "https://affine.pro/blog/notion-alternative"
+    ]
+  },
+  {
+    "id": "notion--appflowy",
+    "from": "notion",
+    "to": "appflowy",
+    "fit": "different-approach",
+    "migrationNotes": "AGPL client supports documents/databases and local data control. Full team replacement needs separately commercial self-hosted services; do not treat AGPL client as unlimited OSS server.",
+    "sources": [
+      "https://github.com/AppFlowy-IO/AppFlowy",
+      "https://github.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial"
+    ]
+  },
+  {
+    "id": "notion--bookstack",
+    "from": "notion",
+    "to": "bookstack",
+    "fit": "different-approach",
+    "migrationNotes": "Useful for the wiki/documentation portion of Notion; hierarchical documentation model rather than Notion database workspace. No verified native Notion importer.",
+    "sources": [
+      "https://www.bookstackapp.com/",
+      "https://www.notion.com/pricing"
+    ]
+  },
+  {
+    "id": "notion--docmost",
+    "from": "notion",
+    "to": "docmost",
+    "fit": "partial",
+    "migrationNotes": "Notion ZIP import preserves page structure; pilot databases, permissions and linked content. Export pages/spaces as Markdown or HTML.",
+    "sources": [
+      "https://docmost.com/docs/user-guide/import-export",
+      "https://docmost.com/pricing"
+    ]
+  },
+  {
+    "id": "notion--outline",
+    "from": "notion",
+    "to": "outline",
+    "fit": "partial",
+    "migrationNotes": "Fits shared documentation; Notion database/workflow parity not claimed. Review BSL Document Service restriction and community edition limits.",
+    "sources": [
+      "https://www.getoutline.com/pricing",
+      "https://www.getoutline.com/developers"
+    ]
+  },
+  {
+    "id": "okta--authelia",
+    "from": "okta",
+    "to": "authelia",
+    "fit": "different-approach",
+    "migrationNotes": "Useful for internal web apps secured by reverse proxy or OIDC. Requires proxy/app configuration and an identity backend; does not replace the whole workforce lifecycle, governance and SaaS provisioning suite.",
+    "sources": [
+      "https://www.authelia.com/"
+    ]
+  },
+  {
+    "id": "okta--authentik",
+    "from": "okta",
+    "to": "authentik",
+    "fit": "partial",
+    "migrationNotes": "Supports SAML/OIDC and directory/proxy protocols. Recreate app integrations, policy flows and user stores. Some workplace provisioning/security integrations require Enterprise.",
+    "sources": [
+      "https://goauthentik.io/pricing/"
+    ]
+  },
+  {
+    "id": "okta--keycloak",
+    "from": "okta",
+    "to": "keycloak",
+    "fit": "partial",
+    "migrationNotes": "Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately.",
+    "sources": [
+      "https://www.keycloak.org/"
+    ]
+  },
+  {
+    "id": "pingdom--glitchtip",
+    "from": "pingdom",
+    "to": "glitchtip",
+    "fit": "partial",
+    "migrationNotes": "Basic site availability pings, heartbeat checks and email/webhook alerts; partial uptime alternative, without established Pingdom browser transactions/RUM parity.",
+    "sources": [
+      "https://glitchtip.com/",
+      "https://www.pingdom.com/pricing/"
+    ]
+  },
+  {
+    "id": "pingdom--uptime-kuma",
+    "from": "pingdom",
+    "to": "uptime-kuma",
+    "fit": "partial",
+    "migrationNotes": "HTTP/TCP/DNS/push checks, alert delivery and status pages. Operate your own external vantage points; no claim of Pingdom transaction or real-user-monitoring parity or check import.",
+    "sources": [
+      "https://github.com/louislam/uptime-kuma#-features",
+      "https://www.pingdom.com/pricing/"
+    ]
+  },
+  {
+    "id": "quickbooks-online--erpnext",
+    "from": "quickbooks-online",
+    "to": "erpnext",
+    "fit": "partial",
+    "migrationNotes": "Accounting plus wider ERP workflows; configure chart of accounts, imports, localization and integrations. No tested direct migration or bank-feed parity claim.",
+    "sources": [
+      "https://frappe.io/erpnext/pricing"
+    ]
+  },
+  {
+    "id": "quickbooks-online--odoo-ce",
+    "from": "quickbooks-online",
+    "to": "odoo-ce",
+    "fit": "partial",
+    "migrationNotes": "Basic invoicing/expenses subset only; full accounting and bank automation are Enterprise features. No direct migration validated.",
+    "sources": [
+      "https://www.odoo.com/blog/business-hacks-1/odoo-community-vs-odoo-enterprise-which-one-should-you-choose-for-your-business-2406"
+    ]
+  },
+  {
+    "id": "retool--appsmith",
+    "from": "retool",
+    "to": "appsmith",
+    "fit": "partial",
+    "migrationNotes": "Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import.",
+    "sources": [
+      "https://www.appsmith.com/pricing",
+      "https://retool.com/pricing"
+    ]
+  },
+  {
+    "id": "retool--budibase",
+    "from": "retool",
+    "to": "budibase",
+    "fit": "partial",
+    "migrationNotes": "Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import.",
+    "sources": [
+      "https://budibase.com/pricing/",
+      "https://retool.com/pricing"
+    ]
+  },
+  {
+    "id": "retool--tooljet",
+    "from": "retool",
+    "to": "tooljet",
+    "fit": "partial",
+    "migrationNotes": "Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import.",
+    "sources": [
+      "https://tooljet.com/pricing",
+      "https://retool.com/pricing"
+    ]
+  },
+  {
+    "id": "salesforce--espocrm",
+    "from": "salesforce",
+    "to": "espocrm",
+    "fit": "partial",
+    "migrationNotes": "Core contact/sales records overlap with paid CRM use cases; reporting, workflows, quotes and integrations can require paid packs. Migration requires mapping source data and customizations; no verified one-click full migration.",
+    "sources": [
+      "https://www.espocrm.com/extensions/",
+      "https://www.espocrm.com/cloud/"
+    ]
+  },
+  {
+    "id": "salesforce--odoo-ce",
+    "from": "salesforce",
+    "to": "odoo-ce",
+    "fit": "partial",
+    "migrationNotes": "CRM pipeline and lead handling are part of a broader modular ERP. Reconfigure workflows and integrations; Community lacks paid Enterprise modules and Studio. Not a full Salesforce/HubSpot suite replacement.",
+    "sources": [
+      "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/email_manual.html",
+      "https://www.odoo.com/page/editions"
+    ]
+  },
+  {
+    "id": "salesforce--suitecrm",
+    "from": "salesforce",
+    "to": "suitecrm",
+    "fit": "partial",
+    "migrationNotes": "Contacts, opportunities, campaigns, cases and workflows cover core CRM needs. Map custom fields, automations and integrations during migration; hosted capacity limits differ from self-hosted product.",
+    "sources": [
+      "https://suitecrm.com/suitecrms-list-of-features/",
+      "https://suitecrm.com/suitecrmhosted/"
+    ]
+  },
+  {
+    "id": "salesforce--twenty",
+    "from": "salesforce",
+    "to": "twenty",
+    "fit": "partial",
+    "migrationNotes": "Vendor explicitly supports HubSpot/Salesforce migration through CSV or API (API recommended above 50,000 records). Rebuild existing automations/custom data models; SSO and row permissions require commercial licensing.",
+    "sources": [
+      "https://twenty.com/pricing"
+    ]
+  },
+  {
+    "id": "sentry--glitchtip",
+    "from": "sentry",
+    "to": "glitchtip",
+    "fit": "partial",
+    "migrationNotes": "Supports Sentry client SDKs for error and basic performance monitoring. Reconfigure DSNs and validate SDK compatibility; existing Sentry issue history, replay and advanced tracing migration not established.",
+    "sources": [
+      "https://glitchtip.com/",
+      "https://gitlab.com/glitchtip/glitchtip-backend/-/raw/master/README.md"
+    ]
+  },
+  {
+    "id": "slack--element",
+    "from": "slack",
+    "to": "element",
+    "fit": "different-approach",
+    "migrationNotes": "Matrix rooms, federation and encryption differ from Slack channels and app workflows. Plan identity, integration and history transfer separately; no verified one-click importer or bridge parity claimed.",
+    "sources": [
+      "https://github.com/element-hq/ess-helm#editions"
+    ]
+  },
+  {
+    "id": "slack--mattermost",
+    "from": "slack",
+    "to": "mattermost",
+    "fit": "partial",
+    "migrationNotes": "Team offers channels, DMs and core search, but no group calls or guest accounts. Current Slack migration guide targets Entry/paid editions; Team import parity requires verification; integrations must be rebuilt.",
+    "sources": [
+      "https://docs.mattermost.com/product-overview/plans",
+      "https://docs.mattermost.com/administration-guide/onboard/migrate-from-slack"
+    ]
+  },
+  {
+    "id": "slack--rocket-chat",
+    "from": "slack",
+    "to": "rocket-chat",
+    "fit": "partial",
+    "migrationNotes": "Slack importer handles users/channels/messages; attachments need a separate pending-file download step and existing usernames can be skipped. Community edition limits remain.",
+    "sources": [
+      "https://docs.rocket.chat/docs/our-plans",
+      "https://docs.rocket.chat/docs/import-from-slack"
+    ]
+  },
+  {
+    "id": "slack--zulip",
+    "from": "slack",
+    "to": "zulip",
+    "fit": "different-approach",
+    "migrationNotes": "Channel-plus-topic model differs from Slack threads; Slack export/import documented, private data availability depends on source export permissions.",
+    "sources": [
+      "https://zulip.com/plans/",
+      "https://zulip.com/help/import-from-slack"
+    ]
+  },
+  {
+    "id": "trello--kanboard",
+    "from": "trello",
+    "to": "kanboard",
+    "fit": "partial",
+    "migrationNotes": "Boards and task automation fit visual team workflows. Kanboard offers APIs/plugins; Trello Power-Ups and rules require rebuilding. No validated direct Trello importer in this review; no official native mobile client, responsive web UI available.",
+    "sources": [
+      "https://kanboard.org/",
+      "https://docs.kanboard.org/v1/admin/plugins/",
+      "https://docs.kanboard.org/v1/admin/faq/"
+    ]
+  },
+  {
+    "id": "trello--planka",
+    "from": "trello",
+    "to": "planka",
+    "fit": "partial",
+    "migrationNotes": "Source-available comparison only, hidden by default from OSS recommendations. Boards/cards/checklists and board import available, but Pro required for calendar, templates, public boards and exports; commercial third-party hosting and cross-organization business use restricted by license. Test import coverage before migration.",
+    "sources": [
+      "https://planka.app/features",
+      "https://github.com/plankanban/planka/blob/627701dda3459fa25830b0fd5bb2f5668d033284/LICENSE.md"
+    ]
+  },
+  {
+    "id": "trello--wekan",
+    "from": "trello",
+    "to": "wekan",
+    "fit": "partial",
+    "migrationNotes": "Comparable boards, lists, cards, labels, due dates and checklists. Trello Power-Ups and Butler rules require replacement; official page describes a Trello JSON/attachment downloader and import work, so test attachment import rather than assuming full migration.",
+    "sources": [
+      "https://wekan.fi/",
+      "https://trello.com/pricing"
+    ]
+  },
+  {
+    "id": "typeform--formbricks",
+    "from": "typeform",
+    "to": "formbricks",
+    "fit": "partial",
+    "migrationNotes": "Link surveys and embedded/in-app feedback overlap Typeform. Recreate Typeform forms and automations; current CE has one workspace and paid workflow/segmentation gates.",
+    "sources": [
+      "https://formbricks.com/docs/self-hosting/advanced/license",
+      "https://formbricks.com/open-source-form-builder"
+    ]
+  },
+  {
+    "id": "typeform--heyform",
+    "from": "typeform",
+    "to": "heyform",
+    "fit": "partial",
+    "migrationNotes": "Conversational forms, logic, CSS and CSV export overlap Typeform; recreate existing forms and integrations. No verified automatic Typeform import.",
+    "sources": [
+      "https://docs.heyform.net/introduction",
+      "https://github.com/heyform/heyform#features"
+    ]
+  },
+  {
+    "id": "typeform--limesurvey",
+    "from": "typeform",
+    "to": "limesurvey",
+    "fit": "partial",
+    "migrationNotes": "Research-oriented survey workflows differ from Typeform conversational forms. Rebuild questions, branching, styling and integrations; LSS supports LimeSurvey survey interchange rather than Typeform imports.",
+    "sources": [
+      "https://community.limesurvey.org/"
+    ]
+  },
+  {
+    "id": "vercel--coolify",
+    "from": "vercel",
+    "to": "coolify",
+    "fit": "partial",
+    "migrationNotes": "Deploy web apps and static sites to owned infrastructure; Vercel edge/CDN, serverless integrations and managed observability require separate infrastructure or adaptation.",
+    "sources": [
+      "https://coolify.io/",
+      "https://coolify.io/docs/"
+    ]
+  },
+  {
+    "id": "xero--erpnext",
+    "from": "xero",
+    "to": "erpnext",
+    "fit": "partial",
+    "migrationNotes": "Accounting plus wider ERP workflows; configure chart of accounts, imports, localization and integrations. No tested direct migration or bank-feed parity claim.",
+    "sources": [
+      "https://frappe.io/erpnext/pricing"
+    ]
+  },
+  {
+    "id": "xero--odoo-ce",
+    "from": "xero",
+    "to": "odoo-ce",
+    "fit": "partial",
+    "migrationNotes": "Basic invoicing/expenses subset only; full accounting and bank automation are Enterprise features. No direct migration validated.",
+    "sources": [
+      "https://www.odoo.com/blog/business-hacks-1/odoo-community-vs-odoo-enterprise-which-one-should-you-choose-for-your-business-2406"
+    ]
+  },
+  {
+    "id": "zapier--activepieces",
+    "from": "zapier",
+    "to": "activepieces",
+    "fit": "partial",
+    "migrationNotes": "Visual trigger/step workflow model overlaps; rebuild incumbent automations and verify every integration/action. MIT Community paid-feature boundaries unresolved; no automatic Zap/Make import verified.",
+    "sources": [
+      "https://www.activepieces.com/pricing",
+      "https://zapier.com/pricing"
+    ]
+  },
+  {
+    "id": "zapier--n8n",
+    "from": "zapier",
+    "to": "n8n",
+    "fit": "partial",
+    "migrationNotes": "Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified.",
+    "sources": [
+      "https://docs.n8n.io/deploy/host-n8n/community-edition-features.md",
+      "https://zapier.com/pricing"
+    ]
+  },
+  {
+    "id": "zapier--node-red",
+    "from": "zapier",
+    "to": "node-red",
+    "fit": "different-approach",
+    "migrationNotes": "Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators.",
+    "sources": [
+      "https://nodered.org/about/",
+      "https://zapier.com/pricing"
+    ]
+  },
+  {
+    "id": "zapier--windmill",
+    "from": "zapier",
+    "to": "windmill",
+    "fit": "different-approach",
+    "migrationNotes": "Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid.",
+    "sources": [
+      "https://www.windmill.dev/pricing",
+      "https://zapier.com/pricing"
+    ]
+  },
+  {
+    "id": "zendesk--chatwoot",
+    "from": "zendesk",
+    "to": "chatwoot",
+    "fit": "partial",
+    "migrationNotes": "Shared support inbox and chat alternative. Community excludes voice, AI, agent capacity, SSO and SLA. Verify channel integrations and historical message import separately; no migration parity established.",
+    "sources": [
+      "https://www.chatwoot.com/pricing/self-hosted-plans",
+      "https://www.chatwoot.com/pricing/"
+    ]
+  },
+  {
+    "id": "zendesk--freescout",
+    "from": "zendesk",
+    "to": "freescout",
+    "fit": "partial",
+    "migrationNotes": "Lightweight shared inbox/ticket support. Official migration guide requires API/Webhooks module; custom fields/tags need their modules. Ticket numbers cannot be preserved; imported chat threads lose messenger connection, so replies cannot reach original chat customer.",
+    "sources": [
+      "https://freescout.net/",
+      "https://github.com/freescout-help-desk/freescout/wiki/Migrate-to-FreeScout"
+    ]
+  },
+  {
+    "id": "zendesk--zammad",
+    "from": "zendesk",
+    "to": "zammad",
+    "fit": "partial",
+    "migrationNotes": "Support ticketing and workflows alternative. Official migration service supports Zendesk; migration overwrites target data, so use a fresh instance and test mapping first. Professional migration/support services may cost extra.",
+    "sources": [
+      "https://support.zammad.com/help/en-us/51-getting-started/30-i-m-on-zendesk-freshdesk-otrs-kayako-saas-how-do-i-make-the-switch-to-zammad",
+      "https://zammad.com/en/pricing"
+    ]
+  },
+  {
+    "id": "zoom--bigbluebutton",
+    "from": "zoom",
+    "to": "bigbluebutton",
+    "fit": "different-approach",
+    "migrationNotes": "Strongest for training and classrooms using polls, breakout rooms, and shared notes. Integrate through an LMS/front-end/API and recreate sessions/invitations. Does not replace the surrounding Workspace or Zoom suite. Dedicated Ubuntu server and operational capacity required.",
+    "sources": [
+      "https://docs.bigbluebutton.org/4.0/testing/release-testing/",
+      "https://docs.bigbluebutton.org/administration/install/",
+      "https://bigbluebutton.org/global-community/"
+    ]
+  },
+  {
+    "id": "zoom--jitsi-meet",
+    "from": "zoom",
+    "to": "jitsi-meet",
+    "fit": "partial",
+    "migrationNotes": "Suitable for browser meetings with screen sharing and chat. Recreate meeting URLs/calendar invitations; existing incumbent links and cloud recording libraries are not automatically migrated. Recording needs Jibri; PSTN access needs Jigasi plus SIP provider. Operate and size the deployment.",
+    "sources": [
+      "https://jitsi.org/user-faq/",
+      "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+    ]
+  }
+]

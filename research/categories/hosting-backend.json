@@ -1,0 +1,320 @@
+{
+  "category": {
+    "id": "hosting-backend",
+    "name": "Application hosting and backends",
+    "description": "Deployment platforms and backend services for business web and mobile applications.",
+    "audience": "Software teams and businesses building their own applications",
+    "audienceReach": "functional",
+    "audienceRationale": "Relevant across industries but directly used by software delivery teams rather than every employee.",
+    "audienceSources": [
+      "https://www.heroku.com/",
+      "https://firebase.google.com/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "heroku",
+      "name": "Heroku",
+      "url": "https://www.heroku.com/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": 7,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "monthly",
+        "note": "Basic always-on dyno $7/month; Eco $5/month sleeps and personal accounts only; databases and add-ons extra.",
+        "source": "https://www.heroku.com/pricing/"
+      }
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://vercel.com/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 20,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "monthly",
+        "note": "Pro developer seat $20/month plus metered services; Hobby free plan separate.",
+        "source": "https://vercel.com/pricing"
+      }
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "url": "https://firebase.google.com/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "monthly",
+        "note": "Blaze pay-as-you-go per service after applicable free quotas; no single monthly entry price.",
+        "source": "https://firebase.google.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "coolify",
+      "name": "Coolify",
+      "url": "https://coolify.io/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/coollabsio/coolify",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Pricing explicitly grants all self-hosted features with no restrictions; cloud fee buys managed control-plane hosting, not application server capacity.",
+      "sources": {
+        "license": "https://github.com/coollabsio/coolify/blob/91ea7d851e214951799842837a010a4dfe3487e7/LICENSE",
+        "features": "https://coolify.io/pricing",
+        "hosting": "https://coolify.io/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:18:03Z",
+        "lastRelease": "v4.4.7",
+        "lastReleaseAt": "2026-10-21T14:12:45Z",
+        "commit": "91ea7d851e214951799842837a010a4dfe3487e7",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/coollabsio/coolify",
+        "rsx": "Central authenticated rsx analysis available; overall score 6.4/10. Not used as edition/licensing proof."
+      }
+    },
+    {
+      "id": "pocketbase",
+      "name": "PocketBase",
+      "url": "https://pocketbase.io/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/pocketbase/pocketbase",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "MIT volunteer project; FAQ confirms no commercial organization or vendor hosting. Technical single-server/SQLite limits are architecture, not paid feature gates.",
+      "sources": {
+        "license": "https://github.com/pocketbase/pocketbase/blob/6f370ea741f33adf889eef02e3c1b884a47aa522/LICENSE.md",
+        "features": "https://pocketbase.io/faq/",
+        "hosting": "https://pocketbase.io/faq/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-14T18:45:14Z",
+        "lastRelease": "v0.40.5",
+        "lastReleaseAt": "2026-10-08T16:45:10Z",
+        "commit": "6f370ea741f33adf889eef02e3c1b884a47aa522",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/pocketbase/pocketbase",
+        "rsx": "Central authenticated rsx analysis available; overall score 6.7/10. Not used as edition/licensing proof."
+      }
+    },
+    {
+      "id": "appwrite",
+      "name": "Appwrite",
+      "url": "https://appwrite.io/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/appwrite/appwrite",
+      "license": "BSD-3-Clause",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Premium Enterprise self-hosted edition: console SSO, custom organization roles, activity logs, advanced management tools and compliance options"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "BSD-3-Clause core self-hosts auth, database, storage, functions and realtime. Enterprise page explicitly reserves premium self-hosted management capabilities. General guide parity language is broader, so exact edition boundary merits continued checking.",
+      "sources": {
+        "license": "https://github.com/appwrite/appwrite/blob/7ef921e5df638bd4e332de7d6c85e5aeb289b93c/LICENSE",
+        "features": "https://appwrite.io/enterprise",
+        "hosting": "https://appwrite.io/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:25:03Z",
+        "lastRelease": "2.6.1",
+        "lastReleaseAt": "2026-10-21T20:52:58Z",
+        "commit": "7ef921e5df638bd4e332de7d6c85e5aeb289b93c",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/appwrite/appwrite",
+        "rsx": "Central authenticated rsx analysis available; overall score 7.9/10. Not used as edition/licensing proof."
+      }
+    },
+    {
+      "id": "dokku",
+      "name": "Dokku",
+      "url": "https://dokku.com/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/dokku/dokku",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Dokku Pro web dashboard",
+        "Dokku Pro JSON API and HTTP(S) Git push",
+        "Dokku Pro team management"
+      ],
+      "hostedOffer": false,
+      "classificationReason": "MIT core deploys Heroku-compatible apps through Git and CLI. Paid self-hosted Pro add-on supplies everyday graphical administration and API/HTTP push; Pro is explicitly not hosting.",
+      "sources": {
+        "license": "https://github.com/dokku/dokku/blob/9dd14b73859d86ec39539f6a6dbb91d19ae02ef5/LICENSE",
+        "features": "https://pro.dokku.com/",
+        "hosting": "https://pro.dokku.com/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:18:13Z",
+        "lastRelease": "v0.38.31",
+        "lastReleaseAt": "2026-09-27T01:46:26Z",
+        "commit": "9dd14b73859d86ec39539f6a6dbb91d19ae02ef5",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/dokku/dokku",
+        "rsx": "Central authenticated rsx analysis available; overall score 6.1/10. Not used as edition/licensing proof."
+      }
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase self-hosted stack",
+      "url": "https://supabase.com/",
+      "categories": [
+        "hosting-backend"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/supabase/supabase",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Apache-2.0 self-hosted Postgres/auth/storage/realtime stack has no documented paid self-hosted code tier. A applies to this named OSS backend stack. Managed-platform services and control-plane gaps are separately disclosed; it is a partial Firebase alternative, not an equivalent managed platform.",
+      "sources": {
+        "license": "https://github.com/supabase/supabase/blob/96d51239c65f22d751482bf15b5fcb2216991233/LICENSE",
+        "features": "https://supabase.com/docs/guides/self-hosting",
+        "hosting": "https://supabase.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:28:10Z",
+        "lastRelease": "v1.26.08",
+        "lastReleaseAt": "2026-08-07T13:57:57Z",
+        "commit": "96d51239c65f22d751482bf15b5fcb2216991233",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/supabase/supabase",
+        "rsx": "Central authenticated rsx analysis available; overall score 7.2/10. Not used as edition/licensing proof."
+      },
+      "serviceLimitations": [
+        "Managed cloud branching, Management API, managed backups/PITR, advanced platform metrics, analytics/vector buckets and ETL are absent from the self-hosted distribution; no paid self-hosted unlock is claimed. Operate backups, monitoring and deployment workflows yourself or use managed cloud."
+      ]
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "heroku--coolify",
+      "from": "heroku",
+      "to": "coolify",
+      "fit": "partial",
+      "migrationNotes": "Git/container app deployment on your own servers; move environment variables, domains and databases; operate backups, security and scaling yourself. Heroku add-ons need replacements.",
+      "sources": [
+        "https://coolify.io/",
+        "https://coolify.io/docs/"
+      ]
+    },
+    {
+      "id": "vercel--coolify",
+      "from": "vercel",
+      "to": "coolify",
+      "fit": "partial",
+      "migrationNotes": "Deploy web apps and static sites to owned infrastructure; Vercel edge/CDN, serverless integrations and managed observability require separate infrastructure or adaptation.",
+      "sources": [
+        "https://coolify.io/",
+        "https://coolify.io/docs/"
+      ]
+    },
+    {
+      "id": "heroku--dokku",
+      "from": "heroku",
+      "to": "dokku",
+      "fit": "partial",
+      "migrationNotes": "Supports Heroku-compatible apps/buildpacks and git push, but owner operates host and datastores; audit buildpack/plugin compatibility, migrate add-on data and configure backups.",
+      "sources": [
+        "https://dokku.com/"
+      ]
+    },
+    {
+      "id": "firebase--supabase",
+      "from": "firebase",
+      "to": "supabase",
+      "fit": "different-approach",
+      "migrationNotes": "Postgres relational backend with auth, realtime and storage; rewrite Firebase SDK calls, security rules and document data into SQL schemas; self-hosting requires production operations.",
+      "sources": [
+        "https://supabase.com/docs/guides/self-hosting"
+      ]
+    },
+    {
+      "id": "firebase--appwrite",
+      "from": "firebase",
+      "to": "appwrite",
+      "fit": "partial",
+      "migrationNotes": "Backend auth, databases, files, functions and realtime overlap; replace Firebase SDKs, migrate users/data and reimplement security/permissions. Firebase analytics and mobile services require separate evaluation.",
+      "sources": [
+        "https://appwrite.io/docs/advanced/self-hosting",
+        "https://appwrite.io/enterprise"
+      ]
+    },
+    {
+      "id": "firebase--pocketbase",
+      "from": "firebase",
+      "to": "pocketbase",
+      "fit": "different-approach",
+      "migrationNotes": "Small single-server auth/realtime/file backend using SQLite; no Cloud Functions and vertical scaling only. Rewrite client calls and rules; FAQ reports no built-in data import/export helpers.",
+      "sources": [
+        "https://pocketbase.io/faq/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Additional pinned-license re-fetch failed due to shell network restrictions and raw GitHub web cache misses. Central same-session GitHub license bundles were verified already pinned to the recorded default-branch commit SHA, and complete decoded licenses were read.",
+    "Supabase unavailable self-hosting capabilities are managed-platform exclusions, not purchasable self-hosted license unlocks.",
+    "Appwrite general self-hosting guide says same features as Cloud, while current Enterprise page explicitly advertises premium self-hosting management features; conservative tier B follows the more specific edition description."
+  ]
+}

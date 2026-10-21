@@ -1,0 +1,353 @@
+{
+  "category": {
+    "id": "project-management",
+    "name": "Project management",
+    "description": "Plan projects, track work and coordinate delivery across teams.",
+    "audience": "Business teams, project managers and product/development teams",
+    "audienceReach": "broad",
+    "audienceRationale": "Cross-functional work coordination spans operations, marketing, services and technical teams; specialist agile use cases are a subset.",
+    "audienceSources": [
+      "https://asana.com/pricing",
+      "https://www.openproject.org/pricing/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "jira",
+      "name": "Jira",
+      "url": "https://www.atlassian.com/software/jira",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 9.7,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "monthly",
+        "note": "Standard USD9.70 per user/month for first 100 users, progressive seat pricing effective October 13, 2026. Annual billing uses user tiers; free plan also exists.",
+        "source": "https://www.atlassian.com/licensing/future-pricing/cloud/list/faqs"
+      }
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "url": "https://linear.app",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 10,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Basic USD10 per user/month billed yearly; free tier also exists.",
+        "source": "https://linear.app/pricing"
+      }
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "url": "https://asana.com",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 10.99,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Starter USD10.99 per user/month billed annually; USD13.49 monthly; free tier also exists.",
+        "source": "https://asana.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "huly",
+      "name": "Huly",
+      "url": "https://huly.io",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/hcengineering/platform",
+      "license": "EPL-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Root platform EPL-2.0. Official docs allow self-hosting cloud capabilities; paid cloud plans charge storage/traffic rather than unlock product features. Some integrations require separate setup and cloud infrastructure services are not prepackaged.",
+      "sources": {
+        "license": "https://github.com/hcengineering/platform/blob/8ed328fef4d3f37824a01b32bab13257116c6c45/LICENSE",
+        "features": "https://docs.huly.io/getting-started/self-host/",
+        "hosting": "https://huly.io/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-19T06:40:36Z",
+        "lastRelease": "v0.7.426",
+        "lastReleaseAt": "2026-07-05T03:43:54Z",
+        "commit": "8ed328fef4d3f37824a01b32bab13257116c6c45",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/hcengineering/platform",
+        "rsx": "Unavailable: cache backup write denied; GitHub metadata fallback."
+      }
+    },
+    {
+      "id": "taiga",
+      "name": "Taiga",
+      "url": "https://taiga.io",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/taigaio/taiga-back",
+      "license": "MPL-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "Current terms mention proprietary modules without enumerating their feature boundaries."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core backend is MPL-2.0 and self-hosted instances are exempt from SaaS project/storage caps. Current commercial terms acknowledge proprietary modules, so complete commercial feature parity cannot be established. Promising low-lock-in candidate pending module-boundary review.",
+      "sources": {
+        "license": "https://github.com/taigaio/taiga-back/blob/c8264ac6775103cbcc2a3a145978f2b475e9ff05/LICENSE",
+        "features": "https://taiga.io/terms-and-conditions/",
+        "hosting": "https://taiga.io/deployment-pricing-options/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-09-28T17:26:49Z",
+        "lastRelease": null,
+        "lastReleaseAt": null,
+        "commit": "c8264ac6775103cbcc2a3a145978f2b475e9ff05",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/taigaio/taiga-back",
+        "rsx": "Unavailable: cache backup write denied; GitHub metadata fallback."
+      }
+    },
+    {
+      "id": "openproject",
+      "name": "OpenProject",
+      "url": "https://www.openproject.org",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/opf/openproject",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Custom action buttons for workflows",
+        "Team planner",
+        "Gantt chart PDF export",
+        "Reusable meeting templates",
+        "SSO beyond community authentication options"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPL community core with Enterprise add-ons extending everyday planning/export workflows. Strong free core, but not feature-complete against commercial edition.",
+      "sources": {
+        "license": "https://github.com/opf/openproject/blob/b498cbc078182a29e5cc5ba842a3c4699acd92cc/LICENSE",
+        "features": "https://www.openproject.org/pricing/",
+        "hosting": "https://www.openproject.org/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T20:01:47Z",
+        "lastRelease": "v17.9.2",
+        "lastReleaseAt": "2026-10-15T11:56:10Z",
+        "commit": "b498cbc078182a29e5cc5ba842a3c4699acd92cc",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/opf/openproject",
+        "rsx": "Unavailable: cache backup write denied; GitHub metadata fallback."
+      }
+    },
+    {
+      "id": "plane",
+      "name": "Plane Community",
+      "url": "https://plane.so",
+      "categories": [
+        "project-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/makeplane/plane",
+      "license": "AGPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Work item types",
+        "Native time tracking",
+        "Advanced workflows",
+        "Project templates",
+        "Commercial SSO"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL Community is distinct from closed-source Commercial Edition. Official edition documentation states Free-tier parity; commercial edition adds ordinary work-management features. Community has unlimited users/projects/work items.",
+      "sources": {
+        "license": "https://github.com/makeplane/plane/blob/053b2c0e5874fb3225404a8775d04f38f9e1704c/LICENSE",
+        "features": "https://plane.so/blog/plane-and-its-editions",
+        "hosting": "https://plane.so/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T17:36:54Z",
+        "lastRelease": "v1.4.2",
+        "lastReleaseAt": "2026-08-23T14:39:21Z",
+        "commit": "053b2c0e5874fb3225404a8775d04f38f9e1704c",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/makeplane/plane",
+        "rsx": "Unavailable: cache backup write denied; GitHub metadata fallback."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "jira--huly",
+      "to": "huly",
+      "fit": "partial",
+      "migrationNotes": "Issue/project workflows overlap. Rebuild Jira-specific workflows and apps; Huly adds integrated collaboration. Cloud/self-host data movement may require manual guidance.",
+      "sources": [
+        "https://docs.huly.io/getting-started/introduction-huly/",
+        "https://docs.huly.io/getting-started/self-host/"
+      ],
+      "from": "jira"
+    },
+    {
+      "id": "linear--huly",
+      "to": "huly",
+      "fit": "partial",
+      "migrationNotes": "Issue tracking and planning overlap; evaluate existing Linear integrations and rebuild unsupported automation. Huly combines tasks with documents and collaboration.",
+      "sources": [
+        "https://docs.huly.io/getting-started/introduction-huly/"
+      ],
+      "from": "linear"
+    },
+    {
+      "id": "asana--huly",
+      "to": "huly",
+      "fit": "partial",
+      "migrationNotes": "Projects, action items and team planning overlap. Validate portfolio/reporting and integration requirements; migration requires field/workflow mapping.",
+      "sources": [
+        "https://docs.huly.io/getting-started/introduction-huly/"
+      ],
+      "from": "asana"
+    },
+    {
+      "id": "jira--taiga",
+      "to": "taiga",
+      "fit": "partial",
+      "migrationNotes": "Scrum, Kanban and issue tracking overlap; official Jira importer exists. Test field/status and attachment fidelity before switching.",
+      "sources": [
+        "https://docs.taiga.io/"
+      ],
+      "from": "jira"
+    },
+    {
+      "id": "linear--taiga",
+      "to": "taiga",
+      "fit": "partial",
+      "migrationNotes": "Agile issue/backlog workflows overlap. No native Linear importer verified; plan data transformation and integration replacement.",
+      "sources": [
+        "https://taiga.io/"
+      ],
+      "from": "linear"
+    },
+    {
+      "id": "asana--taiga",
+      "to": "taiga",
+      "fit": "partial",
+      "migrationNotes": "Tasks and Kanban overlap; agile-first workflow differs from broad work-management portfolios. Plan export transformation; no native Asana importer verified.",
+      "sources": [
+        "https://taiga.io/"
+      ],
+      "from": "asana"
+    },
+    {
+      "id": "jira--openproject",
+      "to": "openproject",
+      "fit": "partial",
+      "migrationNotes": "Agile planning and work packages overlap; official guided Jira migrator available. Check app/custom-field migration and Enterprise workflow requirements.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ],
+      "from": "jira"
+    },
+    {
+      "id": "asana--openproject",
+      "to": "openproject",
+      "fit": "partial",
+      "migrationNotes": "Schedules, tasks and project planning overlap; model projects as work packages. Check advanced planning and paid Enterprise add-ons.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ],
+      "from": "asana"
+    },
+    {
+      "id": "linear--openproject",
+      "to": "openproject",
+      "fit": "partial",
+      "migrationNotes": "Issue/work-package tracking overlaps; interface and project planning differ. Recreate cycles/workflows and validate integrations; no native Linear importer verified.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ],
+      "from": "linear"
+    },
+    {
+      "id": "jira--plane",
+      "to": "plane",
+      "fit": "partial",
+      "migrationNotes": "Tasks, cycles and modules overlap; validate Jira custom workflows/apps and paid work-management feature requirements.",
+      "sources": [
+        "https://github.com/makeplane/plane",
+        "https://plane.so/blog/plane-and-its-editions"
+      ],
+      "from": "jira"
+    },
+    {
+      "id": "linear--plane",
+      "to": "plane",
+      "fit": "partial",
+      "migrationNotes": "Issues and cycles overlap; verify importer field fidelity and note native time tracking/work-item types require Commercial Edition.",
+      "sources": [
+        "https://github.com/makeplane/plane",
+        "https://plane.so/blog/plane-and-its-editions"
+      ],
+      "from": "linear"
+    },
+    {
+      "id": "asana--plane",
+      "to": "plane",
+      "fit": "partial",
+      "migrationNotes": "Project/task tracking overlaps; evaluate portfolio/reporting and workflow gaps. No drop-in Asana migration claimed.",
+      "sources": [
+        "https://plane.so/blog/plane-and-its-editions"
+      ],
+      "from": "asana"
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Taiga current terms mention proprietary modules; exact features and module boundaries require further verification. Do not describe all commercial functionality as OSS.",
+    "License texts read from current default-branch GitHub API cache. Immutable commit URLs provided; direct pinned raw fetches failed cache misses.",
+    "No latest GitHub release exists for taigaio/taiga-back (latest-release endpoint 404); this is not evidence of inactivity.",
+    "Project health is metadata-only; rsx unavailable due cache permissions."
+  ]
+}

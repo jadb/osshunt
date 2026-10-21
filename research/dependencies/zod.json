@@ -1,0 +1,19 @@
+{
+  "package": "zod",
+  "version": "4.6.5",
+  "publishedAt": "2026-09-13T23:25:14.644Z",
+  "license": {
+    "spdx": "MIT",
+    "commercial_compatible": true,
+    "copyleft": false,
+    "unknown": false
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "repository": "https://github.com/colinhacks/zod",
+  "overallScore": 7.2,
+  "observedAt": "2026-10-21T21:26:18.472493Z"
+}

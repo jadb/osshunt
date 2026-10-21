@@ -1,0 +1,46 @@
+{
+  "repo": "getcap/cap",
+  "checkedAt": "2026-10-21T21:28:44.795270+00:00",
+  "responses": {
+    "metadata": {
+      "status": 1,
+      "url": "https://api.github.com/repos/getcap/cap",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    },
+    "license": {
+      "status": 1,
+      "url": "https://api.github.com/repos/getcap/cap/license",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/licenses/licenses#get-the-license-for-a-repository",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    },
+    "release": {
+      "status": 1,
+      "url": "https://api.github.com/repos/getcap/cap/releases/latest",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    },
+    "commit": {
+      "status": 1,
+      "url": "https://api.github.com/repos/getcap/cap/commits/HEAD",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/commits/commits#get-a-commit",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    }
+  }
+}

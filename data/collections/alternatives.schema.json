@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+--[a-z0-9-]+$"
+      },
+      "from": {
+        "type": "string"
+      },
+      "to": {
+        "type": "string"
+      },
+      "fit": {
+        "type": "string",
+        "enum": [
+          "drop-in",
+          "partial",
+          "different-approach"
+        ]
+      },
+      "migrationNotes": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sources": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "required": [
+      "id",
+      "from",
+      "to",
+      "fit",
+      "migrationNotes",
+      "sources"
+    ],
+    "additionalProperties": false,
+    "title": "alternatives",
+    "description": "Explicit many-to-many paid-to-community mappings with migration limits",
+    "x-key": "id",
+    "x-key-case": "insensitive",
+    "x-source": "research/categories/*.json"
+  }
+}

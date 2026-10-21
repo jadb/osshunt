@@ -1,0 +1,19 @@
+{
+  "package": "ajv",
+  "version": "8.20.0",
+  "publishedAt": "2026-04-24T15:22:16.529Z",
+  "license": {
+    "spdx": "MIT",
+    "commercial_compatible": true,
+    "copyleft": false,
+    "unknown": false
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "repository": "https://github.com/ajv-validator/ajv",
+  "overallScore": 6.2,
+  "observedAt": "2026-10-21T21:26:24.323028Z"
+}

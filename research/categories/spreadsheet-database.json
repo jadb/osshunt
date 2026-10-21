@@ -1,0 +1,231 @@
+{
+  "category": {
+    "id": "spreadsheet-database",
+    "name": "Spreadsheet databases",
+    "description": "Relational business data with spreadsheet editing, forms and configurable views.",
+    "audience": "Operations, marketing, sales, HR, finance and project teams building shared business trackers and lightweight internal apps.",
+    "audienceReach": "broad",
+    "audienceRationale": "Cross-functional business records and workflows apply across many industries; requires structured-data collaboration rather than every employee role.",
+    "audienceSources": [
+      "https://airtable.com/pricing",
+      "https://baserow.io/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "url": "https://airtable.com",
+      "categories": [
+        "spreadsheet-database"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 20,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Team starts at $20/user/month billed annually; free plan available; price checked October 21, 2026.",
+        "source": "https://airtable.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "grist",
+      "name": "Grist Community",
+      "url": "https://www.getgrist.com",
+      "categories": [
+        "spreadsheet-database"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/gristlabs/grist-core",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Automations",
+        "Email notifications",
+        "MCP server and current AI Assistant",
+        "Advanced administration, audit streaming and multiple team sites"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Apache-2.0 community core. Current self-hosted pricing reserves both everyday automation/notifications and governance capabilities for commercial activation; qualifying smaller organizations may request a free activation key, which does not make those features OSS.",
+      "sources": {
+        "license": "https://github.com/gristlabs/grist-core/blob/f68125e21c46ada0ea77656c926c05111762a78c/LICENSE.txt",
+        "features": "https://www.getgrist.com/pricing/",
+        "hosting": "https://www.getgrist.com/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T20:24:28Z",
+        "lastRelease": "v1.7.21",
+        "lastReleaseAt": "2026-10-09T20:08:10Z",
+        "commit": "f68125e21c46ada0ea77656c926c05111762a78c",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/gristlabs/grist-core",
+        "rsx": "Central authenticated rsx analysis available; overall 5.8/10; activity 6.3/10. Directional heuristic, not security audit."
+      }
+    },
+    {
+      "id": "baserow",
+      "name": "Baserow Open Source Edition",
+      "url": "https://baserow.io",
+      "categories": [
+        "spreadsheet-database"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/baserow/baserow",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Kanban, calendar, timeline and survey views",
+        "Row comments and coloring",
+        "JSON, XML and Excel table export",
+        "Granular permissions, SSO and audit logging"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "OSE code MIT; root license explicitly excludes premium/enterprise directories under separate licenses, and docs use CC-BY-SA-4.0. Everyday views, comments and export formats require paid plans, including self-hosted.",
+      "sources": {
+        "license": "https://github.com/baserow/baserow/blob/985f1a26fbabad74860e67a6fd07bb7f55074499/LICENSE",
+        "features": "https://baserow.io/user-docs/pricing-plans",
+        "hosting": "https://baserow.io/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:54:28Z",
+        "lastRelease": "2.4.1",
+        "lastReleaseAt": "2026-10-13T15:39:27Z",
+        "commit": "985f1a26fbabad74860e67a6fd07bb7f55074499",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/baserow/baserow",
+        "rsx": "Central authenticated rsx analysis available; overall 6.5/10; activity 6.4/10. Directional heuristic, not security audit."
+      }
+    },
+    {
+      "id": "teable",
+      "name": "Teable Community",
+      "url": "https://teable.ai",
+      "categories": [
+        "spreadsheet-database"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/teableio/teable",
+      "license": "LicenseRef-Teable-AGPL-Brand-Restrictions",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "S",
+      "locked": [
+        "Advanced AI features in commercial edition",
+        "Paid self-hosted features require activation key; full current CE comparison not verified"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Root declares AGPL-3.0 core apps plus MIT utility packages, then adds a blanket prohibition on modifying, replacing or removing brand assets. Conservatively withheld from verified OSI recommendations because this is not unmodified AGPL; permissibility of those additional terms needs specialist review. Independently, commercial AI is absent from Community.",
+      "sources": {
+        "license": "https://github.com/teableio/teable/blob/80b68bb664ec5f68596d1e03ca118ab0d04f0552/LICENSE",
+        "features": "https://community.teable.ai/t/teable-future-updates/164",
+        "hosting": "https://teable.ai/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T15:42:10Z",
+        "lastRelease": "release.2026-10-21T11-39-18Z.3519",
+        "lastReleaseAt": "2026-10-21T12:19:46Z",
+        "commit": "80b68bb664ec5f68596d1e03ca118ab0d04f0552",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/teableio/teable",
+        "rsx": "Central authenticated rsx analysis available; overall 4.9/10; activity 4.9/10. Directional heuristic, not security audit."
+      }
+    },
+    {
+      "id": "nocodb",
+      "name": "NocoDB Community",
+      "url": "https://nocodb.com",
+      "categories": [
+        "spreadsheet-database"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/nocodb/nocodb",
+      "license": "LicenseRef-Sustainable-Use-1.0",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "S",
+      "locked": [
+        "Community limited to 2 workflows per base and 2 interfaces per workspace",
+        "Unlimited interfaces/workflows, scripts and dashboards require Business",
+        "Fine-grained permissions and SSO paid"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Pinned root license updated January 29, 2026 puts master/develop under Sustainable Use License: internal-business/noncommercial use and noncommercial free distribution restrictions. Source-available, not OSI OSS; cannot recommend as an OSS alternative despite free self-hosting.",
+      "sources": {
+        "license": "https://github.com/nocodb/nocodb/blob/55bc42cb80e83bb2fa3f3bbb0949ffb074086541/LICENSE.md",
+        "features": "https://nocodb.com/pricing",
+        "hosting": "https://nocodb.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:19:21Z",
+        "lastRelease": "2026.09.1",
+        "lastReleaseAt": "2026-09-29T14:39:07Z",
+        "commit": "55bc42cb80e83bb2fa3f3bbb0949ffb074086541",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/nocodb/nocodb",
+        "rsx": "Central authenticated rsx analysis available; overall 5.8/10; activity 7.4/10. Directional heuristic, not security audit."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "airtable--grist",
+      "from": "airtable",
+      "to": "grist",
+      "fit": "different-approach",
+      "migrationNotes": "Relational spreadsheets and Python formulas suit business trackers. Plan formula, interface and automation rebuilding; commercial self-hosted features remain gated.",
+      "sources": [
+        "https://www.getgrist.com/pricing/"
+      ]
+    },
+    {
+      "id": "airtable--baserow",
+      "from": "airtable",
+      "to": "baserow",
+      "fit": "partial",
+      "migrationNotes": "Official importer transfers tables, records, relationships, attachments and grid views. Automations, interfaces, integrations and permissions need rebuilding; comments and revision history do not transfer. Free edition lacks several workflow views and export formats.",
+      "sources": [
+        "https://baserow.io/user-docs/import-airtable-to-baserow",
+        "https://baserow.io/user-docs/pricing-plans"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "NocoDB (current releases)",
+      "reason": "Source-available Sustainable Use License, not OSI OSS; retained candidate metadata for transparency, excluded from OSS recommendations.",
+      "sources": [
+        "https://github.com/nocodb/nocodb/blob/55bc42cb80e83bb2fa3f3bbb0949ffb074086541/LICENSE.md"
+      ]
+    },
+    {
+      "name": "Teable (verified OSI shortlist)",
+      "reason": "Custom brand restrictions in root license warrant review; do not advertise as unmodified AGPL. Commercial AI features also gated.",
+      "sources": [
+        "https://github.com/teableio/teable/blob/80b68bb664ec5f68596d1e03ca118ab0d04f0552/LICENSE",
+        "https://community.teable.ai/t/teable-future-updates/164"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Teable brand restrictions: project labels core AGPL, but blanket logo-removal prohibition requires licensing review before treating distribution as OSI OSS.",
+    "Teable current public pricing extraction exposes Cloud comparison; no complete current Community vs paid self-hosted matrix verified.",
+    "Category currently has two confidently OSI candidates from assigned four; do not pad verified shortlist with source-available candidates."
+  ]
+}

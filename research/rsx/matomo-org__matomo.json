@@ -1,0 +1,467 @@
+{
+  "repo": {
+    "owner": "matomo-org",
+    "name": "matomo",
+    "url": "https://github.com/matomo-org/matomo",
+    "description": "Empowering People Ethically \ud83d\ude80 \u2014 Matomo is hiring! Join us \u2192 https://matomo.org/jobs Matomo is the leading open-source alternative to Google Analytics, giving you complete control and built-in privacy. Easily collect, visualise, and analyse data from websites & apps. Star us on GitHub \u2b50\ufe0f  \u2013 Pull Requests welcome! ",
+    "homepage": "https://matomo.org/",
+    "topics": [
+      "analytics",
+      "growth",
+      "hacktoberfest",
+      "intranet",
+      "log",
+      "marketing",
+      "matomo",
+      "mobile",
+      "mysql",
+      "php",
+      "piwik",
+      "privacy",
+      "security",
+      "web-analytics",
+      "website"
+    ]
+  },
+  "scores": {
+    "overall": 6.9,
+    "categories": {
+      "activity": {
+        "id": "activity",
+        "label": "Activity",
+        "score": 6.4,
+        "weight": 0.16,
+        "multiplier": 1,
+        "reason": "Current pace of work and maintainer activity",
+        "metrics": {
+          "commit_cadence_30d": 21,
+          "merged_pr_velocity_30d": 21,
+          "open_prs": 27,
+          "stars": 21967
+        }
+      },
+      "adoption": {
+        "id": "adoption",
+        "label": "Adoption",
+        "score": 1.9,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "External usage and registry reach",
+        "metrics": {
+          "dependents": 1098
+        }
+      },
+      "community": {
+        "id": "community",
+        "label": "Community",
+        "score": 8,
+        "weight": 0.09,
+        "multiplier": 1,
+        "reason": "Contributor and support surface",
+        "metrics": {
+          "code_of_conduct": 0,
+          "contributors": 100,
+          "security_policy": 1,
+          "support_channels": 0
+        }
+      },
+      "docs": {
+        "id": "docs",
+        "label": "Docs",
+        "score": 8.5,
+        "weight": 0.08,
+        "multiplier": 1,
+        "reason": "Documentation and maintainer guidance",
+        "metrics": {
+          "has_changelog": 1,
+          "has_homepage": 1,
+          "has_maintainer_docs": 1,
+          "has_roadmap": 0
+        }
+      },
+      "license": {
+        "id": "license",
+        "label": "License",
+        "score": 5,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "Commercial fit and legal clarity",
+        "metrics": {
+          "commercial_compatible": 0,
+          "unknown": 1
+        }
+      },
+      "maintenance": {
+        "id": "maintenance",
+        "label": "Maintenance",
+        "score": 10,
+        "weight": 0.18,
+        "multiplier": 1,
+        "reason": "Sustainability and freshness",
+        "metrics": {
+          "active_maintainers": 3,
+          "stale_issues": 0,
+          "stale_prs": 0
+        }
+      },
+      "release_hygiene": {
+        "id": "release_hygiene",
+        "label": "Release hygiene",
+        "score": 10,
+        "weight": 0.07,
+        "multiplier": 1,
+        "reason": "Release cadence and publication quality",
+        "metrics": {
+          "release_cadence_90d": 20,
+          "signed_releases": 1
+        }
+      },
+      "security": {
+        "id": "security",
+        "label": "Security",
+        "score": 5.4,
+        "weight": 0.22,
+        "multiplier": 1.1,
+        "reason": "Security posture and vulnerability evidence",
+        "metrics": {
+          "critical_vulns": 0,
+          "high_vulns": 0
+        }
+      }
+    },
+    "applied_multipliers": {
+      "security": 1.1
+    },
+    "raw_weights": {
+      "activity": 0.16,
+      "adoption": 0.1,
+      "community": 0.09,
+      "docs": 0.08,
+      "license": 0.1,
+      "maintenance": 0.18,
+      "release_hygiene": 0.07,
+      "security": 0.22
+    }
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "activity": {
+    "stars": 21967,
+    "forks": 2920,
+    "watchers": 394,
+    "open_issues": 2559,
+    "open_prs": 27,
+    "merged_pr_velocity_30d": 21,
+    "issue_close_rate_30d": 0.06666666666666667,
+    "time_to_merge_hours": 68.87828042328042,
+    "latest_accepted_contribution_at": "2026-10-21T19:07:27Z",
+    "latest_maintainer_activity_at": "2026-10-21T19:07:27Z",
+    "commit_cadence_30d": 21,
+    "release_cadence_90d": 20,
+    "last_release": "6.0.0-b6.20261020180607",
+    "last_release_published_at": "2026-10-20T18:41:11Z",
+    "latest_tag_age_days": 1
+  },
+  "maintenance": {
+    "bus_factor_proxy": 5,
+    "active_maintainers": 3,
+    "stale_issues": 0,
+    "stale_prs": 0,
+    "archived": false,
+    "disabled": false,
+    "has_changelog": true,
+    "has_roadmap": false,
+    "has_maintainer_docs": true
+  },
+  "adoption": {
+    "dependents_count": 1098,
+    "docs_healthy": true
+  },
+  "community": {
+    "contributors": 100,
+    "support_links": [
+      "https://matomo.org/"
+    ],
+    "has_code_of_conduct": false,
+    "has_security_policy": true
+  },
+  "security": {
+    "checks": [
+      {
+        "name": "repository_visibility",
+        "score": 10,
+        "status": "ok"
+      },
+      {
+        "name": "security_policy",
+        "score": 7,
+        "details": [
+          "SECURITY.md detected in repository metadata"
+        ],
+        "status": "detected"
+      },
+      {
+        "name": "code_of_conduct",
+        "score": 2,
+        "details": [
+          "CODE_OF_CONDUCT.md not detected in repository root or .github/"
+        ],
+        "status": "unknown"
+      },
+      {
+        "name": "release_hygiene",
+        "score": 8,
+        "status": "derived"
+      }
+    ],
+    "critical_vulnerabilities": 0,
+    "high_vulnerabilities": 0,
+    "has_sast": false,
+    "has_fuzzing": false,
+    "has_signed_releases": true
+  },
+  "license": {
+    "spdx": "GPL-3.0",
+    "commercial_compatible": false,
+    "copyleft": true,
+    "unknown": false,
+    "risk_notes": [
+      "license may not be suitable for commercial use"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "github",
+      "key": "open_prs",
+      "value": "27",
+      "source": "github/pulls",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "open_issues",
+      "value": "14",
+      "source": "github/issues",
+      "sample_window": "latest 50 issues",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "merged_pr_velocity_30d",
+      "value": "21",
+      "source": "github/pulls",
+      "method": "merge time approximated by PR last-update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "time_to_merge_hours",
+      "value": "68.9",
+      "source": "github/pulls",
+      "method": "merge time approximated by PR last-update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "issue_close_rate_30d",
+      "value": "0.07",
+      "source": "github/issues",
+      "sample_window": "latest 50 issues",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "commit_cadence_30d",
+      "value": "21",
+      "source": "github/pulls",
+      "method": "merged-PR velocity stand-in; commits not sampled",
+      "sample_window": "latest 50 PRs",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "latest_maintainer_activity_at",
+      "value": "2026-10-21T19:07:27Z",
+      "source": "github/pulls",
+      "method": "last merged-PR update stand-in; maintainer actions not sampled",
+      "sample_window": "latest 50 PRs",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.5
+    },
+    {
+      "type": "github",
+      "key": "latest_accepted_contribution_at",
+      "value": "2026-10-21T19:07:27Z",
+      "source": "github/pulls",
+      "method": "last merged-PR update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "security_advisories",
+      "value": "checked: 0 critical, 0 high",
+      "source": "github/security-advisories",
+      "method": "published, non-withdrawn repository advisories counted by severity",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "stars",
+      "value": "21967",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "forks",
+      "value": "2920",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "watchers",
+      "value": "394",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "contributors",
+      "value": "100",
+      "source": "github/contributors",
+      "sample_window": "first 100 contributors",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "active_maintainers",
+      "value": "3",
+      "source": "github/contributors",
+      "method": "min(3, contributor count); maintainer roles not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "bus_factor_proxy",
+      "value": "5",
+      "source": "github/contributors",
+      "method": "min(5, contributor count); commit distribution not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "dependents_count",
+      "value": "1098",
+      "source": "github/repos",
+      "method": "stars/20 estimate; dependents not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.3
+    },
+    {
+      "type": "github",
+      "key": "docs_healthy",
+      "value": "true",
+      "source": "github/repos",
+      "method": "homepage URL present; docs content not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "last_release",
+      "value": "6.0.0-b6.20261020180607",
+      "source": "github/releases",
+      "sample_window": "latest 20 releases",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "release_cadence_90d",
+      "value": "20",
+      "source": "github/releases",
+      "sample_window": "latest 20 releases",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "has_signed_releases",
+      "value": "true",
+      "source": "github/releases",
+      "method": "releases exist; signatures not verified",
+      "sample_window": "latest 20 releases",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.2
+    },
+    {
+      "type": "github",
+      "key": "has_changelog",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "has_maintainer_docs",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "security_policy",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "license_spdx",
+      "value": "GPL-3.0",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:12.278337Z",
+      "confidence": 1
+    }
+  ],
+  "summary": {
+    "deterministic": "Overall score 6.9/10. Activity 6.4, maintenance 10.0, security 5.4, and license 5.0 are the main decision signals.",
+    "ai_enabled": false
+  },
+  "observed_at": "2026-10-21T21:33:12.278337Z",
+  "mode": "quick"
+}

@@ -1,0 +1,188 @@
+{
+  "category": {
+    "id": "e-signature",
+    "name": "E-signature",
+    "description": "Send business documents for electronic signature and track completion.",
+    "audience": "Businesses sending contracts, offers, purchase agreements, waivers, and approvals.",
+    "audienceReach": "broad",
+    "audienceRationale": "Agreement workflows span sales, HR, procurement, operations, and customer onboarding; use varies with document volume.",
+    "audienceSources": [
+      "https://www.docusign.com/products/electronic-signature",
+      "https://docs.opensignlabs.com/docs/API-docs/v1.2/intro/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "docusign",
+      "name": "Docusign",
+      "url": "https://www.docusign.com/products/electronic-signature",
+      "categories": [
+        "e-signature"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 11,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "US checkout Personal displays USD 11/month, billed monthly with USD 132 annual commitment; 5 envelopes/month. Current rendered checkout differs from older USD 10 marketing/search pricing.",
+        "source": "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "documenso",
+      "name": "Documenso",
+      "url": "https://documenso.com",
+      "categories": [
+        "e-signature"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/documenso/documenso",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Enterprise SSO and advanced audit capabilities",
+        "Enterprise embedded authoring/editor and white-label embedding"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL core includes community API/signing/templates, but embedded authoring/editor requires a commercial key, alongside enterprise SSO and audit features. Embedded authoring is a daily integration workflow, so classified C under the common rubric.",
+      "sources": {
+        "license": "https://github.com/documenso/documenso/blob/68b9d2093c35079276d2ad9bd25467f5dd705588/LICENSE",
+        "features": "https://docs.documenso.com/docs/self-hosting",
+        "hosting": "https://documenso.com"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T18:10:28Z",
+        "lastRelease": "v2.21.0",
+        "lastReleaseAt": "2026-10-19T01:25:42Z",
+        "commit": "68b9d2093c35079276d2ad9bd25467f5dd705588",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/documenso/documenso",
+        "rsx": "Central rsx quick analysis succeeded; overall 6.9/10; informational health signal only."
+      }
+    },
+    {
+      "id": "docuseal",
+      "name": "DocuSeal",
+      "url": "https://www.docuseal.com",
+      "categories": [
+        "e-signature"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/docusealco/docuseal",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Automated reminders",
+        "Custom email content and branding",
+        "Bulk sending",
+        "API and embedding require Pro; on-prem API/embedding also metered"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL core is self-hostable; official on-prem comparison explicitly reserves routine reminders, bulk workflow and integrations to Pro.",
+      "sources": {
+        "license": "https://github.com/docusealco/docuseal/blob/8f8f69f0bc6ac2e59746cd6efac54a852289bec3/LICENSE",
+        "features": "https://www.docuseal.com/pricing",
+        "hosting": "https://www.docuseal.com"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-19T12:29:41Z",
+        "lastRelease": "3.3.3",
+        "lastReleaseAt": "2026-10-19T12:29:42Z",
+        "commit": "8f8f69f0bc6ac2e59746cd6efac54a852289bec3",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/docusealco/docuseal",
+        "rsx": "Central rsx quick analysis succeeded; overall 5.7/10; informational health signal only."
+      }
+    },
+    {
+      "id": "opensign",
+      "name": "OpenSign",
+      "url": "https://www.opensignlabs.com",
+      "categories": [
+        "e-signature"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/OpenSignLabs/OpenSign",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "API token generation unavailable in free self-hosted edition",
+        "Premium-credit features include bulk sending, public template signing, kiosk mode and embedded signing"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL core excludes customRoute under root license; API-token docs explicitly require paid self-hosted upgrade, while ordinary individual sends remain free.",
+      "sources": {
+        "license": "https://github.com/OpenSignLabs/OpenSign/blob/62117d36e0ef087db3157139daf4c67b5d612580/LICENSE",
+        "features": "https://docs.opensignlabs.com/docs/help/Settings/APIToken/",
+        "hosting": "https://www.opensignlabs.com"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T16:53:51Z",
+        "lastRelease": "v3.0.0",
+        "lastReleaseAt": "2026-10-21T16:53:51Z",
+        "commit": "62117d36e0ef087db3157139daf4c67b5d612580",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/OpenSignLabs/OpenSign",
+        "rsx": "Central rsx quick analysis succeeded; overall 5.4/10; informational health signal only."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "docusign--documenso",
+      "from": "docusign",
+      "to": "documenso",
+      "fit": "partial",
+      "migrationNotes": "PDF signing, templates and API suit basic agreement flows. Recreate templates and integrations; enterprise SSO and embedded editor needs require edition review.",
+      "sources": [
+        "https://docs.documenso.com/docs/policies/community-edition",
+        "https://docs.documenso.com/docs/self-hosting"
+      ]
+    },
+    {
+      "id": "docusign--docuseal",
+      "from": "docusign",
+      "to": "docuseal",
+      "fit": "partial",
+      "migrationNotes": "Basic PDF document signing and templates; official pricing offers DocuSign template import with Pro. Reminders, bulk sends, API/embedding require Pro; no archive migration verified.",
+      "sources": [
+        "https://www.docuseal.com/pricing"
+      ]
+    },
+    {
+      "id": "docusign--opensign",
+      "from": "docusign",
+      "to": "opensign",
+      "fit": "partial",
+      "migrationNotes": "PDF signing, templates, signing order and completion tracking fit basic workflows. Free self-hosted API token generation unavailable; paid integration and premium-credit workflows need separate evaluation.",
+      "sources": [
+        "https://github.com/OpenSignLabs/OpenSign",
+        "https://docs.opensignlabs.com/docs/help/Settings/APIToken/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "No migration of historical evidence, templates, or integrations was executed; all mappings are partial.",
+    "OpenSign pricing page did not expose plan table; paid self-hosted API gate verified separately in official API-token documentation.",
+    "OpenSign customRoute directory excluded from AGPL by root license; directory exists, but detailed license within that directory was not found in its top-level listing. OSI status applies only to identified AGPL core.",
+    "Documenso self-hosted marketing labels CE for evaluation/POCs, while official Community/Enterprise docs permit internal unmodified use and identify core functionality. Do not treat marketing intended-use text as a separate license restriction."
+  ]
+}

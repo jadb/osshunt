@@ -1,0 +1,315 @@
+{
+  "category": {
+    "id": "team-chat",
+    "name": "Team chat",
+    "description": "Persistent team messaging, channels, direct messages, and collaborative conversations.",
+    "audience": "Employees and external collaborators across business functions and industries.",
+    "audienceReach": "universal",
+    "audienceRationale": "A cross-functional communication need shared by distributed and office-based teams; reach ranking is qualitative, not a headcount estimate.",
+    "audienceSources": [
+      "https://slack.com/pricing",
+      "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+    ]
+  },
+  "paid": [
+    {
+      "id": "slack",
+      "name": "Slack",
+      "url": "https://slack.com",
+      "categories": [
+        "team-chat"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 7.25,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Pro standard annual price per user/month; free plan available; temporary introductory discount excluded.",
+        "source": "https://slack.com/intl/en-us/pricing"
+      }
+    },
+    {
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "url": "https://www.microsoft.com/microsoft-teams",
+      "categories": [
+        "team-chat"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 4,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Teams Essentials US annual subscription; Microsoft 365 bundles and enterprise editions differ.",
+        "source": "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "zulip",
+      "name": "Zulip",
+      "url": "https://zulip.com",
+      "categories": [
+        "team-chat"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/zulip/zulip",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [
+        "Vendor-operated mobile push service for commercial organizations above 10 users requires a paid self-hosted plan; eligible communities can receive it free."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "All self-hosted software features included in every plan; no enterprise code tier. A applies to software, with separately priced vendor push relay disclosed.",
+      "sources": {
+        "license": "https://github.com/zulip/zulip/blob/502a6ba586f40532f15de9a25430028339d61f02/LICENSE",
+        "features": "https://zulip.com/plans/",
+        "hosting": "https://zulip.com/plans/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:55:53Z",
+        "lastRelease": "12.3",
+        "lastReleaseAt": "2026-09-21T17:10:07Z",
+        "commit": "502a6ba586f40532f15de9a25430028339d61f02",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/zulip/zulip",
+        "rsx": "Unavailable: protected cache write failed; writable-cache fallback failed GitHub DNS lookup. GitHub metadata/release fallback used."
+      }
+    },
+    {
+      "id": "element",
+      "name": "Element Server Suite Community",
+      "url": "https://element.io/en/server-suite/community",
+      "categories": [
+        "team-chat"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/element-hq/ess-helm",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "ESS Pro adds Synapse Pro autoscaling, high availability and multi-tenancy.",
+        "Advanced IAM, audit/compliance and central management are Pro features."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Complete Matrix stack with Synapse, Matrix Authentication Service, Element Web and Element Call. Identified repo is suite deployment distribution, not just the client. No hard 100-user cap; commercial use allowed by repository FAQ, although vendor recommends Pro for commercial production.",
+      "sources": {
+        "license": "https://github.com/element-hq/ess-helm/blob/5fa05580d3f818beafa84fbd24b385e010e87c40/LICENSE-AGPL-3.0-only",
+        "features": "https://github.com/element-hq/ess-helm#editions",
+        "hosting": "https://element.io/en/server-suite"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T20:57:02Z",
+        "lastRelease": "26.10.2",
+        "lastReleaseAt": "2026-10-16T14:35:20Z",
+        "commit": "5fa05580d3f818beafa84fbd24b385e010e87c40",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/element-hq/ess-helm",
+        "rsx": "Unavailable: protected cache write failed; writable-cache fallback failed GitHub DNS lookup. GitHub metadata/release fallback used."
+      }
+    },
+    {
+      "id": "mattermost",
+      "name": "Mattermost Team Edition",
+      "url": "https://mattermost.com",
+      "categories": [
+        "team-chat"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/mattermost/mattermost",
+      "license": "AGPL-3.0-only AND Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Group calling and guest accounts excluded from Team Edition.",
+        "SSO removed from Team Edition; advanced identity, permissions, compliance and HA in proprietary editions."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core source AGPLv3; designated webapp/admin/config folders Apache-2.0; vendor-compiled Team binary MIT. Enterprise code separately commercial. Tier C because everyday group calls/guests are gated. Proprietary Entry free mode is separate; its 10,000-message cap does not apply to Team. Vendor positions Team below 250 activated users.",
+      "sources": {
+        "license": "https://github.com/mattermost/mattermost/blob/5a5cbfc306bb943ae8a6a9bb2f5cac85474d7189/LICENSE.txt",
+        "features": "https://docs.mattermost.com/product-overview/plans",
+        "hosting": "https://docs.mattermost.com/product-overview/editions-and-offerings"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:13:41Z",
+        "lastRelease": "v12.0.0",
+        "lastReleaseAt": "2026-10-14T10:08:59Z",
+        "commit": "5a5cbfc306bb943ae8a6a9bb2f5cac85474d7189",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/mattermost/mattermost",
+        "rsx": "Unavailable: protected cache write failed; writable-cache fallback failed GitHub DNS lookup. GitHub metadata/release fallback used."
+      }
+    },
+    {
+      "id": "rocket-chat",
+      "name": "Rocket.Chat Community",
+      "url": "https://www.rocket.chat",
+      "categories": [
+        "team-chat"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/RocketChat/Rocket.Chat",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Community documented for up to 100 concurrent users; vendor push capped at 10,000/month.",
+        "Community limited app integrations and video integrations (Jitsi/BigBlueButton only); advanced identity/governance and air-gapped offering require premium plan."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT core excludes ee directories and third-party license exceptions. Proprietary premium-enabled Starter free plan (50 registered users) is separate from Community. Routine collaboration limits justify C. Current paid plans Commercial/Government/Defense; Pro became legacy April 29, 2026.",
+      "sources": {
+        "license": "https://github.com/RocketChat/Rocket.Chat/blob/aa3ad515571152850b67ba8ac2f60ec7a51deab1/LICENSE",
+        "features": "https://docs.rocket.chat/docs/our-plans",
+        "hosting": "https://docs.rocket.chat/docs/our-plans"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:25:33Z",
+        "lastRelease": "8.9.0",
+        "lastReleaseAt": "2026-10-05T17:41:21Z",
+        "commit": "aa3ad515571152850b67ba8ac2f60ec7a51deab1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/RocketChat/Rocket.Chat",
+        "rsx": "Unavailable: protected cache write failed; writable-cache fallback failed GitHub DNS lookup. GitHub metadata/release fallback used."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "slack--zulip",
+      "from": "slack",
+      "to": "zulip",
+      "fit": "different-approach",
+      "migrationNotes": "Channel-plus-topic model differs from Slack threads; Slack export/import documented, private data availability depends on source export permissions.",
+      "sources": [
+        "https://zulip.com/plans/",
+        "https://zulip.com/help/import-from-slack"
+      ]
+    },
+    {
+      "id": "slack--element",
+      "from": "slack",
+      "to": "element",
+      "fit": "different-approach",
+      "migrationNotes": "Matrix rooms, federation and encryption differ from Slack channels and app workflows. Plan identity, integration and history transfer separately; no verified one-click importer or bridge parity claimed.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm#editions"
+      ]
+    },
+    {
+      "id": "slack--mattermost",
+      "from": "slack",
+      "to": "mattermost",
+      "fit": "partial",
+      "migrationNotes": "Team offers channels, DMs and core search, but no group calls or guest accounts. Current Slack migration guide targets Entry/paid editions; Team import parity requires verification; integrations must be rebuilt.",
+      "sources": [
+        "https://docs.mattermost.com/product-overview/plans",
+        "https://docs.mattermost.com/administration-guide/onboard/migrate-from-slack"
+      ]
+    },
+    {
+      "id": "slack--rocket-chat",
+      "from": "slack",
+      "to": "rocket-chat",
+      "fit": "partial",
+      "migrationNotes": "Slack importer handles users/channels/messages; attachments need a separate pending-file download step and existing usernames can be skipped. Community edition limits remain.",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans",
+        "https://docs.rocket.chat/docs/import-from-slack"
+      ]
+    },
+    {
+      "id": "microsoft-teams--zulip",
+      "from": "microsoft-teams",
+      "to": "zulip",
+      "fit": "different-approach",
+      "migrationNotes": "Beta Teams importer maps teams to channels; excludes DMs and private-channel messages. Keep Microsoft tenant active through migration; does not replace Office applications.",
+      "sources": [
+        "https://zulip.com/plans/",
+        "https://zulip.com/help/import-from-microsoft-teams"
+      ]
+    },
+    {
+      "id": "microsoft-teams--element",
+      "from": "microsoft-teams",
+      "to": "element",
+      "fit": "different-approach",
+      "migrationNotes": "Matrix rooms, federation and encryption provide a different messaging architecture. Plan identities and history transfer separately; no verified one-click history importer or bridge parity claimed. Does not reproduce Microsoft 365 applications.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm#editions"
+      ]
+    },
+    {
+      "id": "microsoft-teams--mattermost",
+      "from": "microsoft-teams",
+      "to": "mattermost",
+      "fit": "partial",
+      "migrationNotes": "Partial replacement for persistent channels/DMs. Team lacks group calls and SSO; no verified Teams history importer; meetings and Office-file workflows need separate replacements.",
+      "sources": [
+        "https://docs.mattermost.com/product-overview/plans"
+      ]
+    },
+    {
+      "id": "microsoft-teams--rocket-chat",
+      "from": "microsoft-teams",
+      "to": "rocket-chat",
+      "fit": "partial",
+      "migrationNotes": "Core messaging replacement with Community concurrency/push/integration limits. No verified Teams history import; Microsoft 365 apps and meeting workflows need separate replacements.",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Mattermost Entry (as OSS candidate)",
+      "reason": "Free mode of commercially licensed Enterprise binary, not the OSS Team Edition; message history capped at 10,000.",
+      "sources": [
+        "https://docs.mattermost.com/product-overview/editions-and-offerings"
+      ]
+    },
+    {
+      "name": "Rocket.Chat Starter (as OSS candidate)",
+      "reason": "Free premium-feature offering with 50-user ceiling; distinguish from MIT Community core.",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ]
+    },
+    {
+      "name": "Element Web alone (as complete server alternative)",
+      "reason": "Matrix client needs a homeserver; suite record uses official complete-stack repository instead.",
+      "sources": [
+        "https://element.io/en/server-suite/community",
+        "https://github.com/element-hq/ess-helm"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Mattermost current Slack migration guide lists Entry and paid editions, omits Team; Team importer compatibility not verified.",
+    "No fully faithful Slack/Teams migration assumed: exports, identity, integrations, meetings and document-suite behavior require separate evaluation.",
+    "Rocket.Chat Community limits are documented vendor-edition behavior; MIT source rights remain distinct.",
+    "Element Community recommended scale of around 100 users is not an enforced user limit."
+  ]
+}

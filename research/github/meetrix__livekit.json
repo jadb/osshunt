@@ -1,0 +1,46 @@
+{
+  "repo": "meetrix/livekit",
+  "checkedAt": "2026-10-21T21:28:15.249180+00:00",
+  "responses": {
+    "metadata": {
+      "status": 1,
+      "url": "https://api.github.com/repos/meetrix/livekit",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    },
+    "license": {
+      "status": 1,
+      "url": "https://api.github.com/repos/meetrix/livekit/license",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/licenses/licenses#get-the-license-for-a-repository",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    },
+    "release": {
+      "status": 1,
+      "url": "https://api.github.com/repos/meetrix/livekit/releases/latest",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    },
+    "commit": {
+      "status": 1,
+      "url": "https://api.github.com/repos/meetrix/livekit/commits/HEAD",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/commits/commits#get-a-commit",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    }
+  }
+}

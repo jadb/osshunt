@@ -1,0 +1,262 @@
+{
+  "category": {
+    "id": "login-sso",
+    "name": "Login and single sign-on",
+    "description": "Workforce SSO, application/customer identity and web access authentication; distinct use cases with partial overlap.",
+    "audience": "IT/security teams managing employee application access and software teams implementing customer login.",
+    "audienceReach": "broad",
+    "audienceRationale": "Employee access spans industries; customer IAM also serves businesses operating applications. Deployment requires identity and security expertise.",
+    "audienceSources": [
+      "https://www.okta.com/pricing/",
+      "https://auth0.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "okta",
+      "name": "Okta Workforce Identity",
+      "url": "https://www.okta.com/",
+      "categories": [
+        "login-sso"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 6,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Starter suite advertised per user/month, billed annually; standalone products/add-ons differ.",
+        "source": "https://www.okta.com/pricing/"
+      }
+    },
+    {
+      "id": "auth0",
+      "name": "Auth0",
+      "url": "https://auth0.com/",
+      "categories": [
+        "login-sso"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": 35,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "monthly",
+        "note": "Displayed Essentials B2C price for 500 monthly active users; B2B and MAU selections change price; free plan also exists.",
+        "source": "https://auth0.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "keycloak",
+      "name": "Keycloak",
+      "url": "https://www.keycloak.org/",
+      "categories": [
+        "login-sso"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/keycloak/keycloak",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Community IAM product; documented SSO, federation, administration, MFA and authorization included. No project commercial feature edition identified. Third-party hosting/support not counted as a project hosted offering.",
+      "sources": {
+        "license": "https://github.com/keycloak/keycloak/blob/3c07b879d5cfaf277caa5d4bc96174347f71f91c/LICENSE.txt",
+        "features": "https://www.keycloak.org/",
+        "hosting": "https://www.keycloak.org/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T15:49:15Z",
+        "lastRelease": "26.8.1",
+        "lastReleaseAt": "2026-10-13T08:58:15Z",
+        "commit": "3c07b879d5cfaf277caa5d4bc96174347f71f91c",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/keycloak/keycloak",
+        "rsx": "Central rsx analyze evidence: overall 5.5/10; automated license verdict reviewed against pinned LICENSE."
+      }
+    },
+    {
+      "id": "zitadel",
+      "name": "ZITADEL",
+      "url": "https://zitadel.com/",
+      "categories": [
+        "login-sso"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/zitadel/zitadel",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Current core uses AGPL v3, replacing Apache licensing for v3 onward; commercial license/support and managed cloud available. Vendor describes same core across deployments; cloud usage limits are not self-hosted feature locks. Package exceptions may apply.",
+      "sources": {
+        "license": "https://github.com/zitadel/zitadel/blob/ce12560d2491f12bb96f20805ad532f7d6dd5875/LICENSE",
+        "features": "https://help.zitadel.com/zitadel-enterprise-cloud-vs-enterprise-self-hosted",
+        "hosting": "https://help.zitadel.com/zitadel-enterprise-cloud-vs-enterprise-self-hosted"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T12:54:22Z",
+        "lastRelease": "v4.19.5",
+        "lastReleaseAt": "2026-10-15T09:40:41Z",
+        "commit": "ce12560d2491f12bb96f20805ad532f7d6dd5875",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/zitadel/zitadel",
+        "rsx": "Central rsx analyze evidence: overall 5.3/10; automated license verdict reviewed against pinned LICENSE."
+      }
+    },
+    {
+      "id": "authentik",
+      "name": "authentik",
+      "url": "https://goauthentik.io/",
+      "categories": [
+        "login-sso"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/goauthentik/authentik",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Privileged access management and agent accounts",
+        "Google Workspace and Microsoft Entra ID integrations",
+        "Enhanced audit logging, scheduled offboarding and CSV reports",
+        "mTLS authentication and device trust integrations"
+      ],
+      "hostedOffer": false,
+      "classificationReason": "Core MIT; root LICENSE explicitly carves out enterprise directory under separate terms. Paid administration/security integrations; community protocols and B2B/B2C login remain available. Vendor explicitly states no hosted service.",
+      "sources": {
+        "license": "https://github.com/goauthentik/authentik/blob/088d72e671c7ec5680cc101e80b4e6ce4f332424/LICENSE",
+        "features": "https://goauthentik.io/pricing/",
+        "hosting": "https://goauthentik.io/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T17:33:49Z",
+        "lastRelease": "version/2026.8.5",
+        "lastReleaseAt": "2026-10-21T12:57:59Z",
+        "commit": "088d72e671c7ec5680cc101e80b4e6ce4f332424",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/goauthentik/authentik",
+        "rsx": "Central rsx analyze evidence: overall 5.4/10; automated license verdict reviewed against pinned LICENSE."
+      }
+    },
+    {
+      "id": "authelia",
+      "name": "Authelia",
+      "url": "https://www.authelia.com/",
+      "categories": [
+        "login-sso"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/authelia/authelia",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Community product includes documented reverse-proxy authentication, MFA and OIDC. No commercial feature edition or project-hosted service identified; scope is narrower than full workforce lifecycle or customer identity suites.",
+      "sources": {
+        "license": "https://github.com/authelia/authelia/blob/e6cd61d33e9e23fe7e85e66e9937bddc67de466b/LICENSE",
+        "features": "https://www.authelia.com/",
+        "hosting": "https://www.authelia.com/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T12:33:32Z",
+        "lastRelease": "v4.39.28",
+        "lastReleaseAt": "2026-09-17T12:13:30Z",
+        "commit": "e6cd61d33e9e23fe7e85e66e9937bddc67de466b",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/authelia/authelia",
+        "rsx": "Central rsx analyze evidence: overall 7.7/10; automated license verdict reviewed against pinned LICENSE."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "okta--keycloak",
+      "from": "okta",
+      "to": "keycloak",
+      "fit": "partial",
+      "migrationNotes": "Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately.",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "id": "okta--authentik",
+      "from": "okta",
+      "to": "authentik",
+      "fit": "partial",
+      "migrationNotes": "Supports SAML/OIDC and directory/proxy protocols. Recreate app integrations, policy flows and user stores. Some workplace provisioning/security integrations require Enterprise.",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "id": "auth0--keycloak",
+      "from": "auth0",
+      "to": "keycloak",
+      "fit": "partial",
+      "migrationNotes": "Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately.",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "id": "auth0--authentik",
+      "from": "auth0",
+      "to": "authentik",
+      "fit": "partial",
+      "migrationNotes": "Supports SAML/OIDC and directory/proxy protocols. Recreate app integrations, policy flows and user stores. Some workplace provisioning/security integrations require Enterprise.",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "id": "auth0--zitadel",
+      "from": "auth0",
+      "to": "zitadel",
+      "fit": "partial",
+      "migrationNotes": "Customer and B2B identity infrastructure with managed or self-hosted deployment. Adapt application issuer/client settings and migrate users, organizations and policies; not an SDK-compatible swap.",
+      "sources": [
+        "https://zitadel.com/docs"
+      ]
+    },
+    {
+      "id": "okta--authelia",
+      "from": "okta",
+      "to": "authelia",
+      "fit": "different-approach",
+      "migrationNotes": "Useful for internal web apps secured by reverse proxy or OIDC. Requires proxy/app configuration and an identity backend; does not replace the whole workforce lifecycle, governance and SaaS provisioning suite.",
+      "sources": [
+        "https://www.authelia.com/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "No migration was executed; all mappings are capability comparisons, not parity guarantees.",
+    "Authelia is proxy/OIDC focused, not a full Okta governance or Auth0 customer platform replacement.",
+    "ZITADEL licensing FAQ documents v3 transition; pinned LICENSE is AGPL v3, but package-level exceptions should be read before embedding.",
+    "Supplementary GitHub fetches were blocked by network and web cache misses; pinned central LICENSE evidence succeeded."
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "repo": {
+    "owner": "ONLYOFFICE",
+    "name": "DocumentServer",
+    "url": "https://github.com/ONLYOFFICE/DocumentServer",
+    "description": "ONLYOFFICE Docs is a free collaborative online office suite comprising viewers and editors for texts, spreadsheets and presentations, forms and PDF, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.",
+    "homepage": "https://www.onlyoffice.com/see-it-in-action",
+    "topics": [
+      "collaboration",
+      "collaborative",
+      "doc",
+      "docx",
+      "excel",
+      "node",
+      "node-js",
+      "nodejs",
+      "odp",
+      "ods",
+      "odt",
+      "office",
+      "onlyoffice",
+      "ppt",
+      "pptx",
+      "presentation",
+      "spreadsheet",
+      "word",
+      "xls",
+      "xlsx"
+    ]
+  },
+  "scores": {
+    "overall": 5.6,
+    "categories": {
+      "activity": {
+        "id": "activity",
+        "label": "Activity",
+        "score": 2.4,
+        "weight": 0.16,
+        "multiplier": 1,
+        "reason": "Current pace of work and maintainer activity",
+        "metrics": {
+          "commit_cadence_30d": 0,
+          "merged_pr_velocity_30d": 0,
+          "open_prs": 1,
+          "stars": 7037
+        }
+      },
+      "adoption": {
+        "id": "adoption",
+        "label": "Adoption",
+        "score": 1.3,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "External usage and registry reach",
+        "metrics": {
+          "dependents": 351
+        }
+      },
+      "community": {
+        "id": "community",
+        "label": "Community",
+        "score": 4.4,
+        "weight": 0.09,
+        "multiplier": 1,
+        "reason": "Contributor and support surface",
+        "metrics": {
+          "code_of_conduct": 0,
+          "contributors": 18,
+          "security_policy": 0,
+          "support_channels": 0
+        }
+      },
+      "docs": {
+        "id": "docs",
+        "label": "Docs",
+        "score": 8,
+        "weight": 0.08,
+        "multiplier": 1,
+        "reason": "Documentation and maintainer guidance",
+        "metrics": {
+          "has_changelog": 1,
+          "has_homepage": 1,
+          "has_maintainer_docs": 0,
+          "has_roadmap": 1
+        }
+      },
+      "license": {
+        "id": "license",
+        "label": "License",
+        "score": 5,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "Commercial fit and legal clarity",
+        "metrics": {
+          "commercial_compatible": 0,
+          "unknown": 1
+        }
+      },
+      "maintenance": {
+        "id": "maintenance",
+        "label": "Maintenance",
+        "score": 9,
+        "weight": 0.18,
+        "multiplier": 1,
+        "reason": "Sustainability and freshness",
+        "metrics": {
+          "active_maintainers": 3,
+          "stale_issues": 0,
+          "stale_prs": 0
+        }
+      },
+      "release_hygiene": {
+        "id": "release_hygiene",
+        "label": "Release hygiene",
+        "score": 10,
+        "weight": 0.07,
+        "multiplier": 1,
+        "reason": "Release cadence and publication quality",
+        "metrics": {
+          "release_cadence_90d": 1,
+          "signed_releases": 1
+        }
+      },
+      "security": {
+        "id": "security",
+        "label": "Security",
+        "score": 5.1,
+        "weight": 0.22,
+        "multiplier": 1.1,
+        "reason": "Security posture and vulnerability evidence",
+        "metrics": {
+          "critical_vulns": 0,
+          "high_vulns": 0
+        }
+      }
+    },
+    "applied_multipliers": {
+      "security": 1.1
+    },
+    "raw_weights": {
+      "activity": 0.16,
+      "adoption": 0.1,
+      "community": 0.09,
+      "docs": 0.08,
+      "license": 0.1,
+      "maintenance": 0.18,
+      "release_hygiene": 0.07,
+      "security": 0.22
+    }
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "activity": {
+    "stars": 7037,
+    "forks": 1325,
+    "watchers": 166,
+    "open_issues": 1126,
+    "open_prs": 1,
+    "merged_pr_velocity_30d": 0,
+    "issue_close_rate_30d": 0.125,
+    "time_to_merge_hours": 421.08566840277774,
+    "latest_accepted_contribution_at": "2025-07-02T15:34:24Z",
+    "latest_maintainer_activity_at": "2025-07-02T15:34:24Z",
+    "commit_cadence_30d": 0,
+    "release_cadence_90d": 1,
+    "last_release": "v10.0.0",
+    "last_release_published_at": "2026-10-12T15:01:39Z",
+    "latest_tag_age_days": 9
+  },
+  "maintenance": {
+    "bus_factor_proxy": 5,
+    "active_maintainers": 3,
+    "stale_issues": 0,
+    "stale_prs": 0,
+    "archived": false,
+    "disabled": false,
+    "has_changelog": true,
+    "has_roadmap": true,
+    "has_maintainer_docs": false
+  },
+  "adoption": {
+    "dependents_count": 351,
+    "docs_healthy": true
+  },
+  "community": {
+    "contributors": 18,
+    "support_links": [
+      "https://www.onlyoffice.com/see-it-in-action"
+    ],
+    "has_code_of_conduct": false,
+    "has_security_policy": false
+  },
+  "security": {
+    "checks": [
+      {
+        "name": "repository_visibility",
+        "score": 10,
+        "status": "ok"
+      },
+      {
+        "name": "security_policy",
+        "score": 2,
+        "details": [
+          "SECURITY.md not detected in repository root or .github/"
+        ],
+        "status": "unknown"
+      },
+      {
+        "name": "code_of_conduct",
+        "score": 2,
+        "details": [
+          "CODE_OF_CONDUCT.md not detected in repository root or .github/"
+        ],
+        "status": "unknown"
+      },
+      {
+        "name": "release_hygiene",
+        "score": 8,
+        "status": "derived"
+      }
+    ],
+    "critical_vulnerabilities": 0,
+    "high_vulnerabilities": 0,
+    "has_sast": false,
+    "has_fuzzing": false,
+    "has_signed_releases": true
+  },
+  "license": {
+    "spdx": "AGPL-3.0",
+    "commercial_compatible": false,
+    "copyleft": true,
+    "unknown": false,
+    "risk_notes": [
+      "license may not be suitable for commercial use"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "github",
+      "key": "open_prs",
+      "value": "1",
+      "source": "github/pulls",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "open_issues",
+      "value": "41",
+      "source": "github/issues",
+      "sample_window": "latest 50 issues",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "time_to_merge_hours",
+      "value": "421.1",
+      "source": "github/pulls",
+      "method": "merge time approximated by PR last-update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "issue_close_rate_30d",
+      "value": "0.12",
+      "source": "github/issues",
+      "sample_window": "latest 50 issues",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "latest_maintainer_activity_at",
+      "value": "2025-07-02T15:34:24Z",
+      "source": "github/pulls",
+      "method": "last merged-PR update stand-in; maintainer actions not sampled",
+      "sample_window": "latest 50 PRs",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.5
+    },
+    {
+      "type": "github",
+      "key": "latest_accepted_contribution_at",
+      "value": "2025-07-02T15:34:24Z",
+      "source": "github/pulls",
+      "method": "last merged-PR update timestamp",
+      "sample_window": "latest 50 PRs",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.8
+    },
+    {
+      "type": "github",
+      "key": "security_advisories",
+      "value": "checked: 0 critical, 0 high",
+      "source": "github/security-advisories",
+      "method": "published, non-withdrawn repository advisories counted by severity",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "stars",
+      "value": "7037",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "forks",
+      "value": "1325",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "watchers",
+      "value": "166",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "contributors",
+      "value": "18",
+      "source": "github/contributors",
+      "sample_window": "first 100 contributors",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "active_maintainers",
+      "value": "3",
+      "source": "github/contributors",
+      "method": "min(3, contributor count); maintainer roles not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "bus_factor_proxy",
+      "value": "5",
+      "source": "github/contributors",
+      "method": "min(5, contributor count); commit distribution not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "dependents_count",
+      "value": "351",
+      "source": "github/repos",
+      "method": "stars/20 estimate; dependents not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.3
+    },
+    {
+      "type": "github",
+      "key": "docs_healthy",
+      "value": "true",
+      "source": "github/repos",
+      "method": "homepage URL present; docs content not sampled",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "last_release",
+      "value": "v10.0.0",
+      "source": "github/releases",
+      "sample_window": "latest 20 releases",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "release_cadence_90d",
+      "value": "1",
+      "source": "github/releases",
+      "sample_window": "latest 20 releases",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "has_signed_releases",
+      "value": "true",
+      "source": "github/releases",
+      "method": "releases exist; signatures not verified",
+      "sample_window": "latest 20 releases",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.2
+    },
+    {
+      "type": "github",
+      "key": "has_changelog",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "has_roadmap",
+      "value": "detected",
+      "source": "github/contents",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "license_spdx",
+      "value": "AGPL-3.0",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:33:05.326878Z",
+      "confidence": 1
+    }
+  ],
+  "summary": {
+    "deterministic": "Overall score 5.6/10. Activity 2.4, maintenance 9.0, security 5.1, and license 5.0 are the main decision signals.",
+    "ai_enabled": false
+  },
+  "observed_at": "2026-10-21T21:33:05.326878Z",
+  "mode": "quick"
+}

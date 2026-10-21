@@ -1,0 +1,398 @@
+[
+  {
+    "id": "email-clients",
+    "name": "Email clients and webmail",
+    "paid": [
+      "Outlook",
+      "Front personal inbox workflows"
+    ],
+    "candidates": [
+      "Thunderbird",
+      "Roundcube"
+    ],
+    "audience": "Most employees; mail interface, not mail hosting or shared support inboxes",
+    "sources": [
+      "https://www.thunderbird.net/en-US/about/mission-statement/",
+      "https://roundcube.net/"
+    ]
+  },
+  {
+    "id": "pdf-tools",
+    "name": "PDF editing and processing",
+    "paid": [
+      "Adobe Acrobat",
+      "Smallpdf"
+    ],
+    "candidates": [
+      "Stirling PDF",
+      "PDFsam Basic"
+    ],
+    "audience": "Most office workers; split/merge/OCR/editor capabilities differ",
+    "sources": [
+      "https://docs.stirlingpdf.com/",
+      "https://pdfsam.org/"
+    ]
+  },
+  {
+    "id": "website-cms",
+    "name": "Websites and CMS",
+    "paid": [
+      "Wix",
+      "Squarespace",
+      "Webflow"
+    ],
+    "candidates": [
+      "WordPress",
+      "Drupal",
+      "Ghost"
+    ],
+    "audience": "Businesses maintaining a public website",
+    "sources": [
+      "https://wordpress.org/about/"
+    ]
+  },
+  {
+    "id": "backup-recovery",
+    "name": "Backup and recovery",
+    "paid": [
+      "Backblaze Business Backup",
+      "Acronis"
+    ],
+    "candidates": [
+      "restic",
+      "BorgBackup",
+      "Kopia"
+    ],
+    "audience": "All business data owners; technical operation required",
+    "sources": [
+      "https://restic.net/",
+      "https://www.borgbackup.org/"
+    ]
+  },
+  {
+    "id": "file-transfer",
+    "name": "Large-file transfer",
+    "paid": [
+      "WeTransfer",
+      "MASV"
+    ],
+    "candidates": [
+      "copyparty",
+      "ProjectSend"
+    ],
+    "audience": "Cross-functional file senders; distinct from collaborative file suites",
+    "sources": [
+      "https://github.com/9001/copyparty"
+    ]
+  },
+  {
+    "id": "document-management",
+    "name": "Document management and OCR",
+    "paid": [
+      "DocuWare",
+      "M-Files"
+    ],
+    "candidates": [
+      "Paperless-ngx",
+      "Mayan EDMS"
+    ],
+    "audience": "Operations, finance, HR and records teams",
+    "sources": [
+      "https://docs.paperless-ngx.com/"
+    ]
+  },
+  {
+    "id": "transcription",
+    "name": "Transcription and meeting notes",
+    "paid": [
+      "Otter",
+      "Fireflies"
+    ],
+    "candidates": [
+      "Whisper",
+      "Vosk"
+    ],
+    "audience": "Meeting-heavy teams; engines need UI, diarization and summaries added",
+    "sources": [
+      "https://github.com/openai/whisper"
+    ]
+  },
+  {
+    "id": "time-tracking",
+    "name": "Time tracking and timesheets",
+    "paid": [
+      "Toggl Track",
+      "Harvest"
+    ],
+    "candidates": [
+      "Kimai",
+      "solidtime"
+    ],
+    "audience": "Services businesses and employee timesheets",
+    "sources": [
+      "https://www.kimai.org/"
+    ]
+  },
+  {
+    "id": "expense-reimbursements",
+    "name": "Employee expenses and reimbursements",
+    "paid": [
+      "Expensify",
+      "Spendesk",
+      "SAP Concur"
+    ],
+    "candidates": [
+      "Frappe HR expense claims",
+      "ERPNext expense workflows"
+    ],
+    "audience": "Employees filing claims, approvers and finance teams; distinct buying intent within broader HR/ERP suites",
+    "sources": [
+      "https://docs.frappe.io/hr/expense-claim"
+    ]
+  },
+  {
+    "id": "learning-management",
+    "name": "Learning management",
+    "paid": [
+      "TalentLMS",
+      "Docebo"
+    ],
+    "candidates": [
+      "Moodle",
+      "Open edX"
+    ],
+    "audience": "Employee onboarding, compliance training and education",
+    "sources": [
+      "https://moodle.org/",
+      "https://docs.openedx.org/en/latest/"
+    ]
+  },
+  {
+    "id": "ecommerce",
+    "name": "E-commerce",
+    "paid": [
+      "Shopify",
+      "BigCommerce"
+    ],
+    "candidates": [
+      "WooCommerce",
+      "PrestaShop",
+      "Medusa"
+    ],
+    "audience": "Retailers and businesses taking online orders",
+    "sources": [
+      "https://woocommerce.com/about/"
+    ]
+  },
+  {
+    "id": "image-editing",
+    "name": "Photo and raster image editing",
+    "paid": [
+      "Adobe Photoshop",
+      "Adobe Lightroom"
+    ],
+    "candidates": [
+      "GIMP",
+      "darktable",
+      "Krita"
+    ],
+    "audience": "Marketing, creators and visual-content teams; distinct from UI/whiteboard design",
+    "sources": [
+      "https://www.gimp.org/"
+    ]
+  },
+  {
+    "id": "video-editing",
+    "name": "Video editing",
+    "paid": [
+      "Adobe Premiere Pro",
+      "Final Cut Pro"
+    ],
+    "candidates": [
+      "Kdenlive",
+      "Shotcut"
+    ],
+    "audience": "Marketing and training content creators",
+    "sources": [
+      "https://kdenlive.org/about/"
+    ]
+  },
+  {
+    "id": "diagramming",
+    "name": "Flowcharts and business diagrams",
+    "paid": [
+      "Lucidchart",
+      "Microsoft Visio"
+    ],
+    "candidates": [
+      "draw.io",
+      "Mermaid"
+    ],
+    "audience": "Analysts, operations and technical teams; distinct from freeform whiteboards",
+    "sources": [
+      "https://www.drawio.com/"
+    ]
+  },
+  {
+    "id": "social-publishing",
+    "name": "Social publishing and scheduling",
+    "paid": [
+      "Buffer",
+      "Hootsuite"
+    ],
+    "candidates": [
+      "Postiz",
+      "Mixpost"
+    ],
+    "audience": "Marketing teams and agencies",
+    "sources": [
+      "https://postiz.com/"
+    ]
+  },
+  {
+    "id": "telephony",
+    "name": "Business telephony and PBX",
+    "paid": [
+      "RingCentral",
+      "Aircall"
+    ],
+    "candidates": [
+      "Asterisk",
+      "FreeSWITCH"
+    ],
+    "audience": "Sales, support and distributed-office phone users; carrier services still needed",
+    "sources": [
+      "https://www.asterisk.org/"
+    ]
+  },
+  {
+    "id": "digital-assets",
+    "name": "Digital asset management",
+    "paid": [
+      "Bynder",
+      "Brandfolder"
+    ],
+    "candidates": [
+      "ResourceSpace",
+      "Phraseanet"
+    ],
+    "audience": "Brand, marketing, media and content operations",
+    "sources": [
+      "https://www.resourcespace.com/"
+    ]
+  },
+  {
+    "id": "business-intelligence",
+    "name": "Business intelligence",
+    "paid": [
+      "Power BI",
+      "Tableau",
+      "Looker"
+    ],
+    "candidates": [
+      "Apache Superset",
+      "Metabase"
+    ],
+    "audience": "Managers and analysts consuming business dashboards",
+    "sources": [
+      "https://www.metabase.com/"
+    ]
+  },
+  {
+    "id": "recruiting",
+    "name": "Recruiting and applicant tracking",
+    "paid": [
+      "Greenhouse",
+      "Lever"
+    ],
+    "candidates": [
+      "OpenCATS",
+      "Frappe HR recruiting module"
+    ],
+    "audience": "Recruiters and hiring managers; narrower than general HR",
+    "sources": [
+      "https://www.opencats.org/"
+    ]
+  },
+  {
+    "id": "email-hosting",
+    "name": "Email hosting and servers",
+    "paid": [
+      "Fastmail Business",
+      "Zoho Mail"
+    ],
+    "candidates": [
+      "mailcow",
+      "Stalwart"
+    ],
+    "audience": "IT operators serving organization-wide mail; deeper than suite replacement",
+    "sources": [
+      "https://mailcow.email/"
+    ]
+  },
+  {
+    "id": "vpn-access",
+    "name": "VPN and private network access",
+    "paid": [
+      "Tailscale",
+      "Cloudflare Access"
+    ],
+    "candidates": [
+      "NetBird",
+      "Headscale"
+    ],
+    "audience": "IT and security teams serving remote staff",
+    "sources": [
+      "https://netbird.io/",
+      "https://headscale.net/"
+    ]
+  },
+  {
+    "id": "it-assets",
+    "name": "IT asset management",
+    "paid": [
+      "Lansweeper",
+      "Freshservice asset management"
+    ],
+    "candidates": [
+      "Snipe-IT",
+      "GLPI"
+    ],
+    "audience": "IT and procurement teams managing devices and inventory",
+    "sources": [
+      "https://snipeitapp.com/"
+    ]
+  },
+  {
+    "id": "api-testing",
+    "name": "API clients and testing",
+    "paid": [
+      "Postman",
+      "Insomnia paid plans"
+    ],
+    "candidates": [
+      "Bruno",
+      "Hoppscotch"
+    ],
+    "audience": "Software developers and API QA teams",
+    "sources": [
+      "https://www.usebruno.com/"
+    ]
+  },
+  {
+    "id": "search-infrastructure",
+    "name": "Search infrastructure",
+    "paid": [
+      "Algolia",
+      "Elastic Cloud"
+    ],
+    "candidates": [
+      "Typesense",
+      "OpenSearch"
+    ],
+    "audience": "Product and platform engineering teams",
+    "sources": [
+      "https://typesense.org/"
+    ]
+  }
+]

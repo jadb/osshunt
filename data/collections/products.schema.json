@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "categories": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kind": {
+            "type": "string",
+            "const": "paid"
+          },
+          "pricing": {
+            "type": "object",
+            "properties": {
+              "model": {
+                "type": "string",
+                "enum": [
+                  "per-seat",
+                  "usage",
+                  "flat",
+                  "mixed",
+                  "quote",
+                  "free"
+                ]
+              },
+              "entryAmount": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "currency": {
+                "type": "string",
+                "minLength": 1
+              },
+              "period": {
+                "type": "string",
+                "enum": [
+                  "month",
+                  "year",
+                  "one-time",
+                  "quote",
+                  "free"
+                ]
+              },
+              "unit": {
+                "type": "string",
+                "enum": [
+                  "seat",
+                  "account",
+                  "usage",
+                  "organization"
+                ]
+              },
+              "billing": {
+                "type": "string",
+                "enum": [
+                  "annual",
+                  "monthly",
+                  "quote",
+                  "free"
+                ]
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "model",
+              "entryAmount",
+              "currency",
+              "period",
+              "unit",
+              "billing",
+              "note",
+              "source"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "url",
+          "categories",
+          "kind",
+          "pricing"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "categories": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kind": {
+            "type": "string",
+            "const": "oss"
+          },
+          "repo": {
+            "type": "string",
+            "format": "uri"
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "osi": {
+            "type": "boolean"
+          },
+          "selfHostable": {
+            "type": "boolean"
+          },
+          "tier": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "S",
+              "U"
+            ]
+          },
+          "locked": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "serviceLimitations": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "hostedOffer": {
+            "type": "boolean"
+          },
+          "classificationReason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sources": {
+            "type": "object",
+            "properties": {
+              "license": {
+                "type": "string",
+                "format": "uri"
+              },
+              "features": {
+                "type": "string",
+                "format": "uri"
+              },
+              "hosting": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "license",
+              "features",
+              "hosting"
+            ],
+            "additionalProperties": false
+          },
+          "health": {
+            "type": "object",
+            "properties": {
+              "archived": {
+                "type": "boolean"
+              },
+              "disabled": {
+                "type": "boolean"
+              },
+              "pushedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "lastRelease": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lastReleaseAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "commit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "checkedAt": {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              },
+              "source": {
+                "type": "string",
+                "format": "uri"
+              },
+              "rsx": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "archived",
+              "disabled",
+              "pushedAt",
+              "lastRelease",
+              "lastReleaseAt",
+              "commit",
+              "checkedAt",
+              "source",
+              "rsx"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "url",
+          "categories",
+          "kind",
+          "repo",
+          "license",
+          "osi",
+          "selfHostable",
+          "tier",
+          "locked",
+          "hostedOffer",
+          "classificationReason",
+          "sources",
+          "health"
+        ],
+        "additionalProperties": false
+      }
+    ],
+    "title": "products",
+    "description": "Paid incumbents and community or source-available alternatives; kind oss includes explicitly labelled S/U candidates",
+    "x-key": "id",
+    "x-key-case": "insensitive",
+    "x-source": "research/categories/*.json"
+  }
+}

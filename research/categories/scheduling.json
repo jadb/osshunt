@@ -1,0 +1,174 @@
+{
+  "category": {
+    "id": "scheduling",
+    "name": "Appointment scheduling",
+    "description": "Booking links, availability, appointments and service-provider scheduling.",
+    "audience": "Sales, recruiting, customer-facing teams and service businesses.",
+    "audienceReach": "broad",
+    "audienceRationale": "Cross-industry need for customer and colleague bookings, especially customer-facing teams; less universal than office communication.",
+    "audienceSources": [
+      "https://calendly.com/pricing",
+      "https://easyappointments.org/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "calendly",
+      "name": "Calendly",
+      "url": "https://calendly.com",
+      "categories": [
+        "scheduling"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 10,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Standard $10/seat/month billed annually; free plan exists.",
+        "source": "https://calendly.com/pricing"
+      }
+    },
+    {
+      "id": "cal-com",
+      "name": "Cal.com",
+      "url": "https://cal.com",
+      "categories": [
+        "scheduling"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 12,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Teams $12/user/month billed annually; individual free plan exists. Distinct commercial application from Cal.diy.",
+        "source": "https://cal.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "easyappointments",
+      "name": "Easy!Appointments",
+      "url": "https://easyappointments.org",
+      "categories": [
+        "scheduling"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/alextselegidis/easyappointments",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Documented application is free/open source; commercial offerings are hosting, support and commissioned customization. No packaged paid edition feature gate identified in official FAQ/features. Custom work can add capabilities absent from standard application.",
+      "sources": {
+        "license": "https://github.com/alextselegidis/easyappointments/blob/f6c8a4c2f364bf8c64b1f913a531a7134dcfd3c6/LICENSE",
+        "features": "https://easyappointments.org/features/",
+        "hosting": "https://easyappointments.org/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-19T12:47:00Z",
+        "lastRelease": "1.6.1",
+        "lastReleaseAt": "2026-10-19T08:45:26Z",
+        "commit": "f6c8a4c2f364bf8c64b1f913a531a7134dcfd3c6",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/alextselegidis/easyappointments",
+        "rsx": "Central rsx analyze report available; repository active, not archived; heuristic license scoring not used for OSS eligibility."
+      }
+    },
+    {
+      "id": "cal-diy",
+      "name": "Cal.diy",
+      "url": "https://www.cal.diy",
+      "categories": [
+        "scheduling"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/calcom/cal.diy",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Cal.com-only: teams and round-robin/collective scheduling",
+        "Cal.com-only: managed events, workflows and routing forms",
+        "Cal.com-only: insights, organizations, SAML/SCIM and admin panel"
+      ],
+      "hostedOffer": false,
+      "classificationReason": "Former calcom/cal.com repository is now MIT Cal.diy, with commercial code removed. Classified C relative to Cal.com because routine team workflows are missing. Vendor recommends personal/non-production use; this recommendation does not override MIT commercial permission.",
+      "sources": {
+        "license": "https://github.com/calcom/cal.diy/blob/0f19cc46ef6b6426ee398c670575b3c96be7af9e/LICENSE",
+        "features": "https://www.cal.diy/",
+        "hosting": "https://github.com/calcom/cal.diy"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-19T18:46:00Z",
+        "lastRelease": "v6.2.0",
+        "lastReleaseAt": "2026-03-01T23:49:01Z",
+        "commit": "0f19cc46ef6b6426ee398c670575b3c96be7af9e",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/calcom/cal.diy",
+        "rsx": "Central rsx analyze report available; repository active, not archived; heuristic license scoring not used for OSS eligibility."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "calendly--easyappointments",
+      "from": "calendly",
+      "to": "easyappointments",
+      "fit": "partial",
+      "migrationNotes": "Service/provider appointment booking, group sessions, Google/CalDAV sync and API/webhooks. Rebuild booking links, availability and integrations; no verified native import or equivalent sales routing/round-robin claim.",
+      "sources": [
+        "https://easyappointments.org/features/"
+      ]
+    },
+    {
+      "id": "calendly--cal-diy",
+      "from": "calendly",
+      "to": "cal-diy",
+      "fit": "partial",
+      "migrationNotes": "Individual scheduling with calendar/video integrations, paid events and embeds. Team scheduling, workflows and routing excluded; vendor recommends personal/non-production use. Reconfigure credentials and booking pages; native migration parity unverified.",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    },
+    {
+      "id": "cal-com--easyappointments",
+      "from": "cal-com",
+      "to": "easyappointments",
+      "fit": "partial",
+      "migrationNotes": "Service/provider appointment booking, group sessions, Google/CalDAV sync and API/webhooks. Rebuild booking links, availability and integrations; no verified native import or equivalent sales routing/round-robin claim.",
+      "sources": [
+        "https://easyappointments.org/features/"
+      ]
+    },
+    {
+      "id": "cal-com--cal-diy",
+      "from": "cal-com",
+      "to": "cal-diy",
+      "fit": "partial",
+      "migrationNotes": "Individual scheduling with calendar/video integrations, paid events and embeds. Team scheduling, workflows and routing excluded; vendor recommends personal/non-production use. Reconfigure credentials and booking pages; native migration parity unverified.",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Easy!Appointments commissioned SMS/payment/report/reminder integrations are not assumed included in standard OSS; no packaged paid-edition gate verified.",
+    "Cal.diy is legally MIT OSS but vendor explicitly recommends personal/non-production deployment; assess operational fit before business recommendation.",
+    "Only assigned appointment-booking projects verified; group-polling alternative Rallly not researched."
+  ]
+}

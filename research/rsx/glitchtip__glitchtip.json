@@ -1,0 +1,282 @@
+{
+  "repo": {
+    "owner": "glitchtip",
+    "name": "glitchtip",
+    "url": "https://github.com/GlitchTip/GlitchTip",
+    "description": "Readme config"
+  },
+  "scores": {
+    "overall": 2.9,
+    "categories": {
+      "activity": {
+        "id": "activity",
+        "label": "Activity",
+        "score": 1,
+        "weight": 0.16,
+        "multiplier": 1,
+        "reason": "Current pace of work and maintainer activity",
+        "metrics": {
+          "commit_cadence_30d": 0,
+          "merged_pr_velocity_30d": 0,
+          "open_prs": 0,
+          "stars": 3
+        }
+      },
+      "adoption": {
+        "id": "adoption",
+        "label": "Adoption",
+        "score": 0,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "External usage and registry reach",
+        "metrics": {
+          "dependents": 0
+        }
+      },
+      "community": {
+        "id": "community",
+        "label": "Community",
+        "score": 2.1,
+        "weight": 0.09,
+        "multiplier": 1,
+        "reason": "Contributor and support surface",
+        "metrics": {
+          "code_of_conduct": 0,
+          "contributors": 1,
+          "security_policy": 0,
+          "support_channels": 0
+        }
+      },
+      "docs": {
+        "id": "docs",
+        "label": "Docs",
+        "score": 3,
+        "weight": 0.08,
+        "multiplier": 1,
+        "reason": "Documentation and maintainer guidance",
+        "metrics": {
+          "has_changelog": 0,
+          "has_homepage": 0,
+          "has_maintainer_docs": 0,
+          "has_roadmap": 0
+        }
+      },
+      "license": {
+        "id": "license",
+        "label": "License",
+        "score": 3,
+        "weight": 0.1,
+        "multiplier": 1,
+        "reason": "Commercial fit and legal clarity",
+        "metrics": {
+          "commercial_compatible": 0,
+          "unknown": 0
+        }
+      },
+      "maintenance": {
+        "id": "maintenance",
+        "label": "Maintenance",
+        "score": 4,
+        "weight": 0.18,
+        "multiplier": 1,
+        "reason": "Sustainability and freshness",
+        "metrics": {
+          "active_maintainers": 1,
+          "stale_issues": 0,
+          "stale_prs": 0
+        }
+      },
+      "release_hygiene": {
+        "id": "release_hygiene",
+        "label": "Release hygiene",
+        "score": 2,
+        "weight": 0.07,
+        "multiplier": 1,
+        "reason": "Release cadence and publication quality",
+        "metrics": {
+          "release_cadence_90d": 0,
+          "signed_releases": 0
+        }
+      },
+      "security": {
+        "id": "security",
+        "label": "Security",
+        "score": 4.9,
+        "weight": 0.22,
+        "multiplier": 1.1,
+        "reason": "Security posture and vulnerability evidence",
+        "metrics": {
+          "critical_vulns": 0,
+          "high_vulns": 0
+        }
+      }
+    },
+    "applied_multipliers": {
+      "security": 1.1
+    },
+    "raw_weights": {
+      "activity": 0.16,
+      "adoption": 0.1,
+      "community": 0.09,
+      "docs": 0.08,
+      "license": 0.1,
+      "maintenance": 0.18,
+      "release_hygiene": 0.07,
+      "security": 0.22
+    }
+  },
+  "policy": {
+    "profile": "balanced",
+    "passed": true,
+    "exit_code": 0
+  },
+  "activity": {
+    "stars": 3,
+    "forks": 8,
+    "watchers": 1,
+    "open_issues": 0,
+    "open_prs": 0,
+    "merged_pr_velocity_30d": 0,
+    "issue_close_rate_30d": 0,
+    "time_to_merge_hours": 0,
+    "commit_cadence_30d": 0,
+    "release_cadence_90d": 0,
+    "latest_tag_age_days": 0
+  },
+  "maintenance": {
+    "bus_factor_proxy": 1,
+    "active_maintainers": 1,
+    "stale_issues": 0,
+    "stale_prs": 0,
+    "archived": false,
+    "disabled": false,
+    "has_changelog": false,
+    "has_roadmap": false,
+    "has_maintainer_docs": false
+  },
+  "adoption": {
+    "dependents_count": 0,
+    "docs_healthy": false
+  },
+  "community": {
+    "contributors": 1,
+    "has_code_of_conduct": false,
+    "has_security_policy": false
+  },
+  "security": {
+    "checks": [
+      {
+        "name": "repository_visibility",
+        "score": 10,
+        "status": "ok"
+      },
+      {
+        "name": "security_policy",
+        "score": 2,
+        "details": [
+          "SECURITY.md not detected in repository root or .github/"
+        ],
+        "status": "unknown"
+      },
+      {
+        "name": "code_of_conduct",
+        "score": 2,
+        "details": [
+          "CODE_OF_CONDUCT.md not detected in repository root or .github/"
+        ],
+        "status": "unknown"
+      },
+      {
+        "name": "release_hygiene",
+        "score": 3,
+        "status": "derived"
+      }
+    ],
+    "critical_vulnerabilities": 0,
+    "high_vulnerabilities": 0,
+    "has_sast": false,
+    "has_fuzzing": false,
+    "has_signed_releases": false
+  },
+  "license": {
+    "commercial_compatible": false,
+    "copyleft": false,
+    "unknown": true,
+    "risk_notes": [
+      "license is unknown or ambiguous",
+      "license may not be suitable for commercial use"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "github",
+      "key": "security_advisories",
+      "value": "checked: 0 critical, 0 high",
+      "source": "github/security-advisories",
+      "method": "published, non-withdrawn repository advisories counted by severity",
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 0.9
+    },
+    {
+      "type": "github",
+      "key": "stars",
+      "value": "3",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "forks",
+      "value": "8",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "watchers",
+      "value": "1",
+      "source": "github/repos",
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 1
+    },
+    {
+      "type": "github",
+      "key": "contributors",
+      "value": "1",
+      "source": "github/contributors",
+      "sample_window": "first 100 contributors",
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 0.95
+    },
+    {
+      "type": "github",
+      "key": "active_maintainers",
+      "value": "1",
+      "source": "github/contributors",
+      "method": "min(3, contributor count); maintainer roles not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 0.4
+    },
+    {
+      "type": "github",
+      "key": "bus_factor_proxy",
+      "value": "1",
+      "source": "github/contributors",
+      "method": "min(5, contributor count); commit distribution not sampled",
+      "sample_window": "first 100 contributors",
+      "proxy": true,
+      "observed_at": "2026-10-21T21:32:18.125964Z",
+      "confidence": 0.4
+    }
+  ],
+  "summary": {
+    "deterministic": "Overall score 2.9/10. Activity 1.0, maintenance 4.0, security 4.9, and license 3.0 are the main decision signals.",
+    "ai_enabled": false
+  },
+  "observed_at": "2026-10-21T21:32:18.125964Z",
+  "mode": "quick"
+}

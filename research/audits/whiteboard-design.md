@@ -1,0 +1,15 @@
+> Temporary output paths normalized for portability; local operating setup omitted. Original audit retained locally.
+
+# Whiteboard and design research audit — 2026-10-21
+3. Listed `research` and inspected `github/{penpot__penpot,excalidraw__excalidraw,tldraw__tldraw}.json` plus matching rsx JSON. Initial dump too verbose/truncated; follow-up reduced metadata and decoded pinned LICENSE files. No credentials copied.
+4. Web open batch: https://penpot.app/pricing ; https://plus.excalidraw.com/pricing ; https://tldraw.dev/community/license ; https://miro.com/pricing/ ; https://www.figma.com/pricing/ . Primary current pricing/edition/capability sources.
+5. Classification decision: Figma Design and FigJam separate paid records. Penpot maps to Figma Design; Excalidraw maps to Miro/FigJam for whiteboarding only. Avoid Cartesian product. tldraw SDK development-only default license => S, not OSS.
+6. Decoded base64 LICENSE content at centrally pinned default-branch SHAs into `penpot__penpot.license.txt`, `excalidraw__excalidraw.license.txt`, `tldraw__tldraw.license.txt`. MPL-2.0, MIT, custom development-only license respectively. All unarchived/enabled; release and commit metadata retained in output.
+7. Web find queries: Penpot pricing `Enterprise`, `self`; Excalidraw pricing `Plus`; Miro pricing `Starter`. Read https://github.com/excalidraw/excalidraw for editor vs hosted-app source/features. https://docs.excalidraw.com/docs/introduction inaccessible; GitHub README fallback.
+8. Clicked Penpot pricing self-host => https://penpot.app/pricing/self-host ; self-host overview link failed internally. Read self-host pricing instead. Queries `Enterprise`, `SSO`, `Professional` verified free unlimited design/prototyping and paid governance. Important refresh: Penpot B rather than presumed all-free A. Duplicate page sections conflict on audit-log release status; uncertainty retained.
+9. Miro pricing lines 183–187 verify Starter $8/member/month billed annually. Figma pricing Full seat $16, Collab $3 monthly equivalents; separate Figma Design and FigJam records. No invented audience counts.
+10. Read rsx summary fields from central authenticated refresh: Penpot 6.3/10; Excalidraw 6.8/10; tldraw 6.8/10. These health scores do not override current pinned license or edition evidence. No rsx invocation repeated; shared central run provenance is in rsx-batch logs and github-commands.jsonl.
+11. Classification: Penpot B (paid governance); Excalidraw C (comments/presentations/PDF export are functional gates beyond cloud storage); tldraw S, retained for transparency but excluded from recommendation edges. No Penpot→Miro or Excalidraw→Figma Design edge.
+12. Ran `python3 ../build-whiteboard-design.py` to create JSON; parsed output and checked unique IDs and edge endpoints. No repository changed, no external messages.
+
+Automation candidates: pinned GitHub metadata/license/release extraction; rsx summary ingestion; edition-table snapshots with explicit cloud-vs-self-host separation; license-driven recommendation exclusions; mapping endpoint validation. Human decision retained for workflow fit and mixed license boundaries.
