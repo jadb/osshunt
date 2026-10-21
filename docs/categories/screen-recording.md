@@ -14,7 +14,7 @@ Full local video recorder and streaming application offered free with no paid fi
 
 License: GPL-2.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/obsproject/obs-studio/blob/95d5223b66da1c162acdb61c1bae2b9123a60f0e/COPYING), [edition evidence](https://obsproject.com), [hosting](https://obsproject.com), [repository](https://github.com/obsproject/obs-studio).
 
-Repository: pushed 2026-10-20T23:09:59Z; latest published release 32.2.2 (2026-08-14T22:43:31Z). Unavailable: cache backup write outside permitted directory denied; GitHub metadata fallback used
+Repository: pushed 2026-10-20T23:09:59Z; latest commit unknown; latest published release 32.2.2 (2026-08-14T22:43:31Z). Unavailable: cache backup write outside permitted directory denied; GitHub metadata fallback used
 
 - Loom → OBS Studio: **different-approach**. Captures screen, camera and audio locally with scenes; upload/export files into another service for Loom-style link sharing and team feedback. No Loom library importer established. [1](https://obsproject.com) [2](https://www.loom.com/pricing)
 
@@ -26,7 +26,7 @@ License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party
 
 Paid restrictions: Pro platform link sharing and cloud media library; Pro multi-scene editing and captions; self-hosted extension is local-only with platform features disabled
 
-Repository: pushed 2026-10-20T19:22:14Z; latest published release v4.7.0 (2026-10-20T19:22:15Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-20T19:22:14Z; latest commit 2026-10-20T19:14:36Z; latest published release v4.7.0 (2026-10-20T19:22:15Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Loom → Screenity: **partial**. Browser extension handles unlimited capture, annotations and MP4/GIF/WebM exports. Self-host is local-only; sharing via external storage or paid Pro. No migration preserving Loom comments/analytics established. [1](https://github.com/alyssaxuu/screenity) [2](https://screenity.io)
 
@@ -38,7 +38,7 @@ License: AGPL-3.0-only AND MIT; identified core OSI: yes; self-hostable: yes; fi
 
 Paid restrictions: Official distributed desktop binaries require a paid commercial license for business use; self-built source versions exempt; Cap Pro cloud plan gates unlimited sharing, transcription, analytics, custom domains and Loom importer; self-host parity not fully verified
 
-Repository: pushed 2026-10-21T21:29:20Z; latest published release cap-v0.6.1 (2026-10-20T14:14:57Z). Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:29:20Z; latest commit 2026-10-21T04:36:31Z; latest published release cap-v0.6.1 (2026-10-20T14:14:57Z). Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Loom → Cap: **partial**. Closer capture-and-sharing workflow with own-server deployment. Loom importer supports URLs/CSV but is Pro-gated, requires download access and maps space labels rather than nested folder hierarchy. Build desktop from source for commercial-license exemption. [1](https://cap.so/docs/migrating-to-cap) [2](https://cap.so/docs/commercial-license) [3](https://cap.so/docs/self-hosting)
 

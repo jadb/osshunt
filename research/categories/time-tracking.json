@@ -1,0 +1,171 @@
+{
+  "category": {
+    "id": "time-tracking",
+    "name": "Time tracking",
+    "description": "Track work hours by client and project, analyze timesheets, and prepare billable work.",
+    "audience": "Freelancers, agencies, consultants, and teams recording project or billable hours.",
+    "audienceReach": "broad",
+    "audienceRationale": "Relevant across professional services and project-driven teams; recording work hours is a recurring need across industries.",
+    "audienceSources": [
+      "https://www.kimai.org/en/",
+      "https://www.getharvest.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "toggl-track",
+      "name": "Toggl Track",
+      "url": "https://toggl.com/pricing",
+      "categories": [
+        "time-tracking"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 9,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Starter USD9/user/month billed annually; USD12 monthly. Free plan also available.",
+        "source": "https://toggl.com/pricing"
+      }
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest",
+      "url": "https://www.getharvest.com/pricing",
+      "categories": [
+        "time-tracking"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 9,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Teams starts USD9/seat/month billed annually (USD108/year); USD11 monthly. Additional invoices, projects, clients and tasks can incur usage charges; free plan available.",
+        "source": "https://www.getharvest.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "kimai",
+      "name": "Kimai",
+      "url": "https://www.kimai.org/en/",
+      "categories": [
+        "time-tracking"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/kimai/kimai",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Expense management plugin",
+        "Task planning plugin",
+        "Custom fields plugin"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL-v3 self-hosted core; paid plugins add everyday expenses, task planning and custom fields. Core already provides time tracking, reports and invoicing. First-party Kimai Cloud verified separately.",
+      "sources": {
+        "license": "https://github.com/kimai/kimai/blob/8970bc8bfab0f53976168fc7b1172d9009f39a35/LICENSE",
+        "features": "https://www.kimai.org/en/store/",
+        "hosting": "https://www.kimai.org/en/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:00:28Z",
+        "lastRelease": "2.70.2",
+        "lastReleaseAt": "2026-10-21T22:00:29Z",
+        "commit": "8970bc8bfab0f53976168fc7b1172d9009f39a35",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/kimai/kimai",
+        "rsx": "Central rsx analyze succeeded: overall 6.4/10. License heuristic unknown; pinned license text used instead."
+      }
+    },
+    {
+      "id": "solidtime",
+      "name": "solidtime",
+      "url": "https://www.solidtime.io",
+      "categories": [
+        "time-tracking"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/solidtime-io/solidtime",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Invoicing requires Business or Enterprise on-premise license",
+        "Audit Log requires Business or Enterprise on-premise license"
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL-v3 open core is self-hostable. Official on-premise comparison excludes invoicing and audit log from Open Source. Invoicing is an everyday billable-work feature, so C; cloud subscription gates were not substituted for this comparison.",
+      "sources": {
+        "license": "https://github.com/solidtime-io/solidtime/blob/93eb93f1dc2de0d50849ce7883a601dd76691df1/LICENSE.md",
+        "features": "https://www.solidtime.io/pricing/on-premise",
+        "hosting": "https://docs.solidtime.io/self-hosting/intro"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T18:05:40Z",
+        "lastRelease": "v0.22.1",
+        "lastReleaseAt": "2026-10-21T18:17:25Z",
+        "commit": "93eb93f1dc2de0d50849ce7883a601dd76691df1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/solidtime-io/solidtime",
+        "rsx": "Central rsx analyze succeeded: overall 6.5/10. License heuristic unknown; pinned license text used instead."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "toggl-track--kimai",
+      "from": "toggl-track",
+      "to": "kimai",
+      "fit": "partial",
+      "migrationNotes": "Official free importer plugin supports Toggl Track timesheet CSV; required columns and date formats must match. Reporting and invoicing available; expenses and task planning use paid plugins. Validate rates, currencies and timezones during migration.",
+      "sources": [
+        "https://www.kimai.org/documentation/plugin-import.html",
+        "https://www.kimai.org/en/store/"
+      ]
+    },
+    {
+      "id": "toggl-track--solidtime",
+      "from": "toggl-track",
+      "to": "solidtime",
+      "fit": "partial",
+      "migrationNotes": "Repository documents Toggl data import and project/task/client tracking with billable rates. Not full planning/integration parity; invoicing is excluded from Open Source. Validate imported data before switching.",
+      "sources": [
+        "https://github.com/solidtime-io/solidtime#features",
+        "https://www.solidtime.io/pricing/on-premise"
+      ]
+    },
+    {
+      "id": "harvest--kimai",
+      "from": "harvest",
+      "to": "kimai",
+      "fit": "partial",
+      "migrationNotes": "Overlapping project timesheets, reporting and invoicing support a partial alternative. No Harvest-specific importer verified; CSV/JSON importer or API mapping required. Expense management requires paid plugin; accounting and payment integrations need separate assessment.",
+      "sources": [
+        "https://www.kimai.org/documentation/imports.html",
+        "https://www.kimai.org/en/",
+        "https://www.getharvest.com/pricing"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Only the two assigned candidates were fully verified in the focused research window.",
+    "No direct Harvest-specific importer verified; migration requires mapping exported records or using an API.",
+    "Root AGPL v3 license texts establish OSI core licensing; separate commercial plugins/extensions are outside this identification."
+  ]
+}

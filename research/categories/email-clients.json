@@ -1,0 +1,187 @@
+{
+  "category": {
+    "id": "email-clients",
+    "name": "Email clients and webmail",
+    "description": "Desktop email clients and browser webmail for individual mailbox workflows.",
+    "audience": "Individuals and organizations reading, organizing, and sending email across existing mail accounts.",
+    "audienceReach": "universal",
+    "audienceRationale": "Personal and work email spans occupations and organization sizes; desktop and browser access serve general mailbox needs. Shared customer-support operations are a separate capability.",
+    "audienceSources": [
+      "https://www.thunderbird.net/en-US/desktop/",
+      "https://roundcube.net/about/",
+      "https://help.front.com/en/articles/2054"
+    ]
+  },
+  "paid": [
+    {
+      "id": "microsoft-outlook",
+      "name": "Microsoft Outlook",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+      "categories": [
+        "email-clients"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "flat",
+        "entryAmount": 19.99,
+        "currency": "USD",
+        "period": "year",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Microsoft 365 Basic, US annual price; includes ad-free Outlook and 100 GB mailbox. Free Outlook also exists; this record represents paid subscription benefits, not an OSS edition.",
+        "source": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      }
+    },
+    {
+      "id": "front",
+      "name": "Front",
+      "url": "https://front.com/",
+      "categories": [
+        "email-clients"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 25,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Starter, billed annually, up to 10 seats; individual inbox included when email is the single channel type. Primarily a collaborative customer-service platform.",
+        "source": "https://front.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "thunderbird",
+      "name": "Thunderbird",
+      "url": "https://www.thunderbird.net/en-US/desktop/",
+      "categories": [
+        "email-clients"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/thunderbird/thunderbird-desktop",
+      "license": "MPL-2.0",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Desktop client operated locally on Windows, Linux, and macOS; A describes the freely available client functionality, not server hosting. Official pages call it free forever and link MPL 2.0. Dependencies/other-licenses have separate notices; not every bundled file is MPL. Current developer docs and repository identify thunderbird/thunderbird-desktop as official, superseding use of the experimental Mozilla GitHub copy as canonical.",
+      "serviceLimitations": [
+        "Requires an existing email account/mail service; the desktop client is not an IMAP/SMTP server or hosted webmail.",
+        "Thundermail is a separate optional paid mail-hosting service in beta/waitlist; it does not paywall the desktop client."
+      ],
+      "sources": {
+        "license": "https://github.com/thunderbird/thunderbird-desktop/blob/453702ff89d8169eed2a94d19057a95613394df1/mail/base/content/aboutDialog.xhtml",
+        "features": "https://www.thunderbird.net/en-US/desktop/",
+        "hosting": "https://www.tb.pro/en-US/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:56:23Z",
+        "lastRelease": null,
+        "lastReleaseAt": null,
+        "commit": "453702ff89d8169eed2a94d19057a95613394df1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/thunderbird/thunderbird-desktop",
+        "rsx": "Pending central rsx result; GitHub API metadata fallback used."
+      }
+    },
+    {
+      "id": "roundcube",
+      "name": "Roundcube",
+      "url": "https://roundcube.net/",
+      "categories": [
+        "email-clients"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/roundcube/roundcubemail",
+      "license": "GPL-3.0-or-later",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Identified edition is core Roundcube webmail: GPLv3-or-later with custom skins/plugins exception, freely deployable and listing unlimited users/messages. The exception permits separately licensed commercial plugins; such plugins are not represented as included. Nextcloud sells enterprise support/SLA and optional separate server bundles; no core webmail feature paywall identified. Hosted availability refers to independent providers listed by the project, not a first-party Roundcube SaaS.",
+      "serviceLimitations": [
+        "Requires a web/PHP/database deployment plus compatible IMAP and SMTP services; Roundcube alone does not provide mailbox hosting or email delivery.",
+        "Calendar and multi-account extensions are listed as third-party additions; verify their licenses and availability separately.",
+        "Hosted mail services and enterprise support can cost money without restricting the core webmail software."
+      ],
+      "sources": {
+        "license": "https://github.com/roundcube/roundcubemail/blob/d70bb19622238b206f0f636e847e80815a4d1f76/LICENSE.md",
+        "features": "https://roundcube.net/about/",
+        "hosting": "https://roundcube.net/about/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T17:50:22Z",
+        "lastRelease": "1.7.5",
+        "lastReleaseAt": "2026-10-19T07:02:13Z",
+        "commit": "d70bb19622238b206f0f636e847e80815a4d1f76",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/roundcube/roundcubemail",
+        "rsx": "Pending central rsx result; GitHub API metadata fallback used."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "microsoft-outlook--thunderbird",
+      "from": "microsoft-outlook",
+      "to": "thunderbird",
+      "fit": "partial",
+      "migrationNotes": "Local alternative for email, calendars, contacts, tasks, and multi-account organization. Reconnect mail accounts using supported authentication; Microsoft-hosted accounts may require OAuth, SMTP enablement, and administrator consent. Full Exchange/calendar or Microsoft 365 suite parity is not asserted. Existing subscription storage/security benefits are separate from the client.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/",
+        "https://support.mozilla.org/en-US/kb/microsoft-oauth-authentication-and-thunderbird-202",
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      ]
+    },
+    {
+      "id": "microsoft-outlook--roundcube",
+      "from": "microsoft-outlook",
+      "to": "roundcube",
+      "fit": "different-approach",
+      "migrationNotes": "Browser webmail alternative for ordinary mailbox access using your own compatible IMAP/SMTP service. Requires server deployment; contacts and messages have import/export tools. Core Roundcube is not a replacement for the Microsoft 365 suite, hosted mailbox service, or Exchange calendar workflows; calendars are third-party additions.",
+      "sources": [
+        "https://roundcube.net/about/",
+        "https://roundcube.net/download/",
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      ]
+    },
+    {
+      "id": "front--thunderbird",
+      "from": "front",
+      "to": "thunderbird",
+      "fit": "partial",
+      "migrationNotes": "Only the individual-email portion of Front is comparable: connect existing mail accounts and organize personal mail locally. Front individual inboxes also participate in comments, sharing and delegation. No parity or migration path is asserted for Front shared inboxes, assignments, team comments, ticketing, analytics, or automation.",
+      "sources": [
+        "https://help.front.com/en/articles/2054",
+        "https://www.thunderbird.net/en-US/desktop/",
+        "https://front.com/pricing"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "mozilla/releases-comm-central as canonical Thunderbird repository",
+      "reason": "Active experimental copy, not an additional product. Current official developer documentation and Thunderbird README point to thunderbird/thunderbird-desktop. Legacy comm-central/hg references must not make this copy the canonical current GitHub record.",
+      "sources": [
+        "https://api.github.com/repos/mozilla/releases-comm-central",
+        "https://developer.thunderbird.net/thunderbird-development/codebase-overview",
+        "https://github.com/thunderbird/thunderbird-desktop"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Thunderbird has no recognized root LICENSE at GitHub /license (404). Official project page links MPL 2.0 and the captured current-commit aboutDialog.xhtml header confirms MPL 2.0; bundled third-party components retain their own notices.",
+    "Thunderbird GitHub releases/latest returned 404; this is not evidence that the desktop product lacks releases. No latest-release value inferred from website download labels.",
+    "No full Front team-platform replacement is claimed by either candidate; only the supported individual-mail edge is included.",
+    "Thundermail availability is still described by its official page as beta/waitlist; not counted as a hosted edition of the desktop client."
+  ]
+}

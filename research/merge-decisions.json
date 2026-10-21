@@ -1,11 +1,37 @@
 [
   {
+    "id": "erpnext",
+    "category": "accounting-erp",
+    "fields": [
+      "classificationReason"
+    ],
+    "decision": "First category provides canonical core attributes; restrictions and classification context merged; all source evidence retained."
+  },
+  {
     "id": "odoo-ce",
     "category": "crm",
     "fields": [
       "locked",
       "classificationReason",
       "health"
+    ],
+    "decision": "First category provides canonical core attributes; restrictions and classification context merged; all source evidence retained."
+  },
+  {
+    "id": "frappe-hr",
+    "category": "hr",
+    "fields": [
+      "classificationReason",
+      "sources"
+    ],
+    "decision": "First category provides canonical core attributes; restrictions and classification context merged; all source evidence retained."
+  },
+  {
+    "id": "frappe-hr",
+    "category": "recruiting",
+    "fields": [
+      "classificationReason",
+      "sources"
     ],
     "decision": "First category provides canonical core attributes; restrictions and classification context merged; all source evidence retained."
   }

@@ -1,0 +1,220 @@
+{
+  "category": {
+    "id": "backup-recovery",
+    "name": "Backup and recovery",
+    "description": "Create recoverable file backups and restore lost data; distinguish managed endpoint services from self-operated backup tools and full-system disaster recovery.",
+    "audience": "Individuals protecting computer files and IT teams operating endpoint or server backups.",
+    "audienceReach": "broad",
+    "audienceRationale": "File loss and device failure affect personal and business computing; operation of server repositories requires technical administration.",
+    "audienceSources": [
+      "https://www.backblaze.com/cloud-backup/business",
+      "https://restic.net/",
+      "https://kopia.io/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "backblaze-business-backup",
+      "name": "Backblaze Business Backup",
+      "url": "https://www.backblaze.com/cloud-backup/business",
+      "categories": [
+        "backup-recovery"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 99,
+        "currency": "USD",
+        "period": "year",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Business Backup shown at $99/year per computer subscription; seat means protected computer. Enterprise Control upgrade quoted separately.",
+        "source": "https://www.backblaze.com/cloud-backup/pricing"
+      }
+    },
+    {
+      "id": "acronis-cyber-protect",
+      "name": "Acronis Cyber Protect",
+      "url": "https://www.acronis.com/en/products/cyber-protect/",
+      "categories": [
+        "backup-recovery"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Base amount not rendered in current purchasing page; device/workload-specific licensing. Quote fields represent unverified price, not a claim that every edition is quote-only. Acronis True Image is a separate consumer product.",
+        "source": "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "restic",
+      "name": "restic",
+      "url": "https://restic.net/",
+      "categories": [
+        "backup-recovery"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/restic/restic",
+      "license": "BSD-2-Clause",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Entire program described as free and completely open source; no paid software feature gates identified. Locally operated CLI, no dedicated server required; selfHostable=false reflects client-tool scope, while storage can be self-hosted.",
+      "sources": {
+        "license": "https://github.com/restic/restic/blob/dd09b6bd01af220b1d5d95c0d4d7d472e05e05c4/LICENSE",
+        "features": "https://restic.net/",
+        "hosting": "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+      },
+      "serviceLimitations": [
+        "Storage, remote server operation, scheduling and key custody are the operator\u2019s responsibility; cloud storage fees are separate."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-18T14:23:55Z",
+        "lastRelease": "v0.19.1",
+        "lastReleaseAt": "2026-07-05T08:13:33Z",
+        "commit": "dd09b6bd01af220b1d5d95c0d4d7d472e05e05c4",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/restic/restic",
+        "rsx": "Central rsx analyze: overall 7.2/10; advisory health signal, not a security certification."
+      }
+    },
+    {
+      "id": "borgbackup",
+      "name": "BorgBackup",
+      "url": "https://www.borgbackup.org/",
+      "categories": [
+        "backup-recovery"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/borgbackup/borg",
+      "license": "BSD-3-Clause",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Official site identifies 100% free BSD software; backup, encryption, compression and restore workflow in open program, paid offerings are support/storage services. Supports local repositories and SSH repository servers. Recommend stable 1.4, not master/2.0 testing.",
+      "sources": {
+        "license": "https://github.com/borgbackup/borg/blob/45f8b178ae892ae73fcaa3127c951b0044cd7a7e/LICENSE",
+        "features": "https://www.borgbackup.org/",
+        "hosting": "https://www.borgbackup.org/"
+      },
+      "serviceLimitations": [
+        "Third-party repository hosting/support costs separate from software; Windows WSL/Cygwin support experimental, not a native Windows managed-backup agent."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T09:49:03Z",
+        "lastRelease": "1.4.5",
+        "lastReleaseAt": "2026-07-18T22:36:16Z",
+        "commit": "45f8b178ae892ae73fcaa3127c951b0044cd7a7e",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/borgbackup/borg",
+        "rsx": "Central rsx analyze: overall 7/10; advisory health signal, not a security certification."
+      }
+    },
+    {
+      "id": "kopia",
+      "name": "Kopia",
+      "url": "https://kopia.io/",
+      "categories": [
+        "backup-recovery"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/kopia/kopia",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Open CLI exposes all features, with official desktop GUI and optional repository server; no paid software edition identified. Tier A covers this backup tool, not managed storage or whole-machine imaging.",
+      "sources": {
+        "license": "https://github.com/kopia/kopia/blob/0835005737025dc3e5203df0138c8265686cb4b3/LICENSE",
+        "features": "https://kopia.io/docs/features/",
+        "hosting": "https://kopia.io/docs/"
+      },
+      "serviceLimitations": [
+        "User provisions and pays storage separately; no bundled unlimited backup cloud.",
+        "Repository server permissions cover snapshot/policy manifests; known content IDs can expose shared repository content."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T03:30:12Z",
+        "lastRelease": "v0.23.1",
+        "lastReleaseAt": "2026-06-16T01:27:33Z",
+        "commit": "0835005737025dc3e5203df0138c8265686cb4b3",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/kopia/kopia",
+        "rsx": "Central rsx analyze: overall 6.9/10; advisory health signal, not a security certification."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "backblaze-business-backup--restic",
+      "from": "backblaze-business-backup",
+      "to": "restic",
+      "fit": "different-approach",
+      "migrationNotes": "File-backup option for operators comfortable configuring a CLI, retention/scheduling and storage. New repository and first backup required; no bundled unlimited cloud or equivalent managed endpoint console established. Backblaze B2 storage, if selected, is separate from Business Backup.",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/business",
+        "https://restic.net/",
+        "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+      ]
+    },
+    {
+      "id": "backblaze-business-backup--kopia",
+      "from": "backblaze-business-backup",
+      "to": "kopia",
+      "fit": "different-approach",
+      "migrationNotes": "Desktop GUI file snapshots on Windows/macOS/Linux with user-selected storage. Recreate policies and seed a new backup; cloud capacity and recovery operations belong to the user. B2 integration uses a separate object-storage service, not the Business Backup subscription.",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/business",
+        "https://kopia.io/docs/",
+        "https://kopia.io/docs/features/"
+      ]
+    },
+    {
+      "id": "acronis-cyber-protect--borgbackup",
+      "from": "acronis-cyber-protect",
+      "to": "borgbackup",
+      "fit": "partial",
+      "migrationNotes": "Limited to self-operated Unix-like file/archive backups and restores, using local or SSH repositories. Does not establish replacement for Acronis imaging, application-aware workloads, endpoint security or cloud failover. Windows support experimental; keep proprietary archives recoverable separately.",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/",
+        "https://borgbackup.readthedocs.io/en/stable/"
+      ]
+    },
+    {
+      "id": "acronis-cyber-protect--kopia",
+      "from": "acronis-cyber-protect",
+      "to": "kopia",
+      "fit": "partial",
+      "migrationNotes": "Replaces selected file/directory snapshot and restore workflows after creating new backups. Kopia expressly does not image the machine; Acronis system imaging, endpoint protection and cloud failover remain separate requirements. No proprietary-archive import established.",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/",
+        "https://kopia.io/docs/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Acronis was underspecified; this record explicitly targets business Cyber Protect, not consumer True Image or all Acronis products. Current entry amount unavailable from rendered official purchasing page.",
+    "hostedOffer for BorgBackup means official-listed third-party repository hosting, not a first-party SaaS edition; for restic and Kopia no project-operated managed backup service identified. Cloud object storage integrations alone are not hosted software editions.",
+    "No documented importer for Backblaze Business Backup histories or Acronis proprietary archives was established. Migration edges describe creating new backups; preserve incumbent recovery access while validating restores."
+  ]
+}

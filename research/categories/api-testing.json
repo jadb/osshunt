@@ -1,0 +1,185 @@
+{
+  "category": {
+    "id": "api-testing",
+    "name": "API clients and testing",
+    "description": "Develop, inspect and automate tests for HTTP and other APIs, with explicit separation between local clients and managed team platforms.",
+    "audience": "Software developers, API QA engineers and technical integration teams",
+    "audienceReach": "specialist",
+    "audienceRationale": "Daily utility for API development and quality assurance roles; narrower than general business collaboration tools.",
+    "audienceSources": [
+      "https://www.postman.com/pricing/",
+      "https://insomnia.rest/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "postman",
+      "name": "Postman",
+      "url": "https://www.postman.com/",
+      "categories": [
+        "api-testing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 9,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Solo entry $9/month billed annually; Team $19/user/month annually. Free core client exists; usage/add-ons extra.",
+        "source": "https://www.postman.com/pricing/"
+      }
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia paid plans",
+      "url": "https://insomnia.rest/",
+      "categories": [
+        "api-testing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "quote",
+        "note": "Pricing page displays Pro $12/user/month and annual/monthly selector, but extracted state does not establish billing basis. Confirm at checkout. Free Essentials available; mock request overages extra.",
+        "source": "https://insomnia.rest/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "bruno",
+      "name": "Bruno",
+      "url": "https://www.usebruno.com/",
+      "categories": [
+        "api-testing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/usebruno/bruno",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "C",
+      "locked": [
+        "Full Postman Data Export import is Ultimate-only; individual collection import remains available.",
+        "Open Source edition has 2 workspaces and 5 OpenAPI syncs/month; paid editions remove these limits."
+      ],
+      "hostedOffer": false,
+      "classificationReason": "MIT desktop client and CLI; local operation, not a hosted collaboration server. Paid migration and ordinary workspace/sync capabilities justify C. CLI data-driven execution and reports exist, so GUI edition gates do not imply their total absence.",
+      "sources": {
+        "license": "https://github.com/usebruno/bruno/blob/dd0281dad107247a4653ff514feb069ac42e7ff8/license.md",
+        "features": "https://www.usebruno.com/pricing",
+        "hosting": "https://www.usebruno.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-19T10:09:22Z",
+        "lastRelease": "v4.2.1",
+        "lastReleaseAt": "2026-09-30T13:52:52Z",
+        "commit": "dd0281dad107247a4653ff514feb069ac42e7ff8",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/usebruno/bruno",
+        "rsx": "Authenticated analysis completed; overall 6/10. Repository evidence separately reviewed."
+      },
+      "serviceLimitations": [
+        "Git collaboration uses locally stored collections and a separately operated Git provider; catalog does not claim managed cloud team parity."
+      ]
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch Community Edition",
+      "url": "https://hoppscotch.com/",
+      "categories": [
+        "api-testing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/hoppscotch/hoppscotch",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Enterprise self-host adds SAML/OIDC authentication, audit/admin tools and domain/site access controls."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT self-hosted CE includes workspace member roles and invitations. Enterprise administration/security extras justify B; hosted Cloud Business gates are not assumed to restrict CE.",
+      "sources": {
+        "license": "https://github.com/hoppscotch/hoppscotch/blob/63273f8e599e73f0fb38c0739314e8d46b6bc83d/LICENSE",
+        "features": "https://docs.hoppscotch.io/documentation/self-host/getting-started",
+        "hosting": "https://hoppscotch.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T07:04:35Z",
+        "lastRelease": "2026.9.0",
+        "lastReleaseAt": "2026-09-30T11:50:32Z",
+        "commit": "63273f8e599e73f0fb38c0739314e8d46b6bc83d",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/hoppscotch/hoppscotch",
+        "rsx": "Authenticated analysis completed; overall 6.2/10. Repository evidence separately reviewed."
+      },
+      "serviceLimitations": [
+        "First-party Cloud has separate Free/Business/Enterprise plans; self-host operators supply deployment, upgrades and database operations."
+      ]
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "postman--bruno",
+      "from": "postman",
+      "to": "bruno",
+      "fit": "partial",
+      "migrationNotes": "Import individual Postman JSON collections into local Bruno files; complete Data Export import requires Ultimate. Recheck environments, authentication and tests; managed workspaces and monitoring do not transfer as a complete platform.",
+      "sources": [
+        "https://docs.usebruno.com/get-started/import-export-data/import-collections",
+        "https://www.usebruno.com/pricing"
+      ]
+    },
+    {
+      "id": "insomnia--bruno",
+      "from": "insomnia",
+      "to": "bruno",
+      "fit": "partial",
+      "migrationNotes": "Bruno accepts Insomnia collection exports in JSON (v4) and YAML (v5+). Review requests, variables and authentication after import; Git-based local collaboration differs from managed organizational controls.",
+      "sources": [
+        "https://docs.usebruno.com/get-started/import-export-data/import-collections",
+        "https://www.usebruno.com/pricing"
+      ]
+    },
+    {
+      "id": "postman--hoppscotch",
+      "from": "postman",
+      "to": "hoppscotch",
+      "fit": "partial",
+      "migrationNotes": "Import Postman collections/environments. Script import is experimental and requires consent; advanced authorization and collection-level settings are omitted. Revalidate tests and authentication. Self-host import limit documented at 50 MB.",
+      "sources": [
+        "https://docs.hoppscotch.io/documentation/features/importer",
+        "https://docs.hoppscotch.io/documentation/self-host/getting-started"
+      ]
+    },
+    {
+      "id": "insomnia--hoppscotch",
+      "from": "insomnia",
+      "to": "hoppscotch",
+      "fit": "partial",
+      "migrationNotes": "Import Insomnia collection/environment JSON. Scripts, tests and advanced authorization do not migrate; regular environment variables supported. Rebuild and test missing workflows; self-host import limit 50 MB.",
+      "sources": [
+        "https://docs.hoppscotch.io/documentation/features/importer",
+        "https://docs.hoppscotch.io/documentation/self-host/getting-started"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Insomnia pricing billing-selector state not established; paid numeric entry remains null.",
+    "Import documentation is not proof of execution parity; mapped alternatives require request, authentication and script verification.",
+    "Only the two assigned candidates were researched deeply; no unverified extra alternatives added."
+  ]
+}

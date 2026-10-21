@@ -1,20 +1,22 @@
 {
-  "categories": 24,
-  "products": 125,
-  "paid": 43,
-  "eligibleOss": 66,
-  "labelledSourceAvailableOrUnresolved": 16,
-  "mappings": 122,
-  "categoryAudits": 24,
-  "suggestedNextCategories": 24,
-  "contractTests": 17,
-  "mutationGuards": 6,
+  "categories": 48,
+  "products": 227,
+  "paid": 95,
+  "eligibleOss": 113,
+  "labelledSourceAvailableOrUnresolved": 19,
+  "mappings": 210,
+  "categoryAudits": 48,
+  "completedSecondBatchCategories": 24,
+  "secondBatchClaimLedgers": 24,
+  "secondBatchSourcedClaims": 445,
+  "contractTests": 21,
+  "mutationGuards": 7,
   "deterministicSnapshots": {
-    "alternatives.json": "e0c59165084ea4dff43f655c766ed178ac1bca5e79a0c33f9dacf24d8f053a3f",
-    "alternatives.schema.json": "e96d16748223d1b42ae129ef77280a59b9d673f6020eecb28fd29caf474f61fe",
-    "categories.json": "d4cc928a5d2cfcd663d689e1761c63a395a8d3a217711b4617fcb5c8e9c10245",
+    "categories.json": "995de5070b4c398a775406b73a6732eda99624f4e6cc26e69a0dfc4f0be45612",
+    "alternatives.json": "06f1e66b91727d9cddefeb1e8b454d5e361928826e3d459accd99f2e6ea44d13",
     "categories.schema.json": "4465e27d9a22df038e78fc2182cbd69206e4fbad15e55c15cdc80be09089a70b",
-    "products.json": "976118699ec095e123dc734ec058eb31ffe8863f3ffb8fc451329157394d6a71",
-    "products.schema.json": "ea7edd9b16a67429005cdbfe93a02a6b18173d5bbb5879e0475e010b45a1f3f7"
+    "products.json": "641e5c7556e0ea57bfb5dc8ebd8ad6b85cabad875856cfdec7b52e94b46c74de",
+    "alternatives.schema.json": "e96d16748223d1b42ae129ef77280a59b9d673f6020eecb28fd29caf474f61fe",
+    "products.schema.json": "9ed2f1a2ee48cece0515070112eb00b476d1a6f509ef51815f8cf3ec5f0c10e3"
   }
 }

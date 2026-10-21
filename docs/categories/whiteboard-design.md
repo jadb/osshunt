@@ -18,7 +18,7 @@ License: MPL-2.0; identified core OSI: yes; self-hostable: yes; first-party host
 
 Paid restrictions: Enterprise centralized administration, multi-organization management and advanced team/user permissions; Enterprise SSO/identity governance and extended recovery/version retention
 
-Repository: pushed 2026-10-21T16:57:59Z; latest published release 2.18.3 (2026-10-06T12:46:50Z). Quick analysis: 6.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T16:57:59Z; latest commit 2026-10-21T13:59:31Z; latest published release 2.18.3 (2026-10-06T12:46:50Z). Quick analysis: 6.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Figma Design → Penpot: **partial**. Interface design/prototyping alternative; evaluate Figma file conversion, libraries, plugins and developer handoff before migration. No lossless import or full feature parity claimed. [1](https://penpot.app/pricing/self-host) [2](https://www.figma.com/pricing/)
 
@@ -30,7 +30,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Excalidraw+ comments, presentations and PDF/PPTX frame export; Excalidraw+ workspace access management and team organization
 
-Repository: pushed 2026-10-21T16:42:17Z; latest published release v0.18.1 (2026-04-21T08:43:20Z). Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T16:42:17Z; latest commit 2026-10-21T10:36:40Z; latest published release v0.18.1 (2026-04-21T08:43:20Z). Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - FigJam → Excalidraw: **partial**. Collaborative sketching alternative; not a Figma Design editor. Excalidraw JSON/PNG/SVG portability does not establish native FigJam import, voting or workshop feature parity. [1](https://github.com/excalidraw/excalidraw) [2](https://www.figma.com/pricing/)
 - Miro → Excalidraw: **partial**. Sketching and diagramming alternative for simpler whiteboards. Excalidraw supports its own JSON and image exports; no native lossless Miro import verified. Miro integrations/facilitation workflows require separate review. [1](https://github.com/excalidraw/excalidraw) [2](https://miro.com/pricing/)
@@ -43,7 +43,7 @@ License: LicenseRef-tldraw; identified core OSI: no/unresolved; self-hostable: y
 
 Paid restrictions: Production deployment requires an active trial, commercial or hobby license key; default source license permits development only
 
-Repository: pushed 2026-10-21T17:13:42Z; latest published release v5.5.2 (2026-10-02T13:35:52Z). Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T17:13:42Z; latest commit 2026-10-20T17:07:53Z; latest published release v5.5.2 (2026-10-02T13:35:52Z). Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 
 [Category research and unresolved questions](../../research/categories/whiteboard-design.json) · [Research audit](../../research/audits/whiteboard-design.md)

@@ -1,0 +1,182 @@
+{
+  "category": {
+    "id": "vpn-access",
+    "name": "VPN and private network access",
+    "description": "Identity-aware private connectivity for remote staff, devices and internal resources.",
+    "audience": "IT and security teams serving remote staff",
+    "audienceReach": "specialist",
+    "audienceRationale": "Many employees benefit from private access, while product selection and operation primarily belong to network, IT and security teams; narrower buying audience than general business collaboration.",
+    "audienceSources": [
+      "https://tailscale.com/pricing",
+      "https://www.cloudflare.com/sase/products/access/",
+      "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud"
+    ]
+  },
+  "paid": [
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "url": "https://tailscale.com/pricing",
+      "categories": [
+        "vpn-access"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 8,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "monthly",
+        "note": "Standard $8/seat/month. Resource and platform add-ons extra; Personal free plan is non-commercial. Monthly seat billing documented.",
+        "source": "https://tailscale.com/pricing"
+      }
+    },
+    {
+      "id": "cloudflare-access",
+      "name": "Cloudflare Access",
+      "url": "https://www.cloudflare.com/sase/products/access/",
+      "categories": [
+        "vpn-access"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 7,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Pay-as-you-go $7/user/month paid annually. Product page also offers a free plan for teams under 50 users; paid product remains distinct from open-source connector software.",
+        "source": "https://www.cloudflare.com/sase/products/access/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "netbird",
+      "name": "NetBird Community Edition",
+      "url": "https://netbird.io/",
+      "categories": [
+        "vpn-access"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/netbirdio/netbird",
+      "license": "BSD-3-Clause AND AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Enterprise Commercial License: active-active HA, SCIM provisioning, EDR/MDM integration, traffic-flow logging/streaming, peer approval, audit-event streaming and notifications."
+      ],
+      "serviceLimitations": [
+        "Self-hosters operate control plane and relays; hosting and relay bandwidth have infrastructure costs.",
+        "MSP multi-tenant management is cloud-only."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "OSI community code: root BSD-3-Clause excludes management, signal, relay and combined directories licensed AGPLv3. Core connectivity/access control/routing remain community features; documented enterprise administration, approval and observability gates warrant B. NetBird Cloud tiers are separate from self-hosted Enterprise licensing.",
+      "sources": {
+        "license": "https://github.com/netbirdio/netbird/blob/b03d1c7d0794dec3d96072c98e01811535ace19a/LICENSE",
+        "features": "https://docs.netbird.io/selfhosted/enterprise",
+        "hosting": "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:35:24Z",
+        "lastCommitAt": "2026-10-21T18:37:48Z",
+        "lastRelease": "v0.81.3",
+        "lastReleaseAt": "2026-10-19T13:50:20Z",
+        "releaseSource": "https://github.com/netbirdio/netbird/releases/tag/v0.81.3",
+        "commit": "b03d1c7d0794dec3d96072c98e01811535ace19a",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/netbirdio/netbird",
+        "rsx": "Authenticated shared analysis succeeded; overall 6.2/10. Not a security certification."
+      }
+    },
+    {
+      "id": "headscale",
+      "name": "Headscale",
+      "url": "https://headscale.net/stable/",
+      "categories": [
+        "vpn-access"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/juanfont/headscale",
+      "license": "BSD-3-Clause",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "serviceLimitations": [
+        "Narrow single-tailnet Tailscale-compatible control-server scope; personal/lab/small-organisation focus.",
+        "Requires separately distributed compatible Tailscale clients; community web interfaces are separate projects.",
+        "No first-party hosted service identified in official project documentation."
+      ],
+      "hostedOffer": false,
+      "classificationReason": "BSD-3-Clause self-hosted control server with no commercial edition or paid software gate found in official project docs. A applies to this narrow server, not enterprise Tailscale platform parity. No built-in web interface; clients are separate.",
+      "sources": {
+        "license": "https://github.com/juanfont/headscale/blob/cc66979b16cfbdc76b1d582b028108bb8b823354/LICENSE",
+        "features": "https://headscale.net/stable/about/features/",
+        "hosting": "https://headscale.net/stable/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T04:29:41Z",
+        "lastCommitAt": "2026-10-20T09:55:11Z",
+        "lastRelease": "v0.29.5",
+        "lastReleaseAt": "2026-10-13T13:05:15Z",
+        "releaseSource": "https://github.com/juanfont/headscale/releases/tag/v0.29.5",
+        "commit": "cc66979b16cfbdc76b1d582b028108bb8b823354",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/juanfont/headscale",
+        "rsx": "Authenticated shared analysis succeeded; overall 7.3/10. Not a security certification."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "tailscale--netbird",
+      "from": "tailscale",
+      "to": "netbird",
+      "fit": "partial",
+      "migrationNotes": "Re-enrol devices with NetBird clients and recreate identities, DNS, routing and access policies. Community includes networking but enterprise provisioning, approvals and flow observability require the commercial self-hosted license; Tailscale platform extensions are not interchangeable.",
+      "sources": [
+        "https://tailscale.com/pricing",
+        "https://docs.netbird.io/selfhosted/enterprise",
+        "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud"
+      ]
+    },
+    {
+      "id": "tailscale--headscale",
+      "from": "tailscale",
+      "to": "headscale",
+      "fit": "partial",
+      "migrationNotes": "Use compatible Tailscale clients configured for a new Headscale control-server URL; re-register nodes and recreate policy, DNS and routes. One tailnet, small-organisation focus; no built-in web UI or promised enterprise-service parity.",
+      "sources": [
+        "https://headscale.net/stable/",
+        "https://headscale.net/stable/about/clients/",
+        "https://headscale.net/stable/ref/integration/web-ui/",
+        "https://tailscale.com/pricing"
+      ]
+    },
+    {
+      "id": "cloudflare-access--netbird",
+      "from": "cloudflare-access",
+      "to": "netbird",
+      "fit": "different-approach",
+      "migrationNotes": "Scope is remote private-network access through NetBird clients and access policies. Rebuild enrolment and resource rules and operate infrastructure. Cloudflare clientless application access, browser terminals and broader SASE services need separate evaluation; no full platform replacement claim.",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/",
+        "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud",
+        "https://docs.netbird.io/selfhosted/enterprise"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Headscale client and feature compatibility changes across releases; check supported client versions before migration.",
+    "No business deployment or migration was executed; capability mappings derive from current official documentation."
+  ]
+}

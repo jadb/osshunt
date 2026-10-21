@@ -1,0 +1,176 @@
+{
+  "category": {
+    "id": "recruiting",
+    "name": "Recruiting and applicant tracking",
+    "description": "Job openings, candidate applications, hiring pipelines, interviews, feedback and offers.",
+    "audience": "Recruiters, talent acquisition teams, staffing agencies and hiring managers.",
+    "audienceReach": "functional",
+    "audienceRationale": "Hiring spans industries, while daily ATS operation centers on recruiting specialists and hiring managers rather than all employees.",
+    "audienceSources": [
+      "https://www.opencats.org/",
+      "https://www.greenhouse.com/pricing",
+      "https://docs.frappe.io/hr/recruitment"
+    ]
+  },
+  "paid": [
+    {
+      "id": "greenhouse",
+      "name": "Greenhouse",
+      "url": "https://www.greenhouse.com/",
+      "categories": [
+        "recruiting"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Core, Plus and Pro plans use demo/sales contact; no public numeric entry price or billing schedule established.",
+        "source": "https://www.greenhouse.com/pricing"
+      }
+    },
+    {
+      "id": "lever",
+      "name": "Lever",
+      "url": "https://www.lever.co/",
+      "categories": [
+        "recruiting"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Official pricing explicitly requires customized quote based on organization size and hiring needs; amount and billing schedule undisclosed.",
+        "source": "https://www.lever.co/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "opencats",
+      "name": "OpenCATS",
+      "url": "https://www.opencats.org/",
+      "categories": [
+        "recruiting"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/opencats/OpenCATS",
+      "license": "MPL-2.0 AND LicenseRef-CATS-Public-1.1a",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "S",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Combined core includes MPL-2.0 OpenCATS contributions and original CATS code under modified CATS Public License 1.1a. Legacy Exhibit B.I restricts application/managed service-provider, service-bureau and outsourcing operation without written permission; therefore not wholly OSI OSS. No paid OpenCATS feature edition identified; commercial CATSOne is unaffiliated. Candidate/job/submission/CRM workflows supported, but excluded from default OSS recommendations.",
+      "serviceLimitations": [
+        "Community self-hosting; no first-party managed hosting offer established.",
+        "Legacy CATS license restricts ASP/MSP and service-bureau operation without written permission."
+      ],
+      "sources": {
+        "license": "https://github.com/opencats/OpenCATS/blob/94f2aea928cefd2022cd923440b1cdd7fb47cb3f/LICENSE.md",
+        "features": "https://www.opencats.org/",
+        "hosting": "https://documentation.opencats.org/introduction-and-overview"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T12:23:04Z",
+        "lastRelease": "v0.11.1",
+        "lastReleaseAt": "2026-09-03T11:01:20Z",
+        "commit": "94f2aea928cefd2022cd923440b1cdd7fb47cb3f",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/opencats/OpenCATS",
+        "rsx": "Central quick analysis 4.7/10; balanced policy passed. Historical advisory counts and proxy metrics not interpreted as deployment-specific security findings."
+      }
+    },
+    {
+      "id": "frappe-hr",
+      "name": "Frappe HR",
+      "url": "https://frappe.io/hr",
+      "categories": [
+        "hr",
+        "recruiting"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/frappe/hrms",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified. Recruiting is the documented module within this same product, not a separate module edition or product ID. Applicant records, email intake, interviews and offers are documented; no module feature gate identified.",
+      "sources": {
+        "license": "https://github.com/frappe/hrms/blob/7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2/license.txt",
+        "features": "https://docs.frappe.io/hr/recruitment",
+        "hosting": "https://frappe.io/hr/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T13:17:00Z",
+        "lastRelease": "v15.64.6",
+        "lastReleaseAt": "2026-10-21T13:17:01Z",
+        "commit": "7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/frappe/hrms",
+        "rsx": "Central quick analysis: score 6.5/10; balanced policy passed. Commercial-use warning on GPL not accepted as a legal conclusion."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "greenhouse--frappe-hr",
+      "from": "greenhouse",
+      "to": "frappe-hr",
+      "fit": "partial",
+      "migrationNotes": "Fits job openings, applicant records/email intake, scheduled interview rounds/feedback and offers within a broader HR suite. Greenhouse structured recruiting, sourcing/CRM and analytics require separate workflow/integration assessment. Map exported fields and stage history; rebuild roles, forms and interview workflows. Framework CSV/Excel import requires an import-enabled DocType plus role permission; Job Applicant import eligibility and attachment/history migration unverified. No direct Greenhouse migration connector established.",
+      "sources": [
+        "https://www.greenhouse.com/pricing",
+        "https://docs.frappe.io/hr/job-applicant",
+        "https://docs.frappe.io/hr/interview",
+        "https://docs.frappe.io/hr/recruitment",
+        "https://docs.frappe.io/framework-git/data-import/data-import",
+        "https://docs.frappe.io/framework/user/en/basics/users-and-permissions"
+      ]
+    },
+    {
+      "id": "lever--frappe-hr",
+      "from": "lever",
+      "to": "frappe-hr",
+      "fit": "partial",
+      "migrationNotes": "Fits job openings, applicant records/email intake, scheduled interview rounds/feedback and offers within a broader HR suite. Lever sourcing/nurture CRM, AI screening and analytics are not established equivalents. Map exported fields and stage history; rebuild roles, forms and interview workflows. Framework CSV/Excel import requires an import-enabled DocType plus role permission; Job Applicant import eligibility and attachment/history migration unverified. No direct Lever migration connector established.",
+      "sources": [
+        "https://www.lever.co/pricing",
+        "https://docs.frappe.io/hr/job-applicant",
+        "https://docs.frappe.io/hr/interview",
+        "https://docs.frappe.io/hr/recruitment",
+        "https://docs.frappe.io/framework-git/data-import/data-import",
+        "https://docs.frappe.io/framework/user/en/basics/users-and-permissions"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "OpenCATS",
+      "reason": "Retained as labelled Tier S research candidate; combined core retains non-OSI legacy service-provider restrictions. Excluded from default OSS recommendations and replacement edges.",
+      "sources": [
+        "https://github.com/opencats/OpenCATS/blob/94f2aea928cefd2022cd923440b1cdd7fb47cb3f/LICENSE.md"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Focused category contains two assigned candidates; no extra lightly verified product added to satisfy numeric target.",
+    "Frappe shared GPL-3.0 pinned root license conflicts with AGPL-3.0 wording on current marketing pricing page; reuse existing catalog classification and disclose conflict.",
+    "No hands-on imports or Greenhouse/Lever migration tested; Frappe applicant import eligibility, attachment and stage-history portability unresolved.",
+    "OpenCATS older ACL documentation explicitly reports incomplete checks; do not assume granular record-level authorization or Greenhouse/Lever permission parity.",
+    "OpenCATS no first-party hosting offer found in official community/self-hosting documentation; CATSOne is a distinct unaffiliated commercial product."
+  ]
+}

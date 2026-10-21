@@ -36,7 +36,8 @@ class AssemblyEvidenceContract(unittest.TestCase):
             evidence = root / 'captured'
             (evidence / 'github').mkdir(parents=True)
             product = {'id': 'community', 'kind': 'oss', 'categories': ['office-files'],
-                       'repo': 'https://github.com/example/new-name', 'sources': {'license': 'https://example.org/old'}, 'health': {},
+                       'repo': 'https://github.com/example/new-name', 'sources': {'license': 'https://example.org/old'},
+                       'health': {'lastRelease': 'official-1.2.3', 'lastReleaseAt': '2026-10-10'},
                        'locked': ['office restriction'], 'classificationReason': 'Office scope'}
             (categories / 'office-files.json').write_text(json.dumps({'category': {'id': 'office-files'}, 'paid': [],
                         'oss': [product], 'alternatives': []}))
@@ -44,7 +45,7 @@ class AssemblyEvidenceContract(unittest.TestCase):
             (categories / 'crm.json').write_text(json.dumps({'category': {'id': 'crm'}, 'paid': [], 'oss': [second], 'alternatives': []}))
             (evidence / 'github/example__old-name.json').write_text(json.dumps({'repo': 'example/old-name', 'responses': {
                 'metadata': {'status': 0, 'data': {'full_name': 'example/new-name', 'archived': False, 'disabled': False}},
-                'commit': {'data': {'sha': 'pinned-sha'}}, 'release': {'data': None},
+                'commit': {'data': {'sha': 'pinned-sha'}}, 'release': {'status': 1, 'data': {'message': 'Not Found'}},
                 'license': {'status': 0, 'url': 'https://api.github.com/repos/example/new-name/license?ref=pinned-sha',
                             'data': {'html_url': 'https://github.com/example/new-name/blob/pinned-sha/LICENSE'}}}}))
             result = subprocess.run([sys.executable, str(root / 'scripts/assemble.py'), str(categories),
@@ -56,6 +57,8 @@ class AssemblyEvidenceContract(unittest.TestCase):
             self.assertEqual(actual['categories'], ['crm', 'office-files'])
             self.assertEqual(actual['locked'], ['office restriction', 'CRM restriction'])
             self.assertIn('CRM scope', actual['classificationReason'])
+            self.assertEqual(actual['health']['lastRelease'], 'official-1.2.3')
+            self.assertEqual(actual['health']['lastReleaseAt'], '2026-10-10')
 
 
 if __name__ == '__main__':

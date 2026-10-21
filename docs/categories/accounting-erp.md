@@ -11,11 +11,13 @@ Use-case sources: [1](https://quickbooks.intuit.com/pricing/), [2](https://www.x
 
 ### ERPNext — A
 
-Vendor explicitly confirms no product feature paywalls; self-hosted GPL product, commercial hosting/support.
+Canonical GPL ERPNext remains Tier A with no feature paywalls, but is not a standalone recommendation for this category. HR modules moved to Frappe HR from version 14; current expense-claim documentation redirects to HR. ERPNext supplies the required connected foundation for Frappe HR expense settlement, not a second independent expense product. accounting-erp scope: Vendor explicitly confirms no product feature paywalls; self-hosted GPL product, commercial hosting/support.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/frappe/erpnext/blob/997a85da90e2bfc7f0d9b27455faae09c3148ac8/license.txt), [edition evidence](https://frappe.io/erpnext/pricing), [hosting](https://frappe.io/erpnext/pricing), [repository](https://github.com/frappe/erpnext).
 
-Repository: pushed 2026-10-21T21:24:59Z; latest published release v16.52.0 (2026-10-21T11:01:19Z). Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Service costs/limits: Expense claim submission and approval require the separately installed Frappe HR app; use frappe-hr recommendation.
+
+Repository: pushed 2026-10-21T21:24:59Z; latest commit 2026-10-21T21:24:06Z; latest published release v16.52.0 (2026-10-21T11:01:19Z). Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - QuickBooks Online → ERPNext: **partial**. Accounting plus wider ERP workflows; configure chart of accounts, imports, localization and integrations. No tested direct migration or bank-feed parity claim. [1](https://frappe.io/erpnext/pricing)
 - Xero → ERPNext: **partial**. Accounting plus wider ERP workflows; configure chart of accounts, imports, localization and integrations. No tested direct migration or bank-feed parity claim. [1](https://frappe.io/erpnext/pricing)
@@ -28,7 +30,7 @@ License: LGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Full Accounting app, bank synchronization and OCR; Odoo Studio no-code customization; Additional Enterprise business modules; Enterprise full accounting and additional business modules
 
-Repository: pushed 2026-10-21T21:18:41Z; latest published release none on this repository (n/a). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:18:41Z; latest commit 2026-10-21T18:16:20Z; latest published release unverified or unavailable (n/a). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - QuickBooks Online → Odoo Community: **partial**. Basic invoicing/expenses subset only; full accounting and bank automation are Enterprise features. No direct migration validated. [1](https://www.odoo.com/blog/business-hacks-1/odoo-community-vs-odoo-enterprise-which-one-should-you-choose-for-your-business-2406)
 - Xero → Odoo Community: **partial**. Basic invoicing/expenses subset only; full accounting and bank automation are Enterprise features. No direct migration validated. [1](https://www.odoo.com/blog/business-hacks-1/odoo-community-vs-odoo-enterprise-which-one-should-you-choose-for-your-business-2406)
@@ -41,7 +43,7 @@ License: BUSL-1.1; identified core OSI: no/unresolved; self-hostable: yes; first
 
 Paid restrictions: Tier S: current Business Source License 1.1 is source-available, not OSI OSS. Production grant limited to two users, one company and 1,000 invoices; accounting-service use and commercial rebranding restricted. GPL conversion four years after publication is future eligibility, not current OSS. Paid on-premise plans exist; current module pricing not retrievable.
 
-Repository: pushed 2026-10-08T17:43:07Z; latest published release 3.2.4 (2026-09-17T13:09:14Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-08T17:43:07Z; latest commit 2026-10-08T17:43:04Z; latest published release 3.2.4 (2026-09-17T13:09:14Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 
 ### Invoice Ninja — S
@@ -52,7 +54,7 @@ License: Elastic-2.0; identified core OSI: no/unresolved; self-hostable: yes; fi
 
 Paid restrictions: Tier S: current ELv2 is source-available, not OSI OSS; restrictions include managed-service use and license-key bypass. Annual paid white-label license removes client-facing branding; admin branding remains. Invoicing-oriented rather than a verified full general-ledger accounting replacement.
 
-Repository: pushed 2026-10-20T19:09:32Z; latest published release v5.13.49 (2026-10-18T03:44:48Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-20T19:09:32Z; latest commit 2026-10-18T03:34:08Z; latest published release v5.13.49 (2026-10-18T03:44:48Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 
 [Category research and unresolved questions](../../research/categories/accounting-erp.json) · [Research audit](../../research/audits/accounting-erp.md)

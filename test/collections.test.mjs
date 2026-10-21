@@ -67,6 +67,21 @@ test('graph validation applies schema defaults before checking parent references
   assert.equal(validateCollections(data).categories[0].parent, null);
 });
 
+test('repository evidence preserves unknown flags and calendar-date release precision', () => {
+  const data = fixture();
+  Object.assign(data.products[1].health, { archived: null, disabled: null, lastRelease: '4.12.2', lastReleaseAt: '2026-09-14' });
+  const health = validateCollections(data).products[1].health;
+  assert.equal(health.archived, null);
+  assert.equal(health.disabled, null);
+  assert.equal(health.lastReleaseAt, '2026-09-14');
+});
+
+test('paid one-time purchases retain their billing commitment', () => {
+  const data = fixture();
+  Object.assign(data.products[0].pricing, { model: 'flat', entryAmount: 299.99, period: 'one-time', billing: 'one-time' });
+  assert.equal(validateCollections(data).products[0].pricing.billing, 'one-time');
+});
+
 for (const [name, mutate, expected] of [
   ['duplicate product', d => d.products.push(d.products[0]), /duplicate id/],
   ['missing endpoint', d => d.alternatives[0].to = 'missing', /endpoint/],

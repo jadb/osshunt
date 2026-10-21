@@ -15,7 +15,7 @@ Vendor promises all SuiteCRM product code is open source; commercial offer cover
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/SuiteCRM/SuiteCRM/blob/7e390492f73fedb1e64410322b1ff455af167fab/LICENSE.txt), [edition evidence](https://suitecrm.com/join-the-project/always-open-source/), [hosting](https://suitecrm.com/suitecrmhosted/), [repository](https://github.com/SuiteCRM/SuiteCRM).
 
-Repository: pushed 2026-10-20T16:03:54Z; latest published release v7.15.2 (2026-07-31T13:37:50Z). Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-20T16:03:54Z; latest commit 2026-10-20T16:03:53Z; latest published release v7.15.2 (2026-07-31T13:37:50Z). Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - HubSpot → SuiteCRM: **partial**. Contacts, opportunities, campaigns, cases and workflows cover core CRM needs. Map custom fields, automations and integrations during migration; hosted capacity limits differ from self-hosted product. [1](https://suitecrm.com/suitecrms-list-of-features/) [2](https://suitecrm.com/suitecrmhosted/)
 - Salesforce → SuiteCRM: **partial**. Contacts, opportunities, campaigns, cases and workflows cover core CRM needs. Map custom fields, automations and integrations during migration; hosted capacity limits differ from self-hosted product. [1](https://suitecrm.com/suitecrms-list-of-features/) [2](https://suitecrm.com/suitecrmhosted/)
@@ -28,7 +28,7 @@ License: AGPL-3.0-only WITH LicenseRef-Twenty-Application-Exception; identified 
 
 Paid restrictions: SAML/OIDC SSO; Row-level permissions; Audit logs and encryption-key rotation; Organization shared-tarball app installation
 
-Repository: pushed 2026-10-21T20:45:04Z; latest published release twenty/v2.50.0 (2026-10-21T10:13:13Z). Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:45:04Z; latest commit 2026-10-21T20:44:11Z; latest published release twenty/v2.50.0 (2026-10-21T10:13:13Z). Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - HubSpot → Twenty: **partial**. Vendor explicitly supports HubSpot/Salesforce migration through CSV or API (API recommended above 50,000 records). Rebuild existing automations/custom data models; SSO and row permissions require commercial licensing. [1](https://twenty.com/pricing)
 - Salesforce → Twenty: **partial**. Vendor explicitly supports HubSpot/Salesforce migration through CSV or API (API recommended above 50,000 records). Rebuild existing automations/custom data models; SSO and row permissions require commercial licensing. [1](https://twenty.com/pricing)
@@ -41,7 +41,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Advanced Pack reports, workflows and business process management; Sales Pack quotes, invoices, products/pricing and inventory; Official Google/Outlook integrations sold as extensions
 
-Repository: pushed 2026-10-21T16:28:37Z; latest published release 10.0.10 (2026-10-14T15:47:37Z). Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T16:28:37Z; latest commit 2026-10-21T16:28:37Z; latest published release 10.0.10 (2026-10-14T15:47:37Z). Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - HubSpot → EspoCRM: **partial**. Core contact/sales records overlap with paid CRM use cases; reporting, workflows, quotes and integrations can require paid packs. Migration requires mapping source data and customizations; no verified one-click full migration. [1](https://www.espocrm.com/extensions/) [2](https://www.espocrm.com/cloud/)
 - Salesforce → EspoCRM: **partial**. Core contact/sales records overlap with paid CRM use cases; reporting, workflows, quotes and integrations can require paid packs. Migration requires mapping source data and customizations; no verified one-click full migration. [1](https://www.espocrm.com/extensions/) [2](https://www.espocrm.com/cloud/)
@@ -54,7 +54,7 @@ License: LGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Full Accounting app, bank synchronization and OCR; Odoo Studio no-code customization; Additional Enterprise business modules; Enterprise full accounting and additional business modules
 
-Repository: pushed 2026-10-21T21:18:41Z; latest published release none on this repository (n/a). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:18:41Z; latest commit 2026-10-21T18:16:20Z; latest published release unverified or unavailable (n/a). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - HubSpot → Odoo Community: **partial**. CRM pipeline and lead handling are part of a broader modular ERP. Reconfigure workflows and integrations; Community lacks paid Enterprise modules and Studio. Not a full Salesforce/HubSpot suite replacement. [1](https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/email_manual.html) [2](https://www.odoo.com/page/editions)
 - Salesforce → Odoo Community: **partial**. CRM pipeline and lead handling are part of a broader modular ERP. Reconfigure workflows and integrations; Community lacks paid Enterprise modules and Studio. Not a full Salesforce/HubSpot suite replacement. [1](https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/email_manual.html) [2](https://www.odoo.com/page/editions)

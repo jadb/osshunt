@@ -1,0 +1,18 @@
+{
+  "repo": "thunderbird/thunderbird-desktop",
+  "path": "mail/base/content/overrides/app-license-body.html",
+  "commit": "453702ff89d8169eed2a94d19057a95613394df1",
+  "url": "https://api.github.com/repos/thunderbird/thunderbird-desktop/contents/mail/base/content/overrides/app-license-body.html?ref=453702ff89d8169eed2a94d19057a95613394df1",
+  "command": [
+    "gh",
+    "api",
+    "repos/thunderbird/thunderbird-desktop/contents/mail/base/content/overrides/app-license-body.html?ref=453702ff89d8169eed2a94d19057a95613394df1"
+  ],
+  "exitCode": 1,
+  "data": {
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+    "status": "404"
+  },
+  "error": "gh: Not Found (HTTP 404)"
+}

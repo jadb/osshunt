@@ -15,7 +15,7 @@ Official knowledge base confirms Community and Support Contract self-hosted pack
 
 License: AGPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/zammad/zammad/blob/ecb3084231cb27b470eb89f4c182f7fa4032ce8b/LICENSE), [edition evidence](https://support.zammad.com/help/en-us/51-getting-started/38-what-s-the-difference-between-the-community-and-the-support-contract-versions), [hosting](https://zammad.com/en/pricing), [repository](https://github.com/zammad/zammad).
 
-Repository: pushed 2026-10-21T20:45:45Z; latest published release none on this repository (n/a). Quick analysis: 4.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:45:45Z; latest commit 2026-10-21T20:39:08Z; latest published release unverified or unavailable (n/a). Quick analysis: 4.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Zendesk → Zammad: **partial**. Support ticketing and workflows alternative. Official migration service supports Zendesk; migration overwrites target data, so use a fresh instance and test mapping first. Professional migration/support services may cost extra. [1](https://support.zammad.com/help/en-us/51-getting-started/30-i-m-on-zendesk-freshdesk-otrs-kayako-saas-how-do-i-make-the-switch-to-zammad) [2](https://zammad.com/en/pricing)
 
@@ -27,7 +27,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Captain AI; Voice calls; Custom branding; Agent capacity management; Roles and permissions; SSO/SAML; SLA policies
 
-Repository: pushed 2026-10-21T20:49:08Z; latest published release v4.19.0 (2026-10-20T12:52:53Z). Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:49:08Z; latest commit 2026-10-21T20:49:05Z; latest published release v4.19.0 (2026-10-20T12:52:53Z). Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Intercom → Chatwoot: **partial**. Shared support inbox and chat alternative. Community excludes voice, AI, agent capacity, SSO and SLA. Verify channel integrations and historical message import separately; no migration parity established. [1](https://www.chatwoot.com/pricing/self-hosted-plans) [2](https://www.chatwoot.com/pricing/)
 - Zendesk → Chatwoot: **partial**. Shared support inbox and chat alternative. Community excludes voice, AI, agent capacity, SSO and SLA. Verify channel integrations and historical message import separately; no migration parity established. [1](https://www.chatwoot.com/pricing/self-hosted-plans) [2](https://www.chatwoot.com/pricing/)
@@ -40,7 +40,7 @@ License: AGPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hos
 
 Paid restrictions: Paid module acquisition: saved replies; Paid modules: tags and custom fields; Paid modules: workflows and SLA; Paid modules: API/webhooks and reports; Paid modules: knowledge base and customer portal
 
-Repository: pushed 2026-10-21T10:10:33Z; latest published release 1.8.248 (2026-10-17T05:01:00Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T10:10:33Z; latest commit 2026-10-17T04:51:43Z; latest published release 1.8.248 (2026-10-17T05:01:00Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Zendesk → FreeScout: **partial**. Lightweight shared inbox/ticket support. Official migration guide requires API/Webhooks module; custom fields/tags need their modules. Ticket numbers cannot be preserved; imported chat threads lose messenger connection, so replies cannot reach original chat customer. [1](https://freescout.net/) [2](https://github.com/freescout-help-desk/freescout/wiki/Migrate-to-FreeScout)
 

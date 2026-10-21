@@ -15,7 +15,7 @@ Node-RED editor/runtime are Apache-2.0, self-hostable and commercially hostable.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/node-red/node-red/blob/df0a87cce1a243e21a2e0eb0fdbdbb8c4732392f/LICENSE), [edition evidence](https://nodered.org/about/), [hosting](https://flowfuse.com/product/hub/), [repository](https://github.com/node-red/node-red).
 
-Repository: pushed 2026-10-21T12:16:00Z; latest published release 5.0.9 (2026-10-21T10:29:19Z). Quick analysis: 7.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T12:16:00Z; latest commit 2026-10-21T10:23:37Z; latest published release 5.0.9 (2026-10-21T10:29:19Z). Quick analysis: 7.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Make → Node-RED: **different-approach**. Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators. [1](https://nodered.org/about/) [2](https://www.make.com/pricing)
 - Zapier → Node-RED: **different-approach**. Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators. [1](https://nodered.org/about/) [2](https://zapier.com/pricing)
@@ -28,7 +28,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Kafka/NATS/SQS/cloud-event triggers and SQL Server/Oracle runtimes paid.; Content search, workspace error handlers, some Git/deployment features and enterprise governance paid.; Published free edition has workspace/user/group quotas; vendor Community Docker/release binaries include proprietary code with resale, hosting and modification restrictions.
 
-Repository: pushed 2026-10-21T20:42:23Z; latest published release v1.846.1 (2026-10-21T20:05:13Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:42:23Z; latest commit 2026-10-21T20:04:23Z; latest published release v1.846.1 (2026-10-21T20:05:13Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Make → Windmill (OSS source build): **different-approach**. Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid. [1](https://www.windmill.dev/pricing) [2](https://www.make.com/pricing)
 - Zapier → Windmill (OSS source build): **different-approach**. Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid. [1](https://www.windmill.dev/pricing) [2](https://zapier.com/pricing)
@@ -41,7 +41,7 @@ License: LicenseRef-Sustainable-Use-1.0; identified core OSI: no/unresolved; sel
 
 Paid restrictions: Workflow and credential sharing, projects, custom variables, Git environments and SSO require paid plans.; Sustainable Use License restricts commercial redistribution/hosted resale; internal business use permitted.
 
-Repository: pushed 2026-10-21T21:28:25Z; latest published release n8n@2.44.5 (2026-10-21T07:26:46Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:28:25Z; latest commit 2026-10-21T16:26:54Z; latest published release n8n@2.44.5 (2026-10-21T07:26:46Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Make → n8n (source available): **partial**. Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified. [1](https://docs.n8n.io/deploy/host-n8n/community-edition-features.md) [2](https://www.make.com/pricing)
 - Zapier → n8n (source available): **partial**. Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified. [1](https://docs.n8n.io/deploy/host-n8n/community-edition-features.md) [2](https://zapier.com/pricing)
@@ -54,7 +54,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Commercial cloud/on-prem plans gate projects, shared global connections, Git releases and governance; exact boundaries of MIT Community Edition still need confirmation.
 
-Repository: pushed 2026-10-21T21:08:38Z; latest published release 0.92.3 (2026-10-12T18:43:34Z). Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:08:38Z; latest commit 2026-10-21T17:01:59Z; latest published release 0.92.3 (2026-10-12T18:43:34Z). Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Make → Activepieces: **partial**. Visual trigger/step workflow model overlaps; rebuild incumbent automations and verify every integration/action. MIT Community paid-feature boundaries unresolved; no automatic Zap/Make import verified. [1](https://www.activepieces.com/pricing) [2](https://www.make.com/pricing)
 - Zapier → Activepieces: **partial**. Visual trigger/step workflow model overlaps; rebuild incumbent automations and verify every integration/action. MIT Community paid-feature boundaries unresolved; no automatic Zap/Make import verified. [1](https://www.activepieces.com/pricing) [2](https://zapier.com/pricing)

@@ -1,0 +1,200 @@
+{
+  "category": {
+    "id": "image-editing",
+    "name": "Image editing",
+    "description": "Raster image retouching, compositing and digital painting, plus RAW photo development and library workflows.",
+    "audience": "Photographers, designers, illustrators and people preparing images for work or personal projects.",
+    "audienceReach": "broad",
+    "audienceRationale": "Image preparation spans creative professions and occasional general use; RAW development and digital painting are more specialized workflows within the category.",
+    "audienceSources": [
+      "https://www.gimp.org/",
+      "https://www.darktable.org/about/",
+      "https://www.adobe.com/products/photoshop-lightroom/plans.html"
+    ]
+  },
+  "paid": [
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "url": "https://www.adobe.com/products/photoshop/plans.html",
+      "categories": [
+        "image-editing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 19.99,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Lowest listed individual plan including desktop Photoshop is Photography at US$19.99/month on an annual commitment billed monthly; standalone Photoshop US$22.99/month. Web/mobile-only offer excluded from desktop comparison.",
+        "source": "https://www.adobe.com/products/photoshop/plans.html"
+      }
+    },
+    {
+      "id": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+      "categories": [
+        "image-editing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 11.99,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Individual Lightroom plan US$11.99/month, annual commitment billed monthly; includes mobile, desktop, web and Lightroom Classic.",
+        "source": "https://www.adobe.com/products/photoshop-lightroom/plans.html"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "gimp",
+      "name": "GIMP",
+      "url": "https://www.gimp.org/",
+      "categories": [
+        "image-editing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/GNOME/gimp",
+      "license": "GPL-3.0-or-later",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Locally operated desktop image editor. All published application functionality available as free software; no commercial feature edition identified. Core GPL v3 or later; libgimp libraries LGPL, icons CC BY-SA, data licensing has historical caveats in LICENSE. GitHub is an active read-only GNOME GitLab mirror.",
+      "sources": {
+        "license": "https://github.com/GNOME/gimp/blob/e7617d91ca3f795cd6277814d1d02a59e90c1a29/LICENSE",
+        "features": "https://www.gimp.org/docs/userfaq.html",
+        "hosting": "https://www.gimp.org/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:36:47Z",
+        "lastRelease": "3.2.6",
+        "lastReleaseAt": "2026-09-10",
+        "commit": "e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/GNOME/gimp",
+        "rsx": "Shared rsx analyze overall 4.2/10; GitHub mirror omits canonical issue/PR/release activity, so low activity signals are not canonical inactivity.",
+        "releaseSource": "https://www.gimp.org/"
+      }
+    },
+    {
+      "id": "darktable",
+      "name": "darktable",
+      "url": "https://www.darktable.org/",
+      "categories": [
+        "image-editing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/darktable-org/darktable",
+      "license": "GPL-3.0-or-later",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Locally operated desktop RAW developer and photo library application. Published workflow functionality available in the GPL edition; official source and installers available without a paid edition. Community Flatpak omits AI features: packaging limitation, not a paid software gate.",
+      "sources": {
+        "license": "https://github.com/darktable-org/darktable/blob/2af685755d806c27af43fcc132cf68fb268962b1/LICENSE",
+        "features": "https://www.darktable.org/about/",
+        "hosting": "https://www.darktable.org/install/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:49:10Z",
+        "lastRelease": "release-5.6.2",
+        "lastReleaseAt": "2026-10-04T16:36:31Z",
+        "commit": "2af685755d806c27af43fcc132cf68fb268962b1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/darktable-org/darktable",
+        "rsx": "Shared rsx analyze overall 6.7/10; GitHub activity and current release captured; root GPL text and official licensing statement override unknown license scoring."
+      }
+    },
+    {
+      "id": "krita",
+      "name": "Krita",
+      "url": "https://krita.org/",
+      "categories": [
+        "image-editing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/KDE/krita",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Locally operated desktop digital painting application. GPL v3 application with some more permissively licensed parts. Free installers/source and paid store distribution; store income funds development and automatic updates, no separate paid feature edition identified. Canonical development on KDE Invent; active GitHub mirror.",
+      "sources": {
+        "license": "https://github.com/KDE/krita/blob/ec6a328c805b397dddbacd48d5e1a950540c0792/COPYING",
+        "features": "https://krita.org/en/about/license/",
+        "hosting": "https://krita.org/en/download/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T11:05:17Z",
+        "lastRelease": "5.3.4.1",
+        "lastReleaseAt": "2026-10-07",
+        "commit": "ec6a328c805b397dddbacd48d5e1a950540c0792",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/KDE/krita",
+        "rsx": "Shared rsx analyze overall 4.9/10; GitHub mirror omits canonical issue/PR/release activity, so low activity signals are not canonical inactivity.",
+        "releaseSource": "https://krita.org/en/download/"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "adobe-photoshop--gimp",
+      "from": "adobe-photoshop",
+      "to": "gimp",
+      "fit": "partial",
+      "migrationNotes": "Local retouching and compositing alternative. Workflow/UI differ; save editable projects as XCF and export interchange copies, since non-native formats lose some project information. RAW development uses darktable or RawTherapee plug-ins. Validate required project features before switching.",
+      "sources": [
+        "https://www.gimp.org/",
+        "https://www.gimp.org/docs/userfaq.html",
+        "https://docs.gimp.org/3.0/en/gimp-images-out.html"
+      ]
+    },
+    {
+      "id": "adobe-photoshop--krita",
+      "from": "adobe-photoshop",
+      "to": "krita",
+      "fit": "partial",
+      "migrationNotes": "Best fit for digital painting and illustration done in Photoshop. Krita emphasizes painting rather than the full image-manipulation workflow. Supports PSD layers and masks but does not promise complete compatibility; official manual recommends ORA or TIFF interchange when possible.",
+      "sources": [
+        "https://docs.krita.org/en/user_manual/introduction_from_other_software/introduction_from_photoshop.html",
+        "https://docs.krita.org/en/general_concepts/file_formats/file_psd.html"
+      ]
+    },
+    {
+      "id": "adobe-lightroom--darktable",
+      "from": "adobe-lightroom",
+      "to": "darktable",
+      "fit": "different-approach",
+      "migrationNotes": "Local RAW development and photo-library workflow. Official FAQ warns this is not a direct replacement: presets are incompatible, Lightroom edit import is old and unreliable, and edits may need rebuilding. Check camera support; do not assume Adobe cloud/library synchronization transfers.",
+      "sources": [
+        "https://www.darktable.org/about/",
+        "https://www.darktable.org/about/faq/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "No first-party hosted image editing service identified for these desktop projects; false hostedOffer reflects reviewed official offerings.",
+    "GIMP and Krita GitHub latest-release APIs return 404; official website releases recorded instead. GitHub metadata and rsx assess active mirrors, not canonical issue/merge-request systems.",
+    "No complete Adobe project, preset, plugin or cloud-service migration is claimed; only supported workflow edges included."
+  ]
+}

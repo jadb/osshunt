@@ -1,0 +1,183 @@
+{
+  "category": {
+    "id": "document-management",
+    "name": "Document Management",
+    "description": "Capture, OCR, organize, search and control business documents, with document workflows and access permissions.",
+    "audience": "Operations, finance, HR, records administrators and teams managing document collections.",
+    "audienceReach": "broad",
+    "audienceRationale": "Document capture and retrieval span business departments and industries; advanced approval and governance needs vary by organization.",
+    "audienceSources": [
+      "https://start.docuware.com/faq/docuware-pricing",
+      "https://www.mayan-edms.com/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "docuware",
+      "name": "DocuWare",
+      "url": "https://start.docuware.com/",
+      "categories": [
+        "document-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Tailored quote; official Cloud FAQ publishes typical USD30\u2013125+ per user/month depending on plan, user type and scale. Annual subscription; not a guaranteed entry plan price.",
+        "source": "https://start.docuware.com/faq/docuware-pricing"
+      }
+    },
+    {
+      "id": "m-files",
+      "name": "M-Files",
+      "url": "https://www.m-files.com/",
+      "categories": [
+        "document-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 65,
+        "currency": "EUR",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Essentials EUR65/seat/month; subscriptions typically billed annually, other terms by agreement. Enterprise custom quote.",
+        "source": "https://www.m-files.com/editions/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "paperless-ngx",
+      "name": "Paperless-ngx",
+      "url": "https://docs.paperless-ngx.com/",
+      "categories": [
+        "document-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/paperless-ngx/paperless-ngx",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Community self-hosted project; official source documents OCR, search, permissions, versions and workflows in the open application, with no paid software edition identified. Tier applies to public product; remote AI/OCR service costs are separate.",
+      "serviceLimitations": [
+        "Optional Azure AI remote OCR or remote LLM providers may require separately paid services; local OCR is included.",
+        "Project demo is not production managed hosting."
+      ],
+      "sources": {
+        "license": "https://github.com/paperless-ngx/paperless-ngx/blob/f25fd5365fcc32d06c24306535c7b55e93fbb259/LICENSE",
+        "features": "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/dev/docs/index.md",
+        "hosting": "https://github.com/paperless-ngx/paperless-ngx"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:50:49Z",
+        "lastRelease": "v3.3.3",
+        "lastReleaseAt": "2026-10-19T17:24:02Z",
+        "commit": "f25fd5365fcc32d06c24306535c7b55e93fbb259",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/paperless-ngx/paperless-ngx",
+        "rsx": "Central rsx analysis pending; shared authenticated GitHub capture used."
+      }
+    },
+    {
+      "id": "mayan-edms",
+      "name": "Mayan EDMS",
+      "url": "https://www.mayan-edms.com/",
+      "categories": [
+        "document-management"
+      ],
+      "kind": "oss",
+      "repo": "https://gitlab.com/mayan-edms/mayan-edms",
+      "license": "GPL-2.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Current canonical GitLab LICENSE and official FAQ establish GPL-2.0-only since 4.6; Apache metadata belongs to older mirror. Public software includes workflows, versions, OCR, granular permissions and REST API. Commercial support tiers limit service coverage, not software user/document capacity. No separate paid software edition identified.",
+      "serviceLimitations": [
+        "Paid support contracts restrict covered users/documents/installations and offer SLAs, migration assistance, customization and early access; these are service terms.",
+        "Optional external OpenAI API usage may incur provider costs; local Ollama integration also documented."
+      ],
+      "sources": {
+        "license": "https://gitlab.com/mayan-edms/mayan-edms/-/raw/834ffec1b539171390358e60a0406870108514f5/LICENSE",
+        "features": "https://docs.mayan-edms.com/chapters/features.html",
+        "hosting": "https://www.mayan-edms.com/support/"
+      },
+      "health": {
+        "archived": null,
+        "disabled": null,
+        "pushedAt": null,
+        "lastRelease": "4.12.2",
+        "lastReleaseAt": "2026-09-14",
+        "commit": "834ffec1b539171390358e60a0406870108514f5",
+        "checkedAt": "2026-10-21",
+        "source": "https://gitlab.com/api/v4/projects/mayan-edms%2Fmayan-edms",
+        "rsx": "Canonical GitLab live metadata, commit, pinned LICENSE and empty releases API captured; GitHub mirror not canonical. rsx results pending centrally.",
+        "lastCommitAt": "2026-09-21T05:03:57.000-04:00"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "docuware--paperless-ngx",
+      "from": "docuware",
+      "to": "paperless-ngx",
+      "fit": "partial",
+      "migrationNotes": "Suitable for OCR, indexing and searchable document archives. Export source files and metadata, then map document types/tags/permissions on import. DocuWare forms, approval routing, SAP/signature add-ons and configurations require separate evaluation and rebuilding; no verified direct migration tool.",
+      "sources": [
+        "https://start.docuware.com/faq/docuware-pricing",
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/dev/docs/index.md"
+      ]
+    },
+    {
+      "id": "docuware--mayan-edms",
+      "from": "docuware",
+      "to": "mayan-edms",
+      "fit": "partial",
+      "migrationNotes": "Both support document versions, permissions and workflows. Export documents/metadata and rebuild workflow states, roles and integrations using Mayan REST API; DocuWare forms and add-on modules are not proven portable.",
+      "sources": [
+        "https://start.docuware.com/faq/docuware-pricing",
+        "https://docs.mayan-edms.com/chapters/features.html"
+      ]
+    },
+    {
+      "id": "m-files--mayan-edms",
+      "from": "m-files",
+      "to": "mayan-edms",
+      "fit": "partial",
+      "migrationNotes": "Partial fit for document storage, metadata, versioning and approval workflows. Rebuild M-Files metadata relationships, workflows, access rules and Microsoft 365 experiences; Mayan API supports custom integration but no direct vault migration was verified.",
+      "sources": [
+        "https://www.m-files.com/editions/",
+        "https://docs.mayan-edms.com/chapters/features.html"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Mayan EDMS GitHub mirror",
+      "reason": "Not archived, but README directs users to canonical GitLab and mirror LICENSE remains old Apache-2.0. Use canonical GitLab product record, not stale mirror health or license.",
+      "sources": [
+        "https://github.com/mayan-edms/Mayan-EDMS",
+        "https://gitlab.com/mayan-edms/mayan-edms",
+        "https://docs.mayan-edms.com/chapters/faq.html"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Only the two assigned OSS choices were sufficiently investigated in this focused pass.",
+    "Mayan canonical archived/disabled flags and exact pushedAt unavailable from captured public API; null values preserve uncertainty. Last activity 2026-10-12 is not equated with pushedAt.",
+    "No first-party managed production hosting offer identified for either project; hostedOffer=false means no verified first-party offer, not absence of third-party hosting.",
+    "Mayan GitLab releases API returns an empty array; version 4.12.2/date come from official release notes, not a GitLab release object."
+  ]
+}

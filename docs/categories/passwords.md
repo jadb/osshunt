@@ -16,7 +16,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Service costs/limits: Official Bitwarden clients and external push services retain their own terms and availability; no official Bitwarden support for this server.; Missing or partial upstream features are implementation gaps, not paid unlocks; custom roles and public API coverage require review.
 
-Repository: pushed 2026-10-16T09:51:32Z; latest published release 1.37.4 (2026-10-05T23:40:54Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-16T09:51:32Z; latest commit 2026-10-16T09:51:32Z; latest published release 1.37.4 (2026-10-05T23:40:54Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - 1Password → Vaultwarden: **partial**. Use Bitwarden-compatible clients with this unofficial server. Verify import and administration requirements on a test instance; upstream API and client compatibility may vary. [1](https://github.com/dani-garcia/vaultwarden) [2](https://github.com/dani-garcia/vaultwarden/wiki)
 
@@ -30,7 +30,7 @@ Paid restrictions: Integrated TOTP authenticator and file attachments require Pr
 
 Service costs/limits: Official hosted service plan limits and storage quotas are distinct from the AGPL core license.
 
-Repository: pushed 2026-10-21T21:24:36Z; latest published release v2026.10.0 (2026-10-14T00:26:48Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:24:36Z; latest commit 2026-10-21T21:24:33Z; latest published release v2026.10.0 (2026-10-14T00:26:48Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - 1Password → Bitwarden: **partial**. Official 1Password import documented. Review shared-vault permissions, attachments, passkeys and paid organization requirements before replacing business administration. [1](https://bitwarden.com/help/import-from-1password/) [2](https://bitwarden.com/pricing/business/)
 
@@ -44,7 +44,7 @@ Paid restrictions: Tags require Pro; SSO, LDAP provisioning, account recovery an
 
 Service costs/limits: Pro subscription governs updates/support and supplied license keys; vendor describes Pro source as AGPL.
 
-Repository: pushed 2026-10-20T11:03:40Z; latest published release v5.17.0 (2026-10-20T11:57:25Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-20T11:03:40Z; latest commit 2026-10-20T10:29:54Z; latest published release v5.17.0 (2026-10-20T11:57:25Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - 1Password → Passbolt Community Edition: **different-approach**. Team password sharing and browser workflows overlap; rebuild access groups and evaluate CE versus Pro needs. Direct 1Password import parity was not established. [1](https://www.passbolt.com/pricing/pro)
 

@@ -4,6 +4,7 @@ import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { schemas } from '../lib/schemas.mjs';
 import { validateCollections } from '../lib/validate.mjs';
+import { parseClaims } from '../lib/claims.mjs';
 
 const dir = process.argv[2] ? resolve(process.argv[2]) : resolve(import.meta.dirname, '../data/collections');
 const ajv = new Ajv2020({ allErrors: true });
@@ -19,4 +20,12 @@ for (const name of Object.keys(schemas)) {
   if (JSON.stringify(sorted, null, 2) + '\n' !== raw) throw new Error(`${name}: noncanonical formatting or ordering`);
 }
 validateCollections(data);
+const root = resolve(import.meta.dirname, '..');
+const additions = JSON.parse(await readFile(join(root, 'research/next-24.json'), 'utf8'));
+let claimCount = 0;
+for (const addition of additions.filter(row => row.status === 'curated')) {
+  if (!data.categories.some(category => category.id === addition.id)) throw new Error(`curated category missing: ${addition.id}`);
+  claimCount += parseClaims(await readFile(join(root, `research/claims/${addition.id}.jsonl`), 'utf8'), addition.id).length;
+}
 console.log('Schema, uniqueness, references, mappings, tiers, activity and formatting valid.');
+if (claimCount) console.log(`${claimCount} sourced claims with dates and page locators valid.`);

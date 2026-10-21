@@ -5,10 +5,15 @@ from copy import deepcopy
 import json
 from pathlib import Path
 
-ORDER = ['office-files', 'passwords', 'team-chat', 'video-calls', 'docs-wiki', 'project-management',
-         'kanban', 'forms-surveys', 'scheduling', 'e-signature', 'whiteboard-design', 'accounting-erp',
-         'crm', 'support-helpdesk', 'email-marketing', 'spreadsheet-database', 'automation',
-         'web-analytics', 'screen-recording', 'hr', 'login-sso', 'hosting-backend', 'monitoring', 'internal-tools']
+ORDER = ['office-files', 'email-clients', 'passwords', 'pdf-tools', 'team-chat', 'video-calls', 'website-cms',
+ 'backup-recovery', 'docs-wiki', 'project-management', 'file-transfer', 'forms-surveys', 'kanban',
+ 'scheduling', 'e-signature', 'expense-reimbursements', 'document-management', 'transcription',
+ 'whiteboard-design', 'accounting-erp', 'time-tracking', 'learning-management', 'crm',
+ 'support-helpdesk', 'email-marketing', 'spreadsheet-database', 'ecommerce', 'image-editing',
+ 'diagramming', 'video-editing', 'social-publishing', 'automation', 'web-analytics', 'screen-recording',
+ 'hr', 'telephony', 'digital-assets', 'business-intelligence', 'recruiting', 'email-hosting',
+ 'login-sso', 'vpn-access', 'it-assets', 'hosting-backend', 'monitoring', 'internal-tools',
+ 'api-testing', 'search-infrastructure']
 
 
 def main():
@@ -89,7 +94,10 @@ def main():
             meta, commit, release = (raw[key].get('data') or {} for key in ('metadata', 'commit', 'release'))
             if raw['metadata']['status'] == 0:
                 product['health'].update(archived=meta['archived'], disabled=meta['disabled'], pushedAt=meta.get('pushed_at'),
-                                         commit=commit.get('sha'), lastRelease=release.get('tag_name'), lastReleaseAt=release.get('published_at'))
+                                         commit=commit.get('sha'), lastCommitAt=commit.get('commit', {}).get('committer', {}).get('date'))
+                if raw['release'].get('status') == 0 and release.get('tag_name') and not product['health'].get('releaseSource'):
+                    product['health'].update(lastRelease=release['tag_name'], lastReleaseAt=release.get('published_at'),
+                                             releaseSource=release.get('html_url', raw['release']['url']))
             license_data = raw['license'].get('data') or {}
             if raw['license']['status'] == 0 and '?ref=' in raw['license']['url']:
                 product['sources']['license'] = license_data.get('html_url', product['sources']['license'])

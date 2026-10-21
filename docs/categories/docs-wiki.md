@@ -15,7 +15,7 @@ Project FAQ explicitly confirms one free open edition, no enterprise/custom edit
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/BookStackApp/BookStack/blob/045c6a98cac21ea86906674bb91d01f375460db6/LICENSE), [edition evidence](https://www.bookstackapp.com/about/project-faq/), [hosting](https://www.bookstackapp.com/about/project-faq/), [repository](https://github.com/BookStackApp/BookStack).
 
-Repository: pushed 2026-10-21T04:31:17Z; latest published release v26.09.2 (2026-10-20T11:48:40Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T04:31:17Z; latest commit 2026-10-18T18:33:04Z; latest published release v26.09.2 (2026-10-20T11:48:40Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Confluence → BookStack: **partial**. Documentation/wiki use case covered with book/chapter/page hierarchy, roles, API and export options; validate Confluence macros/integrations and rebuild unsupported content. [1](https://www.bookstackapp.com/about/confluence-alternative/) [2](https://www.bookstackapp.com/)
 - Notion → BookStack: **different-approach**. Useful for the wiki/documentation portion of Notion; hierarchical documentation model rather than Notion database workspace. No verified native Notion importer. [1](https://www.bookstackapp.com/) [2](https://www.notion.com/pricing)
@@ -28,7 +28,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Business license gates SSO, AI, granular page permissions and Confluence importer.; Enterprise adds SCIM, audit logs, SIEM and page verification/review.
 
-Repository: pushed 2026-10-21T19:48:50Z; latest published release v0.96.0 (2026-09-08T14:18:03Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T19:48:50Z; latest commit 2026-10-21T19:48:49Z; latest published release v0.96.0 (2026-09-08T14:18:03Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Confluence → Docmost Community: **partial**. Confluence HTML space ZIP importer is Business-gated; docs claim formatting, hierarchy, internal links, images/attachments and Draw.io diagrams preserved. Test macros and integrations separately. [1](https://docmost.com/docs/user-guide/import-export) [2](https://docmost.com/pricing)
 - Notion → Docmost Community: **partial**. Notion ZIP import preserves page structure; pilot databases, permissions and linked content. Export pages/spaces as Markdown or HTML. [1](https://docmost.com/docs/user-guide/import-export) [2](https://docmost.com/pricing)
@@ -41,7 +41,7 @@ License: BUSL-1.1; identified core OSI: no/unresolved; self-hostable: yes; first
 
 Paid restrictions: Community on-premises edition has limited features; Business and Enterprise sold separately.; Exact matrix checkmark mapping did not survive text extraction; paid migration/AI/security feature allocation requires visual verification.
 
-Repository: pushed 2026-10-21T21:26:26Z; latest published release v1.11.0 (2026-10-12T14:22:35Z). Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:26:26Z; latest commit 2026-10-21T12:36:51Z; latest published release v1.11.0 (2026-10-12T14:22:35Z). Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Confluence → Outline (source-available): **partial**. Knowledge-base replacement candidate under BSL rather than OSS; Confluence importer listed among on-premise features but exact paid-tier placement not verified. API export capabilities documented. [1](https://www.getoutline.com/pricing) [2](https://www.getoutline.com/developers)
 - Notion → Outline (source-available): **partial**. Fits shared documentation; Notion database/workflow parity not claimed. Review BSL Document Service restriction and community edition limits. [1](https://www.getoutline.com/pricing) [2](https://www.getoutline.com/developers)
@@ -54,7 +54,7 @@ License: MIT AND MPL-2.0 AND LicenseRef-AFFiNE-EE; identified core OSI: no/unres
 
 Paid restrictions: Official enterprise page says self-hosted Team required for more than 10 seats; multiple admin roles and priority support in Team.; Non-CE backend/native code has commercial EE production and redistribution restrictions.
 
-Repository: pushed 2026-10-12T09:51:10Z; latest published release v0.27.4 (2026-08-18T16:51:39Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-12T09:51:10Z; latest commit 2026-10-11T14:49:18Z; latest published release v0.27.4 (2026-08-18T16:51:39Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Confluence → AFFiNE (mixed-license stack; review required): **different-approach**. Docs/whiteboards for shared knowledge; verify EE/CE license scope and procurement before production. Migration compatibility not independently tested. [1](https://affine.pro/about-us) [2](https://affine.pro/enterprise)
 - Notion → AFFiNE (mixed-license stack; review required): **different-approach**. Docs and canvas approach; local MIT editor is useful, but full self-hosted collaboration has mixed licensing and seat/plan questions. Pilot database parity and export/import round trips. [1](https://affine.pro/pricing) [2](https://affine.pro/blog/notion-alternative)
@@ -67,7 +67,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Current commercial self-hosted server free tier is limited to one user seat per instance and three guest editors.; Commercial server enterprise authentication needs Seed or higher; server is separately licensed.
 
-Repository: pushed 2026-10-21T04:12:10Z; latest published release 0.14.10 (2026-10-21T04:12:10Z). Quick analysis: 6.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T04:12:10Z; latest commit 2026-06-26T02:35:45Z; latest published release 0.14.10 (2026-10-21T04:12:10Z). Quick analysis: 6.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Notion → AppFlowy client core: **different-approach**. AGPL client supports documents/databases and local data control. Full team replacement needs separately commercial self-hosted services; do not treat AGPL client as unlimited OSS server. [1](https://github.com/AppFlowy-IO/AppFlowy) [2](https://github.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial)
 

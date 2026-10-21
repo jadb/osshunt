@@ -1,0 +1,195 @@
+{
+  "category": {
+    "id": "telephony",
+    "name": "Telephony",
+    "description": "Business voice calling, PBX and call-center telephony, including self-operated communications engines.",
+    "audience": "Business phone users, sales and support teams, telephony administrators and communications developers.",
+    "audienceReach": "broad",
+    "audienceRationale": "Business calling spans many departments and industries; operating the OSS engines requires specialist communications skills.",
+    "audienceSources": [
+      "https://aircall.io/pricing/",
+      "https://www.asterisk.org/products/ip-pbx/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "ringcentral",
+      "name": "RingCentral RingEX",
+      "url": "https://www.ringcentral.com",
+      "categories": [
+        "telephony"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 20,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Core US list price per user/month paid annually; official search-indexed pricing card. Canonical page extraction omitted the card; regional offers and add-ons differ.",
+        "source": "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+      }
+    },
+    {
+      "id": "aircall",
+      "name": "Aircall",
+      "url": "https://aircall.io",
+      "categories": [
+        "telephony"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 30,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Essentials US list price per license/month billed annually; minimum 3 licenses ($90/month equivalent), before applicable usage/add-ons.",
+        "source": "https://aircall.io/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "asterisk",
+      "name": "Asterisk",
+      "url": "https://www.asterisk.org",
+      "categories": [
+        "telephony"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/asterisk/asterisk",
+      "license": "GPL-2.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Sangoma G.729 transcoding codec is licensed per concurrent channel ($8 USD listed); G.729-dependent recording, conferencing and DTMF processing require decoding rather than passthrough."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core Asterisk source is OSI GPLv2 with documented linking exceptions; Certified Asterisk source remains freely usable. Tier C reflects separately licensed same-vendor ordinary voice functionality: the G.729 transcoding binary is paid per channel, which affects media-processing workflows when that codec is required. This does not imply all calling requires paid modules; other codecs are available. Asterisk is a developer engine, not a turnkey business calling workspace. First-party PBXact Cloud is a separate Asterisk-derived managed PBX, not source-edition parity. Other vendor binary add-ons require their own license checks.",
+      "sources": {
+        "license": "https://github.com/asterisk/asterisk/blob/5aee26c05116ab2d7d2f68d741fe98649d0c504d/LICENSE",
+        "features": "https://www.asterisk.org/products/add-ons/g729-codec/",
+        "hosting": "https://www.asterisk.org/products/add-ons/"
+      },
+      "serviceLimitations": [
+        "PSTN calling requires carrier connectivity, phone numbers and applicable usage charges; these are service costs, not source-code gates.",
+        "Self-operation requires server administration, SIP endpoints, dialplan configuration and integrations."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T18:46:38Z",
+        "lastRelease": "certified-22.8-cert5",
+        "lastReleaseAt": "2026-10-19T17:02:17Z",
+        "commit": "5aee26c05116ab2d7d2f68d741fe98649d0c504d",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/asterisk/asterisk",
+        "rsx": "Shared rsx analysis: overall 4.8/10; activity 5.7/10. Scores are heuristic, not a security assurance."
+      }
+    },
+    {
+      "id": "freeswitch",
+      "name": "FreeSWITCH",
+      "url": "https://signalwire.com/developers/freeswitch",
+      "categories": [
+        "telephony"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/signalwire/freeswitch",
+      "license": "MPL-1.1",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Commercial mod_com_amd answering-machine detection requires per-channel licences; module is outside the public source tree.",
+        "Commercial mod_com_g729 G.729A encoding/decoding requires per-channel licences; passthrough is distinct from transcoding."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Core public source is OSI MPL-1.1 per current HEAD LICENSE, with additional component notices. Tier C reflects same-vendor paid ordinary voice functionality in separately distributed proprietary AMD and G.729 modules, not carrier/service charges. Advantage/Pro builds and support are commercial offerings. First-party SignalWire Platform adds private modules and managed APIs; hostedOffer does not imply application or source parity. Marketing license card differs from repository LICENSE; source evidence controls this record.",
+      "sources": {
+        "license": "https://github.com/signalwire/freeswitch/blob/12ac48ab9e692d645b91b83bab89a85abdc3af53/LICENSE",
+        "features": "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/",
+        "hosting": "https://signalwire.com/developers/freeswitch"
+      },
+      "serviceLimitations": [
+        "Official prebuilt packages/downloads require a free SignalWire account; public source remains available on GitHub.",
+        "Phone numbers, SIP/PSTN trunks, hosting and call usage can incur separate charges.",
+        "Building an agent desktop, CRM workflows, dashboards and production operations requires additional software and engineering."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-09T20:37:28Z",
+        "lastRelease": "v1.11.3",
+        "lastReleaseAt": "2026-08-28T22:27:30Z",
+        "commit": "12ac48ab9e692d645b91b83bab89a85abdc3af53",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/signalwire/freeswitch",
+        "rsx": "Shared rsx analysis: overall 4.7/10; activity 4.8/10. Scores are heuristic, not a security assurance."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "ringcentral--asterisk",
+      "from": "ringcentral",
+      "to": "asterisk",
+      "fit": "different-approach",
+      "migrationNotes": "Can rebuild calling, routing, IVR, queues and voicemail using the Asterisk engine. RingEX meetings/chat apps, turnkey administration and integrations are separate workflows; plan endpoint provisioning, carrier/number migration and custom integration work. No verified automatic configuration or call-history importer.",
+      "sources": [
+        "https://www.asterisk.org/get-started/features/",
+        "https://www.asterisk.org/products/ip-pbx/",
+        "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+      ]
+    },
+    {
+      "id": "aircall--freeswitch",
+      "from": "aircall",
+      "to": "freeswitch",
+      "fit": "different-approach",
+      "migrationNotes": "FreeSWITCH offers routing, IVR, recording and queue/call-center primitives for a custom voice system. Aircall supplies a shared workspace, CRM integrations and analytics; those workflows need other applications or development. Retain/export required recordings and reporting separately; no verified Aircall migration importer. Carrier/number transfer needs provider coordination.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/reference/signalwire-map/",
+        "https://signalwire.com/developers/freeswitch",
+        "https://aircall.io/pricing/"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "FreeSWITCH commercial modules / Advantage",
+      "reason": "Paid per-channel AMD/G.729 binaries and commercial enterprise branch are outside the public OSS-engine scope; not blanket-classified as OSS.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/",
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    },
+    {
+      "name": "PBXact Cloud and other turnkey Sangoma PBXs",
+      "reason": "Separate managed/turnkey products based on Asterisk; not an OSS Asterisk engine edition or evidence of equal application functionality.",
+      "sources": [
+        "https://www.asterisk.org/products/ip-pbx/",
+        "https://www.asterisk.org/products/add-ons/"
+      ]
+    },
+    {
+      "name": "SignalWire Platform",
+      "reason": "Separate first-party commercial cloud with private modules and programmable control plane; not an OSS distribution or parity replacement for Aircall/RingEX.",
+      "sources": [
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Only two focused OSS engine candidates verified; no extra PBX distribution added without edition/module research.",
+    "FreeSWITCH source LICENSE declares MPL-1.1, whereas the current marketing edition card displays PL 2.0; applicable component/file notices should be checked for redistribution.",
+    "No complete proprietary-module inventory for Asterisk asserted; official add-ons are outside the named GPL source edition.",
+    "No verified automatic migration/import path from RingCentral or Aircall; mappings cover voice primitives only.",
+    "RingCentral Core amount came from an official search-indexed card; canonical rendered text did not expose that price card in this run.",
+    "Asterisk G.729 official page lists paid per-channel licenses; compatibility of each downloadable binary with the current source release was not independently exercised. Legacy Fax for Asterisk page supports only versions 12 and earlier, so its channel gate is not applied to current Asterisk."
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "category": {
+    "id": "email-hosting",
+    "name": "Business email hosting",
+    "description": "Custom-domain mailbox servers and groupware; distinguishes email hosting from complete office suites and mail clients.",
+    "audience": "Organizations operating custom-domain employee email, and IT administrators responsible for delivery and mailbox infrastructure.",
+    "audienceReach": "broad",
+    "audienceRationale": "Custom-domain email serves businesses across functions; self-operated server selection and ongoing delivery operations chiefly concern IT teams. Qualitative audience reach, not a counted market estimate.",
+    "audienceSources": [
+      "https://workspace.google.com/pricing",
+      "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+      "https://docs.mailcow.email/",
+      "https://www.fastmail.com/pricing/us/",
+      "https://www.zoho.com/mail/zohomail-pricing.html"
+    ]
+  },
+  "paid": [
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "url": "https://workspace.google.com/pricing",
+      "categories": [
+        "email-hosting"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 7,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Business Starter standard USD $7/user/month with one-year commitment; temporary promotions excluded.",
+        "source": "https://workspace.google.com/pricing"
+      }
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+      "categories": [
+        "email-hosting"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 5.4,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Business Basic without Teams USD $5.40/user/month paid yearly; web/mobile apps. Basic with Teams $7; desktop apps require another plan.",
+        "source": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"
+      }
+    },
+    {
+      "id": "fastmail",
+      "name": "Fastmail Business",
+      "url": "https://www.fastmail.com/pricing/us/",
+      "categories": [
+        "email-hosting"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 3,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Basic USD 3/user/month billed yearly ($36/user/year); custom domains require at least one Standard or Professional user (Standard USD 5/user/month annually). Basic lacks third-party mail-client access; compare actual account mix.",
+        "source": "https://www.fastmail.com/pricing/us/"
+      }
+    },
+    {
+      "id": "zoho-mail",
+      "name": "Zoho Mail",
+      "url": "https://www.zoho.com/mail/zohomail-pricing.html",
+      "categories": [
+        "email-hosting"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Mail Lite is paid per user/month, billed annually with no monthly plan. Numeric USD price absent from rendered source; free plan has separate 5-user and protocol limits.",
+        "source": "https://www.zoho.com/mail/zohomail-pricing.html"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "mailcow",
+      "name": "mailcow: dockerized",
+      "url": "https://mailcow.email/",
+      "categories": [
+        "email-hosting"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/mailcow/mailcow-dockerized",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "serviceLimitations": [
+        "Server resources, DNS, backups, upgrades and mail delivery reputation remain operator responsibilities; paid managed hosting/support are optional services."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPLv3 orchestration and mailcow UI with an integrated mail/groupware stack. Reviewed documentation exposes administration, spam controls, SOGo and mailbox migration without an edition paywall; Servercow sells hosting and support rather than a separate gated software edition. Bundled components retain their own licenses.",
+      "sources": {
+        "license": "https://github.com/mailcow/mailcow-dockerized/blob/55982ac74bfd35581cc44b122ab5fc659e3ae90a/LICENSE",
+        "features": "https://docs.mailcow.email/",
+        "hosting": "https://docs.mailcow.email/#commercial-support"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T17:39:14Z",
+        "lastCommitAt": "2026-10-21T17:36:04Z",
+        "lastRelease": "2026-10",
+        "lastReleaseAt": "2026-10-21T17:39:15Z",
+        "commit": "55982ac74bfd35581cc44b122ab5fc659e3ae90a",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/mailcow/mailcow-dockerized",
+        "rsx": "Shared authenticated analysis completed; overall score 5.3. Repository health is evidence, not a security guarantee."
+      }
+    },
+    {
+      "id": "stalwart",
+      "name": "Stalwart Community",
+      "url": "https://www.stalw.art/",
+      "categories": [
+        "email-hosting"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/stalwartlabs/stalwart",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Enterprise license required for deleted-email restoration and account archiving/un-deletion.",
+        "Enterprise-only AI/LLM spam classification and Sieve scripting; standard rule/statistical spam filtering remains Community.",
+        "Additional enterprise administration includes multi-tenancy, SCIM provisioning, advanced telemetry and sharded/read-replica storage."
+      ],
+      "serviceLimitations": [
+        "Future first-party managed service announced with registration of interest; current general availability, regions and numeric SLAs not confirmed. Self-hosted infrastructure and delivery operations still cost money."
+      ],
+      "hostedOffer": false,
+      "classificationReason": "Community source is AGPL-3.0-only, with per-file dual licensing and proprietary SEL enterprise sections. C because recovery and AI-assisted mail workflows require Enterprise, beyond administrative extras. Optional first-party managed hosting is announced, not confirmed generally available.",
+      "sources": {
+        "license": "https://github.com/stalwartlabs/stalwart/blob/aa47d8ef7bfba7200d3293198ac2592747b20e73/LICENSES/AGPL-3.0-only.txt",
+        "features": "https://www.stalw.art/compare/",
+        "hosting": "https://www.stalw.art/managed-email/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-20T12:35:03Z",
+        "lastCommitAt": "2026-10-18T17:54:34Z",
+        "lastRelease": "v0.16.27",
+        "lastReleaseAt": "2026-10-18T19:28:40Z",
+        "commit": "aa47d8ef7bfba7200d3293198ac2592747b20e73",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/stalwartlabs/stalwart",
+        "rsx": "Shared authenticated analysis completed; overall score 6. Repository health is evidence, not a security guarantee."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "google-workspace--mailcow",
+      "from": "google-workspace",
+      "to": "mailcow",
+      "fit": "partial",
+      "migrationNotes": "Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades.",
+      "sources": [
+        "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+        "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+        "https://workspace.google.com/pricing"
+      ]
+    },
+    {
+      "id": "google-workspace--stalwart",
+      "from": "google-workspace",
+      "to": "stalwart",
+      "fit": "partial",
+      "migrationNotes": "Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise.",
+      "sources": [
+        "https://www.stalw.art/migration/",
+        "https://www.stalw.art/compare/",
+        "https://workspace.google.com/pricing"
+      ]
+    },
+    {
+      "id": "microsoft-365--mailcow",
+      "from": "microsoft-365",
+      "to": "mailcow",
+      "fit": "partial",
+      "migrationNotes": "Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades.",
+      "sources": [
+        "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+        "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+        "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"
+      ]
+    },
+    {
+      "id": "microsoft-365--stalwart",
+      "from": "microsoft-365",
+      "to": "stalwart",
+      "fit": "partial",
+      "migrationNotes": "Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise.",
+      "sources": [
+        "https://www.stalw.art/migration/",
+        "https://www.stalw.art/compare/",
+        "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"
+      ]
+    },
+    {
+      "id": "fastmail--mailcow",
+      "from": "fastmail",
+      "to": "mailcow",
+      "fit": "partial",
+      "migrationNotes": "Email/groupware scope only. Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+      "sources": [
+        "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+        "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+        "https://www.fastmail.com/pricing/us/"
+      ]
+    },
+    {
+      "id": "fastmail--stalwart",
+      "from": "fastmail",
+      "to": "stalwart",
+      "fit": "partial",
+      "migrationNotes": "Email/groupware scope only. Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+      "sources": [
+        "https://www.stalw.art/migration/",
+        "https://www.stalw.art/compare/",
+        "https://www.fastmail.com/pricing/us/"
+      ]
+    },
+    {
+      "id": "zoho-mail--mailcow",
+      "from": "zoho-mail",
+      "to": "mailcow",
+      "fit": "partial",
+      "migrationNotes": "Email/groupware scope only. Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+      "sources": [
+        "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+        "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    },
+    {
+      "id": "zoho-mail--stalwart",
+      "from": "zoho-mail",
+      "to": "stalwart",
+      "fit": "partial",
+      "migrationNotes": "Email/groupware scope only. Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+      "sources": [
+        "https://www.stalw.art/migration/",
+        "https://www.stalw.art/compare/",
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Stalwart managed hosting is interest-stage; availability, regions and exact service terms require launch confirmation.",
+    "Migration edges cover email/groupware only, with mailbox-source access and pilot verification; neither server replaces the full Google Workspace or Microsoft365 suite."
+  ]
+}

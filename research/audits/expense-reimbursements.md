@@ -1,0 +1,13 @@
+> Temporary paths normalized; local operating setup omitted. Original retained locally.
+
+# Expense reimbursements research audit — 2026-10-21
+
+2. Initial Python audit command failed because python executable unavailable; used python3 next. No files changed by failed command.
+3. Web opened docs.frappe.io/hr/expense-claim (timeout), frappe.io/hr/pricing (hosting versus implementation, self-hosting, own Frappe Cloud), expensify.com/pricing (JS shell, no pricing extracted), spendesk.com/pricing/ (fixed monthly plus transaction fees, quote; reimbursements and advanced workflow add-on).
+4. Search batch: official Frappe expense claims/separation, SAP Concur price, Expensify Collect pricing. Search surfaced primary Frappe HR expense-management, Concur Expense and Expensify pricing-update pages; unrelated third-party results unused.
+5. Opened https://frappe.io/hr/expense-management (claims, receipts, conditional multi-level approvals, advance settlement and partial payment tracking), https://github.com/frappe/hrms (repository README), https://docs.frappe.io/erpnext/user/manual/en/expense-claim (redirects to Frappe HR expense-claim), https://www.concur.com/products/concur-expense (Base $7/report; workflow and reimbursement), https://use.expensify.com/blog/collect-plan-pricing-update ($5/member/month Collect, no annual commitment).
+6. Decoded pinned LICENSE content from existing frappe__hrms.json and frappe__erpnext.json; both GPL version 3. Reused canonical health and prior central rsx results; no new network health analysis. Initial full capture output was unnecessarily large; subsequent reads restricted to selected fields.
+7. Opened pinned raw HRMS hooks.py and README URLs (web cache misses); introduction docs confirms ERPNext expense integration. Found Payment Entry and approval sections in expense docs; found $7/report Base section in Concur.
+8. Tried pinned GitHub hooks page (cache miss); searched official required_apps and v14 separation. Search returned current official hooks.py with ERPNext dependency; official README Motivation says separation from v14; installation fetches erpnext and hrms. Direct urllib fallback for both pinned raw URLs failed DNS; no retry.
+9. Opened https://frappe.io/erpnext/pricing; reused canonical Tier A/no-paywall/first-party hosting. Classification: Frappe HR A; ERPNext canonical A retained but excluded as standalone category recommendation, no paid edges to ERPNext. No additional product IDs invented; only one independent assigned solution supported.
+10. Wrote category JSON and claims JSONL using local Python3, all output confined to research. Verified JSON parse, IDs/edges and claims parse. No repo edits, commits, PRs or messages externally.

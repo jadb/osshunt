@@ -1,0 +1,19 @@
+> Temporary paths normalized; local operating setup omitted. Original retained locally.
+
+# Backup and recovery audit — 2026-10-21
+
+2. Listed shared github captures and initially read three full captures; excessive output truncated, switched to selective extraction. No network retry.
+3. Selectively decoded shared captures: repository metadata, current default HEAD, LICENSE at that SHA, latest release. All three active/not disabled. Restic BSD-2-Clause; Borg GitHub NOASSERTION overridden by read BSD three-clause text and official documentation; Kopia Apache-2.0. Central rsx pending, no redundant call.
+4. Opened official https://restic.net/, https://www.borgbackup.org/, https://kopia.io/, https://www.backblaze.com/cloud-backup/business, https://www.acronis.com/en-us/products/true-image/purchasing/ (redirect /en/). Features/license claims supported; Acronis pricing dynamic, no amount rendered.
+5. rg catalog/categories and products.json for candidate/incumbent names and category ID: no existing matches, exit 1; new stable slugs.
+6. Opened https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html and /050_restore.html; password loss unrecoverable, bring-your-own local/remote storage, snapshot/file restoration. Opened https://kopia.io/docs/: explicit no whole-machine imaging, BYO storage/payment, GUI/CLI/repository server. Opened https://borgbackup.readthedocs.io/en/stable/: BSD-3-Clause, optional client encryption, SSH storage, Windows experimental WSL/Cygwin.
+7. https://www.backblaze.com/cloud-backup/pricing failed UnexpectedStatusCode; use actual pricing link next. https://www.acronis.com/en-us/products/cyber-protect/purchasing/ redirects /en/: broad business/server/SaaS scope, pricing not rendered. Choose specific Acronis Cyber Protect business product rather than ambiguous company-wide record; True Image recorded as scope distinction only.
+8. Followed actual pricing link https://www.backblaze.com/cloud-backup/pricing (success after prior direct fetch failure); find $ misleadingly reported no match, reopened lines 75: Business $99/year, per-computer subscriptions. Enterprise Control quote and optional forever-retention service fees distinct.
+9. Opened https://www.borgbackup.org/ Services: third-party BorgBase/Hetzner/rsync.net storage hosting, commercial support; 100% free software statement. Current stable 1.4.5; master is 2.0 testing, do not recommend development branch.
+10. Opened https://kopia.io/docs/features/ and https://kopia.io/docs/repository-server/: GUI/CLI, policies, full CLI feature access, automatic encryption, BYO storage; server snapshot/policy ACL is not complete content isolation. No paid software edition shown.
+11. Opened https://www.acronis.com/en-us/products/cyber-protect/ (redirect /en/): image/file backups plus endpoint security and cloud DR; OSS mappings restricted to file-backup workflow.
+12. Read centrally generated rsx/restic__restic.json, borgbackup__borg.json, kopia__kopia.json: overall 7.2/7.0/6.9. Not security certifications; pinned license read outranks rsx Borg license score.
+13. Read remaining Borg pinned LICENSE bytes: no additional clauses after BSD disclaimer. Built category JSON plus material-claim ledger with official URLs/headings and inference labels. Three A candidates, four scoped edges; no Cartesian/full-equivalence mappings. No archived candidate exclusions necessary. Acronis exact amount null; selfHostable=false for restic client, true for Borg/Kopia optional repository servers.
+14. Validated JSON parse, required records, edge referential integrity and claims parse. Work confined to research; no repository modifications or external messages.
+
+Integration: hostedOffer means first-party hosted service. Borg official-listed third-party hosting retained in notes; hostedOffer corrected false.

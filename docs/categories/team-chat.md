@@ -17,7 +17,7 @@ License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party h
 
 Service costs/limits: Vendor-operated mobile push service for commercial organizations above 10 users requires a paid self-hosted plan; eligible communities can receive it free.
 
-Repository: pushed 2026-10-21T19:55:53Z; latest published release 12.3 (2026-09-21T17:10:07Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T19:55:53Z; latest commit 2026-10-21T19:55:53Z; latest published release 12.3 (2026-09-21T17:10:07Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Microsoft Teams → Zulip: **different-approach**. Beta Teams importer maps teams to channels; excludes DMs and private-channel messages. Keep Microsoft tenant active through migration; does not replace Office applications. [1](https://zulip.com/plans/) [2](https://zulip.com/help/import-from-microsoft-teams)
 - Slack → Zulip: **different-approach**. Channel-plus-topic model differs from Slack threads; Slack export/import documented, private data availability depends on source export permissions. [1](https://zulip.com/plans/) [2](https://zulip.com/help/import-from-slack)
@@ -30,7 +30,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: ESS Pro adds Synapse Pro autoscaling, high availability and multi-tenancy.; Advanced IAM, audit/compliance and central management are Pro features.
 
-Repository: pushed 2026-10-21T20:57:02Z; latest published release 26.10.2 (2026-10-16T14:35:20Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:57:02Z; latest commit 2026-10-21T15:43:20Z; latest published release 26.10.2 (2026-10-16T14:35:20Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Microsoft Teams → Element Server Suite Community: **different-approach**. Matrix rooms, federation and encryption provide a different messaging architecture. Plan identities and history transfer separately; no verified one-click history importer or bridge parity claimed. Does not reproduce Microsoft 365 applications. [1](https://github.com/element-hq/ess-helm#editions)
 - Slack → Element Server Suite Community: **different-approach**. Matrix rooms, federation and encryption differ from Slack channels and app workflows. Plan identity, integration and history transfer separately; no verified one-click importer or bridge parity claimed. [1](https://github.com/element-hq/ess-helm#editions)
@@ -43,7 +43,7 @@ License: AGPL-3.0-only AND Apache-2.0; identified core OSI: yes; self-hostable: 
 
 Paid restrictions: Group calling and guest accounts excluded from Team Edition.; SSO removed from Team Edition; advanced identity, permissions, compliance and HA in proprietary editions.
 
-Repository: pushed 2026-10-21T21:13:41Z; latest published release v12.0.0 (2026-10-14T10:08:59Z). Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:13:41Z; latest commit 2026-10-21T20:38:11Z; latest published release v12.0.0 (2026-10-14T10:08:59Z). Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Microsoft Teams → Mattermost Team Edition: **partial**. Partial replacement for persistent channels/DMs. Team lacks group calls and SSO; no verified Teams history importer; meetings and Office-file workflows need separate replacements. [1](https://docs.mattermost.com/product-overview/plans)
 - Slack → Mattermost Team Edition: **partial**. Team offers channels, DMs and core search, but no group calls or guest accounts. Current Slack migration guide targets Entry/paid editions; Team import parity requires verification; integrations must be rebuilt. [1](https://docs.mattermost.com/product-overview/plans) [2](https://docs.mattermost.com/administration-guide/onboard/migrate-from-slack)
@@ -56,7 +56,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Community documented for up to 100 concurrent users; vendor push capped at 10,000/month.; Community limited app integrations and video integrations (Jitsi/BigBlueButton only); advanced identity/governance and air-gapped offering require premium plan.
 
-Repository: pushed 2026-10-21T21:25:33Z; latest published release 8.9.0 (2026-10-05T17:41:21Z). Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:25:33Z; latest commit 2026-10-21T18:10:44Z; latest published release 8.9.0 (2026-10-05T17:41:21Z). Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Microsoft Teams → Rocket.Chat Community: **partial**. Core messaging replacement with Community concurrency/push/integration limits. No verified Teams history import; Microsoft 365 apps and meeting workflows need separate replacements. [1](https://docs.rocket.chat/docs/our-plans)
 - Slack → Rocket.Chat Community: **partial**. Slack importer handles users/channels/messages; attachments need a separate pending-file download step and existing usernames can be skipped. Community edition limits remain. [1](https://docs.rocket.chat/docs/our-plans) [2](https://docs.rocket.chat/docs/import-from-slack)

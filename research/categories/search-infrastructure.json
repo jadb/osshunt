@@ -1,0 +1,176 @@
+{
+  "category": {
+    "id": "search-infrastructure",
+    "name": "Search infrastructure",
+    "description": "Search engines and APIs for application search, indexing and selected search analytics workloads.",
+    "audience": "Product and platform engineering teams",
+    "audienceReach": "specialist",
+    "audienceRationale": "Engineers maintaining search-backed applications; end users benefit indirectly, but most business employees do not procure or operate search infrastructure.",
+    "audienceSources": [
+      "https://typesense.org/",
+      "https://opensearch.org/about/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "algolia",
+      "name": "Algolia",
+      "url": "https://www.algolia.com/pricing",
+      "categories": [
+        "search-infrastructure"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": 0.5,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "monthly",
+        "note": "Grow usage rate: USD 0.50 per additional 1,000 search requests after 10,000/month; 100,000 records included then USD 0.40 per additional 1,000 records. Monthly billing. This is one usage unit, not a complete monthly subscription cost.",
+        "source": "https://www.algolia.com/pricing"
+      }
+    },
+    {
+      "id": "elastic-cloud",
+      "name": "Elastic Cloud",
+      "url": "https://www.elastic.co/pricing/",
+      "categories": [
+        "search-infrastructure"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "monthly",
+        "note": "Hosted is resource-based and serverless usage-based, billed monthly or prepaid. Region, capacity, deployment and tier affect cost; no reliable static dollar minimum exposed by the reviewed official pricing pages.",
+        "source": "https://www.elastic.co/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "opensearch",
+      "name": "OpenSearch",
+      "url": "https://opensearch.org/",
+      "categories": [
+        "search-infrastructure"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/opensearch-project/OpenSearch",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "serviceLimitations": [
+        "AWS and other providers sell managed hosting; service-specific features and operational tooling are separate from the community distribution.",
+        "Self-hosted production clusters require security configuration, capacity planning, backups and upgrades."
+      ],
+      "hostedOffer": false,
+      "classificationReason": "Foundation-governed open search suite; official principles describe the suite as Apache 2.0, with no paid software edition gates identified. Amazon OpenSearch Service is a separate AWS service, not a foundation-operated SaaS.",
+      "sources": {
+        "license": "https://github.com/opensearch-project/OpenSearch/blob/ea69463d634e30316a9037e544c0434b4ae80b4a/LICENSE.txt",
+        "features": "https://opensearch.org/about/",
+        "hosting": "https://opensearch.org/solutions-providers/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:12:19Z",
+        "lastRelease": "3.9.0",
+        "lastReleaseAt": "2026-09-29T21:54:18Z",
+        "commit": "ea69463d634e30316a9037e544c0434b4ae80b4a",
+        "lastCommitAt": "2026-10-21T22:12:19Z",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/opensearch-project/OpenSearch",
+        "rsx": "Authenticated analysis succeeded; overall 7.8/10; descriptive health signal."
+      }
+    },
+    {
+      "id": "typesense",
+      "name": "Typesense",
+      "url": "https://typesense.org/",
+      "categories": [
+        "search-infrastructure"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/typesense/typesense",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "First-party visual admin UI for synonyms, overrides and merchandising is Typesense Cloud-only; self-hosted product is API-only.",
+        "Cloud team RBAC UI is absent from the self-hosted engine."
+      ],
+      "serviceLimitations": [
+        "Cloud adds managed operations, a Search Delivery Network and hosted MCP service; self-hosting requires infrastructure and operational work."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPL search engine has the same core APIs/binaries as Cloud. Tier C records the first-party cloud-only visual search-management workflow; equivalent engine operations remain available through APIs. Paid hosting alone does not drive this classification.",
+      "sources": {
+        "license": "https://github.com/typesense/typesense/blob/66fec878d3e5bff41be13cd1a25c2bbb8313bd77/LICENSE.txt",
+        "features": "https://typesense.org/docs/guide/faqs.html",
+        "hosting": "https://cloud.typesense.org/pricing/calculator"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T03:31:19Z",
+        "lastRelease": "v30.2",
+        "lastReleaseAt": "2026-04-19T16:00:09Z",
+        "commit": "66fec878d3e5bff41be13cd1a25c2bbb8313bd77",
+        "lastCommitAt": "2026-10-20T12:56:51Z",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/typesense/typesense",
+        "rsx": "Authenticated analysis succeeded; overall 6.2/10; descriptive health signal."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "algolia--typesense",
+      "to": "typesense",
+      "fit": "partial",
+      "migrationNotes": "Reindex exported documents into typed collections; adapt APIs, synonyms and query rules. InstantSearch adapter can retain selected frontend widgets. Native APIs differ; assess personalization and experimentation requirements. Cloud visual admin remains unavailable in the API-only self-hosted engine.",
+      "sources": [
+        "https://typesense.org/docs/guide/migrating-from-algolia.html",
+        "https://typesense.org/docs/guide/faqs.html"
+      ],
+      "from": "algolia"
+    },
+    {
+      "id": "elastic-cloud--opensearch",
+      "to": "opensearch",
+      "fit": "partial",
+      "migrationNotes": "Replace selected Elasticsearch search/analytics workloads after version, query, mapping and plugin compatibility review. Migration Assistant supports data/metadata/traffic migration and validation. Self-hosting takes over operations; Elastic proprietary solutions, agents and managed-service features need separate replacement assessment.",
+      "sources": [
+        "https://docs.opensearch.org/latest/migration-assistant/",
+        "https://opensearch.org/about/",
+        "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+      ],
+      "from": "elastic-cloud"
+    },
+    {
+      "id": "elastic-cloud--typesense",
+      "to": "typesense",
+      "fit": "different-approach",
+      "migrationNotes": "Applicable to application search over documents with faceting, typo tolerance or vectors. Rebuild ingestion, schemas and search queries around Typesense APIs. This search engine does not replace the full Elastic Cloud observability/security platform.",
+      "sources": [
+        "https://typesense.org/",
+        "https://www.elastic.co/pricing/"
+      ],
+      "from": "elastic-cloud"
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Elastic Cloud entry cost varies by region, capacity, deployment and subscription; numeric minimum left null.",
+    "Typesense core API parity does not include its cloud-only admin UI or managed services. Third-party UI alternatives were outside this focused review.",
+    "No Algolia-to-OpenSearch edge asserted without a directly reviewed migration path."
+  ]
+}

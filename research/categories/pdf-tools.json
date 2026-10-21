@@ -1,0 +1,234 @@
+{
+  "category": {
+    "id": "pdf-tools",
+    "name": "PDF editing and processing",
+    "description": "Tools to edit PDF content or organize, split, merge, convert and process PDF documents.",
+    "audience": "People handling forms, reports, scans and other PDF documents at home, school and work.",
+    "audienceReach": "broad",
+    "audienceRationale": "PDF work spans many roles and personal document tasks; editing and page processing are distinct needs.",
+    "audienceSources": [
+      "https://www.adobe.com/acrobat/pricing.html",
+      "https://pdfsam.org/pdfsam-basic/",
+      "https://smallpdf.com/pricing"
+    ]
+  },
+  "paid": [
+    {
+      "id": "adobe-acrobat",
+      "name": "Adobe Acrobat",
+      "url": "https://www.adobe.com/acrobat.html",
+      "categories": [
+        "pdf-tools"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 14.99,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Acrobat Standard individual plan, annual commitment billed monthly; Pro US$19.99/month.",
+        "source": "https://www.adobe.com/acrobat/pricing.html"
+      }
+    },
+    {
+      "id": "smallpdf",
+      "name": "Smallpdf",
+      "url": "https://smallpdf.com/",
+      "categories": [
+        "pdf-tools"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Pro annual billing offered; numeric price failed to render in official page extraction (ellipsis).",
+        "source": "https://smallpdf.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "stirling-pdf",
+      "name": "Stirling PDF",
+      "url": "https://stirling.com/",
+      "categories": [
+        "pdf-tools"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "license": "MIT AND LicenseRef-Stirling-PDF-User-License",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [
+        "Login-capable Free server limited to five users; Team adds capacity.",
+        "External database, clustering, S3/database file storage, metrics and custom metadata require Team.",
+        "SAML, audit logs and offline license activation require Enterprise."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Mixed-license project. Pinned root grants MIT only outside eight excluded directories, including engine, proprietary editor, desktop, SaaS/cloud and processor. Restrictive User License observed for engine/editor modules. A complete operational build from only MIT code was not established; full distribution is not certified OSI and excluded from default recommendations. Paid admin gates are documented separately from processing service costs.",
+      "sources": {
+        "license": "https://github.com/Stirling-Tools/Stirling-PDF/blob/dd48e0b25f364e587f308b279d6d60c365fcd24d/LICENSE",
+        "features": "https://docs.stirlingpdf.com/Server/Licensing/Plans-and-Licences/",
+        "hosting": "https://docs.stirlingpdf.com/Server/"
+      },
+      "serviceLimitations": [
+        "Processor/AI automation and API-key calls can draw on processing allowances; these are separate from software admin gates."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:29:26Z",
+        "lastRelease": "v3.2.0",
+        "lastReleaseAt": "2026-10-15T20:36:26Z",
+        "commit": "dd48e0b25f364e587f308b279d6d60c365fcd24d",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/Stirling-Tools/Stirling-PDF",
+        "rsx": "Unavailable in delegated category session; central authenticated analysis pending"
+      }
+    },
+    {
+      "id": "pdfsam-basic",
+      "name": "PDFsam Basic",
+      "url": "https://pdfsam.org/pdfsam-basic/",
+      "categories": [
+        "pdf-tools"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/torakiki/pdfsam",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "The named Basic desktop edition runs locally without watermarks or file-size limits; all six Basic tools are free. Enhanced and Visual are distinct commercial products, not extra Basic OSS modules. Basic handles page manipulation rather than full text editing, OCR or conversion.",
+      "sources": {
+        "license": "https://github.com/torakiki/pdfsam/blob/4e4dd4dc5b14a1d328837c2b549fbe0b43cec83f/LICENSE",
+        "features": "https://pdfsam.org/pdfsam-basic/",
+        "hosting": "https://pdfsam.org/pdfsam-basic/"
+      },
+      "serviceLimitations": [
+        "Local desktop app, not a hosted web service or self-hosted server."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-02T11:03:21Z",
+        "lastRelease": "v6.0.6",
+        "lastReleaseAt": "2026-10-02T06:43:06Z",
+        "commit": "4e4dd4dc5b14a1d328837c2b549fbe0b43cec83f",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/torakiki/pdfsam",
+        "rsx": "Unavailable in delegated category session; central authenticated analysis pending"
+      }
+    },
+    {
+      "id": "pdf-arranger",
+      "name": "PDF Arranger",
+      "url": "https://github.com/pdfarranger/pdfarranger",
+      "categories": [
+        "pdf-tools"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/pdfarranger/pdfarranger",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "GPL desktop source application with page split/merge, rotate, crop and rearrange functions; source installation and binary downloads documented. No commercial edition or paid gate found in the official product README. Scope is page arrangement, not full PDF content editing.",
+      "sources": {
+        "license": "https://github.com/pdfarranger/pdfarranger/blob/fb76e09762677fe5c3e205bb89ca474500fce53c/COPYING",
+        "features": "https://github.com/pdfarranger/pdfarranger#about",
+        "hosting": "https://github.com/pdfarranger/pdfarranger#install-from-source"
+      },
+      "serviceLimitations": [
+        "Local GTK desktop app; no vendor hosted service documented."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-01T02:15:06Z",
+        "lastRelease": "1.14.0",
+        "lastReleaseAt": "2026-05-23T03:47:07Z",
+        "commit": "fb76e09762677fe5c3e205bb89ca474500fce53c",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/pdfarranger/pdfarranger",
+        "rsx": "Unavailable in delegated category session; central authenticated analysis pending"
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "adobe-acrobat--pdfsam-basic",
+      "from": "adobe-acrobat",
+      "to": "pdfsam-basic",
+      "fit": "partial",
+      "migrationNotes": "Use existing PDF files locally for split, merge, rotate, mix and page extraction. Basic does not replace Acrobat text editing, OCR, conversion, forms or e-signature collection.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-basic/",
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    },
+    {
+      "id": "smallpdf--pdfsam-basic",
+      "from": "smallpdf",
+      "to": "pdfsam-basic",
+      "fit": "partial",
+      "migrationNotes": "Local page-processing replacement for Smallpdf merge, split, rotate and extract tasks. No cloud account migration; retain PDF files. Basic lacks Smallpdf OCR, content editing and compression workflows.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-basic/",
+        "https://smallpdf.com/pricing"
+      ]
+    },
+    {
+      "id": "smallpdf--pdf-arranger",
+      "from": "smallpdf",
+      "to": "pdf-arranger",
+      "fit": "partial",
+      "migrationNotes": "Open PDF files locally for page split, merge, rotate, crop and rearrangement. Does not replace the wider conversion, text editing, signing or cloud-sharing service.",
+      "sources": [
+        "https://github.com/pdfarranger/pdfarranger",
+        "https://smallpdf.com/pricing"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Stirling PDF default recommendation",
+      "reason": "U: full operational MIT-only deployment unresolved; mixed restrictive modules prevent blanket OSS classification. Product retained for review.",
+      "sources": [
+        "https://github.com/Stirling-Tools/Stirling-PDF/blob/dd48e0b25f364e587f308b279d6d60c365fcd24d/LICENSE",
+        "https://docs.stirlingpdf.com/Server/Licensing/Plans-and-Licences/"
+      ]
+    },
+    {
+      "name": "PDFsam Enhanced",
+      "reason": "Commercial PDF content editor, conversion/OCR/forms/signature product under EULA; not the AGPL Basic app.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-enhanced/",
+        "https://pdfsam.org/faq/"
+      ]
+    },
+    {
+      "name": "PDFsam Visual",
+      "reason": "Separate commercial product; page organization/compression and many other tools require subscription or perpetual license; free tools do not make the complete product OSS.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-visual/"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Smallpdf current numeric Pro entry price was not exposed by official pricing extraction; left null.",
+    "Stirling pure-MIT operational scope requires build/dependency review; root MIT label alone is insufficient.",
+    "Stirling pinned root updated frontend paths after cached live-page snapshots; pinned root takes precedence."
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "category": {
+    "id": "learning-management",
+    "name": "Learning management",
+    "description": "Create and deliver courses, enroll learners, assess progress and manage organizational training.",
+    "audience": "Education providers, trainers and learning and development teams.",
+    "audienceReach": "functional",
+    "audienceRationale": "Specialized administrators and educators operate systems serving learners across schools and organizations.",
+    "audienceSources": [
+      "https://docs.moodle.org/503/en/Features",
+      "https://openedx.org/get-started/",
+      "https://www.docebo.com/pricing/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "talentlms",
+      "name": "TalentLMS",
+      "url": "https://www.talentlms.com",
+      "categories": [
+        "learning-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "flat",
+        "entryAmount": 119,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Core, 1\u201340 users, USD119/month billed yearly. Free plan available; paid entry shown. User brackets and add-ons change price.",
+        "source": "https://www.talentlms.com/prices"
+      }
+    },
+    {
+      "id": "docebo",
+      "name": "Docebo",
+      "url": "https://www.docebo.com",
+      "categories": [
+        "learning-management"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Custom pricing tailored to organization; no public entry amount.",
+        "source": "https://www.docebo.com/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "moodle",
+      "name": "Moodle LMS",
+      "url": "https://moodle.org",
+      "categories": [
+        "learning-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/moodle/moodle",
+      "license": "GPL-3.0-or-later",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Moodle Workplace multi-tenancy, recurring program certifications, dynamic rules and organizational hierarchies are commercial extensions, absent from the base Moodle LMS distribution."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Free self-hosted LMS core; B reflects proprietary Workplace corporate administration extensions built on that core. MoodleCloud subscription and partner support are services, not core license gates. This record identifies Moodle LMS, not Workplace or the separate Open LMS vendor.",
+      "sources": {
+        "license": "https://github.com/moodle/moodle/blob/46c042e7da65f8cb2ec7dc19f46566ce61a393e1/COPYING.txt",
+        "features": "https://docs.moodle.org/503/en/Features",
+        "hosting": "https://support.moodle.com/support/solutions/articles/80001075420"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T10:46:01Z",
+        "lastRelease": null,
+        "lastReleaseAt": null,
+        "commit": "46c042e7da65f8cb2ec7dc19f46566ce61a393e1",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/moodle/moodle",
+        "rsx": "Shared authenticated rsx analysis: overall 4.8/10; raw metadata retained independently."
+      },
+      "serviceLimitations": [
+        "Self-hosting requires infrastructure, updates and technical administration.",
+        "MoodleCloud is first-party subscription hosting with plan user/storage quotas; partner hosting/customization/support may cost extra."
+      ]
+    },
+    {
+      "id": "open-edx",
+      "name": "Open edX",
+      "url": "https://openedx.org",
+      "categories": [
+        "learning-management"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/openedx/openedx-platform",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Self-managed LMS and Studio authoring available without license fees; no first-party paid software edition gate found. AGPLv3 applies unless individual files state otherwise; surrounding projects have their own licenses. Provider-specific commercial additions are outside this record.",
+      "sources": {
+        "license": "https://github.com/openedx/openedx-platform/blob/c4e066770a014e3fc1256ed9291a19aed69a9f98/LICENSE",
+        "features": "https://openedx.org/platform/features/",
+        "hosting": "https://openedx.org/get-started/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:28:24Z",
+        "lastRelease": "named-release/birch",
+        "lastReleaseAt": "2015-03-02T21:13:51Z",
+        "commit": "c4e066770a014e3fc1256ed9291a19aed69a9f98",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/openedx/openedx-platform",
+        "rsx": "Shared authenticated rsx analysis: overall 4.6/10; raw metadata retained independently."
+      },
+      "serviceLimitations": [
+        "Self-hosting requires infrastructure, updates and technical administration.",
+        "Project-listed providers sell hosting and support; these are third-party offers. edX.org is a separate commercial course destination, not first-party hosting for your LMS."
+      ]
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "talentlms--moodle",
+      "from": "talentlms",
+      "to": "moodle",
+      "fit": "partial",
+      "migrationNotes": "Moodle covers courses, enrolment and progress tracking. Reuse original SCORM1.2/AICC packages after testing; Moodle does not generate SCORM exports. Tin Can/cmi5 parity is not established; native SCORM2004 unsupported. Rebuild branches, SSO/API links and reporting; Workplace corporate automation is commercial. No automatic history transfer verified.",
+      "sources": [
+        "https://www.talentlms.com/prices",
+        "https://docs.moodle.org/503/en/Features",
+        "https://docs.moodle.org/503/en/SCORM_FAQ",
+        "https://support.moodle.com/support/solutions/articles/80001074804-difference-between-moodle-workplace-and-moodle-lms",
+        "https://docs.moodle.org/503/en/Moodle_Workplace"
+      ]
+    },
+    {
+      "id": "docebo--moodle",
+      "from": "docebo",
+      "to": "moodle",
+      "fit": "partial",
+      "migrationNotes": "Suitable for course delivery and assessment after redesign. Map learners, enrolments and completion evidence separately; no verified direct import of Docebo histories or admin rules. Workplace multi-tenancy, recurring certification programs and dynamic rules require the commercial extension. Rebuild integrations and validate content package versions.",
+      "sources": [
+        "https://www.docebo.com/pricing/",
+        "https://docs.moodle.org/503/en/Features",
+        "https://docs.moodle.org/503/en/Moodle_Workplace",
+        "https://docs.moodle.org/503/en/SCORM_FAQ"
+      ]
+    },
+    {
+      "id": "talentlms--open-edx",
+      "from": "talentlms",
+      "to": "open-edx",
+      "fit": "different-approach",
+      "migrationNotes": "Course-centric LMS with Studio authoring and self-managed operation. Rebuild courses, learner administration, SSO and integrations. Existing TalentLMS SCORM/Tin Can/cmi5 content and reporting histories require a separate compatibility/import pilot; no package parity or turnkey migration verified.",
+      "sources": [
+        "https://www.talentlms.com/prices",
+        "https://openedx.org/get-started/",
+        "https://openedx.org/platform/features/"
+      ]
+    },
+    {
+      "id": "docebo--open-edx",
+      "from": "docebo",
+      "to": "open-edx",
+      "fit": "different-approach",
+      "migrationNotes": "Fits structured course delivery and enterprise education with self-managed authoring. Docebo multi-audience administration, compliance workflows and integration automation require explicit redesign. Learner histories, certification evidence and content packages need a migration pilot; no direct importer or package parity verified.",
+      "sources": [
+        "https://www.docebo.com/pricing/",
+        "https://openedx.org/get-started/",
+        "https://openedx.org/platform/features/"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Moodle Workplace",
+      "reason": "Proprietary licensed corporate extension; not an OSS recommendation. Kept distinct from Moodle LMS.",
+      "sources": [
+        "https://support.moodle.com/support/solutions/articles/80001074804-difference-between-moodle-workplace-and-moodle-lms"
+      ]
+    },
+    {
+      "name": "edX.org",
+      "reason": "Commercial learning destination, distinct from Open edX software and unavailable as hosting for an organization\u2019s own Open edX instance.",
+      "sources": [
+        "https://openedx.org/get-started/"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Only two OSS candidates finalized: sufficient edition, license and activity evidence prioritized over unverified additional candidates.",
+    "Open edX GitHub latest release endpoint returns named-release/birch (2015), not current project named-release information; recent push confirms activity, not deployment suitability.",
+    "Moodle GitHub latest-release endpoint404: no GitHub release record, not evidence of no maintained releases.",
+    "No automatic import of TalentLMS/Docebo learner history, compliance evidence or content package parity verified. Assess against original exported data and package versions."
+  ]
+}

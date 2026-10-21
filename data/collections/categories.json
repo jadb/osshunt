@@ -6,11 +6,25 @@
     "parent": null,
     "audience": "Business owners, finance teams and bookkeepers across industries",
     "audienceReach": "broad",
-    "audienceRank": 12,
+    "audienceRank": 20,
     "audienceRationale": "Financial record keeping spans business sizes and sectors; finance users operate software directly.",
     "audienceSources": [
       "https://quickbooks.intuit.com/pricing/",
       "https://www.xero.com/us/pricing-plans/"
+    ]
+  },
+  {
+    "id": "api-testing",
+    "name": "API clients and testing",
+    "description": "Develop, inspect and automate tests for HTTP and other APIs, with explicit separation between local clients and managed team platforms.",
+    "parent": null,
+    "audience": "Software developers, API QA engineers and technical integration teams",
+    "audienceReach": "specialist",
+    "audienceRank": 47,
+    "audienceRationale": "Daily utility for API development and quality assurance roles; narrower than general business collaboration tools.",
+    "audienceSources": [
+      "https://www.postman.com/pricing/",
+      "https://insomnia.rest/pricing"
     ]
   },
   {
@@ -20,11 +34,42 @@
     "parent": null,
     "audience": "Business operations, sales, marketing, IT and other teams connecting everyday applications.",
     "audienceReach": "broad",
-    "audienceRank": 17,
+    "audienceRank": 32,
     "audienceRationale": "Cross-department workflow integration; relevant across industries, but requires processes that benefit from automation.",
     "audienceSources": [
       "https://zapier.com/pricing",
       "https://www.make.com/pricing"
+    ]
+  },
+  {
+    "id": "backup-recovery",
+    "name": "Backup and recovery",
+    "description": "Create recoverable file backups and restore lost data; distinguish managed endpoint services from self-operated backup tools and full-system disaster recovery.",
+    "parent": null,
+    "audience": "Individuals protecting computer files and IT teams operating endpoint or server backups.",
+    "audienceReach": "broad",
+    "audienceRank": 8,
+    "audienceRationale": "File loss and device failure affect personal and business computing; operation of server repositories requires technical administration.",
+    "audienceSources": [
+      "https://www.backblaze.com/cloud-backup/business",
+      "https://restic.net/",
+      "https://kopia.io/"
+    ]
+  },
+  {
+    "id": "business-intelligence",
+    "name": "Business intelligence",
+    "description": "Database exploration, metrics, dashboards and scheduled analytical reporting.",
+    "parent": null,
+    "audience": "Business analysts, data teams, managers and operational teams consuming business metrics.",
+    "audienceReach": "broad",
+    "audienceRank": 38,
+    "audienceRationale": "Reporting supports many business functions; configuration and semantic modeling are concentrated in analysts and data teams.",
+    "audienceSources": [
+      "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing",
+      "https://www.tableau.com/pricing",
+      "https://cloud.google.com/looker/pricing",
+      "https://www.metabase.com/blog/making-bi-migration-suck-less"
     ]
   },
   {
@@ -34,11 +79,41 @@
     "parent": null,
     "audience": "Sales teams, account managers, founders, and customer-facing staff across industries.",
     "audienceReach": "broad",
-    "audienceRank": 13,
+    "audienceRank": 23,
     "audienceRationale": "Cross-industry sales and customer operations, from small businesses to enterprise teams; less universal than email or file storage.",
     "audienceSources": [
       "https://www.hubspot.com/pricing/sales",
       "https://www.salesforce.com/sales/pricing/"
+    ]
+  },
+  {
+    "id": "diagramming",
+    "name": "Diagramming",
+    "description": "Create flowcharts, process maps, technical diagrams and visual documentation.",
+    "parent": null,
+    "audience": "Business teams, educators, engineers and developers communicating processes and systems.",
+    "audienceReach": "broad",
+    "audienceRank": 29,
+    "audienceRationale": "Process and system diagrams span business, technical and education work; creation is an occasional or specialist task for many users.",
+    "audienceSources": [
+      "https://www.drawio.com/docs/about/",
+      "https://mermaid.js.org/intro/",
+      "https://lucid.co/lucidchart/trial"
+    ]
+  },
+  {
+    "id": "digital-assets",
+    "name": "Digital Asset Management",
+    "description": "Catalog, search, govern and share photos, video, brand files and other media with structured metadata and access controls.",
+    "parent": null,
+    "audience": "Marketing and creative teams, brand managers, media librarians, archives and cultural institutions.",
+    "audienceReach": "functional",
+    "audienceRank": 37,
+    "audienceRationale": "A recurring function across industries, primarily used by teams managing reusable media collections rather than every employee.",
+    "audienceSources": [
+      "https://www.resourcespace.com/get",
+      "https://www.bynder.com/en/pricing/",
+      "https://www.phraseanet.com/decouvrir"
     ]
   },
   {
@@ -48,11 +123,25 @@
     "parent": null,
     "audience": "Employees and teams documenting decisions, procedures, project plans and institutional knowledge.",
     "audienceReach": "broad",
-    "audienceRank": 5,
+    "audienceRank": 9,
     "audienceRationale": "Documentation spans business functions; adoption does not require a specialist department. Qualitative potential reach, not a headcount estimate.",
     "audienceSources": [
       "https://www.notion.com/pricing",
       "https://www.atlassian.com/en/software/confluence/pricing"
+    ]
+  },
+  {
+    "id": "document-management",
+    "name": "Document Management",
+    "description": "Capture, OCR, organize, search and control business documents, with document workflows and access permissions.",
+    "parent": null,
+    "audience": "Operations, finance, HR, records administrators and teams managing document collections.",
+    "audienceReach": "broad",
+    "audienceRank": 17,
+    "audienceRationale": "Document capture and retrieval span business departments and industries; advanced approval and governance needs vary by organization.",
+    "audienceSources": [
+      "https://start.docuware.com/faq/docuware-pricing",
+      "https://www.mayan-edms.com/"
     ]
   },
   {
@@ -62,11 +151,57 @@
     "parent": null,
     "audience": "Businesses sending contracts, offers, purchase agreements, waivers, and approvals.",
     "audienceReach": "broad",
-    "audienceRank": 10,
+    "audienceRank": 15,
     "audienceRationale": "Agreement workflows span sales, HR, procurement, operations, and customer onboarding; use varies with document volume.",
     "audienceSources": [
       "https://www.docusign.com/products/electronic-signature",
       "https://docs.opensignlabs.com/docs/API-docs/v1.2/intro/"
+    ]
+  },
+  {
+    "id": "ecommerce",
+    "name": "Ecommerce",
+    "description": "Build online storefronts and manage catalogs, checkout, orders and commerce integrations.",
+    "parent": null,
+    "audience": "Online merchants and the developers or agencies building their stores.",
+    "audienceReach": "functional",
+    "audienceRank": 27,
+    "audienceRationale": "Used across industries by businesses selling online; adoption centers on commerce operations and implementation teams.",
+    "audienceSources": [
+      "https://www.shopify.com/about",
+      "https://prestashop.com/open-source/"
+    ]
+  },
+  {
+    "id": "email-clients",
+    "name": "Email clients and webmail",
+    "description": "Desktop email clients and browser webmail for individual mailbox workflows.",
+    "parent": null,
+    "audience": "Individuals and organizations reading, organizing, and sending email across existing mail accounts.",
+    "audienceReach": "universal",
+    "audienceRank": 2,
+    "audienceRationale": "Personal and work email spans occupations and organization sizes; desktop and browser access serve general mailbox needs. Shared customer-support operations are a separate capability.",
+    "audienceSources": [
+      "https://www.thunderbird.net/en-US/desktop/",
+      "https://roundcube.net/about/",
+      "https://help.front.com/en/articles/2054"
+    ]
+  },
+  {
+    "id": "email-hosting",
+    "name": "Business email hosting",
+    "description": "Custom-domain mailbox servers and groupware; distinguishes email hosting from complete office suites and mail clients.",
+    "parent": null,
+    "audience": "Organizations operating custom-domain employee email, and IT administrators responsible for delivery and mailbox infrastructure.",
+    "audienceReach": "broad",
+    "audienceRank": 40,
+    "audienceRationale": "Custom-domain email serves businesses across functions; self-operated server selection and ongoing delivery operations chiefly concern IT teams. Qualitative audience reach, not a counted market estimate.",
+    "audienceSources": [
+      "https://workspace.google.com/pricing",
+      "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+      "https://docs.mailcow.email/",
+      "https://www.fastmail.com/pricing/us/",
+      "https://www.zoho.com/mail/zohomail-pricing.html"
     ]
   },
   {
@@ -76,12 +211,41 @@
     "parent": null,
     "audience": "Businesses, charities and publishers communicating with prospects and customers.",
     "audienceReach": "broad",
-    "audienceRank": 15,
+    "audienceRank": 25,
     "audienceRationale": "Customer communication spans industries and organization sizes, although primarily used by marketing and business owners.",
     "audienceSources": [
       "https://mailchimp.com/pricing/marketing/",
       "https://listmonk.app/",
       "https://mautic.org/about/"
+    ]
+  },
+  {
+    "id": "expense-reimbursements",
+    "name": "Expense reimbursements",
+    "description": "Employee expense claims, receipt submission, approval workflows and reimbursement status.",
+    "parent": null,
+    "audience": "Employees claiming business expenses, approving managers and finance operations teams.",
+    "audienceReach": "broad",
+    "audienceRank": 16,
+    "audienceRationale": "Expense reimbursement spans employers across industries; employees submit claims while managers and finance teams approve and settle them.",
+    "audienceSources": [
+      "https://frappe.io/hr/expense-management",
+      "https://www.concur.com/products/concur-expense"
+    ]
+  },
+  {
+    "id": "file-transfer",
+    "name": "File transfer",
+    "description": "Send, receive and share large files through browser links or client delivery portals.",
+    "parent": null,
+    "audience": "Individuals, client-facing teams, creative studios and organizations exchanging files externally.",
+    "audienceReach": "broad",
+    "audienceRank": 11,
+    "audienceRationale": "File delivery spans individual sharing and recurring client work across industries; specialized high-volume routing serves production teams.",
+    "audienceSources": [
+      "https://wetransfer.com/help-center/subscriptions/plan-limits",
+      "https://www.projectsend.org/",
+      "https://masv.io/pricing"
     ]
   },
   {
@@ -91,7 +255,7 @@
     "parent": null,
     "audience": "Marketing, customer success, HR, operations, product and research teams across business sizes.",
     "audienceReach": "broad",
-    "audienceRank": 8,
+    "audienceRank": 12,
     "audienceRationale": "Forms and feedback span multiple business functions and industries; adoption is broad but not required by every employee.",
     "audienceSources": [
       "https://www.typeform.com/pricing",
@@ -105,7 +269,7 @@
     "parent": null,
     "audience": "Software teams and businesses building their own applications",
     "audienceReach": "functional",
-    "audienceRank": 22,
+    "audienceRank": 44,
     "audienceRationale": "Relevant across industries but directly used by software delivery teams rather than every employee.",
     "audienceSources": [
       "https://www.heroku.com/",
@@ -119,11 +283,26 @@
     "parent": null,
     "audience": "Employers, HR teams, managers and employee self-service users.",
     "audienceReach": "broad",
-    "audienceRank": 20,
+    "audienceRank": 35,
     "audienceRationale": "Employee administration spans industries and company sizes; HR staff manage the system while employees use leave and attendance workflows.",
     "audienceSources": [
       "https://docs.frappe.io/hr/introduction",
       "https://www.bamboohr.com/pricing/"
+    ]
+  },
+  {
+    "id": "image-editing",
+    "name": "Image editing",
+    "description": "Raster image retouching, compositing and digital painting, plus RAW photo development and library workflows.",
+    "parent": null,
+    "audience": "Photographers, designers, illustrators and people preparing images for work or personal projects.",
+    "audienceReach": "broad",
+    "audienceRank": 28,
+    "audienceRationale": "Image preparation spans creative professions and occasional general use; RAW development and digital painting are more specialized workflows within the category.",
+    "audienceSources": [
+      "https://www.gimp.org/",
+      "https://www.darktable.org/about/",
+      "https://www.adobe.com/products/photoshop-lightroom/plans.html"
     ]
   },
   {
@@ -133,11 +312,25 @@
     "parent": null,
     "audience": "Operations and IT teams, developers and business teams building bespoke internal software",
     "audienceReach": "functional",
-    "audienceRank": 24,
+    "audienceRank": 46,
     "audienceRationale": "Cross-industry use, but direct buyers are teams creating custom internal software rather than every employee.",
     "audienceSources": [
       "https://tooljet.com/pricing",
       "https://www.appsmith.com/pricing"
+    ]
+  },
+  {
+    "id": "it-assets",
+    "name": "IT asset management",
+    "description": "Hardware/software asset inventory, ownership and lifecycle records; discovery and service-management capabilities differ.",
+    "parent": null,
+    "audience": "IT, procurement and operations teams managing organization devices and software inventory.",
+    "audienceReach": "specialist",
+    "audienceRank": 43,
+    "audienceRationale": "Assets affect most staff, but the direct operators and buyers are IT and procurement specialists rather than all employees.",
+    "audienceSources": [
+      "https://snipeitapp.com/product",
+      "https://www.glpi-project.org/en/cmdb-software/"
     ]
   },
   {
@@ -147,10 +340,25 @@
     "parent": null,
     "audience": "Teams across business functions managing shared tasks.",
     "audienceReach": "broad",
-    "audienceRank": 7,
+    "audienceRank": 13,
     "audienceRationale": "Trello explicitly targets marketing, product, engineering, design, startups and remote teams; useful across functions without requiring a specialist role.",
     "audienceSources": [
       "https://trello.com/pricing"
+    ]
+  },
+  {
+    "id": "learning-management",
+    "name": "Learning management",
+    "description": "Create and deliver courses, enroll learners, assess progress and manage organizational training.",
+    "parent": null,
+    "audience": "Education providers, trainers and learning and development teams.",
+    "audienceReach": "functional",
+    "audienceRank": 22,
+    "audienceRationale": "Specialized administrators and educators operate systems serving learners across schools and organizations.",
+    "audienceSources": [
+      "https://docs.moodle.org/503/en/Features",
+      "https://openedx.org/get-started/",
+      "https://www.docebo.com/pricing/"
     ]
   },
   {
@@ -160,7 +368,7 @@
     "parent": null,
     "audience": "IT/security teams managing employee application access and software teams implementing customer login.",
     "audienceReach": "broad",
-    "audienceRank": 21,
+    "audienceRank": 41,
     "audienceRationale": "Employee access spans industries; customer IAM also serves businesses operating applications. Deployment requires identity and security expertise.",
     "audienceSources": [
       "https://www.okta.com/pricing/",
@@ -174,7 +382,7 @@
     "parent": null,
     "audience": "Engineering, IT operations, site reliability and website owners",
     "audienceReach": "specialist",
-    "audienceRank": 23,
+    "audienceRank": 45,
     "audienceRationale": "Relevant to organizations operating software or websites; specialized users manage it even where business impact is broad.",
     "audienceSources": [
       "https://www.datadoghq.com/pricing/",
@@ -203,11 +411,26 @@
     "parent": null,
     "audience": "Employees and organizations using online accounts",
     "audienceReach": "universal",
-    "audienceRank": 2,
+    "audienceRank": 3,
     "audienceRationale": "Credentials and controlled sharing apply across industries and company sizes; qualitative reach, not a market-size estimate.",
     "audienceSources": [
       "https://1password.com/pricing/business",
       "https://bitwarden.com/pricing/business/"
+    ]
+  },
+  {
+    "id": "pdf-tools",
+    "name": "PDF editing and processing",
+    "description": "Tools to edit PDF content or organize, split, merge, convert and process PDF documents.",
+    "parent": null,
+    "audience": "People handling forms, reports, scans and other PDF documents at home, school and work.",
+    "audienceReach": "broad",
+    "audienceRank": 4,
+    "audienceRationale": "PDF work spans many roles and personal document tasks; editing and page processing are distinct needs.",
+    "audienceSources": [
+      "https://www.adobe.com/acrobat/pricing.html",
+      "https://pdfsam.org/pdfsam-basic/",
+      "https://smallpdf.com/pricing"
     ]
   },
   {
@@ -217,11 +440,26 @@
     "parent": null,
     "audience": "Business teams, project managers and product/development teams",
     "audienceReach": "broad",
-    "audienceRank": 6,
+    "audienceRank": 10,
     "audienceRationale": "Cross-functional work coordination spans operations, marketing, services and technical teams; specialist agile use cases are a subset.",
     "audienceSources": [
       "https://asana.com/pricing",
       "https://www.openproject.org/pricing/"
+    ]
+  },
+  {
+    "id": "recruiting",
+    "name": "Recruiting and applicant tracking",
+    "description": "Job openings, candidate applications, hiring pipelines, interviews, feedback and offers.",
+    "parent": null,
+    "audience": "Recruiters, talent acquisition teams, staffing agencies and hiring managers.",
+    "audienceReach": "functional",
+    "audienceRank": 39,
+    "audienceRationale": "Hiring spans industries, while daily ATS operation centers on recruiting specialists and hiring managers rather than all employees.",
+    "audienceSources": [
+      "https://www.opencats.org/",
+      "https://www.greenhouse.com/pricing",
+      "https://docs.frappe.io/hr/recruitment"
     ]
   },
   {
@@ -231,7 +469,7 @@
     "parent": null,
     "audience": "Sales, recruiting, customer-facing teams and service businesses.",
     "audienceReach": "broad",
-    "audienceRank": 9,
+    "audienceRank": 14,
     "audienceRationale": "Cross-industry need for customer and colleague bookings, especially customer-facing teams; less universal than office communication.",
     "audienceSources": [
       "https://calendly.com/pricing",
@@ -245,11 +483,39 @@
     "parent": null,
     "audience": "Knowledge workers, support, sales, product and training teams",
     "audienceReach": "broad",
-    "audienceRank": 19,
+    "audienceRank": 34,
     "audienceRationale": "Cross-functional business communication and demonstrations, with adoption dependent on video workflows.",
     "audienceSources": [
       "https://www.loom.com/pricing",
       "https://github.com/alyssaxuu/screenity"
+    ]
+  },
+  {
+    "id": "search-infrastructure",
+    "name": "Search infrastructure",
+    "description": "Search engines and APIs for application search, indexing and selected search analytics workloads.",
+    "parent": null,
+    "audience": "Product and platform engineering teams",
+    "audienceReach": "specialist",
+    "audienceRank": 48,
+    "audienceRationale": "Engineers maintaining search-backed applications; end users benefit indirectly, but most business employees do not procure or operate search infrastructure.",
+    "audienceSources": [
+      "https://typesense.org/",
+      "https://opensearch.org/about/"
+    ]
+  },
+  {
+    "id": "social-publishing",
+    "name": "Social publishing",
+    "description": "Plan, schedule and publish social media content across accounts.",
+    "parent": null,
+    "audience": "Creators, marketers, agencies and communications teams",
+    "audienceReach": "functional",
+    "audienceRank": 31,
+    "audienceRationale": "Publishing spans many sectors but serves a specific marketing/communications function.",
+    "audienceSources": [
+      "https://buffer.com/pricing",
+      "https://www.hootsuite.com/plans"
     ]
   },
   {
@@ -259,7 +525,7 @@
     "parent": null,
     "audience": "Operations, marketing, sales, HR, finance and project teams building shared business trackers and lightweight internal apps.",
     "audienceReach": "broad",
-    "audienceRank": 16,
+    "audienceRank": 26,
     "audienceRationale": "Cross-functional business records and workflows apply across many industries; requires structured-data collaboration rather than every employee role.",
     "audienceSources": [
       "https://airtable.com/pricing",
@@ -273,7 +539,7 @@
     "parent": null,
     "audience": "Businesses handling customer questions and service requests; dedicated support teams.",
     "audienceReach": "broad",
-    "audienceRank": 14,
+    "audienceRank": 24,
     "audienceRationale": "Support crosses retail, software and services and spans small businesses through enterprises; dedicated tooling becomes relevant once shared inbox workflows become insufficient.",
     "audienceSources": [
       "https://www.zendesk.com/pricing/",
@@ -288,11 +554,54 @@
     "parent": null,
     "audience": "Employees and external collaborators across business functions and industries.",
     "audienceReach": "universal",
-    "audienceRank": 3,
+    "audienceRank": 5,
     "audienceRationale": "A cross-functional communication need shared by distributed and office-based teams; reach ranking is qualitative, not a headcount estimate.",
     "audienceSources": [
       "https://slack.com/pricing",
       "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+    ]
+  },
+  {
+    "id": "telephony",
+    "name": "Telephony",
+    "description": "Business voice calling, PBX and call-center telephony, including self-operated communications engines.",
+    "parent": null,
+    "audience": "Business phone users, sales and support teams, telephony administrators and communications developers.",
+    "audienceReach": "broad",
+    "audienceRank": 36,
+    "audienceRationale": "Business calling spans many departments and industries; operating the OSS engines requires specialist communications skills.",
+    "audienceSources": [
+      "https://aircall.io/pricing/",
+      "https://www.asterisk.org/products/ip-pbx/"
+    ]
+  },
+  {
+    "id": "time-tracking",
+    "name": "Time tracking",
+    "description": "Track work hours by client and project, analyze timesheets, and prepare billable work.",
+    "parent": null,
+    "audience": "Freelancers, agencies, consultants, and teams recording project or billable hours.",
+    "audienceReach": "broad",
+    "audienceRank": 21,
+    "audienceRationale": "Relevant across professional services and project-driven teams; recording work hours is a recurring need across industries.",
+    "audienceSources": [
+      "https://www.kimai.org/en/",
+      "https://www.getharvest.com/pricing"
+    ]
+  },
+  {
+    "id": "transcription",
+    "name": "Transcription & Meeting Notes",
+    "description": "Turn recorded or live speech into text; meeting services add capture, summaries and collaboration, while open engines provide a lower-level alternative.",
+    "parent": null,
+    "audience": "People documenting meetings, interviews and recordings; developers building private speech-to-text workflows.",
+    "audienceReach": "broad",
+    "audienceRank": 18,
+    "audienceRationale": "Speech-to-text supports recurring meetings and recorded content across roles; engine deployment requires technical integration.",
+    "audienceSources": [
+      "https://otter.ai/pricing",
+      "https://fireflies.ai/pricing",
+      "https://alphacephei.com/vosk/"
     ]
   },
   {
@@ -302,11 +611,40 @@
     "parent": null,
     "audience": "Businesses holding internal meetings, customer calls, and remote training.",
     "audienceReach": "universal",
-    "audienceRank": 4,
+    "audienceRank": 6,
     "audienceRationale": "Meeting tools serve staff across functions and industries; classroom software is a narrower training use case.",
     "audienceSources": [
       "https://www.zoom.com/en/products/virtual-meetings/",
       "https://workspace.google.com/pricing"
+    ]
+  },
+  {
+    "id": "video-editing",
+    "name": "Video editing",
+    "description": "Non-linear desktop video editing, audio mixing, titles, effects, grading and rendered output.",
+    "parent": null,
+    "audience": "Video creators, filmmakers, editors and marketing teams.",
+    "audienceReach": "functional",
+    "audienceRank": 30,
+    "audienceRationale": "Used across industries by people creating edited video; the workflow requires creative production skills rather than serving every employee.",
+    "audienceSources": [
+      "https://kdenlive.org/",
+      "https://www.apple.com/final-cut-pro/"
+    ]
+  },
+  {
+    "id": "vpn-access",
+    "name": "VPN and private network access",
+    "description": "Identity-aware private connectivity for remote staff, devices and internal resources.",
+    "parent": null,
+    "audience": "IT and security teams serving remote staff",
+    "audienceReach": "specialist",
+    "audienceRank": 42,
+    "audienceRationale": "Many employees benefit from private access, while product selection and operation primarily belong to network, IT and security teams; narrower buying audience than general business collaboration.",
+    "audienceSources": [
+      "https://tailscale.com/pricing",
+      "https://www.cloudflare.com/sase/products/access/",
+      "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud"
     ]
   },
   {
@@ -316,11 +654,26 @@
     "parent": null,
     "audience": "Website owners and marketing, product and growth teams across industries.",
     "audienceReach": "broad",
-    "audienceRank": 18,
+    "audienceRank": 33,
     "audienceRationale": "Relevant to organizations with websites or digital products; specialist staff often operate the tools.",
     "audienceSources": [
       "https://marketingplatform.google.com/about/analytics/",
       "https://plausible.io/self-hosted-web-analytics"
+    ]
+  },
+  {
+    "id": "website-cms",
+    "name": "Websites and CMS",
+    "description": "Build websites and manage published content.",
+    "parent": null,
+    "audience": "Individuals, small businesses, publishers, agencies and organizations maintaining websites.",
+    "audienceReach": "broad",
+    "audienceRank": 7,
+    "audienceRationale": "Website publishing serves personal, commercial, nonprofit and institutional needs across industries.",
+    "audienceSources": [
+      "https://wordpress.org/about/features/",
+      "https://www.drupal.org/about",
+      "https://www.wix.com/plans"
     ]
   },
   {
@@ -330,7 +683,7 @@
     "parent": null,
     "audience": "Cross-functional workshop participants, product teams, designers and engineers.",
     "audienceReach": "broad",
-    "audienceRank": 11,
+    "audienceRank": 19,
     "audienceRationale": "Whiteboarding spans operations, marketing and product collaboration; professional interface design has a narrower designer/developer audience.",
     "audienceSources": [
       "https://miro.com/pricing/",

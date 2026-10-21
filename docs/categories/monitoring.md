@@ -16,7 +16,7 @@ Backend and frontend MIT licenses verified at canonical GitLab commits. Maintain
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://gitlab.com/glitchtip/glitchtip-backend/-/raw/5c6889940436df182d929634bc455ecaccb10e93/LICENSE), [edition evidence](https://glitchtip.com/blog/2026-06-22-glitchtip-6-2-released/), [hosting](https://glitchtip.com/pricing/), [repository](https://gitlab.com/glitchtip/glitchtip-backend).
 
-Repository: pushed unknown; latest published release none on this repository (n/a). GitHub profile placeholder is not canonical health evidence. Canonical GitLab commit 5c6889940436df182d929634bc455ecaccb10e93 dated 2026-10-21T06:21:41.000+00:00 verified. Latest GitLab Releases API entry v6.1.8 (2026-06-05) conflicts with later visible v6.2.6 tag (2026-08-07); latest release left null rather than conflating channels. No pushed_at field in captured GitLab API.
+Repository: pushed unknown; latest commit 2026-10-21T06:21:41.000+00:00; latest published release unverified or unavailable (n/a). GitHub profile placeholder is not canonical health evidence. Canonical GitLab commit 5c6889940436df182d929634bc455ecaccb10e93 dated 2026-10-21T06:21:41.000+00:00 verified. Latest GitLab Releases API entry v6.1.8 (2026-06-05) conflicts with later visible v6.2.6 tag (2026-08-07); latest release left null rather than conflating channels. No pushed_at field in captured GitLab API.
 
 - Pingdom → GlitchTip: **partial**. Basic site availability pings, heartbeat checks and email/webhook alerts; partial uptime alternative, without established Pingdom browser transactions/RUM parity. [1](https://glitchtip.com/) [2](https://www.pingdom.com/pricing/)
 - Sentry → GlitchTip: **partial**. Supports Sentry client SDKs for error and basic performance monitoring. Reconfigure DSNs and validate SDK compatibility; existing Sentry issue history, replay and advanced tracing migration not established. [1](https://glitchtip.com/) [2](https://gitlab.com/glitchtip/glitchtip-backend/-/raw/master/README.md)
@@ -27,7 +27,7 @@ MIT project; upstream README publishes self-hosted monitoring, notifications, an
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/louislam/uptime-kuma/blob/2adb5bc32cb53a93722a7c348364a8290acd74d4/LICENSE), [edition evidence](https://github.com/louislam/uptime-kuma#-features), [hosting](https://github.com/louislam/uptime-kuma#-how-to-install), [repository](https://github.com/louislam/uptime-kuma).
 
-Repository: pushed 2026-10-21T00:06:24Z; latest published release 2.5.6 (2026-10-09T15:46:26Z). Quick analysis: 7.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T00:06:24Z; latest commit 2026-10-20T12:15:52Z; latest published release 2.5.6 (2026-10-09T15:46:26Z). Quick analysis: 7.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Pingdom → Uptime Kuma: **partial**. HTTP/TCP/DNS/push checks, alert delivery and status pages. Operate your own external vantage points; no claim of Pingdom transaction or real-user-monitoring parity or check import. [1](https://github.com/louislam/uptime-kuma#-features) [2](https://www.pingdom.com/pricing/)
 
@@ -39,7 +39,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Enterprise data-source plugins; Scheduled reporting; SAML authentication and team synchronization; Data-source permissions and usage insights
 
-Repository: pushed 2026-10-21T21:16:15Z; latest published release v13.2.4 (2026-10-13T11:41:03Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:16:15Z; latest commit 2026-10-21T20:34:54Z; latest published release v13.2.4 (2026-10-13T11:41:03Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Datadog → Grafana OSS: **partial**. Replaces dashboarding/alerting workflow when paired with separately operated telemetry stores and collectors. Grafana alone is not a full Datadog APM/logs/security replacement; dashboards and alert rules require rebuilding. [1](https://grafana.com/oss/grafana/) [2](https://www.datadoghq.com/pricing/)
 

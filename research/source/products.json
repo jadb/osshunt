@@ -19,6 +19,25 @@
     }
   },
   {
+    "id": "acronis-cyber-protect",
+    "name": "Acronis Cyber Protect",
+    "url": "https://www.acronis.com/en/products/cyber-protect/",
+    "categories": [
+      "backup-recovery"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Base amount not rendered in current purchasing page; device/workload-specific licensing. Quote fields represent unverified price, not a claim that every edition is quote-only. Acronis True Image is a separate consumer product.",
+      "source": "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+    }
+  },
+  {
     "id": "activepieces",
     "name": "Activepieces",
     "url": "https://www.activepieces.com",
@@ -50,7 +69,85 @@
       "commit": "252ea9e53984357ad2edc6605d7cec89087c8f92",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/activepieces/activepieces",
-      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T17:01:59Z",
+      "releaseSource": "https://github.com/activepieces/activepieces/releases/tag/0.92.3"
+    }
+  },
+  {
+    "id": "adobe-acrobat",
+    "name": "Adobe Acrobat",
+    "url": "https://www.adobe.com/acrobat.html",
+    "categories": [
+      "pdf-tools"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 14.99,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Acrobat Standard individual plan, annual commitment billed monthly; Pro US$19.99/month.",
+      "source": "https://www.adobe.com/acrobat/pricing.html"
+    }
+  },
+  {
+    "id": "adobe-lightroom",
+    "name": "Adobe Lightroom",
+    "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+    "categories": [
+      "image-editing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 11.99,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Individual Lightroom plan US$11.99/month, annual commitment billed monthly; includes mobile, desktop, web and Lightroom Classic.",
+      "source": "https://www.adobe.com/products/photoshop-lightroom/plans.html"
+    }
+  },
+  {
+    "id": "adobe-photoshop",
+    "name": "Adobe Photoshop",
+    "url": "https://www.adobe.com/products/photoshop/plans.html",
+    "categories": [
+      "image-editing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 19.99,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Lowest listed individual plan including desktop Photoshop is Photography at US$19.99/month on an annual commitment billed monthly; standalone Photoshop US$22.99/month. Web/mobile-only offer excluded from desktop comparison.",
+      "source": "https://www.adobe.com/products/photoshop/plans.html"
+    }
+  },
+  {
+    "id": "adobe-premiere-pro",
+    "name": "Adobe Premiere Pro",
+    "url": "https://www.adobe.com/products/premiere/plans.html",
+    "categories": [
+      "video-editing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 22.99,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "US individual single-app plan; annual commitment, billed monthly; teams and multi-app plans cost more.",
+      "source": "https://www.adobe.com/products/premiere/plans.html"
     }
   },
   {
@@ -86,7 +183,28 @@
       "commit": "0b69a6da21e8fd35beb85667bb8496d9b3852238",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/toeverything/AFFiNE",
-      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-11T14:49:18Z",
+      "releaseSource": "https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4"
+    }
+  },
+  {
+    "id": "aircall",
+    "name": "Aircall",
+    "url": "https://aircall.io",
+    "categories": [
+      "telephony"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 30,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Essentials US list price per license/month billed annually; minimum 3 licenses ($90/month equivalent), before applicable usage/add-ons.",
+      "source": "https://aircall.io/pricing/"
     }
   },
   {
@@ -140,7 +258,66 @@
       "commit": "06dfa473e0d71a5262a58f6f0759c6badf34d5d2",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/akaunting/akaunting",
-      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-08T17:43:04Z",
+      "releaseSource": "https://github.com/akaunting/akaunting/releases/tag/3.2.4"
+    }
+  },
+  {
+    "id": "algolia",
+    "name": "Algolia",
+    "url": "https://www.algolia.com/pricing",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "usage",
+      "entryAmount": 0.5,
+      "currency": "USD",
+      "period": "month",
+      "unit": "usage",
+      "billing": "monthly",
+      "note": "Grow usage rate: USD 0.50 per additional 1,000 search requests after 10,000/month; 100,000 records included then USD 0.40 per additional 1,000 records. Monthly billing. This is one usage unit, not a complete monthly subscription cost.",
+      "source": "https://www.algolia.com/pricing"
+    }
+  },
+  {
+    "id": "apache-superset",
+    "name": "Apache Superset",
+    "url": "https://superset.apache.org/",
+    "categories": [
+      "business-intelligence"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/apache/superset",
+    "license": "Apache-2.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Apache project edition provides dashboards, SQL exploration, semantic layer, embedding, RBAC, OAuth/OIDC, LDAP and scheduled reporting in open code. Feature flags and operator setup are not paid software gates. No Apache-operated hosted offer identified; Preset is a separate provider.",
+    "sources": {
+      "license": "https://github.com/apache/superset/blob/5eaad449f5c2b96a4efdd93beeba83664bf00467/LICENSE.txt",
+      "features": "https://superset.apache.org/",
+      "hosting": "https://superset.apache.org/"
+    },
+    "serviceLimitations": [
+      "Operate server, metadata database and backups; database drivers and report rendering workers require setup; email/Slack transport configured separately."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:12:07Z",
+      "lastRelease": "6.1.0",
+      "lastReleaseAt": "2026-05-13T18:32:25Z",
+      "commit": "5eaad449f5c2b96a4efdd93beeba83664bf00467",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/apache/superset",
+      "rsx": "Quick analysis: 7.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T22:01:20Z",
+      "releaseSource": "https://github.com/apache/superset/releases/tag/6.1.0"
     }
   },
   {
@@ -176,7 +353,9 @@
       "commit": "5cf3a365dec0d59f64bad1ee4bb1050471a39b93",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/AppFlowy-IO/AppFlowy",
-      "rsx": "Quick analysis: 6.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-06-26T02:35:45Z",
+      "releaseSource": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10"
     }
   },
   {
@@ -214,7 +393,9 @@
       "commit": "67bcbe12c962a5c5feef9793ad87d66c331b8d59",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/appsmithorg/appsmith",
-      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:47:06Z",
+      "releaseSource": "https://github.com/appsmithorg/appsmith/releases/tag/v2.5.1"
     }
   },
   {
@@ -249,7 +430,9 @@
       "commit": "7ef921e5df638bd4e332de7d6c85e5aeb289b93c",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/appwrite/appwrite",
-      "rsx": "Quick analysis: 7.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:59:00Z",
+      "releaseSource": "https://github.com/appwrite/appwrite/releases/tag/2.6.1"
     }
   },
   {
@@ -269,6 +452,47 @@
       "billing": "annual",
       "note": "Starter USD10.99 per user/month billed annually; USD13.49 monthly; free tier also exists.",
       "source": "https://asana.com/pricing"
+    }
+  },
+  {
+    "id": "asterisk",
+    "name": "Asterisk",
+    "url": "https://www.asterisk.org",
+    "categories": [
+      "telephony"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/asterisk/asterisk",
+    "license": "GPL-2.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Sangoma G.729 transcoding codec is licensed per concurrent channel ($8 USD listed); G.729-dependent recording, conferencing and DTMF processing require decoding rather than passthrough."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "Core Asterisk source is OSI GPLv2 with documented linking exceptions; Certified Asterisk source remains freely usable. Tier C reflects separately licensed same-vendor ordinary voice functionality: the G.729 transcoding binary is paid per channel, which affects media-processing workflows when that codec is required. This does not imply all calling requires paid modules; other codecs are available. Asterisk is a developer engine, not a turnkey business calling workspace. First-party PBXact Cloud is a separate Asterisk-derived managed PBX, not source-edition parity. Other vendor binary add-ons require their own license checks.",
+    "sources": {
+      "license": "https://github.com/asterisk/asterisk/blob/5aee26c05116ab2d7d2f68d741fe98649d0c504d/LICENSE",
+      "features": "https://www.asterisk.org/products/add-ons/g729-codec/",
+      "hosting": "https://www.asterisk.org/products/add-ons/"
+    },
+    "serviceLimitations": [
+      "PSTN calling requires carrier connectivity, phone numbers and applicable usage charges; these are service costs, not source-code gates.",
+      "Self-operation requires server administration, SIP endpoints, dialplan configuration and integrations."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-20T18:46:38Z",
+      "lastRelease": "certified-22.8-cert5",
+      "lastReleaseAt": "2026-10-19T17:02:17Z",
+      "commit": "5aee26c05116ab2d7d2f68d741fe98649d0c504d",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/asterisk/asterisk",
+      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T18:46:37Z",
+      "releaseSource": "https://github.com/asterisk/asterisk/releases/tag/certified-22.8-cert5"
     }
   },
   {
@@ -320,7 +544,9 @@
       "commit": "e6cd61d33e9e23fe7e85e66e9937bddc67de466b",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/authelia/authelia",
-      "rsx": "Quick analysis: 7.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T04:35:43Z",
+      "releaseSource": "https://github.com/authelia/authelia/releases/tag/v4.39.28"
     }
   },
   {
@@ -358,7 +584,28 @@
       "commit": "088d72e671c7ec5680cc101e80b4e6ce4f332424",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/goauthentik/authentik",
-      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T16:42:40Z",
+      "releaseSource": "https://github.com/goauthentik/authentik/releases/tag/version/2026.8.5"
+    }
+  },
+  {
+    "id": "backblaze-business-backup",
+    "name": "Backblaze Business Backup",
+    "url": "https://www.backblaze.com/cloud-backup/business",
+    "categories": [
+      "backup-recovery"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 99,
+      "currency": "USD",
+      "period": "year",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Business Backup shown at $99/year per computer subscription; seat means protected computer. Enterprise Control upgrade quoted separately.",
+      "source": "https://www.backblaze.com/cloud-backup/pricing"
     }
   },
   {
@@ -415,7 +662,9 @@
       "commit": "985f1a26fbabad74860e67a6fd07bb7f55074499",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/baserow/baserow",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T16:04:54Z",
+      "releaseSource": "https://github.com/baserow/baserow/releases/tag/2.4.1"
     }
   },
   {
@@ -450,7 +699,28 @@
       "commit": "63e66ed7587ff377b56e396974b423d7423d0ee6",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/bigbluebutton/bigbluebutton",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:04:21Z",
+      "releaseSource": "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v4.0.0"
+    }
+  },
+  {
+    "id": "bigcommerce",
+    "name": "BigCommerce",
+    "url": "https://www.bigcommerce.com",
+    "categories": [
+      "ecommerce"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 29,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Core: USD 29/month billed annually; up to USD 30K trailing-twelve-month GMV then automatic Growth upgrade. Payment charges may apply.",
+      "source": "https://www.bigcommerce.com/pricing/"
     }
   },
   {
@@ -486,7 +756,9 @@
       "commit": "0f02a03b331bc5822a1d595668cb6264678bc520",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/bitwarden/server",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:24:33Z",
+      "releaseSource": "https://github.com/bitwarden/server/releases/tag/v2026.10.0"
     },
     "serviceLimitations": [
       "Official hosted service plan limits and storage quotas are distinct from the AGPL core license."
@@ -522,8 +794,108 @@
       "commit": "045c6a98cac21ea86906674bb91d01f375460db6",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/BookStackApp/BookStack",
-      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-18T18:33:04Z",
+      "releaseSource": "https://github.com/BookStackApp/BookStack/releases/tag/v26.09.2"
     }
+  },
+  {
+    "id": "borgbackup",
+    "name": "BorgBackup",
+    "url": "https://www.borgbackup.org/",
+    "categories": [
+      "backup-recovery"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/borgbackup/borg",
+    "license": "BSD-3-Clause",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Official site identifies 100% free BSD software; backup, encryption, compression and restore workflow in open program, paid offerings are support/storage services. Supports local repositories and SSH repository servers. Recommend stable 1.4, not master/2.0 testing.",
+    "sources": {
+      "license": "https://github.com/borgbackup/borg/blob/45f8b178ae892ae73fcaa3127c951b0044cd7a7e/LICENSE",
+      "features": "https://www.borgbackup.org/",
+      "hosting": "https://www.borgbackup.org/"
+    },
+    "serviceLimitations": [
+      "Third-party repository hosting/support costs separate from software; Windows WSL/Cygwin support experimental, not a native Windows managed-backup agent."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-20T09:49:03Z",
+      "lastRelease": "1.4.5",
+      "lastReleaseAt": "2026-07-18T22:36:16Z",
+      "commit": "45f8b178ae892ae73fcaa3127c951b0044cd7a7e",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/borgbackup/borg",
+      "rsx": "Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T09:48:53Z",
+      "releaseSource": "https://github.com/borgbackup/borg/releases/tag/1.4.5"
+    }
+  },
+  {
+    "id": "brandfolder",
+    "name": "Brandfolder",
+    "url": "https://brandfolder.com/",
+    "categories": [
+      "digital-assets"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "quote",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Official pricing requires a personalized quote; no numerical entry price published.",
+      "source": "https://brandfolder.com/pricing/"
+    }
+  },
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "url": "https://www.usebruno.com/",
+    "categories": [
+      "api-testing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/usebruno/bruno",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "C",
+    "locked": [
+      "Full Postman Data Export import is Ultimate-only; individual collection import remains available.",
+      "Open Source edition has 2 workspaces and 5 OpenAPI syncs/month; paid editions remove these limits."
+    ],
+    "hostedOffer": false,
+    "classificationReason": "MIT desktop client and CLI; local operation, not a hosted collaboration server. Paid migration and ordinary workspace/sync capabilities justify C. CLI data-driven execution and reports exist, so GUI edition gates do not imply their total absence.",
+    "sources": {
+      "license": "https://github.com/usebruno/bruno/blob/dd0281dad107247a4653ff514feb069ac42e7ff8/license.md",
+      "features": "https://www.usebruno.com/pricing",
+      "hosting": "https://www.usebruno.com/pricing"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-19T10:09:22Z",
+      "lastRelease": "v4.2.1",
+      "lastReleaseAt": "2026-09-30T13:52:52Z",
+      "commit": "dd0281dad107247a4653ff514feb069ac42e7ff8",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/usebruno/bruno",
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T09:25:10Z",
+      "releaseSource": "https://github.com/usebruno/bruno/releases/tag/v4.2.1"
+    },
+    "serviceLimitations": [
+      "Git collaboration uses locally stored collections and a separately operated Git provider; catalog does not claim managed cloud team parity."
+    ]
   },
   {
     "id": "budibase",
@@ -559,7 +931,47 @@
       "commit": "90aa490bb1692934be473907b77077d94aef6fc1",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/Budibase/budibase",
-      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T14:12:44Z",
+      "releaseSource": "https://github.com/Budibase/budibase/releases/tag/v3.50.0"
+    }
+  },
+  {
+    "id": "buffer",
+    "name": "Buffer",
+    "url": "https://buffer.com",
+    "categories": [
+      "social-publishing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 5,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Essentials, one channel: $60/year ($5/month equivalent); free SaaS plan separate. Price scales by channel.",
+      "source": "https://buffer.com/pricing"
+    }
+  },
+  {
+    "id": "bynder",
+    "name": "Bynder",
+    "url": "https://www.bynder.com/",
+    "categories": [
+      "digital-assets"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "quote",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Official pricing requires a personalized quote; no numerical entry price published.",
+      "source": "https://www.bynder.com/en/pricing/"
     }
   },
   {
@@ -615,7 +1027,9 @@
       "commit": "0f19cc46ef6b6426ee398c670575b3c96be7af9e",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/calcom/cal.diy",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T18:45:59Z",
+      "releaseSource": "https://github.com/calcom/cal.diy/releases/tag/v6.2.0"
     }
   },
   {
@@ -670,7 +1084,9 @@
       "commit": "d16fd199bbe8bd2a1c52fb19bcb3d383e9a2ff61",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/CapSoftware/Cap",
-      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T04:36:31Z",
+      "releaseSource": "https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.1"
     }
   },
   {
@@ -711,7 +1127,28 @@
       "commit": "a8487abf5c5b54960f2375e8c613fe72711077fa",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/chatwoot/chatwoot",
-      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:49:05Z",
+      "releaseSource": "https://github.com/chatwoot/chatwoot/releases/tag/v4.19.0"
+    }
+  },
+  {
+    "id": "cloudflare-access",
+    "name": "Cloudflare Access",
+    "url": "https://www.cloudflare.com/sase/products/access/",
+    "categories": [
+      "vpn-access"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 7,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Pay-as-you-go $7/user/month paid annually. Product page also offers a free plan for teams under 50 users; paid product remains distinct from open-source connector software.",
+      "source": "https://www.cloudflare.com/sase/products/access/"
     }
   },
   {
@@ -744,7 +1181,8 @@
       "commit": "832ea2c5b04f8f935d90cd33926b10450d9c0dd9",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/CollaboraOnline/online.mirror",
-      "rsx": "Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:41:59Z"
     }
   },
   {
@@ -796,7 +1234,82 @@
       "commit": "91ea7d851e214951799842837a010a4dfe3487e7",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/coollabsio/coolify",
-      "rsx": "Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:58:00Z",
+      "releaseSource": "https://github.com/coollabsio/coolify/releases/tag/v4.4.7"
+    }
+  },
+  {
+    "id": "copyparty",
+    "name": "copyparty",
+    "url": "https://github.com/9001/copyparty",
+    "categories": [
+      "file-transfer"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/9001/copyparty",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "MIT self-operated server; README documents browser uploads, permissions and sharing without a paid edition or license gate. No official managed hosting offer identified; linked read-only demo is not hosting.",
+    "sources": {
+      "license": "https://github.com/9001/copyparty/blob/1af7efeca858dcfa29f797d7ae93f22eb2fdecf0/LICENSE",
+      "features": "https://github.com/9001/copyparty",
+      "hosting": "https://github.com/9001/copyparty#quickstart"
+    },
+    "serviceLimitations": [
+      "Operator supplies storage, bandwidth, reachable server, TLS and maintenance; no managed delivery network or SLA established."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T05:09:01Z",
+      "lastRelease": "v1.20.26",
+      "lastReleaseAt": "2026-10-14T23:43:28Z",
+      "commit": "1af7efeca858dcfa29f797d7ae93f22eb2fdecf0",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/9001/copyparty",
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T05:09:00Z",
+      "releaseSource": "https://github.com/9001/copyparty/releases/tag/v1.20.26"
+    }
+  },
+  {
+    "id": "darktable",
+    "name": "darktable",
+    "url": "https://www.darktable.org/",
+    "categories": [
+      "image-editing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/darktable-org/darktable",
+    "license": "GPL-3.0-or-later",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Locally operated desktop RAW developer and photo library application. Published workflow functionality available in the GPL edition; official source and installers available without a paid edition. Community Flatpak omits AI features: packaging limitation, not a paid software gate.",
+    "sources": {
+      "license": "https://github.com/darktable-org/darktable/blob/2af685755d806c27af43fcc132cf68fb268962b1/LICENSE",
+      "features": "https://www.darktable.org/about/",
+      "hosting": "https://www.darktable.org/install/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T19:49:10Z",
+      "lastRelease": "release-5.6.2",
+      "lastReleaseAt": "2026-10-04T16:36:31Z",
+      "commit": "2af685755d806c27af43fcc132cf68fb268962b1",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/darktable-org/darktable",
+      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:49:03Z",
+      "releaseSource": "https://github.com/darktable-org/darktable/releases/tag/release-5.6.2"
     }
   },
   {
@@ -816,6 +1329,25 @@
       "billing": "annual",
       "note": "Infrastructure Pro starts at $15 per host/month billed annually; other modules priced separately.",
       "source": "https://www.datadoghq.com/pricing/"
+    }
+  },
+  {
+    "id": "docebo",
+    "name": "Docebo",
+    "url": "https://www.docebo.com",
+    "categories": [
+      "learning-management"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "quote",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Custom pricing tailored to organization; no public entry amount.",
+      "source": "https://www.docebo.com/pricing/"
     }
   },
   {
@@ -851,7 +1383,9 @@
       "commit": "9250ca8305cbb7d04dc1973b8b83346784fc361a",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/docmost/docmost",
-      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:48:49Z",
+      "releaseSource": "https://github.com/docmost/docmost/releases/tag/v0.96.0"
     }
   },
   {
@@ -887,7 +1421,9 @@
       "commit": "68b9d2093c35079276d2ad9bd25467f5dd705588",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/documenso/documenso",
-      "rsx": "Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T05:26:58Z",
+      "releaseSource": "https://github.com/documenso/documenso/releases/tag/v2.21.0"
     }
   },
   {
@@ -925,7 +1461,9 @@
       "commit": "8f8f69f0bc6ac2e59746cd6efac54a852289bec3",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/docusealco/docuseal",
-      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T11:57:12Z",
+      "releaseSource": "https://github.com/docusealco/docuseal/releases/tag/3.3.3"
     }
   },
   {
@@ -945,6 +1483,25 @@
       "billing": "annual",
       "note": "US checkout Personal displays USD 11/month, billed monthly with USD 132 annual commitment; 5 envelopes/month. Current rendered checkout differs from older USD 10 marketing/search pricing.",
       "source": "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+    }
+  },
+  {
+    "id": "docuware",
+    "name": "DocuWare",
+    "url": "https://start.docuware.com/",
+    "categories": [
+      "document-management"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "quote",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Tailored quote; official Cloud FAQ publishes typical USD30–125+ per user/month depending on plan, user type and scale. Annual subscription; not a guaranteed entry plan price.",
+      "source": "https://start.docuware.com/faq/docuware-pricing"
     }
   },
   {
@@ -981,7 +1538,48 @@
       "commit": "9dd14b73859d86ec39539f6a6dbb91d19ae02ef5",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/dokku/dokku",
-      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:01:40Z",
+      "releaseSource": "https://github.com/dokku/dokku/releases/tag/v0.38.31"
+    }
+  },
+  {
+    "id": "drawio",
+    "name": "draw.io",
+    "url": "https://www.drawio.com",
+    "categories": [
+      "diagramming"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/jgraph/drawio",
+    "license": "Apache-2.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Scope: Apache-2.0 general diagram editor, free to use and deploy yourself. Publisher explicitly describes free editor and no enterprise SSO tier. Paid Atlassian integrations are separate commercial add-ons; this classification does not assert their code or functionality is included in the OSS editor.",
+    "serviceLimitations": [
+      "First-party app.diagrams.net serves the free editor; diagrams remain on your device or chosen storage, rather than a first-party document repository.",
+      "Paid Confluence/Jira integrations provide embedded Atlassian workflows and support; external storage and collaboration deployment must be evaluated separately."
+    ],
+    "sources": {
+      "license": "https://github.com/jgraph/drawio/blob/17b367b91dbab91804f852645788d7ffb46dcb79/LICENSE",
+      "features": "https://www.drawio.com/docs/about/",
+      "hosting": "https://www.drawio.com/docs/about/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-18T10:53:15Z",
+      "lastRelease": "v32.5.5",
+      "lastReleaseAt": "2026-10-18T10:54:09Z",
+      "commit": "17b367b91dbab91804f852645788d7ffb46dcb79",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/jgraph/drawio",
+      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-18T10:53:02Z",
+      "releaseSource": "https://github.com/jgraph/drawio/releases/tag/v32.5.5"
     }
   },
   {
@@ -1002,6 +1600,43 @@
       "note": "Business Standard displayed $15/user/month; billing selector state not reliably preserved by extraction, so no normalized entry amount claimed. Personal Plus $9.99 also shown.",
       "source": "https://www.dropbox.com/plans"
     }
+  },
+  {
+    "id": "drupal",
+    "name": "Drupal",
+    "url": "https://www.drupal.org/",
+    "categories": [
+      "website-cms"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/drupal/drupal",
+    "license": "GPL-2.0-or-later",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Tier A for Drupal core: project explicitly provides free CMS functionality without licensing fees; modules/themes and vendor platforms separate. Hosting directory lists independent providers, not a Drupal Association managed service. GitHub repository is a mirror; canonical development is on Drupal.org GitLab. Pinned core/LICENSE.txt contains GPL v2; official licensing policy explicitly grants version 2 or later.",
+    "sources": {
+      "license": "https://github.com/drupal/drupal/blob/89df3a065deb760a82a67ef8854f25d26bd05722/core/LICENSE.txt",
+      "features": "https://www.drupal.org/about",
+      "hosting": "https://www.drupal.org/hosting"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T18:30:59Z",
+      "lastRelease": null,
+      "lastReleaseAt": null,
+      "commit": "89df3a065deb760a82a67ef8854f25d26bd05722",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/drupal/drupal",
+      "rsx": "Quick analysis: 4.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T15:54:31Z"
+    },
+    "serviceLimitations": [
+      "Hosting, implementation and optional vendor services are separate costs; contributed modules are outside core assessment."
+    ]
   },
   {
     "id": "easyappointments",
@@ -1033,7 +1668,28 @@
       "commit": "f6c8a4c2f364bf8c64b1f913a531a7134dcfd3c6",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/alextselegidis/easyappointments",
-      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T08:29:46Z",
+      "releaseSource": "https://github.com/alextselegidis/easyappointments/releases/tag/1.6.1"
+    }
+  },
+  {
+    "id": "elastic-cloud",
+    "name": "Elastic Cloud",
+    "url": "https://www.elastic.co/pricing/",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "usage",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "usage",
+      "billing": "monthly",
+      "note": "Hosted is resource-based and serverless usage-based, billed monthly or prepaid. Region, capacity, deployment and tier affect cost; no reliable static dollar minimum exposed by the reviewed official pricing pages.",
+      "source": "https://www.elastic.co/pricing/"
     }
   },
   {
@@ -1069,7 +1725,9 @@
       "commit": "5fa05580d3f818beafa84fbd24b385e010e87c40",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/element-hq/ess-helm",
-      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T15:43:20Z",
+      "releaseSource": "https://github.com/element-hq/ess-helm/releases/tag/26.10.2"
     }
   },
   {
@@ -1077,7 +1735,8 @@
     "name": "ERPNext",
     "url": "https://frappe.io/erpnext",
     "categories": [
-      "accounting-erp"
+      "accounting-erp",
+      "expense-reimbursements"
     ],
     "kind": "oss",
     "repo": "https://github.com/frappe/erpnext",
@@ -1087,7 +1746,7 @@
     "tier": "A",
     "locked": [],
     "hostedOffer": true,
-    "classificationReason": "Vendor explicitly confirms no product feature paywalls; self-hosted GPL product, commercial hosting/support.",
+    "classificationReason": "Canonical GPL ERPNext remains Tier A with no feature paywalls, but is not a standalone recommendation for this category. HR modules moved to Frappe HR from version 14; current expense-claim documentation redirects to HR. ERPNext supplies the required connected foundation for Frappe HR expense settlement, not a second independent expense product. accounting-erp scope: Vendor explicitly confirms no product feature paywalls; self-hosted GPL product, commercial hosting/support.",
     "sources": {
       "license": "https://github.com/frappe/erpnext/blob/997a85da90e2bfc7f0d9b27455faae09c3148ac8/license.txt",
       "features": "https://frappe.io/erpnext/pricing",
@@ -1102,8 +1761,13 @@
       "commit": "997a85da90e2bfc7f0d9b27455faae09c3148ac8",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/frappe/erpnext",
-      "rsx": "Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
-    }
+      "rsx": "Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:24:06Z",
+      "releaseSource": "https://github.com/frappe/erpnext/releases/tag/v16.52.0"
+    },
+    "serviceLimitations": [
+      "Expense claim submission and approval require the separately installed Frappe HR app; use frappe-hr recommendation."
+    ]
   },
   {
     "id": "espocrm",
@@ -1139,7 +1803,9 @@
       "commit": "ddd727b31a4289cf5c4a295d0cf1618af865a93c",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/espocrm/espocrm",
-      "rsx": "Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T16:28:37Z",
+      "releaseSource": "https://github.com/espocrm/espocrm/releases/tag/10.0.10"
     }
   },
   {
@@ -1175,7 +1841,47 @@
       "commit": "1d4dc2c0e6e476911d0760e9c3cf3694f2d43384",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/excalidraw/excalidraw",
-      "rsx": "Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T10:36:40Z",
+      "releaseSource": "https://github.com/excalidraw/excalidraw/releases/tag/v0.18.1"
+    }
+  },
+  {
+    "id": "expensify",
+    "name": "Expensify",
+    "url": "https://www.expensify.com/",
+    "categories": [
+      "expense-reimbursements"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 5,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "monthly",
+      "note": "Collect announced at $5/member/month without annual commitment or card requirement. Current pricing page extraction returned only application shell; corroborated by official pricing announcement and current support search. Legacy and Control pricing differs.",
+      "source": "https://use.expensify.com/blog/collect-plan-pricing-update"
+    }
+  },
+  {
+    "id": "fastmail",
+    "name": "Fastmail Business",
+    "url": "https://www.fastmail.com/pricing/us/",
+    "categories": [
+      "email-hosting"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 3,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Basic USD 3/user/month billed yearly ($36/user/year); custom domains require at least one Standard or Professional user (Standard USD 5/user/month annually). Basic lacks third-party mail-client access; compare actual account mix.",
+      "source": "https://www.fastmail.com/pricing/us/"
     }
   },
   {
@@ -1217,6 +1923,25 @@
     }
   },
   {
+    "id": "final-cut-pro",
+    "name": "Final Cut Pro",
+    "url": "https://www.apple.com/final-cut-pro/",
+    "categories": [
+      "video-editing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "flat",
+      "entryAmount": 299.99,
+      "currency": "USD",
+      "period": "one-time",
+      "unit": "account",
+      "billing": "one-time",
+      "note": "US Mac App Store standalone Mac purchase; no recurring billing. This record does not price the iPad edition or optional bundles.",
+      "source": "https://apps.apple.com/us/app/final-cut-pro/id424389933"
+    }
+  },
+  {
     "id": "firebase",
     "name": "Firebase",
     "url": "https://firebase.google.com/",
@@ -1233,6 +1958,25 @@
       "billing": "monthly",
       "note": "Blaze pay-as-you-go per service after applicable free quotas; no single monthly entry price.",
       "source": "https://firebase.google.com/pricing"
+    }
+  },
+  {
+    "id": "fireflies",
+    "name": "Fireflies.ai",
+    "url": "https://fireflies.ai",
+    "categories": [
+      "transcription"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 10,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Pro USD price per seat/month billed annually; monthly $18. Free plan exists; additional AI usage subject to credits/rate limits.",
+      "source": "https://fireflies.ai/pricing"
     }
   },
   {
@@ -1269,7 +2013,9 @@
       "commit": "fd98f4b0ea7d8b6b187e2e894af7b202c91f7a24",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/formbricks/formbricks",
-      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T14:59:04Z",
+      "releaseSource": "https://github.com/formbricks/formbricks/releases/tag/6.1.0"
     }
   },
   {
@@ -1277,7 +2023,9 @@
     "name": "Frappe HR",
     "url": "https://frappe.io/hr",
     "categories": [
-      "hr"
+      "expense-reimbursements",
+      "hr",
+      "recruiting"
     ],
     "kind": "oss",
     "repo": "https://github.com/frappe/hrms",
@@ -1287,10 +2035,10 @@
     "tier": "A",
     "locked": [],
     "hostedOffer": true,
-    "classificationReason": "Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified.",
+    "classificationReason": "GPLv3 core with no separate paid feature edition identified: official pricing charges hosting and implementation. Claims, receipts, conditional multi-level approvals, advances and reimbursement payment records documented. Separate Frappe HR app requires ERPNext; this is one combined deployment, not two independent expense choices. Pinned GPL license takes precedence over pricing page AGPL label. hr scope: Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified. recruiting scope: Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified. Recruiting is the documented module within this same product, not a separate module edition or product ID. Applicant records, email intake, interviews and offers are documented; no module feature gate identified.",
     "sources": {
       "license": "https://github.com/frappe/hrms/blob/7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2/license.txt",
-      "features": "https://docs.frappe.io/hr/introduction",
+      "features": "https://frappe.io/hr/expense-management",
       "hosting": "https://frappe.io/hr/pricing"
     },
     "health": {
@@ -1302,8 +2050,14 @@
       "commit": "7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/frappe/hrms",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
-    }
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T16:53:18Z",
+      "releaseSource": "https://github.com/frappe/hrms/releases/tag/v15.64.6"
+    },
+    "serviceLimitations": [
+      "Self-operated deployment requires Frappe Framework and ERPNext; setup, email, backups and maintenance are operator responsibilities.",
+      "Payment Entry records settlement; bank payout rails, corporate cards, receipt OCR and travel booking parity with incumbents not verified."
+    ]
   },
   {
     "id": "freescout",
@@ -1341,7 +2095,164 @@
       "commit": "56c4d014cfbd5e0b038cc887d71e0c75fd6c3f1b",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/freescout-help-desk/freescout",
-      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-17T04:51:43Z",
+      "releaseSource": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.248"
+    }
+  },
+  {
+    "id": "freeswitch",
+    "name": "FreeSWITCH",
+    "url": "https://signalwire.com/developers/freeswitch",
+    "categories": [
+      "telephony"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/signalwire/freeswitch",
+    "license": "MPL-1.1",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Commercial mod_com_amd answering-machine detection requires per-channel licences; module is outside the public source tree.",
+      "Commercial mod_com_g729 G.729A encoding/decoding requires per-channel licences; passthrough is distinct from transcoding."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "Core public source is OSI MPL-1.1 per current HEAD LICENSE, with additional component notices. Tier C reflects same-vendor paid ordinary voice functionality in separately distributed proprietary AMD and G.729 modules, not carrier/service charges. Advantage/Pro builds and support are commercial offerings. First-party SignalWire Platform adds private modules and managed APIs; hostedOffer does not imply application or source parity. Marketing license card differs from repository LICENSE; source evidence controls this record.",
+    "sources": {
+      "license": "https://github.com/signalwire/freeswitch/blob/12ac48ab9e692d645b91b83bab89a85abdc3af53/LICENSE",
+      "features": "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/",
+      "hosting": "https://signalwire.com/developers/freeswitch"
+    },
+    "serviceLimitations": [
+      "Official prebuilt packages/downloads require a free SignalWire account; public source remains available on GitHub.",
+      "Phone numbers, SIP/PSTN trunks, hosting and call usage can incur separate charges.",
+      "Building an agent desktop, CRM workflows, dashboards and production operations requires additional software and engineering."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-09T20:37:28Z",
+      "lastRelease": "v1.11.3",
+      "lastReleaseAt": "2026-08-28T22:27:30Z",
+      "commit": "12ac48ab9e692d645b91b83bab89a85abdc3af53",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/signalwire/freeswitch",
+      "rsx": "Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-09T20:37:26Z",
+      "releaseSource": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.3"
+    }
+  },
+  {
+    "id": "freshservice-itam",
+    "name": "Freshservice IT Asset Management",
+    "url": "https://www.freshworks.com/freshservice/itam/",
+    "categories": [
+      "it-assets"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "usage",
+      "billing": "quote",
+      "note": "Quote for current ITAM plan and weighted asset units (packs of 500), with additional IT-plan requirements. One desktop equals 1 AU, server/VM/network device 4 AU; not a flat per-device or agent-seat price.",
+      "source": "https://www.freshworks.com/freshservice/itam/pricing/"
+    }
+  },
+  {
+    "id": "front",
+    "name": "Front",
+    "url": "https://front.com/",
+    "categories": [
+      "email-clients"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 25,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Starter, billed annually, up to 10 seats; individual inbox included when email is the single channel type. Primarily a collaborative customer-service platform.",
+      "source": "https://front.com/pricing"
+    }
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "url": "https://ghost.org/",
+    "categories": [
+      "website-cms"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/TryGhost/Ghost",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Tier A for self-hosted Ghost: official comparison explicitly says product features are identical. Ghost(Pro) hosting plan gates do not gate self-hosted software. Social web and analytics require separate services and supported deployment setup.",
+    "sources": {
+      "license": "https://github.com/TryGhost/Ghost/blob/c6cebcd2221e7492c5c84aa1c90411a421977118/LICENSE",
+      "features": "https://docs.ghost.org/hosting/",
+      "hosting": "https://ghost.org/pricing/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:23:58Z",
+      "lastRelease": "v6.72.0",
+      "lastReleaseAt": "2026-10-20T15:09:13Z",
+      "commit": "c6cebcd2221e7492c5c84aa1c90411a421977118",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/TryGhost/Ghost",
+      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:53:54Z",
+      "releaseSource": "https://github.com/TryGhost/Ghost/releases/tag/v6.72.0"
+    },
+    "serviceLimitations": [
+      "Self-hosting requires operations and email delivery services.",
+      "Hosted ActivityPub access for self-hosters has follower and interaction limits; independent self-hosting available."
+    ]
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "url": "https://www.gimp.org/",
+    "categories": [
+      "image-editing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/GNOME/gimp",
+    "license": "GPL-3.0-or-later",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Locally operated desktop image editor. All published application functionality available as free software; no commercial feature edition identified. Core GPL v3 or later; libgimp libraries LGPL, icons CC BY-SA, data licensing has historical caveats in LICENSE. GitHub is an active read-only GNOME GitLab mirror.",
+    "sources": {
+      "license": "https://github.com/GNOME/gimp/blob/e7617d91ca3f795cd6277814d1d02a59e90c1a29/LICENSE",
+      "features": "https://www.gimp.org/docs/userfaq.html",
+      "hosting": "https://www.gimp.org/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:36:47Z",
+      "lastRelease": "3.2.6",
+      "lastReleaseAt": "2026-09-10",
+      "commit": "e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/GNOME/gimp",
+      "rsx": "Quick analysis: 4.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://www.gimp.org/",
+      "lastCommitAt": "2026-10-21T21:31:59Z"
     }
   },
   {
@@ -1374,7 +2285,46 @@
       "commit": "5c6889940436df182d929634bc455ecaccb10e93",
       "checkedAt": "2026-10-21",
       "source": "https://gitlab.com/api/v4/projects/glitchtip%2Fglitchtip-backend",
-      "rsx": "GitHub profile placeholder is not canonical health evidence. Canonical GitLab commit 5c6889940436df182d929634bc455ecaccb10e93 dated 2026-10-21T06:21:41.000+00:00 verified. Latest GitLab Releases API entry v6.1.8 (2026-06-05) conflicts with later visible v6.2.6 tag (2026-08-07); latest release left null rather than conflating channels. No pushed_at field in captured GitLab API."
+      "rsx": "GitHub profile placeholder is not canonical health evidence. Canonical GitLab commit 5c6889940436df182d929634bc455ecaccb10e93 dated 2026-10-21T06:21:41.000+00:00 verified. Latest GitLab Releases API entry v6.1.8 (2026-06-05) conflicts with later visible v6.2.6 tag (2026-08-07); latest release left null rather than conflating channels. No pushed_at field in captured GitLab API.",
+      "lastCommitAt": "2026-10-21T06:21:41.000+00:00"
+    }
+  },
+  {
+    "id": "glpi",
+    "name": "GLPI",
+    "url": "https://www.glpi-project.org/",
+    "categories": [
+      "it-assets"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/glpi-project/glpi",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Subscriber-exclusive Cloud Inventory retrieves assets from cloud services.",
+      "Subscriber-exclusive collaborative notifications and advanced dashboard plugins; OAuth SSO/SCIM and other extensions also vary by subscription."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "GPLv3 core with free asset inventory/CMDB; GLPI Network sells access to exclusive plugins covering everyday cloud inventory, integrations and reporting as well as administration. Community-plugin support subscriptions do not make those public plugins paid-only. Plugin licenses were not individually audited.",
+    "sources": {
+      "license": "https://github.com/glpi-project/glpi/blob/3e5222b59a2cb116c5bf7fe27b9c794ca44d63d5/LICENSE",
+      "features": "https://www.glpi-project.org/en/plugins/",
+      "hosting": "https://www.glpi-project.org/en/pricing/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T07:09:10Z",
+      "lastCommitAt": "2026-10-21T07:09:10Z",
+      "lastRelease": "12.0.0",
+      "lastReleaseAt": "2026-10-07T12:12:42Z",
+      "releaseSource": "https://github.com/glpi-project/glpi/releases/tag/12.0.0",
+      "commit": "3e5222b59a2cb116c5bf7fe27b9c794ca44d63d5",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/glpi-project/glpi",
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
     }
   },
   {
@@ -1420,6 +2370,7 @@
     "name": "Google Workspace",
     "url": "https://workspace.google.com/pricing",
     "categories": [
+      "email-hosting",
       "office-files"
     ],
     "kind": "paid",
@@ -1469,7 +2420,28 @@
       "commit": "7de573e4db635ab9d34cd2771bde39471e1c0e82",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/grafana/grafana",
-      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:34:54Z",
+      "releaseSource": "https://github.com/grafana/grafana/releases/tag/v13.2.4"
+    }
+  },
+  {
+    "id": "greenhouse",
+    "name": "Greenhouse",
+    "url": "https://www.greenhouse.com/",
+    "categories": [
+      "recruiting"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "quote",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Core, Plus and Pro plans use demo/sales contact; no public numeric entry price or billing schedule established.",
+      "source": "https://www.greenhouse.com/pricing"
     }
   },
   {
@@ -1507,7 +2479,68 @@
       "commit": "f68125e21c46ada0ea77656c926c05111762a78c",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/gristlabs/grist-core",
-      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T19:39:46Z",
+      "releaseSource": "https://github.com/gristlabs/grist-core/releases/tag/v1.7.21"
+    }
+  },
+  {
+    "id": "harvest",
+    "name": "Harvest",
+    "url": "https://www.getharvest.com/pricing",
+    "categories": [
+      "time-tracking"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 9,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Teams starts USD9/seat/month billed annually (USD108/year); USD11 monthly. Additional invoices, projects, clients and tasks can incur usage charges; free plan available.",
+      "source": "https://www.getharvest.com/pricing"
+    }
+  },
+  {
+    "id": "headscale",
+    "name": "Headscale",
+    "url": "https://headscale.net/stable/",
+    "categories": [
+      "vpn-access"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/juanfont/headscale",
+    "license": "BSD-3-Clause",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "serviceLimitations": [
+      "Narrow single-tailnet Tailscale-compatible control-server scope; personal/lab/small-organisation focus.",
+      "Requires separately distributed compatible Tailscale clients; community web interfaces are separate projects.",
+      "No first-party hosted service identified in official project documentation."
+    ],
+    "hostedOffer": false,
+    "classificationReason": "BSD-3-Clause self-hosted control server with no commercial edition or paid software gate found in official project docs. A applies to this narrow server, not enterprise Tailscale platform parity. No built-in web interface; clients are separate.",
+    "sources": {
+      "license": "https://github.com/juanfont/headscale/blob/cc66979b16cfbdc76b1d582b028108bb8b823354/LICENSE",
+      "features": "https://headscale.net/stable/about/features/",
+      "hosting": "https://headscale.net/stable/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T04:29:41Z",
+      "lastCommitAt": "2026-10-20T09:55:11Z",
+      "lastRelease": "v0.29.5",
+      "lastReleaseAt": "2026-10-13T13:05:15Z",
+      "releaseSource": "https://github.com/juanfont/headscale/releases/tag/v0.29.5",
+      "commit": "cc66979b16cfbdc76b1d582b028108bb8b823354",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/juanfont/headscale",
+      "rsx": "Quick analysis: 7.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
     }
   },
   {
@@ -1561,8 +2594,69 @@
       "commit": "938c7dfef82969a557da9d479ca249179ff1c206",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/heyform/heyform",
-      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T01:56:54Z",
+      "releaseSource": "https://github.com/heyform/heyform/releases/tag/v3.0.4"
     }
+  },
+  {
+    "id": "hootsuite",
+    "name": "Hootsuite",
+    "url": "https://www.hootsuite.com",
+    "categories": [
+      "social-publishing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Official FAQ says Standard starts at $99, but extracted cards omit numerical price and currency; exact USD annual quote not independently resolved.",
+      "source": "https://www.hootsuite.com/plans"
+    }
+  },
+  {
+    "id": "hoppscotch",
+    "name": "Hoppscotch Community Edition",
+    "url": "https://hoppscotch.com/",
+    "categories": [
+      "api-testing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "B",
+    "locked": [
+      "Enterprise self-host adds SAML/OIDC authentication, audit/admin tools and domain/site access controls."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "MIT self-hosted CE includes workspace member roles and invitations. Enterprise administration/security extras justify B; hosted Cloud Business gates are not assumed to restrict CE.",
+    "sources": {
+      "license": "https://github.com/hoppscotch/hoppscotch/blob/63273f8e599e73f0fb38c0739314e8d46b6bc83d/LICENSE",
+      "features": "https://docs.hoppscotch.io/documentation/self-host/getting-started",
+      "hosting": "https://hoppscotch.com/pricing"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-20T07:04:35Z",
+      "lastRelease": "2026.9.0",
+      "lastReleaseAt": "2026-09-30T11:50:32Z",
+      "commit": "63273f8e599e73f0fb38c0739314e8d46b6bc83d",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/hoppscotch/hoppscotch",
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-09-30T06:59:53Z",
+      "releaseSource": "https://github.com/hoppscotch/hoppscotch/releases/tag/2026.9.0"
+    },
+    "serviceLimitations": [
+      "First-party Cloud has separate Free/Business/Enterprise plans; self-host operators supply deployment, upgrades and database operations."
+    ]
   },
   {
     "id": "hubspot",
@@ -1613,7 +2707,28 @@
       "commit": "8ed328fef4d3f37824a01b32bab13257116c6c45",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/hcengineering/platform",
-      "rsx": "Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T06:40:35Z",
+      "releaseSource": "https://github.com/hcengineering/platform/releases/tag/v0.7.426"
+    }
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia paid plans",
+    "url": "https://insomnia.rest/",
+    "categories": [
+      "api-testing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "quote",
+      "note": "Pricing page displays Pro $12/user/month and annual/monthly selector, but extracted state does not establish billing basis. Confirm at checkout. Free Essentials available; mock request overages extra.",
+      "source": "https://insomnia.rest/pricing"
     }
   },
   {
@@ -1667,7 +2782,9 @@
       "commit": "15ea35ea63f367eba33c04b7acd9ab1227853537",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/invoiceninja/invoiceninja",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-18T03:34:08Z",
+      "releaseSource": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.49"
     }
   },
   {
@@ -1719,7 +2836,9 @@
       "commit": "55430513980db97d73e0f605df591b8028c23342",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/jitsi/jitsi-meet",
-      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T16:34:56Z",
+      "releaseSource": "https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_11248"
     }
   },
   {
@@ -1752,7 +2871,44 @@
       "commit": "e197e71af4ff9f371b931ab0338b2b41827e6394",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/kanboard/kanboard",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:26:09Z",
+      "releaseSource": "https://github.com/kanboard/kanboard/releases/tag/v1.2.55"
+    }
+  },
+  {
+    "id": "kdenlive",
+    "name": "Kdenlive",
+    "url": "https://kdenlive.org/",
+    "categories": [
+      "video-editing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/KDE/kdenlive",
+    "license": "GPL-3.0",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Tier A: free local desktop editor with the documented editing feature set available in the open application; no paid feature edition identified on official feature/download pages. GPLv3 COPYING verified at default-branch SHA. selfHostable=false denotes a desktop application, locally operable; hostedOffer=false reflects downloadable software with no first-party hosted editing service identified. License field retains the GitHub GPL-3.0 identifier; file-level only/or-later scope not fully audited.",
+    "sources": {
+      "license": "https://github.com/KDE/kdenlive/blob/f39d75b27fe2ca7395e40663e4e2ec6561d75c4d/COPYING",
+      "features": "https://kdenlive.org/",
+      "hosting": "https://kdenlive.org/download/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:07:31Z",
+      "lastRelease": "26.08.2",
+      "lastReleaseAt": "2026-10-13",
+      "commit": "f39d75b27fe2ca7395e40663e4e2ec6561d75c4d",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/KDE/kdenlive",
+      "rsx": "Quick analysis: 4.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://kdenlive.org/news/releases/26.08.2/",
+      "lastCommitAt": "2026-10-21T16:20:26Z"
     }
   },
   {
@@ -1788,7 +2944,9 @@
       "commit": "c8f49bd9a323b9a90739969736c387457efe98bf",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/pentacent/keila",
-      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T20:08:35Z",
+      "releaseSource": "https://github.com/pentacent/keila/releases/tag/0.30.3"
     }
   },
   {
@@ -1821,7 +2979,160 @@
       "commit": "3c07b879d5cfaf277caa5d4bc96174347f71f91c",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/keycloak/keycloak",
-      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T15:49:14Z",
+      "releaseSource": "https://github.com/keycloak/keycloak/releases/tag/26.8.1"
+    }
+  },
+  {
+    "id": "kimai",
+    "name": "Kimai",
+    "url": "https://www.kimai.org/en/",
+    "categories": [
+      "time-tracking"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/kimai/kimai",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Expense management plugin",
+      "Task planning plugin",
+      "Custom fields plugin"
+    ],
+    "hostedOffer": true,
+    "classificationReason": "AGPL-v3 self-hosted core; paid plugins add everyday expenses, task planning and custom fields. Core already provides time tracking, reports and invoicing. First-party Kimai Cloud verified separately.",
+    "sources": {
+      "license": "https://github.com/kimai/kimai/blob/8970bc8bfab0f53976168fc7b1172d9009f39a35/LICENSE",
+      "features": "https://www.kimai.org/en/store/",
+      "hosting": "https://www.kimai.org/en/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:00:28Z",
+      "lastRelease": "2.70.2",
+      "lastReleaseAt": "2026-10-21T22:00:29Z",
+      "commit": "8970bc8bfab0f53976168fc7b1172d9009f39a35",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/kimai/kimai",
+      "rsx": "Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:55:02Z",
+      "releaseSource": "https://github.com/kimai/kimai/releases/tag/2.70.2"
+    }
+  },
+  {
+    "id": "kopia",
+    "name": "Kopia",
+    "url": "https://kopia.io/",
+    "categories": [
+      "backup-recovery"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/kopia/kopia",
+    "license": "Apache-2.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Open CLI exposes all features, with official desktop GUI and optional repository server; no paid software edition identified. Tier A covers this backup tool, not managed storage or whole-machine imaging.",
+    "sources": {
+      "license": "https://github.com/kopia/kopia/blob/0835005737025dc3e5203df0138c8265686cb4b3/LICENSE",
+      "features": "https://kopia.io/docs/features/",
+      "hosting": "https://kopia.io/docs/"
+    },
+    "serviceLimitations": [
+      "User provisions and pays storage separately; no bundled unlimited backup cloud.",
+      "Repository server permissions cover snapshot/policy manifests; known content IDs can expose shared repository content."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-20T03:30:12Z",
+      "lastRelease": "v0.23.1",
+      "lastReleaseAt": "2026-06-16T01:27:33Z",
+      "commit": "0835005737025dc3e5203df0138c8265686cb4b3",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/kopia/kopia",
+      "rsx": "Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T03:30:11Z",
+      "releaseSource": "https://github.com/kopia/kopia/releases/tag/v0.23.1"
+    }
+  },
+  {
+    "id": "krita",
+    "name": "Krita",
+    "url": "https://krita.org/",
+    "categories": [
+      "image-editing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/KDE/krita",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Locally operated desktop digital painting application. GPL v3 application with some more permissively licensed parts. Free installers/source and paid store distribution; store income funds development and automatic updates, no separate paid feature edition identified. Canonical development on KDE Invent; active GitHub mirror.",
+    "sources": {
+      "license": "https://github.com/KDE/krita/blob/ec6a328c805b397dddbacd48d5e1a950540c0792/COPYING",
+      "features": "https://krita.org/en/about/license/",
+      "hosting": "https://krita.org/en/download/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T11:05:17Z",
+      "lastRelease": "5.3.4.1",
+      "lastReleaseAt": "2026-10-07",
+      "commit": "ec6a328c805b397dddbacd48d5e1a950540c0792",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/KDE/krita",
+      "rsx": "Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://krita.org/en/download/",
+      "lastCommitAt": "2026-10-21T11:04:19Z"
+    }
+  },
+  {
+    "id": "lansweeper",
+    "name": "Lansweeper",
+    "url": "https://www.lansweeper.com/",
+    "categories": [
+      "it-assets"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "flat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "annual",
+      "note": "Starter includes 2,000 assets and unlimited seats; billed annually. Page extraction combines multiple currency amounts without reliable currency labels, so entry amount remains unverified.",
+      "source": "https://www.lansweeper.com/pricing/"
+    }
+  },
+  {
+    "id": "lever",
+    "name": "Lever",
+    "url": "https://www.lever.co/",
+    "categories": [
+      "recruiting"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "quote",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Official pricing explicitly requires customized quote based on organization size and hiring needs; amount and billing schedule undisclosed.",
+      "source": "https://www.lever.co/pricing"
     }
   },
   {
@@ -1857,7 +3168,8 @@
       "commit": "f485440ff59329d51277cf065e974d82114b9bbc",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/LimeSurvey/LimeSurvey",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:02:06Z"
     }
   },
   {
@@ -1912,7 +3224,28 @@
       "commit": "9351a3ef86e2c06aacdd98ca5ae839ef888f0f9e",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/knadh/listmonk",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T05:25:01Z",
+      "releaseSource": "https://github.com/knadh/listmonk/releases/tag/v7.0.0-beta.1"
+    }
+  },
+  {
+    "id": "looker",
+    "name": "Looker",
+    "url": "https://cloud.google.com/looker",
+    "categories": [
+      "business-intelligence"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "quote",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Annual platform price requires sales quote; named user licensing also applies. Looker, distinct from Looker Studio.",
+      "source": "https://cloud.google.com/looker/pricing"
     }
   },
   {
@@ -1935,6 +3268,44 @@
     }
   },
   {
+    "id": "lucidchart",
+    "name": "Lucidchart",
+    "url": "https://lucid.co/lucidchart",
+    "categories": [
+      "diagramming"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "quote",
+      "note": "Official Individual trial page advertises $9/month plus tax; billing commitment not exposed by accessible pricing page. Confirm checkout terms; amount left null.",
+      "source": "https://lucid.co/lucidchart/trial"
+    }
+  },
+  {
+    "id": "m-files",
+    "name": "M-Files",
+    "url": "https://www.m-files.com/",
+    "categories": [
+      "document-management"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 65,
+      "currency": "EUR",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Essentials EUR65/seat/month; subscriptions typically billed annually, other terms by agreement. Enterprise custom quote.",
+      "source": "https://www.m-files.com/editions/"
+    }
+  },
+  {
     "id": "mailchimp",
     "name": "Mailchimp",
     "url": "https://mailchimp.com/",
@@ -1954,6 +3325,44 @@
     }
   },
   {
+    "id": "mailcow",
+    "name": "mailcow: dockerized",
+    "url": "https://mailcow.email/",
+    "categories": [
+      "email-hosting"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/mailcow/mailcow-dockerized",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "serviceLimitations": [
+      "Server resources, DNS, backups, upgrades and mail delivery reputation remain operator responsibilities; paid managed hosting/support are optional services."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "GPLv3 orchestration and mailcow UI with an integrated mail/groupware stack. Reviewed documentation exposes administration, spam controls, SOGo and mailbox migration without an edition paywall; Servercow sells hosting and support rather than a separate gated software edition. Bundled components retain their own licenses.",
+    "sources": {
+      "license": "https://github.com/mailcow/mailcow-dockerized/blob/55982ac74bfd35581cc44b122ab5fc659e3ae90a/LICENSE",
+      "features": "https://docs.mailcow.email/",
+      "hosting": "https://docs.mailcow.email/#commercial-support"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T17:39:14Z",
+      "lastCommitAt": "2026-10-21T17:36:04Z",
+      "lastRelease": "2026-10",
+      "lastReleaseAt": "2026-10-21T17:39:15Z",
+      "commit": "55982ac74bfd35581cc44b122ab5fc659e3ae90a",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/mailcow/mailcow-dockerized",
+      "rsx": "Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-10"
+    }
+  },
+  {
     "id": "make",
     "name": "Make",
     "url": "https://www.make.com/pricing",
@@ -1970,6 +3379,25 @@
       "billing": "monthly",
       "note": "Usage credits verified; plan-price widget absent from retrieved page. Entry amount and billing basis need verification; monthly is provisional.",
       "source": "https://www.make.com/pricing"
+    }
+  },
+  {
+    "id": "masv",
+    "name": "MASV",
+    "url": "https://masv.io/",
+    "categories": [
+      "file-transfer"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "usage",
+      "entryAmount": 0.25,
+      "currency": "USD",
+      "period": "month",
+      "unit": "usage",
+      "billing": "monthly",
+      "note": "On-Demand USD $0.25 per GB leaving MASV after 15 GB free monthly; not a flat monthly subscription. Storage beyond five days costs extra. Annual commitments/pre-buy and custom enterprise options also offered.",
+      "source": "https://masv.io/pricing"
     }
   },
   {
@@ -2008,7 +3436,9 @@
       "commit": "48cb7b1a4c17319cb286f9dc2221a29b707166fb",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/matomo-org/matomo",
-      "rsx": "Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:07:24Z",
+      "releaseSource": "https://github.com/matomo-org/matomo/releases/tag/5.14.1"
     }
   },
   {
@@ -2044,7 +3474,9 @@
       "commit": "5a5cbfc306bb943ae8a6a9bb2f5cac85474d7189",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/mattermost/mattermost",
-      "rsx": "Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:38:11Z",
+      "releaseSource": "https://github.com/mattermost/mattermost/releases/tag/v12.0.0"
     }
   },
   {
@@ -2080,7 +3512,188 @@
       "commit": "fbf8256eef9b029f2f491ffb073f5c1f946a1714",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/mautic/mautic",
-      "rsx": "Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T14:30:25Z",
+      "releaseSource": "https://github.com/mautic/mautic/releases/tag/7.2.1"
+    }
+  },
+  {
+    "id": "mayan-edms",
+    "name": "Mayan EDMS",
+    "url": "https://www.mayan-edms.com/",
+    "categories": [
+      "document-management"
+    ],
+    "kind": "oss",
+    "repo": "https://gitlab.com/mayan-edms/mayan-edms",
+    "license": "GPL-2.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Current canonical GitLab LICENSE and official FAQ establish GPL-2.0-only since 4.6; Apache metadata belongs to older mirror. Public software includes workflows, versions, OCR, granular permissions and REST API. Commercial support tiers limit service coverage, not software user/document capacity. No separate paid software edition identified.",
+    "serviceLimitations": [
+      "Paid support contracts restrict covered users/documents/installations and offer SLAs, migration assistance, customization and early access; these are service terms.",
+      "Optional external OpenAI API usage may incur provider costs; local Ollama integration also documented."
+    ],
+    "sources": {
+      "license": "https://gitlab.com/mayan-edms/mayan-edms/-/raw/834ffec1b539171390358e60a0406870108514f5/LICENSE",
+      "features": "https://docs.mayan-edms.com/chapters/features.html",
+      "hosting": "https://www.mayan-edms.com/support/"
+    },
+    "health": {
+      "archived": null,
+      "disabled": null,
+      "pushedAt": null,
+      "lastRelease": "4.12.2",
+      "lastReleaseAt": "2026-09-14",
+      "commit": "834ffec1b539171390358e60a0406870108514f5",
+      "checkedAt": "2026-10-21",
+      "source": "https://gitlab.com/api/v4/projects/mayan-edms%2Fmayan-edms",
+      "rsx": "Canonical GitLab live metadata, commit, pinned LICENSE and empty releases API captured; GitHub mirror not canonical. rsx results pending centrally.",
+      "lastCommitAt": "2026-09-21T05:03:57.000-04:00"
+    }
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "url": "https://medusajs.com",
+    "categories": [
+      "ecommerce"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/medusajs/medusa",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "B",
+    "locked": [
+      "Role-based access control (RBAC) requires an Enterprise commercial agreement.",
+      "Single sign-on (SSO) requires an Enterprise commercial agreement."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "MIT core is self-hostable; root LICENSE explicitly excludes proprietary Enterprise materials listed in ENTERPRISE-LICENSE.md. RBAC and SSO are licensed software gates, not just hosting benefits. Tier B and osi=true refer to MIT core only.",
+    "serviceLimitations": [
+      "Medusa Cloud hosting, infrastructure, email and search allowances have separate paid plans and usage limits."
+    ],
+    "sources": {
+      "license": "https://github.com/medusajs/medusa/blob/f7add009dd2f142d98090a5194750e71b2147ddf/LICENSE",
+      "features": "https://medusajs.com/pricing",
+      "hosting": "https://medusajs.com/pricing"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T20:53:22Z",
+      "lastRelease": "v2.22.0",
+      "lastReleaseAt": "2026-10-21T10:58:20Z",
+      "commit": "f7add009dd2f142d98090a5194750e71b2147ddf",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/medusajs/medusa",
+      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T13:35:10Z",
+      "releaseSource": "https://github.com/medusajs/medusa/releases/tag/v2.22.0"
+    }
+  },
+  {
+    "id": "mermaid",
+    "name": "Mermaid",
+    "url": "https://mermaid.js.org",
+    "categories": [
+      "diagramming"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/mermaid-js/mermaid",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Scope: MIT text-to-diagram JavaScript library, installable and usable in your own pages; not a standalone collaboration server. All identified library functionality is open. First-party Mermaid Live Editor is linked by official docs. Mermaid Chart / Mermaid.ai commercial editor and collaboration plans are separate from this library.",
+    "serviceLimitations": [
+      "Self-operated library can render locally or within your website; selfHostable=false records that the library is not a server application.",
+      "Mermaid.ai paid platform has hosted diagram, AI, collaboration and enterprise features; these are not bundled into the MIT library."
+    ],
+    "sources": {
+      "license": "https://github.com/mermaid-js/mermaid/blob/6d8921f94f9a12b76586eddcf45a566080d4767e/LICENSE",
+      "features": "https://mermaid.js.org/intro/",
+      "hosting": "https://mermaid.js.org/ecosystem/mermaid-chart.html"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:30:09Z",
+      "lastRelease": "@mermaid-js/tiny@12.2.0",
+      "lastReleaseAt": "2026-10-13T08:32:56Z",
+      "commit": "6d8921f94f9a12b76586eddcf45a566080d4767e",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/mermaid-js/mermaid",
+      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T15:05:59Z",
+      "releaseSource": "https://github.com/mermaid-js/mermaid/releases/tag/%40mermaid-js/tiny%4012.2.0"
+    }
+  },
+  {
+    "id": "metabase",
+    "name": "Metabase Open Source Edition",
+    "url": "https://www.metabase.com/",
+    "categories": [
+      "business-intelligence"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/metabase/metabase",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Pro/Enterprise: row and column permissions, JWT/SAML/OIDC SSO, caching controls and usage analytics/auditing. Google Sign-In and LDAP are separate authentication options; not all authentication is paid.",
+      "Interactive/SSO embedding, React modular embedding SDK, and whitelabel branding are Pro/Enterprise features; guest/view-only embedding remains possible under the stated license terms.",
+      "Per-subscription dashboard filter customization is Pro/Enterprise; basic scheduled email/Slack subscriptions are available."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "Tier C because routine tailored report subscriptions and interactive embedded analytics are paid, beyond enterprise administration. OSI status covers AGPL Open Source Edition only; top-level enterprise code and enterprise binaries use Metabase Commercial License, not OSI OSS. Cloud managed operations are separate from software gates.",
+    "sources": {
+      "license": "https://github.com/metabase/metabase/blob/5049ebe35e5c68575936d0e0d78e5b8de5f06afb/LICENSE.txt",
+      "features": "https://www.metabase.com/pricing",
+      "hosting": "https://www.metabase.com/pricing"
+    },
+    "serviceLimitations": [
+      "Cloud hosting manages setup, backups and upgrades for a fee; self-hosting requires your infrastructure and email/Slack setup."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:35:09Z",
+      "lastRelease": "v0.64.1",
+      "lastReleaseAt": "2026-10-07T18:42:49Z",
+      "commit": "5049ebe35e5c68575936d0e0d78e5b8de5f06afb",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/metabase/metabase",
+      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T22:18:51Z",
+      "releaseSource": "https://github.com/metabase/metabase/releases/tag/v0.64.1"
+    }
+  },
+  {
+    "id": "metabase-pro",
+    "name": "Metabase Pro",
+    "url": "https://www.metabase.com/",
+    "categories": [
+      "business-intelligence"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 575,
+      "currency": "USD",
+      "period": "month",
+      "unit": "organization",
+      "billing": "monthly",
+      "note": "Self-hosted Pro $575/month, first 10 users included; additional users $12/month; annual discount available.",
+      "source": "https://www.metabase.com/pricing"
     }
   },
   {
@@ -2088,6 +3701,7 @@
     "name": "Microsoft 365",
     "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
     "categories": [
+      "email-hosting",
       "office-files"
     ],
     "kind": "paid",
@@ -2100,6 +3714,25 @@
       "billing": "annual",
       "note": "Business Basic without Teams USD $5.40/user/month paid yearly; web/mobile apps. Basic with Teams $7; desktop apps require another plan.",
       "source": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"
+    }
+  },
+  {
+    "id": "microsoft-outlook",
+    "name": "Microsoft Outlook",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+    "categories": [
+      "email-clients"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "flat",
+      "entryAmount": 19.99,
+      "currency": "USD",
+      "period": "year",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Microsoft 365 Basic, US annual price; includes ad-free Outlook and 100 GB mailbox. Free Outlook also exists; this record represents paid subscription benefits, not an OSS edition.",
+      "source": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
     }
   },
   {
@@ -2122,6 +3755,25 @@
     }
   },
   {
+    "id": "microsoft-visio",
+    "name": "Microsoft Visio",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/visio",
+    "categories": [
+      "diagramming"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 5,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Visio Plan 1, $5 per user/month paid yearly; web and Teams apps. Desktop included in higher Plan 2.",
+      "source": "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+    }
+  },
+  {
     "id": "miro",
     "name": "Miro",
     "url": "https://miro.com",
@@ -2139,6 +3791,87 @@
       "note": "Starter per member monthly equivalent, billed yearly; free plan also exists.",
       "source": "https://miro.com/pricing/"
     }
+  },
+  {
+    "id": "mixpost",
+    "name": "Mixpost Lite",
+    "url": "https://mixpost.app",
+    "categories": [
+      "social-publishing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/inovector/mixpost",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Lite publishing: Facebook Pages, X and Mastodon only; other listed networks require Pro/Enterprise.",
+      "Pro adds queue, approval flow, inbox, advanced analytics, AI and API/webhooks."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "MIT applies to Lite. Pro/Enterprise are proprietary source-available editions, with everyday workflow gates. First-party Cloud exists but does not make commercial features OSS.",
+    "sources": {
+      "license": "https://github.com/inovector/mixpost/blob/df57648b866310446703f5294350552b62735df5/LICENSE.md",
+      "features": "https://mixpost.app/pricing",
+      "hosting": "https://mixpost.app/cloud"
+    },
+    "serviceLimitations": [
+      "Self-hosters supply hosting, maintenance and platform developer-app credentials/approvals."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-03-16T10:06:38Z",
+      "lastRelease": "2.6.0",
+      "lastReleaseAt": "2026-03-16T10:06:21Z",
+      "commit": "df57648b866310446703f5294350552b62735df5",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/inovector/mixpost",
+      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-03-16T10:06:37Z",
+      "releaseSource": "https://github.com/inovector/mixpost/releases/tag/2.6.0"
+    }
+  },
+  {
+    "id": "moodle",
+    "name": "Moodle LMS",
+    "url": "https://moodle.org",
+    "categories": [
+      "learning-management"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/moodle/moodle",
+    "license": "GPL-3.0-or-later",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "B",
+    "locked": [
+      "Moodle Workplace multi-tenancy, recurring program certifications, dynamic rules and organizational hierarchies are commercial extensions, absent from the base Moodle LMS distribution."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "Free self-hosted LMS core; B reflects proprietary Workplace corporate administration extensions built on that core. MoodleCloud subscription and partner support are services, not core license gates. This record identifies Moodle LMS, not Workplace or the separate Open LMS vendor.",
+    "sources": {
+      "license": "https://github.com/moodle/moodle/blob/46c042e7da65f8cb2ec7dc19f46566ce61a393e1/COPYING.txt",
+      "features": "https://docs.moodle.org/503/en/Features",
+      "hosting": "https://support.moodle.com/support/solutions/articles/80001075420"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T10:46:01Z",
+      "lastRelease": null,
+      "lastReleaseAt": null,
+      "commit": "46c042e7da65f8cb2ec7dc19f46566ce61a393e1",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/moodle/moodle",
+      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T08:03:23Z"
+    },
+    "serviceLimitations": [
+      "Self-hosting requires infrastructure, updates and technical administration.",
+      "MoodleCloud is first-party subscription hosting with plan user/storage quotas; partner hosting/customization/support may cost extra."
+    ]
   },
   {
     "id": "n8n",
@@ -2173,7 +3906,50 @@
       "commit": "58f11bf0cf5e384efa7f6818fc940ff5ed8200a9",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/n8n-io/n8n",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T16:26:54Z",
+      "releaseSource": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.5"
+    }
+  },
+  {
+    "id": "netbird",
+    "name": "NetBird Community Edition",
+    "url": "https://netbird.io/",
+    "categories": [
+      "vpn-access"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/netbirdio/netbird",
+    "license": "BSD-3-Clause AND AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "B",
+    "locked": [
+      "Enterprise Commercial License: active-active HA, SCIM provisioning, EDR/MDM integration, traffic-flow logging/streaming, peer approval, audit-event streaming and notifications."
+    ],
+    "serviceLimitations": [
+      "Self-hosters operate control plane and relays; hosting and relay bandwidth have infrastructure costs.",
+      "MSP multi-tenant management is cloud-only."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "OSI community code: root BSD-3-Clause excludes management, signal, relay and combined directories licensed AGPLv3. Core connectivity/access control/routing remain community features; documented enterprise administration, approval and observability gates warrant B. NetBird Cloud tiers are separate from self-hosted Enterprise licensing.",
+    "sources": {
+      "license": "https://github.com/netbirdio/netbird/blob/b03d1c7d0794dec3d96072c98e01811535ace19a/LICENSE",
+      "features": "https://docs.netbird.io/selfhosted/enterprise",
+      "hosting": "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:35:24Z",
+      "lastCommitAt": "2026-10-21T18:37:48Z",
+      "lastRelease": "v0.81.3",
+      "lastReleaseAt": "2026-10-19T13:50:20Z",
+      "releaseSource": "https://github.com/netbirdio/netbird/releases/tag/v0.81.3",
+      "commit": "b03d1c7d0794dec3d96072c98e01811535ace19a",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/netbirdio/netbird",
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
     }
   },
   {
@@ -2210,7 +3986,9 @@
       "commit": "b9759221cbbed0c07edb06f834f508eb1d0fff8c",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/nextcloud/server",
-      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T14:56:02Z",
+      "releaseSource": "https://github.com/nextcloud/server/releases/tag/v33.0.10"
     }
   },
   {
@@ -2247,7 +4025,9 @@
       "commit": "55bc42cb80e83bb2fa3f3bbb0949ffb074086541",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/nocodb/nocodb",
-      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T11:30:54Z",
+      "releaseSource": "https://github.com/nocodb/nocodb/releases/tag/2026.09.1"
     }
   },
   {
@@ -2280,7 +4060,9 @@
       "commit": "df0a87cce1a243e21a2e0eb0fdbdbb8c4732392f",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/node-red/node-red",
-      "rsx": "Quick analysis: 7.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T10:23:37Z",
+      "releaseSource": "https://github.com/node-red/node-red/releases/tag/5.0.9"
     }
   },
   {
@@ -2371,7 +4153,8 @@
       "commit": "1fb40e5c0d25852d0495d4e016ab1a47db2ded13",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/odoo/odoo",
-      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T18:16:20Z"
     }
   },
   {
@@ -2427,7 +4210,87 @@
       "commit": "37678343ec4155e1c32d1e9aac9deb02f1036500",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/ONLYOFFICE/DocumentServer",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T06:52:52Z",
+      "releaseSource": "https://github.com/ONLYOFFICE/DocumentServer/releases/tag/v10.0.0"
+    }
+  },
+  {
+    "id": "open-edx",
+    "name": "Open edX",
+    "url": "https://openedx.org",
+    "categories": [
+      "learning-management"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/openedx/openedx-platform",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Self-managed LMS and Studio authoring available without license fees; no first-party paid software edition gate found. AGPLv3 applies unless individual files state otherwise; surrounding projects have their own licenses. Provider-specific commercial additions are outside this record.",
+    "sources": {
+      "license": "https://github.com/openedx/openedx-platform/blob/c4e066770a014e3fc1256ed9291a19aed69a9f98/LICENSE",
+      "features": "https://openedx.org/platform/features/",
+      "hosting": "https://openedx.org/get-started/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T19:28:24Z",
+      "lastRelease": "named-release/birch",
+      "lastReleaseAt": "2015-03-02T21:13:51Z",
+      "commit": "c4e066770a014e3fc1256ed9291a19aed69a9f98",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/openedx/openedx-platform",
+      "rsx": "Quick analysis: 4.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T17:36:26Z",
+      "releaseSource": "https://github.com/openedx/openedx-platform/releases/tag/named-release/birch"
+    },
+    "serviceLimitations": [
+      "Self-hosting requires infrastructure, updates and technical administration.",
+      "Project-listed providers sell hosting and support; these are third-party offers. edX.org is a separate commercial course destination, not first-party hosting for your LMS."
+    ]
+  },
+  {
+    "id": "opencats",
+    "name": "OpenCATS",
+    "url": "https://www.opencats.org/",
+    "categories": [
+      "recruiting"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/opencats/OpenCATS",
+    "license": "MPL-2.0 AND LicenseRef-CATS-Public-1.1a",
+    "osi": false,
+    "selfHostable": true,
+    "tier": "S",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Combined core includes MPL-2.0 OpenCATS contributions and original CATS code under modified CATS Public License 1.1a. Legacy Exhibit B.I restricts application/managed service-provider, service-bureau and outsourcing operation without written permission; therefore not wholly OSI OSS. No paid OpenCATS feature edition identified; commercial CATSOne is unaffiliated. Candidate/job/submission/CRM workflows supported, but excluded from default OSS recommendations.",
+    "serviceLimitations": [
+      "Community self-hosting; no first-party managed hosting offer established.",
+      "Legacy CATS license restricts ASP/MSP and service-bureau operation without written permission."
+    ],
+    "sources": {
+      "license": "https://github.com/opencats/OpenCATS/blob/94f2aea928cefd2022cd923440b1cdd7fb47cb3f/LICENSE.md",
+      "features": "https://www.opencats.org/",
+      "hosting": "https://documentation.opencats.org/introduction-and-overview"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T12:23:04Z",
+      "lastRelease": "v0.11.1",
+      "lastReleaseAt": "2026-09-03T11:01:20Z",
+      "commit": "94f2aea928cefd2022cd923440b1cdd7fb47cb3f",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/opencats/OpenCATS",
+      "rsx": "Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T12:23:03Z",
+      "releaseSource": "https://github.com/opencats/OpenCATS/releases/tag/v0.11.1"
     }
   },
   {
@@ -2466,7 +4329,48 @@
       "commit": "b498cbc078182a29e5cc5ba842a3c4699acd92cc",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/opf/openproject",
-      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T16:23:07Z",
+      "releaseSource": "https://github.com/opf/openproject/releases/tag/v17.9.2"
+    }
+  },
+  {
+    "id": "opensearch",
+    "name": "OpenSearch",
+    "url": "https://opensearch.org/",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/opensearch-project/OpenSearch",
+    "license": "Apache-2.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "serviceLimitations": [
+      "AWS and other providers sell managed hosting; service-specific features and operational tooling are separate from the community distribution.",
+      "Self-hosted production clusters require security configuration, capacity planning, backups and upgrades."
+    ],
+    "hostedOffer": false,
+    "classificationReason": "Foundation-governed open search suite; official principles describe the suite as Apache 2.0, with no paid software edition gates identified. Amazon OpenSearch Service is a separate AWS service, not a foundation-operated SaaS.",
+    "sources": {
+      "license": "https://github.com/opensearch-project/OpenSearch/blob/ea69463d634e30316a9037e544c0434b4ae80b4a/LICENSE.txt",
+      "features": "https://opensearch.org/about/",
+      "hosting": "https://opensearch.org/solutions-providers/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:12:19Z",
+      "lastRelease": "3.9.0",
+      "lastReleaseAt": "2026-09-29T21:54:18Z",
+      "commit": "ea69463d634e30316a9037e544c0434b4ae80b4a",
+      "lastCommitAt": "2026-10-21T22:12:19Z",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/opensearch-project/OpenSearch",
+      "rsx": "Quick analysis: 7.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://github.com/opensearch-project/OpenSearch/releases/tag/3.9.0"
     }
   },
   {
@@ -2502,7 +4406,9 @@
       "commit": "62117d36e0ef087db3157139daf4c67b5d612580",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/OpenSignLabs/OpenSign",
-      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T14:02:34Z",
+      "releaseSource": "https://github.com/OpenSignLabs/OpenSign/releases/tag/v3.0.0"
     }
   },
   {
@@ -2541,7 +4447,28 @@
       "commit": "56e23b3b09e7af29317a0943523b825843fff527",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/orangehrm/orangehrm",
-      "rsx": "Quick analysis: 4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-06-28T23:42:20Z",
+      "releaseSource": "https://github.com/orangehrm/orangehrm/releases/tag/v5.9"
+    }
+  },
+  {
+    "id": "otter",
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "categories": [
+      "transcription"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 8.33,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Pro standard USD price per user/month billed annually; monthly standard $16.99. Conditional regional promotions excluded.",
+      "source": "https://otter.ai/pricing"
     }
   },
   {
@@ -2577,7 +4504,9 @@
       "commit": "4f4fd882786685ee684fd1994601539a3bcd7812",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/outline/outline",
-      "rsx": "Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T12:36:51Z",
+      "releaseSource": "https://github.com/outline/outline/releases/tag/v1.11.0"
     }
   },
   {
@@ -2612,7 +4541,48 @@
       "commit": "2d8841f490b68adbec01373961111fd90f7d26c1",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/owncloud/ocis",
-      "rsx": "Quick analysis: 7.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T08:45:18Z",
+      "releaseSource": "https://github.com/owncloud/ocis/releases/tag/v8.2.2"
+    }
+  },
+  {
+    "id": "paperless-ngx",
+    "name": "Paperless-ngx",
+    "url": "https://docs.paperless-ngx.com/",
+    "categories": [
+      "document-management"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/paperless-ngx/paperless-ngx",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Community self-hosted project; official source documents OCR, search, permissions, versions and workflows in the open application, with no paid software edition identified. Tier applies to public product; remote AI/OCR service costs are separate.",
+    "serviceLimitations": [
+      "Optional Azure AI remote OCR or remote LLM providers may require separately paid services; local OCR is included.",
+      "Project demo is not production managed hosting."
+    ],
+    "sources": {
+      "license": "https://github.com/paperless-ngx/paperless-ngx/blob/f25fd5365fcc32d06c24306535c7b55e93fbb259/LICENSE",
+      "features": "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/dev/docs/index.md",
+      "hosting": "https://github.com/paperless-ngx/paperless-ngx"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:50:49Z",
+      "lastRelease": "v3.3.3",
+      "lastReleaseAt": "2026-10-19T17:24:02Z",
+      "commit": "f25fd5365fcc32d06c24306535c7b55e93fbb259",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/paperless-ngx/paperless-ngx",
+      "rsx": "Quick analysis: 7.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T15:47:44Z",
+      "releaseSource": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.3"
     }
   },
   {
@@ -2648,11 +4618,89 @@
       "commit": "5de65b8491b925fdf500e1b06e1f6fafa3b7bc29",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/passbolt/passbolt_api",
-      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T10:29:54Z",
+      "releaseSource": "https://github.com/passbolt/passbolt_api/releases/tag/v5.17.0"
     },
     "serviceLimitations": [
       "Pro subscription governs updates/support and supplied license keys; vendor describes Pro source as AGPL."
     ]
+  },
+  {
+    "id": "pdf-arranger",
+    "name": "PDF Arranger",
+    "url": "https://github.com/pdfarranger/pdfarranger",
+    "categories": [
+      "pdf-tools"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/pdfarranger/pdfarranger",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "GPL desktop source application with page split/merge, rotate, crop and rearrange functions; source installation and binary downloads documented. No commercial edition or paid gate found in the official product README. Scope is page arrangement, not full PDF content editing.",
+    "sources": {
+      "license": "https://github.com/pdfarranger/pdfarranger/blob/fb76e09762677fe5c3e205bb89ca474500fce53c/COPYING",
+      "features": "https://github.com/pdfarranger/pdfarranger#about",
+      "hosting": "https://github.com/pdfarranger/pdfarranger#install-from-source"
+    },
+    "serviceLimitations": [
+      "Local GTK desktop app; no vendor hosted service documented."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-01T02:15:06Z",
+      "lastRelease": "1.14.0",
+      "lastReleaseAt": "2026-05-23T03:47:07Z",
+      "commit": "fb76e09762677fe5c3e205bb89ca474500fce53c",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/pdfarranger/pdfarranger",
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-09-30T16:26:13Z",
+      "releaseSource": "https://github.com/pdfarranger/pdfarranger/releases/tag/1.14.0"
+    }
+  },
+  {
+    "id": "pdfsam-basic",
+    "name": "PDFsam Basic",
+    "url": "https://pdfsam.org/pdfsam-basic/",
+    "categories": [
+      "pdf-tools"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/torakiki/pdfsam",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "The named Basic desktop edition runs locally without watermarks or file-size limits; all six Basic tools are free. Enhanced and Visual are distinct commercial products, not extra Basic OSS modules. Basic handles page manipulation rather than full text editing, OCR or conversion.",
+    "sources": {
+      "license": "https://github.com/torakiki/pdfsam/blob/4e4dd4dc5b14a1d328837c2b549fbe0b43cec83f/LICENSE",
+      "features": "https://pdfsam.org/pdfsam-basic/",
+      "hosting": "https://pdfsam.org/pdfsam-basic/"
+    },
+    "serviceLimitations": [
+      "Local desktop app, not a hosted web service or self-hosted server."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-02T11:03:21Z",
+      "lastRelease": "v6.0.6",
+      "lastReleaseAt": "2026-10-02T06:43:06Z",
+      "commit": "4e4dd4dc5b14a1d328837c2b549fbe0b43cec83f",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/torakiki/pdfsam",
+      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-02T11:03:17Z",
+      "releaseSource": "https://github.com/torakiki/pdfsam/releases/tag/v6.0.6"
+    }
   },
   {
     "id": "penpot",
@@ -2687,7 +4735,47 @@
       "commit": "6acb360f4ad5dc24faec9d67f1fc8725456755de",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/penpot/penpot",
-      "rsx": "Quick analysis: 6.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T13:59:31Z",
+      "releaseSource": "https://github.com/penpot/penpot/releases/tag/2.18.3"
+    }
+  },
+  {
+    "id": "phraseanet",
+    "name": "Phraseanet",
+    "url": "https://www.phraseanet.com/",
+    "categories": [
+      "digital-assets"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/alchemy-fr/Phraseanet",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Current LICENSE includes GNU GPL version 3; official download and product pages explicitly include all application interfaces/functions and unlimited users. Hosting, installation, training and maintenance are services. Classification covers Phraseanet itself; separately promoted Parade front-office customization has not been verified as part of the GPL application. Current repository is active, not archived, with 4.1.25 released on the check date.",
+    "sources": {
+      "license": "https://github.com/alchemy-fr/Phraseanet/blob/0aada8fc0a600326e25bdd4c87f6ca6bde5d0adf/LICENSE",
+      "features": "https://www.phraseanet.com/resourcecenter",
+      "hosting": "https://www.phraseanet.com/services"
+    },
+    "serviceLimitations": [
+      "First-party SaaS, installation, configuration, training and maintenance are commercial services."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:27:10Z",
+      "lastRelease": "4.1.25",
+      "lastReleaseAt": "2026-10-21T21:27:10Z",
+      "commit": "0aada8fc0a600326e25bdd4c87f6ca6bde5d0adf",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/alchemy-fr/Phraseanet",
+      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:24:29Z",
+      "releaseSource": "https://github.com/alchemy-fr/Phraseanet/releases/tag/4.1.25"
     }
   },
   {
@@ -2745,7 +4833,9 @@
       "commit": "053b2c0e5874fb3225404a8775d04f38f9e1704c",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/makeplane/plane",
-      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T15:35:49Z",
+      "releaseSource": "https://github.com/makeplane/plane/releases/tag/v1.4.2"
     }
   },
   {
@@ -2786,7 +4876,9 @@
       "commit": "627701dda3459fa25830b0fd5bb2f5668d033284",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/plankanban/planka",
-      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-09-17T01:51:52Z",
+      "releaseSource": "https://github.com/plankanban/planka/releases/tag/v2.2.1"
     }
   },
   {
@@ -2824,7 +4916,9 @@
       "commit": "be3bc8ac721cc6a9721316ff3c8d23addce0ab8a",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/plausible/analytics",
-      "rsx": "Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T18:55:21Z",
+      "releaseSource": "https://github.com/plausible/analytics/releases/tag/v3.2.1"
     }
   },
   {
@@ -2857,7 +4951,9 @@
       "commit": "6f370ea741f33adf889eef02e3c1b884a47aa522",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/pocketbase/pocketbase",
-      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-08T16:21:49Z",
+      "releaseSource": "https://github.com/pocketbase/pocketbase/releases/tag/v0.40.5"
     }
   },
   {
@@ -2894,7 +4990,166 @@
       "commit": "72bb72904c3c22aa744412855ec58bf525276d41",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/PostHog/posthog",
-      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:04:37Z",
+      "releaseSource": "https://github.com/PostHog/posthog/releases/tag/posthog-cli/v0.18.12"
+    }
+  },
+  {
+    "id": "postiz",
+    "name": "Postiz",
+    "url": "https://postiz.com",
+    "categories": [
+      "social-publishing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/gitroomhq/postiz-app",
+    "license": "AGPL-3.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Production in-app design editor requires a separate commercial Polotno SDK license."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "AGPL core; vendor claims ungated Cloud parity, but production design editing depends on licensed commercial Polotno software. Tier C for that workflow; scheduling itself remains open.",
+    "sources": {
+      "license": "https://github.com/gitroomhq/postiz-app/blob/c06abc3d786b8f719ced5716ccc70dd8a7251a05/LICENSE",
+      "features": "https://docs.postiz.com/self-host/configuration/polotno",
+      "hosting": "https://docs.postiz.com/self-host/installation/overview"
+    },
+    "serviceLimitations": [
+      "Operate your own infrastructure and register platform developer apps; approvals and analytics scopes required.",
+      "AI uses your own provider keys and provider billing.",
+      "X analytics availability depends on your X API plan."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T16:25:55Z",
+      "lastRelease": "v2.25.1",
+      "lastReleaseAt": "2026-10-11T15:19:10Z",
+      "commit": "c06abc3d786b8f719ced5716ccc70dd8a7251a05",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/gitroomhq/postiz-app",
+      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T10:47:02Z",
+      "releaseSource": "https://github.com/gitroomhq/postiz-app/releases/tag/v2.25.1"
+    }
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "url": "https://www.postman.com/",
+    "categories": [
+      "api-testing"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 9,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Solo entry $9/month billed annually; Team $19/user/month annually. Free core client exists; usage/add-ons extra.",
+      "source": "https://www.postman.com/pricing/"
+    }
+  },
+  {
+    "id": "power-bi",
+    "name": "Power BI",
+    "url": "https://powerbi.microsoft.com/",
+    "categories": [
+      "business-intelligence"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 14,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Pro USD14/user/month paid yearly; free authoring exists; embedding/capacity priced separately.",
+      "source": "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
+    }
+  },
+  {
+    "id": "prestashop",
+    "name": "PrestaShop",
+    "url": "https://prestashop.com/open-source/",
+    "categories": [
+      "ecommerce"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/PrestaShop/PrestaShop",
+    "license": "OSL-3.0 AND AFL-3.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Tier A applies to the PrestaShop Project core (OSL-3.0) and bundled modules (AFL-3.0), both OSI licenses. Classic is a free downloadable distribution; Hosted adds hosting, installation and support. Marketplace modules and remote services need separate review; Enterprise source access alone does not prove its additions are OSI.",
+    "serviceLimitations": [
+      "Paid hosting, support, payment processing and optional marketplace modules/services can add costs."
+    ],
+    "sources": {
+      "license": "https://github.com/PrestaShop/PrestaShop/blob/6d78ac503209f6dc86488644abe7cf15c01d348c/LICENSE.md",
+      "features": "https://prestashop.com/prestashop-offers/",
+      "hosting": "https://prestashop.com/prestashop-offers/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T12:33:35Z",
+      "lastRelease": "9.2.0",
+      "lastReleaseAt": "2026-09-30T09:56:24Z",
+      "commit": "6d78ac503209f6dc86488644abe7cf15c01d348c",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/PrestaShop/PrestaShop",
+      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T12:33:34Z",
+      "releaseSource": "https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.0"
+    }
+  },
+  {
+    "id": "projectsend",
+    "name": "ProjectSend",
+    "url": "https://www.projectsend.org/",
+    "categories": [
+      "file-transfer"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/projectsend/projectsend",
+    "license": "GPL-2.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "GPL v2 self-hosted core; licensing page explicitly includes client delivery, accounts, permissions, branding, storage and public links without artificial caps. Tier A applies to this complete open core; Cloud fleet operations and optional alternative commercial licensing do not restrict it.",
+    "sources": {
+      "license": "https://github.com/projectsend/projectsend/blob/f22a346469505bc5542e236b59fdcd2a3e1d3ec5/LICENSE",
+      "features": "https://www.projectsend.org/licensing",
+      "hosting": "https://www.projectsend.cloud/"
+    },
+    "serviceLimitations": [
+      "Cloud-only services: billing/subscriptions, fleet provisioning, managed backups/restore, monitoring/uptime SLA, email deliverability and cross-organization administration.",
+      "Self-hosted operation requires infrastructure, backups and email configuration; Cloud service quotas are not software license gates."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-20T17:57:49Z",
+      "lastRelease": "v2.7.0",
+      "lastReleaseAt": "2026-10-07T02:38:26Z",
+      "commit": "f22a346469505bc5542e236b59fdcd2a3e1d3ec5",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/projectsend/projectsend",
+      "rsx": "Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-07T02:12:10Z",
+      "releaseSource": "https://github.com/projectsend/projectsend/releases/tag/v2.7.0"
     }
   },
   {
@@ -2917,6 +5172,81 @@
     }
   },
   {
+    "id": "resourcespace",
+    "name": "ResourceSpace",
+    "url": "https://www.resourcespace.com/",
+    "categories": [
+      "digital-assets"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/resourcespace/resourcespace",
+    "license": "LicenseRef-ResourceSpace-BSD-style",
+    "osi": false,
+    "selfHostable": true,
+    "tier": "U",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Pinned documentation/licenses/resourcespace.txt is a custom BSD-3-Clause-style license with an additional restriction on using ResourceSpace in derived product/project names. Use, modification and redistribution are permitted; no commercial-use or hosting restriction appears. Exact identifier is LicenseRef-ResourceSpace-BSD-style, not unmodified BSD-3-Clause. The custom license is not listed in the OSI approved-license directory; osi=false means no verified formal OSI approval. Because OSI Definition section 4 permits different-name requirements, the naming clause alone is not evidence of non-open licensing. Conservatively retained U pending formal-license review, not S. Functionally the FAQ identifies support and cloud storage above 10GB as the only charges, with no software/user gate. GitHub is official development code; stable releases remain in SVN.",
+    "sources": {
+      "license": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/license.txt",
+      "features": "https://www.resourcespace.com/faq",
+      "hosting": "https://www.resourcespace.com/get"
+    },
+    "serviceLimitations": [
+      "First-party free cloud limited to 10GB; larger hosted storage and support are paid services. Self-hosting has no per-user charge."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T01:00:06Z",
+      "lastRelease": null,
+      "lastReleaseAt": null,
+      "commit": "849371fc1a7cd90062ee90dfc86111e976457506",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/resourcespace/resourcespace",
+      "rsx": "Quick analysis: 3.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T01:00:03Z"
+    }
+  },
+  {
+    "id": "restic",
+    "name": "restic",
+    "url": "https://restic.net/",
+    "categories": [
+      "backup-recovery"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/restic/restic",
+    "license": "BSD-2-Clause",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Entire program described as free and completely open source; no paid software feature gates identified. Locally operated CLI, no dedicated server required; selfHostable=false reflects client-tool scope, while storage can be self-hosted.",
+    "sources": {
+      "license": "https://github.com/restic/restic/blob/dd09b6bd01af220b1d5d95c0d4d7d472e05e05c4/LICENSE",
+      "features": "https://restic.net/",
+      "hosting": "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+    },
+    "serviceLimitations": [
+      "Storage, remote server operation, scheduling and key custody are the operator’s responsibility; cloud storage fees are separate."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-18T14:23:55Z",
+      "lastRelease": "v0.19.1",
+      "lastReleaseAt": "2026-07-05T08:13:33Z",
+      "commit": "dd09b6bd01af220b1d5d95c0d4d7d472e05e05c4",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/restic/restic",
+      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-18T14:23:55Z",
+      "releaseSource": "https://github.com/restic/restic/releases/tag/v0.19.1"
+    }
+  },
+  {
     "id": "retool",
     "name": "Retool",
     "url": "https://retool.com",
@@ -2933,6 +5263,25 @@
       "billing": "annual",
       "note": "Team: $10/builder/month and $5/internal user/month, billed annually; free plan for up to five users. Usage and higher tiers differ.",
       "source": "https://retool.com/pricing"
+    }
+  },
+  {
+    "id": "ringcentral",
+    "name": "RingCentral RingEX",
+    "url": "https://www.ringcentral.com",
+    "categories": [
+      "telephony"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 20,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Core US list price per user/month paid annually; official search-indexed pricing card. Canonical page extraction omitted the card; regional offers and add-ons differ.",
+      "source": "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
     }
   },
   {
@@ -2968,7 +5317,49 @@
       "commit": "aa3ad515571152850b67ba8ac2f60ec7a51deab1",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/RocketChat/Rocket.Chat",
-      "rsx": "Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T18:10:44Z",
+      "releaseSource": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.9.0"
+    }
+  },
+  {
+    "id": "roundcube",
+    "name": "Roundcube",
+    "url": "https://roundcube.net/",
+    "categories": [
+      "email-clients"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/roundcube/roundcubemail",
+    "license": "GPL-3.0-or-later",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Identified edition is core Roundcube webmail: GPLv3-or-later with custom skins/plugins exception, freely deployable and listing unlimited users/messages. The exception permits separately licensed commercial plugins; such plugins are not represented as included. Nextcloud sells enterprise support/SLA and optional separate server bundles; no core webmail feature paywall identified. Hosted availability refers to independent providers listed by the project, not a first-party Roundcube SaaS.",
+    "serviceLimitations": [
+      "Requires a web/PHP/database deployment plus compatible IMAP and SMTP services; Roundcube alone does not provide mailbox hosting or email delivery.",
+      "Calendar and multi-account extensions are listed as third-party additions; verify their licenses and availability separately.",
+      "Hosted mail services and enterprise support can cost money without restricting the core webmail software."
+    ],
+    "sources": {
+      "license": "https://github.com/roundcube/roundcubemail/blob/d70bb19622238b206f0f636e847e80815a4d1f76/LICENSE.md",
+      "features": "https://roundcube.net/about/",
+      "hosting": "https://roundcube.net/about/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T17:50:22Z",
+      "lastRelease": "1.7.5",
+      "lastReleaseAt": "2026-10-19T07:02:13Z",
+      "commit": "d70bb19622238b206f0f636e847e80815a4d1f76",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/roundcube/roundcubemail",
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T17:36:21Z",
+      "releaseSource": "https://github.com/roundcube/roundcubemail/releases/tag/1.7.5"
     }
   },
   {
@@ -2988,6 +5379,25 @@
       "billing": "monthly",
       "note": "Starter Suite $25 USD/user/month, billed monthly or annually. Higher Sales Cloud editions and add-ons extra; Free Suite also exists.",
       "source": "https://www.salesforce.com/sales/pricing/"
+    }
+  },
+  {
+    "id": "sap-concur",
+    "name": "SAP Concur",
+    "url": "https://www.concur.com/products/concur-expense",
+    "categories": [
+      "expense-reimbursements"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "usage",
+      "entryAmount": 7,
+      "currency": "USD",
+      "period": "month",
+      "unit": "usage",
+      "billing": "monthly",
+      "note": "US Concur Expense Base starts at $7 per report, unlimited users; price varies by monthly commitment. Plus starts $11/report; Premium custom. This amount is per report, not total monthly subscription.",
+      "source": "https://www.concur.com/products/concur-expense"
     }
   },
   {
@@ -3023,7 +5433,9 @@
       "commit": "c5b344fbb3d9a126c4b3a39f0979c7976392fa96",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/alyssaxuu/screenity",
-      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T19:14:36Z",
+      "releaseSource": "https://github.com/alyssaxuu/screenity/releases/tag/v4.7.0"
     }
   },
   {
@@ -3060,7 +5472,9 @@
       "commit": "a652460e9d4314d5e67c82e0ebe9aa48e8ea1212",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/haiwen/seafile-server",
-      "rsx": "Quick analysis: 4.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T03:51:22Z",
+      "releaseSource": "https://github.com/haiwen/seafile-server/releases/tag/v7.1.1-server"
     }
   },
   {
@@ -3083,6 +5497,60 @@
     }
   },
   {
+    "id": "shopify",
+    "name": "Shopify",
+    "url": "https://www.shopify.com",
+    "categories": [
+      "ecommerce"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 29,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Basic storefront plan: USD 29/month billed yearly; promotional trial excluded. Payment processing and apps may add costs.",
+      "source": "https://www.shopify.com/about"
+    }
+  },
+  {
+    "id": "shotcut",
+    "name": "Shotcut",
+    "url": "https://shotcut.org/",
+    "categories": [
+      "video-editing"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/mltframework/shotcut",
+    "license": "GPL-3.0",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Tier A: free local desktop editor with the documented editing feature set available in the open application; no paid feature edition identified on official feature/download pages. GPLv3 COPYING verified at default-branch SHA. selfHostable=false denotes a desktop application, locally operable; hostedOffer=false reflects downloadable software with no first-party hosted editing service identified. License field retains the GitHub GPL-3.0 identifier; file-level only/or-later scope not fully audited.",
+    "sources": {
+      "license": "https://github.com/mltframework/shotcut/blob/0d30d391a8fc9a68c1c82b3651afa4c5c069a6e3/COPYING",
+      "features": "https://shotcut.org/features/",
+      "hosting": "https://shotcut.org/download/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T19:08:18Z",
+      "lastRelease": "v26.9.27",
+      "lastReleaseAt": "2026-09-28T00:29:29Z",
+      "commit": "0d30d391a8fc9a68c1c82b3651afa4c5c069a6e3",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/mltframework/shotcut",
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:01:59Z",
+      "releaseSource": "https://github.com/mltframework/shotcut/releases/tag/v26.9.27"
+    }
+  },
+  {
     "id": "slack",
     "name": "Slack",
     "url": "https://slack.com",
@@ -3099,6 +5567,224 @@
       "billing": "annual",
       "note": "Pro standard annual price per user/month; free plan available; temporary introductory discount excluded.",
       "source": "https://slack.com/intl/en-us/pricing"
+    }
+  },
+  {
+    "id": "smallpdf",
+    "name": "Smallpdf",
+    "url": "https://smallpdf.com/",
+    "categories": [
+      "pdf-tools"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Pro annual billing offered; numeric price failed to render in official page extraction (ellipsis).",
+      "source": "https://smallpdf.com/pricing"
+    }
+  },
+  {
+    "id": "snipe-it",
+    "name": "Snipe-IT",
+    "url": "https://snipeitapp.com/",
+    "categories": [
+      "it-assets"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/grokability/snipe-it",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "AGPLv3 self-operated asset management; official FAQ explicitly confirms hosted and free installations use the same software. Hosting, maintenance and priority support are services. Third-party integrations may have separate terms.",
+    "sources": {
+      "license": "https://github.com/grokability/snipe-it/blob/6b0d2751417d49e7b7707eb57b8d1250012937d4/LICENSE",
+      "features": "https://snipeitapp.com/faq",
+      "hosting": "https://snipeitapp.com/pricing"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:59:49Z",
+      "lastCommitAt": "2026-10-21T21:59:43Z",
+      "lastRelease": "v8.8.2",
+      "lastReleaseAt": "2026-10-21T19:23:26Z",
+      "releaseSource": "https://github.com/grokability/snipe-it/releases/tag/v8.8.2",
+      "commit": "6b0d2751417d49e7b7707eb57b8d1250012937d4",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/snipe/snipe-it",
+      "rsx": "Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+    },
+    "serviceLimitations": [
+      "Managed hosting tiers differ in infrastructure, API rate limits, LDAP resources and support; self-hosters operate their own server.",
+      "Discovery integrations can require separate MDM/RMM systems; Snipe-IT does not supply its own network discovery agent."
+    ]
+  },
+  {
+    "id": "solidtime",
+    "name": "solidtime",
+    "url": "https://www.solidtime.io",
+    "categories": [
+      "time-tracking"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/solidtime-io/solidtime",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Invoicing requires Business or Enterprise on-premise license",
+      "Audit Log requires Business or Enterprise on-premise license"
+    ],
+    "hostedOffer": true,
+    "classificationReason": "AGPL-v3 open core is self-hostable. Official on-premise comparison excludes invoicing and audit log from Open Source. Invoicing is an everyday billable-work feature, so C; cloud subscription gates were not substituted for this comparison.",
+    "sources": {
+      "license": "https://github.com/solidtime-io/solidtime/blob/93eb93f1dc2de0d50849ce7883a601dd76691df1/LICENSE.md",
+      "features": "https://www.solidtime.io/pricing/on-premise",
+      "hosting": "https://docs.solidtime.io/self-hosting/intro"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T18:05:40Z",
+      "lastRelease": "v0.22.1",
+      "lastReleaseAt": "2026-10-21T18:17:25Z",
+      "commit": "93eb93f1dc2de0d50849ce7883a601dd76691df1",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/solidtime-io/solidtime",
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T17:53:12Z",
+      "releaseSource": "https://github.com/solidtime-io/solidtime/releases/tag/v0.22.1"
+    }
+  },
+  {
+    "id": "spendesk",
+    "name": "Spendesk",
+    "url": "https://www.spendesk.com/",
+    "categories": [
+      "expense-reimbursements"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "organization",
+      "billing": "quote",
+      "note": "Quote required: fixed monthly platform subscription plus transaction fees including expense claims; unlimited users. No public entry amount.",
+      "source": "https://www.spendesk.com/pricing/"
+    }
+  },
+  {
+    "id": "squarespace",
+    "name": "Squarespace",
+    "url": "https://www.squarespace.com/pricing",
+    "categories": [
+      "website-cms"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "flat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Basic is paid; page renders $25/$19 without sufficiently clear currency and billing mapping. USD amount unresolved.",
+      "source": "https://www.squarespace.com/pricing"
+    }
+  },
+  {
+    "id": "stalwart",
+    "name": "Stalwart Community",
+    "url": "https://www.stalw.art/",
+    "categories": [
+      "email-hosting"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/stalwartlabs/stalwart",
+    "license": "AGPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "Enterprise license required for deleted-email restoration and account archiving/un-deletion.",
+      "Enterprise-only AI/LLM spam classification and Sieve scripting; standard rule/statistical spam filtering remains Community.",
+      "Additional enterprise administration includes multi-tenancy, SCIM provisioning, advanced telemetry and sharded/read-replica storage."
+    ],
+    "serviceLimitations": [
+      "Future first-party managed service announced with registration of interest; current general availability, regions and numeric SLAs not confirmed. Self-hosted infrastructure and delivery operations still cost money."
+    ],
+    "hostedOffer": false,
+    "classificationReason": "Community source is AGPL-3.0-only, with per-file dual licensing and proprietary SEL enterprise sections. C because recovery and AI-assisted mail workflows require Enterprise, beyond administrative extras. Optional first-party managed hosting is announced, not confirmed generally available.",
+    "sources": {
+      "license": "https://github.com/stalwartlabs/stalwart/blob/aa47d8ef7bfba7200d3293198ac2592747b20e73/LICENSES/AGPL-3.0-only.txt",
+      "features": "https://www.stalw.art/compare/",
+      "hosting": "https://www.stalw.art/managed-email/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-20T12:35:03Z",
+      "lastCommitAt": "2026-10-18T17:54:34Z",
+      "lastRelease": "v0.16.27",
+      "lastReleaseAt": "2026-10-18T19:28:40Z",
+      "commit": "aa47d8ef7bfba7200d3293198ac2592747b20e73",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/stalwartlabs/stalwart",
+      "rsx": "Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://github.com/stalwartlabs/stalwart/releases/tag/v0.16.27"
+    }
+  },
+  {
+    "id": "stirling-pdf",
+    "name": "Stirling PDF",
+    "url": "https://stirling.com/",
+    "categories": [
+      "pdf-tools"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "license": "MIT AND LicenseRef-Stirling-PDF-User-License",
+    "osi": false,
+    "selfHostable": true,
+    "tier": "U",
+    "locked": [
+      "Login-capable Free server limited to five users; Team adds capacity.",
+      "External database, clustering, S3/database file storage, metrics and custom metadata require Team.",
+      "SAML, audit logs and offline license activation require Enterprise."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "Mixed-license project. Pinned root grants MIT only outside eight excluded directories, including engine, proprietary editor, desktop, SaaS/cloud and processor. Restrictive User License observed for engine/editor modules. A complete operational build from only MIT code was not established; full distribution is not certified OSI and excluded from default recommendations. Paid admin gates are documented separately from processing service costs.",
+    "sources": {
+      "license": "https://github.com/Stirling-Tools/Stirling-PDF/blob/dd48e0b25f364e587f308b279d6d60c365fcd24d/LICENSE",
+      "features": "https://docs.stirlingpdf.com/Server/Licensing/Plans-and-Licences/",
+      "hosting": "https://docs.stirlingpdf.com/Server/"
+    },
+    "serviceLimitations": [
+      "Processor/AI automation and API-key calls can draw on processing allowances; these are separate from software admin gates."
+    ],
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T22:29:26Z",
+      "lastRelease": "v3.2.0",
+      "lastReleaseAt": "2026-10-15T20:36:26Z",
+      "commit": "dd48e0b25f364e587f308b279d6d60c365fcd24d",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/Stirling-Tools/Stirling-PDF",
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T22:21:07Z",
+      "releaseSource": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.2.0"
     }
   },
   {
@@ -3131,7 +5817,9 @@
       "commit": "7e390492f73fedb1e64410322b1ff455af167fab",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/SuiteCRM/SuiteCRM",
-      "rsx": "Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T16:03:53Z",
+      "releaseSource": "https://github.com/SuiteCRM/SuiteCRM/releases/tag/v7.15.2"
     }
   },
   {
@@ -3164,11 +5852,32 @@
       "commit": "96d51239c65f22d751482bf15b5fcb2216991233",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/supabase/supabase",
-      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:18:20Z",
+      "releaseSource": "https://github.com/supabase/supabase/releases/tag/v1.26.08"
     },
     "serviceLimitations": [
       "Managed cloud branching, Management API, managed backups/PITR, advanced platform metrics, analytics/vector buckets and ETL are absent from the self-hosted distribution; no paid self-hosted unlock is claimed. Operate backups, monitoring and deployment workflows yourself or use managed cloud."
     ]
+  },
+  {
+    "id": "tableau",
+    "name": "Tableau",
+    "url": "https://www.tableau.com/",
+    "categories": [
+      "business-intelligence"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 15,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Tableau Standard advertised starting price; every deployment requires at least one Creator license, so this is not full deployment cost.",
+      "source": "https://www.tableau.com/pricing"
+    }
   },
   {
     "id": "taiga",
@@ -3202,7 +5911,46 @@
       "commit": "c8264ac6775103cbcc2a3a145978f2b475e9ff05",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/taigaio/taiga-back",
-      "rsx": "Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-09-28T17:26:49Z"
+    }
+  },
+  {
+    "id": "tailscale",
+    "name": "Tailscale",
+    "url": "https://tailscale.com/pricing",
+    "categories": [
+      "vpn-access"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 8,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "monthly",
+      "note": "Standard $8/seat/month. Resource and platform add-ons extra; Personal free plan is non-commercial. Monthly seat billing documented.",
+      "source": "https://tailscale.com/pricing"
+    }
+  },
+  {
+    "id": "talentlms",
+    "name": "TalentLMS",
+    "url": "https://www.talentlms.com",
+    "categories": [
+      "learning-management"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "flat",
+      "entryAmount": 119,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Core, 1–40 users, USD119/month billed yearly. Free plan available; paid entry shown. User brackets and add-ons change price.",
+      "source": "https://www.talentlms.com/prices"
     }
   },
   {
@@ -3238,7 +5986,47 @@
       "commit": "80b68bb664ec5f68596d1e03ca118ab0d04f0552",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/teableio/teable",
-      "rsx": "Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T04:06:58Z",
+      "releaseSource": "https://github.com/teableio/teable/releases/tag/release.2026-10-21T11-39-18Z.3519"
+    }
+  },
+  {
+    "id": "thunderbird",
+    "name": "Thunderbird",
+    "url": "https://www.thunderbird.net/en-US/desktop/",
+    "categories": [
+      "email-clients"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/thunderbird/thunderbird-desktop",
+    "license": "MPL-2.0",
+    "osi": true,
+    "selfHostable": false,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Desktop client operated locally on Windows, Linux, and macOS; A describes the freely available client functionality, not server hosting. Official pages call it free forever and link MPL 2.0. Dependencies/other-licenses have separate notices; not every bundled file is MPL. Current developer docs and repository identify thunderbird/thunderbird-desktop as official, superseding use of the experimental Mozilla GitHub copy as canonical.",
+    "serviceLimitations": [
+      "Requires an existing email account/mail service; the desktop client is not an IMAP/SMTP server or hosted webmail.",
+      "Thundermail is a separate optional paid mail-hosting service in beta/waitlist; it does not paywall the desktop client."
+    ],
+    "sources": {
+      "license": "https://github.com/thunderbird/thunderbird-desktop/blob/453702ff89d8169eed2a94d19057a95613394df1/mail/base/content/aboutDialog.xhtml",
+      "features": "https://www.thunderbird.net/en-US/desktop/",
+      "hosting": "https://www.tb.pro/en-US/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:56:23Z",
+      "lastRelease": null,
+      "lastReleaseAt": null,
+      "commit": "453702ff89d8169eed2a94d19057a95613394df1",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/thunderbird/thunderbird-desktop",
+      "rsx": "Quick analysis: 3.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T21:30:33Z"
     }
   },
   {
@@ -3273,7 +6061,28 @@
       "commit": "e8eb1cf5635d28a2d516f0c0d823ed35f3ea9dc9",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/tldraw/tldraw",
-      "rsx": "Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T17:07:53Z",
+      "releaseSource": "https://github.com/tldraw/tldraw/releases/tag/v5.5.2"
+    }
+  },
+  {
+    "id": "toggl-track",
+    "name": "Toggl Track",
+    "url": "https://toggl.com/pricing",
+    "categories": [
+      "time-tracking"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": 9,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Starter USD9/user/month billed annually; USD12 monthly. Free plan also available.",
+      "source": "https://toggl.com/pricing"
     }
   },
   {
@@ -3311,7 +6120,9 @@
       "commit": "a743e91bf48b9b6377aca69699b39698e06fb5f3",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/ToolJet/ToolJet",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T17:28:35Z",
+      "releaseSource": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.247-lts"
     }
   },
   {
@@ -3368,7 +6179,9 @@
       "commit": "d7499bf4ba11ed8c8a9392e02a42bb12b576e543",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/twentyhq/twenty",
-      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:44:11Z",
+      "releaseSource": "https://github.com/twentyhq/twenty/releases/tag/twenty/v2.50.0"
     }
   },
   {
@@ -3388,6 +6201,47 @@
       "billing": "annual",
       "note": "Basic $28/month billed annually; $39/month monthly billing. Includes one user and 100 responses/month. Free plan is distinct from paid Basic.",
       "source": "https://www.typeform.com/pricing"
+    }
+  },
+  {
+    "id": "typesense",
+    "name": "Typesense",
+    "url": "https://typesense.org/",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/typesense/typesense",
+    "license": "GPL-3.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "First-party visual admin UI for synonyms, overrides and merchandising is Typesense Cloud-only; self-hosted product is API-only.",
+      "Cloud team RBAC UI is absent from the self-hosted engine."
+    ],
+    "serviceLimitations": [
+      "Cloud adds managed operations, a Search Delivery Network and hosted MCP service; self-hosting requires infrastructure and operational work."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "GPL search engine has the same core APIs/binaries as Cloud. Tier C records the first-party cloud-only visual search-management workflow; equivalent engine operations remain available through APIs. Paid hosting alone does not drive this classification.",
+    "sources": {
+      "license": "https://github.com/typesense/typesense/blob/66fec878d3e5bff41be13cd1a25c2bbb8313bd77/LICENSE.txt",
+      "features": "https://typesense.org/docs/guide/faqs.html",
+      "hosting": "https://cloud.typesense.org/pricing/calculator"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T03:31:19Z",
+      "lastRelease": "v30.2",
+      "lastReleaseAt": "2026-04-19T16:00:09Z",
+      "commit": "66fec878d3e5bff41be13cd1a25c2bbb8313bd77",
+      "lastCommitAt": "2026-10-20T12:56:51Z",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/typesense/typesense",
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "releaseSource": "https://github.com/typesense/typesense/releases/tag/v30.2"
     }
   },
   {
@@ -3423,7 +6277,9 @@
       "commit": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/umami-software/umami",
-      "rsx": "Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-19T22:02:14Z",
+      "releaseSource": "https://github.com/umami-software/umami/releases/tag/v3.4.0"
     }
   },
   {
@@ -3456,7 +6312,9 @@
       "commit": "2adb5bc32cb53a93722a7c348364a8290acd74d4",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/louislam/uptime-kuma",
-      "rsx": "Quick analysis: 7.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 7.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-20T12:15:52Z",
+      "releaseSource": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.6"
     }
   },
   {
@@ -3489,7 +6347,9 @@
       "commit": "58a980f850464f7d9cdc99a765df36f0a3308b91",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/dani-garcia/vaultwarden",
-      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-16T09:51:32Z",
+      "releaseSource": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.4"
     },
     "serviceLimitations": [
       "Official Bitwarden clients and external push services retain their own terms and availability; no official Bitwarden support for this server.",
@@ -3513,6 +6373,65 @@
       "billing": "monthly",
       "note": "Pro developer seat $20/month plus metered services; Hobby free plan separate.",
       "source": "https://vercel.com/pricing"
+    }
+  },
+  {
+    "id": "vosk",
+    "name": "Vosk",
+    "url": "https://alphacephei.com/vosk/",
+    "categories": [
+      "transcription"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/alphacep/vosk-api",
+    "license": "Apache-2.0",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": false,
+    "classificationReason": "Tier A for Vosk API plus an Apache-2.0 model such as vosk-model-small-en-us-0.15. Offline library with streaming and speaker-identification primitives; not a meeting-notes application. Model catalog licenses vary, including noncommercial choices; API license does not cover every model.",
+    "serviceLimitations": [
+      "User supplies runtime hardware and integration.",
+      "No first-party managed hosting offer verified in reviewed official documentation.",
+      "Select models individually: some French/Dutch catalog entries use noncommercial licenses and are outside this scoped OSS recommendation."
+    ],
+    "sources": {
+      "license": "https://github.com/alphacep/vosk-api/blob/4ab9821510b488efb7740094714a130bd3545e90/COPYING",
+      "features": "https://alphacephei.com/vosk/",
+      "hosting": "https://alphacephei.com/vosk/server"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-15T08:36:44Z",
+      "lastRelease": "v0.3.50",
+      "lastReleaseAt": "2024-04-22T13:02:41Z",
+      "commit": "4ab9821510b488efb7740094714a130bd3545e90",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/alphacep/vosk-api",
+      "rsx": "Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-15T08:36:44Z",
+      "releaseSource": "https://github.com/alphacep/vosk-api/releases/tag/v0.3.50"
+    }
+  },
+  {
+    "id": "webflow",
+    "name": "Webflow",
+    "url": "https://webflow.com/pricing",
+    "categories": [
+      "website-cms"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": 15,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Basic site plan: USD 15 per site/month billed yearly; lacks CMS. Premium with CMS starts at USD 25/site/month billed yearly. Workspace seats/add-ons separate.",
+      "source": "https://webflow.com/pricing"
     }
   },
   {
@@ -3545,7 +6464,67 @@
       "commit": "70ede2148acd2f16a73a755a0f5b765f68916905",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/wekan/wekan",
-      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T15:29:38Z",
+      "releaseSource": "https://github.com/wekan/wekan/releases/tag/v12.58"
+    }
+  },
+  {
+    "id": "wetransfer",
+    "name": "WeTransfer",
+    "url": "https://wetransfer.com/",
+    "categories": [
+      "file-transfer"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "mixed",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "monthly",
+      "note": "Paid Starter/Ultimate/Teams confirmed in official help. Current entry price could not be verified because pricing page requires JavaScript; do not substitute third-party or app-store prices.",
+      "source": "https://wetransfer.com/pricing"
+    }
+  },
+  {
+    "id": "whisper",
+    "name": "Whisper",
+    "url": "https://github.com/openai/whisper",
+    "categories": [
+      "transcription"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/openai/whisper",
+    "license": "MIT",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Tier A for the published speech recognition code and model weights, explicitly MIT in README. Local CLI/Python workflow has no documented paid edition gate. A developer engine, not a meeting-notes workspace. May be run locally or embedded in a self-operated service.",
+    "serviceLimitations": [
+      "Local inference requires user-provided compute and setup.",
+      "Optional first-party whisper-1 API is separate hosted usage; current documentation marks it deprecated, available to existing integrations until 2027-02-26."
+    ],
+    "sources": {
+      "license": "https://github.com/openai/whisper/blob/86098128c0b4f24f0e2aa2994de830614b474227/LICENSE",
+      "features": "https://github.com/openai/whisper",
+      "hosting": "https://developers.openai.com/api/docs/guides/speech-to-text"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-08-31T17:19:19Z",
+      "lastRelease": "v20250625",
+      "lastReleaseAt": "2025-06-26T01:06:09Z",
+      "commit": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/openai/whisper",
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-08-31T17:19:19Z",
+      "releaseSource": "https://github.com/openai/whisper/releases/tag/v20250625"
     }
   },
   {
@@ -3582,8 +6561,108 @@
       "commit": "01084cd405ed930b340c729a73f904287b2e353e",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/windmill-labs/windmill",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:04:23Z",
+      "releaseSource": "https://github.com/windmill-labs/windmill/releases/tag/v1.846.1"
     }
+  },
+  {
+    "id": "wix",
+    "name": "Wix",
+    "url": "https://www.wix.com/plans",
+    "categories": [
+      "website-cms"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "flat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "account",
+      "billing": "annual",
+      "note": "Paid Light plan; localized rendering includes GST and conflicting currency cues, so a reliable USD entry price was not established. Free SaaS plan also exists.",
+      "source": "https://www.wix.com/plans"
+    }
+  },
+  {
+    "id": "woocommerce",
+    "name": "WooCommerce",
+    "url": "https://woocommerce.com",
+    "categories": [
+      "ecommerce"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/woocommerce/woocommerce",
+    "license": "GPL-2.0-only",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "C",
+    "locked": [
+      "First-party WooCommerce Subscriptions adds recurring billing, automatic renewal retries and subscriber plan management through a paid annual extension; GPL licensing does not make vendor acquisition free."
+    ],
+    "hostedOffer": true,
+    "classificationReason": "GPL WooCommerce core is free and self-hostable. Tier C reflects first-party paid software extensions for recurring commerce workflows, including WooCommerce Subscriptions. The extensions remain GPL; this is a paid acquisition boundary, not a claim of proprietary licensing. Core one-time storefront, catalog and order workflows remain available without that extension.",
+    "serviceLimitations": [
+      "Marketplace downloads, updates and support may require a paid subscription.",
+      "Payments, tax, shipping and other remote services may require vendor accounts, connections and usage charges.",
+      "First-party hosted WooCommerce is available through Automattic WordPress.com Commerce; Woo Express is discontinued."
+    ],
+    "sources": {
+      "license": "https://github.com/woocommerce/woocommerce/blob/f9281bb7f7f44b95fa700b3b1b0a07f263bd2df5/license.txt",
+      "features": "https://woocommerce.com/products/woocommerce-subscriptions/",
+      "hosting": "https://wordpress.com/support/plan-features/ecommerce-plan/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T21:03:30Z",
+      "lastRelease": "11.2.1",
+      "lastReleaseAt": "2026-10-09T18:16:12Z",
+      "commit": "f9281bb7f7f44b95fa700b3b1b0a07f263bd2df5",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/woocommerce/woocommerce",
+      "rsx": "Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:22:40Z",
+      "releaseSource": "https://github.com/woocommerce/woocommerce/releases/tag/11.2.1"
+    }
+  },
+  {
+    "id": "wordpress",
+    "name": "WordPress",
+    "url": "https://wordpress.org/",
+    "categories": [
+      "website-cms"
+    ],
+    "kind": "oss",
+    "repo": "https://github.com/WordPress/WordPress",
+    "license": "GPL-2.0-or-later",
+    "osi": true,
+    "selfHostable": true,
+    "tier": "A",
+    "locked": [],
+    "hostedOffer": true,
+    "classificationReason": "Tier A for community WordPress core: standard publishing, users and themes available without licensing fees. Commercial plugins/themes are separate products, not core gates. WordPress.com is a distinct Automattic managed service linked by WordPress.org; its plan limits do not apply to self-hosted core. GitHub distribution repository mirrors SVN; wordpress-develop is also a mirror used for contribution workflow.",
+    "sources": {
+      "license": "https://github.com/WordPress/WordPress/blob/d564e4e697ede9cbed1117dde61b47ffd713e660/license.txt",
+      "features": "https://wordpress.org/about/features/",
+      "hosting": "https://wordpress.com/support/com-vs-org/"
+    },
+    "health": {
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-21T20:41:05Z",
+      "lastRelease": null,
+      "lastReleaseAt": null,
+      "commit": "d564e4e697ede9cbed1117dde61b47ffd713e660",
+      "checkedAt": "2026-10-21",
+      "source": "https://api.github.com/repos/WordPress/WordPress",
+      "rsx": "Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:40:59Z"
+    },
+    "serviceLimitations": [
+      "Self-hosting requires infrastructure and maintenance; optional commercial plugins/themes/services may cost extra."
+    ]
   },
   {
     "id": "xero",
@@ -3634,7 +6713,8 @@
       "commit": "ecb3084231cb27b470eb89f4c182f7fa4032ce8b",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/zammad/zammad",
-      "rsx": "Quick analysis: 4.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 4.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T20:39:08Z"
     }
   },
   {
@@ -3705,7 +6785,28 @@
       "commit": "ce12560d2491f12bb96f20805ad532f7d6dd5875",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/zitadel/zitadel",
-      "rsx": "Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T12:54:21Z",
+      "releaseSource": "https://github.com/zitadel/zitadel/releases/tag/v4.19.5"
+    }
+  },
+  {
+    "id": "zoho-mail",
+    "name": "Zoho Mail",
+    "url": "https://www.zoho.com/mail/zohomail-pricing.html",
+    "categories": [
+      "email-hosting"
+    ],
+    "kind": "paid",
+    "pricing": {
+      "model": "per-seat",
+      "entryAmount": null,
+      "currency": "USD",
+      "period": "month",
+      "unit": "seat",
+      "billing": "annual",
+      "note": "Mail Lite is paid per user/month, billed annually with no monthly plan. Numeric USD price absent from rendered source; free plan has separate 5-user and protocol limits.",
+      "source": "https://www.zoho.com/mail/zohomail-pricing.html"
     }
   },
   {
@@ -3757,7 +6858,9 @@
       "commit": "502a6ba586f40532f15de9a25430028339d61f02",
       "checkedAt": "2026-10-21",
       "source": "https://api.github.com/repos/zulip/zulip",
-      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit."
+      "rsx": "Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.",
+      "lastCommitAt": "2026-10-21T19:55:53Z",
+      "releaseSource": "https://github.com/zulip/zulip/releases/tag/12.3"
     },
     "serviceLimitations": [
       "Vendor-operated mobile push service for commercial organizations above 10 users requires a paid self-hosted plan; eligible communities can receive it free."

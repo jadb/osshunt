@@ -1,0 +1,18 @@
+{
+  "repo": "WordPress/wordpress-develop",
+  "path": "license.txt",
+  "commit": "16bdb6dfa36d5170c4933d322486314c23c4cacb",
+  "url": "https://api.github.com/repos/WordPress/wordpress-develop/contents/license.txt?ref=16bdb6dfa36d5170c4933d322486314c23c4cacb",
+  "command": [
+    "gh",
+    "api",
+    "repos/WordPress/wordpress-develop/contents/license.txt?ref=16bdb6dfa36d5170c4933d322486314c23c4cacb"
+  ],
+  "exitCode": 1,
+  "data": {
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+    "status": "404"
+  },
+  "error": "gh: Not Found (HTTP 404)"
+}

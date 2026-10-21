@@ -12,16 +12,21 @@ Keep a chronological audit as research proceeds. Record commands/tool arguments,
    The helper records metadata, observed HEAD, a license pinned to that SHA, and latest published release. Every request is appended to `research/github-commands.jsonl`; failures are evidence, not empty success. A release 404 must not be interpreted as an archived project. Existing branch-only captures can be pinned with `python3 scripts/pin-evidence.py research/github`.
 3. Inspect all licensing boundaries. Read enterprise-folder/custom license exceptions and source-versus-binary terms. Record actual license text when automatic SPDX detection says `NOASSERTION`.
 4. Read first-party edition comparisons and pricing. Separate cloud quotas from self-hosted code gates; paid services from proprietary features; paid GPL modules from proprietary ones. A free hosted plan is not evidence of OSS.
-5. Check repository health, for example `rsx analyze owner/repo --mode quick --json`. Retain raw results in `research/rsx/`. Use GitHub evidence when checks fail. Authentication may be required; never put credentials in command logs or data.
-6. Verify each mapping against the particular paid workflow. Do not generate a full Cartesian product for loosely related products. Capture migration/import constraints and external-service requirements.
-7. Record price units, currency, billing commitment and minimum seats. Use null for unresolved/quote prices. Keep uncertainties in category research.
-8. Assemble, build and validate. Review tier changes and duplicate-product merge decisions before committing refreshed snapshots.
+5. If root license lookup fails, inspect the repository tree and canonical source host. Preserve exact alternate paths and failed requests; never replace a custom license with a similar SPDX identifier.
+6. Check repository health, for example `rsx analyze owner/repo --mode quick --json`. Retain raw results in `research/rsx/`. Use GitHub evidence when checks fail. Authentication may be required; never put credentials in command logs or data.
+7. Verify each mapping against the particular paid workflow. Do not generate a full Cartesian product for loosely related products. Capture migration/import constraints and external-service requirements.
+8. Record price units, currency, billing commitment and minimum seats. Use null for unresolved/quote prices. Keep uncertainties in category research.
+9. Append material license, feature, hosting, price and migration claims to `research/claims/<category>.jsonl`: `claim`, official `url`, page `locator`, `checkedAt` and evidence paraphrase. Preserve extra product/type provenance.
+10. Assemble, build and validate. Review tier changes and duplicate-product merge decisions before committing refreshed snapshots.
 
 ## Repeatable work already scripted
 
 - Repository metadata, archive state, commit, pinned license and release capture.
 - Per-request command audit, including nonzero exit status and timeouts.
 - Canonical repository rename lookup when shared evidence uses a historical namespace.
+- Shared repository captures and authenticated health results reused across categories.
+- Validated claim ledgers with dates, page locators and evidence; second batch fully covered.
+- Official release evidence retained when mirrors have no release, with date precision preserved.
 - Cross-category product deduplication and explicit merge decisions.
 - Deterministic collections, schema generation, override validation, graph checks and catalog rendering.
 
@@ -40,10 +45,10 @@ Keep a chronological audit as research proceeds. Record commands/tool arguments,
 
 ## Verification already included
 
-Contract tests cover duplicate/normalized IDs, orphan/duplicate overrides, immutable IDs, RFC 7386 array/null semantics, YAML 1.2 scalars, duplicate YAML keys, broken/directed edges, unknown categories, source-available OSI mislabelling, tier-A feature gates, archived projects and URL formats. Evidence tests require license requests to use observed commits and preserve release failures. Assembly tests require explicit evidence paths and canonical repository alias matching.
+Contract tests cover duplicate/normalized IDs, orphan/duplicate overrides, immutable IDs, RFC 7386 array/null semantics, YAML 1.2 scalars, duplicate YAML keys, broken/directed edges, unknown categories, source-available OSI mislabelling, tier-A feature gates, archived projects and URL formats. Evidence tests require license requests to use observed commits and preserve release failures. Assembly tests require explicit evidence paths and canonical repository alias matching, preservation of reviewed release sources, calendar-only dates, unknown API flags and one-time billing. New claim ledgers require public source URLs, dated page locators and nonempty evidence.
 
-Six regression guards were checked by deliberately reintroducing defects: the headless store adapter, unpinned license request, discarded schema defaults, collapsed product IDs, collapsed mapping IDs and lost shared-product restrictions. Their regression checks failed with the defects restored and passed after restoration. The evidence is in `research/mutation-results.json`.
+Seven regression guards were checked by deliberately reintroducing defects: the headless store adapter, unpinned license request, discarded schema defaults, collapsed product IDs, collapsed mapping IDs lost shared-product restrictions and erased canonical release evidence. Their regression checks failed with the defects restored and passed after restoration. The evidence is in `research/mutation-results.json`.
 
 ## Evidence improvements still needed
 
-Web edition/pricing claims currently retain checked-date URLs, paraphrases and tool steps; every rendered page body or screenshot is not frozen for replay. Add a claim ledger with stable section locators, timestamped comparison-table captures and explicit supersession of failed/older evidence. Compact evidence projections would avoid repeated truncated output; shared authentication/cache preflight would avoid repeated permission/rate-limit failures. Test checkbox/icon interpretation, recommended versus enforced capacities, first-party versus third-party hosting, and stale error notes superseded by later successful captures.
+Web edition/pricing claims currently retain checked-date URLs, paraphrases and tool steps; every rendered page body or screenshot is not frozen for replay. The second batch adds validated claim ledgers with stable section locators; backfill these for the first batch. Timestamped comparison-table captures and explicit supersession records remain improvements. Compact evidence projections would avoid repeated truncated output; shared authentication/cache preflight would avoid repeated permission/rate-limit failures. Test checkbox/icon interpretation, recommended versus enforced capacities, first-party versus third-party hosting, and stale error notes superseded by later successful captures.

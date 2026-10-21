@@ -1,0 +1,183 @@
+{
+  "category": {
+    "id": "video-editing",
+    "name": "Video editing",
+    "description": "Non-linear desktop video editing, audio mixing, titles, effects, grading and rendered output.",
+    "audience": "Video creators, filmmakers, editors and marketing teams.",
+    "audienceReach": "functional",
+    "audienceRationale": "Used across industries by people creating edited video; the workflow requires creative production skills rather than serving every employee.",
+    "audienceSources": [
+      "https://kdenlive.org/",
+      "https://www.apple.com/final-cut-pro/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "adobe-premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "url": "https://www.adobe.com/products/premiere/plans.html",
+      "categories": [
+        "video-editing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 22.99,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "US individual single-app plan; annual commitment, billed monthly; teams and multi-app plans cost more.",
+        "source": "https://www.adobe.com/products/premiere/plans.html"
+      }
+    },
+    {
+      "id": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "url": "https://www.apple.com/final-cut-pro/",
+      "categories": [
+        "video-editing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "flat",
+        "entryAmount": 299.99,
+        "currency": "USD",
+        "period": "one-time",
+        "unit": "account",
+        "billing": "one-time",
+        "note": "US Mac App Store standalone Mac purchase; no recurring billing. This record does not price the iPad edition or optional bundles.",
+        "source": "https://apps.apple.com/us/app/final-cut-pro/id424389933"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "kdenlive",
+      "name": "Kdenlive",
+      "url": "https://kdenlive.org/",
+      "categories": [
+        "video-editing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/KDE/kdenlive",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Tier A: free local desktop editor with the documented editing feature set available in the open application; no paid feature edition identified on official feature/download pages. GPLv3 COPYING verified at default-branch SHA. selfHostable=false denotes a desktop application, locally operable; hostedOffer=false reflects downloadable software with no first-party hosted editing service identified. License field retains the GitHub GPL-3.0 identifier; file-level only/or-later scope not fully audited.",
+      "sources": {
+        "license": "https://github.com/KDE/kdenlive/blob/f39d75b27fe2ca7395e40663e4e2ec6561d75c4d/COPYING",
+        "features": "https://kdenlive.org/",
+        "hosting": "https://kdenlive.org/download/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:07:31Z",
+        "lastRelease": "26.08.2",
+        "lastReleaseAt": "2026-10-13",
+        "commit": "f39d75b27fe2ca7395e40663e4e2ec6561d75c4d",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/KDE/kdenlive",
+        "rsx": "Central rsx analysis: overall 4.4/10; policy passed=True. GitHub mirror metrics may omit canonical KDE activity/release evidence.",
+        "releaseSource": "https://kdenlive.org/news/releases/26.08.2/"
+      }
+    },
+    {
+      "id": "shotcut",
+      "name": "Shotcut",
+      "url": "https://shotcut.org/",
+      "categories": [
+        "video-editing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/mltframework/shotcut",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": false,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Tier A: free local desktop editor with the documented editing feature set available in the open application; no paid feature edition identified on official feature/download pages. GPLv3 COPYING verified at default-branch SHA. selfHostable=false denotes a desktop application, locally operable; hostedOffer=false reflects downloadable software with no first-party hosted editing service identified. License field retains the GitHub GPL-3.0 identifier; file-level only/or-later scope not fully audited.",
+      "sources": {
+        "license": "https://github.com/mltframework/shotcut/blob/0d30d391a8fc9a68c1c82b3651afa4c5c069a6e3/COPYING",
+        "features": "https://shotcut.org/features/",
+        "hosting": "https://shotcut.org/download/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T19:08:18Z",
+        "lastRelease": "v26.9.27",
+        "lastReleaseAt": "2026-09-28T00:29:29Z",
+        "commit": "0d30d391a8fc9a68c1c82b3651afa4c5c069a6e3",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/mltframework/shotcut",
+        "rsx": "Central rsx analysis: overall 6/10; policy passed=True. GitHub mirror metrics may omit canonical KDE activity/release evidence."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "adobe-premiere-pro--kdenlive",
+      "to": "kdenlive",
+      "fit": "partial",
+      "migrationNotes": "Partial replacement for local timeline editing, effects, audio and grading. Reuse source media; native Premiere projects or Final Cut libraries were not verified as importable. Kdenlive saves MLT-based .kdenlive XML that references media; archive the project to collect media for moving computers. Test representative timelines and rebuild unsupported effects/titles; proprietary project fidelity is unverified.",
+      "sources": [
+        "https://kdenlive.org/",
+        "https://docs.kdenlive.org/en/project_and_asset_management/file_management/project_files.html",
+        "https://docs.kdenlive.org/en/project_and_asset_management/file_management/archiving.html",
+        "https://www.adobe.com/products/premiere/plans.html"
+      ],
+      "from": "adobe-premiere-pro"
+    },
+    {
+      "id": "adobe-premiere-pro--shotcut",
+      "to": "shotcut",
+      "fit": "partial",
+      "migrationNotes": "Partial replacement for local multitrack editing and rendered video delivery. Shotcut saves MLT XML projects and exports video separately; its FAQ suggests DNxHR HQ or ProRes 422 intermediates when accepted by the other tool. EDL export is documented, not native Premiere/Final Cut project import. Rebuild and verify existing timelines; plugin/effect fidelity is unverified.",
+      "sources": [
+        "https://shotcut.org/features/",
+        "https://shotcut.org/FAQ/",
+        "https://www.adobe.com/products/premiere/plans.html"
+      ],
+      "from": "adobe-premiere-pro"
+    },
+    {
+      "id": "final-cut-pro--kdenlive",
+      "to": "kdenlive",
+      "fit": "partial",
+      "migrationNotes": "Partial replacement for local timeline editing, effects, audio and grading. Reuse source media; native Premiere projects or Final Cut libraries were not verified as importable. Kdenlive saves MLT-based .kdenlive XML that references media; archive the project to collect media for moving computers. Test representative timelines and rebuild unsupported effects/titles; proprietary project fidelity is unverified.",
+      "sources": [
+        "https://kdenlive.org/",
+        "https://docs.kdenlive.org/en/project_and_asset_management/file_management/project_files.html",
+        "https://docs.kdenlive.org/en/project_and_asset_management/file_management/archiving.html",
+        "https://apps.apple.com/us/app/final-cut-pro/id424389933"
+      ],
+      "from": "final-cut-pro"
+    },
+    {
+      "id": "final-cut-pro--shotcut",
+      "to": "shotcut",
+      "fit": "partial",
+      "migrationNotes": "Partial replacement for local multitrack editing and rendered video delivery. Shotcut saves MLT XML projects and exports video separately; its FAQ suggests DNxHR HQ or ProRes 422 intermediates when accepted by the other tool. EDL export is documented, not native Premiere/Final Cut project import. Rebuild and verify existing timelines; plugin/effect fidelity is unverified.",
+      "sources": [
+        "https://shotcut.org/features/",
+        "https://shotcut.org/FAQ/",
+        "https://apps.apple.com/us/app/final-cut-pro/id424389933"
+      ],
+      "from": "final-cut-pro"
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Two assigned OSS candidates thoroughly checked; extra candidates omitted to prioritize verified edition evidence.",
+    "Native Premiere/Final Cut project, plugin, title and color fidelity not established for either editor; only partial workflow substitutions supported.",
+    "Root COPYING is GPLv3 for both; GPL-3.0 retained as returned by capture, without asserting exact only/or-later grants across source files.",
+    "Final Cut Pro billing=free represents no recurring billing because schema has no one-time billing value; entryAmount=299.99 and period=one-time are the purchase terms.",
+    "Kdenlive GitHub releases/latest is 404; official release 26.08.2 dated 2026-10-13 recorded separately in health. Mirror metrics can understate canonical KDE activity."
+  ]
+}

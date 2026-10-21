@@ -86,5 +86,21 @@
     "mutationExit": 1,
     "restoredExit": 0,
     "output": ".\n======================================================================\nFAIL: test_duplicate_product_or_edge_in_one_category_must_fail (assemble_test.AssemblyEvidenceContract) (duplicate='edge')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test/assemble_test.py\", line 26, in test_duplicate_product_or_edge_in_one_category_must_fail\n    self.assertNotEqual(result.returncode, 0, f'{duplicate} silently collapsed')\nAssertionError: 0 == 0 : edge silently collapsed\n\n----------------------------------------------------------------------\nRan 2 tests in 0.097s\n\nFAILED (failures=1)\n"
+  },
+  {
+    "guard": "official-release-preservation",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "test",
+      "-p",
+      "assemble_test.py"
+    ],
+    "mutationExit": 1,
+    "restoredExit": 0,
+    "output": ".F\n======================================================================\nFAIL: test_explicit_evidence_location_and_canonical_repo_alias (assemble_test.AssemblyEvidenceContract)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test/assemble_test.py\", line 60, in test_explicit_evidence_location_and_canonical_repo_alias\n    self.assertEqual(actual['health']['lastRelease'], 'official-1.2.3')\nAssertionError: None != 'official-1.2.3'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.095s\n\nFAILED (failures=1)\n"
   }
 ]

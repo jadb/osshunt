@@ -1,0 +1,189 @@
+{
+  "category": {
+    "id": "social-publishing",
+    "name": "Social publishing",
+    "description": "Plan, schedule and publish social media content across accounts.",
+    "audience": "Creators, marketers, agencies and communications teams",
+    "audienceReach": "functional",
+    "audienceRationale": "Publishing spans many sectors but serves a specific marketing/communications function.",
+    "audienceSources": [
+      "https://buffer.com/pricing",
+      "https://www.hootsuite.com/plans"
+    ]
+  },
+  "paid": [
+    {
+      "id": "buffer",
+      "name": "Buffer",
+      "url": "https://buffer.com",
+      "categories": [
+        "social-publishing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 5,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Essentials, one channel: $60/year ($5/month equivalent); free SaaS plan separate. Price scales by channel.",
+        "source": "https://buffer.com/pricing"
+      }
+    },
+    {
+      "id": "hootsuite",
+      "name": "Hootsuite",
+      "url": "https://www.hootsuite.com",
+      "categories": [
+        "social-publishing"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Official FAQ says Standard starts at $99, but extracted cards omit numerical price and currency; exact USD annual quote not independently resolved.",
+        "source": "https://www.hootsuite.com/plans"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "postiz",
+      "name": "Postiz",
+      "url": "https://postiz.com",
+      "categories": [
+        "social-publishing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/gitroomhq/postiz-app",
+      "license": "AGPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Production in-app design editor requires a separate commercial Polotno SDK license."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "AGPL core; vendor claims ungated Cloud parity, but production design editing depends on licensed commercial Polotno software. Tier C for that workflow; scheduling itself remains open.",
+      "sources": {
+        "license": "https://github.com/gitroomhq/postiz-app/blob/c06abc3d786b8f719ced5716ccc70dd8a7251a05/LICENSE",
+        "features": "https://docs.postiz.com/self-host/configuration/polotno",
+        "hosting": "https://docs.postiz.com/self-host/installation/overview"
+      },
+      "serviceLimitations": [
+        "Operate your own infrastructure and register platform developer apps; approvals and analytics scopes required.",
+        "AI uses your own provider keys and provider billing.",
+        "X analytics availability depends on your X API plan."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T16:25:55Z",
+        "lastRelease": "v2.25.1",
+        "lastReleaseAt": "2026-10-11T15:19:10Z",
+        "commit": "c06abc3d786b8f719ced5716ccc70dd8a7251a05",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/gitroomhq/postiz-app",
+        "rsx": "Central rsx analyze: balanced policy passed; overall 5.7/10; 39 commits in 30 days."
+      }
+    },
+    {
+      "id": "mixpost",
+      "name": "Mixpost Lite",
+      "url": "https://mixpost.app",
+      "categories": [
+        "social-publishing"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/inovector/mixpost",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Lite publishing: Facebook Pages, X and Mastodon only; other listed networks require Pro/Enterprise.",
+        "Pro adds queue, approval flow, inbox, advanced analytics, AI and API/webhooks."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT applies to Lite. Pro/Enterprise are proprietary source-available editions, with everyday workflow gates. First-party Cloud exists but does not make commercial features OSS.",
+      "sources": {
+        "license": "https://github.com/inovector/mixpost/blob/df57648b866310446703f5294350552b62735df5/LICENSE.md",
+        "features": "https://mixpost.app/pricing",
+        "hosting": "https://mixpost.app/cloud"
+      },
+      "serviceLimitations": [
+        "Self-hosters supply hosting, maintenance and platform developer-app credentials/approvals."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-03-16T10:06:38Z",
+        "lastRelease": "2.6.0",
+        "lastReleaseAt": "2026-03-16T10:06:21Z",
+        "commit": "df57648b866310446703f5294350552b62735df5",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/inovector/mixpost",
+        "rsx": "Central rsx analyze: balanced policy passed; overall 5.7/10; 0 commits in 30 days."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "buffer--postiz",
+      "from": "buffer",
+      "to": "postiz",
+      "fit": "partial",
+      "migrationNotes": "Partial scheduling/calendar replacement. Self-hosting requires infrastructure and platform app approvals; check each required channel and analytics scope. No automatic history, queue or credential migration verified.",
+      "sources": [
+        "https://buffer.com/pricing",
+        "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+        "https://docs.postiz.com/self-host/installation/overview"
+      ]
+    },
+    {
+      "id": "hootsuite--postiz",
+      "from": "hootsuite",
+      "to": "postiz",
+      "fit": "partial",
+      "migrationNotes": "Partial scheduling/calendar replacement. Self-hosting requires infrastructure and platform app approvals; check each required channel and analytics scope. No automatic history, queue or credential migration verified. Hootsuite listening/customer-care suite parity unverified.",
+      "sources": [
+        "https://www.hootsuite.com/plans",
+        "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+        "https://docs.postiz.com/self-host/installation/overview"
+      ]
+    },
+    {
+      "id": "buffer--mixpost",
+      "from": "buffer",
+      "to": "mixpost",
+      "fit": "partial",
+      "migrationNotes": "Lite covers Facebook Pages/X/Mastodon publishing and a calendar. Wider channel support and advanced workflows require proprietary Pro. No automatic migration verified.",
+      "sources": [
+        "https://buffer.com/pricing",
+        "https://mixpost.app/pricing",
+        "https://github.com/inovector/mixpost"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Mixpost Pro / Enterprise",
+      "reason": "Proprietary source-available editions; excluded as separate OSS recommendations.",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Only the two assigned candidates were verified in this focused pass.",
+    "Postiz generic no-gates README conflicts with specific commercial Polotno editor requirement; the specific requirement determines tier C.",
+    "Hootsuite exact USD billing amount unresolved; FAQ lists $99 but cards omit amount/currency in extracted page.",
+    "No channel-for-channel parity, historical analytics import or queue transfer verified.",
+    "Social-platform access, review outcomes, quotas and API charges must be checked for intended accounts; no universal free API access claimed."
+  ]
+}

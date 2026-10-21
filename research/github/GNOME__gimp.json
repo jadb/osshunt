@@ -1,0 +1,259 @@
+{
+  "repo": "GNOME/gimp",
+  "checkedAt": "2026-10-21T22:39:23.152429+00:00",
+  "responses": {
+    "metadata": {
+      "status": 0,
+      "url": "https://api.github.com/repos/GNOME/gimp",
+      "data": {
+        "id": 4537508,
+        "node_id": "MDEwOlJlcG9zaXRvcnk0NTM3NTA4",
+        "name": "gimp",
+        "full_name": "GNOME/gimp",
+        "private": false,
+        "owner": {
+          "login": "GNOME",
+          "id": 1801039,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjE4MDEwMzk=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1801039?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GNOME",
+          "html_url": "https://github.com/GNOME",
+          "followers_url": "https://api.github.com/users/GNOME/followers",
+          "following_url": "https://api.github.com/users/GNOME/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GNOME/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GNOME/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GNOME/subscriptions",
+          "organizations_url": "https://api.github.com/users/GNOME/orgs",
+          "repos_url": "https://api.github.com/users/GNOME/repos",
+          "events_url": "https://api.github.com/users/GNOME/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GNOME/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/GNOME/gimp",
+        "description": "Read-only mirror of https://gitlab.gnome.org/GNOME/gimp",
+        "fork": false,
+        "url": "https://api.github.com/repos/GNOME/gimp",
+        "forks_url": "https://api.github.com/repos/GNOME/gimp/forks",
+        "keys_url": "https://api.github.com/repos/GNOME/gimp/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/GNOME/gimp/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/GNOME/gimp/teams",
+        "hooks_url": "https://api.github.com/repos/GNOME/gimp/hooks",
+        "issue_events_url": "https://api.github.com/repos/GNOME/gimp/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/GNOME/gimp/events",
+        "assignees_url": "https://api.github.com/repos/GNOME/gimp/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/GNOME/gimp/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/GNOME/gimp/tags",
+        "blobs_url": "https://api.github.com/repos/GNOME/gimp/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/GNOME/gimp/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/GNOME/gimp/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/GNOME/gimp/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/GNOME/gimp/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/GNOME/gimp/languages",
+        "stargazers_url": "https://api.github.com/repos/GNOME/gimp/stargazers",
+        "contributors_url": "https://api.github.com/repos/GNOME/gimp/contributors",
+        "subscribers_url": "https://api.github.com/repos/GNOME/gimp/subscribers",
+        "subscription_url": "https://api.github.com/repos/GNOME/gimp/subscription",
+        "commits_url": "https://api.github.com/repos/GNOME/gimp/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/GNOME/gimp/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/GNOME/gimp/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/GNOME/gimp/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/GNOME/gimp/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/GNOME/gimp/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/GNOME/gimp/merges",
+        "archive_url": "https://api.github.com/repos/GNOME/gimp/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/GNOME/gimp/downloads",
+        "issues_url": "https://api.github.com/repos/GNOME/gimp/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/GNOME/gimp/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/GNOME/gimp/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/GNOME/gimp/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/GNOME/gimp/labels{/name}",
+        "releases_url": "https://api.github.com/repos/GNOME/gimp/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/GNOME/gimp/deployments",
+        "created_at": "2012-06-03T13:37:45Z",
+        "updated_at": "2026-10-21T21:36:57Z",
+        "pushed_at": "2026-10-21T21:36:47Z",
+        "git_url": "git://github.com/GNOME/gimp.git",
+        "ssh_url": "git@github.com:GNOME/gimp.git",
+        "clone_url": "https://github.com/GNOME/gimp.git",
+        "svn_url": "https://github.com/GNOME/gimp",
+        "homepage": "https://gitlab.gnome.org/GNOME/gimp",
+        "size": 881963,
+        "stargazers_count": 6539,
+        "watchers_count": 6539,
+        "language": "C",
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": false,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 909,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 909,
+        "open_issues": 0,
+        "watchers": 6539,
+        "default_branch": "master",
+        "permissions": {
+          "admin": false,
+          "maintain": false,
+          "push": false,
+          "triage": false,
+          "pull": true
+        },
+        "temp_clone_token": "",
+        "custom_properties": {},
+        "organization": {
+          "login": "GNOME",
+          "id": 1801039,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjE4MDEwMzk=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1801039?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GNOME",
+          "html_url": "https://github.com/GNOME",
+          "followers_url": "https://api.github.com/users/GNOME/followers",
+          "following_url": "https://api.github.com/users/GNOME/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GNOME/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GNOME/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GNOME/subscriptions",
+          "organizations_url": "https://api.github.com/users/GNOME/orgs",
+          "repos_url": "https://api.github.com/users/GNOME/repos",
+          "events_url": "https://api.github.com/users/GNOME/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GNOME/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "network_count": 909,
+        "subscribers_count": 214
+      },
+      "error": null
+    },
+    "commit": {
+      "status": 0,
+      "url": "https://api.github.com/repos/GNOME/gimp/commits/HEAD",
+      "data": {
+        "sha": "e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+        "node_id": "C_kwDOAEU8pNoAKGU3NjE3ZDkxY2EzZjc5NWNkNjI3NzgxNGQxZDAyYTU5ZTkwYzFhMjk",
+        "commit": {
+          "author": {
+            "name": "Jehan",
+            "email": "jehan@girinstud.io",
+            "date": "2026-10-21T21:31:59Z"
+          },
+          "committer": {
+            "name": "Jehan",
+            "email": "jehan@girinstud.io",
+            "date": "2026-10-21T21:31:59Z"
+          },
+          "message": "NEWS: update.",
+          "tree": {
+            "sha": "0cc6046ca59aae0ca4d77be3e628dac6f95fdfc1",
+            "url": "https://api.github.com/repos/GNOME/gimp/git/trees/0cc6046ca59aae0ca4d77be3e628dac6f95fdfc1"
+          },
+          "url": "https://api.github.com/repos/GNOME/gimp/git/commits/e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified_at": null
+          }
+        },
+        "url": "https://api.github.com/repos/GNOME/gimp/commits/e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+        "html_url": "https://github.com/GNOME/gimp/commit/e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+        "comments_url": "https://api.github.com/repos/GNOME/gimp/commits/e7617d91ca3f795cd6277814d1d02a59e90c1a29/comments",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "559fd5270d601ec76500f1922ff44860c2a36b07",
+            "url": "https://api.github.com/repos/GNOME/gimp/commits/559fd5270d601ec76500f1922ff44860c2a36b07",
+            "html_url": "https://github.com/GNOME/gimp/commit/559fd5270d601ec76500f1922ff44860c2a36b07"
+          }
+        ],
+        "stats": {
+          "total": 1,
+          "additions": 1,
+          "deletions": 0
+        },
+        "files": [
+          {
+            "sha": "d0712ffac61695576363447f92616a82ecb3940f",
+            "filename": "NEWS",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/GNOME/gimp/blob/e7617d91ca3f795cd6277814d1d02a59e90c1a29/NEWS",
+            "raw_url": "https://github.com/GNOME/gimp/raw/e7617d91ca3f795cd6277814d1d02a59e90c1a29/NEWS",
+            "contents_url": "https://api.github.com/repos/GNOME/gimp/contents/NEWS?ref=e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+            "patch": "@@ -67,6 +67,7 @@ Core:\n     got an implementation.\n   * Alpha threshold for pixel picking (Move tool or Alt + Middle-click)\n     has been lowered to near 0.\n+  * GIMP Extensions can now ship GEGL operations (filters).\n \n Tools:\n "
+          }
+        ]
+      },
+      "error": null
+    },
+    "license": {
+      "status": 0,
+      "url": "https://api.github.com/repos/GNOME/gimp/license?ref=e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+      "data": {
+        "name": "LICENSE",
+        "path": "LICENSE",
+        "sha": "eb43828b995bd169913e2032aed4201194562d70",
+        "size": 2823,
+        "url": "https://api.github.com/repos/GNOME/gimp/contents/LICENSE?ref=e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+        "html_url": "https://github.com/GNOME/gimp/blob/e7617d91ca3f795cd6277814d1d02a59e90c1a29/LICENSE",
+        "git_url": "https://api.github.com/repos/GNOME/gimp/git/blobs/eb43828b995bd169913e2032aed4201194562d70",
+        "download_url": "https://raw.githubusercontent.com/GNOME/gimp/e7617d91ca3f795cd6277814d1d02a59e90c1a29/LICENSE",
+        "type": "file",
+        "content": "KiBUaGUgR0lNUCBhcHBsaWNhdGlvbiBjb3JlLCBhbmQgb3RoZXIgcG9ydGlv\nbnMgb2YgdGhlIG9mZmljaWFsIEdJTVAKICBkaXN0cmlidXRpb24gbm90IGV4\ncGxpY2l0bHkgbGljZW5zZWQgb3RoZXJ3aXNlLCBhcmUgbGljZW5zZWQgdW5k\nZXIKICB0aGUgR05VIEdFTkVSQUwgUFVCTElDIExJQ0VOU0UgLS0gc2VlIHRo\nZSAnQ09QWUlORycgZmlsZSBpbiB0aGlzCiAgZGlyZWN0b3J5IGZvciBkZXRh\naWxzLgoKWyBUaGUgYmVsb3cgZXhwbGljaXQgZXhlbXB0aW9uLCB3ZSBob3Bl\nLCBjbGVhcnMgdXAgdGhlIEdJTVAKICBkZXZlbG9wZXJzJyBwb3NpdGlvbiBj\nb25jZXJuaW5nIGFuIGFtYmlndWl0eSB3aXRoIHRoZSBHTlUgR2VuZXJhbAog\nIFB1YmxpYyBMaWNlbnNlIGNvbmNlcm5pbmcgd2hhdCBjb25zdGl0dXRlcyBh\nICdtZXJlIGFnZ3JlZ2F0aW9uJwogIHZlcnN1cyBhIGNvbWJpbmVkIG9yIGRl\ncml2ZWQgd29yay4gIFRoZSBpbnRlbnRpb24gaXMgdG8gbWFrZSBpdAogIGNs\nZWFyIHRoYXQgYXJiaXRyYXJpbHktbGljZW5zZWQgcHJvZ3JhbXMgc3VjaCBh\ncyBHSU1QIHBsdWctaW5zIGRvCiAgbm90IGF1dG9tYXRpY2FsbHkgYXNzdW1l\nIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSAoR1BMKQogIHRoZW1z\nZWx2ZXMgc2ltcGx5IGJlY2F1c2Ugb2YgdGhlaXIgaW52b2NhdGlvbiBvZiAo\nb3IgYnkpIHByb2NlZHVyZXMKICBpbXBsZW1lbnRlZCBpbiBHUEwtbGljZW5z\nZWQgY29kZSwgdmlhIGxpYmdpbXAgb3IgYSBzaW1pbGFyIGludGVyZmFjZQog\nIHRvIG1ldGhvZHMgcHJvdmlkZWQgYnkgdGhlIHBkYjogXQoKKiBJZiB5b3Ug\nY3JlYXRlIGEgcHJvZ3JhbSB3aGljaCBpbnZva2VzIChvciBwcm92aWRlcykg\nbWV0aG9kcyB3aXRoaW4KICAob3IgZm9yKSB0aGUgR1BMIEdJTVAgYXBwbGlj\nYXRpb24gY29yZSB0aHJvdWdoIHRoZSBtZWRpdW0gb2YgbGliZ2ltcAogIG9y\nIGFub3RoZXIgaW1wbGVtZW50YXRpb24gb2YgdGhlICdwcm9jZWR1cmFsIGRh\ndGFiYXNlJyAocGRiKSBzZXJpYWwKICBwcm90b2NvbCwgdGhlbiB0aGUgR0lN\nUCBkZXZlbG9wZXJzJyBwb3NpdGlvbiBpcyB0aGF0IHRoaXMgaXMgYSAnbWVy\nZQogIGFnZ3JlZ2F0aW9uJyBvZiB0aGUgcHJvZ3JhbSBpbnZva2luZyB0aGUg\nbWV0aG9kIGFuZCB0aGUgcHJvZ3JhbQogIGltcGxlbWVudGluZyB0aGUgbWV0\naG9kIGFzIHBlciBzZWN0aW9uIDIgb2YgdGhlIEdOVSBHZW5lcmFsIFB1Ymxp\nYwogIExpY2Vuc2UuCgoqICdsaWJnaW1wJyBhbmQgdGhlIG90aGVyIEdJTVAg\nbGlicmFyaWVzIGFyZSBsaWNlbnNlZCB1bmRlciB0aGUKICBHTlUgTEVTU0VS\nIEdFTkVSQUwgUFVCTElDIExJQ0VOU0UgLS0gc2VlIHRoZSAnQ09QWUlORycg\nZmlsZSBpbiB0aGUKICBsaWJnaW1wIGRpcmVjdG9yeSBmb3IgZGV0YWlscy4K\nCiogSWNvbiB0aGVtZXMgYXJlIGxpY2Vuc2VkIHVuZGVyIENyZWF0aXZlIENv\nbW1vbnMgYnktc2EgMy4wIG9yIDQuMC4gU2VlCiAgdGhlICdDT1BZSU5HJyBm\naWxlcyBpbiBpY29ucy9TeW1ib2xpYyBhbmQgaWNvbnMvQ29sb3IgcmVzcGVj\ndGl2ZWx5LgoKKiBBbnkgZGF0YSB1c2VkIGluIGFydHdvcmtzLCBzdWNoIGFz\nIGJydXNoZXMsIHBhdHRlcm5zIGFuZCB0aGUgbGlrZSwgYW5kIG1vcmUKICBi\ncm9hZGx5IGxpa2VseSBhbGwgZGF0YSBpbnNpZGUgdGhlIGRhdGEvIGZvbGRl\nciBzaG91bGQgYmUgdW5kZXIgYSBDQzAgbGljZW5zZQogIChDcmVhdGl2ZSBD\nb21tb25zIFplcm8pIG9yIGVxdWl2YWxlbnQsIGkuZS4gIk5vIHJpZ2h0cyBS\nZXNlcnZlZCIsIGJlY2F1c2UgR0lNUAogIGNvbnRyaWJ1dG9ycyBjbGVhcmx5\nIGRvbid0IGludGVuZCB0byBjbGFpbSBhbnkgcmlnaHQgb24gYW55b25lJ3Mg\nd29yayBqdXN0CiAgYmVjYXVzZSB0aGV5IHVzZWQgR0lNUCBhbmQgaXRzIGRl\nZmF1bHQgZGF0YS4KICBXZSBjYW5ub3QgY2xlYXJseSBnaXZlIHByb3BlciBs\naWNlbnNpbmcgb24gYWxsIGV4aXN0aW5nIGRhdGEsIHByaW9yIHRvIHRoZQog\nIGFkZGl0aW9uIG9mIHRoaXMgbm90ZSBpbiB0aGUgTElDRU5TRSBmaWxlIChm\nb3IgaGlzdG9yaWNhbCByZWFzb25zLCBzaW1wbHkKICBiZWNhdXNlIHRoZWly\nIGNvbnRyaWJ1dG9ycyBhcmUgc2luY2UgbG9uZyBnb25lKSwgdGhvdWdoIHdl\nIGNhbiBzYXkgdGhhdCBhbgogIHVuY291bnRhYmxlIG51bWJlciBvZiB1c2Vy\ncyBoYXZlIHVzZWQgdGhlc2UgZm9yIGRvemVucyBvZiB5ZWFycyBhbmQgbmV2\nZXIgaGFkCiAgbGVnYWwgcHJvYmxlbXMgYXMgZmFyIGFzIHdlIGtub3cgKGl0\nIGlzIGFueXdheSB1bmNsZWFyIHdoZXRoZXIgYW55b25lIGNvdWxkCiAgcmVh\nbGx5IGNsYWltIGFueSByaWdodCBmb3IgdmVyeSBiYXNpYyBicnVzaCBvciBw\nYXR0ZXJuIHVzYWdlKS4gU2luY2UgMjAxNSwgd2UKICBldmVuIGhhdmUgYSBj\nbGVhciBGQVEgZW50cnkgdG8gZXhwbGljaXRseSBzYXkgdGhlIEdJTVAgcHJv\namVjdCBoYXMgbm8KICBpbnRlbnRpb24gd2hhdHNvZXZlciB0byBwdXQgcmVz\ndHJpY3Rpb25zIG9uIHBlb3BsZSdzIHdvcms6CiAgaHR0cHM6Ly93d3cuZ2lt\ncC5vcmcvZG9jcy91c2VyZmFxLmh0bWwjY2FuLWktdXNlLWdpbXAtY29tbWVy\nY2lhbGx5CgogIFRoZXJlZm9yZSBhbnkgbmV3IGRhdGEgZmlsZSB1bmRlciB0\naGUgZGF0YS8gZm9sZGVyIHdpbGwgYmUgZXhwZWN0ZWQgdG8gYmUgQ0MwLgog\nIEFsbCBjb250cmlidXRvcnMgYXJlIGV4cGVjdGVkIHRvIHJlYWQgdGhlIExJ\nQ0VOU0UgZmlsZSBhbmQgdGhlcmVmb3JlIGFyZQogIGltcGxpY2l0bHkgYWdy\nZWVpbmcgdG8gbGljZW5zZSB0aGVpciBkYXRhIHVuZGVyIENDMCBieSBjb250\ncmlidXRpbmcgaXQgYXMgY29yZQogIEdJTVAgZGF0YS4K\n",
+        "encoding": "base64",
+        "_links": {
+          "self": "https://api.github.com/repos/GNOME/gimp/contents/LICENSE?ref=e7617d91ca3f795cd6277814d1d02a59e90c1a29",
+          "git": "https://api.github.com/repos/GNOME/gimp/git/blobs/eb43828b995bd169913e2032aed4201194562d70",
+          "html": "https://github.com/GNOME/gimp/blob/e7617d91ca3f795cd6277814d1d02a59e90c1a29/LICENSE"
+        },
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        }
+      },
+      "error": null,
+      "text": "* The GIMP application core, and other portions of the official GIMP\n  distribution not explicitly licensed otherwise, are licensed under\n  the GNU GENERAL PUBLIC LICENSE -- see the 'COPYING' file in this\n  directory for details.\n\n[ The below explicit exemption, we hope, clears up the GIMP\n  developers' position concerning an ambiguity with the GNU General\n  Public License concerning what constitutes a 'mere aggregation'\n  versus a combined or derived work.  The intention is to make it\n  clear that arbitrarily-licensed programs such as GIMP plug-ins do\n  not automatically assume the GNU General Public License (GPL)\n  themselves simply because of their invocation of (or by) procedures\n  implemented in GPL-licensed code, via libgimp or a similar interface\n  to methods provided by the pdb: ]\n\n* If you create a program which invokes (or provides) methods within\n  (or for) the GPL GIMP application core through the medium of libgimp\n  or another implementation of the 'procedural database' (pdb) serial\n  protocol, then the GIMP developers' position is that this is a 'mere\n  aggregation' of the program invoking the method and the program\n  implementing the method as per section 2 of the GNU General Public\n  License.\n\n* 'libgimp' and the other GIMP libraries are licensed under the\n  GNU LESSER GENERAL PUBLIC LICENSE -- see the 'COPYING' file in the\n  libgimp directory for details.\n\n* Icon themes are licensed under Creative Commons by-sa 3.0 or 4.0. See\n  the 'COPYING' files in icons/Symbolic and icons/Color respectively.\n\n* Any data used in artworks, such as brushes, patterns and the like, and more\n  broadly likely all data inside the data/ folder should be under a CC0 license\n  (Creative Commons Zero) or equivalent, i.e. \"No rights Reserved\", because GIMP\n  contributors clearly don't intend to claim any right on anyone's work just\n  because they used GIMP and its default data.\n  We cannot clearly give proper licensing on all existing data, prior to the\n  addition of this note in the LICENSE file (for historical reasons, simply\n  because their contributors are since long gone), though we can say that an\n  uncountable number of users have used these for dozens of years and never had\n  legal problems as far as we know (it is anyway unclear whether anyone could\n  really claim any right for very basic brush or pattern usage). Since 2015, we\n  even have a clear FAQ entry to explicitly say the GIMP project has no\n  intention whatsoever to put restrictions on people's work:\n  https://www.gimp.org/docs/userfaq.html#can-i-use-gimp-commercially\n\n  Therefore any new data file under the data/ folder will be expected to be CC0.\n  All contributors are expected to read the LICENSE file and therefore are\n  implicitly agreeing to license their data under CC0 by contributing it as core\n  GIMP data.\n"
+    },
+    "release": {
+      "status": 1,
+      "url": "https://api.github.com/repos/GNOME/gimp/releases/latest",
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+        "status": "404"
+      },
+      "error": "gh: Not Found (HTTP 404)"
+    }
+  }
+}

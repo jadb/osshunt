@@ -16,7 +16,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Enterprise SSO and advanced audit capabilities; Enterprise embedded authoring/editor and white-label embedding
 
-Repository: pushed 2026-10-21T18:10:28Z; latest published release v2.21.0 (2026-10-19T01:25:42Z). Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T18:10:28Z; latest commit 2026-10-21T05:26:58Z; latest published release v2.21.0 (2026-10-19T01:25:42Z). Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Docusign → Documenso: **partial**. PDF signing, templates and API suit basic agreement flows. Recreate templates and integrations; enterprise SSO and embedded editor needs require edition review. [1](https://docs.documenso.com/docs/policies/community-edition) [2](https://docs.documenso.com/docs/self-hosting)
 
@@ -28,7 +28,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Automated reminders; Custom email content and branding; Bulk sending; API and embedding require Pro; on-prem API/embedding also metered
 
-Repository: pushed 2026-10-19T12:29:41Z; latest published release 3.3.3 (2026-10-19T12:29:42Z). Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-19T12:29:41Z; latest commit 2026-10-19T11:57:12Z; latest published release 3.3.3 (2026-10-19T12:29:42Z). Quick analysis: 5.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Docusign → DocuSeal: **partial**. Basic PDF document signing and templates; official pricing offers DocuSign template import with Pro. Reminders, bulk sends, API/embedding require Pro; no archive migration verified. [1](https://www.docuseal.com/pricing)
 
@@ -40,7 +40,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: API token generation unavailable in free self-hosted edition; Premium-credit features include bulk sending, public template signing, kiosk mode and embedded signing
 
-Repository: pushed 2026-10-21T16:53:51Z; latest published release v3.0.0 (2026-10-21T16:53:51Z). Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T16:53:51Z; latest commit 2026-10-21T14:02:34Z; latest published release v3.0.0 (2026-10-21T16:53:51Z). Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Docusign → OpenSign: **partial**. PDF signing, templates, signing order and completion tracking fit basic workflows. Free self-hosted API token generation unavailable; paid integration and premium-credit workflows need separate evaluation. [1](https://github.com/OpenSignLabs/OpenSign) [2](https://docs.opensignlabs.com/docs/help/Settings/APIToken/)
 

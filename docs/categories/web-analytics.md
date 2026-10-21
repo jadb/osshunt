@@ -16,7 +16,7 @@ License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party
 
 Paid restrictions: Funnels premium plugin; Custom Reports premium plugin; Heatmaps and Session Recording premium plugin; Users Flow and Form Analytics premium plugins; Cohorts and multi-channel attribution premium plugins
 
-Repository: pushed 2026-10-21T19:39:12Z; latest published release 5.14.1 (2026-10-04T19:50:07Z). Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T19:39:12Z; latest commit 2026-10-21T19:07:24Z; latest published release 5.14.1 (2026-10-04T19:50:07Z). Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Google Analytics 360 → Matomo: **partial**. Core covers traffic, events and ecommerce; configure own tracker and tags. Premium features require separately licensed plugins; Google advertising attribution/integrations are not assumed equivalent. [1](https://matomo.org/pricing/) [2](https://marketingplatform.google.com/about/analytics-360/)
 
@@ -28,7 +28,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Marketing funnels unavailable in CE; User journeys unavailable in CE; Ecommerce revenue goals unavailable in CE; SSO and Sites API unavailable in CE
 
-Repository: pushed 2026-10-21T19:00:30Z; latest published release v3.2.1 (2026-05-15T09:15:56Z). Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T19:00:30Z; latest commit 2026-10-21T18:55:21Z; latest published release v3.2.1 (2026-05-15T09:15:56Z). Quick analysis: 6.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Google Analytics 360 → Plausible Community Edition: **partial**. Simpler traffic and conversion reporting with different tracking/privacy model; CE excludes richer funnel, journey and ecommerce revenue analysis. Not an enterprise Google advertising stack replacement. [1](https://plausible.io/self-hosted-web-analytics) [2](https://marketingplatform.google.com/about/analytics-360/)
 
@@ -40,7 +40,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Paid-plan features are Cloud-only per self-host documentation; Platform packages reserve high-frequency/real-time alerts and white labeling; Platform packages reserve SAML, RBAC and property access controls
 
-Repository: pushed 2026-10-21T21:28:15Z; latest published release posthog-cli/v0.18.12 (2026-10-21T18:12:40Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:28:15Z; latest commit 2026-10-21T21:04:37Z; latest published release posthog-cli/v0.18.12 (2026-10-21T18:12:40Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Google Analytics 360 → PostHog core: **partial**. Product-oriented analytics and instrumentation differ from Google Analytics 360. Self-host requires substantial infrastructure ownership; no supported self-host guarantees or paid-plan features. [1](https://posthog.com/docs/self-host) [2](https://marketingplatform.google.com/about/analytics-360/)
 
@@ -52,7 +52,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Email reports available only in Cloud; Streaming API available only in Cloud
 
-Repository: pushed 2026-10-20T23:27:19Z; latest published release v3.4.0 (2026-09-17T04:21:49Z). Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-20T23:27:19Z; latest commit 2026-10-19T22:02:14Z; latest published release v3.4.0 (2026-09-17T04:21:49Z). Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Google Analytics 360 → Umami: **partial**. Traffic and events require replacing tracking instrumentation; no feature flags or experimentation assignment engine. Anonymous cross-device users are separate unless identified. [1](https://umami.is/product-analytics) [2](https://marketingplatform.google.com/about/analytics-360/)
 

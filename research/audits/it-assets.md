@@ -1,0 +1,21 @@
+> Temporary paths normalized; local operating setup omitted. Original retained locally.
+
+# IT asset management refresh — 2026-10-21
+
+1. Read category brief, global operating instructions, and the second category manifest. Scope: hardware/software asset records and lifecycle; avoid claiming endpoint management or a full service-desk replacement.
+2. Reused shared GitHub captures and authenticated rsx captures for snipe/snipe-it and glpi-project/glpi. Read metadata, pinned license, current commit and latest release. Initial verbose inspection truncated; followed with a compact field extraction. No redundant network health check.
+3. Web search queries: `site.snipeitapp.com pricing features all features hosted self hosted`; `site.glpi-project.org pricing subscription plugins asset management`; `site.lansweeper.com pricing assets`; `site.freshworks.com freshservice pricing asset units`. Used official results only. Snipe-IT pricing distinguishes service infrastructure features from software; GLPI exclusive plugins need closer examination. Freshservice prices in weighted asset units, not raw devices. Unofficial discussion results ignored.
+4. Opened https://www.lansweeper.com/pricing/, https://www.freshworks.com/freshservice/itam/pricing/, https://www.glpi-project.org/en/plugins/, https://snipeitapp.com/features (redirects /product). Lansweeper rendered several currency amounts without reliable currency association, so retain null rather than guess. Freshservice provides weighted-AU licensing but no extractable entry amount; retain null and pricing units.
+5. First compact capture extraction used the wrong nesting (`metadata` rather than `responses.metadata`) and failed KeyError. Second extraction used wrong `body` key and returned empty fields. Third extraction used correct `responses.*.data` and decoded base64 LICENSE. Successful pinned licenses: Snipe-IT AGPLv3, GLPI GPLv3. Metadata resolves Snipe-IT's renamed canonical repository to grokability/snipe-it; use canonical URL. Both active, unarchived, enabled; current release tags v8.8.2 and 12.0.0 respectively. Generic rsx license heuristics marked unknown; prefer actual pinned legal text, not heuristic.
+6. Opened https://snipeitapp.com/faq: explicit same software hosted/self-hosted; no proprietary feature withholding. No native discovery agent; integrations/API and current native sync adapters are distinct from independent discovery. Opened https://www.glpi-project.org/en/plugins/ exclusive section: Cloud Inventory, collaborative notifications and advanced dashboards subscriber-exclusive, not only SSO/admin. Classify GLPI C; support for community GLPI Inventory itself does not imply it is paid-only.
+7. Guessed GLPI CMDB URL https://www.glpi-project.org/en/cmdb/ failed; followed official CMDB navigation instead to https://www.glpi-project.org/en/cmdb-software/. Opened GLPI /en/pricing/ for first-party cloud evidence. Freshservice FAQ confirms weighted AU packs of 500 and current IT-plan dependency for added/upgraded ITAM. No raw-device price assumption.
+8. Tried pinned GitHub README web pages to inspect later-version grants; both web fetches failed (cache miss / unexpected status). Root LICENSE capture remains authoritative; record version 3 only and uncertainty rather than invent an “or later” grant.
+9. Wrote category JSON and 18 claim-level records with `python3 write-it-assets.py`. Two verified OSS choices preferred over unresearched filler: Snipe-IT A then GLPI C. Four partial edges address documented inventory overlap, explicitly excluding unverified discovery, service mapping and security-enrichment parity. Price amounts null where dynamic/localized pages did not establish a reliable current number.
+10. Parsed output JSON and claim JSONL; reviewed IDs, canonical repository, field types and source URLs. No repository changes, external messages or upstream actions.
+
+## Repeatable checks
+- Resolve canonical repository redirects before retaining a repository slug.
+- Distinguish supported community plugins from subscriber-exclusive code.
+- Parse unit-weight tables and required base-plan dependencies before comparing prices.
+- Preserve null when localized price rendering loses currency association.
+- Treat discovery agents, sync adapters and asset records as separate capabilities.

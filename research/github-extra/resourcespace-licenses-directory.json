@@ -1,0 +1,492 @@
+{
+  "command": [
+    "gh",
+    "api",
+    "repos/resourcespace/resourcespace/contents/documentation/licenses?ref=849371fc1a7cd90062ee90dfc86111e976457506"
+  ],
+  "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+  "exitCode": 0,
+  "data": [
+    {
+      "name": "DOMPurify.txt",
+      "path": "documentation/licenses/DOMPurify.txt",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/DOMPurify.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/DOMPurify.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/DOMPurify.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/DOMPurify.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/DOMPurify.txt"
+      }
+    },
+    {
+      "name": "annotorious.txt",
+      "path": "documentation/licenses/annotorious.txt",
+      "sha": "2380eec661b7f7c6f41c6e257b71e5339ebb0d3f",
+      "size": 1065,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/annotorious.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/annotorious.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/2380eec661b7f7c6f41c6e257b71e5339ebb0d3f",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/annotorious.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/annotorious.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/2380eec661b7f7c6f41c6e257b71e5339ebb0d3f",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/annotorious.txt"
+      }
+    },
+    {
+      "name": "chartjs-adapter-date-fns.md",
+      "path": "documentation/licenses/chartjs-adapter-date-fns.md",
+      "sha": "7505f2ad7c3ff12c74e930464f180b58a7a7ab22",
+      "size": 1088,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/chartjs-adapter-date-fns.md?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chartjs-adapter-date-fns.md",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/7505f2ad7c3ff12c74e930464f180b58a7a7ab22",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chartjs-adapter-date-fns.md",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/chartjs-adapter-date-fns.md?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/7505f2ad7c3ff12c74e930464f180b58a7a7ab22",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chartjs-adapter-date-fns.md"
+      }
+    },
+    {
+      "name": "chartjs.txt",
+      "path": "documentation/licenses/chartjs.txt",
+      "sha": "f216610fd7edadc57a11668b3ca5b7a400e5b96e",
+      "size": 1093,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/chartjs.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chartjs.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f216610fd7edadc57a11668b3ca5b7a400e5b96e",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chartjs.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/chartjs.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f216610fd7edadc57a11668b3ca5b7a400e5b96e",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chartjs.txt"
+      }
+    },
+    {
+      "name": "chosen.txt",
+      "path": "documentation/licenses/chosen.txt",
+      "sha": "5e1332c12767fa2926ce35086f1e945884dcf3ac",
+      "size": 1215,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/chosen.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chosen.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/5e1332c12767fa2926ce35086f1e945884dcf3ac",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chosen.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/chosen.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/5e1332c12767fa2926ce35086f1e945884dcf3ac",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/chosen.txt"
+      }
+    },
+    {
+      "name": "date-fns.txt",
+      "path": "documentation/licenses/date-fns.txt",
+      "sha": "29c6e85fd3248d26520354a84ee70e961f3475d1",
+      "size": 1117,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/date-fns.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/date-fns.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/29c6e85fd3248d26520354a84ee70e961f3475d1",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/date-fns.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/date-fns.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/29c6e85fd3248d26520354a84ee70e961f3475d1",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/date-fns.txt"
+      }
+    },
+    {
+      "name": "flot.txt",
+      "path": "documentation/licenses/flot.txt",
+      "sha": "f6b1375376808414e53c82b194b0cf5d6166e7d6",
+      "size": 1068,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/flot.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/flot.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f6b1375376808414e53c82b194b0cf5d6166e7d6",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/flot.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/flot.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f6b1375376808414e53c82b194b0cf5d6166e7d6",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/flot.txt"
+      }
+    },
+    {
+      "name": "heatmap.js.txt",
+      "path": "documentation/licenses/heatmap.js.txt",
+      "sha": "4a0d5ce9187795870630affd592d670551dcb282",
+      "size": 1055,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/heatmap.js.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/heatmap.js.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/4a0d5ce9187795870630affd592d670551dcb282",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/heatmap.js.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/heatmap.js.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/4a0d5ce9187795870630affd592d670551dcb282",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/heatmap.js.txt"
+      }
+    },
+    {
+      "name": "icc.txt",
+      "path": "documentation/licenses/icc.txt",
+      "sha": "2bdf10d26e53b9b003ca215ed8cc994a97b48244",
+      "size": 404,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/icc.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/icc.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/2bdf10d26e53b9b003ca215ed8cc994a97b48244",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/icc.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/icc.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/2bdf10d26e53b9b003ca215ed8cc994a97b48244",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/icc.txt"
+      }
+    },
+    {
+      "name": "jcrop.txt",
+      "path": "documentation/licenses/jcrop.txt",
+      "sha": "4f3a0fe43a2de0085c8420fec60b6c2415b5c55c",
+      "size": 1103,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jcrop.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jcrop.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/4f3a0fe43a2de0085c8420fec60b6c2415b5c55c",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jcrop.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jcrop.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/4f3a0fe43a2de0085c8420fec60b6c2415b5c55c",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jcrop.txt"
+      }
+    },
+    {
+      "name": "jquery-image-annotation.txt",
+      "path": "documentation/licenses/jquery-image-annotation.txt",
+      "sha": "fd1cee4baff265a5bad1748b882cc1c135b6328b",
+      "size": 29880,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-image-annotation.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-image-annotation.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/fd1cee4baff265a5bad1748b882cc1c135b6328b",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-image-annotation.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-image-annotation.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/fd1cee4baff265a5bad1748b882cc1c135b6328b",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-image-annotation.txt"
+      }
+    },
+    {
+      "name": "jquery-layout.txt",
+      "path": "documentation/licenses/jquery-layout.txt",
+      "sha": "d0e6eb455949b4e8f1b5b815dbea7bcfb656052f",
+      "size": 61,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-layout.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-layout.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/d0e6eb455949b4e8f1b5b815dbea7bcfb656052f",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-layout.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-layout.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/d0e6eb455949b4e8f1b5b815dbea7bcfb656052f",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-layout.txt"
+      }
+    },
+    {
+      "name": "jquery-ui.txt",
+      "path": "documentation/licenses/jquery-ui.txt",
+      "sha": "4819e54213fd2ad7b8aff572fc737832a49d9b2a",
+      "size": 1817,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-ui.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-ui.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/4819e54213fd2ad7b8aff572fc737832a49d9b2a",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-ui.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-ui.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/4819e54213fd2ad7b8aff572fc737832a49d9b2a",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-ui.txt"
+      }
+    },
+    {
+      "name": "jquery-validation.txt",
+      "path": "documentation/licenses/jquery-validation.txt",
+      "sha": "dc377cc031064ba146e9af3cb64155522ade5cfa",
+      "size": 1095,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-validation.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-validation.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/dc377cc031064ba146e9af3cb64155522ade5cfa",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-validation.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-validation.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/dc377cc031064ba146e9af3cb64155522ade5cfa",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-validation.txt"
+      }
+    },
+    {
+      "name": "jquery-zoom.txt",
+      "path": "documentation/licenses/jquery-zoom.txt",
+      "sha": "2de673bfa049c626b1a952444330d2b19920e642",
+      "size": 1076,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-zoom.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-zoom.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/2de673bfa049c626b1a952444330d2b19920e642",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-zoom.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery-zoom.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/2de673bfa049c626b1a952444330d2b19920e642",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery-zoom.txt"
+      }
+    },
+    {
+      "name": "jquery.capslockstate.txt",
+      "path": "documentation/licenses/jquery.capslockstate.txt",
+      "sha": "72dd1f6a94f0c13abb9d9f2f9ef2878961f3b000",
+      "size": 1056,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery.capslockstate.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.capslockstate.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/72dd1f6a94f0c13abb9d9f2f9ef2878961f3b000",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.capslockstate.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery.capslockstate.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/72dd1f6a94f0c13abb9d9f2f9ef2878961f3b000",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.capslockstate.txt"
+      }
+    },
+    {
+      "name": "jquery.tshift.txt",
+      "path": "documentation/licenses/jquery.tshift.txt",
+      "sha": "e034fdeff798e8e745859e46e1e140e3529314d9",
+      "size": 1090,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery.tshift.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.tshift.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/e034fdeff798e8e745859e46e1e140e3529314d9",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.tshift.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery.tshift.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/e034fdeff798e8e745859e46e1e140e3529314d9",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.tshift.txt"
+      }
+    },
+    {
+      "name": "jquery.txt",
+      "path": "documentation/licenses/jquery.txt",
+      "sha": "f642c3f7a77a5833bc3dfee643ad8ca6387b23e7",
+      "size": 1097,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f642c3f7a77a5833bc3dfee643ad8ca6387b23e7",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jquery.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f642c3f7a77a5833bc3dfee643ad8ca6387b23e7",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jquery.txt"
+      }
+    },
+    {
+      "name": "jstree.txt",
+      "path": "documentation/licenses/jstree.txt",
+      "sha": "470dd6181a29db91e24f87371d594d2cbc4af771",
+      "size": 1079,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jstree.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jstree.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/470dd6181a29db91e24f87371d594d2cbc4af771",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jstree.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/jstree.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/470dd6181a29db91e24f87371d594d2cbc4af771",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/jstree.txt"
+      }
+    },
+    {
+      "name": "leaflet.txt",
+      "path": "documentation/licenses/leaflet.txt",
+      "sha": "bcb3ba1aca095155857556d96e3193a50fe1bd11",
+      "size": 1395,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/leaflet.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/leaflet.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/bcb3ba1aca095155857556d96e3193a50fe1bd11",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/leaflet.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/leaflet.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/bcb3ba1aca095155857556d96e3193a50fe1bd11",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/leaflet.txt"
+      }
+    },
+    {
+      "name": "lightbox.txt",
+      "path": "documentation/licenses/lightbox.txt",
+      "sha": "0b34e121c4afd4271fe7eb06253da50d6e51b519",
+      "size": 1080,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/lightbox.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/lightbox.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/0b34e121c4afd4271fe7eb06253da50d6e51b519",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/lightbox.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/lightbox.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/0b34e121c4afd4271fe7eb06253da50d6e51b519",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/lightbox.txt"
+      }
+    },
+    {
+      "name": "openseadragon.txt",
+      "path": "documentation/licenses/openseadragon.txt",
+      "sha": "d4e2560823027be42e8c7df54d2383f738728a88",
+      "size": 1525,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/openseadragon.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/openseadragon.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/d4e2560823027be42e8c7df54d2383f738728a88",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/openseadragon.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/openseadragon.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/d4e2560823027be42e8c7df54d2383f738728a88",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/openseadragon.txt"
+      }
+    },
+    {
+      "name": "pdfjs.txt",
+      "path": "documentation/licenses/pdfjs.txt",
+      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "size": 10174,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/pdfjs.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/pdfjs.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/pdfjs.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/pdfjs.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/f433b1a53f5b830a205fd2df78e2b34974656c7b",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/pdfjs.txt"
+      }
+    },
+    {
+      "name": "resourcespace.txt",
+      "path": "documentation/licenses/resourcespace.txt",
+      "sha": "95831724b72bdf4c5c163f1f34399a95c49af288",
+      "size": 1982,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/resourcespace.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/resourcespace.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/95831724b72bdf4c5c163f1f34399a95c49af288",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/resourcespace.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/resourcespace.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/95831724b72bdf4c5c163f1f34399a95c49af288",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/resourcespace.txt"
+      }
+    },
+    {
+      "name": "tinymce.md",
+      "path": "documentation/licenses/tinymce.md",
+      "sha": "70454a6387194ce998007d30822c96e5206d1994",
+      "size": 303,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/tinymce.md?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/tinymce.md",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/70454a6387194ce998007d30822c96e5206d1994",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/tinymce.md",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/tinymce.md?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/70454a6387194ce998007d30822c96e5206d1994",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/tinymce.md"
+      }
+    },
+    {
+      "name": "toastify-js",
+      "path": "documentation/licenses/toastify-js",
+      "sha": "506b07264142b31ea9b7096457669c22ff8f0f72",
+      "size": 1064,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/toastify-js?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/toastify-js",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/506b07264142b31ea9b7096457669c22ff8f0f72",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/toastify-js",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/toastify-js?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/506b07264142b31ea9b7096457669c22ff8f0f72",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/toastify-js"
+      }
+    },
+    {
+      "name": "uppy.txt",
+      "path": "documentation/licenses/uppy.txt",
+      "sha": "c237473300dcfa99369342b98c5e976fc9c6375d",
+      "size": 1078,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/uppy.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/uppy.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/c237473300dcfa99369342b98c5e976fc9c6375d",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/uppy.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/uppy.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/c237473300dcfa99369342b98c5e976fc9c6375d",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/uppy.txt"
+      }
+    },
+    {
+      "name": "video.js.txt",
+      "path": "documentation/licenses/video.js.txt",
+      "sha": "8a7f05ff3c663cec554a48d37040f7cb3f2de6bb",
+      "size": 578,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/video.js.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/video.js.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/8a7f05ff3c663cec554a48d37040f7cb3f2de6bb",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/video.js.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/video.js.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/8a7f05ff3c663cec554a48d37040f7cb3f2de6bb",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/video.js.txt"
+      }
+    },
+    {
+      "name": "videojs-resolution-switcher.txt",
+      "path": "documentation/licenses/videojs-resolution-switcher.txt",
+      "sha": "8d424b20c0f3c88f8f3d96a2074889d0ab65f6c2",
+      "size": 582,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/videojs-resolution-switcher.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/videojs-resolution-switcher.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/8d424b20c0f3c88f8f3d96a2074889d0ab65f6c2",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/videojs-resolution-switcher.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/videojs-resolution-switcher.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/8d424b20c0f3c88f8f3d96a2074889d0ab65f6c2",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/videojs-resolution-switcher.txt"
+      }
+    },
+    {
+      "name": "wordpress.txt",
+      "path": "documentation/licenses/wordpress.txt",
+      "sha": "431a146a67bc59b67b65cd66439bf48923b0ee49",
+      "size": 16899,
+      "url": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/wordpress.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+      "html_url": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/wordpress.txt",
+      "git_url": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/431a146a67bc59b67b65cd66439bf48923b0ee49",
+      "download_url": "https://raw.githubusercontent.com/resourcespace/resourcespace/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/wordpress.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/resourcespace/resourcespace/contents/documentation/licenses/wordpress.txt?ref=849371fc1a7cd90062ee90dfc86111e976457506",
+        "git": "https://api.github.com/repos/resourcespace/resourcespace/git/blobs/431a146a67bc59b67b65cd66439bf48923b0ee49",
+        "html": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/wordpress.txt"
+      }
+    }
+  ],
+  "error": ""
+}

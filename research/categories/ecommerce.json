@@ -1,0 +1,231 @@
+{
+  "category": {
+    "id": "ecommerce",
+    "name": "Ecommerce",
+    "description": "Build online storefronts and manage catalogs, checkout, orders and commerce integrations.",
+    "audience": "Online merchants and the developers or agencies building their stores.",
+    "audienceReach": "functional",
+    "audienceRationale": "Used across industries by businesses selling online; adoption centers on commerce operations and implementation teams.",
+    "audienceSources": [
+      "https://www.shopify.com/about",
+      "https://prestashop.com/open-source/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "url": "https://www.shopify.com",
+      "categories": [
+        "ecommerce"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 29,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Basic storefront plan: USD 29/month billed yearly; promotional trial excluded. Payment processing and apps may add costs.",
+        "source": "https://www.shopify.com/about"
+      }
+    },
+    {
+      "id": "bigcommerce",
+      "name": "BigCommerce",
+      "url": "https://www.bigcommerce.com",
+      "categories": [
+        "ecommerce"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 29,
+        "currency": "USD",
+        "period": "month",
+        "unit": "account",
+        "billing": "annual",
+        "note": "Core: USD 29/month billed annually; up to USD 30K trailing-twelve-month GMV then automatic Growth upgrade. Payment charges may apply.",
+        "source": "https://www.bigcommerce.com/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "woocommerce",
+      "name": "WooCommerce",
+      "url": "https://woocommerce.com",
+      "categories": [
+        "ecommerce"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/woocommerce/woocommerce",
+      "license": "GPL-2.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "First-party WooCommerce Subscriptions adds recurring billing, automatic renewal retries and subscriber plan management through a paid annual extension; GPL licensing does not make vendor acquisition free."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPL WooCommerce core is free and self-hostable. Tier C reflects first-party paid software extensions for recurring commerce workflows, including WooCommerce Subscriptions. The extensions remain GPL; this is a paid acquisition boundary, not a claim of proprietary licensing. Core one-time storefront, catalog and order workflows remain available without that extension.",
+      "serviceLimitations": [
+        "Marketplace downloads, updates and support may require a paid subscription.",
+        "Payments, tax, shipping and other remote services may require vendor accounts, connections and usage charges.",
+        "First-party hosted WooCommerce is available through Automattic WordPress.com Commerce; Woo Express is discontinued."
+      ],
+      "sources": {
+        "license": "https://github.com/woocommerce/woocommerce/blob/f9281bb7f7f44b95fa700b3b1b0a07f263bd2df5/license.txt",
+        "features": "https://woocommerce.com/products/woocommerce-subscriptions/",
+        "hosting": "https://wordpress.com/support/plan-features/ecommerce-plan/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:03:30Z",
+        "lastRelease": "11.2.1",
+        "lastReleaseAt": "2026-10-09T18:16:12Z",
+        "commit": "f9281bb7f7f44b95fa700b3b1b0a07f263bd2df5",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/woocommerce/woocommerce",
+        "rsx": "Overall score 6.2/10. Activity 6.0, maintenance 9.0, security 3.4, and license 9.0 are the main decision signals."
+      }
+    },
+    {
+      "id": "prestashop",
+      "name": "PrestaShop",
+      "url": "https://prestashop.com/open-source/",
+      "categories": [
+        "ecommerce"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/PrestaShop/PrestaShop",
+      "license": "OSL-3.0 AND AFL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Tier A applies to the PrestaShop Project core (OSL-3.0) and bundled modules (AFL-3.0), both OSI licenses. Classic is a free downloadable distribution; Hosted adds hosting, installation and support. Marketplace modules and remote services need separate review; Enterprise source access alone does not prove its additions are OSI.",
+      "serviceLimitations": [
+        "Paid hosting, support, payment processing and optional marketplace modules/services can add costs."
+      ],
+      "sources": {
+        "license": "https://github.com/PrestaShop/PrestaShop/blob/6d78ac503209f6dc86488644abe7cf15c01d348c/LICENSE.md",
+        "features": "https://prestashop.com/prestashop-offers/",
+        "hosting": "https://prestashop.com/prestashop-offers/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T12:33:35Z",
+        "lastRelease": "9.2.0",
+        "lastReleaseAt": "2026-09-30T09:56:24Z",
+        "commit": "6d78ac503209f6dc86488644abe7cf15c01d348c",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/PrestaShop/PrestaShop",
+        "rsx": "Overall score 5.0/10. Activity 4.9, maintenance 10.0, security 0.0, and license 3.0 are the main decision signals."
+      }
+    },
+    {
+      "id": "medusa",
+      "name": "Medusa",
+      "url": "https://medusajs.com",
+      "categories": [
+        "ecommerce"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/medusajs/medusa",
+      "license": "MIT",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "B",
+      "locked": [
+        "Role-based access control (RBAC) requires an Enterprise commercial agreement.",
+        "Single sign-on (SSO) requires an Enterprise commercial agreement."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "MIT core is self-hostable; root LICENSE explicitly excludes proprietary Enterprise materials listed in ENTERPRISE-LICENSE.md. RBAC and SSO are licensed software gates, not just hosting benefits. Tier B and osi=true refer to MIT core only.",
+      "serviceLimitations": [
+        "Medusa Cloud hosting, infrastructure, email and search allowances have separate paid plans and usage limits."
+      ],
+      "sources": {
+        "license": "https://github.com/medusajs/medusa/blob/f7add009dd2f142d98090a5194750e71b2147ddf/LICENSE",
+        "features": "https://medusajs.com/pricing",
+        "hosting": "https://medusajs.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T20:53:22Z",
+        "lastRelease": "v2.22.0",
+        "lastReleaseAt": "2026-10-21T10:58:20Z",
+        "commit": "f7add009dd2f142d98090a5194750e71b2147ddf",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/medusajs/medusa",
+        "rsx": "Overall score 6.7/10. Activity 5.9, maintenance 10.0, security 5.4, and license 3.0 are the main decision signals."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "shopify--woocommerce",
+      "to": "woocommerce",
+      "fit": "partial",
+      "migrationNotes": "Suitable for a merchant storefront on WordPress. Built-in CSV tools move product catalog data after mapping the WooCommerce schema; this is not a full-store migration. Rebuild design, checkout integrations and platform-specific apps; plan separately for orders, customers, subscriptions and URLs.",
+      "sources": [
+        "https://woocommerce.com/pricing/",
+        "https://woocommerce.com/document/product-csv-importer-exporter/"
+      ],
+      "from": "shopify"
+    },
+    {
+      "id": "bigcommerce--woocommerce",
+      "to": "woocommerce",
+      "fit": "partial",
+      "migrationNotes": "Suitable for a merchant storefront on WordPress. Built-in CSV tools move product catalog data after mapping the WooCommerce schema; this is not a full-store migration. Rebuild design, checkout integrations and platform-specific apps; plan separately for orders, customers, subscriptions and URLs.",
+      "sources": [
+        "https://woocommerce.com/pricing/",
+        "https://woocommerce.com/document/product-csv-importer-exporter/"
+      ],
+      "from": "bigcommerce"
+    },
+    {
+      "id": "shopify--prestashop",
+      "to": "prestashop",
+      "fit": "partial",
+      "migrationNotes": "Another merchant storefront and back office, with responsibility for self-hosting or a separate hosting plan. Rebuild theme and integrations and validate catalog, order and customer migration. No automatic Shopify app, checkout or full-store transfer established.",
+      "sources": [
+        "https://prestashop.com/open-source/",
+        "https://prestashop.com/prestashop-offers/"
+      ],
+      "from": "shopify"
+    },
+    {
+      "id": "shopify--medusa",
+      "to": "medusa",
+      "fit": "different-approach",
+      "migrationNotes": "Developer-built commerce backend and admin with storefront starters rather than a turnkey merchant SaaS. Budget implementation of storefront and integrations; no automatic Shopify app or complete data transfer verified. Enterprise RBAC/SSO need a commercial agreement.",
+      "sources": [
+        "https://github.com/medusajs/medusa",
+        "https://medusajs.com/pricing"
+      ],
+      "from": "shopify"
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "WordPress standalone CMS record",
+      "reason": "WordPress is the platform prerequisite for WooCommerce; existing wordpress product remains in CMS. Ecommerce functionality is represented by distinct WooCommerce product.",
+      "sources": [
+        "https://woocommerce.com/pricing/"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "PrestaShop Enterprise additions and individual marketplace module/service licenses not exhaustively audited; Tier A is scoped to Project core and bundled modules, not all commercial offerings.",
+    "Medusa Enterprise license was read from current develop search capture; SHA-pinned Enterprise page fetch failed. SHA-pinned root LICENSE explicitly confirms Enterprise exclusion.",
+    "Full-store migration and automatic app/theme portability were not verified. Edges describe capability fit and conservative implementation limits."
+  ]
+}

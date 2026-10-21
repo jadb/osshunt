@@ -1,0 +1,204 @@
+{
+  "category": {
+    "id": "expense-reimbursements",
+    "name": "Expense reimbursements",
+    "description": "Employee expense claims, receipt submission, approval workflows and reimbursement status.",
+    "audience": "Employees claiming business expenses, approving managers and finance operations teams.",
+    "audienceReach": "broad",
+    "audienceRationale": "Expense reimbursement spans employers across industries; employees submit claims while managers and finance teams approve and settle them.",
+    "audienceSources": [
+      "https://frappe.io/hr/expense-management",
+      "https://www.concur.com/products/concur-expense"
+    ]
+  },
+  "paid": [
+    {
+      "id": "expensify",
+      "name": "Expensify",
+      "url": "https://www.expensify.com/",
+      "categories": [
+        "expense-reimbursements"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 5,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "monthly",
+        "note": "Collect announced at $5/member/month without annual commitment or card requirement. Current pricing page extraction returned only application shell; corroborated by official pricing announcement and current support search. Legacy and Control pricing differs.",
+        "source": "https://use.expensify.com/blog/collect-plan-pricing-update"
+      }
+    },
+    {
+      "id": "spendesk",
+      "name": "Spendesk",
+      "url": "https://www.spendesk.com/",
+      "categories": [
+        "expense-reimbursements"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "month",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Quote required: fixed monthly platform subscription plus transaction fees including expense claims; unlimited users. No public entry amount.",
+        "source": "https://www.spendesk.com/pricing/"
+      }
+    },
+    {
+      "id": "sap-concur",
+      "name": "SAP Concur",
+      "url": "https://www.concur.com/products/concur-expense",
+      "categories": [
+        "expense-reimbursements"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "usage",
+        "entryAmount": 7,
+        "currency": "USD",
+        "period": "month",
+        "unit": "usage",
+        "billing": "monthly",
+        "note": "US Concur Expense Base starts at $7 per report, unlimited users; price varies by monthly commitment. Plus starts $11/report; Premium custom. This amount is per report, not total monthly subscription.",
+        "source": "https://www.concur.com/products/concur-expense"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "frappe-hr",
+      "name": "Frappe HR",
+      "url": "https://frappe.io/hr",
+      "categories": [
+        "expense-reimbursements"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/frappe/hrms",
+      "license": "GPL-3.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "GPLv3 core with no separate paid feature edition identified: official pricing charges hosting and implementation. Claims, receipts, conditional multi-level approvals, advances and reimbursement payment records documented. Separate Frappe HR app requires ERPNext; this is one combined deployment, not two independent expense choices. Pinned GPL license takes precedence over pricing page AGPL label.",
+      "sources": {
+        "license": "https://github.com/frappe/hrms/blob/7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2/license.txt",
+        "features": "https://frappe.io/hr/expense-management",
+        "hosting": "https://frappe.io/hr/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T13:17:00Z",
+        "lastRelease": "v15.64.6",
+        "lastReleaseAt": "2026-10-21T13:17:01Z",
+        "commit": "7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/frappe/hrms",
+        "rsx": "Central quick analysis: score 6.5/10; balanced policy passed. Commercial-use warning on GPL not accepted as a legal conclusion."
+      },
+      "serviceLimitations": [
+        "Self-operated deployment requires Frappe Framework and ERPNext; setup, email, backups and maintenance are operator responsibilities.",
+        "Payment Entry records settlement; bank payout rails, corporate cards, receipt OCR and travel booking parity with incumbents not verified."
+      ]
+    },
+    {
+      "id": "erpnext",
+      "name": "ERPNext",
+      "url": "https://frappe.io/erpnext",
+      "categories": [
+        "expense-reimbursements"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/frappe/erpnext",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Canonical GPL ERPNext remains Tier A with no feature paywalls, but is not a standalone recommendation for this category. HR modules moved to Frappe HR from version 14; current expense-claim documentation redirects to HR. ERPNext supplies the required connected foundation for Frappe HR expense settlement, not a second independent expense product.",
+      "sources": {
+        "license": "https://github.com/frappe/erpnext/blob/997a85da90e2bfc7f0d9b27455faae09c3148ac8/license.txt",
+        "features": "https://frappe.io/erpnext/pricing",
+        "hosting": "https://frappe.io/erpnext/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:24:59Z",
+        "lastRelease": "v16.52.0",
+        "lastReleaseAt": "2026-10-21T11:01:19Z",
+        "commit": "997a85da90e2bfc7f0d9b27455faae09c3148ac8",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/frappe/erpnext",
+        "rsx": "Central authenticated rsx quick analysis completed; overall 5.3/10; not a license/feature-gate determination."
+      },
+      "serviceLimitations": [
+        "Expense claim submission and approval require the separately installed Frappe HR app; use frappe-hr recommendation."
+      ]
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "expensify--frappe-hr",
+      "from": "expensify",
+      "to": "frappe-hr",
+      "fit": "partial",
+      "migrationNotes": "Employee receipt-backed claims, approvals and reimbursement records overlap. Deploy Frappe HR with ERPNext; map employees, expense types, approvers and outstanding claims. Expensify SmartScan, card feeds and direct global payout parity not verified. No automatic migration validated.",
+      "sources": [
+        "https://frappe.io/hr/expense-management",
+        "https://docs.frappe.io/hr/expense-claim",
+        "https://use.expensify.com/blog/collect-plan-pricing-update"
+      ]
+    },
+    {
+      "id": "spendesk--frappe-hr",
+      "from": "spendesk",
+      "to": "frappe-hr",
+      "fit": "partial",
+      "migrationNotes": "Fits employee out-of-pocket claims, conditional approvals and settlement tracking. Deploy Frappe HR with ERPNext and rebuild policies/approvers. Spendesk cards, procurement, payment rails and integrations are broader; no direct migration or service parity established.",
+      "sources": [
+        "https://frappe.io/hr/expense-management",
+        "https://docs.frappe.io/hr/expense-claim",
+        "https://www.spendesk.com/pricing/"
+      ]
+    },
+    {
+      "id": "sap-concur--frappe-hr",
+      "from": "sap-concur",
+      "to": "frappe-hr",
+      "fit": "partial",
+      "migrationNotes": "Fits receipt-backed expense claims, multi-level approvals and reimbursement records. Deploy Frappe HR with ERPNext and rebuild policies, employee mapping and unpaid claims. Concur travel booking, card feeds, automated receipt extraction and global payment integrations not verified; no direct migration established.",
+      "sources": [
+        "https://frappe.io/hr/expense-management",
+        "https://docs.frappe.io/hr/expense-claim",
+        "https://www.concur.com/products/concur-expense"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "ERPNext as a standalone expense tool",
+      "reason": "Expense claims belong to the separate Frappe HR app from version 14. ERPNext is its required foundation, so no independent paid-to-ERPNext edges are asserted.",
+      "sources": [
+        "https://github.com/frappe/hrms#motivation",
+        "https://github.com/frappe/hrms/blob/develop/hrms/hooks.py",
+        "https://docs.frappe.io/erpnext/user/manual/en/expense-claim"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Only one independently supported expense solution among assigned candidates; ERPNext retained as canonical product record and dependency, not padded into a second recommendation.",
+    "Frappe HR pricing page says AGPL-3.0 while current pinned repository root license is GPLv3; reused canonical GPL-3.0 identifier.",
+    "Frappe HR pinned hooks/README web fetch failed; current default-branch hooks search and official README installation instructions establish ERPNext dependency.",
+    "No hands-on deployment, import/export migration, bank payout execution, OCR or card-feed comparison performed. Expense payment records do not establish a hosted money-transfer service.",
+    "Expensify current pricing application shell was not extractable; official Collect announcement and current support search corroborate $5/member starting price."
+  ]
+}

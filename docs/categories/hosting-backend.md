@@ -16,7 +16,7 @@ Pricing explicitly grants all self-hosted features with no restrictions; cloud f
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/coollabsio/coolify/blob/91ea7d851e214951799842837a010a4dfe3487e7/LICENSE), [edition evidence](https://coolify.io/pricing), [hosting](https://coolify.io/pricing), [repository](https://github.com/coollabsio/coolify).
 
-Repository: pushed 2026-10-21T21:18:03Z; latest published release v4.4.7 (2026-10-21T14:12:45Z). Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:18:03Z; latest commit 2026-10-21T20:58:00Z; latest published release v4.4.7 (2026-10-21T14:12:45Z). Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Heroku → Coolify: **partial**. Git/container app deployment on your own servers; move environment variables, domains and databases; operate backups, security and scaling yourself. Heroku add-ons need replacements. [1](https://coolify.io/) [2](https://coolify.io/docs/)
 - Vercel → Coolify: **partial**. Deploy web apps and static sites to owned infrastructure; Vercel edge/CDN, serverless integrations and managed observability require separate infrastructure or adaptation. [1](https://coolify.io/) [2](https://coolify.io/docs/)
@@ -27,7 +27,7 @@ MIT volunteer project; FAQ confirms no commercial organization or vendor hosting
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/pocketbase/pocketbase/blob/6f370ea741f33adf889eef02e3c1b884a47aa522/LICENSE.md), [edition evidence](https://pocketbase.io/faq/), [hosting](https://pocketbase.io/faq/), [repository](https://github.com/pocketbase/pocketbase).
 
-Repository: pushed 2026-10-14T18:45:14Z; latest published release v0.40.5 (2026-10-08T16:45:10Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-14T18:45:14Z; latest commit 2026-10-08T16:21:49Z; latest published release v0.40.5 (2026-10-08T16:45:10Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Firebase → PocketBase: **different-approach**. Small single-server auth/realtime/file backend using SQLite; no Cloud Functions and vertical scaling only. Rewrite client calls and rules; FAQ reports no built-in data import/export helpers. [1](https://pocketbase.io/faq/)
 
@@ -39,7 +39,7 @@ License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party h
 
 Service costs/limits: Managed cloud branching, Management API, managed backups/PITR, advanced platform metrics, analytics/vector buckets and ETL are absent from the self-hosted distribution; no paid self-hosted unlock is claimed. Operate backups, monitoring and deployment workflows yourself or use managed cloud.
 
-Repository: pushed 2026-10-21T21:28:10Z; latest published release v1.26.08 (2026-08-07T13:57:57Z). Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:28:10Z; latest commit 2026-10-21T20:18:20Z; latest published release v1.26.08 (2026-08-07T13:57:57Z). Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Firebase → Supabase self-hosted stack: **different-approach**. Postgres relational backend with auth, realtime and storage; rewrite Firebase SDK calls, security rules and document data into SQL schemas; self-hosting requires production operations. [1](https://supabase.com/docs/guides/self-hosting)
 
@@ -51,7 +51,7 @@ License: BSD-3-Clause; identified core OSI: yes; self-hostable: yes; first-party
 
 Paid restrictions: Premium Enterprise self-hosted edition: console SSO, custom organization roles, activity logs, advanced management tools and compliance options
 
-Repository: pushed 2026-10-21T21:25:03Z; latest published release 2.6.1 (2026-10-21T20:52:58Z). Quick analysis: 7.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:25:03Z; latest commit 2026-10-21T20:59:00Z; latest published release 2.6.1 (2026-10-21T20:52:58Z). Quick analysis: 7.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Firebase → Appwrite: **partial**. Backend auth, databases, files, functions and realtime overlap; replace Firebase SDKs, migrate users/data and reimplement security/permissions. Firebase analytics and mobile services require separate evaluation. [1](https://appwrite.io/docs/advanced/self-hosting) [2](https://appwrite.io/enterprise)
 
@@ -63,7 +63,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Dokku Pro web dashboard; Dokku Pro JSON API and HTTP(S) Git push; Dokku Pro team management
 
-Repository: pushed 2026-10-21T21:18:13Z; latest published release v0.38.31 (2026-09-27T01:46:26Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:18:13Z; latest commit 2026-10-21T21:01:40Z; latest published release v0.38.31 (2026-09-27T01:46:26Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Heroku → Dokku: **partial**. Supports Heroku-compatible apps/buildpacks and git push, but owner operates host and datastores; audit buildpack/plugin compatibility, migrate add-on data and configure backups. [1](https://dokku.com/)
 

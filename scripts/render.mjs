@@ -38,22 +38,39 @@ for (const c of [...categories].sort((a,b) => a.audienceRank-b.audienceRank)) {
     catalog += `[License](${p.sources.license}), [edition evidence](${p.sources.features}), [hosting](${p.sources.hosting}), [repository](${p.repo}).\n\n`;
     if (p.locked.length) catalog += `Paid restrictions: ${p.locked.join('; ')}\n\n`;
     if (p.serviceLimitations?.length) catalog += `Service costs/limits: ${p.serviceLimitations.join('; ')}\n\n`;
-    catalog += `Repository: pushed ${p.health.pushedAt ?? 'unknown'}; latest published release ${p.health.lastRelease ?? 'none on this repository'} (${p.health.lastReleaseAt ?? 'n/a'}). ${p.health.rsx}\n\n`;
+    catalog += `Repository: pushed ${p.health.pushedAt ?? 'unknown'}; latest commit ${p.health.lastCommitAt ?? 'unknown'}; latest published release ${p.health.lastRelease ?? 'unverified or unavailable'} (${p.health.lastReleaseAt ?? 'n/a'}). ${p.health.rsx}\n\n`;
     for (const edge of edges.filter(a => a.to === p.id && paid.some(x => x.id === a.from))) {
       const from = products.find(x=>x.id===edge.from);
       catalog += `- ${from.name} → ${p.name}: **${edge.fit}**. ${edge.migrationNotes} ${edge.sources.map((url,i)=>`[${i+1}](${url})`).join(' ')}\n`;
     }
     catalog += '\n';
   }
-  catalog += `[Category research and unresolved questions](../../research/categories/${c.id}.json) · [Research audit](../../research/audits/${c.id}.md)\n`;
+  catalog += `[Category research and unresolved questions](../../research/categories/${c.id}.json) · [Research audit](../../research/audits/${c.id}.md)`;
+  if (next.some(row => row.id === c.id && row.status === 'curated')) catalog += ` · [Sourced claims](../../research/claims/${c.id}.jsonl)`;
+  catalog += '\n';
   await writeFile(resolve(root, `docs/categories/${c.id}.md`), catalog);
 }
 await writeFile(resolve(root,'docs/catalog.md'), overview);
-let backlog = '# Suggested next 24 categories\n\n';
-backlog += 'Ordered by estimated potential business audience, from cross-functional use to specialist teams. This is a research backlog: candidate examples are not yet fully audited for licenses, health, paid feature gates or migration fit. The linked official sources establish candidate scope only. Adjacent ranks are judgment calls, not comparable user counts.\n\n';
-backlog += '| Priority | Category | Paid targets | Candidates to investigate | Audience and scope |\n|---:|---|---|---|---|\n';
-next.forEach((row,i)=>{
-  backlog += `| ${i+1} | ${row.name} | ${row.paid.map(esc).join(', ')} | ${row.candidates.map(esc).join(', ')} | ${esc(row.audience)}. ${row.sources.map((url,j)=>`[Source ${j+1}](${url})`).join(' ')} |\n`;
-});
+const completed = next.length > 0 && next.every(row => row.status === 'curated');
+let backlog;
+if (completed) {
+  backlog = '# Second 24 categories — researched\n\n';
+  backlog += 'Completed additions from the original next-24 research list. Global reach positions place these alongside the first batch in the [full catalog](catalog.md). Audience order estimates potential business reach; adjacent ranks remain editorial judgments. A/B/C are eligible OSS tiers; S/U are labelled exceptions.\n\n';
+  backlog += '| Global reach rank | Category | Paid incumbents | Candidates, openness order |\n|---:|---|---|---|\n';
+  const selected = new Set(next.map(row => row.id));
+  for (const c of [...categories].filter(c => selected.has(c.id)).sort((a,b) => a.audienceRank-b.audienceRank)) {
+    const paid = products.filter(p => p.kind === 'paid' && p.categories.includes(c.id));
+    const candidates = products.filter(p => p.kind === 'oss' && p.categories.includes(c.id))
+      .sort((a,b) => tiers[a.tier]-tiers[b.tier] || a.name.localeCompare(b.name));
+    backlog += `| ${c.audienceRank} | [${esc(c.name)}](categories/${c.id}.md) | ${paid.map(p=>esc(p.name)).join(', ')} | ${candidates.map(p=>`${esc(p.name)} **${p.tier}**`).join(' · ')} |\n`;
+  }
+} else {
+  backlog = '# Suggested next 24 categories\n\n';
+  backlog += 'Research backlog ordered by estimated potential business audience. Candidate examples require license, health, feature-gate and migration checks before inclusion.\n\n';
+  backlog += '| Priority | Category | Paid targets | Candidates to investigate | Audience and scope |\n|---:|---|---|---|---|\n';
+  next.forEach((row,i)=>{
+    backlog += `| ${i+1} | ${row.name} | ${row.paid.map(esc).join(', ')} | ${row.candidates.map(esc).join(', ')} | ${esc(row.audience)}. ${row.sources.map((url,j)=>`[Source ${j+1}](${url})`).join(' ')} |\n`;
+  });
+}
 await writeFile(resolve(root,'docs/next-24.md'),backlog);
 console.log('Rendered catalog and next 24.');

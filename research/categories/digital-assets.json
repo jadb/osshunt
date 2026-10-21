@@ -1,0 +1,173 @@
+{
+  "category": {
+    "id": "digital-assets",
+    "name": "Digital Asset Management",
+    "description": "Catalog, search, govern and share photos, video, brand files and other media with structured metadata and access controls.",
+    "audience": "Marketing and creative teams, brand managers, media librarians, archives and cultural institutions.",
+    "audienceReach": "functional",
+    "audienceRationale": "A recurring function across industries, primarily used by teams managing reusable media collections rather than every employee.",
+    "audienceSources": [
+      "https://www.resourcespace.com/get",
+      "https://www.bynder.com/en/pricing/",
+      "https://www.phraseanet.com/decouvrir"
+    ]
+  },
+  "paid": [
+    {
+      "id": "bynder",
+      "name": "Bynder",
+      "url": "https://www.bynder.com/",
+      "categories": [
+        "digital-assets"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Official pricing requires a personalized quote; no numerical entry price published.",
+        "source": "https://www.bynder.com/en/pricing/"
+      }
+    },
+    {
+      "id": "brandfolder",
+      "name": "Brandfolder",
+      "url": "https://brandfolder.com/",
+      "categories": [
+        "digital-assets"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "quote",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Official pricing requires a personalized quote; no numerical entry price published.",
+        "source": "https://brandfolder.com/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "resourcespace",
+      "name": "ResourceSpace",
+      "url": "https://www.resourcespace.com/",
+      "categories": [
+        "digital-assets"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/resourcespace/resourcespace",
+      "license": "LicenseRef-ResourceSpace-BSD-style",
+      "osi": false,
+      "selfHostable": true,
+      "tier": "U",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Pinned documentation/licenses/resourcespace.txt is a custom BSD-3-Clause-style license with an additional restriction on using ResourceSpace in derived product/project names. Use, modification and redistribution are permitted; no commercial-use or hosting restriction appears. Exact identifier is LicenseRef-ResourceSpace-BSD-style, not unmodified BSD-3-Clause. The custom license is not listed in the OSI approved-license directory; osi=false means no verified formal OSI approval. Because OSI Definition section 4 permits different-name requirements, the naming clause alone is not evidence of non-open licensing. Conservatively retained U pending formal-license review, not S. Functionally the FAQ identifies support and cloud storage above 10GB as the only charges, with no software/user gate. GitHub is official development code; stable releases remain in SVN.",
+      "sources": {
+        "license": "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/resourcespace.txt",
+        "features": "https://www.resourcespace.com/faq",
+        "hosting": "https://www.resourcespace.com/get"
+      },
+      "serviceLimitations": [
+        "First-party free cloud limited to 10GB; larger hosted storage and support are paid services. Self-hosting has no per-user charge."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T01:00:06Z",
+        "lastRelease": null,
+        "lastReleaseAt": null,
+        "commit": "849371fc1a7cd90062ee90dfc86111e976457506",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/resourcespace/resourcespace",
+        "rsx": "Shared authenticated analysis: overall 3.3/10; license detector NOASSERTION. GitHub release metrics incomplete: official releases remain in SVN."
+      }
+    },
+    {
+      "id": "phraseanet",
+      "name": "Phraseanet",
+      "url": "https://www.phraseanet.com/",
+      "categories": [
+        "digital-assets"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/alchemy-fr/Phraseanet",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "Current LICENSE includes GNU GPL version 3; official download and product pages explicitly include all application interfaces/functions and unlimited users. Hosting, installation, training and maintenance are services. Classification covers Phraseanet itself; separately promoted Parade front-office customization has not been verified as part of the GPL application. Current repository is active, not archived, with 4.1.25 released on the check date.",
+      "sources": {
+        "license": "https://github.com/alchemy-fr/Phraseanet/blob/0aada8fc0a600326e25bdd4c87f6ca6bde5d0adf/LICENSE",
+        "features": "https://www.phraseanet.com/resourcecenter",
+        "hosting": "https://www.phraseanet.com/services"
+      },
+      "serviceLimitations": [
+        "First-party SaaS, installation, configuration, training and maintenance are commercial services."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:27:10Z",
+        "lastRelease": "4.1.25",
+        "lastReleaseAt": "2026-10-21T21:27:10Z",
+        "commit": "0aada8fc0a600326e25bdd4c87f6ca6bde5d0adf",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/alchemy-fr/Phraseanet",
+        "rsx": "Shared authenticated analysis: overall 5.4/10; license detector NOASSERTION. Five releases in 90 days; three active maintainers; LICENSE independently confirms GPLv3."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "bynder--phraseanet",
+      "from": "bynder",
+      "to": "phraseanet",
+      "fit": "partial",
+      "migrationNotes": "Suitable for a searchable media library with structured/embedded metadata, faceted and thesaurus search, collection/document permissions, annotations, validation and web galleries. Plan asset and metadata export/import and rebuild taxonomy, access rules and workflows; existing approval history, SaaS integrations and branded portal behavior need separate validation. Phraseanet publishes an API and bulk import/export tools; no direct migration connector was verified. Parade is a separate front-office offering and its licensing is not established here.",
+      "sources": [
+        "https://www.phraseanet.com/decouvrir",
+        "https://www.phraseanet.com/services",
+        "https://www.bynder.com/en/pricing/"
+      ]
+    },
+    {
+      "id": "brandfolder--phraseanet",
+      "from": "brandfolder",
+      "to": "phraseanet",
+      "fit": "partial",
+      "migrationNotes": "Suitable for a searchable media library with structured/embedded metadata, faceted and thesaurus search, collection/document permissions, annotations, validation and web galleries. Plan asset and metadata export/import and rebuild taxonomy, access rules and workflows; existing approval history, SaaS integrations and branded portal behavior need separate validation. Phraseanet publishes an API and bulk import/export tools; no direct migration connector was verified. Parade is a separate front-office offering and its licensing is not established here.",
+      "sources": [
+        "https://www.phraseanet.com/decouvrir",
+        "https://www.phraseanet.com/services",
+        "https://brandfolder.com/pricing/"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "ResourceSpace (default recommendations pending license verification)",
+      "reason": "Tier U default-recommendation hold: exact current custom BSD-style license verified, but formal OSI approval not established. No source-available use restriction inferred from the naming/trademark clause.",
+      "sources": [
+        "https://github.com/resourcespace/resourcespace/blob/849371fc1a7cd90062ee90dfc86111e976457506/documentation/licenses/resourcespace.txt",
+        "https://opensource.org/licenses",
+        "https://opensource.org/osd"
+      ]
+    }
+  ],
+  "uncertainties": [
+    "ResourceSpace exact current custom BSD-style license is now verified. Formal OSI approval remains unestablished; it is not listed by name in the OSI license directory. This differs from an allegation that the name/trademark clause violates the Open Source Definition, whose section 4 permits different-name requirements.",
+    "ResourceSpace latest GitHub release endpoint is 404; official versions lists 11.0 dated 2026-06-29 and explains that stable releases remain in SVN.",
+    "Phraseanet website advertises download 4.1.20 while the active repository latest release is 4.1.25; health uses repository evidence.",
+    "No official direct Bynder/Brandfolder migration connector or automated preservation of permissions, approval history and branded portals was verified.",
+    "Two assigned DAM candidates retained; no substitute added because neither repository is archived or inactive."
+  ]
+}

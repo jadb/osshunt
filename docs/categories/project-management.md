@@ -16,7 +16,7 @@ Root platform EPL-2.0. Official docs allow self-hosting cloud capabilities; paid
 
 License: EPL-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/hcengineering/platform/blob/8ed328fef4d3f37824a01b32bab13257116c6c45/LICENSE), [edition evidence](https://docs.huly.io/getting-started/self-host/), [hosting](https://huly.io/pricing), [repository](https://github.com/hcengineering/platform).
 
-Repository: pushed 2026-10-19T06:40:36Z; latest published release v0.7.426 (2026-07-05T03:43:54Z). Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-19T06:40:36Z; latest commit 2026-10-19T06:40:35Z; latest published release v0.7.426 (2026-07-05T03:43:54Z). Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Asana → Huly: **partial**. Projects, action items and team planning overlap. Validate portfolio/reporting and integration requirements; migration requires field/workflow mapping. [1](https://docs.huly.io/getting-started/introduction-huly/)
 - Jira → Huly: **partial**. Issue/project workflows overlap. Rebuild Jira-specific workflows and apps; Huly adds integrated collaboration. Cloud/self-host data movement may require manual guidance. [1](https://docs.huly.io/getting-started/introduction-huly/) [2](https://docs.huly.io/getting-started/self-host/)
@@ -30,7 +30,7 @@ License: GPL-3.0; identified core OSI: yes; self-hostable: yes; first-party host
 
 Paid restrictions: Custom action buttons for workflows; Team planner; Gantt chart PDF export; Reusable meeting templates; SSO beyond community authentication options
 
-Repository: pushed 2026-10-21T20:01:47Z; latest published release v17.9.2 (2026-10-15T11:56:10Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:01:47Z; latest commit 2026-10-21T16:23:07Z; latest published release v17.9.2 (2026-10-15T11:56:10Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Asana → OpenProject: **partial**. Schedules, tasks and project planning overlap; model projects as work packages. Check advanced planning and paid Enterprise add-ons. [1](https://www.openproject.org/pricing/)
 - Jira → OpenProject: **partial**. Agile planning and work packages overlap; official guided Jira migrator available. Check app/custom-field migration and Enterprise workflow requirements. [1](https://www.openproject.org/pricing/)
@@ -44,7 +44,7 @@ License: AGPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hos
 
 Paid restrictions: Work item types; Native time tracking; Advanced workflows; Project templates; Commercial SSO
 
-Repository: pushed 2026-10-21T17:36:54Z; latest published release v1.4.2 (2026-08-23T14:39:21Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T17:36:54Z; latest commit 2026-10-21T15:35:49Z; latest published release v1.4.2 (2026-08-23T14:39:21Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Asana → Plane Community: **partial**. Project/task tracking overlaps; evaluate portfolio/reporting and workflow gaps. No drop-in Asana migration claimed. [1](https://plane.so/blog/plane-and-its-editions)
 - Jira → Plane Community: **partial**. Tasks, cycles and modules overlap; validate Jira custom workflows/apps and paid work-management feature requirements. [1](https://github.com/makeplane/plane) [2](https://plane.so/blog/plane-and-its-editions)
@@ -58,7 +58,7 @@ License: MPL-2.0; identified core OSI: yes; self-hostable: yes; first-party host
 
 Paid restrictions: Current terms mention proprietary modules without enumerating their feature boundaries.
 
-Repository: pushed 2026-09-28T17:26:49Z; latest published release none on this repository (n/a). Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-09-28T17:26:49Z; latest commit 2026-09-28T17:26:49Z; latest published release unverified or unavailable (n/a). Quick analysis: 5.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Asana → Taiga: **partial**. Tasks and Kanban overlap; agile-first workflow differs from broad work-management portfolios. Plan export transformation; no native Asana importer verified. [1](https://taiga.io/)
 - Jira → Taiga: **partial**. Scrum, Kanban and issue tracking overlap; official Jira importer exists. Test field/status and attachment fidelity before switching. [1](https://docs.taiga.io/)

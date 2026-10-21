@@ -16,7 +16,7 @@ License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party h
 
 Paid restrictions: Workflows and reusable packages; Premium integrations; More than three Git repositories and custom environments; Custom access roles, audit logs, SAML/OIDC SSO and SCIM
 
-Repository: pushed 2026-10-21T21:22:59Z; latest published release v2.5.1 (2026-10-21T02:29:46Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T21:22:59Z; latest commit 2026-10-21T20:47:06Z; latest published release v2.5.1 (2026-10-21T02:29:46Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Retool → Appsmith: **partial**. Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import. [1](https://www.appsmith.com/pricing) [2](https://retool.com/pricing)
 
@@ -28,7 +28,7 @@ License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party
 
 Paid restrictions: Open source limited to one workspace; Built-in backups and restore, environment variables and custom branding; Enforced SSO, user groups, Active Directory/SCIM and audit logs
 
-Repository: pushed 2026-10-21T15:20:53Z; latest published release v3.50.0 (2026-10-19T08:09:46Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T15:20:53Z; latest commit 2026-10-21T14:12:44Z; latest published release v3.50.0 (2026-10-19T08:09:46Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Retool → Budibase: **partial**. Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import. [1](https://budibase.com/pricing/) [2](https://retool.com/pricing)
 
@@ -40,7 +40,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Self-host free plan: two builders, up to 50 end users, up to ten apps; Version control, Git sync, custom styling, themes and modules; Scheduled workflow triggers; Custom groups, audit logs, SSO and air-gapped deployment
 
-Repository: pushed 2026-10-21T20:19:45Z; latest published release v3.20.247-lts (2026-10-21T14:25:43Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:19:45Z; latest commit 2026-10-21T17:28:35Z; latest published release v3.20.247-lts (2026-10-21T14:25:43Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Retool → ToolJet: **partial**. Rebuild Retool screens, queries and access rules against supported data sources. Validate connector coverage and workflow/edition gates before migration. No verified direct Retool app import. [1](https://tooljet.com/pricing) [2](https://retool.com/pricing)
 

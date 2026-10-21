@@ -15,7 +15,7 @@ Community product includes documented reverse-proxy authentication, MFA and OIDC
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/authelia/authelia/blob/e6cd61d33e9e23fe7e85e66e9937bddc67de466b/LICENSE), [edition evidence](https://www.authelia.com/), [hosting](https://www.authelia.com/), [repository](https://github.com/authelia/authelia).
 
-Repository: pushed 2026-10-21T12:33:32Z; latest published release v4.39.28 (2026-09-17T12:13:30Z). Quick analysis: 7.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T12:33:32Z; latest commit 2026-10-21T04:35:43Z; latest published release v4.39.28 (2026-09-17T12:13:30Z). Quick analysis: 7.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Okta Workforce Identity → Authelia: **different-approach**. Useful for internal web apps secured by reverse proxy or OIDC. Requires proxy/app configuration and an identity backend; does not replace the whole workforce lifecycle, governance and SaaS provisioning suite. [1](https://www.authelia.com/)
 
@@ -25,7 +25,7 @@ Community IAM product; documented SSO, federation, administration, MFA and autho
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/keycloak/keycloak/blob/3c07b879d5cfaf277caa5d4bc96174347f71f91c/LICENSE.txt), [edition evidence](https://www.keycloak.org/), [hosting](https://www.keycloak.org/), [repository](https://github.com/keycloak/keycloak).
 
-Repository: pushed 2026-10-21T15:49:15Z; latest published release 26.8.1 (2026-10-13T08:58:15Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T15:49:15Z; latest commit 2026-10-21T15:49:14Z; latest published release 26.8.1 (2026-10-13T08:58:15Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Auth0 → Keycloak: **partial**. Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately. [1](https://www.keycloak.org/)
 - Okta Workforce Identity → Keycloak: **partial**. Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately. [1](https://www.keycloak.org/)
@@ -36,7 +36,7 @@ Current core uses AGPL v3, replacing Apache licensing for v3 onward; commercial 
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/zitadel/zitadel/blob/ce12560d2491f12bb96f20805ad532f7d6dd5875/LICENSE), [edition evidence](https://help.zitadel.com/zitadel-enterprise-cloud-vs-enterprise-self-hosted), [hosting](https://help.zitadel.com/zitadel-enterprise-cloud-vs-enterprise-self-hosted), [repository](https://github.com/zitadel/zitadel).
 
-Repository: pushed 2026-10-21T12:54:22Z; latest published release v4.19.5 (2026-10-15T09:40:41Z). Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T12:54:22Z; latest commit 2026-10-21T12:54:21Z; latest published release v4.19.5 (2026-10-15T09:40:41Z). Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Auth0 → ZITADEL: **partial**. Customer and B2B identity infrastructure with managed or self-hosted deployment. Adapt application issuer/client settings and migrate users, organizations and policies; not an SDK-compatible swap. [1](https://zitadel.com/docs)
 
@@ -48,7 +48,7 @@ License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted o
 
 Paid restrictions: Privileged access management and agent accounts; Google Workspace and Microsoft Entra ID integrations; Enhanced audit logging, scheduled offboarding and CSV reports; mTLS authentication and device trust integrations
 
-Repository: pushed 2026-10-21T17:33:49Z; latest published release version/2026.8.5 (2026-10-21T12:57:59Z). Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T17:33:49Z; latest commit 2026-10-21T16:42:40Z; latest published release version/2026.8.5 (2026-10-21T12:57:59Z). Quick analysis: 5.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Auth0 → authentik: **partial**. Supports SAML/OIDC and directory/proxy protocols. Recreate app integrations, policy flows and user stores. Some workplace provisioning/security integrations require Enterprise. [1](https://goauthentik.io/pricing/)
 - Okta Workforce Identity → authentik: **partial**. Supports SAML/OIDC and directory/proxy protocols. Recreate app integrations, policy flows and user stores. Some workplace provisioning/security integrations require Enterprise. [1](https://goauthentik.io/pricing/)

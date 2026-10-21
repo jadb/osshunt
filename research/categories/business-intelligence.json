@@ -1,0 +1,275 @@
+{
+  "category": {
+    "id": "business-intelligence",
+    "name": "Business intelligence",
+    "description": "Database exploration, metrics, dashboards and scheduled analytical reporting.",
+    "audience": "Business analysts, data teams, managers and operational teams consuming business metrics.",
+    "audienceReach": "broad",
+    "audienceRationale": "Reporting supports many business functions; configuration and semantic modeling are concentrated in analysts and data teams.",
+    "audienceSources": [
+      "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing",
+      "https://www.tableau.com/pricing",
+      "https://cloud.google.com/looker/pricing",
+      "https://www.metabase.com/blog/making-bi-migration-suck-less"
+    ]
+  },
+  "paid": [
+    {
+      "id": "power-bi",
+      "name": "Power BI",
+      "url": "https://powerbi.microsoft.com/",
+      "categories": [
+        "business-intelligence"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 14,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Pro USD14/user/month paid yearly; free authoring exists; embedding/capacity priced separately.",
+        "source": "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
+      }
+    },
+    {
+      "id": "tableau",
+      "name": "Tableau",
+      "url": "https://www.tableau.com/",
+      "categories": [
+        "business-intelligence"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "per-seat",
+        "entryAmount": 15,
+        "currency": "USD",
+        "period": "month",
+        "unit": "seat",
+        "billing": "annual",
+        "note": "Tableau Standard advertised starting price; every deployment requires at least one Creator license, so this is not full deployment cost.",
+        "source": "https://www.tableau.com/pricing"
+      }
+    },
+    {
+      "id": "looker",
+      "name": "Looker",
+      "url": "https://cloud.google.com/looker",
+      "categories": [
+        "business-intelligence"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "quote",
+        "note": "Annual platform price requires sales quote; named user licensing also applies. Looker, distinct from Looker Studio.",
+        "source": "https://cloud.google.com/looker/pricing"
+      }
+    },
+    {
+      "id": "metabase-pro",
+      "name": "Metabase Pro",
+      "url": "https://www.metabase.com/",
+      "categories": [
+        "business-intelligence"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": 575,
+        "currency": "USD",
+        "period": "month",
+        "unit": "organization",
+        "billing": "monthly",
+        "note": "Self-hosted Pro $575/month, first 10 users included; additional users $12/month; annual discount available.",
+        "source": "https://www.metabase.com/pricing"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "apache-superset",
+      "name": "Apache Superset",
+      "url": "https://superset.apache.org/",
+      "categories": [
+        "business-intelligence"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/apache/superset",
+      "license": "Apache-2.0",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": false,
+      "classificationReason": "Apache project edition provides dashboards, SQL exploration, semantic layer, embedding, RBAC, OAuth/OIDC, LDAP and scheduled reporting in open code. Feature flags and operator setup are not paid software gates. No Apache-operated hosted offer identified; Preset is a separate provider.",
+      "sources": {
+        "license": "https://github.com/apache/superset/blob/5eaad449f5c2b96a4efdd93beeba83664bf00467/LICENSE.txt",
+        "features": "https://superset.apache.org/",
+        "hosting": "https://superset.apache.org/"
+      },
+      "serviceLimitations": [
+        "Operate server, metadata database and backups; database drivers and report rendering workers require setup; email/Slack transport configured separately."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:12:07Z",
+        "lastRelease": "6.1.0",
+        "lastReleaseAt": "2026-05-13T18:32:25Z",
+        "commit": "5eaad449f5c2b96a4efdd93beeba83664bf00467",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/apache/superset",
+        "rsx": "Shared quick analysis completed: Overall score 7.8/10. Activity 5.2, maintenance 10.0, security 6.6, and license 10.0 are the main decision signals. Proxy metrics are not independently verified security conclusions; latest release uses canonical /releases/latest endpoint."
+      }
+    },
+    {
+      "id": "metabase",
+      "name": "Metabase Open Source Edition",
+      "url": "https://www.metabase.com/",
+      "categories": [
+        "business-intelligence"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/metabase/metabase",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Pro/Enterprise: row and column permissions, JWT/SAML/OIDC SSO, caching controls and usage analytics/auditing. Google Sign-In and LDAP are separate authentication options; not all authentication is paid.",
+        "Interactive/SSO embedding, React modular embedding SDK, and whitelabel branding are Pro/Enterprise features; guest/view-only embedding remains possible under the stated license terms.",
+        "Per-subscription dashboard filter customization is Pro/Enterprise; basic scheduled email/Slack subscriptions are available."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "Tier C because routine tailored report subscriptions and interactive embedded analytics are paid, beyond enterprise administration. OSI status covers AGPL Open Source Edition only; top-level enterprise code and enterprise binaries use Metabase Commercial License, not OSI OSS. Cloud managed operations are separate from software gates.",
+      "sources": {
+        "license": "https://github.com/metabase/metabase/blob/5049ebe35e5c68575936d0e0d78e5b8de5f06afb/LICENSE.txt",
+        "features": "https://www.metabase.com/pricing",
+        "hosting": "https://www.metabase.com/pricing"
+      },
+      "serviceLimitations": [
+        "Cloud hosting manages setup, backups and upgrades for a fee; self-hosting requires your infrastructure and email/Slack setup."
+      ],
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T22:35:09Z",
+        "lastRelease": "v0.64.1",
+        "lastReleaseAt": "2026-10-07T18:42:49Z",
+        "commit": "5049ebe35e5c68575936d0e0d78e5b8de5f06afb",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/metabase/metabase",
+        "rsx": "Shared quick analysis completed: Overall score 4.8/10. Activity 4.8, maintenance 10.0, security 0.0, and license 3.0 are the main decision signals. Proxy metrics are not independently verified security conclusions; latest release uses canonical /releases/latest endpoint."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "power-bi--apache-superset",
+      "from": "power-bi",
+      "to": "apache-superset",
+      "fit": "partial",
+      "migrationNotes": "Suitable for SQL database dashboards and exploration. Recreate PBIX report layouts and DAX/Power Query calculations; validate gateway-dependent and Microsoft-specific sources separately. Planning inference: these sources document Superset-native connections and datasets, not a native importer for incumbent assets. Install DB-API driver and SQLAlchemy dialect per engine; dashboards, auth and reporting require reconfiguration.",
+      "sources": [
+        "https://superset.apache.org/",
+        "https://superset.apache.org/user-docs/databases/",
+        "https://superset.apache.org/user-docs/using-superset/embedding/",
+        "https://superset.apache.org/admin-docs/configuration/configuring-superset/",
+        "https://superset.apache.org/admin-docs/configuration/alerts-reports/"
+      ]
+    },
+    {
+      "id": "power-bi--metabase",
+      "from": "power-bi",
+      "to": "metabase",
+      "fit": "partial",
+      "migrationNotes": "Self-service database questions and dashboards; vendor migration guidance explicitly discusses Power BI. Recreate PBIX report layouts and DAX/Power Query calculations; validate gateway-dependent and Microsoft-specific sources separately. Audit dashboards and subscriptions, centralize shared calculation logic, then rebuild and compare metrics. Data source support must be checked; embedded interactivity/SSO and subscription-specific filters require paid editions.",
+      "sources": [
+        "https://www.metabase.com/blog/making-bi-migration-suck-less",
+        "https://www.metabase.com/pricing",
+        "https://www.metabase.com/docs/latest/dashboards/subscriptions",
+        "https://www.metabase.com/docs/latest/embedding/dashboard"
+      ]
+    },
+    {
+      "id": "tableau--apache-superset",
+      "from": "tableau",
+      "to": "apache-superset",
+      "fit": "partial",
+      "migrationNotes": "Suitable for SQL database dashboards and exploration. Rebuild workbook layouts, calculated fields and extract-based preparation; validate dashboard interactions and supported data drivers. Planning inference: these sources document Superset-native connections and datasets, not a native importer for incumbent assets. Install DB-API driver and SQLAlchemy dialect per engine; dashboards, auth and reporting require reconfiguration.",
+      "sources": [
+        "https://superset.apache.org/",
+        "https://superset.apache.org/user-docs/databases/",
+        "https://superset.apache.org/user-docs/using-superset/embedding/",
+        "https://superset.apache.org/admin-docs/configuration/configuring-superset/",
+        "https://superset.apache.org/admin-docs/configuration/alerts-reports/"
+      ]
+    },
+    {
+      "id": "tableau--metabase",
+      "from": "tableau",
+      "to": "metabase",
+      "fit": "partial",
+      "migrationNotes": "Self-service database questions and dashboards; vendor migration guidance explicitly discusses Tableau. Rebuild workbook layouts, calculated fields and extract-based preparation; validate dashboard interactions and supported data drivers. Audit dashboards and subscriptions, centralize shared calculation logic, then rebuild and compare metrics. Data source support must be checked; embedded interactivity/SSO and subscription-specific filters require paid editions.",
+      "sources": [
+        "https://www.metabase.com/blog/making-bi-migration-suck-less",
+        "https://www.metabase.com/pricing",
+        "https://www.metabase.com/docs/latest/dashboards/subscriptions",
+        "https://www.metabase.com/docs/latest/embedding/dashboard"
+      ]
+    },
+    {
+      "id": "looker--apache-superset",
+      "from": "looker",
+      "to": "apache-superset",
+      "fit": "partial",
+      "migrationNotes": "Suitable for SQL database dashboards and exploration. Rebuild LookML metrics, joins and access policies in SQL/dataset definitions; validate semantic equivalence and drill paths. Planning inference: these sources document Superset-native connections and datasets, not a native importer for incumbent assets. Install DB-API driver and SQLAlchemy dialect per engine; dashboards, auth and reporting require reconfiguration.",
+      "sources": [
+        "https://superset.apache.org/",
+        "https://superset.apache.org/user-docs/databases/",
+        "https://superset.apache.org/user-docs/using-superset/embedding/",
+        "https://superset.apache.org/admin-docs/configuration/configuring-superset/",
+        "https://superset.apache.org/admin-docs/configuration/alerts-reports/"
+      ]
+    },
+    {
+      "id": "looker--metabase",
+      "from": "looker",
+      "to": "metabase",
+      "fit": "partial",
+      "migrationNotes": "Self-service database questions and dashboards; vendor migration guidance explicitly discusses Looker. Rebuild LookML metrics, joins and access policies in SQL/dataset definitions; validate semantic equivalence and drill paths. Audit dashboards and subscriptions, centralize shared calculation logic, then rebuild and compare metrics. Data source support must be checked; embedded interactivity/SSO and subscription-specific filters require paid editions.",
+      "sources": [
+        "https://www.metabase.com/blog/making-bi-migration-suck-less",
+        "https://www.metabase.com/pricing",
+        "https://www.metabase.com/docs/latest/dashboards/subscriptions",
+        "https://www.metabase.com/docs/latest/embedding/dashboard"
+      ]
+    },
+    {
+      "id": "metabase-pro--metabase",
+      "from": "metabase-pro",
+      "to": "metabase",
+      "fit": "partial",
+      "migrationNotes": "Community edition of the same project for core queries, dashboards and basic subscriptions. Downgrading does not retain paid interactive embedding, tailored subscriptions, enterprise identity or other Pro entitlements; review supported downgrade/version procedures and existing saved content before switching. No automatic downgrade validated.",
+      "sources": [
+        "https://www.metabase.com/pricing",
+        "https://www.metabase.com/pricing"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Only the two assigned candidates were fully verified in the focused research window; no third candidate added without license and feature evidence.",
+    "Superset documentation is labelled Next and may describe default-branch capabilities beyond latest stable release 6.1.0; confirm required feature availability for chosen version.",
+    "No Apache-operated hosted Superset service identified from official project material; commercial providers such as Preset are distinct from the Apache project.",
+    "No native conversion of PBIX/DAX, Tableau workbooks/extracts or LookML was verified. Migration notes explicitly identify rebuild planning inferences rather than asserting import support.",
+    "Metabase root LICENSE describes AGPL and official linked text specifies version 3; no later-version election was established. AGPL-3.0-only identifies the reviewed core edition, with enterprise directory excluded.",
+    "Shared rsx latest-release samples can differ from canonical GitHub latest release; health fields use /releases/latest, not rsx sampled release selection."
+  ]
+}

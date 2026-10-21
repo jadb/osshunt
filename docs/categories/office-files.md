@@ -16,7 +16,7 @@ Source and functionality remain open; commercial offering sells stable supported
 
 License: MPL-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/CollaboraOnline/online.mirror/blob/832ea2c5b04f8f935d90cd33926b10450d9c0dd9/COPYING), [edition evidence](https://www.collaboraonline.com/de/code/), [hosting](https://www.collaboraonline.com/become-partner/), [repository](https://github.com/CollaboraOnline/online.mirror).
 
-Repository: pushed 2026-10-21T20:43:38Z; latest published release none on this repository (n/a). Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T20:43:38Z; latest commit 2026-10-21T20:41:59Z; latest published release unverified or unavailable (n/a). Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Google Workspace → Collabora Online (CODE): **partial**. Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat. [1](https://www.collaboraonline.com/de/code/) [2](https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/)
 - Microsoft 365 → Collabora Online (CODE): **partial**. Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat. [1](https://www.collaboraonline.com/de/code/) [2](https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/)
@@ -29,7 +29,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Dedicated enterprise apps for authentication, workflows and security; Nextcloud Guard enterprise monitoring; Unlimited vendor push notification service and extended maintenance require Enterprise
 
-Repository: pushed 2026-10-21T16:37:10Z; latest published release v33.0.10 (2026-10-15T08:37:28Z). Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T16:37:10Z; latest commit 2026-10-21T14:56:02Z; latest published release v33.0.10 (2026-10-15T08:37:28Z). Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Dropbox → Nextcloud Hub: **partial**. Self-hosted file sync/share alternative with desktop/mobile clients, sharing and versioning; own server/storage/backup operations required. Dropbox signatures, Replay, AI connectors and complex team policies need independent replacement or evaluation. [1](https://nextcloud.com/) [2](https://nextcloud.com/enterprises/) [3](https://www.dropbox.com/plans)
 - Google Workspace → Nextcloud Hub: **partial**. Broad collaboration hub: file sync/share, groupware, calls and document collaboration via apps. Configure an office engine and existing email server/provider; not a replacement for all proprietary desktop features, advanced formulas/macros, tenant identity or compliance services. Export native cloud document formats to portable Office/ODF files and pilot fidelity before migrating. [1](https://nextcloud.com/) [2](https://nextcloud.com/enterprises/) [3](https://docs.nextcloud.com/server/stable/admin_manual/office/index.html)
@@ -43,7 +43,7 @@ License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party h
 
 Paid restrictions: Enterprise compliance and policy-enforcement layer
 
-Repository: pushed 2026-10-21T13:45:37Z; latest published release v8.2.2 (2026-10-21T10:09:21Z). Quick analysis: 7.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T13:45:37Z; latest commit 2026-10-21T08:45:18Z; latest published release v8.2.2 (2026-10-21T10:09:21Z). Quick analysis: 7.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Dropbox → ownCloud Infinite Scale (oCIS source edition): **partial**. File sync/share with team-owned spaces, desktop/mobile clients and WebDAV. Recreate sharing/permissions and evaluate editor integrations; does not cover all Dropbox PDF/signing/video/AI bundles. Separate source rights from vendor stable binary EULA. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
 - Google Workspace → ownCloud Infinite Scale (oCIS source edition): **partial**. Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
@@ -57,7 +57,7 @@ License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-part
 
 Paid restrictions: Community capped at 20 simultaneous editing connections; Mobile web editing excluded from Community; Administration panel and commercial branding/automation options require paid editions
 
-Repository: pushed 2026-10-21T10:05:34Z; latest published release v10.0.0 (2026-10-12T15:01:39Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-21T10:05:34Z; latest commit 2026-10-21T06:52:52Z; latest published release v10.0.0 (2026-10-12T15:01:39Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Google Workspace → ONLYOFFICE Docs Community: **partial**. Office editing component, typically integrated with sync/share storage. Not the complete mail/calendar/file suite; Docs Community has 20-editing-connection ceiling and no mobile browser editing. Export native Google documents first; test complex Office documents and integrations. [1](https://www.onlyoffice.com/docs) [2](https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx)
 - Microsoft 365 → ONLYOFFICE Docs Community: **partial**. Office editing component, typically integrated with sync/share storage. Not the complete mail/calendar/file suite; Docs Community has 20-editing-connection ceiling and no mobile browser editing. Export native Google documents first; test complex Office documents and integrations. [1](https://www.onlyoffice.com/docs) [2](https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx)
@@ -70,7 +70,7 @@ License: AGPL-3.0-only WITH LicenseRef-OpenSSL-linking-exception; identified cor
 
 Paid restrictions: Full-text file search requires Professional; Granular folder/subfolder permissions require Professional; Comprehensive audit logs, HA/clustering and S3 deployment require Professional
 
-Repository: pushed 2026-10-20T03:51:24Z; latest published release v7.1.1-server (2019-12-17T02:43:09Z). Quick analysis: 4.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
+Repository: pushed 2026-10-20T03:51:24Z; latest commit 2026-10-20T03:51:22Z; latest published release v7.1.1-server (2019-12-17T02:43:09Z). Quick analysis: 4.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Dropbox → Seafile Community Edition: **partial**. File sync/share and library versioning fit; libraries replace Dropbox folder model, so permissions, shares and links need recreation/testing. Pro is needed for full-text search and granular folder permissions; Dropbox bundled signatures/video review not covered. [1](https://github.com/haiwen/seafile) [2](https://www.seafile.com/en/product/seafile_on_premise/)
 - Google Workspace → Seafile Community Edition: **partial**. Replaces Drive/OneDrive-style file sync/share portion only; Office editing requires an external editor integration. Email, meetings and full suite absent; full-text file search and fine-grained permissions are paid Professional features. [1](https://www.seafile.com/en/product/seafile_on_premise/) [2](https://github.com/haiwen/seafile)

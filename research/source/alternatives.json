@@ -32,6 +32,110 @@
     ]
   },
   {
+    "id": "acronis-cyber-protect--borgbackup",
+    "from": "acronis-cyber-protect",
+    "to": "borgbackup",
+    "fit": "partial",
+    "migrationNotes": "Limited to self-operated Unix-like file/archive backups and restores, using local or SSH repositories. Does not establish replacement for Acronis imaging, application-aware workloads, endpoint security or cloud failover. Windows support experimental; keep proprietary archives recoverable separately.",
+    "sources": [
+      "https://www.acronis.com/en/products/cyber-protect/",
+      "https://borgbackup.readthedocs.io/en/stable/"
+    ]
+  },
+  {
+    "id": "acronis-cyber-protect--kopia",
+    "from": "acronis-cyber-protect",
+    "to": "kopia",
+    "fit": "partial",
+    "migrationNotes": "Replaces selected file/directory snapshot and restore workflows after creating new backups. Kopia expressly does not image the machine; Acronis system imaging, endpoint protection and cloud failover remain separate requirements. No proprietary-archive import established.",
+    "sources": [
+      "https://www.acronis.com/en/products/cyber-protect/",
+      "https://kopia.io/docs/"
+    ]
+  },
+  {
+    "id": "adobe-acrobat--pdfsam-basic",
+    "from": "adobe-acrobat",
+    "to": "pdfsam-basic",
+    "fit": "partial",
+    "migrationNotes": "Use existing PDF files locally for split, merge, rotate, mix and page extraction. Basic does not replace Acrobat text editing, OCR, conversion, forms or e-signature collection.",
+    "sources": [
+      "https://pdfsam.org/pdfsam-basic/",
+      "https://www.adobe.com/acrobat/pricing.html"
+    ]
+  },
+  {
+    "id": "adobe-lightroom--darktable",
+    "from": "adobe-lightroom",
+    "to": "darktable",
+    "fit": "different-approach",
+    "migrationNotes": "Local RAW development and photo-library workflow. Official FAQ warns this is not a direct replacement: presets are incompatible, Lightroom edit import is old and unreliable, and edits may need rebuilding. Check camera support; do not assume Adobe cloud/library synchronization transfers.",
+    "sources": [
+      "https://www.darktable.org/about/",
+      "https://www.darktable.org/about/faq/"
+    ]
+  },
+  {
+    "id": "adobe-photoshop--gimp",
+    "from": "adobe-photoshop",
+    "to": "gimp",
+    "fit": "partial",
+    "migrationNotes": "Local retouching and compositing alternative. Workflow/UI differ; save editable projects as XCF and export interchange copies, since non-native formats lose some project information. RAW development uses darktable or RawTherapee plug-ins. Validate required project features before switching.",
+    "sources": [
+      "https://www.gimp.org/",
+      "https://www.gimp.org/docs/userfaq.html",
+      "https://docs.gimp.org/3.0/en/gimp-images-out.html"
+    ]
+  },
+  {
+    "id": "adobe-photoshop--krita",
+    "from": "adobe-photoshop",
+    "to": "krita",
+    "fit": "partial",
+    "migrationNotes": "Best fit for digital painting and illustration done in Photoshop. Krita emphasizes painting rather than the full image-manipulation workflow. Supports PSD layers and masks but does not promise complete compatibility; official manual recommends ORA or TIFF interchange when possible.",
+    "sources": [
+      "https://docs.krita.org/en/user_manual/introduction_from_other_software/introduction_from_photoshop.html",
+      "https://docs.krita.org/en/general_concepts/file_formats/file_psd.html"
+    ]
+  },
+  {
+    "id": "adobe-premiere-pro--kdenlive",
+    "to": "kdenlive",
+    "fit": "partial",
+    "migrationNotes": "Partial replacement for local timeline editing, effects, audio and grading. Reuse source media; native Premiere projects or Final Cut libraries were not verified as importable. Kdenlive saves MLT-based .kdenlive XML that references media; archive the project to collect media for moving computers. Test representative timelines and rebuild unsupported effects/titles; proprietary project fidelity is unverified.",
+    "sources": [
+      "https://kdenlive.org/",
+      "https://docs.kdenlive.org/en/project_and_asset_management/file_management/project_files.html",
+      "https://docs.kdenlive.org/en/project_and_asset_management/file_management/archiving.html",
+      "https://www.adobe.com/products/premiere/plans.html"
+    ],
+    "from": "adobe-premiere-pro"
+  },
+  {
+    "id": "adobe-premiere-pro--shotcut",
+    "to": "shotcut",
+    "fit": "partial",
+    "migrationNotes": "Partial replacement for local multitrack editing and rendered video delivery. Shotcut saves MLT XML projects and exports video separately; its FAQ suggests DNxHR HQ or ProRes 422 intermediates when accepted by the other tool. EDL export is documented, not native Premiere/Final Cut project import. Rebuild and verify existing timelines; plugin/effect fidelity is unverified.",
+    "sources": [
+      "https://shotcut.org/features/",
+      "https://shotcut.org/FAQ/",
+      "https://www.adobe.com/products/premiere/plans.html"
+    ],
+    "from": "adobe-premiere-pro"
+  },
+  {
+    "id": "aircall--freeswitch",
+    "from": "aircall",
+    "to": "freeswitch",
+    "fit": "different-approach",
+    "migrationNotes": "FreeSWITCH offers routing, IVR, recording and queue/call-center primitives for a custom voice system. Aircall supplies a shared workspace, CRM integrations and analytics; those workflows need other applications or development. Retain/export required recordings and reporting separately; no verified Aircall migration importer. Carrier/number transfer needs provider coordination.",
+    "sources": [
+      "https://developer.signalwire.com/freeswitch/reference/signalwire-map/",
+      "https://signalwire.com/developers/freeswitch",
+      "https://aircall.io/pricing/"
+    ]
+  },
+  {
     "id": "airtable--baserow",
     "from": "airtable",
     "to": "baserow",
@@ -51,6 +155,17 @@
     "sources": [
       "https://www.getgrist.com/pricing/"
     ]
+  },
+  {
+    "id": "algolia--typesense",
+    "to": "typesense",
+    "fit": "partial",
+    "migrationNotes": "Reindex exported documents into typed collections; adapt APIs, synonyms and query rules. InstantSearch adapter can retain selected frontend widgets. Native APIs differ; assess personalization and experimentation requirements. Cloud visual admin remains unavailable in the API-only self-hosted engine.",
+    "sources": [
+      "https://typesense.org/docs/guide/migrating-from-algolia.html",
+      "https://typesense.org/docs/guide/faqs.html"
+    ],
+    "from": "algolia"
   },
   {
     "id": "asana--huly",
@@ -123,6 +238,30 @@
     ]
   },
   {
+    "id": "backblaze-business-backup--kopia",
+    "from": "backblaze-business-backup",
+    "to": "kopia",
+    "fit": "different-approach",
+    "migrationNotes": "Desktop GUI file snapshots on Windows/macOS/Linux with user-selected storage. Recreate policies and seed a new backup; cloud capacity and recovery operations belong to the user. B2 integration uses a separate object-storage service, not the Business Backup subscription.",
+    "sources": [
+      "https://www.backblaze.com/cloud-backup/business",
+      "https://kopia.io/docs/",
+      "https://kopia.io/docs/features/"
+    ]
+  },
+  {
+    "id": "backblaze-business-backup--restic",
+    "from": "backblaze-business-backup",
+    "to": "restic",
+    "fit": "different-approach",
+    "migrationNotes": "File-backup option for operators comfortable configuring a CLI, retention/scheduling and storage. New repository and first backup required; no bundled unlimited cloud or equivalent managed endpoint console established. Backblaze B2 storage, if selected, is separate from Business Backup.",
+    "sources": [
+      "https://www.backblaze.com/cloud-backup/business",
+      "https://restic.net/",
+      "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+    ]
+  },
+  {
     "id": "bamboohr--frappe-hr",
     "from": "bamboohr",
     "to": "frappe-hr",
@@ -142,6 +281,65 @@
     "sources": [
       "https://orangehrm.com/orangehrm-starter-open-source-software",
       "https://www.bamboohr.com/pricing/"
+    ]
+  },
+  {
+    "id": "bigcommerce--woocommerce",
+    "to": "woocommerce",
+    "fit": "partial",
+    "migrationNotes": "Suitable for a merchant storefront on WordPress. Built-in CSV tools move product catalog data after mapping the WooCommerce schema; this is not a full-store migration. Rebuild design, checkout integrations and platform-specific apps; plan separately for orders, customers, subscriptions and URLs.",
+    "sources": [
+      "https://woocommerce.com/pricing/",
+      "https://woocommerce.com/document/product-csv-importer-exporter/"
+    ],
+    "from": "bigcommerce"
+  },
+  {
+    "id": "brandfolder--phraseanet",
+    "from": "brandfolder",
+    "to": "phraseanet",
+    "fit": "partial",
+    "migrationNotes": "Suitable for a searchable media library with structured/embedded metadata, faceted and thesaurus search, collection/document permissions, annotations, validation and web galleries. Plan asset and metadata export/import and rebuild taxonomy, access rules and workflows; existing approval history, SaaS integrations and branded portal behavior need separate validation. Phraseanet publishes an API and bulk import/export tools; no direct migration connector was verified. Parade is a separate front-office offering and its licensing is not established here.",
+    "sources": [
+      "https://www.phraseanet.com/decouvrir",
+      "https://www.phraseanet.com/services",
+      "https://brandfolder.com/pricing/"
+    ]
+  },
+  {
+    "id": "buffer--mixpost",
+    "from": "buffer",
+    "to": "mixpost",
+    "fit": "partial",
+    "migrationNotes": "Lite covers Facebook Pages/X/Mastodon publishing and a calendar. Wider channel support and advanced workflows require proprietary Pro. No automatic migration verified.",
+    "sources": [
+      "https://buffer.com/pricing",
+      "https://mixpost.app/pricing",
+      "https://github.com/inovector/mixpost"
+    ]
+  },
+  {
+    "id": "buffer--postiz",
+    "from": "buffer",
+    "to": "postiz",
+    "fit": "partial",
+    "migrationNotes": "Partial scheduling/calendar replacement. Self-hosting requires infrastructure and platform app approvals; check each required channel and analytics scope. No automatic history, queue or credential migration verified.",
+    "sources": [
+      "https://buffer.com/pricing",
+      "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+      "https://docs.postiz.com/self-host/installation/overview"
+    ]
+  },
+  {
+    "id": "bynder--phraseanet",
+    "from": "bynder",
+    "to": "phraseanet",
+    "fit": "partial",
+    "migrationNotes": "Suitable for a searchable media library with structured/embedded metadata, faceted and thesaurus search, collection/document permissions, annotations, validation and web galleries. Plan asset and metadata export/import and rebuild taxonomy, access rules and workflows; existing approval history, SaaS integrations and branded portal behavior need separate validation. Phraseanet publishes an API and bulk import/export tools; no direct migration connector was verified. Parade is a separate front-office offering and its licensing is not established here.",
+    "sources": [
+      "https://www.phraseanet.com/decouvrir",
+      "https://www.phraseanet.com/services",
+      "https://www.bynder.com/en/pricing/"
     ]
   },
   {
@@ -182,6 +380,18 @@
     "migrationNotes": "Service/provider appointment booking, group sessions, Google/CalDAV sync and API/webhooks. Rebuild booking links, availability and integrations; no verified native import or equivalent sales routing/round-robin claim.",
     "sources": [
       "https://easyappointments.org/features/"
+    ]
+  },
+  {
+    "id": "cloudflare-access--netbird",
+    "from": "cloudflare-access",
+    "to": "netbird",
+    "fit": "different-approach",
+    "migrationNotes": "Scope is remote private-network access through NetBird clients and access policies. Rebuild enrolment and resource rules and operate infrastructure. Cloudflare clientless application access, browser terminals and broader SASE services need separate evaluation; no full platform replacement claim.",
+    "sources": [
+      "https://www.cloudflare.com/sase/products/access/",
+      "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud",
+      "https://docs.netbird.io/selfhosted/enterprise"
     ]
   },
   {
@@ -240,6 +450,31 @@
     ]
   },
   {
+    "id": "docebo--moodle",
+    "from": "docebo",
+    "to": "moodle",
+    "fit": "partial",
+    "migrationNotes": "Suitable for course delivery and assessment after redesign. Map learners, enrolments and completion evidence separately; no verified direct import of Docebo histories or admin rules. Workplace multi-tenancy, recurring certification programs and dynamic rules require the commercial extension. Rebuild integrations and validate content package versions.",
+    "sources": [
+      "https://www.docebo.com/pricing/",
+      "https://docs.moodle.org/503/en/Features",
+      "https://docs.moodle.org/503/en/Moodle_Workplace",
+      "https://docs.moodle.org/503/en/SCORM_FAQ"
+    ]
+  },
+  {
+    "id": "docebo--open-edx",
+    "from": "docebo",
+    "to": "open-edx",
+    "fit": "different-approach",
+    "migrationNotes": "Fits structured course delivery and enterprise education with self-managed authoring. Docebo multi-audience administration, compliance workflows and integration automation require explicit redesign. Learner histories, certification evidence and content packages need a migration pilot; no direct importer or package parity verified.",
+    "sources": [
+      "https://www.docebo.com/pricing/",
+      "https://openedx.org/get-started/",
+      "https://openedx.org/platform/features/"
+    ]
+  },
+  {
     "id": "docusign--documenso",
     "from": "docusign",
     "to": "documenso",
@@ -269,6 +504,28 @@
     "sources": [
       "https://github.com/OpenSignLabs/OpenSign",
       "https://docs.opensignlabs.com/docs/help/Settings/APIToken/"
+    ]
+  },
+  {
+    "id": "docuware--mayan-edms",
+    "from": "docuware",
+    "to": "mayan-edms",
+    "fit": "partial",
+    "migrationNotes": "Both support document versions, permissions and workflows. Export documents/metadata and rebuild workflow states, roles and integrations using Mayan REST API; DocuWare forms and add-on modules are not proven portable.",
+    "sources": [
+      "https://start.docuware.com/faq/docuware-pricing",
+      "https://docs.mayan-edms.com/chapters/features.html"
+    ]
+  },
+  {
+    "id": "docuware--paperless-ngx",
+    "from": "docuware",
+    "to": "paperless-ngx",
+    "fit": "partial",
+    "migrationNotes": "Suitable for OCR, indexing and searchable document archives. Export source files and metadata, then map document types/tags/permissions on import. DocuWare forms, approval routing, SAP/signature add-ons and configurations require separate evaluation and rebuilding; no verified direct migration tool.",
+    "sources": [
+      "https://start.docuware.com/faq/docuware-pricing",
+      "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/dev/docs/index.md"
     ]
   },
   {
@@ -306,6 +563,65 @@
     ]
   },
   {
+    "id": "elastic-cloud--opensearch",
+    "to": "opensearch",
+    "fit": "partial",
+    "migrationNotes": "Replace selected Elasticsearch search/analytics workloads after version, query, mapping and plugin compatibility review. Migration Assistant supports data/metadata/traffic migration and validation. Self-hosting takes over operations; Elastic proprietary solutions, agents and managed-service features need separate replacement assessment.",
+    "sources": [
+      "https://docs.opensearch.org/latest/migration-assistant/",
+      "https://opensearch.org/about/",
+      "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+    ],
+    "from": "elastic-cloud"
+  },
+  {
+    "id": "elastic-cloud--typesense",
+    "to": "typesense",
+    "fit": "different-approach",
+    "migrationNotes": "Applicable to application search over documents with faceting, typo tolerance or vectors. Rebuild ingestion, schemas and search queries around Typesense APIs. This search engine does not replace the full Elastic Cloud observability/security platform.",
+    "sources": [
+      "https://typesense.org/",
+      "https://www.elastic.co/pricing/"
+    ],
+    "from": "elastic-cloud"
+  },
+  {
+    "id": "expensify--frappe-hr",
+    "from": "expensify",
+    "to": "frappe-hr",
+    "fit": "partial",
+    "migrationNotes": "Employee receipt-backed claims, approvals and reimbursement records overlap. Deploy Frappe HR with ERPNext; map employees, expense types, approvers and outstanding claims. Expensify SmartScan, card feeds and direct global payout parity not verified. No automatic migration validated.",
+    "sources": [
+      "https://frappe.io/hr/expense-management",
+      "https://docs.frappe.io/hr/expense-claim",
+      "https://use.expensify.com/blog/collect-plan-pricing-update"
+    ]
+  },
+  {
+    "id": "fastmail--mailcow",
+    "from": "fastmail",
+    "to": "mailcow",
+    "fit": "partial",
+    "migrationNotes": "Email/groupware scope only. Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+    "sources": [
+      "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+      "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+      "https://www.fastmail.com/pricing/us/"
+    ]
+  },
+  {
+    "id": "fastmail--stalwart",
+    "from": "fastmail",
+    "to": "stalwart",
+    "fit": "partial",
+    "migrationNotes": "Email/groupware scope only. Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+    "sources": [
+      "https://www.stalw.art/migration/",
+      "https://www.stalw.art/compare/",
+      "https://www.fastmail.com/pricing/us/"
+    ]
+  },
+  {
     "id": "figjam--excalidraw",
     "to": "excalidraw",
     "fit": "partial",
@@ -326,6 +642,31 @@
       "https://www.figma.com/pricing/"
     ],
     "from": "figma"
+  },
+  {
+    "id": "final-cut-pro--kdenlive",
+    "to": "kdenlive",
+    "fit": "partial",
+    "migrationNotes": "Partial replacement for local timeline editing, effects, audio and grading. Reuse source media; native Premiere projects or Final Cut libraries were not verified as importable. Kdenlive saves MLT-based .kdenlive XML that references media; archive the project to collect media for moving computers. Test representative timelines and rebuild unsupported effects/titles; proprietary project fidelity is unverified.",
+    "sources": [
+      "https://kdenlive.org/",
+      "https://docs.kdenlive.org/en/project_and_asset_management/file_management/project_files.html",
+      "https://docs.kdenlive.org/en/project_and_asset_management/file_management/archiving.html",
+      "https://apps.apple.com/us/app/final-cut-pro/id424389933"
+    ],
+    "from": "final-cut-pro"
+  },
+  {
+    "id": "final-cut-pro--shotcut",
+    "to": "shotcut",
+    "fit": "partial",
+    "migrationNotes": "Partial replacement for local multitrack editing and rendered video delivery. Shotcut saves MLT XML projects and exports video separately; its FAQ suggests DNxHR HQ or ProRes 422 intermediates when accepted by the other tool. EDL export is documented, not native Premiere/Final Cut project import. Rebuild and verify existing timelines; plugin/effect fidelity is unverified.",
+    "sources": [
+      "https://shotcut.org/features/",
+      "https://shotcut.org/FAQ/",
+      "https://apps.apple.com/us/app/final-cut-pro/id424389933"
+    ],
+    "from": "final-cut-pro"
   },
   {
     "id": "firebase--appwrite",
@@ -356,6 +697,64 @@
     "migrationNotes": "Postgres relational backend with auth, realtime and storage; rewrite Firebase SDK calls, security rules and document data into SQL schemas; self-hosting requires production operations.",
     "sources": [
       "https://supabase.com/docs/guides/self-hosting"
+    ]
+  },
+  {
+    "id": "fireflies--vosk",
+    "to": "vosk",
+    "fit": "different-approach",
+    "migrationNotes": "For developers rebuilding only the transcription layer: supply recordings or audio streams and integrate the API/server. Speaker identification primitives exist; evaluate/build meeting diarization, capture, UI, summaries, storage, sharing and integrations. No native incumbent workspace import verified.",
+    "sources": [
+      "https://fireflies.ai/pricing",
+      "https://alphacephei.com/vosk/"
+    ],
+    "from": "fireflies"
+  },
+  {
+    "id": "fireflies--whisper",
+    "to": "whisper",
+    "fit": "different-approach",
+    "migrationNotes": "For teams replacing only audio-to-text: export or record audio separately and process with local CLI/Python. Build meeting capture, transcript UI, speaker diarization, summaries, search, sharing and integrations separately. No native incumbent workspace import or workflow parity verified.",
+    "sources": [
+      "https://fireflies.ai/pricing",
+      "https://github.com/openai/whisper"
+    ],
+    "from": "fireflies"
+  },
+  {
+    "id": "freshservice-itam--glpi",
+    "from": "freshservice-itam",
+    "to": "glpi",
+    "fit": "partial",
+    "migrationNotes": "Configure inventory collectors, map assets/relationships and validate imports. GLPI covers inventory/CMDB with broader ITSM options, but cloud discovery and selected integration/reporting plugins require subscriptions. Do not assume Lansweeper OT/vulnerability enrichment or Freshservice service mapping parity.",
+    "sources": [
+      "https://www.glpi-project.org/en/cmdb-software/",
+      "https://www.glpi-project.org/en/plugins/",
+      "https://www.freshworks.com/freshservice/itam/pricing/"
+    ]
+  },
+  {
+    "id": "freshservice-itam--snipe-it",
+    "from": "freshservice-itam",
+    "to": "snipe-it",
+    "fit": "partial",
+    "migrationNotes": "Rebuild asset assignments, ownership and license records using CSV/API and validate identifiers/history. Snipe-IT is a lifecycle record system; independent network discovery, vulnerability enrichment, ITSM workflows and application mapping need separate integrations.",
+    "sources": [
+      "https://snipeitapp.com/product",
+      "https://snipeitapp.com/faq",
+      "https://www.freshworks.com/freshservice/itam/pricing/"
+    ]
+  },
+  {
+    "id": "front--thunderbird",
+    "from": "front",
+    "to": "thunderbird",
+    "fit": "partial",
+    "migrationNotes": "Only the individual-email portion of Front is comparable: connect existing mail accounts and organize personal mail locally. Front individual inboxes also participate in comments, sharing and delegation. No parity or migration path is asserted for Front shared inboxes, assignments, team comments, ticketing, analytics, or automation.",
+    "sources": [
+      "https://help.front.com/en/articles/2054",
+      "https://www.thunderbird.net/en-US/desktop/",
+      "https://front.com/pricing"
     ]
   },
   {
@@ -437,6 +836,18 @@
     ]
   },
   {
+    "id": "google-workspace--mailcow",
+    "from": "google-workspace",
+    "to": "mailcow",
+    "fit": "partial",
+    "migrationNotes": "Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades.",
+    "sources": [
+      "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+      "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+      "https://workspace.google.com/pricing"
+    ]
+  },
+  {
     "id": "google-workspace--nextcloud",
     "from": "google-workspace",
     "to": "nextcloud",
@@ -482,6 +893,45 @@
     ]
   },
   {
+    "id": "google-workspace--stalwart",
+    "from": "google-workspace",
+    "to": "stalwart",
+    "fit": "partial",
+    "migrationNotes": "Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise.",
+    "sources": [
+      "https://www.stalw.art/migration/",
+      "https://www.stalw.art/compare/",
+      "https://workspace.google.com/pricing"
+    ]
+  },
+  {
+    "id": "greenhouse--frappe-hr",
+    "from": "greenhouse",
+    "to": "frappe-hr",
+    "fit": "partial",
+    "migrationNotes": "Fits job openings, applicant records/email intake, scheduled interview rounds/feedback and offers within a broader HR suite. Greenhouse structured recruiting, sourcing/CRM and analytics require separate workflow/integration assessment. Map exported fields and stage history; rebuild roles, forms and interview workflows. Framework CSV/Excel import requires an import-enabled DocType plus role permission; Job Applicant import eligibility and attachment/history migration unverified. No direct Greenhouse migration connector established.",
+    "sources": [
+      "https://www.greenhouse.com/pricing",
+      "https://docs.frappe.io/hr/job-applicant",
+      "https://docs.frappe.io/hr/interview",
+      "https://docs.frappe.io/hr/recruitment",
+      "https://docs.frappe.io/framework-git/data-import/data-import",
+      "https://docs.frappe.io/framework/user/en/basics/users-and-permissions"
+    ]
+  },
+  {
+    "id": "harvest--kimai",
+    "from": "harvest",
+    "to": "kimai",
+    "fit": "partial",
+    "migrationNotes": "Overlapping project timesheets, reporting and invoicing support a partial alternative. No Harvest-specific importer verified; CSV/JSON importer or API mapping required. Expense management requires paid plugin; accounting and payment integrations need separate assessment.",
+    "sources": [
+      "https://www.kimai.org/documentation/imports.html",
+      "https://www.kimai.org/en/",
+      "https://www.getharvest.com/pricing"
+    ]
+  },
+  {
     "id": "heroku--coolify",
     "from": "heroku",
     "to": "coolify",
@@ -500,6 +950,18 @@
     "migrationNotes": "Supports Heroku-compatible apps/buildpacks and git push, but owner operates host and datastores; audit buildpack/plugin compatibility, migrate add-on data and configure backups.",
     "sources": [
       "https://dokku.com/"
+    ]
+  },
+  {
+    "id": "hootsuite--postiz",
+    "from": "hootsuite",
+    "to": "postiz",
+    "fit": "partial",
+    "migrationNotes": "Partial scheduling/calendar replacement. Self-hosting requires infrastructure and platform app approvals; check each required channel and analytics scope. No automatic history, queue or credential migration verified. Hootsuite listening/customer-care suite parity unverified.",
+    "sources": [
+      "https://www.hootsuite.com/plans",
+      "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+      "https://docs.postiz.com/self-host/installation/overview"
     ]
   },
   {
@@ -543,6 +1005,28 @@
     "migrationNotes": "Vendor explicitly supports HubSpot/Salesforce migration through CSV or API (API recommended above 50,000 records). Rebuild existing automations/custom data models; SSO and row permissions require commercial licensing.",
     "sources": [
       "https://twenty.com/pricing"
+    ]
+  },
+  {
+    "id": "insomnia--bruno",
+    "from": "insomnia",
+    "to": "bruno",
+    "fit": "partial",
+    "migrationNotes": "Bruno accepts Insomnia collection exports in JSON (v4) and YAML (v5+). Review requests, variables and authentication after import; Git-based local collaboration differs from managed organizational controls.",
+    "sources": [
+      "https://docs.usebruno.com/get-started/import-export-data/import-collections",
+      "https://www.usebruno.com/pricing"
+    ]
+  },
+  {
+    "id": "insomnia--hoppscotch",
+    "from": "insomnia",
+    "to": "hoppscotch",
+    "fit": "partial",
+    "migrationNotes": "Import Insomnia collection/environment JSON. Scripts, tests and advanced authorization do not migrate; regular environment variables supported. Rebuild and test missing workflows; self-host import limit 50 MB.",
+    "sources": [
+      "https://docs.hoppscotch.io/documentation/features/importer",
+      "https://docs.hoppscotch.io/documentation/self-host/getting-started"
     ]
   },
   {
@@ -599,6 +1083,45 @@
     "from": "jira"
   },
   {
+    "id": "lansweeper--glpi",
+    "from": "lansweeper",
+    "to": "glpi",
+    "fit": "partial",
+    "migrationNotes": "Configure inventory collectors, map assets/relationships and validate imports. GLPI covers inventory/CMDB with broader ITSM options, but cloud discovery and selected integration/reporting plugins require subscriptions. Do not assume Lansweeper OT/vulnerability enrichment or Freshservice service mapping parity.",
+    "sources": [
+      "https://www.glpi-project.org/en/cmdb-software/",
+      "https://www.glpi-project.org/en/plugins/",
+      "https://www.lansweeper.com/pricing/"
+    ]
+  },
+  {
+    "id": "lansweeper--snipe-it",
+    "from": "lansweeper",
+    "to": "snipe-it",
+    "fit": "partial",
+    "migrationNotes": "Rebuild asset assignments, ownership and license records using CSV/API and validate identifiers/history. Snipe-IT is a lifecycle record system; independent network discovery, vulnerability enrichment, ITSM workflows and application mapping need separate integrations.",
+    "sources": [
+      "https://snipeitapp.com/product",
+      "https://snipeitapp.com/faq",
+      "https://www.lansweeper.com/pricing/"
+    ]
+  },
+  {
+    "id": "lever--frappe-hr",
+    "from": "lever",
+    "to": "frappe-hr",
+    "fit": "partial",
+    "migrationNotes": "Fits job openings, applicant records/email intake, scheduled interview rounds/feedback and offers within a broader HR suite. Lever sourcing/nurture CRM, AI screening and analytics are not established equivalents. Map exported fields and stage history; rebuild roles, forms and interview workflows. Framework CSV/Excel import requires an import-enabled DocType plus role permission; Job Applicant import eligibility and attachment/history migration unverified. No direct Lever migration connector established.",
+    "sources": [
+      "https://www.lever.co/pricing",
+      "https://docs.frappe.io/hr/job-applicant",
+      "https://docs.frappe.io/hr/interview",
+      "https://docs.frappe.io/hr/recruitment",
+      "https://docs.frappe.io/framework-git/data-import/data-import",
+      "https://docs.frappe.io/framework/user/en/basics/users-and-permissions"
+    ]
+  },
+  {
     "id": "linear--huly",
     "to": "huly",
     "fit": "partial",
@@ -640,6 +1163,33 @@
     "from": "linear"
   },
   {
+    "id": "looker--apache-superset",
+    "from": "looker",
+    "to": "apache-superset",
+    "fit": "partial",
+    "migrationNotes": "Suitable for SQL database dashboards and exploration. Rebuild LookML metrics, joins and access policies in SQL/dataset definitions; validate semantic equivalence and drill paths. Planning inference: these sources document Superset-native connections and datasets, not a native importer for incumbent assets. Install DB-API driver and SQLAlchemy dialect per engine; dashboards, auth and reporting require reconfiguration.",
+    "sources": [
+      "https://superset.apache.org/",
+      "https://superset.apache.org/user-docs/databases/",
+      "https://superset.apache.org/user-docs/using-superset/embedding/",
+      "https://superset.apache.org/admin-docs/configuration/configuring-superset/",
+      "https://superset.apache.org/admin-docs/configuration/alerts-reports/"
+    ]
+  },
+  {
+    "id": "looker--metabase",
+    "from": "looker",
+    "to": "metabase",
+    "fit": "partial",
+    "migrationNotes": "Self-service database questions and dashboards; vendor migration guidance explicitly discusses Looker. Rebuild LookML metrics, joins and access policies in SQL/dataset definitions; validate semantic equivalence and drill paths. Audit dashboards and subscriptions, centralize shared calculation logic, then rebuild and compare metrics. Data source support must be checked; embedded interactivity/SSO and subscription-specific filters require paid editions.",
+    "sources": [
+      "https://www.metabase.com/blog/making-bi-migration-suck-less",
+      "https://www.metabase.com/pricing",
+      "https://www.metabase.com/docs/latest/dashboards/subscriptions",
+      "https://www.metabase.com/docs/latest/embedding/dashboard"
+    ]
+  },
+  {
     "id": "loom--cap",
     "from": "loom",
     "to": "cap",
@@ -671,6 +1221,39 @@
     "sources": [
       "https://github.com/alyssaxuu/screenity",
       "https://screenity.io"
+    ]
+  },
+  {
+    "id": "lucidchart--drawio",
+    "from": "lucidchart",
+    "to": "drawio",
+    "fit": "partial",
+    "migrationNotes": "Import supported Lucidchart diagram files or .vsdx exports into the visual editor. Validate layout and custom shapes on representative files. Hosted comments, permissions and integration behavior are not established as transferable.",
+    "sources": [
+      "https://www.drawio.com/docs/manual/import/import-formats/",
+      "https://drawio-app.com/blog/migrating-draw-io-dc-to-cloud-faqs/"
+    ]
+  },
+  {
+    "id": "lucidchart--mermaid",
+    "from": "lucidchart",
+    "to": "mermaid",
+    "fit": "different-approach",
+    "migrationNotes": "Recreate supported flowcharts, sequence, class or entity-relationship diagrams as Mermaid text. Suitable for versioned documentation; switching from canvas editing changes the authoring workflow. No native Lucidchart import or transfer of hosted collaboration asserted.",
+    "sources": [
+      "https://mermaid.js.org/intro/",
+      "https://mermaid.ai/open-source/config/usage.html"
+    ]
+  },
+  {
+    "id": "m-files--mayan-edms",
+    "from": "m-files",
+    "to": "mayan-edms",
+    "fit": "partial",
+    "migrationNotes": "Partial fit for document storage, metadata, versioning and approval workflows. Rebuild M-Files metadata relationships, workflows, access rules and Microsoft 365 experiences; Mayan API supports custom integration but no direct vault migration was verified.",
+    "sources": [
+      "https://www.m-files.com/editions/",
+      "https://docs.mayan-edms.com/chapters/features.html"
     ]
   },
   {
@@ -752,6 +1335,28 @@
     ]
   },
   {
+    "id": "masv--copyparty",
+    "from": "masv",
+    "to": "copyparty",
+    "fit": "partial",
+    "migrationNotes": "Candidate for operator-run large-file upload/download endpoints: up2k chunks/checksums and resumes uploads with no software file-size limit. MASV accelerated cloud egress, destination routing, integrations and managed availability need separate replacement; throughput depends on own server/network. No MASV package/history migration verified.",
+    "sources": [
+      "https://masv.io/pricing",
+      "https://github.com/9001/copyparty#uploading"
+    ]
+  },
+  {
+    "id": "metabase-pro--metabase",
+    "from": "metabase-pro",
+    "to": "metabase",
+    "fit": "partial",
+    "migrationNotes": "Community edition of the same project for core queries, dashboards and basic subscriptions. Downgrading does not retain paid interactive embedding, tailored subscriptions, enterprise identity or other Pro entitlements; review supported downgrade/version procedures and existing saved content before switching. No automatic downgrade validated.",
+    "sources": [
+      "https://www.metabase.com/pricing",
+      "https://www.metabase.com/pricing"
+    ]
+  },
+  {
     "id": "microsoft-365--collabora-online",
     "from": "microsoft-365",
     "to": "collabora-online",
@@ -760,6 +1365,18 @@
     "sources": [
       "https://www.collaboraonline.com/de/code/",
       "https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/"
+    ]
+  },
+  {
+    "id": "microsoft-365--mailcow",
+    "from": "microsoft-365",
+    "to": "mailcow",
+    "fit": "partial",
+    "migrationNotes": "Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades.",
+    "sources": [
+      "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+      "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+      "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"
     ]
   },
   {
@@ -808,6 +1425,42 @@
     ]
   },
   {
+    "id": "microsoft-365--stalwart",
+    "from": "microsoft-365",
+    "to": "stalwart",
+    "fit": "partial",
+    "migrationNotes": "Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise.",
+    "sources": [
+      "https://www.stalw.art/migration/",
+      "https://www.stalw.art/compare/",
+      "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products"
+    ]
+  },
+  {
+    "id": "microsoft-outlook--roundcube",
+    "from": "microsoft-outlook",
+    "to": "roundcube",
+    "fit": "different-approach",
+    "migrationNotes": "Browser webmail alternative for ordinary mailbox access using your own compatible IMAP/SMTP service. Requires server deployment; contacts and messages have import/export tools. Core Roundcube is not a replacement for the Microsoft 365 suite, hosted mailbox service, or Exchange calendar workflows; calendars are third-party additions.",
+    "sources": [
+      "https://roundcube.net/about/",
+      "https://roundcube.net/download/",
+      "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+    ]
+  },
+  {
+    "id": "microsoft-outlook--thunderbird",
+    "from": "microsoft-outlook",
+    "to": "thunderbird",
+    "fit": "partial",
+    "migrationNotes": "Local alternative for email, calendars, contacts, tasks, and multi-account organization. Reconnect mail accounts using supported authentication; Microsoft-hosted accounts may require OAuth, SMTP enablement, and administrator consent. Full Exchange/calendar or Microsoft 365 suite parity is not asserted. Existing subscription storage/security benefits are separate from the client.",
+    "sources": [
+      "https://www.thunderbird.net/en-US/desktop/",
+      "https://support.mozilla.org/en-US/kb/microsoft-oauth-authentication-and-thunderbird-202",
+      "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+    ]
+  },
+  {
     "id": "microsoft-teams--element",
     "from": "microsoft-teams",
     "to": "element",
@@ -846,6 +1499,27 @@
     "sources": [
       "https://zulip.com/plans/",
       "https://zulip.com/help/import-from-microsoft-teams"
+    ]
+  },
+  {
+    "id": "microsoft-visio--drawio",
+    "from": "microsoft-visio",
+    "to": "drawio",
+    "fit": "partial",
+    "migrationNotes": "Imports .vsdx and supported older .vsd/.vst and stencil formats. .vdx/.vsx need conversion in Visio first. Test fidelity; no editable Visio round-trip, data-link or Microsoft workflow parity asserted.",
+    "sources": [
+      "https://www.drawio.com/docs/manual/import/import-formats/"
+    ]
+  },
+  {
+    "id": "microsoft-visio--mermaid",
+    "from": "microsoft-visio",
+    "to": "mermaid",
+    "fit": "different-approach",
+    "migrationNotes": "Re-author supported technical and process diagrams as Markdown-inspired text in documentation or a website. Library does not supply a Visio-compatible desktop suite or collaboration server. No Visio import/export round-trip asserted.",
+    "sources": [
+      "https://mermaid.js.org/intro/",
+      "https://mermaid.ai/open-source/config/usage.html"
     ]
   },
   {
@@ -945,6 +1619,28 @@
     ]
   },
   {
+    "id": "otter--vosk",
+    "to": "vosk",
+    "fit": "different-approach",
+    "migrationNotes": "For developers rebuilding only the transcription layer: supply recordings or audio streams and integrate the API/server. Speaker identification primitives exist; evaluate/build meeting diarization, capture, UI, summaries, storage, sharing and integrations. No native incumbent workspace import verified.",
+    "sources": [
+      "https://otter.ai/pricing",
+      "https://alphacephei.com/vosk/"
+    ],
+    "from": "otter"
+  },
+  {
+    "id": "otter--whisper",
+    "to": "whisper",
+    "fit": "different-approach",
+    "migrationNotes": "For teams replacing only audio-to-text: export or record audio separately and process with local CLI/Python. Build meeting capture, transcript UI, speaker diarization, summaries, search, sharing and integrations separately. No native incumbent workspace import or workflow parity verified.",
+    "sources": [
+      "https://otter.ai/pricing",
+      "https://github.com/openai/whisper"
+    ],
+    "from": "otter"
+  },
+  {
     "id": "pingdom--glitchtip",
     "from": "pingdom",
     "to": "glitchtip",
@@ -964,6 +1660,55 @@
     "sources": [
       "https://github.com/louislam/uptime-kuma#-features",
       "https://www.pingdom.com/pricing/"
+    ]
+  },
+  {
+    "id": "postman--bruno",
+    "from": "postman",
+    "to": "bruno",
+    "fit": "partial",
+    "migrationNotes": "Import individual Postman JSON collections into local Bruno files; complete Data Export import requires Ultimate. Recheck environments, authentication and tests; managed workspaces and monitoring do not transfer as a complete platform.",
+    "sources": [
+      "https://docs.usebruno.com/get-started/import-export-data/import-collections",
+      "https://www.usebruno.com/pricing"
+    ]
+  },
+  {
+    "id": "postman--hoppscotch",
+    "from": "postman",
+    "to": "hoppscotch",
+    "fit": "partial",
+    "migrationNotes": "Import Postman collections/environments. Script import is experimental and requires consent; advanced authorization and collection-level settings are omitted. Revalidate tests and authentication. Self-host import limit documented at 50 MB.",
+    "sources": [
+      "https://docs.hoppscotch.io/documentation/features/importer",
+      "https://docs.hoppscotch.io/documentation/self-host/getting-started"
+    ]
+  },
+  {
+    "id": "power-bi--apache-superset",
+    "from": "power-bi",
+    "to": "apache-superset",
+    "fit": "partial",
+    "migrationNotes": "Suitable for SQL database dashboards and exploration. Recreate PBIX report layouts and DAX/Power Query calculations; validate gateway-dependent and Microsoft-specific sources separately. Planning inference: these sources document Superset-native connections and datasets, not a native importer for incumbent assets. Install DB-API driver and SQLAlchemy dialect per engine; dashboards, auth and reporting require reconfiguration.",
+    "sources": [
+      "https://superset.apache.org/",
+      "https://superset.apache.org/user-docs/databases/",
+      "https://superset.apache.org/user-docs/using-superset/embedding/",
+      "https://superset.apache.org/admin-docs/configuration/configuring-superset/",
+      "https://superset.apache.org/admin-docs/configuration/alerts-reports/"
+    ]
+  },
+  {
+    "id": "power-bi--metabase",
+    "from": "power-bi",
+    "to": "metabase",
+    "fit": "partial",
+    "migrationNotes": "Self-service database questions and dashboards; vendor migration guidance explicitly discusses Power BI. Recreate PBIX report layouts and DAX/Power Query calculations; validate gateway-dependent and Microsoft-specific sources separately. Audit dashboards and subscriptions, centralize shared calculation logic, then rebuild and compare metrics. Data source support must be checked; embedded interactivity/SSO and subscription-specific filters require paid editions.",
+    "sources": [
+      "https://www.metabase.com/blog/making-bi-migration-suck-less",
+      "https://www.metabase.com/pricing",
+      "https://www.metabase.com/docs/latest/dashboards/subscriptions",
+      "https://www.metabase.com/docs/latest/embedding/dashboard"
     ]
   },
   {
@@ -1020,6 +1765,18 @@
     ]
   },
   {
+    "id": "ringcentral--asterisk",
+    "from": "ringcentral",
+    "to": "asterisk",
+    "fit": "different-approach",
+    "migrationNotes": "Can rebuild calling, routing, IVR, queues and voicemail using the Asterisk engine. RingEX meetings/chat apps, turnkey administration and integrations are separate workflows; plan endpoint provisioning, carrier/number migration and custom integration work. No verified automatic configuration or call-history importer.",
+    "sources": [
+      "https://www.asterisk.org/get-started/features/",
+      "https://www.asterisk.org/products/ip-pbx/",
+      "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+    ]
+  },
+  {
     "id": "salesforce--espocrm",
     "from": "salesforce",
     "to": "espocrm",
@@ -1063,6 +1820,18 @@
     ]
   },
   {
+    "id": "sap-concur--frappe-hr",
+    "from": "sap-concur",
+    "to": "frappe-hr",
+    "fit": "partial",
+    "migrationNotes": "Fits receipt-backed expense claims, multi-level approvals and reimbursement records. Deploy Frappe HR with ERPNext and rebuild policies, employee mapping and unpaid claims. Concur travel booking, card feeds, automated receipt extraction and global payment integrations not verified; no direct migration established.",
+    "sources": [
+      "https://frappe.io/hr/expense-management",
+      "https://docs.frappe.io/hr/expense-claim",
+      "https://www.concur.com/products/concur-expense"
+    ]
+  },
+  {
     "id": "sentry--glitchtip",
     "from": "sentry",
     "to": "glitchtip",
@@ -1072,6 +1841,39 @@
       "https://glitchtip.com/",
       "https://gitlab.com/glitchtip/glitchtip-backend/-/raw/master/README.md"
     ]
+  },
+  {
+    "id": "shopify--medusa",
+    "to": "medusa",
+    "fit": "different-approach",
+    "migrationNotes": "Developer-built commerce backend and admin with storefront starters rather than a turnkey merchant SaaS. Budget implementation of storefront and integrations; no automatic Shopify app or complete data transfer verified. Enterprise RBAC/SSO need a commercial agreement.",
+    "sources": [
+      "https://github.com/medusajs/medusa",
+      "https://medusajs.com/pricing"
+    ],
+    "from": "shopify"
+  },
+  {
+    "id": "shopify--prestashop",
+    "to": "prestashop",
+    "fit": "partial",
+    "migrationNotes": "Another merchant storefront and back office, with responsibility for self-hosting or a separate hosting plan. Rebuild theme and integrations and validate catalog, order and customer migration. No automatic Shopify app, checkout or full-store transfer established.",
+    "sources": [
+      "https://prestashop.com/open-source/",
+      "https://prestashop.com/prestashop-offers/"
+    ],
+    "from": "shopify"
+  },
+  {
+    "id": "shopify--woocommerce",
+    "to": "woocommerce",
+    "fit": "partial",
+    "migrationNotes": "Suitable for a merchant storefront on WordPress. Built-in CSV tools move product catalog data after mapping the WooCommerce schema; this is not a full-store migration. Rebuild design, checkout integrations and platform-specific apps; plan separately for orders, customers, subscriptions and URLs.",
+    "sources": [
+      "https://woocommerce.com/pricing/",
+      "https://woocommerce.com/document/product-csv-importer-exporter/"
+    ],
+    "from": "shopify"
   },
   {
     "id": "slack--element",
@@ -1114,6 +1916,162 @@
     "sources": [
       "https://zulip.com/plans/",
       "https://zulip.com/help/import-from-slack"
+    ]
+  },
+  {
+    "id": "smallpdf--pdf-arranger",
+    "from": "smallpdf",
+    "to": "pdf-arranger",
+    "fit": "partial",
+    "migrationNotes": "Open PDF files locally for page split, merge, rotate, crop and rearrangement. Does not replace the wider conversion, text editing, signing or cloud-sharing service.",
+    "sources": [
+      "https://github.com/pdfarranger/pdfarranger",
+      "https://smallpdf.com/pricing"
+    ]
+  },
+  {
+    "id": "smallpdf--pdfsam-basic",
+    "from": "smallpdf",
+    "to": "pdfsam-basic",
+    "fit": "partial",
+    "migrationNotes": "Local page-processing replacement for Smallpdf merge, split, rotate and extract tasks. No cloud account migration; retain PDF files. Basic lacks Smallpdf OCR, content editing and compression workflows.",
+    "sources": [
+      "https://pdfsam.org/pdfsam-basic/",
+      "https://smallpdf.com/pricing"
+    ]
+  },
+  {
+    "id": "spendesk--frappe-hr",
+    "from": "spendesk",
+    "to": "frappe-hr",
+    "fit": "partial",
+    "migrationNotes": "Fits employee out-of-pocket claims, conditional approvals and settlement tracking. Deploy Frappe HR with ERPNext and rebuild policies/approvers. Spendesk cards, procurement, payment rails and integrations are broader; no direct migration or service parity established.",
+    "sources": [
+      "https://frappe.io/hr/expense-management",
+      "https://docs.frappe.io/hr/expense-claim",
+      "https://www.spendesk.com/pricing/"
+    ]
+  },
+  {
+    "id": "squarespace--ghost",
+    "from": "squarespace",
+    "to": "ghost",
+    "fit": "partial",
+    "migrationNotes": "Best for a publication/blog. Built-in Squarespace XML migrator imports posts/pages and converts categories to tags; review redirects and rebuild design. Broader store/scheduling workflows need separate solutions.",
+    "sources": [
+      "https://docs.ghost.org/migration/squarespace/",
+      "https://ghost.org/"
+    ]
+  },
+  {
+    "id": "squarespace--wordpress",
+    "from": "squarespace",
+    "to": "wordpress",
+    "fit": "partial",
+    "migrationNotes": "Squarespace exports WordPress XML for selected pages and one blog. Store/portfolio pages, styles, custom CSS and several block types do not export; rebuild design and integrations.",
+    "sources": [
+      "https://support.squarespace.com/hc/en-us/articles/206566687-Export-your-site-content",
+      "https://developer.wordpress.org/advanced-administration/wordpress/import/"
+    ]
+  },
+  {
+    "id": "tableau--apache-superset",
+    "from": "tableau",
+    "to": "apache-superset",
+    "fit": "partial",
+    "migrationNotes": "Suitable for SQL database dashboards and exploration. Rebuild workbook layouts, calculated fields and extract-based preparation; validate dashboard interactions and supported data drivers. Planning inference: these sources document Superset-native connections and datasets, not a native importer for incumbent assets. Install DB-API driver and SQLAlchemy dialect per engine; dashboards, auth and reporting require reconfiguration.",
+    "sources": [
+      "https://superset.apache.org/",
+      "https://superset.apache.org/user-docs/databases/",
+      "https://superset.apache.org/user-docs/using-superset/embedding/",
+      "https://superset.apache.org/admin-docs/configuration/configuring-superset/",
+      "https://superset.apache.org/admin-docs/configuration/alerts-reports/"
+    ]
+  },
+  {
+    "id": "tableau--metabase",
+    "from": "tableau",
+    "to": "metabase",
+    "fit": "partial",
+    "migrationNotes": "Self-service database questions and dashboards; vendor migration guidance explicitly discusses Tableau. Rebuild workbook layouts, calculated fields and extract-based preparation; validate dashboard interactions and supported data drivers. Audit dashboards and subscriptions, centralize shared calculation logic, then rebuild and compare metrics. Data source support must be checked; embedded interactivity/SSO and subscription-specific filters require paid editions.",
+    "sources": [
+      "https://www.metabase.com/blog/making-bi-migration-suck-less",
+      "https://www.metabase.com/pricing",
+      "https://www.metabase.com/docs/latest/dashboards/subscriptions",
+      "https://www.metabase.com/docs/latest/embedding/dashboard"
+    ]
+  },
+  {
+    "id": "tailscale--headscale",
+    "from": "tailscale",
+    "to": "headscale",
+    "fit": "partial",
+    "migrationNotes": "Use compatible Tailscale clients configured for a new Headscale control-server URL; re-register nodes and recreate policy, DNS and routes. One tailnet, small-organisation focus; no built-in web UI or promised enterprise-service parity.",
+    "sources": [
+      "https://headscale.net/stable/",
+      "https://headscale.net/stable/about/clients/",
+      "https://headscale.net/stable/ref/integration/web-ui/",
+      "https://tailscale.com/pricing"
+    ]
+  },
+  {
+    "id": "tailscale--netbird",
+    "from": "tailscale",
+    "to": "netbird",
+    "fit": "partial",
+    "migrationNotes": "Re-enrol devices with NetBird clients and recreate identities, DNS, routing and access policies. Community includes networking but enterprise provisioning, approvals and flow observability require the commercial self-hosted license; Tailscale platform extensions are not interchangeable.",
+    "sources": [
+      "https://tailscale.com/pricing",
+      "https://docs.netbird.io/selfhosted/enterprise",
+      "https://docs.netbird.io/about-netbird/self-hosted-vs-cloud"
+    ]
+  },
+  {
+    "id": "talentlms--moodle",
+    "from": "talentlms",
+    "to": "moodle",
+    "fit": "partial",
+    "migrationNotes": "Moodle covers courses, enrolment and progress tracking. Reuse original SCORM1.2/AICC packages after testing; Moodle does not generate SCORM exports. Tin Can/cmi5 parity is not established; native SCORM2004 unsupported. Rebuild branches, SSO/API links and reporting; Workplace corporate automation is commercial. No automatic history transfer verified.",
+    "sources": [
+      "https://www.talentlms.com/prices",
+      "https://docs.moodle.org/503/en/Features",
+      "https://docs.moodle.org/503/en/SCORM_FAQ",
+      "https://support.moodle.com/support/solutions/articles/80001074804-difference-between-moodle-workplace-and-moodle-lms",
+      "https://docs.moodle.org/503/en/Moodle_Workplace"
+    ]
+  },
+  {
+    "id": "talentlms--open-edx",
+    "from": "talentlms",
+    "to": "open-edx",
+    "fit": "different-approach",
+    "migrationNotes": "Course-centric LMS with Studio authoring and self-managed operation. Rebuild courses, learner administration, SSO and integrations. Existing TalentLMS SCORM/Tin Can/cmi5 content and reporting histories require a separate compatibility/import pilot; no package parity or turnkey migration verified.",
+    "sources": [
+      "https://www.talentlms.com/prices",
+      "https://openedx.org/get-started/",
+      "https://openedx.org/platform/features/"
+    ]
+  },
+  {
+    "id": "toggl-track--kimai",
+    "from": "toggl-track",
+    "to": "kimai",
+    "fit": "partial",
+    "migrationNotes": "Official free importer plugin supports Toggl Track timesheet CSV; required columns and date formats must match. Reporting and invoicing available; expenses and task planning use paid plugins. Validate rates, currencies and timezones during migration.",
+    "sources": [
+      "https://www.kimai.org/documentation/plugin-import.html",
+      "https://www.kimai.org/en/store/"
+    ]
+  },
+  {
+    "id": "toggl-track--solidtime",
+    "from": "toggl-track",
+    "to": "solidtime",
+    "fit": "partial",
+    "migrationNotes": "Repository documents Toggl data import and project/task/client tracking with billable rates. Not full planning/integration parity; invoicing is excluded from Open Source. Validate imported data before switching.",
+    "sources": [
+      "https://github.com/solidtime-io/solidtime#features",
+      "https://www.solidtime.io/pricing/on-premise"
     ]
   },
   {
@@ -1191,6 +2149,64 @@
     "sources": [
       "https://coolify.io/",
       "https://coolify.io/docs/"
+    ]
+  },
+  {
+    "id": "webflow--drupal",
+    "from": "webflow",
+    "to": "drupal",
+    "fit": "different-approach",
+    "migrationNotes": "For structured CMS projects with developer implementation. Webflow CSV content needs mapping into Drupal; Migrate provides APIs/base implementations, not a verified automatic Webflow importer. Rebuild templates and backend behavior.",
+    "sources": [
+      "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+      "https://www.drupal.org/docs/develop/core-modules-and-themes/core-modules/migrate-module",
+      "https://www.drupal.org/about"
+    ]
+  },
+  {
+    "id": "webflow--wordpress",
+    "from": "webflow",
+    "to": "wordpress",
+    "fit": "different-approach",
+    "migrationNotes": "WordPress supplies a theme/plugin CMS rather than Webflow Designer. Webflow CMS collections export separately as CSV; code export omits CMS runtime, forms and ecommerce. Map content and rebuild templates/integrations.",
+    "sources": [
+      "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+      "https://developer.wordpress.org/advanced-administration/wordpress/import/"
+    ]
+  },
+  {
+    "id": "wetransfer--copyparty",
+    "from": "wetransfer",
+    "to": "copyparty",
+    "fit": "partial",
+    "migrationNotes": "Replace selected browser send/download workflows with own server and password-protected expiring share links, optionally allowing recipient uploads. up2k resumes chunked uploads. Existing WeTransfer links/accounts do not migrate automatically; re-upload files and issue new links. Operator owns capacity and service availability.",
+    "sources": [
+      "https://wetransfer.com/help-center/subscriptions/plan-limits",
+      "https://github.com/9001/copyparty#uploading",
+      "https://github.com/9001/copyparty#shares"
+    ]
+  },
+  {
+    "id": "wetransfer--projectsend",
+    "from": "wetransfer",
+    "to": "projectsend",
+    "fit": "different-approach",
+    "migrationNotes": "Persistent client accounts/groups and upload-back portals suit recurring client delivery; core includes public links and file expiration. Requires deployment and recipient access setup; export/download original files and re-upload, replacing old links. No verified automatic WeTransfer importer or equivalent anonymous send experience.",
+    "sources": [
+      "https://wetransfer.com/help-center/subscriptions/plan-limits",
+      "https://www.projectsend.org/",
+      "https://www.projectsend.org/licensing"
+    ]
+  },
+  {
+    "id": "wix--wordpress",
+    "from": "wix",
+    "to": "wordpress",
+    "fit": "partial",
+    "migrationNotes": "Suitable for business sites and blogs using WordPress themes and publishing. Wix site runtime cannot transfer to another host; rebuild layout and business integrations, migrate content separately. Optional plugins may be needed.",
+    "sources": [
+      "https://wordpress.org/about/features/",
+      "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere"
     ]
   },
   {
@@ -1288,6 +2304,30 @@
     "sources": [
       "https://support.zammad.com/help/en-us/51-getting-started/30-i-m-on-zendesk-freshdesk-otrs-kayako-saas-how-do-i-make-the-switch-to-zammad",
       "https://zammad.com/en/pricing"
+    ]
+  },
+  {
+    "id": "zoho-mail--mailcow",
+    "from": "zoho-mail",
+    "to": "mailcow",
+    "fit": "partial",
+    "migrationNotes": "Email/groupware scope only. Replaces custom-domain mailbox hosting, not the full office suite. Mailcow sync jobs copy messages from IMAP; calendars, contacts, permissions and client behavior need separate migration checks. Operator manages DNS, deliverability, backups and upgrades. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+    "sources": [
+      "https://docs.mailcow.email/post_installation/firststeps-sync_jobs_migration/",
+      "https://docs.mailcow.email/getstarted/prerequisite-dns/",
+      "https://www.zoho.com/mail/zohomail-pricing.html"
+    ]
+  },
+  {
+    "id": "zoho-mail--stalwart",
+    "from": "zoho-mail",
+    "to": "stalwart",
+    "fit": "partial",
+    "migrationNotes": "Email/groupware scope only. Replaces standards-based email/calendar/contact hosting, not Google or Microsoft office apps and vendor automation. Pilot IMAP/CalDAV/CardDAV migration and client behavior; vendor service migration claims do not establish a turnkey Google Workspace or Exchange Online migration. Recovery and AI mail features require Enterprise. Source-account IMAP/export access must be enabled (Zoho Free excludes IMAP); pilot mailbox, calendar and contact transfer separately.",
+    "sources": [
+      "https://www.stalw.art/migration/",
+      "https://www.stalw.art/compare/",
+      "https://www.zoho.com/mail/zohomail-pricing.html"
     ]
   },
   {

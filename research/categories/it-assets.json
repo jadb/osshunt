@@ -1,0 +1,190 @@
+{
+  "category": {
+    "id": "it-assets",
+    "name": "IT asset management",
+    "description": "Hardware/software asset inventory, ownership and lifecycle records; discovery and service-management capabilities differ.",
+    "audience": "IT, procurement and operations teams managing organization devices and software inventory.",
+    "audienceReach": "specialist",
+    "audienceRationale": "Assets affect most staff, but the direct operators and buyers are IT and procurement specialists rather than all employees.",
+    "audienceSources": [
+      "https://snipeitapp.com/product",
+      "https://www.glpi-project.org/en/cmdb-software/"
+    ]
+  },
+  "paid": [
+    {
+      "id": "lansweeper",
+      "name": "Lansweeper",
+      "url": "https://www.lansweeper.com/",
+      "categories": [
+        "it-assets"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "flat",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "organization",
+        "billing": "annual",
+        "note": "Starter includes 2,000 assets and unlimited seats; billed annually. Page extraction combines multiple currency amounts without reliable currency labels, so entry amount remains unverified.",
+        "source": "https://www.lansweeper.com/pricing/"
+      }
+    },
+    {
+      "id": "freshservice-itam",
+      "name": "Freshservice IT Asset Management",
+      "url": "https://www.freshworks.com/freshservice/itam/",
+      "categories": [
+        "it-assets"
+      ],
+      "kind": "paid",
+      "pricing": {
+        "model": "mixed",
+        "entryAmount": null,
+        "currency": "USD",
+        "period": "quote",
+        "unit": "usage",
+        "billing": "quote",
+        "note": "Quote for current ITAM plan and weighted asset units (packs of 500), with additional IT-plan requirements. One desktop equals 1 AU, server/VM/network device 4 AU; not a flat per-device or agent-seat price.",
+        "source": "https://www.freshworks.com/freshservice/itam/pricing/"
+      }
+    }
+  ],
+  "oss": [
+    {
+      "id": "snipe-it",
+      "name": "Snipe-IT",
+      "url": "https://snipeitapp.com/",
+      "categories": [
+        "it-assets"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/grokability/snipe-it",
+      "license": "AGPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "A",
+      "locked": [],
+      "hostedOffer": true,
+      "classificationReason": "AGPLv3 self-operated asset management; official FAQ explicitly confirms hosted and free installations use the same software. Hosting, maintenance and priority support are services. Third-party integrations may have separate terms.",
+      "sources": {
+        "license": "https://github.com/grokability/snipe-it/blob/6b0d2751417d49e7b7707eb57b8d1250012937d4/LICENSE",
+        "features": "https://snipeitapp.com/faq",
+        "hosting": "https://snipeitapp.com/pricing"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T21:59:49Z",
+        "lastCommitAt": "2026-10-21T21:59:43Z",
+        "lastRelease": "v8.8.2",
+        "lastReleaseAt": "2026-10-21T19:23:26Z",
+        "releaseSource": "https://github.com/grokability/snipe-it/releases/tag/v8.8.2",
+        "commit": "6b0d2751417d49e7b7707eb57b8d1250012937d4",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/snipe/snipe-it",
+        "rsx": "Authenticated shared analysis completed; overall 5.7/10. Automated health signals, not security certification."
+      },
+      "serviceLimitations": [
+        "Managed hosting tiers differ in infrastructure, API rate limits, LDAP resources and support; self-hosters operate their own server.",
+        "Discovery integrations can require separate MDM/RMM systems; Snipe-IT does not supply its own network discovery agent."
+      ]
+    },
+    {
+      "id": "glpi",
+      "name": "GLPI",
+      "url": "https://www.glpi-project.org/",
+      "categories": [
+        "it-assets"
+      ],
+      "kind": "oss",
+      "repo": "https://github.com/glpi-project/glpi",
+      "license": "GPL-3.0-only",
+      "osi": true,
+      "selfHostable": true,
+      "tier": "C",
+      "locked": [
+        "Subscriber-exclusive Cloud Inventory retrieves assets from cloud services.",
+        "Subscriber-exclusive collaborative notifications and advanced dashboard plugins; OAuth SSO/SCIM and other extensions also vary by subscription."
+      ],
+      "hostedOffer": true,
+      "classificationReason": "GPLv3 core with free asset inventory/CMDB; GLPI Network sells access to exclusive plugins covering everyday cloud inventory, integrations and reporting as well as administration. Community-plugin support subscriptions do not make those public plugins paid-only. Plugin licenses were not individually audited.",
+      "sources": {
+        "license": "https://github.com/glpi-project/glpi/blob/3e5222b59a2cb116c5bf7fe27b9c794ca44d63d5/LICENSE",
+        "features": "https://www.glpi-project.org/en/plugins/",
+        "hosting": "https://www.glpi-project.org/en/pricing/"
+      },
+      "health": {
+        "archived": false,
+        "disabled": false,
+        "pushedAt": "2026-10-21T07:09:10Z",
+        "lastCommitAt": "2026-10-21T07:09:10Z",
+        "lastRelease": "12.0.0",
+        "lastReleaseAt": "2026-10-07T12:12:42Z",
+        "releaseSource": "https://github.com/glpi-project/glpi/releases/tag/12.0.0",
+        "commit": "3e5222b59a2cb116c5bf7fe27b9c794ca44d63d5",
+        "checkedAt": "2026-10-21",
+        "source": "https://api.github.com/repos/glpi-project/glpi",
+        "rsx": "Authenticated shared analysis completed; overall 5.5/10. Automated health signals, not security certification."
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "lansweeper--snipe-it",
+      "from": "lansweeper",
+      "to": "snipe-it",
+      "fit": "partial",
+      "migrationNotes": "Rebuild asset assignments, ownership and license records using CSV/API and validate identifiers/history. Snipe-IT is a lifecycle record system; independent network discovery, vulnerability enrichment, ITSM workflows and application mapping need separate integrations.",
+      "sources": [
+        "https://snipeitapp.com/product",
+        "https://snipeitapp.com/faq",
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "id": "lansweeper--glpi",
+      "from": "lansweeper",
+      "to": "glpi",
+      "fit": "partial",
+      "migrationNotes": "Configure inventory collectors, map assets/relationships and validate imports. GLPI covers inventory/CMDB with broader ITSM options, but cloud discovery and selected integration/reporting plugins require subscriptions. Do not assume Lansweeper OT/vulnerability enrichment or Freshservice service mapping parity.",
+      "sources": [
+        "https://www.glpi-project.org/en/cmdb-software/",
+        "https://www.glpi-project.org/en/plugins/",
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "id": "freshservice-itam--snipe-it",
+      "from": "freshservice-itam",
+      "to": "snipe-it",
+      "fit": "partial",
+      "migrationNotes": "Rebuild asset assignments, ownership and license records using CSV/API and validate identifiers/history. Snipe-IT is a lifecycle record system; independent network discovery, vulnerability enrichment, ITSM workflows and application mapping need separate integrations.",
+      "sources": [
+        "https://snipeitapp.com/product",
+        "https://snipeitapp.com/faq",
+        "https://www.freshworks.com/freshservice/itam/pricing/"
+      ]
+    },
+    {
+      "id": "freshservice-itam--glpi",
+      "from": "freshservice-itam",
+      "to": "glpi",
+      "fit": "partial",
+      "migrationNotes": "Configure inventory collectors, map assets/relationships and validate imports. GLPI covers inventory/CMDB with broader ITSM options, but cloud discovery and selected integration/reporting plugins require subscriptions. Do not assume Lansweeper OT/vulnerability enrichment or Freshservice service mapping parity.",
+      "sources": [
+        "https://www.glpi-project.org/en/cmdb-software/",
+        "https://www.glpi-project.org/en/plugins/",
+        "https://www.freshworks.com/freshservice/itam/pricing/"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "uncertainties": [
+    "Lansweeper localized entry currency/amount was ambiguous in extracted page; numeric price withheld.",
+    "Freshservice ITAM current numeric price unavailable in official page extract; weighted asset-unit and related IT-plan costs need a quote.",
+    "GLPI exclusive-plugin availability verified; individual plugin license terms not audited.",
+    "Pinned licenses establish GNU version 3; later-version grants beyond root texts were not independently established."
+  ]
+}
