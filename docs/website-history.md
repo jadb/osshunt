@@ -2,6 +2,8 @@
 
 The gallery and reusable image player cover every product in the generated catalog. Image availability is separate from catalog coverage: many websites have HTML captures without stored screenshots. Empty histories and failed lookups remain distinct. Existing frames remain available when a later check fails.
 
+Verified landing-page overrides in `research/history-landings.json` replace pricing/plan comparison URLs for history discovery, while `catalogUrl` preserves each original catalog URL. Dedicated product paths stay separate from their vendor's general homepage. Discovery covers the selected landing URL and its HTTP/HTTPS and leading-www equivalents; older renamed domains are not silently inferred.
+
 Only existing Internet Archive screenshot or thumbnail image resources are used. The service never renders archived HTML, visits the live landing page, submits Save Page Now requests or invents missing frames. Each frame links to the exact archived image at its actual capture date. [Verified archive protocol and probes](history-archive-protocol.md), [architecture and approved behavior](architecture/website-history.md).
 
 ## Preview

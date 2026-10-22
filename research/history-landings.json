@@ -1,0 +1,210 @@
+[
+  {
+    "productId": "adobe-lightroom",
+    "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.adobe.com/products/photoshop-lightroom.html"
+    ]
+  },
+  {
+    "productId": "adobe-photoshop",
+    "url": "https://www.adobe.com/products/photoshop.html",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.adobe.com/products/photoshop.html"
+    ]
+  },
+  {
+    "productId": "adobe-premiere-pro",
+    "url": "https://www.adobe.com/products/premiere.html",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.adobe.com/products/premiere.html"
+    ]
+  },
+  {
+    "productId": "algolia",
+    "url": "https://www.algolia.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.algolia.com/"
+    ]
+  },
+  {
+    "productId": "confluence",
+    "url": "https://www.atlassian.com/software/confluence",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.atlassian.com/software/confluence"
+    ]
+  },
+  {
+    "productId": "dropbox",
+    "url": "https://www.dropbox.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.dropbox.com/"
+    ]
+  },
+  {
+    "productId": "elastic-cloud",
+    "url": "https://www.elastic.co/cloud/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.elastic.co/cloud/"
+    ]
+  },
+  {
+    "productId": "fastmail",
+    "url": "https://www.fastmail.com/business/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.fastmail.com/business/"
+    ]
+  },
+  {
+    "productId": "google-meet",
+    "url": "https://workspace.google.com/products/meet/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://workspace.google.com/products/meet/"
+    ]
+  },
+  {
+    "productId": "google-workspace",
+    "url": "https://workspace.google.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://workspace.google.com/"
+    ]
+  },
+  {
+    "productId": "harvest",
+    "url": "https://www.getharvest.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.getharvest.com/"
+    ]
+  },
+  {
+    "productId": "hubspot",
+    "url": "https://www.hubspot.com/products/sales",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.hubspot.com/products/sales"
+    ]
+  },
+  {
+    "productId": "make",
+    "url": "https://www.make.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.make.com/"
+    ]
+  },
+  {
+    "productId": "microsoft-365",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/business/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.microsoft.com/en-us/microsoft-365/business/"
+    ]
+  },
+  {
+    "productId": "notion",
+    "url": "https://www.notion.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.notion.com/"
+    ]
+  },
+  {
+    "productId": "quickbooks-online",
+    "url": "https://quickbooks.intuit.com/online/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://quickbooks.intuit.com/online/"
+    ]
+  },
+  {
+    "productId": "salesforce",
+    "url": "https://www.salesforce.com/sales/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.salesforce.com/sales/"
+    ]
+  },
+  {
+    "productId": "squarespace",
+    "url": "https://www.squarespace.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.squarespace.com/"
+    ]
+  },
+  {
+    "productId": "tailscale",
+    "url": "https://tailscale.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://tailscale.com/"
+    ]
+  },
+  {
+    "productId": "toggl-track",
+    "url": "https://toggl.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://toggl.com/"
+    ]
+  },
+  {
+    "productId": "webflow",
+    "url": "https://webflow.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://webflow.com/"
+    ]
+  },
+  {
+    "productId": "wix",
+    "url": "https://www.wix.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.wix.com/"
+    ]
+  },
+  {
+    "productId": "xero",
+    "url": "https://www.xero.com/us/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.xero.com/us/"
+    ]
+  },
+  {
+    "productId": "zapier",
+    "url": "https://zapier.com/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://zapier.com/"
+    ]
+  },
+  {
+    "productId": "zoho-mail",
+    "url": "https://www.zoho.com/mail/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://www.zoho.com/mail/"
+    ]
+  },
+  {
+    "productId": "zoom",
+    "url": "https://zoom.us/",
+    "checkedAt": "2026-10-21",
+    "sources": [
+      "https://zoom.us/"
+    ]
+  }
+]
