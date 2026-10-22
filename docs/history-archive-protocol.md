@@ -46,7 +46,7 @@ Successful enumeration returns `complete=true`, frames and query HTTP statuses. 
 | `archive_timestamp_mismatch` | Replay timestamp or indexed image target changed |
 | `invalid_image` / `image_digest_mismatch` | Invalid image bytes / source checksum mismatch |
 
-Landing URLs are identifiers, not fetch destinations. IP literals, credentials, private naming conventions, wildcard hosts and nonstandard ports are refused. All discovery requests go to `https://web.archive.org`; metadata redirects are refused. This is separate from the service's catalog-ID restriction.
+Landing URLs are identifiers, not fetch destinations. IP literals, credentials, private naming conventions, wildcard hosts and nonstandard ports are refused. All discovery requests go to `https://web.archive.org`; metadata fetches use `redirect: manual`, and every non-success response, including 3xx redirects, is refused without requesting its destination. Manual mode supports edge runtimes that reject `redirect: error` before sending a request. This is separate from the service's catalog-ID restriction.
 
 ## Exact image retrieval and verification
 

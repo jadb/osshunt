@@ -25,7 +25,7 @@ test('discovery accepts screenshot dash status, preserves image dates and probes
     const url = new URL(input);
     calls.push(url);
     assert.equal(url.hostname, 'web.archive.org');
-    assert.equal(options.redirect, 'error');
+    assert.equal(options.redirect, 'manual');
     assert.ok(options.signal);
     assert.equal(url.searchParams.get('matchType'), 'exact');
     assert.equal(url.searchParams.get('showResumeKey'), 'true');
@@ -60,6 +60,27 @@ test('archive metadata requests identify the product with a descriptive user age
   assert.equal(calls, 6);
   assert.equal(result.complete, true);
   assert.deepEqual(result.frames, []);
+});
+
+test('metadata requests use redirect mode supported by the edge fetch runtime', async () => {
+  const result = await discoverScreenshots(landing, { fetchImpl: async (_input, options) => {
+    if (!['follow', 'manual'].includes(options.redirect)) throw new TypeError('Unsupported edge redirect mode');
+    assert.equal(options.redirect, 'manual');
+    return json([]);
+  } });
+  assert.equal(result.complete, true);
+  assert.equal(result.queries.length, 6);
+});
+
+test('metadata redirects are rejected without fetching their destination', async () => {
+  const destinations = [];
+  await assert.rejects(discoverScreenshots(landing, { fetchImpl: async (input, options) => {
+    destinations.push(input);
+    assert.equal(options.redirect, 'manual');
+    return new Response(null, { status: 302, headers: { Location: 'http://127.0.0.1/private' } });
+  } }), { code: 'archive_unavailable' });
+  assert.ok(destinations.length > 0);
+  assert.ok(destinations.every(input => new URL(input).hostname === 'web.archive.org'));
 });
 
 test('discovery follows opaque resume keys without changing query scope', async () => {
