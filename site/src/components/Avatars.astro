@@ -38,7 +38,7 @@ const more = all.length - head.length;
 
 <style>
   .avatars { display: inline-flex; align-items: center; }
-  img, .ini { width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); padding: 7px; object-fit: contain; margin-left: -9px; flex: none; position: relative; }
+  img, .ini { width: var(--av, 32px); height: var(--av, 32px); border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); padding: var(--avp, 7px); object-fit: contain; margin-left: calc(var(--ov, 9px) * -1); flex: none; position: relative; }
   img:first-child, .ini:first-child { margin-left: 0; }
   .ini { display: grid; place-items: center; padding: 0; font-size: 0.8125rem; font-weight: 700; color: var(--ink-2); background: #e6e6e6; border-style: dashed; }
   .ini.brand { border-style: solid; }

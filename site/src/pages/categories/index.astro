@@ -16,7 +16,7 @@ const total = groups.reduce((n, g) => n + g.items.length, 0);
           {g.items.map((c) => (
             <li>
               <a href={`/categories/${c.id}/`}><b>{c.name}</b><span>{c.tools} tool{c.tools === 1 ? '' : 's'} · {c.maps} mapping{c.maps === 1 ? '' : 's'}</span><em>{c.description}</em>
-                <span class="flow"><Avatars items={c.toolList} max={4} />{c.altList.length > 0 && <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-label="replaced by" role="img"><path d="M3 12h16M13 6l6 6-6 6" /></svg>}<Avatars items={c.altList} max={4} /></span>
+                <span class="flow"><Avatars items={c.toolList} />{c.altList.length > 0 && <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-label="replaced by" role="img"><path d="M3 12h16M13 6l6 6-6 6" /></svg>}<Avatars items={c.altList} /></span>
               </a>
             </li>
           ))}
@@ -39,7 +39,7 @@ const total = groups.reduce((n, g) => n + g.items.length, 0);
   li a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; text-decoration: none; height: 100%; }
   li b { font-size: 1.0625rem; }
   li span { font-size: 0.8125rem; font-weight: 700; }
-  .flow { display: flex; align-items: center; gap: 10px; margin-top: auto; padding-top: 12px; }
-  .flow .arrow { flex: none; }
+  .flow { --av: 32px; --avp: 7px; --ov: 9px; --n: 3; --stack: calc(var(--av) * (var(--n) + 1) - var(--ov) * var(--n)); display: grid; grid-template-columns: var(--stack) 20px var(--stack); column-gap: 10px; align-items: center; margin-top: auto; padding-top: 12px; }
+  .flow .arrow { justify-self: center; }
   li em { font-style: normal; font-size: 0.8125rem; color: var(--ink-2); }
 </style>
