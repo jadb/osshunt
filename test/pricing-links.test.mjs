@@ -8,8 +8,8 @@ test('resolves base, relative and archive links with evidence', () => {
     <a href="plans?region=US#tiers">Plans &amp; pricing</a>
     <a href="/web/20200101000000id_/https://example.com/pricing">Pricing</a>
     <a href="https://evil.test/pricing">Pricing</a>`, options);
-  assert.deepEqual(links.map(x => x.url), ['https://example.com/plans?region=US', 'https://example.com/pricing']);
-  assert.equal(links[0].label, 'Plans & pricing');
+  assert.deepEqual(links.map(x => x.url).sort(), ['https://example.com/plans?region=US', 'https://example.com/pricing']);
+  assert.equal(links.find(x => x.url.includes('/plans')).label, 'Plans & pricing');
   assert.match(links[0].locator, /offset:/);
   assert.equal(links[0].provenance, 'archived-link');
 });
@@ -36,4 +36,8 @@ test('product paths reject another vendor product; hints remain separate evidenc
 });
 test('deduplicates URLs and excludes footer links without pricing evidence', () => {
   assert.equal(discoverPricingLinks('<a href="/about">About</a><a href="/pricing">Pricing</a><a href="/pricing#top">Plans</a>', options).length, 1);
+});
+test('ranks explicit pricing before generic plan comparison navigation', () => {
+  const links = discoverPricingLinks('<a href="/compare">Compare</a><a href="/plans">Plans</a><a href="/pricing">Pricing</a>', options);
+  assert.deepEqual(links.map(l => l.url), ['https://example.com/pricing', 'https://example.com/plans', 'https://example.com/compare']);
 });

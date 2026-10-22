@@ -17,9 +17,9 @@ No Internet Archive requests made for this parser work. Fixtures are synthetic r
    `npm audit --json` reported zero known advisories. Empirically verified parser source offsets and entity decoding.
 6. Wrote extraction/link tests before implementation; both files failed with missing-module errors.
 7. Implemented inert parsing, conservative card/table/JSON-LD proposals and scoped historical links.
-8. Ran `node --test test/pricing-extract.test.mjs test/pricing-links.test.mjs`: 19 tests passed.
+8. Ran `node --test test/pricing-extract.test.mjs test/pricing-links.test.mjs`: 20 tests passed.
    Reintroduced original defects for space-delimited `/ month`, mixed displayed totals,
-   hidden-ancestor billing variants, object-vs-array structured evidence locators and malformed structured specifications;
+   hidden-ancestor billing variants, object-vs-array structured evidence locators and malformed structured specifications and pricing-link ranking;
    regression guards failed as expected, restored fixes, suite passed.
 9. Bundled extraction with esbuild `--bundle --format=esm --platform=browser --target=es2022`;
    imported bundle and checked structured offer extraction. No Node built-ins required.
@@ -42,3 +42,7 @@ Link scope: public HTTP(S), same product host or explicit approved vendor host; 
 local/IP identifiers and unrelated hosts. Shared repository hosts require a product path; catalog product path scopes
 exclude other vendor products. Current hints retain distinct provenance. Safe archived base/replay links unwrap to
 original targets. No URL guessing, DNS/network validation, archive capture selection or live fetching performed here.
+
+Explicit pricing links rank above generic comparison navigation; current-source hints remain last.
+The original link fixture asserted DOM order, not a discovery requirement; changed it to assert URL membership while
+a separate regression enforces pricing-first ranking. Original unsorted implementation fails that regression.
