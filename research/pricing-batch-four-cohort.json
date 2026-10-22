@@ -1,0 +1,478 @@
+{
+  "formatVersion": 1,
+  "baselineCommit": "1a66e9142e3db8d66242db660657c8dee483a814",
+  "extractorVersion": "1.1.0",
+  "baselineFingerprint": "5ff89cf8af058cc70f494cfaa539fca10f8d0e2c5e09f430d4fc48195c0364a9",
+  "selection": "Next twenty previously unsampled paid catalog entries in audience order; selected before extractor changes; all fifty earlier tools excluded",
+  "window": {
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z"
+  },
+  "products": [
+    {
+      "id": "figjam",
+      "name": "FigJam",
+      "url": "https://www.figma.com/figjam/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/figjam"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 19
+    },
+    {
+      "id": "quickbooks-online",
+      "name": "QuickBooks Online",
+      "url": "https://quickbooks.intuit.com/online/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/online"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 20
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "url": "https://www.xero.com/us/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/us"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.xero.com/us/pricing-plans/"
+      ],
+      "audienceRank": 20
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest",
+      "url": "https://www.getharvest.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.getharvest.com/pricing"
+      ],
+      "audienceRank": 21
+    },
+    {
+      "id": "toggl-track",
+      "name": "Toggl Track",
+      "url": "https://toggl.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://toggl.com/pricing"
+      ],
+      "audienceRank": 21
+    },
+    {
+      "id": "docebo",
+      "name": "Docebo",
+      "url": "https://www.docebo.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.docebo.com/pricing/"
+      ],
+      "audienceRank": 22
+    },
+    {
+      "id": "talentlms",
+      "name": "TalentLMS",
+      "url": "https://www.talentlms.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.talentlms.com/prices"
+      ],
+      "audienceRank": 22
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "url": "https://www.salesforce.com/sales/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/sales"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.salesforce.com/sales/pricing/"
+      ],
+      "audienceRank": 23
+    },
+    {
+      "id": "bigcommerce",
+      "name": "BigCommerce",
+      "url": "https://www.bigcommerce.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.bigcommerce.com/pricing/"
+      ],
+      "audienceRank": 27
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "url": "https://www.shopify.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.shopify.com/pricing"
+      ],
+      "audienceRank": 27
+    },
+    {
+      "id": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/products/photoshop-lightroom"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.adobe.com/products/photoshop-lightroom/plans.html"
+      ],
+      "audienceRank": 28
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "url": "https://www.adobe.com/products/photoshop.html",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/products/photoshop"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.adobe.com/products/photoshop/plans.html"
+      ],
+      "audienceRank": 28
+    },
+    {
+      "id": "lucidchart",
+      "name": "Lucidchart",
+      "url": "https://lucid.co/lucidchart",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/lucidchart"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 29
+    },
+    {
+      "id": "microsoft-visio",
+      "name": "Microsoft Visio",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/visio",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/en-us/microsoft-365/visio"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ],
+      "audienceRank": 29
+    },
+    {
+      "id": "adobe-premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "url": "https://www.adobe.com/products/premiere.html",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/products/premiere"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.adobe.com/products/premiere/plans.html"
+      ],
+      "audienceRank": 30
+    },
+    {
+      "id": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "url": "https://www.apple.com/final-cut-pro/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/final-cut-pro"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 30
+    },
+    {
+      "id": "buffer",
+      "name": "Buffer",
+      "url": "https://buffer.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://buffer.com/pricing"
+      ],
+      "audienceRank": 31
+    },
+    {
+      "id": "hootsuite",
+      "name": "Hootsuite",
+      "url": "https://www.hootsuite.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.hootsuite.com/plans"
+      ],
+      "audienceRank": 31
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "url": "https://www.make.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.make.com/pricing"
+      ],
+      "audienceRank": 32
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "url": "https://zapier.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://zapier.com/pricing"
+      ],
+      "audienceRank": 32
+    }
+  ],
+  "codeFiles": [
+    {
+      "file": "lib/history/archive.mjs",
+      "sha256": "23c35c47a701990bd7867ae4a3d87842353db3f9dcede5f92dd3324553d56e49"
+    },
+    {
+      "file": "lib/history/selection.mjs",
+      "sha256": "3ef385c71818fc3000d8b8a0aa2081f0872cd687972bd4ef543071c3810bb299"
+    },
+    {
+      "file": "lib/history/stores-file.mjs",
+      "sha256": "3505e048bc782c0fce9a432e437176c8dfe33f284d700bfec46c8374e65b27ca"
+    },
+    {
+      "file": "lib/pricing/aliases.mjs",
+      "sha256": "9534dc44a2aac2add908560610410b3b32ae153d63bc712e1668abe08c3bb212"
+    },
+    {
+      "file": "lib/pricing/application.mjs",
+      "sha256": "76a26800fb55c3d8aecf455e951e9a3c007014576637b7bddb63273be4472957"
+    },
+    {
+      "file": "lib/pricing/archive.mjs",
+      "sha256": "34718d2261c2dbac8ee8d002f151e22a8994a0d923f60fadb14c860fae2c8c7f"
+    },
+    {
+      "file": "lib/pricing/calendar.mjs",
+      "sha256": "c8348b0a95e9d31835bb9bbe4955963f3719456976383a5e8d1c35309918a5f2"
+    },
+    {
+      "file": "lib/pricing/checkpoint.mjs",
+      "sha256": "0f57a21f3decb45587747943ff39867b186eac24b1a607dd536e63774de476a4"
+    },
+    {
+      "file": "lib/pricing/compare.mjs",
+      "sha256": "a0dea1e997b3837584573db224f589e12519d9b578bb6d22af53536282c38745"
+    },
+    {
+      "file": "lib/pricing/extract-adapters.mjs",
+      "sha256": "9934dd423f318f09488efcd298558ff6b69b03d081414dd91ee54039991da5ea"
+    },
+    {
+      "file": "lib/pricing/extract-bounds.mjs",
+      "sha256": "68eeb23e5fdb9bb0763eeda566bbdfc3987abb128f72e499e3be121d399eaf51"
+    },
+    {
+      "file": "lib/pricing/extract-business.mjs",
+      "sha256": "5c918239c1d48217f71580a0440cde9d1be6959d56a775f661b815f70fcf94ed"
+    },
+    {
+      "file": "lib/pricing/extract-calendly.mjs",
+      "sha256": "65c34f1fb2b481cf69d0516bf08a44a090c78ee7b1b7cb8ae78551ecab445c8b"
+    },
+    {
+      "file": "lib/pricing/extract-generic.mjs",
+      "sha256": "273af766f82f15272c5d368237672a3841bfb1937bb670e46cefba43eed4bfc2"
+    },
+    {
+      "file": "lib/pricing/extract-modern.mjs",
+      "sha256": "8f71f93da800e5b3b18157cbf892e887ef197f9a06cc9d14e15376b1c134b80a"
+    },
+    {
+      "file": "lib/pricing/extract-offers.mjs",
+      "sha256": "5eaa55ac439e954b91e5415c592ee278dcf2a4dafc76fd3de1e11f8923cfd88c"
+    },
+    {
+      "file": "lib/pricing/extract-structured.mjs",
+      "sha256": "eb665a1d2e378fd03bcf523874132aba052c8d91bdad13b8402196f5688c6d10"
+    },
+    {
+      "file": "lib/pricing/extract.mjs",
+      "sha256": "f821102db077c5925d651409c97a47bb48841d22b74fdbb3f15a9538f6ae950b"
+    },
+    {
+      "file": "lib/pricing/html.mjs",
+      "sha256": "378c04b98f9622eb40da2386f7922d8aee129484104a22592d159eb5ea169ff6"
+    },
+    {
+      "file": "lib/pricing/links.mjs",
+      "sha256": "320a12b0be475cf96822730f6ee66436629170f79affdc1a6f3153709647b74e"
+    },
+    {
+      "file": "lib/pricing/proposal.mjs",
+      "sha256": "b8cf60f8194dacf39efcde2599144cfd63d480eb998117d38318d67841a120a3"
+    },
+    {
+      "file": "lib/pricing/review.mjs",
+      "sha256": "47fff99958585dffb21007b50fd46c8c8f6592aacd8b3346d03419b7bf661c71"
+    },
+    {
+      "file": "lib/pricing/sampling-support.mjs",
+      "sha256": "48771344a8001545059ac86b4ccb0815d7c2ce8cce310f61857a6c8524b48713"
+    },
+    {
+      "file": "lib/pricing/sampling.mjs",
+      "sha256": "1fcd8a5504004a560565110f0a7262276dccedf6a24cd6803127f017907fe346"
+    },
+    {
+      "file": "lib/pricing/schema.mjs",
+      "sha256": "5abff50c754f71ce92bfdcfdb95a9e6537773bbcf7df1527d94a71b8a478096d"
+    },
+    {
+      "file": "lib/pricing/scope.mjs",
+      "sha256": "e23c485d4998d3641821e135454cfe98148852b3efcd02bdc7ffaa2868f90473"
+    },
+    {
+      "file": "lib/pricing/service.mjs",
+      "sha256": "4bb00b9b3d3b2e9f757fbd313e96ae49745b468ca43ccdd0721130d7e398e97d"
+    },
+    {
+      "file": "lib/pricing/stores-cloudflare.mjs",
+      "sha256": "d4305365e2543e278e4428203ecedb6cd436fb116167b20e2c022188386dd58d"
+    },
+    {
+      "file": "lib/pricing/stores-file.mjs",
+      "sha256": "cf1652e40d6f69afeefe7816ed514da2318070a6a3c61f09c09aa2cf53588995"
+    },
+    {
+      "file": "scripts/sample-pricing.mjs",
+      "sha256": "71c14785ac42a4d3d3ed15849ecf62d004fd4a0bcbd631a3265c27b73fc5396a"
+    }
+  ],
+  "catalogSha256": "1fe346d2f37e4770ad628e78d34bf8cf2dbe3336059ab43f7a3abae8b723f07b",
+  "packageLockSha256": "696db2b12485fd635d39bb639e7bbee070a941eea2fe422240cc02f996e06d91",
+  "policy": {
+    "maxCandidates": 2,
+    "pricingLookbackDays": 30,
+    "minimumDiscoveryInterval": "six calendar months",
+    "rateLimit": "serial ten-second pacing; shared Archive cooldown",
+    "publication": "per-observation evidence review; no automatic confirmation",
+    "baseline": "no source/collector/parser/catalog changes during live collection",
+    "repeat": "completed same-journal replay must make zero fetch attempts"
+  }
+}
