@@ -76,6 +76,17 @@ test('D1 SQL parity: atomic lease, crash recovery, exact calendar gate, immutabl
     await store.finish('vendor', second.token, { complete: true });
     assert.equal(await store.reserve('vendor', '2025-02-27T23:59:59Z'), null);
     assert.ok(await store.reserve('vendor', '2025-02-28T00:00:00Z'));
+    const limited = await store.reserve('limited', '2020-01-01T00:00:00.000Z');
+    await store.finish(
+      'limited',
+      limited.token,
+      { complete: true, historicalComplete: false, errorCode: 'inventory_limit' },
+      { nextCheckAt: '2024-07-01T00:00:00.000Z' },
+    );
+    assert.equal((await store.read('limited')).nextCheckAt, '2024-07-01T00:00:00.000Z');
+    assert.equal(await store.resume('limited', '2024-01-01T00:00:00.000Z'), null);
+    assert.equal(await store.reserve('limited', '2024-06-30T23:59:59.000Z'), null);
+    assert.ok(await store.reserve('limited', '2024-07-01T00:00:00.000Z'));
     await store.putBody('identity', new TextEncoder().encode('first'), { sha256: 'one' });
     await store.putBody('identity', new TextEncoder().encode('second'), { sha256: 'two' });
     assert.equal(new TextDecoder().decode((await store.getBody('identity')).bytes), 'first');

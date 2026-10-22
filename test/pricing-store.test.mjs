@@ -49,7 +49,7 @@ test('oversize checkpoints reject without replacing durable progress', async () 
     await store.checkpoint('vendor', record.token, { complete: false, proposals: [] });
     await assert.rejects(
       store.checkpoint('vendor', record.token, { complete: false, padding: 'x'.repeat(600 * 1024) }),
-      { code: 'archive_incomplete' },
+      { code: 'inventory_limit' },
     );
     assert.deepEqual((await store.read('vendor')).checkpoint, { complete: false, proposals: [] });
   } finally {

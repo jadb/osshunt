@@ -286,7 +286,7 @@ test('cooldown appearing after reservation but before first outbound does not co
     await rm(root, { recursive: true });
   }
 });
-test('inventory cap preserves incomplete durable state and avoids repeated over-limit pages', async () => {
+test('inventory cap finishes attempt without claiming complete history and prevents repeated pages', async () => {
   const root = await mkdtemp(join(tmpdir(), 'pricing-record-limit-'));
   try {
     const store = new FilePricingStore(root);
@@ -315,8 +315,9 @@ test('inventory cap preserves incomplete durable state and avoids repeated over-
     const response = await service.fetch(req('POST', '/refresh'));
     assert.equal(response.status, 503);
     const record = await store.read('vendor');
-    assert.equal(record.checkpoint.complete, false);
-    assert.equal(record.checkpoint.errorCode, 'archive_incomplete');
+    assert.equal(record.checkpoint.complete, true);
+    assert.equal(record.checkpoint.historicalComplete, false);
+    assert.equal(record.checkpoint.errorCode, 'inventory_limit');
     assert.equal(record.checkpoint.landingQuery.records.length, 0);
     assert.equal(record.checkpoint.retryAt, Date.parse(record.nextCheckAt));
     now += 7200000;
