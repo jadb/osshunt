@@ -56,7 +56,7 @@ const REACH: Record<string, string> = {
         <details class="reach group" open>
           <summary><h3>{REACH[g.reach]}</h3></summary>
           <ul>
-            {g.items.map((c) => <li><a href={`/categories/${c.id}/`}><span class="cname">{c.name}<span class="n">{c.paid} paid</span></span><span class="flow"><Avatars items={c.toolList} max={4} />{c.altList.length > 0 && <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-label="replaced by" role="img"><path d="M3 12h16M13 6l6 6-6 6" /></svg>}<Avatars items={c.altList} max={4} /></span></a></li>)}
+            {g.items.map((c) => <li><a href={`/categories/${c.id}/`}><span class="cname">{c.name}<span class="n">{c.paid} paid</span></span><span class="flow"><Avatars items={c.toolList} max={3} />{c.altList.length > 0 && <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-label="replaced by" role="img"><path d="M3 12h16M13 6l6 6-6 6" /></svg>}<Avatars items={c.altList} max={3} /></span></a></li>)}
           </ul>
         </details>
       ))}
@@ -101,6 +101,7 @@ const REACH: Record<string, string> = {
   .cname { display: flex; justify-content: space-between; gap: 12px; }
   .cname > .n { font-weight: 600; font-size: 0.75rem; color: var(--ink-2); white-space: nowrap; align-self: baseline; }
   .flow { display: flex; align-items: center; gap: 8px; margin-top: auto; min-height: 32px; }
+  .flow .arrow { flex: none; }
 
 
   @media (max-width: 900px) {
