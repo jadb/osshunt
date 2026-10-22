@@ -1,3 +1,4 @@
+import { sha256, fetchHtml } from '../lib/pricing/archive.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, rm } from 'node:fs/promises';
@@ -74,7 +75,10 @@ function service(
       async fetchHtml(r) {
         return {
           bytes: new TextEncoder().encode(r.originalUrl.endsWith('/pricing') ? secondHtml : firstHtml),
-          metadata: { sha256: 'a'.repeat(64), fetchedAt: at },
+          metadata: {
+            sha256: await sha256(r.originalUrl.endsWith('/pricing') ? secondHtml : firstHtml),
+            fetchedAt: at,
+          },
         };
       },
     },
@@ -237,4 +241,55 @@ test('malformed cursor on overdue reservation receives future continuation backo
     assert.equal(saved.checkpoint.complete, false);
     assert.equal(saved.checkedAt, '2020-01-01T00:00:00.000Z');
     assert.equal(saved.checkpoint.cutoff, '2020-01-01T00:00:00.000Z');
+  }));
+test('legacy transport evidence stays private and forces partial unconfirmed proposal', () =>
+  fixture(async (store) => {
+    await seed(store);
+    const reserved = await store.resume('vendor', at),
+      state = reserved.checkpoint;
+    state.landingQuery.records[0].digest = 'VGMT4NSHA2AWVOR6EVYXQUGCNSONBWE5';
+    await store.checkpoint('vendor', reserved.token, state, { release: true });
+    const api = createPricingService({
+      catalog: [product],
+      store,
+      clock: () => Date.parse(at),
+      discoverLinks: () => [
+        { url: 'https://vendor.com/pricing', label: 'Pricing', locator: 'a', provenance: 'archived-link' },
+      ],
+      extractor: () => ({ plans: [{ name: 'Pro', offers: [] }], quality: 'complete', issues: [] }),
+      archive: {
+        async queryHtmlPage(url) {
+          return {
+            records: [{ ...record(url), digest: 'VGMT4NSHA2AWVOR6EVYXQUGCNSONBWE5' }],
+            complete: true,
+            resumeKey: null,
+            query: { url: 'https://web.archive.org/cdx/search/cdx', status: 200 },
+          };
+        },
+        async fetchHtml(selected) {
+          return fetchHtml(selected, {
+            fetchImpl: async () =>
+              new Response('<h2>Pro</h2>', {
+                headers: {
+                  'content-type': 'text/html',
+                  'memento-datetime': new Date(selected.capturedAt).toUTCString(),
+                  'x-archive-orig-transfer-encoding': 'chunked',
+                },
+              }),
+          });
+        },
+      },
+    });
+    await complete(api, store);
+    const proposal = (await store.getProposals('vendor'))[0];
+    assert.equal(proposal.reviewState, 'proposed');
+    assert.equal(proposal.quality, 'partial');
+    assert.equal(proposal.sourceIntegrity.status, 'legacy_chunked_unverified');
+    assert.equal(proposal.landingIntegrity.status, 'legacy_chunked_unverified');
+    assert.equal(proposal.sourceTransport.originalUrl, 'https://vendor.com/pricing');
+    assert.equal(proposal.sourceTransport.status, 200);
+    assert.ok(proposal.issues.some((issue) => issue.includes('unproven')));
+    const manifest = await (await api.fetch(new Request('https://local/api/pricing/vendor'))).json();
+    assert.deepEqual(manifest.observations, []);
+    assert.equal(JSON.stringify(manifest).includes('sourceTransport'), false);
   }));

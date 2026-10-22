@@ -1,3 +1,4 @@
+import { sha256 } from '../lib/pricing/archive.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, rm } from 'node:fs/promises';
@@ -72,7 +73,7 @@ test('bounded discovery resumes original cutoff, actual pricing spacing, private
         bodyCount++;
         return {
           bytes: new TextEncoder().encode('<p>pricing</p>'),
-          metadata: { sha256: 'a'.repeat(64), fetchedAt: at, digest: null },
+          metadata: { sha256: await sha256('<p>pricing</p>'), fetchedAt: at, digest: null },
         };
       },
     };
@@ -181,7 +182,7 @@ test('mid-inventory 429 keeps durable cursor and cutoff through restart without 
       async fetchHtml() {
         return {
           bytes: new TextEncoder().encode('no pricing links'),
-          metadata: { sha256: 'a'.repeat(64), fetchedAt: new Date(now).toISOString() },
+          metadata: { sha256: await sha256('no pricing links'), fetchedAt: new Date(now).toISOString() },
         };
       },
     };
