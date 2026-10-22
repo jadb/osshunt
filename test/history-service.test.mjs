@@ -330,3 +330,32 @@ test('bounded archive deadline aborts discovery and persists an explicit timeout
   assert.equal(manifest.status, 'error'); assert.equal(manifest.errorCode, 'archive_timeout');
   assert.ok(manifest.nextCheckAt);
 });
+
+test('an empty streamed refresh body is accepted while streamed options are rejected', async t => {
+  const f = await fixture(t);
+  const empty = new ReadableStream({ start(controller) { controller.close(); } });
+  const response = await f.request('/refresh', 'POST', { body: empty, duplex: 'half' });
+  assert.equal(response.status, 200); assert.equal((await response.json()).status, 'ready');
+  assert.equal(f.state.discovers, 1);
+  const nonempty = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array([123])); } });
+  const denied = await f.request('/refresh', 'POST', { body: nonempty, duplex: 'half' });
+  assert.equal(denied.status, 400); assert.equal(f.state.discovers, 1);
+});
+
+test('refresh body inspection bounds silent and endlessly empty streams without awaiting cancellation', async t => {
+  const f = await fixture(t);
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  let started = false;
+  const silent = new ReadableStream({ pull() { started = true; }, cancel() { return new Promise(() => {}); } }, { highWaterMark: 0 });
+  const pending = f.request('/refresh', 'POST', { body: silent, duplex: 'half' });
+  while (!started) await new Promise(resolve => setImmediate(resolve));
+  t.mock.timers.tick(1000);
+  assert.equal((await pending).status, 400); assert.equal(f.state.discovers, 0);
+  let chunks = 0;
+  const emptyChunks = new ReadableStream({ pull(controller) { chunks++; controller.enqueue(new Uint8Array()); } });
+  assert.equal((await f.request('/refresh', 'POST', { body: emptyChunks, duplex: 'half' })).status, 400);
+  assert.ok(chunks <= 17); assert.equal(f.state.discovers, 0);
+  const nonempty = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array([1])); },
+    cancel() { return new Promise(() => {}); } });
+  assert.equal((await f.request('/refresh', 'POST', { body: nonempty, duplex: 'half' })).status, 400);
+});
