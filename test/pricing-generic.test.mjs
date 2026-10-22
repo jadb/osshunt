@@ -115,3 +115,50 @@ test('generic output bounds report truncation and stay below the checkpoint evid
   assert.ok(JSON.stringify(r).length < 128000);
   assert.ok(r.issues.some(i => /truncat|limit|budget/i.test(i)));
 });
+test('generic plan popularity requires an exact visible positive badge in the same group', () => {
+  const r = extract(grid(structural('Scale', '<b>Most Popular</b><p>USD 99/seat/month</p>') +
+    structural('Starter', '<span hidden>Most Popular</span><p>USD 19/seat/month</p>') +
+    structural('Team', '<span style="display:none">Recommended</span><p>USD 29/seat/month</p>') +
+    structural('Custom', '<p>Not recommended for small businesses.</p><p>USD 49/month</p>')));
+  assert.deepEqual(r.plans.map(p => [p.name, p.popular]), [['Scale', true], ['Starter', null], ['Team', null], ['Custom', null]]);
+});
+test('time-limited free prices are qualified trials with unknown renewal prices, never permanent free plans', () => {
+  for (const className of ['pricing__card', 'plan-card']) {
+    const r = extract(`<section><h1>Pricing</h1><div class="${className}"><h2>Starter</h2><p>Free for 14 days</p><a>Start trial</a></div></section>`);
+    assert.equal(r.plans[0].status, 'trial');
+    assert.equal(r.plans[0].offers[0].amount, '0');
+    assert.equal(r.plans[0].offers[0].billingPeriod, 'unknown');
+    assert.match(r.plans[0].offers[0].qualifications.promotion, /Free for 14 days/);
+    assert.ok(r.plans[0].offers.every(o => o.amount === '0' && o.qualifications.promotion));
+  }
+  const forever = extract('<div class="plan-card"><h2>Free</h2><p>Free forever</p></div>');
+  assert.equal(forever.plans[0].status, 'free');
+});
+test('hidden ancillary commitment and seat terms cannot qualify an active offer', () => {
+  for (const marker of ['hidden', 'aria-hidden="true"', 'style="display:none"']) {
+    for (const className of ['pricing__card', 'plan-card']) {
+      const r = extract(`<section><h1>Pricing</h1><div class="${className}"><h2>Pro</h2><p>USD 10/month</p>` +
+        `<div ${marker}><span>Billed annually. 2 seat minimum.</span></div><a>Buy now</a></div></section>`);
+      assert.equal(r.plans[0].offers[0].commitment, 'unknown');
+      assert.equal(r.plans[0].offers[0].minimumQuantity, null);
+    }
+  }
+  const r = extract(grid(structural('Pro', '<p>USD 10/month</p><p>Billed annually. Minimum 2 seats.</p>')));
+  assert.equal(r.plans[0].offers[0].commitment, 'annual');
+  assert.equal(r.plans[0].offers[0].minimumQuantity, 2);
+});
+test('inert script and style roots cannot become price offers after visibility filtering', () => {
+  for (const tag of ['script', 'style', 'template']) {
+    const r = extract(`<div class="plan-card"><h2>Pro</h2><${tag} class="price">USD 99/month</${tag}></div>`);
+    assert.deepEqual(r.plans, []);
+  }
+});
+test('split-markup negation cannot turn a recommendation word into a positive badge', () => {
+  for (const className of ['pricing__card', 'plan-card']) {
+    for (const badge of ['Recommended', 'Most Popular']) {
+      const r = extract(`<section><h1>Pricing</h1><div class="${className}"><h2>Pro</h2>` +
+        `<p>Not <span><b>${badge}</b></span></p><p>USD 19/month</p></div></section>`);
+      assert.equal(r.plans[0].popular, null);
+    }
+  }
+});

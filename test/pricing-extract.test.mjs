@@ -8,7 +8,7 @@ test('cards preserve plan structure, annual commitment and literal evidence', ()
       <p class="price">USD 12 / user / month</p><p>Billed annually. Minimum 5 users. Excludes tax.</p>
       <ul><li>100 projects</li><li>SSO included</li></ul></article>
     <footer>Save USD 200 today</footer>`, { originalUrl: 'https://example.com/pricing' });
-  assert.equal(EXTRACTOR_VERSION, '1.0.0');
+  assert.equal(EXTRACTOR_VERSION, '1.1.0');
   assert.equal(r.plans.length, 1);
   const p = r.plans[0];
   assert.equal(p.name, 'Business'); assert.equal(p.popular, true); assert.equal(p.status, 'paid');
