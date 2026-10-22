@@ -13880,6 +13880,1502 @@
     }
   },
   {
+    "id": "pricing-manual-95fd63e67b65bfb8963a493c6e302c79e471cceed676eea6d5fc8601ef16b211",
+    "productId": "confluence",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T16:52:14.000Z",
+    "landingCapturedAt": "2025-06-29T16:52:14.000Z",
+    "pricingCapturedAt": "2025-06-29T16:52:14.000Z",
+    "evidenceAvailableAt": "2025-06-29T16:52:14.000Z",
+    "landingUrl": "https://www.atlassian.com/software/confluence",
+    "pricingUrl": "https://www.atlassian.com/software/confluence",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Free",
+      "locator": "offset:462714-462897"
+    },
+    "sourceSha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+    "landingSha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+    "sourceDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+    "landingDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+    "fetchedAt": "2026-10-22T15:25:16.495Z",
+    "landingFetchedAt": "2026-10-22T15:25:16.495Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+      "actualDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+      "actualDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 16:52:14 GMT",
+      "originalUrl": "https://www.atlassian.com/software/confluence",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629171735_201ff814/aorta.public.vzvz.nl-inf-20250629-165211-eqcal-00000.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 16:52:14 GMT",
+      "originalUrl": "https://www.atlassian.com/software/confluence",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629171735_201ff814/aorta.public.vzvz.nl-inf-20250629-165211-eqcal-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Direct legacy unit_price values from this verified landing only; no divide-by100, cross-capture price conversion or annual/monthly arithmetic.",
+      "All billing periods and commitments unknown. Source identifies user units and marginal/fixed-cost quantity bands, not current selected checkout price.",
+      "USD and JPY alternatives are both retained with unknown active currency. Tier ranges are raw quantity conditions, not minimum purchase quantities.",
+      "Separate catalog unitAmount/flatAmount scaling remains unresolved; its108raw schedules are already preserved as research and are not duplicated here."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "unit_price=0 USD; FIXED_COST; unit_limit_lower=0; unit_limit_upper=10",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 0 to 10",
+              "volume": "FIXED_COST; source unit=user; unit_limit_lower=0; unit_limit_upper=10. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:462757-462758|offset:462738-462743|offset:462814-462826|offset:462846-462852|offset:462872-462873|offset:462893-462895",
+              "text": "localizedPriceBlock.confluence.free: unit_price=0; currency=USD; pricing_strategy=FIXED_COST; unit_description=user; unit_limit_lower=0; unit_limit_upper=10"
+            }
+          },
+          {
+            "literal": "unit_price=0 JPY; FIXED_COST; unit_limit_lower=0; unit_limit_upper=10",
+            "amount": "0",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 0 to 10",
+              "volume": "FIXED_COST; source unit=user; unit_limit_lower=0; unit_limit_upper=10. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:462791-462792|offset:462772-462777|offset:462814-462826|offset:462846-462852|offset:462872-462873|offset:462893-462895",
+              "text": "localizedPriceBlock.confluence.free: unit_price=0; currency=JPY; pricing_strategy=FIXED_COST; unit_description=user; unit_limit_lower=0; unit_limit_upper=10"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:462714-462897",
+          "text": "window.prices.localizedPriceBlock.confluence.free; named legacy price schedule"
+        }
+      },
+      {
+        "name": "Standard",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "unit_price=6.4 USD; MARGINAL_PER_UNIT; unit_limit_lower=0; unit_limit_upper=100",
+            "amount": "6.4",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 0 to 100",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=0; unit_limit_upper=100. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:462952-462955|offset:462933-462938|offset:463013-463032|offset:463052-463058|offset:463078-463079|offset:463099-463102",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=6.4; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=0; unit_limit_upper=100"
+            }
+          },
+          {
+            "literal": "unit_price=840 JPY; MARGINAL_PER_UNIT; unit_limit_lower=0; unit_limit_upper=100",
+            "amount": "840",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 0 to 100",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=0; unit_limit_upper=100. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:462988-462991|offset:462969-462974|offset:463013-463032|offset:463052-463058|offset:463078-463079|offset:463099-463102",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=840; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=0; unit_limit_upper=100"
+            }
+          },
+          {
+            "literal": "unit_price=4.85 USD; MARGINAL_PER_UNIT; unit_limit_lower=101; unit_limit_upper=250",
+            "amount": "4.85",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 101 to 250",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=101; unit_limit_upper=250. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463146-463150|offset:463127-463132|offset:463208-463227|offset:463247-463253|offset:463273-463276|offset:463296-463299",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=4.85; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=101; unit_limit_upper=250"
+            }
+          },
+          {
+            "literal": "unit_price=640 JPY; MARGINAL_PER_UNIT; unit_limit_lower=101; unit_limit_upper=250",
+            "amount": "640",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 101 to 250",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=101; unit_limit_upper=250. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463183-463186|offset:463164-463169|offset:463208-463227|offset:463247-463253|offset:463273-463276|offset:463296-463299",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=640; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=101; unit_limit_upper=250"
+            }
+          },
+          {
+            "literal": "unit_price=3.6 USD; MARGINAL_PER_UNIT; unit_limit_lower=251; unit_limit_upper=1000",
+            "amount": "3.6",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 251 to 1000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=251; unit_limit_upper=1000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463343-463346|offset:463324-463329|offset:463404-463423|offset:463443-463449|offset:463469-463472|offset:463492-463496",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=3.6; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=251; unit_limit_upper=1000"
+            }
+          },
+          {
+            "literal": "unit_price=470 JPY; MARGINAL_PER_UNIT; unit_limit_lower=251; unit_limit_upper=1000",
+            "amount": "470",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 251 to 1000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=251; unit_limit_upper=1000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463379-463382|offset:463360-463365|offset:463404-463423|offset:463443-463449|offset:463469-463472|offset:463492-463496",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=470; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=251; unit_limit_upper=1000"
+            }
+          },
+          {
+            "literal": "unit_price=3.35 USD; MARGINAL_PER_UNIT; unit_limit_lower=1001; unit_limit_upper=2500",
+            "amount": "3.35",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 1001 to 2500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=1001; unit_limit_upper=2500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463540-463544|offset:463521-463526|offset:463602-463621|offset:463641-463647|offset:463667-463671|offset:463691-463695",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=3.35; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=1001; unit_limit_upper=2500"
+            }
+          },
+          {
+            "literal": "unit_price=440 JPY; MARGINAL_PER_UNIT; unit_limit_lower=1001; unit_limit_upper=2500",
+            "amount": "440",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 1001 to 2500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=1001; unit_limit_upper=2500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463577-463580|offset:463558-463563|offset:463602-463621|offset:463641-463647|offset:463667-463671|offset:463691-463695",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=440; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=1001; unit_limit_upper=2500"
+            }
+          },
+          {
+            "literal": "unit_price=3.1 USD; MARGINAL_PER_UNIT; unit_limit_lower=2501; unit_limit_upper=7500",
+            "amount": "3.1",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 2501 to 7500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=2501; unit_limit_upper=7500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463739-463742|offset:463720-463725|offset:463800-463819|offset:463839-463845|offset:463865-463869|offset:463889-463893",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=3.1; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=2501; unit_limit_upper=7500"
+            }
+          },
+          {
+            "literal": "unit_price=410 JPY; MARGINAL_PER_UNIT; unit_limit_lower=2501; unit_limit_upper=7500",
+            "amount": "410",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 2501 to 7500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=2501; unit_limit_upper=7500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463775-463778|offset:463756-463761|offset:463800-463819|offset:463839-463845|offset:463865-463869|offset:463889-463893",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=410; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=2501; unit_limit_upper=7500"
+            }
+          },
+          {
+            "literal": "unit_price=2.7 USD; MARGINAL_PER_UNIT; unit_limit_lower=7501; unit_limit_upper=10000",
+            "amount": "2.7",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 7501 to 10000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=7501; unit_limit_upper=10000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463937-463940|offset:463918-463923|offset:463998-464017|offset:464037-464043|offset:464063-464067|offset:464087-464092",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=2.7; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=7501; unit_limit_upper=10000"
+            }
+          },
+          {
+            "literal": "unit_price=360 JPY; MARGINAL_PER_UNIT; unit_limit_lower=7501; unit_limit_upper=10000",
+            "amount": "360",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 7501 to 10000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=7501; unit_limit_upper=10000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:463973-463976|offset:463954-463959|offset:463998-464017|offset:464037-464043|offset:464063-464067|offset:464087-464092",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=360; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=7501; unit_limit_upper=10000"
+            }
+          },
+          {
+            "literal": "unit_price=2.5 USD; MARGINAL_PER_UNIT; unit_limit_lower=10001; unit_limit_upper=15000",
+            "amount": "2.5",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 10001 to 15000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=10001; unit_limit_upper=15000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464136-464139|offset:464117-464122|offset:464197-464216|offset:464236-464242|offset:464262-464267|offset:464287-464292",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=2.5; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=10001; unit_limit_upper=15000"
+            }
+          },
+          {
+            "literal": "unit_price=330 JPY; MARGINAL_PER_UNIT; unit_limit_lower=10001; unit_limit_upper=15000",
+            "amount": "330",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 10001 to 15000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=10001; unit_limit_upper=15000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464172-464175|offset:464153-464158|offset:464197-464216|offset:464236-464242|offset:464262-464267|offset:464287-464292",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=330; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=10001; unit_limit_upper=15000"
+            }
+          },
+          {
+            "literal": "unit_price=2.3 USD; MARGINAL_PER_UNIT; unit_limit_lower=15001; unit_limit_upper=20000",
+            "amount": "2.3",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 15001 to 20000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=15001; unit_limit_upper=20000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464336-464339|offset:464317-464322|offset:464397-464416|offset:464436-464442|offset:464462-464467|offset:464487-464492",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=2.3; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=15001; unit_limit_upper=20000"
+            }
+          },
+          {
+            "literal": "unit_price=310 JPY; MARGINAL_PER_UNIT; unit_limit_lower=15001; unit_limit_upper=20000",
+            "amount": "310",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 15001 to 20000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=15001; unit_limit_upper=20000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464372-464375|offset:464353-464358|offset:464397-464416|offset:464436-464442|offset:464462-464467|offset:464487-464492",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=310; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=15001; unit_limit_upper=20000"
+            }
+          },
+          {
+            "literal": "unit_price=2.1 USD; MARGINAL_PER_UNIT; unit_limit_lower=20001; unit_limit_upper=25000",
+            "amount": "2.1",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 20001 to 25000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=20001; unit_limit_upper=25000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464536-464539|offset:464517-464522|offset:464597-464616|offset:464636-464642|offset:464662-464667|offset:464687-464692",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=2.1; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=20001; unit_limit_upper=25000"
+            }
+          },
+          {
+            "literal": "unit_price=280 JPY; MARGINAL_PER_UNIT; unit_limit_lower=20001; unit_limit_upper=25000",
+            "amount": "280",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 20001 to 25000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=20001; unit_limit_upper=25000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464572-464575|offset:464553-464558|offset:464597-464616|offset:464636-464642|offset:464662-464667|offset:464687-464692",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=280; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=20001; unit_limit_upper=25000"
+            }
+          },
+          {
+            "literal": "unit_price=1.9 USD; MARGINAL_PER_UNIT; unit_limit_lower=25001; unit_limit_upper=30000",
+            "amount": "1.9",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 25001 to 30000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=25001; unit_limit_upper=30000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464736-464739|offset:464717-464722|offset:464797-464816|offset:464836-464842|offset:464862-464867|offset:464887-464892",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=1.9; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=25001; unit_limit_upper=30000"
+            }
+          },
+          {
+            "literal": "unit_price=250 JPY; MARGINAL_PER_UNIT; unit_limit_lower=25001; unit_limit_upper=30000",
+            "amount": "250",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 25001 to 30000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=25001; unit_limit_upper=30000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464772-464775|offset:464753-464758|offset:464797-464816|offset:464836-464842|offset:464862-464867|offset:464887-464892",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=250; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=25001; unit_limit_upper=30000"
+            }
+          },
+          {
+            "literal": "unit_price=1.5 USD; MARGINAL_PER_UNIT; unit_limit_lower=30001; unit_limit_upper=35000",
+            "amount": "1.5",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 30001 to 35000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=30001; unit_limit_upper=35000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464936-464939|offset:464917-464922|offset:464997-465016|offset:465036-465042|offset:465062-465067|offset:465087-465092",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=1.5; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=30001; unit_limit_upper=35000"
+            }
+          },
+          {
+            "literal": "unit_price=200 JPY; MARGINAL_PER_UNIT; unit_limit_lower=30001; unit_limit_upper=35000",
+            "amount": "200",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 30001 to 35000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=30001; unit_limit_upper=35000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:464972-464975|offset:464953-464958|offset:464997-465016|offset:465036-465042|offset:465062-465067|offset:465087-465092",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=200; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=30001; unit_limit_upper=35000"
+            }
+          },
+          {
+            "literal": "unit_price=1.4 USD; MARGINAL_PER_UNIT; unit_limit_lower=35001; unit_limit_upper=40000",
+            "amount": "1.4",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 35001 to 40000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=35001; unit_limit_upper=40000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465136-465139|offset:465117-465122|offset:465197-465216|offset:465236-465242|offset:465262-465267|offset:465287-465292",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=1.4; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=35001; unit_limit_upper=40000"
+            }
+          },
+          {
+            "literal": "unit_price=190 JPY; MARGINAL_PER_UNIT; unit_limit_lower=35001; unit_limit_upper=40000",
+            "amount": "190",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 35001 to 40000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=35001; unit_limit_upper=40000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465172-465175|offset:465153-465158|offset:465197-465216|offset:465236-465242|offset:465262-465267|offset:465287-465292",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=190; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=35001; unit_limit_upper=40000"
+            }
+          },
+          {
+            "literal": "unit_price=1.3 USD; MARGINAL_PER_UNIT; unit_limit_lower=40001; unit_limit_upper=45000",
+            "amount": "1.3",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 40001 to 45000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=40001; unit_limit_upper=45000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465336-465339|offset:465317-465322|offset:465397-465416|offset:465436-465442|offset:465462-465467|offset:465487-465492",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=1.3; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=40001; unit_limit_upper=45000"
+            }
+          },
+          {
+            "literal": "unit_price=170 JPY; MARGINAL_PER_UNIT; unit_limit_lower=40001; unit_limit_upper=45000",
+            "amount": "170",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 40001 to 45000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=40001; unit_limit_upper=45000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465372-465375|offset:465353-465358|offset:465397-465416|offset:465436-465442|offset:465462-465467|offset:465487-465492",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=170; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=40001; unit_limit_upper=45000"
+            }
+          },
+          {
+            "literal": "unit_price=1.1 USD; MARGINAL_PER_UNIT; unit_limit_lower=45001; unit_limit_upper=null",
+            "amount": "1.1",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 45001 to null",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=45001; unit_limit_upper=null. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465536-465539|offset:465517-465522|offset:465597-465616|offset:465636-465642|offset:465662-465667|offset:465687-465691",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=1.1; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=45001; unit_limit_upper=null"
+            }
+          },
+          {
+            "literal": "unit_price=150 JPY; MARGINAL_PER_UNIT; unit_limit_lower=45001; unit_limit_upper=null",
+            "amount": "150",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 45001 to null",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=45001; unit_limit_upper=null. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465572-465575|offset:465553-465558|offset:465597-465616|offset:465636-465642|offset:465662-465667|offset:465687-465691",
+              "text": "localizedPriceBlock.confluence.standard: unit_price=150; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=45001; unit_limit_upper=null"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:462909-465693",
+          "text": "window.prices.localizedPriceBlock.confluence.standard; named legacy price schedule"
+        }
+      },
+      {
+        "name": "Premium",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "unit_price=12.3 USD; MARGINAL_PER_UNIT; unit_limit_lower=0; unit_limit_upper=100",
+            "amount": "12.3",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 0 to 100",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=0; unit_limit_upper=100. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465747-465751|offset:465728-465733|offset:465810-465829|offset:465849-465855|offset:465875-465876|offset:465896-465899",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=12.3; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=0; unit_limit_upper=100"
+            }
+          },
+          {
+            "literal": "unit_price=1610 JPY; MARGINAL_PER_UNIT; unit_limit_lower=0; unit_limit_upper=100",
+            "amount": "1610",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 0 to 100",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=0; unit_limit_upper=100. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465784-465788|offset:465765-465770|offset:465810-465829|offset:465849-465855|offset:465875-465876|offset:465896-465899",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=1610; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=0; unit_limit_upper=100"
+            }
+          },
+          {
+            "literal": "unit_price=8.9 USD; MARGINAL_PER_UNIT; unit_limit_lower=101; unit_limit_upper=250",
+            "amount": "8.9",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 101 to 250",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=101; unit_limit_upper=250. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465943-465946|offset:465924-465929|offset:466005-466024|offset:466044-466050|offset:466070-466073|offset:466093-466096",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=8.9; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=101; unit_limit_upper=250"
+            }
+          },
+          {
+            "literal": "unit_price=1170 JPY; MARGINAL_PER_UNIT; unit_limit_lower=101; unit_limit_upper=250",
+            "amount": "1170",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 101 to 250",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=101; unit_limit_upper=250. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:465979-465983|offset:465960-465965|offset:466005-466024|offset:466044-466050|offset:466070-466073|offset:466093-466096",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=1170; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=101; unit_limit_upper=250"
+            }
+          },
+          {
+            "literal": "unit_price=7.05 USD; MARGINAL_PER_UNIT; unit_limit_lower=251; unit_limit_upper=1000",
+            "amount": "7.05",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 251 to 1000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=251; unit_limit_upper=1000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466140-466144|offset:466121-466126|offset:466202-466221|offset:466241-466247|offset:466267-466270|offset:466290-466294",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=7.05; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=251; unit_limit_upper=1000"
+            }
+          },
+          {
+            "literal": "unit_price=930 JPY; MARGINAL_PER_UNIT; unit_limit_lower=251; unit_limit_upper=1000",
+            "amount": "930",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 251 to 1000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=251; unit_limit_upper=1000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466177-466180|offset:466158-466163|offset:466202-466221|offset:466241-466247|offset:466267-466270|offset:466290-466294",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=930; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=251; unit_limit_upper=1000"
+            }
+          },
+          {
+            "literal": "unit_price=6.4 USD; MARGINAL_PER_UNIT; unit_limit_lower=1001; unit_limit_upper=2500",
+            "amount": "6.4",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 1001 to 2500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=1001; unit_limit_upper=2500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466338-466341|offset:466319-466324|offset:466399-466418|offset:466438-466444|offset:466464-466468|offset:466488-466492",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=6.4; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=1001; unit_limit_upper=2500"
+            }
+          },
+          {
+            "literal": "unit_price=840 JPY; MARGINAL_PER_UNIT; unit_limit_lower=1001; unit_limit_upper=2500",
+            "amount": "840",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 1001 to 2500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=1001; unit_limit_upper=2500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466374-466377|offset:466355-466360|offset:466399-466418|offset:466438-466444|offset:466464-466468|offset:466488-466492",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=840; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=1001; unit_limit_upper=2500"
+            }
+          },
+          {
+            "literal": "unit_price=6.05 USD; MARGINAL_PER_UNIT; unit_limit_lower=2501; unit_limit_upper=5000",
+            "amount": "6.05",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 2501 to 5000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=2501; unit_limit_upper=5000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466536-466540|offset:466517-466522|offset:466598-466617|offset:466637-466643|offset:466663-466667|offset:466687-466691",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=6.05; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=2501; unit_limit_upper=5000"
+            }
+          },
+          {
+            "literal": "unit_price=790 JPY; MARGINAL_PER_UNIT; unit_limit_lower=2501; unit_limit_upper=5000",
+            "amount": "790",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 2501 to 5000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=2501; unit_limit_upper=5000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466573-466576|offset:466554-466559|offset:466598-466617|offset:466637-466643|offset:466663-466667|offset:466687-466691",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=790; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=2501; unit_limit_upper=5000"
+            }
+          },
+          {
+            "literal": "unit_price=5.8 USD; MARGINAL_PER_UNIT; unit_limit_lower=5001; unit_limit_upper=7500",
+            "amount": "5.8",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 5001 to 7500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=5001; unit_limit_upper=7500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466735-466738|offset:466716-466721|offset:466796-466815|offset:466835-466841|offset:466861-466865|offset:466885-466889",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=5.8; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=5001; unit_limit_upper=7500"
+            }
+          },
+          {
+            "literal": "unit_price=760 JPY; MARGINAL_PER_UNIT; unit_limit_lower=5001; unit_limit_upper=7500",
+            "amount": "760",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 5001 to 7500",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=5001; unit_limit_upper=7500. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466771-466774|offset:466752-466757|offset:466796-466815|offset:466835-466841|offset:466861-466865|offset:466885-466889",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=760; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=5001; unit_limit_upper=7500"
+            }
+          },
+          {
+            "literal": "unit_price=5.4 USD; MARGINAL_PER_UNIT; unit_limit_lower=7501; unit_limit_upper=10000",
+            "amount": "5.4",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 7501 to 10000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=7501; unit_limit_upper=10000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466933-466936|offset:466914-466919|offset:466994-467013|offset:467033-467039|offset:467059-467063|offset:467083-467088",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=5.4; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=7501; unit_limit_upper=10000"
+            }
+          },
+          {
+            "literal": "unit_price=710 JPY; MARGINAL_PER_UNIT; unit_limit_lower=7501; unit_limit_upper=10000",
+            "amount": "710",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 7501 to 10000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=7501; unit_limit_upper=10000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:466969-466972|offset:466950-466955|offset:466994-467013|offset:467033-467039|offset:467059-467063|offset:467083-467088",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=710; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=7501; unit_limit_upper=10000"
+            }
+          },
+          {
+            "literal": "unit_price=4.8 USD; MARGINAL_PER_UNIT; unit_limit_lower=10001; unit_limit_upper=15000",
+            "amount": "4.8",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 10001 to 15000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=10001; unit_limit_upper=15000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467132-467135|offset:467113-467118|offset:467193-467212|offset:467232-467238|offset:467258-467263|offset:467283-467288",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=4.8; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=10001; unit_limit_upper=15000"
+            }
+          },
+          {
+            "literal": "unit_price=630 JPY; MARGINAL_PER_UNIT; unit_limit_lower=10001; unit_limit_upper=15000",
+            "amount": "630",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 10001 to 15000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=10001; unit_limit_upper=15000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467168-467171|offset:467149-467154|offset:467193-467212|offset:467232-467238|offset:467258-467263|offset:467283-467288",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=630; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=10001; unit_limit_upper=15000"
+            }
+          },
+          {
+            "literal": "unit_price=4.5 USD; MARGINAL_PER_UNIT; unit_limit_lower=15001; unit_limit_upper=20000",
+            "amount": "4.5",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 15001 to 20000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=15001; unit_limit_upper=20000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467332-467335|offset:467313-467318|offset:467393-467412|offset:467432-467438|offset:467458-467463|offset:467483-467488",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=4.5; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=15001; unit_limit_upper=20000"
+            }
+          },
+          {
+            "literal": "unit_price=590 JPY; MARGINAL_PER_UNIT; unit_limit_lower=15001; unit_limit_upper=20000",
+            "amount": "590",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 15001 to 20000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=15001; unit_limit_upper=20000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467368-467371|offset:467349-467354|offset:467393-467412|offset:467432-467438|offset:467458-467463|offset:467483-467488",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=590; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=15001; unit_limit_upper=20000"
+            }
+          },
+          {
+            "literal": "unit_price=3.9 USD; MARGINAL_PER_UNIT; unit_limit_lower=20001; unit_limit_upper=25000",
+            "amount": "3.9",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 20001 to 25000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=20001; unit_limit_upper=25000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467532-467535|offset:467513-467518|offset:467593-467612|offset:467632-467638|offset:467658-467663|offset:467683-467688",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=3.9; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=20001; unit_limit_upper=25000"
+            }
+          },
+          {
+            "literal": "unit_price=510 JPY; MARGINAL_PER_UNIT; unit_limit_lower=20001; unit_limit_upper=25000",
+            "amount": "510",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 20001 to 25000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=20001; unit_limit_upper=25000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467568-467571|offset:467549-467554|offset:467593-467612|offset:467632-467638|offset:467658-467663|offset:467683-467688",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=510; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=20001; unit_limit_upper=25000"
+            }
+          },
+          {
+            "literal": "unit_price=3.45 USD; MARGINAL_PER_UNIT; unit_limit_lower=25001; unit_limit_upper=30000",
+            "amount": "3.45",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 25001 to 30000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=25001; unit_limit_upper=30000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467732-467736|offset:467713-467718|offset:467794-467813|offset:467833-467839|offset:467859-467864|offset:467884-467889",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=3.45; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=25001; unit_limit_upper=30000"
+            }
+          },
+          {
+            "literal": "unit_price=460 JPY; MARGINAL_PER_UNIT; unit_limit_lower=25001; unit_limit_upper=30000",
+            "amount": "460",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 25001 to 30000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=25001; unit_limit_upper=30000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467769-467772|offset:467750-467755|offset:467794-467813|offset:467833-467839|offset:467859-467864|offset:467884-467889",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=460; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=25001; unit_limit_upper=30000"
+            }
+          },
+          {
+            "literal": "unit_price=2.75 USD; MARGINAL_PER_UNIT; unit_limit_lower=30001; unit_limit_upper=35000",
+            "amount": "2.75",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 30001 to 35000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=30001; unit_limit_upper=35000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467933-467937|offset:467914-467919|offset:467995-468014|offset:468034-468040|offset:468060-468065|offset:468085-468090",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=2.75; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=30001; unit_limit_upper=35000"
+            }
+          },
+          {
+            "literal": "unit_price=360 JPY; MARGINAL_PER_UNIT; unit_limit_lower=30001; unit_limit_upper=35000",
+            "amount": "360",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 30001 to 35000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=30001; unit_limit_upper=35000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:467970-467973|offset:467951-467956|offset:467995-468014|offset:468034-468040|offset:468060-468065|offset:468085-468090",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=360; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=30001; unit_limit_upper=35000"
+            }
+          },
+          {
+            "literal": "unit_price=2.4 USD; MARGINAL_PER_UNIT; unit_limit_lower=35001; unit_limit_upper=40000",
+            "amount": "2.4",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 35001 to 40000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=35001; unit_limit_upper=40000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:468134-468137|offset:468115-468120|offset:468195-468214|offset:468234-468240|offset:468260-468265|offset:468285-468290",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=2.4; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=35001; unit_limit_upper=40000"
+            }
+          },
+          {
+            "literal": "unit_price=320 JPY; MARGINAL_PER_UNIT; unit_limit_lower=35001; unit_limit_upper=40000",
+            "amount": "320",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 35001 to 40000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=35001; unit_limit_upper=40000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:468170-468173|offset:468151-468156|offset:468195-468214|offset:468234-468240|offset:468260-468265|offset:468285-468290",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=320; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=35001; unit_limit_upper=40000"
+            }
+          },
+          {
+            "literal": "unit_price=2.2 USD; MARGINAL_PER_UNIT; unit_limit_lower=40001; unit_limit_upper=45000",
+            "amount": "2.2",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 40001 to 45000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=40001; unit_limit_upper=45000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:468334-468337|offset:468315-468320|offset:468395-468414|offset:468434-468440|offset:468460-468465|offset:468485-468490",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=2.2; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=40001; unit_limit_upper=45000"
+            }
+          },
+          {
+            "literal": "unit_price=290 JPY; MARGINAL_PER_UNIT; unit_limit_lower=40001; unit_limit_upper=45000",
+            "amount": "290",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 40001 to 45000",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=40001; unit_limit_upper=45000. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:468370-468373|offset:468351-468356|offset:468395-468414|offset:468434-468440|offset:468460-468465|offset:468485-468490",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=290; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=40001; unit_limit_upper=45000"
+            }
+          },
+          {
+            "literal": "unit_price=2 USD; MARGINAL_PER_UNIT; unit_limit_lower=45001; unit_limit_upper=null",
+            "amount": "2",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 45001 to null",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=45001; unit_limit_upper=null. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:468534-468535|offset:468515-468520|offset:468593-468612|offset:468632-468638|offset:468658-468663|offset:468683-468687",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=2; currency=USD; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=45001; unit_limit_upper=null"
+            }
+          },
+          {
+            "literal": "unit_price=270 JPY; MARGINAL_PER_UNIT; unit_limit_lower=45001; unit_limit_upper=null",
+            "amount": "270",
+            "currency": "JPY",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "raw quantity bounds: 45001 to null",
+              "volume": "MARGINAL_PER_UNIT; source unit=user; unit_limit_lower=45001; unit_limit_upper=null. Quantity-band boundaries retained as encoded, not purchase minima or a flat bundle.",
+              "billingVariant": "Legacy pricing map; live selected currency variant and billing period unresolved"
+            },
+            "source": {
+              "locator": "offset:468568-468571|offset:468549-468554|offset:468593-468612|offset:468632-468638|offset:468658-468663|offset:468683-468687",
+              "text": "localizedPriceBlock.confluence.premium: unit_price=270; currency=JPY; pricing_strategy=MARGINAL_PER_UNIT; unit_description=user; unit_limit_lower=45001; unit_limit_upper=null"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:465704-468689",
+          "text": "window.prices.localizedPriceBlock.confluence.premium; named legacy price schedule"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:24:42.517Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-973bf19f471c3c52bc7920f16bcb34f905a9eb4c43de9f25dd2c431953bb889b",
     "productId": "datadog",
     "scope": {
@@ -19583,6 +21079,98 @@
       "reviewedAt": "2026-10-22T19:10:54.684Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-db164b9b3c63e6a8fe058244f97bca327354ea3fa32974d1a9df5018eb1eb113",
+    "productId": "slack",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2014-05-23T01:57:25.000Z",
+    "landingCapturedAt": "2014-05-23T01:57:25.000Z",
+    "pricingCapturedAt": "2014-05-23T01:57:25.000Z",
+    "evidenceAvailableAt": "2014-05-23T01:57:25.000Z",
+    "landingUrl": "https://slack.com/",
+    "pricingUrl": "https://slack.com/",
+    "landingArchiveUrl": "https://web.archive.org/web/20140523015725id_/https://slack.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20140523015725id_/https://slack.com/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Slack",
+      "locator": "offset:4813-4942"
+    },
+    "sourceSha256": "3238ec0a692b95819b283c7f903a7c4eb3ebd2acdcdebbe401cd47cb55bce41f",
+    "landingSha256": "3238ec0a692b95819b283c7f903a7c4eb3ebd2acdcdebbe401cd47cb55bce41f",
+    "sourceDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+    "landingDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+    "fetchedAt": "2026-10-22T14:17:51.191Z",
+    "landingFetchedAt": "2026-10-22T14:17:51.191Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+      "actualDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+      "actualDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX"
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "HistoricalMay2014snapshot only; no claim about current Slack pricing.",
+      "General product free-to-use statement, not an invented Free-branded tier. No recurring period or currency inferred.",
+      "Exact pricing page lookup preceding this landing returned no record; paid tier structure remains unavailable."
+    ],
+    "plans": [
+      {
+        "name": "Slack",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Slack is free to use for as long as you want and with an unlimited number of people.",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Unlimited number of people; free to use for as long as wanted. Historical2014product claim, not a current paid-tier comparison.",
+              "billingVariant": "Repeated responsive claim copies collapsed to one source statement; active viewport unknown"
+            },
+            "source": {
+              "locator": "offset:4813-4942",
+              "text": "Slack is free to use for as long as you want and with an unlimited number of people."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:4813-4942",
+          "text": "Slack is free to use for as long as you want and with an unlimited number of people."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:24:42.564Z",
+      "decision": "confirmed"
     }
   },
   {
