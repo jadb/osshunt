@@ -159,3 +159,26 @@ test('fractional structured minimum quantity cannot silently round to an integer
   const r = extractPricing('<script type="application/ld+json">{"@type":"Offer","name":"Pro","price":"9","priceCurrency":"USD","eligibleQuantity":{"minValue":5.00000000000000001}}</script>');
   assert.equal(r.plans[0].offers[0].minimumQuantity, null);
 });
+test('legacy Dropbox row cards retain named plans, capacity and price evidence without upgrade numbers', () => {
+  const html = `<div id="plans-container">
+    <table><tr><td class="plan-image"><span class="db_badge_content">5GB</span></td>
+      <td class="plan-description"><h5>Starter</h5></td><td class="plan-pricing"><p><b>Free</b></p></td></tr></table>
+    <table><tr><td class="plan-image"><span class="db_badge_content">50GB</span></td>
+      <td class="plan-description"><h5>Studio 50</h5></td><td class="plan-pricing"><p><b>$7.25</b>/month</p>
+        <p><a href="/upgrade?plan=50">Upgrade to Studio 50</a></p></td></tr></table>
+    <table><tr><td class="plan-image"><span class="db_badge_content">100GB</span></td>
+      <td class="plan-description"><h5>Studio 100</h5></td><td class="plan-pricing"><p><b>$16.50</b>/month</p></td></tr></table>
+  </div>`;
+  const r = extractPricing(html, { originalUrl: 'http://www.dropbox.com/pricing' });
+  assert.deepEqual(r.plans.map(p => p.name), ['Starter', 'Studio 50', 'Studio 100']);
+  assert.deepEqual(r.plans.map(p => p.status), ['free', 'paid', 'paid']);
+  assert.deepEqual(r.plans.map(p => p.offers[0].amount), ['0', '7.25', '16.50']);
+  assert.deepEqual(r.plans.map(p => p.features[0].value), ['5GB', '50GB', '100GB']);
+  assert.equal(r.plans[1].offers[0].currency, null);
+  assert.equal(r.plans[1].offers[0].billingPeriod, 'month');
+  assert.equal(r.plans[1].offers[0].commitment, 'unknown');
+  assert.doesNotMatch(r.plans[1].offers[0].source.text, /Upgrade/);
+  assert.ok(r.plans.every(p => p.popular === null));
+  assert.equal(r.quality, 'partial');
+  assert.equal(extractPricing(html, { originalUrl: 'https://unrelated.example/pricing' }).plans.length, 0);
+});
