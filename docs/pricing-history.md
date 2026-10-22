@@ -57,7 +57,7 @@ npm run pricing:review -- export --product slack --out .local/reviews/slack.json
 
 Export writes proposals and adjacent `.txt` source files. Inspect as text using each field's locator and literal. Verify product/edition/deployment, currency, amount, billing period, commitment, minimum quantity, conditions and features. Set supported observations' `decision` to `confirm` and fill `reviewer`; use `reject` for unsupported observations. Unknown fields stay unknown. Template confirmation does not authorize later observations automatically.
 
-Do not edit the exported `proposal`: import compares it to the private inventory. Correct faulty extraction through a tested adapter and re-export. Optional `planIdentities` maps original plan names to stable, unique maintainer-reconciled identities for evidenced renames.
+Do not edit the exported `proposal`: import compares it to the private inventory. Correct automated extraction through a tested adapter and re-export. Manually curated candidates are also supported: transcribe source-bound plans and offers before export, mark `extractorVersion` as `manual-1.0.0`, retain a manual-transcription issue, then independently review and import through the same checks. A reusable reader is not required for supported manual facts. Optional `planIdentities` maps original plan names to stable, unique maintainer-reconciled identities for evidenced renames.
 
 ```sh
 npm run pricing:review -- import --file .local/reviews/slack.json
