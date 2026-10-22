@@ -1,0 +1,44 @@
+[
+  {
+    "productId": "docusign",
+    "url": "https://ecom.docusign.com/plans-and-pricing/esignature",
+    "evidenceCapturedAt": "2025-06-20T00:45:50.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+    "evidenceSha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d",
+    "locator": "offset:90609-90886",
+    "label": "Plans & Pricing",
+    "scope": {
+      "edition": "eSignature",
+      "deployment": "hosted"
+    },
+    "locale": null
+  },
+  {
+    "productId": "google-meet",
+    "url": "https://workspace.google.com/intl/de/pricing.html",
+    "evidenceCapturedAt": "2025-06-30T23:53:00.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+    "evidenceSha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+    "locator": "offset:343348-343696",
+    "label": "Preise",
+    "scope": {
+      "edition": "Google Workspace bundle",
+      "deployment": "hosted"
+    },
+    "locale": "de"
+  },
+  {
+    "productId": "backblaze-business-backup",
+    "url": "https://www.backblaze.com/cloud-backup/pricing",
+    "evidenceCapturedAt": "2025-06-24T16:27:54.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+    "evidenceSha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7",
+    "locator": "offset:46689-46914",
+    "label": "Computer Backup Unlimited data protection, transparent pricing",
+    "scope": {
+      "edition": "Computer Backup for businesses",
+      "deployment": "hosted"
+    },
+    "locale": null
+  }
+]
