@@ -72,7 +72,7 @@
     {
       "role": "business",
       "name": "Professional",
-      "status": "unknown",
+      "status": "quote",
       "monthlyPrice": null,
       "annualPrice": null,
       "oneTimePrice": null,
@@ -80,7 +80,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "paid self-hosted license",
-      "notes": "Professional organizational tier exists; numeric prices not exposed in reviewed pricing extraction.",
+      "notes": "Official plan card directs Contact Sales / Get Pricing; no numeric public amount. Commercial suite scope distinct from free core.",
       "sources": [
         "https://mattermost.com/pricing/"
       ],
@@ -89,7 +89,7 @@
     {
       "role": "enterprise",
       "name": "Enterprise",
-      "status": "unknown",
+      "status": "quote",
       "monthlyPrice": null,
       "annualPrice": null,
       "oneTimePrice": null,
@@ -97,7 +97,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "paid self-hosted license",
-      "notes": "Enterprise and Enterprise Advanced exist; no numeric amount or quotation text verified in extraction.",
+      "notes": "Official plan card directs Contact Sales / Get Pricing; no numeric public amount. Commercial suite scope distinct from free core.",
       "sources": [
         "https://mattermost.com/pricing/"
       ],

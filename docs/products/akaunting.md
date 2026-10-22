@@ -8,9 +8,9 @@ Akaunting (business); ownership: **private**; funding: **funded**.
 
 Started 2017 (product-launched); years active: 9; years in business: not established/applicable. Ages are approximate calendar-year differences as of 2026-10-21.
 
-Commercial project steward; official pricing FAQ says serving businesses since 2017 (product launch basis; company incorporation unverified). Official January 2021 post confirms $500,000 investment but does not name investors. Investor names found only in secondary leads were not accepted. [1](https://akaunting.com/about) [2](https://akaunting.com/plans-on-premise) [3](https://akaunting.com/blog/weve-raised-500k-funding)
+Commercial project steward; official pricing FAQ says serving businesses since2017 (product launch basis; company incorporation unverified). Official January2021 post confirms $500,000 investment without naming investors. The fund’s audited2025 financial statements identify an equity holding in Akaunting Yazılım A.Ş.; recorded as historical at31December2025, not a verified current cap table. Other names seen only in secondary leads remain unverified. [1](https://akaunting.com/about) [2](https://akaunting.com/plans-on-premise) [3](https://akaunting.com/blog/weve-raised-500k-funding) [4](https://kap.org.tr/tr/api/file/download/4028328c9cc9d177019cdd4449e958ad)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [Kuveyt Türk Portföy Yönetimi A.Ş. Teknogirişim Girişim Sermayesi Yatırım Fonu](https://kap.org.tr/tr/api/file/download/4028328c9cc9d177019cdd4449e958ad).
 
 ## Starting prices
 

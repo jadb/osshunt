@@ -1,0 +1,235 @@
+{
+  "id": "bruno",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Bruno",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Silverton Partners",
+        "source": "https://blog.usebruno.com/the-funding-announcement-we-never-made"
+      }
+    ],
+    "notes": "Private business founded2021 per investor portfolio. Aug2026 founder announcement reveals$3m raised about a year earlier and identifies Silverton Partners; exact closing date and current cap table unknown.",
+    "sources": [
+      "https://jobs.silvertonpartners.com/companies/bruno-2-3a8c224c-cb5c-423c-8ffb-558bb3b9c063",
+      "https://blog.usebruno.com/the-funding-announcement-we-never-made"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Local desktop client; no managed collaboration server inferred.",
+      "sources": [
+        "https://www.usebruno.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "desktop licenses",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://www.usebruno.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 72,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid desktop license",
+      "notes": "$6/user/month billed annually \u00d712=$72/year; suitable individuals/teams. No month-to-month amount verified.",
+      "sources": [
+        "https://www.usebruno.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Ultimate",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 132,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid desktop license",
+      "notes": "Closest enterprise organizational edition; $11/user/month annually \u00d712=$132/year. Custom enterprise agreements available through sales, not assumed to replace listed seat price.",
+      "sources": [
+        "https://www.usebruno.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Portable collection formats and existing Git workflows encourage adoption but also limit proprietary lock-in; accumulated collections and extensions provide modest workflow stickiness.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.usebruno.com/introduction/getting-started"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Keep readable API collection files beside application code and review changes through Git.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.usebruno.com/introduction/getting-started"
+      ]
+    },
+    {
+      "claim": "Develop API requests locally without an account or mandatory synchronization service.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.usebruno.com/introduction/getting-started"
+      ]
+    },
+    {
+      "claim": "Reuse scripted assertions and collection runs in a command-line CI workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.usebruno.com/introduction/getting-started",
+        "https://docs.usebruno.com/bru-cli/installation"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Bruno",
+          "url": "https://www.usebruno.com",
+          "relationship": "business-steward",
+          "source": "https://blog.usebruno.com/the-funding-announcement-we-never-made"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://blog.usebruno.com/the-funding-announcement-we-never-made"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "Bruno native desktop binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "macOS, Windows or Linux installer; desktop runtime bundled. No external SQL/cache/queue/SMTP required.",
+          "sources": [
+            "https://docs.usebruno.com/get-started/bruno-basics/download"
+          ]
+        },
+        {
+          "component": "Local collection storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Plain text files stored in workspace; Git optional for collaboration/versioning.",
+          "sources": [
+            "https://docs.usebruno.com/introduction/getting-started"
+          ]
+        },
+        {
+          "component": "Node.js18+ LTS and npm/pnpm/yarn",
+          "necessity": "one-of",
+          "group": "cli-runtime",
+          "condition": "Only for optional CLI via package manager",
+          "notes": "Host Node.js requirement applies to CLI installation, not desktop binary.",
+          "sources": [
+            "https://docs.usebruno.com/bru-cli/installation"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "one-of",
+          "group": "cli-runtime",
+          "condition": "Optional CLI container route instead of host Node.js",
+          "notes": "Official CLI image bundles Node runtime.",
+          "sources": [
+            "https://docs.usebruno.com/bru-cli/installation"
+          ]
+        },
+        {
+          "component": "Git provider / external API and secrets services",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "When using Git collaboration or selected integrations",
+          "notes": "No central Bruno server required; selected external API/AI/secrets usage optional.",
+          "sources": [
+            "https://docs.usebruno.com/introduction/getting-started"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "macOS; Windows x64/ARM64; Linux",
+        "notes": "Hardware minima not specified in the checked deployment source; size for workload.",
+        "sources": [
+          "https://docs.usebruno.com/get-started/bruno-basics/download"
+        ]
+      },
+      "notes": "Desktop/CLI API tooling, not a self-hosted collaboration server. Native installers and package-manager commands are local software installation; optional HTML docs hosting is separate.",
+      "sources": [
+        "https://docs.usebruno.com/get-started/bruno-basics/download",
+        "https://docs.usebruno.com/introduction/getting-started",
+        "https://docs.usebruno.com/bru-cli/installation"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Homebrew desktop installation",
+          "url": "https://docs.usebruno.com/get-started/bruno-basics/download",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official docs list brew install bruno; requires Homebrew. Local install, not server one-click.",
+          "sources": [
+            "https://docs.usebruno.com/get-started/bruno-basics/download"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Desktop binaries are downloads, not server provisioning.",
+      "sources": [
+        "https://docs.usebruno.com/get-started/bruno-basics/download"
+      ]
+    }
+  }
+}

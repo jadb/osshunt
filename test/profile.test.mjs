@@ -3,8 +3,21 @@ import assert from 'node:assert/strict';
 import { z } from 'zod';
 import { productProfile } from '../lib/profile-schema.mjs';
 import { renderProfile } from '../lib/render-profile.mjs';
+import { validateProfileCoverage } from '../lib/validate.mjs';
+import { applyOverrides } from '../lib/loaders.mjs';
 
 const sources = ['https://example.org/docs'];
+
+test('coverage cannot hide profiles removed or reassigned by overrides', () => {
+  const products = [{ id: 'sample', profile: { id: 'sample' } }, { id: 'pending' }];
+  const completed = new Set(['sample']);
+  assert.doesNotThrow(() => validateProfileCoverage(products, completed));
+  assert.throws(() => validateProfileCoverage(applyOverrides(products, { sample: { profile: null } }), completed), /reviewed source coverage/);
+  assert.throws(() => validateProfileCoverage(applyOverrides(products, {
+    sample: { profile: null }, pending: { profile: { id: 'pending' } },
+  }), completed), /reviewed source coverage/);
+});
+
 const fixture = () => ({
   id: 'sample', checkedAt: '2026-10-21',
   organization: { name: 'Sample project', kind: 'community', foundedYear: 2020,

@@ -41,7 +41,7 @@ Status: **business-fallback**. No separate corporate sponsor verified in reviewe
 
 ## Self-operation requirements
 
-Mode: **server**. Telephony server framework, not turnkey contact-center desktop. Package/source routes verified. Database configuration varies by modules; baseline guide does not establish mandatory external SQL/cache. [1](https://developer.signalwire.com/freeswitch/foundations/getting-started/) [2](https://signalwire.com/developers/freeswitch) [3](https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/)
+Mode: **server**. Telephony server framework, not turnkey contact-center desktop. Native packages or source build. Embedded SQLite default; PostgreSQL or MariaDB core database alternatives require matching module and DSN. SIP registration/queue modules can use their own SQLite/ODBC configuration. [1](https://developer.signalwire.com/freeswitch/foundations/getting-started/) [2](https://signalwire.com/developers/freeswitch) [3](https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/) [4](https://developer.signalwire.com/freeswitch/configuration/core-settings/)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
@@ -52,6 +52,9 @@ Mode: **server**. Telephony server framework, not turnkey contact-center desktop
 | SIP client/endpoints | conditional | — | User calling workflow; software endpoints external | Documented deployment component. [1](https://developer.signalwire.com/freeswitch/foundations/getting-started/) |
 | PSTN carrier/trunk and phone numbers | conditional | — | Public telephone connectivity; separate service/usage costs | Documented deployment component. [1](https://signalwire.com/developers/freeswitch) |
 | Commercial AMD or G.729 modules | conditional | — | Only when those proprietary capabilities/codecs are selected | Documented deployment component. [1](https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/) |
+| Embedded SQLite | one-of | core-database | Default core storage; no external database required | Documented runtime component. [1](https://developer.signalwire.com/freeswitch/configuration/core-settings/) |
+| PostgreSQL with mod_pgsql | one-of | core-database | Configure core-db-dsn for external database | Documented runtime component. [1](https://developer.signalwire.com/freeswitch/configuration/core-settings/) |
+| MariaDB with mod_mariadb | one-of | core-database | Configure core-db-dsn for external database | Documented runtime component. [1](https://developer.signalwire.com/freeswitch/configuration/core-settings/) |
 
 Resources: CPU not specified; memory not specified; storage not specified; OS not specified. No universal hardware minimum established; workload determines capacity. [1](https://developer.signalwire.com/freeswitch/foundations/getting-started/)
 

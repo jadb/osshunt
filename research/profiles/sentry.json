@@ -1,0 +1,132 @@
+{
+  "id": "sentry",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Functional Software, Inc. (Sentry)",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://www.accel.com/news/helping-developers-see-and-solve-quicker-our-enduring-partnership-with-sentry"
+      },
+      {
+        "name": "NEA",
+        "source": "https://sentry-blog.sentry.dev/sentry-raises-series-b/"
+      }
+    ],
+    "notes": "Sentry is a venture-funded business; Accel confirms seed investment in 2015 and subsequent rounds through Series E. NEA and Accel named in company Series B article. Exact company incorporation/founding year unresolved; project origins and company formation should not be conflated. Current capitalization not public in reviewed sources.",
+    "sources": [
+      "https://www.accel.com/news/helping-developers-see-and-solve-quicker-our-enduring-partnership-with-sentry",
+      "https://sentry-blog.sentry.dev/sentry-raises-series-b/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 29,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Official billing help explicitly gives USD29 base Team subscription; usage charges separate. Annual amount unverified because pricing/docs return unsupported markdown.",
+      "sources": [
+        "https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Official pricing page could not be extracted; no first-party popular badge verified.",
+      "sources": [
+        "https://sentry.io/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 89,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Official billing help gives USD89 base Business subscription. Usage charges separate; annual amount unresolved.",
+      "sources": [
+        "https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom volume contract",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Official help directs volume pricing to sales; no Enterprise amount verified.",
+      "sources": [
+        "https://www.sentry.help/en/articles/13965054-can-i-get-a-quote-for-sentry"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "SDK integrations and code/deploy context can accumulate application-specific workflow investment and switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://sentry-blog.sentry.dev/sentry-raises-series-b/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Code-linked error context and suspect commits help identify the change that introduced a failure.",
+      "basis": "assessment",
+      "sources": [
+        "https://sentry-blog.sentry.dev/sentry-raises-series-b/"
+      ]
+    },
+    {
+      "claim": "Monitoring spans supports investigating performance behavior alongside errors.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024"
+      ]
+    },
+    {
+      "claim": "Cross-platform error monitoring serves browser, mobile and backend teams in a common triage workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://sentry-blog.sentry.dev/sentry-raises-series-b/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

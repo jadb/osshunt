@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { z } from 'zod';
 import { productProfile } from '../lib/profile-schema.mjs';
 import { parseClaims } from '../lib/claims.mjs';
+import { validateProfileCoverage } from '../lib/validate.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const source = process.argv[2] ? resolve(process.argv[2]) : resolve(root, 'research/profiles');
@@ -25,6 +26,7 @@ for (const file of (await readdir(source)).filter(file => file.endsWith('.json')
   completedIds.add(profile.id);
 }
 if (!process.argv[2]) {
+  validateProfileCoverage(products, completedIds);
   const manifest = JSON.parse(await readFile(resolve(root, 'research/enrichment-manifest.json'), 'utf8'));
   if (!['in-progress', 'complete'].includes(manifest.status) || manifest.productIds.length !== products.length ||
       new Set(manifest.productIds).size !== products.length || manifest.productIds.some(id => !byId.has(id)) ||

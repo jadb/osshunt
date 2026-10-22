@@ -35,12 +35,13 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **none-found**. Reviewed project source; no verified corporate sponsor or incorporated business steward established. This is not proof none exists. [1](https://bigbluebutton.org/open-source-project/about/)
+Status: **business-fallback**. Official project page identifies Blindside Networks as creator and manager of worldwide project growth.2025 developer summit event sponsors were also checked; event sponsorship is not automatically ongoing project funding. [1](https://bigbluebutton.org/oeb-conference-2024/) [2](https://bigbluebutton.org/bigbluebutton-developer-summit-2025/)
 
+- [Blindside Networks](https://blindsidenetworks.com/): business-steward. [Evidence](https://bigbluebutton.org/oeb-conference-2024/).
 
 ## Self-operation requirements
 
-Mode: **server**. Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted. [1](https://docs.bigbluebutton.org/administration/install/) [2](https://docs.bigbluebutton.org/4.0/development/architecture/)
+Mode: **server**. Scope:official v4.0.0 released14October2026, not preview, confirmed by GitHub release. Search index retained older DRAFT wording; current release/page controls.3.0 remains a separately documented route requiring Ubuntu22.04/Linux5.x; do not mix4.0 LiveKit default with older3.0 stack. No direct in-place upgrade from older3.x asserted. [1](https://docs.bigbluebutton.org/administration/install/) [2](https://docs.bigbluebutton.org/4.0/development/architecture/) [3](https://github.com/bigbluebutton/bigbluebutton/releases/tag/v4.0.0) [4](https://docs.bigbluebutton.org/3.0/administration/install/)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|

@@ -2,16 +2,16 @@
   "id": "zulip",
   "checkedAt": "2026-10-21",
   "organization": {
-    "name": "Zulip Foundation / Kandra Labs",
+    "name": "Kandra Labs",
     "kind": "business",
     "foundedYear": 2016,
     "ageBasis": "company-founded",
-    "ownership": "nonprofit",
+    "ownership": "private",
     "parent": "Zulip Foundation",
     "stockSymbols": [],
     "funding": "mixed",
     "investors": [],
-    "notes": "2016 is Kandra Labs formation; original product startup founded 2012. In 2026 independent nonprofit Zulip Foundation became steward and fully owns Kandra Labs. NSF grants and Google Summer of Code support are not equity investors; no VC funding stated in history.",
+    "notes": "Kandra Labs is the business foundedApril2016 and now fully owned by independent nonprofit Zulip Foundation, which became project steward in2026. Original Zulip startup formed2012. NSF grants and Google Summer of Code contributions are not equity investments; no VC funding stated in project history.",
     "sources": [
       "https://zulip.com/history/"
     ]
@@ -120,16 +120,22 @@
   ],
   "alternativeDetails": {
     "sponsorship": {
-      "status": "business-fallback",
+      "status": "identified",
       "organizations": [
         {
           "name": "Kandra Labs",
           "url": "https://zulip.com/history/",
           "relationship": "business-steward",
           "source": "https://zulip.com/history/"
+        },
+        {
+          "name": "Google",
+          "url": "https://summerofcode.withgoogle.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://zulip.com/history/"
         }
       ],
-      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "notes": "Project history credits100+ contributors supported by Google Summer of Code:corporate program contribution, not equity investment or an assertion of current annual sponsorship. Kandra Labs remains the verified business steward.",
       "sources": [
         "https://zulip.com/history/"
       ]

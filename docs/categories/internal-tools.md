@@ -7,6 +7,7 @@ Audience: Operations and IT teams, developers and business teams building bespok
 Use-case sources: [1](https://tooljet.com/pricing), [2](https://www.appsmith.com/pricing).
 
 - [Retool](https://retool.com): USD 10/seat/month, annual billing. Team: $10/builder/month and $5/internal user/month, billed annually; free plan for up to five users. Usage and higher tiers differ. [Pricing](https://retool.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/retool.md).
 
 ### Appsmith — C
 
@@ -41,6 +42,8 @@ Repository: pushed 2026-10-21T15:20:53Z; latest commit 2026-10-21T14:12:44Z; lat
 AGPL Community core, not a claim about commercial Enterprise code. Official self-host pricing gates ordinary development and deployment functions, therefore C. Pricing-plan caps may depend on distributed edition; source-build entitlements need confirmation.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/ToolJet/ToolJet/blob/a743e91bf48b9b6377aca69699b39698e06fb5f3/LICENSE), [edition evidence](https://tooljet.com/pricing), [hosting](https://tooljet.com/pricing), [repository](https://github.com/ToolJet/ToolJet).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/tooljet.md).
 
 Paid restrictions: Self-host free plan: two builders, up to 50 end users, up to ten apps; Version control, Git sync, custom styling, themes and modules; Scheduled workflow triggers; Custom groups, audit logs, SSO and air-gapped deployment
 

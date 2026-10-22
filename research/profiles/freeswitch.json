@@ -228,6 +228,36 @@
           "sources": [
             "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/"
           ]
+        },
+        {
+          "component": "Embedded SQLite",
+          "necessity": "one-of",
+          "group": "core-database",
+          "condition": "Default core storage; no external database required",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/configuration/core-settings/"
+          ]
+        },
+        {
+          "component": "PostgreSQL with mod_pgsql",
+          "necessity": "one-of",
+          "group": "core-database",
+          "condition": "Configure core-db-dsn for external database",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/configuration/core-settings/"
+          ]
+        },
+        {
+          "component": "MariaDB with mod_mariadb",
+          "necessity": "one-of",
+          "group": "core-database",
+          "condition": "Configure core-db-dsn for external database",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/configuration/core-settings/"
+          ]
         }
       ],
       "resources": {
@@ -240,11 +270,12 @@
           "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
         ]
       },
-      "notes": "Telephony server framework, not turnkey contact-center desktop. Package/source routes verified. Database configuration varies by modules; baseline guide does not establish mandatory external SQL/cache.",
+      "notes": "Telephony server framework, not turnkey contact-center desktop. Native packages or source build. Embedded SQLite default; PostgreSQL or MariaDB core database alternatives require matching module and DSN. SIP registration/queue modules can use their own SQLite/ODBC configuration.",
       "sources": [
         "https://developer.signalwire.com/freeswitch/foundations/getting-started/",
         "https://signalwire.com/developers/freeswitch",
-        "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/"
+        "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/",
+        "https://developer.signalwire.com/freeswitch/configuration/core-settings/"
       ]
     },
     "oneClickInstall": {

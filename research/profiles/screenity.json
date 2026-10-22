@@ -1,0 +1,214 @@
+{
+  "id": "screenity",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Alyssa X / Screenity",
+    "kind": "individual",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "README identifies solo developer Alyssa X. Exact project start not asserted from relative six-years-ago maker note; corporate sponsors are not equity investors. Funding/ownership beyond individual stewardship unresolved.",
+    "sources": [
+      "https://github.com/alyssaxuu/screenity"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Local extension",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "local extension installation",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Screenity offers",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://screenity.io/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Pro web platform",
+      "notes": "Single paid platform plan shown; no distinct Team/Business tier. $120 billed yearly verified, but not silently substituted for extension code or organizational plan.",
+      "sources": [
+        "https://screenity.io/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Screenity product plans",
+      "notes": "Reviewed terms and single-plan page; no separately named enterprise offer found. This is limited to reviewed public plans.",
+      "sources": [
+        "https://screenity.io/terms"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Focused browser capture/annotation workflow differentiates locally, but readily forkable code and limited proprietary ecosystem weaken exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "On-screen drawing, shapes and text explain steps while recording.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ]
+    },
+    {
+      "claim": "Live blur and cursor spotlight guide attention while obscuring sensitive page content.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ]
+    },
+    {
+      "claim": "Trim/crop/audio editing and MP4/GIF/WebM export prepare local clips for reuse.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Recall.ai",
+          "url": "https://github.com/alyssaxuu/screenity",
+          "relationship": "corporate-sponsor",
+          "source": "https://github.com/alyssaxuu/screenity"
+        },
+        {
+          "name": "HelpKit",
+          "url": "https://www.helpkit.so/",
+          "relationship": "corporate-sponsor",
+          "source": "https://github.com/alyssaxuu/screenity"
+        }
+      ],
+      "notes": "Recall.ai sponsor banner and HelpKit in-kind help-center hosting identified in README; no inference from ordinary integrations.",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "Chrome/Chromium extension runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Load released Build.zip as unpacked extension; local-only runtime, not a server.",
+          "sources": [
+            "https://github.com/alyssaxuu/screenity"
+          ]
+        },
+        {
+          "component": "Node.js14+ and npm",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Source development/build only; released extension needs no Node server",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alyssaxuu/screenity"
+          ]
+        },
+        {
+          "component": "Google Cloud OAuth client/extension key",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Optional Google Drive upload integration; local recording does not require it",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alyssaxuu/screenity"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://github.com/alyssaxuu/screenity"
+        ]
+      },
+      "notes": "Browser extension/local desktop workflow, not server hosting. Self-hosted extension is local-only; API, sign-in and Pro platform features disabled.",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Chrome Web Store extension",
+          "url": "https://chromewebstore.google.com/detail/screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Installs official distributed extension; separate manual unpacked self-host build stays local-only and excludes Pro platform.",
+          "sources": [
+            "https://github.com/alyssaxuu/screenity",
+            "https://chromewebstore.google.com/detail/screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji"
+          ]
+        }
+      ],
+      "notes": "Official README Get it now link verified to Chrome Web Store. Marketplace installs browser extension, not web sharing server.",
+      "sources": [
+        "https://github.com/alyssaxuu/screenity",
+        "https://chromewebstore.google.com/detail/screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji"
+      ]
+    }
+  }
+}

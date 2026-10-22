@@ -120,11 +120,19 @@
   ],
   "alternativeDetails": {
     "sponsorship": {
-      "status": "none-found",
-      "organizations": [],
-      "notes": "Reviewed project source; no verified corporate sponsor or incorporated business steward established. This is not proof none exists.",
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Blindside Networks",
+          "url": "https://blindsidenetworks.com/",
+          "relationship": "business-steward",
+          "source": "https://bigbluebutton.org/oeb-conference-2024/"
+        }
+      ],
+      "notes": "Official project page identifies Blindside Networks as creator and manager of worldwide project growth.2025 developer summit event sponsors were also checked; event sponsorship is not automatically ongoing project funding.",
       "sources": [
-        "https://bigbluebutton.org/open-source-project/about/"
+        "https://bigbluebutton.org/oeb-conference-2024/",
+        "https://bigbluebutton.org/bigbluebutton-developer-summit-2025/"
       ]
     },
     "selfHosting": {
@@ -241,10 +249,12 @@
         "os": "Ubuntu 24.04 64-bit, Linux 6.x",
         "notes": "4.0 production baseline; 250 Mbps symmetric networking and public DNS/TLS required. Development lower limits differ."
       },
-      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "notes": "Scope:official v4.0.0 released14October2026, not preview, confirmed by GitHub release. Search index retained older DRAFT wording; current release/page controls.3.0 remains a separately documented route requiring Ubuntu22.04/Linux5.x; do not mix4.0 LiveKit default with older3.0 stack. No direct in-place upgrade from older3.x asserted.",
       "sources": [
         "https://docs.bigbluebutton.org/administration/install/",
-        "https://docs.bigbluebutton.org/4.0/development/architecture/"
+        "https://docs.bigbluebutton.org/4.0/development/architecture/",
+        "https://github.com/bigbluebutton/bigbluebutton/releases/tag/v4.0.0",
+        "https://docs.bigbluebutton.org/3.0/administration/install/"
       ]
     },
     "oneClickInstall": {

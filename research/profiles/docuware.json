@@ -1,0 +1,134 @@
+{
+  "id": "docuware",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "DocuWare",
+    "kind": "business",
+    "foundedYear": 1988,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Ricoh Company,Ltd. (Tokyo Stock Exchange7752)",
+    "stockSymbols": [
+      "TSE:7752"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Morgan Stanley Expansion Capital (historical; exited2019)",
+        "source": "https://www.morganstanley.com/im/en-us/individual-investor/companies/docuware.html"
+      }
+    ],
+    "notes": "Founded1988 in Germering. Acquired by Ricoh in2019 and operates as independent subsidiary. Morgan Stanley Expansion Capital historical equity investment June2012, realized August2019 through strategic purchase; not current ownership. Parent listing TSE7752.",
+    "sources": [
+      "https://start.docuware.com/about",
+      "https://jp.ricoh.com/IR/library/faq",
+      "https://www.morganstanley.com/im/en-us/individual-investor/companies/docuware.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "DocuWare Cloud",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization; users/storage quoted",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Vendor customizes quote by users, storage and features. Illustrative$30–$125+ peruser/month range is not a verified lowest purchasable tier and not encoded as an entry amount.",
+      "sources": [
+        "https://start.docuware.com/faq/docuware-pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://start.docuware.com/faq/docuware-pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "DocuWare Cloud",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization; users/storage quoted",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational product; no public Business plan amount established.",
+      "sources": [
+        "https://start.docuware.com/faq/docuware-pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom DocuWare solution",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization; deployment scope quoted",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Sales quote depends on configuration and cloud/on-premises scope; no standardized enterprise numeric tier verified.",
+      "sources": [
+        "https://start.docuware.com/faq/docuware-pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A worldwide partner network and decades of document-management installations can lower distribution friction and reinforce local implementation expertise.",
+      "basis": "assessment",
+      "sources": [
+        "https://start.docuware.com/about"
+      ]
+    },
+    {
+      "claim": "Metadata, approvals and business-system links create process-specific switching costs as archives and workflows accumulate.",
+      "basis": "assessment",
+      "sources": [
+        "https://start.docuware.com/document-management-software"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Automated import and data capture connect documents with structured metadata for rapid retrieval.",
+      "basis": "assessment",
+      "sources": [
+        "https://start.docuware.com/document-management-software"
+      ]
+    },
+    {
+      "claim": "Workflow automation coordinates filing, versions, approvals and reminders across business processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://start.docuware.com/document-management-software"
+      ]
+    },
+    {
+      "claim": "Contextual document integration with business systems and controlled shared access lets teams work on records from their existing applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://start.docuware.com/document-management-software"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

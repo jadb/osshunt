@@ -1,0 +1,240 @@
+{
+  "id": "obs-studio",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "OBS Project / Wizards of OBS LLC",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [],
+    "notes": "Community project created/maintained by Lain; Wizards of OBS LLC owns trademarks per footer. Corporate sponsorship/donations fund project but are not equity investors. Project launch year not inferred merely from copyright2012.",
+    "sources": [
+      "https://obsproject.com/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "OBS Studio",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "desktop installation",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://obsproject.com/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://obsproject.com/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "OBS desktop app",
+      "notes": "Full desktop recording/streaming app free; no named business-priced first-party edition on product page.",
+      "sources": [
+        "https://obsproject.com/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "OBS desktop app",
+      "notes": "No enterprise-priced first-party app edition on reviewed official site; streaming platforms are separate services.",
+      "sources": [
+        "https://obsproject.com/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Established plugins, scene workflows and broadcast integrations support ecosystem stickiness; open source keeps the core forkable.",
+      "basis": "assessment",
+      "sources": [
+        "https://obsproject.com/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Scene collections combine windows, cameras, browser sources and media into a live composition.",
+      "basis": "assessment",
+      "sources": [
+        "https://obsproject.com/"
+      ]
+    },
+    {
+      "claim": "Audio mixer filters and per-source controls shape broadcast sound.",
+      "basis": "assessment",
+      "sources": [
+        "https://obsproject.com/"
+      ]
+    },
+    {
+      "claim": "Studio Mode previews scene changes before switching the live output.",
+      "basis": "assessment",
+      "sources": [
+        "https://obsproject.com/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Multi Media LLC",
+          "url": "https://obsproject.com/contribute",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        }
+      ],
+      "notes": "Official source identifies corporate project investment/contribution.",
+      "sources": [
+        "https://obsproject.com/contribute"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "OBS Studio desktop binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://obsproject.com/"
+          ]
+        },
+        {
+          "component": "DirectX10.1-compatible GPU",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Windows10/11",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://obsproject.com/kb/system-requirements"
+          ]
+        },
+        {
+          "component": "OpenGL3.3-compatible GPU",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Linux/Unix or macOS requirements page",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://obsproject.com/kb/system-requirements"
+          ]
+        },
+        {
+          "component": "X11 or Wayland",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Linux graphical runtime",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://obsproject.com/kb/system-requirements"
+          ]
+        },
+        {
+          "component": "Streaming destination/account and network uplink",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Live streaming; local recording independent of remote service",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://obsproject.com/"
+          ]
+        },
+        {
+          "component": "Flatpak runtime",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Flathub installation route",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://obsproject.com/download"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://obsproject.com/kb/system-requirements",
+          "https://obsproject.com/download"
+        ],
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Windows10/11; macOS13+ current download; Linux X11/Wayland",
+        "notes": "CPU depends on encoder, resolution, frame rate and scenes. Requirements KB is dated2021 and says macOS11+, but current download page says13+, so current binary requirement takes precedence. No universal RAM/storage minimum verified."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://obsproject.com/kb/system-requirements",
+        "https://obsproject.com/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official OBS Studio Flathub package",
+          "url": "https://flathub.org/en/apps/com.obsproject.Studio",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Officially distributed Linux desktop package, not server deployment; Flatpak runtime required.",
+          "sources": [
+            "https://obsproject.com/download",
+            "https://flathub.org/en/apps/com.obsproject.Studio"
+          ]
+        }
+      ],
+      "notes": "Official download page links Flathub; desktop installers and multi-step Ubuntu PPA commands remain distinct.",
+      "sources": [
+        "https://obsproject.com/download",
+        "https://flathub.org/en/apps/com.obsproject.Studio"
+      ]
+    }
+  }
+}

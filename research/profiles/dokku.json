@@ -1,0 +1,257 @@
+{
+  "id": "dokku",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Dokku project / maintainers",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Community project with fiscal host Open Source Collective and Jose Diaz-Gonzalez as admin, rather than a verified separately incorporated venture. Donations and Pro sales are not equity rounds. Exact project-start year unresolved from checked primary pages;2014 copyright not treated as founding proof.",
+    "sources": [
+      "https://opencollective.com/dokku",
+      "https://dokku.com/",
+      "https://github.com/sponsors/dokku"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Dokku core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open-source core; own server capacity separate.",
+      "sources": [
+        "https://dokku.com/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-host licenses",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://pro.dokku.com/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Dokku Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": 849,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "license,1production+2pre-production servers",
+      "minimumQuantity": null,
+      "scope": "paid self-host add-on license",
+      "notes": "One-time lifetime purchase; free upgrades forever; development-discount price may increase. No recurring monthly/annual fee.",
+      "sources": [
+        "https://pro.dokku.com/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Pro volume/team license",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "paid self-host add-on licenses",
+      "notes": "Contact maintainer for volume or team pricing; not a hosted service or separate named Enterprise code edition.",
+      "sources": [
+        "https://pro.dokku.com/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A mature plugin ecosystem and Heroku-compatible operational model create transferable know-how; shell-based extensibility and standard containers constrain proprietary switching barriers.",
+      "basis": "assessment",
+      "sources": [
+        "https://dokku.com/",
+        "https://dokku.com/docs/getting-started/installation/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Deploy Heroku-compatible projects by Git using buildpacks or a Dockerfile.",
+      "basis": "assessment",
+      "sources": [
+        "https://dokku.com/docs/getting-started/installation/",
+        "https://dokku.com/"
+      ]
+    },
+    {
+      "claim": "Extend application lifecycle operations with composable plugins and datastore integrations.",
+      "basis": "assessment",
+      "sources": [
+        "https://dokku.com/",
+        "https://github.com/sponsors/dokku"
+      ]
+    },
+    {
+      "claim": "Manage process scaling, environment variables and live logs through Pro UI/API when graphical operation is needed.",
+      "basis": "assessment",
+      "sources": [
+        "https://pro.dokku.com/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Healthcare Blocks",
+          "url": "https://healthcareblocks.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/dokku"
+        },
+        {
+          "name": "Plotly",
+          "url": "https://plotly.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/dokku"
+        },
+        {
+          "name": "Praece Consulting",
+          "url": "https://praece.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/dokku"
+        },
+        {
+          "name": "Shakepay",
+          "url": "https://shakepay.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/dokku"
+        },
+        {
+          "name": "Stremio",
+          "url": "https://www.stremio.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/dokku"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. Listed organizations explicitly support the project; customers and investors excluded.",
+      "sources": [
+        "https://opencollective.com/dokku"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker local scheduler",
+          "necessity": "one-of",
+          "group": "scheduler",
+          "condition": "Default single-server route",
+          "notes": "Docker-based application containers; nginx and cron support routing/jobs.",
+          "sources": [
+            "https://dokku.com/docs/getting-started/installation/"
+          ]
+        },
+        {
+          "component": "K3s scheduler",
+          "necessity": "one-of",
+          "group": "scheduler",
+          "condition": "Optional Kubernetes route",
+          "notes": "At least2GB per cluster node; other scheduler integrations separately documented.",
+          "sources": [
+            "https://dokku.com/docs/getting-started/installation/"
+          ]
+        },
+        {
+          "component": "Linux,SSH,Git and domain configuration",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Ubuntu22.04/24.04/26.04 or Debian11+; AMD64/ARM64. Domain recommended, IP-only possible.",
+          "sources": [
+            "https://dokku.com/docs/getting-started/installation/"
+          ]
+        },
+        {
+          "component": "Redis/PostgreSQL/MySQL/MongoDB datastore plugins",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only when deployed application requires chosen datastore",
+          "notes": "Optional services, not Dokku platform state database requirements; do not install all.",
+          "sources": [
+            "https://github.com/sponsors/dokku"
+          ]
+        },
+        {
+          "component": "Build tools/language runtimes",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Application buildpack/Dockerfile and chosen plugins",
+          "notes": "Application-specific dependencies supplied during builds; no central SQL/cache required by base control plane.",
+          "sources": [
+            "https://dokku.com/docs/getting-started/installation/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "Docker route1GB minimum or swap;K3s2GB per node",
+        "storage": null,
+        "os": "Ubuntu22.04/24.04/26.04; Debian11+; AMD64/ARM64",
+        "notes": "No universal CPU/disk minimum in checked guide; application builds require headroom beyond base memory.",
+        "sources": [
+          "https://dokku.com/docs/getting-started/installation/"
+        ]
+      },
+      "notes": "Default single-host Docker PaaS; SQL/cache services optional per app. Current install requires download then bootstrap/config steps, so not represented as a one-command installer.",
+      "sources": [
+        "https://dokku.com/docs/getting-started/installation/",
+        "https://github.com/sponsors/dokku"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean Dokku1-Click Droplet",
+          "url": "https://marketplace.digitalocean.com/apps/dokku?refcode=fe06b043a083",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Homepage links official1-Click image. Listing version0.38.27 differs software table0.36.9; update to current stable after provision.",
+          "sources": [
+            "https://dokku.com/"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://dokku.com/docs/getting-started/installation/",
+        "https://dokku.com/"
+      ]
+    }
+  }
+}

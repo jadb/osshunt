@@ -1,0 +1,277 @@
+{
+  "id": "tooljet",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "ToolJet Solutions Inc.",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "M12",
+        "source": "https://tooljet.com/about"
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "source": "https://tooljet.com/about"
+      },
+      {
+        "name": "January Capital",
+        "source": "https://tooljet.com/about"
+      },
+      {
+        "name": "Ratio",
+        "source": "https://tooljet.com/about"
+      }
+    ],
+    "notes": "Private investor-backed business. Date refers to launch timeline, not separately verified incorporation. M12, Nexus, January Capital and Ratio explicitly displayed as investors; round amounts not established.",
+    "sources": [
+      "https://tooljet.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "instance;2 builders",
+      "minimumQuantity": null,
+      "scope": "self-hosted Community/free distribution",
+      "notes": "Distributed self-host plan lists2 builders,50 end users,10 apps; source-build entitlements not inferred.",
+      "sources": [
+        "https://tooljet.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 249,
+      "annualPrice": 2388,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "builder",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Explicit Most Popular. Annual display$199 per builder/month \u00d712=$2,388; Monthly selected changes to$249. Up to100 end users.",
+      "sources": [
+        "https://tooljet.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 249,
+      "annualPrice": 2388,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "builder",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Named organizational tier, also explicitly most popular. Same plan deliberately occupies both roles;100 end users and3,000 AI credits/builder/month.",
+      "sources": [
+        "https://tooljet.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Schedule a Call; custom deployment and unlimited end users; airgap add-on.",
+      "sources": [
+        "https://tooljet.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "App-specific components, data-source bindings and reusable modules accumulate internal workflow switching costs; low-code primitives remain widely available.",
+      "basis": "assessment",
+      "sources": [
+        "https://tooljet.com/about",
+        "https://tooljet.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Create internal applications with AI generation, visual editing and custom code in one builder.",
+      "basis": "assessment",
+      "sources": [
+        "https://tooljet.com/about"
+      ]
+    },
+    {
+      "claim": "Use a built-in PostgreSQL-backed database alongside external APIs and data sources.",
+      "basis": "assessment",
+      "sources": [
+        "https://tooljet.com/pricing"
+      ]
+    },
+    {
+      "claim": "Reuse app modules and version changes through Git sync in commercial Team edition.",
+      "basis": "assessment",
+      "sources": [
+        "https://tooljet.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "ToolJet Solutions Inc.",
+          "url": "https://tooljet.com",
+          "relationship": "business-steward",
+          "source": "https://tooljet.com/about"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://tooljet.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production service; may be bundled in the documented container stack.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/docker/"
+          ]
+        },
+        {
+          "component": "PostgreSQL16.x recommended",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Platform PG_DB and TOOLJET_DB; bundled or managed. Existing13.x mentioned, with upstream EOL caveat in docs.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/system-requirements/"
+          ]
+        },
+        {
+          "component": "Redis7.x",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Cache/session requirement; built-in single-container path or external stateful Redis when multiple workers/instances.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/system-requirements/"
+          ]
+        },
+        {
+          "component": "Worker process",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Workflow scheduling and distributed workflow execution",
+          "notes": "WORKER=true; external Redis persistent queue across containers.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/docker/"
+          ]
+        },
+        {
+          "component": "ToolJet AI outbound API access",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "When enabling ToolJet AI",
+          "notes": "api-gateway.tooljet.ai and python-server.tooljet.ai allowlist; not required for every manual app.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/docker/"
+          ]
+        },
+        {
+          "component": "Persistent database storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Back up both application and internal databases; optional SMTP setting exists for email workflows.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "App1vCPU; database2vCPU; Redis1vCPU documented",
+        "memory": "App4GB; PostgreSQL8GB; Redis512MB minimum (1GB production recommended)",
+        "storage": "App8GiB; PostgreSQL20GB; Redis1GB minimum",
+        "os": "Ubuntu22.04+ x86_64; arm64 unsupported; Windows via WSL2/VM",
+        "notes": "Service-specific documented sizing, not a combined host minimum. Application4GB1vCPU and supporting PostgreSQL/Redis budgets separate.",
+        "sources": [
+          "https://docs.tooljet.com/docs/setup/docker/"
+        ]
+      },
+      "notes": "PostgreSQL is the actual platform backend; other SQL connectors are user data sources. Current docs predominantly describe EE/LTS containers; free CE feature availability separate.",
+      "sources": [
+        "https://docs.tooljet.com/docs/setup/docker/",
+        "https://docs.tooljet.com/docs/setup/system-requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "AWS ToolJet marketplace image",
+          "url": "https://aws.amazon.com/marketplace/pp/prodview-fxjto27jkpqfg?applicationId=AWSMPContessa&ref_=beagle&sr=0-1",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Verified linked from official deployment overview; provider/license costs apply.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/"
+          ]
+        },
+        {
+          "name": "Azure ToolJet virtual machine",
+          "url": "https://marketplace.microsoft.com/en-us/product/tooljetsolutioninc1679496832216.tooljet-vm?tab=Overview",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Verified official deployment overview link.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/"
+          ]
+        },
+        {
+          "name": "Try ToolJet local Docker",
+          "url": "https://docs.tooljet.com/docs/setup/try-tooljet/",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Evaluation EE/LTS container with bundled PostgreSQL; not production one-click or Community entitlement claim.",
+          "sources": [
+            "https://docs.tooljet.com/docs/setup/try-tooljet/"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://docs.tooljet.com/docs/setup/docker/",
+        "https://docs.tooljet.com/docs/setup/",
+        "https://docs.tooljet.com/docs/setup/try-tooljet/"
+      ]
+    }
+  }
+}

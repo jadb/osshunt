@@ -192,7 +192,8 @@
       ],
       "resources": {
         "sources": [
-          "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+          "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/",
+          "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/"
         ],
         "cpu": "4 dedicated cores basic planning guidance",
         "memory": "8 GB suggested; 4 GB small meetings; 2 GB tests",

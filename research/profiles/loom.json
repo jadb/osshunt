@@ -98,7 +98,7 @@
     {
       "role": "enterprise",
       "name": "Enterprise",
-      "status": "unknown",
+      "status": "quote",
       "monthlyPrice": null,
       "annualPrice": null,
       "oneTimePrice": null,
@@ -106,7 +106,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "video communication subscription",
-      "notes": "Enterprise listed; exact quote/numeric billing not verified in extraction.",
+      "notes": "Enterprise card says Let\u2019s Talk / Contact Sales; no numeric amount published.",
       "sources": [
         "https://www.loom.com/pricing"
       ],

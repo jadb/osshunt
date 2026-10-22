@@ -16,3 +16,8 @@ Checked 2026-10-21. Chronological research and output decisions.
 - Final ledger QA: rebuilt organization field claims with specific source mappings; each investor uses its primary funding/investor URL; public headings/searchable text added to claim locators. Executed group-local finalize.py; validated all23 profiles and companion files.
 
 - Final validation: all23 assigned IDs have profiles, JSONL claims and chronological audit companions. Four unique pricing roles, exactlythree functional assessments and nonempty source/limitation notes checked. Edits restricted to assigned group directory. Final artifacts authoritative; build.py is intermediate and not a regeneration entrypoint.
+
+## Sponsor follow-up
+
+1. Reopened https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/README.md ; current100$/Month roster remains ColbaNet, Maehdros and Garske.
+2. Searched `Maehdros company site:maehdros.com`: no results. Opened https://www.maehdros.com/ (inaccessible) and https://github.com/Maehdros (cache miss). No independent corporate identity verified, so retained Maehdros as an explicitly unresolved roster name in notes; did not silently claim absence or promote an unverified identity.

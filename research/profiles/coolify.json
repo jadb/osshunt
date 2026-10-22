@@ -1,0 +1,334 @@
+{
+  "id": "coolify",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "coolLabs Solutions Kft.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Private independent company; official site explicitly says no investors, with Cloud revenue, donations and merch sustaining work. Bootstrapped refers to absence of equity investors, not absence of corporate sponsorship. Exact company founding date not verified from checked Team/philosophy/site pages.",
+    "sources": [
+      "https://coollabs.io/",
+      "https://coollabs.io/philosophy"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "All features; provide infrastructure.",
+      "sources": [
+        "https://coolify.io/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-host/cloud plans",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://coolify.io/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Cloud",
+      "status": "published",
+      "monthlyPrice": 5,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "team account,2 connected servers",
+      "minimumQuantity": null,
+      "scope": "vendor commercial control-plane cloud",
+      "notes": "Closest organizational plan; no named Business tier. Base$5/month includes2 connected servers; +$3/month per extra server. Applications still run on separately paid user servers; each team needs subscription.",
+      "sources": [
+        "https://coolify.io/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted software",
+      "notes": "No separate enterprise license tier offered; all self-host features available. Cloud remains optional.",
+      "sources": [
+        "https://coolify.io/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A service-template ecosystem and accumulated server/deployment configuration build operational familiarity; standard Docker workloads and open code limit proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://coolify.io/pricing",
+        "https://coollabs.io/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Deploy applications, databases and packaged service templates from one dashboard.",
+      "basis": "assessment",
+      "sources": [
+        "https://coolify.io/pricing",
+        "https://coollabs.io/"
+      ]
+    },
+    {
+      "claim": "Manage application deployments across multiple SSH-connected Linux servers.",
+      "basis": "assessment",
+      "sources": [
+        "https://coolify.io/pricing",
+        "https://coolify.io/docs/start-with-self-hosted"
+      ]
+    },
+    {
+      "claim": "Configure deployment backups, domain routing and event notifications through the platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://coolify.io/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "CubePath",
+          "url": "https://cubepath.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Context.dev",
+          "url": "https://www.context.dev",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Ginernet",
+          "url": "https://ginernet.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "SerpAPI",
+          "url": "https://serpapi.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "MVPS",
+          "url": "https://www.mvps.net",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "ScreenshotOne",
+          "url": "https://screenshotone.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "PrivateAlps",
+          "url": "https://privatealps.net",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Seibert Group",
+          "url": "https://seibert.group",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Contabo",
+          "url": "https://contabo.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Hetzner",
+          "url": "https://www.hetzner.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Cloudways",
+          "url": "https://www.cloudways.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Bytebase",
+          "url": "https://www.bytebase.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Logto",
+          "url": "https://logto.io",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "CodeRabbit",
+          "url": "https://coderabbit.ai",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Convex",
+          "url": "https://convex.dev",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        },
+        {
+          "name": "Tigris",
+          "url": "https://www.tigrisdata.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://coolify.io/docs/sponsors"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. Listed organizations explicitly support the project; customers and investors excluded.",
+      "sources": [
+        "https://coollabs.io/",
+        "https://coolify.io/docs/sponsors"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Linux server with SSH/root or sudo",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "AMD64/ARM64; supported distributions listed; automatic installer requiresroot.",
+          "sources": [
+            "https://coolify.io/docs/start-with-self-hosted"
+          ]
+        },
+        {
+          "component": "Docker Engine and Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Installer handles Docker; snap Docker not supported by recommended path.",
+          "sources": [
+            "https://coolify.io/docs/start-with-self-hosted"
+          ]
+        },
+        {
+          "component": "PostgreSQL15",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled control-plane database; deployed-app SQL choices are separate.",
+          "sources": [
+            "https://raw.githubusercontent.com/coollabsio/coolify/v4.4.7/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Redis7",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled control-plane Redis, not an optional user app cache alternative.",
+          "sources": [
+            "https://raw.githubusercontent.com/coollabsio/coolify/v4.4.7/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Realtime server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current4.4.7 runs inside Coolify container; legacy separate Soketi entry inactive.",
+          "sources": [
+            "https://raw.githubusercontent.com/coollabsio/coolify/v4.4.7/docker-compose.prod.yml"
+          ]
+        },
+        {
+          "component": "SMTP/Resend; backup destination",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email event notifications or off-server backup configuration",
+          "notes": "Self-host email requires SMTP/Resend; user apps may add arbitrary services.",
+          "sources": [
+            "https://coolify.io/pricing"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 cores minimum",
+        "memory": "2GB minimum",
+        "storage": "10GB free minimum",
+        "os": "Linux: Debian/Ubuntu, supported RedHat/SUSE/Arch/Alpine derivatives;64-bit RaspberryPiOS",
+        "notes": "Documented minimum for Coolify; lower configurations discussed but not recommendation. Application workloads additional.",
+        "sources": [
+          "https://coolify.io/docs/start-with-self-hosted"
+        ]
+      },
+      "notes": "Default control plane uses Docker+Postgres+Redis. Requirements verified current4.4.7 Compose; PHP/runtime bundled inside image. Extra CPU/RAM/disk needed for application builds and workloads.",
+      "sources": [
+        "https://coolify.io/docs/start-with-self-hosted",
+        "https://raw.githubusercontent.com/coollabsio/coolify/v4.4.7/docker-compose.yml",
+        "https://raw.githubusercontent.com/coollabsio/coolify/v4.4.7/docker-compose.prod.yml",
+        "https://coolify.io/pricing"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Coolify installation script",
+          "url": "https://coolify.io/docs/start-with-self-hosted",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "curl cdn.coollabs.io/coolify/install.sh | bash; provisions local control plane; not browser one-click.",
+          "sources": [
+            "https://coolify.io/docs/start-with-self-hosted"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://coolify.io/docs/start-with-self-hosted"
+      ]
+    }
+  }
+}

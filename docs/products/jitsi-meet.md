@@ -55,7 +55,7 @@ Mode: **server**. Documented default deployment path; optional services are sepa
 | coturn | conditional | — | TCP fallback media / restricted networks; optional STUN enabled separately | Documented deployment component. [1](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/) |
 | Jibri / Jigasi | conditional | — | Recording/streaming / SIP dial-in respectively | Separate add-on processes; PSTN carrier connectivity external, not bundled telephone service. [1](https://jitsi.org/about/) |
 
-Resources: CPU 4 dedicated cores basic planning guidance; memory 8 GB suggested; 4 GB small meetings; 2 GB tests; storage 20 GB without heavy logging/recording; OS Debian 12+ or Ubuntu 24.04+ native packages; Docker/openSUSE guides linked. Planning guidance, not participant capacity guarantee. Recording raises requirements. [1](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/)
+Resources: CPU 4 dedicated cores basic planning guidance; memory 8 GB suggested; 4 GB small meetings; 2 GB tests; storage 20 GB without heavy logging/recording; OS Debian 12+ or Ubuntu 24.04+ native packages; Docker/openSUSE guides linked. Planning guidance, not participant capacity guarantee. Recording raises requirements. [1](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/) [2](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/)
 
 ## One-click and installer options
 

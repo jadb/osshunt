@@ -20,8 +20,8 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 |---|---|---|---|---|---|---|---|---|
 | entry | Team Edition | free | USD 0/organization | — | — | — | unspecified | self-hosted core. No recurring license charge for this core scope; infrastructure and optional services separate. [1](https://docs.mattermost.com/product-overview/editions-and-offerings) |
 | popular | unknown | unknown | — | — | — | — | unspecified | self-hosted core. No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation. [1](https://mattermost.com/pricing/) |
-| business | Professional | unknown | — | — | — | — | unspecified | paid self-hosted license. Professional organizational tier exists; numeric prices not exposed in reviewed pricing extraction. [1](https://mattermost.com/pricing/) |
-| enterprise | Enterprise | unknown | — | — | — | — | unspecified | paid self-hosted license. Enterprise and Enterprise Advanced exist; no numeric amount or quotation text verified in extraction. [1](https://mattermost.com/pricing/) |
+| business | Professional | quote | — | — | — | — | unspecified | paid self-hosted license. Official plan card directs Contact Sales / Get Pricing; no numeric public amount. Commercial suite scope distinct from free core. [1](https://mattermost.com/pricing/) |
+| enterprise | Enterprise | quote | — | — | — | — | unspecified | paid self-hosted license. Official plan card directs Contact Sales / Get Pricing; no numeric public amount. Commercial suite scope distinct from free core. [1](https://mattermost.com/pricing/) |
 
 ## Defensibility assessments
 

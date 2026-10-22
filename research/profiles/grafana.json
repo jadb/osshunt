@@ -1,0 +1,262 @@
+{
+  "id": "grafana",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Grafana Labs",
+    "kind": "business",
+    "foundedYear": 2014,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Lightspeed Venture Partners",
+        "source": "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+      },
+      {
+        "name": "GIC",
+        "source": "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+      },
+      {
+        "name": "Coatue",
+        "source": "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+      },
+      {
+        "name": "Lead Edge Capital",
+        "source": "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+      },
+      {
+        "name": "J.P. Morgan",
+        "source": "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+      }
+    ],
+    "notes": "Grafana Labs, formerly Raintank, founded in 2014; Grafana project began in December 2013. Official 2024 announcement documents private primary/secondary financing and named institutional investors; historical participation does not prove current stakes.",
+    "sources": [
+      "https://grafana.com/about/grafana-labs/",
+      "https://grafana.com/blog/the-story-of-grafana-documentary-the-business-of-open-source/",
+      "https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Grafana OSS",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted Grafana core",
+      "notes": "Open source distribution; infrastructure and optional commercial products separate.",
+      "sources": [
+        "https://grafana.com/oss/grafana/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://grafana.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Grafana Cloud Pro",
+      "status": "published",
+      "monthlyPrice": 19,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest self-serve organizational offer; $19 monthly platform charge plus usage, not an OSS license price.",
+      "sources": [
+        "https://grafana.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Grafana Cloud Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 25000,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Starting annual spend commitment, not a fixed all-inclusive subscription or self-host license.",
+      "sources": [
+        "https://grafana.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Plugin/community ecosystem and existing dashboard investment create a defensible integration network and migration friction.",
+      "basis": "assessment",
+      "sources": [
+        "https://grafana.com/oss/grafana/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Combine heterogeneous data sources in one dashboard through a large plugin catalog.",
+      "basis": "assessment",
+      "sources": [
+        "https://grafana.com/oss/grafana/"
+      ]
+    },
+    {
+      "claim": "Time-series, heatmap and other visualizations let teams inspect different operational data shapes.",
+      "basis": "assessment",
+      "sources": [
+        "https://grafana.com/oss/grafana/"
+      ]
+    },
+    {
+      "claim": "Provision dashboards and alerts through software pipelines to keep monitoring aligned with releases.",
+      "basis": "assessment",
+      "sources": [
+        "https://grafana.com/oss/grafana/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Grafana Labs",
+          "url": "https://grafana.com/about/grafana-labs/",
+          "relationship": "business-steward",
+          "source": "https://grafana.com/about/grafana-labs/"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://grafana.com/about/grafana-labs/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Grafana binary/package or Docker image",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        },
+        {
+          "component": "MySQL 8.0+",
+          "necessity": "one-of",
+          "group": "metadata-database",
+          "condition": "Production metadata database option",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        },
+        {
+          "component": "PostgreSQL 12+",
+          "necessity": "one-of",
+          "group": "metadata-database",
+          "condition": "Production metadata database option",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        },
+        {
+          "component": "SQLite 3 embedded database",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Default for evaluation/small local instances; explicitly not recommended for production",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        },
+        {
+          "component": "Telemetry data sources such as Prometheus/Loki/Tempo",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "As required by dashboard and alert queries",
+          "notes": "Separate systems with separate sizing; Grafana is not itself their storage backend.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        },
+        {
+          "component": "Image renderer service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "When image rendering is required",
+          "notes": "Separate renderer worker; about 1 GB memory each.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        },
+        {
+          "component": "Redis session store or sticky sessions",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Multiple Grafana instances / HA",
+          "notes": "Alternative session routes; Redis is not mandatory for a single server.",
+          "sources": [
+            "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "1 core evaluation floor",
+        "memory": "512 MB minimum recommended; production sizing higher",
+        "storage": null,
+        "os": "Linux, Windows, macOS supported installation routes",
+        "notes": "Documented evaluation floor covers Grafana process only; production capacity and data backends sized separately.",
+        "sources": [
+          "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+        ]
+      },
+      "notes": "Binary/package and Docker deployment routes. Production should use MySQL or PostgreSQL; SQLite is an embedded evaluation default. No mandatory standalone cache/queue identified for a single Grafana server.",
+      "sources": [
+        "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official deployment instructions; no verified one-click option found. Manual container instructions are not one-click.",
+      "sources": [
+        "https://grafana.com/docs/grafana/latest/setup-grafana/installation/"
+      ]
+    }
+  }
+}

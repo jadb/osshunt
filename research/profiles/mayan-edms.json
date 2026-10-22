@@ -1,0 +1,287 @@
+{
+  "id": "mayan-edms",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Mayan EDMS LLC / Mayan EDMS project",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Mayan EDMS LLC sells official services; current code copyright/trademarks name Roberto Rosario. Incorporation year, equity ownership and financing unverified. Creator biography reports2010 project launch but labels its biography generated from other sources; not adopted as a verified date. Historical Apache licensing replaced by current GPL2.0 documentation.",
+    "sources": [
+      "https://www.mayan-edms.com/support/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/license.html"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://www.mayan-edms.com/support/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Level4enterprise support",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 13188,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "support contract for one installation",
+      "minimumQuantity": null,
+      "scope": "optional paid support for self-hosted software",
+      "notes": "Advertised$1,099/month with yearly plan, multiplied by12=$13,188/year. This is a support service, not a software license or mandatory hosting charge.",
+      "sources": [
+        "https://www.mayan-edms.com/support/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom contract support",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 35000,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "support contract starting price",
+      "minimumQuantity": null,
+      "scope": "optional enterprise support",
+      "notes": "Starts at$35KUSD/year; custom scope and contract. Relicensing is separately contact-sales. Core software remains free.",
+      "sources": [
+        "https://www.mayan-edms.com/support/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Configured workflow states, metadata templates and atomic permissions can embed business processes deeply enough to make migration costly; no exclusive network advantage is established.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/features.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "State-based workflows with expiration, escalation and external actions model document approvals and reviews.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/features.html"
+      ]
+    },
+    {
+      "claim": "Non-destructive versions, page edits and redactions preserve original files and prior states for audit or rollback.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/features.html"
+      ]
+    },
+    {
+      "claim": "Template-generated metadata indexes and fine-grained role permissions organize large collections around business rules.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/features.html"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Mayan EDMS LLC",
+          "url": "https://www.mayan-edms.com",
+          "relationship": "business-steward",
+          "source": "https://www.mayan-edms.com/support/"
+        }
+      ],
+      "notes": "No corporate sponsor named on official support/donation page reviewed; include verified service business Mayan EDMS LLC as steward fallback, not as an equity investor.",
+      "sources": [
+        "https://www.mayan-edms.com/support/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Verified official deployment route; app image includes Python/Django and document tooling.",
+          "sources": [
+            "https://docs.mayan-edms.com/chapters/docker/install_docker_compose.html"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official Compose default15.17; documented minimum13.11. No alternative SQL backend claimed for this production route.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "RabbitMQ",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default Compose4.1.8 management image, Celery message broker.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default Compose7.4.8 for results, locks and event stream; do not treat all keys as disposable cache.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Application with background Celery workers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default all_in_one profile; separate worker profiles available in Compose.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/.env"
+          ]
+        },
+        {
+          "component": "Persistent application/document and database volumes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Preserve app, PostgreSQL and broker volumes.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Elasticsearch",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable Elasticsearch profile when using this search backend.",
+          "notes": "Default optional image9.1.10; not in default profile list.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Traefik and DNS/TLS configuration",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable optional reverse proxy/HTTPS profile.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP mailing server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only when sending documents by mailing profile.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mayan-edms.com/chapters/features.html"
+          ]
+        },
+        {
+          "component": "LibreOffice",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only for Office previews; packaged or installed with chosen deployment.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mayan-edms.com/chapters/features.html"
+          ]
+        },
+        {
+          "component": "ClamAV",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Only when scanning enabled; disabled by default.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mayan-edms.com/chapters/features.html"
+          ]
+        },
+        {
+          "component": "OpenAI API or Ollama endpoint",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only for optional AI summarization, semantic search and extraction.",
+          "notes": "Remote OpenAI usage can incur provider fees; local or remote Ollama alternative.",
+          "sources": [
+            "https://docs.mayan-edms.com/chapters/features.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "64-bit dual-core1GHz minimum;8cores2GHz+ recommended",
+        "memory": "4GB minimum;16GB+ recommended",
+        "storage": null,
+        "os": "GNU/Linux or mature virtualized Docker/Compose host",
+        "notes": "System requirements minimum; SSD recommended. No fixed storage capacity verified.",
+        "sources": [
+          "https://docs.mayan-edms.com/chapters/requirements.html",
+          "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml",
+          "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/.env",
+          "https://docs.mayan-edms.com/chapters/docker/install_docker_compose.html"
+        ]
+      },
+      "notes": "Official4.12.2 documentation and currently linked s4.12 Compose stack. Minimum and recommended sizing distinct; actual throughput depends on OCR and document workload.",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/requirements.html",
+        "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml",
+        "https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/.env",
+        "https://docs.mayan-edms.com/chapters/docker/install_docker_compose.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official page gives multiple Docker installation/configuration/start commands. Docker convenience installer installs Docker only, not Mayan; not counted as one-click.",
+      "sources": [
+        "https://docs.mayan-edms.com/chapters/docker/install_docker_compose.html"
+      ]
+    }
+  }
+}

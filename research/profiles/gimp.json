@@ -136,9 +136,141 @@
           "url": "https://www.dogado.de/",
           "relationship": "corporate-sponsor",
           "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Kumi Systems",
+          "url": "https://kumi.systems/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "GWDG mbH",
+          "url": "https://www.gwdg.de/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Randhost",
+          "url": "https://randhost.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "ZEROLAG",
+          "url": "https://zerolag.ro/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "AFRICLOUD",
+          "url": "https://africloud.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "METANET",
+          "url": "https://www.metanet.ch/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Taiwan Digital Streaming Co.",
+          "url": "https://www.twds.com.tw/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "IP-Connect LLC",
+          "url": "https://ip-connect.info/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "UKFast",
+          "url": "https://mirrors.ukfast.co.uk/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Hoobly Classifieds",
+          "url": "https://www.hoobly.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "XMission",
+          "url": "https://xmission.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "MacStadium",
+          "url": "https://macstadium.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Arm Ltd.",
+          "url": "https://www.arm.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Wacom",
+          "url": "https://www.wacom.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Microsoft",
+          "url": "https://www.microsoft.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Purism",
+          "url": "https://puri.sm/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "CircleCI",
+          "url": "https://circleci.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "O’Reilly",
+          "url": "https://www.oreilly.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "BackupAssist",
+          "url": "https://www.backupassist.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "EU Edge",
+          "url": "https://www.gimp.org/donating/sponsors.html",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Distrowatch",
+          "url": "https://distrowatch.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "MacGIMP",
+          "url": "https://www.gimp.org/donating/sponsors.html",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
         }
       ],
-      "notes": "Official page explicitly identifies download mirrors as in-kind sponsorship, updated 2026-10-19. Selected corporate mirror sponsors only; not exhaustive.",
+      "notes": "Official sponsor page: corporate download mirrors plus MacStadium/Arm build infrastructure; Wacom(2026), Arm(2023), Purism(2021) hardware; Microsoft registration fee(2022). CircleCI(2018–2026), O’Reilly, BackupAssist, EU Edge, Distrowatch and MacGIMP are historical sponsors. Mirror list dated2026-10-19. Institutions and unverified business identities excluded; no claim that historical assistance continues.",
       "sources": [
         "https://www.gimp.org/donating/sponsors.html"
       ]

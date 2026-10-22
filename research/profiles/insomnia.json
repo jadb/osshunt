@@ -1,0 +1,169 @@
+{
+  "id": "insomnia",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Kong Inc.",
+    "kind": "business",
+    "foundedYear": 2017,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Tiger Global",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Balderton",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Teachers\u2019 Venture Growth",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Index Ventures",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Andreessen Horowitz",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "CRV",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Sapphire Ventures",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Notable Capital",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "137 Ventures",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "Founders Circle",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      },
+      {
+        "name": "StepStone",
+        "source": "https://konghq.com/blog/news/kongs-series-e-funding"
+      }
+    ],
+    "notes": "Kong corporate founding2017; predecessor Mashape earlier. Insomnia project predates acquisition by Kong in2019. Private Kong funding is parent/steward equity, not separate Insomnia financing;2024 round includes secondary transactions.",
+    "sources": [
+      "https://konghq.com/company/press-room/press-release/kong-inc-ceo-co-founder-honored-goldman-sachs-entrepreneurship",
+      "https://konghq.com/blog/news/kong-acquires-insomnia",
+      "https://konghq.com/blog/news/kongs-series-e-funding"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "usagePrice": 10,
+      "currency": "USD",
+      "unit": "user;mock add-on per25,000 requests",
+      "minimumQuantity": null,
+      "scope": "paid desktop collaboration subscription",
+      "notes": "Browser Monthly shows$12; Annual button changes Pro to$10/user/month billed annually \u2192$120/year. Essentials and local Scratch Pad free; after10,000 included mock requests, add-on$10/25,000 requests.",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "paid desktop collaboration plans",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid desktop collaboration subscription",
+      "notes": "Closest named organizational plan: unlimited organizations, Git collaborators and organization RBAC. Same plan as paid entry;10,000 mock requests/month.",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise larger teams",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization above50 users",
+      "minimumQuantity": null,
+      "scope": "paid desktop collaboration enterprise",
+      "notes": "Self-serve card shows$45/user/month up to50 users with annual checkout link; billing interpretation not uniform after toggle, so no numeric enterprise subscription recorded. Larger teams explicitly contact sales.",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Kong Konnect integration plus existing test collections and enterprise storage policies create workflow switching costs; protocol clients alone are easy to replace.",
+      "basis": "assessment",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Debug REST, GraphQL, gRPC, WebSocket and other protocols in a single client.",
+      "basis": "assessment",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    },
+    {
+      "claim": "Choose local, Git or encrypted cloud storage for collections and project collaboration.",
+      "basis": "assessment",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    },
+    {
+      "claim": "Lint OpenAPI designs and execute scripted API tests through the Inso CLI.",
+      "basis": "assessment",
+      "sources": [
+        "https://insomnia.rest/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

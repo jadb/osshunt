@@ -85,7 +85,7 @@
       "unit": "store/platform contract",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Published starting $2,300/month with 1- or 3-year commitment; negotiated terms may vary. This is a committed-contract reference, not verified month-to-month pricing; annualPrice left null to avoid assuming payment schedule.",
+      "notes": "Published starting$2,300/month with committed annual or multiyear contract. Annualized reference$2,300×12=$27,600; negotiated terms/commitment duration and payment schedule may vary. Not verified month-to-month pricing.",
       "sources": [
         "https://www.shopify.com/pricing"
       ]

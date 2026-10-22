@@ -16,3 +16,5 @@
 13. Third checkpoint: 145 profiles; all35 contract tests and source/coverage validation passed. Added explicit verified-one-click flag (shell installer alone cannot satisfy it), source provenance metadata and extended dependency/entity reviews. Repeated build produced identical six snapshot/schema hashes.
 
 14. Fourth checkpoint:183 profiles and4322 dated profile claims; source/coverage validation and all35 contract tests passed. Repeated build retained identical six snapshot/schema hashes.
+
+15. Fifth checkpoint:206 profiles and4897 dated profile claims; all36 contract tests and collection/source/coverage validation passed. Source-to-generated coverage now rejects profiles deleted or reassigned through overrides. Repeated build retained six identical snapshot/schema hashes.

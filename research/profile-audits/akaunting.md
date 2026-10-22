@@ -98,3 +98,10 @@ Persistence command: python3 build_profiles.py writes this profile, claim ledger
 - Ran `python3 build_profiles.py` after routing Frappe outgoing-mail facts to Email Account §3.4 and Kimai mail transport facts to Emails/MAILER_URL examples (SMTP or Sendmail; null transport disables mail).
 - Ran `node scripts/validate-profiles.mjs profiles`: 23 valid profiles. Custom-directory mode intentionally skips claims; its reported zero sourced claims is not a ledger count.
 - Separately imported `lib/claims.mjs` parseClaims and checked all assigned IDs, dates, profile/claims/audit exact coverage, organization fields, all pricing roles, assessments and every alternative requirement/resource/shortcut field. Result: 23 profiles, 550 valid claims, 23 audits. Exact summary saved to validation.json. No repository files changed.
+
+## Named-investor supplementation
+
+1. Searched `site.akaunting.com investors funding akaunting seed round investors`; official2021 announcement confirms funding but omits names. Secondary Dealroom/Seedtable/Crunchbase names retained only as leads.
+2. Searched `Akaunting site.ktportfoy.com.tr`, `Akaunting site.teknogirisim.com`, `Akaunting site.akaunting.com "investors" "KT"`. Search returned official KAP financial filing.
+3. Opened https://kap.org.tr/tr/api/file/download/4028328c9cc9d177019cdd4449e958ad ; found `Akaunting`; requested screenshot page21 (zero-based). Audited2025 fund statements, note5, PDFpage22/printed18, identify an equity investment in Akaunting Yazılım A.Ş.
+4. Added the exact fund name as a known investor with an as-of2025 qualification. Did not promote unverified secondary names or historical ownership to a current cap table. Appended a separate source-routed claim and preserved prior search history.

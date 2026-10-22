@@ -1,0 +1,266 @@
+{
+  "id": "phraseanet",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Alchemy",
+    "kind": "business",
+    "foundedYear": 1996,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "1996 company creation; Phraseanet web/open-source release2005. Official site says Phrasea replaces Phraseanet in2026. This profile remains scoped to Phraseanet4.1; no migration of unrelated Phrasea dependencies/features. Equity owners/funding not established.",
+    "sources": [
+      "https://www.phraseanet.com/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Phraseanet4.1 core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Phraseanet software/services",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://www.phraseanet.com/services"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial SaaS/implementation services",
+      "notes": "Commercial services described; no named Business package or numeric recurring amount verified.",
+      "sources": [
+        "https://www.phraseanet.com/services"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial SaaS/implementation services",
+      "notes": "Commercial implementation/maintenance available; no explicit enterprise quotation or price verified.",
+      "sources": [
+        "https://www.phraseanet.com/services"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Domain metadata/thesaurus workflows and plugin integrations create specialized switching costs, although a successor product changes the long-term ecosystem.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Thesaurus and Dublin Core mappings structure descriptive metadata.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet"
+      ]
+    },
+    {
+      "claim": "Collaborative editing and approval processes coordinate asset review.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet"
+      ]
+    },
+    {
+      "claim": "Multi-resolution generation and video tools prepare media for reuse.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Alchemy",
+          "url": "https://www.phraseanet.com/",
+          "relationship": "business-steward",
+          "source": "https://www.phraseanet.com/"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://www.phraseanet.com/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker27.3.1+ and Compose2.30.3+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "Phraseanet PHP application and worker containers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Bundled/default or external production datastore",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Supported production database alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "Elasticsearch",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "Redis including session role",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "RabbitMQ",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "nginx gateway and host-provided filer",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        },
+        {
+          "component": "SMTP service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production outgoing email; Mailhog is test-only stack component",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.phraseanet.com/services"
+          ]
+        },
+        {
+          "component": "Builder/Composer/Node; Mailhog/phpMyAdmin tools",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Development/test tools; production app image excludes Composer/Node",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/alchemy-fr/Phraseanet"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://github.com/alchemy-fr/Phraseanet"
+        ]
+      },
+      "notes": "Current Phraseanet4.1 README stack runs test defaults. Production requires customized credentials, storage/DB tuning; external infrastructure services can replace included containers except app/workers. Linux preferred; macOS/Windows use Linux containers via VM. Manual Compose build/pull plus up is not one-click.",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet",
+        "https://www.phraseanet.com/services"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://github.com/alchemy-fr/Phraseanet"
+      ]
+    }
+  }
+}

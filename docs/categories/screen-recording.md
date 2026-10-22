@@ -15,6 +15,8 @@ Full local video recorder and streaming application offered free with no paid fi
 
 License: GPL-2.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/obsproject/obs-studio/blob/95d5223b66da1c162acdb61c1bae2b9123a60f0e/COPYING), [edition evidence](https://obsproject.com), [hosting](https://obsproject.com), [repository](https://github.com/obsproject/obs-studio).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/obs-studio.md).
+
 Repository: pushed 2026-10-20T23:09:59Z; latest commit unknown; latest published release 32.2.2 (2026-08-14T22:43:31Z). Unavailable: cache backup write outside permitted directory denied; GitHub metadata fallback used
 
 - Loom → OBS Studio: **different-approach**. Captures screen, camera and audio locally with scenes; upload/export files into another service for Loom-style link sharing and team feedback. No Loom library importer established. [1](https://obsproject.com) [2](https://www.loom.com/pricing)
@@ -24,6 +26,8 @@ Repository: pushed 2026-10-20T23:09:59Z; latest commit unknown; latest published
 GPL recorder provides unlimited local capture, annotations and exports. Paid separate Pro platform adds everyday sharing/editing/caption workflows; rank by the local extension, not hosted platform parity.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/alyssaxuu/screenity/blob/c5b344fbb3d9a126c4b3a39f0979c7976392fa96/LICENSE), [edition evidence](https://github.com/alyssaxuu/screenity), [hosting](https://screenity.io), [repository](https://github.com/alyssaxuu/screenity).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/screenity.md).
 
 Paid restrictions: Pro platform link sharing and cloud media library; Pro multi-scene editing and captions; self-hosted extension is local-only with platform features disabled
 
@@ -36,6 +40,8 @@ Repository: pushed 2026-10-20T19:22:14Z; latest commit 2026-10-20T19:14:36Z; lat
 Pinned root LICENSE states AGPLv3 except MIT cap-camera/scap crate families. Commercial-license docs explicitly exempt self-built versions; core qualifies as OSS. U reflects unverified self-host feature gates, not license uncertainty.
 
 License: AGPL-3.0-only AND MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/CapSoftware/Cap/blob/d16fd199bbe8bd2a1c52fb19bcb3d383e9a2ff61/LICENSE), [edition evidence](https://cap.so/docs/commercial-license), [hosting](https://cap.so/docs/self-hosting), [repository](https://github.com/CapSoftware/Cap).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/cap.md).
 
 Paid restrictions: Official distributed desktop binaries require a paid commercial license for business use; self-built source versions exempt; Cap Pro cloud plan gates unlimited sharing, transcription, analytics, custom domains and Loom importer; self-host parity not fully verified
 

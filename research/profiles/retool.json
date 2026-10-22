@@ -1,0 +1,153 @@
+{
+  "id": "retool",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Retool, Inc.",
+    "kind": "business",
+    "foundedYear": 2017,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Y Combinator",
+        "source": "https://www.ycombinator.com/companies/retool"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://retool.com/newsroom/series-c2"
+      },
+      {
+        "name": "Daniel Gross",
+        "source": "https://retool.com/newsroom/series-c2"
+      },
+      {
+        "name": "Elad Gil",
+        "source": "https://retool.com/newsroom/series-c2"
+      },
+      {
+        "name": "John Collison",
+        "source": "https://retool.com/newsroom/series-c2"
+      },
+      {
+        "name": "Patrick Collison",
+        "source": "https://retool.com/newsroom/series-c2"
+      },
+      {
+        "name": "Nat Friedman",
+        "source": "https://retool.com/newsroom/series-c2"
+      }
+    ],
+    "notes": "Private YC-backed business founded2017. July2022 Series C2 disclosed$45m; historical participants below, no current ownership percentages.",
+    "sources": [
+      "https://www.ycombinator.com/companies/retool",
+      "https://retool.com/newsroom/series-c2"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "builder",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Lowest paid tier; $10/builder/month annual rate \u00d712. Internal users separately$5/month annually=$60/year each. Free up to5 users separate.",
+      "sources": [
+        "https://retool.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://retool.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 600,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "builder",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "$50/builder/month annual rate \u00d712. Internal users$15/month annual rate=$180/year; external users metered. Monthly billing price not verified.",
+      "sources": [
+        "https://retool.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor cloud or paid self-host/airgap",
+      "notes": "Custom annual agreement; edition supports up to6 instances; quote required.",
+      "sources": [
+        "https://retool.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Apps, queries, credentials and organization permissions embedded in day-to-day operations create switching costs; visual builders themselves are readily competed.",
+      "basis": "assessment",
+      "sources": [
+        "https://retool.com/pricing",
+        "https://retool.com/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Compose operational app interfaces from ready components connected to live databases and APIs.",
+      "basis": "assessment",
+      "sources": [
+        "https://retool.com/"
+      ]
+    },
+    {
+      "claim": "Build backend workflows and AI actions that use the same business data connections.",
+      "basis": "assessment",
+      "sources": [
+        "https://retool.com/"
+      ]
+    },
+    {
+      "claim": "Create native mobile operational tools alongside browser apps for field workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://retool.com/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

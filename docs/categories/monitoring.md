@@ -7,14 +7,18 @@ Audience: Engineering, IT operations, site reliability and website owners. Relev
 Use-case sources: [1](https://www.datadoghq.com/pricing/), [2](https://www.pingdom.com/pricing/).
 
 - [Datadog](https://www.datadoghq.com/): USD 15/usage/month, annual billing. Infrastructure Pro starts at $15 per host/month billed annually; other modules priced separately. [Pricing](https://www.datadoghq.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/datadog.md).
 - [Pingdom](https://www.pingdom.com/): entry amount unverified/quote, annual billing. Official pricing calculator returned currency placeholders without numeric price; amount unverified. [Pricing](https://www.pingdom.com/pricing/).
 - [Sentry](https://sentry.io/): entry amount unverified/quote, annual billing. Official pricing page unsupported text/markdown in fetch; paid plan entry amount not independently verified. [Pricing](https://sentry.io/pricing/).
+  [Pricing tiers, organization and product reasons](../products/sentry.md).
 
 ### GlitchTip — A
 
 Backend and frontend MIT licenses verified at canonical GitLab commits. Maintainer describes software as 100% open source; paid hosting quotas and support are service costs, not software feature restrictions.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://gitlab.com/glitchtip/glitchtip-backend/-/raw/5c6889940436df182d929634bc455ecaccb10e93/LICENSE), [edition evidence](https://glitchtip.com/blog/2026-06-22-glitchtip-6-2-released/), [hosting](https://glitchtip.com/pricing/), [repository](https://gitlab.com/glitchtip/glitchtip-backend).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/glitchtip.md).
 
 Repository: pushed unknown; latest commit 2026-10-21T06:21:41.000+00:00; latest published release unverified or unavailable (n/a). GitHub profile placeholder is not canonical health evidence. Canonical GitLab commit 5c6889940436df182d929634bc455ecaccb10e93 dated 2026-10-21T06:21:41.000+00:00 verified. Latest GitLab Releases API entry v6.1.8 (2026-06-05) conflicts with later visible v6.2.6 tag (2026-08-07); latest release left null rather than conflating channels. No pushed_at field in captured GitLab API.
 
@@ -36,6 +40,8 @@ Repository: pushed 2026-10-21T00:06:24Z; latest commit 2026-10-20T12:15:52Z; lat
 OSS dashboards and alerting are AGPL. Commercial edition includes both enterprise administration and routine workflow extensions such as proprietary data-source integrations and reporting; conservative tier C, not feature-complete A.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/grafana/grafana/blob/7de573e4db635ab9d34cd2771bde39471e1c0e82/LICENSE), [edition evidence](https://grafana.com/products/grafana-enterprise/), [hosting](https://grafana.com/products/cloud/), [repository](https://github.com/grafana/grafana).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/grafana.md).
 
 Paid restrictions: Enterprise data-source plugins; Scheduled reporting; SAML authentication and team synchronization; Data-source permissions and usage insights
 

@@ -1,0 +1,296 @@
+{
+  "id": "paperless-ngx",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Paperless-ngx community",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Community-supported successor project; company incorporation does not apply. Exact project start not confirmed in the primary pages retrieved; 2022 secondary references not used. Demo hosting sponsorship is in-kind, not equity funding.",
+    "sources": [
+      "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md",
+      "https://github.com/paperless-ngx/paperless-ngx"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://github.com/paperless-ngx/paperless-ngx"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "No official organizational subscription verified in project docs; third-party hosting is separate.",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "No official enterprise software plan verified in project docs.",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A well-integrated archive model joining OCR, classification and file history can create switching costs once users organize a large collection; no exclusive data advantage is established.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "OCR in more than100 languages and PDF/A copies make scanned paper searchable while preserving originals.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    },
+    {
+      "claim": "Automatic correspondent/type/tag classification and email rules reduce repetitive filing.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    },
+    {
+      "claim": "Custom fields, saved views, full-text relevance and document file versions support a flexible personal or team archive.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Fyra Stack",
+          "url": "https://fyrastack.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+        }
+      ],
+      "notes": "Project homepage credits Fyra Stack with demo hosting. This is in-kind sponsorship; Fyra Stack website confirms a commercial server business.",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md",
+        "https://fyrastack.com"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Docker Compose",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container route; alternative to bare-metal Python runtime.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md"
+          ]
+        },
+        {
+          "component": "Python3.11–3.14 with Linux native OCR dependencies",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Bare-metal route; image bundles these for containers.",
+          "notes": "Includes Tesseract, OCRmyPDF, Ghostscript, qpdf, ImageMagick and document parsing libraries.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md"
+          ]
+        },
+        {
+          "component": "SQLite",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default embedded database; alternative to PostgreSQL/MariaDB.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Recommended for multiple users or higher throughput.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative documented database; observe documented compatibility caveats.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "Valkey",
+          "necessity": "one-of",
+          "group": "broker",
+          "condition": "Redis-protocol message broker; bundled default choice.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "one-of",
+          "group": "broker",
+          "condition": "Alternative Redis-protocol broker for scheduled tasks and cache.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "Persistent data/media/consume directories",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Holds originals, archive files, classifier/index data and default SQLite database.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "Apache Tika and Gotenberg",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Required only for Office document and .eml parsing; disabled by default.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "IMAP email account",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only for email ingestion rules.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+          ]
+        },
+        {
+          "component": "Ollama or OpenAI-compatible endpoint, optional embedding model",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only when opt-in AI enabled.",
+          "notes": "Local Ollama endpoint or remote compatible API; provider key may be required and usage can cost extra.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+          ]
+        },
+        {
+          "component": "Azure AI OCR endpoint",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only for opt-in remote OCR; local Tesseract is available.",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/index.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux for bare metal; Docker-capable host for containers",
+        "notes": "No fixed hardware minimum verified; size to workload.",
+        "sources": [
+          "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md",
+          "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+        ]
+      },
+      "notes": "Verified v3.3.3 documentation; container and bare-metal routes, one-of database and broker choices shown explicitly. No remote AI service required for baseline archive.",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md",
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/configuration.md"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Interactive Paperless-ngx installation script",
+          "url": "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Guided shell installer requires Docker/Compose; this is a one-command route, not a graphical one-click service.",
+          "sources": [
+            "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md"
+          ]
+        }
+      ],
+      "notes": "Official script and manual Compose reviewed; no verified graphical provider template added.",
+      "sources": [
+        "https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/v3.3.3/docs/setup.md"
+      ]
+    }
+  }
+}

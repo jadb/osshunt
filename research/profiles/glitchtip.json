@@ -1,0 +1,247 @@
+{
+  "id": "glitchtip",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Burke Software and Consulting",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official Who is making this identifies Burke Software and Consulting as creator; HIPAA page identifies Burke Software as operator. Exact company formation year, outside equity funding and investors not disclosed in reviewed pages; unknown rather than bootstrapped.",
+    "sources": [
+      "https://glitchtip.com/",
+      "https://glitchtip.com/hipaa/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Self-hosted version runs on own server; optional infrastructure charges separate. Hosted Free has 1,000 events/month.",
+      "sources": [
+        "https://glitchtip.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://glitchtip.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Medium",
+      "status": "published",
+      "monthlyPrice": 50,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Hosted plan for growing businesses; up to 500,000 events/month. Annual discount exists but annual total is not published.",
+      "sources": [
+        "https://glitchtip.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise / HIPAA contract",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "HIPAA page invites contact to discuss Enterprise pricing. Hosted Large separately lists $250/month; no fabricated custom-contract amount.",
+      "sources": [
+        "https://glitchtip.com/hipaa/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Sentry protocol compatibility reduces adoption friction, while the open protocol also limits proprietary lock-in as a moat.",
+      "basis": "assessment",
+      "sources": [
+        "https://glitchtip.com/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Sentry-compatible SDK ingestion can preserve familiar application instrumentation while changing error triage backend.",
+      "basis": "assessment",
+      "sources": [
+        "https://glitchtip.com/"
+      ]
+    },
+    {
+      "claim": "Error, uptime and performance views combine failure investigation with availability checks.",
+      "basis": "assessment",
+      "sources": [
+        "https://glitchtip.com/"
+      ]
+    },
+    {
+      "claim": "Unlimited projects and team membership simplify organizing error work across applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://glitchtip.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Burke Software and Consulting",
+          "url": "https://glitchtip.com/",
+          "relationship": "business-steward",
+          "source": "https://glitchtip.com/"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://glitchtip.com/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker runtime or Kubernetes/Helm route",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        },
+        {
+          "component": "PostgreSQL 14+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        },
+        {
+          "component": "All-in-one service or separate web/worker services",
+          "necessity": "one-of",
+          "group": "application-runtime",
+          "condition": "Choose deployment size",
+          "notes": "All-in-one supports small instances; separate workers scale independently.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        },
+        {
+          "component": "Valkey or Redis 7+",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable for larger/faster deployments",
+          "notes": "Current guide explicitly optional, not a universal production requirement.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        },
+        {
+          "component": "SMTP/email transport",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "When outbound email is needed",
+          "notes": "EMAIL_URL may use consolemail:// if no email desired.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "External file uploads/sourcemaps route",
+          "notes": "Railway buckets are a documented option.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        },
+        {
+          "component": "nginx or Apache reverse proxy and TLS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Public production ingress",
+          "notes": "Request-buffering proxy recommended.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "x86 or arm64",
+        "memory": "512 MB recommended; 256 MB minimum all-in-one",
+        "storage": "Usage-dependent; example 30 GB for 1 million events/month",
+        "os": "Docker-capable server",
+        "notes": "Guide allows carefully configured 128 MB plus swap; 512 MB is recommended, disk figure is an example.",
+        "sources": [
+          "https://glitchtip.com/documentation/install/"
+        ]
+      },
+      "notes": "Current guide documents all-in-one and separate worker routes; PostgreSQL required, Redis/Valkey optional. Hardware guide is not a workload guarantee.",
+      "sources": [
+        "https://glitchtip.com/documentation/install/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Railway GlitchTip template",
+          "url": "https://railway.com/new/template/glitchtip",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official installation page links template deploying all-in-one app, PostgreSQL and Redis.",
+          "sources": [
+            "https://glitchtip.com/documentation/install/"
+          ]
+        }
+      ],
+      "notes": "Official guide links Railway, PikaPods, Elestio, Nodion and RepoCloud. Railway template verified; ordinary Compose instructions kept separate.",
+      "sources": [
+        "https://glitchtip.com/documentation/install/"
+      ]
+    }
+  }
+}

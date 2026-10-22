@@ -1,0 +1,135 @@
+{
+  "id": "datadog",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Datadog, Inc.",
+    "kind": "business",
+    "foundedYear": 2010,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:DDOG"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Index Ventures",
+        "source": "https://investors.datadoghq.com/static-files/6ce0f496-38c7-4ceb-8fde-b7b2c1a44e01"
+      },
+      {
+        "name": "ICONIQ Capital",
+        "source": "https://investors.datadoghq.com/static-files/6ce0f496-38c7-4ceb-8fde-b7b2c1a44e01"
+      }
+    ],
+    "notes": "Independent public company; Nasdaq DDOG since 2019. Company founded in New York in 2010; Infrastructure product launched later. SEC ownership disclosure verifies historical Index Ventures and ICONIQ equity interests; no claim these remain unchanged today.",
+    "sources": [
+      "https://investors.datadoghq.com/shareholder-services/investor-faqs/",
+      "https://www.datadoghq.com/about/latest-news/datadog-wins-coveted-spot-on-crains-new-york-business-best-places-to-work-in-new-york-city-2015-list/",
+      "https://investors.datadoghq.com/static-files/6ce0f496-38c7-4ceb-8fde-b7b2c1a44e01"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Infrastructure Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 180,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "monitored host",
+      "minimumQuantity": null,
+      "scope": "paid infrastructure monitoring",
+      "notes": "Advertised $15 per host/month billed annually, multiplied by 12. $18 is explicitly on-demand; not assumed to be a monthly subscription. Free plan separately covers up to five hosts.",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Infrastructure Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 180,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "monitored host",
+      "minimumQuantity": null,
+      "scope": "paid infrastructure monitoring",
+      "notes": "Closest organizational entry plan; no named Business tier in Infrastructure. Annual $15 x12; other Datadog products charged separately.",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Infrastructure Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 276,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "monitored host",
+      "minimumQuantity": null,
+      "scope": "paid infrastructure monitoring",
+      "notes": "Advertised annual-billed $23 per host/month x12. $27 on-demand is separate; excess metrics/containers and other products can add charges.",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "The integration catalog and accumulated monitoring configurations can create workflow switching costs; this does not establish exclusive technical superiority.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Broad integrations and shared dashboards let operators investigate infrastructure alongside application signals.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Outlier, anomaly and forecast monitors help surface abnormal behavior beyond fixed thresholds.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Host/container maps and Live Processes support investigation of changing infrastructure.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.datadoghq.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -220,7 +220,8 @@
       ],
       "resources": {
         "sources": [
-          "https://alphacephei.com/vosk/install"
+          "https://alphacephei.com/vosk/install",
+          "https://alphacephei.com/vosk/server"
         ],
         "cpu": null,
         "memory": "Some large CARPA server models need16GB or more",

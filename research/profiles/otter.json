@@ -4,8 +4,8 @@
   "organization": {
     "name": "Otter.ai, Inc.",
     "kind": "business",
-    "foundedYear": null,
-    "ageBasis": "unknown",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
     "ownership": "unknown",
     "parent": null,
     "stockSymbols": [],
@@ -30,11 +30,16 @@
       {
         "name": "Draper Dragon Fund",
         "source": "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      },
+      {
+        "name": "Duke Capital Partners",
+        "source": "https://jobs.dukecapitalpartners.duke.edu/companies/otter-ai"
       }
     ],
-    "notes": "Official funding announcement establishes Series B and historical investors. Founding year not verified in reviewed primary pages; About redirects to careers. Current cap table unresolved.",
+    "notes": "Investor-owned Duke Capital Partners portfolio job board identifies founding2016.2021 Series B investors are historical; current cap table unresolved. About redirects to careers.",
     "sources": [
-      "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2",
+      "https://jobs.dukecapitalpartners.duke.edu/companies/otter-ai"
     ]
   },
   "pricingTiers": [

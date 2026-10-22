@@ -10,12 +10,18 @@
     "parent": null,
     "stockSymbols": [],
     "funding": "funded",
-    "investors": [],
-    "notes": "Commercial project steward; official pricing FAQ says serving businesses since 2017 (product launch basis; company incorporation unverified). Official January 2021 post confirms $500,000 investment but does not name investors. Investor names found only in secondary leads were not accepted.",
+    "investors": [
+      {
+        "name": "Kuveyt Türk Portföy Yönetimi A.Ş. Teknogirişim Girişim Sermayesi Yatırım Fonu",
+        "source": "https://kap.org.tr/tr/api/file/download/4028328c9cc9d177019cdd4449e958ad"
+      }
+    ],
+    "notes": "Commercial project steward; official pricing FAQ says serving businesses since2017 (product launch basis; company incorporation unverified). Official January2021 post confirms $500,000 investment without naming investors. The fund’s audited2025 financial statements identify an equity holding in Akaunting Yazılım A.Ş.; recorded as historical at31December2025, not a verified current cap table. Other names seen only in secondary leads remain unverified.",
     "sources": [
       "https://akaunting.com/about",
       "https://akaunting.com/plans-on-premise",
-      "https://akaunting.com/blog/weve-raised-500k-funding"
+      "https://akaunting.com/blog/weve-raised-500k-funding",
+      "https://kap.org.tr/tr/api/file/download/4028328c9cc9d177019cdd4449e958ad"
     ]
   },
   "pricingTiers": [

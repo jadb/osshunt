@@ -7,13 +7,17 @@ Audience: Operations, finance, HR, records administrators and teams managing doc
 Use-case sources: [1](https://start.docuware.com/faq/docuware-pricing), [2](https://www.mayan-edms.com/).
 
 - [DocuWare](https://start.docuware.com/): entry amount unverified/quote, quote billing. Tailored quote; official Cloud FAQ publishes typical USD30–125+ per user/month depending on plan, user type and scale. Annual subscription; not a guaranteed entry plan price. [Pricing](https://start.docuware.com/faq/docuware-pricing).
+  [Pricing tiers, organization and product reasons](../products/docuware.md).
 - [M-Files](https://www.m-files.com/): EUR 65/seat/month, annual billing. Essentials EUR65/seat/month; subscriptions typically billed annually, other terms by agreement. Enterprise custom quote. [Pricing](https://www.m-files.com/editions/).
+  [Pricing tiers, organization and product reasons](../products/m-files.md).
 
 ### Mayan EDMS — A
 
 Current canonical GitLab LICENSE and official FAQ establish GPL-2.0-only since 4.6; Apache metadata belongs to older mirror. Public software includes workflows, versions, OCR, granular permissions and REST API. Commercial support tiers limit service coverage, not software user/document capacity. No separate paid software edition identified.
 
 License: GPL-2.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://gitlab.com/mayan-edms/mayan-edms/-/raw/834ffec1b539171390358e60a0406870108514f5/LICENSE), [edition evidence](https://docs.mayan-edms.com/chapters/features.html), [hosting](https://www.mayan-edms.com/support/), [repository](https://gitlab.com/mayan-edms/mayan-edms).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/mayan-edms.md).
 
 Service costs/limits: Paid support contracts restrict covered users/documents/installations and offer SLAs, migration assistance, customization and early access; these are service terms.; Optional external OpenAI API usage may incur provider costs; local Ollama integration also documented.
 
@@ -27,6 +31,8 @@ Repository: pushed unknown; latest commit 2026-09-21T05:03:57.000-04:00; latest 
 Community self-hosted project; official source documents OCR, search, permissions, versions and workflows in the open application, with no paid software edition identified. Tier applies to public product; remote AI/OCR service costs are separate.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/paperless-ngx/paperless-ngx/blob/f25fd5365fcc32d06c24306535c7b55e93fbb259/LICENSE), [edition evidence](https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/dev/docs/index.md), [hosting](https://github.com/paperless-ngx/paperless-ngx), [repository](https://github.com/paperless-ngx/paperless-ngx).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/paperless-ngx.md).
 
 Service costs/limits: Optional Azure AI remote OCR or remote LLM providers may require separately paid services; local OCR is included.; Project demo is not production managed hosting.
 

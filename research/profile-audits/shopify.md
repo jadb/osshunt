@@ -27,3 +27,5 @@ Checked 2026-10-21. Public primary sources; facts separated from assessments.
 ## Persistence and validation
 - Wrote profile JSON and per-claim JSONL in the assigned group directory. No repository mutations.
 - Validation command planned/completed centrally for this group: `node scripts/validate-profiles.mjs profiles`.
+
+- Final consistency correction:Plus$27,600 is annualized$2,300×12 committed-contract reference; removed contradictory note claiming annualPrice was null. No previous builder rerun.

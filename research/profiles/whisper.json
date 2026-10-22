@@ -2,18 +2,57 @@
   "id": "whisper",
   "checkedAt": "2026-10-21",
   "organization": {
-    "name": "OpenAI",
+    "name": "OpenAI Group PBC",
     "kind": "business",
-    "foundedYear": 2015,
+    "foundedYear": 2019,
     "ageBasis": "company-founded",
-    "ownership": "nonprofit",
-    "parent": "OpenAI Foundation controls for-profit business",
+    "ownership": "private",
+    "parent": "OpenAI Foundation (nonprofit controlling entity)",
     "stockSymbols": [],
-    "funding": "mixed",
-    "investors": [],
-    "notes": "Organization founded as nonprofit2015; Whisper released2022. Nonprofit control is distinct from equity ownership in its business. Exact investor roster not established in reviewed structural announcement; no absence claim.",
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Amazon",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "NVIDIA",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "SoftBank",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "Microsoft",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "Andreessen Horowitz (a16z)",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "D. E. Shaw Ventures",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "MGX",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "TPG",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "name": "Accounts advised by T. Rowe Price Associates",
+        "source": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      }
+    ],
+    "notes": "Accountable commercial business traces to for-profit established2019, now OpenAI Group PBC; predecessor nonprofit founded2015. Foundation retains control through board appointment rights. Whisper launched2022. March2026 investors relate to business funding, not Foundation donations or project sponsorship; no current ownership percentages inferred.",
     "sources": [
-      "https://openai.com/index/built-to-benefit-everyone/"
+      "https://openai.com/index/built-to-benefit-everyone/",
+      "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "https://openai.com/our-structure/"
     ]
   },
   "pricingTiers": [
@@ -129,9 +168,10 @@
           "source": "https://openai.com/index/built-to-benefit-everyone/"
         }
       ],
-      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "notes": "Verified commercial business steward OpenAI Group under Foundation control. Equity investors are not treated as project sponsors.",
       "sources": [
-        "https://openai.com/index/built-to-benefit-everyone/"
+        "https://openai.com/index/built-to-benefit-everyone/",
+        "https://openai.com/index/accelerating-the-next-phase-ai/"
       ]
     },
     "selfHosting": {

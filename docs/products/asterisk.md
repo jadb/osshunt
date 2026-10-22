@@ -45,7 +45,7 @@ Status: **identified**. Official source identifies corporate project investment/
 
 ## Self-operation requirements
 
-Mode: **server**. Developer telephony server, not turnkey agent desktop. Source-build module dependencies vary; no external SQL/cache mandatory stack established in reviewed installation guide. [1](https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/) [2](https://www.asterisk.org/get-started/) [3](https://www.asterisk.org/products/add-ons/g729-codec/)
+Mode: **server**. Developer telephony server, not turnkey calling workspace. Embedded SQLite3 internal database. External realtime SQL/ODBC optional and version/module-specific; static dialplans do not require external PostgreSQL/MySQL. Module build dependencies resolved through configure/menuselect/install_prereq. [1](https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/) [2](https://www.asterisk.org/get-started/) [3](https://www.asterisk.org/products/add-ons/g729-codec/) [4](https://docs.asterisk.org/Fundamentals/Asterisk-Internal-Database/) [5](https://docs.asterisk.org/Fundamentals/Asterisk-Configuration/Database-Support-Configuration/Realtime-Database-Configuration/) [6](https://github.com/asterisk/asterisk/blob/master/README.md)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
@@ -54,6 +54,10 @@ Mode: **server**. Developer telephony server, not turnkey agent desktop. Source-
 | SIP endpoints and network connectivity | conditional | — | VoIP calling integration; endpoints supplied separately | Documented deployment component. [1](https://www.asterisk.org/get-started/) |
 | PSTN trunk/carrier or telephony hardware | conditional | — | External public phone calls; numbers/usage separate from source code | Documented deployment component. [1](https://www.asterisk.org/get-started/) |
 | Optional modules and codecs | conditional | — | G.729 transcoding requires separately licensed vendor binary; other codecs possible | Documented deployment component. [1](https://www.asterisk.org/products/add-ons/g729-codec/) |
+| SQLite3 internal astdb | required | — | Always | Embedded internal persistence; not an external SQL server. [1](https://docs.asterisk.org/Fundamentals/Asterisk-Internal-Database/) |
+| PostgreSQL realtime backend | optional | — | Only when enabling external realtime configuration; not ordinary static dialplan prerequisite | Documented runtime component. [1](https://docs.asterisk.org/Fundamentals/Asterisk-Configuration/Database-Support-Configuration/Realtime-Database-Configuration/) |
+| unixODBC and matching database driver | conditional | — | ODBC realtime/database integration; PostgreSQL and MySQL examples documented | Documented runtime component. [1](https://www.asterisk.org/asterisk-odbc-connections/) |
+| ntpd/ntpsec, chronyd or systemd-timesyncd | one-of | time-sync | Choose one accurate time synchronization service | Documented runtime component. [1](https://github.com/asterisk/asterisk/blob/master/README.md) |
 
 Resources: CPU not specified; memory not specified; storage not specified; OS not specified. No universal hardware minimum established; workload determines capacity. [1](https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/)
 

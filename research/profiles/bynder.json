@@ -1,0 +1,132 @@
+{
+  "id": "bynder",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Bynder",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "THL funds majority investment",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Thomas H. Lee Partners (THL)",
+        "source": "https://thl.com/companies/bynder/"
+      },
+      {
+        "name": "Insight Partners",
+        "source": "https://thl.com/articles/thl_bynder/"
+      }
+    ],
+    "notes": "THL announced majority investment December2022, closing expected2023; current portfolio lists investment2023. THL acquired Insight stake; Insight is historical, not asserted current.",
+    "sources": [
+      "https://thl.com/articles/thl_bynder/",
+      "https://thl.com/companies/bynder/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Custom AI-powered DAM package",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "Core platform with personalized offer; Get a quote. No numeric lowest-paid price.",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Custom modular package",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "No standard Business name; organizational packages customized to use case.",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom enterprise package",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "Same custom-package model for enterprise; no fabricated fixed tier or numeric price.",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Metadata, approval processes and connected content distribution embed the DAM into an organization\u2019s operating workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Central asset metadata, search and usage-right controls organize reusable brand content.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ]
+    },
+    {
+      "claim": "Asset/content approval workflows coordinate review before distribution.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ]
+    },
+    {
+      "claim": "Studio and omnichannel modules adapt brand content for multiple delivery contexts.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bynder.com/en/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

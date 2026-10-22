@@ -7,13 +7,17 @@ Audience: Software developers, API QA engineers and technical integration teams.
 Use-case sources: [1](https://www.postman.com/pricing/), [2](https://insomnia.rest/pricing).
 
 - [Insomnia paid plans](https://insomnia.rest/): entry amount unverified/quote, quote billing. Pricing page displays Pro $12/user/month and annual/monthly selector, but extracted state does not establish billing basis. Confirm at checkout. Free Essentials available; mock request overages extra. [Pricing](https://insomnia.rest/pricing).
+  [Pricing tiers, organization and product reasons](../products/insomnia.md).
 - [Postman](https://www.postman.com/): USD 9/account/month, annual billing. Solo entry $9/month billed annually; Team $19/user/month annually. Free core client exists; usage/add-ons extra. [Pricing](https://www.postman.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/postman.md).
 
 ### Hoppscotch Community Edition — B
 
 MIT self-hosted CE includes workspace member roles and invitations. Enterprise administration/security extras justify B; hosted Cloud Business gates are not assumed to restrict CE.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/hoppscotch/hoppscotch/blob/63273f8e599e73f0fb38c0739314e8d46b6bc83d/LICENSE), [edition evidence](https://docs.hoppscotch.io/documentation/self-host/getting-started), [hosting](https://hoppscotch.com/pricing), [repository](https://github.com/hoppscotch/hoppscotch).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/hoppscotch.md).
 
 Paid restrictions: Enterprise self-host adds SAML/OIDC authentication, audit/admin tools and domain/site access controls.
 
@@ -29,6 +33,8 @@ Repository: pushed 2026-10-20T07:04:35Z; latest commit 2026-09-30T06:59:53Z; lat
 MIT desktop client and CLI; local operation, not a hosted collaboration server. Paid migration and ordinary workspace/sync capabilities justify C. CLI data-driven execution and reports exist, so GUI edition gates do not imply their total absence.
 
 License: MIT; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/usebruno/bruno/blob/dd0281dad107247a4653ff514feb069ac42e7ff8/license.md), [edition evidence](https://www.usebruno.com/pricing), [hosting](https://www.usebruno.com/pricing), [repository](https://github.com/usebruno/bruno).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/bruno.md).
 
 Paid restrictions: Full Postman Data Export import is Ultimate-only; individual collection import remains available.; Open Source edition has 2 workspaces and 5 OpenAPI syncs/month; paid editions remove these limits.
 

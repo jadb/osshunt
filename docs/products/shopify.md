@@ -23,7 +23,7 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 | entry | Basic | published | USD 39/store | USD 348/store | — | — | unspecified | vendor commercial cloud. Current lowest paid full-store card; $29/month annually ×12. Temporary $1 introductory offer excluded. Old /starter URL redirected to trial; no Starter card on current pricing. [1](https://www.shopify.com/pricing) |
 | popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial cloud. No explicit Most popular or Recommended designation verified on the current public pricing page. [1](https://www.shopify.com/pricing) |
 | business | Grow | published | USD 105/store | USD 948/store | — | — | unspecified | vendor commercial cloud. Closest explicitly small-team tier. Annual $79/month ×12; card/payment processing costs separate. [1](https://www.shopify.com/pricing) |
-| enterprise | Plus | published | — | USD 27600/store/platform contract | — | — | unspecified | vendor commercial cloud. Published starting $2,300/month with 1- or 3-year commitment; negotiated terms may vary. This is a committed-contract reference, not verified month-to-month pricing; annualPrice left null to avoid assuming payment schedule. [1](https://www.shopify.com/pricing) |
+| enterprise | Plus | published | — | USD 27600/store/platform contract | — | — | unspecified | vendor commercial cloud. Published starting$2,300/month with committed annual or multiyear contract. Annualized reference$2,300×12=$27,600; negotiated terms/commitment duration and payment schedule may vary. Not verified month-to-month pricing. [1](https://www.shopify.com/pricing) |
 
 ## Defensibility assessments
 

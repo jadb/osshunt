@@ -1,0 +1,132 @@
+{
+  "id": "brandfolder",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Brandfolder / Smartsheet",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Smartsheet; acquired by Blackstone and Vista funds in2025",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Blackstone-managed funds",
+        "source": "https://www.vistaequitypartners.com/news/blackstone-and-vista-equity-partners-complete-acquisition-of-smartsheet/"
+      },
+      {
+        "name": "Vista Equity Partners-managed funds",
+        "source": "https://www.vistaequitypartners.com/news/blackstone-and-vista-equity-partners-complete-acquisition-of-smartsheet/"
+      }
+    ],
+    "notes": "Brandfolder founded2012, part of Smartsheet. Parent taken private January22,2025 and NYSE trading ceased. Investors listed are parent acquirers/owners, not a Brandfolder venture round; historical Brandfolder equity investors not established.",
+    "sources": [
+      "https://brandfolder.com/about",
+      "https://www.vistaequitypartners.com/news/blackstone-and-vista-equity-partners-complete-acquisition-of-smartsheet/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Premium",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "Lowest named public plan shown; Get a quote footer. No numeric amount; core platform mentioned but not independently priced.",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Premium",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "Closest organizational plan; no distinct Business name.",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "DAM subscription",
+      "notes": "Named large-scale tier, quotation-based page, no public numeric amount.",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Structured metadata, distribution links and usage records can make migration operationally costly.",
+      "basis": "assessment",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "OCR indexes document content so teams can search inside assets.",
+      "basis": "assessment",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Asset analytics measure usage and identify high-performing content.",
+      "basis": "assessment",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Publish/expiration schedules and granular permissions control asset lifecycles.",
+      "basis": "assessment",
+      "sources": [
+        "https://brandfolder.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

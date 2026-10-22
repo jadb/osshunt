@@ -1,0 +1,160 @@
+{
+  "id": "postman",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Postman, Inc.",
+    "kind": "business",
+    "foundedYear": 2014,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Insight Partners",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "Coatue",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "Battery Ventures",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "BOND",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "CRV",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "Gokul Rajaram",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      },
+      {
+        "name": "Girish Mathrubootham",
+        "source": "https://blog.postman.com/postman-announces-series-d/"
+      }
+    ],
+    "notes": "Company founded2014 per company-maintained profile, distinct from original side-project. Private;2021 Series D$225m is historical, not present valuation. Current About confirms investor group.",
+    "sources": [
+      "https://www.linkedin.com/company/postman-platform/",
+      "https://www.postman.com/company/about-postman/",
+      "https://blog.postman.com/postman-announces-series-d/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Solo",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 108,
+      "oneTimePrice": null,
+      "usagePrice": 0.05,
+      "currency": "USD",
+      "unit": "individual account;AI overage per credit",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "$9/month annual-billed \u00d712=$108/year. Optional AI overage$0.05/credit; free core client separate. Other metered products/add-ons have own rates.",
+      "sources": [
+        "https://www.postman.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://www.postman.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 228,
+      "oneTimePrice": null,
+      "usagePrice": 0.04,
+      "currency": "USD",
+      "unit": "user;AI overage per credit",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "$19/user/month annual-billed \u00d712=$228/user/year. Optional AI overage$0.04/credit; external service fees separate.",
+      "sources": [
+        "https://www.postman.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "user;AI overage per credit",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Contact sales for subscription; comparison lists AI overage$0.035/credit with volume pricing available. No invented annual seat amount.",
+      "sources": [
+        "https://www.postman.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared collections, public/private API discovery and organization-wide catalogs form network and workflow switching costs; local API clients remain substitutes for narrower uses.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.postman.com/company/about-postman/",
+        "https://www.postman.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Reuse API collections across manual requests, data-driven tests and automated monitoring.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.postman.com/pricing/",
+        "https://www.postman.com/product/"
+      ]
+    },
+    {
+      "claim": "Design specs, mock endpoints and publish branded API documentation from a shared workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.postman.com/pricing/",
+        "https://www.postman.com/product/"
+      ]
+    },
+    {
+      "claim": "Catalog private/partner APIs and distribute generated SDKs across teams in applicable editions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.postman.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

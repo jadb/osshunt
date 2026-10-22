@@ -1,0 +1,145 @@
+{
+  "id": "m-files",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "M-Files Corporation",
+    "kind": "business",
+    "foundedYear": 2002,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Haveli Investments",
+        "source": "https://www.m-files.com/press-releases/m-files-appoints-jay-bhatt-as-ceo/"
+      },
+      {
+        "name": "Bregal Milestone",
+        "source": "https://www.m-files.com/press-releases/m-files-appoints-jay-bhatt-as-ceo/"
+      },
+      {
+        "name": "CrossParadigm Capital",
+        "source": "https://www.m-files.com/press-releases/m-files-appoints-jay-bhatt-as-ceo/"
+      },
+      {
+        "name": "Partech (historical)",
+        "source": "https://www.m-files.com/press-releases/haveli-investments-and-bregal-milestone-lead-majority-recapitalization-of-m-files-corporation/page/2/"
+      },
+      {
+        "name": "Tesi (historical)",
+        "source": "https://www.m-files.com/press-releases/haveli-investments-and-bregal-milestone-lead-majority-recapitalization-of-m-files-corporation/page/2/"
+      },
+      {
+        "name": "Molten Ventures (historical)",
+        "source": "https://www.m-files.com/press-releases/haveli-investments-and-bregal-milestone-lead-majority-recapitalization-of-m-files-corporation/page/2/"
+      }
+    ],
+    "notes": "Age uses official2002 start of AnttiNivala software development, not predecessor legal incorporation; first software2005. Majority recapitalization by Haveli/Bregal closed29November2024, CrossParadigm significant participant; founder retains minority. Partech,Tesi,Molten historical investors named in announcement; current positions not established.",
+    "sources": [
+      "https://www.m-files.com/press-releases/haveli-investments-and-bregal-milestone-lead-majority-recapitalization-of-m-files-corporation/page/2/",
+      "https://www.m-files.com/about/",
+      "https://www.m-files.com/press-releases/m-files-appoints-jay-bhatt-as-ceo/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 780,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid document-management subscription",
+      "notes": "Advertised$65 monthly/perseat; FAQ says subscriptions typically billed annually. Annual figure$65×12=$780 perseat uses that typical annual term; exact billing/commitment and other options require sales confirmation. No verified month-to-month amount.",
+      "sources": [
+        "https://www.m-files.com/editions/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://www.m-files.com/editions/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 780,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid document-management subscription",
+      "notes": "Closest entry organizational plan; no separately named Business tier. Advertised$65 monthly/perseat; FAQ says subscriptions typically billed annually. Annual figure$65×12=$780 perseat uses that typical annual term; exact billing/commitment and other options require sales confirmation. No verified month-to-month amount.",
+      "sources": [
+        "https://www.m-files.com/editions/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization; seats/AI scale quoted",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom quote tailored to scale, compliance and AI usage.",
+      "sources": [
+        "https://www.m-files.com/editions/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Metadata relationships, governance rules and more than100 integrations can create substantial migration work once embedded in enterprise document processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.m-files.com/about/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Context and metadata relationships organize documents around business information rather than folder location.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.m-files.com/about/"
+      ]
+    },
+    {
+      "claim": "Native Microsoft365 experiences let teams manage governed documents within familiar Office collaboration tools.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.m-files.com/editions/"
+      ]
+    },
+    {
+      "claim": "Graphical workflows and Aino assistance combine approvals, lifecycle control and contextual document tasks.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.m-files.com/editions/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

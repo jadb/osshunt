@@ -18,6 +18,8 @@ Pricing explicitly grants all self-hosted features with no restrictions; cloud f
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/coollabsio/coolify/blob/91ea7d851e214951799842837a010a4dfe3487e7/LICENSE), [edition evidence](https://coolify.io/pricing), [hosting](https://coolify.io/pricing), [repository](https://github.com/coollabsio/coolify).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/coolify.md).
+
 Repository: pushed 2026-10-21T21:18:03Z; latest commit 2026-10-21T20:58:00Z; latest published release v4.4.7 (2026-10-21T14:12:45Z). Quick analysis: 6.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Heroku → Coolify: **partial**. Git/container app deployment on your own servers; move environment variables, domains and databases; operate backups, security and scaling yourself. Heroku add-ons need replacements. [1](https://coolify.io/) [2](https://coolify.io/docs/)
@@ -62,6 +64,8 @@ Repository: pushed 2026-10-21T21:25:03Z; latest commit 2026-10-21T20:59:00Z; lat
 MIT core deploys Heroku-compatible apps through Git and CLI. Paid self-hosted Pro add-on supplies everyday graphical administration and API/HTTP push; Pro is explicitly not hosting.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/dokku/dokku/blob/9dd14b73859d86ec39539f6a6dbb91d19ae02ef5/LICENSE), [edition evidence](https://pro.dokku.com/), [hosting](https://pro.dokku.com/), [repository](https://github.com/dokku/dokku).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/dokku.md).
 
 Paid restrictions: Dokku Pro web dashboard; Dokku Pro JSON API and HTTP(S) Git push; Dokku Pro team management
 

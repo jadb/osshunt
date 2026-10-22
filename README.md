@@ -14,7 +14,7 @@ Audience positions are editorial reach estimates, not measured market-size count
 
 ## Profile enrichment — in progress
 
-183/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
+206/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
 
 ## Data
 
@@ -33,6 +33,6 @@ npm ci --ignore-scripts
 make check
 ```
 
-The gate assembles source records, generates snapshots/schemas/docs, validates data and runs 35 contract tests. Seven regression guards additionally verified by restoring defects, observing failures and restoring fixes. [Mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
+The gate assembles source records, generates snapshots/schemas/docs, validates data and runs 36 contract tests. Seven regression guards additionally verified by restoring defects, observing failures and restoring fixes. [Mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
 
 Research refresh additionally uses authenticated `gh` and optional repository health analysis; neither is required for ordinary builds or queries. No website deployment is part of this seed.

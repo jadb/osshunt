@@ -35,11 +35,33 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Official page explicitly identifies download mirrors as in-kind sponsorship, updated 2026-10-19. Selected corporate mirror sponsors only; not exhaustive. [1](https://www.gimp.org/donating/sponsors.html)
+Status: **identified**. Official sponsor page: corporate download mirrors plus MacStadium/Arm build infrastructure; Wacom(2026), Arm(2023), Purism(2021) hardware; Microsoft registration fee(2022). CircleCI(2018–2026), O’Reilly, BackupAssist, EU Edge, Distrowatch and MacGIMP are historical sponsors. Mirror list dated2026-10-19. Institutions and unverified business identities excluded; no claim that historical assistance continues. [1](https://www.gimp.org/donating/sponsors.html)
 
 - [EdgeUno](https://edgeuno.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
 - [Artfiles New Media GmbH](https://artfiles.org/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
 - [dogado GmbH](https://www.dogado.de/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Kumi Systems](https://kumi.systems/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [GWDG mbH](https://www.gwdg.de/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Randhost](https://randhost.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [ZEROLAG](https://zerolag.ro/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [AFRICLOUD](https://africloud.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [METANET](https://www.metanet.ch/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Taiwan Digital Streaming Co.](https://www.twds.com.tw/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [IP-Connect LLC](https://ip-connect.info/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [UKFast](https://mirrors.ukfast.co.uk/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Hoobly Classifieds](https://www.hoobly.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [XMission](https://xmission.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [MacStadium](https://macstadium.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Arm Ltd.](https://www.arm.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Wacom](https://www.wacom.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Microsoft](https://www.microsoft.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Purism](https://puri.sm/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [CircleCI](https://circleci.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [O’Reilly](https://www.oreilly.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [BackupAssist](https://www.backupassist.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [EU Edge](https://www.gimp.org/donating/sponsors.html): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [Distrowatch](https://distrowatch.com/): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
+- [MacGIMP](https://www.gimp.org/donating/sponsors.html): corporate-sponsor. [Evidence](https://www.gimp.org/donating/sponsors.html).
 
 ## Self-operation requirements
 

@@ -1,0 +1,256 @@
+{
+  "id": "resourcespace",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Montala Limited / ResourceSpace project",
+    "kind": "business",
+    "foundedYear": 2006,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "2006 is project inception at Oxfam; not Montala incorporation. Montala is100% employee-owned B Corporation. Current equity investors/funding history beyond employee ownership not established; Oxfam client/origin not treated as business sponsor.",
+    "sources": [
+      "https://www.resourcespace.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted ResourceSpace",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No software/user charge for self-hosted scope; own infrastructure separate. Free10GB cloud service is a different scope.",
+      "sources": [
+        "https://www.resourcespace.com/faq"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor cloud/support service",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://www.resourcespace.com/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Business Cloud",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor cloud/support service",
+      "notes": "Named vendor cloud/support service with Talk to us pricing contact and storage-dependent selector; no fixed numeric amount verified. Free self-hosted software price remains separate.",
+      "sources": [
+        "https://www.resourcespace.com/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Cloud",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor cloud/support service",
+      "notes": "Named vendor cloud/support service with Talk to us pricing contact and storage-dependent selector; no fixed numeric amount verified. Free self-hosted software price remains separate.",
+      "sources": [
+        "https://www.resourcespace.com/pricing"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Configured metadata, permissions and existing media collections create workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.resourcespace.com/faq"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Custom metadata and search organize large media collections.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.resourcespace.com/faq"
+      ]
+    },
+    {
+      "claim": "Consent/usage rights and configurable permissions govern asset reuse.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.resourcespace.com/faq"
+      ]
+    },
+    {
+      "claim": "Automatic conversion produces reusable derivatives and previews across media formats.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.resourcespace.com/faq"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Montala Limited",
+          "url": "https://www.resourcespace.com/about",
+          "relationship": "business-steward",
+          "source": "https://www.resourcespace.com/about"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://www.resourcespace.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "MySQL8.0+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Supported database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "MariaDB10.4+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Supported database alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "Apache2.4+",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Recommended web server",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "IIS7+",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Documented Windows alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "PHP and mysqli/curl/dom/gd/intl/mbstring/xml/zip/ldap/imap/json/apcu/cli extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "10.6/10.7 support PHP8.1\u20138.4; v11 PHP8.2\u20138.5; match installed release.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "ImageMagick, FFmpeg, Ghostscript, ExifTool, Inkscape",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official required media tools; work covers image, audio/video, PDF, metadata and vector previews.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "Subversion",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Fetching code from official SVN route",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "Composer",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "v11 development builds; release archives include vendor dependencies",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+          ]
+        },
+        {
+          "component": "Docker/Compose",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative packaged stack; secure db.env values then browser setup",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.resourcespace.com/knowledge-base/systemadmin/install_docker"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+        ]
+      },
+      "notes": "LAMP-style server with explicit supported database/web alternatives. General guide gives no universal hardware minimum. Optional plugin integrations may add services beyond baseline.",
+      "sources": [
+        "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements",
+        "https://www.resourcespace.com/knowledge-base/systemadmin/install_docker"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements"
+      ]
+    }
+  }
+}

@@ -4,13 +4,13 @@
 
 ## Organization
 
-Zulip Foundation / Kandra Labs (business); ownership: **nonprofit**; funding: **mixed**.
+Kandra Labs (business); ownership: **private**; funding: **mixed**.
 
 Started 2016 (company-founded); years active: 10; years in business: 10. Ages are approximate calendar-year differences as of 2026-10-21.
 
 Parent: Zulip Foundation.
 
-2016 is Kandra Labs formation; original product startup founded 2012. In 2026 independent nonprofit Zulip Foundation became steward and fully owns Kandra Labs. NSF grants and Google Summer of Code support are not equity investors; no VC funding stated in history. [1](https://zulip.com/history/)
+Kandra Labs is the business foundedApril2016 and now fully owned by independent nonprofit Zulip Foundation, which became project steward in2026. Original Zulip startup formed2012. NSF grants and Google Summer of Code contributions are not equity investments; no VC funding stated in project history. [1](https://zulip.com/history/)
 
 Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
 
@@ -37,9 +37,10 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **business-fallback**. No separate corporate sponsor verified in reviewed project sources; accountable business steward included. [1](https://zulip.com/history/)
+Status: **identified**. Project history credits100+ contributors supported by Google Summer of Code:corporate program contribution, not equity investment or an assertion of current annual sponsorship. Kandra Labs remains the verified business steward. [1](https://zulip.com/history/)
 
 - [Kandra Labs](https://zulip.com/history/): business-steward. [Evidence](https://zulip.com/history/).
+- [Google](https://summerofcode.withgoogle.com/): corporate-sponsor. [Evidence](https://zulip.com/history/).
 
 ## Self-operation requirements
 

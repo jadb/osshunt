@@ -54,7 +54,7 @@ Mode: **hybrid**. Documented default deployment path; optional services are sepa
 | FFmpeg | conditional | — | Convert unsupported input audio; native PCM16-bit mono examples do not need it | Documented deployment component. [1](https://alphacephei.com/vosk/install) |
 | Kaldi, OpenBLAS+CLAPACK or MKL; optional CUDA | conditional | — | Source build only; prebuilt pip path avoids compilation | Documented deployment component. [1](https://alphacephei.com/vosk/install) |
 
-Resources: CPU not specified; memory Some large CARPA server models need16GB or more; storage not specified; OS Linux x86_64/arm64; RaspberryPi3/4; macOS x86/M1; Windows x86/64 pip routes. Primarily library, with separate server wrappers. Docs exclude ARMv6/WindowsARM64 for pip. Model-specific memory; no universal minimum. [1](https://alphacephei.com/vosk/install)
+Resources: CPU not specified; memory Some large CARPA server models need16GB or more; storage not specified; OS Linux x86_64/arm64; RaspberryPi3/4; macOS x86/M1; Windows x86/64 pip routes. Primarily library, with separate server wrappers. Docs exclude ARMv6/WindowsARM64 for pip. Model-specific memory; no universal minimum. [1](https://alphacephei.com/vosk/install) [2](https://alphacephei.com/vosk/server)
 
 ## One-click and installer options
 

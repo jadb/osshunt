@@ -1,87 +1,73 @@
 {
   "totalProducts": 227,
-  "researchedProfiles": 183,
-  "researchedAlternatives": 104,
+  "researchedProfiles": 206,
+  "researchedAlternatives": 118,
   "missingProfiles": [
     "algolia",
     "apache-superset",
     "appwrite",
-    "brandfolder",
-    "bruno",
-    "bynder",
-    "cap",
-    "coolify",
-    "datadog",
-    "docuware",
-    "dokku",
     "elastic-cloud",
     "freshservice-itam",
-    "glitchtip",
     "glpi",
-    "grafana",
-    "hoppscotch",
-    "insomnia",
     "lansweeper",
-    "m-files",
     "matomo",
-    "mayan-edms",
     "metabase",
     "metabase-pro",
-    "obs-studio",
     "opensearch",
-    "paperless-ngx",
-    "phraseanet",
     "pingdom",
     "plausible",
     "pocketbase",
     "posthog",
-    "postman",
-    "resourcespace",
-    "retool",
-    "screenity",
-    "sentry",
     "snipe-it",
     "supabase",
-    "tooljet",
     "typesense",
     "umami",
     "uptime-kuma",
     "vercel"
   ],
   "ownership": {
-    "community": 21,
-    "individual": 6,
-    "nonprofit": 7,
-    "private": 86,
-    "public": 32,
-    "public-subsidiary": 18,
-    "unknown": 13
+    "community": 24,
+    "individual": 7,
+    "nonprofit": 5,
+    "private": 102,
+    "public": 33,
+    "public-subsidiary": 19,
+    "unknown": 16
   },
   "funding": {
-    "bootstrapped": 13,
-    "funded": 104,
+    "bootstrapped": 14,
+    "funded": 118,
     "mixed": 11,
-    "not-applicable": 18,
-    "unknown": 37
+    "not-applicable": 20,
+    "unknown": 43
   },
   "unknownFoundedYear": [
     "asterisk",
     "authelia",
+    "cap",
+    "coolify",
     "copyparty",
+    "dokku",
     "drawio",
     "excalidraw",
     "freescout",
+    "glitchtip",
     "headscale",
+    "hoppscotch",
     "keila",
     "kopia",
     "limesurvey",
     "mailcow",
+    "mayan-edms",
     "netbird",
+    "obs-studio",
     "opencats",
-    "otter",
+    "paperless-ngx",
     "pdf-arranger",
     "pdfsam-basic",
     "restic",
+    "screenity",
+    "sentry",
     "shotcut",
     "solidtime",
     "stirling-pdf",
@@ -90,43 +76,41 @@
     "vosk",
     "wekan"
   ],
-  "fundedWithUnverifiedInvestorNames": [
-    "akaunting"
-  ],
+  "fundedWithUnverifiedInvestorNames": [],
   "pricingRoles": {
     "entry": {
-      "free": 106,
-      "published": 58,
-      "quote": 7,
+      "free": 120,
+      "published": 64,
+      "quote": 10,
       "unknown": 12
     },
     "popular": {
-      "published": 29,
-      "unknown": 154
+      "published": 31,
+      "unknown": 175
     },
     "business": {
       "free": 1,
-      "not-offered": 33,
-      "published": 106,
-      "quote": 14,
-      "unknown": 29
+      "not-offered": 35,
+      "published": 121,
+      "quote": 19,
+      "unknown": 30
     },
     "enterprise": {
-      "not-offered": 40,
-      "published": 30,
-      "quote": 80,
-      "unknown": 33
+      "not-offered": 44,
+      "published": 36,
+      "quote": 94,
+      "unknown": 32
     }
   },
   "sponsorship": {
-    "business-fallback": 73,
-    "identified": 17,
-    "none-found": 13,
+    "business-fallback": 82,
+    "identified": 23,
+    "none-found": 12,
     "unknown": 1
   },
   "installOptions": {
-    "marketplace": 23,
-    "one-click": 10,
-    "one-command": 22
+    "marketplace": 28,
+    "one-click": 12,
+    "one-command": 27
   }
 }

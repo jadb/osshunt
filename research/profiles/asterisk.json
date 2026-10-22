@@ -189,6 +189,46 @@
           "sources": [
             "https://www.asterisk.org/products/add-ons/g729-codec/"
           ]
+        },
+        {
+          "component": "SQLite3 internal astdb",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Embedded internal persistence; not an external SQL server.",
+          "sources": [
+            "https://docs.asterisk.org/Fundamentals/Asterisk-Internal-Database/"
+          ]
+        },
+        {
+          "component": "PostgreSQL realtime backend",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Only when enabling external realtime configuration; not ordinary static dialplan prerequisite",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://docs.asterisk.org/Fundamentals/Asterisk-Configuration/Database-Support-Configuration/Realtime-Database-Configuration/"
+          ]
+        },
+        {
+          "component": "unixODBC and matching database driver",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "ODBC realtime/database integration; PostgreSQL and MySQL examples documented",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://www.asterisk.org/asterisk-odbc-connections/"
+          ]
+        },
+        {
+          "component": "ntpd/ntpsec, chronyd or systemd-timesyncd",
+          "necessity": "one-of",
+          "group": "time-sync",
+          "condition": "Choose one accurate time synchronization service",
+          "notes": "Documented runtime component.",
+          "sources": [
+            "https://github.com/asterisk/asterisk/blob/master/README.md"
+          ]
         }
       ],
       "resources": {
@@ -201,11 +241,14 @@
           "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/"
         ]
       },
-      "notes": "Developer telephony server, not turnkey agent desktop. Source-build module dependencies vary; no external SQL/cache mandatory stack established in reviewed installation guide.",
+      "notes": "Developer telephony server, not turnkey calling workspace. Embedded SQLite3 internal database. External realtime SQL/ODBC optional and version/module-specific; static dialplans do not require external PostgreSQL/MySQL. Module build dependencies resolved through configure/menuselect/install_prereq.",
       "sources": [
         "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/",
         "https://www.asterisk.org/get-started/",
-        "https://www.asterisk.org/products/add-ons/g729-codec/"
+        "https://www.asterisk.org/products/add-ons/g729-codec/",
+        "https://docs.asterisk.org/Fundamentals/Asterisk-Internal-Database/",
+        "https://docs.asterisk.org/Fundamentals/Asterisk-Configuration/Database-Support-Configuration/Realtime-Database-Configuration/",
+        "https://github.com/asterisk/asterisk/blob/master/README.md"
       ]
     },
     "oneClickInstall": {

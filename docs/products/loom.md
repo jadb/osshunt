@@ -25,7 +25,7 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 | entry | Business | unknown | — | — | — | — | unspecified | video communication subscription. Lowest paid Business shows$18/user/month but toggle state ambiguous in captured page; monthly/annual fields withheld. Starter free separate. [1](https://www.loom.com/pricing) |
 | popular | Business + AI | unknown | — | — | — | — | unspecified | video communication subscription. Explicit MOST POPULAR. Shows$24/user/month but billing state ambiguous; exact recurring totals unknown. [1](https://www.loom.com/pricing) |
 | business | Business | unknown | — | — | — | — | unspecified | video communication subscription. Named Business plan; $18 displayed without unambiguous billing toggle state. [1](https://www.loom.com/pricing) |
-| enterprise | Enterprise | unknown | — | — | — | — | unspecified | video communication subscription. Enterprise listed; exact quote/numeric billing not verified in extraction. [1](https://www.loom.com/pricing) |
+| enterprise | Enterprise | quote | — | — | — | — | unspecified | video communication subscription. Enterprise card says Let’s Talk / Contact Sales; no numeric amount published. [1](https://www.loom.com/pricing) |
 
 ## Defensibility assessments
 

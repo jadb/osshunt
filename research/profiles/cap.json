@@ -1,0 +1,278 @@
+{
+  "id": "cap",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Cap Software, Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Legal business identity verified. About/pricing/privacy reviewed; founding year, equity ownership, investment funding and investors not established. No bootstrapped inference.",
+    "sources": [
+      "https://cap.so/privacy"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-built Cap source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "local build",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "Source-built versions exempt from distributed-binary commercial license; official desktop business-use license is$29/year or$58 lifetime separately. Personal-use binary free.",
+      "sources": [
+        "https://cap.so/docs/commercial-license"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": "Cap Pro",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": 97.92,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor cloud/team subscription",
+      "notes": "Explicit Most popular. $8.16 annual-billed monthly \u00d712=$97.92. Not a self-host license price.",
+      "sources": [
+        "https://cap.so/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Cap Pro",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": 97.92,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor cloud/team subscription",
+      "notes": "Closest explicit team-workspace plan; $8.16\u00d712 annual. Standalone Desktop License$29/year or$58 one-time licenses official binaries for commercial use.",
+      "sources": [
+        "https://cap.so/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise / Cap Pro base",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": 97.92,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor enterprise cloud subscription",
+      "notes": "Same published Pro base, no minimum seats. Optional organization-wide SAML SSO$199/month and signed BAA$99/month added separately; not per-seat base or a forced bundle.",
+      "sources": [
+        "https://cap.so/pricing"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A combined native recorder/editor and sharing workflow can create product familiarity; source availability reduces exclusive lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://cap.so/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Studio Mode provides a full editor for polished screen recordings.",
+      "basis": "assessment",
+      "sources": [
+        "https://cap.so/pricing"
+      ]
+    },
+    {
+      "claim": "Instant Mode creates a shareable clip immediately after capture.",
+      "basis": "assessment",
+      "sources": [
+        "https://cap.so/pricing"
+      ]
+    },
+    {
+      "claim": "Recording transcripts, summaries and clickable chapters make long demonstrations navigable when optional AI features are configured.",
+      "basis": "assessment",
+      "sources": [
+        "https://cap.so/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Cap Software, Inc.",
+          "url": "https://cap.so/privacy",
+          "relationship": "business-steward",
+          "source": "https://cap.so/privacy"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://cap.so/privacy"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Cap Desktop recorder",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Local recording; web-only uploads can use existing videos",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/download"
+          ]
+        },
+        {
+          "component": "Docker and Compose; Cap Web and FFmpeg media server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Self-operated web sharing stack",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Web stack database; bundled in Compose",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "MinIO",
+          "necessity": "one-of",
+          "group": "web-object-storage",
+          "condition": "Default S3-compatible web storage",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "External S3-compatible storage",
+          "necessity": "one-of",
+          "group": "web-object-storage",
+          "condition": "Alternative configured object storage",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "Reverse proxy with SSL: nginx/Caddy/Traefik",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Public production web deployment",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "Resend API",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email login delivery; default local testing prints links in logs",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "AssemblyAI / Groq / OpenAI / Anthropic APIs",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Selected transcription and AI features; external services and credentials, not bundled local models",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "component": "Google/Apple OAuth credentials",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable selected social login providers",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://cap.so/docs/self-hosting",
+          "https://cap.so/download"
+        ],
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Desktop macOS/Windows/Linux; current Linux binaries glibc2.39+; web stack Docker-capable host",
+        "notes": "No universal CPU/RAM minimum verified. Current download recommends macOS13.1+; Windows beta listed. Desktop distinct from optional web server."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://cap.so/docs/self-hosting",
+        "https://cap.so/download"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Railway deployment",
+          "url": "https://cap.so/docs/self-hosting#deployment-options",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Officially linked Railway option; hosted infrastructure charges/configuration separate. Click-through could not be fetched; official deployment guide is evidence.",
+          "sources": [
+            "https://cap.so/docs/self-hosting"
+          ]
+        },
+        {
+          "name": "Cap CLI link installer",
+          "url": "https://cap.so/download",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Links CLI bundled with an existing Desktop installation; does not deploy Cap Web.",
+          "sources": [
+            "https://cap.so/download"
+          ]
+        }
+      ],
+      "notes": "Verified options classified individually; configuration may still be required.",
+      "sources": [
+        "https://cap.so/docs/self-hosting"
+      ]
+    }
+  }
+}

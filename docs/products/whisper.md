@@ -4,15 +4,15 @@
 
 ## Organization
 
-OpenAI (business); ownership: **nonprofit**; funding: **mixed**.
+OpenAI Group PBC (business); ownership: **private**; funding: **funded**.
 
-Started 2015 (company-founded); years active: 11; years in business: 11. Ages are approximate calendar-year differences as of 2026-10-21.
+Started 2019 (company-founded); years active: 7; years in business: 7. Ages are approximate calendar-year differences as of 2026-10-21.
 
-Parent: OpenAI Foundation controls for-profit business.
+Parent: OpenAI Foundation (nonprofit controlling entity).
 
-Organization founded as nonprofit2015; Whisper released2022. Nonprofit control is distinct from equity ownership in its business. Exact investor roster not established in reviewed structural announcement; no absence claim. [1](https://openai.com/index/built-to-benefit-everyone/)
+Accountable commercial business traces to for-profit established2019, now OpenAI Group PBC; predecessor nonprofit founded2015. Foundation retains control through board appointment rights. Whisper launched2022. March2026 investors relate to business funding, not Foundation donations or project sponsorship; no current ownership percentages inferred. [1](https://openai.com/index/built-to-benefit-everyone/) [2](https://openai.com/index/accelerating-the-next-phase-ai/) [3](https://openai.com/our-structure/)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [Amazon](https://openai.com/index/accelerating-the-next-phase-ai/), [NVIDIA](https://openai.com/index/accelerating-the-next-phase-ai/), [SoftBank](https://openai.com/index/accelerating-the-next-phase-ai/), [Microsoft](https://openai.com/index/accelerating-the-next-phase-ai/), [Andreessen Horowitz (a16z)](https://openai.com/index/accelerating-the-next-phase-ai/), [D. E. Shaw Ventures](https://openai.com/index/accelerating-the-next-phase-ai/), [MGX](https://openai.com/index/accelerating-the-next-phase-ai/), [TPG](https://openai.com/index/accelerating-the-next-phase-ai/), [Accounts advised by T. Rowe Price Associates](https://openai.com/index/accelerating-the-next-phase-ai/).
 
 ## Starting prices
 
@@ -37,7 +37,7 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **business-fallback**. No separate corporate sponsor verified in reviewed project sources; accountable business steward included. [1](https://openai.com/index/built-to-benefit-everyone/)
+Status: **business-fallback**. Verified commercial business steward OpenAI Group under Foundation control. Equity investors are not treated as project sponsors. [1](https://openai.com/index/built-to-benefit-everyone/) [2](https://openai.com/index/accelerating-the-next-phase-ai/)
 
 - [OpenAI](https://openai.com/index/built-to-benefit-everyone/): business-steward. [Evidence](https://openai.com/index/built-to-benefit-everyone/).
 

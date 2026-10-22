@@ -6,11 +6,11 @@
 
 Otter.ai, Inc. (business); ownership: **unknown**; funding: **funded**.
 
-Started unknown (unknown); years active: unknown; years in business: not established/applicable. Ages are approximate calendar-year differences as of 2026-10-21.
+Started 2016 (company-founded); years active: 10; years in business: 10. Ages are approximate calendar-year differences as of 2026-10-21.
 
-Official funding announcement establishes Series B and historical investors. Founding year not verified in reviewed primary pages; About redirects to careers. Current cap table unresolved. [1](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2)
+Investor-owned Duke Capital Partners portfolio job board identifies founding2016.2021 Series B investors are historical; current cap table unresolved. About redirects to careers. [1](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2) [2](https://jobs.dukecapitalpartners.duke.edu/companies/otter-ai)
 
-Known investors: [Spectrum Equity](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Horizons Ventures](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Draper Associates](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [GGV Capital](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Draper Dragon Fund](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2).
+Known investors: [Spectrum Equity](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Horizons Ventures](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Draper Associates](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [GGV Capital](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Draper Dragon Fund](https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2), [Duke Capital Partners](https://jobs.dukecapitalpartners.duke.edu/companies/otter-ai).
 
 ## Starting prices
 
