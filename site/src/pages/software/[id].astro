@@ -1,6 +1,8 @@
 ---
 import Page from '../../layouts/Page.astro';
-import { softwarePaths, softwareData, LOGOS, usd, TIER_MEANING } from '../../lib/compare';
+import TierBox from '../../components/TierBox.astro';
+import License from '../../components/License.astro';
+import { softwarePaths, softwareData, LOGOS, usd } from '../../lib/compare';
 
 export const getStaticPaths = softwarePaths;
 const { id } = Astro.params;
@@ -41,7 +43,7 @@ const total = open.length + restricted.length;
                   <h3><a href={`/compare/${a.pair}/`}>{inc.name} vs {a.name}</a></h3>
                   <span class="fit">{a.fitLabel}</span>
                 </div>
-                <p class="meta"><b class="tierbox">{a.tier}</b> {TIER_MEANING[a.tier]} · {a.license}{a.osi ? ' · OSI' : ''} · {a.selfHost ? 'self-hostable' : 'not self-hosted'}</p>
+                <p class="meta"><TierBox tier={a.tier} align="left" /><License license={a.license} osi={a.osi} align="left" /><span>{a.selfHost ? 'self-hostable' : 'not self-hosted'}</span></p>
                 <p>{a.notes}</p>
               </li>
             ))}
@@ -56,7 +58,7 @@ const total = open.length + restricted.length;
               {restricted.map((a) => (
                 <li>
                   <div class="entry"><h3><a href={`/compare/${a.pair}/`}>{inc.name} vs {a.name}</a></h3><span class="fit">{a.fitLabel}</span></div>
-                  <p class="meta"><b class="tierbox">{a.tier}</b> {TIER_MEANING[a.tier]} · {a.license}</p>
+                  <p class="meta"><TierBox tier={a.tier} align="left" /><License license={a.license} align="left" /></p>
                   <p>{a.notes}</p>
                 </li>
               ))}
@@ -72,7 +74,7 @@ const total = open.length + restricted.length;
             <div class="facts-row fit"><span>Entry price</span><span>{entry}</span></div>
             <div class="facts-row"><span>Pricing model</span><span>{inc.pricing.model}, billed {inc.pricing.billing}</span></div>
             <div class="facts-row"><span>Owner</span>{org ? <span>{org.parent ?? org.name}</span> : <span class="u">Not established</span>}</div>
-            <p class="facts-foot">{inc.pricing.note} <a href={inc.pricing.source}>Source</a> · checked {CHECKED}</p>
+            <p class="facts-foot">{inc.pricing.note} <a href={inc.pricing.source}>Source</a></p>
           </article>
           {tiers.length > 0 && (
             <table class="tiers"><caption>Plans reviewed</caption><tbody>

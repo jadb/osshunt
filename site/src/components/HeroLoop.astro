@@ -6,7 +6,7 @@ const { scenes } = Astro.props;
 ---
 <div class="loop" data-loop role="group" aria-roledescription="carousel" aria-live="off" aria-label="Examples of paid tools and their open-source alternatives">
   {scenes.map((s, i) => (
-    <section class="scene" data-scene={s.id} aria-label={`${s.name} and its alternatives`} hidden={i !== 0}>
+    <section class:list={["scene", { on: i === 0 }]} data-scene={s.id} aria-label={`${s.name} and its alternatives`} aria-hidden={i === 0 ? "false" : "true"}>
       <div class="inc">
         <span class="tile"><img src={`/logos/${s.logo}.svg`} alt="" width="56" height="56" /></span>
         <p class="inc-text"><b>{s.name}</b><span>Entry price {s.price}</span></p>
@@ -20,8 +20,10 @@ const { scenes } = Astro.props;
 </div>
 
 <style>
-  .loop { border-top: var(--rule-8) solid var(--ink); padding-top: 14px; }
-  .scene[hidden] { display: none; }
+  /* All scenes share one grid cell so the hero keeps the height of the tallest one. */
+  .loop { display: grid; }
+  .scene { grid-area: 1 / 1; visibility: hidden; }
+  .scene.on { visibility: visible; }
   .inc { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
   .tile { width: 76px; height: 76px; border: var(--rule-3) solid var(--ink); display: grid; place-items: center; flex: none; }
   .tile img { width: 56px; height: 56px; object-fit: contain; }
@@ -41,7 +43,7 @@ const { scenes } = Astro.props;
     let timer = 0;
     const show = (i: number) => {
       idx = (i + scenes.length) % scenes.length;
-      scenes.forEach((s, n) => { s.hidden = n !== idx; });
+      scenes.forEach((s, n) => { s.classList.toggle('on', n === idx); s.setAttribute('aria-hidden', String(n !== idx)); });
       chips.forEach((c, n) => c.setAttribute('aria-pressed', String(n === idx)));
     };
     // Rotates until the first click, key press or focus anywhere; hover pauses it.

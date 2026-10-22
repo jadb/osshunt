@@ -48,7 +48,7 @@ const logoOf = (id: string) => LOGOS[id];
                     <div class="facts-row fit"><span>Entry price</span><span>{inc.pricing.entryAmount != null ? `${usd(inc.pricing.entryAmount)} / ${inc.pricing.unit} / ${inc.pricing.period}` : inc.pricing.model === 'usage' ? 'Usage-based' : 'Not established'}</span></div>
           <div class="facts-row"><span>Pricing model</span><span>{inc.pricing.model}, billed {inc.pricing.billing}</span></div>
           <div class="facts-row"><span>Owner</span>{org ? <span>{org.parent ?? org.name}</span> : <span class="u">Not established</span>}</div>
-          <p class="facts-foot">{inc.pricing.note} <a href={inc.pricing.source}>Source</a> · checked {CHECKED}</p>
+          <p class="facts-foot">{inc.pricing.note} <a href={inc.pricing.source}>Source</a></p>
         </article>
         {incTiers.length > 0 && (
           <table class="tiers"><caption>{inc.name} plans reviewed</caption><tbody>
