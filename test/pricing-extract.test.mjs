@@ -249,13 +249,14 @@ test('Notion static cards retain selected annual monthly-equivalent rates, curre
   for (const p of r.plans.slice(0, 3)) {
     const o = p.offers[0];
     assert.equal(o.billingPeriod, 'month');
-    assert.equal(o.commitment, 'annual');
+    assert.equal(o.commitment, p.name === 'Free' ? 'unknown' : 'annual');
     assert.equal(o.unit, 'member');
     assert.equal(o.currency, 'USD');
     assert.equal(o.minimumQuantity, null);
     assert.equal(o.qualifications.billingVariant, null);
     assert.match(o.source.text, /Price in USD/);
-    assert.match(o.source.text, /Pay yearly/);
+    if (p.name === 'Free') assert.doesNotMatch(o.source.text, /Pay yearly/);
+    else assert.match(o.source.text, /Pay yearly/);
     assert.match(o.source.locator, /\|/);
   }
   assert.equal(r.plans[3].offers[0].currency, null);
@@ -291,4 +292,39 @@ test('Notion adapter preserves unknown control state, hidden variants and monthl
     ),
   );
   assert.ok(r.issues.some((i) => /variant/i.test(i)));
+});
+test('Notion hidden billing controls and labels cannot establish a paid commitment', () => {
+  const controls = notionControls();
+  const variants = [
+    controls.replace('id="year"', 'hidden id="year"'),
+    controls.replace(/(<input[^>]*id="year"[^>]*>)/, '<div aria-hidden="true">$1</div>'),
+    controls.replace('<label for="year">', '<label hidden for="year">'),
+    controls.replace(
+      '<label for="year">Pay yearly</label>',
+      '<div style="display:none"><label for="year">Pay yearly</label></div>',
+    ),
+    controls.replace('Pay yearly</label>', '<span aria-hidden="true">Pay yearly</span></label>'),
+  ];
+  for (const html of variants) {
+    const r = extractPricing(html + notionCard('Plus', '$10 per member / month'), {
+      originalUrl: 'https://www.notion.com/pricing',
+    });
+    assert.equal(r.plans[0].offers[0].amount, '10');
+    assert.equal(r.plans[0].offers[0].commitment, 'unknown');
+    assert.equal(r.plans[0].offers[0].currency, 'USD');
+  }
+});
+test('Notion hidden currency descendants and their ancestors cannot resolve a dollar symbol', () => {
+  for (const replacement of [
+    '<span hidden>USD</span>',
+    '<span aria-hidden="true">USD</span>',
+    '<div style="display:none"><span>USD</span></div>',
+  ]) {
+    const html =
+      notionControls().replace('<span>USD</span>', replacement) + notionCard('Plus', '$10 per member / month');
+    const r = extractPricing(html, { originalUrl: 'https://www.notion.com/pricing' });
+    assert.equal(r.plans[0].offers[0].currency, null);
+    assert.equal(r.plans[0].offers[0].commitment, 'annual');
+    assert.ok(r.issues.some((issue) => issue.includes('Unknown currency')));
+  }
 });
