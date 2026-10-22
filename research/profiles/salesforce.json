@@ -1,0 +1,121 @@
+{
+  "id": "salesforce",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Salesforce, Inc.",
+    "kind": "business",
+    "foundedYear": 1999,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE:CRM"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Company founded 1999; public equity financing confirmed by official 2004 IPO history. Historical private-round investor identities not independently established from primary sources searched; no current ownership percentages asserted.",
+    "sources": [
+      "https://www.salesforce.com/news/stories/the-history-of-salesforce/",
+      "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter Suite",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": 300,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "$25/user/month billed monthly or annually; annual total $25\u00d712=$300. Free Suite separately offered.",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro Suite",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1200,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest team/business suite; $100/user/month billed annually \u00d712=$1200; quoting, forecasting and customization.",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Sales Cloud Max",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 6600,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Current highest named Sales Cloud tier shown, $550/user/month billed annually \u00d712=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted.",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Customer records, customized sales processes and connected application workflows create substantial replacement costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Lead routing and built-in sales flows connect prospect intake to opportunity management.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    },
+    {
+      "claim": "Quoting and forecasting in Pro Suite help teams plan revenue and produce sales proposals.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    },
+    {
+      "claim": "Higher Sales Cloud tiers connect CRM records with Slack, Tableau and agent workflows for coordinated selling.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.salesforce.com/sales/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

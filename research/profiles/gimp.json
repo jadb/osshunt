@@ -1,0 +1,204 @@
+{
+  "id": "gimp",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "GIMP community",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Community development verified. Founding year not pinned by current About summary; historical links not sufficient for exact start. Community project; equity-funding classification not applicable; donors are not equity investors.",
+    "sources": [
+      "https://www.gimp.org/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "GIMP",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Application/core available without a license subscription; optional distribution/hosting costs are separate.",
+      "sources": [
+        "https://www.gimp.org/downloads/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found.",
+      "sources": [
+        "https://www.gimp.org/downloads/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No named organizational edition for this exact product in checked official source; separate commercial products are not substituted.",
+      "sources": [
+        "https://www.gimp.org/downloads/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No separate enterprise edition identified for this exact product in checked official source.",
+      "sources": [
+        "https://www.gimp.org/downloads/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Long-running community and reusable image-editing workflows provide durable ecosystem value; open code limits exclusive technical defensibility.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.gimp.org/release-notes/gimp-3.2.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Linked layers refresh externally edited image assets inside a composition.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.gimp.org/release-notes/gimp-3.2.html"
+      ]
+    },
+    {
+      "claim": "Editable vector layers preserve path geometry during transforms.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.gimp.org/release-notes/gimp-3.2.html"
+      ]
+    },
+    {
+      "claim": "Nondestructive filter stacks and group effects enable revisable photo adjustments.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.gimp.org/release-notes/gimp-3.2.html"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "EdgeUno",
+          "url": "https://edgeuno.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "Artfiles New Media GmbH",
+          "url": "https://artfiles.org/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        },
+        {
+          "name": "dogado GmbH",
+          "url": "https://www.dogado.de/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.gimp.org/donating/sponsors.html"
+        }
+      ],
+      "notes": "Official page explicitly identifies download mirrors as in-kind sponsorship, updated 2026-10-19. Selected corporate mirror sponsors only; not exhaustive.",
+      "sources": [
+        "https://www.gimp.org/donating/sponsors.html"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "GIMP desktop binary and graphical desktop",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://www.gimp.org/downloads/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "GNU/Linux; Windows; macOS",
+        "notes": "Numeric hardware minimum not published in checked installation source; workload and file sizes determine practical needs.",
+        "sources": [
+          "https://www.gimp.org/downloads/"
+        ]
+      },
+      "notes": "Local desktop application, not a server deployment. No external database/cache/queue/SMTP service needed by documented binary installation. Build tools are separate from runtime.",
+      "sources": [
+        "https://www.gimp.org/downloads/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Flathub",
+          "url": "https://flathub.org/apps/org.gimp.GIMP",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official installation page links this distribution; not a hosted server deployment.",
+          "sources": [
+            "https://www.gimp.org/downloads/"
+          ]
+        },
+        {
+          "name": "Flatpak install command",
+          "url": "https://www.gimp.org/downloads/",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official single Flatpak install command; package installation, not one-click server hosting.",
+          "sources": [
+            "https://www.gimp.org/downloads/"
+          ]
+        }
+      ],
+      "notes": "Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included.",
+      "sources": [
+        "https://www.gimp.org/downloads/"
+      ]
+    }
+  }
+}

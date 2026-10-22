@@ -1,0 +1,121 @@
+{
+  "id": "adobe-premiere-pro",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Adobe Inc.",
+    "kind": "business",
+    "foundedYear": 1982,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:ADBE"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Adobe founded in 1982; company age rather than app launch. Official fast facts identifies 1986 IPO and NASDAQ ADBE. Public equity financed; historical venture investors not established in checked corporate sources, so investor list not exhaustive.",
+    "sources": [
+      "https://www.adobe.com/about-adobe.html",
+      "https://www.adobe.com/content/dam/cc/en/fast-facts/pdfs/fast-facts.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Premiere",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Official plan page localized to INR; current USD amount not independently established. Do not reuse earlier USD catalog amount.",
+      "sources": [
+        "https://www.adobe.com/products/premiere/plans.html"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://www.adobe.com/products/premiere/plans.html"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premiere for teams",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Business tab present; current US team price not established.",
+      "sources": [
+        "https://www.adobe.com/products/premiere/plans.html"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://www.adobe.com/products/premiere/plans.html"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Connected editing, media search and review workflows create learning and integration costs for established video teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/products/premiere.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Transcript-based editing creates rough cuts by editing text.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/products/premiere.html"
+      ]
+    },
+    {
+      "claim": "Media Intelligence searches footage by depicted objects and scenes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/products/premiere.html"
+      ]
+    },
+    {
+      "claim": "Enhance Speech improves dialogue and removes background noise inside the edit workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/products/premiere.html"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

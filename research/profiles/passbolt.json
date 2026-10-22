@@ -1,0 +1,247 @@
+{
+  "id": "passbolt",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Passbolt S.A.",
+    "kind": "business",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Airbridge Equity Partners",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "Expon Capital Digital Tech Fund",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "ScaleFund",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "Seeder",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "Dedicated",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "Bondi Capital",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "Carricha Capital",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      },
+      {
+        "name": "LBAN",
+        "source": "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html"
+      }
+    ],
+    "notes": "Company release dates incorporation to December 2016; idea/prototype history began earlier (2011/2013). Series A investors listed historically; current ownership percentages undisclosed.",
+    "sources": [
+      "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html",
+      "https://www.passbolt.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-hosted Community Edition",
+      "notes": "Unlimited users; commercial Pro features separate.",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro Edition",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 58.8,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 10,
+      "scope": "paid self-hosted Pro subscription",
+      "notes": "Explicit Most popular label; $4.90/user/month billed annually multiplied by 12.",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro Edition",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 58.8,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 10,
+      "scope": "paid self-hosted Pro subscription",
+      "notes": "Closest business plan; $4.90/user/month billed annually multiplied by 12.",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Edition",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "enterprise self-hosted offering",
+      "notes": "Custom quotation.",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Team-oriented cryptographic collaboration and workflow integrations can create organizational adoption costs; no categorical security superiority implied.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.passbolt.com/about",
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Shared folders and user/group management suit collaborative team credential workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    },
+    {
+      "claim": "Open API, CLI and browser extensions allow technical teams to automate secret workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    },
+    {
+      "claim": "Secret-key authentication with additional factors provides a credential-access model oriented to team security.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.passbolt.com/pricing/pro"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Passbolt S.A.",
+          "url": "https://www.passbolt.com/about",
+          "relationship": "business-steward",
+          "source": "https://www.passbolt.com/about"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://www.passbolt.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+          ]
+        },
+        {
+          "component": "SQL database in documented stack",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Docker deployment supplies database configuration; exact supported version range not resolved on checked page.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+          ]
+        },
+        {
+          "component": "SMTP server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+          ]
+        },
+        {
+          "component": "NTP time synchronization",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux container host",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+        ]
+      },
+      "notes": "Docker Compose is the recommended manual stack; SMTP/NTP explicitly required. Marketplace is a separate documented option.",
+      "sources": [
+        "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean Marketplace",
+          "url": "https://www.passbolt.com/docs/hosting/install/ce/digital-ocean/",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Official guide directs user to search Passbolt in DigitalOcean Marketplace.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/digital-ocean/"
+          ]
+        }
+      ],
+      "notes": "Officially documented install options; one-command is separate from browser one-click.",
+      "sources": [
+        "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+      ]
+    }
+  }
+}

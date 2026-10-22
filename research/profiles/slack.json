@@ -1,0 +1,129 @@
+{
+  "id": "slack",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Slack (Salesforce)",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "public-subsidiary",
+    "parent": "Salesforce, Inc. (NYSE: CRM)",
+    "stockSymbols": [
+      "NYSE:CRM"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel (historical)",
+        "source": "https://www.accel.com/companies/slack"
+      }
+    ],
+    "notes": "Slack acquired by Salesforce in 2021. Exact company founding year unresolved: official Slack FAQ says founded 2014 while investor Accel dates initial seed investment to 2009 in predecessor-era company. Accel is historical investor, not a claim of current ownership; WORK listing ended on acquisition.",
+    "sources": [
+      "https://slack.com/about",
+      "https://www.accel.com/companies/slack",
+      "https://slack.com/resources/why-use-slack/what-is-slack-and-how-does-it-work",
+      "https://www.salesforce.com/news/stories/salesforce-acquisitions/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 8.75,
+      "annualPrice": 87,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Regular $8.75/user/month monthly; $7.25/user/month annual \u00d712=$87. Introductory 50% promotion excluded.",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Rendered page repeats Recommended for you above every plan and labels Business+ Best value. No unique Most popular/Recommended tier established.",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business+",
+      "status": "published",
+      "monthlyPrice": 18,
+      "annualPrice": 180,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Regular $18/user/month monthly or $15/user/month annually \u00d712=$180; introductory discount excluded.",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise+",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Contact sales for pricing; no numeric enterprise price published.",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Persistent searchable conversation history plus a large app integration ecosystem create organizational switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://slack.com/about",
+        "https://slack.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Slack Connect shared channels keep partner and customer discussions connected across organizations.",
+      "basis": "assessment",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "claim": "Huddles, canvases and lists combine live discussion, shared context and task tracking.",
+      "basis": "assessment",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "claim": "Workflow Builder and custom app integrations automate actions from conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://slack.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

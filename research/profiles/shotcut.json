@@ -1,0 +1,193 @@
+{
+  "id": "shotcut",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Meltytech, LLC",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Meltytech identifies itself as Shotcut services provider, copyright holder and licensor. Shotcut originally announced November 2004; current rewrite later. Company founding year and financing/investors undisclosed in checked sources.",
+    "sources": [
+      "https://www.meltytech.com/",
+      "https://shotcut.org/FAQ/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Shotcut",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Application/core available without a license subscription; optional distribution/hosting costs are separate.",
+      "sources": [
+        "https://shotcut.org/download/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found.",
+      "sources": [
+        "https://shotcut.org/download/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No named organizational edition for this exact product in checked official source; separate commercial products are not substituted.",
+      "sources": [
+        "https://shotcut.org/download/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No separate enterprise edition identified for this exact product in checked official source.",
+      "sources": [
+        "https://shotcut.org/download/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Native format breadth and integrated audio/video tools create practical workflow value; open formats and code limit lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://shotcut.org/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Native mixed-format timelines combine frame rates and resolutions without import conversion.",
+      "basis": "assessment",
+      "sources": [
+        "https://shotcut.org/features/"
+      ]
+    },
+    {
+      "claim": "HDR/10-bit processing supports higher-dynamic-range video workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://shotcut.org/features/"
+      ]
+    },
+    {
+      "claim": "Subtitle creation/import/export and speech-to-text integrate caption work with editing.",
+      "basis": "assessment",
+      "sources": [
+        "https://shotcut.org/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Meltytech, LLC",
+          "url": "https://www.meltytech.com/",
+          "relationship": "business-steward",
+          "source": "https://www.meltytech.com/"
+        }
+      ],
+      "notes": "No corporate financial sponsor identified on checked credits/site; verified commercial steward/licensor included as fallback.",
+      "sources": [
+        "https://www.meltytech.com/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "Compatible graphics: OpenGL 2 Linux or Direct3D 11 Windows",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://shotcut.org/FAQ/"
+          ]
+        },
+        {
+          "component": "JACK runtime",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Some Linux portable installations",
+          "notes": "Download page warns JACK may need distribution installation; not an always-required server.",
+          "sources": [
+            "https://shotcut.org/download/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "SD 1\u00d72GHz; HD 4 cores; 4K 8 cores",
+        "memory": "SD 4GB; HD 8GB; 4K 16GB minimum",
+        "storage": null,
+        "os": "Windows 10 1809\u201311; macOS 12\u201327; 64-bit Linux glibc 2.35+",
+        "notes": "Current FAQ states minima per resolution; storage depends on media, no numeric minimum.",
+        "sources": [
+          "https://shotcut.org/FAQ/"
+        ]
+      },
+      "notes": "Local desktop application, not a server deployment. No external database/cache/queue/SMTP service needed by documented binary installation. Build tools are separate from runtime.",
+      "sources": [
+        "https://shotcut.org/FAQ/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Snap install command",
+          "url": "https://shotcut.org/download/",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official snap install shotcut --classic command; desktop installation with local runtime requirements, not hosted deployment.",
+          "sources": [
+            "https://shotcut.org/download/"
+          ]
+        }
+      ],
+      "notes": "Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included.",
+      "sources": [
+        "https://shotcut.org/FAQ/"
+      ]
+    }
+  }
+}

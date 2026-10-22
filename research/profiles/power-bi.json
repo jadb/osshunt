@@ -1,0 +1,121 @@
+{
+  "id": "power-bi",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Microsoft Corporation",
+    "kind": "business",
+    "foundedYear": 1975,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:MSFT"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "sources": [
+      "https://news.microsoft.com/facts-about-microsoft/",
+      "https://www.microsoft.com/en-us/investor/FAQ"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Power BI Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 168,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Paid entry $14/user/month yearly \u00d712 = $168. Free report authoring exists; paid sharing licensed separately.",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Power BI Premium Per User",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 288,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest advanced organizational tier; $24/user/month paid yearly \u00d712 = $288. Larger model sizes and more frequent refreshes.",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Microsoft Fabric capacity",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "capacity usage",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Variable capacity pricing; no fixed per-organization total inferred. Pro required for publishing; consumption without per-user licenses at qualifying F64/P1 capacities.",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared semantic metrics, reports and Fabric data integration raise migration effort for teams already standardized on this analytics stack.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Interactive visual reports let business users explore governed metrics without authoring SQL for each view.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+      ]
+    },
+    {
+      "claim": "OneLake integration brings cloud and on-premises data together for unified analysis.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+      ]
+    },
+    {
+      "claim": "Eligible Fabric Copilot features turn natural-language questions into visualizations and reports.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

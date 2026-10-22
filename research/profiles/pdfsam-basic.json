@@ -1,0 +1,172 @@
+{
+  "id": "pdfsam-basic",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Sober Lemur S.r.l.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official About provides Italian registered business details/share capital. Basic open-source project dates to 2006; company founding year unknown. Equity funding and investor names not disclosed in checked pages.",
+    "sources": [
+      "https://pdfsam.org/about/",
+      "https://pdfsam.org/pdfsam-basic/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "PDFsam Basic",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Application/core available without a license subscription; optional distribution/hosting costs are separate.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-basic/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-basic/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No named organizational edition for this exact product in checked official source; separate commercial products are not substituted.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-basic/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No separate enterprise edition identified for this exact product in checked official source.",
+      "sources": [
+        "https://pdfsam.org/pdfsam-basic/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Long-standing focused PDF assembly workflows create familiarity; narrow utility scope implies limited exclusive defensibility.",
+      "basis": "assessment",
+      "sources": [
+        "https://pdfsam.org/faq/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Mix tool interleaves odd/even scanner stacks with a reverse-order option.",
+      "basis": "assessment",
+      "sources": [
+        "https://pdfsam.org/faq/"
+      ]
+    },
+    {
+      "claim": "Splitting by bookmarks or file size automates structured document separation.",
+      "basis": "assessment",
+      "sources": [
+        "https://pdfsam.org/faq/"
+      ]
+    },
+    {
+      "claim": "Merge accepts per-file page ranges for precise assembly.",
+      "basis": "assessment",
+      "sources": [
+        "https://pdfsam.org/faq/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Sober Lemur S.r.l.",
+          "url": "https://pdfsam.org/",
+          "relationship": "business-steward",
+          "source": "https://pdfsam.org/about/"
+        }
+      ],
+      "notes": "Donation page checked; no named corporate donor identified. Verified publishing business included as steward, not invented sponsor.",
+      "sources": [
+        "https://pdfsam.org/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "PDFsam Basic packaged desktop runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official Windows/macOS/Linux installers/portable packages; no external database/cache/queue. Java runtime/version not independently verified here.",
+          "sources": [
+            "https://pdfsam.org/download-pdfsam-basic/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Windows 64-bit; macOS Intel/ARM64; Linux",
+        "notes": "Numeric hardware minimum not published in checked installation source; workload and file sizes determine practical needs.",
+        "sources": [
+          "https://pdfsam.org/download-pdfsam-basic/"
+        ]
+      },
+      "notes": "Local desktop application, not a server deployment. No external database/cache/queue/SMTP service needed by documented binary installation. Build tools are separate from runtime.",
+      "sources": [
+        "https://pdfsam.org/download-pdfsam-basic/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "not-applicable",
+      "options": [],
+      "notes": "Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included.",
+      "sources": [
+        "https://pdfsam.org/download-pdfsam-basic/"
+      ]
+    }
+  }
+}

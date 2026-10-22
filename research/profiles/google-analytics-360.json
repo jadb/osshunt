@@ -1,0 +1,127 @@
+{
+  "id": "google-analytics-360",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Google LLC",
+    "kind": "business",
+    "foundedYear": 1998,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Alphabet Inc. (NASDAQ: GOOG, GOOGL)",
+    "stockSymbols": [
+      "NASDAQ:GOOG",
+      "NASDAQ:GOOGL"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Andy Bechtolsheim (historical seed investor)",
+        "source": "https://about.google/company-info/our-story/"
+      }
+    ],
+    "notes": "1998 is Google incorporation, not each product launch. Alphabet is public parent; historical seed investor Andy Bechtolsheim identified, not represented as a current shareholder. No exhaustive current investor list attempted.",
+    "sources": [
+      "https://about.google/company-info/our-story/",
+      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Analytics 360",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Enterprise product; Talk to Sales. Free standard Analytics excluded from paid entry.",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Analytics 360",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational offering is the same enterprise Analytics 360; no separate business edition verified.",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Analytics 360",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Sales quote; no public numeric price verified.",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Google advertising integrations and accumulated cross-property measurement configuration create switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Unified site-and-app lifecycle measurement suits cross-channel customer analysis.",
+      "basis": "assessment",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "claim": "Unsampled results and enhanced intraday freshness suit large measurement datasets.",
+      "basis": "assessment",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    },
+    {
+      "claim": "Google advertising-platform integrations let marketing teams act on analyzed audiences and campaign insights.",
+      "basis": "assessment",
+      "sources": [
+        "https://marketingplatform.google.com/about/analytics-360/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

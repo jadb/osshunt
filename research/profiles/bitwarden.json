@@ -1,0 +1,213 @@
+{
+  "id": "bitwarden",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Bitwarden, Inc.",
+    "kind": "business",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "PSG",
+        "source": "https://bitwarden.com/blog/accelerating-value-for-bitwarden-users-bitwarden-raises-usd100-million/?trk=article-ssr-frontend-pulse_little-text-block"
+      },
+      {
+        "name": "Battery Ventures",
+        "source": "https://bitwarden.com/blog/accelerating-value-for-bitwarden-users-bitwarden-raises-usd100-million/?trk=article-ssr-frontend-pulse_little-text-block"
+      }
+    ],
+    "notes": "About page identifies Bitwarden, Inc. and founding in 2016; parent of 8bit Solutions LLC. 2022 minority growth investment led by PSG with Battery participation; no later ownership change established.",
+    "sources": [
+      "https://bitwarden.com/about/",
+      "https://bitwarden.com/blog/accelerating-value-for-bitwarden-users-bitwarden-raises-usd100-million/?trk=article-ssr-frontend-pulse_little-text-block"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free password-manager core/cloud account",
+      "notes": "Unlimited passwords/devices; separate paid features and infrastructure costs.",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Teams",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 48,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud organization",
+      "notes": "$4/user/month billed annually multiplied by 12; Teams is not the self-hosted Enterprise entitlement.",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 72,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "commercial enterprise organization; cloud or eligible self-host licensing",
+      "notes": "$6/user/month billed annually multiplied by 12; verify applicable self-host entitlements before purchase.",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Open-source client/server ecosystem and broad device coverage support trust and workflow retention, though credential export limits lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://bitwarden.com/about/",
+        "https://bitwarden.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Cross-platform apps and browser extensions keep password/passkey access consistent across devices.",
+      "basis": "assessment",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Bitwarden Send enables encrypted transmission to people without a Bitwarden account.",
+      "basis": "assessment",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Organization collections and permissions organize shared credentials for teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://bitwarden.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Bitwarden, Inc.",
+          "url": "https://bitwarden.com/about/",
+          "relationship": "business-steward",
+          "source": "https://bitwarden.com/about/"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://bitwarden.com/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine 26+ and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        },
+        {
+          "component": "MSSQL Express bundled, or supported external SQL Server",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Standard deployment",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        },
+        {
+          "component": "SMTP server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Invitations and email verification",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "x64 1.4GHz minimum; x64 2GHz dual core recommended",
+        "memory": "2GB minimum; 4GB recommended",
+        "storage": "12GB minimum; 25GB recommended",
+        "os": "Linux; separate Windows installation documented",
+        "notes": "Official standard-deployment minimum and recommended values.",
+        "sources": [
+          "https://bitwarden.com/help/install-on-premise-linux/"
+        ]
+      },
+      "notes": "Standard Docker deployment uses bundled SQL Server Express. Other Bitwarden deployment editions may differ; not conflated with Vaultwarden.",
+      "sources": [
+        "https://bitwarden.com/help/install-on-premise-linux/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean marketplace",
+          "url": "https://marketplace.digitalocean.com/apps/bitwarden",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official deployment guide links provider marketplace.",
+          "sources": [
+            "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        }
+      ],
+      "notes": "Officially documented install options; one-command is separate from browser one-click.",
+      "sources": [
+        "https://bitwarden.com/help/install-on-premise-linux/"
+      ]
+    }
+  }
+}

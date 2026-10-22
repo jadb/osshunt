@@ -1,0 +1,188 @@
+{
+  "id": "krita",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Krita Foundation",
+    "kind": "foundation",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "nonprofit",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Independent nonprofit foundation created 2012; KDE project began 1998. Foundation solicits donations and funds development; grants/sponsors not equity investors.",
+    "sources": [
+      "https://krita.org/en/about/krita-foundation/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Krita",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Application/core available without a license subscription; optional distribution/hosting costs are separate.",
+      "sources": [
+        "https://krita.org/en/download/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found.",
+      "sources": [
+        "https://krita.org/en/download/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No named organizational edition for this exact product in checked official source; separate commercial products are not substituted.",
+      "sources": [
+        "https://krita.org/en/download/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No separate enterprise edition identified for this exact product in checked official source.",
+      "sources": [
+        "https://krita.org/en/download/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A painting-specific brush ecosystem and artist workflows provide specialization relative to general photo editors.",
+      "basis": "assessment",
+      "sources": [
+        "https://krita.org/en/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multiple brush engines and stabilization provide fine control for digital painting.",
+      "basis": "assessment",
+      "sources": [
+        "https://krita.org/en/features/"
+      ]
+    },
+    {
+      "claim": "SVG vector tools and text templates support comic panels and speech bubbles.",
+      "basis": "assessment",
+      "sources": [
+        "https://krita.org/en/features/"
+      ]
+    },
+    {
+      "claim": "Custom workspaces, dockers and shortcuts adapt the interface to illustration workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://krita.org/en/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Intel",
+          "url": "https://www.intel.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "FossHub",
+          "url": "https://www.fosshub.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        }
+      ],
+      "notes": "Intel gold sponsor since 2022; FossHub monthly donor since 2019 on current sponsor page. Historical grants listed separately on page; not equity.",
+      "sources": [
+        "https://krita.org/en/sponsors/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "OpenGL 3.0 or Direct3D 11 graphics",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://krita.org/en/download/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "4GB minimum; 16GB recommended",
+        "storage": null,
+        "os": "Windows 8.1+; macOS 10.15+; Linux (store Windows edition 10+)",
+        "notes": "Published application minimum/recommended memory, GPU and OS; no CPU/storage minimum in checked download page.",
+        "sources": [
+          "https://krita.org/en/download/"
+        ]
+      },
+      "notes": "Local desktop application, not a server deployment. No external database/cache/queue/SMTP service needed by documented binary installation. Build tools are separate from runtime.",
+      "sources": [
+        "https://krita.org/en/download/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Flathub",
+          "url": "https://flathub.org/apps/org.kde.krita",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official download page links community-maintained Flatpak; free package separate from paid stores.",
+          "sources": [
+            "https://krita.org/en/download/"
+          ]
+        }
+      ],
+      "notes": "Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included.",
+      "sources": [
+        "https://krita.org/en/download/"
+      ]
+    }
+  }
+}

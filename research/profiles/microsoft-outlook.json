@@ -1,0 +1,121 @@
+{
+  "id": "microsoft-outlook",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Microsoft Corporation",
+    "kind": "business",
+    "foundedYear": 1975,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:MSFT"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "sources": [
+      "https://news.microsoft.com/facts-about-microsoft/",
+      "https://www.microsoft.com/en-us/investor/FAQ"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Microsoft 365 Basic",
+      "status": "published",
+      "monthlyPrice": 1.99,
+      "annualPrice": 19.99,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "person",
+      "minimumQuantity": null,
+      "scope": "consumer Microsoft 365 paid Outlook benefits",
+      "notes": "US $1.99 monthly or $19.99 yearly; includes ad-free Outlook and 100 GB mailbox. Free Outlook exists separately.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Microsoft 365 Apps for business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "organizational desktop Outlook plus Office apps",
+      "notes": "$10/user/month paid yearly \u00d712 = $120. Desktop Outlook included; this app bundle excludes custom-domain Exchange mail hosting.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Microsoft 365 E7",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1188,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Microsoft 365 enterprise suite with Teams",
+      "notes": "Advertised $99/user/month paid yearly \u00d712 = $1188; suite includes Teams, Outlook and Office, not standalone app pricing. Monthly billing amount not verified.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Combined mail, calendar, contacts and task habits across devices can make replacing Outlook disruptive for established users.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multiple email accounts and calendars in one interface help coordinate separate inboxes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook"
+      ]
+    },
+    {
+      "claim": "Integrated contacts and to-do lists connect correspondence to daily planning.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook"
+      ]
+    },
+    {
+      "claim": "Paid Basic mailbox security and expanded 100 GB mailbox help manage substantial personal email archives.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

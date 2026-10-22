@@ -7,13 +7,17 @@ Audience: IT/security teams managing employee application access and software te
 Use-case sources: [1](https://www.okta.com/pricing/), [2](https://auth0.com/pricing).
 
 - [Auth0](https://auth0.com/): USD 35/account/month, monthly billing. Displayed Essentials B2C price for 500 monthly active users; B2B and MAU selections change price; free plan also exists. [Pricing](https://auth0.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/auth0.md).
 - [Okta Workforce Identity](https://www.okta.com/): USD 6/seat/month, annual billing. Starter suite advertised per user/month, billed annually; standalone products/add-ons differ. [Pricing](https://www.okta.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/okta.md).
 
 ### Authelia — A
 
 Community product includes documented reverse-proxy authentication, MFA and OIDC. No commercial feature edition or project-hosted service identified; scope is narrower than full workforce lifecycle or customer identity suites.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/authelia/authelia/blob/e6cd61d33e9e23fe7e85e66e9937bddc67de466b/LICENSE), [edition evidence](https://www.authelia.com/), [hosting](https://www.authelia.com/), [repository](https://github.com/authelia/authelia).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/authelia.md).
 
 Repository: pushed 2026-10-21T12:33:32Z; latest commit 2026-10-21T04:35:43Z; latest published release v4.39.28 (2026-09-17T12:13:30Z). Quick analysis: 7.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
@@ -45,6 +49,8 @@ Repository: pushed 2026-10-21T12:54:22Z; latest commit 2026-10-21T12:54:21Z; lat
 Core MIT; root LICENSE explicitly carves out enterprise directory under separate terms. Paid administration/security integrations; community protocols and B2B/B2C login remain available. Vendor explicitly states no hosted service.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/goauthentik/authentik/blob/088d72e671c7ec5680cc101e80b4e6ce4f332424/LICENSE), [edition evidence](https://goauthentik.io/pricing/), [hosting](https://goauthentik.io/pricing/), [repository](https://github.com/goauthentik/authentik).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/authentik.md).
 
 Paid restrictions: Privileged access management and agent accounts; Google Workspace and Microsoft Entra ID integrations; Enhanced audit logging, scheduled offboarding and CSV reports; mTLS authentication and device trust integrations
 

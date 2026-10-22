@@ -107,6 +107,18 @@ def main():
             check = json.loads(rsx.read_text())
             if 'policy' in check:
                 product['health']['rsx'] = f"Quick analysis: {check['scores']['overall']}/10; balanced policy {'passed' if check['policy']['passed'] else 'failed'}. Automated repository signals; not a version-specific security audit."
+    profiles_dir = args.directory.parent / 'profiles'
+    for path in sorted(profiles_dir.glob('*.json')):
+        profile = json.loads(path.read_text())
+        product_id = profile['id']
+        if product_id not in products or path.stem != product_id:
+            raise SystemExit(f'Orphan or mismatched product profile: {path.name}')
+        organization = profile['organization']
+        year = organization['foundedYear']
+        age = int(profile['checkedAt'][:4]) - year if year is not None else None
+        organization['yearsActive'] = age
+        organization['yearsInBusiness'] = age if organization['kind'] == 'business' and organization['ageBasis'] == 'company-founded' else None
+        products[product_id]['profile'] = profile
     data['products'] = list(products.values())
     data['alternatives'] = list(edges.values())
     out = root / 'research/source'

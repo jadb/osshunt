@@ -1,0 +1,127 @@
+{
+  "id": "looker",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Google LLC",
+    "kind": "business",
+    "foundedYear": 1998,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Alphabet Inc. (NASDAQ: GOOG, GOOGL)",
+    "stockSymbols": [
+      "NASDAQ:GOOG",
+      "NASDAQ:GOOGL"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Andy Bechtolsheim (historical seed investor)",
+        "source": "https://about.google/company-info/our-story/"
+      }
+    ],
+    "notes": "1998 is Google incorporation, not each product launch. Alphabet is public parent; historical seed investor Andy Bechtolsheim identified, not represented as a current shareholder. No exhaustive current investor list attempted.",
+    "sources": [
+      "https://about.google/company-info/our-story/",
+      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance plus user licenses",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual platform commitment: Call sales. Includes one production instance, 10 Standard and 2 Developer users; extra users separately priced.",
+      "sources": [
+        "https://cloud.google.com/looker/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://cloud.google.com/looker/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Standard",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance plus user licenses",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational plan; positioned for teams under 50 users. Platform and named-user licensing both apply.",
+      "sources": [
+        "https://cloud.google.com/looker/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance plus user licenses",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual platform cost requires sales quote; not Looker Studio.",
+      "sources": [
+        "https://cloud.google.com/looker/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Version-controlled LookML metrics embedded across dashboards and applications make replacement more complex than replacing isolated charts.",
+      "basis": "assessment",
+      "sources": [
+        "https://cloud.google.com/looker"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Reusable LookML semantic metrics help keep business definitions consistent across reports.",
+      "basis": "assessment",
+      "sources": [
+        "https://cloud.google.com/looker"
+      ]
+    },
+    {
+      "claim": "Conversational analytics lets users explore governed metrics with natural-language questions.",
+      "basis": "assessment",
+      "sources": [
+        "https://cloud.google.com/looker"
+      ]
+    },
+    {
+      "claim": "Embedding APIs and SDKs support analytics inside existing customer applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://cloud.google.com/looker"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

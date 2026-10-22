@@ -8,7 +8,9 @@ Use-case sources: [1](https://workspace.google.com/pricing), [2](https://www.mic
 
 - [Dropbox](https://www.dropbox.com/plans): entry amount unverified/quote, quote billing. Business Standard displayed $15/user/month; billing selector state not reliably preserved by extraction, so no normalized entry amount claimed. Personal Plus $9.99 also shown. [Pricing](https://www.dropbox.com/plans).
 - [Google Workspace](https://workspace.google.com/pricing): USD 7/seat/month, annual billing. Business Starter standard USD $7/user/month with one-year commitment; temporary promotions excluded. [Pricing](https://workspace.google.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/google-workspace.md).
 - [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products): USD 5.4/seat/month, annual billing. Business Basic without Teams USD $5.40/user/month paid yearly; web/mobile apps. Basic with Teams $7; desktop apps require another plan. [Pricing](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products).
+  [Pricing tiers, organization and product reasons](../products/microsoft-365.md).
 
 ### Collabora Online (CODE) — A
 

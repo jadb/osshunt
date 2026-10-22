@@ -8,6 +8,7 @@ Use-case sources: [1](https://www.hubspot.com/pricing/sales), [2](https://www.sa
 
 - [HubSpot](https://www.hubspot.com/pricing/sales): entry amount unverified/quote, monthly billing. Sales Hub Starter currently displays $7/seat/month; promotion and billing conditions not fully exposed in extracted pricing page, so normalized amount left unknown. Free proprietary CRM tools also exist. [Pricing](https://www.hubspot.com/pricing/sales).
 - [Salesforce](https://www.salesforce.com/sales/pricing/): USD 25/seat/month, monthly billing. Starter Suite $25 USD/user/month, billed monthly or annually. Higher Sales Cloud editions and add-ons extra; Free Suite also exists. [Pricing](https://www.salesforce.com/sales/pricing/).
+  [Pricing tiers, organization and product reasons](../products/salesforce.md).
 
 ### SuiteCRM — A
 

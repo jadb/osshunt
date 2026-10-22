@@ -12,6 +12,10 @@ A sourced seed for discovering open-source alternatives to software businesses p
 
 Audience positions are editorial reach estimates, not measured market-size counts. A/B/C describe paid feature restrictions; S/U entries stay outside default OSS recommendations. Migration fit is recorded per mapping. A does not mean feature parity with the paid incumbent or free infrastructure.
 
+## Profile enrichment — in progress
+
+41/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
+
 ## Data
 
 `data/collections/categories.json`, `products.json`, `alternatives.json`: sorted arrays with stable IDs and adjacent generated JSON Schemas. Shared zod factories, reusable object loaders, RFC 7386 overrides and an Astro consumption example included. Snapshots build offline.

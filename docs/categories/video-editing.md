@@ -7,13 +7,17 @@ Audience: Video creators, filmmakers, editors and marketing teams.. Used across 
 Use-case sources: [1](https://kdenlive.org/), [2](https://www.apple.com/final-cut-pro/).
 
 - [Adobe Premiere Pro](https://www.adobe.com/products/premiere/plans.html): USD 22.99/seat/month, annual billing. US individual single-app plan; annual commitment, billed monthly; teams and multi-app plans cost more. [Pricing](https://www.adobe.com/products/premiere/plans.html).
+  [Pricing tiers, organization and product reasons](../products/adobe-premiere-pro.md).
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/): USD 299.99/account/one-time, one-time billing. US Mac App Store standalone Mac purchase; no recurring billing. This record does not price the iPad edition or optional bundles. [Pricing](https://apps.apple.com/us/app/final-cut-pro/id424389933).
+  [Pricing tiers, organization and product reasons](../products/final-cut-pro.md).
 
 ### Kdenlive — A
 
 Tier A: free local desktop editor with the documented editing feature set available in the open application; no paid feature edition identified on official feature/download pages. GPLv3 COPYING verified at default-branch SHA. selfHostable=false denotes a desktop application, locally operable; hostedOffer=false reflects downloadable software with no first-party hosted editing service identified. License field retains the GitHub GPL-3.0 identifier; file-level only/or-later scope not fully audited.
 
 License: GPL-3.0; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/KDE/kdenlive/blob/f39d75b27fe2ca7395e40663e4e2ec6561d75c4d/COPYING), [edition evidence](https://kdenlive.org/), [hosting](https://kdenlive.org/download/), [repository](https://github.com/KDE/kdenlive).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/kdenlive.md).
 
 Repository: pushed 2026-10-21T22:07:31Z; latest commit 2026-10-21T16:20:26Z; latest published release 26.08.2 (2026-10-13). Quick analysis: 4.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
@@ -25,6 +29,8 @@ Repository: pushed 2026-10-21T22:07:31Z; latest commit 2026-10-21T16:20:26Z; lat
 Tier A: free local desktop editor with the documented editing feature set available in the open application; no paid feature edition identified on official feature/download pages. GPLv3 COPYING verified at default-branch SHA. selfHostable=false denotes a desktop application, locally operable; hostedOffer=false reflects downloadable software with no first-party hosted editing service identified. License field retains the GitHub GPL-3.0 identifier; file-level only/or-later scope not fully audited.
 
 License: GPL-3.0; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/mltframework/shotcut/blob/0d30d391a8fc9a68c1c82b3651afa4c5c069a6e3/COPYING), [edition evidence](https://shotcut.org/features/), [hosting](https://shotcut.org/download/), [repository](https://github.com/mltframework/shotcut).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/shotcut.md).
 
 Repository: pushed 2026-10-21T19:08:18Z; latest commit 2026-10-21T19:01:59Z; latest published release v26.9.27 (2026-09-28T00:29:29Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 

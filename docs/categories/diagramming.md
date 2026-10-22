@@ -7,7 +7,9 @@ Audience: Business teams, educators, engineers and developers communicating proc
 Use-case sources: [1](https://www.drawio.com/docs/about/), [2](https://mermaid.js.org/intro/), [3](https://lucid.co/lucidchart/trial).
 
 - [Lucidchart](https://lucid.co/lucidchart): entry amount unverified/quote, quote billing. Official Individual trial page advertises $9/month plus tax; billing commitment not exposed by accessible pricing page. Confirm checkout terms; amount left null. [Pricing](https://lucid.co/lucidchart/trial).
+  [Pricing tiers, organization and product reasons](../products/lucidchart.md).
 - [Microsoft Visio](https://www.microsoft.com/en-us/microsoft-365/visio): USD 5/seat/month, annual billing. Visio Plan 1, $5 per user/month paid yearly; web and Teams apps. Desktop included in higher Plan 2. [Pricing](https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing).
+  [Pricing tiers, organization and product reasons](../products/microsoft-visio.md).
 
 ### draw.io — A
 

@@ -1,0 +1,123 @@
+{
+  "id": "lucidchart",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Lucid Software Inc.",
+    "kind": "business",
+    "foundedYear": 2010,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Spectrum Equity",
+        "source": "https://lucid.co/about"
+      }
+    ],
+    "notes": "Official About dates cofounding to 2010 and lists investors/board representation. Private-company classification based on company presentation; full current cap table not disclosed.",
+    "sources": [
+      "https://lucid.co/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Individual",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Trial offer identified; complete current billing commitment and price not captured.",
+      "sources": [
+        "https://lucid.co/lucidchart/trial"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://lucid.co/pricing/lucidchart"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Organizational tier price not recoverable from empty pricing extraction.",
+      "sources": [
+        "https://lucid.co/pricing/lucidchart"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Pricing page extraction empty; cannot verify current enterprise terms.",
+      "sources": [
+        "https://lucid.co/pricing/lucidchart"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Live data-linked visual documentation and established integrations create workflow-specific replacement costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://lucid.co/lucidchart"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Spreadsheet data linking generates diagrams from maintained data sources.",
+      "basis": "assessment",
+      "sources": [
+        "https://lucid.co/lucidchart"
+      ]
+    },
+    {
+      "claim": "Conditional formatting makes data patterns visible within diagrams.",
+      "basis": "assessment",
+      "sources": [
+        "https://lucid.co/lucidchart"
+      ]
+    },
+    {
+      "claim": "UML sequence diagrams can be generated from editable text markup.",
+      "basis": "assessment",
+      "sources": [
+        "https://lucid.co/lucidchart"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

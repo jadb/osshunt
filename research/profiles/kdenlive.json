@@ -1,0 +1,185 @@
+{
+  "id": "kdenlive",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Kdenlive / KDE community",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Official homepage identifies Made by KDE; company founding not applicable. Precise project start not established. Community project; equity-funding classification not applicable; donors are not equity investors.",
+    "sources": [
+      "https://kdenlive.org/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Kdenlive",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Application/core available without a license subscription; optional distribution/hosting costs are separate.",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found.",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No named organizational edition for this exact product in checked official source; separate commercial products are not substituted.",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No separate enterprise edition identified for this exact product in checked official source.",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Established nonlinear editing workflows and community-maintained format integration create category-specific accumulated expertise.",
+      "basis": "assessment",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Nested sequences help manage complex video timelines.",
+      "basis": "assessment",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    },
+    {
+      "claim": "Proxy clips and preview scaling keep large footage workable during editing.",
+      "basis": "assessment",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    },
+    {
+      "claim": "Multicam and three-point editing support structured narrative assembly.",
+      "basis": "assessment",
+      "sources": [
+        "https://kdenlive.org/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Official fund page checked; no named corporate donor identified in accessible text. KDE community is not automatically a business sponsor.",
+      "sources": [
+        "https://kdenlive.org/fund/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "Compatible OpenGL 2.0 graphics (DirectX option on Windows)",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.kdenlive.org/en/getting_started/installation.html"
+          ]
+        },
+        {
+          "component": "Proxy/preview media files",
+          "necessity": "optional",
+          "group": null,
+          "condition": "For improving preview performance",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.kdenlive.org/en/getting_started/installation.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "SD: 1\u00d72GHz; HD: 4 cores; 4K: 8 cores",
+        "memory": "SD 4GB; HD 8GB; 4K 16GB minimum",
+        "storage": null,
+        "os": "64-bit Linux; Windows 10 1809+; Apple Silicon macOS 13+",
+        "notes": "Published minimum hardware by resolution in 26.08 manual. Storage amount not specified.",
+        "sources": [
+          "https://docs.kdenlive.org/en/getting_started/installation.html"
+        ]
+      },
+      "notes": "Local desktop application, not a server deployment. No external database/cache/queue/SMTP service needed by documented binary installation. Build tools are separate from runtime.",
+      "sources": [
+        "https://docs.kdenlive.org/en/getting_started/installation.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Flatpak distribution",
+          "url": "https://flathub.org/apps/org.kde.kdenlive",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official installation page links this distribution; not a hosted server deployment.",
+          "sources": [
+            "https://docs.kdenlive.org/en/getting_started/installation.html"
+          ]
+        }
+      ],
+      "notes": "Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included.",
+      "sources": [
+        "https://docs.kdenlive.org/en/getting_started/installation.html"
+      ]
+    }
+  }
+}

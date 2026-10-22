@@ -28,6 +28,7 @@ for (const c of [...categories].sort((a,b) => a.audienceRank-b.audienceRank)) {
   for (const p of paid) {
     const price = p.pricing;
     catalog += `- [${p.name}](${p.url}): ${price.entryAmount === null ? 'entry amount unverified/quote' : `${price.currency} ${price.entryAmount}/${price.unit}/${price.period}`}, ${price.billing} billing. ${price.note} [Pricing](${price.source}).\n`;
+    if (p.profile) catalog += `  [Pricing tiers, organization and product reasons](../products/${p.id}.md).\n`;
   }
   catalog += '\n';
   const candidates = products.filter(p => p.kind === 'oss' && p.categories.includes(c.id))
@@ -36,6 +37,7 @@ for (const c of [...categories].sort((a,b) => a.audienceRank-b.audienceRank)) {
     catalog += `### ${p.name} — ${p.tier}\n\n${p.classificationReason}\n\n`;
     catalog += `License: ${p.license}; identified core OSI: ${p.osi ? 'yes' : 'no/unresolved'}; self-hostable: ${p.selfHostable ? 'yes' : 'no'}; first-party hosted offer: ${p.hostedOffer ? 'yes' : 'no'}. `;
     catalog += `[License](${p.sources.license}), [edition evidence](${p.sources.features}), [hosting](${p.sources.hosting}), [repository](${p.repo}).\n\n`;
+    if (p.profile) catalog += `[Sponsors, requirements, installation options, pricing and product profile](../products/${p.id}.md).\n\n`;
     if (p.locked.length) catalog += `Paid restrictions: ${p.locked.join('; ')}\n\n`;
     if (p.serviceLimitations?.length) catalog += `Service costs/limits: ${p.serviceLimitations.join('; ')}\n\n`;
     catalog += `Repository: pushed ${p.health.pushedAt ?? 'unknown'}; latest commit ${p.health.lastCommitAt ?? 'unknown'}; latest published release ${p.health.lastRelease ?? 'unverified or unavailable'} (${p.health.lastReleaseAt ?? 'n/a'}). ${p.health.rsx}\n\n`;

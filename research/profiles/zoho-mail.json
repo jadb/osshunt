@@ -1,0 +1,119 @@
+{
+  "id": "zoho-mail",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Zoho Corporation",
+    "kind": "business",
+    "foundedYear": 1996,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "1996 AdventNet company founding, not Zoho Mail launch. Official company timeline and privacy commitment confirm private bootstrapped company with no outside investors; no parent or public listing identified.",
+    "sources": [
+      "https://www.zoho.com/pt-br/aboutus.html?sredirect=true",
+      "https://www.zoho.com/privacy-commitment.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Mail Lite (5 GB)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 12,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Official USD search-rendered comparison lists US$1/user/month billed annually \u00d712=$12; no monthly plan. Base page omitted numeric prices in rendered extraction.",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Mail Premium",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 48,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest mail-only organizational advanced plan; US$4/user/month annually \u00d712=$48; no monthly plan. Workplace bundles are a broader scope.",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Workplace Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Zoho Workplace enterprise suite including Mail",
+      "notes": "Contact sales for custom pricing; broader Workplace suite with Mail pooled storage and custom limits, not mail-only price.",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Connections among mail, collaborative tasks and Zoho business applications can create workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Email sharing and folder delegation coordinate team work without forwarding every message.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
+      ]
+    },
+    {
+      "claim": "Shared calendars and collaborative ToDo connect correspondence to scheduling and task ownership.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    },
+    {
+      "claim": "Mail Premium retention and eDiscovery support finding and preserving business correspondence.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zoho.com/mail/zohomail-pricing.html"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -1,0 +1,139 @@
+{
+  "id": "figjam",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Figma, Inc.",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE:FIG"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Index Ventures",
+        "source": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001579878/4861e748-6e2b-43d4-874d-b7ef6e7a262f.pdf"
+      },
+      {
+        "name": "Greylock Partners",
+        "source": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001579878/4861e748-6e2b-43d4-874d-b7ef6e7a262f.pdf"
+      },
+      {
+        "name": "Kleiner Perkins",
+        "source": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001579878/4861e748-6e2b-43d4-874d-b7ef6e7a262f.pdf"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001579878/4861e748-6e2b-43d4-874d-b7ef6e7a262f.pdf"
+      }
+    ],
+    "notes": "Company founded 2012; FigJam launched later. Figma 2025 IPO announced NYSE FIG, independent public company. S-1 identifies named historical equity holders; current ownership percentages not asserted.",
+    "sources": [
+      "https://investor.figma.com/overview/default.aspx",
+      "https://investor.figma.com/news-events/news/news-details/2025/Figma-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001579878/4861e748-6e2b-43d4-874d-b7ef6e7a262f.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Professional Collab seat",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 36,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "collab seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual-billed monthly rate multiplied by 12; cancellable-monthly amount not established. Starter free limited access also offered.",
+      "sources": [
+        "https://www.figma.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://www.figma.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Organization Collab seat",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "collab seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Organization is named organizational plan; annual-billed rate \u00d712.",
+      "sources": [
+        "https://www.figma.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Collab seat",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "collab seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual-billed seat rate \u00d712; sales contact also offered.",
+      "sources": [
+        "https://www.figma.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared team assets, libraries and interconnected collaboration workflows create switching costs as adoption spreads.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.figma.com/figjam/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Shared sticky-note brainstorming lets participants build ideas simultaneously.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.figma.com/figjam/"
+      ]
+    },
+    {
+      "claim": "Connectors and diagramming organize brainstorms into structured flows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.figma.com/figjam/"
+      ]
+    },
+    {
+      "claim": "Asana, Jira and GitHub integrations turn workshop output into project work.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.figma.com/figjam/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

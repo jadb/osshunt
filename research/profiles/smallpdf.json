@@ -1,0 +1,118 @@
+{
+  "id": "smallpdf",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Smallpdf AG",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "About dates Smallpdf origin to 2013. Checked company/pricing sources do not establish equity investors, financing model or complete current ownership; no bootstrap inference.",
+    "sources": [
+      "https://smallpdf.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Paid Pro exists; numeric prices render ellipses in extracted page. Free limited-access tier also offered.",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 2,
+      "scope": "paid product",
+      "notes": "2\u201319 seats, centralized billing and member management; numeric price not rendered.",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Business",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 20,
+      "scope": "paid product",
+      "notes": "Closest larger-organization tier; custom offer for 20+ users, not named Enterprise.",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad PDF task coverage and high user familiarity can defend distribution, though individual utilities are readily substitutable.",
+      "basis": "assessment",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "OCR and editable text go beyond page arrangement.",
+      "basis": "assessment",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    },
+    {
+      "claim": "Strong compression and batch document tools handle repeated file-processing work.",
+      "basis": "assessment",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    },
+    {
+      "claim": "Integrated signature tools combine document preparation and signing.",
+      "basis": "assessment",
+      "sources": [
+        "https://smallpdf.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

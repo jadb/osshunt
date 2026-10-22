@@ -7,6 +7,7 @@ Audience: Businesses holding internal meetings, customer calls, and remote train
 Use-case sources: [1](https://www.zoom.com/en/products/virtual-meetings/), [2](https://workspace.google.com/pricing).
 
 - [Google Meet](https://workspace.google.com/pricing): USD 7/seat/month, annual billing. Workspace Business Starter standard USD/user/month with one-year commitment, billed monthly; bundled suite, not standalone Meet. Promotions excluded. [Pricing](https://workspace.google.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/google-meet.md).
 - [Zoom](https://zoom.us/pricing): USD 14.16/seat/month, annual billing. Workplace Pro displayed annual-equivalent USD/user/month; monthly plan $16.99. Basic free plan exists. Tax excluded. [Pricing](https://zoom.us/pricing).
 
 ### Jitsi Meet — A

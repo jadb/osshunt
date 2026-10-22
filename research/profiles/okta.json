@@ -1,0 +1,123 @@
+{
+  "id": "okta",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Okta, Inc.",
+    "kind": "business",
+    "foundedYear": 2009,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ: OKTA"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Co-founder biography dates company founding to 2009. Current financial release verifies NASDAQ listing. Historical venture investor names not resolved from checked official funding queries; investor list left empty rather than implying no investors.",
+    "sources": [
+      "https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/",
+      "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-Second-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "https://www.okta.com/company/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 72,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "$6/user/month billed annually multiplied by 12; suite, not an individual SSO module.",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 204,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Explicit Most Popular in comparison table; $17/user/month billed annually multiplied by 12.",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 204,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Closest named organizational suite; $17/user/month billed annually multiplied by 12.",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Inquire for pricing.",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad application/directory integrations and embedded employee lifecycle processes create enterprise switching costs; this assessment does not imply universal product superiority.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.okta.com/company/",
+        "https://www.okta.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Universal Directory brings profiles from AD, LDAP and HR systems into a unified identity model.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Lifecycle Management and Workflows automate employee onboarding, offboarding and access changes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Access Gateway extends identity policies to existing on-premises applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.okta.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

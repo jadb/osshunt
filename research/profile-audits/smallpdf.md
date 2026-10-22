@@ -1,0 +1,5 @@
+> Temporary paths normalized; local setup omitted. Exact original retained locally.
+
+# Smallpdf — 2026-10-21
+Web opens: https://smallpdf.com/pricing, https://smallpdf.com/about. Searches: site.smallpdf.com investors ownership funding; site.smallpdf.com company acquisition investors. Primary company-issued 2026 release indicates sale of subsidiary PDF Tools, not sale of Smallpdf; do not infer Apryse ownership. Prices render ellipses. Decision: funding/investors remain unknown; Team minimum 2, Business minimum 20 verified.
+Decision: persisted profile and claim ledger; unknowns remain explicit, all assessments based on cited functional facts.

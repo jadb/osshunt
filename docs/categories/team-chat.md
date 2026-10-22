@@ -7,7 +7,9 @@ Audience: Employees and external collaborators across business functions and ind
 Use-case sources: [1](https://slack.com/pricing), [2](https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options).
 
 - [Microsoft Teams](https://www.microsoft.com/microsoft-teams): USD 4/seat/month, annual billing. Teams Essentials US annual subscription; Microsoft 365 bundles and enterprise editions differ. [Pricing](https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options).
+  [Pricing tiers, organization and product reasons](../products/microsoft-teams.md).
 - [Slack](https://slack.com): USD 7.25/seat/month, annual billing. Pro standard annual price per user/month; free plan available; temporary introductory discount excluded. [Pricing](https://slack.com/intl/en-us/pricing).
+  [Pricing tiers, organization and product reasons](../products/slack.md).
 
 ### Zulip — A
 

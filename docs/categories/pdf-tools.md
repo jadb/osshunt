@@ -7,13 +7,17 @@ Audience: People handling forms, reports, scans and other PDF documents at home,
 Use-case sources: [1](https://www.adobe.com/acrobat/pricing.html), [2](https://pdfsam.org/pdfsam-basic/), [3](https://smallpdf.com/pricing).
 
 - [Adobe Acrobat](https://www.adobe.com/acrobat.html): USD 14.99/seat/month, annual billing. Acrobat Standard individual plan, annual commitment billed monthly; Pro US$19.99/month. [Pricing](https://www.adobe.com/acrobat/pricing.html).
+  [Pricing tiers, organization and product reasons](../products/adobe-acrobat.md).
 - [Smallpdf](https://smallpdf.com/): entry amount unverified/quote, annual billing. Pro annual billing offered; numeric price failed to render in official page extraction (ellipsis). [Pricing](https://smallpdf.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/smallpdf.md).
 
 ### PDF Arranger — A
 
 GPL desktop source application with page split/merge, rotate, crop and rearrange functions; source installation and binary downloads documented. No commercial edition or paid gate found in the official product README. Scope is page arrangement, not full PDF content editing.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/pdfarranger/pdfarranger/blob/fb76e09762677fe5c3e205bb89ca474500fce53c/COPYING), [edition evidence](https://github.com/pdfarranger/pdfarranger#about), [hosting](https://github.com/pdfarranger/pdfarranger#install-from-source), [repository](https://github.com/pdfarranger/pdfarranger).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/pdf-arranger.md).
 
 Service costs/limits: Local GTK desktop app; no vendor hosted service documented.
 
@@ -26,6 +30,8 @@ Repository: pushed 2026-10-01T02:15:06Z; latest commit 2026-09-30T16:26:13Z; lat
 The named Basic desktop edition runs locally without watermarks or file-size limits; all six Basic tools are free. Enhanced and Visual are distinct commercial products, not extra Basic OSS modules. Basic handles page manipulation rather than full text editing, OCR or conversion.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/torakiki/pdfsam/blob/4e4dd4dc5b14a1d328837c2b549fbe0b43cec83f/LICENSE), [edition evidence](https://pdfsam.org/pdfsam-basic/), [hosting](https://pdfsam.org/pdfsam-basic/), [repository](https://github.com/torakiki/pdfsam).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/pdfsam-basic.md).
 
 Service costs/limits: Local desktop app, not a hosted web service or self-hosted server.
 

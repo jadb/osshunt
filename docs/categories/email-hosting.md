@@ -7,9 +7,13 @@ Audience: Organizations operating custom-domain employee email, and IT administr
 Use-case sources: [1](https://workspace.google.com/pricing), [2](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products), [3](https://docs.mailcow.email/), [4](https://www.fastmail.com/pricing/us/), [5](https://www.zoho.com/mail/zohomail-pricing.html).
 
 - [Fastmail Business](https://www.fastmail.com/pricing/us/): USD 3/seat/month, annual billing. Basic USD 3/user/month billed yearly ($36/user/year); custom domains require at least one Standard or Professional user (Standard USD 5/user/month annually). Basic lacks third-party mail-client access; compare actual account mix. [Pricing](https://www.fastmail.com/pricing/us/).
+  [Pricing tiers, organization and product reasons](../products/fastmail.md).
 - [Google Workspace](https://workspace.google.com/pricing): USD 7/seat/month, annual billing. Business Starter standard USD $7/user/month with one-year commitment; temporary promotions excluded. [Pricing](https://workspace.google.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/google-workspace.md).
 - [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products): USD 5.4/seat/month, annual billing. Business Basic without Teams USD $5.40/user/month paid yearly; web/mobile apps. Basic with Teams $7; desktop apps require another plan. [Pricing](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products).
+  [Pricing tiers, organization and product reasons](../products/microsoft-365.md).
 - [Zoho Mail](https://www.zoho.com/mail/zohomail-pricing.html): entry amount unverified/quote, annual billing. Mail Lite is paid per user/month, billed annually with no monthly plan. Numeric USD price absent from rendered source; free plan has separate 5-user and protocol limits. [Pricing](https://www.zoho.com/mail/zohomail-pricing.html).
+  [Pricing tiers, organization and product reasons](../products/zoho-mail.md).
 
 ### mailcow: dockerized — A
 

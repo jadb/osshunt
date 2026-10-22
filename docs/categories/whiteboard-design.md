@@ -7,8 +7,11 @@ Audience: Cross-functional workshop participants, product teams, designers and e
 Use-case sources: [1](https://miro.com/pricing/), [2](https://www.figma.com/pricing/).
 
 - [FigJam](https://www.figma.com/figjam/): USD 3/seat/month, annual billing. Professional Collab seat monthly equivalent with annual billing; covers FigJam, not Figma Design editing. [Pricing](https://www.figma.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/figjam.md).
 - [Figma Design](https://www.figma.com): USD 16/seat/month, annual billing. Professional Full seat monthly equivalent with annual billing; free Starter also exists. [Pricing](https://www.figma.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/figma.md).
 - [Miro](https://miro.com): USD 8/seat/month, annual billing. Starter per member monthly equivalent, billed yearly; free plan also exists. [Pricing](https://miro.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/miro.md).
 
 ### Penpot — B
 

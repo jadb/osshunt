@@ -1,0 +1,219 @@
+{
+  "id": "authentik",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Authentik Security Inc.",
+    "kind": "business",
+    "foundedYear": 2022,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Open Core Ventures",
+        "source": "https://goauthentik.io/blog/2022-11-02-the-next-step-for-authentik/"
+      }
+    ],
+    "notes": "2022 company launch distinct from earlier community project. Delaware public benefit corporation is a private business, not a publicly traded company or nonprofit. Open Core Ventures funding explicitly announced.",
+    "sources": [
+      "https://goauthentik.io/blog/2022-11-02-the-next-step-for-authentik/",
+      "https://goauthentik.io/assets/files/PBC-2024-5bacf32c0b0184d69c911a3bf1b2b8a0.pdf/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-hosted open-source core",
+      "notes": "Core software free; enterprise functionality separate.",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted enterprise subscription",
+      "notes": "Closest organizational plan; $5/internal user/month billed annually multiplied by 12. External users $0.02/month billed annually ($0.24/year); service accounts no cost.",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Plus",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 20000,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted enterprise contract",
+      "notes": "Published starting annual amount; final contract/custom terms require sales.",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Protocol breadth and configurable identity workflows may accumulate integration switching costs; public-benefit commitments help preserve community participation.",
+      "basis": "assessment",
+      "sources": [
+        "https://goauthentik.io/pricing/",
+        "https://goauthentik.io/blog/2022-11-02-the-next-step-for-authentik/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "OIDC, SAML, LDAP, SCIM, RADIUS and proxy protocols connect a diverse application estate.",
+      "basis": "assessment",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "claim": "Browser-based RDP/SSH access brings remote administration into the identity workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    },
+    {
+      "claim": "Custom attributes and multi-account switching accommodate different user personas and organizational data.",
+      "basis": "assessment",
+      "sources": [
+        "https://goauthentik.io/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Authentik Security Inc.",
+          "url": "https://goauthentik.io/blog/2022-11-02-the-next-step-for-authentik/",
+          "relationship": "business-steward",
+          "source": "https://goauthentik.io/blog/2022-11-02-the-next-step-for-authentik/"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://goauthentik.io/blog/2022-11-02-the-next-step-for-authentik/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Compose v2 or Podman",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container deployment",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.goauthentik.io/install-config/install/docker-compose/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.goauthentik.io/install-config/install/docker-compose/"
+          ]
+        },
+        {
+          "component": "authentik server and worker processes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.goauthentik.io/install-config/install/docker-compose/"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications/account recovery flows",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.goauthentik.io/install-config/install/docker-compose/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 cores minimum",
+        "memory": "2GB minimum",
+        "storage": null,
+        "os": "Container host; Linux/macOS commands documented",
+        "notes": "Compose documentation specifies 2 CPU cores and 2GB RAM for small-scale production/test path.",
+        "sources": [
+          "https://docs.goauthentik.io/install-config/install/docker-compose/"
+        ]
+      },
+      "notes": "Current Compose guide documents PostgreSQL and server/worker deployment. Raw compose.yml fetch rejected unsupported YAML content type; exact auxiliary service/version matrix not established here; no legacy Redis dependency inferred.",
+      "sources": [
+        "https://docs.goauthentik.io/install-config/install/docker-compose/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "AWS CloudFormation",
+          "url": "https://docs.goauthentik.io/install-config/install/aws/",
+          "kind": "one-click",
+          "officialStatus": "first-party",
+          "notes": "Official template deploys AWS stack; AWS account/certificate/domain prerequisites apply.",
+          "sources": [
+            "https://docs.goauthentik.io/install-config/install/aws/"
+          ]
+        }
+      ],
+      "notes": "Officially documented install options; one-command is separate from browser one-click.",
+      "sources": [
+        "https://docs.goauthentik.io/install-config/install/docker-compose/"
+      ]
+    }
+  }
+}

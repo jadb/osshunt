@@ -7,9 +7,12 @@ Audience: Business analysts, data teams, managers and operational teams consumin
 Use-case sources: [1](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing), [2](https://www.tableau.com/pricing), [3](https://cloud.google.com/looker/pricing), [4](https://www.metabase.com/blog/making-bi-migration-suck-less).
 
 - [Looker](https://cloud.google.com/looker): entry amount unverified/quote, quote billing. Annual platform price requires sales quote; named user licensing also applies. Looker, distinct from Looker Studio. [Pricing](https://cloud.google.com/looker/pricing).
+  [Pricing tiers, organization and product reasons](../products/looker.md).
 - [Metabase Pro](https://www.metabase.com/): USD 575/organization/month, monthly billing. Self-hosted Pro $575/month, first 10 users included; additional users $12/month; annual discount available. [Pricing](https://www.metabase.com/pricing).
 - [Power BI](https://powerbi.microsoft.com/): USD 14/seat/month, annual billing. Pro USD14/user/month paid yearly; free authoring exists; embedding/capacity priced separately. [Pricing](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing).
+  [Pricing tiers, organization and product reasons](../products/power-bi.md).
 - [Tableau](https://www.tableau.com/): USD 15/seat/month, annual billing. Tableau Standard advertised starting price; every deployment requires at least one Creator license, so this is not full deployment cost. [Pricing](https://www.tableau.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/tableau.md).
 
 ### Apache Superset — A
 

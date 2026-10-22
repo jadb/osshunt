@@ -1,0 +1,118 @@
+{
+  "id": "final-cut-pro",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Apple Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Official investor FAQ confirms publicly held shares/dividends. Founding year and historical venture investors not established by checked primary pages; no guessed investor roster.",
+    "sources": [
+      "https://investor.apple.com/faq/default.aspx"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Final Cut Pro for Mac",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": 299.99,
+      "currency": "USD",
+      "unit": "Apple Account",
+      "minimumQuantity": null,
+      "scope": "standalone Mac purchase",
+      "notes": "January 2026 Apple announcement retains standalone $299.99 Mac purchase; optional Creator Studio bundle $12.99 monthly or $129 yearly is a separate scope.",
+      "sources": [
+        "https://www.apple.com/newsroom/2026/01/introducing-apple-creator-studio-an-inspiring-collection-of-creative-apps/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No named organizational product tier on checked product/announcement pages; volume procurement not evaluated.",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No enterprise edition identified on checked product/announcement pages.",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Deep integration with Apple creative devices and established editing workflows creates ecosystem switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Magnetic timeline supports rapid rearrangement without manual track collision management.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    },
+    {
+      "claim": "Integrated editing, audio, motion graphics and color tools cover finishing in one workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    },
+    {
+      "claim": "Apple-device workflow spans Mac and iPad for mobile and desktop editing.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

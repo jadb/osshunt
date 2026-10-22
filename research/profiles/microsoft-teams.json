@@ -1,0 +1,121 @@
+{
+  "id": "microsoft-teams",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Microsoft Corporation",
+    "kind": "business",
+    "foundedYear": 1975,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:MSFT"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "sources": [
+      "https://news.microsoft.com/facts-about-microsoft/",
+      "https://www.microsoft.com/en-us/investor/FAQ"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Teams Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 48,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "$4/user/month paid yearly \u00d712 = $48; no monthly-billed price verified.",
+      "sources": [
+        "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Microsoft 365 Business Basic",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 84,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Microsoft 365 suite including Teams",
+      "notes": "$7/user/month paid yearly \u00d712 = $84; broader email and web-app suite, not standalone Teams.",
+      "sources": [
+        "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Microsoft 365 E7",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1188,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Microsoft 365 enterprise suite with Teams",
+      "notes": "Advertised $99/user/month paid yearly \u00d712 = $1188; suite includes Teams, Outlook and Office, not standalone app pricing. Monthly billing amount not verified.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Persistent chats, shared files and Microsoft 365 workflows tie organizational collaboration into an established workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-teams/enterprise"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Chats and channels combine shared content, Loop and OneNote pages for continuing team context.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-teams/enterprise"
+      ]
+    },
+    {
+      "claim": "Meetings and event features connect daily collaboration to organized group calls and webinars on eligible plans.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-teams/enterprise"
+      ]
+    },
+    {
+      "claim": "Teams Phone can connect internal communication with external telephone numbers using separately licensed calling services.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-teams/enterprise"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

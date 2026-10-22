@@ -1,0 +1,121 @@
+{
+  "id": "microsoft-visio",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Microsoft Corporation",
+    "kind": "business",
+    "foundedYear": 1975,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:MSFT"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "sources": [
+      "https://news.microsoft.com/facts-about-microsoft/",
+      "https://www.microsoft.com/en-us/investor/FAQ"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Visio Plan 1",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "$5/user/month paid yearly \u00d712 = $60; web/Teams edition. Basic Visio also bundled with eligible Microsoft 365 plans.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Visio Plan 2",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 180,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational advanced tier; $15/user/month paid yearly \u00d712 = $180. Includes Windows desktop app.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separate named enterprise Visio tier or enterprise quote price verified; volume agreements may differ.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A large diagram shape library and established Microsoft diagram workflows create a practical migration barrier for heavy Visio users.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Dedicated Azure, AWS, ERD and UML shapes help model technical systems precisely.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    },
+    {
+      "claim": "Advanced organization-chart layouts with employee photos and fields suit structured people diagrams.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    },
+    {
+      "claim": "Layers, containers and shape data support richer diagrams than simple sketch canvases.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

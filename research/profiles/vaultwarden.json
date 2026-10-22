@@ -1,0 +1,214 @@
+{
+  "id": "vaultwarden",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Vaultwarden maintainers",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Independent community-maintained implementation, explicitly unaffiliated with Bitwarden. One maintainer\u2019s employment at Bitwarden is not evidence of sponsorship. Project start and capital history not established.",
+    "sources": [
+      "https://github.com/dani-garcia/vaultwarden"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Vaultwarden",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open program; infrastructure and third-party services are separate.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party organizational commercial software plan found in the checked project source.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party enterprise commercial software plan found in the checked project source.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Compatibility with an established client ecosystem is useful but creates dependence on upstream API changes; defensibility is limited by substitutability.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Compatibility with official Bitwarden clients preserves familiar browser, mobile and desktop vault workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    },
+    {
+      "claim": "Organizations, collections, groups and event logs support shared credential administration.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    },
+    {
+      "claim": "Send, emergency access and multiple second-factor methods extend personal vault workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Container runtime Docker or Podman",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended prebuilt image path",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/dani-garcia/vaultwarden"
+          ]
+        },
+        {
+          "component": "SQLite embedded",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/dani-garcia/vaultwarden/blob/main/.env.template"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative external database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/dani-garcia/vaultwarden/blob/main/.env.template"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative external database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/dani-garcia/vaultwarden/blob/main/.env.template"
+          ]
+        },
+        {
+          "component": "HTTPS endpoint",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Required for browser Web Crypto secure context; reverse proxy recommended.",
+          "sources": [
+            "https://github.com/dani-garcia/vaultwarden"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications and email authentication",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/dani-garcia/vaultwarden/blob/main/.env.template"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Container-supported host",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://github.com/dani-garcia/vaultwarden/wiki/Deployment-examples"
+        ]
+      },
+      "notes": "Prebuilt image avoids local Rust build tooling. Persistent data volume required. Manual container/Compose deployment verified; no official browser one-click template established.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden/wiki/Deployment-examples"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://github.com/dani-garcia/vaultwarden/wiki/Deployment-examples"
+      ]
+    }
+  }
+}

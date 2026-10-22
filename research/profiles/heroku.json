@@ -1,0 +1,127 @@
+{
+  "id": "heroku",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Heroku (Salesforce)",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Salesforce, Inc. (NYSE: CRM)",
+    "stockSymbols": [
+      "NYSE:CRM"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Redpoint Ventures (historical)",
+        "source": "https://www.heroku.com/blog/heroku_redpoint_ventures/"
+      }
+    ],
+    "notes": "Heroku founded 2007. Official about page inconsistently says acquired 2011 in prose but December 2010 in timeline; ownership by Salesforce is clear. Historical $3m 2008 funding names Redpoint; not a current equity ownership claim.",
+    "sources": [
+      "https://www.heroku.com/about/",
+      "https://www.heroku.com/blog/heroku_redpoint_ventures/",
+      "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Basic dyno",
+      "status": "published",
+      "monthlyPrice": 7,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "running Basic dyno-month",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Always-on Basic $7/month, prorated runtime where applicable. Eco is a separate $5 sleeping personal-only option. Databases and add-ons extra; no annual contract inferred.",
+      "sources": [
+        "https://www.heroku.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.heroku.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Standard-1X dyno",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "running Standard-1X dyno-month",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest production/team compute tier; $25 per dyno/month. Not total team deployment cost; databases, add-ons and any team fee separate.",
+      "sources": [
+        "https://www.heroku.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Heroku Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization plus resource usage",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Tailored enterprise offering; total requires vendor quote. Published dyno rates are not a complete enterprise contract.",
+      "sources": [
+        "https://www.heroku.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Buildpacks, add-ons and Salesforce data integrations create practical workflow and integration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.heroku.com/platform/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Language buildpacks turn source into runnable applications across multiple language ecosystems.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.heroku.com/platform/"
+      ]
+    },
+    {
+      "claim": "Add-ons and unified logs/metrics connect application components with troubleshooting workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.heroku.com/platform/"
+      ]
+    },
+    {
+      "claim": "AppLink connects custom application logic to Salesforce flows, Apex and Agentforce actions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.heroku.com/platform/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

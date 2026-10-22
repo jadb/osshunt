@@ -1,0 +1,158 @@
+{
+  "id": "auth0",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Auth0 (Okta, Inc.)",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Okta, Inc. (NASDAQ: OKTA)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "DTCP",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "Sapphire Ventures",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "Meritech Capital",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "World Innovation Lab",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "Trinity Ventures",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "Telstra Ventures",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      },
+      {
+        "name": "K9 Ventures",
+        "source": "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+      }
+    ],
+    "notes": "Auth0 founded 2013; Okta completed combination in 2021. Parent publicly listed NASDAQ: OKTA; Auth0 has no separate listing. Listed investors are historical pre-acquisition Series F participants.",
+    "sources": [
+      "https://auth0.com/blog/announcing-auth0/",
+      "https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/",
+      "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-Second-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "https://auth0.com/blog/auth0-announces-120m-seriesf-funding/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "tenant; up to 25,000 monthly active users",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Free customer-identity tier, with feature limits.",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Professional",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "tenant; example 500 monthly active users",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Closest organizational production plan; page displays $240/month for 500 MAU, but monthly/yearly selector state not proven. Amount deliberately null.",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Custom user/SSO tiers; enterprise quote.",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Application SDKs, identity extensions and accumulated login-flow integrations can increase switching work; standards-based protocols retain alternative options.",
+      "basis": "assessment",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Universal Login and passwordless/passkey methods provide a configurable application login experience.",
+      "basis": "assessment",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    },
+    {
+      "claim": "Organizations and per-organization roles model B2B customer accounts and access.",
+      "basis": "assessment",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    },
+    {
+      "claim": "Actions, Forms and marketplace extensions customize identity flows without replacing the authentication platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://auth0.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

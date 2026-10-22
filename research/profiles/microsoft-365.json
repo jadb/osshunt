@@ -1,0 +1,121 @@
+{
+  "id": "microsoft-365",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Microsoft Corporation",
+    "kind": "business",
+    "foundedYear": 1975,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:MSFT"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "sources": [
+      "https://news.microsoft.com/facts-about-microsoft/",
+      "https://www.microsoft.com/en-us/investor/FAQ"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Business Basic (no Teams)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 64.8,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "$5.40/user/month paid yearly \u00d712 = $64.80. Web/mobile apps; excludes Teams and desktop suite; monthly-billed price not verified.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business Standard with Copilot",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 282,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "$23.50/user/month paid yearly \u00d712 = $282; includes desktop apps and Teams. Select advanced AI usage billed separately.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Microsoft 365 E7",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1188,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Microsoft 365 enterprise suite with Teams",
+      "notes": "Advertised $99/user/month paid yearly \u00d712 = $1188; suite includes Teams, Outlook and Office, not standalone app pricing. Monthly billing amount not verified.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Existing Office files, identity policies and integrated business apps create meaningful organization-wide switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Desktop Word, Excel and PowerPoint in applicable plans serve advanced document, spreadsheet and presentation work.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    },
+    {
+      "claim": "Exchange email, calendar and SharePoint team sites connect communication with shared business content.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    },
+    {
+      "claim": "Bookings, Planner and Forms cover scheduling, task coordination and information collection inside the suite.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -1,0 +1,148 @@
+{
+  "id": "miro",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Miro",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "ICONIQ Growth",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      },
+      {
+        "name": "Accel",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      },
+      {
+        "name": "Atlassian",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      },
+      {
+        "name": "Dragoneer",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      },
+      {
+        "name": "GIC",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      },
+      {
+        "name": "TCV",
+        "source": "https://miro.com/newsroom/miro-series-c/"
+      }
+    ],
+    "notes": "Miro traces origin to 2011 RealtimeBoard. Official 2022 Series C establishes historical equity investors, not present percentages. No public listing identified in current company page.",
+    "sources": [
+      "https://miro.com/about/",
+      "https://miro.com/newsroom/miro-series-c/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Named paid plan verified; current numeric prices not captured reliably. Free plan has 3 editable boards.",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Named Business plan verified; numeric amount unresolved. Card subscriptions have no license minimum; invoice minimum 5.",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Enterprise custom controls; sales-led pricing, no verified numeric price.",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Accumulated boards, reusable templates and a broad integrations ecosystem make replacement more costly for established teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Timer, voting and private mode provide structured workshop facilitation.",
+      "basis": "assessment",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Docs, tables, timelines and Kanban share the same visual workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Integrations with common work tools connect board activity to execution.",
+      "basis": "assessment",
+      "sources": [
+        "https://miro.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

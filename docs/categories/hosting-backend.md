@@ -7,7 +7,9 @@ Audience: Software teams and businesses building their own applications. Relevan
 Use-case sources: [1](https://www.heroku.com/), [2](https://firebase.google.com/).
 
 - [Firebase](https://firebase.google.com/): entry amount unverified/quote, monthly billing. Blaze pay-as-you-go per service after applicable free quotas; no single monthly entry price. [Pricing](https://firebase.google.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/firebase.md).
 - [Heroku](https://www.heroku.com/): USD 7/usage/month, monthly billing. Basic always-on dyno $7/month; Eco $5/month sleeps and personal accounts only; databases and add-ons extra. [Pricing](https://www.heroku.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/heroku.md).
 - [Vercel](https://vercel.com/): USD 20/seat/month, monthly billing. Pro developer seat $20/month plus metered services; Hobby free plan separate. [Pricing](https://vercel.com/pricing).
 
 ### Coolify — A

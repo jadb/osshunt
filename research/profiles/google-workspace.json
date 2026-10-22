@@ -1,0 +1,127 @@
+{
+  "id": "google-workspace",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Google LLC",
+    "kind": "business",
+    "foundedYear": 1998,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Alphabet Inc. (NASDAQ: GOOG, GOOGL)",
+    "stockSymbols": [
+      "NASDAQ:GOOG",
+      "NASDAQ:GOOGL"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Andy Bechtolsheim (historical seed investor)",
+        "source": "https://about.google/company-info/our-story/"
+      }
+    ],
+    "notes": "1998 is Google incorporation, not each product launch. Alphabet is public parent; historical seed investor Andy Bechtolsheim identified, not represented as a current shareholder. No exhaustive current investor list attempted.",
+    "sources": [
+      "https://about.google/company-info/our-story/",
+      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Business Starter",
+      "status": "published",
+      "monthlyPrice": 8.4,
+      "annualPrice": 84,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Flexible monthly billing $8.40; annual commitment $7/user/month, annual total $84. Promotions excluded; suite includes Meet.",
+      "sources": [
+        "https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business Standard",
+      "status": "published",
+      "monthlyPrice": 16.8,
+      "annualPrice": 168,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Organizational suite. Flexible monthly billing $16.80; annual commitment $14/user/month multiplied by 12 = $168.",
+      "sources": [
+        "https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Contact sales; suite pricing, no standalone Meet price inferred.",
+      "sources": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Interlinked mail, documents, calendars and identity can make organization-wide workflow migration costly.",
+      "basis": "assessment",
+      "sources": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Browser document collaboration and shared calendars fit teams working together across files and appointments.",
+      "basis": "assessment",
+      "sources": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ]
+    },
+    {
+      "claim": "Gmail custom-domain email and pooled Drive storage unify correspondence and documents.",
+      "basis": "assessment",
+      "sources": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ]
+    },
+    {
+      "claim": "Gemini assistance across Gmail, Docs and Meet can reduce switching between writing and meeting workflows on eligible tiers.",
+      "basis": "assessment",
+      "sources": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

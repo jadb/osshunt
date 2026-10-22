@@ -1,0 +1,121 @@
+{
+  "id": "fastmail",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Fastmail",
+    "kind": "business",
+    "foundedYear": 1999,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Independent employee-owned company, service operating since 1999. Staff repurchased business from Opera in 2013; Opera is historical owner, not current parent. Official values and ownership pages do not establish complete financing history; bootstrapped status or no historical investors not inferred.",
+    "sources": [
+      "https://www.fastmail.com/company/about/",
+      "https://www.fastmail.com/company/values/",
+      "https://www.fastmail.com/blog/exciting-news-fastmail-staff-purchase-the-business-from-opera/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Business Basic",
+      "status": "published",
+      "monthlyPrice": 4,
+      "annualPrice": 36,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Published $4/user/month monthly or $36 for 12 months. Custom domains require at least one Standard or Professional user on account; Basic lacks third-party mail-client access.",
+      "sources": [
+        "https://www.fastmail.com/pricing/us/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business Standard",
+      "status": "published",
+      "monthlyPrice": 6,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Explicit Most popular badge. Published $6/user/month monthly or $60 for 12 months.",
+      "sources": [
+        "https://www.fastmail.com/pricing/us/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business Standard",
+      "status": "published",
+      "monthlyPrice": 6,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Named business plan; 50 GB mail/calendar/contacts plus 10 GB files per user. Published annual total $60.",
+      "sources": [
+        "https://www.fastmail.com/pricing/us/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separate named Enterprise tier or quoted enterprise offer identified. Professional is $10 monthly/$108 yearly but not labelled Enterprise; not silently substituted.",
+      "sources": [
+        "https://www.fastmail.com/pricing/us/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Email, calendar and shared-address workflow habits create switching friction, although standard protocols limit proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.fastmail.help/hc/en-us/articles/360058753254-Fastmail-features",
+        "https://www.fastmail.com/company/values/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Masked Email aliases help separate online account identities from the main inbox.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.fastmail.help/hc/en-us/articles/360058753254-Fastmail-features"
+      ]
+    },
+    {
+      "claim": "Shared calendars, contacts and email addresses coordinate small business correspondence.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.fastmail.help/hc/en-us/articles/360058753254-Fastmail-features"
+      ]
+    },
+    {
+      "claim": "Scheduled Send, Snooze and inbox rules help users manage follow-up timing and incoming mail.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.fastmail.help/hc/en-us/articles/360058753254-Fastmail-features"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

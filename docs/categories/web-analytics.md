@@ -7,6 +7,7 @@ Audience: Website owners and marketing, product and growth teams across industri
 Use-case sources: [1](https://marketingplatform.google.com/about/analytics/), [2](https://plausible.io/self-hosted-web-analytics).
 
 - [Google Analytics 360](https://marketingplatform.google.com/about/analytics-360/): entry amount unverified/quote, quote billing. Enterprise edition; contact sales. Standard Google Analytics is free and must not be presented as a paid subscription. [Pricing](https://marketingplatform.google.com/about/analytics-360/).
+  [Pricing tiers, organization and product reasons](../products/google-analytics-360.md).
 
 ### Matomo — C
 

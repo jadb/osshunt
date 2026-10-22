@@ -1,0 +1,127 @@
+{
+  "id": "firebase",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Google LLC",
+    "kind": "business",
+    "foundedYear": 1998,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Alphabet Inc. (NASDAQ: GOOG, GOOGL)",
+    "stockSymbols": [
+      "NASDAQ:GOOG",
+      "NASDAQ:GOOGL"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Andy Bechtolsheim (historical seed investor)",
+        "source": "https://about.google/company-info/our-story/"
+      }
+    ],
+    "notes": "1998 is Google incorporation, not each product launch. Alphabet is public parent; historical seed investor Andy Bechtolsheim identified, not represented as a current shareholder. No exhaustive current investor list attempted.",
+    "sources": [
+      "https://about.google/company-info/our-story/",
+      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Spark",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "project",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud free quotas",
+      "notes": "No-cost Spark within service-specific quotas; phone auth and some services differ.",
+      "sources": [
+        "https://firebase.google.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://firebase.google.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Blaze",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "service-specific usage",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Pay as you go, not a fixed subscription; includes applicable free quotas. Example App Hosting cached outgoing bandwidth above 10 GiB/month costs $0.15/GiB; uncached $0.20/GiB. Other Cloud services billed separately; no synthetic annual total.",
+      "sources": [
+        "https://firebase.google.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separate enterprise Firebase subscription verified on pricing page; Google Cloud service editions and support do not establish a suite price.",
+      "sources": [
+        "https://firebase.google.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "SDK integration across authentication, databases and app tooling raises application migration effort once APIs and data models are adopted.",
+      "basis": "assessment",
+      "sources": [
+        "https://firebase.google.com/products-build"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Realtime Database synchronizes user data online and offline for responsive apps.",
+      "basis": "assessment",
+      "sources": [
+        "https://firebase.google.com/products-build"
+      ]
+    },
+    {
+      "claim": "Authentication supports multiple sign-in providers in a shared app platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://firebase.google.com/products-build"
+      ]
+    },
+    {
+      "claim": "App Check attestation helps distinguish legitimate app traffic from abusive backend requests.",
+      "basis": "assessment",
+      "sources": [
+        "https://firebase.google.com/products-build"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

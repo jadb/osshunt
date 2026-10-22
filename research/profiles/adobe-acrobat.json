@@ -1,0 +1,121 @@
+{
+  "id": "adobe-acrobat",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Adobe Inc.",
+    "kind": "business",
+    "foundedYear": 1982,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:ADBE"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Adobe founded in 1982; company age rather than app launch. Official fast facts identifies 1986 IPO and NASDAQ ADBE. Public equity financed; historical venture investors not established in checked corporate sources, so investor list not exhaustive.",
+    "sources": [
+      "https://www.adobe.com/about-adobe.html",
+      "https://www.adobe.com/content/dam/cc/en/fast-facts/pdfs/fast-facts.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Acrobat Standard",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 179.88,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual commitment billed at $14.99 monthly; annual total 14.99 \u00d7 12. Monthly cancellable price not captured.",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Acrobat Standard for teams",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 203.88,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "license",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual prepaid total shown; annual commitment monthly option $16.99. Separate business administration scope.",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "PDF authorship history and integrated editing/signing workflows create familiarity and document-workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "OCR turns scans into editable documents, beyond page-only arrangers.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    },
+    {
+      "claim": "Redaction and document comparison cover review tasks absent from simple merge tools.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    },
+    {
+      "claim": "Signature requests with response tracking combine signing and PDF editing.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

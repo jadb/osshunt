@@ -1,0 +1,40 @@
+# Google Workspace
+
+[Product](https://workspace.google.com/pricing) · Checked 2026-10-21. Unknown means unverified; not-offered means no matching offering established in the reviewed scope. Moats and selection reasons are editorial assessments based on the linked product facts, not proven competitive outcomes.
+
+## Organization
+
+Google LLC (business); ownership: **public-subsidiary**; funding: **funded**.
+
+Started 1998 (company-founded); years active: 28; years in business: 28. Ages are approximate calendar-year differences as of 2026-10-21.
+
+Parent: Alphabet Inc. (NASDAQ: GOOG, GOOGL).
+
+Listed symbols: NASDAQ:GOOG, NASDAQ:GOOGL.
+
+1998 is Google incorporation, not each product launch. Alphabet is public parent; historical seed investor Andy Bechtolsheim identified, not represented as a current shareholder. No exhaustive current investor list attempted. [1](https://about.google/company-info/our-story/) [2](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf)
+
+Known investors: [Andy Bechtolsheim (historical seed investor)](https://about.google/company-info/our-story/).
+
+## Starting prices
+
+Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
+
+| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|
+| entry | Business Starter | published | USD 8.4/user | USD 84/user | — | unspecified | paid product. Flexible monthly billing $8.40; annual commitment $7/user/month, annual total $84. Promotions excluded; suite includes Meet. [1](https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans) |
+| popular | unknown | unknown | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://workspace.google.com/pricing?hl=en&region=US) |
+| business | Business Standard | published | USD 16.8/user | USD 168/user | — | unspecified | paid product. Organizational suite. Flexible monthly billing $16.80; annual commitment $14/user/month multiplied by 12 = $168. [1](https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans) |
+| enterprise | Enterprise | quote | — | — | — | unspecified | paid product. Contact sales; suite pricing, no standalone Meet price inferred. [1](https://workspace.google.com/pricing?hl=en&region=US) |
+
+## Defensibility assessments
+
+- Interlinked mail, documents, calendars and identity can make organization-wide workflow migration costly. [1](https://workspace.google.com/pricing?hl=en&region=US)
+
+## Three product reasons to consider it
+
+1. Browser document collaboration and shared calendars fit teams working together across files and appointments. [1](https://workspace.google.com/pricing?hl=en&region=US)
+2. Gmail custom-domain email and pooled Drive storage unify correspondence and documents. [1](https://workspace.google.com/pricing?hl=en&region=US)
+3. Gemini assistance across Gmail, Docs and Meet can reduce switching between writing and meeting workflows on eligible tiers. [1](https://workspace.google.com/pricing?hl=en&region=US)
+
+[Structured profile](../../research/profiles/google-workspace.json) · [Claim ledger](../../research/profile-claims/google-workspace.jsonl) · [Research steps](../../research/profile-audits/google-workspace.md)
