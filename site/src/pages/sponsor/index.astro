@@ -1,0 +1,157 @@
+---
+import Page from '../../layouts/Page.astro';
+import { STEP, CAP, DEPOSIT, OPEN_SLOTS, slotPrice, deposit, STRIPE } from '../../lib/sponsorship';
+
+const rows = Array.from({ length: CAP / STEP }, (_, i) => i + 1);
+const usd = (n: number) => `$${n.toLocaleString('en-US')}`;
+const config = {
+  key: STRIPE.publishableKey,
+  slots: rows.map((n) => ({
+    n, price: slotPrice(n), open: n <= OPEN_SLOTS, deposit: deposit(n),
+    button: (n <= OPEN_SLOTS ? STRIPE.slotButtons[n] : STRIPE.depositButtons[n]) ?? null,
+  })),
+};
+---
+<Page title="Sponsor OSSHunt" description={`Sponsor slots start at ${usd(STEP)} a month and rise by ${usd(STEP)} per slot up to ${usd(CAP)}. Reserve a place in the waitlist with ${DEPOSIT * 100}% of the monthly price.`}>
+  <main id="main" class="wrap sp">
+    <div class="info">
+      <h1>Put your name next to the sources</h1>
+      <p class="lede">Sponsors appear in the site header beside Idea Crafters and Les Experts AI, linked to their website. Sponsorship keeps the data sourced and current.</p>
+
+      <h2>Independence</h2>
+      <p>Sponsorship never changes what the directory says. It does not affect fit, tier, license, price, ordering or any claim, and sponsors cannot edit entries. A sponsor's own products get no special placement.</p>
+
+      <h2>Price</h2>
+      <p>Slot 1 costs {usd(STEP)} a month. Each further slot costs {usd(STEP)} more than the one before, and the price stops rising at {usd(CAP)} a month.</p>
+      <table class="ladder">
+        <thead><tr><th scope="col">Slot</th><th scope="col">Per month</th><th scope="col">Status</th><th scope="col">Reserve (10%)</th></tr></thead>
+        <tbody>
+          {rows.map((n) => (
+            <tr>
+              <th scope="row">{n}{n === CAP / STEP ? '+' : ''}</th>
+              <td>{usd(slotPrice(n))}</td>
+              <td>{n <= OPEN_SLOTS ? 'Open now' : 'Waitlist'}</td>
+              <td>{n <= OPEN_SLOTS ? 'Not needed' : usd(deposit(n))}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Waitlist</h2>
+      <p>Pay {DEPOSIT * 100}% of a slot's monthly price to reserve your place in the waitlist for that slot. The reservation is credited against your first month and is non-refundable. A slot frees up when any earlier sponsor stops, and the waitlist is served in the order reservations were paid.</p>
+    </div>
+
+    <aside class="panel" aria-labelledby="form-h">
+      <div class="panel-head"><h2 id="form-h">Become a sponsor</h2></div>
+
+      <form id="lead" novalidate>
+        <div class="field">
+          <label for="site">Company website</label>
+          <input id="site" name="site" type="text" inputmode="url" autocomplete="url" placeholder="example.com" required />
+          <p class="err" id="site-err" role="alert" hidden></p>
+        </div>
+        <div class="field">
+          <label for="mail">Work email</label>
+          <input id="mail" name="mail" type="email" autocomplete="email" placeholder="you@example.com" required />
+          <p class="hint">Must use your company's domain.</p>
+          <p class="err" id="mail-err" role="alert" hidden></p>
+        </div>
+        <button type="submit">Continue</button>
+        <p class="fine">Nothing is stored on this site. Your details go only to checkout.</p>
+      </form>
+
+      <div id="step2" hidden>
+        <p class="who" id="who"></p>
+        <div class="field">
+          <label for="slot">Slot</label>
+          <select id="slot">
+            {config.slots.map((s) => <option value={s.n}>{s.open ? `Slot ${s.n}: ${usd(s.price)} a month` : `Waitlist for slot ${s.n}${s.n === CAP / STEP ? '+' : ''}: ${usd(s.deposit)} to reserve`}</option>)}
+          </select>
+        </div>
+        <div id="buy"></div>
+        <p class="err" id="buy-err" hidden>Checkout is not connected yet, so nothing was sent. Your details were not saved.</p>
+        <button type="button" id="back" class="link">Edit details</button>
+      </div>
+    </aside>
+
+    <script type="application/json" id="sp-config" set:html={JSON.stringify(config)} />
+  </main>
+</Page>
+
+<style>
+  .sp { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 72px); padding-block: clamp(28px, 4vw, 56px) clamp(40px, 6vw, 80px); align-items: start; }
+  h1 { font-size: clamp(2.25rem, 4.6vw, 4rem); line-height: 0.98; font-family: var(--display); font-weight: 900; margin-bottom: 18px; }
+  .lede { font-size: 1.0625rem; color: var(--ink-2); max-width: 56ch; margin: 0 0 8px; }
+  .info h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 32px 0 10px; }
+  .info p { max-width: 64ch; }
+  .ladder { width: 100%; max-width: 560px; border-collapse: collapse; margin: 14px 0; font-size: 0.9375rem; }
+  .ladder th, .ladder td { text-align: left; padding: 7px 12px 7px 0; border-bottom: 1px solid var(--ink); }
+  .ladder thead th { font-size: 0.8125rem; color: var(--ink-2); border-bottom: 3px solid var(--ink); }
+
+  .panel { position: sticky; top: 24px; border: 3px solid var(--ink); padding: 6px 18px 20px; background: var(--paper); }
+  .panel-head { border-bottom: 8px solid var(--ink); padding-bottom: 4px; margin-bottom: 14px; }
+  .panel-head h2 { font-size: 1.6rem; font-family: var(--display); font-weight: 900; line-height: 1.1; }
+  .field { margin-bottom: 16px; }
+  label { display: block; font-weight: 800; font-size: 0.875rem; margin-bottom: 6px; }
+  input, select { width: 100%; font: 500 1.0625rem/1.2 'Archivo', sans-serif; padding: 13px 12px; border: 3px solid var(--ink); border-radius: 0; background: var(--paper); color: var(--ink); caret-color: var(--ink); }
+  input::placeholder { color: var(--ink-2); opacity: 1; }
+  input[aria-invalid='true'] { border-style: dashed; }
+  .hint { margin: 6px 0 0; font-size: 0.8125rem; color: var(--ink-2); }
+  .err { margin: 6px 0 0; font-size: 0.875rem; font-weight: 700; background: var(--band); border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 4px 8px; }
+  .err[hidden] { display: none; }
+  button[type='submit'] { width: 100%; font: 800 1.125rem/1 'Archivo', sans-serif; background: var(--band); color: var(--ink); border: 3px solid var(--ink); padding: 16px; cursor: pointer; border-radius: 0; }
+  button[type='submit']:hover { background: var(--ink); color: var(--band); }
+  .fine { font-size: 0.75rem; color: var(--ink-2); margin: 10px 0 0; }
+  .who { margin: 0 0 14px; font-weight: 700; overflow-wrap: anywhere; }
+  .link { background: none; border: 0; border-bottom: 2px solid var(--ink); padding: 2px 0; font: 600 0.875rem 'Archivo', sans-serif; cursor: pointer; margin-top: 14px; color: var(--ink); }
+  #buy { margin-top: 6px; }
+  @media (max-width: 900px) { .sp { grid-template-columns: minmax(0, 1fr); } .panel { position: static; } }
+</style>
+
+<script>
+  type Slot = { n: number; price: number; open: boolean; deposit: number; button: string | null };
+  const cfg: { key: string | null; slots: Slot[] } = JSON.parse(document.getElementById('sp-config')!.textContent!);
+  const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+  const form = $<HTMLFormElement>('lead'), site = $<HTMLInputElement>('site'), mail = $<HTMLInputElement>('mail');
+  const step2 = $('step2'), who = $('who'), slotSel = $<HTMLSelectElement>('slot'), buy = $('buy'), buyErr = $('buy-err');
+  const show = (el: HTMLInputElement, errId: string, msg: string) => {
+    const e = $(errId); e.textContent = msg; e.hidden = !msg; el.setAttribute('aria-invalid', String(!!msg));
+  };
+  const host = (v: string) => {
+    try { return new URL(/^[a-z][a-z0-9+.-]*:\/\//i.test(v) ? v : `https://${v}`).hostname.toLowerCase().replace(/^www\./, ''); } catch { return ''; }
+  };
+  const related = (a: string, b: string) => a === b || a.endsWith(`.${b}`) || b.endsWith(`.${a}`);
+  let ctx = { domain: '', email: '' };
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const d = host(site.value.trim());
+    const m = mail.value.trim().toLowerCase();
+    const md = m.includes('@') ? m.split('@').pop()! : '';
+    show(site, 'site-err', d && d.includes('.') ? '' : 'Enter your company website, for example example.com.');
+    show(mail, 'mail-err', !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m) ? 'Enter a valid email address.' : d && !related(md, d) ? `Use an address at ${d}.` : '');
+    if (!d || !d.includes('.') || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m) || !related(md, d)) return;
+    ctx = { domain: d, email: m };
+    who.textContent = `${d} · ${m}`;
+    form.hidden = true; step2.hidden = false; render();
+  });
+  $('back').addEventListener('click', () => { step2.hidden = true; form.hidden = false; buy.replaceChildren(); buyErr.hidden = true; });
+  slotSel.addEventListener('change', render);
+
+  function render() {
+    buy.replaceChildren(); buyErr.hidden = true;
+    const s = cfg.slots.find((x) => x.n === Number(slotSel.value))!;
+    if (!cfg.key || !s.button) { buyErr.hidden = false; return; }
+    if (!document.querySelector('script[data-stripe]')) {
+      const sc = document.createElement('script');
+      sc.async = true; sc.src = 'https://js.stripe.com/v3/buy-button.js'; sc.dataset.stripe = '1';
+      document.head.append(sc);
+    }
+    const b = document.createElement('stripe-buy-button');
+    b.setAttribute('buy-button-id', s.button);
+    b.setAttribute('publishable-key', cfg.key);
+    b.setAttribute('customer-email', ctx.email);
+    b.setAttribute('client-reference-id', `${ctx.domain.replace(/[^a-z0-9_-]/g, '-')}-slot${s.n}${s.open ? '' : '-waitlist'}`.slice(0, 200));
+    buy.append(b);
+  }
+</script>
