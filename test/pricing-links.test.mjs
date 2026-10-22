@@ -127,3 +127,26 @@ test('file-like approved product root retains its exact pricing-section link wit
     'https://www.adobe.com/acrobat/pricing.html']);
   assert.ok(links.every(l => l.provenance === 'archived-link' && l.locator.startsWith('offset:')));
 });
+
+test('subscription-management feature anchors cannot consume a pricing candidate slot', () => {
+  const links = discoverPricingLinks('<a href="/platform/subscription-management/" role="menuitem">' +
+    '<p>Subscription management</p></a><a href="/pricing/" role="menuitem">Pricing</a>' +
+    '<a href="/features/subscription-tracking/">Learn more</a>' +
+    '<a href="/guides/subscriptions-for-teams">Manage subscriptions</a>' +
+    '<a href="/integrations/?categories=Subscription+Management">Subscription management</a>', {
+      landingUrl: 'https://www.spendesk.com/', hints: ['https://www.spendesk.com/pricing/'] });
+  assert.deepEqual(links.map(l => [l.url, l.label, l.provenance]), [
+    ['https://www.spendesk.com/pricing/', 'Pricing', 'archived-link']]);
+});
+
+test('genuine subscription navigation and plan paths retain exact query identity and evidence', () => {
+  const paths = ['/offers?billing=annual&region=CA', '/subscriptions', '/subscription-plans/',
+    '/subscription_plans.html', '/subscriptions/plans', '/platform/subscription-management/?rates=1',
+    '/platform/subscription-tracking/'];
+  const labels = ['Compare our subscription plans', 'Learn more', 'Learn more', 'Learn more',
+    'Learn more', 'Prices', 'Subscription pricing'];
+  const links = discoverPricingLinks(paths.map((path, i) => `<a href="${path}">${labels[i]}</a>`).join(''), {
+    landingUrl: 'https://vendor.com/' });
+  assert.deepEqual(links.map(l => l.url).sort(), paths.map(path => `https://vendor.com${path}`).sort());
+  assert.ok(links.every(l => l.provenance === 'archived-link' && l.locator.startsWith('offset:')));
+});
