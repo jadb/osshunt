@@ -5,6 +5,7 @@ import { licenseTokens } from '../lib/license';
 interface Props { license: string; osi?: boolean; align?: 'left' | 'right' }
 const { license, osi, align = 'right' } = Astro.props;
 const tokens = licenseTokens(license);
+const LABEL: Record<string, string> = { Permissions: 'May', Conditions: 'Must', Limitations: 'No' };
 ---
 <span class="lic">
   {tokens.map((t, i) => {
@@ -12,13 +13,16 @@ const tokens = licenseTokens(license);
     return (
       <Tip label={`${t.info ? t.info.title : t.label}${osi && i === 0 ? ', OSI approved' : ''}`} align={align}>
         <span class="licmark">{t.logo ? <img src={`/logos/${t.logo}.svg`} alt="" width="20" height="20" /> : <Icon name="doc" size={20} />}</span>
-        <span slot="tip">
-          <b>{t.info ? t.info.title : `${t.label} (custom license)`}</b>
+        <span slot="tip" class="lictip">
+          <b class="th">{t.info ? t.info.title : `${t.label} (custom license)`}</b>
           {t.info
-            ? <span class="tdesc">{t.info.description}</span>
+            ? <span class="tdesc clamp">{t.info.description}</span>
             : <span class="tdesc">Not a standard license, so GitHub's license summaries don't cover it. Read the project's license text before relying on it.</span>}
           {groups.filter(([, rs]) => rs.length).map(([title, rs]) => (
-            <span class="tgroup"><b>{title}</b><span>{rs.map((r) => r.label).join(' · ')}</span></span>
+            <span class={`tg ${title.toLowerCase()}`}>
+              <span class="tl">{LABEL[title]}</span>
+              <span class="chips">{rs.map((r) => <span class="chip2" title="">{r.label}</span>)}</span>
+            </span>
           ))}
           {t.info && <span class="tsrc">Summary from GitHub's choosealicense.com</span>}
         </span>

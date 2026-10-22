@@ -61,16 +61,22 @@ details.group > summary::after { content: '[+]'; font-weight: 700; font-size: 0.
 details.group[open] > summary::after { content: '[-]'; }
 details.group > summary > * { margin: 0; }
 
-/* Tips: styled popup shared by tier, license and self-host */
+/* Tips: ruled paper popup, same language as the sheets. Shared by tier, license, self-host and fit. */
 .tipwrap { position: relative; display: inline-flex; align-items: center; gap: 6px; cursor: help; }
-.tipwrap > .tipbox { position: absolute; top: calc(100% + 8px); z-index: 20; width: max-content; max-width: min(320px, 80vw); display: none; flex-direction: column; gap: 6px; padding: 10px 12px; background: var(--ink); color: var(--paper); font-size: 0.8125rem; font-weight: 400; line-height: 1.35; text-align: left; border: 3px solid var(--ink); }
+.tipwrap > .tipbox { position: absolute; top: calc(100% + 8px); z-index: 20; width: max-content; max-width: min(340px, 80vw); display: none; flex-direction: column; gap: 6px; padding: 8px 12px 10px; background: var(--paper); color: var(--ink); font-size: 0.8125rem; font-weight: 400; line-height: 1.35; text-align: left; border: 3px solid var(--ink); }
 .tipbox.right { right: 0; } .tipbox.left { left: 0; }
 .tipwrap:hover > .tipbox, .tipwrap:focus-visible > .tipbox { display: flex; }
 .tipbox b { font-weight: 800; }
-.tipbox .tdesc { display: block; }
-.tipbox .tgroup { display: block; border-top: 1px solid var(--paper); padding-top: 5px; }
-.tipbox .tgroup > span { display: block; }
-.tipbox .tsrc { display: block; font-size: 0.6875rem; opacity: 0.8; border-top: 1px solid var(--paper); padding-top: 5px; }
+.tipbox > span > b:first-child, .tipbox .th { display: block; font-family: var(--display); font-weight: 900; font-size: 1.0625rem; line-height: 1.15; border-bottom: 4px solid var(--ink); padding-bottom: 4px; margin-bottom: 2px; }
+.tipbox .tdesc { display: block; color: var(--ink-2); }
+.tipbox .tdesc.clamp { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tipbox .tg { display: grid; grid-template-columns: 44px 1fr; gap: 6px; align-items: start; border-top: 1px solid var(--ink); padding-top: 6px; }
+.tipbox .tl { font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em; padding-top: 3px; }
+.tipbox .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.tipbox .chip2 { font-size: 0.6875rem; font-weight: 700; line-height: 1; padding: 4px 6px; border: 2px solid var(--ink); background: var(--paper); }
+.tipbox .tg.conditions .chip2 { background: var(--band); }
+.tipbox .tg.limitations .chip2 { background: repeating-linear-gradient(135deg, transparent 0 5px, #d6d6d6 5px 6px); color: var(--ink-2); border-color: #767676; }
+.tipbox .tsrc { display: block; font-size: 0.6875rem; color: var(--ink-2); border-top: 1px solid var(--ink); padding-top: 5px; }
 .lic { display: inline-flex; gap: 6px; align-items: center; }
 .licmark { display: grid; place-items: center; }
 .licmark img { width: 20px; height: 20px; object-fit: contain; }
@@ -79,11 +85,22 @@ details.group > summary > * { margin: 0; }
 .facts-foot { margin: 6px 0 0; font-size: 0.75rem; color: var(--ink-2); }
 .fitmark svg { flex: none; }
 .slinks { display: inline-flex; gap: 10px; align-items: center; }
-.slinks a { display: grid; place-items: center; width: 24px; height: 24px; color: var(--ink); text-decoration: none; }
-.slinks a:hover { background: var(--band); }
-.slinks img { width: 20px; height: 20px; }
+/* Source icons: ink, yellow on rollover; the icon itself changes colour, no background. */
+.slinks a { display: grid; place-items: center; width: 24px; height: 24px; color: var(--ink); text-decoration: none; transition: color 0.15s ease-out; }
+.slinks a:hover { color: var(--band); background: none; }
+.slinks .mk { width: 20px; height: 20px; background-color: currentColor; -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
 .facts-head .slinks { margin-left: auto; }
 .head > .slinks { margin-left: auto; }
 .who .slinks { margin-left: auto; }
 .facts-head h3 a { text-decoration: none; }
 .facts-head h3 a:hover { text-decoration: underline; background: none; }
+
+/* Fit band: same 4px rule above and below; the header's own rule steps aside when a fit row follows. */
+.facts-head + .facts-row.fit { border-top: 4px solid var(--ink); }
+.facts-head:has(+ .facts-row.fit) { border-bottom: 0; }
+
+/* Light tooltip for small marks (avatars, tier abbreviations): same ink popup as the sheet tips. */
+.dtip { position: relative; cursor: help; text-decoration: none; }
+\.dtip::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); width: max-content; max-width: min(240px, 70vw); background: var(--paper); color: var(--ink); border: 3px solid var(--ink); padding: 5px 9px; font: 700 0.75rem/1.3 'Archivo', sans-serif; text-align: left; letter-spacing: 0; text-transform: none; white-space: normal; opacity: 0; pointer-events: none; z-index: 60; }
+.dtip:hover::after, .dtip:focus-visible::after { opacity: 1; }
+.dtip:hover, .dtip:focus-visible { z-index: 99 !important; }

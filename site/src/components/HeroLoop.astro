@@ -4,72 +4,107 @@ import { type homeData } from '../lib/home';
 interface Props { scenes: Awaited<ReturnType<typeof homeData>>['scenes'] }
 const { scenes } = Astro.props;
 ---
+<div class="hero-loop">
 <div class="loop" data-loop role="group" aria-roledescription="carousel" aria-live="off" aria-label="Examples of paid tools and their open-source alternatives">
-  {scenes.flatMap((s, si) => s.pages.map((pg, pi) => {
-    const next = s.pages[(pi + 1) % s.pages.length];
-    const shown = Math.min((pi + 1) * 2, s.total);
-    return (
-      <section class:list={['view', { on: si === 0 && pi === 0 }]} data-scene={si} data-page={pi} aria-label={`${s.name}, alternatives ${pi * 2 + 1} to ${shown} of ${s.total}`} aria-hidden={si === 0 && pi === 0 ? 'false' : 'true'}>
-        <div class="inc">
-          <span class="tile">{s.logo && <img src={`/logos/${s.logo}.svg`} alt="" width="56" height="56" />}</span>
-          <p class="inc-text"><b>{s.name}</b><span>Entry price {s.price}</span></p>
-        </div>
-        <div class="alts">{pg.map((a) => <FactsLabel {...a} incumbent={s.name} />)}</div>
-        <p class="loop-foot"><span>{shown} of {s.total}</span>{s.pages.length > 1 && <button type="button" class="next" data-next>Next: {next.map((a) => a.short).join(' | ')}</button>}</p>
-      </section>
-    );
-  }))}
+  {scenes.flatMap((s, si) => s.pages.flat().map((alt, ai) => (
+    <section class:list={['view', { on: si === 0 && ai === 0 }]} data-scene={si} data-alt={ai} aria-label={`${s.name}, alternative ${ai + 1} of ${s.total}: ${alt.name}`} aria-hidden={si === 0 && ai === 0 ? 'false' : 'true'}>
+      <div class="inc">
+        <span class="tile">{s.logo && <img src={`/logos/${s.logo}.svg`} alt="" width="56" height="56" />}</span>
+        <p class="inc-text"><b data-fx>{s.name}</b><span data-fx>Entry price {s.price}</span></p>
+      </div>
+      <FactsLabel {...alt} incumbent={s.name} />
+    </section>
+  )))}
+</div>
+<div class="progress" data-progress aria-hidden="true"><span></span></div>
 </div>
 
 <style>
   /* All views share one grid cell so the hero keeps the height of the tallest one. */
   .loop { display: grid; }
-  .view { grid-area: 1 / 1; visibility: hidden; opacity: 0; transform: translateX(14px); transition: opacity 0.25s ease-out, transform 0.25s ease-out, visibility 0s linear 0.25s; }
-  .view.on { visibility: visible; opacity: 1; transform: none; transition: opacity 0.25s ease-out 0.05s, transform 0.25s ease-out 0.05s, visibility 0s; }
+  /* The sheet frame stays put: views swap instantly and only their content changes (text scrambles in, icons fade in). */
+  .view { grid-area: 1 / 1; visibility: hidden; }
+  .view.on { visibility: visible; }
+  .view.fx .facts-row > :last-child, .view.fx .slinks, .view.fxtool .tile img { animation: fxin 0.35s ease-out both; }
+  @keyframes fxin { from { opacity: 0; } to { opacity: 1; } }
+  /* Fills over the 10s each sheet stays (driven by the same clock as the swap); a full bar brings in the next sheet. */
+  .progress { height: 3px; margin-top: 0; }
+  .progress span { display: block; height: 100%; width: 0; background: var(--band); }
+  .progress span { transition: width 0.1s linear; }
+  .progress.off { visibility: hidden; }
   .inc { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
   .tile { width: 76px; height: 76px; border: var(--rule-3) solid var(--ink); display: grid; place-items: center; flex: none; }
   .tile img { width: 56px; height: 56px; object-fit: contain; }
   .inc-text { margin: 0; display: grid; font-size: 0.9375rem; }
   .inc-text b { font-size: 1.5rem; font-family: var(--display); font-weight: 900; line-height: 1.1; }
-  .alts { display: grid; gap: 12px; }
-  .loop-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 0.8125rem; color: var(--ink-2); margin: 10px 0 0; }
-  .next { font: 400 0.8125rem 'Archivo', sans-serif; text-align: right; color: var(--ink); background: none; border: 0; border-bottom: 2px solid var(--ink); padding: 2px 0; cursor: pointer; }
-  .next:hover { background: var(--band); }
-  @media (prefers-reduced-motion: reduce) { .view, .view.on { transition: none; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .view.fx .facts-row > :last-child, .view.fx .slinks, .view.fxtool .tile img { animation: none; } .progress { visibility: hidden; } }
 </style>
 
 <script>
   const root = document.querySelector<HTMLElement>('[data-loop]');
-  if (root) {
-    const views = [...root.querySelectorAll<HTMLElement>('[data-view], .view')];
+  const bar = document.querySelector<HTMLElement>('[data-progress]');
+  if (root && bar) {
+    const views = [...root.querySelectorAll<HTMLElement>('.view')];
     const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
     const still = matchMedia('(prefers-reduced-motion: reduce)');
-    const pagesOf = (s: number) => views.filter((v) => Number(v.dataset.scene) === s).length;
-    let scene = 0, page = 0, timer = 0, stopped = false;
-    const show = (s: number, p: number) => {
-      scene = (s + chips.length) % chips.length; page = p;
+    const fill = bar.querySelector<HTMLElement>('span')!;
+    const SHOW = 10000, TICK = 100;
+    const POOL = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#%&*+?';
+    // Letters mix: each character cycles through random glyphs, then settles left to right.
+    const scramble = (el: HTMLElement) => {
+      const final = el.dataset.final ?? (el.dataset.final = el.textContent ?? '');
+      const total = 650, started = performance.now();
+      const id = String((Number(el.dataset.fxId) || 0) + 1); el.dataset.fxId = id;
+      const run = (now: number) => {
+        if (el.dataset.fxId !== id) return;
+        const t = (now - started) / total;
+        if (t >= 1) { el.textContent = final; return; }
+        el.textContent = [...final].map((ch, i) => (ch === ' ' || t > (i / final.length) * 0.75 + 0.25 ? ch : POOL[Math.floor(Math.random() * POOL.length)])).join('');
+        requestAnimationFrame(run);
+      };
+      requestAnimationFrame(run);
+    };
+    const count = (sc: number) => views.filter((v) => Number(v.dataset.scene) === sc).length;
+    let scene = 0, alt = 0, elapsed = 0, stopped = false, hold = false;
+    let prev: HTMLElement | undefined;
+    const paint = () => { fill.style.width = `${Math.min(100, (elapsed / SHOW) * 100)}%`; };
+    const show = (sc: number, al: number) => {
+      prev = views.find((v) => v.classList.contains('on'));
+      scene = (sc + chips.length) % chips.length; alt = al; elapsed = 0;
       views.forEach((v) => {
-        const on = Number(v.dataset.scene) === scene && Number(v.dataset.page) === page;
+        const on = Number(v.dataset.scene) === scene && Number(v.dataset.alt) === alt;
         v.classList.toggle('on', on); v.setAttribute('aria-hidden', String(!on));
       });
       chips.forEach((c, n) => c.setAttribute('aria-pressed', String(n === scene)));
+      const cur = views.find((v) => v.classList.contains('on'));
+      if (cur && !still.matches) {
+        const toolChanged = !prev || Number(prev.dataset.scene) !== scene; // the tool's logo only fades in when the tool changes
+        cur.classList.remove('fx', 'fxtool'); void cur.offsetWidth; cur.classList.add('fx'); if (toolChanged) cur.classList.add('fxtool');
+        // Only text that differs from the sheet being replaced is mixed.
+        const before = prev ? [...prev.querySelectorAll<HTMLElement>('[data-fx]')].map((e) => e.dataset.final ?? e.textContent) : [];
+        cur.querySelectorAll<HTMLElement>('[data-fx]').forEach((e, k) => {
+          const text = e.dataset.final ?? e.textContent ?? '';
+          if (!prev || before[k] !== text) scramble(e); else e.textContent = text; // unchanged: never touched
+        });
+        window.setTimeout(() => cur.classList.remove('fx', 'fxtool'), 400);
+      }
+      fill.style.transition = 'none'; paint(); void fill.offsetWidth; fill.style.transition = '';
     };
-    // Rotates samples until the first click, key press or focus anywhere; hover pauses it.
-    const start = () => {
-      window.clearInterval(timer);
-      if (!stopped && !still.matches) timer = window.setInterval(() => show(scene + 1, 0), 8000);
-    };
-    const stop = () => { stopped = true; window.clearInterval(timer); };
+    // One sheet at a time: next alternative of this tool, then the next tool.
+    const advance = () => (alt + 1 < count(scene) ? show(scene, alt + 1) : show(scene + 1, 0));
+    // Runs until the first click, key press or focus anywhere; hover pauses it.
+    const stop = () => { stopped = true; window.clearInterval(timer); bar.classList.add('off'); };
+    const timer = window.setInterval(() => {
+      if (hold || stopped) return;
+      elapsed += TICK; paint();
+      if (elapsed >= SHOW) advance();
+    }, TICK);
+    if (still.matches) stop();
     chips.forEach((c, n) => c.addEventListener('click', () => show(n, 0)));
-    root.addEventListener('click', (e) => {
-      if ((e.target as HTMLElement).closest('[data-next]')) show(scene, (page + 1) % pagesOf(scene));
-    });
     document.addEventListener('click', stop, { once: true, capture: true });
     document.addEventListener('keydown', stop, { once: true, capture: true });
     document.addEventListener('focusin', stop, { once: true });
-    root.addEventListener('pointerenter', () => window.clearInterval(timer));
-    root.addEventListener('pointerleave', start);
-    still.addEventListener('change', start);
-    start();
+    root.addEventListener('pointerenter', () => { hold = true; });
+    root.addEventListener('pointerleave', () => { hold = false; });
   }
 </script>

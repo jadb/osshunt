@@ -1,6 +1,5 @@
 ---
 import Icon from './Icon.astro';
-import Tip from './Tip.astro';
 import { sourceLinks } from '../lib/links';
 interface Props { url?: string; repo?: string; name: string }
 const { url, repo, name } = Astro.props;
@@ -9,14 +8,11 @@ const HOST = { github: 'GitHub', gitlab: 'GitLab', code: 'Source code' } as cons
 ---
 {(l.website || l.repo) && (
   <span class="slinks">
-    {l.website && (
-      <Tip label={`${name} website`}><a href={l.website} rel="noopener" aria-label={`${name} website`}><Icon name="globe" size={20} /></a><span slot="tip"><b>Website</b><span class="tdesc">{new URL(l.website).hostname.replace(/^www\./, '')}</span></span></Tip>
-    )}
+    {l.website && <a href={l.website} rel="noopener" aria-label={`${name} website`}><Icon name="globe" size={20} /></a>}
     {l.repo && l.host && (
-      <Tip label={`${name} on ${HOST[l.host]}`}>
-        <a href={l.repo} rel="noopener" aria-label={`${name} on ${HOST[l.host]}`}>{l.host === 'code' ? <Icon name="code" size={20} /> : <img src={`/logos/host-${l.host}.svg`} alt="" width="20" height="20" />}</a>
-        <span slot="tip"><b>{HOST[l.host]}</b><span class="tdesc">{new URL(l.repo).pathname.slice(1)}</span></span>
-      </Tip>
+      <a href={l.repo} rel="noopener" aria-label={`${name} on ${HOST[l.host]}`}>
+        {l.host === 'code' ? <Icon name="code" size={20} /> : <span class="mk" style={`--m:url(/logos/host-${l.host}.svg)`} />}
+      </a>
     )}
   </span>
 )}

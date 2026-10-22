@@ -32,7 +32,8 @@ const { title, description } = Astro.props;
 </Base>
 
 <style is:global>
-  .top { border-bottom: var(--rule-8) solid var(--ink); }
+  .top { position: sticky; top: 0; z-index: 30; background: rgb(255 255 255 / 0.92); border-bottom: var(--rule-8) solid var(--ink); }
+  html { scroll-padding-top: 72px; }
   .bar { display: flex; align-items: center; gap: 24px 32px; flex-wrap: wrap; padding-block: 14px; }
   .brand { font-size: 1.5rem; font-family: var(--display); font-weight: 900; text-decoration: none; }
   nav { display: flex; gap: 6px 22px; flex-wrap: wrap; font-weight: 600; }
