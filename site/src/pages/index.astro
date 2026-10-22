@@ -13,6 +13,7 @@ const REACH: Record<string, string> = {
 <Page title="OSSHunt: open-source alternatives to software you pay for" description={`Sourced comparisons for ${d.counts.paid} paid tools: fit, license, price and risk, with unknowns shown. Checked ${CHECKED}.`}>
 
   <main id="main">
+    <div class="first">
     <section class="hero wrap" aria-labelledby="h1">
       <div class="hero-copy">
         <h1 id="h1">Find the open-source alternative to what you pay for</h1>
@@ -25,14 +26,17 @@ const REACH: Record<string, string> = {
       <HeroLoop scenes={d.scenes} />
     </section>
 
-    <div class="serving-band">
-      <p class="serving wrap">
-        <span><b>{d.counts.paid}</b> paid tools</span>
-        <span><b>{d.counts.oss}</b> open-source and source-available candidates</span>
-        <span><b>{d.counts.maps}</b> sourced mappings</span>
-        <span><b>{d.counts.cats}</b> categories</span>
-        <span>Checked <b>{CHECKED}</b></span>
-      </p>
+    <div class="stats-band" data-stats>
+      <ul class="stats wrap" aria-label="OSSHunt in numbers">
+        {[[d.counts.cats, 'categories'], [d.counts.paid, 'tools'], [d.counts.oss, 'solutions'], [d.counts.maps, 'alternatives']].map(([n, label], i) => (
+          <li class="stat" style={`--i:${i}`}>
+            <b class="num" data-to={n}>{n}</b>
+            <span class="lab">{label}</span>
+            <i class="bar" aria-hidden="true"></i>
+          </li>
+        ))}
+      </ul>
+    </div>
     </div>
 
     <section class="block wrap" aria-labelledby="price-h">
@@ -40,10 +44,10 @@ const REACH: Record<string, string> = {
       <ul class="prices">
         {d.prices.map((p) => (
           <li>
-            <a class="pn" href={`/software/${p.id}/`}>{p.name}</a>
+            <span class="pn">{p.name}</span>
             <span class="pv">{p.price}{p.yearly && <em>billed yearly</em>}</span>
             <span class="pa">{p.alts} alternative{p.alts === 1 ? '' : 's'}</span>
-            <a class="ps" href={p.source} aria-label={`${p.name} pricing page`}>Source</a>
+            <a class="ps" href={`/software/${p.id}/`} aria-label={`${p.name} alternatives`}>Alternatives</a>
           </li>
         ))}
       </ul>
@@ -68,7 +72,9 @@ const REACH: Record<string, string> = {
 
 <style>
 
-  .hero { display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); gap: clamp(28px, 5vw, 72px); padding-block: clamp(32px, 5vw, 64px); align-items: start; }
+  .hero { display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); gap: clamp(28px, 5vw, 72px); padding-block: clamp(32px, 5vw, 64px); align-items: center; }
+  /* On wide screens the first screen fills the viewport below the header (72px = header incl. 8px rule): hero above, counts band at the bottom edge. */
+  @media (min-width: 901px) { .first { display: flex; flex-direction: column; min-height: calc(100svh - 72px); } .first .hero { flex: 1; } }
   h1 { font-size: clamp(2.5rem, 5.6vw, 5rem); line-height: 0.96; font-family: var(--display); font-weight: 900; letter-spacing: -0.005em; margin-bottom: 28px; }
   .samples { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 14px; font-weight: 700; font-size: 0.8125rem; }
   .slabel { margin-right: 4px; }
@@ -76,9 +82,20 @@ const REACH: Record<string, string> = {
   .chip:hover { background: var(--band); }
   .chip[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
 
-  .serving-band { border-top: var(--rule-3) solid var(--ink); border-bottom: var(--rule-1) solid var(--ink); }
-  .serving { display: flex; flex-wrap: wrap; gap: 6px 28px; margin-block: 0; padding-block: 14px; font-size: 0.9375rem; }
-  .serving b { font-weight: 900; font-size: 1.125rem; }
+  /* Counts band: heavy rule above, ruled cells, condensed numerals that count up when scrolled into view. */
+  .stats-band { border-top: var(--rule-8) solid var(--ink); border-bottom: var(--rule-1) solid var(--ink); }
+  .stats { list-style: none; margin-block: 0; padding-block: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stat { position: relative; display: grid; align-content: center; gap: 2px; padding: clamp(18px, 3vw, 32px) clamp(12px, 2vw, 28px); border-left: var(--rule-1) solid var(--ink); }
+  .stat:first-child { border-left: 0; padding-left: 0; }
+  .num { font-family: var(--display); font-weight: 900; font-size: clamp(2.5rem, 5.4vw, 4.5rem); line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+  .lab { font-size: clamp(0.875rem, 1.3vw, 1.125rem); font-weight: 600; }
+  .bar { display: block; height: 4px; width: 56px; margin-top: 10px; background: var(--band); transform-origin: left; }
+  /* Armed by script: hidden until the band enters the view, then each cell rises in, staggered; the yellow bar draws. */
+  [data-stats].armed .stat { opacity: 0; transform: translateY(14px); }
+  [data-stats].armed .bar { transform: scaleX(0); }
+  [data-stats].in .stat { opacity: 1; transform: none; transition: opacity 0.5s ease-out calc(var(--i) * 120ms), transform 0.5s ease-out calc(var(--i) * 120ms); }
+  [data-stats].in .bar { transform: none; transition: transform 0.6s ease-out calc(var(--i) * 120ms + 250ms); }
+  @media (prefers-reduced-motion: reduce) { [data-stats].armed .stat, [data-stats].in .stat, [data-stats].armed .bar, [data-stats].in .bar { opacity: 1; transform: none; transition: none; } }
 
   .block { padding-block: clamp(32px, 4vw, 56px) 0; }
   h2 { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; font-size: 1.125rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: var(--rule-3) solid var(--ink); padding-bottom: 6px; margin-bottom: 4px; }
@@ -90,7 +107,7 @@ const REACH: Record<string, string> = {
   .pv em { display: inline-block; margin-left: 8px; font-size: 0.75rem; font-style: italic; color: var(--ink-2); }
   .pa { color: var(--ink-2); font-size: 0.875rem; }
   .ps { font-size: 0.875rem; }
-  .note { font-size: 0.8125rem; color: var(--ink-2); margin: 10px 0 0; max-width: 70ch; }
+  .note { font-size: 0.8125rem; color: var(--ink-2); margin: 10px 0 0; }
 
   .reach { margin-top: 20px; }
   .reach > summary { padding: 4px 0; margin-bottom: 6px; }
@@ -106,7 +123,36 @@ const REACH: Record<string, string> = {
 
   @media (max-width: 900px) {
     .hero { grid-template-columns: minmax(0, 1fr); }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stat:nth-child(3) { border-left: 0; padding-left: 0; }
+    .stat:nth-child(n + 3) { border-top: var(--rule-1) solid var(--ink); }
     .prices li { grid-template-columns: minmax(0, 1fr) auto; }
     .pv { grid-column: 1; } .pa { grid-column: 1; } .ps { grid-column: 2; grid-row: 1; }
   }
 </style>
+
+<script>
+  const band = document.querySelector<HTMLElement>('[data-stats]');
+  if (band && !matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    band.classList.add('armed');
+    const nums = [...band.querySelectorAll<HTMLElement>('.num')];
+    const run = () => {
+      band.classList.add('in');
+      nums.forEach((el, i) => {
+        const to = Number(el.dataset.to); const delay = i * 120; const dur = 1100;
+        const t0 = performance.now() + delay;
+        el.textContent = '0';
+        const tick = (now: number) => {
+          const t = Math.min(1, Math.max(0, (now - t0) / dur));
+          el.textContent = String(Math.round(to * (1 - Math.pow(1 - t, 3))));
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    };
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { io.disconnect(); run(); }
+    }, { threshold: 0.4 });
+    io.observe(band);
+  }
+</script>

@@ -13,7 +13,7 @@ interface Props {
 const a = Astro.props;
 ---
 <article class="facts">
-  {!a.hideHead && <header class="facts-head">{a.logo && <img src={`/logos/${a.logo}.svg`} alt="" width="28" height="28" />}<h3>{a.id ? <a href={`/alternatives/${a.id}/`}>{a.name}</a> : a.name}</h3><SourceLinks url={a.url} repo={a.repo} name={a.name} /></header>}
+  {!a.hideHead && <header class="facts-head">{a.logo && <img src={`/logos/${a.logo}.svg`} alt="" width="28" height="28" />}<h3>{a.id ? <a href={`/alternatives/${a.id}/`} data-fx>{a.name}</a> : a.name}</h3><SourceLinks url={a.url} repo={a.repo} name={a.name} /></header>}
   {!a.noFit && a.fit && <div class="facts-row fit"><span>Fit for {a.incumbent}</span><FitMark fit={a.fit} /></div>}
   <div class="facts-row" class:list={[{ lead: a.noFit }]}><span>License</span><License license={a.license} osi={a.osi} /></div>
   <div class="facts-row"><span>Paid-feature tier</span><TierBox tier={a.tier} /></div>
@@ -23,5 +23,5 @@ const a = Astro.props;
       <span slot="tip"><b>Self-hostable: {a.selfHost ? 'yes' : 'no'}</b><span class="tdesc">{a.selfHost ? 'You can run it on your own server.' : 'Not offered as software you run yourself.'}</span></span>
     </Tip>
   </div>
-  <div class="facts-row"><span>Paid-feature limits</span>{a.limits ? <span>{a.limits} noted</span> : <span class="u">None established</span>}</div>
+  <div class="facts-row"><span>Paid-feature limits</span>{a.limits ? <span data-fx>{a.limits} noted</span> : <span class="u" data-fx>None established</span>}</div>
 </article>
