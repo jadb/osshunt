@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { productPricingPaths, pricingTargetInScope } from '../lib/pricing/scope.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const products = JSON.parse(await readFile(resolve(root, 'data/collections/products.json'), 'utf8'));
@@ -22,9 +23,22 @@ const catalog = products.map(product => ({
   kind: product.kind,
   categories: product.categories,
   categoryNames: product.categories.map(id => byCategory.get(id).name),
+  pricingHints: [...new Set((product.profile?.pricingTiers || []).flatMap(tier => tier.sources || []))]
+    .filter(value => {
+      try {
+        const url = new URL(value), landing = new URL(byLanding.get(product.id) ?? product.url);
+        return ['https:', 'http:'].includes(url.protocol) &&
+          url.hostname.replace(/^www\./, '') === landing.hostname.replace(/^www\./, '') &&
+          /(?:pricing|prices|plans|subscriptions|compare)/i.test(url.pathname);
+      } catch { return false; }
+    }).sort(),
   audienceRank: Math.min(...product.categories.map(id => byCategory.get(id).audienceRank)),
   ...(product.kind === 'oss' ? { osi: product.osi, tier: product.tier } : {}),
 })).sort((a, b) => a.audienceRank - b.audienceRank || a.name.localeCompare(b.name, 'en'));
+for (const product of catalog) {
+  product.productPaths = productPricingPaths(product);
+  product.pricingHints = product.pricingHints.filter(value => pricingTargetInScope(product, value));
+}
 
 await mkdir(resolve(root, 'public'), { recursive: true });
 await writeFile(resolve(root, 'public/catalog.json'), JSON.stringify(catalog, null, 2) + '\n');

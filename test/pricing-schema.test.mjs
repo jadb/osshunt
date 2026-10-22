@@ -3,24 +3,8 @@ import assert from 'node:assert/strict';
 import { z } from 'zod';
 import { pricingObservation, validatePricingObservations } from '../lib/pricing/schema.mjs';
 
-export function observation(id = 'sample-20200101') {
-  return { id, productId: 'sample', scope: { edition: null, deployment: 'unknown' },
-    anchorAt: '2020-01-01T00:00:00.000Z', landingCapturedAt: '2020-01-01T00:00:00.000Z',
-    pricingCapturedAt: '2020-01-01T00:00:00.000Z', evidenceAvailableAt: '2020-01-01T00:00:00.000Z',
-    landingUrl: 'https://sample.example/', pricingUrl: 'https://sample.example/pricing',
-    landingArchiveUrl: 'https://web.archive.org/web/20200101000000id_/https://sample.example/',
-    pricingArchiveUrl: 'https://web.archive.org/web/20200101000000id_/https://sample.example/pricing',
-    provenance: 'archived-link', sourceSha256: 'a'.repeat(64), landingSha256: 'b'.repeat(64),
-    sourceDigest: null, landingDigest: null, fetchedAt: '2026-10-22T00:00:00.000Z',
-    landingFetchedAt: '2026-10-22T00:00:00.000Z', aliasEvidenceAt: [], extractorVersion: '1.0.0',
-    reviewState: 'confirmed', quality: 'complete', issues: [], plans: [{ name: 'Pro', order: 0,
-      popular: null, kind: 'plan', status: 'paid', offers: [{ literal: 'USD 12 per month', amount: '12',
-        currency: 'USD', billingPeriod: 'month', commitment: 'unknown', unit: null, minimumQuantity: null,
-        qualifications: { region: null, locale: null, tax: null, promotion: null, startingAt: null,
-          range: null, volume: null, billingVariant: null }, source: { locator: 'article:1', text: 'USD 12 per month' } }],
-      features: [], source: { locator: 'article:1', text: 'Pro USD 12 per month' } }],
-    review: { reviewer: 'maintainer', reviewedAt: '2026-10-22T00:00:00.000Z', decision: 'confirmed' } };
-}
+import { observation } from './fixtures/pricing-observation.mjs';
+
 test('pricing collection preserves exact decimals and rejects unsupported facts', () => {
   const item = observation();
   assert.equal(pricingObservation(z).parse(item).plans[0].offers[0].amount, '12');
@@ -36,9 +20,43 @@ test('pricing collection permits empty coverage but rejects unknown products, pr
 });
 test('pricing evidence requires exact replay identity and dates', () => {
   for (const patch of [
-    { pricingArchiveUrl: 'https://evil.example/web/20200101000000/https://sample.example/pricing' },
-    { pricingArchiveUrl: 'https://web.archive.org/web/20200102000000id_/https://sample.example/pricing' },
+    { pricingArchiveUrl: 'https://evil.example/web/20200101000000/https://sample.example.com/pricing' },
+    { pricingArchiveUrl: 'https://web.archive.org/web/20200102000000id_/https://sample.example.com/pricing' },
     { evidenceAvailableAt: '2019-12-31T00:00:00.000Z' },
     { pricingCapturedAt: '2020-01-02T00:00:00.000Z' },
   ]) assert.throws(() => validatePricingObservations([{ ...observation(), ...patch }], [{ id: 'sample' }]));
+});
+test('pricing collection enforces lookup windows and actual semiannual capture spacing', () => {
+  assert.throws(() => validatePricingObservations([{ ...observation(), anchorAt: '2020-04-01T00:00:00.000Z' }], [{ id: 'sample' }]));
+  const second = observation('sample-20200102');
+  for (const key of ['anchorAt', 'landingCapturedAt', 'pricingCapturedAt', 'evidenceAvailableAt']) second[key] = '2020-01-02T00:00:00.000Z';
+  second.landingArchiveUrl = second.landingArchiveUrl.replace('20200101000000', '20200102000000');
+  second.pricingArchiveUrl = second.pricingArchiveUrl.replace('20200101000000', '20200102000000');
+  assert.throws(() => validatePricingObservations([observation(), second], [{ id: 'sample' }]));
+  assert.throws(() => validatePricingObservations([{ ...observation(), aliasEvidenceAt: ['2020-02-01T00:00:00.000Z'],
+    evidenceAvailableAt: '2020-02-01T00:00:00.000Z' }], [{ id: 'sample' }]));
+});
+test('pricing collection rejects private targets and unsupported historical-link claims', () => {
+  const item = observation(); item.pricingUrl = 'http://127.0.0.1/pricing';
+  item.pricingArchiveUrl = 'https://web.archive.org/web/20200101000000id_/http://127.0.0.1/pricing';
+  assert.throws(() => validatePricingObservations([item], [{ id: 'sample' }]));
+  const unsupported = observation(); delete unsupported.discovery;
+  assert.throws(() => validatePricingObservations([unsupported], [{ id: 'sample' }]));
+});
+test('confirmation rejects identity collisions and replay credentials', () => {
+  const item = observation(); item.plans.push({ ...structuredClone(item.plans[0]), name: 'Business', order: 1 });
+  item.planIdentities = { Pro: 'core', Business: 'core' };
+  assert.throws(() => validatePricingObservations([item], [{ id: 'sample' }]));
+  const credentials = observation(); credentials.pricingArchiveUrl = credentials.pricingArchiveUrl.replace('https://', 'https://login:password@');
+  assert.throws(() => validatePricingObservations([credentials], [{ id: 'sample' }]));
+});
+test('published historical pricing cannot cross product paths on the same vendor host', () => {
+  const item = observation(); item.landingUrl = 'https://www.atlassian.com/software/jira';
+  item.pricingUrl = 'https://www.atlassian.com/software/jira/pricing';
+  const replay = url => `https://web.archive.org/web/20200101000000id_/${url}`;
+  item.landingArchiveUrl = replay(item.landingUrl); item.pricingArchiveUrl = replay(item.pricingUrl);
+  const catalog = [{ id: 'sample', url: item.landingUrl, productPaths: ['/software/jira'] }];
+  assert.equal(validatePricingObservations([item], catalog).length, 1);
+  item.pricingUrl = 'https://www.atlassian.com/software/confluence/pricing'; item.pricingArchiveUrl = replay(item.pricingUrl);
+  assert.throws(() => validatePricingObservations([item], catalog));
 });

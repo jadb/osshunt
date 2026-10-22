@@ -3,11 +3,9 @@ import { readFile, realpath, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Readable } from 'node:stream';
-import { createHistoryService } from '../lib/history/service.mjs';
+import { createArchiveApplication } from '../lib/pricing/application.mjs';
 import { FileHistoryStore } from '../lib/history/stores-file.mjs';
-import { discoverScreenshots, assertExactReplayUrl } from '../lib/history/archive.mjs';
-import { selectHistoricalFrames, selectNewFrame } from '../lib/history/selection.mjs';
-import { verifyImage } from '../lib/history/image.mjs';
+import { FilePricingStore } from '../lib/pricing/stores-file.mjs';
 
 const repository = fileURLToPath(new URL('../', import.meta.url));
 const types = { '.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
@@ -15,9 +13,12 @@ const types = { '.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; c
 export async function startHistoryServer({ port = Number(process.env.PORT || 4173), host = process.env.HOST || '127.0.0.1',
   publicDirectory = resolve(repository, 'public'), cacheDirectory = resolve(repository, '.local/history'), service } = {}) {
   const publicRoot = await realpath(publicDirectory);
-  service ||= createHistoryService({ catalog: JSON.parse(await readFile(resolve(publicRoot, 'catalog.json'), 'utf8')),
-    store: new FileHistoryStore(cacheDirectory), archive: { discoverScreenshots, assertExactReplayUrl,
-      selectHistoricalFrames, selectNewFrame, verifyImage } });
+  if (!service) {
+    const historyStore = new FileHistoryStore(cacheDirectory);
+    service = createArchiveApplication({ catalog: JSON.parse(await readFile(resolve(publicRoot, 'catalog.json'), 'utf8')),
+      confirmed: JSON.parse(await readFile(resolve(publicRoot, 'pricing-observations.json'), 'utf8')),
+      historyStore, pricingStore: new FilePricingStore(cacheDirectory, { historyStore }) });
+  }
   const server = createServer(async (incoming, outgoing) => {
     try {
       const url = new URL(incoming.url, 'http://localhost');

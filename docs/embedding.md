@@ -86,3 +86,6 @@ New checks are driven by visits or the explicit backfill command, not a schedule
 | Browser reports CORS failure | Use the iframe or a same-origin API proxy; `api-base` alone does not grant access |
 | Empty/pending/unavailable history | Review coverage, stored error and cooldown; do not remove reservations or repeatedly fetch the source |
 | New frames stop after a restart | Retain the backend's database and image storage; apply both D1 migrations when self-hosting |
+# Pricing history
+
+The updated gallery and iframe also include a pricing timeline with six-calendar-month checks. It needs migration `0003_pricing_history.sql` and the built `pricing-observations.json` asset in addition to the existing image requirements. No new binding or browser secret is required. [Pricing operation, confirmation workflow and deployment](pricing-history.md) explains private evidence access and the restart/redeployment required after confirmation. Historical pricing coverage remains incomplete.

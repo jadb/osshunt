@@ -34,3 +34,19 @@ test('renames require explicit identities and incomplete extraction never proves
   const pair = comparePricingHistory([a, b])[0];
   assert.equal(pair.status, 'incomplete'); assert.deepEqual(pair.changes, []);
 });
+test('interleaved deployments preserve their independent comparison timelines', () => {
+  const a = row('a', '12'), b = row('b', '99'), c = row('c', '15');
+  b.scope.deployment = 'self-hosted'; c.pricingCapturedAt = '2021-01-01T00:00:00Z';
+  const pairs = comparePricingHistory([a, b, c]);
+  assert.equal(pairs.length, 1); assert.equal(pairs[0].fromId, 'a'); assert.equal(pairs[0].toId, 'c');
+  assert.equal(pairs[0].changes[0].type, 'amount');
+});
+test('identity collisions cannot silently hide an observed price change', () => {
+  const a = row('a', '12'), b = row('b', '99');
+  for (const item of [a, b]) {
+    item.plans.push({ ...structuredClone(item.plans[0]), name: 'Business', offers: [offer('20')] });
+    item.planIdentities = { Pro: 'core', Business: 'core' };
+  }
+  const result = comparePricingHistory([a, b])[0];
+  assert.equal(result.status, 'incompatible_basis'); assert.equal(result.changes.some(change => change.type === 'amount'), false);
+});

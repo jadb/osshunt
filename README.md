@@ -11,6 +11,7 @@ A sourced seed for discovering open-source alternatives to software businesses p
 - [Collections contract and queries](docs/collections.md)
 - [Website history player, preview and deployment](docs/website-history.md)
 - [Embed a player on any page — snippets and requirements](docs/embedding.md)
+- [Historical pricing — six-month checks, evidence review and deployment](docs/pricing-history.md)
 
 Audience positions are editorial reach estimates, not measured market-size counts. A/B/C describe paid feature restrictions; S/U entries stay outside default OSS recommendations. Migration fit is recorded per mapping. A does not mean feature parity with the paid incumbent or free infrastructure.
 
@@ -47,3 +48,5 @@ npm run history:serve
 ```
 
 Gallery for all 227 products and alternatives. Existing Internet Archive screenshot images only, actual dates at least 30 days apart, playback, stepping, scrubbing, speed and archive links. Initial history discovery on first visit; immutable image copies on demand. Shared persisted checks prevent repeated archive requests within 30 days, including failed checks. Local cache survives server restarts in `.local/history/`. [Operation, embedding and Cloudflare setup](docs/website-history.md).
+
+The gallery and iframe also include an independent pricing timeline. Archived HTML proposes plans, exact prices, billing terms and feature limits; only explicitly confirmed observations publish. Pricing uses six calendar months independently of images. Initial verification has no confirmed pricing observations because of missing captures, timeouts and a payload-integrity failure. [Review workflow and coverage](docs/pricing-history.md).
