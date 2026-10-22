@@ -6858,6 +6858,116 @@
     }
   },
   {
+    "id": "pricing-manual-079120482473d9213a3cb44a70b37d51c7c095991a2970eee5900f4a7bdfe023",
+    "productId": "harvest",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-27T02:29:33.000Z",
+    "landingCapturedAt": "2025-06-27T02:29:33.000Z",
+    "pricingCapturedAt": "2025-06-27T02:29:33.000Z",
+    "evidenceAvailableAt": "2025-06-27T02:29:33.000Z",
+    "landingUrl": "https://www.getharvest.com/",
+    "pricingUrl": "https://www.getharvest.com/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Free Trial",
+      "locator": "offset:50840-50942"
+    },
+    "sourceSha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681",
+    "landingSha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681",
+    "sourceDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+    "landingDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+    "fetchedAt": "2026-10-22T17:29:22.813Z",
+    "landingFetchedAt": "2026-10-22T17:29:22.813Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+      "actualDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+      "actualDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 02:29:33 GMT",
+      "originalUrl": "https://www.getharvest.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250627050111_aa3496c7/urls-transfer.archivete.am-doublethedonation.com_subdomains.txt-inf-20250626-170206-dqr10-00002.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 02:29:33 GMT",
+      "originalUrl": "https://www.getharvest.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250627050111_aa3496c7/urls-transfer.archivete.am-doublethedonation.com_subdomains.txt-inf-20250626-170206-dqr10-00002.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+      "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+      "Customer-story pricing and invoiced revenue are not Harvest subscription rates."
+    ],
+    "plans": [
+      {
+        "name": "Free Trial",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Free 30-day trial",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "30-day free trial; no credit card required; renewal price unknown",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:50840-50942",
+              "text": "Free 30-day trial. No credit card required."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:50840-50942",
+          "text": "Free 30-day trial. No credit card required."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:33:34.905Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-089993d56dfae790a4d070ecae813f1a252a200da8809a80789c89be90482c6c",
     "productId": "datadog",
     "scope": {
@@ -7526,6 +7636,116 @@
       "reviewedAt": "2026-10-22T19:11:41.705Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-0ea2a79ca35fc14d0cb74ca175ee52ce592f0d561a9c89ca2ad905006fb5c88b",
+    "productId": "squarespace",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T21:59:29.000Z",
+    "landingCapturedAt": "2025-06-30T21:59:29.000Z",
+    "pricingCapturedAt": "2025-06-30T21:59:29.000Z",
+    "evidenceAvailableAt": "2025-06-30T21:59:29.000Z",
+    "landingUrl": "https://www.squarespace.com/",
+    "pricingUrl": "https://www.squarespace.com/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Free Trial",
+      "locator": "offset:126302-126587"
+    },
+    "sourceSha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+    "landingSha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+    "sourceDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+    "landingDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+    "fetchedAt": "2026-10-22T15:32:58.193Z",
+    "landingFetchedAt": "2026-10-22T15:32:58.193Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+      "actualDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+      "actualDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 21:59:29 GMT",
+      "originalUrl": "https://www.squarespace.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "ARCHIVEIT-5591-2025071016-00000/ARCHIVEIT-5591-TEST-JOB2573392-SEED1022266-20250630195003978-00000-h3.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 21:59:29 GMT",
+      "originalUrl": "https://www.squarespace.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "ARCHIVEIT-5591-2025071016-00000/ARCHIVEIT-5591-TEST-JOB2573392-SEED1022266-20250630195003978-00000-h3.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+      "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+      "No trial duration inferred from general knowledge. Rejected pricing replay remains absent."
+    ],
+    "plans": [
+      {
+        "name": "Free Trial",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Free website trial",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Free website trial; no credit card required; duration and renewal price unknown",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:126302-126587",
+              "text": "Get your free website trial today. No credit card required."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:126302-126587",
+          "text": "Get your free website trial today. No credit card required."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:33:34.986Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -10754,6 +10974,162 @@
     }
   },
   {
+    "id": "pricing-manual-5f4e0bb1934cf4d7b3f01757300fb67c4773c56de4065367d4fdad5c6155d226",
+    "productId": "adobe-lightroom",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-28T13:47:55.000Z",
+    "landingCapturedAt": "2025-06-28T13:47:55.000Z",
+    "pricingCapturedAt": "2025-06-28T13:47:55.000Z",
+    "evidenceAvailableAt": "2025-06-28T13:47:55.000Z",
+    "landingUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+    "pricingUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+    "landingArchiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Lightroom plan with 1TB",
+      "locator": "offset:6879-7109"
+    },
+    "sourceSha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+    "landingSha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+    "sourceDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+    "landingDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+    "fetchedAt": "2026-10-22T17:33:51.237Z",
+    "landingFetchedAt": "2026-10-22T17:33:51.237Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+      "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+      "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 13:47:55 GMT",
+      "originalUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250628125547997-02215-02266-wbgrp-crawl043/LUX-029-2025-06-23-20250628134417093-02223-1831598~wbgrp-crawl043.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 13:47:55 GMT",
+      "originalUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250628125547997-02215-02266-wbgrp-crawl043/LUX-029-2025-06-23-20250628134417093-02223-1831598~wbgrp-crawl043.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+      "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+      "Unresolved PRICE/annual-paid-monthly/tax macros are not normalized prices or contract terms. External merchandising links were not fetched."
+    ],
+    "plans": [
+      {
+        "name": "Lightroom plan with 1TB",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [
+          {
+            "literal": "PRICE - ABM - Lightroom plan with 1TB",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:6879-7109",
+              "text": "PRICE - ABM - Lightroom plan with 1TB"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Product features",
+            "value": "Quick Actions and Generative Remove",
+            "source": {
+              "locator": "offset:5667-5898",
+              "text": "Make your photos look better than ever, no matter your skill level. New Quick Actions give you creative assistance tailored to your unique photo. And with Generative Remove, you ca"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:6879-7109",
+          "text": "PRICE - ABM - Lightroom plan with 1TB"
+        }
+      },
+      {
+        "name": "Free Trial",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Free trial",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Explicit Lightroom free-trial offer; duration and renewal amount not retained",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:7316-7535",
+              "text": "Free trial|Free trial {{lightroom}}"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:7316-7535",
+          "text": "Free trial|Free trial {{lightroom}}"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:33:34.772Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-66fc0878c97c0f04cfb69387f5071c7b03290949ea89278e86f294bb2dac9cc9",
     "productId": "otter",
     "scope": {
@@ -11133,6 +11509,170 @@
     }
   },
   {
+    "id": "pricing-manual-67f244453222451d680f21103c4fa69ef49ab5926de723f35d936b9ecf2f3598",
+    "productId": "adobe-photoshop",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T05:53:12.000Z",
+    "landingCapturedAt": "2025-06-30T05:53:12.000Z",
+    "pricingCapturedAt": "2025-06-30T05:53:12.000Z",
+    "evidenceAvailableAt": "2025-06-30T05:53:12.000Z",
+    "landingUrl": "https://www.adobe.com/products/photoshop.html",
+    "pricingUrl": "https://www.adobe.com/products/photoshop.html",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Photoshop",
+      "locator": "offset:6523-6809"
+    },
+    "sourceSha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+    "landingSha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+    "sourceDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+    "landingDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+    "fetchedAt": "2026-10-22T17:34:30.831Z",
+    "landingFetchedAt": "2026-10-22T17:34:30.831Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+      "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+      "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 05:53:12 GMT",
+      "originalUrl": "https://www.adobe.com/products/photoshop.html",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630062550_12db523d/news.opensuse.org-inf-20250630-041949-3gy5p-00000.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 05:53:12 GMT",
+      "originalUrl": "https://www.adobe.com/products/photoshop.html",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630062550_12db523d/news.opensuse.org-inf-20250630-041949-3gy5p-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+      "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+      "Merchandising price fragments remain unresolved; no seven-day trial or numerical rate inferred."
+    ],
+    "plans": [
+      {
+        "name": "Photoshop",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [
+          {
+            "literal": "PRICE - ABM - Photoshop",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:6523-6809",
+              "text": "PRICE - ABM - Photoshop{{small-tax-incl-label}} . for the {{annual-paid-monthly-plan}}."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Distraction Removal",
+            "value": "Detect and remove unwanted objects",
+            "source": {
+              "locator": "offset:8568-8737",
+              "text": "Tidy up your scene in a click. Distraction Removal in the Remove tool automatically detects and deletes unwanted elements like wires and people in the background."
+            }
+          },
+          {
+            "name": "Image composition",
+            "value": "Combine, edit and blend images",
+            "source": {
+              "locator": "offset:9117-9242",
+              "text": "Combine, edit, and blend multiple images and graphics to craft something truly unique. Play with it ‘til it’s amazing."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:6523-6809",
+          "text": "PRICE - ABM - Photoshop{{small-tax-incl-label}} . for the {{annual-paid-monthly-plan}}."
+        }
+      },
+      {
+        "name": "Free Trial",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Free trial Photoshop",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Explicit Photoshop free-trial offer; duration and renewal amount not retained",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:6959-7178",
+              "text": "{{free-trial}}|Free trial Photoshop"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:6959-7178",
+          "text": "{{free-trial}}|Free trial Photoshop"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:33:34.824Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-69a3988676610990aeab60e6098e035abb8625c17c4ef0dcf5596dfa3153e675",
     "productId": "fireflies",
     "scope": {
@@ -11356,6 +11896,184 @@
       "reviewedAt": "2026-10-22T19:10:31.648Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-6e37737f65594691794dd42dfc2ba2a5e4a3a09fec096e8e192806aad6d2d07e",
+    "productId": "final-cut-pro",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-27T04:39:00.000Z",
+    "landingCapturedAt": "2025-06-27T04:39:00.000Z",
+    "pricingCapturedAt": "2025-06-27T04:39:00.000Z",
+    "evidenceAvailableAt": "2025-06-27T04:39:00.000Z",
+    "landingUrl": "https://www.apple.com/final-cut-pro/",
+    "pricingUrl": "https://www.apple.com/final-cut-pro/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Final Cut Pro for Mac",
+      "locator": "offset:159744-160590:$.name"
+    },
+    "sourceSha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578",
+    "landingSha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578",
+    "sourceDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+    "landingDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+    "fetchedAt": "2026-10-22T17:35:51.494Z",
+    "landingFetchedAt": "2026-10-22T17:35:51.494Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+      "actualDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+      "actualDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 04:39:00 GMT",
+      "originalUrl": "https://www.apple.com/final-cut-pro/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250627052046_af063fdc/www.avs4you.com-inf-20250627-040621-5w5lj-00000.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 04:39:00 GMT",
+      "originalUrl": "https://www.apple.com/final-cut-pro/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250627052046_af063fdc/www.avs4you.com-inf-20250627-040621-5w5lj-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+      "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+      "Education bundle is a separately named package with unknown price, not a standalone Final Cut Pro price. App Store link was not fetched."
+    ],
+    "plans": [
+      {
+        "name": "Final Cut Pro for Mac",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Operating system",
+            "value": "macOS",
+            "source": {
+              "locator": "offset:159744-160590:$.operatingSystem",
+              "text": "macOS"
+            }
+          },
+          {
+            "name": "Magnetic Mask",
+            "value": "Magnetic Mask",
+            "source": {
+              "locator": "offset:100056-100123",
+              "text": "Magnetic Mask"
+            }
+          },
+          {
+            "name": "Transcribe to Captions",
+            "value": "Transcribe to Captions",
+            "source": {
+              "locator": "offset:100918-100994",
+              "text": "Transcribe to Captions"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:159744-160590:$.name",
+          "text": "Final Cut Pro for Mac"
+        }
+      },
+      {
+        "name": "Pro Apps Bundle for Education",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Included applications",
+            "value": "Final Cut Pro, Motion, Compressor, Logic Pro and MainStage",
+            "source": {
+              "locator": "offset:133520-133845",
+              "text": "Unleash your creative potential with the Pro Apps Bundle for qualifying college students, teachers, and education institutions. Get all five professional applications for video and"
+            }
+          },
+          {
+            "name": "Eligibility",
+            "value": "Qualifying college students, teachers and education institutions",
+            "source": {
+              "locator": "offset:133520-133845",
+              "text": "Unleash your creative potential with the Pro Apps Bundle for qualifying college students, teachers, and education institutions. Get all five professional applications for video and"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:133520-133845",
+          "text": "Unleash your creative potential with the Pro Apps Bundle for qualifying college students, teachers, and education institutions. Get all five professional applications for video and"
+        }
+      },
+      {
+        "name": "Free Trial",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Free Trial",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Explicit Final Cut Pro free trial; duration and purchase price not retained",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:85461-85712",
+              "text": "Free Trial Free Trial"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:85461-85712",
+          "text": "Free Trial Free Trial"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:33:34.867Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -21192,6 +21910,116 @@
       "reviewedAt": "2026-10-22T19:10:54.569Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-d5732e36f62c5c5b6fd1a001787c4b9f8aa66bb7e9d939a55848d7d438fd7c3e",
+    "productId": "ghost",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T22:10:56.000Z",
+    "landingCapturedAt": "2025-06-30T22:10:56.000Z",
+    "pricingCapturedAt": "2025-06-30T22:10:56.000Z",
+    "evidenceAvailableAt": "2025-06-30T22:10:56.000Z",
+    "landingUrl": "https://ghost.org/",
+    "pricingUrl": "https://ghost.org/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Free Trial",
+      "locator": "offset:62664-62901"
+    },
+    "sourceSha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+    "landingSha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+    "sourceDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+    "landingDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+    "fetchedAt": "2026-10-22T15:34:21.256Z",
+    "landingFetchedAt": "2026-10-22T15:34:21.256Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+      "actualDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+      "actualDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 22:10:56 GMT",
+      "originalUrl": "https://ghost.org/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_urls_20250630221204_d4cf7e88/urls_20250630221204_d4cf7e88.1743749985.megawarc.warc.zst",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 22:10:56 GMT",
+      "originalUrl": "https://ghost.org/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_urls_20250630221204_d4cf7e88/urls_20250630221204_d4cf7e88.1743749985.megawarc.warc.zst",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+      "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+      "Rejected pricing replay remains absent. Publisher revenue and member-subscription amounts are not Ghost license prices."
+    ],
+    "plans": [
+      {
+        "name": "Free Trial",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Try Ghost completely free for 14 days",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "14-day free trial; paid tier, currency and renewal rate unknown",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:62664-62901",
+              "text": "Try Ghost completely free for 14 days →"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:62664-62901",
+          "text": "Try Ghost completely free for 14 days →"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:33:34.943Z",
+      "decision": "confirmed"
     }
   },
   {
