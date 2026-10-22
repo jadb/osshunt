@@ -1,5 +1,862 @@
 [
   {
+    "id": "pricing-2559051b4649ba992a9852132392ec4a88e22248d536d28680f82750f3581ee8",
+    "productId": "airtable",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T18:43:46.000Z",
+    "landingCapturedAt": "2025-06-30T18:43:46.000Z",
+    "pricingCapturedAt": "2025-06-30T15:57:02.000Z",
+    "evidenceAvailableAt": "2025-06-30T18:43:46.000Z",
+    "landingUrl": "https://www.airtable.com/",
+    "pricingUrl": "https://airtable.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630184346id_/https://www.airtable.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630155702id_/https://airtable.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:343090-343268"
+    },
+    "sourceSha256": "a62bbb57ea1ecf4b64ea2116352baf76d5f4d6f18fc858e07517d5c6927dcdcb",
+    "landingSha256": "d98006ace62c420a2196f3b06d92d49efb4893eb23cbff6df268fb4f75876f8b",
+    "sourceDigest": "KCJKPOTFBPKKBDT6B3BTYZEPGV6QPFUB",
+    "landingDigest": "E2UXSRCM3YPNT5N2QIEOKMNP24FQF52E",
+    "fetchedAt": "2026-10-22T14:35:23.089Z",
+    "landingFetchedAt": "2026-10-22T14:35:03.371Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "KCJKPOTFBPKKBDT6B3BTYZEPGV6QPFUB",
+      "actualDigest": "SEWPIULB6MVBY4PSBJDWPKNNOZQQ3SCD",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "E2UXSRCM3YPNT5N2QIEOKMNP24FQF52E",
+      "actualDigest": "SYIHL3VW2WRG6BQYJSRKPP2M6YRZDKUA",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 15:57:02 GMT",
+      "originalUrl": "https://airtable.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "IMRU-20250630151112-crawl901/IMRU-20250630155603-12790.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 18:43:46 GMT",
+      "originalUrl": "https://www.airtable.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630185530/spn2-20250630160133-wwwb-spn32.us.archive.org-8002.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Unknown currency: our Team plan is available for $20/user/month when billed annually",
+      "Unknown currency: Business is available at $45/user/month when billed annually",
+      "FAQ pricing only; plan features and purchase minimums are not established",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Our Free plan is available at no cost for users just getting started.",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:252404-253857",
+              "text": "Our Free plan is available at no cost for users just getting started."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:252404-253857",
+          "text": "Our Free plan is available at no cost for users just getting started."
+        }
+      },
+      {
+        "name": "Team",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "our Team plan is available for $20/user/month when billed annually",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:252404-253857",
+              "text": "our Team plan is available for $20/user/month when billed annually"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:252404-253857",
+          "text": "our Team plan is available for $20/user/month when billed annually"
+        }
+      },
+      {
+        "name": "Business",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "Business is available at $45/user/month when billed annually",
+            "amount": "45",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:252404-253857",
+              "text": "Business is available at $45/user/month when billed annually"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:252404-253857",
+          "text": "Business is available at $45/user/month when billed annually"
+        }
+      },
+      {
+        "name": "Enterprise Scale",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "our Enterprise Scale plan pricing is custom, based on the organization’s needs and scale with Airtable.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:252404-253857",
+              "text": "our Enterprise Scale plan pricing is custom, based on the organization’s needs and scale with Airtable."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:252404-253857",
+          "text": "our Enterprise Scale plan pricing is custom, based on the organization’s needs and scale with Airtable."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:50:28.108Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-7a7022f22bc9eaa523bf7ef6b5edc36cbfbfdd9258aaf284e9c84d8079775834",
+    "productId": "trello",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T18:14:19.000Z",
+    "landingCapturedAt": "2025-06-30T18:14:19.000Z",
+    "pricingCapturedAt": "2025-06-27T22:17:39.000Z",
+    "evidenceAvailableAt": "2025-06-30T18:14:19.000Z",
+    "landingUrl": "https://trello.com/",
+    "pricingUrl": "https://trello.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630181419id_/https://trello.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250627221739id_/https://trello.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:156206-156280"
+    },
+    "sourceSha256": "fdcb48a3e4217e9abed4d4d1a227dc5d8476d13fbf7c741652517797c2ff9b47",
+    "landingSha256": "8d22e7da22f12c5db965a036f80140a2cd36aba70bab7f29ffd98a8b1ada6efa",
+    "sourceDigest": "6LKV4U2PKYNQ6BB2WJPZLDQNTFNDW35E",
+    "landingDigest": "XQNHL3I342D6OI64WMYFWZVKXSAKETSS",
+    "fetchedAt": "2026-10-22T14:34:42.055Z",
+    "landingFetchedAt": "2026-10-22T14:34:25.173Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "6LKV4U2PKYNQ6BB2WJPZLDQNTFNDW35E",
+      "actualDigest": "YRPETGJMO4NGVDYU5IN77GEFPXQTA24E",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "XQNHL3I342D6OI64WMYFWZVKXSAKETSS",
+      "actualDigest": "OAOUQHXM4Q7AUISW4PDRS4ADU7LDS6GU",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 22:17:39 GMT",
+      "originalUrl": "https://trello.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250627215406-crawl527/SPNOUTLINKS-20250627221734-00090.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 18:14:19 GMT",
+      "originalUrl": "https://trello.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630195157/spn2-20250630175944-wwwb-spn25.us.archive.org-8000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Enterprise estimator is quantity-dependent; input bounds do not establish purchase minimums",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$ 0 USD",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:263456-263669|offset:263669-263779",
+              "text": "$ 0 USD | Free for up to 10 collaborators per Workspace"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Free plan usage",
+            "value": "Free for up to 10 collaborators per Workspace",
+            "source": {
+              "locator": "offset:263669-263779",
+              "text": "Free for up to 10 collaborators per Workspace"
+            }
+          },
+          {
+            "name": "Unlimited cards",
+            "value": "Unlimited cards",
+            "source": {
+              "locator": "offset:264298-264322",
+              "text": "Unlimited cards"
+            }
+          },
+          {
+            "name": "Up to 10 boards per Workspace",
+            "value": "Up to 10 boards per Workspace",
+            "source": {
+              "locator": "offset:264322-264360",
+              "text": "Up to 10 boards per Workspace"
+            }
+          },
+          {
+            "name": "Quickly capture to-dos from email, Slack, and Teams",
+            "value": "Quickly capture to-dos from email, Slack, and Teams",
+            "source": {
+              "locator": "offset:264360-264420",
+              "text": "Quickly capture to-dos from email, Slack, and Teams"
+            }
+          },
+          {
+            "name": "Inbox",
+            "value": "Inbox",
+            "source": {
+              "locator": "offset:264420-264434",
+              "text": "Inbox"
+            }
+          },
+          {
+            "name": "Unlimited Power-Ups per board",
+            "value": "Unlimited Power-Ups per board",
+            "source": {
+              "locator": "offset:264434-264472",
+              "text": "Unlimited Power-Ups per board"
+            }
+          },
+          {
+            "name": "Unlimited storage (10MB/file)",
+            "value": "Unlimited storage (10MB/file)",
+            "source": {
+              "locator": "offset:264472-264510",
+              "text": "Unlimited storage (10MB/file)"
+            }
+          },
+          {
+            "name": "250 Workspace command runs per month",
+            "value": "250 Workspace command runs per month",
+            "source": {
+              "locator": "offset:264510-264555",
+              "text": "250 Workspace command runs per month"
+            }
+          },
+          {
+            "name": "Custom backgrounds & stickers",
+            "value": "Custom backgrounds & stickers",
+            "source": {
+              "locator": "offset:264555-264597",
+              "text": "Custom backgrounds & stickers"
+            }
+          },
+          {
+            "name": "Unlimited activity log",
+            "value": "Unlimited activity log",
+            "source": {
+              "locator": "offset:264597-264628",
+              "text": "Unlimited activity log"
+            }
+          },
+          {
+            "name": "Assignee and due dates",
+            "value": "Assignee and due dates",
+            "source": {
+              "locator": "offset:264628-264659",
+              "text": "Assignee and due dates"
+            }
+          },
+          {
+            "name": "iOS and Android mobile apps",
+            "value": "iOS and Android mobile apps",
+            "source": {
+              "locator": "offset:264659-264695",
+              "text": "iOS and Android mobile apps"
+            }
+          },
+          {
+            "name": "2-factor authentication",
+            "value": "2-factor authentication",
+            "source": {
+              "locator": "offset:264695-264727",
+              "text": "2-factor authentication"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:263327-263393|offset:263399-263785",
+          "text": "Free | $ 0 USD Free for up to 10 collaborators per Workspace"
+        }
+      },
+      {
+        "name": "Standard",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 5 USD Per user/month if billed annually",
+            "amount": "5",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:265002-265215|offset:265215-265333",
+              "text": "$ 5 USD | Per user/month if billed annually ($6 billed monthly)"
+            }
+          },
+          {
+            "literal": "$6 billed monthly",
+            "amount": "6",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:265002-265215|offset:265215-265333",
+              "text": "$ 5 USD | Per user/month if billed annually ($6 billed monthly)"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited boards",
+            "value": "Unlimited boards",
+            "source": {
+              "locator": "offset:265885-265910",
+              "text": "Unlimited boards"
+            }
+          },
+          {
+            "name": "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
+            "value": "Quickly capture to-dos from email, Slack, and Teams — powered by AI",
+            "source": {
+              "locator": "offset:265910-265986",
+              "text": "Quickly capture to-dos from email, Slack, and Teams — powered by AI"
+            }
+          },
+          {
+            "name": "Planner",
+            "value": "Planner",
+            "source": {
+              "locator": "offset:265986-266002",
+              "text": "Planner"
+            }
+          },
+          {
+            "name": "Advanced checklists",
+            "value": "Advanced checklists",
+            "source": {
+              "locator": "offset:266002-266030",
+              "text": "Advanced checklists"
+            }
+          },
+          {
+            "name": "Card mirroring",
+            "value": "Card mirroring",
+            "source": {
+              "locator": "offset:266030-266053",
+              "text": "Card mirroring"
+            }
+          },
+          {
+            "name": "Custom Fields",
+            "value": "Custom Fields",
+            "source": {
+              "locator": "offset:266053-266075",
+              "text": "Custom Fields"
+            }
+          },
+          {
+            "name": "List colors",
+            "value": "List colors",
+            "source": {
+              "locator": "offset:266075-266095",
+              "text": "List colors"
+            }
+          },
+          {
+            "name": "Collapsible lists",
+            "value": "Collapsible lists",
+            "source": {
+              "locator": "offset:266095-266121",
+              "text": "Collapsible lists"
+            }
+          },
+          {
+            "name": "Unlimited storage (250MB/file)",
+            "value": "Unlimited storage (250MB/file)",
+            "source": {
+              "locator": "offset:266121-266160",
+              "text": "Unlimited storage (250MB/file)"
+            }
+          },
+          {
+            "name": "1,000 Workspace command runs per month",
+            "value": "1,000 Workspace command runs per month",
+            "source": {
+              "locator": "offset:266160-266207",
+              "text": "1,000 Workspace command runs per month"
+            }
+          },
+          {
+            "name": "Single board guests",
+            "value": "Single board guests",
+            "source": {
+              "locator": "offset:266207-266235",
+              "text": "Single board guests"
+            }
+          },
+          {
+            "name": "Saved searches",
+            "value": "Saved searches",
+            "source": {
+              "locator": "offset:266235-266258",
+              "text": "Saved searches"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:264869-264939|offset:264945-265339",
+          "text": "Standard | $ 5 USD Per user/month if billed annually ($6 billed monthly)"
+        }
+      },
+      {
+        "name": "Premium",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 10 USD Per user/month if billed annually",
+            "amount": "10",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:266696-266910|offset:266910-267032",
+              "text": "$ 10 USD | Per user/month if billed annually ($12.50 billed monthly)"
+            }
+          },
+          {
+            "literal": "$12.50 billed monthly",
+            "amount": "12.50",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:266696-266910|offset:266910-267032",
+              "text": "$ 10 USD | Per user/month if billed annually ($12.50 billed monthly)"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Atlassian Intelligence (AI)",
+            "value": "Atlassian Intelligence (AI)",
+            "source": {
+              "locator": "offset:267605-267641",
+              "text": "Atlassian Intelligence (AI)"
+            }
+          },
+          {
+            "name": "Views: Calendar, Timeline, Table, Dashboard, and Map",
+            "value": "Views: Calendar, Timeline, Table, Dashboard, and Map",
+            "source": {
+              "locator": "offset:267641-267702",
+              "text": "Views: Calendar, Timeline, Table, Dashboard, and Map"
+            }
+          },
+          {
+            "name": "Workspace views: Table and Calendar",
+            "value": "Workspace views: Table and Calendar",
+            "source": {
+              "locator": "offset:267702-267746",
+              "text": "Workspace views: Table and Calendar"
+            }
+          },
+          {
+            "name": "Unlimited Workspace command runs",
+            "value": "Unlimited Workspace command runs",
+            "source": {
+              "locator": "offset:267746-267787",
+              "text": "Unlimited Workspace command runs"
+            }
+          },
+          {
+            "name": "Admin and security features",
+            "value": "Admin and security features",
+            "source": {
+              "locator": "offset:267787-267823",
+              "text": "Admin and security features"
+            }
+          },
+          {
+            "name": "Workspace-level templates",
+            "value": "Workspace-level templates",
+            "source": {
+              "locator": "offset:267823-267857",
+              "text": "Workspace-level templates"
+            }
+          },
+          {
+            "name": "Collections",
+            "value": "Collections",
+            "source": {
+              "locator": "offset:267857-267877",
+              "text": "Collections"
+            }
+          },
+          {
+            "name": "Observers",
+            "value": "Observers",
+            "source": {
+              "locator": "offset:267877-267895",
+              "text": "Observers"
+            }
+          },
+          {
+            "name": "Simple data export",
+            "value": "Simple data export",
+            "source": {
+              "locator": "offset:267895-267922",
+              "text": "Simple data export"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:266564-266633|offset:266639-267038",
+          "text": "Premium | $ 10 USD Per user/month if billed annually ($12.50 billed monthly)"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 17.50 USD Per user/month - billed annually",
+            "amount": "17.50",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Displayed estimate for 50 users; quantity-dependent pricing",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:268361-268578|offset:268578-268707|offset:268958-269205|offset:269045-269117",
+              "text": "$ 17.50 USD | Per user/month - billed annually ($210.00 annual price per user) | Est. cost for users |  | value=\"50\" min=\"50\" max=\"5000\""
+            }
+          },
+          {
+            "literal": "$210.00 annual price per user",
+            "amount": "210.00",
+            "currency": "USD",
+            "billingPeriod": "year",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Displayed estimate for 50 users; quantity-dependent pricing",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:268361-268578|offset:268578-268707|offset:268958-269205|offset:269045-269117",
+              "text": "$ 17.50 USD | Per user/month - billed annually ($210.00 annual price per user) | Est. cost for users |  | value=\"50\" min=\"50\" max=\"5000\""
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited Workspaces",
+            "value": "Unlimited Workspaces",
+            "source": {
+              "locator": "offset:269552-269581",
+              "text": "Unlimited Workspaces"
+            }
+          },
+          {
+            "name": "Organization-wide permissions",
+            "value": "Organization-wide permissions",
+            "source": {
+              "locator": "offset:269581-269619",
+              "text": "Organization-wide permissions"
+            }
+          },
+          {
+            "name": "Organization-visible boards",
+            "value": "Organization-visible boards",
+            "source": {
+              "locator": "offset:269619-269655",
+              "text": "Organization-visible boards"
+            }
+          },
+          {
+            "name": "Public board management",
+            "value": "Public board management",
+            "source": {
+              "locator": "offset:269655-269687",
+              "text": "Public board management"
+            }
+          },
+          {
+            "name": "Multi-board guests",
+            "value": "Multi-board guests",
+            "source": {
+              "locator": "offset:269687-269714",
+              "text": "Multi-board guests"
+            }
+          },
+          {
+            "name": "Attachment permissions",
+            "value": "Attachment permissions",
+            "source": {
+              "locator": "offset:269714-269745",
+              "text": "Attachment permissions"
+            }
+          },
+          {
+            "name": "Power-Up administration",
+            "value": "Power-Up administration",
+            "source": {
+              "locator": "offset:269745-269777",
+              "text": "Power-Up administration"
+            }
+          },
+          {
+            "name": "Free SSO and user provisioning with Atlassian Guard",
+            "value": "Free SSO and user provisioning with Atlassian Guard",
+            "source": {
+              "locator": "offset:269777-269837",
+              "text": "Free SSO and user provisioning with Atlassian Guard"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:268226-268298|offset:268304-268713",
+          "text": "Enterprise | $ 17.50 USD Per user/month - billed annually ($210.00 annual price per user)"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:50:28.097Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
     "id": "pricing-a12f7b6bdacf8e144e3acced471f6caf357550d17a6e412ce9902cdef8d4490f",
     "productId": "dropbox",
     "scope": {
@@ -188,6 +1045,912 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T14:41:56.317Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-ca5f79bfe630b14ef7a6353f3ede6dbf67bc563776792f1fd6737a02c3ab2a15",
+    "productId": "figma",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T12:39:12.000Z",
+    "landingCapturedAt": "2025-06-29T12:39:12.000Z",
+    "pricingCapturedAt": "2025-06-26T04:09:36.000Z",
+    "evidenceAvailableAt": "2025-06-29T12:39:12.000Z",
+    "landingUrl": "https://www.figma.com/",
+    "pricingUrl": "https://www.figma.com/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629123912id_/https://www.figma.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:215015-215122"
+    },
+    "sourceSha256": "54f93e0b39da2f4e54df8b0e16093fad967ac634ec432abdff0831704e0f2472",
+    "landingSha256": "5dda6111308b2cdc8a3a30b88c4fe1324477867607640a45daeeaa2d7b08eeda",
+    "sourceDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+    "landingDigest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3",
+    "fetchedAt": "2026-10-22T14:33:00.768Z",
+    "landingFetchedAt": "2026-10-22T14:32:41.347Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+      "actualDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3",
+      "actualDigest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 04:09:36 GMT",
+      "originalUrl": "https://www.figma.com/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250626021558042-01184-01235-wbgrp-crawl043/LUX-029-2025-06-23-20250626040654891-01219-1831598~wbgrp-crawl043.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 12:39:12 GMT",
+      "originalUrl": "https://www.figma.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250629120842-crawl902/SPNOUTLINKS-20250629122947-00160.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [],
+    "plans": [
+      {
+        "name": "Starter",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Free",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:265466-265487|offset:265150-265189",
+              "text": "Free | Prices in USD"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited drafts",
+            "value": "Unlimited drafts",
+            "source": {
+              "locator": "offset:266993-267018",
+              "text": "Unlimited drafts"
+            }
+          },
+          {
+            "name": "UI kits and templates",
+            "value": "UI kits and templates",
+            "source": {
+              "locator": "offset:267018-267048",
+              "text": "UI kits and templates"
+            }
+          },
+          {
+            "name": "Basic design file inspection",
+            "value": "Basic design file inspection",
+            "source": {
+              "locator": "offset:267048-267085",
+              "text": "Basic design file inspection"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:265254-267604",
+          "text": "Starter Free Select plan Why choose Starter? Choose Starter if you: Are working on personal projects Need basic design, presentation, and brainstorming tools Want to try Figma products Key features: Unlimited drafts UI kits and templates Basic design file inspection Choose Starter if you: Are working on personal projects Need basic design, presentation, and brainstorming tools Want to try Figma products Key features: Unlimited drafts UI kits and templates Basic design file inspection"
+        }
+      },
+      {
+        "name": "Professional",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$3 /mo",
+            "amount": "3",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Collab seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:269421-269480|offset:268082-268230|offset:267678-268028|offset:265150-265189|offset:267748-268016",
+              "text": "$3 /mo | Collab seat | Professional Monthly Annual | Prices in USD | role=\"switch\" aria-label=\"Show annual billing prices\" aria-checked=\"true\""
+            }
+          },
+          {
+            "literal": "$12 /mo",
+            "amount": "12",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Dev seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:271454-271514|offset:269547-269692|offset:267678-268028|offset:265150-265189|offset:267748-268016",
+              "text": "$12 /mo | Dev seat | Professional Monthly Annual | Prices in USD | role=\"switch\" aria-label=\"Show annual billing prices\" aria-checked=\"true\""
+            }
+          },
+          {
+            "literal": "$16 /mo",
+            "amount": "16",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Full seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:276019-276079|offset:271581-271727|offset:267678-268028|offset:265150-265189|offset:267748-268016",
+              "text": "$16 /mo | Full seat | Professional Monthly Annual | Prices in USD | role=\"switch\" aria-label=\"Show annual billing prices\" aria-checked=\"true\""
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited files and projects",
+            "value": "Unlimited files and projects",
+            "source": {
+              "locator": "offset:277632-277669",
+              "text": "Unlimited files and projects"
+            }
+          },
+          {
+            "name": "Team-wide design libraries",
+            "value": "Team-wide design libraries",
+            "source": {
+              "locator": "offset:277669-277704",
+              "text": "Team-wide design libraries"
+            }
+          },
+          {
+            "name": "Advanced Dev Mode inspection",
+            "value": "Advanced Dev Mode inspection",
+            "source": {
+              "locator": "offset:277704-277741",
+              "text": "Advanced Dev Mode inspection"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:267604-278315",
+          "text": "Professional Monthly Annual Collab seat $3 /mo Dev seat $12 /mo Full seat $16 /mo Select plan Why choose Professional? Choose Professional if you: Are a professional or part of a small team Need unlimited files and projects for a single team Want advanced prototyping tools and easier dev handoff Key features: Unlimited files and projects Team-wide design libraries Advanced Dev Mode inspection Choose Professional if you: Are a professional or part of a small team Need unlimited files and projects for a single team Want advanced prototyping tools and easier dev handoff Key features: Unlimited files and projects Team-wide design libraries Advanced Dev Mode inspection"
+        }
+      },
+      {
+        "name": "Organization",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5 /mo",
+            "amount": "5",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Collab seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:279906-279965|offset:278567-278715|offset:278389-278513|offset:265150-265189",
+              "text": "$5 /mo | Collab seat | Organization Billed annually | Prices in USD"
+            }
+          },
+          {
+            "literal": "$25 /mo",
+            "amount": "25",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Dev seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:281939-281999|offset:280032-280177|offset:278389-278513|offset:265150-265189",
+              "text": "$25 /mo | Dev seat | Organization Billed annually | Prices in USD"
+            }
+          },
+          {
+            "literal": "$55 /mo",
+            "amount": "55",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Full seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:286504-286564|offset:282066-282212|offset:278389-278513|offset:265150-265189",
+              "text": "$55 /mo | Full seat | Organization Billed annually | Prices in USD"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited teams",
+            "value": "Unlimited teams",
+            "source": {
+              "locator": "offset:288314-288338",
+              "text": "Unlimited teams"
+            }
+          },
+          {
+            "name": "Shared libraries and fonts",
+            "value": "Shared libraries and fonts",
+            "source": {
+              "locator": "offset:288338-288373",
+              "text": "Shared libraries and fonts"
+            }
+          },
+          {
+            "name": "Centralized admin tools",
+            "value": "Centralized admin tools",
+            "source": {
+              "locator": "offset:288373-288405",
+              "text": "Centralized admin tools"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:278315-288984",
+          "text": "Organization Billed annually Collab seat $5 /mo Dev seat $25 /mo Full seat $55 /mo Select plan Contact sales Why choose Organization? Choose Organization if you: Are a business that designs products across your organization Need unlimited teams and basic security Want to centralize assets, libraries, and workflows across departments Key features: Unlimited teams Shared libraries and fonts Centralized admin tools Choose Organization if you: Are a business that designs products across your organization Need unlimited teams and basic security Want to centralize assets, libraries, and workflows across departments Key features: Unlimited teams Shared libraries and fonts Centralized admin tools"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5 /mo",
+            "amount": "5",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Collab seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:290573-290632|offset:289234-289382|offset:289058-289180|offset:265150-265189",
+              "text": "$5 /mo | Collab seat | Enterprise Billed annually | Prices in USD"
+            }
+          },
+          {
+            "literal": "$35 /mo",
+            "amount": "35",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Dev seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:292606-292666|offset:290699-290844|offset:289058-289180|offset:265150-265189",
+              "text": "$35 /mo | Dev seat | Enterprise Billed annually | Prices in USD"
+            }
+          },
+          {
+            "literal": "$90 /mo",
+            "amount": "90",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Full seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:297171-297231|offset:292733-292879|offset:289058-289180|offset:265150-265189",
+              "text": "$90 /mo | Full seat | Enterprise Billed annually | Prices in USD"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Custom team workspaces",
+            "value": "Custom team workspaces",
+            "source": {
+              "locator": "offset:298924-298955",
+              "text": "Custom team workspaces"
+            }
+          },
+          {
+            "name": "Design system theming and APIs",
+            "value": "Design system theming and APIs",
+            "source": {
+              "locator": "offset:298955-298994",
+              "text": "Design system theming and APIs"
+            }
+          },
+          {
+            "name": "SCIM seat management",
+            "value": "SCIM seat management",
+            "source": {
+              "locator": "offset:298994-299023",
+              "text": "SCIM seat management"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:288984-299581",
+          "text": "Enterprise Billed annually Collab seat $5 /mo Dev seat $35 /mo Full seat $90 /mo Contact sales Learn more Why choose Enterprise? Choose Enterprise if you: Are a business designing for multiple products or brands Need enterprise-level security Want scalable design systems and simpler admin management Key features: Custom team workspaces Design system theming and APIs SCIM seat management Choose Enterprise if you: Are a business designing for multiple products or brands Need enterprise-level security Want scalable design systems and simpler admin management Key features: Custom team workspaces Design system theming and APIs SCIM seat management"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:50:28.073Z",
+      "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-cee3a904c852b9f0716e1bb312ab067ef9d66d7443c3fd0e8c34254594dfaa23",
+    "productId": "calendly",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T22:14:58.000Z",
+    "landingCapturedAt": "2025-06-30T22:14:58.000Z",
+    "pricingCapturedAt": "2025-06-12T14:21:19.000Z",
+    "evidenceAvailableAt": "2025-06-30T22:14:58.000Z",
+    "landingUrl": "https://calendly.com/",
+    "pricingUrl": "https://calendly.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630221458id_/https://calendly.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250612142119id_/https://calendly.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:232761-232959"
+    },
+    "sourceSha256": "996691c1718b2ccb071c2ece2bfb23bfa1871caf3b6198dc018dd2b77540fa21",
+    "landingSha256": "2c72cb52020d5563807f67486a9182e6e779aedea3b5525aa88188fdcefb2525",
+    "sourceDigest": "QAXM5FMZRTL5JZYGLI7FOOAQTTG2N2KZ",
+    "landingDigest": "A33BJSE443APDQ4YRXMSKN7U36N3H54J",
+    "fetchedAt": "2026-10-22T14:37:20.541Z",
+    "landingFetchedAt": "2026-10-22T14:37:02.245Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "QAXM5FMZRTL5JZYGLI7FOOAQTTG2N2KZ",
+      "actualDigest": "OJZLMPMCUHC7DTBKNMLTPFQYCHXNDXBY",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "A33BJSE443APDQ4YRXMSKN7U36N3H54J",
+      "actualDigest": "HHEOZOMMH45HMTFC3IGDLUGITZ2KEJU4",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 12 Jun 2025 14:21:19 GMT",
+      "originalUrl": "https://calendly.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250612155744/spn2-20250612141342-wwwb-spn35.us.archive.org-8003.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 22:14:58 GMT",
+      "originalUrl": "https://calendly.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630225432/spn2-20250630210635-wwwb-spn31.us.archive.org-8000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Calendly card evidence only; comparison matrix, inherited features, quantity discounts and unselected billing prices remain incomplete",
+      "Dollar currency unspecified in the archived plan cards",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Always free",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:198813-198987",
+              "text": "Always free"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "1 event type",
+            "value": "1 event type",
+            "source": {
+              "locator": "offset:199511-199733",
+              "text": "1 event type"
+            }
+          },
+          {
+            "name": "Connect 1 calendar",
+            "value": "Connect 1 calendar",
+            "source": {
+              "locator": "offset:199733-199961",
+              "text": "Connect 1 calendar"
+            }
+          },
+          {
+            "name": "Customize availability",
+            "value": "Customize availability",
+            "source": {
+              "locator": "offset:199961-200193",
+              "text": "Customize availability"
+            }
+          },
+          {
+            "name": "Add video conferencing",
+            "value": "Add video conferencing",
+            "source": {
+              "locator": "offset:200193-200425",
+              "text": "Add video conferencing"
+            }
+          },
+          {
+            "name": "Customize your booking page",
+            "value": "Customize your booking page",
+            "source": {
+              "locator": "offset:200425-200662",
+              "text": "Customize your booking page"
+            }
+          },
+          {
+            "name": "Mobile apps",
+            "value": "Mobile apps",
+            "source": {
+              "locator": "offset:200662-200883",
+              "text": "Mobile apps"
+            }
+          },
+          {
+            "name": "Browser extensions",
+            "value": "Browser extensions",
+            "source": {
+              "locator": "offset:200883-201111",
+              "text": "Browser extensions"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:198612-198654",
+          "text": "Free"
+        }
+      },
+      {
+        "name": "Standard",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$10 /seat/mo Save 16%",
+            "amount": "10",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Save 16%",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:201627-202081 + offset:197020-197201",
+              "text": "$10 /seat/mo Save 16%; Billed yearly"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited event types",
+            "value": "Unlimited event types",
+            "source": {
+              "locator": "offset:202615-202846",
+              "text": "Unlimited event types"
+            }
+          },
+          {
+            "name": "Connect multiple calendars",
+            "value": "Connect multiple calendars",
+            "source": {
+              "locator": "offset:202846-203082",
+              "text": "Connect multiple calendars"
+            }
+          },
+          {
+            "name": "Connect Hubspot, Mailchimp",
+            "value": "Connect Hubspot, Mailchimp",
+            "source": {
+              "locator": "offset:203082-203318",
+              "text": "Connect Hubspot, Mailchimp"
+            }
+          },
+          {
+            "name": "Connect Stripe, Paypal",
+            "value": "Connect Stripe, Paypal",
+            "source": {
+              "locator": "offset:203318-203550",
+              "text": "Connect Stripe, Paypal"
+            }
+          },
+          {
+            "name": "Connect with Zapier, webhooks",
+            "value": "Connect with Zapier, webhooks",
+            "source": {
+              "locator": "offset:203550-203789",
+              "text": "Connect with Zapier, webhooks"
+            }
+          },
+          {
+            "name": "Automate reminders",
+            "value": "Automate reminders",
+            "source": {
+              "locator": "offset:203789-204017",
+              "text": "Automate reminders"
+            }
+          },
+          {
+            "name": "24/7 chat support",
+            "value": "24/7 chat support",
+            "source": {
+              "locator": "offset:204017-204244",
+              "text": "24/7 chat support"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:201405-201451",
+          "text": "Standard"
+        }
+      },
+      {
+        "name": "Teams",
+        "order": 2,
+        "popular": true,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$16 /seat/mo Save 20%",
+            "amount": "16",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Save 20%",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:204939-205393 + offset:197020-197201",
+              "text": "$16 /seat/mo Save 20%; Billed yearly"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Send meetings to Salesforce",
+            "value": "Send meetings to Salesforce",
+            "source": {
+              "locator": "offset:205932-206169",
+              "text": "Send meetings to Salesforce"
+            }
+          },
+          {
+            "name": "Share Round-robin meetings",
+            "value": "Share Round-robin meetings",
+            "source": {
+              "locator": "offset:206169-206405",
+              "text": "Share Round-robin meetings"
+            }
+          },
+          {
+            "name": "Qualify & route leads",
+            "value": "Qualify & route leads",
+            "source": {
+              "locator": "offset:206405-206640",
+              "text": "Qualify & route leads"
+            }
+          },
+          {
+            "name": "Connect Hubspot, Marketo, Pardot",
+            "value": "Connect Hubspot, Marketo, Pardot",
+            "source": {
+              "locator": "offset:206640-206882",
+              "text": "Connect Hubspot, Marketo, Pardot"
+            }
+          },
+          {
+            "name": "Advanced admin features",
+            "value": "Advanced admin features",
+            "source": {
+              "locator": "offset:206882-207115",
+              "text": "Advanced admin features"
+            }
+          },
+          {
+            "name": "Single Sign-On",
+            "value": "Single Sign-On; Security add-on",
+            "source": {
+              "locator": "offset:207265-207489 + offset:207120-207232",
+              "text": "Single Sign-On; Security add-on"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:204538-204581",
+          "text": "Teams"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "Custom Pricing Starts at $15k /yr",
+            "amount": "15000",
+            "currency": null,
+            "billingPeriod": "year",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:207994-208529",
+              "text": "Custom Pricing Starts at $15k /yr"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Route with Salesforce lookup",
+            "value": "Route with Salesforce lookup",
+            "source": {
+              "locator": "offset:209067-209305",
+              "text": "Route with Salesforce lookup"
+            }
+          },
+          {
+            "name": "Connect Microsoft Dynamics",
+            "value": "Connect Microsoft Dynamics",
+            "source": {
+              "locator": "offset:209305-209541",
+              "text": "Connect Microsoft Dynamics"
+            }
+          },
+          {
+            "name": "Dedicated account support",
+            "value": "Dedicated account support",
+            "source": {
+              "locator": "offset:209541-209776",
+              "text": "Dedicated account support"
+            }
+          },
+          {
+            "name": "Enable SSO & SAML",
+            "value": "Enable SSO & SAML",
+            "source": {
+              "locator": "offset:209919-210150",
+              "text": "Enable SSO & SAML"
+            }
+          },
+          {
+            "name": "Domain control",
+            "value": "Domain control",
+            "source": {
+              "locator": "offset:210150-210374",
+              "text": "Domain control"
+            }
+          },
+          {
+            "name": "Audit log compliance",
+            "value": "Audit log compliance",
+            "source": {
+              "locator": "offset:210374-210604",
+              "text": "Audit log compliance"
+            }
+          },
+          {
+            "name": "Data deletion API",
+            "value": "Data deletion API",
+            "source": {
+              "locator": "offset:210604-210831",
+              "text": "Data deletion API"
+            }
+          },
+          {
+            "name": "Security and legal reviews",
+            "value": "Security and legal reviews",
+            "source": {
+              "locator": "offset:210831-211067",
+              "text": "Security and legal reviews"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:207784-207832",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:50:28.119Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   },
   {
@@ -1841,6 +3604,1397 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T14:41:56.328Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-e4d9ce401eea98a22ec5f925874d43bc16bbd1b1716da29d7854f7091306640c",
+    "productId": "notion",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T16:24:26.000Z",
+    "landingCapturedAt": "2025-06-30T16:24:26.000Z",
+    "pricingCapturedAt": "2025-06-30T00:20:39.000Z",
+    "evidenceAvailableAt": "2025-06-30T16:24:26.000Z",
+    "landingUrl": "https://www.notion.com/",
+    "pricingUrl": "https://www.notion.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630162426id_/https://www.notion.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630002039id_/https://www.notion.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:31228-31944"
+    },
+    "sourceSha256": "3d2a9e402ed61f28a56485c590c15a5216e72404236d968414744ccfe1e57192",
+    "landingSha256": "0ee45f850407d2f8632153cb07d483842e9e041f0e4c1c302f5b3d5414b2ded7",
+    "sourceDigest": "BGBATY73YOVZ2IVKDIQDBDV3BK4BLB44",
+    "landingDigest": "CPGECZRRKVE5Z7JAITNK6QPCWQYRBLTY",
+    "fetchedAt": "2026-10-22T14:32:00.324Z",
+    "landingFetchedAt": "2026-10-22T14:31:40.610Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "BGBATY73YOVZ2IVKDIQDBDV3BK4BLB44",
+      "actualDigest": "FUCR3JRVQVI2BQOFDPNRRLR5UBFNQJPF",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "CPGECZRRKVE5Z7JAITNK6QPCWQYRBLTY",
+      "actualDigest": "CPGECZRRKVE5Z7JAITNK6QPCWQYRBLTY"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 00:20:39 GMT",
+      "originalUrl": "https://www.notion.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630014554/spn2-20250630001018-wwwb-spn34.us.archive.org-8005.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 16:24:26 GMT",
+      "originalUrl": "https://www.notion.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630185955_35e5f834/creativecommons.org-inf-20250630-050819-18gf4-00002.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$0 per member / month",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "member",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-us",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:65549-67011|offset:63207-64661",
+              "text": "$0 per member / month | Price in USD"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Free for individual usage",
+            "value": "Free for individual usage",
+            "source": {
+              "locator": "offset:68452-69628",
+              "text": "Free for individual usage"
+            }
+          },
+          {
+            "name": "Basic forms",
+            "value": "Basic forms",
+            "source": {
+              "locator": "offset:70053-71215",
+              "text": "Basic forms"
+            }
+          },
+          {
+            "name": "Basic sites",
+            "value": "Basic sites",
+            "source": {
+              "locator": "offset:71612-72774",
+              "text": "Basic sites"
+            }
+          },
+          {
+            "name": "Notion Calendar",
+            "value": "Notion Calendar",
+            "source": {
+              "locator": "offset:73199-74365",
+              "text": "Notion Calendar"
+            }
+          },
+          {
+            "name": "Notion Mail (Syncs with Gmail)",
+            "value": "Notion Mail (Syncs with Gmail)",
+            "source": {
+              "locator": "offset:74787-75968",
+              "text": "Notion Mail (Syncs with Gmail)"
+            }
+          },
+          {
+            "name": "Databases including subtasks, dependencies, custom properties and more",
+            "value": "Databases including subtasks, dependencies, custom properties and more",
+            "source": {
+              "locator": "offset:76409-77630",
+              "text": "Databases including subtasks, dependencies, custom properties and more"
+            }
+          },
+          {
+            "name": "Trial of Notion AI",
+            "value": "Trial of Notion AI",
+            "source": {
+              "locator": "offset:79427-80596",
+              "text": "Trial of Notion AI"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:64763-80644",
+          "text": "Free $0 per member / month For individuals to organize personal projects and life. Sign up Unlimited storage for individuals. Limited trial for teams. Free for individual usage Capture, organize, and act on responses right inside Notion. Basic forms Publish a Notion page to the web Basic sites Connect multiple Calendars to manage work and time together. Notion Calendar Connect your Gmail for an AI-powered, personalized inbox. Notion Mail (Syncs with Gmail) Organize hundreds or thousands of items in one place, like projects or tasks Databases including subtasks, dependencies, custom properties and more Notion AI Trial AI capabilities like generating docs, or autofilling databases Trial of Notion AI"
+        }
+      },
+      {
+        "name": "Plus",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$10 per member / month",
+            "amount": "10",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "member",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-us",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:81430-82893|offset:63207-64661|offset:61771-62485|offset:61600-61771",
+              "text": "$10 per member / month | Price in USD | Pay yearly | "
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited collaborative blocks",
+            "value": "Unlimited collaborative blocks",
+            "source": {
+              "locator": "offset:85140-86321",
+              "text": "Unlimited collaborative blocks"
+            }
+          },
+          {
+            "name": "Unlimited file uploads",
+            "value": "Unlimited file uploads",
+            "source": {
+              "locator": "offset:86775-87948",
+              "text": "Unlimited file uploads"
+            }
+          },
+          {
+            "name": "Unlimited charts",
+            "value": "Unlimited charts",
+            "source": {
+              "locator": "offset:88396-89563",
+              "text": "Unlimited charts"
+            }
+          },
+          {
+            "name": "Custom forms",
+            "value": "Custom forms",
+            "source": {
+              "locator": "offset:89968-91131",
+              "text": "Custom forms"
+            }
+          },
+          {
+            "name": "Custom sites",
+            "value": "Custom sites",
+            "source": {
+              "locator": "offset:91611-92774",
+              "text": "Custom sites"
+            }
+          },
+          {
+            "name": "Basic integrations",
+            "value": "Basic integrations",
+            "source": {
+              "locator": "offset:93194-97395",
+              "text": "Basic integrations"
+            }
+          },
+          {
+            "name": "Trial of Notion AI",
+            "value": "Trial of Notion AI",
+            "source": {
+              "locator": "offset:99192-100361",
+              "text": "Trial of Notion AI"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:80644-101125",
+          "text": "Plus $10 per member / month For small teams and professionals to work together. Get started Everything in Free Blocks are pieces of content you add to a page (e.g. to-do checkboxes, paragraphs, bullet points, etc.). Unlimited collaborative blocks A per file size limit may apply to any file that you upload to a Notion page or database. Unlimited file uploads Visualize data from databases in different ways (e.g. donut, bar, and line charts). Unlimited charts Remove Notion branding from public forms Custom forms Customize your top header, choose a light or dark theme, add a custom favicon, and integrate with Google Analytics. Custom sites Integrate with some tools like Slack & Google Drive Basic integrations Notion AI Trial AI capabilities like generating docs, or autofilling databases Trial of Notion AI"
+        }
+      },
+      {
+        "name": "Business",
+        "order": 2,
+        "popular": true,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$20 per member / month",
+            "amount": "20",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "member",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-us",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:102025-103488|offset:63207-64661|offset:61771-62485|offset:61600-61771",
+              "text": "$20 per member / month | Price in USD | Pay yearly | "
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "SAML SSO",
+            "value": "SAML SSO",
+            "source": {
+              "locator": "offset:105684-106843",
+              "text": "SAML SSO"
+            }
+          },
+          {
+            "name": "Verify any page",
+            "value": "Verify any page",
+            "source": {
+              "locator": "offset:107302-108468",
+              "text": "Verify any page"
+            }
+          },
+          {
+            "name": "Private teamspaces",
+            "value": "Private teamspaces",
+            "source": {
+              "locator": "offset:108993-110162",
+              "text": "Private teamspaces"
+            }
+          },
+          {
+            "name": "Conditional forms logic",
+            "value": "Conditional forms logic",
+            "source": {
+              "locator": "offset:110617-111791",
+              "text": "Conditional forms logic"
+            }
+          },
+          {
+            "name": "Domain verification",
+            "value": "Domain verification",
+            "source": {
+              "locator": "offset:112254-113424",
+              "text": "Domain verification"
+            }
+          },
+          {
+            "name": "Premium integrations",
+            "value": "Premium integrations",
+            "source": {
+              "locator": "offset:113828-119491",
+              "text": "Premium integrations"
+            }
+          },
+          {
+            "name": "Notion AI included",
+            "value": "Notion AI included",
+            "source": {
+              "locator": "offset:121285-122454",
+              "text": "Notion AI included"
+            }
+          },
+          {
+            "name": "Enterprise search Beta",
+            "value": "Enterprise search Beta",
+            "source": {
+              "locator": "offset:122877-135365",
+              "text": "Enterprise search Beta"
+            }
+          },
+          {
+            "name": "AI meeting notes Beta",
+            "value": "AI meeting notes Beta",
+            "source": {
+              "locator": "offset:135787-137073",
+              "text": "AI meeting notes Beta"
+            }
+          },
+          {
+            "name": "Research mode Beta",
+            "value": "Research mode Beta",
+            "source": {
+              "locator": "offset:137517-138800",
+              "text": "Research mode Beta"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:101125-139564",
+          "text": "Business Recommended $20 per member / month For growing businesses to streamline teamwork. Get started Everything in Plus Manage employee access at scale with secure single sign-on. SAML SSO Add a verified badge to pages that are up to date. Appears in search results and AI citations. Verify any page Create teamspaces that can’t be seen or discovered by anyone except those you add. Great for sensitive information like company planning or performance reviews. Private teamspaces Create dynamic forms where questions appear only when relevant based on previous responses Conditional forms logic Verify ownership of an email domain to access advanced security features including single-sign on. Domain verification Integrate with GitHub, Asana & more Premium integrations Notion AI All Notion AI core capabilities, and the latest advanced features Notion AI included Search across connected apps like Slack, GitHub & more Enterprise search Beta Automate your meeting notes and follow-ups, no bot needed AI meeting notes Beta Analyzes all of your sources, plus the web, to create detailed docs and reports Research mode Beta"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Custom pricing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-us",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:140356-141774|offset:63207-64661",
+              "text": "Custom pricing | Price in USD"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "User provisioning (SCIM)",
+            "value": "User provisioning (SCIM)",
+            "source": {
+              "locator": "offset:144003-145178",
+              "text": "User provisioning (SCIM)"
+            }
+          },
+          {
+            "name": "Advanced security & controls",
+            "value": "Advanced security & controls",
+            "source": {
+              "locator": "offset:145679-146862",
+              "text": "Advanced security & controls"
+            }
+          },
+          {
+            "name": "Audit log",
+            "value": "Audit log",
+            "source": {
+              "locator": "offset:147411-148571",
+              "text": "Audit log"
+            }
+          },
+          {
+            "name": "Customer success manager",
+            "value": "Customer success manager",
+            "source": {
+              "locator": "offset:149025-150200",
+              "text": "Customer success manager"
+            }
+          },
+          {
+            "name": "Security & Compliance integrations (DLP, SIEM)",
+            "value": "Security & Compliance integrations (DLP, SIEM)",
+            "source": {
+              "locator": "offset:150746-151947",
+              "text": "Security & Compliance integrations (DLP, SIEM)"
+            }
+          },
+          {
+            "name": "Domain management",
+            "value": "Domain management",
+            "source": {
+              "locator": "offset:152465-153633",
+              "text": "Domain management"
+            }
+          },
+          {
+            "name": "Advanced integrations",
+            "value": "Advanced integrations",
+            "source": {
+              "locator": "offset:154028-155200",
+              "text": "Advanced integrations"
+            }
+          },
+          {
+            "name": "Notion AI included",
+            "value": "Notion AI included",
+            "source": {
+              "locator": "offset:156994-158163",
+              "text": "Notion AI included"
+            }
+          },
+          {
+            "name": "Enterprise search Beta",
+            "value": "Enterprise search Beta",
+            "source": {
+              "locator": "offset:158586-171074",
+              "text": "Enterprise search Beta"
+            }
+          },
+          {
+            "name": "AI meeting notes Beta",
+            "value": "AI meeting notes Beta",
+            "source": {
+              "locator": "offset:171496-172782",
+              "text": "AI meeting notes Beta"
+            }
+          },
+          {
+            "name": "Research mode Beta",
+            "value": "Research mode Beta",
+            "source": {
+              "locator": "offset:173226-174509",
+              "text": "Research mode Beta"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:139564-175273",
+          "text": "Enterprise Custom pricing For organizations to operate with scalability, control, and security. Contact Sales Everything in Business Access the Notion SCIM API to provision and manage users and groups. User provisioning (SCIM) Unlock extra permission controls to prevent certain people from sharing pages externally, disable guests, and set workspace-level rules. Advanced security & controls Access a detailed log of security and safety-related activity for your workspace account to identify potential security issues, investigate suspicious behavior, or troubleshoot access. Audit log Our team of Customer Success Managers are experts to help you get the most out of Notion. Customer success manager Integrate with SIEM and DLP tools to automatically centralize audit logs & set policies to detect sensitive content in your workspace and trigger automated actions to remediate. Security & Compliance integrations (DLP, SIEM) Establish ownership of your company domain and take actions on workspaces that belong to your verified domain (request ownership transfer, delete, claim) Domain management Integrate with even more tools Advanced integrations Notion AI All Notion AI core capabilities, and the latest advanced features Notion AI included Search across connected apps like Slack, GitHub & more Enterprise search Beta Automate your meeting notes and follow-ups, no bot needed AI meeting notes Beta Analyzes all of your sources, plus the web, to create detailed docs and reports Research mode Beta"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:50:28.053Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-ed6fa0e1ddfcc0f371573b4d5187bf032df4152e0506c46f27218838186092a5",
+    "productId": "asana",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T15:32:32.000Z",
+    "landingCapturedAt": "2025-06-30T15:32:32.000Z",
+    "pricingCapturedAt": "2025-06-24T06:53:17.000Z",
+    "evidenceAvailableAt": "2025-06-30T15:32:32.000Z",
+    "landingUrl": "https://asana.com/",
+    "pricingUrl": "https://asana.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630153232id_/https://asana.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250624065317id_/https://asana.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:96289-96366"
+    },
+    "sourceSha256": "7438c627b2b897bf1998e7f72fc6df712e2fae642a22c22e679bcfd4bd0b95b4",
+    "landingSha256": "aa13f18d7a1509a3bb7f34a4bd501486f9186eeb4b19973dcb0451c22254e39d",
+    "sourceDigest": "XGMN3XCMM6L4VFHKP2O73SDYG5RULCZU",
+    "landingDigest": "4Y7IF675ZFBK6QNMKNQ3RIVJ46ZU7IEM",
+    "fetchedAt": "2026-10-22T14:33:40.528Z",
+    "landingFetchedAt": "2026-10-22T14:33:21.598Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "XGMN3XCMM6L4VFHKP2O73SDYG5RULCZU",
+      "actualDigest": "XGMN3XCMM6L4VFHKP2O73SDYG5RULCZU"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "4Y7IF675ZFBK6QNMKNQ3RIVJ46ZU7IEM",
+      "actualDigest": "PS3BUM657I4GCGXO3JSZVZTPD42D5POG",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 06:53:17 GMT",
+      "originalUrl": "https://asana.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250624052134042-00259-00312-wbgrp-crawl043/LUX-029-2025-06-23-20250624064642582-00290-1831598~wbgrp-crawl043.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 15:32:32 GMT",
+      "originalUrl": "https://asana.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "REDDIT-20250630153231-crawl903/REDDIT-20250630153231-00006.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Displayed dollar symbol does not identify a currency",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Personal",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$ 0",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:180315-181434|offset:182260-182364",
+              "text": "$ 0 | Free forever"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Collaborate with up to 10 teammates",
+            "value": "Collaborate with up to 10 teammates",
+            "source": {
+              "locator": "offset:186264-187549",
+              "text": "Collaborate with up to 10 teammates"
+            }
+          },
+          {
+            "name": "Unlimited tasks",
+            "value": "Unlimited tasks",
+            "source": {
+              "locator": "offset:187549-187954",
+              "text": "Unlimited tasks"
+            }
+          },
+          {
+            "name": "Unlimited projects",
+            "value": "Unlimited projects",
+            "source": {
+              "locator": "offset:187954-188362",
+              "text": "Unlimited projects"
+            }
+          },
+          {
+            "name": "Unlimited messages",
+            "value": "Unlimited messages",
+            "source": {
+              "locator": "offset:188362-188770",
+              "text": "Unlimited messages"
+            }
+          },
+          {
+            "name": "Unlimited activity log",
+            "value": "Unlimited activity log",
+            "source": {
+              "locator": "offset:188770-189182",
+              "text": "Unlimited activity log"
+            }
+          },
+          {
+            "name": "Unlimited file storage (100MB per file)",
+            "value": "Unlimited file storage (100MB per file)",
+            "source": {
+              "locator": "offset:189182-189611",
+              "text": "Unlimited file storage (100MB per file)"
+            }
+          },
+          {
+            "name": "Unlimited assignee and due dates",
+            "value": "Unlimited assignee and due dates",
+            "source": {
+              "locator": "offset:189611-190033",
+              "text": "Unlimited assignee and due dates"
+            }
+          },
+          {
+            "name": "List view projects",
+            "value": "List view projects",
+            "source": {
+              "locator": "offset:190033-190441",
+              "text": "List view projects"
+            }
+          },
+          {
+            "name": "Board view projects",
+            "value": "Board view projects",
+            "source": {
+              "locator": "offset:190441-190850",
+              "text": "Board view projects"
+            }
+          },
+          {
+            "name": "Calendar view",
+            "value": "Calendar view",
+            "source": {
+              "locator": "offset:190850-191253",
+              "text": "Calendar view"
+            }
+          },
+          {
+            "name": "Basic search filters",
+            "value": "Basic search filters",
+            "source": {
+              "locator": "offset:191253-191663",
+              "text": "Basic search filters"
+            }
+          },
+          {
+            "name": "Status updates",
+            "value": "Status updates",
+            "source": {
+              "locator": "offset:191663-192067",
+              "text": "Status updates"
+            }
+          },
+          {
+            "name": "iOS and Android mobile apps",
+            "value": "iOS and Android mobile apps",
+            "source": {
+              "locator": "offset:192067-192484",
+              "text": "iOS and Android mobile apps"
+            }
+          },
+          {
+            "name": "Time tracking with integrations - See time tracking apps",
+            "value": "Time tracking with integrations - See time tracking apps",
+            "source": {
+              "locator": "offset:192484-192973",
+              "text": "Time tracking with integrations - See time tracking apps"
+            }
+          },
+          {
+            "name": "100+ free integrations with your favorite apps - Learn more",
+            "value": "100+ free integrations with your favorite apps - Learn more",
+            "source": {
+              "locator": "offset:192973-193442",
+              "text": "100+ free integrations with your favorite apps - Learn more"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:178172-179060|offset:180022-182824",
+          "text": "Personal + | $ 0 Free forever"
+        }
+      },
+      {
+        "name": "Starter",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 10 . 99",
+            "amount": "10.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:194870-195148|offset:195148-195258",
+              "text": "$ 10 . 99 | Per user, per month billed annually"
+            }
+          },
+          {
+            "literal": "$ 13 . 49 billed monthly",
+            "amount": "13.49",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:195258-196261|offset:195148-195258",
+              "text": "$ 13 . 49 billed monthly | Per user, per month billed annually"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Asana AI",
+            "value": "Asana AI",
+            "source": {
+              "locator": "offset:199631-200029",
+              "text": "Asana AI"
+            }
+          },
+          {
+            "name": "No user seat limits",
+            "value": "No user seat limits",
+            "source": {
+              "locator": "offset:200029-200438",
+              "text": "No user seat limits"
+            }
+          },
+          {
+            "name": "Timeline and Gantt view",
+            "value": "Timeline and Gantt view",
+            "source": {
+              "locator": "offset:200438-200851",
+              "text": "Timeline and Gantt view"
+            }
+          },
+          {
+            "name": "Workflow builder",
+            "value": "Workflow builder",
+            "source": {
+              "locator": "offset:200851-201257",
+              "text": "Workflow builder"
+            }
+          },
+          {
+            "name": "Project dashboards",
+            "value": "Project dashboards",
+            "source": {
+              "locator": "offset:201257-201665",
+              "text": "Project dashboards"
+            }
+          },
+          {
+            "name": "Universal reporting",
+            "value": "Universal reporting",
+            "source": {
+              "locator": "offset:201665-202074",
+              "text": "Universal reporting"
+            }
+          },
+          {
+            "name": "Advanced search",
+            "value": "Advanced search",
+            "source": {
+              "locator": "offset:202074-202479",
+              "text": "Advanced search"
+            }
+          },
+          {
+            "name": "Custom fields",
+            "value": "Custom fields",
+            "source": {
+              "locator": "offset:202479-202882",
+              "text": "Custom fields"
+            }
+          },
+          {
+            "name": "Forms",
+            "value": "Forms",
+            "source": {
+              "locator": "offset:202882-203277",
+              "text": "Forms"
+            }
+          },
+          {
+            "name": "Unlimited automations",
+            "value": "Unlimited automations",
+            "source": {
+              "locator": "offset:203277-203688",
+              "text": "Unlimited automations"
+            }
+          },
+          {
+            "name": "Start dates and times",
+            "value": "Start dates and times",
+            "source": {
+              "locator": "offset:203688-204099",
+              "text": "Start dates and times"
+            }
+          },
+          {
+            "name": "Custom project templates",
+            "value": "Custom project templates",
+            "source": {
+              "locator": "offset:204099-204513",
+              "text": "Custom project templates"
+            }
+          },
+          {
+            "name": "Admin console",
+            "value": "Admin console",
+            "source": {
+              "locator": "offset:204513-204916",
+              "text": "Admin console"
+            }
+          },
+          {
+            "name": "Private teams & projects",
+            "value": "Private teams & projects",
+            "source": {
+              "locator": "offset:204916-205334",
+              "text": "Private teams & projects"
+            }
+          },
+          {
+            "name": "Unlimited free guests",
+            "value": "Unlimited free guests",
+            "source": {
+              "locator": "offset:205334-205745",
+              "text": "Unlimited free guests"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:194222-194335|offset:194815-196267",
+          "text": "Starter + | $ 10 . 99 Per user, per month billed annually $ 13 . 49 billed monthly"
+        }
+      },
+      {
+        "name": "Advanced",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 24 . 99",
+            "amount": "24.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:207175-207454|offset:207454-207564",
+              "text": "$ 24 . 99 | Per user, per month billed annually"
+            }
+          },
+          {
+            "literal": "$ 30 . 49 billed monthly",
+            "amount": "30.49",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:207564-207830|offset:207454-207564",
+              "text": "$ 30 . 49 billed monthly | Per user, per month billed annually"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Asana AI",
+            "value": "Asana AI",
+            "source": {
+              "locator": "offset:210199-210597",
+              "text": "Asana AI"
+            }
+          },
+          {
+            "name": "AI Studio for annual plans (with additional credits for purchase)",
+            "value": "AI Studio for annual plans (with additional credits for purchase)",
+            "source": {
+              "locator": "offset:210597-211052",
+              "text": "AI Studio for annual plans (with additional credits for purchase)"
+            }
+          },
+          {
+            "name": "No user seat limits",
+            "value": "No user seat limits",
+            "source": {
+              "locator": "offset:211052-211461",
+              "text": "No user seat limits"
+            }
+          },
+          {
+            "name": "Goals",
+            "value": "Goals",
+            "source": {
+              "locator": "offset:211461-211856",
+              "text": "Goals"
+            }
+          },
+          {
+            "name": "Unlimited portfolios",
+            "value": "Unlimited portfolios",
+            "source": {
+              "locator": "offset:211856-212266",
+              "text": "Unlimited portfolios"
+            }
+          },
+          {
+            "name": "Workload",
+            "value": "Workload",
+            "source": {
+              "locator": "offset:212266-212664",
+              "text": "Workload"
+            }
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "value": "Integrations with Salesforce, Tableau, and Power BI",
+            "source": {
+              "locator": "offset:212664-213105",
+              "text": "Integrations with Salesforce, Tableau, and Power BI"
+            }
+          },
+          {
+            "name": "Forms branching & customization",
+            "value": "Forms branching & customization",
+            "source": {
+              "locator": "offset:213105-213530",
+              "text": "Forms branching & customization"
+            }
+          },
+          {
+            "name": "Approvals",
+            "value": "Approvals",
+            "source": {
+              "locator": "offset:213530-213929",
+              "text": "Approvals"
+            }
+          },
+          {
+            "name": "Proofing",
+            "value": "Proofing",
+            "source": {
+              "locator": "offset:213929-214327",
+              "text": "Proofing"
+            }
+          },
+          {
+            "name": "Lock custom fields",
+            "value": "Lock custom fields",
+            "source": {
+              "locator": "offset:214327-214735",
+              "text": "Lock custom fields"
+            }
+          },
+          {
+            "name": "Time tracking",
+            "value": "Time tracking",
+            "source": {
+              "locator": "offset:214735-215138",
+              "text": "Time tracking"
+            }
+          },
+          {
+            "name": "Scaled security",
+            "value": "Scaled security",
+            "source": {
+              "locator": "offset:215138-215543",
+              "text": "Scaled security"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:206526-206641|offset:207119-207836",
+          "text": "Advanced + | $ 24 . 99 Per user, per month billed annually $ 30 . 49 billed monthly"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact sales for pricing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:217162-217263",
+              "text": "Contact sales for pricing"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Asana AI",
+            "value": "Asana AI",
+            "source": {
+              "locator": "offset:218782-219180",
+              "text": "Asana AI"
+            }
+          },
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "value": "AI Studio (with additional credits for purchase)",
+            "source": {
+              "locator": "offset:219180-219618",
+              "text": "AI Studio (with additional credits for purchase)"
+            }
+          },
+          {
+            "name": "No user seat limits",
+            "value": "No user seat limits",
+            "source": {
+              "locator": "offset:219618-220027",
+              "text": "No user seat limits"
+            }
+          },
+          {
+            "name": "Workflow bundles",
+            "value": "Workflow bundles",
+            "source": {
+              "locator": "offset:220027-220433",
+              "text": "Workflow bundles"
+            }
+          },
+          {
+            "name": "Resource management",
+            "value": "Resource management",
+            "source": {
+              "locator": "offset:220433-220842",
+              "text": "Resource management"
+            }
+          },
+          {
+            "name": "SAML",
+            "value": "SAML",
+            "source": {
+              "locator": "offset:220842-221236",
+              "text": "SAML"
+            }
+          },
+          {
+            "name": "Expedited user set up with SCIM",
+            "value": "Expedited user set up with SCIM",
+            "source": {
+              "locator": "offset:221236-221657",
+              "text": "Expedited user set up with SCIM"
+            }
+          },
+          {
+            "name": "Service accounts",
+            "value": "Service accounts",
+            "source": {
+              "locator": "offset:221657-222063",
+              "text": "Service accounts"
+            }
+          },
+          {
+            "name": "Guest invite permissions",
+            "value": "Guest invite permissions",
+            "source": {
+              "locator": "offset:222063-222477",
+              "text": "Guest invite permissions"
+            }
+          },
+          {
+            "name": "Mobile app controls",
+            "value": "Mobile app controls",
+            "source": {
+              "locator": "offset:222477-222886",
+              "text": "Mobile app controls"
+            }
+          },
+          {
+            "name": "Admin announcements",
+            "value": "Admin announcements",
+            "source": {
+              "locator": "offset:222886-223295",
+              "text": "Admin announcements"
+            }
+          },
+          {
+            "name": "Project admin controls",
+            "value": "Project admin controls",
+            "source": {
+              "locator": "offset:223295-223707",
+              "text": "Project admin controls"
+            }
+          },
+          {
+            "name": "Team membership admin controls",
+            "value": "Team membership admin controls",
+            "source": {
+              "locator": "offset:223707-224127",
+              "text": "Team membership admin controls"
+            }
+          },
+          {
+            "name": "Custom branding",
+            "value": "Custom branding",
+            "source": {
+              "locator": "offset:224127-224532",
+              "text": "Custom branding"
+            }
+          },
+          {
+            "name": "24/7 support",
+            "value": "24/7 support",
+            "source": {
+              "locator": "offset:224532-224934",
+              "text": "24/7 support"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:216320-216439|offset:216933-217269",
+          "text": "Enterprise + | Contact sales for pricing"
+        }
+      },
+      {
+        "name": "Enterprise+",
+        "order": 4,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:228036-228120",
+              "text": "Contact sales"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Asana AI",
+            "value": "Asana AI",
+            "source": {
+              "locator": "offset:229109-229156",
+              "text": "Asana AI"
+            }
+          },
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "value": "AI Studio (with additional credits for purchase)",
+            "source": {
+              "locator": "offset:229412-229499",
+              "text": "AI Studio (with additional credits for purchase)"
+            }
+          },
+          {
+            "name": "No user seat limit",
+            "value": "No user seat limit",
+            "source": {
+              "locator": "offset:229755-229812",
+              "text": "No user seat limit"
+            }
+          },
+          {
+            "name": "Audit log API",
+            "value": "Audit log API",
+            "source": {
+              "locator": "offset:230068-230120",
+              "text": "Audit log API"
+            }
+          },
+          {
+            "name": "SIEM integration support",
+            "value": "SIEM integration support",
+            "source": {
+              "locator": "offset:230376-230439",
+              "text": "SIEM integration support"
+            }
+          },
+          {
+            "name": "Data loss prevention integration support",
+            "value": "Data loss prevention integration support",
+            "source": {
+              "locator": "offset:230735-230814",
+              "text": "Data loss prevention integration support"
+            }
+          },
+          {
+            "name": "eDiscovery integration support",
+            "value": "eDiscovery integration support",
+            "source": {
+              "locator": "offset:231070-231139",
+              "text": "eDiscovery integration support"
+            }
+          },
+          {
+            "name": "Archiving integration support",
+            "value": "Archiving integration support",
+            "source": {
+              "locator": "offset:231395-231463",
+              "text": "Archiving integration support"
+            }
+          },
+          {
+            "name": "Managed workspaces",
+            "value": "Managed workspaces",
+            "source": {
+              "locator": "offset:231719-231776",
+              "text": "Managed workspaces"
+            }
+          },
+          {
+            "name": "Enterprise Key Management",
+            "value": "Enterprise Key Management",
+            "source": {
+              "locator": "offset:232032-232096",
+              "text": "Enterprise Key Management"
+            }
+          },
+          {
+            "name": "HIPAA compliance available",
+            "value": "HIPAA compliance available",
+            "source": {
+              "locator": "offset:232392-232457",
+              "text": "HIPAA compliance available"
+            }
+          },
+          {
+            "name": "Data residency (US, Europe, Australia, Japan)",
+            "value": "Data residency (US, Europe, Australia, Japan)",
+            "source": {
+              "locator": "offset:232713-232797",
+              "text": "Data residency (US, Europe, Australia, Japan)"
+            }
+          },
+          {
+            "name": "Trusted guest domains",
+            "value": "Trusted guest domains",
+            "source": {
+              "locator": "offset:233053-233113",
+              "text": "Trusted guest domains"
+            }
+          },
+          {
+            "name": "App management",
+            "value": "App management",
+            "source": {
+              "locator": "offset:233369-233422",
+              "text": "App management"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:225160-233446",
+          "text": "Enterprise+ Everything in Enterprise, plus: For companies that need to meet strict compliance requirements with flexible, precise controls. Contact sales Asana AI AI Studio (with additional credits for purchase) No user seat limit Audit log API SIEM integration support Data loss prevention integration support eDiscovery integration support Archiving integration support Managed workspaces Enterprise Key Management HIPAA compliance available Data residency (US, Europe, Australia, Japan) Trusted guest domains App management"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:50:28.086Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   }
 ]

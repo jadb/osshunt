@@ -1,0 +1,1677 @@
+[
+  {
+    "phase": "first-pass",
+    "startedAt": "2026-10-22T14:10:52.902Z",
+    "finishedAt": "2026-10-22T14:15:55.811Z",
+    "requests": 30,
+    "historicalComplete": false,
+    "results": [
+      {
+        "productId": "slack",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 299,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:10:52.919Z",
+        "nextCheckAt": "2027-04-22T14:10:52.919Z"
+      },
+      {
+        "productId": "notion",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 300,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:11:24.548Z",
+        "nextCheckAt": "2027-04-22T14:11:24.548Z"
+      },
+      {
+        "productId": "figma",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 300,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:11:56.988Z",
+        "nextCheckAt": "2027-04-22T14:11:56.988Z"
+      },
+      {
+        "productId": "asana",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 299,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:12:37.797Z",
+        "nextCheckAt": "2027-04-22T14:12:37.797Z"
+      },
+      {
+        "productId": "trello",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 298,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:13:09.583Z",
+        "nextCheckAt": "2027-04-22T14:13:09.583Z"
+      },
+      {
+        "productId": "airtable",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 300,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:13:42.918Z",
+        "nextCheckAt": "2027-04-22T14:13:42.918Z"
+      },
+      {
+        "productId": "dropbox",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 282,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:14:15.980Z",
+        "nextCheckAt": "2027-04-22T14:14:15.980Z"
+      },
+      {
+        "productId": "zoom",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 299,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:14:47.721Z",
+        "nextCheckAt": "2027-04-22T14:14:47.721Z"
+      },
+      {
+        "productId": "linear",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 300,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:15:19.682Z",
+        "nextCheckAt": "2027-04-22T14:15:19.682Z"
+      },
+      {
+        "productId": "calendly",
+        "status": "incomplete_inventory",
+        "retainedLandingRecords": 300,
+        "anchors": 0,
+        "proposals": 0,
+        "checkedAt": "2026-10-22T14:15:52.527Z",
+        "nextCheckAt": "2027-04-22T14:15:52.527Z"
+      }
+    ]
+  },
+  {
+    "phase": "samples",
+    "startedAt": "2026-10-22T14:17:48.857Z",
+    "finishedAt": "2026-10-22T14:21:51.097Z",
+    "requests": 25,
+    "historicalComplete": false,
+    "results": [
+      {
+        "productId": "slack",
+        "status": "missing_pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20140523015725id_/https://slack.com/",
+        "checkedAt": "2026-10-22T14:10:52.919Z",
+        "nextCheckAt": "2027-04-22T14:10:52.919Z"
+      },
+      {
+        "productId": "notion",
+        "status": "archive_digest_mismatch",
+        "error": "HTML does not match archived payload digest",
+        "landingArchiveUrl": "https://web.archive.org/web/20250123181823id_/https://www.notion.com/",
+        "checkedAt": "2026-10-22T14:11:24.548Z",
+        "nextCheckAt": "2027-04-22T14:11:24.548Z"
+      },
+      {
+        "productId": "figma",
+        "status": "extraction_unavailable",
+        "landingArchiveUrl": "https://web.archive.org/web/20180518020928id_/https://www.figma.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20180430041341id_/https://www.figma.com/pricing",
+        "quality": "unavailable",
+        "plans": [],
+        "issues": [
+          "No supported pricing structure; client-rendered or unknown template remains unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:11:56.988Z",
+        "nextCheckAt": "2027-04-22T14:11:56.988Z"
+      },
+      {
+        "productId": "asana",
+        "status": "missing_pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20120208234220id_/http://asana.com/",
+        "checkedAt": "2026-10-22T14:12:37.797Z",
+        "nextCheckAt": "2027-04-22T14:12:37.797Z"
+      },
+      {
+        "productId": "trello",
+        "status": "missing_pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20140304154341id_/https://trello.com/",
+        "checkedAt": "2026-10-22T14:13:09.583Z",
+        "nextCheckAt": "2027-04-22T14:13:09.583Z"
+      },
+      {
+        "productId": "airtable",
+        "status": "missing_pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20190610191222id_/https://airtable.com/",
+        "checkedAt": "2026-10-22T14:13:42.918Z",
+        "nextCheckAt": "2027-04-22T14:13:42.918Z"
+      },
+      {
+        "productId": "dropbox",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20110202033949id_/https://www.dropbox.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20110103065507id_/http://www.dropbox.com/pricing",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "verified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Basic",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "Free",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pro 50",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$9.99 /month",
+                "amount": "9.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pro 100",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$19.99 /month",
+                "amount": "19.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Unknown currency: $9.99 /month",
+          "Unknown currency: $19.99 /month"
+        ],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:14:15.980Z",
+        "nextCheckAt": "2027-04-22T14:14:15.980Z"
+      },
+      {
+        "productId": "zoom",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20151018153821id_/http://zoom.us/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20151013071321id_/http://zoom.us/pricing",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "verified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Basic",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "Free",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "50 participants",
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pro",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$14.99 /mo/host",
+                "amount": "14.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "host",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "50 participants; Up to 9 hosts",
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$54.99 /mo/host",
+                "amount": "54.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "host",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "100 participants; Up to 9 hosts",
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$104.99 /mo/host",
+                "amount": "104.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "host",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "200 participants; Up to 9 hosts",
+                  "billingVariant": "unknown-active-variant"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Business",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$19.99 /mo/host",
+                "amount": "19.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "host",
+                "minimumQuantity": 10,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "50 participants; 10 or more hosts",
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$59.99 /mo/host",
+                "amount": "59.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "host",
+                "minimumQuantity": 10,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "100 participants; 10 or more hosts",
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$109.99 /mo/host",
+                "amount": "109.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "host",
+                "minimumQuantity": 10,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "200 participants; 10 or more hosts",
+                  "billingVariant": "unknown-active-variant"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "quote",
+            "offers": [
+              {
+                "literal": "Contact Sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "50 participants",
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "Contact Sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "100 participants",
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "Contact Sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "200 participants",
+                  "billingVariant": "unknown-active-variant"
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Unknown currency: $14.99 /mo/host",
+          "Unknown currency: $19.99 /mo/host",
+          "Unknown currency: $54.99 /mo/host",
+          "Billing variant active state unknown; archived scripts not executed",
+          "Unknown currency: $59.99 /mo/host",
+          "Unknown currency: $104.99 /mo/host",
+          "Unknown currency: $109.99 /mo/host",
+          "Symbol-only comparison markers retained literally; inclusion/exclusion requires review"
+        ],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:14:47.721Z",
+        "nextCheckAt": "2027-04-22T14:14:47.721Z"
+      },
+      {
+        "productId": "linear",
+        "status": "archive_digest_mismatch",
+        "error": "HTML does not match archived payload digest",
+        "landingArchiveUrl": "https://web.archive.org/web/20210414203722id_/https://linear.app/",
+        "checkedAt": "2026-10-22T14:15:19.682Z",
+        "nextCheckAt": "2027-04-22T14:15:19.682Z"
+      },
+      {
+        "productId": "calendly",
+        "status": "missing_pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20180624150844id_/https://calendly.com/",
+        "checkedAt": "2026-10-22T14:15:52.527Z",
+        "nextCheckAt": "2027-04-22T14:15:52.527Z"
+      }
+    ]
+  },
+  {
+    "phase": "recent-samples",
+    "startedAt": "2026-10-22T14:25:18.842Z",
+    "finishedAt": "2026-10-22T14:37:30.096Z",
+    "requests": 40,
+    "historicalComplete": false,
+    "results": [
+      {
+        "productId": "slack",
+        "status": "archive_digest_mismatch",
+        "error": "HTML does not match archived payload digest",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630194837id_/https://slack.com/",
+        "checkedAt": "2026-10-22T14:10:52.919Z",
+        "nextCheckAt": "2027-04-22T14:10:52.919Z"
+      },
+      {
+        "productId": "notion",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630162426id_/https://www.notion.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250630002039id_/https://www.notion.com/pricing",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "verified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "$0 per member / month",
+                "amount": "0",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "member",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-us",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Plus",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$10 per member / month",
+                "amount": "10",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "member",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-us",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Business",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$20 per member / month",
+                "amount": "20",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "member",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-us",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "quote",
+            "offers": [
+              {
+                "literal": "Custom pricing",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-us",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [],
+        "previousStatuses": [
+          "extraction_unavailable",
+          "review_pending"
+        ],
+        "checkedAt": "2026-10-22T14:11:24.548Z",
+        "nextCheckAt": "2027-04-22T14:11:24.548Z"
+      },
+      {
+        "productId": "figma",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20250629123912id_/https://www.figma.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "verified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Starter",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "Free",
+                "amount": "0",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Professional",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$3 /mo",
+                "amount": "3",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Collab seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$12 /mo",
+                "amount": "12",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Dev seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$16 /mo",
+                "amount": "16",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Full seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Organization",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$5 /mo",
+                "amount": "5",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Collab seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$25 /mo",
+                "amount": "25",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Dev seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$55 /mo",
+                "amount": "55",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Full seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$5 /mo",
+                "amount": "5",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Collab seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$35 /mo",
+                "amount": "35",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Dev seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$90 /mo",
+                "amount": "90",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "Full seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:11:56.988Z",
+        "nextCheckAt": "2027-04-22T14:11:56.988Z"
+      },
+      {
+        "productId": "asana",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630153232id_/https://asana.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250624065317id_/https://asana.com/pricing",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Personal",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "$ 0",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Starter",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$ 10 . 99",
+                "amount": "10.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$ 13 . 49 billed monthly",
+                "amount": "13.49",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "monthly",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Advanced",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$ 24 . 99",
+                "amount": "24.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$ 30 . 49 billed monthly",
+                "amount": "30.49",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "monthly",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "quote",
+            "offers": [
+              {
+                "literal": "Contact sales for pricing",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise+",
+            "status": "quote",
+            "offers": [
+              {
+                "literal": "Contact sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Displayed dollar symbol does not identify a currency"
+        ],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:12:37.797Z",
+        "nextCheckAt": "2027-04-22T14:12:37.797Z"
+      },
+      {
+        "productId": "trello",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630181419id_/https://trello.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250627221739id_/https://trello.com/pricing",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "$ 0 USD",
+                "amount": "0",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Standard",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$ 5 USD Per user/month if billed annually",
+                "amount": "5",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$6 billed monthly",
+                "amount": "6",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "monthly",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Premium",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$ 10 USD Per user/month if billed annually",
+                "amount": "10",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$12.50 billed monthly",
+                "amount": "12.50",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "monthly",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$ 17.50 USD Per user/month - billed annually",
+                "amount": "17.50",
+                "currency": "USD",
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "Displayed estimate for 50 users; quantity-dependent pricing",
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$210.00 annual price per user",
+                "amount": "210.00",
+                "currency": "USD",
+                "billingPeriod": "year",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": "Displayed estimate for 50 users; quantity-dependent pricing",
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Enterprise estimator is quantity-dependent; input bounds do not establish purchase minimums"
+        ],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:13:09.583Z",
+        "nextCheckAt": "2027-04-22T14:13:09.583Z"
+      },
+      {
+        "productId": "airtable",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630184346id_/https://www.airtable.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250630155702id_/https://airtable.com/pricing",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "Our Free plan is available at no cost for users just getting started.",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Team",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "our Team plan is available for $20/user/month when billed annually",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Business",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "Business is available at $45/user/month when billed annually",
+                "amount": "45",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise Scale",
+            "status": "quote",
+            "offers": [
+              {
+                "literal": "our Enterprise Scale plan pricing is custom, based on the organization’s needs and scale with Airtable.",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Unknown currency: our Team plan is available for $20/user/month when billed annually",
+          "Unknown currency: Business is available at $45/user/month when billed annually",
+          "FAQ pricing only; plan features and purchase minimums are not established"
+        ],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:13:42.918Z",
+        "nextCheckAt": "2027-04-22T14:13:42.918Z"
+      },
+      {
+        "productId": "dropbox",
+        "status": "partial_product_metadata",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630235017id_/https://www.dropbox.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250629211930id_/https://www.dropbox.com/plans",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "verified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Dropbox",
+            "status": "unknown",
+            "offers": [
+              {
+                "literal": "0",
+                "amount": "0",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Complex comparison table requires an adapter"
+        ],
+        "checkedAt": "2026-10-22T14:14:15.980Z",
+        "nextCheckAt": "2027-04-22T14:14:15.980Z"
+      },
+      {
+        "productId": "zoom",
+        "status": "missing_landing",
+        "error": "No retained landing capture",
+        "checkedAt": "2026-10-22T14:14:47.721Z",
+        "nextCheckAt": "2027-04-22T14:14:47.721Z"
+      },
+      {
+        "productId": "linear",
+        "status": "archive_too_large",
+        "error": "Archive response exceeds limit",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630153209id_/https://linear.app/",
+        "checkedAt": "2026-10-22T14:15:19.682Z",
+        "nextCheckAt": "2027-04-22T14:15:19.682Z"
+      },
+      {
+        "productId": "calendly",
+        "status": "review_pending",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630221458id_/https://calendly.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250612142119id_/https://calendly.com/pricing",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "quality": "partial",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "offers": [
+              {
+                "literal": "Always free",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Standard",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$10 /seat/mo Save 16%",
+                "amount": "10",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": "Save 16%",
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Teams",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "$16 /seat/mo Save 20%",
+                "amount": "16",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": "Save 20%",
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "paid",
+            "offers": [
+              {
+                "literal": "Custom Pricing Starts at $15k /yr",
+                "amount": "15000",
+                "currency": null,
+                "billingPeriod": "year",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": true,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ],
+        "issues": [
+          "Calendly card evidence only; comparison matrix, inherited features, quantity discounts and unselected billing prices remain incomplete",
+          "Dollar currency unspecified in the archived plan cards"
+        ],
+        "previousStatuses": [
+          "extraction_unavailable"
+        ],
+        "checkedAt": "2026-10-22T14:15:52.527Z",
+        "nextCheckAt": "2027-04-22T14:15:52.527Z"
+      }
+    ]
+  },
+  {
+    "phase": "publication-review",
+    "requests": 0,
+    "historicalComplete": false,
+    "results": [
+      {
+        "productId": "airtable",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250630155702id_/https://airtable.com/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630184346id_/https://www.airtable.com/",
+        "quality": "partial",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:50:28.108Z",
+          "decision": "confirmed",
+          "acceptedUnverifiedArchiveDigest": true
+        },
+        "plans": 4,
+        "offers": 4
+      },
+      {
+        "productId": "trello",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250627221739id_/https://trello.com/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630181419id_/https://trello.com/",
+        "quality": "partial",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:50:28.097Z",
+          "decision": "confirmed",
+          "acceptedUnverifiedArchiveDigest": true
+        },
+        "plans": 4,
+        "offers": 7
+      },
+      {
+        "productId": "dropbox",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20110103065507id_/http://www.dropbox.com/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20110202033949id_/https://www.dropbox.com/",
+        "quality": "partial",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "verified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:41:56.317Z",
+          "decision": "confirmed"
+        },
+        "plans": 3,
+        "offers": 3
+      },
+      {
+        "productId": "figma",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+        "landingArchiveUrl": "https://web.archive.org/web/20250629123912id_/https://www.figma.com/",
+        "quality": "partial",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "verified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:50:28.073Z",
+          "decision": "confirmed"
+        },
+        "plans": 4,
+        "offers": 10
+      },
+      {
+        "productId": "calendly",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250612142119id_/https://calendly.com/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630221458id_/https://calendly.com/",
+        "quality": "partial",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:50:28.119Z",
+          "decision": "confirmed",
+          "acceptedUnverifiedArchiveDigest": true
+        },
+        "plans": 4,
+        "offers": 4
+      },
+      {
+        "productId": "zoom",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20151013071321id_/http://zoom.us/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20151018153821id_/http://zoom.us/",
+        "quality": "partial",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "verified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:41:56.328Z",
+          "decision": "confirmed"
+        },
+        "plans": 4,
+        "offers": 10
+      },
+      {
+        "productId": "notion",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250630002039id_/https://www.notion.com/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630162426id_/https://www.notion.com/",
+        "quality": "partial",
+        "sourceIntegrity": "legacy_chunked_unverified",
+        "landingIntegrity": "verified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:50:28.053Z",
+          "decision": "confirmed",
+          "acceptedUnverifiedArchiveDigest": true
+        },
+        "plans": 4,
+        "offers": 4
+      },
+      {
+        "productId": "asana",
+        "status": "confirmed",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250624065317id_/https://asana.com/pricing",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630153232id_/https://asana.com/",
+        "quality": "partial",
+        "sourceIntegrity": "verified",
+        "landingIntegrity": "legacy_chunked_unverified",
+        "review": {
+          "reviewer": "osshunt-editorial",
+          "reviewedAt": "2026-10-22T14:50:28.086Z",
+          "decision": "confirmed",
+          "acceptedUnverifiedArchiveDigest": true
+        },
+        "plans": 5,
+        "offers": 7
+      }
+    ],
+    "rejected": [
+      {
+        "productId": "dropbox",
+        "pricingCapturedAt": "2025-06-29T21:19:30.000Z",
+        "reason": "Generic zero-price product metadata does not establish named paid-plan structure"
+      }
+    ]
+  }
+]

@@ -63,7 +63,7 @@ Do not edit the exported `proposal`: import compares it to the private inventory
 npm run pricing:review -- import --file .local/reviews/slack.json
 ```
 
-Import verifies both source SHA-256 hashes and known Archive SHA-1 digests, schema, exact capture URLs, scope, lookup windows and six-month spacing. A repository-local lock serializes read/merge/write/build, preserving concurrent confirmations. Pending/rejected entries do not remove existing history.
+Import rechecks both source SHA-256 hashes, recomputes Archive integrity grades, and validates schema, exact capture URLs, scope, lookup windows and six-month spacing. Qualified legacy digest mismatches require `acceptUnverifiedArchiveDigest: true` for that observation; export defaults this to false. Accepted observations remain partial, retain transport evidence and display an unverified-digest warning. Other unexplained mismatches still fail. See [integrity policy](architecture/pricing-evidence.md). A repository-local lock serializes read/merge/write/build, preserving concurrent confirmations. Pending/rejected entries do not remove existing history.
 
 Confirmed inputs: `research/pricing/confirmed.json`. Sorted array snapshot and adjacent schema: `data/collections/pricing-observations.json` and `.schema.json`. Browser asset: `public/pricing-observations.json`. Reusable factory: `pricingObservation(z)` in `lib/pricing/schema.mjs` accepts the consumer's zod instance. An empty array is valid when no observations are confirmed.
 
@@ -93,4 +93,13 @@ No new binding or secret is needed. Metadata uses `pricing_history`; private bod
 
 Amounts remain exact decimal strings. `$` alone does not identify USD. Annual commitment, promotions, volume tiers and regional offers retain their conditions. Compare the same edition/deployment, currency, region, quantity and billing basis; unknown or differing bases remain incompatible. Partial extraction never proves plan/feature removal. Six-month observations cannot establish the exact effective date of an intervening change.
 
-Initial live verification produced **zero confirmed pricing observations**. Pricing lookups/replays timed out, one historical window was empty, and one downloaded landing failed its Archive digest. The [live audit](../research/pricing-live-audit.md) records those outcomes. Two positive archived pricing examples remain outstanding; this is not yet a populated historical-price dataset.
+The [ten-tool verification](../research/pricing-ten-tool-verification.md) produced **eight reviewed observations and 32 plans**. Dropbox, Zoom and Figma have matching landing/pricing archive digests. Notion, Asana, Trello, Airtable and Calendly retain explicit legacy integrity qualifications on one or both pages. Slack and Linear remain gaps in the sampled windows. These are bounded samples, not complete six-month histories. The [initial live audit](../research/pricing-live-audit.md) preserves earlier unsuccessful probes.
+
+Recheck retained evidence without network requests or changes to discovery gates:
+
+```sh
+node scripts/verify-pricing-evidence.mjs --cache .local/history \
+  --evidence research/pricing-ten-tool-evidence.json --out .local/pricing-verification.json
+```
+
+The evidence index contains source identities; raw HTML remains in the private cache. A fresh checkout reports missing bodies until its operator supplies that cache. The report separates digest matches, qualified legacy evidence, unknown digests, missing bodies and errors. Verification alone never publishes observations.

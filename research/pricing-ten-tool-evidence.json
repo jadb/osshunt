@@ -1,0 +1,343 @@
+[
+  {
+    "productId": "slack",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20140523015725",
+      "capturedAt": "2014-05-23T01:57:25.000Z",
+      "originalUrl": "https://slack.com/",
+      "digest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "notion",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250123181823",
+      "capturedAt": "2025-01-23T18:18:23.000Z",
+      "originalUrl": "https://www.notion.com/",
+      "digest": "TQUMRG7UPAG4RQWM5XHHREH3XQY6P4BG",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "figma",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20180518020928",
+      "capturedAt": "2018-05-18T02:09:28.000Z",
+      "originalUrl": "https://www.figma.com/",
+      "digest": "HMNVRFKLYILSCORLVUC3OAUW3WTYZCHQ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "figma",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20180430041341",
+      "capturedAt": "2018-04-30T04:13:41.000Z",
+      "originalUrl": "https://www.figma.com/pricing",
+      "digest": "4MQLGRRV5BDNMCHNOQ3ATYSUYK2BYXAC",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "asana",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20120208234220",
+      "capturedAt": "2012-02-08T23:42:20.000Z",
+      "originalUrl": "http://asana.com/",
+      "digest": "DAIXPRBRKPKOE6VV26R5GAHPDZ47MQCE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "trello",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20140304154341",
+      "capturedAt": "2014-03-04T15:43:41.000Z",
+      "originalUrl": "https://trello.com/",
+      "digest": "HOXXVRLGE4JBVXCZ2IR75PALUSVXQK2V",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "airtable",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20190610191222",
+      "capturedAt": "2019-06-10T19:12:22.000Z",
+      "originalUrl": "https://airtable.com/",
+      "digest": "OT3XTOOHFKJOKIKV3MVXMIIO5TYUTLT7",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "dropbox",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20110202033949",
+      "capturedAt": "2011-02-02T03:39:49.000Z",
+      "originalUrl": "https://www.dropbox.com/",
+      "digest": "VJLFERABFYQOXAF4RIXNUI5FGKLQKIJS",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "dropbox",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20110103065507",
+      "capturedAt": "2011-01-03T06:55:07.000Z",
+      "originalUrl": "http://www.dropbox.com:80/pricing",
+      "digest": "GJKOVM37BHUG5HIYJZOYFIPN4AOX5MGD",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zoom",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20151018153821",
+      "capturedAt": "2015-10-18T15:38:21.000Z",
+      "originalUrl": "http://zoom.us:80/",
+      "digest": "22NOHGOD755XWVU6TTCPXPRJC4KPMSLI",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zoom",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20151013071321",
+      "capturedAt": "2015-10-13T07:13:21.000Z",
+      "originalUrl": "http://zoom.us:80/pricing",
+      "digest": "FKU366K45G7XR6FECQWEPL3WYRK4MQ5B",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "linear",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20210414203722",
+      "capturedAt": "2021-04-14T20:37:22.000Z",
+      "originalUrl": "https://linear.app/",
+      "digest": "YQZJZ7QQM7VDOVKQ4YCV7GUE6TVVHIZC",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "calendly",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20180624150844",
+      "capturedAt": "2018-06-24T15:08:44.000Z",
+      "originalUrl": "https://calendly.com/",
+      "digest": "J76MZRBEDQKHZLL4OHZWHOSQ56Q5YSUV",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "slack",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630194837",
+      "capturedAt": "2025-06-30T19:48:37.000Z",
+      "originalUrl": "https://slack.com/",
+      "digest": "U7RJMH3RM6JTBU2PW4GNYAXQVLU4OCW4",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "notion",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630162426",
+      "capturedAt": "2025-06-30T16:24:26.000Z",
+      "originalUrl": "https://www.notion.com/",
+      "digest": "CPGECZRRKVE5Z7JAITNK6QPCWQYRBLTY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "notion",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630002039",
+      "capturedAt": "2025-06-30T00:20:39.000Z",
+      "originalUrl": "https://www.notion.com/pricing",
+      "digest": "BGBATY73YOVZ2IVKDIQDBDV3BK4BLB44",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "notion",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250619211107",
+      "capturedAt": "2025-06-19T21:11:07.000Z",
+      "originalUrl": "https://www.notion.com/product/projects",
+      "digest": "B35OG2H2S6IC4NM4PHDSURHS7E2FWIIJ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "figma",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629123912",
+      "capturedAt": "2025-06-29T12:39:12.000Z",
+      "originalUrl": "https://www.figma.com/",
+      "digest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "figma",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250626040936",
+      "capturedAt": "2025-06-26T04:09:36.000Z",
+      "originalUrl": "https://www.figma.com/pricing/",
+      "digest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "asana",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630153232",
+      "capturedAt": "2025-06-30T15:32:32.000Z",
+      "originalUrl": "https://asana.com/",
+      "digest": "4Y7IF675ZFBK6QNMKNQ3RIVJ46ZU7IEM",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "asana",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624065317",
+      "capturedAt": "2025-06-24T06:53:17.000Z",
+      "originalUrl": "https://asana.com/pricing",
+      "digest": "XGMN3XCMM6L4VFHKP2O73SDYG5RULCZU",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "asana",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624070217",
+      "capturedAt": "2025-06-24T07:02:17.000Z",
+      "originalUrl": "https://asana.com/plan/starter",
+      "digest": "JGVETZQZPP2CPASK6WGM4CTFJX2XJ3K7",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "trello",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630181419",
+      "capturedAt": "2025-06-30T18:14:19.000Z",
+      "originalUrl": "https://trello.com/",
+      "digest": "XQNHL3I342D6OI64WMYFWZVKXSAKETSS",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "trello",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250627221739",
+      "capturedAt": "2025-06-27T22:17:39.000Z",
+      "originalUrl": "https://trello.com/pricing",
+      "digest": "6LKV4U2PKYNQ6BB2WJPZLDQNTFNDW35E",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "airtable",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630184346",
+      "capturedAt": "2025-06-30T18:43:46.000Z",
+      "originalUrl": "https://www.airtable.com/",
+      "digest": "E2UXSRCM3YPNT5N2QIEOKMNP24FQF52E",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "airtable",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630155702",
+      "capturedAt": "2025-06-30T15:57:02.000Z",
+      "originalUrl": "https://airtable.com/pricing",
+      "digest": "KCJKPOTFBPKKBDT6B3BTYZEPGV6QPFUB",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "dropbox",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630235017",
+      "capturedAt": "2025-06-30T23:50:17.000Z",
+      "originalUrl": "https://www.dropbox.com/",
+      "digest": "XMJPZEDL2P6ELBLTOXPGI7LTVWSMJXGL",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "dropbox",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250629211930",
+      "capturedAt": "2025-06-29T21:19:30.000Z",
+      "originalUrl": "https://www.dropbox.com/plans",
+      "digest": "S2CVSDDFIMKSLI4J6XJ4UCFO5KIWDWCH",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "linear",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630153209",
+      "capturedAt": "2025-06-30T15:32:09.000Z",
+      "originalUrl": "https://linear.app/",
+      "digest": "ZTI4VFUU4VISEDSYMWQSO7BOS3W5TH2G",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "calendly",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630221458",
+      "capturedAt": "2025-06-30T22:14:58.000Z",
+      "originalUrl": "https://calendly.com/",
+      "digest": "A33BJSE443APDQ4YRXMSKN7U36N3H54J",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "calendly",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250612142119",
+      "capturedAt": "2025-06-12T14:21:19.000Z",
+      "originalUrl": "https://calendly.com/pricing",
+      "digest": "QAXM5FMZRTL5JZYGLI7FOOAQTTG2N2KZ",
+      "mimeType": "text/html"
+    }
+  }
+]
