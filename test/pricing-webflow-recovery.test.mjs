@@ -28,3 +28,16 @@ test('Webflow Site footer binds explicit USD, per-site denominator and tax witho
  const outside=run(html+note.replace('site-plan-compare','ecommerce-plan-compare'));
  assert.ok(outside.plans.every(p=>p.offers.every(o=>o.currency===null&&o.unit===null)));
 });
+test('Webflow explicitly hidden Site currency footnotes cannot qualify visible prices',()=>{
+ const note='<div id="site-plan-compare"><div>All prices are in USD and charged per site with applicable taxes added at checkout.</div></div>';
+ for(const hiding of ['hidden','aria-hidden="true"','style="display:none"']){
+  for(const value of [note.replace('<div>','<div '+hiding+'>'),'<section '+hiding+'>'+note+'</section>']){
+   const result=run(html+value);assert.equal(result.plans.length,2);
+   assert.ok(result.plans.every(p=>p.offers.every(o=>o.currency===null&&o.unit===null&&o.qualifications.tax===null)));
+  }
+ }
+});
+test('Webflow hidden currency words inside an otherwise visible Site disclaimer stay unknown',()=>{
+ const note='<div id="site-plan-compare"><div>All prices are in <span hidden>USD</span> and charged per site with applicable taxes added at checkout.</div></div>';
+ assert.ok(run(html+note).plans.every(p=>p.offers.every(o=>o.currency===null&&o.unit===null)));
+});
