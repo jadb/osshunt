@@ -47,6 +47,21 @@ test('discovery accepts screenshot dash status, preserves image dates and probes
   assert.equal(result.queries.length, 6);
 });
 
+test('archive metadata requests identify the product with a descriptive user agent', async () => {
+  let calls = 0;
+  const result = await discoverScreenshots(landing, { fetchImpl: async (_input, options) => {
+    calls++;
+    if (options.headers['User-Agent'] !== 'OSSHuntHistory/0.1 (+https://osshunt.com)') {
+      return new Response('Bad Request', { status: 400 });
+    }
+    assert.equal(options.headers.Accept, 'application/json');
+    return json([]);
+  } });
+  assert.equal(calls, 6);
+  assert.equal(result.complete, true);
+  assert.deepEqual(result.frames, []);
+});
+
 test('discovery follows opaque resume keys without changing query scope', async () => {
   const calls = [];
   const token = 'opaque%2F+token!';
