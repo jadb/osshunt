@@ -103,3 +103,27 @@ node scripts/verify-pricing-evidence.mjs --cache .local/history \
 ```
 
 The evidence index contains source identities; raw HTML remains in the private cache. A fresh checkout reports missing bodies until its operator supplies that cache. The report separates digest matches, qualified legacy evidence, unknown digests, missing bodies and errors. Verification alone never publishes observations.
+
+## Test a bounded cohort
+
+The operator sampler checks a fixed landing-page window of at most 31 days. It uses the production pricing reservation and shared Archive cooldown, but keeps its own private progress journal. It preserves the production checkpoint so normal initial-history discovery can continue later. This is a diagnostic sample, not a complete backfill.
+
+```sh
+npm run pricing:sample -- --products 1password,bitwarden,miro \
+  --from 2025-06-01T00:00:00.000Z --to 2025-06-30T23:59:59.000Z \
+  --cache .local/history --out .local/pricing-sample.json
+```
+
+The batch uses serial requests with ten-second spacing by default. It saves selected records, query outcomes, immutable-body references, extraction proposals and a request audit. A source rate limit stops the whole batch and persists the shared cooldown. Repeating a completed journal makes no source requests. Resume unfinished work using the same command or `--out` journal path; inputs, relevant catalog fields and parser hashes must match. A new journal does not reset a product's six-month gate.
+
+The private journal never confirms pricing. Inspect every nonempty extraction for named tiers, correct product and edition, hosted versus self-hosted scope, exact amount, currency, billing basis, units and conditions. Generic zero-price application metadata does not establish a product's paid plans. Missing captures, rejected scope, source errors and unsupported structures remain separate outcomes.
+
+Export a bounded public audit and a cache-verification index without HTML bodies, private checkpoints or cookies:
+
+```sh
+npm run pricing:sample-report -- --journal .local/pricing-sample.json \
+  --out-dir .local/pricing-sample-report --prefix pricing-sample
+node scripts/verify-pricing-evidence.mjs --cache .local/history \
+  --evidence .local/pricing-sample-report/pricing-sample-evidence.json \
+  --out .local/pricing-sample-verification.json
+```

@@ -17,7 +17,9 @@
     "check": "node scripts/validate.mjs && node scripts/validate-profiles.mjs",
     "test": "node --test test/*.test.mjs && python3 -m unittest discover -s test -p '*_test.py'",
     "pricing:review": "node scripts/review-pricing.mjs",
-    "pricing:backfill": "node scripts/backfill-pricing.mjs"
+    "pricing:backfill": "node scripts/backfill-pricing.mjs",
+    "pricing:sample": "node scripts/sample-pricing.mjs",
+    "pricing:sample-report": "node scripts/summarize-pricing-samples.mjs"
   },
   "dependencies": {
     "parse5": "8.0.1",

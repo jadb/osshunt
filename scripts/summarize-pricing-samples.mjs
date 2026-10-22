@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
+import { archiveUrl } from '../lib/pricing/archive.mjs';
 
 const headers = new Set(['content-type', 'content-length', 'content-encoding', 'memento-datetime',
   'x-archive-orig-transfer-encoding', 'x-archive-orig-content-encoding', 'x-archive-orig-digest', 'x-archive-src', 'retry-after', 'location']);
@@ -24,8 +25,15 @@ export function summarizePricingSamples(journal) {
     const proposal = product.proposal;
     return { ...pick(product, ['id', 'scope', 'status', 'stage', 'done', 'errorCode', 'outboundAttempts']),
       ...(product.reservation ? { checkedAt: product.reservation.checkedAt, nextCheckAt: product.reservation.nextCheckAt } : {}),
+      ...(product.landing ? { landingArchiveUrl: archiveUrl(product.landing), landingIntegrity: product.landingMetadata?.integrity?.status || null } : {}),
+      cacheHits: product.cacheHits || 0,
+      discoveredCandidates: (product.discoveredCandidates || []).map(candidate => pick(candidate, ['url', 'label', 'locator', 'provenance'])),
+      rejectedCandidates: (product.rejectedCandidates || []).map(candidate => pick(candidate, ['url', 'label', 'locator', 'provenance', 'reason'])),
       candidates: (product.candidates || []).map(candidate => pick(candidate, ['url', 'label', 'locator', 'provenance'])),
-      candidateResults: (product.candidateResults || []).map(result => pick(result, ['url', 'status', 'errorCode'])),
+      candidateResults: (product.candidateResults || []).map(result => ({ ...pick(result, ['status', 'errorCode']),
+        candidate: pick(result.candidate, ['url', 'label', 'locator', 'provenance']),
+        ...(result.lookup?.record ? { pricingArchiveUrl: archiveUrl(result.lookup.record) } : {}),
+        integrity: result.metadata?.integrity?.status || null, rawPlans: result.extracted?.plans?.length || 0 })),
       ...(proposal ? { observation: { ...pick(proposal, ['id', 'productId', 'scope', 'anchorAt', 'landingCapturedAt', 'pricingCapturedAt',
         'landingArchiveUrl', 'pricingArchiveUrl', 'provenance', 'sourceSha256', 'landingSha256', 'sourceDigest', 'landingDigest',
         'sourceIntegrity', 'landingIntegrity', 'quality', 'issues', 'reviewState']),
