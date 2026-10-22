@@ -41,3 +41,10 @@ test('ranks explicit pricing before generic plan comparison navigation', () => {
   const links = discoverPricingLinks('<a href="/compare">Compare</a><a href="/plans">Plans</a><a href="/pricing">Pricing</a>', options);
   assert.deepEqual(links.map(l => l.url), ['https://example.com/pricing', 'https://example.com/plans', 'https://example.com/compare']);
 });
+test('vendor product scopes never yield global or other-product archived links; catalog hints are labelled', () => {
+  const html = '<a href="/products/confluence/pricing">Pricing</a><a href="/pricing">Pricing</a><a href="/products/jira/plans">Plans</a>';
+  const links = discoverPricingLinks(html, { landingUrl: 'https://www.atlassian.com/software/jira',
+    productPaths: ['/products/jira', '/software/jira'], hints: ['https://www.atlassian.com/pricing'] });
+  assert.deepEqual(links.map(l => [l.url, l.provenance]), [['https://www.atlassian.com/products/jira/plans', 'archived-link'],
+    ['https://www.atlassian.com/pricing', 'current-source-hint']]);
+});

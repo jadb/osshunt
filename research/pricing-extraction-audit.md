@@ -46,3 +46,29 @@ original targets. No URL guessing, DNS/network validation, archive capture selec
 Explicit pricing links rank above generic comparison navigation; current-source hints remain last.
 The original link fixture asserted DOM order, not a discovery requirement; changed it to assert URL membership while
 a separate regression enforces pricing-first ranking. Original unsorted implementation fails that regression.
+
+## Extraction correctness review — 2026-10-22
+
+Added independent guards for offer-local commitments, negated free wording, numeric JSON precision, popularity labels,
+hidden sources and scoped vendor links. All six initial guards failed before changes. Restored the original affected
+modules after fixes; all new regression guards failed again; restored fixes and passed the complete focused suite.
+Separate numeric subtests demonstrated original defects for `9007199254740993`, `0.123456789012345678901` and `12.50`;
+separate minimum-quantity guard demonstrated `5.00000000000000001` must not become five seats.
+
+- Multiple offers use their own independent container evidence. Monthly billing cannot inherit a hidden annual offer's
+  commitment. Conflicting commitment evidence stays unknown; no automatic choice of annual billing.
+- Explicit positive free labels support free status; negated free text cannot produce zero. Quote evidence retained.
+- Popularity requires a standalone positive label; arbitrary prose, feature-list mentions and negation do not qualify.
+- A sole hidden offer, or an entirely hidden card, retains unknown active-variant status.
+- Inert structured data preserves raw JSON evidence, including whitespace and numeric spelling. The standard
+  [`JSON.parse` reviver source context](https://tc39.es/ecma262/multipage/structured-data.html#sec-json.parse)
+  supplies original number tokens; API behavior empirically probed. A runtime without that context leaves numeric
+  prices unknown with an issue instead of publishing rounded values. Exact string-valued prices remain supported.
+- Explicit product paths constrain archived-link discovery; approved catalog hints can name other same-host paths,
+  but remain `current-source-hint` evidence and cannot establish historical linkage. Catalog scope generation belongs
+  to the integration layer.
+
+Final focused run: `node --test test/pricing-extract.test.mjs test/pricing-links.test.mjs`, 32 tests/subtests passed.
+Full repository check passed with 134 Node tests and 5 Python tests before the final separate numeric guards;
+those additional guards passed in the final focused run. Browser-targeted ESM bundle preserved the large integer token.
+No dependency changes or archive requests made for these corrections.

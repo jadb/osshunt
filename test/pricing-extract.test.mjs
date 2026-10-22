@@ -100,3 +100,62 @@ test('malformed structured specifications stay unavailable instead of throwing',
   assert.equal(r.plans[0].offers[0].amount, '9');
   assert.ok(r.issues.some(i => /invalid.*specification/i.test(i)));
 });
+test('offer-local monthly and hidden annual commitments never contaminate each other', () => {
+  const r = extractPricing('<section class="plan-card"><h2>Pro</h2><p class="price monthly">USD 15/month billed monthly</p><p hidden class="price annual">USD 120/year billed annually</p></section>');
+  assert.deepEqual(r.plans[0].offers.map(o => o.commitment), ['monthly', 'annual']);
+  assert.doesNotMatch(r.plans[0].offers[0].source.text, /billed annually/);
+});
+test('negated free wording cannot become a zero or a free plan', () => {
+  const r = extractPricing('<section class="plan-card"><h2>Enterprise</h2><p class="price">Not free. Contact sales.</p></section>');
+  assert.equal(r.plans[0].status, 'quote'); assert.equal(r.plans[0].offers[0].amount, null);
+  assert.ok(r.issues.some(i => /negat/i.test(i)));
+});
+test('structured numeric prices preserve integer and fractional source tokens exactly', async t => {
+  for (const token of ['9007199254740993', '0.123456789012345678901', '12.50']) {
+    await t.test(token, () => {
+      const html = `<script type="application/ld+json">{"@type":"Offer","name":"Pro","price":${token},"priceCurrency":"USD"}</script>`;
+      const r = extractPricing(html), o = r.plans[0].offers[0];
+      assert.equal(o.amount, token); assert.ok(o.literal.includes(token)); assert.ok(o.source.text.includes(token));
+      assert.ok(r.plans[0].source.text.includes(token));
+    });
+  }
+});
+test('popularity requires a positive standalone badge rather than negated prose', () => {
+  for (const prose of ['Not recommended for businesses.', 'Our recommended configuration uses 4 GB RAM.', 'The most popular feature is search.']) {
+    const r = extractPricing(`<section class="plan-card"><h2>Starter</h2><p class="price">USD 5/month</p><p>${prose}</p></section>`);
+    assert.equal(r.plans[0].popular, null);
+  }
+});
+test('sole hidden offer and wholly hidden card keep active state unknown', () => {
+  for (const html of ['<div class="plan-card"><h2>Pro</h2><div hidden><span class="price">USD 12/month</span></div></div>',
+    '<div hidden class="plan-card"><h2>Pro</h2><span class="price">USD 12/month</span></div>']) {
+    const r = extractPricing(html);
+    assert.equal(r.plans[0].offers[0].qualifications.billingVariant, 'unknown-active-variant');
+    assert.ok(r.issues.some(i => /variant/i.test(i)));
+  }
+});
+test('runtime without JSON source contexts rejects numeric normalization and retains raw evidence', () => {
+  const originalParse = JSON.parse;
+  JSON.parse = function (value, reviver) {
+    return originalParse(value, typeof reviver === 'function' ? function (key, parsed) { return reviver.call(this, key, parsed); } : reviver);
+  };
+  try {
+    const token = '0.123456789012345678901';
+    const r = extractPricing(`<script type="application/ld+json">{"@type":"Offer","name":"Pro","price":${token},"priceCurrency":"USD"}</script>`);
+    assert.equal(r.plans[0].offers[0].amount, null);
+    assert.ok(r.plans[0].offers[0].source.text.includes(token));
+    assert.ok(r.issues.some(i => /numeric token/i.test(i)));
+  } finally { JSON.parse = originalParse; }
+});
+test('structured evidence preserves significant whitespace and never rounds a fractional minimum into seats', () => {
+  const raw = '{"@type":"Offer","name":"Pro  Plus","price":"9","priceCurrency":"USD","eligibleQuantity":{"minValue":5.00000000000000001}}';
+  const r = extractPricing(`<script type="application/ld+json">${raw}</script>`);
+  assert.equal(r.plans[0].name, 'Pro  Plus');
+  assert.equal(r.plans[0].offers[0].minimumQuantity, null);
+  assert.equal(r.plans[0].source.text, raw);
+});
+
+test('fractional structured minimum quantity cannot silently round to an integer', () => {
+  const r = extractPricing('<script type="application/ld+json">{"@type":"Offer","name":"Pro","price":"9","priceCurrency":"USD","eligibleQuantity":{"minValue":5.00000000000000001}}</script>');
+  assert.equal(r.plans[0].offers[0].minimumQuantity, null);
+});
