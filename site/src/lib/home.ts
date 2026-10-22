@@ -15,11 +15,18 @@ export const FIT_LABEL: Record<Fit, string> = {
 const SCENES = [
   { id: 'slack', chip: 'Slack', lead: ['mattermost', 'zulip'] },
   { id: 'microsoft-teams', chip: 'Teams', lead: ['mattermost', 'zulip'] },
+  { id: 'notion', chip: 'Notion', lead: [] },
   { id: 'firebase', chip: 'Firebase', lead: ['appwrite', 'supabase'] },
   { id: '1password', chip: '1Password', lead: ['bitwarden'] },
   { id: 'figma', chip: 'Figma', lead: ['penpot'] },
   { id: 'postman', chip: 'Postman', lead: ['hoppscotch'] },
   { id: 'datadog', chip: 'Datadog', lead: ['grafana'] },
+  { id: 'zoom', chip: 'Zoom', lead: [] },
+  { id: 'asana', chip: 'Asana', lead: [] },
+  { id: 'trello', chip: 'Trello', lead: [] },
+  { id: 'dropbox', chip: 'Dropbox', lead: [] },
+  { id: 'hubspot', chip: 'HubSpot', lead: [] },
+  { id: 'shopify', chip: 'Shopify', lead: ['medusa'] },
 ] as const;
 const PAGE = 2;
 

@@ -20,7 +20,9 @@ const REACH: Record<string, string> = {
         <ToolSearch tools={d.search} />
         <div class="samples" role="group" aria-label="Sample comparisons">
           <span class="slabel">Samples:</span>
-          {d.scenes.map((s, i) => <button type="button" class="chip" data-chip={s.id} aria-pressed={i === 0 ? 'true' : 'false'}>{s.chip}</button>)}
+          <div class="chips" data-chips>
+          {d.scenes.map((s, i) => <button type="button" class="chip dtip" data-chip={s.id} data-tip={s.name} aria-label={s.name} aria-pressed={i === 0 ? 'true' : 'false'}>{s.logo ? <img src={`/logos/${s.logo}.svg`} alt="" width="26" height="26" /> : s.chip}</button>)}
+          </div>
         </div>
       </div>
       <HeroLoop scenes={d.scenes} />
@@ -75,11 +77,15 @@ const REACH: Record<string, string> = {
   /* On wide screens the first screen fills the viewport below the header (72px = header incl. 8px rule): hero above, counts band at the bottom edge. */
   @media (min-width: 901px) { .first { display: flex; flex-direction: column; min-height: calc(100svh - 72px); } .first .hero { flex: 1; } }
   h1 { font-size: clamp(2.5rem, 5.6vw, 5rem); line-height: 0.96; font-family: var(--display); font-weight: 900; letter-spacing: -0.005em; margin-bottom: 28px; }
-  .samples { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 14px; font-weight: 700; font-size: 0.8125rem; }
-  .slabel { margin-right: 4px; }
-  .chip { font: 700 0.8125rem/1 'Archivo', sans-serif; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); padding: 8px 10px; cursor: pointer; }
-  .chip:hover { background: var(--band); }
-  .chip[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
+  .samples { display: flex; flex-wrap: nowrap; align-items: center; gap: 6px; margin-top: 14px; font-weight: 700; font-size: 0.8125rem; }
+  .slabel { margin-right: 4px; flex: none; }
+  /* As many logos as fit on one line; the rest are clipped (and skipped by the cycle). */
+  .chips { display: flex; gap: 6px; flex: 1; min-width: 0; overflow: hidden; }
+  .chip { flex: none; }
+  /* Sample picker: tool logos in black and white; the selected (or hovered) one shows its colours. */
+  .chip { display: grid; place-items: center; width: 44px; height: 44px; border: 0; background: none; padding: 0; cursor: pointer; }
+  .chip img { width: 28px; height: 28px; object-fit: contain; display: block; filter: grayscale(1); opacity: 0.8; transition: filter 0.2s ease-out, opacity 0.2s ease-out; }
+  .chip:hover img, .chip[aria-pressed='true'] img { filter: none; opacity: 1; }
 
   /* Counts band: heavy rule above, ruled cells, condensed numerals that count up when scrolled into view. */
   .stats-band { border-top: var(--rule-8) solid var(--ink); border-bottom: var(--rule-1) solid var(--ink); }
