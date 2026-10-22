@@ -117,3 +117,12 @@ test('pending response stream is bounded even if fetch ignores abort signal', as
     clearTimeout(keepAlive);
   }
 });
+test('partial or asynchronous replay responses cannot stand in for the selected complete 200 capture', async () => {
+  for (const status of [202, 206])
+    await assert.rejects(
+      fetchHtml(record, {
+        fetchImpl: async () => new Response('<h2>Pro</h2>', { status, headers: { 'content-type': 'text/html' } }),
+      }),
+      { code: 'archive_unavailable' },
+    );
+});
