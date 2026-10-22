@@ -198,3 +198,43 @@ test('query log capacity is terminal on an overdue continuation', () =>
     assert.equal((await store.read('vendor')).checkpoint.complete, true);
     assert.equal((await store.read('vendor')).nextCheckAt, '2024-07-01T00:00:00.000Z');
   }));
+test('malformed cursor on overdue reservation receives future continuation backoff', () =>
+  fixture(async (store) => {
+    await seed(store, { checkedAt: '2020-01-01T00:00:00.000Z' });
+    const reserved = await store.resume('vendor', at),
+      state = reserved.checkpoint;
+    state.phase = 'landing-index';
+    state.landingQuery = {
+      url: product.url,
+      cutoff: '2020-01-01T00:00:00.000Z',
+      records: [],
+      resumeKey: 'cursor',
+      seenKeys: ['cursor'],
+      complete: false,
+    };
+    state.cutoff = '2020-01-01T00:00:00.000Z';
+    state.queries = [{ url: 'https://web.archive.org/cdx/search/cdx', status: 200 }];
+    await store.checkpoint('vendor', reserved.token, state, { release: true });
+    let calls = 0;
+    const api = createPricingService({
+      catalog: [product],
+      store,
+      clock: () => Date.parse(at),
+      discoverLinks: () => [],
+      extractor: () => ({ plans: [] }),
+      archive: {
+        async queryHtmlPage() {
+          calls++;
+          throw Object.assign(new Error('Repeated cursor'), { code: 'archive_incomplete' });
+        },
+      },
+    });
+    await api.fetch(refresh());
+    await api.fetch(refresh());
+    assert.equal(calls, 1);
+    const saved = await store.read('vendor');
+    assert.equal(saved.checkpoint.retryAt, Date.parse('2024-01-01T01:00:00.000Z'));
+    assert.equal(saved.checkpoint.complete, false);
+    assert.equal(saved.checkedAt, '2020-01-01T00:00:00.000Z');
+    assert.equal(saved.checkpoint.cutoff, '2020-01-01T00:00:00.000Z');
+  }));
