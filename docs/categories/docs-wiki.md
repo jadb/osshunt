@@ -39,7 +39,7 @@ Repository: pushed 2026-10-21T19:48:50Z; latest commit 2026-10-21T19:48:49Z; lat
 - Confluence → Docmost Community: **partial**. Confluence HTML space ZIP importer is Business-gated; docs claim formatting, hierarchy, internal links, images/attachments and Draw.io diagrams preserved. Test macros and integrations separately. [1](https://docmost.com/docs/user-guide/import-export) [2](https://docmost.com/pricing)
 - Notion → Docmost Community: **partial**. Notion ZIP import preserves page structure; pilot databases, permissions and linked content. Export pages/spaces as Markdown or HTML. [1](https://docmost.com/docs/user-guide/import-export) [2](https://docmost.com/pricing)
 
-### Outline (source-available) — S
+### Outline — S
 
 Pinned license explicitly says it is not an open source license. Additional Use Grant forbids commercial third-party Document Services. Pinned version changes to Apache-2.0 on 2030-10-12; that future conversion does not make current version OSS.
 
@@ -51,10 +51,10 @@ Paid restrictions: Community on-premises edition has limited features; Business 
 
 Repository: pushed 2026-10-21T21:26:26Z; latest commit 2026-10-21T12:36:51Z; latest published release v1.11.0 (2026-10-12T14:22:35Z). Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
-- Confluence → Outline (source-available): **partial**. Knowledge-base replacement candidate under BSL rather than OSS; Confluence importer listed among on-premise features but exact paid-tier placement not verified. API export capabilities documented. [1](https://www.getoutline.com/pricing) [2](https://www.getoutline.com/developers)
-- Notion → Outline (source-available): **partial**. Fits shared documentation; Notion database/workflow parity not claimed. Review BSL Document Service restriction and community edition limits. [1](https://www.getoutline.com/pricing) [2](https://www.getoutline.com/developers)
+- Confluence → Outline: **partial**. Knowledge-base replacement candidate under BSL rather than OSS; Confluence importer listed among on-premise features but exact paid-tier placement not verified. API export capabilities documented. [1](https://www.getoutline.com/pricing) [2](https://www.getoutline.com/developers)
+- Notion → Outline: **partial**. Fits shared documentation; Notion database/workflow parity not claimed. Review BSL Document Service restriction and community edition limits. [1](https://www.getoutline.com/pricing) [2](https://www.getoutline.com/developers)
 
-### AFFiNE (mixed-license stack; review required) — U
+### AFFiNE — U
 
 MIT covers code outside backend/native. Backend EE license explicitly exempts CE-distributed and specified client-side portions under MPL-2.0. Official marketing calls backend source-available, while blogs acknowledge MPL CE carveout. Full current CE boundary not independently reconstructed: do not present full stack as verified OSI OSS. MIT local editor is clearly OSS.
 
@@ -66,8 +66,8 @@ Paid restrictions: Official enterprise page says self-hosted Team required for m
 
 Repository: pushed 2026-10-12T09:51:10Z; latest commit 2026-10-11T14:49:18Z; latest published release v0.27.4 (2026-08-18T16:51:39Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
-- Confluence → AFFiNE (mixed-license stack; review required): **different-approach**. Docs/whiteboards for shared knowledge; verify EE/CE license scope and procurement before production. Migration compatibility not independently tested. [1](https://affine.pro/about-us) [2](https://affine.pro/enterprise)
-- Notion → AFFiNE (mixed-license stack; review required): **different-approach**. Docs and canvas approach; local MIT editor is useful, but full self-hosted collaboration has mixed licensing and seat/plan questions. Pilot database parity and export/import round trips. [1](https://affine.pro/pricing) [2](https://affine.pro/blog/notion-alternative)
+- Confluence → AFFiNE: **different-approach**. Docs/whiteboards for shared knowledge; verify EE/CE license scope and procurement before production. Migration compatibility not independently tested. [1](https://affine.pro/about-us) [2](https://affine.pro/enterprise)
+- Notion → AFFiNE: **different-approach**. Docs and canvas approach; local MIT editor is useful, but full self-hosted collaboration has mixed licensing and seat/plan questions. Pilot database parity and export/import round trips. [1](https://affine.pro/pricing) [2](https://affine.pro/blog/notion-alternative)
 
 ### AppFlowy client core — U
 

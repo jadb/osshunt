@@ -4,7 +4,7 @@ Checked 2026-10-21. Audience order is an editorial estimate of potential busines
 
 | Reach rank | Category | Paid incumbents | Candidates, openness order |
 |---:|---|---|---|
-| 1 | [Office suite and files](categories/office-files.md) | Dropbox, Google Workspace, Microsoft 365 | Collabora Online (CODE) **A** · Nextcloud Hub **B** · ownCloud Infinite Scale (oCIS source edition) **B** · ONLYOFFICE Docs Community **C** · Seafile Community Edition **C** |
+| 1 | [Office suite and files](categories/office-files.md) | Dropbox, Google Workspace, Microsoft 365 | Collabora Online **A** · Nextcloud Hub **B** · ownCloud Infinite Scale **B** · ONLYOFFICE Docs Community **C** · Seafile Community Edition **C** |
 | 2 | [Email clients and webmail](categories/email-clients.md) | Front, Microsoft Outlook | Roundcube **A** · Thunderbird **A** |
 | 3 | [Password managers](categories/passwords.md) | 1Password | Vaultwarden **A** · Bitwarden **C** · Passbolt Community Edition **C** |
 | 4 | [PDF editing and processing](categories/pdf-tools.md) | Adobe Acrobat, Smallpdf | PDF Arranger **A** · PDFsam Basic **A** · Stirling PDF **U** |
@@ -12,7 +12,7 @@ Checked 2026-10-21. Audience order is an editorial estimate of potential busines
 | 6 | [Video calls](categories/video-calls.md) | Google Meet, Zoom | Jitsi Meet **A** · BigBlueButton **U** |
 | 7 | [Websites and CMS](categories/website-cms.md) | Squarespace, Webflow, Wix | Drupal **A** · Ghost **A** · WordPress **A** |
 | 8 | [Backup and recovery](categories/backup-recovery.md) | Acronis Cyber Protect, Backblaze Business Backup | BorgBackup **A** · Kopia **A** · restic **A** |
-| 9 | [Docs and wiki](categories/docs-wiki.md) | Confluence, Notion | BookStack **A** · Docmost Community **C** · Outline (source-available) **S** · AFFiNE (mixed-license stack; review required) **U** · AppFlowy client core **U** |
+| 9 | [Docs and wiki](categories/docs-wiki.md) | Confluence, Notion | BookStack **A** · Docmost Community **C** · Outline **S** · AFFiNE **U** · AppFlowy client core **U** |
 | 10 | [Project management](categories/project-management.md) | Asana, Jira, Linear | Huly **A** · OpenProject **C** · Plane Community **C** · Taiga **U** |
 | 11 | [File transfer](categories/file-transfer.md) | MASV, WeTransfer | copyparty **A** · ProjectSend **A** |
 | 12 | [Forms and surveys](categories/forms-surveys.md) | Typeform | Formbricks Community Edition **C** · HeyForm **U** · LimeSurvey Community Edition **U** |
@@ -35,7 +35,7 @@ Checked 2026-10-21. Audience order is an editorial estimate of potential busines
 | 29 | [Diagramming](categories/diagramming.md) | Lucidchart, Microsoft Visio | draw.io **A** · Mermaid **A** |
 | 30 | [Video editing](categories/video-editing.md) | Adobe Premiere Pro, Final Cut Pro | Kdenlive **A** · Shotcut **A** |
 | 31 | [Social publishing](categories/social-publishing.md) | Buffer, Hootsuite | Mixpost Lite **C** · Postiz **C** |
-| 32 | [Workflow automation](categories/automation.md) | Make, Zapier | Node-RED **A** · Windmill (OSS source build) **C** · n8n (source available) **S** · Activepieces **U** |
+| 32 | [Workflow automation](categories/automation.md) | Make, Zapier | Node-RED **A** · Windmill **C** · n8n **S** · Activepieces **U** |
 | 33 | [Web analytics](categories/web-analytics.md) | Google Analytics 360 | Matomo **C** · Plausible Community Edition **C** · PostHog core **C** · Umami **C** |
 | 34 | [Screen recording and asynchronous video](categories/screen-recording.md) | Loom | OBS Studio **A** · Screenity **C** · Cap **U** |
 | 35 | [Human resources](categories/hr.md) | BambooHR | Frappe HR **A** · OrangeHRM Starter **C** |

@@ -24,7 +24,7 @@ Repository: pushed 2026-10-21T12:16:00Z; latest commit 2026-10-21T10:23:37Z; lat
 - Make → Node-RED: **different-approach**. Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators. [1](https://nodered.org/about/) [2](https://www.make.com/pricing)
 - Zapier → Node-RED: **different-approach**. Rebuild triggers/actions as Node-RED flows; JSON flow import/export is native, but no Zap/Make importer verified. Connector availability, OAuth setup and runtime operations need checking. Best for technical operators. [1](https://nodered.org/about/) [2](https://zapier.com/pricing)
 
-### Windmill (OSS source build) — C
+### Windmill — C
 
 Non-enterprise source build is AGPLv3 with Apache client/spec components; proprietary snippets excluded. Commercial hosting of AGPL build is possible subject to AGPL. Vendor Community binaries are separately restricted, not the OSS artifact identified here. Workflow features are paid, so C.
 
@@ -36,10 +36,10 @@ Paid restrictions: Kafka/NATS/SQS/cloud-event triggers and SQL Server/Oracle run
 
 Repository: pushed 2026-10-21T20:42:23Z; latest commit 2026-10-21T20:04:23Z; latest published release v1.846.1 (2026-10-21T20:05:13Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
-- Make → Windmill (OSS source build): **different-approach**. Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid. [1](https://www.windmill.dev/pricing) [2](https://www.make.com/pricing)
-- Zapier → Windmill (OSS source build): **different-approach**. Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid. [1](https://www.windmill.dev/pricing) [2](https://zapier.com/pricing)
+- Make → Windmill: **different-approach**. Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid. [1](https://www.windmill.dev/pricing) [2](https://www.make.com/pricing)
+- Zapier → Windmill: **different-approach**. Developer-oriented scripts, schedules and flow orchestration; translate integrations and code rather than import Zaps/scenarios. Build OSS source if unrestricted AGPL hosting needed; common enterprise/event features paid. [1](https://www.windmill.dev/pricing) [2](https://zapier.com/pricing)
 
-### n8n (source available) — S
+### n8n — S
 
 Root core license restricts use and distribution by purpose, so not OSI OSS. EE files separately licensed; self-hosting does not change classification. Retained as a clearly marked source-available comparison, excluded from OSS recommendations.
 
@@ -51,8 +51,8 @@ Paid restrictions: Workflow and credential sharing, projects, custom variables, 
 
 Repository: pushed 2026-10-21T21:28:25Z; latest commit 2026-10-21T16:26:54Z; latest published release n8n@2.44.5 (2026-10-21T07:26:46Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
-- Make → n8n (source available): **partial**. Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified. [1](https://docs.n8n.io/deploy/host-n8n/community-edition-features.md) [2](https://www.make.com/pricing)
-- Zapier → n8n (source available): **partial**. Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified. [1](https://docs.n8n.io/deploy/host-n8n/community-edition-features.md) [2](https://zapier.com/pricing)
+- Make → n8n: **partial**. Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified. [1](https://docs.n8n.io/deploy/host-n8n/community-edition-features.md) [2](https://www.make.com/pricing)
+- Zapier → n8n: **partial**. Visual node workflows overlap, but workflow/credential sharing is paid and licensing is source available. Rebuild automations and reauthorize credentials; no drop-in migration verified. [1](https://docs.n8n.io/deploy/host-n8n/community-edition-features.md) [2](https://zapier.com/pricing)
 
 ### Activepieces — U
 

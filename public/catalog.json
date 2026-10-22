@@ -1,7 +1,7 @@
 [
   {
     "id": "collabora-online",
-    "name": "Collabora Online (CODE)",
+    "name": "Collabora Online",
     "url": "https://www.collaboraonline.com/code/",
     "catalogUrl": "https://www.collaboraonline.com/code/",
     "kind": "oss",
@@ -95,7 +95,7 @@
   },
   {
     "id": "owncloud-ocis",
-    "name": "ownCloud Infinite Scale (oCIS source edition)",
+    "name": "ownCloud Infinite Scale",
     "url": "https://owncloud.com/ocis/",
     "catalogUrl": "https://owncloud.com/ocis/",
     "kind": "oss",
@@ -643,7 +643,7 @@
   },
   {
     "id": "affine",
-    "name": "AFFiNE (mixed-license stack; review required)",
+    "name": "AFFiNE",
     "url": "https://affine.pro/",
     "catalogUrl": "https://affine.pro/",
     "kind": "oss",
@@ -735,7 +735,7 @@
   },
   {
     "id": "outline",
-    "name": "Outline (source-available)",
+    "name": "Outline",
     "url": "https://www.getoutline.com/",
     "catalogUrl": "https://www.getoutline.com/",
     "kind": "oss",
@@ -2305,7 +2305,7 @@
   },
   {
     "id": "n8n",
-    "name": "n8n (source available)",
+    "name": "n8n",
     "url": "https://n8n.io",
     "catalogUrl": "https://n8n.io",
     "kind": "oss",
@@ -2337,7 +2337,7 @@
   },
   {
     "id": "windmill",
-    "name": "Windmill (OSS source build)",
+    "name": "Windmill",
     "url": "https://www.windmill.dev",
     "catalogUrl": "https://www.windmill.dev",
     "kind": "oss",
