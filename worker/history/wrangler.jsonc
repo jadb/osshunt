@@ -1,0 +1,18 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "osshunt-history",
+  "main": "index.mjs",
+  "compatibility_date": "2026-10-21",
+  "assets": {
+    "directory": "../../public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "osshunt-history",
+    "database_id": "5fed2e9a-28fa-4761-9a95-406175663fd2",
+    "migrations_dir": "migrations"
+  }],
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "osshunt-history-images" }]
+}

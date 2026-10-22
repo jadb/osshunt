@@ -11,7 +11,9 @@
     "./loaders": "./lib/loaders.mjs"
   },
   "scripts": {
-    "build": "python3 scripts/assemble.py research/categories && node scripts/sync.mjs && node scripts/render.mjs && node scripts/render-profiles.mjs && node scripts/profile-coverage.mjs",
+    "build": "python3 scripts/assemble.py research/categories && node scripts/sync.mjs && node scripts/render.mjs && node scripts/render-profiles.mjs && node scripts/profile-coverage.mjs && node scripts/build-history-catalog.mjs",
+    "history:serve": "node scripts/history-server.mjs",
+    "history:backfill": "node scripts/backfill-history.mjs",
     "check": "node scripts/validate.mjs && node scripts/validate-profiles.mjs",
     "test": "node --test test/*.test.mjs && python3 -m unittest discover -s test -p '*_test.py'"
   },
