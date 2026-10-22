@@ -20,6 +20,18 @@ function candidateSummary(results) {
     hasErrors: results.some(result => candidateStatus(result) === 'error' || candidateErrorCode(result) !== null),
     mixedOutcomes: new Set(results.map(result => JSON.stringify([candidateStatus(result), candidateErrorCode(result)]))).size > 1 };
 }
+function extractionSummary(result) {
+  const plans = result.extracted?.plans || [];
+  const classification = (result.extracted?.diagnostics || result.diagnostics)?.classification;
+  const known = ['static_pricing', 'embedded_pricing', 'partial_pricing', 'quote_only', 'client_rendered_unavailable', 'unsupported'];
+  return { ...pick(result, ['status', 'errorCode']), rawPlans: result.rawPlanCount ?? plans.length,
+    rawOffers: result.rawOfferCount ?? plans.reduce((n, plan) => n + (plan.offers?.length || 0), 0),
+    ...(Number.isSafeInteger(result.omittedPlans) ? { omittedPlans: result.omittedPlans } : {}),
+    ...(known.includes(classification) ? { diagnostics: { classification } } : {}),
+    ...(plans.length ? { unvalidatedFragments: plans.map(plan => ({ ...pick(plan, ['name', 'status', 'kind', 'popular']),
+      offers: (plan.offers || []).map(offer => ({ ...pick(offer, ['literal', 'amount', 'currency', 'billingPeriod', 'commitment', 'unit', 'minimumQuantity', 'qualifications']),
+        ...(offer.source?.locator ? { sourceLocator: offer.source.locator } : {}) })) })) } : {}) };
+}
 export function summarizePricingSamples(journal) {
   if (journal?.version !== 1 || !Array.isArray(journal.products) || !Array.isArray(journal.requests)) throw new TypeError('Invalid sampling journal');
   const evidence = new Map();
@@ -40,6 +52,11 @@ export function summarizePricingSamples(journal) {
       ...(product.reservation ? { checkedAt: product.reservation.checkedAt, nextCheckAt: product.reservation.nextCheckAt } : {}),
       ...(product.landing ? { landingArchiveUrl: archiveUrl(product.landing), landingIntegrity: product.landingMetadata?.integrity?.status || null } : {}),
       cacheHits: product.cacheHits || 0,
+      ...(product.landingExtraction ? { landingExtraction: extractionSummary(product.landingExtraction) } : {}),
+      discoveryRejections: (product.discoveryRejections || []).slice(0, 100)
+        .map(candidate => pick(candidate, ['url', 'label', 'locator', 'provenance', 'reason'])),
+      ...(product.discoveryRejectionSummary ? { discoveryRejectionSummary:
+        pick(product.discoveryRejectionSummary, ['total', 'retained', 'omitted']) } : {}),
       candidateSummary: candidateSummary(product.candidateResults || []),
       discoveredCandidates: (product.discoveredCandidates || []).map(candidate => pick(candidate, ['url', 'label', 'locator', 'provenance'])),
       rejectedCandidates: (product.rejectedCandidates || []).map(candidate => pick(candidate, ['url', 'label', 'locator', 'provenance', 'reason'])),
@@ -47,11 +64,7 @@ export function summarizePricingSamples(journal) {
       candidateResults: (product.candidateResults || []).map(result => ({ ...pick(result, ['status', 'errorCode']),
         candidate: pick(result.candidate, ['url', 'label', 'locator', 'provenance']),
         ...(result.lookup?.record ? { pricingArchiveUrl: archiveUrl(result.lookup.record) } : {}),
-        integrity: result.metadata?.integrity?.status || null, rawPlans: result.extracted?.plans?.length || 0,
-        rawOffers: result.extracted?.plans?.reduce((n, plan) => n + (plan.offers?.length || 0), 0) || 0,
-        ...(result.extracted?.plans?.length ? { unvalidatedFragments: result.extracted.plans.map(plan => ({ ...pick(plan, ['name', 'status', 'kind', 'popular']),
-          offers: (plan.offers || []).map(offer => ({ ...pick(offer, ['literal', 'amount', 'currency', 'billingPeriod', 'commitment', 'unit', 'minimumQuantity', 'qualifications']),
-            ...(offer.source?.locator ? { sourceLocator: offer.source.locator } : {}) })) })) } : {}) })),
+        integrity: result.metadata?.integrity?.status || null, ...extractionSummary(result) })),
       ...(proposal ? { observation: { ...pick(proposal, ['id', 'productId', 'scope', 'anchorAt', 'landingCapturedAt', 'pricingCapturedAt',
         'landingArchiveUrl', 'pricingArchiveUrl', 'provenance', 'sourceSha256', 'landingSha256', 'sourceDigest', 'landingDigest',
         'sourceIntegrity', 'landingIntegrity', 'quality', 'issues', 'reviewState']),
@@ -62,6 +75,7 @@ export function summarizePricingSamples(journal) {
   const requests = journal.requests.map(request => ({ ...pick(request, ['productId', 'stage', 'url', 'startedAt', 'finishedAt', 'status', 'elapsedMs', 'errorCode']),
     headers: Object.fromEntries(Object.entries(request.headers || {}).filter(([key]) => headers.has(key.toLowerCase()))) }));
   const candidateResults = products.flatMap(product => product.candidateResults);
+  const extractionResults = products.flatMap(product => [...(product.landingExtraction ? [product.landingExtraction] : []), ...product.candidateResults]);
   const count = key => products.reduce((counts, product) => { const value = product[key] ?? 'unknown'; counts[value] = (counts[value] || 0) + 1; return counts; }, {});
   return { report: { formatVersion: 1, ...pick(journal, ['inputs', 'extractorVersion', 'baselineFingerprint', 'startedAt', 'finishedAt', 'stopped']),
     historicalComplete: false, automaticallyConfirmed: 0,
@@ -71,8 +85,13 @@ export function summarizePricingSamples(journal) {
       candidateErrorCodes: tally(candidateResults.map(candidateErrorCode).filter(Boolean)),
       productsWithCandidateErrors: products.filter(product => product.candidateSummary.hasErrors).length,
       productsWithMixedCandidateOutcomes: products.filter(product => product.candidateSummary.mixedOutcomes).length,
+      rawLandingFragments: products.reduce((n, product) => n + (product.landingExtraction?.rawPlans || 0), 0),
+      rawLandingOffers: products.reduce((n, product) => n + (product.landingExtraction?.rawOffers || 0), 0),
+      extractionClassifications: tally(extractionResults.map(result => result.diagnostics?.classification).filter(Boolean)),
+      discoveryRejections: products.reduce((n, product) => n + (product.discoveryRejectionSummary?.total ?? product.discoveryRejections.length), 0),
+      omittedDiscoveryRejections: products.reduce((n, product) => n + (product.discoveryRejectionSummary?.omitted || 0), 0),
       observed429: requests.filter(r => r.status === 429).length, responsesMissing: requests.filter(r => !r.status).length,
-      productsWithNonemptyFragments: products.filter(p => p.candidateResults.some(result => result.rawPlans > 0)).length,
+      productsWithNonemptyFragments: products.filter(p => p.landingExtraction?.rawPlans > 0 || p.candidateResults.some(result => result.rawPlans > 0)).length,
       nonemptyCandidateExtractions: products.reduce((n, p) => n + p.candidateResults.filter(result => result.rawPlans > 0).length, 0),
       rawCandidateFragments: products.reduce((n, p) => n + p.candidateResults.reduce((sum, result) => sum + result.rawPlans, 0), 0),
       rawCandidateOffers: products.reduce((n, p) => n + p.candidateResults.reduce((sum, result) => sum + result.rawOffers, 0), 0),
