@@ -211,3 +211,84 @@ test('legacy Zoom split tables retain participant offers, host quantities and li
   assert.ok(!r.issues.some(i => /Complex comparison table/.test(i)));
   assert.equal(extractPricing(html, { originalUrl: 'https://unrelated.example/pricing' }).plans.length, 0);
 });
+const notionControls = (
+  selection = 'year',
+  currency = 'USD',
+) => `<header class="_country__priceControlsExperimental__fixture"><fieldset>
+  <input type="radio" name="billingInterval" id="month" value="month" ${selection === 'month' ? 'checked=""' : ''}><label for="month">Pay monthly</label>
+  <input type="radio" name="billingInterval" id="year" value="year" ${selection === 'year' ? 'checked=""' : ''}><label for="year">Pay yearly</label>
+  </fieldset><div>Price in <span>${currency}</span></div></header>`;
+const notionCard = (name, price, extra = '') =>
+  `<section class="PricingPlanCardNew_pricingPlanCard__fixture"><header class="PricingPlanCardNew_header__fixture"><span class="PricingPlanCardNew_heading__fixture">${name}</span></header><div class="PricingPlanCardNew_pricingWrap__fixture">${price}</div>${extra}</section>`;
+test('Notion static cards retain selected annual monthly-equivalent rates, currency control and exact evidence', () => {
+  const html =
+    notionControls() +
+    notionCard('Free', '$0 per member / month') +
+    notionCard('Plus', '$10 per member / month') +
+    notionCard(
+      'Business <span class="PricingPlanCardNew_badge__fixture">Recommended</span>',
+      '$20 per member / month',
+      '<div class="PlanFeaturesNew_planFeatureItem__fixture">Audit trail</div>',
+    ) +
+    notionCard('Enterprise', 'Custom pricing');
+  const r = extractPricing(html, { originalUrl: 'https://www.notion.com/pricing' });
+  assert.deepEqual(
+    r.plans.map((p) => p.name),
+    ['Free', 'Plus', 'Business', 'Enterprise'],
+  );
+  assert.deepEqual(
+    r.plans.map((p) => p.status),
+    ['free', 'paid', 'paid', 'quote'],
+  );
+  assert.deepEqual(
+    r.plans.map((p) => p.offers[0].amount),
+    ['0', '10', '20', null],
+  );
+  assert.equal(r.plans[2].popular, true);
+  assert.equal(r.plans[1].popular, null);
+  for (const p of r.plans.slice(0, 3)) {
+    const o = p.offers[0];
+    assert.equal(o.billingPeriod, 'month');
+    assert.equal(o.commitment, 'annual');
+    assert.equal(o.unit, 'member');
+    assert.equal(o.currency, 'USD');
+    assert.equal(o.minimumQuantity, null);
+    assert.equal(o.qualifications.billingVariant, null);
+    assert.match(o.source.text, /Price in USD/);
+    assert.match(o.source.text, /Pay yearly/);
+    assert.match(o.source.locator, /\|/);
+  }
+  assert.equal(r.plans[3].offers[0].currency, null);
+  assert.equal(r.plans[3].offers[0].commitment, 'unknown');
+  assert.equal(r.plans[2].features[0].value, 'Audit trail');
+  assert.ok(r.plans[2].features[0].source.locator.startsWith('offset:'));
+  assert.ok(!r.issues.some((i) => i.includes('Unknown currency')));
+  assert.equal(extractPricing(html, { originalUrl: 'https://other.example/pricing' }).plans.length, 0);
+  assert.equal(extractPricing(html, { originalUrl: 'https://www.notion.com/product/projects' }).plans.length, 0);
+});
+test('Notion adapter preserves unknown control state, hidden variants and monthly commitments', () => {
+  const card = notionCard('Plus', '$10 per member / month');
+  const monthly = extractPricing(notionControls('month') + card, { originalUrl: 'https://www.notion.so/pricing' });
+  assert.equal(monthly.plans[0].offers[0].commitment, 'monthly');
+  const unknown = extractPricing(card, { originalUrl: 'https://www.notion.com/pricing' });
+  assert.equal(unknown.plans[0].offers[0].currency, null);
+  assert.equal(unknown.plans[0].offers[0].commitment, 'unknown');
+  const variants =
+    notionControls() +
+    notionCard(
+      'Plus',
+      '$10 per member / month',
+      '<div hidden class="PricingPlanCardNew_pricingWrap__fixture">$12 per member / month</div>',
+    );
+  const r = extractPricing(variants, { originalUrl: 'https://www.notion.com/pricing' });
+  assert.deepEqual(
+    r.plans[0].offers.map((o) => o.amount),
+    ['10', '12'],
+  );
+  assert.ok(
+    r.plans[0].offers.every(
+      (o) => o.commitment === 'unknown' && o.qualifications.billingVariant === 'unknown-active-variant',
+    ),
+  );
+  assert.ok(r.issues.some((i) => /variant/i.test(i)));
+});
