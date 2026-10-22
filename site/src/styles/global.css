@@ -108,3 +108,7 @@ details.group > summary > * { margin: 0; }
 /* Header breathing room: its own top/bottom padding replaces the frame's top padding; content stays centred. */
 .facts:has(> .facts-head) { padding-top: 0; }
 .facts-head { align-items: center; }
+
+/* Breadcrumbs: the generic nav link padding made links sit lower than the separators and current page. */
+nav.crumbs { align-items: baseline; }
+nav.crumbs a { padding: 0; }
