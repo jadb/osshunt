@@ -128,6 +128,7 @@ async function main() {
       stopped: result.stopped,
     }),
   );
+  if (result.stopped || result.products.some(product => !product.done)) process.exitCode = 75;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href)
   main().catch((error) => {
