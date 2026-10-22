@@ -57,6 +57,8 @@ Resources: CPU 1 CPU sufficient for tests only; memory 512MB sufficient for test
 
 Status: **none-found**. Checked official installation documentation; manual installation/Compose alone is not a one-click offering. [1](https://zitadel.com/docs/self-hosting/deploy/overview)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

@@ -61,6 +61,8 @@ Resources: CPU 2 vCPUs minimum; 4 recommended; memory 8 GB minimum; 16 GB recomm
 
 Status: **none-found**. Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified. [1](https://github.com/hcengineering/huly-selfhost)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

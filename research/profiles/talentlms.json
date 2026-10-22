@@ -1,0 +1,129 @@
+{
+  "id": "talentlms",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Epignosis",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "PeakSpan Capital",
+        "source": "https://www.peakspancapital.com/partnership/epignosis"
+      },
+      {
+        "name": "Insight Partners",
+        "source": "https://www.insightpartners.com/portfolio/epignosis-talentlms-efront-talentcards/"
+      }
+    ],
+    "notes": "Investment entity Epignosis founded2012 according to PeakSpan; TalentLMS releasedOctober5,2012. Product roots/eFront work predate that entity. PeakSpan and Insight current portfolio pages verify institutional backing; historical/currentstake amounts not inferred beyond disclosed12.5MSeriesA.",
+    "sources": [
+      "https://www.peakspancapital.com/partnership/epignosis",
+      "https://www.epignosishq.com/talentlms-celebrates-its-10th-birthday/",
+      "https://www.insightpartners.com/portfolio/epignosis-talentlms-efront-talentcards/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Core (1–40 users)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1428,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "portal with1–40 users",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Displayed $119/month billed yearly; annual total119×12=$1,428. Monthly billing amount not independently retrieved. Free plan up to5users/10courses separate.",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro (1–100 users)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 5388,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "portal with1–100 users",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Official card marked Popular. Displayed $449/month billed yearly; annual total449×12=$5,388. Flex/additional-user charges and add-ons separate.",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Grow (1–70 users)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 2748,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "portal with1–70 users",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest expanding organization tier; $229/month billed yearly ×12=$2,748/year. Higher user brackets priced separately.",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "portal",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Custom annual plan; card says1000users, flexible starts500; FAQ allows tailored user counts. No universal minimum or numeric price asserted.",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable training content, branch portals and connected HR workflows can make an established employee/customer learning program costly to migrate.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "SCORM1.2, TinCan/xAPI and cmi5 support let organizations reuse standards-based learning content.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    },
+    {
+      "claim": "Branches and learning paths organize different teams or audiences into separate, sequenced training experiences.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    },
+    {
+      "claim": "AI course creation, coaching and skill-based learning tools help authors produce material and guide learner practice.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.talentlms.com/prices"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

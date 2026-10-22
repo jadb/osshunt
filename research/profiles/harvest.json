@@ -1,0 +1,126 @@
+{
+  "id": "harvest",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Harvest / Bending Spoons Operations S.p.A.",
+    "kind": "business",
+    "foundedYear": 2006,
+    "ageBasis": "product-launched",
+    "ownership": "public-subsidiary",
+    "parent": "Bending Spoons S.p.A.; publicly listed since July2026 (exact exchange/ticker unverified in reviewed primary pages)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Berkshire Hathaway (parent Bending Spoons)",
+        "source": "https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons"
+      }
+    ],
+    "notes": "Age is Harvest product launch2006, not current operator incorporation. Current terms name Bending Spoons Operations S.p.A., wholly controlled by Bending Spoons S.p.A.; parent July2026 IPO confirmed in company announcement. Berkshire investment is parent-level equity, not historic standalone Harvest funding. Parent ticker not primary-source verified; no symbol guessed.",
+    "sources": [
+      "https://www.getharvest.com/about",
+      "https://www.getharvest.com/terms-of-service",
+      "https://hl.com/about-us/transactions/harvest-bending-spoons/",
+      "https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Teams",
+      "status": "published",
+      "monthlyPrice": 11,
+      "annualPrice": 108,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Starting $11/seat monthly or $108/seat annually. Free plan separate. Additional invoices/projects/clients/tasks may incur usage charges.",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": 17.5,
+      "annualPrice": 168,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest advanced team plan: starting $17.50 monthly or $168 annually per seat. Usage charges may apply; includes profitability reports and timesheet approvals.",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Plus",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Custom pricing for tailored integrations/product configuration; contact sales.",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Time, client budgets and invoicing history connected to accounting tools can make a professional-services billing workflow costly to migrate.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Time tracking and team capacity reporting connect recorded hours with project staffing visibility.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    },
+    {
+      "claim": "Invoices and accounting/payment integrations turn tracked billable time into client billing.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    },
+    {
+      "claim": "Profitability reports, saved custom reports and timesheet approvals help managers assess and authorize work.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getharvest.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

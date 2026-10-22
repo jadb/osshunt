@@ -1,0 +1,128 @@
+{
+  "id": "greenhouse",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Greenhouse Software",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "TPG Growth",
+        "source": "https://www.tpg.com/news-and-insights/tpg-growth-and-rise-fund-make-major-investment-greenhouse"
+      },
+      {
+        "name": "The Rise Fund",
+        "source": "https://www.tpg.com/news-and-insights/tpg-growth-and-rise-fund-make-major-investment-greenhouse"
+      }
+    ],
+    "notes": "Founded2012. TPG Growth and The Rise Fund announced majority investment agreement in2021; current exact shareholding not independently disclosed. TPG is fund manager/investor, not assumed direct product parent or public-subsidiary status.",
+    "sources": [
+      "https://www.greenhouse.com/blog/structured-hiring-and-workplace-inclusivity-across-the-globe-why-greenhouse-is-expanding-in-dublin",
+      "https://www.tpg.com/news-and-insights/tpg-growth-and-rise-fund-make-major-investment-greenhouse"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Core",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Customized price based on hiring needs, volume and organizational complexity; no public numeric entry.",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Plus",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest expanding organization tier for added teams/locations/brands, automation and deeper reporting. Custom quote.",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Pro",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Highest tier: enterprise governance, auditability, developer sandbox and data configuration. Custom quote, no published amount.",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Structured hiring records, interview scorecards and connected recruiting processes can create team-process and data migration costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Structured interview kits and scorecards make evaluation more consistent across interviewers.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    },
+    {
+      "claim": "Sourcing CRM and sourcing automation maintain prospect relationships before formal applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    },
+    {
+      "claim": "Pro combines audit logs, enterprise data configuration and developer sandbox workflows for complex hiring operations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.greenhouse.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

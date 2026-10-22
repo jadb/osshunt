@@ -1,0 +1,127 @@
+{
+  "id": "shopify",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Shopify Inc.",
+    "kind": "business",
+    "foundedYear": 2006,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:SHOP",
+      "TSX:SHOP"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.bvp.com/portfolio/shopify"
+      }
+    ],
+    "notes": "Company founded/platform launched in 2006; predecessor snowboard store dates 2004. Current investor page verifies Nasdaq and TSX SHOP. Bessemer participation dates 2010; its portfolio still references historical NYSE listing, so current exchange taken from Shopify.",
+    "sources": [
+      "https://www.bvp.com/portfolio/shopify",
+      "https://www.shopify.com/investors/stock-information"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": 348,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current lowest paid full-store card; $29/month annually ×12. Temporary $1 introductory offer excluded. Old /starter URL redirected to trial; no Starter card on current pricing.",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Grow",
+      "status": "published",
+      "monthlyPrice": 105,
+      "annualPrice": 948,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest explicitly small-team tier. Annual $79/month ×12; card/payment processing costs separate.",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Plus",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 27600,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store/platform contract",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Published starting $2,300/month with 1- or 3-year commitment; negotiated terms may vary. This is a committed-contract reference, not verified month-to-month pricing; annualPrice left null to avoid assuming payment schedule.",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its app ecosystem and combined payments, checkout and retail workflows create complementary-network and switching-cost advantages.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Unified online, POS and social-channel operations help merchants manage selling across customer touchpoints.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "claim": "Integrated checkout, payment methods and order tools connect storefront conversion with fulfillment workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "claim": "POS inventory and customer tools connect physical retail activity to the ecommerce catalog.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.shopify.com/pos"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

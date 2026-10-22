@@ -7,13 +7,17 @@ Audience: Freelancers, agencies, consultants, and teams recording project or bil
 Use-case sources: [1](https://www.kimai.org/en/), [2](https://www.getharvest.com/pricing).
 
 - [Harvest](https://www.getharvest.com/pricing): USD 9/seat/month, annual billing. Teams starts USD9/seat/month billed annually (USD108/year); USD11 monthly. Additional invoices, projects, clients and tasks can incur usage charges; free plan available. [Pricing](https://www.getharvest.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/harvest.md).
 - [Toggl Track](https://toggl.com/pricing): USD 9/seat/month, annual billing. Starter USD9/user/month billed annually; USD12 monthly. Free plan also available. [Pricing](https://toggl.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/toggl-track.md).
 
 ### Kimai — C
 
 AGPL-v3 self-hosted core; paid plugins add everyday expenses, task planning and custom fields. Core already provides time tracking, reports and invoicing. First-party Kimai Cloud verified separately.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/kimai/kimai/blob/8970bc8bfab0f53976168fc7b1172d9009f39a35/LICENSE), [edition evidence](https://www.kimai.org/en/store/), [hosting](https://www.kimai.org/en/), [repository](https://github.com/kimai/kimai).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/kimai.md).
 
 Paid restrictions: Expense management plugin; Task planning plugin; Custom fields plugin
 
@@ -27,6 +31,8 @@ Repository: pushed 2026-10-21T22:00:28Z; latest commit 2026-10-21T21:55:02Z; lat
 AGPL-v3 open core is self-hostable. Official on-premise comparison excludes invoicing and audit log from Open Source. Invoicing is an everyday billable-work feature, so C; cloud subscription gates were not substituted for this comparison.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/solidtime-io/solidtime/blob/93eb93f1dc2de0d50849ce7883a601dd76691df1/LICENSE.md), [edition evidence](https://www.solidtime.io/pricing/on-premise), [hosting](https://docs.solidtime.io/self-hosting/intro), [repository](https://github.com/solidtime-io/solidtime).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/solidtime.md).
 
 Paid restrictions: Invoicing requires Business or Enterprise on-premise license; Audit Log requires Business or Enterprise on-premise license
 

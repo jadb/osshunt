@@ -1,0 +1,130 @@
+{
+  "id": "docebo",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Docebo Inc.",
+    "kind": "business",
+    "foundedYear": 2005,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "TSX:DCBO",
+      "NASDAQ:DCBO"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Intercap Equity Inc.",
+        "source": "https://www.docebo.com/company/newsroom/docebo-completes-secondary-bought-deal-offering-in-canada-and-the-united-states/"
+      }
+    ],
+    "notes": "Business founded2005 inItaly; current Ontario parent incorporated2016, kept distinct. TSX2019/Nasdaq2020 listingsDCBO. Intercap verified equity investor and historical selling shareholder; present holding percentage not established.",
+    "sources": [
+      "https://www.docebo.com/company/",
+      "https://www.sec.gov/Archives/edgar/data/1829959/000162828026012566/docebo-20251231.htm",
+      "https://www.docebo.inc/stock-information/default.aspx",
+      "https://intercap.com/equity-us",
+      "https://www.docebo.com/company/newsroom/docebo-completes-secondary-bought-deal-offering-in-canada-and-the-united-states/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Elevate",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Current entry offer; custom organizational pricing, no numeric amount. AI/content usage credits and add-ons can be separate.",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Elevate",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational plan; same entry platform for multi-audience learning, workflow automation and integrations, not a distinct Business tier.",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Custom price; advanced analytics, up to10domains, sandbox environments, branded mobile app, dedicated database and upgraded API access.",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Multi-audience learning records, certifications and enterprise integrations can create institutional process and data switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multi-audience programs, branding and domain options organize employee, customer and partner training.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Certification tracking and workflow automation help administer recurring learning requirements.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    },
+    {
+      "claim": "AI content creation, multilingual translation and social/mobile learning broaden how training material is produced and consumed.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.docebo.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

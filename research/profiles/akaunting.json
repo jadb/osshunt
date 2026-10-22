@@ -1,0 +1,256 @@
+{
+  "id": "akaunting",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Akaunting",
+    "kind": "business",
+    "foundedYear": 2017,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Commercial project steward; official pricing FAQ says serving businesses since 2017 (product launch basis; company incorporation unverified). Official January 2021 post confirms $500,000 investment but does not name investors. Investor names found only in secondary leads were not accepted.",
+    "sources": [
+      "https://akaunting.com/about",
+      "https://akaunting.com/plans-on-premise",
+      "https://akaunting.com/blog/weve-raised-500k-funding"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard On-Premise",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free source-available on-premise core",
+      "notes": "One company, one user plus one accountant, 1,000 invoices. Current BSL limits apply; not OSI OSS. Apps purchased separately.",
+      "sources": [
+        "https://akaunting.com/plans-on-premise"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://akaunting.com/plans-on-premise"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premium On-Premise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 72,
+      "oneTimePrice": 756,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Closest small-business plan: 10 companies, 10 users, 10,000 invoices. Annual and alternative lifetime prices shown separately; apps not included.",
+      "sources": [
+        "https://akaunting.com/plans-on-premise"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Ultimate On-Premise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Highest on-premise plan for accountants, not a named enterprise offer. Official pricing card shows $684/year or $7,224 lifetime; official Help Center table conflicts at $504/$5,292. Amounts withheld pending vendor clarification.",
+      "sources": [
+        "https://akaunting.com/plans-on-premise"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Modular financial workflows and third-party app extensions can increase customization switching costs, though key accounting functions depend on add-ons.",
+      "basis": "assessment",
+      "sources": [
+        "https://akaunting.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Recurring payment reminders and multi-currency records help coordinate invoice collection across customers.",
+      "basis": "assessment",
+      "sources": [
+        "https://akaunting.com/plans-on-premise"
+      ]
+    },
+    {
+      "claim": "Multiple bank accounts and bank-transaction imports support consolidating cash activity.",
+      "basis": "assessment",
+      "sources": [
+        "https://akaunting.com/plans-on-premise"
+      ]
+    },
+    {
+      "claim": "Customer, vendor and product records plus an app marketplace allow bookkeeping workflows to expand into adjacent operations.",
+      "basis": "assessment",
+      "sources": [
+        "https://akaunting.com/about"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Akaunting",
+          "url": "https://akaunting.com/about",
+          "relationship": "business-steward",
+          "source": "https://akaunting.com/about"
+        }
+      ],
+      "notes": "No separate corporate financial/in-kind sponsor identified in reviewed official project and business pages. Verified commercial steward included as business fallback; customers, partners and investors are not classified as sponsors.",
+      "sources": [
+        "https://akaunting.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP 8.1+ and listed PHP extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment dependency.",
+          "sources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Installation guide gives MySQL/MariaDB default path.",
+          "sources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Documented deployment dependency.",
+          "sources": [
+            "https://github.com/akaunting/akaunting/blob/master/README.md"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Documented deployment dependency.",
+          "sources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/"
+          ]
+        },
+        {
+          "component": "SQLite",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Embedded file database alternative.",
+          "sources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/"
+          ]
+        },
+        {
+          "component": "SQL Server",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Listed in Help Center requirements; verify exact driver/version for deployment.",
+          "sources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/"
+          ]
+        },
+        {
+          "component": "Apache, Nginx or IIS with URL rewriting",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "One compatible web server; alternatives, not all required.",
+          "sources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/"
+          ]
+        },
+        {
+          "component": "Composer and Node.js 18 or 20",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Building from source",
+          "notes": "Composer installs PHP dependencies; Node/npm build assets, not external runtime services.",
+          "sources": [
+            "https://github.com/akaunting/akaunting/blob/master/README.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux",
+        "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
+        "sources": [
+          "https://akaunting.com/hc/docs/on-premise/installation/"
+        ]
+      },
+      "notes": "Default documented production deployment; versions reflect documentation checked on date.",
+      "sources": [
+        "https://akaunting.com/hc/docs/on-premise/installation/",
+        "https://akaunting.com/hc/docs/on-premise/requirements/",
+        "https://github.com/akaunting/akaunting/blob/master/README.md"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Softaculous Akaunting",
+          "url": "https://softaculous.com/apps/erp/Akaunting",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official 2017 announcement links installer; current marketplace lists Akaunting 3.2.3. Requires Softaculous-enabled hosting; verify version before installation.",
+          "sources": [
+            "https://softaculous.com/apps/erp/Akaunting"
+          ]
+        }
+      ],
+      "notes": "Verified options listed; manual multi-step installation and Docker Compose alone are not treated as one-click.",
+      "sources": [
+        "https://akaunting.com/hc/docs/on-premise/installation/"
+      ]
+    }
+  }
+}

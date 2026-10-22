@@ -1,0 +1,126 @@
+{
+  "id": "expensify",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Expensify, Inc.",
+    "kind": "business",
+    "foundedYear": 2008,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:EXFY"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "OpenView Venture Partners",
+        "source": "https://openviewpartners.com/blog/openview-leads-expensify-17-5m-series-c-financing/"
+      }
+    ],
+    "notes": "Founded 2008, incorporated Delaware 2009; company public on Nasdaq since November 2021. OpenView Series C is a historical investment; current holding not established.",
+    "sources": [
+      "https://use.expensify.com/ai-disclosure",
+      "https://openviewpartners.com/blog/openview-leads-expensify-17-5m-series-c-financing/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Collect",
+      "status": "published",
+      "monthlyPrice": 5,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "member",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "New Collect workspace rate; US $5/member/month with no annual commitment or card requirement, confirmed by official announcement. Free Submit is separate.",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Collect",
+      "status": "published",
+      "monthlyPrice": 5,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "member",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Explicitly Most popular; monthly flat membership rate, not active-seat legacy billing.",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Control",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "active member",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest advanced organizational tier. Custom pricing advertised as low as $9/active member/month; depends on commitment/card terms, so no universal monthly or annual amount asserted.",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separately named Enterprise plan in reviewed pricing; larger organizations use custom Control pricing.",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Receipt-to-reimbursement, card and ledger connections can make a mature expense approval workflow costly to replace.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "SmartScan receipt capture and mileage tracking reduce manual expense-report preparation.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    },
+    {
+      "claim": "Card feeds, reconciliation and accounting integrations connect card spend to the books.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    },
+    {
+      "claim": "Multiple approval flows and custom expense rules in Control support more complex spending policies.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

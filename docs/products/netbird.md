@@ -60,6 +60,8 @@ Resources: CPU 1 CPU minimum; memory 2GB minimum; storage not specified; OS Linu
 
 Status: **offered**. Officially documented install options; one-command is separate from browser one-click. [1](https://docs.netbird.io/selfhosted/selfhosted-quickstart)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Official getting-started installer](https://docs.netbird.io/selfhosted/selfhosted-quickstart): **one-command**, first-party. Interactive shell installer generates Compose; not browser one-click. [1](https://docs.netbird.io/selfhosted/selfhosted-quickstart)

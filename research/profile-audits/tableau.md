@@ -16,3 +16,7 @@ Checked 2026-10-21. Chronological research and output decisions.
 - Final ledger QA: rebuilt organization field claims with specific source mappings; each investor uses its primary funding/investor URL; public headings/searchable text added to claim locators. Executed group-local finalize.py; validated all23 profiles and companion files.
 
 - Final validation: all23 assigned IDs have profiles, JSONL claims and chronological audit companions. Four unique pricing roles, exactlythree functional assessments and nonempty source/limitation notes checked. Edits restricted to assigned group directory. Final artifacts authoritative; build.py is intermediate and not a regeneration entrypoint.
+
+## Investor evidence supplementation
+- Searched SEC primary filings for historical Salesforce/Tableau investors; opened https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm. Used find for Halsey/Ellison (Salesforce: Ellison no match, no claim) and New Enterprise Associates (Tableau). Read preferred-stock purchase/Tender Offer and principal shareholder sections.
+- Added documented historical investor names, distinguished from current ownership and parent-company holdings.

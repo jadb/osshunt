@@ -1,0 +1,136 @@
+{
+  "id": "webflow",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Webflow, Inc.",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "YC Continuity",
+        "source": "https://webflow.com/blog/webflow-series-c-funding"
+      },
+      {
+        "name": "CapitalG",
+        "source": "https://webflow.com/blog/webflow-series-c-funding"
+      },
+      {
+        "name": "Accel",
+        "source": "https://webflow.com/blog/webflow-series-c-funding"
+      },
+      {
+        "name": "Silversmith Capital Partners",
+        "source": "https://webflow.com/blog/webflow-series-c-funding"
+      }
+    ],
+    "notes": "Current About gives 2013 and $335M funding to date. March 2022 Series C identifies institutional investors; listed investors are historical round participants, not a current cap table.",
+    "sources": [
+      "https://webflow.com/company/about",
+      "https://webflow.com/blog/webflow-series-c-funding"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 180,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Lowest paid Site plan in current page; $15/month billed yearly ×12. Monthly-billed price not established from rendered card. Starter free plan distinct.",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 30000,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "platform bundle (site and workspace)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Named Team organizational platform bundle; different scope from Basic site plan. $2,500/month annual contract ×12; no independent month-to-month offer verified.",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Talk to us; custom enterprise configuration.",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Visual design, structured CMS and governance bundled into one platform can create workflow and design-system switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://webflow.com/company/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Visual layout and GSAP interaction tools let teams build responsive, animated experiences inside the website editor.",
+      "basis": "assessment",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    },
+    {
+      "claim": "CMS collections, custom fields and content APIs support structured content reused across pages and channels.",
+      "basis": "assessment",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    },
+    {
+      "claim": "Page branching, staged publishing and approvals enable teams to review changes before release.",
+      "basis": "assessment",
+      "sources": [
+        "https://webflow.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -55,6 +55,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS GN
 
 Status: **offered**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://www.gimp.org/downloads/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Flathub](https://flathub.org/apps/org.gimp.GIMP): **marketplace**, officially-linked-third-party. Official installation page links this distribution; not a hosted server deployment. [1](https://www.gimp.org/downloads/)

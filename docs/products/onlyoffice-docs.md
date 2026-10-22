@@ -62,6 +62,8 @@ Resources: CPU Dual-core 2 GHz or better; memory 4 GB RAM or more; at least4 GB 
 
 Status: **offered**. Official Docs Community documentation provides DigitalOcean Marketplace one-click image; cloud server charges separate. Manual Docker run is a command-line alternative, not graphical one-click. [1](https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [ONLYOFFICE Docs DigitalOcean Marketplace](https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx): **marketplace**, first-party. First-party documented one-click app deploys Ubuntu/Docker/Docs. Choose droplet size and then integrate storage platform. [1](https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx)

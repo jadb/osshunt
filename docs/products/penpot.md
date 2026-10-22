@@ -62,6 +62,8 @@ Resources: CPU 4 CPUs sufficient for thousands of users (recommendation); memory
 
 Status: **offered**. Checked official deployment documentation; manual Docker Compose is not a one-click offer. [1](https://help.penpot.app/technical-guide/getting-started/docker/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Elestio](https://help.penpot.app/technical-guide/getting-started/elestio/): **marketplace**, officially-linked-third-party. Official guide walks managed service creation; dedicated instance deployed through marketplace settings. [1](https://help.penpot.app/technical-guide/getting-started/elestio/)

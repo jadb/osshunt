@@ -54,6 +54,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Mo
 
 Status: **offered**. Checked official deployment documentation; manual Docker Compose is not a one-click offer. [1](https://mermaid.js.org/intro/getting-started.html)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [npm install mermaid](https://mermaid.js.org/intro/getting-started.html): **one-command**, first-party. Single dependency installation command; not one-click hosting or a standalone server. [1](https://mermaid.js.org/intro/getting-started.html)

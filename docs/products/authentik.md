@@ -57,6 +57,8 @@ Resources: CPU 2 cores minimum; memory 2GB minimum; storage not specified; OS Co
 
 Status: **offered**. Officially documented install options; one-command is separate from browser one-click. [1](https://docs.goauthentik.io/install-config/install/docker-compose/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [AWS CloudFormation](https://docs.goauthentik.io/install-config/install/aws/): **one-click**, first-party. Official template deploys AWS stack; AWS account/certificate/domain prerequisites apply. [1](https://docs.goauthentik.io/install-config/install/aws/)

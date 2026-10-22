@@ -1,0 +1,133 @@
+{
+  "id": "hootsuite",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Hootsuite Inc.",
+    "kind": "business",
+    "foundedYear": 2008,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel Partners",
+        "source": "https://www.hootsuite.com/newsroom/press-releases/60-million-financing-zeetl-acquisition"
+      },
+      {
+        "name": "Insight Venture Partners",
+        "source": "https://www.hootsuite.com/newsroom/press-releases/60-million-financing-zeetl-acquisition"
+      },
+      {
+        "name": "OMERS Ventures",
+        "source": "https://www.hootsuite.com/newsroom/press-releases/60-million-financing-zeetl-acquisition"
+      }
+    ],
+    "notes": "Official About dates start2008; company-maintained LinkedIn identifies privately held. Historical financing announcement names Accel, Insight and OMERS equity investors. Silicon Valley Bank explicitly technology lender, excluded from equity investors; unnamed lead not guessed.",
+    "sources": [
+      "https://www.hootsuite.com/about",
+      "https://www.hootsuite.com/newsroom/press-releases/60-million-financing-zeetl-acquisition",
+      "https://as.linkedin.com/company/hootsuite/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Lowest paid plan FAQ starts$99 but currency/billing term not fully exposed; numeric normalized amounts withheld. Card covers10social accounts.",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Professional",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Explicit Most popular card. FAQ$199 lacks resolved currency/term; normalized amount unknown.",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Advanced",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest explicit cross-team approvals plan; FAQ$399 with unresolved currency/term.",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Custom enterprise solutions and sales-led pricing explicitly offered.",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Combined publishing, listening, customer-care and advocacy integrations form broad organizational workflows that are costly to reconfigure.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hootsuite.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Social listening and competitor monitoring connect public conversation signals with publishing decisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    },
+    {
+      "claim": "Inbox auto-routing and approval workflows coordinate customer responses and governed content.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    },
+    {
+      "claim": "Custom reports and forward trend forecasts help teams plan and assess social campaigns.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hootsuite.com/plans"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

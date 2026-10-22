@@ -63,6 +63,8 @@ Resources: CPU 1 core generally sufficient for low-traffic ~5-user setups; memor
 
 Status: **offered**. First-party shell installer is an automated command-line path, not a graphical one-click cloud deployment. DNS, TLS and storage setup still required. [1](https://stalw.art/docs/install/platform/linux/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Stalwart Linux/macOS installer](https://stalw.art/docs/install/platform/linux/): **one-command**, first-party. Download official install.sh then execute with sudo; documentation separates download and execution for inspection. Classified command-line installer, not true one-click. [1](https://stalw.art/docs/install/platform/linux/)

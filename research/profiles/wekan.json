@@ -1,0 +1,242 @@
+{
+  "id": "wekan",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "WeKan (Lauri Ojansivu sole proprietorship)",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official page identifies Finnish sole proprietorship and Lauri Ojansivu. Maintainer involvement since December2016 is not company/project founding; foundingYear unresolved. Grants/revenue fund development; equity financing/investors not established.",
+    "sources": [
+      "https://wekan.fi/commercial-support/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "WeKan",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software license has no subscription charge; infrastructure and optional commercial offerings separate.",
+      "sources": [
+        "https://wekan.fi/commercial-support/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://wekan.fi/saas/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Official SaaS with Admin Panel",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 50,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "50EUR/year; unlimited everything per official SaaS page. Organizational hosted offering; separate from free code.",
+      "sources": [
+        "https://wekan.fi/saas/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No named Enterprise software tier. Hourly and annual prepaid services exist; not misrepresented as Enterprise licensing.",
+      "sources": [
+        "https://wekan.fi/commercial-support/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad import/export and extensible MIT code support a durable collaborative-Kanban niche, although portability limits proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/wekan/wekan/main/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Switch between swimlane Kanban, table, calendar, Gantt and Scrum views.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/wekan/wekan/main/README.md"
+      ]
+    },
+    {
+      "claim": "Move existing work through broad board import/export and migration formats.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/wekan/wekan/main/README.md"
+      ]
+    },
+    {
+      "claim": "Build event automation visually through Rules and workflow blocks.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/wekan/wekan/main/README.md"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "WeKan (Lauri Ojansivu sole proprietorship)",
+          "url": "https://wekan.fi/",
+          "relationship": "business-steward",
+          "source": "https://wekan.fi/commercial-support/"
+        }
+      ],
+      "notes": "Official Sponsors page read but text extraction exposes only tier and in-kind headings without company names; identities unresolved. Verified sole-proprietor commercial business included as steward fallback; no invented sponsor logos.",
+      "sources": [
+        "https://wekan.fi/commercial-support/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Node.js26.x/Meteor3 application",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Current v12.58 installer page; bundle packages runtime.",
+          "sources": [
+            "https://wekan.fi/install/"
+          ]
+        },
+        {
+          "component": "FerretDBv1 with embedded SQLite",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default bundle/Docker/Snap/Kubernetes backend",
+          "notes": "No separate SQL or MongoDB server needed.",
+          "sources": [
+            "https://wekan.fi/install/"
+          ]
+        },
+        {
+          "component": "FerretDBv1 + PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative database route",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://wekan.fi/install/"
+          ]
+        },
+        {
+          "component": "MongoDB6/7/8/9",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative database route",
+          "notes": "Documented Linux kernel version caveat; consult current install page.",
+          "sources": [
+            "https://wekan.fi/install/"
+          ]
+        },
+        {
+          "component": "FerretDBv1 + MySQL/MariaDB/SAPHANA",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Experimental alternative route; test first",
+          "notes": "FerretDBv2/PostgreSQL/DocumentDB separately marked untested.",
+          "sources": [
+            "https://wekan.fi/install/"
+          ]
+        },
+        {
+          "component": "Persistent filesystem attachments",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Alternatives in Admin: GridFS,S3/MinIO,AzureBlob,GoogleCloud.",
+          "sources": [
+            "https://raw.githubusercontent.com/wekan/wekan/main/README.md"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications selected",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/wekan/wekan/main/README.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux,Windows,macOS; bundled runtime or containers",
+        "notes": "No numeric hardware minimum recovered. Current install page lists platform/runtime versions, backup requirements and default FerretDB path.",
+        "sources": [
+          "https://wekan.fi/install/"
+        ]
+      },
+      "notes": "Scope is the documented default installation. Optional integrations are separate from the core; no infrastructure price implied.",
+      "sources": [
+        "https://wekan.fi/install/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "WeKan Snap",
+          "url": "https://snapcraft.io/wekan",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Install page links Snap package and sudo snap install wekan; configure root-url and port afterward. Package marketplace/one-command path, not zero-configuration deployment.",
+          "sources": [
+            "https://wekan.fi/install/"
+          ]
+        }
+      ],
+      "notes": "Options retain the official distinction between one-command installation and true provider one-click deployment.",
+      "sources": [
+        "https://wekan.fi/install/"
+      ]
+    }
+  }
+}

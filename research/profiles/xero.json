@@ -1,0 +1,135 @@
+{
+  "id": "xero",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Xero Limited",
+    "kind": "business",
+    "foundedYear": 2006,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "ASX:XRO"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel Partners",
+        "source": "https://announcements.asx.com.au/asxpdf/20150225/pdf/42wv72yvmgd4z2.pdf"
+      },
+      {
+        "name": "Matrix Capital Management",
+        "source": "https://announcements.asx.com.au/asxpdf/20150225/pdf/42wv72yvmgd4z2.pdf"
+      },
+      {
+        "name": "Peter Thiel",
+        "source": "https://announcements.asx.com.au/asxpdf/20121108/pdf/42b1wgfgqgx2z3.pdf"
+      }
+    ],
+    "notes": "Xero company founded July 2006; current investor page publishes ASX releases. Historical Accel and Matrix placements documented in 2015; these are historical backers, not verified current shareholdings.",
+    "sources": [
+      "https://www.xero.com/au/investors/",
+      "https://announcements.asx.com.au/asxpdf/20121108/pdf/42b1wgfgqgx2z3.pdf",
+      "https://announcements.asx.com.au/asxpdf/20150225/pdf/42wv72yvmgd4z2.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Early",
+      "status": "published",
+      "monthlyPrice": 27,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "US regular monthly price after six-month promotion; invoice/bill limits apply. Annual subscription amount not published.",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Growing",
+      "status": "published",
+      "monthlyPrice": 59,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest growing-business plan. Regular US monthly price, excludes six-month promotion and optional payroll.",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separate Enterprise plan in reviewed US offer; Established is the highest listed plan at $97/organization/month with multi-currency, projects and expenses.",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "The accountant/bank-connected accounting workflow and accumulated reconciled records can make changing ledgers costly.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Bank reconciliation and document capture reduce manual entry for routine bookkeeping.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    },
+    {
+      "claim": "Established combines multi-currency, project time/cost tracking and employee expenses for internationally active service firms.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    },
+    {
+      "claim": "Cash-flow forecasts and customizable financial dashboards help translate accounting entries into planning decisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.xero.com/us/pricing-plans/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

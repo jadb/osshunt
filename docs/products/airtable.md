@@ -4,13 +4,17 @@
 
 ## Organization
 
-Airtable (business); ownership: **unknown**; funding: **funded**.
+Airtable (business); ownership: **public-subsidiary**; funding: **funded**.
 
 Started 2012 (company-founded); years active: 14; years in business: 14. Ages are approximate calendar-year differences as of 2026-10-21.
 
-Official About says started 2012. Official company-updates index records Series F $735 million. Original funding article redirects to newsroom; exact investor names and present legal ownership not confirmed from successfully read primary pages, so investor array empty and ownership unknown. [1](https://www.airtable.com/about) [2](https://blog.airtable.com/tag/company-updates/)
+Parent: Bending Spoons S.p.A. (NASDAQ:BSP).
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Listed symbols: NASDAQ:BSP (parent).
+
+Airtable began2012. Bending Spoons completed acquisition of100%of Airtable shares4September2026; public parent NASDAQ:BSP, not an Airtable standalone listing. Listed investors participated in2021SeriesF; historical backing, not asserted current owners after acquisition. Bending Spoons is recorded as parent/acquirer, not automatically an equity-funding investor. [1](https://www.airtable.com/about) [2](https://blog.airtable.com/tag/company-updates/) [3](https://investors.bendingspoons.com/newsroom/bending-spoons-completes-acquisition-of-airtable) [4](https://www.airtable.com/newsroom/airtable-joins-bending-spoons) [5](https://www.airtable.com/newsroom/series-f)
+
+Known investors: [XN](https://www.airtable.com/newsroom/series-f), [Franklin Templeton](https://www.airtable.com/newsroom/series-f), [J.P. Morgan Growth Equity Partners](https://www.airtable.com/newsroom/series-f), [MSD Capital](https://www.airtable.com/newsroom/series-f), [Salesforce Ventures](https://www.airtable.com/newsroom/series-f), [Silver Lake](https://www.airtable.com/newsroom/series-f), [T. Rowe Price-advised funds/accounts](https://www.airtable.com/newsroom/series-f), [Benchmark](https://www.airtable.com/newsroom/series-f), [Caffeinated Capital](https://www.airtable.com/newsroom/series-f), [Coatue](https://www.airtable.com/newsroom/series-f), [D1 Capital Partners](https://www.airtable.com/newsroom/series-f), [Greenoaks](https://www.airtable.com/newsroom/series-f), [ICONIQ Growth](https://www.airtable.com/newsroom/series-f), [Thrive Capital](https://www.airtable.com/newsroom/series-f).
 
 ## Starting prices
 

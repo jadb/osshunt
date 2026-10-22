@@ -57,6 +57,8 @@ Resources: CPU Windows: 1 GHz or faster Intel/AMD; Mac: Intel x86 or Apple Silic
 
 Status: **not-applicable**. Desktop download installers offered for Windows/macOS/Linux; no server marketplace or one-click self-host deployment applies. [1](https://www.thunderbird.net/en-US/desktop/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

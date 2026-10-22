@@ -1,0 +1,222 @@
+{
+  "id": "affine",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "TOEVERYTHING PTE. LTD.",
+    "kind": "business",
+    "foundedYear": 2022,
+    "ageBasis": "project-started",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official About says AFFiNE began Singapore2022 and names company. Legal incorporation age/ultimate ownership and funding not established from primary pages read; do not infer no investors. Mixed component licensing remains release-specific.",
+    "sources": [
+      "https://affine.pro/about-us"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Local editor / Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "workspace",
+      "minimumQuantity": null,
+      "scope": "free local editor/core",
+      "notes": "Unlimited local workspaces; cloud Free allowances and server component licenses separate.",
+      "sources": [
+        "https://affine.pro/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://affine.pro/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Self-Hosted Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted Team",
+      "notes": "FAQ explicitly10/seat/month billed annually \u00d712; Team for scaling beyond10seats.",
+      "sources": [
+        "https://affine.pro/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "commercial self-hosted/cloud contracts",
+      "notes": "Custom pricing; Email sales/Book a Demo;100+seats/regulatory/custom deployment.",
+      "sources": [
+        "https://affine.pro/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A shared block model across docs, tables and canvas gives differentiated editing workflows, but no universal defensibility over specialist editors is established.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Mix rich text, sticky notes, embeds, shapes and databases on an edgeless canvas.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/README.md"
+      ]
+    },
+    {
+      "claim": "Restore earlier document states with Cloud Time Machine version history.",
+      "basis": "assessment",
+      "sources": [
+        "https://affine.pro/pricing"
+      ]
+    },
+    {
+      "claim": "Turn outlines into presentations and structured mind maps with multimodal AI.",
+      "basis": "assessment",
+      "sources": [
+        "https://affine.pro/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "TOEVERYTHING PTE. LTD.",
+          "url": "https://affine.pro",
+          "relationship": "business-steward",
+          "source": "https://affine.pro/about-us"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://affine.pro/about-us"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/.docker/selfhost/compose.yml"
+          ]
+        },
+        {
+          "component": "PostgreSQL16 with pgvector",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Default stable-image compose uses pgvector/pgvector:pg16.",
+          "sources": [
+            "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/.docker/selfhost/compose.yml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/.docker/selfhost/compose.yml"
+          ]
+        },
+        {
+          "component": "Application and migration job plus persistent storage/config volumes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/.docker/selfhost/compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP/OAuth/AI providers",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Corresponding email,login or AI integration configured",
+          "notes": "Optional external integrations listed in official administration guide.",
+          "sources": [
+            "https://docs.affine.pro/self-host-affine/install/"
+          ]
+        },
+        {
+          "component": "Prometheus monitoring",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Monitoring-enabled installation route",
+          "notes": "Requirements page describes monitoring/exporters enabled by default in some routes, approximately200MBmemory. Current minimal compose inspected does not include them.",
+          "sources": [
+            "https://docs.affine.pro/self-host-affine/install/requirements"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "At least4cores recommended",
+        "memory": "2GB basic recommended;4GB for docs over10kwords",
+        "storage": "About1.5GB installation plus document/blob/database growth",
+        "os": "Docker-capable server; local desktop editor separate",
+        "notes": "Recommendations, not absolute minima. Requirements page says PostgreSQL only supported database; Redis6.x/7.x required and tested. Hardware varies by document size and merge history.",
+        "sources": [
+          "https://docs.affine.pro/self-host-affine/install/requirements"
+        ]
+      },
+      "notes": "Local-first editor usable independently; server uses PostgreSQL/Redis in stable-image compose. Backend source-available/component-specific licenses; check release CE/EE boundaries. Canary-branch compose read deploys stable images.",
+      "sources": [
+        "https://docs.affine.pro/self-host-affine/install/",
+        "https://docs.affine.pro/self-host-affine/install/requirements"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://docs.affine.pro/self-host-affine/install/"
+      ]
+    }
+  }
+}

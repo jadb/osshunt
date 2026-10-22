@@ -18,9 +18,9 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 | Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
 |---|---|---|---|---|---|---|---|---|
-| entry | Plus | published | — | USD 120/user | — | — | unspecified | vendor commercial cloud. Displayed 10 per member/month treated as yearly-selector rate: ×12; monthly-billing rate not independently verified. Free separate. [1](https://www.notion.com/pricing) |
-| popular | Business | published | — | USD 240/user | — | — | unspecified | vendor commercial cloud. Explicitly Recommended; displayed yearly-selector 20/member/month ×12. [1](https://www.notion.com/pricing) |
-| business | Business | published | — | USD 240/user | — | — | unspecified | vendor commercial cloud. 20 annual-billed monthly ×12; monthly-billing figure unverified. [1](https://www.notion.com/pricing) |
+| entry | Plus | published | — | USD 120/user | — | — | unspecified | vendor commercial cloud. Current10/member/month displayed rate matched with official2024Plus pricing update identifying10annual-equivalent; annual total10×12. Monthly-billing current rate not asserted from old announcement. Free separate. [1](https://www.notion.com/pricing) [2](https://www.notion.com/releases/2024-06-26) |
+| popular | Business | published | — | USD 240/user | — | — | unspecified | vendor commercial cloud. Business Recommended on pricing. Current Startup FAQ confirms20/member paid annually as monthly-equivalent; annual total20×12. Monthly-billing figure unverified. [1](https://www.notion.com/pricing) [2](https://www.notion.com/startups) |
+| business | Business | published | — | USD 240/user | — | — | unspecified | vendor commercial cloud. Business Recommended on pricing. Current Startup FAQ confirms20/member paid annually as monthly-equivalent; annual total20×12. Monthly-billing figure unverified. [1](https://www.notion.com/pricing) [2](https://www.notion.com/startups) |
 | enterprise | Enterprise | quote | — | — | — | — | unspecified | vendor commercial cloud. Custom pricing; Contact Sales. [1](https://www.notion.com/pricing) |
 
 ## Defensibility assessments

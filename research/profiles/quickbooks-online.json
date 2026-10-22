@@ -1,0 +1,120 @@
+{
+  "id": "quickbooks-online",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Intuit Inc.",
+    "kind": "business",
+    "foundedYear": 1983,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:INTU"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Company began operations in 1983, incorporated 1984; Nasdaq IPO 1993. Age describes Intuit, not QuickBooks Online launch. Public-equity funding established; historical venture investors not verified in reviewed official history, so investor list is not exhaustive.",
+    "sources": [
+      "https://investors.intuit.com/company-information/faq"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Simple Start",
+      "status": "published",
+      "monthlyPrice": 38,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account including 1 user and 2 accountants",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "US regular monthly list price; introductory $3.80/month for three months excluded. Free plan is separate.",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Plus",
+      "status": "published",
+      "monthlyPrice": 140,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account including 5 users and 2 accountants",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest multi-user small-business plan; US regular monthly list price; introductory promotions excluded.",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Advanced",
+      "status": "published",
+      "monthlyPrice": 340,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account including 25 users and 3 accountants",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Highest QuickBooks Online tier mapped to enterprise role. Intuit Enterprise Suite is a separate product; US regular monthly list price.",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Accountant collaboration and connected payments can create workflow switching costs as a business accumulates reconciled financial history.",
+      "basis": "assessment",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Automated transaction categorization and bank matching reduce repetitive bookkeeping work.",
+      "basis": "assessment",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Project profitability, budgets and inventory in Plus connect accounting to operating decisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Advanced adds custom reporting, batch workflows and Excel data sync for finance teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://quickbooks.intuit.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

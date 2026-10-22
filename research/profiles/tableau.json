@@ -12,12 +12,22 @@
       "NYSE:CRM"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "Tableau company founded 2003; acquired by Salesforce in 2019. Funding status reflects public-parent ownership; historical Tableau equity investors not resolved from the official history and acquisition sources inspected. Salesforce is acquirer, not labelled venture investor.",
+    "investors": [
+      {
+        "name": "New Enterprise Associates (historical)",
+        "source": "https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm"
+      },
+      {
+        "name": "Meritech Capital Partners (historical)",
+        "source": "https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm"
+      }
+    ],
+    "notes": "Tableau company founded 2003; acquired by Salesforce in 2019. Funding status reflects public-parent ownership; historical Tableau equity investors not resolved from the official history and acquisition sources inspected. Salesforce is acquirer, not labelled venture investor. April2013 prospectus names NEA and Meritech funds as purchasers of shares and significant holders. Historical Tableau investors, distinct from present Salesforce parent.",
     "sources": [
       "https://www.tableau.com/why-tableau/what-is-tableau",
       "https://www.salesforce.com/news/stories/salesforce-acquisitions/",
-      "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+      "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+      "https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm"
     ]
   },
   "pricingTiers": [
@@ -32,7 +42,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Starting at $15/user/month billed annually ×12 = $180. Entry role is not complete deployment cost: at least one Creator required.",
+      "notes": "Starting at $15/user/month billed annually \u00d712 = $180. Entry role is not complete deployment cost: at least one Creator required.",
       "sources": [
         "https://www.tableau.com/pricing"
       ]
@@ -64,7 +74,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest organizational edition; starting Viewer-level amount $15/user/month yearly ×12. Creator/Explorer/Viewer mix determines total; at least one Creator required.",
+      "notes": "Closest organizational edition; starting Viewer-level amount $15/user/month yearly \u00d712. Creator/Explorer/Viewer mix determines total; at least one Creator required.",
       "sources": [
         "https://www.tableau.com/pricing"
       ]
@@ -80,7 +90,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Starting $35/user/month billed annually ×12 = $420; at least one Creator required. Cloud+ and capacity pricing require sales quote.",
+      "notes": "Starting $35/user/month billed annually \u00d712 = $420; at least one Creator required. Cloud+ and capacity pricing require sales quote.",
       "sources": [
         "https://www.tableau.com/pricing"
       ]

@@ -58,6 +58,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Li
 
 Status: **offered**. Officially documented install options; one-command is separate from browser one-click. [1](https://github.com/9001/copyparty)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [pip installation](https://github.com/9001/copyparty): **one-command**, first-party. Official README documents pip install; command-line package install, not browser one-click. [1](https://github.com/9001/copyparty)

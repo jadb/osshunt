@@ -1,0 +1,214 @@
+{
+  "id": "openproject",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "OpenProject GmbH",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "2011 is project origin from introduction, not legal incorporation. Founder states company bootstrapped from the beginning in official PM2 article; no known equity investors identified. GmbH is commercial steward; no parent verified.",
+    "sources": [
+      "https://www.openproject.org/de/rechtliches/impressum/",
+      "https://www.openproject.org/about-us/",
+      "https://www.openproject.org/docs/getting-started/openproject-introduction/",
+      "https://www.openproject.org/de/blog/pm2-alternative-pmi-prince2/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software license has no subscription charge; infrastructure and optional commercial offerings separate.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Professional",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 25,
+      "scope": "paid Enterprise add-ons",
+      "notes": "Advertised EUR10.95 per user/month; selected subscription term not recoverable, so monthly-billing amount and annual total remain unknown.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Corporate",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 250,
+      "scope": "paid Enterprise add-ons",
+      "notes": "On request. Corporate plan; 250 minimum users.",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A broad hybrid project lifecycle and work-package data model can become embedded in formal project processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.openproject.org/about-us/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Combine dependencies and Gantt schedules with agile boards in a hybrid methodology.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.openproject.org/about-us/"
+      ]
+    },
+    {
+      "claim": "Organize tasks, subtasks, phases and milestones as related work packages.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ]
+    },
+    {
+      "claim": "Link Nextcloud files and folders directly with project work packages.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.openproject.org/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "OpenProject GmbH",
+          "url": "https://www.openproject.org",
+          "relationship": "business-steward",
+          "source": "https://www.openproject.org/de/rechtliches/impressum/"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://www.openproject.org/de/rechtliches/impressum/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PostgreSQL 16+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Official support since OpenProject 16; pg_trgm, btree_gist, unaccent and ICU collation needed.",
+          "sources": [
+            "https://www.openproject.org/docs/installation-and-operations/system-requirements/"
+          ]
+        },
+        {
+          "component": "Docker/Compose or supported Linux packaged installation",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Default documented deployment",
+          "notes": "Application and worker services required. Slim image preferred for production.",
+          "sources": [
+            "https://www.openproject.org/docs/installation-and-operations/installation/docker/"
+          ]
+        },
+        {
+          "component": "memcached",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Bundled in all-in-one; cache service in multi-container route.",
+          "sources": [
+            "https://www.openproject.org/docs/installation-and-operations/installation/docker/"
+          ]
+        },
+        {
+          "component": "Persistent attachment storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Local volumes in default container route.",
+          "sources": [
+            "https://www.openproject.org/docs/installation-and-operations/installation/docker/"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications configured",
+          "notes": "Mail delivery external to core database.",
+          "sources": [
+            "https://www.openproject.org/docs/installation-and-operations/installation/docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "Quad-core >=2 GHz minimum",
+        "memory": "4096 MB minimum",
+        "storage": "20 GB free minimum",
+        "os": "Linux; Docker installation supported",
+        "notes": "Single-server baseline up to 200 total users; concurrency changes sizing. Additional workers/database consume resources.",
+        "sources": [
+          "https://www.openproject.org/docs/installation-and-operations/system-requirements/"
+        ]
+      },
+      "notes": "PostgreSQL is the supported SQL backend; old MySQL migration references do not mean MySQL remains supported. All-in-one bundles database/cache for quick start; slim/Compose recommended for production.",
+      "sources": [
+        "https://www.openproject.org/docs/installation-and-operations/system-requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://www.openproject.org/docs/installation-and-operations/system-requirements/"
+      ]
+    }
+  }
+}

@@ -2,7 +2,6 @@
 
 # kopia research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open Features, installation, repositories, repository server and GitHub README. Queries project 2017/sponsor yielded no useful founding evidence; GitHub find Sponsor no match.
 - Decision: no invented corporation/funding/sponsor; GUI/CLI scope distinct from server deployment.

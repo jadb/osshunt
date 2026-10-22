@@ -2,7 +2,6 @@
 
 # copyparty research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open README; find dependencies, python3 and sponsor. Read mandatory/optional packages and SFX/exe sections.
 - Decision: individual maintainer handle only; no legal name/funding/start-year guess.

@@ -1,0 +1,260 @@
+{
+  "id": "erpnext",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Frappe Technologies",
+    "kind": "business",
+    "foundedYear": 2008,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Rainmatter / Zerodha",
+        "source": "https://frappe.io/blog/announcements/frappe-zerodha"
+      }
+    ],
+    "notes": "For-profit company established 2008; ERP development preceded company. Rainmatter/Zerodha announced $1.35m first external investment in 2020 after 12 years. Funding history is not proof of present investor shareholding.",
+    "sources": [
+      "https://frappe.io/welcome",
+      "https://frappe.io/about",
+      "https://frappe.io/blog/announcements/frappe-zerodha"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted software",
+      "notes": "No software license fee; hosting and implementation separate.",
+      "sources": [
+        "https://frappe.io/erpnext/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://frappe.io/erpnext/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Frappe Cloud Servers",
+      "status": "published",
+      "monthlyPrice": 20,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "server",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud hosting",
+      "notes": "Server hosting starts at $20/month; not a per-user software fee. Sites start at $5/month; stronger dedicated options start $125/month. Resource usage and implementation extra.",
+      "sources": [
+        "https://frappe.io/erpnext/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor enterprise hosting/support services",
+      "notes": "Official page directs enterprise needs to solution consultants; custom quote, no numeric software-license fee.",
+      "sources": [
+        "https://frappe.io/erpnext/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Integrated applications on the Frappe data model and accumulated process customizations can create workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Accounting combines financial transactions, cash-flow visibility and reporting in the same operational system.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md"
+      ]
+    },
+    {
+      "claim": "Order management connects stock replenishment, sales orders, suppliers, shipments and fulfillment.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md"
+      ]
+    },
+    {
+      "claim": "Manufacturing includes material consumption, capacity planning and subcontracting alongside inventory.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Frappe Technologies",
+          "url": "https://frappe.io/about",
+          "relationship": "business-steward",
+          "source": "https://frappe.io/about"
+        }
+      ],
+      "notes": "No separate corporate financial/in-kind sponsor identified in reviewed official project and business pages. Verified commercial steward included as business fallback; customers, partners and investors are not classified as sponsors.",
+      "sources": [
+        "https://frappe.io/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "MariaDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default application database: 10.6.6+ for v14/v15; current table lists 11.8 for v16/develop. Framework mentions PostgreSQL alternative; application compatibility must be checked, not assumed.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "Python and Frappe Bench",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "v15 Python 3.10+ (3.10–3.13 noted); current v16/develop table lists Python 3.14. Match app branch to Framework branch.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "Node.js and Yarn",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "v15 Node 18+; v16/develop Node 24 and Yarn 1.22+ in current table. Node also supplies websocket service.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "one-of",
+          "group": "cache-and-queue",
+          "condition": "Redis or Valkey",
+          "notes": "Cache and background-job queue; Redis 6+ in requirements table.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "Valkey",
+          "necessity": "one-of",
+          "group": "cache-and-queue",
+          "condition": "Redis or Valkey",
+          "notes": "Documented Redis-compatible alternative, version 6+ table.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "Nginx, application workers, queue workers and scheduler",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official container stack includes frontend, backend, websocket, short/long queue workers and scheduler; these services are not optional for full production behavior.",
+          "sources": [
+            "https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml"
+          ]
+        },
+        {
+          "component": "wkhtmltopdf",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "PDF rendering on v16 and older",
+          "notes": "v17 replaces it with Chromium; avoid mixing branch requirements.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "SMTP service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Outgoing email notifications",
+          "notes": "Mail service configuration needed for actual email delivery; no mandatory paid provider established.",
+          "sources": [
+            "https://docs.frappe.io/framework/user/en/installation"
+          ]
+        },
+        {
+          "component": "Docker Engine and Compose v2",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Official container deployment route",
+          "notes": "Container runtime packages application dependencies; native Bench route is an alternative.",
+          "sources": [
+            "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Debian/Ubuntu production; macOS documented; Windows via WSL",
+        "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
+        "sources": [
+          "https://docs.frappe.io/framework/user/en/installation"
+        ]
+      },
+      "notes": "Use native Bench or official Docker production setup. MariaDB is the verified default for these applications. Framework installation mentions PostgreSQL, but this is not asserted as a supported ERPNext/HR application backend. No separate object store required by default; local site volumes used. Branch-specific version table preserved.",
+      "sources": [
+        "https://docs.frappe.io/framework/user/en/installation",
+        "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md",
+        "https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation instructions; no current first-party or officially linked one-click or one-command installer verified. Manual package/Compose instructions excluded.",
+      "sources": [
+        "https://docs.frappe.io/framework/user/en/installation"
+      ]
+    }
+  }
+}

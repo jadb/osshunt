@@ -61,6 +61,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Br
 
 Status: **offered**. Checked official deployment documentation; manual Docker Compose is not a one-click offer. [1](https://tldraw.dev/docs/sync)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [npm create tldraw](https://tldraw.dev/quick-start): **one-command**, first-party. Official starter scaffolding command, not an installed production server; license and backend deployment still required. [1](https://tldraw.dev/quick-start)

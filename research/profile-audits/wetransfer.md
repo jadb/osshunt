@@ -2,7 +2,6 @@
 
 # wetransfer research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing yielded JavaScript failure; guessed about/explore and old Zendesk help URL failed. Followed current /help to subscriptions/how-to and Plan limits.
 - Queries official founding/funding; vendor2020 report supplies2009; HPE investor release supplies historical round. Current parent portfolio supplies acquiredJuly2024.

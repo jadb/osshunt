@@ -1,0 +1,250 @@
+{
+  "id": "ghost",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Ghost Foundation",
+    "kind": "foundation",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "nonprofit",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Founded April 2013. Nonprofit constitution prevents acquisition; revenue from Ghost(Pro) sustains development. Self-funded service model is explicit; corporate in-kind sponsors are separate from equity investors.",
+    "sources": [
+      "https://ghost.org/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://github.com/TryGhost/Ghost"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 2388,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "publication up to 1,000 members (card setting)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Ghost(Pro) commercial managed service, distinct from free code. $199/month billed yearly ×12; card and comparison table have differing member limits, confirm selected audience at checkout.",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "publication",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom configuration and member limits; Get in touch for pricing.",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its publication and membership specialization plus reader-discovery integrations can create workflow switching costs for independent publishers.",
+      "basis": "assessment",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Membership tiers and Stripe subscriptions let publications run gated content and paid reader relationships.",
+      "basis": "assessment",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    },
+    {
+      "claim": "Native email newsletters combine publishing and subscriber delivery in one editorial workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    },
+    {
+      "claim": "ActivityPub distribution and publication recommendations provide built-in readership discovery workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://ghost.org/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "DigitalOcean",
+          "url": "https://www.digitalocean.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Fastly",
+          "url": "https://www.fastly.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        }
+      ],
+      "notes": "Official partners page thanks businesses providing services and sponsorships; DigitalOcean powers Ghost(Pro), and Fastly is listed. These are not equity investors.",
+      "sources": [
+        "https://ghost.org/partners/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Node.js supported LTS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Use supported Node release for the installed Ghost major.",
+          "sources": [
+            "https://docs.ghost.org/install/ubuntu/"
+          ]
+        },
+        {
+          "component": "MySQL 8.0 or 8.4",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production database; SQLite is not represented as supported production alternative.",
+          "sources": [
+            "https://docs.ghost.org/install/ubuntu/"
+          ]
+        },
+        {
+          "component": "NGINX",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended Ubuntu Ghost-CLI stack",
+          "notes": "Minimum 1.9.5 for SSL.",
+          "sources": [
+            "https://docs.ghost.org/install/ubuntu/"
+          ]
+        },
+        {
+          "component": "systemd",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Ubuntu Ghost-CLI stack",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.ghost.org/install/ubuntu/"
+          ]
+        },
+        {
+          "component": "Docker Compose and Caddy",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Alternative preview Docker stack",
+          "notes": "Replaces CLI NGINX/systemd setup; MySQL remains.",
+          "sources": [
+            "https://docs.ghost.org/install/docker/"
+          ]
+        },
+        {
+          "component": "Tinybird",
+          "necessity": "optional",
+          "group": null,
+          "condition": "For Docker web analytics",
+          "notes": "External analytics service account; distinct from Ghost core.",
+          "sources": [
+            "https://docs.ghost.org/install/docker/"
+          ]
+        },
+        {
+          "component": "ActivityPub service",
+          "necessity": "optional",
+          "group": null,
+          "condition": "For social web features",
+          "notes": "Docker can self-host; CLI uses Ghost(Pro) hosted ActivityPub service.",
+          "sources": [
+            "https://docs.ghost.org/install/docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "1 GB minimum",
+        "storage": null,
+        "os": "Ubuntu 22.04, 24.04 or 26.04 recommended",
+        "notes": "Official CLI prerequisite: at least 1 GB RAM; CPU and disk minimum not specified.",
+        "sources": [
+          "https://docs.ghost.org/install/ubuntu/",
+          "https://docs.ghost.org/install/docker/"
+        ]
+      },
+      "notes": "Recommended CLI production path plus explicitly labeled preview Docker alternative. Mail delivery and bulk-newsletter service configuration should be planned separately; no mandatory Redis is listed in baseline.",
+      "sources": [
+        "https://docs.ghost.org/install/ubuntu/",
+        "https://docs.ghost.org/install/docker/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean Ghost marketplace app",
+          "url": "https://marketplace.digitalocean.com/apps/ghost",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official docs call it an officially supported 1-click app; account, SSH and domain configuration still required.",
+          "sources": [
+            "https://docs.ghost.org/install/digitalocean/"
+          ]
+        }
+      ],
+      "notes": "Verified officially linked DigitalOcean app; Ghost-CLI is a separate command-driven install.",
+      "sources": [
+        "https://docs.ghost.org/install/digitalocean/"
+      ]
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "id": "opencats",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "OpenCATS community",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Community-maintained recruiting project; commercial CATSOne explicitly unaffiliated. Project start year not established after official overview/homepage/history search. No business equity funding model or named equity investors established.",
+    "sources": [
+      "https://www.opencats.org/",
+      "https://documentation.opencats.org/introduction-and-overview"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "OpenCATS",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free source-available community application",
+      "notes": "No software subscription. Combined license has legacy CATS restrictions; not wholly OSI OSS. Infrastructure and optional external APIs separate.",
+      "sources": [
+        "https://www.opencats.org/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.opencats.org/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No paid Business edition from OpenCATS; community application serves internal and agency recruiting. Unaffiliated CATSOne not substituted.",
+      "sources": [
+        "https://documentation.opencats.org/introduction-and-overview"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No paid Enterprise edition from OpenCATS established in official community overview.",
+      "sources": [
+        "https://documentation.opencats.org/introduction-and-overview"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Recruiting-specific candidate/client history provides modest workflow switching costs; differentiation is limited relative to modern commercial ATS suites, as project docs acknowledge.",
+      "basis": "assessment",
+      "sources": [
+        "https://documentation.opencats.org/introduction-and-overview"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Candidate records combine resumes, notes, status history and activity for coordinated recruiter follow-up.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.opencats.org/"
+      ]
+    },
+    {
+      "claim": "Recruiting CRM connects jobs, client companies, contacts and submissions for staffing workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.opencats.org/"
+      ]
+    },
+    {
+      "claim": "Public job portal and candidate questionnaires feed applications into job pipelines.",
+      "basis": "assessment",
+      "sources": [
+        "https://documentation.opencats.org/introduction-and-overview"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Reviewed project homepage, current README and community overview; no corporate financial/in-kind sponsors identified. OpenCATS is a community, with no verified business steward to substitute. CATSOne is explicitly unaffiliated; no inferred sponsor.",
+      "sources": [
+        "https://www.opencats.org/",
+        "https://raw.githubusercontent.com/opencats/OpenCATS/v0.11.1/README.md",
+        "https://documentation.opencats.org/introduction-and-overview"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP8.4.1+ within PHP8 and required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current baseline tests8.4.1 and8.5; older cached docs describing PHP7.2 are superseded.",
+          "sources": [
+            "https://documentation.opencats.org/"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "MariaDB10.7 is current CI baseline, not stated universal minimum. MySQL explicitly not documented target.",
+          "sources": [
+            "https://documentation.opencats.org/"
+          ]
+        },
+        {
+          "component": "Web server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Linux/Unix CI baseline; Apache used in Ubuntu instructions. Exact alternative server support not verified.",
+          "sources": [
+            "https://documentation.opencats.org/"
+          ]
+        },
+        {
+          "component": "antiword, pdftotext, html2text, unrtf",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Resume/document full-text extraction and indexing",
+          "notes": "Application installs without these local parsing utilities; improved search requires them.",
+          "sources": [
+            "https://documentation.opencats.org/installation/run-the-installer"
+          ]
+        },
+        {
+          "component": "SMTP/PHPMailer configuration",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Sending emails/notifications",
+          "notes": "Core works without email; mail relay required for actual delivery.",
+          "sources": [
+            "https://documentation.opencats.org/installation/run-the-installer"
+          ]
+        },
+        {
+          "component": "Google address lookup API key",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Address lookup feature enabled",
+          "notes": "External provider API; not necessary to run ATS.",
+          "sources": [
+            "https://documentation.opencats.org/installation/run-the-installer"
+          ]
+        },
+        {
+          "component": "Composer",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Source checkout or non-full archive",
+          "notes": "Full release packages bundle dependencies; composer install --no-dev needed for source route.",
+          "sources": [
+            "https://documentation.opencats.org/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux/Unix current CI baseline",
+        "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
+        "sources": [
+          "https://documentation.opencats.org/"
+        ]
+      },
+      "notes": "Version0.11.1 current documentation baseline. PHP8.4.1+ and MariaDB supersede stale indexed0.9.7.4/PHP7.2 pages. Parsing/email/address lookup optional; no Redis, queue broker, external search or object-store dependency verified.",
+      "sources": [
+        "https://documentation.opencats.org/",
+        "https://documentation.opencats.org/installation/run-the-installer"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation instructions; no current first-party or officially linked one-click or one-command installer verified. Manual package/Compose instructions excluded.",
+      "sources": [
+        "https://documentation.opencats.org/"
+      ]
+    }
+  }
+}

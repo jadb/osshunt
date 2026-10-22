@@ -1,0 +1,261 @@
+{
+  "id": "teable",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Teable AI, Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "ZhenFund",
+        "source": "https://teable.ai/about"
+      },
+      {
+        "name": "Baidu Ventures",
+        "source": "https://teable.ai/about"
+      }
+    ],
+    "notes": "Official About identifies Teable AI,Inc.,US headquarters and two institutional backers. Company incorporation/project-start year not recovered after official About/blog search; no guessed age. Private venture-backed company; full ownership/cap table and round amounts unverified.",
+    "sources": [
+      "https://teable.ai/about",
+      "https://teable.ai/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Community core0; verify exact release license brand restrictions. Cloud Free includesAIcredits but is not identical to self-host Community.",
+      "sources": [
+        "https://teable.ai/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 240,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Most popular cloud tier;20perseat/month billed yearly \u00d712. Struck-through36is not independently accepted as monthly-billing amount.",
+      "sources": [
+        "https://teable.ai/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 240,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Vendor cloud20perseat/month billed yearly \u00d712. Self-host commercial license prices not independently verified.",
+      "sources": [
+        "https://teable.ai/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No current named Enterprise plan/price in retrieved pricing page. Self-host Business+AI scope exists, but no Enterprise quote inferred.",
+      "sources": [
+        "https://teable.ai/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A PostgreSQL foundation joined to spreadsheet collaboration and a growing app/AI runtime offers an extensible workflow position; differentiation depends on edition.",
+      "basis": "assessment",
+      "sources": [
+        "https://help.teable.ai/en/deploy/architecture"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Work with real PostgreSQL-backed records through a spreadsheet-style collaboration interface.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/teableio/teable/develop/README.md"
+      ]
+    },
+    {
+      "claim": "Create table views, API interactions and record-triggered automation in one data workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://help.teable.ai/en/deploy/choose"
+      ]
+    },
+    {
+      "claim": "Connect structured operational data to custom apps and AI workflows in commercial editions.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/teableio/teable/develop/README.md"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Teable AI, Inc.",
+          "url": "https://teable.ai",
+          "relationship": "business-steward",
+          "source": "https://teable.ai/about"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://teable.ai/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/docker"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Standalone sample15.4; full platform also PostgreSQL, no MySQL/SQLite alternative verified.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/docker"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Standalone sample7.2.4; cache,queues,realtime.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/docker"
+          ]
+        },
+        {
+          "component": "Persistent app/database/cache volumes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/docker"
+          ]
+        },
+        {
+          "component": "S3-compatible object store",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Standalone production storage selected",
+          "notes": "Standalone recommends S3/MinIO/OSS/OBS/COS-compatible endpoints; local file storage default.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/docker"
+          ]
+        },
+        {
+          "component": "S3 storage with public/private/build-artifacts buckets",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Full-featured platform deployed",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/architecture"
+          ]
+        },
+        {
+          "component": "Infra Service, sandbox engine, Git registry and preview gateway",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Full-featured AI/App Builder platform deployed",
+          "notes": "Runtime plane supplements core; AI requires self-host Business or higher.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/architecture"
+          ]
+        },
+        {
+          "component": "Model-provider API credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AI features enabled",
+          "notes": "External compatible models; credentials/consumption separate.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/architecture"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email service enabled",
+          "notes": "Configure Email Service linked from deployment docs.",
+          "sources": [
+            "https://help.teable.ai/en/deploy/docker"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2cores minimum (standalone)",
+        "memory": "4GB minimum (standalone)",
+        "storage": "40GB free minimum (standalone)",
+        "os": "Linux recommended;Ubuntu20.04LTSexample",
+        "notes": "Standalone small-team/evaluation route0\u201350users. Full platform sizing depends on peakAI session sandboxes and deployed apps, not merely seat count.",
+        "sources": [
+          "https://help.teable.ai/en/deploy/docker"
+        ]
+      },
+      "notes": "Standalone core differs from full commercialAI/AppBuilder runtime plane. Current docs mark One-Click Cloud Deployment deprecated; no maintained one-click provider counted. License brand restrictions/source-available eligibility remains separate.",
+      "sources": [
+        "https://help.teable.ai/en/deploy/docker"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://help.teable.ai/en/deploy/docker"
+      ]
+    }
+  }
+}

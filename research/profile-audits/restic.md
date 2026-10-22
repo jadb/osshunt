@@ -2,7 +2,6 @@
 
 # restic research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open homepage, stable 0.19.1 installation/repository docs and GitHub README. Query site:restic.net 2015; no usable founding result. Find sponsor returned no matching project sponsors.
 - Decision: year/funding unknown; no corporate sponsor identified in checked project material.

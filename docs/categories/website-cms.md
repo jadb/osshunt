@@ -7,14 +7,19 @@ Audience: Individuals, small businesses, publishers, agencies and organizations 
 Use-case sources: [1](https://wordpress.org/about/features/), [2](https://www.drupal.org/about), [3](https://www.wix.com/plans).
 
 - [Squarespace](https://www.squarespace.com/pricing): entry amount unverified/quote, annual billing. Basic is paid; page renders $25/$19 without sufficiently clear currency and billing mapping. USD amount unresolved. [Pricing](https://www.squarespace.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/squarespace.md).
 - [Webflow](https://webflow.com/pricing): USD 15/account/month, annual billing. Basic site plan: USD 15 per site/month billed yearly; lacks CMS. Premium with CMS starts at USD 25/site/month billed yearly. Workspace seats/add-ons separate. [Pricing](https://webflow.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/webflow.md).
 - [Wix](https://www.wix.com/plans): entry amount unverified/quote, annual billing. Paid Light plan; localized rendering includes GST and conflicting currency cues, so a reliable USD entry price was not established. Free SaaS plan also exists. [Pricing](https://www.wix.com/plans).
+  [Pricing tiers, organization and product reasons](../products/wix.md).
 
 ### Drupal — A
 
 Tier A for Drupal core: project explicitly provides free CMS functionality without licensing fees; modules/themes and vendor platforms separate. Hosting directory lists independent providers, not a Drupal Association managed service. GitHub repository is a mirror; canonical development is on Drupal.org GitLab. Pinned core/LICENSE.txt contains GPL v2; official licensing policy explicitly grants version 2 or later.
 
 License: GPL-2.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/drupal/drupal/blob/89df3a065deb760a82a67ef8854f25d26bd05722/core/LICENSE.txt), [edition evidence](https://www.drupal.org/about), [hosting](https://www.drupal.org/hosting), [repository](https://github.com/drupal/drupal).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/drupal.md).
 
 Service costs/limits: Hosting, implementation and optional vendor services are separate costs; contributed modules are outside core assessment.
 
@@ -28,6 +33,8 @@ Tier A for self-hosted Ghost: official comparison explicitly says product featur
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/TryGhost/Ghost/blob/c6cebcd2221e7492c5c84aa1c90411a421977118/LICENSE), [edition evidence](https://docs.ghost.org/hosting/), [hosting](https://ghost.org/pricing/), [repository](https://github.com/TryGhost/Ghost).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/ghost.md).
+
 Service costs/limits: Self-hosting requires operations and email delivery services.; Hosted ActivityPub access for self-hosters has follower and interaction limits; independent self-hosting available.
 
 Repository: pushed 2026-10-21T21:23:58Z; latest commit 2026-10-21T20:53:54Z; latest published release v6.72.0 (2026-10-20T15:09:13Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -39,6 +46,8 @@ Repository: pushed 2026-10-21T21:23:58Z; latest commit 2026-10-21T20:53:54Z; lat
 Tier A for community WordPress core: standard publishing, users and themes available without licensing fees. Commercial plugins/themes are separate products, not core gates. WordPress.com is a distinct Automattic managed service linked by WordPress.org; its plan limits do not apply to self-hosted core. GitHub distribution repository mirrors SVN; wordpress-develop is also a mirror used for contribution workflow.
 
 License: GPL-2.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/WordPress/WordPress/blob/d564e4e697ede9cbed1117dde61b47ffd713e660/license.txt), [edition evidence](https://wordpress.org/about/features/), [hosting](https://wordpress.com/support/com-vs-org/), [repository](https://github.com/WordPress/WordPress).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/wordpress.md).
 
 Service costs/limits: Self-hosting requires infrastructure and maintenance; optional commercial plugins/themes/services may cost extra.
 

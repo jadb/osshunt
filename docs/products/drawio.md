@@ -58,6 +58,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Co
 
 Status: **offered**. Checked official deployment documentation; manual Docker Compose is not a one-click offer. [1](https://www.drawio.com/docs/security/diagrams-docker-app/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Docker run](https://www.drawio.com/docs/security/diagrams-docker-app/): **one-command**, first-party. Single documented container command after installing Docker; not true one-click. [1](https://www.drawio.com/docs/security/diagrams-docker-app/)

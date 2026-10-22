@@ -2,7 +2,6 @@
 
 # bitwarden research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open/followup find: pricing, About, Linux deployment and self-host organization documentation. Official investment search resolved PSG/Battery; initial broad search yielded secondary results, not used.
 - Decision: standard deployment database/hardware scope only; marketplace link explicitly supported by official guide.

@@ -54,6 +54,8 @@ Resources: CPU not specified; memory 4GB minimum; 16GB recommended; storage not 
 
 Status: **offered**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://krita.org/en/download/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Flathub](https://flathub.org/apps/org.kde.krita): **marketplace**, officially-linked-third-party. Official download page links community-maintained Flatpak; free package separate from paid stores. [1](https://krita.org/en/download/)

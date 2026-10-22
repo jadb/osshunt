@@ -1,0 +1,223 @@
+{
+  "id": "keila",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Pentacent / Keila",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Pricing FAQ explicitly calls Keila a small bootstrapped business. Pentacent commercial site and repository stewardship verified; exact business/project founding year unresolved after primary searches. Private sponsor identities not guessed.",
+    "sources": [
+      "https://www.keila.io/pricing/",
+      "https://pentacent.com/",
+      "https://github.com/sponsors/pentacent"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source self-hosted",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "No proprietary premium features; infrastructure/email transport separate. Cloud starts\u20ac8/month for2,000emails.",
+      "sources": [
+        "https://www.keila.io/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://www.keila.io/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud plans are XS\u2013XXL volume bands with unlimited contacts/projects, not a separate Team/Business edition.",
+      "sources": [
+        "https://www.keila.io/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No named Enterprise plan in volume-band cloud catalog; self-host setup assistance available by contact.",
+      "sources": [
+        "https://www.keila.io/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Focused open newsletter workflow and flexible templating offer customization value; no exclusive platform network effect is evidenced.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keila.io/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Block, Markdown, MJML and plain-text editors support different newsletter authoring styles.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keila.io/"
+      ]
+    },
+    {
+      "claim": "Liquid templates and JSON contact data support deeply personalized campaign content.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keila.io/"
+      ]
+    },
+    {
+      "claim": "Visual segmentation and configurable tracking combine audience targeting with privacy controls.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keila.io/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Pentacent / Keila",
+          "url": "https://pentacent.com/",
+          "relationship": "business-steward",
+          "source": "https://pentacent.com/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://pentacent.com/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Container engine and pentacent/keila image",
+          "necessity": "required",
+          "group": null,
+          "condition": "Documented deployment route includes Elixir/Phoenix runtime.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.keila.io/docs/installation/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; DB_URL required.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.keila.io/docs/configuration/"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "one-of",
+          "group": "email-transport",
+          "condition": "Choose a campaign sender.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.keila.io/docs/senders/"
+          ]
+        },
+        {
+          "component": "AWS SES / Sendgrid / Mailgun / Postmark API",
+          "necessity": "one-of",
+          "group": "email-transport",
+          "condition": "Alternative campaign sender; provider account/key needed.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.keila.io/docs/senders/"
+          ]
+        },
+        {
+          "component": "WebSocket-capable reverse proxy",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "When running behind proxy; preserve WebSocket forwarding.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.keila.io/docs/installation/"
+          ]
+        },
+        {
+          "component": "hCaptcha / Friendly Captcha",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Form bot protection when enabled.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.keila.io/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No numerical hardware minima verified in the cited deployment documentation.",
+        "sources": [
+          "https://www.keila.io/docs/installation/"
+        ]
+      },
+      "notes": "Container+PostgreSQL default; background processing within application, no separate Redis/queue documented. Select external delivery service. Official docs do not publish CPU/RAM/storage minima.",
+      "sources": [
+        "https://www.keila.io/docs/installation/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual Docker Compose or source installation does not qualify as one-click.",
+      "sources": [
+        "https://www.keila.io/docs/installation/"
+      ]
+    }
+  }
+}

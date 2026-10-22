@@ -36,6 +36,7 @@ test('profiles retain alternatives, optional components, unknown prices and inst
   assert.match(text, /PostgreSQL \| one-of \| database/);
   assert.match(text, /OCR worker \| optional/);
   assert.match(text, /\*\*one-command\*\*/);
+  assert.match(text, /Verified one-click\/marketplace option: \*\*no\*\*/);
   assert.match(text, /not one-click deployment/);
   assert.match(text, /years in business: not established\/applicable/);
   assert.match(text, /business \| unknown \| not-offered \| — \| —/);
@@ -59,6 +60,7 @@ for (const [name, mutate, expected] of [
   ['bootstrap with equity investors', p => Object.assign(p.organization, { funding: 'bootstrapped', investors: [{ name: 'Fund', source: sources[0] }] }), /conflicts/],
   ['future incorporation', p => p.organization.foundedYear = 2027, /cannot follow/],
   ['invented installer offering', p => p.alternativeDetails.oneClickInstall.options = [], /verified option/],
+  ['shell command labelled one-click', p => p.alternativeDetails.oneClickInstall.hasVerifiedOneClick = true, /option types/],
   ['too few product reasons', p => p.productReasons.pop(), /3/],
 ]) test(`profile rejects ${name}`, () => {
   const profile = fixture(); mutate(profile);

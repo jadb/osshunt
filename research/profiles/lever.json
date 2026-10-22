@@ -1,0 +1,141 @@
+{
+  "id": "lever",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Lever / Employ Inc.",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Employ Inc.; K1-backed private group",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Y Combinator",
+        "source": "https://www.ycombinator.com/companies/lever"
+      },
+      {
+        "name": "Apax Digital",
+        "source": "https://www.ycombinator.com/companies/lever"
+      },
+      {
+        "name": "Adams Street Partners",
+        "source": "https://www.ycombinator.com/companies/lever"
+      },
+      {
+        "name": "Scale Venture Partners",
+        "source": "https://www.ycombinator.com/companies/lever"
+      },
+      {
+        "name": "Matrix Partners",
+        "source": "https://www.ycombinator.com/companies/lever"
+      }
+    ],
+    "notes": "Lever founded2012 (YC S12), acquired by Employ in2022. Current Lever press page confirms Employ parent. Historical investors from YC company profile; K1 relationship is at Employ level, not a claim of direct original Lever investment.",
+    "sources": [
+      "https://www.lever.co/media-and-press-inquiries",
+      "https://www.ycombinator.com/companies/lever",
+      "https://k1.com/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "AI-Powered Hiring Platform",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Unified core platform; pricing scales with team size and hiring needs. Customized quote required.",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "AI-Powered Hiring Platform with selected add-ons",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational configuration; candidate insights, AI screening and onboarding are quote-based add-ons. No separately named Business tier.",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No distinct Enterprise pricing tier verified on current official page; platform quote is tailored to organizational size and hiring needs.",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A single candidate relationship history spanning sourcing and ATS stages can increase switching costs as recruiting data accumulates.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Integrated ATS and CRM carry candidates from sourcing and nurturing through hiring without separate relationship records.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    },
+    {
+      "claim": "Hiring dashboards and customizable reports connect recruiting activity to pipeline health.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    },
+    {
+      "claim": "Interview transcripts and summaries help interviewers capture feedback and revisit candidate discussions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lever.co/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

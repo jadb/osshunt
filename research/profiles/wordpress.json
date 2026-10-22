@@ -1,0 +1,234 @@
+{
+  "id": "wordpress",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "WordPress open-source project",
+    "kind": "community",
+    "foundedYear": 2003,
+    "ageBasis": "project-started",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Project started in 2003; WordPress.org software is distinct from Automattic’s WordPress.com business. WordPress Foundation holds the trademark; project equity investors do not apply.",
+    "sources": [
+      "https://wordpress.org/about/",
+      "https://wordpress.org/five-for-the-future/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Core has no plan cards or explicit popular plan designation.",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "No paid organizational edition offered by the WordPress.org core project; commercial hosts and plugins are separate.",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "No core Enterprise license tier; commercial WordPress services are separate.",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "The installed base and plugin/theme ecosystem create strong complementary-development and switching-cost advantages.",
+      "basis": "assessment",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Block editing, themes and media tools suit editorial sites that need visual page composition.",
+      "basis": "assessment",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    },
+    {
+      "claim": "Custom post types and taxonomies let teams model content beyond ordinary pages and posts.",
+      "basis": "assessment",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    },
+    {
+      "claim": "A large plugin catalog lets sites add specialized workflows without replacing the publishing system.",
+      "basis": "assessment",
+      "sources": [
+        "https://wordpress.org/about/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Salesforce",
+          "url": "https://www.salesforce.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://wordpress.org/five-for-the-future/"
+        }
+      ],
+      "notes": "Official Five for the Future page identifies Salesforce’s in-kind Slack sponsorship; contributor pledges are distinct from equity investment.",
+      "sources": [
+        "https://wordpress.org/five-for-the-future/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "8.3+ recommended; legacy 7.4+ works but is end-of-life.",
+          "sources": [
+            "https://wordpress.org/about/requirements/"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MariaDB OR MySQL",
+          "notes": "10.11+ recommended.",
+          "sources": [
+            "https://wordpress.org/about/requirements/"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MySQL OR MariaDB",
+          "notes": "8.0+ recommended.",
+          "sources": [
+            "https://wordpress.org/about/requirements/"
+          ]
+        },
+        {
+          "component": "Apache",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Apache OR Nginx OR compatible PHP web server",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://wordpress.org/about/requirements/"
+          ]
+        },
+        {
+          "component": "Nginx",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Nginx OR Apache OR compatible PHP web server",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://wordpress.org/about/requirements/"
+          ]
+        },
+        {
+          "component": "HTTPS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Recommended public production stack includes HTTPS.",
+          "sources": [
+            "https://wordpress.org/about/requirements/"
+          ]
+        },
+        {
+          "component": "Mail delivery",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "For account and site email",
+          "notes": "Verify delivery on host; no specific SMTP vendor required.",
+          "sources": [
+            "https://developer.wordpress.org/advanced-administration/before-install/howto-install/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Any compatible PHP/MySQL host",
+        "notes": "Official core requirements do not publish fixed CPU/RAM/storage minima.",
+        "sources": [
+          "https://wordpress.org/about/requirements/",
+          "https://developer.wordpress.org/advanced-administration/before-install/howto-install/"
+        ]
+      },
+      "notes": "Core needs no mandatory Redis, queue broker, search server or object store; plugins may introduce them. Database alternatives share the database group.",
+      "sources": [
+        "https://wordpress.org/about/requirements/",
+        "https://developer.wordpress.org/advanced-administration/before-install/howto-install/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official handbook documents manual five-minute setup and links to host installers. No currently verified specific one-click template was established in this review; host autoinstall references alone are not represented as a verified option.",
+      "sources": [
+        "https://developer.wordpress.org/advanced-administration/before-install/howto-install/"
+      ]
+    }
+  }
+}

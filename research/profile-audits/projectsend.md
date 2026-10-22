@@ -2,7 +2,6 @@
 
 # projectsend research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open homepage/Cloud. Guessed /requirements and /about failed; homepage current Download section supplies PHP8.4/MySQL8/worker/scheduler/Redis requirements. Cloud pricing find Business resolved Most popular Pro.
 - Decision:2011 project start, Gallifrey business fallback from footer/same-team statement; no guessed equity investors.

@@ -1,0 +1,248 @@
+{
+  "id": "appflowy",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "AppFlowy",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "OSS Capital",
+        "source": "https://appflowy.com/blog/seed"
+      },
+      {
+        "name": "Bob Young",
+        "source": "https://appflowy.com/blog/seed"
+      },
+      {
+        "name": "Steve Chen",
+        "source": "https://appflowy.com/blog/seed"
+      },
+      {
+        "name": "Tom Preston-Werner",
+        "source": "https://appflowy.com/blog/seed"
+      },
+      {
+        "name": "Amr Awadallah",
+        "source": "https://appflowy.com/blog/seed"
+      },
+      {
+        "name": "Matt Mullenweg",
+        "source": "https://appflowy.com/blog/seed"
+      }
+    ],
+    "notes": "2021 project start from second anniversary in November2023, distinguished from legal company founding (unverified). Official2023 seed release names lead investor and participating individuals; their companies are not automatically investors. Private business; client AGPL and production commercial server separate.",
+    "sources": [
+      "https://appflowy.com/blog/seed",
+      "https://appflowy.com/blog/seed",
+      "https://beta.appflowy.com/blog/product-updates"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "AGPL client core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "device",
+      "minimumQuantity": null,
+      "scope": "free local desktop/core",
+      "notes": "AGPL client download; commercial collaboration server is separate.",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://appflowy.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 144,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Vendor cloud12/member/month billed annually \u00d712; not a self-host commercial license quote.",
+      "sources": [
+        "https://appflowy.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Seed or higher self-hosted",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "commercial collaboration server",
+      "notes": "Enterprise identity requires Seed or higher; current license price not recovered. No quote amount invented.",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/README.md"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Native cross-platform clients and integrated document/database workflows may retain personal knowledge structures; full collaboration depends on commercial server.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Organize projects with grid databases and Kanban task boards.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md"
+      ]
+    },
+    {
+      "claim": "Keep rich documentation and reusable templates with the same workspace data.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md"
+      ]
+    },
+    {
+      "claim": "Use local AI alongside workspace writing and search workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://appflowy.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "AppFlowy",
+          "url": "https://appflowy.com",
+          "relationship": "business-steward",
+          "source": "https://appflowy.com/blog/seed"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://appflowy.com/blog/seed"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Desktop client OS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "macOS,Windows,Linux downloads; no external database/server needed for client-only scope.",
+          "sources": [
+            "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md"
+          ]
+        },
+        {
+          "component": "Docker Compose; PostgreSQL16 with pgvector; Redis",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Separately commercial collaboration server deployed",
+          "notes": "Server dependencies do not change the client-core license.",
+          "sources": [
+            "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "S3-compatible storage (bundled MinIO)",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Commercial collaboration server deployed",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "GoTrue authentication, application, worker, search, web/admin and nginx services",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Commercial collaboration server deployed",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Commercial-server email confirmation/invitations enabled",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "OpenAI/AssemblyAI or configured AI provider APIs",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AI/transcription features enabled",
+          "notes": "External keys and consumption; AI can be disabled per release notes.",
+          "sources": [
+            "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/docker-compose.yml"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "macOS,Windows,Linux desktop; Docker for commercial server",
+        "notes": "Numeric client/server hardware minimum not recovered in reviewed README. Local client and commercial collaboration stack distinguished.",
+        "sources": [
+          "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md"
+        ]
+      },
+      "notes": "Assigned record is AGPL client core. Production self-host collaboration is separately commercial; free commercial server limited to1seat/3guest editors. Archived AGPL cloud not recommended as maintained production path.",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/README.md"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial/main/README.md"
+      ]
+    }
+  }
+}

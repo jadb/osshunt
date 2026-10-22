@@ -1,0 +1,132 @@
+{
+  "id": "squarespace",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Squarespace, Inc.",
+    "kind": "business",
+    "foundedYear": 2003,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Permira-managed funds (controlling investor)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Permira funds",
+        "source": "https://www.permira.com/news-and-insights/announcements/permira-completes-acquisition-of-squarespace"
+      },
+      {
+        "name": "Accel",
+        "source": "https://www.permira.com/news-and-insights/announcements/permira-completes-acquisition-of-squarespace"
+      },
+      {
+        "name": "General Atlantic",
+        "source": "https://www.permira.com/news-and-insights/announcements/permira-completes-acquisition-of-squarespace"
+      }
+    ],
+    "notes": "Founded in 2003 (platform went live in 2004). Permira funds completed take-private acquisition October 2024; former NYSE:SQSP no longer listed. Accel and General Atlantic remained meaningful investors at transaction close; current precise stakes not published here.",
+    "sources": [
+      "https://www.squarespace.com/about/company",
+      "https://www.permira.com/news-and-insights/announcements/permira-completes-acquisition-of-squarespace"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": 228,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current public dollar prices: $25 month-to-month; $19/month annually ×12. 14-day trial separate.",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Core",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": 348,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Recommended badge; annual $29/month ×12.",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Core",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": 348,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest current organizational plan; unlimited contributors and full business features. Current tier is Core, not legacy Business. Annual $29/month ×12.",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No current Enterprise card or quote published; /enterprise redirects to ordinary pricing. Enterprise availability unresolved rather than assumed absent.",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A cohesive design and commerce workflow can build switching costs for businesses with established layouts, content and selling operations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Fluid Engine visual layout editing and designer templates help portfolio and brand-focused sites compose polished pages.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    },
+    {
+      "claim": "Courses, memberships, blogs and video sales support monetizing content alongside a site.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    },
+    {
+      "claim": "Commerce, invoicing and release controls connect sales workflows with the public website.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.squarespace.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

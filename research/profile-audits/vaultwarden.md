@@ -2,7 +2,6 @@
 
 # vaultwarden research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open: README and deployment wiki; find sponsor section returned no named businesses. Read .env.template for database alternatives.
 - Decision: sponsor none-found scoped to source checked; community project does not inherit Bitwarden company funding.

@@ -10,9 +10,9 @@ Started 1976 (company-founded); years active: 50; years in business: 50. Ages ar
 
 Listed symbols: NASDAQ:AAPL.
 
-Apple official 2026 anniversary announcement dates founding to April1,1976; company age distinct from Final Cut launch. Investor FAQ confirms Nasdaq AAPL and December1980 IPO. Public equity funded; historical private-investor roster not established. [1](https://investor.apple.com/faq/default.aspx) [2](https://www.apple.com/eg/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/)
+Apple official 2026 anniversary announcement dates founding to April1,1976; company age distinct from Final Cut launch. Investor FAQ confirms Nasdaq AAPL and December1980 IPO. Public equity funded; historical private-investor roster not established. Historical Apple investors include Venrock and Microsoft; investor announcement and Apple financial filing confirm equity backing, without asserting current holdings or treating a software partnership alone as investment. [1](https://investor.apple.com/faq/default.aspx) [2](https://www.apple.com/eg/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/) [3](https://www.venrock.com/insights/welcome-ganesh-srinivasan/) [4](https://www.apple.com/dlf/APPLECOMPUTERINSCTOI.pdf)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [Venrock (historical)](https://www.venrock.com/insights/welcome-ganesh-srinivasan/), [Microsoft (historical strategic equity investor)](https://www.apple.com/dlf/APPLECOMPUTERINSCTOI.pdf).
 
 ## Starting prices
 

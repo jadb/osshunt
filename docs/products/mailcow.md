@@ -62,6 +62,8 @@ Resources: CPU 1 GHz minimum; x86_64 or ARM64; memory 6 GiB RAM + 1 GiB swap def
 
 Status: **none-found**. Official installation requires clone/configuration and Docker Compose startup. Docker installation script installs Docker only, not mailcow. Managed hosting purchase is not a self-host one-click installer. [1](https://docs.mailcow.email/getstarted/install/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

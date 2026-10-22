@@ -17,6 +17,8 @@ Project FAQ explicitly confirms one free open edition, no enterprise/custom edit
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/BookStackApp/BookStack/blob/045c6a98cac21ea86906674bb91d01f375460db6/LICENSE), [edition evidence](https://www.bookstackapp.com/about/project-faq/), [hosting](https://www.bookstackapp.com/about/project-faq/), [repository](https://github.com/BookStackApp/BookStack).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/bookstack.md).
+
 Repository: pushed 2026-10-21T04:31:17Z; latest commit 2026-10-18T18:33:04Z; latest published release v26.09.2 (2026-10-20T11:48:40Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Confluence → BookStack: **partial**. Documentation/wiki use case covered with book/chapter/page hierarchy, roles, API and export options; validate Confluence macros/integrations and rebuild unsupported content. [1](https://www.bookstackapp.com/about/confluence-alternative/) [2](https://www.bookstackapp.com/)
@@ -27,6 +29,8 @@ Repository: pushed 2026-10-21T04:31:17Z; latest commit 2026-10-18T18:33:04Z; lat
 AGPL applies to community core; apps/server/src/ee, apps/client/src/ee and packages/ee use commercial license per pinned README. Everyday migration and collaboration controls require Business. README links a cloud version, but current pricing emphasizes self-managed and hosted price is unverified.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/docmost/docmost/blob/9250ca8305cbb7d04dc1973b8b83346784fc361a/LICENSE), [edition evidence](https://docmost.com/pricing), [hosting](https://github.com/docmost/docmost), [repository](https://github.com/docmost/docmost).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/docmost.md).
 
 Paid restrictions: Business license gates SSO, AI, granular page permissions and Confluence importer.; Enterprise adds SCIM, audit logs, SIEM and page verification/review.
 
@@ -41,6 +45,8 @@ Pinned license explicitly says it is not an open source license. Additional Use 
 
 License: BUSL-1.1; identified core OSI: no/unresolved; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/outline/outline/blob/4f4fd882786685ee684fd1994601539a3bcd7812/LICENSE), [edition evidence](https://www.getoutline.com/pricing), [hosting](https://www.getoutline.com/pricing), [repository](https://github.com/outline/outline).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/outline.md).
+
 Paid restrictions: Community on-premises edition has limited features; Business and Enterprise sold separately.; Exact matrix checkmark mapping did not survive text extraction; paid migration/AI/security feature allocation requires visual verification.
 
 Repository: pushed 2026-10-21T21:26:26Z; latest commit 2026-10-21T12:36:51Z; latest published release v1.11.0 (2026-10-12T14:22:35Z). Quick analysis: 5.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -54,6 +60,8 @@ MIT covers code outside backend/native. Backend EE license explicitly exempts CE
 
 License: MIT AND MPL-2.0 AND LicenseRef-AFFiNE-EE; identified core OSI: no/unresolved; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/toeverything/AFFiNE/blob/0b69a6da21e8fd35beb85667bb8496d9b3852238/LICENSE), [edition evidence](https://affine.pro/enterprise), [hosting](https://affine.pro/pricing), [repository](https://github.com/toeverything/AFFiNE).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/affine.md).
+
 Paid restrictions: Official enterprise page says self-hosted Team required for more than 10 seats; multiple admin roles and priority support in Team.; Non-CE backend/native code has commercial EE production and redistribution restrictions.
 
 Repository: pushed 2026-10-12T09:51:10Z; latest commit 2026-10-11T14:49:18Z; latest published release v0.27.4 (2026-08-18T16:51:39Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -66,6 +74,8 @@ Repository: pushed 2026-10-12T09:51:10Z; latest commit 2026-10-11T14:49:18Z; lat
 AGPL client core is OSI, but current production collaboration uses separately commercial server images. Full collaborative self-hosted OSS eligibility is unresolved; archived AGPL AppFlowy-Cloud excluded. Local client remains usable under AGPL. Excluded from default OSS collaboration recommendations pending a clearly eligible maintained full stack.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/AppFlowy-IO/AppFlowy/blob/5cf3a365dec0d59f64bad1ee4bb1050471a39b93/LICENSE), [edition evidence](https://github.com/AppFlowy-IO/AppFlowy-SelfHost-Commercial), [hosting](https://appflowy.com/pricing), [repository](https://github.com/AppFlowy-IO/AppFlowy).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/appflowy.md).
 
 Paid restrictions: Current commercial self-hosted server free tier is limited to one user seat per instance and three guest editors.; Commercial server enterprise authentication needs Seed or higher; server is separately licensed.
 

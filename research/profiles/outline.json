@@ -1,0 +1,221 @@
+{
+  "id": "outline",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "General Outline, Inc.",
+    "kind": "business",
+    "foundedYear": 2020,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Official About: company founded beginning2020 after three years of project development; bootstrapped and profitable, not reliant on outside capital. No equity investors identified. Current product is source-available under BSL, despite general open-source language on About page.",
+    "sources": [
+      "https://www.getoutline.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "On-premises Community0 with limited features; BSL source-available terms apply.",
+      "sources": [
+        "https://www.getoutline.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://www.getoutline.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 48,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 10,
+      "scope": "paid on-premises license",
+      "notes": "4/user/month billed annually \u00d712; cloud account plans separate10/79/249 permonth by team size.",
+      "sources": [
+        "https://www.getoutline.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 100,
+      "scope": "paid on-premises license",
+      "notes": "5/user/month billed annually \u00d712;100user minimum. Published license price, not quote-only.",
+      "sources": [
+        "https://www.getoutline.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Accumulated team knowledge, links and chat integrations create switching costs within a focused wiki workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getoutline.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Co-edit documents with threaded discussion and mentions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getoutline.com/"
+      ]
+    },
+    {
+      "claim": "Search, share and ask documentation questions from Slack.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getoutline.com/"
+      ]
+    },
+    {
+      "claim": "Compose structured pages with Markdown shortcuts, slash commands and interactive embeds.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.getoutline.com/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "General Outline, Inc.",
+          "url": "https://www.getoutline.com",
+          "relationship": "business-steward",
+          "source": "https://www.getoutline.com/about"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://www.getoutline.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker/Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Recommended application packaging; single container allowed if services external.",
+          "sources": [
+            "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t"
+          ]
+        },
+        {
+          "component": "PostgreSQL14+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Docker example currently uses18;14+ is declared minimum.",
+          "sources": [
+            "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG"
+          ]
+        },
+        {
+          "component": "Redis4+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG"
+          ]
+        },
+        {
+          "component": "Dedicated domain/subdomain and compatible authentication provider",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG"
+          ]
+        },
+        {
+          "component": "Persistent file storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Local volume in current Docker example; external storage permitted.",
+          "sources": [
+            "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t"
+          ]
+        },
+        {
+          "component": "HTTPS/reverse proxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "https-portal included as example; other compatible proxy can be used.",
+          "sources": [
+            "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "512MB minimum;1GB+ recommended",
+        "storage": null,
+        "os": "Unix-compatible/Linux; Windows Server unsupported",
+        "notes": "CPU depends on active users and workload; no absolute core/disk minimum stated.",
+        "sources": [
+          "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG"
+        ]
+      },
+      "notes": "Default Docker+PostgreSQL+Redis and local file storage verified. Authentication provider and domain required. External database/cache/storage route also supported; Community edition is source-available, not OSI OSS.",
+      "sources": [
+        "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t"
+      ]
+    }
+  }
+}

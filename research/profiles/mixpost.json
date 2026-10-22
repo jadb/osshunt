@@ -1,0 +1,273 @@
+{
+  "id": "mixpost",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Inovector (Mixpost)",
+    "kind": "business",
+    "foundedYear": 2023,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Mixpost launch context from founder2023 post; not company incorporation year. Inovector commercial product stewardship verified. Funding/cap table unresolved after official/founder searches; one-person or independent launch does not establish bootstrapping.",
+    "sources": [
+      "https://inovector.com/",
+      "https://mixpost.app/pricing",
+      "https://www.linkedin.com/posts/dimabotezatu_pricing-mixpost-activity-7025779735112691712-AmCo"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Lite",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted Lite",
+      "notes": "Free MIT self-hosted edition; only Facebook Pages,X,Mastodon; full commercial features separate.",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": 299,
+      "currency": "USD",
+      "unit": "licensed domain or subdomain",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Closest teams/agencies edition; one-time$299 for1domain/subdomain,1year updates, perpetual fallback. Proprietary source-available; not OSS Lite.",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": 1199,
+      "currency": "USD",
+      "unit": "licensed domain or subdomain",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "One-time$1199 for1domain/subdomain; adds SaaS billing/customer management;1year updates, perpetual fallback; excludes VAT.",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Laravel extension model and source availability permit tailored social workflows; dependency on platform APIs and common scheduler features limits exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Calendar and per-account post versions coordinate publishing to Facebook Pages,X and Mastodon in Lite.",
+      "basis": "assessment",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    },
+    {
+      "claim": "Media library organizes reusable creative assets alongside scheduled posts.",
+      "basis": "assessment",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    },
+    {
+      "claim": "Post labels structure a social content backlog for recurring themes and campaigns.",
+      "basis": "assessment",
+      "sources": [
+        "https://mixpost.app/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Inovector",
+          "url": "https://inovector.com/",
+          "relationship": "business-steward",
+          "source": "https://inovector.com/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://inovector.com/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP8.3+ with documented extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Native application runtime; supplied by Docker image.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose SQL backend; Docker recipe usesMySQL8.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "Redis6.2+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Queue backing for publishing even single-user.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "Laravel Horizon and Supervisor",
+          "necessity": "required",
+          "group": null,
+          "condition": "Continuous publishing queue worker; supplied in Docker.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "Cron",
+          "necessity": "required",
+          "group": null,
+          "condition": "Every-minute scheduled publishing.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "Nginx / Apache with URL rewriting",
+          "necessity": "required",
+          "group": null,
+          "condition": "One webserver; native install or image.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "Social platform developer apps/OAuth",
+          "necessity": "required",
+          "group": null,
+          "condition": "Credentials/approvals for each enabled Lite network.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/lite/"
+          ]
+        },
+        {
+          "component": "FFmpeg",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Video thumbnails; videos otherwise publish.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "libvips/libheif/libde265 with PHP FFI",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "HEIC/HEIF image uploads only.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/server"
+          ]
+        },
+        {
+          "component": "S3-compatible storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative to local media volume.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.mixpost.app/lite/installation/manual"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No numerical hardware minima verified in the cited deployment documentation.",
+        "sources": [
+          "https://docs.mixpost.app/lite/installation/docker"
+        ]
+      },
+      "notes": "Current Lite production stack; PHP512M is process memory_limit, not server RAM minimum. Composer/Curl/Zip are installation/update tooling, not persistent services. Pro-only features not credited as Lite reasons.",
+      "sources": [
+        "https://docs.mixpost.app/lite/installation/docker"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual Docker Compose or source installation does not qualify as one-click.",
+      "sources": [
+        "https://docs.mixpost.app/lite/installation/docker"
+      ]
+    }
+  }
+}

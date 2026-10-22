@@ -1,0 +1,136 @@
+{
+  "id": "spendesk",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Spendesk",
+    "kind": "business",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Tiger Global",
+        "source": "https://www.spendesk.com/press/spendesk-raises-additional-100-million-euro-at-unicorn-valuation/"
+      },
+      {
+        "name": "General Atlantic",
+        "source": "https://www.spendesk.com/blog/series-c-funding/"
+      },
+      {
+        "name": "Index Ventures",
+        "source": "https://www.spendesk.com/blog/series-c-funding/"
+      },
+      {
+        "name": "Eight Roads Ventures",
+        "source": "https://www.spendesk.com/blog/series-c-funding/"
+      }
+    ],
+    "notes": "Founded 2016. Institutional funding verified by company Series C announcements; 2022 extension brought Tiger Global alongside existing backers. Funding announcement is historical; current cap table is not public. Blog updated in 2026 describes 2021 events and is not treated as a new 2026 round.",
+    "sources": [
+      "https://www.spendesk.com/press/spendesk-raises-additional-100-million-euro-at-unicorn-valuation/",
+      "https://www.spendesk.com/blog/series-c-funding/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Foundations",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Fixed monthly platform fee plus usage fees for card purchases, invoice payments and expense claims. Unlimited users; request a quote; no numeric base amount published.",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Foundations with selected add-ons",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Same organizational platform with procurement/AP/advanced workflows or multi-entity add-ons; tailored quote, not a separate Business plan.",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separately named Enterprise tier published; larger/multi-entity configurations use Foundations plus quoted add-ons.",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Combining regulated payments, card controls and approval/accounting workflows can create switching costs across finance and employee spending processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Single-use, recurring and multi-use virtual cards let teams apply different controls to one-off purchases, subscriptions and projects.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    },
+    {
+      "claim": "OCR, receipt matching and reminders reduce the manual work of collecting purchase evidence.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Multi-entity controls and real-time budgets consolidate spending decisions across legal entities.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.spendesk.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

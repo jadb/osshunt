@@ -1,0 +1,298 @@
+{
+  "id": "postiz",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Gitroom Limited (Postiz); Gitroom LLC holds platform approvals",
+    "kind": "business",
+    "foundedYear": 2024,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Official About identifies HongKong operating company and US approvals entity; founder-owned marketplace profile self-reports September2024 founding and bootstrapped stage. This is product launch context, not verified legal incorporation. No equity investors established.",
+    "sources": [
+      "https://postiz.com/about",
+      "https://appsumo.com/products/postiz/questions/api-support-1499512/1499527/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source Postiz",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "AGPL core; production design editor needs independent commercial Polotno license; infrastructure/provider APIs separate.",
+      "sources": [
+        "https://github.com/gitroomhq/postiz-app"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Ultimate",
+      "status": "published",
+      "monthlyPrice": 99,
+      "annualPrice": 948,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Popular badge. Monthly$99; annual$79/month multiplied by12.100channels/unlimited team members.",
+      "sources": [
+        "https://postiz.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": 372,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Named Team cloud plan: monthly$39; annual$31/month multiplied by12.",
+      "sources": [
+        "https://postiz.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor enterprise commercial offer",
+      "notes": "Enterprise/SaaS partner offer sales-led; public standard catalog tops out at Ultimate.",
+      "sources": [
+        "https://postiz.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Many channel adapters and automation interfaces create integration breadth and accumulated workflow switching costs; platform API rules constrain exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://postiz.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "A visual calendar coordinates drafts and per-channel settings across social and community destinations.",
+      "basis": "assessment",
+      "sources": [
+        "https://postiz.com/about"
+      ]
+    },
+    {
+      "claim": "MCP, CLI, REST API and webhooks connect scheduling to external automation workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://postiz.com/about"
+      ]
+    },
+    {
+      "claim": "Evergreen content recycling and cross-channel analytics support repeated campaign refinement.",
+      "basis": "assessment",
+      "sources": [
+        "https://postiz.com/about"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Hostinger",
+          "url": "https://www.hostinger.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://github.com/gitroomhq/postiz-app"
+        },
+        {
+          "name": "Virlo",
+          "url": "https://dev.virlo.ai/",
+          "relationship": "corporate-sponsor",
+          "source": "https://github.com/gitroomhq/postiz-app"
+        }
+      ],
+      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors.",
+      "sources": [
+        "https://github.com/gitroomhq/postiz-app"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker application image with web/backend/workers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Documented default route.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/docker-compose"
+          ]
+        },
+        {
+          "component": "PostgreSQL14+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Postiz application database; canonical stack currently17-alpine.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/system-requirements"
+          ]
+        },
+        {
+          "component": "Redis6+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Postiz cache/queue; canonical stack7.2.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/system-requirements"
+          ]
+        },
+        {
+          "component": "Temporal",
+          "necessity": "required",
+          "group": null,
+          "condition": "Scheduling/workflow service sincev2.12.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/system-requirements"
+          ]
+        },
+        {
+          "component": "PostgreSQL16 for Temporal",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Required by canonical bundled Temporal stack; separate from application DB.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/gitroomhq/postiz-docker-compose/main/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Elasticsearch7.17.27 for Temporal visibility",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Required by canonical bundled stack, ENABLE_ES=true.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/gitroomhq/postiz-docker-compose/main/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Persistent local uploads",
+          "necessity": "one-of",
+          "group": "media-storage",
+          "condition": "Default STORAGE_PROVIDER=local.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/system-requirements"
+          ]
+        },
+        {
+          "component": "Cloudflare R2 object storage",
+          "necessity": "one-of",
+          "group": "media-storage",
+          "condition": "Alternative STORAGE_PROVIDER=cloudflare.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/system-requirements"
+          ]
+        },
+        {
+          "component": "Social developer credentials and OAuth approvals",
+          "necessity": "required",
+          "group": null,
+          "condition": "For enabled publishing networks; outbound HTTPS required.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/installation/system-requirements"
+          ]
+        },
+        {
+          "component": "Polotno commercial SDK license/API key",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production image/video design-editor workflow only.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.postiz.com/self-host/configuration/polotno"
+          ]
+        },
+        {
+          "component": "AI provider credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only AI generation workflows; external usage billing.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/gitroomhq/postiz-docker-compose/main/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "SMTP/Resend delivery",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only email notification/invitation delivery.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/gitroomhq/postiz-docker-compose/main/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Spotlight",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Debug profile only; not required production component.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/gitroomhq/postiz-docker-compose/main/docker-compose.yaml"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2vCPU floor;4vCPU recommended",
+        "memory": "2GB light single-user floor;8GB recommended;4GB+ for additional load",
+        "storage": "20GB floor;50GB+ recommended plus uploads",
+        "os": "Docker-capable Linux; tested Ubuntu24.04",
+        "notes": "Official small-team sizing\u226420users; source build can exceed2GB. These are documented starting points, not workload guarantees.",
+        "sources": [
+          "https://docs.postiz.com/self-host/installation/system-requirements"
+        ]
+      },
+      "notes": "Default canonical Compose includes appPostgres+Redis+Temporal and TemporalPostgres+Elasticsearch; UI/admin-tools are operational conveniences. External Temporal can replace bundled stack. Do not omit Temporal visibility/database services when using default stack.",
+      "sources": [
+        "https://docs.postiz.com/self-host/installation/docker-compose"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual Docker Compose or source installation does not qualify as one-click.",
+      "sources": [
+        "https://docs.postiz.com/self-host/installation/docker-compose"
+      ]
+    }
+  }
+}

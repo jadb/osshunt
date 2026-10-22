@@ -12,11 +12,25 @@
       "NYSE:CRM"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "Company founded 1999; public equity financing confirmed by official 2004 IPO history. Historical private-round investor identities not independently established from primary sources searched; no current ownership percentages asserted.",
+    "investors": [
+      {
+        "name": "Halsey Minor (historical)",
+        "source": "https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm"
+      },
+      {
+        "name": "Attractor Funds (historical)",
+        "source": "https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm"
+      },
+      {
+        "name": "Magdalena Yesil (historical)",
+        "source": "https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm"
+      }
+    ],
+    "notes": "Company founded 1999; public equity financing confirmed by official 2004 IPO history. Historical private-round investor identities not independently established from primary sources searched; no current ownership percentages asserted. June2004 prospectus records preferred-stock purchases by the named investors. Historical purchases, not current cap table.",
     "sources": [
       "https://www.salesforce.com/news/stories/the-history-of-salesforce/",
-      "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+      "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+      "https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm"
     ]
   },
   "pricingTiers": [
@@ -31,7 +45,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "$25/user/month billed monthly or annually; annual total $25×12=$300. Free Suite separately offered.",
+      "notes": "$25/user/month billed monthly or annually; annual total $25\u00d712=$300. Free Suite separately offered.",
       "sources": [
         "https://www.salesforce.com/sales/pricing/"
       ]
@@ -63,7 +77,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest team/business suite; $100/user/month billed annually ×12=$1200; quoting, forecasting and customization.",
+      "notes": "Closest team/business suite; $100/user/month billed annually \u00d712=$1200; quoting, forecasting and customization.",
       "sources": [
         "https://www.salesforce.com/sales/pricing/"
       ]
@@ -79,7 +93,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Current highest named Sales Cloud tier shown, $550/user/month billed annually ×12=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted.",
+      "notes": "Current highest named Sales Cloud tier shown, $550/user/month billed annually \u00d712=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted.",
       "sources": [
         "https://www.salesforce.com/sales/pricing/"
       ]

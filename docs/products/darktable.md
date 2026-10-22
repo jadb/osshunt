@@ -54,6 +54,8 @@ Resources: CPU Workable: Pentium 4 (Core 2 Windows); recommended Core i5 4×2.4G
 
 Status: **not-applicable**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://raw.githubusercontent.com/darktable-org/darktable/master/README.md)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

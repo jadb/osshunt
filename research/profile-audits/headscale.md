@@ -2,7 +2,6 @@
 
 # headscale research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Guessed /stable/about and /stable/reference/configuration failed; followed current nav links to /about/faq, /ref/configuration and /setup/requirements. Opened Sponsor and Features.
 - Decision: no corporate sponsors named on donation page; no commercial plans attributed from Tailscale.

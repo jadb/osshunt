@@ -1,0 +1,243 @@
+{
+  "id": "cal-diy",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Cal.diy community; originated by Cal.com, Inc.",
+    "kind": "community",
+    "foundedYear": 2026,
+    "ageBasis": "product-launched",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "2026 company announcement identifies Cal.diy spinout; project carries older Cal.com history. Community-maintained MIT edition has no standalone equity cap table. Cal.com Inc venture funding listed in related commercial product, not treated as corporate sponsorship of community edition.",
+    "sources": [
+      "https://www.cal.diy/",
+      "https://raw.githubusercontent.com/calcom/cal.diy/main/README.md",
+      "https://www.prnewswire.com/news-releases/open-source-is-collapsing-under-ai-powered-threats--calcom-302742216.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Cal.diy",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted software",
+      "notes": "MIT community edition; no license key. Server/provider costs separate; vendor recommends personal/non-production use.",
+      "sources": [
+        "https://raw.githubusercontent.com/calcom/cal.diy/main/README.md"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "Cal.diy community edition",
+      "notes": "Team/organization features removed from community edition; paid Cal.com a distinct product.",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "Cal.diy community edition",
+      "notes": "No proprietary Enterprise edition within Cal.diy; commercial on-prem Cal.com access separate.",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "MIT code and broad inherited scheduling integrations permit substantial customization, but missing team workflows and forkability limit exclusive defensibility.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/calcom/cal.diy/main/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Recurring and seated event types support repeat sessions and capacity-limited bookings.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    },
+    {
+      "claim": "Date overrides, travel schedules and booking buffers express personal availability constraints.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    },
+    {
+      "claim": "Calendar/video integrations and embedded booking pages connect appointments to existing work tools.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Cal.com, Inc.",
+          "url": "https://www.cal.diy/",
+          "relationship": "business-steward",
+          "source": "https://www.cal.diy/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://www.cal.diy/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Node.js/Next.js application",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; README>=18.x, check release pins.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/calcom/cal.diy/main/README.md"
+          ]
+        },
+        {
+          "component": "PostgreSQL13+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; Prisma database.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/calcom/cal.diy/main/README.md"
+          ]
+        },
+        {
+          "component": "Yarn/Git",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Source installation/build only; supplied containers avoid manual install tooling.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.cal.diy/installation"
+          ]
+        },
+        {
+          "component": "SMTP or Resend email transport",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Booking/account email delivery; localhost Mailhog is development default.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/calcom/cal.diy/main/.env.example"
+          ]
+        },
+        {
+          "component": "Google/Microsoft/CalDAV credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only selected calendar synchronization integrations.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/calcom/cal.diy/main/README.md"
+          ]
+        },
+        {
+          "component": "Video provider credentials (Daily/Zoom etc.)",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only selected conferencing integration; external API.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.cal.diy/"
+          ]
+        },
+        {
+          "component": "Stripe/PayPal account",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only paid-event booking workflows.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.cal.diy/"
+          ]
+        },
+        {
+          "component": "Cron scheduler",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only features whose cron endpoints require periodic execution.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.cal.diy/installation"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No numerical hardware minima verified in the cited deployment documentation.",
+        "sources": [
+          "https://www.cal.diy/installation"
+        ]
+      },
+      "notes": "Source/native or Docker app+Postgres; no required Redis detected in official default requirements. Integration provider keys conditional. Documentation contains production-build guidance while overall project recommendation remains personal/non-production.",
+      "sources": [
+        "https://www.cal.diy/installation"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "unknown",
+      "options": [],
+      "notes": "Official Railway, Render and Elestio pages describe One Click Deployment but extracts expose no actual actionable deploy button/template URL. Options not verified enough to list; manual Docker/source route confirmed.",
+      "sources": [
+        "https://www.cal.diy/installation"
+      ]
+    }
+  }
+}

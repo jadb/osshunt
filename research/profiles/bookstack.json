@@ -1,0 +1,293 @@
+{
+  "id": "bookstack",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Dan Brown / BookStack contributors",
+    "kind": "individual",
+    "foundedYear": 2015,
+    "ageBasis": "project-started",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Dan Brown began project2015. Official FAQ refuses investment and describes self-funded project; donation/support revenue helps living costs and development. Sponsors are donors, not equity investors. No separate Enterprise edition or official managed hosting.",
+    "sources": [
+      "https://www.bookstackapp.com/about/project-faq/",
+      "https://www.bookstackapp.com/donate/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "BookStack",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "No software subscription fee for core edition; optional commercial editions and infrastructure separate.",
+      "sources": [
+        "https://www.bookstackapp.com/about/project-faq/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://www.bookstackapp.com/about/project-faq/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "FAQ explicitly one free edition; paid support services do not create a Business software tier.",
+      "sources": [
+        "https://www.bookstackapp.com/about/project-faq/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "FAQ explicitly no separate enterprise/custom edition; support services separate.",
+      "sources": [
+        "https://www.bookstackapp.com/about/project-faq/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "An opinionated book hierarchy and familiar authoring experience establish a clear niche, while MIT licensing and portable content limit proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bookstackapp.com/about/project-faq/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Organize documentation as shelves, books, chapters and pages.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bookstackapp.com/docs/user/content-overview/"
+      ]
+    },
+    {
+      "claim": "Let mixed-skill authors use visual word-processing or Markdown editors.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bookstackapp.com/docs/user/wysiwyg-editor/"
+      ]
+    },
+    {
+      "claim": "Create and revise diagrams inside pages while preserving earlier drawing revisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bookstackapp.com/docs/user/diagrams/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Diagrams.net",
+          "url": "https://www.diagrams.net/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Onyx",
+          "url": "https://www.onyx.app/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Cloudabove",
+          "url": "https://cloudabove.com/hosting",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Practicali",
+          "url": "https://www.practicali.be",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Stellar Hosted",
+          "url": "https://www.stellarhosted.com/bookstack/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "NETWAYS Web Services",
+          "url": "https://nws.netways.de",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Practinet",
+          "url": "https://practinet.be/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Route4Me",
+          "url": "https://route4me.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "phamos",
+          "url": "https://phamos.eu",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "SiteSpeakAI",
+          "url": "https://sitespeak.ai/bookstack",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        },
+        {
+          "name": "Admin Intelligence",
+          "url": "https://www.admin-intelligence.de/bookstack/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md"
+        }
+      ],
+      "notes": "Named corporate sponsors verified from official repository README after homepage text omitted logos; donor relationships, not software endorsements or equity.",
+      "sources": [
+        "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md",
+        "https://www.bookstackapp.com/donate/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP>=8.2 with required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "curl,dom,gd,iconv,mbstring,mysqlnd,openssl,pdo,pdo_mysql,tokenizer,xml,zip.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        },
+        {
+          "component": "MySQL>=8.0",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one content database",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        },
+        {
+          "component": "MariaDB>=10.6",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one content database",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        },
+        {
+          "component": "PHP-compatible web server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        },
+        {
+          "component": "Composer>=2.2 and Git",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Standard installation/dependency management and updates, not separate application services.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        },
+        {
+          "component": "ldap/exif PHP extensions",
+          "necessity": "optional",
+          "group": null,
+          "condition": "LDAP authentication or image rotation",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email service configured",
+          "notes": "Ubuntu script does not configure mail.",
+          "sources": [
+            "https://www.bookstackapp.com/docs/admin/installation/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "Hardware minima not specified in the reviewed installation instructions.",
+        "sources": [
+          "https://www.bookstackapp.com/docs/admin/installation/"
+        ]
+      },
+      "notes": "Standard PHP/database application; no required PostgreSQL/Redis/search service in documented core. Official fresh-Ubuntu scripts automate installation but require download/chmod/run and configuration, so not counted as true one-click.",
+      "sources": [
+        "https://www.bookstackapp.com/docs/admin/installation/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://www.bookstackapp.com/docs/admin/installation/"
+      ]
+    }
+  }
+}

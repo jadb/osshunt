@@ -1,0 +1,222 @@
+{
+  "id": "taiga",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "TAIGA CLOUD SERVICES, S.L.",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "project-started",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "2013 is Taiga project origin at Kaleidos hackathon, not incorporation date of current cloud operator. September2025 terms identify Taiga Cloud Services S.L.; current ultimate ownership and equity funding not resolved.",
+    "sources": [
+      "https://taiga.io/terms-and-conditions/",
+      "https://taiga.io/about-us/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software license has no subscription charge; infrastructure and optional commercial offerings separate.",
+      "sources": [
+        "https://taiga.io/deployment-pricing-options/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://taiga.io/deployment-pricing-options/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": 20,
+      "annualPrice": 200,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Vendor cloud: unlimited projects/users,500MB. Actual200EUR annual total, not12\u00d7monthly.",
+      "sources": [
+        "https://taiga.io/deployment-pricing-options/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Taiga Private Cloud",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Get a Quote; dedicated managed instance. On-premise service also quoted.",
+      "sources": [
+        "https://taiga.io/deployment-pricing-options/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Focused agile workflows plus existing team/project history provide modest switching costs; no unique technical barrier established.",
+      "basis": "assessment",
+      "sources": [
+        "https://taiga.io/about-us/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Use both Scrum and Kanban frameworks for cross-functional agile work.",
+      "basis": "assessment",
+      "sources": [
+        "https://taiga.io/about-us/"
+      ]
+    },
+    {
+      "claim": "Prioritize deliverables collaboratively with stakeholders as needs change.",
+      "basis": "assessment",
+      "sources": [
+        "https://taiga.io/"
+      ]
+    },
+    {
+      "claim": "Track ongoing activities, completed deliverables and resource/time allocation.",
+      "basis": "assessment",
+      "sources": [
+        "https://taiga.io/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "TAIGA CLOUD SERVICES, S.L.",
+          "url": "https://taiga.io/",
+          "relationship": "business-steward",
+          "source": "https://taiga.io/terms-and-conditions/"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://taiga.io/terms-and-conditions/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker >=19.03 and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Recommended production route; source installation alternative below.",
+          "sources": [
+            "https://docs.taiga.io/setup-production.html"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Core database. Source route documents >=9.4,<14 and PostgreSQL12 example; do not treat this older guide as newest upstream PostgreSQL recommendation.",
+          "sources": [
+            "https://docs.taiga.io/setup-production.html"
+          ]
+        },
+        {
+          "component": "RabbitMQ",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Message broker for async tasks and events.",
+          "sources": [
+            "https://docs.taiga.io/setup-production.html"
+          ]
+        },
+        {
+          "component": "Taiga API, async worker, frontend, events and protected attachments",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://docs.taiga.io/setup-production.html"
+          ]
+        },
+        {
+          "component": "Python3 (>=3.8,<3.12), Node.js and NGINX",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Source installation instead of Docker",
+          "notes": "Runtime/build dependencies bundled by container route.",
+          "sources": [
+            "https://docs.taiga.io/setup-production.html"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email delivery enabled",
+          "notes": "Email settings support console backend for no external mail.",
+          "sources": [
+            "https://docs.taiga.io/setup-production.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "1 GB minimum (source-install guide)",
+        "storage": "20 GB minimum (source-install guide)",
+        "os": "Ubuntu20.04 in source guide; Docker production route",
+        "notes": "Older source guide requirements are distinguished from a current container sizing guarantee.",
+        "sources": [
+          "https://docs.taiga.io/setup-production.html"
+        ]
+      },
+      "notes": "Scope is the documented default installation. Optional integrations are separate from the core; no infrastructure price implied.",
+      "sources": [
+        "https://docs.taiga.io/setup-production.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://docs.taiga.io/setup-production.html"
+      ]
+    }
+  }
+}

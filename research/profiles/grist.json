@@ -1,0 +1,249 @@
+{
+  "id": "grist",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Grist Labs",
+    "kind": "business",
+    "foundedYear": 2014,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [
+      {
+        "name": "Perry Tam",
+        "source": "https://www.getgrist.com/blog/a-new-chapter-for-grist-labs-scaling-for-the-era-of-sovereignty/"
+      }
+    ],
+    "notes": "Founded2014 per About. About still says self-funded ever since, but newer24April2026official release confirms seed round with Perry Tam as lead angel; mixed records earlier self-funding plus later external equity. Other angels not named. Public-sector code contributors not classified as corporate sponsors.",
+    "sources": [
+      "https://www.getgrist.com/about/",
+      "https://www.getgrist.com/blog/a-new-chapter-for-grist-labs-scaling-for-the-era-of-sovereignty/",
+      "https://www.getgrist.com/blog/a-new-chapter-for-grist-labs-scaling-for-the-era-of-sovereignty/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Grist Community edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "No software subscription fee for core edition; optional commercial editions and infrastructure separate.",
+      "sources": [
+        "https://www.getgrist.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://www.getgrist.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Grist self-hosted",
+      "status": "published",
+      "monthlyPrice": 30,
+      "annualPrice": 288,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Closest organizational self-host plan:30monthly,24annual-billed monthly \u00d712. Commercial activation; qualifying individuals/<1Mannual-income organizations may request0key.",
+      "sources": [
+        "https://www.getgrist.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 50,
+      "scope": "paid self-hosted license/services",
+      "notes": "Contact us for engineering/support/services; minimum50users.",
+      "sources": [
+        "https://www.getgrist.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its relational spreadsheet model, Python formulas and linked dashboards provide distinctive workflows, while portable SQLite files reduce lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Use full Python formulas together with familiar spreadsheet functions.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md"
+      ]
+    },
+    {
+      "claim": "Arrange linked tables, cards, charts and summary widgets into custom dashboards.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md"
+      ]
+    },
+    {
+      "claim": "Keep a portable SQLite-backed document with related tables and two-way references.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Grist Labs",
+          "url": "https://www.getgrist.com",
+          "relationship": "business-steward",
+          "source": "https://www.getgrist.com/about/"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://www.getgrist.com/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Linux container/Docker",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Community server route; separate native desktop/static variants exist.",
+          "sources": [
+            "https://support.getgrist.com/self-managed/"
+          ]
+        },
+        {
+          "component": "SQLite document files",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Each Grist document self-contained; these remain SQLite even with PostgreSQL metadata.",
+          "sources": [
+            "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md"
+          ]
+        },
+        {
+          "component": "SQLite metadata home database",
+          "necessity": "one-of",
+          "group": "metadata-database",
+          "condition": "Default metadata backend",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://support.getgrist.com/self-managed/"
+          ]
+        },
+        {
+          "component": "PostgreSQL10\u201316 tested",
+          "necessity": "one-of",
+          "group": "metadata-database",
+          "condition": "Alternative metadata home database",
+          "notes": "Grist>=1.5disablesPostgreSQLJIT automatically.",
+          "sources": [
+            "https://support.getgrist.com/self-managed/"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Webhook/notifications enabled; recommended for snapshots",
+          "notes": "Otherwise optional external state cache.",
+          "sources": [
+            "https://support.getgrist.com/self-managed/"
+          ]
+        },
+        {
+          "component": "S3-compatible storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Automatic document/snapshot cloud storage selected",
+          "notes": "Azure support is full commercial edition.",
+          "sources": [
+            "https://support.getgrist.com/self-managed/"
+          ]
+        },
+        {
+          "component": "gVisor sandbox capability",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Formula sandboxing enabled",
+          "notes": "Container capability/CPU support must permit sandbox startup.",
+          "sources": [
+            "https://support.getgrist.com/self-managed/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 CPUs known-good baseline",
+        "memory": "8GB known-good baseline",
+        "storage": "20GB known-good baseline",
+        "os": "Linux container; x86_64/ARM64",
+        "notes": "Moderate workload guidance, not absolute minimum. Single-document tests use less; resources scale with concurrently active documents.",
+        "sources": [
+          "https://support.getgrist.com/self-managed/"
+        ]
+      },
+      "notes": "Core server can run with embedded SQLite alone. Redis conditional for webhooks/notifications and PostgreSQL optional metadata alternative; no mandatory external database for basic core. Commercial automation/AI/MCP entitlements separate.",
+      "sources": [
+        "https://support.getgrist.com/self-managed/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "YunoHost Grist application",
+          "url": "https://apps.yunohost.org/app/grist",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official Grist pricing links maintained YunoHost app-store package; YunoHost host required. Packaging/support belongs to platform.",
+          "sources": [
+            "https://www.getgrist.com/pricing/"
+          ]
+        }
+      ],
+      "notes": "Options retain the official distinction between one-command installation and true provider one-click deployment.",
+      "sources": [
+        "https://support.getgrist.com/self-managed/"
+      ]
+    }
+  }
+}

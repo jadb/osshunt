@@ -1,0 +1,297 @@
+{
+  "id": "chatwoot",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Chatwoot Inc.",
+    "kind": "business",
+    "foundedYear": 2020,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Goat Capital",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Uncorrelated Ventures",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Y Combinator",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Serra Angels",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Hack VC",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Austen Allred",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Kurt Mackey",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      },
+      {
+        "name": "Mikhail Seregine",
+        "source": "https://chatwoot.help/hc/handbook/articles/investors-27"
+      }
+    ],
+    "notes": "Company founded2020 per investor profile; older project history is not company age. Official handbook names $1.6M seed backers; no separate corporate sponsor identified.",
+    "sources": [
+      "https://www.ycombinator.com/companies/chatwoot",
+      "https://chatwoot.help/hc/handbook/articles/investors-27"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Free OSS core; paid enterprise features and infrastructure separate.",
+      "sources": [
+        "https://www.chatwoot.com/pricing/self-hosted-plans"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Most popular cloud plan; self-host edition differs. Published $39/agent/month.",
+      "sources": [
+        "https://www.chatwoot.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Named Business cloud plan; teams and automation included. Self-host Premium Support separately lists $19/agent/month.",
+      "sources": [
+        "https://www.chatwoot.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Edition",
+      "status": "published",
+      "monthlyPrice": 99,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "paid self-host edition",
+      "notes": "Paid self-host license/services; published $99/agent/month; hardware extra.",
+      "sources": [
+        "https://www.chatwoot.com/pricing/self-hosted-plans"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Open core plus multichannel inbox ecosystem enables customization, while channel integrations and conversation history create moderate switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.ycombinator.com/companies/chatwoot"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Unified inbox combines website live chat, email and social messaging conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.ycombinator.com/companies/chatwoot"
+      ]
+    },
+    {
+      "claim": "Team assignment and automation rules coordinate conversation triage.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.chatwoot.com/pricing"
+      ]
+    },
+    {
+      "claim": "Help-center articles let customers find answers alongside conversational support.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.chatwoot.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Chatwoot",
+          "url": "https://www.ycombinator.com/companies/chatwoot",
+          "relationship": "business-steward",
+          "source": "https://www.ycombinator.com/companies/chatwoot"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://www.ycombinator.com/companies/chatwoot"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Ruby on Rails web application",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; provided by production image.",
+          "notes": "MRI Ruby 3.4.4 currently documented; pin release runtime.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; only supported SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; queue/cache.",
+          "notes": "Redis7+ recommended.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+          ]
+        },
+        {
+          "component": "Sidekiq workers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; background processing.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+          ]
+        },
+        {
+          "component": "SMTP service",
+          "necessity": "one-of",
+          "group": "mail-transport",
+          "condition": "Production email delivery.",
+          "notes": "External SMTP including SES or SendGrid.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/configuration/environment-variables"
+          ]
+        },
+        {
+          "component": "Postfix",
+          "necessity": "one-of",
+          "group": "mail-transport",
+          "condition": "Production email delivery when SMTP_ADDRESS is unset.",
+          "notes": "Local mail-server path; outbound port25 and DNS required.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/configuration/environment-variables"
+          ]
+        },
+        {
+          "component": "Nginx or reverse proxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Public production Docker deployment.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/docker"
+          ]
+        },
+        {
+          "component": "S3-compatible / Azure / GCS object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Replace local attachment storage when desired.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+          ]
+        },
+        {
+          "component": "Channel developer credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only for configured external social/messaging channels.",
+          "notes": "Provider setup and approvals depend on channel.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/configuration/environment-variables"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "4 cores recommended minimum",
+        "memory": "4GB minimum plus at least1GB swap",
+        "storage": "PostgreSQL5\u201310GB available; attachments depend on usage",
+        "os": "Linux; Ubuntu supported; requirements page still lists20.04",
+        "notes": "Requirements-page sizing supports up to10,000 conversations/day; DigitalOcean guide recommends4vCPU/8GB. Follow release-specific runtime pins.",
+        "sources": [
+          "https://developers.chatwoot.com/self-hosted/deployment/requirements",
+          "https://developers.chatwoot.com/self-hosted/deployment/digitalocean"
+        ]
+      },
+      "notes": "Production web+worker+PostgreSQL+Redis stack; native build needs Node24/pnpm10 for frontend assets. SMTP/local Postfix are mail alternatives; object storage optional.",
+      "sources": [
+        "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean Kubernetes marketplace",
+          "url": "https://developers.chatwoot.com/self-hosted/deployment/digitalocean",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Official docs link a 1-click Kubernetes marketplace app; droplet instructions themselves remain manual.",
+          "sources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/digitalocean"
+          ]
+        }
+      ],
+      "notes": "Official DigitalOcean guide explicitly links 1-click k8s marketplace. Docker Compose instructions are manual.",
+      "sources": [
+        "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+      ]
+    }
+  }
+}

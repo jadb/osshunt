@@ -62,6 +62,8 @@ Resources: CPU not specified; memory latest suggested 4GB; fat 6GB+; ultra-lite 
 
 Status: **offered**. Checked official deployment documentation; manual Docker Compose is not a one-click offer. [1](https://docs.stirlingpdf.com/Server/Install/Docker/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [TrueNAS Apps](https://apps.truenas.com/catalog/stirling-pdf/): **marketplace**, officially-linked-third-party. Official installation page links this distribution; not a hosted server deployment. [1](https://docs.stirlingpdf.com/Server/Install/Docker/)

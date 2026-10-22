@@ -1,0 +1,278 @@
+{
+  "id": "freescout",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "FreeScout project",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Small open-source project with commercial module sales; accountable legal company and precise project start not established from primary pages. Homepage says eight years. Funding search yielded no primary financing announcement; no inference of bootstrapping.",
+    "sources": [
+      "https://freescout.net/",
+      "https://freescout.net/modules/",
+      "https://github.com/freescout-help-desk/freescout"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "FreeScout core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Free self-hosted core. Paid modules sold separately as lifetime per-instance licenses.",
+      "sources": [
+        "https://freescout.net/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://freescout.net/modules/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "optional self-host modules",
+      "notes": "Module catalog rather than Team/Business subscription; individual optional modules differ in price.",
+      "sources": [
+        "https://freescout.net/modules/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "optional self-host modules",
+      "notes": "No named Enterprise edition in official module catalog; customized module combinations are not an enterprise tier.",
+      "sources": [
+        "https://freescout.net/modules/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Module ecosystem and email workflow familiarity offer moderate customization value; common shared-inbox functionality limits exclusive differentiation.",
+      "basis": "assessment",
+      "sources": [
+        "https://freescout.net/modules/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Email-native shared mailboxes provide collision detection, internal notes and conversation merging.",
+      "basis": "assessment",
+      "sources": [
+        "https://freescout.net/"
+      ]
+    },
+    {
+      "claim": "Modern OAuth connections to Microsoft365 and Google Workspace preserve existing mailbox workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://freescout.net/"
+      ]
+    },
+    {
+      "claim": "Optional workflow, SLA, customer-portal and reporting modules extend a compact shared-inbox workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://freescout.net/modules/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors.",
+      "sources": [
+        "https://github.com/freescout-help-desk/freescout"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP7.4\u20138.x",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; PHP application.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "MySQL5+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select one SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "MariaDB5+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select one SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select one SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "Nginx",
+          "necessity": "one-of",
+          "group": "webserver",
+          "condition": "Select one supported web server.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "Apache",
+          "necessity": "one-of",
+          "group": "webserver",
+          "condition": "Select one supported web server.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "IIS",
+          "necessity": "one-of",
+          "group": "webserver",
+          "condition": "Select one supported web server.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "component": "Cron and background queue worker",
+          "necessity": "required",
+          "group": null,
+          "condition": "Run schedule:run each minute; starts queue:work daemon.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide"
+          ]
+        },
+        {
+          "component": "SMTP and IMAP/POP3 mailboxes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Email support workflow and system email.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://freescout.net/"
+          ]
+        },
+        {
+          "component": "S3 object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative attachment storage.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "PHP-capable host; Linux/Windows web servers",
+        "notes": "README explicitly publishes no CPU/RAM minimum; storage and PHP memory must accommodate attachments.",
+        "sources": [
+          "https://github.com/freescout-help-desk/freescout",
+          "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide"
+        ]
+      },
+      "notes": "PHP web+SQL stack. Cron-managed queue daemon required; no separate Redis service required by documented default install. Optional social modules need provider credentials.",
+      "sources": [
+        "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Softaculous",
+          "url": "https://www.softaculous.com/apps/customersupport/FreeScout",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Control-panel installer officially linked; host must provide Softaculous.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        },
+        {
+          "name": "Cloudron",
+          "url": "https://www.cloudron.io/store/net.freescout.cloudronapp.html",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official README links Cloudron app listing.",
+          "sources": [
+            "https://github.com/freescout-help-desk/freescout"
+          ]
+        }
+      ],
+      "notes": "Official README Images & One-Click Installs links Softaculous and Cloudron; manual web installer separate.",
+      "sources": [
+        "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide"
+      ]
+    }
+  }
+}

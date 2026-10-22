@@ -1,0 +1,217 @@
+{
+  "id": "planka",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "PLANKA Software GmbH",
+    "kind": "business",
+    "foundedYear": 2024,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "HBE Capital GmbH",
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [
+      {
+        "name": "HBE Capital GmbH",
+        "source": "https://planka.app/about"
+      }
+    ],
+    "notes": "Company founded2024; Community project first commit2019. Official About identifies HBE Capital GmbH as shareholder and license revenue as development financing. Mixed indicates commercial revenue plus shareholder backing, not an asserted funding round.",
+    "sources": [
+      "https://planka.app/about",
+      "https://planka.app/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software license has no subscription charge; infrastructure and optional commercial offerings separate.",
+      "sources": [
+        "https://planka.app/about"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro Self-Hosted",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 86.4,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 1,
+      "scope": "paid self-host license",
+      "notes": "Explicit Most Popular.7.20EUR annual-billed monthly/user \u00d712; page default5-user total432EUR/year.7.90 monthly candidate appears but toggle ambiguity leaves monthlyPrice unknown.",
+      "sources": [
+        "https://planka.app/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro Self-Hosted",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 86.4,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 1,
+      "scope": "paid self-host license",
+      "notes": "Closest organizational plan.7.20 annual-billed monthly/user \u00d712; writing accounts are billable seats.",
+      "sources": [
+        "https://planka.app/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 1000,
+      "scope": "commercial self-hosted or hosted",
+      "notes": "Contact Sales; self-host from1000 users, hosted from500; custom licensing.",
+      "sources": [
+        "https://planka.app/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Real-time Kanban collaboration and stored board history offer modest workflow retention; professional controls sit in commercial editions.",
+      "basis": "assessment",
+      "sources": [
+        "https://planka.app/features"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Track due dates, card aging and time spent with an integrated stopwatch.",
+      "basis": "assessment",
+      "sources": [
+        "https://planka.app/features"
+      ]
+    },
+    {
+      "claim": "Collaborate on private boards with multiple project managers and live WebSocket updates.",
+      "basis": "assessment",
+      "sources": [
+        "https://planka.app/features"
+      ]
+    },
+    {
+      "claim": "Connect external workflows through personal API keys and event webhooks.",
+      "basis": "assessment",
+      "sources": [
+        "https://planka.app/features"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "PLANKA Software GmbH",
+          "url": "https://planka.app/",
+          "relationship": "business-steward",
+          "source": "https://planka.app/about"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://planka.app/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "PostgreSQL16 (default image)",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Persistent database and attachment volumes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "data and db-data volumes; external S3 optional.",
+          "sources": [
+            "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "S3-compatible object store",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Remote attachment storage selected",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications enabled",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "Hardware minima not specified in the reviewed installation instructions.",
+        "sources": [
+          "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+        ]
+      },
+      "notes": "Community default compose with PostgreSQL and local storage verified. Documentation deep link404; raw first-party compose used. Current Community uses Fair Use License, not verified OSI open source.",
+      "sources": [
+        "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://raw.githubusercontent.com/plankanban/planka/master/docker-compose.yml"
+      ]
+    }
+  }
+}

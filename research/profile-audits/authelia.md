@@ -2,7 +2,6 @@
 
 # authelia research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open About/prologue/architecture; guessed /overview/prologue/requirements failed. Followed configuration storage, session, first-factor and notifications sources.
 - Decision: exclude former Balto sponsor (shut down); keep current explicitly described in-kind sponsors. No company-founding assumption from copyright.

@@ -7,14 +7,19 @@ Audience: Employees claiming business expenses, approving managers and finance o
 Use-case sources: [1](https://frappe.io/hr/expense-management), [2](https://www.concur.com/products/concur-expense).
 
 - [Expensify](https://www.expensify.com/): USD 5/seat/month, monthly billing. Collect announced at $5/member/month without annual commitment or card requirement. Current pricing page extraction returned only application shell; corroborated by official pricing announcement and current support search. Legacy and Control pricing differs. [Pricing](https://use.expensify.com/blog/collect-plan-pricing-update).
+  [Pricing tiers, organization and product reasons](../products/expensify.md).
 - [SAP Concur](https://www.concur.com/products/concur-expense): USD 7/usage/month, monthly billing. US Concur Expense Base starts at $7 per report, unlimited users; price varies by monthly commitment. Plus starts $11/report; Premium custom. This amount is per report, not total monthly subscription. [Pricing](https://www.concur.com/products/concur-expense).
+  [Pricing tiers, organization and product reasons](../products/sap-concur.md).
 - [Spendesk](https://www.spendesk.com/): entry amount unverified/quote, quote billing. Quote required: fixed monthly platform subscription plus transaction fees including expense claims; unlimited users. No public entry amount. [Pricing](https://www.spendesk.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/spendesk.md).
 
 ### ERPNext — A
 
 Canonical GPL ERPNext remains Tier A with no feature paywalls, but is not a standalone recommendation for this category. HR modules moved to Frappe HR from version 14; current expense-claim documentation redirects to HR. ERPNext supplies the required connected foundation for Frappe HR expense settlement, not a second independent expense product. accounting-erp scope: Vendor explicitly confirms no product feature paywalls; self-hosted GPL product, commercial hosting/support.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/frappe/erpnext/blob/997a85da90e2bfc7f0d9b27455faae09c3148ac8/license.txt), [edition evidence](https://frappe.io/erpnext/pricing), [hosting](https://frappe.io/erpnext/pricing), [repository](https://github.com/frappe/erpnext).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/erpnext.md).
 
 Service costs/limits: Expense claim submission and approval require the separately installed Frappe HR app; use frappe-hr recommendation.
 
@@ -26,6 +31,8 @@ Repository: pushed 2026-10-21T21:24:59Z; latest commit 2026-10-21T21:24:06Z; lat
 GPLv3 core with no separate paid feature edition identified: official pricing charges hosting and implementation. Claims, receipts, conditional multi-level approvals, advances and reimbursement payment records documented. Separate Frappe HR app requires ERPNext; this is one combined deployment, not two independent expense choices. Pinned GPL license takes precedence over pricing page AGPL label. hr scope: Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified. recruiting scope: Published product is free open-source; pricing charges hosting and optional implementation, not a separate HR feature edition. Documentation covers payroll, onboarding, attendance, goals and appraisals. GPLv3 from pinned repository LICENSE takes precedence over conflicting AGPL label on pricing page. No paid product feature gate identified. Recruiting is the documented module within this same product, not a separate module edition or product ID. Applicant records, email intake, interviews and offers are documented; no module feature gate identified.
 
 License: GPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/frappe/hrms/blob/7fc314bdbdb69d0161bff1ba4dd46f4a7dffd8a2/license.txt), [edition evidence](https://frappe.io/hr/expense-management), [hosting](https://frappe.io/hr/pricing), [repository](https://github.com/frappe/hrms).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/frappe-hr.md).
 
 Service costs/limits: Self-operated deployment requires Frappe Framework and ERPNext; setup, email, backups and maintenance are operator responsibilities.; Payment Entry records settlement; bank payout rails, corporate cards, receipt OCR and travel booking parity with incumbents not verified.
 

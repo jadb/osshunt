@@ -2,7 +2,6 @@
 
 # cloudflare-access research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open Access; find $7 confirmed annual billing/free/contract scope. Read company story/About and 2015 investment announcement.
 - Decision: Cloudflare public parent itself, no separate Access stock or company founding year.

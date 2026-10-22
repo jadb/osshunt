@@ -9,7 +9,8 @@
     "ownership": "public",
     "parent": null,
     "stockSymbols": [
-      "NYSE:ASAN"
+      "NYSE:ASAN",
+      "LTSE:ASAN"
     ],
     "funding": "funded",
     "investors": [
@@ -42,7 +43,8 @@
     "sources": [
       "https://asana.com/company",
       "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471",
-      "https://investors.asana.com/static-files/e88261ce-714a-4fb8-82b0-8e357b3f98d9"
+      "https://investors.asana.com/static-files/e88261ce-714a-4fb8-82b0-8e357b3f98d9",
+      "https://investors.asana.com/node/12241/html"
     ]
   },
   "pricingTiers": [

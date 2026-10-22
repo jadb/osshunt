@@ -1,0 +1,274 @@
+{
+  "id": "nocodb",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "NocoDB, Inc.",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Decibel",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "OSS Capital",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Uncorrelated Ventures",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Together Fund",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Ram Shriram",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Matt Mullenweg",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Naval Ravikant",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Jeff Hammerbacher",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Spencer Kimball",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      },
+      {
+        "name": "Bob Young",
+        "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      }
+    ],
+    "notes": "October2022funding announcement says project launched a year before;2021used as product-launch basis, not incorporation year. Seed investors historical; current full ownership/cap table unverified. Current Community fair-code/Sustainable Use license distinguished from historic open-source marketing.",
+    "sources": [
+      "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m",
+      "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Free self-host fair-code scope; Sustainable Use restrictions apply, not OSI OSS.",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 30,
+      "annualPrice": 288,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Self-host card24perseat/month annually \u00d712; corresponding monthly card30. No seat minimum.",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Self-host comparison Contact/Talk to Sales; custom Enterprise/add-ons.",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Working directly with operational data and APIs can embed no-code workflows, though database portability limits proprietary retention.",
+      "basis": "assessment",
+      "sources": [
+        "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Build spreadsheet interfaces and forms over structured operational records.",
+      "basis": "assessment",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    },
+    {
+      "claim": "Trigger conditional webhooks with custom JSON payloads from record changes.",
+      "basis": "assessment",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    },
+    {
+      "claim": "Create lightweight process flows using two workflows per base and two interfaces per workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://nocodb.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "NocoDB, Inc.",
+          "url": "https://nocodb.com",
+          "relationship": "business-steward",
+          "source": "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://nocodb.com/blog/announcing-nocodb-seed-funding-of-10-5m"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine/Desktop and Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/quickstart"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Current maintained PostgreSQL releases12+ documented; current major recommended. Required for reviewed standard stack.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/custom-infrastructure"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Cache and background job queue; also required distributed coordination for replicas.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/quickstart"
+          ]
+        },
+        {
+          "component": "Separate NocoDB worker",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Imports,exports,automations; same NocoDB image.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/quickstart"
+          ]
+        },
+        {
+          "component": "Persistent PostgreSQL/Redis/application volumes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/quickstart"
+          ]
+        },
+        {
+          "component": "Reverse proxy/TLS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Internet-facing or custom-domain production deployment",
+          "notes": "Traefik samples; own nginx/Caddy/load balancer supported.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/custom-infrastructure"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "Hardware minima not specified in the reviewed installation instructions.",
+        "sources": [
+          "https://nocodb.com/docs/self-hosting/installation/quickstart"
+        ]
+      },
+      "notes": "Current installation docs reviewed3Oct2026standardize PostgreSQL+Redis+worker stack. Historic SQLite/MySQL metadata paths not asserted as current production alternatives. Product external database connections are distinct from metadata backend and may be plan-gated.",
+      "sources": [
+        "https://nocodb.com/docs/self-hosting/installation/quickstart"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "NocoDB quickstart installer",
+          "url": "https://nocodb.com/docs/self-hosting/installation/quickstart",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "curl installer makes and starts Compose app/worker/PostgreSQL/Redis stack for local evaluation; Docker prerequisite. Production single-server wizard separately documented.",
+          "sources": [
+            "https://nocodb.com/docs/self-hosting/installation/quickstart"
+          ]
+        }
+      ],
+      "notes": "Options retain the official distinction between one-command installation and true provider one-click deployment.",
+      "sources": [
+        "https://nocodb.com/docs/self-hosting/installation/quickstart"
+      ]
+    }
+  }
+}

@@ -15,6 +15,8 @@ OSE code MIT; root license explicitly excludes premium/enterprise directories un
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/baserow/baserow/blob/985f1a26fbabad74860e67a6fd07bb7f55074499/LICENSE), [edition evidence](https://baserow.io/user-docs/pricing-plans), [hosting](https://baserow.io/pricing), [repository](https://github.com/baserow/baserow).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/baserow.md).
+
 Paid restrictions: Kanban, calendar, timeline and survey views; Row comments and coloring; JSON, XML and Excel table export; Granular permissions, SSO and audit logging
 
 Repository: pushed 2026-10-21T19:54:28Z; latest commit 2026-10-21T16:04:54Z; latest published release 2.4.1 (2026-10-13T15:39:27Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -26,6 +28,8 @@ Repository: pushed 2026-10-21T19:54:28Z; latest commit 2026-10-21T16:04:54Z; lat
 Apache-2.0 community core. Current self-hosted pricing reserves both everyday automation/notifications and governance capabilities for commercial activation; qualifying smaller organizations may request a free activation key, which does not make those features OSS.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/gristlabs/grist-core/blob/f68125e21c46ada0ea77656c926c05111762a78c/LICENSE.txt), [edition evidence](https://www.getgrist.com/pricing/), [hosting](https://www.getgrist.com/pricing/), [repository](https://github.com/gristlabs/grist-core).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/grist.md).
 
 Paid restrictions: Automations; Email notifications; MCP server and current AI Assistant; Advanced administration, audit streaming and multiple team sites
 
@@ -39,6 +43,8 @@ Pinned root license updated January 29, 2026 puts master/develop under Sustainab
 
 License: LicenseRef-Sustainable-Use-1.0; identified core OSI: no/unresolved; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/nocodb/nocodb/blob/55bc42cb80e83bb2fa3f3bbb0949ffb074086541/LICENSE.md), [edition evidence](https://nocodb.com/pricing), [hosting](https://nocodb.com/pricing), [repository](https://github.com/nocodb/nocodb).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/nocodb.md).
+
 Paid restrictions: Community limited to 2 workflows per base and 2 interfaces per workspace; Unlimited interfaces/workflows, scripts and dashboards require Business; Fine-grained permissions and SSO paid
 
 Repository: pushed 2026-10-21T19:19:21Z; latest commit 2026-10-21T11:30:54Z; latest published release 2026.09.1 (2026-09-29T14:39:07Z). Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -49,6 +55,8 @@ Repository: pushed 2026-10-21T19:19:21Z; latest commit 2026-10-21T11:30:54Z; lat
 Root declares AGPL-3.0 core apps plus MIT utility packages, then adds a blanket prohibition on modifying, replacing or removing brand assets. Conservatively withheld from verified OSI recommendations because this is not unmodified AGPL; permissibility of those additional terms needs specialist review. Independently, commercial AI is absent from Community.
 
 License: LicenseRef-Teable-AGPL-Brand-Restrictions; identified core OSI: no/unresolved; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/teableio/teable/blob/80b68bb664ec5f68596d1e03ca118ab0d04f0552/LICENSE), [edition evidence](https://community.teable.ai/t/teable-future-updates/164), [hosting](https://teable.ai/pricing), [repository](https://github.com/teableio/teable).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/teable.md).
 
 Paid restrictions: Advanced AI features in commercial edition; Paid self-hosted features require activation key; full current CE comparison not verified
 

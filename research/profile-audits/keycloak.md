@@ -2,7 +2,6 @@
 
 # keycloak research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open homepage, containers, supported database matrix, community and CNCF project pages. Queries Keycloak sponsored Red Hat and 2014. Guessed /maintainers and /blog/2023/04/cncf failed; CNCF page resolved governance/start.
 - Decision: Red Hat derived commercial build not conflated with community product or assumed financial sponsorship.

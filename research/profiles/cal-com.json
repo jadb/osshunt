@@ -1,0 +1,145 @@
+{
+  "id": "cal-com",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Cal.com, Inc.",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Seven Seven Six",
+        "source": "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf"
+      },
+      {
+        "name": "Obvious Ventures",
+        "source": "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf"
+      },
+      {
+        "name": "OSS Capital",
+        "source": "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf"
+      },
+      {
+        "name": "Jack Altman",
+        "source": "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf"
+      },
+      {
+        "name": "Tobi L\u00fctke",
+        "source": "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf"
+      },
+      {
+        "name": "Anthony Pompliano",
+        "source": "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf"
+      }
+    ],
+    "notes": "Company founded2021 as Calendso.2022 SeriesA$25M after$7.4M seed; named backers historical.2026 company release distinguishes closed commercial Cal.com from MIT Cal.diy community spinout.",
+    "sources": [
+      "https://cal.com/about",
+      "https://cal.com/blog/cal-v-1-5/cal-com-series-a-press-release.pdf",
+      "https://www.prnewswire.com/news-releases/open-source-is-collapsing-under-ai-powered-threats--calcom-302742216.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Teams",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 144,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Lowest paid app plan; free Individuals separate. Annual-billed$12/user/month multiplied by12.",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Organizations",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 336,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest explicitly organizational plan; annual-billed$28/user/month multiplied by12.",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Custom annual pricing; Talk to sales.",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Scheduling app ecosystem, API/Atoms embedding and accumulated routing/availability configuration create integration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Weighted round-robin pools and collective events coordinate shared team availability.",
+      "basis": "assessment",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    },
+    {
+      "claim": "Routing forms and custom-variable routing match booking requests to the right team.",
+      "basis": "assessment",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    },
+    {
+      "claim": "Calendar connections, recurring events and booking buffers support complex availability rules.",
+      "basis": "assessment",
+      "sources": [
+        "https://cal.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

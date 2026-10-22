@@ -1,0 +1,245 @@
+{
+  "id": "drupal",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Drupal project; Drupal Association supporting nonprofit",
+    "kind": "community",
+    "foundedYear": 2001,
+    "ageBasis": "project-started",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "2001 dates public release of Drupal; supporting Drupal Association was founded in 2008. Association supports infrastructure and community rather than selling or owning an exclusive software license. Memberships, grants and sponsors are not equity investors.",
+    "sources": [
+      "https://www.drupal.org/about/history",
+      "https://www.drupal.org/association/faq"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Project core has no paid plan cards or popular designation.",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "Drupal core has no paid Business license; ecosystem services are separate.",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "Drupal core remains free; no paid Enterprise code tier identified.",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Longstanding community expertise and a large module/agency ecosystem create defensibility through specialized implementation knowledge.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Structured content and modular fields suit complex content models and reusable editorial data.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    },
+    {
+      "claim": "Drupal 11 workflows and content governance support organizations with controlled publishing processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    },
+    {
+      "claim": "Modules, distributions and integration points support building an application around a content platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drupal.org/about"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Acquia",
+          "url": "https://www.acquia.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding"
+        }
+      ],
+      "notes": "June 2026 Drupal Association announcement says Acquia funds a 2% contribution from eligible partner transactions out of its own margin.",
+      "sources": [
+        "https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP 8.3 or 8.4",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Drupal 11 production scope; version compatibility table governs.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements/php-requirements"
+          ]
+        },
+        {
+          "component": "MariaDB 10.6+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements/database-server-requirements"
+          ]
+        },
+        {
+          "component": "MySQL 8.0+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements/database-server-requirements"
+          ]
+        },
+        {
+          "component": "PostgreSQL 16+ with pg_trgm",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements/database-server-requirements"
+          ]
+        },
+        {
+          "component": "SQLite 3.45+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements/database-server-requirements"
+          ]
+        },
+        {
+          "component": "Apache or Nginx compatible web server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements"
+          ]
+        },
+        {
+          "component": "Composer",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Installation/update dependency tooling, not a separate always-on service.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements"
+          ]
+        },
+        {
+          "component": "Solr and Memcache",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Only for modules/configurations using them",
+          "notes": "Not core baseline dependencies.",
+          "sources": [
+            "https://www.drupal.org/docs/getting-started/system-requirements/memory-requirements"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "1 GB minimum system RAM",
+        "storage": null,
+        "os": "Linux or similar; Windows development only",
+        "notes": "Memory guide lists 1 GB system minimum, PHP 64 MB minimum and typical production PHP 128–256 MB; workload changes needs.",
+        "sources": [
+          "https://www.drupal.org/docs/getting-started/system-requirements",
+          "https://www.drupal.org/docs/getting-started/system-requirements/memory-requirements"
+        ]
+      },
+      "notes": "Drupal 11 scope; no mandatory Redis/queue/object-store baseline. Contributed modules can impose database-specific or external-service requirements.",
+      "sources": [
+        "https://www.drupal.org/docs/getting-started/system-requirements",
+        "https://www.drupal.org/docs/getting-started/system-requirements/memory-requirements"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official guide mentions provider one-click flows, but current try-hosting page advertises an Acquia trial rather than an identifiable one-click self-host template. Manual installer is not one-click.",
+      "sources": [
+        "https://www.drupal.org/docs/user_guide/en/install-run.html",
+        "https://new.drupal.org/try-hosting"
+      ]
+    }
+  }
+}

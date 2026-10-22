@@ -7,13 +7,17 @@ Audience: Education providers, trainers and learning and development teams.. Spe
 Use-case sources: [1](https://docs.moodle.org/503/en/Features), [2](https://openedx.org/get-started/), [3](https://www.docebo.com/pricing/).
 
 - [Docebo](https://www.docebo.com): entry amount unverified/quote, quote billing. Custom pricing tailored to organization; no public entry amount. [Pricing](https://www.docebo.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/docebo.md).
 - [TalentLMS](https://www.talentlms.com): USD 119/account/month, annual billing. Core, 1–40 users, USD119/month billed yearly. Free plan available; paid entry shown. User brackets and add-ons change price. [Pricing](https://www.talentlms.com/prices).
+  [Pricing tiers, organization and product reasons](../products/talentlms.md).
 
 ### Open edX — A
 
 Self-managed LMS and Studio authoring available without license fees; no first-party paid software edition gate found. AGPLv3 applies unless individual files state otherwise; surrounding projects have their own licenses. Provider-specific commercial additions are outside this record.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/openedx/openedx-platform/blob/c4e066770a014e3fc1256ed9291a19aed69a9f98/LICENSE), [edition evidence](https://openedx.org/platform/features/), [hosting](https://openedx.org/get-started/), [repository](https://github.com/openedx/openedx-platform).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/open-edx.md).
 
 Service costs/limits: Self-hosting requires infrastructure, updates and technical administration.; Project-listed providers sell hosting and support; these are third-party offers. edX.org is a separate commercial course destination, not first-party hosting for your LMS.
 
@@ -27,6 +31,8 @@ Repository: pushed 2026-10-21T19:28:24Z; latest commit 2026-10-21T17:36:26Z; lat
 Free self-hosted LMS core; B reflects proprietary Workplace corporate administration extensions built on that core. MoodleCloud subscription and partner support are services, not core license gates. This record identifies Moodle LMS, not Workplace or the separate Open LMS vendor.
 
 License: GPL-3.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/moodle/moodle/blob/46c042e7da65f8cb2ec7dc19f46566ce61a393e1/COPYING.txt), [edition evidence](https://docs.moodle.org/503/en/Features), [hosting](https://support.moodle.com/support/solutions/articles/80001075420), [repository](https://github.com/moodle/moodle).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/moodle.md).
 
 Paid restrictions: Moodle Workplace multi-tenancy, recurring program certifications, dynamic rules and organizational hierarchies are commercial extensions, absent from the base Moodle LMS distribution.
 

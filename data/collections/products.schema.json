@@ -633,6 +633,9 @@
                               "not-applicable"
                             ]
                           },
+                          "hasVerifiedOneClick": {
+                            "type": "boolean"
+                          },
                           "options": {
                             "type": "array",
                             "items": {
@@ -1455,6 +1458,9 @@
                               "not-applicable"
                             ]
                           },
+                          "hasVerifiedOneClick": {
+                            "type": "boolean"
+                          },
                           "options": {
                             "type": "array",
                             "items": {
@@ -1760,6 +1766,6 @@
     "description": "Paid incumbents and community or source-available alternatives; kind oss includes explicitly labelled S/U candidates",
     "x-key": "id",
     "x-key-case": "insensitive",
-    "x-source": "research/categories/*.json"
+    "x-source": "research/categories/*.json + research/profiles/*.json"
   }
 }

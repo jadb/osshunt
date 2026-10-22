@@ -54,6 +54,8 @@ Resources: CPU SD 1×2GHz; HD 4 cores; 4K 8 cores; memory SD 4GB; HD 8GB; 4K 16G
 
 Status: **offered**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://shotcut.org/FAQ/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Snap install command](https://shotcut.org/download/): **one-command**, first-party. Official snap install shotcut --classic command; desktop installation with local runtime requirements, not hosted deployment. [1](https://shotcut.org/download/)

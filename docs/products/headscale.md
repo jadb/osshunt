@@ -58,6 +58,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Mo
 
 Status: **none-found**. Checked official installation documentation; manual installation/Compose alone is not a one-click offering. [1](https://headscale.net/stable/setup/requirements/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

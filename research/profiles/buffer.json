@@ -1,0 +1,129 @@
+{
+  "id": "buffer",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Buffer, Inc.",
+    "kind": "business",
+    "foundedYear": 2010,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [
+      {
+        "name": "AngelPad",
+        "source": "https://buffer.com/resources/buying-out-investors/"
+      },
+      {
+        "name": "Collaborative Fund",
+        "source": "https://collabfund.com/blog/with-noses-pressed-against-the-glass/"
+      }
+    ],
+    "notes": "Started2010 bootstrapped, raised seed and$3.5MSeriesA, then repurchased main SeriesA investors in2018. Historical investors listed, not current cap-table assertions; buyback was partial, not proof all investors exited.",
+    "sources": [
+      "https://buffer.com/about",
+      "https://buffer.com/resources/buying-out-investors/",
+      "https://collabfund.com/blog/with-noses-pressed-against-the-glass/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "channel",
+      "minimumQuantity": 1,
+      "scope": "paid product",
+      "notes": "One channel: explicit$60 billed yearly. Free3-channel limited plan separate; per-channel scaling and volume discounts.",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "channel",
+      "minimumQuantity": 1,
+      "scope": "paid product",
+      "notes": "Explicit Recommended label; one-channel$60/year.",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "channel",
+      "minimumQuantity": 1,
+      "scope": "paid product",
+      "notes": "One channel$120 billed yearly; unlimited team members, approval/access controls. Price scales by channels.",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "channel",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Published catalog has Free, Essentials and Team; no separately named Enterprise plan.",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Cross-network publishing integrations, reusable content and historical channel analytics create moderate workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Ideas library, drafts and queues carry social content from planning to scheduled publication.",
+      "basis": "assessment",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    },
+    {
+      "claim": "Content approvals and channel-specific permissions coordinate multi-person publishing.",
+      "basis": "assessment",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    },
+    {
+      "claim": "Community inbox and analytics bring engagement responses and performance feedback into the publishing workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://buffer.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -2,7 +2,6 @@
 
 # seafile research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open About/on-premise/current CE Docker. Find CPU/Redis/MySQL. Older private_server and guessed professional URLs failed; shop.seafile.com/en/pricing returned502.
 - Decision: 2012 entity/product history verified; funding/paid amounts unresolved; Pro features not claimed for CE.

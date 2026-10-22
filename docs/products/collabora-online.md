@@ -59,6 +59,8 @@ Resources: CPU Vendor sizing expectation: about10 users per CPU thread; memory A
 
 Status: **offered**. First-party Collabora-authored built-in CODE Server can be installed through existing Nextcloud App Store. This is an app marketplace integration, not independent turnkey cloud deployment. Manual Docker instructions alone not counted. [1](https://apps.nextcloud.com/apps/richdocumentscode) [2](https://collabora-online-for-nextcloud.readthedocs.io/en/stable/install/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Nextcloud built-in CODE Server](https://apps.nextcloud.com/apps/richdocumentscode): **marketplace**, first-party. Collabora Productivity authored app for existing Nextcloud. Needs Nextcloud Office integration and platform requirements; app edition has different operational characteristics from standalone Docker. [1](https://apps.nextcloud.com/apps/richdocumentscode)

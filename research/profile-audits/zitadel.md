@@ -2,7 +2,6 @@
 
 # zitadel research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing/deployment/About; searched official funding Nexus; read annual review, founding story and careers page. Guessed /blog/zitadel-series-a failed; annual review confirmed investors.
 - Decision: $100 Pro is cloud scope; core entry free; no production hardware guess.

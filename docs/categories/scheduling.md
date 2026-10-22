@@ -7,6 +7,7 @@ Audience: Sales, recruiting, customer-facing teams and service businesses.. Cros
 Use-case sources: [1](https://calendly.com/pricing), [2](https://easyappointments.org/).
 
 - [Cal.com](https://cal.com): USD 12/seat/month, annual billing. Teams $12/user/month billed annually; individual free plan exists. Distinct commercial application from Cal.diy. [Pricing](https://cal.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/cal-com.md).
 - [Calendly](https://calendly.com): USD 10/seat/month, annual billing. Standard $10/seat/month billed annually; free plan exists. [Pricing](https://calendly.com/pricing).
 
 ### Easy!Appointments — A
@@ -25,6 +26,8 @@ Repository: pushed 2026-10-19T12:47:00Z; latest commit 2026-10-19T08:29:46Z; lat
 Former calcom/cal.com repository is now MIT Cal.diy, with commercial code removed. Classified C relative to Cal.com because routine team workflows are missing. Vendor recommends personal/non-production use; this recommendation does not override MIT commercial permission.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/calcom/cal.diy/blob/0f19cc46ef6b6426ee398c670575b3c96be7af9e/LICENSE), [edition evidence](https://www.cal.diy/), [hosting](https://github.com/calcom/cal.diy), [repository](https://github.com/calcom/cal.diy).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/cal-diy.md).
 
 Paid restrictions: Cal.com-only: teams and round-robin/collective scheduling; Cal.com-only: managed events, workflows and routing forms; Cal.com-only: insights, organizations, SAML/SCIM and admin panel
 

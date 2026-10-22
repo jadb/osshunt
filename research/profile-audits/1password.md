@@ -2,7 +2,6 @@
 
 # 1password research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open: personal/business/enterprise pricing, company and legal statement; searched official funding and founding sources.
 - Decision: use regular renewal annual price, disclose first-year promotion; no invented monthly billing figure.

@@ -2,7 +2,6 @@
 
 # borgbackup research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open homepage, fund page, stable 1.4.5 installation/general docs. Find Windows and Resource Usage. Query sponsor returned donations page.
 - Decision: business fallback Waldmann EDV supported by explicit maintainer-company relationship; donors/fiscal host not investors.

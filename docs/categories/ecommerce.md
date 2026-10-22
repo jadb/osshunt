@@ -7,7 +7,9 @@ Audience: Online merchants and the developers or agencies building their stores.
 Use-case sources: [1](https://www.shopify.com/about), [2](https://prestashop.com/open-source/).
 
 - [BigCommerce](https://www.bigcommerce.com): USD 29/account/month, annual billing. Core: USD 29/month billed annually; up to USD 30K trailing-twelve-month GMV then automatic Growth upgrade. Payment charges may apply. [Pricing](https://www.bigcommerce.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/bigcommerce.md).
 - [Shopify](https://www.shopify.com): USD 29/account/month, annual billing. Basic storefront plan: USD 29/month billed yearly; promotional trial excluded. Payment processing and apps may add costs. [Pricing](https://www.shopify.com/about).
+  [Pricing tiers, organization and product reasons](../products/shopify.md).
 
 ### PrestaShop — A
 

@@ -2,7 +2,6 @@
 
 # backblaze-business-backup research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing/business/About/investor overview; find 99 resolved annual cards. Queries official 2012 funding and company five-year retrospective.
 - Decision: $99 per protected computer, not employee seat or B2 GB.

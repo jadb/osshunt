@@ -1,0 +1,248 @@
+{
+  "id": "plane",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Plane",
+    "kind": "business",
+    "foundedYear": 2022,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "OSS Capital",
+        "source": "https://plane.so/blog/plane-raises-4m-seed"
+      }
+    ],
+    "notes": "Official November 2023 seed announcement says founded November 2022; sole investor in that round OSS Capital. Private startup; current full cap table not disclosed. Community Edition distinct from commercial Free plan.",
+    "sources": [
+      "https://plane.so/blog/plane-raises-4m-seed",
+      "https://plane.so/blog/plane-raises-4m-seed"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software license has no subscription charge; infrastructure and optional commercial offerings separate.",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Advertised13/seat/month with13% saving; cloud/self-host and selected billing state not independently disambiguated, so normalized monthly and annual amounts unknown.",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Grid",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Quote on request.",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Linked work items, cycles and project pages accumulate workflow context that can increase switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Group work into timeboxed cycles and logical modules.",
+      "basis": "assessment",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    },
+    {
+      "claim": "Choose among five layouts and custom saved views for work items.",
+      "basis": "assessment",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    },
+    {
+      "claim": "Keep project documentation alongside work items through Project Pages.",
+      "basis": "assessment",
+      "sources": [
+        "https://plane.so/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Plane",
+          "url": "https://plane.so",
+          "relationship": "business-steward",
+          "source": "https://plane.so/blog/plane-raises-4m-seed"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://plane.so/blog/plane-raises-4m-seed"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://developers.plane.so/self-hosting/methods/docker-compose"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Community compose default PostgreSQL15.7 image; externally supplied PostgreSQL supported.",
+          "sources": [
+            "https://raw.githubusercontent.com/makeplane/plane/master/deployments/cli/community/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Valkey or Redis-compatible service",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Community compose service plane-redis uses Valkey7.2.11; docs also permit external Redis.",
+          "sources": [
+            "https://raw.githubusercontent.com/makeplane/plane/master/deployments/cli/community/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "RabbitMQ",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Worker/API AMQP queue; default image3.13.6.",
+          "sources": [
+            "https://raw.githubusercontent.com/makeplane/plane/master/deployments/cli/community/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "S3-compatible storage (MinIO default)",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Bundled MinIO can be replaced by external S3-compatible storage.",
+          "sources": [
+            "https://raw.githubusercontent.com/makeplane/plane/master/deployments/cli/community/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "API, frontend, live, worker, beat-worker and proxy services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/makeplane/plane/master/deployments/cli/community/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email invitations/notifications enabled",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://developers.plane.so/self-hosting/overview"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "OS with bash; Linux, macOS; Windows Git Bash/Docker",
+        "notes": "Community route suggests minimum EC2 t3.medium/t3a.medium without a separate cross-platform numeric minimum. Commercial route separately lists2 cores/4GB,8GB production; not silently applied to CE.",
+        "sources": [
+          "https://developers.plane.so/self-hosting/methods/docker-compose"
+        ]
+      },
+      "notes": "Community Edition manual setup.sh/Compose path verified separately from default commercial installer. Commercial Coolify guide is manual Compose import, not one-click. RabbitMQ and Valkey are part of CE stack.",
+      "sources": [
+        "https://developers.plane.so/self-hosting/methods/docker-compose"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Prime CLI installer (Commercial Edition)",
+          "url": "https://developers.plane.so/self-hosting/methods/docker-compose",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "curl installer starts commercial Free plan, not Community Edition; interactive prompts remain.",
+          "sources": [
+            "https://developers.plane.so/self-hosting/methods/docker-compose"
+          ]
+        }
+      ],
+      "notes": "Options retain the official distinction between one-command installation and true provider one-click deployment.",
+      "sources": [
+        "https://developers.plane.so/self-hosting/methods/docker-compose"
+      ]
+    }
+  }
+}

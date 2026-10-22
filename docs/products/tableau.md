@@ -12,9 +12,9 @@ Parent: Salesforce, Inc. (NYSE: CRM).
 
 Listed symbols: NYSE:CRM.
 
-Tableau company founded 2003; acquired by Salesforce in 2019. Funding status reflects public-parent ownership; historical Tableau equity investors not resolved from the official history and acquisition sources inspected. Salesforce is acquirer, not labelled venture investor. [1](https://www.tableau.com/why-tableau/what-is-tableau) [2](https://www.salesforce.com/news/stories/salesforce-acquisitions/) [3](https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm)
+Tableau company founded 2003; acquired by Salesforce in 2019. Funding status reflects public-parent ownership; historical Tableau equity investors not resolved from the official history and acquisition sources inspected. Salesforce is acquirer, not labelled venture investor. April2013 prospectus names NEA and Meritech funds as purchasers of shares and significant holders. Historical Tableau investors, distinct from present Salesforce parent. [1](https://www.tableau.com/why-tableau/what-is-tableau) [2](https://www.salesforce.com/news/stories/salesforce-acquisitions/) [3](https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm) [4](https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [New Enterprise Associates (historical)](https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm), [Meritech Capital Partners (historical)](https://www.sec.gov/Archives/edgar/data/1303652/000119312513138700/d469057ds1.htm).
 
 ## Starting prices
 

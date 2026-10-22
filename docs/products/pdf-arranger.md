@@ -53,6 +53,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Li
 
 Status: **offered**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://raw.githubusercontent.com/pdfarranger/pdfarranger/main/README.md)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Flathub](https://flathub.org/apps/com.github.jeromerobert.pdfarranger): **marketplace**, officially-linked-third-party. Official installation page links this distribution; not a hosted server deployment. [1](https://raw.githubusercontent.com/pdfarranger/pdfarranger/main/README.md)

@@ -1,0 +1,282 @@
+{
+  "id": "twenty",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Twenty",
+    "kind": "business",
+    "foundedYear": 2023,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Runa Capital",
+        "source": "https://runacap.com/companies/twenty/"
+      },
+      {
+        "name": "Y Combinator",
+        "source": "https://runacap.com/companies/twenty/"
+      }
+    ],
+    "notes": "CRM company identified by twenty.com and founders Felix Malfait, Charles Bochet and Thomas Colas des Francs; unrelated cyberwarfare company Twenty excluded. Runa portfolio confirms2024 $5M round with YC participation.",
+    "sources": [
+      "https://www.ycombinator.com/companies/twenty",
+      "https://runacap.com/companies/twenty/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source self-hosted core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "AGPL core; commercial enterprise files/features excluded. Infrastructure separate.",
+      "sources": [
+        "https://github.com/twentyhq/twenty"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Organization",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Named organizational cloud tier displays $19/user/month alongside monthly/yearly toggle; exact active billing period unresolved from extract.",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 50000,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Published starting annual contract $50,000/year; customized final price via sales.",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Extensible data model and custom-app ecosystem can accumulate business-specific workflow switching costs; AGPL permits competing implementations.",
+      "basis": "assessment",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Custom objects, fields and layouts model customer relationships beyond standard contacts and deals.",
+      "basis": "assessment",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    },
+    {
+      "claim": "Table, Kanban and Calendar views let teams navigate the same CRM records in different workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    },
+    {
+      "claim": "REST/GraphQL APIs, webhooks and TypeScript custom apps connect CRM data with business systems.",
+      "basis": "assessment",
+      "sources": [
+        "https://twenty.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Twenty",
+          "url": "https://www.ycombinator.com/companies/twenty",
+          "relationship": "business-steward",
+          "source": "https://www.ycombinator.com/companies/twenty"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://www.ycombinator.com/companies/twenty"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Documented production container path.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx"
+          ]
+        },
+        {
+          "component": "Node application server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; included twentycrm/twenty image.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Background worker",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; worker:prod container.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; PG_DATABASE_URL.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; REDIS_URL and dependency.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Local persistent volume",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Default attachment/data storage.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Set STORAGE_TYPE for external storage instead of local volume.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Outbound email notifications; configure EMAIL_DRIVER/SMTP values.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Google/Microsoft OAuth app",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only email/calendar sync or corresponding external login.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Reverse proxy with TLS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Strongly recommended for public domain; HTTPS needed for browser features.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "2GB minimum",
+        "storage": null,
+        "os": "Docker-capable host",
+        "notes": "Official System Requirements publishes2GB RAM; no numerical CPU/storage minimum verified.",
+        "sources": [
+          "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx"
+        ]
+      },
+      "notes": "Current official container recipe; web and worker share Postgres/Redis/storage configuration. Separate external AI/provider credentials needed only for chosen AI integrations; no invented extra queue broker.",
+      "sources": [
+        "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Twenty one-line installer",
+          "url": "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official bash installer fetches stable release Compose/environment; terminal command, not click deployment.",
+          "sources": [
+            "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx"
+          ]
+        }
+      ],
+      "notes": "Official Docker Compose guide Option1 provides a one-line bash installer; Option2 Compose instructions alone remain manual.",
+      "sources": [
+        "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-docs/developers/self-host/capabilities/docker-compose.mdx"
+      ]
+    }
+  }
+}

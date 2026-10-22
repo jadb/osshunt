@@ -1,0 +1,128 @@
+{
+  "id": "zendesk",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Zendesk, Inc.",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Investor group led by Hellman & Friedman and Permira",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Hellman & Friedman",
+        "source": "https://www.zendesk.com/newsroom/press-releases/consortium-led-by-hellman-friedman-and-permira-completes-acquisition-of-zendesk//"
+      },
+      {
+        "name": "Permira",
+        "source": "https://www.zendesk.com/newsroom/press-releases/consortium-led-by-hellman-friedman-and-permira-completes-acquisition-of-zendesk//"
+      }
+    ],
+    "notes": "Investor-group acquisition completed November22,2022; delisted former NYSE:ZEN. Hellman & Friedman and Permira are equity owners from acquisition, not merely lenders.",
+    "sources": [
+      "https://www.zendesk.com/newsroom/press-releases/consortium-led-by-hellman-friedman-and-permira-completes-acquisition-of-zendesk//",
+      "https://www.zendesk.com/company/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Support Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 228,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Lowest paid support-only plan; $19/agent/month paid yearly multiplied by12. Omnichannel Suite is separate.",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Suite Professional",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1380,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Explicit Most Popular card; $115/agent/month paid yearly multiplied by12.",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Suite Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 660,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Named Team tier; omnichannel scope exceeds Support Team. $55/agent/month paid yearly multiplied by12.",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Suite Enterprise + Copilot",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "agent",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Enterprise card directs Talk to Sales; no numerical price.",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad ticketing, knowledge, voice and workflow ecosystem creates process and integration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Omnichannel routing assigns tickets using agent capacity, skills and ticket priority.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Action Builder connects multi-step resolution flows to third-party systems.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Knowledge base and reporting bring self-service answers and operational trends into the support workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.zendesk.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -1,0 +1,143 @@
+{
+  "id": "intercom",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Fin (formerly Intercom)",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Salesforce, Inc. (NYSE:CRM)",
+    "stockSymbols": [
+      "NYSE:CRM"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Social Capital",
+        "source": "https://www.intercom.com/blog/intercom-turns-10"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.intercom.com/blog/intercom-turns-10"
+      },
+      {
+        "name": "ICONIQ",
+        "source": "https://www.intercom.com/blog/intercom-turns-10"
+      },
+      {
+        "name": "Kleiner Perkins",
+        "source": "https://www.intercom.com/blog/intercom-turns-10"
+      },
+      {
+        "name": "GV",
+        "source": "https://www.intercom.com/blog/intercom-turns-10"
+      }
+    ],
+    "notes": "Founded as Intercom; renamed Fin in 2026. Salesforce completed acquisition September10,2026. Venture investors are historical; acquirer is parent, not conflated with venture funding.",
+    "sources": [
+      "https://fin.ai/about",
+      "https://www.intercom.com/blog/intercom-turns-10",
+      "https://www.salesforce.com/in/news/press-releases/2026/09/12/salesforce-completes-acquisition-of-fin/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Essential",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 348,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Annual-billed $29/seat/month multiplied by12. Fin from $0.99/outcome extra; channel usage additional. Monthly-billed amount not verified.",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Advanced",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1020,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest growing-team plan. Annual-billed $85/seat/month multiplied by12, plus Fin outcomes and channel usage.",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Expert",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 1584,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest large-team security/multibrand plan; no separately named Enterprise price. Annual-billed $132/seat/month multiplied by12; usage extra.",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Messenger, knowledge content, workflow automation and Fin form a connected support system with accumulated configuration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Fin answers across customer channels and hands complex cases to the same shared inbox.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    },
+    {
+      "claim": "Visual workflows and round-robin assignment coordinate multiple support inboxes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    },
+    {
+      "claim": "Private multilingual help centers and multibrand Messenger support segmented customer experiences.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.intercom.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -1,0 +1,314 @@
+{
+  "id": "open-edx",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Axim Collaborative / Open edX project",
+    "kind": "foundation",
+    "foundedYear": 2012,
+    "ageBasis": "project-started",
+    "ownership": "nonprofit",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Axim is nonprofit steward founded by Harvard and MIT and successor to nonprofit edX. Year follows official project story2012 platform launch; source-code Open edX name/release is later than original edX course launch. Sale of commercial edX business did not transfer nonprofit stewardship. Grants/endowment/conference sponsorship are not equity investors.",
+    "sources": [
+      "https://openedx.org/about/",
+      "https://www.axim.org/about",
+      "https://openedx.org/blog/introducing-axim-collaborative-new-ceo/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open edX self-managed",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted Open edX software",
+      "notes": "No software-license fee; operation, infrastructure and provider services separate.",
+      "sources": [
+        "https://openedx.org/get-started/self-managed/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://openedx.org/get-started/self-managed/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No first-party paid Business software tier. Independent providers sell hosting/customization; not substituted for project pricing.",
+      "sources": [
+        "https://openedx.org/get-started/self-managed/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No first-party paid Enterprise software tier. Enterprise deployments use same project software plus independent services.",
+      "sources": [
+        "https://openedx.org/get-started/self-managed/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable course content, institutional integrations and a large contributor ecosystem create content/process switching costs for established learning programs.",
+      "basis": "assessment",
+      "sources": [
+        "https://openedx.org/platform/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Native authoring and reusable content blocks simplify building and reusing course material.",
+      "basis": "assessment",
+      "sources": [
+        "https://openedx.org/platform/features/"
+      ]
+    },
+    {
+      "claim": "Formative and summative assessment tools support evaluating learning through varied activities.",
+      "basis": "assessment",
+      "sources": [
+        "https://openedx.org/platform/features/"
+      ]
+    },
+    {
+      "claim": "Analytics aggregate enrollment, progress, assessment, forum and video engagement for program review.",
+      "basis": "assessment",
+      "sources": [
+        "https://openedx.org/platform/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Unicon",
+          "url": "https://www.unicon.net/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        },
+        {
+          "name": "Walmart",
+          "url": "https://www.walmart.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        },
+        {
+          "name": "Edly / Arbisoft",
+          "url": "https://edly.io/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        },
+        {
+          "name": "OpenCraft",
+          "url": "https://opencraft.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        },
+        {
+          "name": "Pearson",
+          "url": "https://www.pearson.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        },
+        {
+          "name": "Raccoon Gang",
+          "url": "https://raccoongang.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        },
+        {
+          "name": "edunext",
+          "url": "https://www.edunext.co/",
+          "relationship": "corporate-sponsor",
+          "source": "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/"
+        }
+      ],
+      "notes": "Verified corporate sponsors of the2026 Open edX conference/community event, not asserted recurring unrestricted core funding. Axim and WGU also sponsor/contribute, but nonprofits/universities are not labeled corporate sponsors. Other provider listings alone not used as sponsorship proof.",
+      "sources": [
+        "https://openedx.org/blog/reflecting-on-an-unforgettable-open-edx-conference-2026-a-big-thank-you/",
+        "https://openedx.org/community/mission-aligned-organizations/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker24.0.5+ and Compose2+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official Tutor deployment;64-bit UNIX host,AMD64/ARM64;Python3.9+ only if installing Tutor through pip rather than binary.",
+          "sources": [
+            "https://docs.tutor.edly.io/en/latest/install.html"
+          ]
+        },
+        {
+          "component": "MySQL8.4",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default SQL service; current release template pins8.4.11. Can be externally managed; disabling local container does not remove SQL dependency.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/config/defaults.yml"
+          ]
+        },
+        {
+          "component": "MongoDB7",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default document store; template7.0.39. External service alternative possible; local container toggle does not mean optional application data.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/config/defaults.yml"
+          ]
+        },
+        {
+          "component": "Redis7",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default caching/Celery broker; template7.4.10. Not RabbitMQ by default.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/config/defaults.yml"
+          ]
+        },
+        {
+          "component": "Meilisearch",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default search backend; template1.36.0. Do not substitute older Elasticsearch stack from stale deployment guides.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/config/defaults.yml"
+          ]
+        },
+        {
+          "component": "LMS and CMS application containers and Celery workers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Python/Django application packaged in official images; production workers handle asynchronous jobs.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/local/docker-compose.prod.yml"
+          ]
+        },
+        {
+          "component": "Caddy HTTPS reverse proxy",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Default production exposure",
+          "notes": "Bundled proxy; own reverse proxy/load balancer can replace it with configuration.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/local/docker-compose.prod.yml"
+          ]
+        },
+        {
+          "component": "SMTP relay",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Delivering enrollment/reset/notification email",
+          "notes": "Bundled Exim relay configured by default; external SMTP service alternative.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/local/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Persistent local database/media volumes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default local storage; object-storage integrations need separate credentials/services if selected.",
+          "sources": [
+            "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/local/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Kubernetes",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "tutor k8s deployment route",
+          "notes": "Not required for single-server tutor local route. Optional plugins can add services; requirements cover release baseline.",
+          "sources": [
+            "https://docs.tutor.edly.io/en/latest/install.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2CPU minimum;4CPU recommended",
+        "memory": "4GB minimum;8GB recommended",
+        "storage": "8GB minimum;25GB recommended",
+        "os": "64-bit UNIX (Linux/macOS); WindowsWSL2 reported;AMD64/ARM64",
+        "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
+        "sources": [
+          "https://docs.tutor.edly.io/en/latest/install.html"
+        ]
+      },
+      "notes": "Officially recommended Tutor release/verawood.1 deployment. Native application is Python/Django, packaged in containers. SQL+document+cache/broker+search services required by default; production Celery workers included. External services may replace local containers. Default volumes local;S3 optional integration, not mandatory.",
+      "sources": [
+        "https://docs.tutor.edly.io/en/latest/install.html",
+        "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/config/defaults.yml",
+        "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/local/docker-compose.yml",
+        "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/local/docker-compose.prod.yml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Tutor single-server launch",
+          "url": "https://docs.tutor.edly.io/quickstart.html",
+          "kind": "one-command",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Project-recommended distribution: after installing Tutor and Docker, run tutor local launch and answer configuration prompts. CLI one-command provisioning, not literal browser one-click.",
+          "sources": [
+            "https://docs.tutor.edly.io/quickstart.html"
+          ]
+        }
+      ],
+      "notes": "Verified options listed; manual multi-step installation and Docker Compose alone are not treated as one-click.",
+      "sources": [
+        "https://docs.tutor.edly.io/en/latest/install.html"
+      ]
+    }
+  }
+}

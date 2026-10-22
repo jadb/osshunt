@@ -1,0 +1,263 @@
+{
+  "id": "baserow",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Baserow",
+    "kind": "business",
+    "foundedYear": 2020,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Inkef",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      },
+      {
+        "name": "firstminute capital",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      },
+      {
+        "name": "Seedcamp",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      },
+      {
+        "name": "Frontline",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      },
+      {
+        "name": "Job van der Voort",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      },
+      {
+        "name": "Martin Henk",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      },
+      {
+        "name": "Shannon Williams",
+        "source": "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+      }
+    ],
+    "notes": "About lists2020founded and first version; first side-project commit2019 distinguished from company age.2022official seed announcement names investors; historical financing, not present cap-table completeness. Private startup; no parent verified.",
+    "sources": [
+      "https://baserow.io/about-us",
+      "https://baserow.io/blog/announcing-Baserow-5m-seed-round",
+      "https://baserow.io/blog/announcing-Baserow-5m-seed-round"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Source Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "No software subscription fee for core edition; optional commercial editions and infrastructure separate.",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Premium",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Most popular. Cloud10annual-billed monthly \u00d712;12month-to-month. Self-host entitlement separate.",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Advanced",
+      "status": "published",
+      "monthlyPrice": 22,
+      "annualPrice": 216,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud scaling-business tier:18annual-billed monthly \u00d712;22month-to-month. Self-host license scope not substituted.",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud On request; Contact sales.",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable data models, applications and plugin/API extensions can embed Baserow into company workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://baserow.io/about-us"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Model operational records with spreadsheet-style grid, form and gallery views.",
+      "basis": "assessment",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    },
+    {
+      "claim": "Turn shared data into custom applications with the Application Builder.",
+      "basis": "assessment",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    },
+    {
+      "claim": "Integrate structured records through API and OpenAPI tooling.",
+      "basis": "assessment",
+      "sources": [
+        "https://baserow.io/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Baserow",
+          "url": "https://baserow.io",
+          "relationship": "business-steward",
+          "source": "https://baserow.io/about-us"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://baserow.io/about-us"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker>=19.03",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "All-in-one image bundles application runtimes.",
+          "sources": [
+            "https://baserow.io/docs/installation/install-with-docker"
+          ]
+        },
+        {
+          "component": "PostgreSQL15 default",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Embedded database default; external PostgreSQL recommended for production. Pre1.24 embedded PostgreSQL11 requires migration.",
+          "sources": [
+            "https://baserow.io/docs/installation/install-with-docker"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Embedded default; REDIS_URL supports external instance.",
+          "sources": [
+            "https://baserow.io/docs/installation/install-with-docker"
+          ]
+        },
+        {
+          "component": "Persistent data volume and application/background worker services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "All-in-one stores data under/baserow/data; Caddy included for HTTPS.",
+          "sources": [
+            "https://baserow.io/docs/installation/install-with-docker"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications configured",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://baserow.io/docs/installation/install-with-docker"
+          ]
+        },
+        {
+          "component": "AI provider API",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AI features configured",
+          "notes": "Separate provider configuration guide; not a core OSS requirement.",
+          "sources": [
+            "https://baserow.io/docs/installation/install-with-docker"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "Hardware minima not specified in the reviewed installation instructions.",
+        "sources": [
+          "https://baserow.io/docs/installation/install-with-docker"
+        ]
+      },
+      "notes": "All-in-one bundles PostgreSQL/Redis; external services allowed. No MySQL/SQLite backend asserted. Separate self-host commercial activation required for premium capabilities; cloud prices below identified as cloud.",
+      "sources": [
+        "https://baserow.io/docs/installation/install-with-docker"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Render deployment template",
+          "url": "https://baserow.io/docs/installation%2Finstall-on-render",
+          "kind": "one-click",
+          "officialStatus": "first-party",
+          "notes": "Official guide describes one-click template; Render account/paid services needed. Historical provider prices in guide not treated as current prices.",
+          "sources": [
+            "https://baserow.io/docs/installation%2Finstall-on-render"
+          ]
+        }
+      ],
+      "notes": "Options retain the official distinction between one-command installation and true provider one-click deployment.",
+      "sources": [
+        "https://baserow.io/docs/installation/install-with-docker"
+      ]
+    }
+  }
+}

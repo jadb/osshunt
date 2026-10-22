@@ -30,4 +30,8 @@ Checked 2026-10-21
 ## Decisions
 - Four pricing roles retained. Unknown is explicit rather than inferred pricing or financing. Annual totals derived only from a documented annual-billed monthly figure.
 - Three functional reasons and moat are assessments grounded in the cited feature facts.
-- Builder command: python3 group-04/<batch>.py; writes only this product profile, claims ledger and audit. Validation: node scripts/validate-profiles.mjs profiles .
+- Builder command: python3 batch1.py; writes only this product profile, claims ledger and audit. Validation: node scripts/validate-profiles.mjs profiles .
+
+## Final local checks
+- Executed `python3 finalize.py` for targeted corrections and per-investor/sponsor/install ledger granularity.
+- Executed `node scripts/validate-profiles.mjs profiles .`:23validprofiles. Separate claims parser check validates nonempty ledgers/publicHTTPURLs/date/locator fields.

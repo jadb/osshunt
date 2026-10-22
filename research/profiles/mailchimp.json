@@ -1,0 +1,121 @@
+{
+  "id": "mailchimp",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "The Rocket Science Group LLC (Mailchimp)",
+    "kind": "business",
+    "foundedYear": 2001,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Intuit Inc. (NASDAQ:INTU)",
+    "stockSymbols": [
+      "NASDAQ:INTU"
+    ],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Founded2001; Intuit completed acquisition November2021. No historical equity investor named in checked primary announcement; external secondary sources describe bootstrapping but primary confirmation not established, so funding unknown. Parent ownership distinct from startup funding.",
+    "sources": [
+      "https://mailchimp.com/newsroom/intuit-completes-mailchimp-acquisition/",
+      "https://www.sec.gov/Archives/edgar/data/896878/000089687824000063/intu_ars.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": 13,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account at base contact selection",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Base displayed $13/month for first12months; selected contact count not exposed; contact/send overages extra, renewal amount unresolved. Free250-contact plan separate.",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "Most Popular appears in integration navigation, not a plan card; no explicit plan designation verified.",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premium",
+      "status": "published",
+      "monthlyPrice": 350,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account at base Premium contact selection",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest explicitly team-oriented tier: unlimited seats; displayed $350/month for12months at base Premium selection, up to150,000 sends. Contact count/renewal unresolved; volume changes cost.",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom high-volume plan",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account / negotiated contact and send volume",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Official FAQ directs contact sales above200,000contacts; custom Premium plans above250,000contacts. No flat enterprise amount.",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Large integration ecosystem plus accumulated audience history and automation flows creates meaningful migration and configuration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Marketing automation flows coordinate triggered customer journeys rather than isolated bulk newsletters.",
+      "basis": "assessment",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "claim": "Predictive segmentation and multivariate testing help target and optimize campaigns.",
+      "basis": "assessment",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "claim": "Commerce integrations and dynamic content connect product/customer data to personalized emails.",
+      "basis": "assessment",
+      "sources": [
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -1,0 +1,147 @@
+{
+  "id": "hubspot",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "HubSpot, Inc.",
+    "kind": "business",
+    "foundedYear": 2006,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE:HUBS"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot"
+      },
+      {
+        "name": "Google Ventures",
+        "source": "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot"
+      },
+      {
+        "name": "Salesforce.com",
+        "source": "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot"
+      },
+      {
+        "name": "General Catalyst",
+        "source": "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot"
+      },
+      {
+        "name": "Matrix Partners",
+        "source": "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot"
+      },
+      {
+        "name": "Scale Venture Partners",
+        "source": "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot"
+      }
+    ],
+    "notes": "Company story dates founding to 2006. Historical venture investors listed, not assertions of current shareholdings. Public NYSE company.",
+    "sources": [
+      "https://www.hubspot.com/our-story",
+      "https://www.hubspot.com/blog/bid/10491/sequoia-google-ventures-and-salesforce-com-invest-32-million-in-hubspot",
+      "https://hubspot.gcs-web.com/resources/investor-faqs"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Sales Hub Starter",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Lowest paid tier; page shows $7 promotional and $20 reference per seat/month but eligibility and billing selection unresolved; no normalized amount. Separate free tools for two users.",
+      "sources": [
+        "https://www.hubspot.com/pricing/sales"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://www.hubspot.com/pricing/sales"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Sales Hub Professional",
+      "status": "published",
+      "monthlyPrice": 100,
+      "annualPrice": 1080,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational sales plan. Annual $90/seat/month multiplied by12; monthly billing $100 with annual commitment. Required $1,500 onboarding separate.",
+      "sources": [
+        "https://www.hubspot.com/pricing/sales"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Sales Hub Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Page displays $150/seat/month and $3,500 onboarding, but extracted billing term does not establish normalized monthly/annual subscription.",
+      "sources": [
+        "https://www.hubspot.com/pricing/sales"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared Smart CRM, connected hubs and app marketplace create integration and accumulated-data switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hubspot.com/pricing/sales"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Sales sequences and prospecting tools keep outreach attached to CRM records.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hubspot.com/products/sales"
+      ]
+    },
+    {
+      "claim": "Pipeline forecasting and deal management connect rep activity to revenue planning.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hubspot.com/products/sales"
+      ]
+    },
+    {
+      "claim": "Sales coaching and conversation intelligence help managers review selling activity.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.hubspot.com/products/sales"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

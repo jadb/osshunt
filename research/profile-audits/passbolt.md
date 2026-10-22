@@ -2,7 +2,6 @@
 
 # passbolt research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open: pricing redirected to /pricing/pro; About timeline; Docker and DigitalOcean CE installation. Search: Passbolt 2025 Series A; used company-issued release.
 - Decision: 2016 company founding, earlier prototype distinct; paid Pro not substituted for CE pricing.

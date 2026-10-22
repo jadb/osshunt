@@ -118,6 +118,9 @@ def main():
         age = int(profile['checkedAt'][:4]) - year if year is not None else None
         organization['yearsActive'] = age
         organization['yearsInBusiness'] = age if organization['kind'] == 'business' and organization['ageBasis'] == 'company-founded' else None
+        if profile.get('alternativeDetails'):
+            install = profile['alternativeDetails']['oneClickInstall']
+            install['hasVerifiedOneClick'] = any(option['kind'] in ['one-click', 'marketplace'] for option in install['options'])
         products[product_id]['profile'] = profile
     data['products'] = list(products.values())
     data['alternatives'] = list(edges.values())

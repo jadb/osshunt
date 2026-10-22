@@ -1,0 +1,253 @@
+{
+  "id": "zammad",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Zammad Foundation; commercial development by Zammad GmbH",
+    "kind": "foundation",
+    "foundedYear": 2014,
+    "ageBasis": "company-founded",
+    "ownership": "nonprofit",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official timeline establishes Foundation and GmbH in October2014; source code started2013 and1.0 released2016. Foundation owns official code; GmbH commercial counterpart. Exact GmbH financing and equity investors unresolved; nonprofit owner is not an equity investment.",
+    "sources": [
+      "https://zammad.com/en/company",
+      "https://zammad.org/about",
+      "https://zammad.com/en/blog/open-source-philosophy"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community self-hosted",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Free project code; infrastructure and optional support contracts separate.",
+      "sources": [
+        "https://zammad.org/about"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://zammad.com/en/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 2999,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-host support contract",
+      "notes": "Self-host support contract, not software feature unlock; annual published total excl.VAT.",
+      "sources": [
+        "https://zammad.com/en/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 5999,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-host support contract",
+      "notes": "Self-host support contract; published annual total excl.VAT.",
+      "sources": [
+        "https://zammad.com/en/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Foundation-held AGPL code and accumulated ticket/integration workflows create continuity and customization value, with modest exclusive technology barriers.",
+      "basis": "assessment",
+      "sources": [
+        "https://zammad.org/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Core Workflows dynamically show ticket fields according to team and process.",
+      "basis": "assessment",
+      "sources": [
+        "https://zammad.com/en/product/features"
+      ]
+    },
+    {
+      "claim": "GitHub/GitLab issue links connect customer tickets to engineering work.",
+      "basis": "assessment",
+      "sources": [
+        "https://zammad.com/en/product/features"
+      ]
+    },
+    {
+      "claim": "Duplicate detection warns agents during ticket creation and limits repeated cases.",
+      "basis": "assessment",
+      "sources": [
+        "https://zammad.com/en/product/features"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Zammad GmbH",
+          "url": "https://zammad.com/en/company",
+          "relationship": "business-steward",
+          "source": "https://zammad.com/en/company"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://zammad.com/en/company"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Ruby on Rails application and background services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; packaged/container stack supplies runtime.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://zammad.com/en/company"
+          ]
+        },
+        {
+          "component": "PostgreSQL15+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; supported SQL database.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "Redis7+",
+          "necessity": "one-of",
+          "group": "realtime-cache",
+          "condition": "Realtime websocket state; normal distribution path.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "Valkey",
+          "necessity": "one-of",
+          "group": "realtime-cache",
+          "condition": "CentOS/RHEL10 drop-in replacement installed by packages.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "Nginx",
+          "necessity": "one-of",
+          "group": "reverse-proxy",
+          "condition": "Public web reverse proxy.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "Apache",
+          "necessity": "one-of",
+          "group": "reverse-proxy",
+          "condition": "Public web reverse proxy.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "Elasticsearch",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Strongly recommended for rich/attachment search and reports.",
+          "notes": "Zammad7.2+ requires ES>=8.15,<10 when enabled.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "Memcached",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Required for Docker/Kubernetes or separate nodes/filesystems; filesystem cache otherwise.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        },
+        {
+          "component": "GnuPG",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only signed/encrypted PGP email integration.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.zammad.org/en/latest/prerequisites/software.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 cores minimum guidance",
+        "memory": "6GB minimum; add4GB for colocated Elasticsearch",
+        "storage": null,
+        "os": "Supported Linux distributions; Docker/Kubernetes alternative",
+        "notes": "Minimalistic deployment guidance;40-agent example6cores/6GB plus6GB colocated ES. No universal disk recommendation.",
+        "sources": [
+          "https://docs.zammad.org/en/latest/prerequisites/hardware.html"
+        ]
+      },
+      "notes": "Current documentation covers7.2+; container stack includes dependencies. Single filesystem can use local cache; separate/cache services distinguished.",
+      "sources": [
+        "https://docs.zammad.org/en/latest/prerequisites/software.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual Docker Compose or source installation does not qualify as one-click.",
+      "sources": [
+        "https://docs.zammad.org/en/latest/prerequisites/software.html"
+      ]
+    }
+  }
+}

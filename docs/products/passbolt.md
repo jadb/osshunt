@@ -62,6 +62,8 @@ Resources: CPU 2 cores recommended minimum VM; memory 2GB recommended minimum VM
 
 Status: **offered**. Officially documented install options; one-command is separate from browser one-click. [1](https://www.passbolt.com/docs/hosting/install/ce/docker/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [DigitalOcean Marketplace](https://www.passbolt.com/docs/hosting/install/ce/digital-ocean/): **marketplace**, first-party. Official guide directs user to search Passbolt in DigitalOcean Marketplace. [1](https://www.passbolt.com/docs/hosting/install/ce/digital-ocean/)

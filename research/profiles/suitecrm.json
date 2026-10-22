@@ -1,0 +1,246 @@
+{
+  "id": "suitecrm",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "SuiteCRM Ltd",
+    "kind": "business",
+    "foundedYear": 2024,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Current steward incorporated September27,2024 and succeeded SalesAgility in March2025. SuiteCRM project predates company (2013); historical SalesAgility revenue-funded development does not establish present entity cap table. No primary equity funding/investor announcement found.",
+    "sources": [
+      "https://suitecrm.com/about/about-us/",
+      "https://suitecrm.com/new-era-for-suitecrm/",
+      "https://find-and-update.company-information.service.gov.uk/company/SC824064",
+      "https://suitecrm.com/suitecrm-in-the-next-10-years/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "SuiteCRM open-source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "GBP",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software free; marketplace add-ons and services separate.",
+      "sources": [
+        "https://suitecrm.com/what-is-suitecrm/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://suitecrm.com/suitecrmhosted/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 2160,
+      "oneTimePrice": null,
+      "currency": "GBP",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Hosted shared-service package;\u00a3180/month billed annually multiplied by12; excludes VAT. Recommended up to50users; not a per-user minimum.",
+      "sources": [
+        "https://suitecrm.com/suitecrmhosted/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Dedicated",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 3200,
+      "oneTimePrice": null,
+      "currency": "GBP",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest enterprise-grade hosted offer starts\u00a33200/year, excluding VAT and application support.",
+      "sources": [
+        "https://suitecrm.com/suitecrmhosted/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad CRM module model and long-lived customization ecosystem create data-model and workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://suitecrm.com/what-is-suitecrm/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Condition-based workflows automate CRM actions across customer processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://suitecrm.com/what-is-suitecrm/"
+      ]
+    },
+    {
+      "claim": "Configuration Studio adds fields, layouts and modules without custom development.",
+      "basis": "assessment",
+      "sources": [
+        "https://suitecrm.com/what-is-suitecrm/"
+      ]
+    },
+    {
+      "claim": "Case management and a customer self-service portal connect issue handling to CRM records.",
+      "basis": "assessment",
+      "sources": [
+        "https://suitecrm.com/what-is-suitecrm/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Quilvest Capital",
+          "url": "https://www.quilvestcapital.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "Route4Me",
+          "url": "https://www.route4me.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "Mokas IT",
+          "url": "https://www.mokas.lt/",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        }
+      ],
+      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors.",
+      "sources": [
+        "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP8.2/8.3/8.4",
+          "necessity": "required",
+          "group": null,
+          "condition": "SuiteCRM8.10.x prebuilt production package.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/"
+          ]
+        },
+        {
+          "component": "Apache2.4",
+          "necessity": "required",
+          "group": null,
+          "condition": "Documented8.10 webserver.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/"
+          ]
+        },
+        {
+          "component": "MariaDB10.6/10.11/11.4/11.8",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select supported SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/"
+          ]
+        },
+        {
+          "component": "MySQL8.0/8.4",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select supported SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/"
+          ]
+        },
+        {
+          "component": "Cron scheduler",
+          "necessity": "required",
+          "group": null,
+          "condition": "Post-install background scheduled tasks.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/installation-guide/downloading-installing/"
+          ]
+        },
+        {
+          "component": "Symfony Messenger worker",
+          "necessity": "required",
+          "group": null,
+          "condition": "Post-install async tasks in current8.x.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/installation-guide/downloading-installing/"
+          ]
+        },
+        {
+          "component": "S3 / Azure blob storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative file storage to local filesystem.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No numerical hardware minima verified in the cited deployment documentation.",
+        "sources": [
+          "https://docs.suitecrm.com/8.x/admin/installation-guide/downloading-installing/"
+        ]
+      },
+      "notes": "Requirements explicitly scoped to current8.10.x docs; supplied repository health refers to separate7.x line. Prebuilt package avoids Angular/Node/yarn development tooling. No separate Redis or external queue required by default documented path.",
+      "sources": [
+        "https://docs.suitecrm.com/8.x/admin/installation-guide/downloading-installing/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual Docker Compose or source installation does not qualify as one-click.",
+      "sources": [
+        "https://docs.suitecrm.com/8.x/admin/installation-guide/downloading-installing/"
+      ]
+    }
+  }
+}

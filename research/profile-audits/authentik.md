@@ -2,7 +2,6 @@
 
 # authentik research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing, Compose and AWS installation. Guessed 2024 funding blog URL failed; general search authentik security funding found 2022 company launch and OCV primary source.
 - Decision: no hosted service per current FAQ; AWS template explicitly called one-click by vendor. Raw compose.yml unsupported content type; documented minimum only.

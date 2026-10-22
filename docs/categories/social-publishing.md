@@ -7,13 +7,17 @@ Audience: Creators, marketers, agencies and communications teams. Publishing spa
 Use-case sources: [1](https://buffer.com/pricing), [2](https://www.hootsuite.com/plans).
 
 - [Buffer](https://buffer.com): USD 5/account/month, annual billing. Essentials, one channel: $60/year ($5/month equivalent); free SaaS plan separate. Price scales by channel. [Pricing](https://buffer.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/buffer.md).
 - [Hootsuite](https://www.hootsuite.com): entry amount unverified/quote, annual billing. Official FAQ says Standard starts at $99, but extracted cards omit numerical price and currency; exact USD annual quote not independently resolved. [Pricing](https://www.hootsuite.com/plans).
+  [Pricing tiers, organization and product reasons](../products/hootsuite.md).
 
 ### Mixpost Lite — C
 
 MIT applies to Lite. Pro/Enterprise are proprietary source-available editions, with everyday workflow gates. First-party Cloud exists but does not make commercial features OSS.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/inovector/mixpost/blob/df57648b866310446703f5294350552b62735df5/LICENSE.md), [edition evidence](https://mixpost.app/pricing), [hosting](https://mixpost.app/cloud), [repository](https://github.com/inovector/mixpost).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/mixpost.md).
 
 Paid restrictions: Lite publishing: Facebook Pages, X and Mastodon only; other listed networks require Pro/Enterprise.; Pro adds queue, approval flow, inbox, advanced analytics, AI and API/webhooks.
 
@@ -28,6 +32,8 @@ Repository: pushed 2026-03-16T10:06:38Z; latest commit 2026-03-16T10:06:37Z; lat
 AGPL core; vendor claims ungated Cloud parity, but production design editing depends on licensed commercial Polotno software. Tier C for that workflow; scheduling itself remains open.
 
 License: AGPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/gitroomhq/postiz-app/blob/c06abc3d786b8f719ced5716ccc70dd8a7251a05/LICENSE), [edition evidence](https://docs.postiz.com/self-host/configuration/polotno), [hosting](https://docs.postiz.com/self-host/installation/overview), [repository](https://github.com/gitroomhq/postiz-app).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/postiz.md).
 
 Paid restrictions: Production in-app design editor requires a separate commercial Polotno SDK license.
 

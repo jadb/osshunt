@@ -2,7 +2,6 @@
 
 # acronis-cyber-protect research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open company/product/purchasing; find Standard/ransomware. Queries EQT completed and investor portfolio. Guessed eqtgroup.com/current-portfolio/acronis failed; actual /about/current-portfolio/acronis resolved current 2025 entry.
 - Decision: proposed 2024 deal not alone proof completion; combined current portfolio evidence. Consumer True Image prices excluded.

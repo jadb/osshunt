@@ -2,7 +2,6 @@
 
 # dropbox research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open plans and investor overview; current2026 filing retrieved by search. Queries Dropbox founded2007 and historical funding; primary Accel portfolio/YC post verify historical investors.
 - Decision: selector-dependent prices not normalized; Best Value does not satisfy requested popular-role definition.

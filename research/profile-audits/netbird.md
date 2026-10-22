@@ -2,7 +2,6 @@
 
 # netbird research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing, guessed /selfhosted/quickstart failed; advanced-guide link led to current /selfhosted/selfhosted-quickstart. Read current configuration/database docs and enterprise license.
 - Queries NetBird funding resolved current Nauta announcement and older Neta source; founding conflict retained as null. Decision: do not transplant cloud prices to self-hosted enterprise.

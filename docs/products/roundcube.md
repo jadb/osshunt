@@ -62,6 +62,8 @@ Resources: CPU not specified; memory PHP memory_limit >16 MB; storage not specif
 
 Status: **offered**. Official download page explicitly links Softaculous/cPanel auto installers and Cloudron app store; Docker Compose examples are manual, not one-click. Provider availability and versions must be checked on target host. [1](https://roundcube.net/download/)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Softaculous Roundcube auto installer](https://www.softaculous.com/): **one-click**, officially-linked-third-party. Available through a hosting control panel with Softaculous; official Roundcube download page links it. [1](https://roundcube.net/download/)

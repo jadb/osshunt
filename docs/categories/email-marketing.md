@@ -7,12 +7,15 @@ Audience: Businesses, charities and publishers communicating with prospects and 
 Use-case sources: [1](https://mailchimp.com/pricing/marketing/), [2](https://listmonk.app/), [3](https://mautic.org/about/).
 
 - [Mailchimp](https://mailchimp.com/): USD 13/account/month, monthly billing. Essentials displayed $13/month for 12 months at base contact selection; contact and email volume affect price and overages. Free tier limited to 250 contacts/500 sends monthly; Essentials automation limited to 4 flow steps. Verify selected contact count and renewal price before purchase. [Pricing](https://mailchimp.com/pricing/marketing/).
+  [Pricing tiers, organization and product reasons](../products/mailchimp.md).
 
 ### Keila — A
 
 Official site explicitly excludes proprietary premium features; cloud and self-hosted use the same software. All hosted plans include all features.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/pentacent/keila/blob/c8f49bd9a323b9a90739969736c387457efe98bf/LICENSE.md), [edition evidence](https://www.keila.io/open-source-mailchimp-alternative/), [hosting](https://www.keila.io/pricing/), [repository](https://github.com/pentacent/keila).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/keila.md).
 
 Service costs/limits: Keila Cloud starts at EUR 8/month for 2,000 emails, with unlimited contacts/projects. Self-hosting needs server/PostgreSQL and SMTP or another email transport service. These service costs are not feature locks.
 
@@ -26,6 +29,8 @@ Free self-hosted product; published feature set and API included in open-source 
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/knadh/listmonk/blob/9351a3ef86e2c06aacdd98ca5ae839ef888f0f9e/LICENSE), [edition evidence](https://listmonk.app/), [hosting](https://listmonk.app/), [repository](https://github.com/knadh/listmonk).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/listmonk.md).
+
 Service costs/limits: SMTP server/provider and PostgreSQL/server infrastructure required; transport limits and deliverability remain operator responsibilities.
 
 Repository: pushed 2026-10-21T05:25:39Z; latest commit 2026-10-21T05:25:01Z; latest published release v7.0.0-beta.1 (2026-10-20T10:25:57Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -37,6 +42,8 @@ Repository: pushed 2026-10-21T05:25:39Z; latest commit 2026-10-21T05:25:01Z; lat
 Official pages say self-hosting includes all features and deployment choices do not lock features. Paid managed hosting and extended support are services. Actual LICENSE.txt grants GPL v3 or later despite GitHub NOASSERTION.
 
 License: GPL-3.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/mautic/mautic/blob/fbf8256eef9b029f2f491ffb073f5c1f946a1714/LICENSE.txt), [edition evidence](https://mautic.org/mautic-vs-mailchimp/), [hosting](https://mautic.org/start-using-mautic/), [repository](https://github.com/mautic/mautic).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/mautic.md).
 
 Service costs/limits: Self-hosted infrastructure, email transport and operations required. Paid extended support or third-party plugins are separate from core feature access.
 

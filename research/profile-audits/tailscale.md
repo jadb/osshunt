@@ -2,7 +2,6 @@
 
 # tailscale research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing and series-c; find Starter/$8/monthly to confirm new Standard/Premium seat model rather than legacy monthly-active-user plans.
 - Decision: no invented annual subscription price; explicit Most popular Standard.

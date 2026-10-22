@@ -1,0 +1,127 @@
+{
+  "id": "wix",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Wix.com Ltd.",
+    "kind": "business",
+    "foundedYear": 2006,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:WIX"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.bvp.com/portfolio/wix"
+      }
+    ],
+    "notes": "Founded 2006; Nasdaq-listed WIX. Bessemer is a verified historical investor, not a claim about its current shareholding.",
+    "sources": [
+      "https://www.wix.com/about/us",
+      "https://www.sec.gov/Archives/edgar/data/1576789/000162828026015222/wix-20251231.htm",
+      "https://www.bvp.com/portfolio/wix"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Light",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 213.24,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current rendered reference USD17.77/month yearly ×12. Page says prices/currency vary by location and displays GST wording; checkout may differ. Monthly-billed amount not verified. Free plan exists separately.",
+      "sources": [
+        "https://www.wix.com/plans"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 477.24,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicitly Recommended. Rendered reference USD39.77/month yearly ×12; localized taxes and checkout may differ.",
+      "sources": [
+        "https://www.wix.com/plans"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 477.24,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Named business tier. Reference USD39.77/month billed yearly ×12; ten collaborators; localized pricing caveat.",
+      "sources": [
+        "https://www.wix.com/plans"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Wix Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Sales-led enterprise platform; no public fixed amount.",
+      "sources": [
+        "https://www.wix.com/studio/enterprise"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its broad integrated site/business workflows and large installed user base can increase migration effort and ecosystem advantage.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.wix.com/about/us"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Drag-and-drop editing and AI site generation shorten the path from a design idea to an editable website.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.wix.com/plans"
+      ]
+    },
+    {
+      "claim": "Integrated bookings, payments and ecommerce let a service business manage transactions and scheduling with its site.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.wix.com/plans"
+      ]
+    },
+    {
+      "claim": "Multi-site management lets organizations maintain brand consistency across many local or partner websites.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.wix.com/studio/enterprise"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -1,0 +1,126 @@
+{
+  "id": "sap-concur",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "SAP Concur / Concur Technologies",
+    "kind": "business",
+    "foundedYear": 1993,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "SAP SE; Frankfurt: SAP, NYSE ADR: SAP",
+    "stockSymbols": [
+      "FWB:SAP",
+      "NYSE:SAP"
+    ],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Concur founded 1993; acquired by SAP in 2014. Parent SAP is public (Frankfurt and NYSE ADR SAP). Historical Concur public-company filing establishes equity-financed history; no primary-source historic venture investor list verified, and SAP is the acquirer rather than automatically a venture investor.",
+    "sources": [
+      "https://www.concur.com/blog/article/customer-success-concur",
+      "https://www.sap.com/about/company/history/2011-2020.html",
+      "https://www.sap.com/investors/en/stock/basic-data.html",
+      "https://www.sec.gov/Archives/edgar/data/1066026/000106602614000019/cnqr-2014x10k.htm"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Base",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "expense report",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "US starting usage rate $7/report; varies with monthly report commitment. Unlimited users. This is not a $7 monthly subscription; monthly/annual totals withheld.",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ],
+      "usagePrice": 7
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Plus",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "expense report",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Closest organizational upgrade: starting $11/report, varies by monthly commitment; includes ExpenseIt/reporting. Usage rate, not fixed subscription.",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ],
+      "usagePrice": 11
+    },
+    {
+      "role": "enterprise",
+      "name": "Premium",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Custom-priced most advanced package; includes Expense, Travel, ExpenseIt and Intelligence. No numeric subscription or report rate published.",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Connections among expense policies, corporate travel and enterprise accounting can create integration and compliance-process switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Mobile receipt capture and automatic extraction reduce manual preparation of expense reports.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ]
+    },
+    {
+      "claim": "Policy checks and structured approvals make spending rules part of report submission.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ]
+    },
+    {
+      "claim": "Premium joins travel and expense reporting with business intelligence for broader visibility into employee spend.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.concur.com/products/concur-expense"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

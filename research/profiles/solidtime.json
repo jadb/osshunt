@@ -1,0 +1,243 @@
+{
+  "id": "solidtime",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "solidtime GesbR",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Austrian civil-law partnership; official imprint names Gregor Vostrak and Constantin Graf with50% each. Company founding year and financing history not stated in reviewed primary legal/blog pages. Public beta existed byMay2024, but that is not an exact formation date. Founder ownership alone does not prove bootstrap.",
+    "sources": [
+      "https://www.solidtime.io/imprint",
+      "https://www.solidtime.io/blog"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "AGPL core includes time tracking; on-premise invoicing and Audit Log require Business or Enterprise commercial license.",
+      "sources": [
+        "https://www.solidtime.io/pricing/on-premise"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://www.solidtime.io/pricing/on-premise"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business (5 users)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 199,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "organization with 5 users",
+      "minimumQuantity": null,
+      "scope": "paid on-premise license",
+      "notes": "Selector currently5 users at€199/year exclVAT. Comparison says from€49/year, a smaller configuration; not a conflicting five-user rate.",
+      "sources": [
+        "https://www.solidtime.io/pricing/on-premise"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid on-premise license",
+      "notes": "Custom terms for big companies, contact vendor; no numeric amount published.",
+      "sources": [
+        "https://www.solidtime.io/pricing/on-premise"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Project/time history, organization roles and report-sharing create moderate workflow switching costs, with the core timer itself offering limited barriers to imitation.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.solidtime.io/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Calendar/timesheet editing and desktop activity/idle detection make filling time records easier across different work styles.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.solidtime.io/"
+      ]
+    },
+    {
+      "claim": "Project rates and budgets update spend as hours accumulate, helping teams monitor delivery cost.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.solidtime.io/"
+      ]
+    },
+    {
+      "claim": "Multi-level report grouping, shareable read-only links and PDF/CSV/Excel exports support client and finance reporting.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.solidtime.io/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "solidtime GesbR",
+          "url": "https://www.solidtime.io/imprint",
+          "relationship": "business-steward",
+          "source": "https://www.solidtime.io/imprint"
+        }
+      ],
+      "notes": "No separate corporate financial/in-kind sponsor identified in reviewed official project and business pages. Verified commercial steward included as business fallback; customers, partners and investors are not classified as sponsors.",
+      "sources": [
+        "https://www.solidtime.io/imprint"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official image bundles PHP/application/web runtime; manual host PHP stack not required for container route.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/guides/docker"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Only supported SQL backend. Existing managed PostgreSQL or provided database container; not MySQL/SQLite.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/configuration"
+          ]
+        },
+        {
+          "component": "Nginx, Traefik or another HTTPS reverse proxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Choose one; application container web server does not handle TLS certificates.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/guides/docker"
+          ]
+        },
+        {
+          "component": "SMTP server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Delivering notifications, verification and password reset emails",
+          "notes": "Transactional provider or own relay; log mailer is testing-only alternative.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/guides/docker"
+          ]
+        },
+        {
+          "component": "Database queue worker container",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended asynchronous production queue mode",
+          "notes": "QUEUE_CONNECTION=database needs separate worker; sync mode exists but not recommended for production. Redis is not required for documented database queue.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/configuration"
+          ]
+        },
+        {
+          "component": "Gotenberg PDF renderer",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "PDF report/invoice generation",
+          "notes": "Separate reachable service, supplied as container in guide.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/configuration"
+          ]
+        },
+        {
+          "component": "Local persistent disk",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Local files or S3-compatible object storage",
+          "notes": "Private local disk and public disk default path.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/configuration"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Local files or S3-compatible object storage",
+          "notes": "Scaleway example documented; external service and API credentials only if this route selected.",
+          "sources": [
+            "https://docs.solidtime.io/self-hosting/configuration"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux",
+        "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
+        "sources": [
+          "https://docs.solidtime.io/self-hosting/guides/docker"
+        ]
+      },
+      "notes": "Official Docker production path. PostgreSQL required; queue can use database with worker or nonrecommended sync; no Redis requirement inferred. Gotenberg conditional for PDF generation; local disk versus S3 storage explicit.",
+      "sources": [
+        "https://docs.solidtime.io/self-hosting/guides/docker",
+        "https://docs.solidtime.io/self-hosting/configuration"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation instructions; no current first-party or officially linked one-click or one-command installer verified. Manual package/Compose instructions excluded.",
+      "sources": [
+        "https://docs.solidtime.io/self-hosting/guides/docker"
+      ]
+    }
+  }
+}

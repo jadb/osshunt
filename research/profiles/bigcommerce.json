@@ -1,0 +1,139 @@
+{
+  "id": "bigcommerce",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "BigCommerce; Commerce.com, Inc.",
+    "kind": "business",
+    "foundedYear": 2009,
+    "ageBasis": "product-launched",
+    "ownership": "public",
+    "parent": "Commerce.com, Inc. (NASDAQ:CMRC)",
+    "stockSymbols": [
+      "NASDAQ:CMRC"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Goldman Sachs",
+        "source": "https://www.bigcommerce.com.au/blog/bigcommerce-funding/"
+      },
+      {
+        "name": "General Catalyst",
+        "source": "https://www.bigcommerce.com.au/blog/bigcommerce-funding/"
+      },
+      {
+        "name": "GGV Capital",
+        "source": "https://www.bigcommerce.com.au/blog/bigcommerce-funding/"
+      },
+      {
+        "name": "Tenaya Capital",
+        "source": "https://www.bigcommerce.com.au/blog/bigcommerce-funding/"
+      }
+    ],
+    "notes": "BigCommerce launched 2009; parent renamed from BigCommerce Holdings to Commerce.com July 2025 and ticker changed from BIGC to CMRC. Equity investors listed are historical growth-round participants, not current holdings.",
+    "sources": [
+      "https://www.bigcommerce.com.au/blog/bigcommerce-funding/",
+      "https://www.sec.gov/Archives/edgar/data/1626450/000095017025100557/bigc-20250630.htm",
+      "https://www.sec.gov/Archives/edgar/data/1626450/000095017025100556/bigc-20250731.htm"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Core",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": 348,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current 2026 plan names. Annual $29/month ×12; $30K trailing-twelve-month GMV cap, auto-upgrades. Payment-provider fees can apply.",
+      "sources": [
+        "https://www.bigcommerce.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Scale",
+      "status": "published",
+      "monthlyPrice": 399,
+      "annualPrice": 3588,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Most Popular. $299/month annual ×12; $33,333 monthly GMV cap and 0.9% overage; payment-provider fees separate.",
+      "sources": [
+        "https://www.bigcommerce.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Growth",
+      "status": "published",
+      "monthlyPrice": 105,
+      "annualPrice": 948,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest established-business organizational plan; $79/month annual ×12, $100K TTM GMV cap. Not legacy Plus.",
+      "sources": [
+        "https://www.bigcommerce.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Performance",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 17988,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "store/contract",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom pricing starts $1,499/month billed annually ×12. Published starting floor, final contracted price custom; no month-to-month amount verified.",
+      "sources": [
+        "https://www.bigcommerce.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Established commerce integrations and combined B2B/B2C workflows create specialized integration and migration costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1626450/000095017025100557/bigc-20250630.htm"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "B2B purchasing features support company buyer accounts and business-specific procurement workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bigcommerce.com/solutions/b2b-ecommerce-platform/"
+      ]
+    },
+    {
+      "claim": "Multi-storefront capabilities let a merchant operate multiple brands or regions through one commerce platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bigcommerce.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Headless storefront and integration APIs let merchants customize the buying experience around existing business systems.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.bigcommerce.com/solutions/b2b-ecommerce-platform/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

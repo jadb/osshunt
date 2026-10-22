@@ -2,7 +2,6 @@
 
 # masv research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing; About guesses /about and /about-masv failed, official pricing footer led /about-us. Read terms and ISO announcement.
 - Queries MASV funding/Connetic/CapitalAngels yielded secondary claims; direct Connetic portfolio failed and CAN portfolio did not resolve named MASV investment. Funding unknown.

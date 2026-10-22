@@ -29,4 +29,13 @@ Checked 2026-10-21
 ## Decisions
 - Four pricing roles retained. Unknown is explicit rather than inferred pricing or financing. Annual totals derived only from a documented annual-billed monthly figure.
 - Three functional reasons and moat are assessments grounded in the cited feature facts.
-- Builder command: python3 group-04/<batch>.py; writes only this product profile, claims ledger and audit. Validation: node scripts/validate-profiles.mjs profiles .
+- Builder command: python3 batch1.py; writes only this product profile, claims ledger and audit. Validation: node scripts/validate-profiles.mjs profiles .
+
+## Final verification and corrections
+- web.search queries `Airtable Bending Spoons acquisition August2026 site:bendingspoons.com` and `Airtable Bending Spoons acquisition site:airtable.com` returned official4September2026completion releases. Read both.
+- web.search `site.airtable.com XN funding` recovered canonical `/newsroom/series-f`; web.open and web.find T.Rowe confirmed investor list dated13December2021.
+- Updated ownership to public-subsidiary; parent acquired100%of shares. Historical investors explicitly separated from current parent. Earlier unresolved funding article redirect resolved by canonical newsroom URL.
+
+## Final local checks
+- Executed `python3 finalize.py` for targeted corrections and per-investor/sponsor/install ledger granularity.
+- Executed `node scripts/validate-profiles.mjs profiles .`:23validprofiles. Separate claims parser check validates nonempty ledgers/publicHTTPURLs/date/locator fields.

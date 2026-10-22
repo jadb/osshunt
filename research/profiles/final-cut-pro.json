@@ -12,11 +12,22 @@
       "NASDAQ:AAPL"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "Apple official 2026 anniversary announcement dates founding to April1,1976; company age distinct from Final Cut launch. Investor FAQ confirms Nasdaq AAPL and December1980 IPO. Public equity funded; historical private-investor roster not established.",
+    "investors": [
+      {
+        "name": "Venrock (historical)",
+        "source": "https://www.venrock.com/insights/welcome-ganesh-srinivasan/"
+      },
+      {
+        "name": "Microsoft (historical strategic equity investor)",
+        "source": "https://www.apple.com/dlf/APPLECOMPUTERINSCTOI.pdf"
+      }
+    ],
+    "notes": "Apple official 2026 anniversary announcement dates founding to April1,1976; company age distinct from Final Cut launch. Investor FAQ confirms Nasdaq AAPL and December1980 IPO. Public equity funded; historical private-investor roster not established. Historical Apple investors include Venrock and Microsoft; investor announcement and Apple financial filing confirm equity backing, without asserting current holdings or treating a software partnership alone as investment.",
     "sources": [
       "https://investor.apple.com/faq/default.aspx",
-      "https://www.apple.com/eg/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/"
+      "https://www.apple.com/eg/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/",
+      "https://www.venrock.com/insights/welcome-ganesh-srinivasan/",
+      "https://www.apple.com/dlf/APPLECOMPUTERINSCTOI.pdf"
     ]
   },
   "pricingTiers": [

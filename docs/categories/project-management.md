@@ -33,6 +33,8 @@ GPL community core with Enterprise add-ons extending everyday planning/export wo
 
 License: GPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/opf/openproject/blob/b498cbc078182a29e5cc5ba842a3c4699acd92cc/LICENSE), [edition evidence](https://www.openproject.org/pricing/), [hosting](https://www.openproject.org/pricing/), [repository](https://github.com/opf/openproject).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/openproject.md).
+
 Paid restrictions: Custom action buttons for workflows; Team planner; Gantt chart PDF export; Reusable meeting templates; SSO beyond community authentication options
 
 Repository: pushed 2026-10-21T20:01:47Z; latest commit 2026-10-21T16:23:07Z; latest published release v17.9.2 (2026-10-15T11:56:10Z). Quick analysis: 5.6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -47,6 +49,8 @@ AGPL Community is distinct from closed-source Commercial Edition. Official editi
 
 License: AGPL-3.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/makeplane/plane/blob/053b2c0e5874fb3225404a8775d04f38f9e1704c/LICENSE.txt), [edition evidence](https://plane.so/blog/plane-and-its-editions), [hosting](https://plane.so/pricing), [repository](https://github.com/makeplane/plane).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/plane.md).
+
 Paid restrictions: Work item types; Native time tracking; Advanced workflows; Project templates; Commercial SSO
 
 Repository: pushed 2026-10-21T17:36:54Z; latest commit 2026-10-21T15:35:49Z; latest published release v1.4.2 (2026-08-23T14:39:21Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -60,6 +64,8 @@ Repository: pushed 2026-10-21T17:36:54Z; latest commit 2026-10-21T15:35:49Z; lat
 Core backend is MPL-2.0 and self-hosted instances are exempt from SaaS project/storage caps. Current commercial terms acknowledge proprietary modules, so complete commercial feature parity cannot be established. Promising low-lock-in candidate pending module-boundary review.
 
 License: MPL-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/taigaio/taiga-back/blob/c8264ac6775103cbcc2a3a145978f2b475e9ff05/LICENSE), [edition evidence](https://taiga.io/terms-and-conditions/), [hosting](https://taiga.io/deployment-pricing-options/), [repository](https://github.com/taigaio/taiga-back).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/taiga.md).
 
 Paid restrictions: Current terms mention proprietary modules without enumerating their feature boundaries.
 

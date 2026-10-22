@@ -53,6 +53,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Wi
 
 Status: **not-applicable**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://pdfsam.org/download-pdfsam-basic/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

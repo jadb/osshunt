@@ -67,6 +67,8 @@ Resources: CPU not specified; memory 128 MB per PHP process minimum; 512 MB per 
 
 Status: **offered**. Official install page links community-maintained Snap package. Command-line installation is distinguished from true one-click cloud deployment. AIO is automated container setup with operator configuration. [1](https://nextcloud.com/install/) [2](https://snapcraft.io/nextcloud)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Nextcloud Snap](https://snapcraft.io/nextcloud): **one-command**, officially-linked-third-party. Officially linked community Snap; sudo snap install nextcloud after snapd setup, then instance configuration. [1](https://nextcloud.com/install/)

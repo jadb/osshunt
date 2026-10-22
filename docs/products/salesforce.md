@@ -10,9 +10,9 @@ Started 1999 (company-founded); years active: 27; years in business: 27. Ages ar
 
 Listed symbols: NYSE:CRM.
 
-Company founded 1999; public equity financing confirmed by official 2004 IPO history. Historical private-round investor identities not independently established from primary sources searched; no current ownership percentages asserted. [1](https://www.salesforce.com/news/stories/the-history-of-salesforce/) [2](https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm)
+Company founded 1999; public equity financing confirmed by official 2004 IPO history. Historical private-round investor identities not independently established from primary sources searched; no current ownership percentages asserted. June2004 prospectus records preferred-stock purchases by the named investors. Historical purchases, not current cap table. [1](https://www.salesforce.com/news/stories/the-history-of-salesforce/) [2](https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm) [3](https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [Halsey Minor (historical)](https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm), [Attractor Funds (historical)](https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm), [Magdalena Yesil (historical)](https://www.sec.gov/Archives/edgar/data/1108524/000119312504106606/ds1a.htm).
 
 ## Starting prices
 

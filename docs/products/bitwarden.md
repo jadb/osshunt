@@ -61,6 +61,8 @@ Resources: CPU x64 1.4GHz minimum; x64 2GHz dual core recommended; memory 2GB mi
 
 Status: **offered**. Officially documented install options; one-command is separate from browser one-click. [1](https://bitwarden.com/help/install-on-premise-linux/) [2](https://marketplace.digitalocean.com/apps/bitwarden)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [DigitalOcean marketplace](https://marketplace.digitalocean.com/apps/bitwarden): **marketplace**, officially-linked-third-party. Official deployment guide links provider marketplace. [1](https://bitwarden.com/help/install-on-premise-linux/)

@@ -6,15 +6,77 @@
     "kind": "business",
     "foundedYear": 2012,
     "ageBasis": "company-founded",
-    "ownership": "unknown",
-    "parent": null,
-    "stockSymbols": [],
+    "ownership": "public-subsidiary",
+    "parent": "Bending Spoons S.p.A. (NASDAQ:BSP)",
+    "stockSymbols": [
+      "NASDAQ:BSP (parent)"
+    ],
     "funding": "funded",
-    "investors": [],
-    "notes": "Official About says started 2012. Official company-updates index records Series F $735 million. Original funding article redirects to newsroom; exact investor names and present legal ownership not confirmed from successfully read primary pages, so investor array empty and ownership unknown.",
+    "investors": [
+      {
+        "name": "XN",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Franklin Templeton",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "J.P. Morgan Growth Equity Partners",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "MSD Capital",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Silver Lake",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "T. Rowe Price-advised funds/accounts",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Benchmark",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Caffeinated Capital",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Coatue",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "D1 Capital Partners",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Greenoaks",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "ICONIQ Growth",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      },
+      {
+        "name": "Thrive Capital",
+        "source": "https://www.airtable.com/newsroom/series-f"
+      }
+    ],
+    "notes": "Airtable began2012. Bending Spoons completed acquisition of100%of Airtable shares4September2026; public parent NASDAQ:BSP, not an Airtable standalone listing. Listed investors participated in2021SeriesF; historical backing, not asserted current owners after acquisition. Bending Spoons is recorded as parent/acquirer, not automatically an equity-funding investor.",
     "sources": [
       "https://www.airtable.com/about",
-      "https://blog.airtable.com/tag/company-updates/"
+      "https://blog.airtable.com/tag/company-updates/",
+      "https://investors.bendingspoons.com/newsroom/bending-spoons-completes-acquisition-of-airtable",
+      "https://www.airtable.com/newsroom/airtable-joins-bending-spoons",
+      "https://www.airtable.com/newsroom/series-f"
     ]
   },
   "pricingTiers": [

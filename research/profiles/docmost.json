@@ -1,0 +1,222 @@
+{
+  "id": "docmost",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Docmost, Inc.",
+    "kind": "business",
+    "foundedYear": 2024,
+    "ageBasis": "product-launched",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Founder announced first public release29June2024 after12months of work.2024 is product launch, not independently verified company incorporation date. Terms verify commercial steward; ultimate ownership, funding and investor identities unresolved after official blog/company search.",
+    "sources": [
+      "https://docmost.com/terms",
+      "https://docmost.com/blog/docmost-is-here/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "No software subscription fee for core edition; optional commercial editions and infrastructure separate.",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 72,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 10,
+      "scope": "paid self-managed license",
+      "notes": "Explicit Most popular;6/seat/month annually \u00d712. Monthly-billing amount unverified.",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 72,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 10,
+      "scope": "paid self-managed license",
+      "notes": "6/seat/month billed annually \u00d712;10seat minimum.",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-managed license",
+      "notes": "Custom pricing; Contact sales.",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "An integrated collaborative editor and structured team spaces create modest knowledge-workflow switching costs; advanced governance remains commercially gated.",
+      "basis": "assessment",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Co-edit documentation pages simultaneously without overwriting collaborators.",
+      "basis": "assessment",
+      "sources": [
+        "https://docmost.com/docs/"
+      ]
+    },
+    {
+      "claim": "Organize departments and projects into spaces with separate permissions.",
+      "basis": "assessment",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    },
+    {
+      "claim": "Find team knowledge through full-text search alongside the real-time wiki.",
+      "basis": "assessment",
+      "sources": [
+        "https://docmost.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Docmost, Inc.",
+          "url": "https://docmost.com",
+          "relationship": "business-steward",
+          "source": "https://docmost.com/terms"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://docmost.com/terms"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://docmost.com/docs/installation"
+          ]
+        },
+        {
+          "component": "PostgreSQL18 (current documented default)",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/docmost/docmost/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Redis8 with persistent append-only storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://raw.githubusercontent.com/docmost/docmost/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Persistent app/file storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Local storage default.",
+          "sources": [
+            "https://docmost.com/docs/installation"
+          ]
+        },
+        {
+          "component": "S3-compatible or Azure Blob storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Replace local file-storage driver",
+          "notes": "As documented; no unsupported version assumption.",
+          "sources": [
+            "https://docmost.com/docs/installation"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email configured",
+          "notes": "Installation links configuration for mail settings.",
+          "sources": [
+            "https://docmost.com/docs/installation"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "Hardware minima not specified in the reviewed installation instructions.",
+        "sources": [
+          "https://docmost.com/docs/installation"
+        ]
+      },
+      "notes": "Official current default Docker stack verified. Local storage, PostgreSQL and Redis volumes persist data; remote storage optional. Community AGPL core distinct from paid Business/Enterprise capabilities.",
+      "sources": [
+        "https://docmost.com/docs/installation"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://docmost.com/docs/installation"
+      ]
+    }
+  }
+}

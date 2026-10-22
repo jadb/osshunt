@@ -1,0 +1,234 @@
+{
+  "id": "orangehrm-starter",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "OrangeHRM Inc.",
+    "kind": "business",
+    "foundedYear": 2005,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Larry Stefanic",
+        "source": "https://orangehrm.com/assets/Documents/Resources/Press-Releases/OrangeHRM-Financing.pdf"
+      },
+      {
+        "name": "David Axmark",
+        "source": "https://orangehrm.com/assets/Documents/Resources/Press-Releases/OrangeHRM-Financing.pdf"
+      }
+    ],
+    "notes": "About page says founded 2005; leadership bio says co-founded Inc. in 2006, so founding history uses 2005 and incorporation date remains distinct. Historical Series A names Larry Stefanic and David Axmark. No current cap table published.",
+    "sources": [
+      "https://orangehrm.com/company/about-us",
+      "https://orangehrm.com/assets/Documents/Resources/Press-Releases/OrangeHRM-Financing.pdf"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted Starter core",
+      "notes": "GPL Starter software; infrastructure separate. Advanced functionality is a different commercial edition.",
+      "sources": [
+        "https://orangehrm.com/orangehrm-starter-open-source-software"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No explicit Most popular or Recommended designation verified on the official plan page; no plan inferred.",
+      "sources": [
+        "https://orangehrm.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Advanced",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "employee",
+      "minimumQuantity": null,
+      "scope": "separate commercial Advanced edition",
+      "notes": "Per-employee-per-month, module selection and personalized quote. Officially available cloud or on-premises; no numeric rate published.",
+      "sources": [
+        "https://orangehrm.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No separate Enterprise plan; Advanced is explicitly described as enterprise-grade and quoted per requirements.",
+      "sources": [
+        "https://orangehrm.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A long-lived HR data model covering employee administration and time/leave workflows can create migration costs; paid Advanced remains a separate edition.",
+      "basis": "assessment",
+      "sources": [
+        "https://orangehrm.com/orangehrm-starter-open-source-software"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Employee database, profiles and corporate directory consolidate basic personnel information.",
+      "basis": "assessment",
+      "sources": [
+        "https://orangehrm.com/orangehrm-starter-open-source-software"
+      ]
+    },
+    {
+      "claim": "Leave requests and approvals work alongside time tracking for routine attendance administration.",
+      "basis": "assessment",
+      "sources": [
+        "https://orangehrm.com/orangehrm-starter-open-source-software"
+      ]
+    },
+    {
+      "claim": "Built-in recruitment and basic performance reviews cover more of the employee lifecycle in one HR application.",
+      "basis": "assessment",
+      "sources": [
+        "https://orangehrm.com/orangehrm-starter-open-source-software"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "OrangeHRM Inc.",
+          "url": "https://orangehrm.com/company/about-us",
+          "relationship": "business-steward",
+          "source": "https://orangehrm.com/company/about-us"
+        }
+      ],
+      "notes": "No separate corporate financial/in-kind sponsor identified in reviewed official project and business pages. Verified commercial steward included as business fallback; customers, partners and investors are not classified as sponsors.",
+      "sources": [
+        "https://orangehrm.com/company/about-us"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP 7.4 or PHP 8.x and required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "v5.9 Composer constraint ^7.4|^8.0; PDO, curl, JSON, mbstring, zip, DOM, XML/simplexml, GD, LDAP and OpenSSL extensions. Constraint is software compatibility, not recommendation to use obsolete PHP.",
+          "sources": [
+            "https://raw.githubusercontent.com/orangehrm/orangehrm/v5.9/src/composer.json"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MySQL-compatible documented deployment",
+          "notes": "Installer defaults to port3306/mysql schema; exact minimum database version not verified.",
+          "sources": [
+            "https://raw.githubusercontent.com/orangehrm/orangehrm/v5.9/installer/cli_install_config.yaml"
+          ]
+        },
+        {
+          "component": "MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MySQL-compatible documented deployment",
+          "notes": "Official middleware guide supplies MariaDB route; no PostgreSQL/SQLite route verified.",
+          "sources": [
+            "https://www.orangehrm.com/assets/Files/OrangeHRM-Middleware-Installation-Guide-Automated-RHEL8.pdf"
+          ]
+        },
+        {
+          "component": "Apache web server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official middleware path uses Apache; other web servers not independently established.",
+          "sources": [
+            "https://www.orangehrm.com/assets/Files/OrangeHRM-Middleware-Installation-Guide-Automated-RHEL8.pdf"
+          ]
+        },
+        {
+          "component": "SMTP service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email notifications configured",
+          "notes": "Email delivery requires a mail provider; not required merely to run employee database.",
+          "sources": [
+            "https://starterhelp.orangehrm.com/hc/en-us/articles/5295915003666-OrangeHRM-Starter-Installation-Guide"
+          ]
+        },
+        {
+          "component": "Composer / Node.js asset tooling",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Building source rather than release package",
+          "notes": "Bundled production dependencies differ from build tooling; no external Redis/cache/search service established.",
+          "sources": [
+            "https://raw.githubusercontent.com/orangehrm/orangehrm/v5.9/src/composer.json"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux; Windows installation route linked by official README",
+        "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
+        "sources": [
+          "https://starterhelp.orangehrm.com/hc/en-us/articles/5295915003666-OrangeHRM-Starter-Installation-Guide"
+        ]
+      },
+      "notes": "Starter v5.9 source requirements checked; Linux/Windows prerequisites Help Center pages lacked usable body text, so versioned Composer and installer config plus official middleware guide used. No external Redis/queue/object-store service required by reviewed baseline.",
+      "sources": [
+        "https://starterhelp.orangehrm.com/hc/en-us/articles/5295915003666-OrangeHRM-Starter-Installation-Guide",
+        "https://raw.githubusercontent.com/orangehrm/orangehrm/v5.9/src/composer.json",
+        "https://raw.githubusercontent.com/orangehrm/orangehrm/v5.9/installer/cli_install_config.yaml",
+        "https://www.orangehrm.com/assets/Files/OrangeHRM-Middleware-Installation-Guide-Automated-RHEL8.pdf"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation instructions; no current first-party or officially linked one-click or one-command installer verified. Manual package/Compose instructions excluded.",
+      "sources": [
+        "https://starterhelp.orangehrm.com/hc/en-us/articles/5295915003666-OrangeHRM-Starter-Installation-Guide"
+      ]
+    }
+  }
+}

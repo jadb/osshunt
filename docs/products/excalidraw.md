@@ -59,6 +59,8 @@ Resources: CPU not specified; memory not specified; storage not specified; OS Br
 
 Status: **none-found**. Checked official deployment documentation; manual Docker Compose is not a one-click offer. [1](https://docs.excalidraw.com/docs/introduction/development)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

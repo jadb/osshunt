@@ -1,0 +1,253 @@
+{
+  "id": "espocrm",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "EspoCRM team/company",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "About distinguishes team formed2008, company active since2011, EspoCRM released2014. Current exact legal entity and equity funding unresolved; secondary no-funding claims excluded.",
+    "sources": [
+      "https://www.espocrm.com/about-us/",
+      "https://www.espocrm.com/cloud/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "EspoCRM core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Free AGPL self-hosted core; commercial extensions separate.",
+      "sources": [
+        "https://www.espocrm.com/download/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://www.espocrm.com/cloud/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": 15,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 3,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest base organizational cloud plan; minimum3users; includes extensions that self-host core lacks.",
+      "sources": [
+        "https://www.espocrm.com/cloud/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 5,
+      "scope": "vendor commercial cloud",
+      "notes": "Named cloud Enterprise; minimum5users; extension-inclusive commercial scope.",
+      "sources": [
+        "https://www.espocrm.com/cloud/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Extensible metadata, custom record layouts and established CRM data relationships create configuration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.espocrm.com/download/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "No-code fields and layouts adapt CRM records to specialized business processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.espocrm.com/download/"
+      ]
+    },
+    {
+      "claim": "Built-in cases and customer portal connect customer requests with CRM relationships.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.espocrm.com/download/"
+      ]
+    },
+    {
+      "claim": "Kanban opportunity pipelines and activity streams combine deal progress with team collaboration.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.espocrm.com/cloud/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "EspoCRM",
+          "url": "https://www.espocrm.com/about-us/",
+          "relationship": "business-steward",
+          "source": "https://www.espocrm.com/about-us/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://www.espocrm.com/about-us/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP8.3\u20138.5 plus documented extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; native or included Docker runtime.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "MySQL8+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "MariaDB10.6+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select SQL backend; script uses MariaDB.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "PostgreSQL15",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select SQL backend.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "Apache / Nginx / IIS",
+          "necessity": "required",
+          "group": null,
+          "condition": "One supported webserver; script uses Nginx.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "Cron / scheduled background jobs",
+          "necessity": "required",
+          "group": null,
+          "condition": "Scheduled tasks; native crontab or Docker daemon.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "ZeroMQ/ev WebSocket extensions",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Realtime WebSocket service when configured.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://docs.espocrm.com/administration/server-configuration/"
+          ]
+        },
+        {
+          "component": "SMTP/IMAP provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only email delivery and synchronization workflows.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://www.espocrm.com/cloud/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No numerical hardware minima verified in the cited deployment documentation.",
+        "sources": [
+          "https://docs.espocrm.com/administration/server-configuration/"
+        ]
+      },
+      "notes": "Native PHP+SQL path or Docker-based installer. Redis/external queue not required by default docs. Script supplies Nginx/MariaDB; PHP memory_limit256M is per-process configuration, not server-RAM minimum.",
+      "sources": [
+        "https://docs.espocrm.com/administration/server-configuration/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Docker installation script",
+          "url": "https://docs.espocrm.com/administration/installation-by-script/",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Download install.sh then run sudo bash; automated command-line sequence, not true one-click.",
+          "sources": [
+            "https://docs.espocrm.com/administration/installation-by-script/"
+          ]
+        }
+      ],
+      "notes": "Official script automates Docker/Nginx/MariaDB provisioning with domain/TLS options; terminal access and sudo required.",
+      "sources": [
+        "https://docs.espocrm.com/administration/server-configuration/"
+      ]
+    }
+  }
+}

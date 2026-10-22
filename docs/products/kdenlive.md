@@ -53,6 +53,8 @@ Resources: CPU SD: 1×2GHz; HD: 4 cores; 4K: 8 cores; memory SD 4GB; HD 8GB; 4K 
 
 Status: **offered**. Desktop/package installers are distinguished from server one-click hosting; only officially linked package/command options included. [1](https://docs.kdenlive.org/en/getting_started/installation.html)
 
+Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 - [Official Flatpak distribution](https://flathub.org/apps/org.kde.kdenlive): **marketplace**, officially-linked-third-party. Official installation page links this distribution; not a hosted server deployment. [1](https://docs.kdenlive.org/en/getting_started/installation.html)

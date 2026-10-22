@@ -1,0 +1,236 @@
+{
+  "id": "kanboard",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Fr\u00e9d\u00e9ric Guillot / Kanboard contributors",
+    "kind": "individual",
+    "foundedYear": 2014,
+    "ageBasis": "product-launched",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Individual-led MIT project, with community contributors.2014 is first release, not a company foundation. Donation channels are not equity financing; no corporation or venture investors established.",
+    "sources": [
+      "https://kanboard.org/",
+      "https://kanboard.org/releases/kanboard/v1.0.0.html",
+      "https://kanboard.org/donations.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Kanboard",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Core software license has no subscription charge; infrastructure and optional commercial offerings separate.",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Single free MIT product; no vendor Business software edition identified.",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Single free MIT product; no vendor Enterprise software edition identified.",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Deliberately small feature scope and MIT extensibility encourage a durable niche, with limited proprietary barriers.",
+      "basis": "assessment",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Enforce visible work-in-progress limits by highlighting overloaded columns.",
+      "basis": "assessment",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    },
+    {
+      "claim": "Automate assignee, category and color changes from workflow events.",
+      "basis": "assessment",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    },
+    {
+      "claim": "Filter boards with a compact query language across owners, categories and dates.",
+      "basis": "assessment",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Donations page checked: LiberaPay/PayPal channels, no named corporate sponsors. Individual steward is not a business sponsor fallback.",
+      "sources": [
+        "https://kanboard.org/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP >=8.1 and required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "PDO backend driver, gd, mbstring, openssl, json, hash, ctype, session, filter, xml/SimpleXML/dom.8.1 required since1.2.46.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "SQLite>=3.7",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one SQL backend",
+          "notes": "Small teams; do not use with NFS or Docker.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "PostgreSQL>=9.4",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one SQL backend",
+          "notes": "Recommended database.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "MySQL>=5.6",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one SQL backend",
+          "notes": "Documented alternative.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "MariaDB>=10",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one SQL backend",
+          "notes": "Documented alternative.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "Microsoft SQL Server",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one SQL backend",
+          "notes": "Experimental since1.2.25.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "Apache/Nginx/IIS/Caddy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Choose a compatible web server; Apache preconfigured.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        },
+        {
+          "component": "zip/ldap/curl PHP extensions",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Plugin installation, LDAP integration or HTTP client respectively",
+          "notes": "Optional extensions explicitly listed.",
+          "sources": [
+            "https://docs.kanboard.org/v1/admin/requirements/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux recommended; FreeBSD and Windows supported",
+        "notes": "No numeric server hardware minimum in requirements. Browser screen guidance: desktop>=1366\u00d7768, tablet>=1024\u00d7768.",
+        "sources": [
+          "https://docs.kanboard.org/v1/admin/requirements/"
+        ]
+      },
+      "notes": "Scope is the documented default installation. Optional integrations are separate from the core; no infrastructure price implied.",
+      "sources": [
+        "https://docs.kanboard.org/v1/admin/requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://docs.kanboard.org/v1/admin/requirements/"
+      ]
+    }
+  }
+}

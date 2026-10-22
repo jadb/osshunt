@@ -43,9 +43,10 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Displayed 10 per member/month treated as yearly-selector rate: \u00d712; monthly-billing rate not independently verified. Free separate.",
+      "notes": "Current10/member/month displayed rate matched with official2024Plus pricing update identifying10annual-equivalent; annual total10\u00d712. Monthly-billing current rate not asserted from old announcement. Free separate.",
       "sources": [
-        "https://www.notion.com/pricing"
+        "https://www.notion.com/pricing",
+        "https://www.notion.com/releases/2024-06-26"
       ]
     },
     {
@@ -59,9 +60,10 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Explicitly Recommended; displayed yearly-selector 20/member/month \u00d712.",
+      "notes": "Business Recommended on pricing. Current Startup FAQ confirms20/member paid annually as monthly-equivalent; annual total20\u00d712. Monthly-billing figure unverified.",
       "sources": [
-        "https://www.notion.com/pricing"
+        "https://www.notion.com/pricing",
+        "https://www.notion.com/startups"
       ]
     },
     {
@@ -75,9 +77,10 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "20 annual-billed monthly \u00d712; monthly-billing figure unverified.",
+      "notes": "Business Recommended on pricing. Current Startup FAQ confirms20/member paid annually as monthly-equivalent; annual total20\u00d712. Monthly-billing figure unverified.",
       "sources": [
-        "https://www.notion.com/pricing"
+        "https://www.notion.com/pricing",
+        "https://www.notion.com/startups"
       ]
     },
     {

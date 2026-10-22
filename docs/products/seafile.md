@@ -58,6 +58,8 @@ Resources: CPU 2 cores above 2GHz recommended; memory 2GB recommended; storage n
 
 Status: **none-found**. Checked official installation documentation; manual installation/Compose alone is not a one-click offering. [1](https://manual.seafile.com/latest/setup/setup_ce_by_docker/)
 
+Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
+
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
 

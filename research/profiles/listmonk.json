@@ -1,0 +1,223 @@
+{
+  "id": "listmonk",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Kailash Nadh and listmonk contributors; developed at Zerodha",
+    "kind": "community",
+    "foundedYear": 2018,
+    "ageBasis": "project-started",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Official homepage says Since2018. Public repository maintained under knadh; Zerodha officially lists listmonk among projects built and dog-fooded there. No standalone venture-financed company identified; this funding status concerns the project, not Zerodha.",
+    "sources": [
+      "https://listmonk.app/",
+      "https://github.com/knadh/listmonk",
+      "https://zerodha.tech/projects/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "listmonk",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted software",
+      "notes": "Free AGPL application; database, server and email-transport costs separate.",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "self-hosted software",
+      "notes": "No commercial Team/Business software edition; linked hosting providers unaffiliated.",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "self-hosted software",
+      "notes": "No Enterprise software tier published; external hosting providers not first-party enterprise plans.",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Single-binary design and production-proven bulk delivery are useful engineering differentiation, while AGPL and standard SMTP limit exclusive lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "SQL expressions segment large subscriber lists using custom subscriber data.",
+      "basis": "assessment",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    },
+    {
+      "claim": "Multi-SMTP queues expose throughput and sliding-window rate controls for bulk campaigns.",
+      "basis": "assessment",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    },
+    {
+      "claim": "Go templates and messenger webhooks extend campaigns into dynamic email and other message channels.",
+      "basis": "assessment",
+      "sources": [
+        "https://listmonk.app/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Zerodha",
+          "url": "https://zerodha.tech/projects/",
+          "relationship": "business-steward",
+          "source": "https://zerodha.tech/projects/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://zerodha.tech/projects/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "listmonk standalone binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always; application includes UI and delivery workers.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://listmonk.app/docs/installation/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Only database dependency.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://listmonk.app/docs/"
+          ]
+        },
+        {
+          "component": "SMTP relay/server",
+          "necessity": "required",
+          "group": null,
+          "condition": "For email campaign delivery; configurable one or multiple servers.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://listmonk.app/docs/configuration/"
+          ]
+        },
+        {
+          "component": "Filesystem media volume",
+          "necessity": "one-of",
+          "group": "media-storage",
+          "condition": "Default media uploads storage.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://listmonk.app/docs/configuration/"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "one-of",
+          "group": "media-storage",
+          "condition": "Alternative media storage configured in app.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://listmonk.app/docs/configuration/"
+          ]
+        },
+        {
+          "component": "External messenger endpoint",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only SMS/WhatsApp/custom notification delivery.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://listmonk.app/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Published binaries for Linux,macOS,Windows and BSD",
+        "notes": "57MB observed in a7million-email production campaign is a benchmark, not a minimum. No guaranteed hardware minimum.",
+        "sources": [
+          "https://listmonk.app/"
+        ]
+      },
+      "notes": "Stable binary/container install with Postgres; no Node/Go build tool needed for prebuilt binary and no separate Redis/worker service documented. Homepage now advertises7beta; use stable release for production.",
+      "sources": [
+        "https://listmonk.app/docs/installation/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation docs describe binary and manual Docker Compose. Homepage references unaffiliated third-party hosting but current extract gives no verifiable provider shortcut URL; none recorded.",
+      "sources": [
+        "https://listmonk.app/docs/installation/"
+      ]
+    }
+  }
+}

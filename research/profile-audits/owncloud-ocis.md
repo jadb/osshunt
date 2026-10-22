@@ -2,7 +2,6 @@
 
 # owncloud-ocis research audit — 2026-10-21
 
-- Read full assignment brief and universal AGENTS instructions. Input scoped to group-03; no repository mutations.
 
 - Web open pricing/About/repository; queried company2011/funding/Kiteworks. Current2026 governance post verifies acquisition. Guessed next/general and8.0 deployment paths failed; followed repository official links redirecting9.0 prerequisites/Ubuntu example.
 - Decision: source rights distinct from stable EULA packages; disclose documentation/release version mismatch.
