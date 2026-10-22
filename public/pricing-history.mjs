@@ -15,6 +15,7 @@ const messages = {
   review_pending: 'Archived pricing is awaiting review. Only confirmed observations appear here.',
   no_commercial_offer: 'The reviewed archive evidence indicates no commercial offer.',
   sampling_gap: 'No pricing capture met the six-month sampling interval.',
+  inventory_limit: 'This archive history exceeds the retrieval limits. Coverage is incomplete; saved evidence remains available.',
 };
 
 export class PricingHistory extends BaseElement {
