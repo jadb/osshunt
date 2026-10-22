@@ -12099,6 +12099,221 @@
     }
   },
   {
+    "id": "pricing-manual-7b8fc5f75d06db1fb2b47fba51953518863b1140e5d090cb728b2aec46b800f9",
+    "productId": "figjam",
+    "scope": {
+      "edition": "Collab seats (FigJam included)",
+      "deployment": "hosted"
+    },
+    "anchorAt": "2025-06-26T04:09:36.000Z",
+    "landingCapturedAt": "2025-06-25T16:10:40.000Z",
+    "pricingCapturedAt": "2025-06-26T04:09:36.000Z",
+    "evidenceAvailableAt": "2025-06-26T04:09:36.000Z",
+    "landingUrl": "https://www.figma.com/figjam/",
+    "pricingUrl": "https://www.figma.com/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:167916-168023"
+    },
+    "sourceSha256": "54f93e0b39da2f4e54df8b0e16093fad967ac634ec432abdff0831704e0f2472",
+    "landingSha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+    "sourceDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+    "landingDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ",
+    "fetchedAt": "2026-10-22T14:33:00.768Z",
+    "landingFetchedAt": "2026-10-22T17:28:30.108Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+      "actualDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ",
+      "actualDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 04:09:36 GMT",
+      "originalUrl": "https://www.figma.com/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250626021558042-01184-01235-wbgrp-crawl043/LUX-029-2025-06-23-20250626040654891-01219-1831598~wbgrp-crawl043.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 25 Jun 2025 16:10:40 GMT",
+      "originalUrl": "https://www.figma.com/figjam/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250625155655485-00976-01029-wbgrp-crawl043/LUX-029-2025-06-23-20250625160957763-00981-1831598~wbgrp-crawl043.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [
+      "2025-06-25T16:10:40.000Z"
+    ],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Reused verified Figma pricing captureJune26 with dated FigJam pricing-link evidenceJune25. Anchor isJune26; not backdated toJune25.",
+      "Collab seats include FigJam and Figma Slides; bundled Figma tier rates, not independent FigJam-only offers.",
+      "Only Professional/Organization/Enterprise Collab seats retained; other seat products and coming-soon Content seats excluded.",
+      "Professional annual commitment follows static checked annual switch; Organization/Enterprise explicitly billed annually.",
+      "No purchase minima or unsupported feature entitlements inferred."
+    ],
+    "plans": [
+      {
+        "name": "Professional",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$3 /mo",
+            "amount": "3",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Collab seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Figma Collab seat includes FigJam and Figma Slides; not a standalone FigJam-only license",
+              "billingVariant": "Retained annual variant; runtime/checkout state not executed"
+            },
+            "source": {
+              "locator": "offset:269421-269480|offset:268082-268230|offset:267678-268028|offset:265150-265189|offset:267748-268016|offset:318891-320386",
+              "text": "$3 /mo | Collab seat | Professional Monthly Annual | Prices in USD | role=\"switch\" aria-label=\"Show annual billing prices\" aria-checked=\"true\" | The Collab seat makes it easy to work together. Brainstorm in FigJam. Present in Figma Slides."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Included products",
+            "value": "FigJam and Figma Slides",
+            "source": {
+              "locator": "offset:318891-320386",
+              "text": "The Collab seat makes it easy to work together. Brainstorm in FigJam. Present in Figma Slides."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:267604-278315",
+          "text": "Professional Monthly Annual Collab seat $3 /mo Dev seat $12 /mo Full seat $16 /mo Select plan Why choose Professional? Choose Professional if you: Are a professional or part of a small team Need unlimited files and projects for a single team Want advanced prototyping tools and easier dev handoff Key features: Unlimited files and projects Team-wide design libraries Advanced Dev Mode inspection Choose Professional if you: Are a professional or part of a small team Need unlimited files and projects for a single team Want advanced prototyping tools and easier dev handoff Key features: Unlimited files and projects Team-wide design libraries Advanced Dev Mode inspection"
+        }
+      },
+      {
+        "name": "Organization",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5 /mo",
+            "amount": "5",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Collab seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Figma Collab seat includes FigJam and Figma Slides; not a standalone FigJam-only license",
+              "billingVariant": "Retained annual variant; runtime/checkout state not executed"
+            },
+            "source": {
+              "locator": "offset:279906-279965|offset:278567-278715|offset:278389-278513|offset:265150-265189|offset:318891-320386",
+              "text": "$5 /mo | Collab seat | Organization Billed annually | Prices in USD | The Collab seat makes it easy to work together. Brainstorm in FigJam. Present in Figma Slides."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Included products",
+            "value": "FigJam and Figma Slides",
+            "source": {
+              "locator": "offset:318891-320386",
+              "text": "The Collab seat makes it easy to work together. Brainstorm in FigJam. Present in Figma Slides."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:278315-288984",
+          "text": "Organization Billed annually Collab seat $5 /mo Dev seat $25 /mo Full seat $55 /mo Select plan Contact sales Why choose Organization? Choose Organization if you: Are a business that designs products across your organization Need unlimited teams and basic security Want to centralize assets, libraries, and workflows across departments Key features: Unlimited teams Shared libraries and fonts Centralized admin tools Choose Organization if you: Are a business that designs products across your organization Need unlimited teams and basic security Want to centralize assets, libraries, and workflows across departments Key features: Unlimited teams Shared libraries and fonts Centralized admin tools"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5 /mo",
+            "amount": "5",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Collab seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Figma Collab seat includes FigJam and Figma Slides; not a standalone FigJam-only license",
+              "billingVariant": "Retained annual variant; runtime/checkout state not executed"
+            },
+            "source": {
+              "locator": "offset:290573-290632|offset:289234-289382|offset:289058-289180|offset:265150-265189|offset:318891-320386",
+              "text": "$5 /mo | Collab seat | Enterprise Billed annually | Prices in USD | The Collab seat makes it easy to work together. Brainstorm in FigJam. Present in Figma Slides."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Included products",
+            "value": "FigJam and Figma Slides",
+            "source": {
+              "locator": "offset:318891-320386",
+              "text": "The Collab seat makes it easy to work together. Brainstorm in FigJam. Present in Figma Slides."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:288984-299581",
+          "text": "Enterprise Billed annually Collab seat $5 /mo Dev seat $35 /mo Full seat $90 /mo Contact sales Learn more Why choose Enterprise? Choose Enterprise if you: Are a business designing for multiple products or brands Need enterprise-level security Want scalable design systems and simpler admin management Key features: Custom team workspaces Design system theming and APIs SCIM seat management Choose Enterprise if you: Are a business designing for multiple products or brands Need enterprise-level security Want scalable design systems and simpler admin management Key features: Custom team workspaces Design system theming and APIs SCIM seat management"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:29:39.643Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-86b7bd278014240488ef1857d0180d8adb641aa0ce14668173ee5f77227df0f7",
     "productId": "datadog",
     "scope": {
@@ -18858,6 +19073,445 @@
     "review": {
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:10:54.767Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-c8358b4186fc4a53cf90aba9d6dfb0c8fb8cf8cc20b4fb5092b253cf1980a62e",
+    "productId": "bigcommerce",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-28T19:11:18.000Z",
+    "landingCapturedAt": "2025-06-28T19:11:18.000Z",
+    "pricingCapturedAt": "2025-06-28T19:11:18.000Z",
+    "evidenceAvailableAt": "2025-06-28T19:11:18.000Z",
+    "landingUrl": "https://www.bigcommerce.com/",
+    "pricingUrl": "https://www.bigcommerce.com/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Standard",
+      "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0].planName"
+    },
+    "sourceSha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+    "landingSha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+    "sourceDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+    "landingDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+    "fetchedAt": "2026-10-22T17:32:32.510Z",
+    "landingFetchedAt": "2026-10-22T17:32:32.510Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+      "actualDigest": "4TSBYA4KHHISES6HJZ6ERMLW7VHXVPNJ",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+      "actualDigest": "4TSBYA4KHHISES6HJZ6ERMLW7VHXVPNJ",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 19:11:18 GMT",
+      "originalUrl": "https://www.bigcommerce.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250628234908/spn2-20250628184713-wwwb-spn27.us.archive.org-8001.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 19:11:18 GMT",
+      "originalUrl": "https://www.bigcommerce.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250628234908/spn2-20250628184713-wwwb-spn27.us.archive.org-8001.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual recovery from inert __NEXT_DATA__ pricing namespace; not visibly rendered on selected landing. Runtime/checkout applicability unknown.",
+      "Currency unknown: no ISO code in embedded pricing namespace; no scale conversion applied.",
+      "Monthly variant has monthly denominator but contract duration unknown; annual variant explicitly Billed Annually.",
+      "Sales ceilings are trailing12month volume conditions, not minimum purchases.",
+      "Existing dedicated Enterprise observation unchanged; no duplicate Enterprise quote imported.",
+      "PayPal/Braintree processing fees are third-party conditions; Pro mobileList2.05% conflicts with comparison row2.35%, so no normalized processing fee asserted.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Standard",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "monthlyPrice: 39/mo",
+            "amount": "39",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to $50k online sales; trailing12month basis; not a minimum purchase.",
+              "billingVariant": "Embedded pricing namespace; not visibly rendered; active billing/configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[5].subRows[22]",
+              "text": "Standard; monthlyPrice=39/mo; annualPrice=29/mo, Billed Annually | Up to $50k online sales; trailing12month basis; not a minimum purchase."
+            }
+          },
+          {
+            "literal": "annualPrice: 29/mo, Billed Annually",
+            "amount": "29",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Annual billing banner: Save25%",
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to $50k online sales; trailing12month basis; not a minimum purchase.",
+              "billingVariant": "Embedded pricing namespace; not visibly rendered; active billing/configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[5].subRows[22]",
+              "text": "Standard; monthlyPrice=39/mo; annualPrice=29/mo, Billed Annually | Up to $50k online sales; trailing12month basis; not a minimum purchase."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "No transaction fees",
+            "value": "No transaction fees",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0].mobileList[1]",
+              "text": "No transaction fees"
+            }
+          },
+          {
+            "name": "Unlimited staff accounts",
+            "value": "Unlimited staff accounts",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0].mobileList[2]",
+              "text": "Unlimited staff accounts"
+            }
+          },
+          {
+            "name": "Single page checkout",
+            "value": "Single page checkout",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0].mobileList[6]",
+              "text": "Single page checkout"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[0].planName",
+          "text": "Standard"
+        }
+      },
+      {
+        "name": "Plus",
+        "order": 1,
+        "popular": true,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "monthlyPrice: 105/mo",
+            "amount": "105",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to $180k online sales; trailing12month basis; not a minimum purchase.",
+              "billingVariant": "Embedded pricing namespace; not visibly rendered; active billing/configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[1]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[5].subRows[22]",
+              "text": "Plus; monthlyPrice=105/mo; annualPrice=79/mo, Billed Annually | Up to $180k online sales; trailing12month basis; not a minimum purchase."
+            }
+          },
+          {
+            "literal": "annualPrice: 79/mo, Billed Annually",
+            "amount": "79",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Annual billing banner: Save25%",
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to $180k online sales; trailing12month basis; not a minimum purchase.",
+              "billingVariant": "Embedded pricing namespace; not visibly rendered; active billing/configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[1]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[5].subRows[22]",
+              "text": "Plus; monthlyPrice=105/mo; annualPrice=79/mo, Billed Annually | Up to $180k online sales; trailing12month basis; not a minimum purchase."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Customer groups and segmentation",
+            "value": "Customer groups and segmentation",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[1].mobileList[2]",
+              "text": "Customer groups and segmentation"
+            }
+          },
+          {
+            "name": "Abandoned cart saver",
+            "value": "Abandoned cart saver",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[1].mobileList[3]",
+              "text": "Abandoned cart saver"
+            }
+          },
+          {
+            "name": "Persistent cart",
+            "value": "Persistent cart",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[1].mobileList[4]",
+              "text": "Persistent cart"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[1].planName",
+          "text": "Plus"
+        }
+      },
+      {
+        "name": "Pro",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "monthlyPrice: 399/mo",
+            "amount": "399",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to $400k** online sales; trailing12month basis; not a minimum purchase.",
+              "billingVariant": "Embedded pricing namespace; not visibly rendered; active billing/configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[5].subRows[22]",
+              "text": "Pro; monthlyPrice=399/mo; annualPrice=299/mo, Billed Annually | Up to $400k** online sales; trailing12month basis; not a minimum purchase."
+            }
+          },
+          {
+            "literal": "annualPrice: 299/mo, Billed Annually",
+            "amount": "299",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Annual billing banner: Save25%",
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to $400k** online sales; trailing12month basis; not a minimum purchase.",
+              "billingVariant": "Embedded pricing namespace; not visibly rendered; active billing/configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[5].subRows[22]",
+              "text": "Pro; monthlyPrice=399/mo; annualPrice=299/mo, Billed Annually | Up to $400k** online sales; trailing12month basis; not a minimum purchase."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Faceted search (Product filtering)",
+            "value": "Faceted search (Product filtering)",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2].mobileList[2]",
+              "text": "Faceted search (Product filtering)"
+            }
+          },
+          {
+            "name": "Custom SSL",
+            "value": "Custom SSL",
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2].mobileList[3]",
+              "text": "Custom SSL"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2].planName",
+          "text": "Pro"
+        }
+      },
+      {
+        "name": "Additional storefront — Standard",
+        "order": 3,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$30/mo",
+            "amount": "30",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "additional storefront",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Standard plan: Up to 3 storefronts; included storefront count not established",
+              "billingVariant": "Embedded pricing namespace; active configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[3].subRows[2].cells[0]",
+              "text": "Price per additional storefront; Standard: $30/mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[3].subRows[2].header.content",
+          "text": "Price per additional storefront"
+        }
+      },
+      {
+        "name": "Additional storefront — Plus",
+        "order": 4,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$50/mo",
+            "amount": "50",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "additional storefront",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Plus plan: Up to 5 storefronts; included storefront count not established",
+              "billingVariant": "Embedded pricing namespace; active configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[3].subRows[2].cells[1]",
+              "text": "Price per additional storefront; Plus: $50/mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[3].subRows[2].header.content",
+          "text": "Price per additional storefront"
+        }
+      },
+      {
+        "name": "Additional storefront — Pro",
+        "order": 5,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$100/mo",
+            "amount": "100",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "additional storefront",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Pro plan: Up to 8 storefronts; included storefront count not established",
+              "billingVariant": "Embedded pricing namespace; active configuration unknown"
+            },
+            "source": {
+              "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[3].subRows[2].cells[2]",
+              "text": "Price per additional storefront; Pro: $100/mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[3].subRows[2].header.content",
+          "text": "Price per additional storefront"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:29:39.585Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
     }

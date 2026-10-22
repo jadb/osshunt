@@ -1782,6 +1782,21 @@
     "audienceRank": 19,
     "productPaths": [
       "/figjam"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.figma.com/pricing/",
+        "evidenceCapturedAt": "2025-06-25T16:10:40.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/",
+        "evidenceSha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+        "locator": "offset:167916-168023",
+        "label": "Pricing",
+        "scope": {
+          "edition": "Collab seats (FigJam included)",
+          "deployment": "hosted"
+        },
+        "locale": "en"
+      }
     ]
   },
   {
