@@ -64,7 +64,6 @@ const REACH: Record<string, string> = {
           </ul>
         </details>
       ))}
-      <p class="note">Audience position is an editorial estimate, not a measured market size.</p>
     </section>
   </main>
 
@@ -117,8 +116,10 @@ const REACH: Record<string, string> = {
   .reach a { display: flex; flex-direction: column; gap: 10px; padding: 12px 14px; text-decoration: none; font-weight: 600; height: 100%; }
   .cname { display: flex; justify-content: space-between; gap: 12px; }
   .cname > .n { font-weight: 600; font-size: 0.75rem; color: var(--ink-2); white-space: nowrap; align-self: baseline; }
-  .flow { display: flex; align-items: center; gap: 8px; margin-top: auto; min-height: 32px; }
-  .flow .arrow { flex: none; }
+  /* Fixed columns (tools | arrow | alternatives) so every card's arrow and second stack sit at the same x. */
+  .flow { --av: 28px; --avp: 6px; --ov: 10px; --n: 3; --stack: calc(var(--av) * (var(--n) + 1) - var(--ov) * var(--n)); display: grid; grid-template-columns: var(--stack) 18px var(--stack); column-gap: 10px; align-items: center; margin-top: auto; min-height: 28px; }
+  .flow .arrow { justify-self: center; }
+  @media (max-width: 1360px) { .flow { --av: 24px; --avp: 5px; --ov: 9px; } }
 
 
   @media (max-width: 900px) {
