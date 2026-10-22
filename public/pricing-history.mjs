@@ -1,11 +1,12 @@
 import { archiveDate } from './history-utils.mjs';
-import { shouldRefreshPricing, canResumePricing, confirmedObservations, pricingForFrame, offerLabel, sourceArchiveLink } from './pricing-utils.mjs';
+import { shouldRefreshPricing, canResumePricing, cooldownAllows, confirmedObservations, pricingForFrame, offerLabel, sourceArchiveLink } from './pricing-utils.mjs';
 
 const stylesheet = new URL('./pricing-history.css', import.meta.url).href;
 const BaseElement = globalThis.HTMLElement ?? class {};
 const messages = {
   awaiting_discovery: 'Historical pricing has not been checked yet.',
   archive_cooldown: 'The archive has asked us to wait. Saved pricing remains available.',
+  archive_unavailable: 'The archive is temporarily unavailable. Saved confirmed pricing remains available.',
   incomplete_inventory: 'Pricing discovery is incomplete. Continue the saved search when the archive is available.',
   missing_landing: 'No archived landing page was available for the sampled dates.',
   missing_pricing: 'No matching archived pricing page was available for the sampled dates.',
@@ -44,7 +45,7 @@ export class PricingHistory extends BaseElement {
   get observations() { return confirmedObservations(this.manifest?.observations); }
   get endpoint() { return `${(this.getAttribute('api-base') || '').replace(/\/$/, '')}/api/pricing/${encodeURIComponent(this.getAttribute('product-id') || '')}`; }
   connectedCallback() { if (this.getAttribute('product-id')) this.load(); }
-  disconnectedCallback() { this.abort?.abort(); this.requestToken++; }
+  disconnectedCallback() { this.abort?.abort(); this.requestToken++; clearTimeout(this.retryTimer); }
   attributeChangedCallback(name, before, after) {
     if (before === after || !this.isConnected) return;
     if (name === 'frame-date') { this.associateFrame(); this.render(); }
@@ -88,7 +89,8 @@ export class PricingHistory extends BaseElement {
   accept(manifest) {
     if (!manifest || !Array.isArray(manifest.observations)) throw new Error('Pricing unavailable');
     const oldId = this.observations[this.index]?.id;
-    this.manifest = manifest;
+    this.manifest = typeof manifest.retryAfter === 'number' && !manifest.retryAt && Number.isFinite(manifest.retryAfter)
+      ? { ...manifest, retryAt: new Date(Date.now() + Math.max(0, manifest.retryAfter) * 1000).toISOString() } : manifest;
     this.index = this.observations.findIndex(item => item.id === oldId);
     if (this.index < 0) this.index = this.observations.length - 1;
     if (this.getAttribute('frame-date')) this.associateFrame();
@@ -107,6 +109,11 @@ export class PricingHistory extends BaseElement {
     this.render();
   }
   render() {
+    clearTimeout(this.retryTimer);
+    const retryAt = Date.parse(this.manifest?.retryAt ?? this.manifest?.retryAfter);
+    if (Number.isFinite(retryAt) && retryAt > Date.now()) {
+      this.retryTimer = setTimeout(() => this.render(), Math.min(2_147_483_647, retryAt - Date.now()));
+    }
     const observations = this.observations;
     const observation = observations[this.index];
     const select = this.$('#pricing-position');
@@ -134,14 +141,14 @@ export class PricingHistory extends BaseElement {
     const status = this.manifest?.status;
     this.$('.status').textContent = this.failed ? 'Pricing could not be loaded. Saved confirmed observations remain available.' : this.loading ? 'Looking up archived pricing…' : messages[status] || (observations.length ? `${observations.length} confirmed pricing ${observations.length === 1 ? 'observation' : 'observations'}.` : 'No confirmed historical pricing is available yet.');
     this.$('.checks').textContent = this.manifest?.checkedAt ? `Last checked ${archiveDate(this.manifest.checkedAt)}${this.manifest.nextCheckAt ? ` · Next check from ${archiveDate(this.manifest.nextCheckAt)}` : ''}` : 'Pricing checks use six calendar months, independently of image history.';
-    if (this.manifest?.retryAfter) this.$('.checks').textContent += ` · Archive retry from ${archiveDate(this.manifest.retryAfter)}`;
+    if (Number.isFinite(retryAt)) this.$('.checks').textContent += ` · Archive retry from ${archiveDate(new Date(retryAt).toISOString())}`;
     const coverage = Array.isArray(this.manifest?.coverage) ? this.manifest.coverage : [];
     const gaps = coverage.filter(item => !['confirmed', 'review_pending'].includes(item.status)).length;
     this.$('.coverage').textContent = gaps ? `${gaps} sampled ${gaps === 1 ? 'date has' : 'dates have'} incomplete or unavailable evidence. Gaps are not reconstructed.` : '';
     this.$('.resume').hidden = !['incomplete', 'incomplete_inventory'].includes(status);
     this.$('.resume').disabled = this.loading || !canResumePricing(this.manifest);
-    this.$('.reload').hidden = !this.failed;
-    this.$('.reload').disabled = this.loading;
+    this.$('.reload').hidden = !this.failed && !['archive_cooldown', 'archive_unavailable'].includes(status);
+    this.$('.reload').disabled = this.loading || !cooldownAllows(this.manifest);
   }
   renderObservation(observation) {
     for (const [label, url, date] of [['Pricing source', observation.pricingArchiveUrl, observation.pricingCapturedAt], ['Landing source', observation.landingArchiveUrl, observation.landingCapturedAt]]) {

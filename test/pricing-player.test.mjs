@@ -16,6 +16,9 @@ test('pricing checks follow calendar months and cooldown; incomplete passes requ
   assert.equal(canResumePricing({ status: 'incomplete_inventory' }, now), true);
   assert.equal(shouldRefreshPricing({ status: 'incomplete_inventory', nextCheckAt: '2020-01-01' }, now), false);
   assert.equal(shouldRefreshPricing({ status: 'empty', nextCheckAt: 'invalid' }, now), false);
+  assert.equal(canResumePricing({ status: 'incomplete_inventory', retryAfter: 60 }, now), false);
+  assert.equal(canResumePricing({ status: 'incomplete_inventory', retryAfter: 60, retryAt: '2024-02-29T12:00:00Z' }, now), true);
+  assert.equal(canResumePricing({ status: 'incomplete_inventory', retryAfter: 60, retryAt: '2024-02-29T12:00:01Z' }, now), false);
 });
 
 test('frame association prevents future discovery evidence and labels last-known pricing stale after six calendar months', () => {
@@ -52,7 +55,14 @@ test('pricing component aborts product switches, ignores stale replies, and fram
     append(...children) { this.children.push(...children); }
     attachShadow() { const nodes = new Map(); this.shadowRoot = { querySelector: key => { if (!nodes.has(key)) nodes.set(key, new Node()); return nodes.get(key); } }; }
   }
-  const originals = { HTMLElement: globalThis.HTMLElement, document: globalThis.document, fetch: globalThis.fetch };
+  const originals = { HTMLElement: globalThis.HTMLElement, document: globalThis.document, fetch: globalThis.fetch, setTimeout: globalThis.setTimeout, clearTimeout: globalThis.clearTimeout };
+  const originalNow = Date.now;
+  let now = Date.parse('2026-10-22T12:00:00Z');
+  Date.now = () => now;
+  const timers = new Map();
+  let timerId = 0;
+  globalThis.setTimeout = (callback, delay) => { timers.set(++timerId, { callback, delay }); return timerId; };
+  globalThis.clearTimeout = id => timers.delete(id);
   const requests = [];
   globalThis.HTMLElement = Node;
   globalThis.document = { createElement: () => new Node() };
@@ -92,6 +102,18 @@ test('pricing component aborts product switches, ignores stale replies, and fram
     await initial;
     assert.equal(player.$('.resume').disabled, true);
     assert.equal(requests.length, 4);
+    player.accept({ status: 'incomplete_inventory', observations: [], retryAfter: 60, retryAt: '2026-10-22T12:01:00Z' });
+    assert.equal(player.$('.resume').disabled, true);
+    assert.match(player.$('.checks').textContent, /October 22, 2026/, 'retry seconds are not rendered as an epoch date');
+    assert.equal(timers.size, 1, 'one timer re-enables the continuation button');
+    const timer = [...timers.values()][0];
+    assert.equal(timer.delay, 60000);
+    now += 60000; timer.callback();
+    assert.equal(player.$('.resume').disabled, false, 'continuation re-enables after cooldown without a source fetch');
+    assert.equal(requests.length, 4);
+    player.accept({ status: 'incomplete_inventory', observations: [], retryAfter: 60 });
+    assert.equal(player.manifest.retryAt, '2026-10-22T12:02:00.000Z', 'seconds fallback anchored to receipt');
     player.disconnectedCallback();
-  } finally { for (const [key, value] of Object.entries(originals)) { if (value === undefined) delete globalThis[key]; else globalThis[key] = value; } }
+    assert.equal(timers.size, 0);
+  } finally { Date.now = originalNow; for (const [key, value] of Object.entries(originals)) { if (value === undefined) delete globalThis[key]; else globalThis[key] = value; } }
 });

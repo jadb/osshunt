@@ -12,9 +12,11 @@ export function addSixMonths(value) {
   return date.toISOString();
 }
 
-function cooldownAllows(manifest, now) {
-  if (!manifest?.retryAfter) return true;
-  const retry = timestamp(manifest.retryAfter);
+export function cooldownAllows(manifest, now = Date.now()) {
+  const deadline = manifest?.retryAt ?? manifest?.retryAfter;
+  if (deadline == null) return true;
+  if (typeof deadline === 'number') return deadline <= 0;
+  const retry = timestamp(deadline);
   return Number.isFinite(retry) && retry <= now;
 }
 
