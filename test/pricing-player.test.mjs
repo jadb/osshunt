@@ -126,6 +126,14 @@ test('pricing component aborts product switches, ignores stale replies, and fram
     player.accept({ status: 'confirmed', observations: [observation({ provenance: 'landing-page' })] });
     player.select(0);
     assert.ok(player.$('.sources').children.some(node => /pricing.*landing page/i.test(node.textContent || '')));
+    player.accept({ status: 'confirmed', observations: [
+      observation({ id: 'cloud', scope: { edition: 'Cloud', deployment: 'hosted' } }),
+      observation({ id: 'server', scope: { edition: 'Server', deployment: 'self-hosted' } }),
+    ] });
+    const options = player.$('#pricing-position').children;
+    assert.notEqual(options[0].textContent, options[1].textContent, 'same-date editions remain distinguishable');
+    assert.match(options[0].textContent, /Cloud.*hosted/);
+    assert.match(options[1].textContent, /Server.*self-hosted/);
     player.accept({ status: 'incomplete_inventory', observations: [], retryAfter: 60 });
     assert.equal(player.manifest.retryAt, '2026-10-22T12:02:00.000Z', 'seconds fallback anchored to receipt');
     player.disconnectedCallback();

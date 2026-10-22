@@ -13,7 +13,7 @@ Pricing observations and new checks use **six calendar months**, with UTC end-of
 
 ```sh
 npm ci --ignore-scripts
-make check
+make ci
 npm run history:serve
 ```
 
@@ -21,16 +21,18 @@ Open the gallery or `/embed.html?product=slack`. The existing [iframe snippet](e
 
 ```html
 <pricing-history product-id="slack"></pricing-history>
-<script type="module" src="https://YOUR-HISTORY-HOST/pricing-history.mjs"></script>
+<script type="module" src="/pricing-history.mjs"></script>
 ```
 
-Set `api-base="https://YOUR-HISTORY-HOST"` when the component and API differ in origin; configure a same-origin proxy or API CORS policy. The hosted iframe avoids this configuration. No backend credentials belong in the parent page.
+Serve `pricing-history.mjs`, `pricing-utils.mjs`, `history-utils.mjs`, `pricing-history.css` and its imported `history.css` together on the embedding page’s origin. Proxy `GET /api/pricing/:id` and `POST /api/pricing/:id/refresh` to the backend on that origin, preserving status and cache/retry headers. Serve modules over HTTP(S) with JavaScript MIME types. The deployed host grants neither module nor API CORS; `api-base` changes the API address but cannot grant browser access. Use the hosted iframe for another website, or serve assets locally with the same-origin proxy. No backend credentials belong in the parent page. See [embedding requirements](embedding.md).
 
 Optional `frame-date` takes an ISO date and associates already loaded pricing with an image. Changing it never fetches pricing. All historical discovery evidence must predate the image; actual pricing dates remain visible. Evidence over six calendar months old is stale last-known pricing. Removing the attribute restores the independent timeline.
 
 ## Read and discover
 
 `GET /api/pricing/PRODUCT_ID` reads saved coverage and confirmed observations without contacting the Archive. `POST /api/pricing/PRODUCT_ID/refresh` accepts an empty body only and starts an eligible pass or continues a saved incomplete inventory. Each call makes at most three outbound requests. Unknown IDs, arbitrary URLs and request options are rejected.
+
+Public coverage contains only each anchor’s date, status, optional error code and confirmed observation ID. Unreviewed proposals, extraction diagnostics, source snippets and schema errors remain private.
 
 The manifest contains product identity, status, observations, comparable changes, per-anchor coverage, `checkedAt`, `nextCheckAt`, `incomplete`, `errorCode`, numeric `retryAfter` seconds and absolute ISO `retryAt` where relevant.
 
@@ -144,4 +146,4 @@ The [manual saved-source recovery](../research/pricing-manual-recovery-verificat
 
 [The following ten-tool batch](../research/pricing-batch-six-verification.md) adds **two core-priced products: Tailscale and Freshservice suite tiers with verified ITAM entitlements**. Freshservice rates describe the eligible suite bundle, with optional asset, employee and other charges kept separate; Starter excludes ITAM and hidden Enterprise amounts are not published. Fastmail contributes a trial and Auth0 contributes free/unknown-price structures; six tools remain gaps. Coverage at that stage: **36 products with numerical rates, 35 with core-plan prices, 55 with any reviewed structure; 116 observations, 314 plans and 548 offers**. All 112 prior observations, 80 prior product states and four frozen journals remain unchanged. Collection used 27 baseline requests and three separately logged exact-alias recovery requests; completed baseline replay used zero. All six-month reservations remain intact.
 
-[The final nine previously unsampled paid tools](../research/pricing-batch-seven-verification.md) finish the first collection pass for all **95 paid catalog products** (99 sampled entries including four alternatives). Seven tools add positive rates: five have subscription-plan rates and Firebase/Algolia supply usage schedules, with no fixed product fee inferred. Pingdom and Elastic Cloud contribute trials only; selected pricing HTML fails the payload digest and stays unpublished. Pingdom’s separate PDF lead remains uncollected by the HTML-only process, so archived PDF availability is unknown. Current totals: **43 products with positive numerical rates, 42 with core-plan or service rates, 64 with any reviewed structure; 129 observations, 386 plans, 697 offers**. All 116 prior observations, 90 prior product states and five journals remain unchanged. Source audit: 36 baseline requests plus two exact-alias recovery requests, zero-fetch completed replay and 258 resulting evidence-role checks. No reservation or six-month checkpoint reset.
+[The final nine previously unsampled paid tools](../research/pricing-batch-seven-verification.md) finish the first collection pass for all **95 paid catalog products** (99 sampled entries including four alternatives). Seven tools add positive rates: five have subscription-plan rates and Firebase/Algolia supply usage schedules, with no fixed product fee inferred. Pingdom and Elastic Cloud contribute trials only; selected pricing HTML fails the payload digest and stays unpublished. Pingdom’s separate PDF lead remains uncollected by the HTML-only process, so archived PDF availability is unknown. Paid-only coverage: **41/95 products with positive numerical rates**, including **40 with core-plan or service rates and Aircall with add-on rates only**. **61/95 have any reviewed structure**: the other 20 have only free, trial, quote or unknown-price records; 34 have no confirmed observation. Across paid products and alternatives, totals are **43 with positive rates, 42 with core-plan or service rates, 64 with any reviewed structure; 129 observations, 386 plans, 697 offers**. Passbolt and Mattermost supply the two additional positive-rate products; Ghost adds trial-only structure. No product has a complete six-month history. All 116 prior observations, 90 prior product states and five journals remain unchanged. Source audit: 36 baseline requests plus two exact-alias recovery requests, zero-fetch completed replay and 258 resulting evidence-role checks. No reservation or six-month checkpoint reset.

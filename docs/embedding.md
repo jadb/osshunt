@@ -85,7 +85,9 @@ New checks are driven by visits or the explicit backfill command, not a schedule
 | Native component appears empty | Module, imported helper and stylesheet all return 200 with correct MIME types; use HTTP(S) |
 | Browser reports CORS failure | Use the iframe or a same-origin API proxy; `api-base` alone does not grant access |
 | Empty/pending/unavailable history | Review coverage, stored error and cooldown; do not remove reservations or repeatedly fetch the source |
-| New frames stop after a restart | Retain the backend's database and image storage; apply both D1 migrations when self-hosting |
-# Pricing history
+| New frames stop after a restart | Retain the backend's database and image storage; apply the image migrations and pricing migration when self-hosting |
+## Pricing history
 
 The updated gallery and iframe also include a pricing timeline with six-calendar-month checks. It needs migration `0003_pricing_history.sql` and the built `pricing-observations.json` asset in addition to the existing image requirements. No new binding or browser secret is required. [Pricing operation, confirmation workflow and deployment](pricing-history.md) explains private evidence access and the restart/redeployment required after confirmation. Historical pricing coverage remains incomplete.
+
+For a native pricing-only component, serve `pricing-history.mjs`, `pricing-utils.mjs`, `history-utils.mjs`, `pricing-history.css` and its imported `history.css` on the page’s origin. Provide same-origin `GET /api/pricing/:id` and empty-body `POST /api/pricing/:id/refresh` routes. The [native pricing snippet](pricing-history.md#requirements-and-embedding) includes the component attributes. Adding the image component also requires its assets and routes above. The deployed host provides no cross-origin module or API access; use the iframe for cross-site embedding.

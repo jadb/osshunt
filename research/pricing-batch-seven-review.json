@@ -307,7 +307,7 @@
           "fact": "App-type overview rounded hourly estimates differ from detailed family rate cards; detailed rates retained without silently reconciling.",
           "source": {
             "locator": "offset:157815-158090",
-            "text": "The price per dyno per month listed for each dyno type is the maximum you’re charged if you run the dyno 24 hours a day, 7 days a week since your last billing cycle. Eco dynos are not prorated and are a flat-rate price for up to 1,000 hours of usage across apps.",
+            "text": "The price per dyno per month listed for each dyno type is the maximum you\u2019re charged if you run the dyno 24 hours a day, 7 days a week since your last billing cycle. Eco dynos are not prorated and are a flat-rate price for up to 1,000 hours of usage across apps.",
             "url": "https://www.heroku.com/pricing/",
             "capturedAt": "2025-06-30T11:10:25.000Z",
             "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
@@ -535,7 +535,7 @@
           }
         },
         {
-          "fact": "Animated hero price counters contain every digit0–9; these are not reliable literal amounts. Fixed comparison-table text used instead.",
+          "fact": "Animated hero price counters contain every digit0\u20139; these are not reliable literal amounts. Fixed comparison-table text used instead.",
           "source": {
             "locator": "offset:149431-151774",
             "text": "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9",
@@ -558,7 +558,7 @@
           "fact": "Students and educators can apply for a free Business account; non-profits can apply for25free seats. Conditional offers, not a generally free paid tier.",
           "source": {
             "locator": "offset:369067-370201",
-            "text": "Students and educators: Complete a student and educators application ↗ to claim a free Business account. Nonprofits: Complete a nonprofits application ↗ to claim 25 free seats.",
+            "text": "Students and educators: Complete a student and educators application \u2197 to claim a free Business account. Nonprofits: Complete a nonprofits application \u2197 to claim 25 free seats.",
             "url": "https://retool.com/pricing",
             "capturedAt": "2025-06-20T03:56:49.000Z",
             "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b"
@@ -867,5 +867,25 @@
     "lastFour": "dc4188d49b87dc93aac9a9b273756d1edaf39b564f8fc4999a7a96b459ce9b20",
     "firstFiveApproval": "e2e68f0b838a2a2077f0a259d82aec27fff77dc4485f1c82536837d957077c87",
     "lastFourApproval": "7c951340844e9e36285e3afef088c8c56d4f017a922f7bf4a53d200ebef14b35"
+  },
+  "paidCatalogCoverage": {
+    "totalProducts": 95,
+    "productsWithPositivePrices": 41,
+    "productsWithPositiveCorePlanOrServicePrices": 40,
+    "productsWithAddonPricesOnly": 1,
+    "productsWithAnyReviewedStructure": 61,
+    "productsWithOnlyNonPositiveStructure": 20,
+    "productsWithoutConfirmedObservation": 34,
+    "productsWithoutPositivePrices": 54,
+    "completeHistoricalProducts": 0
+  },
+  "alternativeCoverage": {
+    "productsWithPositivePrices": [
+      "mattermost",
+      "passbolt"
+    ],
+    "productsWithOnlyTrialStructure": [
+      "ghost"
+    ]
   }
 }

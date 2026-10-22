@@ -7,12 +7,11 @@ const messages = {
   awaiting_discovery: 'Historical pricing has not been checked yet.',
   archive_cooldown: 'The archive has asked us to wait. Saved pricing remains available.',
   archive_unavailable: 'The archive is temporarily unavailable. Saved confirmed pricing remains available.',
-  inventory_limit: 'Pricing discovery reached its saved inventory limit. Confirmed observations remain available.',
   incomplete_inventory: 'Pricing discovery is incomplete. Continue the saved search when the archive is available.',
   missing_landing: 'No archived landing page was available for the sampled dates.',
-  missing_pricing: 'No matching archived pricing page was available for the sampled dates.',
+  missing_pricing: 'No usable archived pricing page was retrieved for the sampled dates.',
   wrong_scope: 'A pricing page could not be matched to this product.',
-  extraction_unavailable: 'Archived pages did not provide verifiable pricing text.',
+  extraction_unavailable: 'Archived pricing could not be extracted automatically. Retained evidence may need review.',
   review_pending: 'Archived pricing is awaiting review. Only confirmed observations appear here.',
   no_commercial_offer: 'The reviewed archive evidence indicates no commercial offer.',
   sampling_gap: 'No pricing capture met the six-month sampling interval.',
@@ -31,7 +30,7 @@ export class PricingHistory extends BaseElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `<link rel="stylesheet" href="${stylesheet}">
       <section class="pricing" aria-labelledby="pricing-title">
-        <header><h2 id="pricing-title">Pricing through time</h2><p>Confirmed archive observations, at least six calendar months apart.</p></header>
+        <header><h2 id="pricing-title">Pricing through time</h2><p>Confirmed archived snapshots. Pricing checks use six calendar months.</p></header>
         <div class="pricing-navigation"><button class="previous" type="button" aria-label="Previous pricing observation" disabled>←</button><label for="pricing-position">Pricing observation</label><select id="pricing-position" disabled></select><button class="next" type="button" aria-label="Next pricing observation" disabled>→</button></div>
         <p class="association"></p><p class="observation-date"></p><p class="scope"></p><div class="sources"></div>
         <div class="plans"></div><div class="changes"></div><p class="quality"></p>
@@ -123,7 +122,8 @@ export class PricingHistory extends BaseElement {
     const observation = observations[this.index];
     const select = this.$('#pricing-position');
     select.replaceChildren(...observations.map((item, index) => {
-      const option = this.node('option', archiveDate(item.pricingCapturedAt));
+      const scope = [item.scope?.edition, item.scope?.deployment === 'unknown' ? null : item.scope?.deployment].filter(Boolean);
+      const option = this.node('option', [archiveDate(item.pricingCapturedAt), ...scope].join(' · '));
       option.value = String(index);
       return option;
     }));

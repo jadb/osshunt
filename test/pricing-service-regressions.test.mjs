@@ -294,3 +294,46 @@ test('legacy transport evidence stays private and forces partial unconfirmed pro
     assert.deepEqual(manifest.observations, []);
     assert.equal(JSON.stringify(manifest).includes('sourceTransport'), false);
   }));
+
+for (const method of ['GET', 'POST']) {
+  test(`public ${method} pricing coverage keeps unreviewed extraction private`, () =>
+    fixture(async (store) => {
+      await seed(store);
+      const lease = await store.resume('vendor', at), state = lease.checkpoint;
+      const privateExtraction = {
+        status: 'review_pending',
+        extracted: { plans: [{ name: 'PRIVATE_UNREVIEWED_PRICE', offers: [{ amount: '99999' }] }] },
+        issues: ['PRIVATE_SCHEMA_ERROR_DETAILS'],
+      };
+      state.complete = true;
+      state.coverage = [
+        { anchorAt: at, status: 'review_pending', observationId: 'private-proposal',
+          landingExtraction: privateExtraction, candidateResults: [privateExtraction],
+          candidateFailures: [{ message: 'PRIVATE_FAILURE_DETAILS' }],
+          discoveryRejections: [{ label: 'PRIVATE_DISCOVERY_DETAILS' }],
+          futurePrivateField: 'PRIVATE_FUTURE_FIELD' },
+        { anchorAt: at, status: 'review_pending', observationId: 'approved', landingExtraction: privateExtraction },
+        { anchorAt: at, status: 'extraction_unavailable', errorCode: 'invalid_observation',
+          candidateResults: [{ ...privateExtraction, status: 'invalid' }] },
+      ];
+      await store.checkpoint('vendor', lease.token, state, { release: true });
+      const before = await store.read('vendor');
+      let sourceCalls = 0;
+      const confirmed = { ...observation('approved'), productId: 'vendor' };
+      const api = createPricingService({ catalog: [product], store, confirmed: [confirmed],
+        clock: () => Date.parse(at), extractor: () => ({ plans: [] }), discoverLinks: () => [],
+        fetchImpl: async () => { sourceCalls++; throw Error('Unexpected source request'); } });
+      const request = method === 'GET' ? new Request('https://local/api/pricing/vendor') : refresh();
+      const response = await api.fetch(request), body = await response.json();
+      assert.equal(response.status, 200);
+      assert.deepEqual(body.observations, [confirmed]);
+      assert.deepEqual(body.coverage, [
+        { anchorAt: at, status: 'review_pending' },
+        { anchorAt: at, status: 'confirmed', observationId: 'approved' },
+        { anchorAt: at, status: 'extraction_unavailable', errorCode: 'invalid_observation' },
+      ]);
+      assert.doesNotMatch(JSON.stringify(body), /PRIVATE_|99999|private-proposal/);
+      assert.deepEqual(await store.read('vendor'), before, 'full operator diagnostics stay privately available');
+      assert.equal(sourceCalls, 0);
+    }));
+}

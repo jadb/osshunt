@@ -33,8 +33,10 @@ Requires Node 22+, Python 3, make. Install exact locked packages, then build and
 
 ```sh
 npm ci --ignore-scripts
-make check
+make ci
 ```
+
+`make ci` also installs the site’s locked dependencies and runs its production build using the same commands as CI. CI uses Node 22; for an exact local runtime, run `mise exec node@22.23.3 -- make ci` when mise is installed. Deployment remains a separate operation.
 
 The gate assembles source records, generates snapshots/schemas/docs and the history gallery catalog, validates data and runs contract and history tests. Regression guards verified by restoring defects, observing failures and restoring fixes. [Catalog mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
 
@@ -67,4 +69,4 @@ Retrying the [original second cohort with source-specific recovery](research/pri
 
 [The next ten-tool batch](research/pricing-batch-six-verification.md) adds **Tailscale and eligible Freshservice suite tiers with ITAM** to core-plan pricing coverage. Fastmail adds a trial; Auth0 adds free and unknown-price structures. **36 products had numerical rates at that stage, including 35 with core-plan prices**; **55 products** had any reviewed pricing structure across 116 observations, 314 plans and 548 offers. Six new tools remain source gaps. All 112 earlier observations remain unchanged.
 
-[The final nine paid tools](research/pricing-batch-seven-verification.md) complete the first collection pass across all 95 paid catalog products. **Seven add numerical rates**: Heroku, Vercel, Retool, Insomnia and Postman have subscription rates; Firebase and Algolia have service usage rates. Pingdom and Elastic Cloud add trial-only records. Current coverage: **43 products with numerical rates, including 42 with core-plan or service rates; 64 with any pricing structure**, across 129 observations, 386 plans and 697 offers. Usage prices and add-on-only rates do not establish a fixed product entry fee. All 116 preceding observations remain unchanged.
+[The final nine paid tools](research/pricing-batch-seven-verification.md) complete the first collection pass across all 95 paid catalog products. **Seven add numerical rates**: Heroku, Vercel, Retool, Insomnia and Postman have subscription rates; Firebase and Algolia have service usage rates. Pingdom and Elastic Cloud add trial-only records. Paid-only coverage: **41/95 with numerical rates** (40 core-plan or service, plus Aircall add-on-only); **61/95 with any reviewed pricing structure**. Twenty have only free/trial/quote/unknown-price structure; 34 have no confirmed observation. Including alternatives, coverage is **43 with numerical rates, 42 with core-plan or service rates, 64 with any structure**, across 129 observations, 386 plans and 697 offers. Passbolt and Mattermost add the two positive-rate alternatives; Ghost adds trial-only structure. These are partial snapshots, with no complete six-month product history. Usage prices and add-on-only rates do not establish a fixed product entry fee. All 116 preceding observations remain unchanged.
