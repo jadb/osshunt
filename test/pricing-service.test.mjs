@@ -286,3 +286,43 @@ test('cooldown appearing after reservation but before first outbound does not co
     await rm(root, { recursive: true });
   }
 });
+test('inventory cap preserves incomplete durable state and avoids repeated over-limit pages', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'pricing-record-limit-'));
+  try {
+    const store = new FilePricingStore(root);
+    let calls = 0,
+      now = Date.parse('2024-01-01');
+    const service = createPricingService({
+      catalog,
+      store,
+      clock: () => now,
+      extractor: () => ({ plans: [] }),
+      discoverLinks: () => [],
+      archive: {
+        async queryHtmlPage(url) {
+          calls++;
+          return {
+            records: Array.from({ length: 1501 }, (_, i) =>
+              makeRecord(new Date(Date.parse('2020-01-01') + i * 1000).toISOString(), url),
+            ),
+            complete: true,
+            resumeKey: null,
+            query: { url: 'https://web.archive.org/cdx/search/cdx', status: 200 },
+          };
+        },
+      },
+    });
+    const response = await service.fetch(req('POST', '/refresh'));
+    assert.equal(response.status, 503);
+    const record = await store.read('vendor');
+    assert.equal(record.checkpoint.complete, false);
+    assert.equal(record.checkpoint.errorCode, 'archive_incomplete');
+    assert.equal(record.checkpoint.landingQuery.records.length, 0);
+    assert.equal(record.checkpoint.retryAt, Date.parse(record.nextCheckAt));
+    now += 7200000;
+    await service.fetch(req('POST', '/refresh'));
+    assert.equal(calls, 1);
+  } finally {
+    await rm(root, { recursive: true });
+  }
+});

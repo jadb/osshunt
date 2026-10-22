@@ -90,3 +90,30 @@ test('CDX exact canonical lookup retains actual HTTP/www record and exact replay
   });
   assert.equal(requested, 'https://web.archive.org/web/20200101000000id_/http://www.vendor.com/pricing');
 });
+test('pending response stream is bounded even if fetch ignores abort signal', async () => {
+  let cancelled = false;
+  const keepAlive = setTimeout(() => {}, 1000);
+  try {
+    await assert.rejects(
+      fetchHtml(record, {
+        timeoutMs: 15,
+        fetchImpl: async () =>
+          new Response(
+            new ReadableStream({
+              pull() {
+                return new Promise(() => {});
+              },
+              cancel() {
+                cancelled = true;
+              },
+            }),
+            { headers: { 'content-type': 'text/html' } },
+          ),
+      }),
+      { code: 'archive_timeout' },
+    );
+    assert.equal(cancelled, true);
+  } finally {
+    clearTimeout(keepAlive);
+  }
+});

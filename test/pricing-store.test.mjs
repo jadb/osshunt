@@ -41,3 +41,18 @@ test('crash between reservation and first checkpoint can resume after lease', as
     await rm(root, { recursive: true });
   }
 });
+test('oversize checkpoints reject without replacing durable progress', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'pricing-limit-'));
+  try {
+    const store = new FilePricingStore(root),
+      record = await store.reserve('vendor', '2024-01-01');
+    await store.checkpoint('vendor', record.token, { complete: false, proposals: [] });
+    await assert.rejects(
+      store.checkpoint('vendor', record.token, { complete: false, padding: 'x'.repeat(600 * 1024) }),
+      { code: 'archive_incomplete' },
+    );
+    assert.deepEqual((await store.read('vendor')).checkpoint, { complete: false, proposals: [] });
+  } finally {
+    await rm(root, { recursive: true });
+  }
+});
