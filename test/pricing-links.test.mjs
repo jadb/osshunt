@@ -117,3 +117,13 @@ test('billing and regional query variants keep their exact independent source id
     hints: ['https://vendor.com/pricing'] });
   assert.deepEqual(hintOnly.map(l => l.url), [...urls, 'https://vendor.com/pricing']);
 });
+
+test('file-like approved product root retains its exact pricing-section link without sibling leakage', () => {
+  const links = discoverPricingLinks('<a href="#pricing">Plans and pricing</a>' +
+    '<a href="/acrobat/pricing.html">Pricing</a><a href="/photoshop.html">Pricing</a>' +
+    '<a href="/acrobat-pro.html">Pricing</a><a href="/acrobat.html/other">Pricing</a>', {
+      landingUrl: 'https://www.adobe.com/acrobat.html', productPaths: ['/acrobat'] });
+  assert.deepEqual(links.map(l => l.url), ['https://www.adobe.com/acrobat.html',
+    'https://www.adobe.com/acrobat/pricing.html']);
+  assert.ok(links.every(l => l.provenance === 'archived-link' && l.locator.startsWith('offset:')));
+});
