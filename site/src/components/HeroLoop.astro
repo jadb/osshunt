@@ -13,17 +13,17 @@ const { scenes } = Astro.props;
         <p class="inc-text"><b data-fx>{s.name}</b><span data-fx>Entry price {s.price}</span></p>
       </div>
       <FactsLabel {...alt} incumbent={s.name} />
+      <div class="progress" aria-hidden="true"><span></span></div>
     </section>
   )))}
 </div>
-<div class="progress" data-progress aria-hidden="true"><span></span></div>
 </div>
 
 <style>
   /* All views share one grid cell so the hero keeps the height of the tallest one. */
   .loop { display: grid; }
   /* The sheet frame stays put: views swap instantly and only their content changes (text scrambles in, icons fade in). */
-  .view { grid-area: 1 / 1; visibility: hidden; }
+  .view { grid-area: 1 / 1; align-self: start; visibility: hidden; }
   .view.on { visibility: visible; }
   .view.fx .facts-row > :last-child, .view.fx .slinks, .view.fxtool .tile img { animation: fxin 0.35s ease-out both; }
   @keyframes fxin { from { opacity: 0; } to { opacity: 1; } }
@@ -31,7 +31,7 @@ const { scenes } = Astro.props;
   .progress { height: 3px; margin-top: 0; }
   .progress span { display: block; height: 100%; width: 0; background: var(--band); }
   .progress span { transition: width 0.1s linear; }
-  .progress.off { visibility: hidden; }
+  .hero-loop.off .progress { visibility: hidden; }
   .inc { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
   .tile { width: 76px; height: 76px; border: var(--rule-3) solid var(--ink); display: grid; place-items: center; flex: none; }
   .tile img { width: 56px; height: 56px; object-fit: contain; }
@@ -42,12 +42,15 @@ const { scenes } = Astro.props;
 
 <script>
   const root = document.querySelector<HTMLElement>('[data-loop]');
-  const bar = document.querySelector<HTMLElement>('[data-progress]');
-  if (root && bar) {
+  const wrap = document.querySelector<HTMLElement>('.hero-loop');
+  if (root && wrap) {
     const views = [...root.querySelectorAll<HTMLElement>('.view')];
     const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
+    const strip = document.querySelector<HTMLElement>('[data-chips]');
+    let limit = chips.length; // how many sample logos fit on the line; the cycle only visits those
     const still = matchMedia('(prefers-reduced-motion: reduce)');
-    const fill = bar.querySelector<HTMLElement>('span')!;
+    // The bar lives inside each sheet's view, so it always sits right under the sheet shown.
+    const fillOf = (v?: HTMLElement) => v?.querySelector<HTMLElement>('.progress span') ?? null;
     const SHOW = 10000, TICK = 100;
     const POOL = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#%&*+?';
     // Letters mix: each character cycles through random glyphs, then settles left to right.
@@ -67,10 +70,10 @@ const { scenes } = Astro.props;
     const count = (sc: number) => views.filter((v) => Number(v.dataset.scene) === sc).length;
     let scene = 0, alt = 0, elapsed = 0, stopped = false, hold = false;
     let prev: HTMLElement | undefined;
-    const paint = () => { fill.style.width = `${Math.min(100, (elapsed / SHOW) * 100)}%`; };
+    const paint = () => { const f = fillOf(views.find((v) => v.classList.contains('on'))); if (f) f.style.width = `${Math.min(100, (elapsed / SHOW) * 100)}%`; };
     const show = (sc: number, al: number) => {
       prev = views.find((v) => v.classList.contains('on'));
-      scene = (sc + chips.length) % chips.length; alt = al; elapsed = 0;
+      scene = (sc + limit) % limit; alt = al; elapsed = 0;
       views.forEach((v) => {
         const on = Number(v.dataset.scene) === scene && Number(v.dataset.alt) === alt;
         v.classList.toggle('on', on); v.setAttribute('aria-hidden', String(!on));
@@ -88,12 +91,22 @@ const { scenes } = Astro.props;
         });
         window.setTimeout(() => cur.classList.remove('fx', 'fxtool'), 400);
       }
-      fill.style.transition = 'none'; paint(); void fill.offsetWidth; fill.style.transition = '';
+      const f = fillOf(cur ?? undefined) ?? fillOf(views.find((v) => v.classList.contains('on')));
+      views.forEach((v) => { const x = fillOf(v); if (x && v !== (cur ?? v)) x.style.width = '0%'; });
+      if (f) { f.style.transition = 'none'; paint(); void f.offsetWidth; f.style.transition = ''; }
     };
     // One sheet at a time: next alternative of this tool, then the next tool.
     const advance = () => (alt + 1 < count(scene) ? show(scene, alt + 1) : show(scene + 1, 0));
+    const measure = () => {
+      if (!strip) return;
+      const edge = strip.getBoundingClientRect().right;
+      limit = Math.max(1, chips.filter((c) => c.getBoundingClientRect().right <= edge + 0.5).length);
+      chips.forEach((c, n) => { const out = n >= limit; c.toggleAttribute('inert', out); c.setAttribute('aria-hidden', String(out)); });
+      if (scene >= limit) show(0, 0);
+    };
+    if (strip) { new ResizeObserver(measure).observe(strip); measure(); }
     // Runs until the first click, key press or focus anywhere; hover pauses it.
-    const stop = () => { stopped = true; window.clearInterval(timer); bar.classList.add('off'); };
+    const stop = () => { stopped = true; window.clearInterval(timer); wrap.classList.add('off'); };
     const timer = window.setInterval(() => {
       if (hold || stopped) return;
       elapsed += TICK; paint();
