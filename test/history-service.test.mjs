@@ -359,3 +359,13 @@ test('refresh body inspection bounds silent and endlessly empty streams without 
     cancel() { return new Promise(() => {}); } });
   assert.equal((await f.request('/refresh', 'POST', { body: nonempty, duplex: 'half' })).status, 400);
 });
+
+test('archive image requests identify the public history application', async t => {
+  const identity = 'OSSHuntHistory/0.1 (+https://osshunt.com)';
+  const f = await fixture(t, { fetchImpl: async (_url, options) => {
+    if (options.headers['User-Agent'] !== identity) return new Response('Identify this application', { status: 400 });
+    return new Response(png, { headers: { 'Content-Type': 'image/png' } });
+  } });
+  await f.request('/refresh', 'POST');
+  assert.equal((await f.request(imagePath(a))).status, 200);
+});
