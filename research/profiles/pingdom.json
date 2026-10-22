@@ -1,0 +1,130 @@
+{
+  "id": "pingdom",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Solar Winds Worldwide, LLC / Pingdom",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": "Solar Winds Corporation, privately held by Turn/River Capital",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Turn/River Capital (parent-level private equity owner of SolarWinds)",
+        "source": "https://www.solarwinds.com/company/newsroom/press-releases/turnriver-completes-acquisition-of-solarwinds"
+      }
+    ],
+    "notes": "Pingdom history labels 2007 Founded and joined SolarWinds in 2014; this is Pingdom product/business history, not SolarWinds founding. Funding classification covers the current SolarWinds parent group: the April 16, 2025 completion announcement explicitly identifies private equity firm Turn/River Capital as SolarWinds new owner and confirms delisting. Turn/River is listed solely as the current parent-level private equity owner, not as a historical direct investor in independent Pingdom. Historical Pingdom equity funding remains unresolved.",
+    "sources": [
+      "https://www.pingdom.com/why-pingdom/",
+      "https://www.solarwinds.com/company/newsroom/press-releases/turnriver-completes-acquisition-of-solarwinds",
+      "https://www.pingdom.com/pricing/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Synthetic Monitoring",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Lowest paid capability shown; dynamic euro amount and selected quantity were absent in current extraction. Older 2020 pricing PDF found but excluded as stale.",
+      "sources": [
+        "https://www.pingdom.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://www.pingdom.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Synthetic Monitoring + Real User Monitoring",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Organizational mix-and-match subscription, unlimited users; amount depends on quantity and was not exposed.",
+      "sources": [
+        "https://www.pingdom.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Enterprise section explicitly requests a quote for 500 K to over 5 M monthly pageviews.",
+      "sources": [
+        "https://www.pingdom.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Distributed probe coverage and combined synthetic/real-user workflows create operational differentiation; basic uptime checks remain reproducible.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.pingdom.com/product/",
+        "https://www.pingdom.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Worldwide availability probes help compare reachability across locations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.pingdom.com/product/"
+      ]
+    },
+    {
+      "claim": "Transaction monitoring checks multistep business interactions beyond a simple endpoint ping.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.pingdom.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Real-user performance filtering and page-load metrics expose visitor-specific bottlenecks.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.pingdom.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

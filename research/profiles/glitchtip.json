@@ -30,7 +30,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "free self-hosted core",
-      "notes": "Self-hosted version runs on own server; optional infrastructure charges separate. Hosted Free has 1,000 events/month.",
+      "notes": "Self-hosted version runs on own server; optional infrastructure charges separate. Hosted Free has 1, 000 events/month.",
       "sources": [
         "https://glitchtip.com/pricing/"
       ]
@@ -64,7 +64,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Hosted plan for growing businesses; up to 500,000 events/month. Annual discount exists but annual total is not published.",
+      "notes": "Hosted plan for growing businesses; up to 500, 000 events/month. Annual discount exists but annual total is not published.",
       "sources": [
         "https://glitchtip.com/pricing/"
       ]
@@ -149,7 +149,7 @@
           ]
         },
         {
-          "component": "PostgreSQL 14+",
+          "component": "Postgre SQL 14+",
           "necessity": "required",
           "group": null,
           "condition": "Always",
@@ -189,7 +189,7 @@
           ]
         },
         {
-          "component": "S3-compatible object storage",
+          "component": "S 3-compatible object storage",
           "necessity": "optional",
           "group": null,
           "condition": "External file uploads/sourcemaps route",
@@ -210,7 +210,7 @@
         }
       ],
       "resources": {
-        "cpu": "x86 or arm64",
+        "cpu": "x 86 or arm 64",
         "memory": "512 MB recommended; 256 MB minimum all-in-one",
         "storage": "Usage-dependent; example 30 GB for 1 million events/month",
         "os": "Docker-capable server",
@@ -219,7 +219,7 @@
           "https://glitchtip.com/documentation/install/"
         ]
       },
-      "notes": "Current guide documents all-in-one and separate worker routes; PostgreSQL required, Redis/Valkey optional. Hardware guide is not a workload guarantee.",
+      "notes": "Current guide documents all-in-one and separate worker routes; Postgre SQL required, Redis/Valkey optional. Hardware guide is not a workload guarantee.",
       "sources": [
         "https://glitchtip.com/documentation/install/"
       ]
@@ -228,17 +228,17 @@
       "status": "offered",
       "options": [
         {
-          "name": "Railway GlitchTip template",
+          "name": "Railway Glitch Tip template",
           "url": "https://railway.com/new/template/glitchtip",
           "kind": "one-click",
           "officialStatus": "officially-linked-third-party",
-          "notes": "Official installation page links template deploying all-in-one app, PostgreSQL and Redis.",
+          "notes": "Official installation page links template deploying all-in-one app, Postgre SQL and Redis.",
           "sources": [
             "https://glitchtip.com/documentation/install/"
           ]
         }
       ],
-      "notes": "Official guide links Railway, PikaPods, Elestio, Nodion and RepoCloud. Railway template verified; ordinary Compose instructions kept separate.",
+      "notes": "Official guide links Railway, Pika Pods, Elestio, Nodion and Repo Cloud. Railway template verified; ordinary Compose instructions kept separate.",
       "sources": [
         "https://glitchtip.com/documentation/install/"
       ]

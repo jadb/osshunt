@@ -35,3 +35,10 @@ Checked 2026-10-21. Public primary sources; facts separated from assessments.
 ## Persistence and validation
 - Wrote profile JSON and per-claim JSONL in the assigned group directory. No repository mutations.
 - Validation command planned/completed centrally for this group: `node scripts/validate-profiles.mjs profiles`.
+
+## Independent source review integration
+
+Also verified in-kind staff contributions from XWP, Bluehost and Multidots in Contributor experiences. Salesforce infrastructure and these delivered staff-time examples are distinct; the wider pledge directory is not an audited complete corporate-donor list. Sources: https://wordpress.org/five-for-the-future/
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

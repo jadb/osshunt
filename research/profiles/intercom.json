@@ -53,10 +53,12 @@
       "unit": "seat",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Annual-billed $29/seat/month multiplied by12. Fin from $0.99/outcome extra; channel usage additional. Monthly-billed amount not verified.",
+      "notes": "Annual-billed $29/seat/month multiplied by12. Fin from $0.99/outcome extra; channel usage additional. Monthly-billed amount not verified. Verified Fin usage starts at$0.99/outcome, separate from the per-seat subscription and other channel charges.",
       "sources": [
         "https://www.intercom.com/pricing"
-      ]
+      ],
+      "usagePrice": 0.99,
+      "usageUnit": "Fin outcome"
     },
     {
       "role": "popular",
@@ -85,10 +87,12 @@
       "unit": "seat",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest growing-team plan. Annual-billed $85/seat/month multiplied by12, plus Fin outcomes and channel usage.",
+      "notes": "Closest growing-team plan. Annual-billed $85/seat/month multiplied by12, plus Fin outcomes and channel usage. Verified Fin usage starts at$0.99/outcome, separate from the per-seat subscription and other channel charges.",
       "sources": [
         "https://www.intercom.com/pricing"
-      ]
+      ],
+      "usagePrice": 0.99,
+      "usageUnit": "Fin outcome"
     },
     {
       "role": "enterprise",
@@ -101,10 +105,12 @@
       "unit": "seat",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest large-team security/multibrand plan; no separately named Enterprise price. Annual-billed $132/seat/month multiplied by12; usage extra.",
+      "notes": "Closest large-team security/multibrand plan; no separately named Enterprise price. Annual-billed $132/seat/month multiplied by12; usage extra. Verified Fin usage starts at$0.99/outcome, separate from the per-seat subscription and other channel charges.",
       "sources": [
         "https://www.intercom.com/pricing"
-      ]
+      ],
+      "usagePrice": 0.99,
+      "usageUnit": "Fin outcome"
     }
   ],
   "moats": [

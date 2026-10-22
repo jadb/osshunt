@@ -119,11 +119,19 @@
   ],
   "alternativeDetails": {
     "sponsorship": {
-      "status": "none-found",
-      "organizations": [],
-      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "AppsCode Inc.",
+          "url": "https://appscode.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/restic/restic/master/README.md"
+        }
+      ],
+      "notes": "AppsCode explicitly sponsors integration testing for Google Cloud Storage and Azure Blob Storage backends (in-kind testing resources); no cash or equity amount inferred.",
       "sources": [
-        "https://github.com/restic/restic"
+        "https://github.com/restic/restic",
+        "https://raw.githubusercontent.com/restic/restic/master/README.md"
       ]
     },
     "selfHosting": {

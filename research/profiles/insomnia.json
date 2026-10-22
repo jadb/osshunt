@@ -20,7 +20,7 @@
         "source": "https://konghq.com/blog/news/kongs-series-e-funding"
       },
       {
-        "name": "Teachers\u2019 Venture Growth",
+        "name": "Teachers’ Venture Growth",
         "source": "https://konghq.com/blog/news/kongs-series-e-funding"
       },
       {
@@ -73,13 +73,14 @@
       "oneTimePrice": null,
       "usagePrice": 10,
       "currency": "USD",
-      "unit": "user;mock add-on per25,000 requests",
+      "unit": "user",
       "minimumQuantity": null,
       "scope": "paid desktop collaboration subscription",
-      "notes": "Browser Monthly shows$12; Annual button changes Pro to$10/user/month billed annually \u2192$120/year. Essentials and local Scratch Pad free; after10,000 included mock requests, add-on$10/25,000 requests.",
+      "notes": "Browser Monthly shows$12; Annual button changes Pro to$10/user/month billed annually →$120/year. Essentials and local Scratch Pad free; after10,000 included mock requests, add-on$10/25,000 requests.",
       "sources": [
         "https://insomnia.rest/pricing"
-      ]
+      ],
+      "usageUnit": "25,000 mock requests"
     },
     {
       "role": "popular",

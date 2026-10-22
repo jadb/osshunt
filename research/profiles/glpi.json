@@ -1,0 +1,237 @@
+{
+  "id": "glpi",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Teclib'",
+    "kind": "business",
+    "foundedYear": 2009,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official history: GLPI created in 2003 by INDEPNET; Teclib founded in 2009 and became official editor in 2015. Age uses Teclib company formation, not project origin. Subscription revenue supports project development. Outside equity financing and current investors unresolved; no bootstrapped assertion.",
+    "sources": [
+      "https://www.glpi-project.org/en/about-us/",
+      "https://www.glpi-project.org/es/glpi-20-years/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "GLPI community core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "GPL community core; exclusive Network plugins and commercial services separate.",
+      "sources": [
+        "https://www.glpi-project.org/en/features/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No unique vendor popular designation verified.",
+      "sources": [
+        "https://www.glpi-project.org/en/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "GLPI Network Standard",
+      "status": "published",
+      "monthlyPrice": 300,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial self-hosted subscription",
+      "notes": "Closest organizational self-host subscription: Standard\u20ac300/month excluding VAT, up to 50 technical staff or 5000 assets, and 2 production instances. Annual total not verified; Basic separately\u20ac100/month.",
+      "sources": [
+        "https://www.glpi-project.org/en/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "GLPI Network Enterprise",
+      "status": "published",
+      "monthlyPrice": 4500,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial self-hosted subscription",
+      "notes": "Self-host Enterprise\u20ac4500/month excluding VAT, unlimited inventoried assets and all exclusive Network plugins. Annual billing terms and total unverified.",
+      "sources": [
+        "https://www.glpi-project.org/en/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Inventory, service management and plugin integrations accumulate organizational process history that can make migration costly.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.glpi-project.org/en/features/",
+        "https://www.glpi-project.org/en/about-us/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Asset inventory and CMDB relationships connect equipment records with service operations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.glpi-project.org/en/features/"
+      ]
+    },
+    {
+      "claim": "Tickets, problems, changes and knowledge workflows let teams investigate incidents alongside assets.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.glpi-project.org/en/features/"
+      ]
+    },
+    {
+      "claim": "Contract, budget and financial tracking connect technical inventory to asset lifecycle decisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.glpi-project.org/en/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Teclib'",
+          "url": "https://www.glpi-project.org/en/about-us/",
+          "relationship": "business-steward",
+          "source": "https://www.glpi-project.org/en/about-us/"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://www.glpi-project.org/en/about-us/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP 8.3+64-bit with required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Pinned 12.0.0 composer verified; older 10/11 matrix not used for 12 PHPminimum.",
+          "sources": [
+            "https://raw.githubusercontent.com/glpi-project/glpi/12.0.0/composer.json"
+          ]
+        },
+        {
+          "component": "My SQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Supported SQLfamily",
+          "notes": "Currentmatrix lists My SQL 8 for GLPI 11; exact 12 minimum unresolved, confirm release preflight.",
+          "sources": [
+            "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+          ]
+        },
+        {
+          "component": "Maria DB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative SQLfamily",
+          "notes": "Currentmatrix lists Maria DB 10.6 for GLPI 11; exact 12 minimum unresolved.",
+          "sources": [
+            "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+          ]
+        },
+        {
+          "component": "Apache, nginx, lighttpd or IIS",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Native PHP route",
+          "notes": "Nginx uses PHP-FPM; webroot must point to public directory.",
+          "sources": [
+            "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+          ]
+        },
+        {
+          "component": "Official GLPI Docker or Podman image",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container route",
+          "notes": "Bundled application runtime; database and persistent volumes still configured.",
+          "sources": [
+            "https://github.com/glpi-project/docker-images"
+          ]
+        },
+        {
+          "component": "LDAP, SMTP or IMAP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Directorylogin, emailnotifications or mailcollectors",
+          "notes": "LDAP/IMAPextensions optional when integrations enabled.",
+          "sources": [
+            "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+          ]
+        },
+        {
+          "component": "Cron/automatic-actions worker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Scheduled background processing",
+          "notes": "Official image includes a minute scheduler by default; can disable on webnodes when dedicating a worker.",
+          "sources": [
+            "https://github.com/glpi-project/docker-images"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "PHP-capable Linuxor Windowswebserver; container-capablehost",
+        "notes": "No universal CPU/RAM/disk minimum verified; inventory, plugins, attachments and background work determine sizing.",
+        "sources": [
+          "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+        ]
+      },
+      "notes": "Pinned GLPI 12.0.0 composer requires 64-bit PHP 8.3+. Official install guide verifies My SQL/Maria DB families but its version matrix stops at 11; exact 12 database minimum remains unresolved. Native PHP or official container route; Docker or Podman, with bundled cron worker. No mandatory independent Redis/queue identified.",
+      "sources": [
+        "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official install docs and Docker repository. Manual image/Compose configuration and automatic database initialization are not a verified one-click provider template; none found.",
+      "sources": [
+        "https://glpi-install.readthedocs.io/en/latest/prerequisites.html"
+      ]
+    }
+  }
+}

@@ -61,13 +61,14 @@
       "oneTimePrice": null,
       "usagePrice": 0.05,
       "currency": "USD",
-      "unit": "individual account;AI overage per credit",
+      "unit": "individual account",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "$9/month annual-billed \u00d712=$108/year. Optional AI overage$0.05/credit; free core client separate. Other metered products/add-ons have own rates.",
+      "notes": "$9/month annual-billed ×12=$108/year. Optional AI overage$0.05/credit; free core client separate. Other metered products/add-ons have own rates.",
       "sources": [
         "https://www.postman.com/pricing/"
-      ]
+      ],
+      "usageUnit": "AI overage credit"
     },
     {
       "role": "popular",
@@ -95,13 +96,14 @@
       "oneTimePrice": null,
       "usagePrice": 0.04,
       "currency": "USD",
-      "unit": "user;AI overage per credit",
+      "unit": "user",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "$19/user/month annual-billed \u00d712=$228/user/year. Optional AI overage$0.04/credit; external service fees separate.",
+      "notes": "$19/user/month annual-billed ×12=$228/user/year. Optional AI overage$0.04/credit; external service fees separate.",
       "sources": [
         "https://www.postman.com/pricing/"
-      ]
+      ],
+      "usageUnit": "AI overage credit"
     },
     {
       "role": "enterprise",
@@ -110,15 +112,16 @@
       "monthlyPrice": null,
       "annualPrice": null,
       "oneTimePrice": null,
-      "usagePrice": null,
+      "usagePrice": 0.035,
       "currency": "USD",
-      "unit": "user;AI overage per credit",
+      "unit": "user",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
       "notes": "Contact sales for subscription; comparison lists AI overage$0.035/credit with volume pricing available. No invented annual seat amount.",
       "sources": [
         "https://www.postman.com/pricing/"
-      ]
+      ],
+      "usageUnit": "AI overage credit"
     }
   ],
   "moats": [

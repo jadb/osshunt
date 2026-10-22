@@ -1,0 +1,256 @@
+{
+  "id": "opensearch",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Open Search Software Foundation",
+    "kind": "foundation",
+    "foundedYear": 2021,
+    "ageBasis": "product-launched",
+    "ownership": "nonprofit",
+    "parent": "Linux Foundation project",
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Open Search 1.0 first stable launch July 2021; this is product age. Open Search Software Foundation formed September 2024 within Linux Foundation; nonprofit governance/member funding, no equity investors. Paid member support separate from foundation-operated software pricing.",
+    "sources": [
+      "https://opensearch.org/foundation/",
+      "https://opensearch.org/blog/happy-fourth-birthday-opensearch/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Search",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted project",
+      "notes": "Apache 2.0 suite; infrastructure/provider fees separate.",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "foundation commercial software plan",
+      "notes": "No foundation Business edition identified; managed services from AWS/others are separate offers.",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "foundation commercial software plan",
+      "notes": "No foundation Enterprise license plan identified; paid foundation membership is not a product subscription.",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Lucene-based APIs, plugins and multi-company governance provide compatibility and ecosystem defensibility, while open licensing limits exclusive engine control.",
+      "basis": "assessment",
+      "sources": [
+        "https://opensearch.org/about/",
+        "https://opensearch.org/foundation/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Full-text and vector search support hybrid retrieval over a shared search platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    },
+    {
+      "claim": "Dashboards, log analytics and anomaly detection combine search with operational investigation.",
+      "basis": "assessment",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    },
+    {
+      "claim": "Security analytics and event correlation extend indexed data into threat investigation workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://opensearch.org/about/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Amazon Web Services",
+          "url": "https://aws.amazon.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opensearch.org/announcements/opensearch-software-foundation-expands-enterprise-ecosystem-with-new-members/"
+        },
+        {
+          "name": "IBM",
+          "url": "https://www.ibm.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opensearch.org/announcements/opensearch-software-foundation-expands-enterprise-ecosystem-with-new-members/"
+        },
+        {
+          "name": "SAP",
+          "url": "https://www.sap.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opensearch.org/announcements/opensearch-software-foundation-expands-enterprise-ecosystem-with-new-members/"
+        },
+        {
+          "name": "Uber",
+          "url": "https://www.uber.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://opensearch.org/announcements/opensearch-software-foundation-expands-enterprise-ecosystem-with-new-members/"
+        }
+      ],
+      "notes": "Current September 2026 announcement identifies AWS, IBM, SAP, Uber as Premier members. Foundation page documents paid Premier membership funding; these are corporate foundation supporters, not equity investors or mere customers.",
+      "sources": [
+        "https://opensearch.org/announcements/opensearch-software-foundation-expands-enterprise-ecosystem-with-new-members/",
+        "https://opensearch.org/foundation/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Open Search Java runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Tarball self-contained with bundled JDK; alternate compatible local JDK possible. Native/package or Docker/Kubernetes routes.",
+          "sources": [
+            "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/tar/"
+          ]
+        },
+        {
+          "component": "Persistent local storage and tuned host settings",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "vm.max_map_count 262144; avoid swapping. Core engine stores indexes without external SQL backend.",
+          "sources": [
+            "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/tar/"
+          ]
+        },
+        {
+          "component": "Multiple Open Search nodes",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production availability",
+          "notes": "Guide recommends dedicated manager nodes plus multiple data-serving nodes.",
+          "sources": [
+            "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+          ]
+        },
+        {
+          "component": "TLS certificates and authentication/role configuration",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Replace demo certificates/users for production; internal users OR optional SAML/OIDC/LDAP provider.",
+          "sources": [
+            "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+          ]
+        },
+        {
+          "component": "Open Search Dashboards",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Web visualization UI",
+          "notes": "Separate service; not required for REST search engine.",
+          "sources": [
+            "https://opensearch.org/about/"
+          ]
+        },
+        {
+          "component": "Data Prepper",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Ingestion transformation pipelines",
+          "notes": "Not required for direct indexing.",
+          "sources": [
+            "https://opensearch.org/about/"
+          ]
+        },
+        {
+          "component": "Snapshot repository / object storage",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Backups and recovery",
+          "notes": "Configure snapshots; not a universal required external SQL/cache/queue.",
+          "sources": [
+            "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "Docker Desktop host allocation at least 4 GB for documented example",
+        "storage": null,
+        "os": "Linux packages/tarball; Windows; compatible Dockerhosts inclmac OS",
+        "notes": "Docker example allocation is not universal production minimum; cluster workload determines sizing.",
+        "sources": [
+          "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+        ]
+      },
+      "notes": "Current 3.9.0 tarball documented; JDK bundled. No mandatory external Postgres/My SQL/Redis/Kafka for engine. Docker sample security is demonstration-only; production requires authentication/TLS and HA planning.",
+      "sources": [
+        "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official deployment instructions; no verified one-click option found. Manual container instructions are not one-click.",
+      "sources": [
+        "https://docs.opensearch.org/latest/install-and-configure/install-opensearch/index/"
+      ]
+    }
+  }
+}

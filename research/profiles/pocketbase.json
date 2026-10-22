@@ -1,0 +1,239 @@
+{
+  "id": "pocketbase",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Gani Georgiev / PocketBase",
+    "kind": "individual",
+    "foundedYear": 2021,
+    "ageBasis": "project-started",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Individual volunteer project, explicitly neither startup nor business. Creator says work began late2021; public release followed July2022. Equity financing not applicable; past donations and possible grants are distinct. No paid company or investor roster.",
+    "sources": [
+      "https://pocketbase.io/faq/",
+      "https://gani.bg/",
+      "https://github.com/presentator/presentator/issues/183"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "PocketBase open source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Standalone open-source binary/framework; infrastructure separate; no vendor hosting.",
+      "sources": [
+        "https://pocketbase.io/docs/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted project",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://pocketbase.io/faq/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted project",
+      "notes": "Personal volunteer project explicitly has no paid team/company; no organizational license plan published.",
+      "sources": [
+        "https://pocketbase.io/faq/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted project",
+      "notes": "No paid enterprise plan; FAQ states no paid company and no support commitment.",
+      "sources": [
+        "https://pocketbase.io/faq/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A compact SQLite-backed architecture and extensible API attract lightweight applications; defensibility is limited by permissive source access and a deliberately narrow single-server scope.",
+      "basis": "assessment",
+      "sources": [
+        "https://pocketbase.io/docs/",
+        "https://pocketbase.io/faq/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Manage SQLite collections, validation, REST endpoints and realtime subscriptions from an integrated schema dashboard.",
+      "basis": "assessment",
+      "sources": [
+        "https://pocketbase.io/",
+        "https://pocketbase.io/docs/"
+      ]
+    },
+    {
+      "claim": "Add password/OAuth user authentication and attach files with on-demand image thumbnails to records.",
+      "basis": "assessment",
+      "sources": [
+        "https://pocketbase.io/"
+      ]
+    },
+    {
+      "claim": "Extend routes and event hooks in embedded JavaScript or compile custom Go application logic.",
+      "basis": "assessment",
+      "sources": [
+        "https://pocketbase.io/docs/js-overview/",
+        "https://pocketbase.io/docs/go-overview/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official FAQ donation/sponsorship statement: individual donations no longer accepted; organizational no-strings grants invited. No named corporate sponsor disclosed there; personal steward is not a business fallback.",
+      "sources": [
+        "https://pocketbase.io/faq/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PocketBase prebuilt executable",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Native standalone binary; persistent pb_data directory.",
+          "sources": [
+            "https://pocketbase.io/docs/"
+          ]
+        },
+        {
+          "component": "SQLite in WAL mode",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Embedded; MySQL/MariaDB/PostgreSQL not supported out of box.",
+          "sources": [
+            "https://pocketbase.io/faq/"
+          ]
+        },
+        {
+          "component": "SMTP server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production email auth/notifications",
+          "notes": "Highly recommended; Unix sendmail default unsuitable for reliable delivery.",
+          "sources": [
+            "https://pocketbase.io/docs/going-to-production/"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Files/backups local default; backups can use separate S3 bucket.",
+          "sources": [
+            "https://pocketbase.io/docs/going-to-production/"
+          ]
+        },
+        {
+          "component": "Reverse proxy and systemd",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Built-in HTTPS available; custom Docker image possible, no official image.",
+          "sources": [
+            "https://pocketbase.io/docs/going-to-production/"
+          ]
+        },
+        {
+          "component": "Embedded goja JavaScript engine",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Custom JavaScript hooks",
+          "notes": "Built into binary; Node.js not required.",
+          "sources": [
+            "https://pocketbase.io/docs/js-overview/"
+          ]
+        },
+        {
+          "component": "Go1.23+ toolchain",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Build custom application as Go framework",
+          "notes": "Build time only; default pure-Go SQLite needs no CGO.",
+          "sources": [
+            "https://pocketbase.io/docs/go-overview/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux,Windows,macOS; x64/ARM64 binaries",
+        "notes": "No minimum hardware published. FAQ2vCPU/4GB example is a benchmark, not minimum; storage scales with data.",
+        "sources": [
+          "https://pocketbase.io/docs/",
+          "https://pocketbase.io/docs/going-to-production/",
+          "https://pocketbase.io/faq/"
+        ]
+      },
+      "notes": "Single-server backend; no external SQL,Redis,queue or separate runtime service required. Documentation warns pre1.0 compatibility/migrations can change.",
+      "sources": [
+        "https://pocketbase.io/docs/going-to-production/",
+        "https://pocketbase.io/docs/",
+        "https://pocketbase.io/faq/",
+        "https://pocketbase.io/docs/js-overview/",
+        "https://pocketbase.io/docs/go-overview/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official docs offer binary download and manual server/Dockerfile recipes; no maintained one-click, marketplace or installer command verified. Running an already downloaded binary is not an installer.",
+      "sources": [
+        "https://pocketbase.io/docs/going-to-production/"
+      ]
+    }
+  }
+}

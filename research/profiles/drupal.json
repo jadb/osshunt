@@ -124,11 +124,25 @@
           "url": "https://www.acquia.com/",
           "relationship": "corporate-sponsor",
           "source": "https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding"
+        },
+        {
+          "name": "Acro Commerce",
+          "url": "https://www.acrocommerce.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.acrocommerce.com/solutions/drupal-and-drupal-commerce"
+        },
+        {
+          "name": "Zoocha",
+          "url": "https://www.zoocha.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.zoocha.com/systems-partnerships"
         }
       ],
-      "notes": "June 2026 Drupal Association announcement says Acquia funds a 2% contribution from eligible partner transactions out of its own margin.",
+      "notes": "June 2026 Drupal Association announcement says Acquia funds a 2% contribution from eligible partner transactions out of its own margin. Also verified Acro Commerce donated developer hours and Zoocha contributed office space for code sprints (in-kind, not assumed cash sponsorship). Current Zoocha page says Diamond Certified Partner; no recurring cash amount or exhaustive supporter inventory inferred.",
       "sources": [
-        "https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding"
+        "https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding",
+        "https://www.acrocommerce.com/solutions/drupal-and-drupal-commerce",
+        "https://www.zoocha.com/systems-partnerships"
       ]
     },
     "selfHosting": {

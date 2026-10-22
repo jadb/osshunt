@@ -1,0 +1,316 @@
+{
+  "id": "supabase",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Supabase Inc",
+    "kind": "business",
+    "foundedYear": 2020,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "GIC",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Peak XV",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Accel",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Craft Ventures",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Coatue",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Y Combinator",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Stripe",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Felicis",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Georgian",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Figma",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Mozilla",
+        "source": "https://supabase.com/company"
+      },
+      {
+        "name": "Square Peg",
+        "source": "https://supabase.com/blog/supabase-series-e"
+      }
+    ],
+    "notes": "Private venture-backed company, founded2020. June2026 SeriesF $500m included employee liquidity; company page reports approximately$1b raised. Historical/currently displayed institutions below, not ownership percentages. Developer-signup brands are customers/users, not sponsors.",
+    "sources": [
+      "https://www.ycombinator.com/companies/supabase",
+      "https://supabase.com/company",
+      "https://supabase.com/blog/series-f",
+      "https://supabase.com/blog/supabase-series-e"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted open source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open-source deployment distinct from Supabase Cloud Free and paid subscriptions; infrastructure separate.",
+      "sources": [
+        "https://supabase.com/docs/guides/self-hosting"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": 0.00325,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Most Popular. From$25/month with$10 compute credit; additional projects/compute and overages extra. MAU overage$0.00325 per user above100,000 included per month. No annual contract amount verified.",
+      "sources": [
+        "https://supabase.com/pricing"
+      ],
+      "usageUnit": "additional monthly active user"
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 599,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization starting base",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "From$599/month including first project and$10 compute credit; extra projects/compute and usage charges apply. Annual amount not verified.",
+      "sources": [
+        "https://supabase.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom; Contact Us; pricing by agreement.",
+      "sources": [
+        "https://supabase.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "PostgreSQL compatibility, integrated APIs and a large developer ecosystem create adoption advantages; open protocols also reduce proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://supabase.com/docs/guides/api",
+        "https://supabase.com/company"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Generate a REST API and schema-reflected documentation directly from PostgreSQL tables and functions.",
+      "basis": "assessment",
+      "sources": [
+        "https://supabase.com/docs/guides/api"
+      ]
+    },
+    {
+      "claim": "Combine application authentication with PostgreSQL Row Level Security policies for granular data access.",
+      "basis": "assessment",
+      "sources": [
+        "https://supabase.com/docs/guides/database/postgres/row-level-security",
+        "https://supabase.com/docs/guides/api"
+      ]
+    },
+    {
+      "claim": "Build collaboration through broadcasts, presence synchronization and database-change subscriptions.",
+      "basis": "assessment",
+      "sources": [
+        "https://supabase.com/docs/guides/realtime"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Supabase Inc",
+          "url": "https://supabase.com",
+          "relationship": "business-steward",
+          "source": "https://supabase.com/company"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://supabase.com/company"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine/Compose or Docker Desktop",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Git required for manual route.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        },
+        {
+          "component": "PostgreSQL17",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current compose17.6 image; external compatible Postgres configurable, not MySQL/SQLite.",
+          "sources": [
+            "https://raw.githubusercontent.com/supabase/supabase/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Envoy gateway; Auth, PostgREST, Studio, postgres-meta, Supavisor",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Standard stack; Kong optional gateway override.",
+          "sources": [
+            "https://raw.githubusercontent.com/supabase/supabase/master/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Realtime, Storage/imgproxy, Edge Runtime",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Included by default; removable if unused.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        },
+        {
+          "component": "Logflare and Vector",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Analytics override; not default.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production email authentication/notifications",
+          "notes": "Use production mail server.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local files default; AWS S3, RustFS/MinIO or R2.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        },
+        {
+          "component": "OpenAI API credential",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Studio AI Assistant only.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2cores minimum;4+ recommended",
+        "memory": "4GB minimum;8GB+ recommended",
+        "storage": "40GB SSD minimum;80GB+ recommended",
+        "os": "Linuxserver; Docker Desktop on Linux/macOS/Windows",
+        "notes": "Published whole-stack sizing; optional analytics increases needs. Workload and enabled components affect sizing.",
+        "sources": [
+          "https://supabase.com/docs/guides/self-hosting/docker"
+        ]
+      },
+      "notes": "Single-project self-host stack; no Redis/cache service required by current Compose. Backend services are containerized; separate Node/Deno host install unnecessary.",
+      "sources": [
+        "https://supabase.com/docs/guides/self-hosting/docker",
+        "https://raw.githubusercontent.com/supabase/supabase/master/docker/docker-compose.yml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Linux setup script",
+          "url": "https://supabase.com/docs/guides/self-hosting/docker",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "One shell setup command installs prerequisites and generates config; separate run.sh start starts services. Not browser one-click.",
+          "sources": [
+            "https://supabase.com/docs/guides/self-hosting/docker"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://supabase.com/docs/guides/self-hosting/docker"
+      ]
+    }
+  }
+}

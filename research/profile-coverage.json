@@ -1,45 +1,23 @@
 {
   "totalProducts": 227,
-  "researchedProfiles": 206,
-  "researchedAlternatives": 118,
-  "missingProfiles": [
-    "algolia",
-    "apache-superset",
-    "appwrite",
-    "elastic-cloud",
-    "freshservice-itam",
-    "glpi",
-    "lansweeper",
-    "matomo",
-    "metabase",
-    "metabase-pro",
-    "opensearch",
-    "pingdom",
-    "plausible",
-    "pocketbase",
-    "posthog",
-    "snipe-it",
-    "supabase",
-    "typesense",
-    "umami",
-    "uptime-kuma",
-    "vercel"
-  ],
+  "researchedProfiles": 227,
+  "researchedAlternatives": 132,
+  "missingProfiles": [],
   "ownership": {
     "community": 24,
-    "individual": 7,
-    "nonprofit": 5,
-    "private": 102,
-    "public": 33,
+    "individual": 9,
+    "nonprofit": 7,
+    "private": 117,
+    "public": 35,
     "public-subsidiary": 19,
     "unknown": 16
   },
   "funding": {
-    "bootstrapped": 14,
-    "funded": 118,
+    "bootstrapped": 16,
+    "funded": 130,
     "mixed": 11,
-    "not-applicable": 20,
-    "unknown": 43
+    "not-applicable": 24,
+    "unknown": 46
   },
   "unknownFoundedYear": [
     "asterisk",
@@ -72,6 +50,8 @@
     "solidtime",
     "stirling-pdf",
     "teable",
+    "umami",
+    "uptime-kuma",
     "vaultwarden",
     "vosk",
     "wekan"
@@ -79,38 +59,397 @@
   "fundedWithUnverifiedInvestorNames": [],
   "pricingRoles": {
     "entry": {
-      "free": 120,
-      "published": 64,
+      "free": 134,
+      "published": 68,
       "quote": 10,
-      "unknown": 12
+      "unknown": 15
     },
     "popular": {
-      "published": 31,
-      "unknown": 175
+      "published": 35,
+      "unknown": 192
     },
     "business": {
       "free": 1,
-      "not-offered": 35,
-      "published": 121,
+      "not-offered": 39,
+      "published": 134,
       "quote": 19,
-      "unknown": 30
+      "unknown": 34
     },
     "enterprise": {
-      "not-offered": 44,
-      "published": 36,
-      "quote": 94,
-      "unknown": 32
+      "not-offered": 48,
+      "published": 42,
+      "quote": 103,
+      "unknown": 34
     }
   },
   "sponsorship": {
-    "business-fallback": 82,
-    "identified": 23,
-    "none-found": 12,
+    "business-fallback": 91,
+    "identified": 29,
+    "none-found": 11,
     "unknown": 1
   },
   "installOptions": {
-    "marketplace": 28,
-    "one-click": 12,
-    "one-command": 27
-  }
+    "marketplace": 32,
+    "one-click": 13,
+    "one-command": 32
+  },
+  "sharedSourceUrls": [
+    {
+      "url": "https://about.google/company-info/our-story/",
+      "productCount": 5,
+      "productIds": [
+        "firebase",
+        "google-analytics-360",
+        "google-meet",
+        "google-workspace",
+        "looker"
+      ]
+    },
+    {
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf",
+      "productCount": 5,
+      "productIds": [
+        "firebase",
+        "google-analytics-360",
+        "google-meet",
+        "google-workspace",
+        "looker"
+      ]
+    },
+    {
+      "url": "https://googlepress.blogspot.com/1999/06/google-receives-25-million-in-equity.html",
+      "productCount": 5,
+      "productIds": [
+        "firebase",
+        "google-analytics-360",
+        "google-meet",
+        "google-workspace",
+        "looker"
+      ]
+    },
+    {
+      "url": "https://news.microsoft.com/facts-about-microsoft/",
+      "productCount": 5,
+      "productIds": [
+        "microsoft-365",
+        "microsoft-outlook",
+        "microsoft-teams",
+        "microsoft-visio",
+        "power-bi"
+      ]
+    },
+    {
+      "url": "https://www.augustcap.com/team/david-marquardt/",
+      "productCount": 5,
+      "productIds": [
+        "microsoft-365",
+        "microsoft-outlook",
+        "microsoft-teams",
+        "microsoft-visio",
+        "power-bi"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/investor/FAQ",
+      "productCount": 5,
+      "productIds": [
+        "microsoft-365",
+        "microsoft-outlook",
+        "microsoft-teams",
+        "microsoft-visio",
+        "power-bi"
+      ]
+    },
+    {
+      "url": "https://archive.computerhistory.org/resources/text/Adobe/adobe.founders_final.1992.062304109.pdf",
+      "productCount": 4,
+      "productIds": [
+        "adobe-acrobat",
+        "adobe-lightroom",
+        "adobe-photoshop",
+        "adobe-premiere-pro"
+      ]
+    },
+    {
+      "url": "https://www.adobe.com/about-adobe.html",
+      "productCount": 4,
+      "productIds": [
+        "adobe-acrobat",
+        "adobe-lightroom",
+        "adobe-photoshop",
+        "adobe-premiere-pro"
+      ]
+    },
+    {
+      "url": "https://www.adobe.com/content/dam/cc/en/fast-facts/pdfs/fast-facts.pdf",
+      "productCount": 4,
+      "productIds": [
+        "adobe-acrobat",
+        "adobe-lightroom",
+        "adobe-photoshop",
+        "adobe-premiere-pro"
+      ]
+    },
+    {
+      "url": "https://www.accel.com/companies/atlassian",
+      "productCount": 3,
+      "productIds": [
+        "confluence",
+        "jira",
+        "trello"
+      ]
+    },
+    {
+      "url": "https://www.atlassian.com/blog/news/2010/07/atlassian_closes_60_million_investment_from_accel_partners",
+      "productCount": 3,
+      "productIds": [
+        "confluence",
+        "jira",
+        "trello"
+      ]
+    },
+    {
+      "url": "https://www.atlassian.com/company",
+      "productCount": 3,
+      "productIds": [
+        "confluence",
+        "jira",
+        "trello"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
+      "productCount": 3,
+      "productIds": [
+        "microsoft-365",
+        "microsoft-outlook",
+        "microsoft-teams"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+      "productCount": 3,
+      "productIds": [
+        "heroku",
+        "salesforce",
+        "tableau"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com",
+      "productCount": 2,
+      "productIds": [
+        "apache-superset",
+        "opensearch"
+      ]
+    },
+    {
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001579878/4861e748-6e2b-43d4-874d-b7ef6e7a262f.pdf",
+      "productCount": 2,
+      "productIds": [
+        "figjam",
+        "figma"
+      ]
+    },
+    {
+      "url": "https://docs.frappe.io/erpnext/email-account",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://docs.frappe.io/framework/user/en/installation",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://frappe.io/about",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://frappe.io/blog/announcements/frappe-zerodha",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://frappe.io/welcome",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://investor.figma.com/news-events/news/news-details/2025/Figma-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      "productCount": 2,
+      "productIds": [
+        "figjam",
+        "figma"
+      ]
+    },
+    {
+      "url": "https://investor.figma.com/overview/default.aspx",
+      "productCount": 2,
+      "productIds": [
+        "figjam",
+        "figma"
+      ]
+    },
+    {
+      "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-Second-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "productCount": 2,
+      "productIds": [
+        "auth0",
+        "okta"
+      ]
+    },
+    {
+      "url": "https://investors.bendingspoons.com/newsroom/bending-spoons-completes-acquisition-of-airtable",
+      "productCount": 2,
+      "productIds": [
+        "airtable",
+        "harvest"
+      ]
+    },
+    {
+      "url": "https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans",
+      "productCount": 2,
+      "productIds": [
+        "google-meet",
+        "google-workspace"
+      ]
+    },
+    {
+      "url": "https://nextcloud.com/",
+      "productCount": 2,
+      "productIds": [
+        "nextcloud",
+        "roundcube"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml",
+      "productCount": 2,
+      "productIds": [
+        "erpnext",
+        "frappe-hr"
+      ]
+    },
+    {
+      "url": "https://workspace.google.com/pricing?hl=en&region=US",
+      "productCount": 2,
+      "productIds": [
+        "google-meet",
+        "google-workspace"
+      ]
+    },
+    {
+      "url": "https://www.acquia.com/",
+      "productCount": 2,
+      "productIds": [
+        "drupal",
+        "mautic"
+      ]
+    },
+    {
+      "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+      "productCount": 2,
+      "productIds": [
+        "adobe-lightroom",
+        "adobe-photoshop"
+      ]
+    },
+    {
+      "url": "https://www.figma.com/pricing/",
+      "productCount": 2,
+      "productIds": [
+        "figjam",
+        "figma"
+      ]
+    },
+    {
+      "url": "https://www.metabase.com/blog/metabase-alternatives",
+      "productCount": 2,
+      "productIds": [
+        "metabase",
+        "metabase-pro"
+      ]
+    },
+    {
+      "url": "https://www.metabase.com/pricing",
+      "productCount": 2,
+      "productIds": [
+        "metabase",
+        "metabase-pro"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/",
+      "productCount": 2,
+      "productIds": [
+        "authelia",
+        "gimp"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing",
+      "productCount": 2,
+      "productIds": [
+        "microsoft-365",
+        "microsoft-outlook"
+      ]
+    },
+    {
+      "url": "https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/",
+      "productCount": 2,
+      "productIds": [
+        "auth0",
+        "okta"
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html",
+      "productCount": 2,
+      "productIds": [
+        "metabase",
+        "metabase-pro"
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/open-source-is-collapsing-under-ai-powered-threats--calcom-302742216.html",
+      "productCount": 2,
+      "productIds": [
+        "cal-com",
+        "cal-diy"
+      ]
+    },
+    {
+      "url": "https://www.salesforce.com/news/stories/salesforce-acquisitions/",
+      "productCount": 2,
+      "productIds": [
+        "slack",
+        "tableau"
+      ]
+    }
+  ]
 }

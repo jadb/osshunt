@@ -11,7 +11,7 @@
     "stockSymbols": [],
     "funding": "not-applicable",
     "investors": [],
-    "notes": "Project established 2015 per homepage, separate from predecessor Attic. Donations/fiscal host are not equity financing. Waldmann EDV is lead maintainer Thomas Waldmann\u2019s company and donation recipient; community project not owned by fiscal host.",
+    "notes": "Project established 2015 per homepage, separate from predecessor Attic. Donations/fiscal host are not equity financing. Waldmann EDV is lead maintainer Thomas Waldmann’s company and donation recipient; community project not owned by fiscal host.",
     "sources": [
       "https://www.borgbackup.org/",
       "https://www.borgbackup.org/support/fund.html"
@@ -118,18 +118,31 @@
   ],
   "alternativeDetails": {
     "sponsorship": {
-      "status": "business-fallback",
+      "status": "identified",
       "organizations": [
         {
           "name": "Waldmann EDV",
           "url": "https://www.borgbackup.org/support/fund.html",
           "relationship": "business-steward",
           "source": "https://www.borgbackup.org/support/fund.html"
+        },
+        {
+          "name": "Arcanite",
+          "url": "https://opencollective.com/arcanite",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/borgbackup"
+        },
+        {
+          "name": "SWEETGOOD",
+          "url": "https://opencollective.com/sweetgood",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/borgbackup"
         }
       ],
-      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "notes": "Arcanite made documented2023/2024 financial contributions; SWEETGOOD made observedMay–July2026 monthly contributions. OpenCollective totals are cumulative, not all current recurring payments. WaldmannEDV remains business steward, not an outside financial donor; unverified business identities excluded.",
       "sources": [
-        "https://www.borgbackup.org/support/fund.html"
+        "https://www.borgbackup.org/support/fund.html",
+        "https://opencollective.com/borgbackup"
       ]
     },
     "selfHosting": {

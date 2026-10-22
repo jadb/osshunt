@@ -36,3 +36,10 @@ Checked 2026-10-21. Public primary sources; facts separated from assessments.
 ## Persistence and validation
 - Wrote profile JSON and per-claim JSONL in the assigned group directory. No repository mutations.
 - Validation command planned/completed centrally for this group: `node scripts/validate-profiles.mjs profiles`.
+
+## Independent source review integration
+
+Also verified Acro Commerce donated developer hours and Zoocha contributed office space for code sprints (in-kind, not assumed cash sponsorship). Current Zoocha page says Diamond Certified Partner; no recurring cash amount or exhaustive supporter inventory inferred. Sources: https://www.acrocommerce.com/solutions/drupal-and-drupal-commerce, https://www.zoocha.com/systems-partnerships
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

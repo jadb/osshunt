@@ -1,0 +1,145 @@
+{
+  "id": "elastic-cloud",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Elastic N.V.",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE:ESTC"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Index Ventures",
+        "source": "https://www.elastic.co/about/press/elasticsearch-closes-24m-series-b-round-and-exceeds-two-million-downloads-milestone"
+      },
+      {
+        "name": "Benchmark Capital",
+        "source": "https://www.elastic.co/about/press/elasticsearch-closes-24m-series-b-round-and-exceeds-two-million-downloads-milestone"
+      },
+      {
+        "name": "SV Angel",
+        "source": "https://www.elastic.co/about/press/elasticsearch-closes-24m-series-b-round-and-exceeds-two-million-downloads-milestone"
+      },
+      {
+        "name": "NEA",
+        "source": "https://www.elastic.co/about/press/elastic-launches-elastic-cloud-enterprise"
+      }
+    ],
+    "notes": "Independent Dutch public company Elastic N.V.; current 2026 results and investor FAQ confirm NYSE ESTC. Official company history says founded 2012; Elasticsearch project predates company. Historical private investors Index, Benchmark, SVAngel, NEA; current holdings not asserted.",
+    "sources": [
+      "https://ir.elastic.co/News--Events/news/news-details/2026/Elastic-Reports-First-Quarter-Fiscal-2027-Financial-Results/",
+      "https://ir.elastic.co/resources/investor-faqs/default.aspx",
+      "https://www.elastic.co/about/press/elastic-launches-elastic-cloud-enterprise",
+      "https://www.elastic.co/about/press/elasticsearch-closes-24m-series-b-round-and-exceeds-two-million-downloads-milestone"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard",
+      "status": "published",
+      "monthlyPrice": 99,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "example production deployment / month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud hosted",
+      "notes": "As low as $99/month. Footnote: production configuration with 120 GB storage across 2 zones, instance-type usage pricing. Actual region/provider/capacity/add-ons change cost; no annual total inferred.",
+      "sources": [
+        "https://www.elastic.co/pricing/cloud-hosted"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://www.elastic.co/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Gold",
+      "status": "published",
+      "monthlyPrice": 114,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "example production deployment / month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud hosted",
+      "notes": "Closest organizational tier above Standard; as low as$114/month for footnoted 120 GB/two-zone production configuration. Adds reporting and third-party alerts; not a Business-named plan. Usage-based instance cost, not an all-inclusive fixed bill.",
+      "sources": [
+        "https://www.elastic.co/pricing/cloud-hosted"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": 184,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "example production deployment / month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud hosted",
+      "notes": "As low as$184/month for footnoted 120 GB/two-zone production configuration; instance-type usage pricing and additional feature charges apply. Annual total not published. Sales custom contracts separate.",
+      "sources": [
+        "https://www.elastic.co/pricing/cloud-hosted"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Elastic query/API ecosystem and integrations create accumulated application compatibility and expertise that can raise replacement costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.elastic.co/pricing/",
+        "https://ir.elastic.co/News--Events/news/news-details/2026/Elastic-Reports-First-Quarter-Fiscal-2027-Financial-Results/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Keyword/vector retrieval plus inference/reranking supports both traditional search and AI retrieval.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.elastic.co/pricing/serverless-search"
+      ]
+    },
+    {
+      "claim": "Kibana exploration and dashboards connect indexed data to interactive investigation.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.elastic.co/pricing/"
+      ]
+    },
+    {
+      "claim": "Serverless separates search and ingest compute so workloads can be tuned independently.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.elastic.co/pricing/serverless-search"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

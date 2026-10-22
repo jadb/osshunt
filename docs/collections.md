@@ -2,7 +2,7 @@
 
 Three collections: `categories`, `products`, `alternatives`. Paid and community products share stable IDs; mapping records join `from` paid IDs to `to` community IDs. A product can appear in multiple categories and map to several incumbents.
 
-`products[].profile` adds organization history, ownership/funding and known investors, four pricing roles, moat assessments and exactly three product reasons. Alternative profiles also include sponsorship, dependency alternatives/optional requirements and installation shortcuts. Reviewed profile inputs join by stable ID from `research/profiles/`; their claim ledgers and audits remain separate. [Field interpretation](product-profile-methodology.md), [coverage](../research/enrichment-manifest.json).
+`products[].profile` adds organization history, ownership/funding and known investors, four pricing roles with separate base/usage amounts and units, moat assessments and exactly three product reasons. Alternative profiles also include sponsorship, dependency alternatives/optional requirements and installation shortcuts. Reviewed profile inputs join by stable ID from `research/profiles/`; their claim ledgers and audits remain separate. [Field interpretation](product-profile-methodology.md), [coverage](../research/enrichment-manifest.json).
 
 `data/collections/*.json` are deterministic snapshots: top-level arrays, explicit lower-case IDs, ID order, two-space JSON and final newline. Metadata belongs in adjacent generated JSON Schemas. Schema factories accept the consumer's zod instance. There are no timestamps refreshed merely by building.
 

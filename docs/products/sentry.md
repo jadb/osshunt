@@ -4,7 +4,7 @@
 
 ## Organization
 
-Functional Software, Inc. (Sentry) (business); ownership: **private**; funding: **funded**.
+Sentry (business); ownership: **private**; funding: **funded**.
 
 Started unknown (unknown); years active: unknown; years in business: not established/applicable. Ages are approximate calendar-year differences as of 2026-10-21.
 
@@ -18,9 +18,9 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 | Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
 |---|---|---|---|---|---|---|---|---|
-| entry | Team | published | USD 29/organization | — | — | — | unspecified | vendor commercial cloud. Official billing help explicitly gives USD29 base Team subscription; usage charges separate. Annual amount unverified because pricing/docs return unsupported markdown. [1](https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024) |
+| entry | Team | published | USD 29/organization | — | — | — | unspecified | vendor commercial cloud. Official billing help explicitly gives USD 29 base Team subscription; usage charges separate. Annual amount unverified because pricing/docs return unsupported markdown. [1](https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024) |
 | popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial cloud. Official pricing page could not be extracted; no first-party popular badge verified. [1](https://sentry.io/pricing/) |
-| business | Business | published | USD 89/organization | — | — | — | unspecified | vendor commercial cloud. Official billing help gives USD89 base Business subscription. Usage charges separate; annual amount unresolved. [1](https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024) |
+| business | Business | published | USD 89/organization | — | — | — | unspecified | vendor commercial cloud. Official billing help gives USD 89 base Business subscription. Usage charges separate; annual amount unresolved. [1](https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024) |
 | enterprise | Custom volume contract | quote | — | — | — | — | unspecified | vendor commercial cloud. Official help directs volume pricing to sales; no Enterprise amount verified. [1](https://www.sentry.help/en/articles/13965054-can-i-get-a-quote-for-sentry) |
 
 ## Defensibility assessments

@@ -16,4 +16,11 @@
 
 - Local writes: apply_patch created build.py and numbered batch scripts in assigned temporary directory; Python batch scripts persisted JSON/JSONL/Markdown. No repository writes.
 - Final command: `python3 finalize.py`; local-only schema/count/URL checks follow.
+
+## Independent source review integration
+
+AppsCode explicitly sponsors backend integration testing for Google Cloud Storage and Microsoft Azure Blob Storage (narrowly scoped in-kind testing resources). Earlier none-found result superseded by README Sponsorship section; no cash or equity amount inferred. Sources: https://raw.githubusercontent.com/restic/restic/master/README.md
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.
 Integration: unknown resource values retained as null in profile; ledger uses explicit unverified text instead of null claim values. No hardware minimum inferred.

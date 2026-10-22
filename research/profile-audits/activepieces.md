@@ -22,3 +22,9 @@ Checked 2026-10-21
 - Four pricing roles retained; annual totals derived only where annual billing is explicit. Unknown does not imply absent.
 - Each of three product reasons and moat marked assessment; sponsors distinguished from investors/customers.
 - Persisted profile, claim ledger and this audit together.
+
+## Price denominator refinement
+
+Split existing combined base/usage unit text into unit=account and usageUnit=overage credit. Published amounts, included allowances and source citations retained unchanged. Executed the price-unit refinement helper; no new price inferred.
+
+Source-routing correction: pricingTiers.entry ledger used YC company-history locator. Routed current free-entry claim to https://www.activepieces.com/pricing §Free plan/cards, already read in this refresh; archived prior ledger locally. Founded/history claims retain their YC source. Pricing-field source-location screen found no other founding/funding locator on pricing claims.

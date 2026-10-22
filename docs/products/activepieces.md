@@ -20,7 +20,7 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 |---|---|---|---|---|---|---|---|---|
 | entry | Community Edition | free | USD 0/account | — | — | — | unspecified | free self-hosted core. MIT community code is distinct from licensed cloud/on-prem plans and their credits. [1](https://www.ycombinator.com/companies/activepieces) |
 | popular | unknown | unknown | — | — | — | — | unspecified | commercial cloud/on-prem plans. No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred. [1](https://www.activepieces.com/pricing) |
-| business | Team | published | USD 200/account; overage per credit | — | — | USD 0.007/account; overage per credit | unspecified | commercial cloud or licensed on-prem. 25 users and50,000 credits/month; overage $0.007 per credit, separate usage rate. Plus is $20/month with10,000 credits. Annual total not verified. [1](https://www.activepieces.com/pricing) |
+| business | Team | published | USD 200/account | — | — | USD 0.007/overage credit | unspecified | commercial cloud or licensed on-prem. 25 users and50,000 credits/month; overage $0.007 per credit, separate usage rate. Plus is $20/month with10,000 credits. Annual total not verified. [1](https://www.activepieces.com/pricing) |
 | enterprise | Ultimate / Enterprise control | quote | — | — | — | — | unspecified | commercial cloud/on-prem or air-gapped enterprise. Talk to sales; yearly sized credits and enterprise self-host controls. [1](https://www.activepieces.com/pricing) |
 
 ## Defensibility assessments

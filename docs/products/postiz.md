@@ -35,10 +35,12 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. [1](https://github.com/gitroomhq/postiz-app)
+Status: **identified**. Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. Current README explicitly lists ChatbotX and RapidProxy alongside Hostinger/Virlo in Our Sponsors. Paid repository logo/backlink placements are project sponsorship/advertising, not OAuth providers or customers. [1](https://github.com/gitroomhq/postiz-app) [2](https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md)
 
 - [Hostinger](https://www.hostinger.com/): corporate-sponsor. [Evidence](https://github.com/gitroomhq/postiz-app).
 - [Virlo](https://dev.virlo.ai/): corporate-sponsor. [Evidence](https://github.com/gitroomhq/postiz-app).
+- [ChatbotX](https://chatbotx.io/): corporate-sponsor. [Evidence](https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md).
+- [RapidProxy](https://www.rapidproxy.io/): corporate-sponsor. [Evidence](https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md).
 
 ## Self-operation requirements
 

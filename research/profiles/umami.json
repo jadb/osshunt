@@ -1,0 +1,233 @@
+{
+  "id": "umami",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Umami Software, Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Race Capital",
+        "source": "https://www.globenewswire.com/news-release/2022/07/19/2481786/0/en/umami-raises-1-5-million-pre-seed-funding-round-led-by-race-capital-to-continue-growing-its-popular-open-source-privacy-focused-web-analytics-platform.html"
+      }
+    ],
+    "notes": "Privacy policy names Umami Software, Inc.; investor-issued July 2022 announcement confirms $1.5 M pre-seed led by Race Capital and founders Mike/Brian/Francis Cao. Exact legal company formation year not established; not conflated with earlier project origin. Historical investor not asserted to own a current fixed percentage.",
+    "sources": [
+      "https://umami.is/privacy",
+      "https://www.globenewswire.com/news-release/2022/07/19/2481786/0/en/umami-raises-1-5-million-pre-seed-funding-round-led-by-race-capital-to-continue-growing-its-popular-open-source-privacy-focused-web-analytics-platform.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted Umami",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open source distribution; infrastructure costs separate. Hosted Hobby separately free with 100 K events/month.",
+      "sources": [
+        "https://docs.umami.is/docs/install"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://umami.is/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 200,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud Business includes 10 M events/month; additional events $0.00002 each and replay overage separate. No published annual total found.",
+      "sources": [
+        "https://umami.is/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud Enterprise Custom pricing/Contact us; SAML and custom retention. No paid self-host license inferred.",
+      "sources": [
+        "https://umami.is/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Privacy-oriented instrumentation plus growing analysis/report breadth creates workflow differentiation, while permissively licensed code limits engine exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.umami.is/docs/install",
+        "https://docs.umami.is/docs/metric-definitions"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Funnels, retention and journey analysis support investigating conversion drop-offs and repeat visits.",
+      "basis": "assessment",
+      "sources": [
+        "https://umami.is/pricing"
+      ]
+    },
+    {
+      "claim": "Custom events, event/session properties and goals add behavioral context beyond pageview totals.",
+      "basis": "assessment",
+      "sources": [
+        "https://umami.is/pricing"
+      ]
+    },
+    {
+      "claim": "UTM/ad-click attribution and Web Vitals metrics connect campaign traffic to measured page experience.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.umami.is/docs/metric-definitions"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Umami Software, Inc.",
+          "url": "https://umami.is/privacy",
+          "relationship": "business-steward",
+          "source": "https://umami.is/privacy"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://umami.is/privacy"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Node.js 18.18+ source runtime",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Source-install route",
+          "notes": "pnpm used to build; Node runtime runs application.",
+          "sources": [
+            "https://docs.umami.is/docs/install"
+          ]
+        },
+        {
+          "component": "Docker image / Compose",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container route",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://docs.umami.is/docs/install"
+          ]
+        },
+        {
+          "component": "Postgre SQL 12.14+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current v 3 docs list Postgre SQL; old My SQL routes not treated as current.",
+          "sources": [
+            "https://docs.umami.is/docs/install"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Cache and shared session management",
+          "notes": "Without Redis, direct DB lookups and JWT authentication are supported.",
+          "sources": [
+            "https://docs.umami.is/docs/enable-redis"
+          ]
+        },
+        {
+          "component": "Postgre SQL direct migration connection",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Pooled serverless database route",
+          "notes": "Set DIRECT_DATABASE_URL for migrations when DATABASE_URL uses pooler.",
+          "sources": [
+            "https://docs.umami.is/docs/guides/running-on-vercel"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal production hardware minimum verified; size to actual workload.",
+        "sources": [
+          "https://docs.umami.is/docs/install"
+        ]
+      },
+      "notes": "Current installation documents Postgre SQL and source/container/Kubernetes alternatives. Optional Redis explicit; My SQL legacy excluded. Hosting provider integrations do not remove database requirements.",
+      "sources": [
+        "https://docs.umami.is/docs/install"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Vercel deployment button",
+          "url": "https://docs.umami.is/docs/guides/running-on-vercel",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official guide says button automates steps 1\u20135; Postgre SQL/connection configuration and changing default password still required.",
+          "sources": [
+            "https://docs.umami.is/docs/guides/running-on-vercel"
+          ]
+        }
+      ],
+      "notes": "Official Running on Vercel guide explicitly offers automation button for deployment steps; recorded official deployment URL. Manual Compose is separate.",
+      "sources": [
+        "https://docs.umami.is/docs/install"
+      ]
+    }
+  }
+}

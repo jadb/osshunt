@@ -129,9 +129,81 @@
           "url": "https://www.fastly.com/",
           "relationship": "corporate-sponsor",
           "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Tinybird",
+          "url": "https://tbrd.co/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Ahrefs",
+          "url": "https://ahrefs.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "1Password",
+          "url": "https://1password.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Netlify",
+          "url": "https://netlify.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Zapier",
+          "url": "https://zapier.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Tuple",
+          "url": "https://tuple.app/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Shopify",
+          "url": "https://shopify.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "BairesDev",
+          "url": "https://www.bairesdev.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Icons8",
+          "url": "https://icons8.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Clay",
+          "url": "https://clay.global/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "BuiltWith",
+          "url": "https://builtwith.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
+        },
+        {
+          "name": "Segment.io",
+          "url": "https://segment.io/",
+          "relationship": "corporate-sponsor",
+          "source": "https://ghost.org/partners/"
         }
       ],
-      "notes": "Official partners page thanks businesses providing services and sponsorships; DigitalOcean powers Ghost(Pro), and Fastly is listed. These are not equity investors.",
+      "notes": "Official partners page thanks businesses providing services and sponsorships; DigitalOcean powers Ghost(Pro), and Fastly is listed. These are not equity investors. Official partner thanks roster includes these service/sponsorship businesses alongside DigitalOcean/Fastly. Services versus cash are not individually specified; these are explicit ongoing-work acknowledgments, not inferred customers or integrations.",
       "sources": [
         "https://ghost.org/partners/"
       ]

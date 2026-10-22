@@ -35,8 +35,9 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **none-found**. Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors. [1](https://github.com/restic/restic)
+Status: **identified**. AppsCode explicitly sponsors integration testing for Google Cloud Storage and Azure Blob Storage backends (in-kind testing resources); no cash or equity amount inferred. [1](https://github.com/restic/restic) [2](https://raw.githubusercontent.com/restic/restic/master/README.md)
 
+- [AppsCode Inc.](https://appscode.com/): corporate-sponsor. [Evidence](https://raw.githubusercontent.com/restic/restic/master/README.md).
 
 ## Self-operation requirements
 

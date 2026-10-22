@@ -1,0 +1,138 @@
+{
+  "id": "metabase-pro",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Metabase, Inc.",
+    "kind": "business",
+    "foundedYear": 2015,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Insight Partners",
+        "source": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html"
+      },
+      {
+        "name": "Expa",
+        "source": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html"
+      },
+      {
+        "name": "NEA",
+        "source": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html"
+      }
+    ],
+    "notes": "Official blog says in market since 2015; age is product/business operating history, exact incorporation date not established. Company-issued 2021 Series B announcement verifies Insight Partners, Expa, NEA investors. Historical participation, not current percentage holdings.",
+    "sources": [
+      "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html",
+      "https://www.metabase.com/blog/metabase-alternatives",
+      "https://www.metabase.com/pricing"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 575,
+      "annualPrice": 6210,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-host Pro license",
+      "notes": "First 10 users included; $12 monthly/$130 annual per additional user. Annual total explicitly$6210; infrastructure separate.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 575,
+      "annualPrice": 6210,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-host Pro license",
+      "notes": "Same Pro plan is closest business tier; no separate Business-named edition. User overages separate.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 20000,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid commercial license",
+      "notes": "Starting annual minimum shown; final contract custom. Not an all-inclusive fixed quote.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable questions, dashboards and connected semantic context can make replacement costly as teams accumulate analytical workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing",
+        "https://www.metabase.com/blog/metabase-alternatives"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Row/column permissions and tenant segregation allow one analytics application to serve different data audiences.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "claim": "Interactive embedding and branding controls integrate analytics into customer-facing products.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "claim": "Usage analytics, auditing and caching controls make analytical workflows observable and tunable.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -11,6 +11,7 @@ Use-case sources: [1](https://www.heroku.com/), [2](https://firebase.google.com/
 - [Heroku](https://www.heroku.com/): USD 7/usage/month, monthly billing. Basic always-on dyno $7/month; Eco $5/month sleeps and personal accounts only; databases and add-ons extra. [Pricing](https://www.heroku.com/pricing/).
   [Pricing tiers, organization and product reasons](../products/heroku.md).
 - [Vercel](https://vercel.com/): USD 20/seat/month, monthly billing. Pro developer seat $20/month plus metered services; Hobby free plan separate. [Pricing](https://vercel.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/vercel.md).
 
 ### Coolify — A
 
@@ -31,6 +32,8 @@ MIT volunteer project; FAQ confirms no commercial organization or vendor hosting
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/pocketbase/pocketbase/blob/6f370ea741f33adf889eef02e3c1b884a47aa522/LICENSE.md), [edition evidence](https://pocketbase.io/faq/), [hosting](https://pocketbase.io/faq/), [repository](https://github.com/pocketbase/pocketbase).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/pocketbase.md).
+
 Repository: pushed 2026-10-14T18:45:14Z; latest commit 2026-10-08T16:21:49Z; latest published release v0.40.5 (2026-10-08T16:45:10Z). Quick analysis: 6.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Firebase → PocketBase: **different-approach**. Small single-server auth/realtime/file backend using SQLite; no Cloud Functions and vertical scaling only. Rewrite client calls and rules; FAQ reports no built-in data import/export helpers. [1](https://pocketbase.io/faq/)
@@ -40,6 +43,8 @@ Repository: pushed 2026-10-14T18:45:14Z; latest commit 2026-10-08T16:21:49Z; lat
 Apache-2.0 self-hosted Postgres/auth/storage/realtime stack has no documented paid self-hosted code tier. A applies to this named OSS backend stack. Managed-platform services and control-plane gaps are separately disclosed; it is a partial Firebase alternative, not an equivalent managed platform.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/supabase/supabase/blob/96d51239c65f22d751482bf15b5fcb2216991233/LICENSE), [edition evidence](https://supabase.com/docs/guides/self-hosting), [hosting](https://supabase.com/pricing), [repository](https://github.com/supabase/supabase).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/supabase.md).
 
 Service costs/limits: Managed cloud branching, Management API, managed backups/PITR, advanced platform metrics, analytics/vector buckets and ETL are absent from the self-hosted distribution; no paid self-hosted unlock is claimed. Operate backups, monitoring and deployment workflows yourself or use managed cloud.
 
@@ -52,6 +57,8 @@ Repository: pushed 2026-10-21T21:28:10Z; latest commit 2026-10-21T20:18:20Z; lat
 BSD-3-Clause core self-hosts auth, database, storage, functions and realtime. Enterprise page explicitly reserves premium self-hosted management capabilities. General guide parity language is broader, so exact edition boundary merits continued checking.
 
 License: BSD-3-Clause; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/appwrite/appwrite/blob/7ef921e5df638bd4e332de7d6c85e5aeb289b93c/LICENSE), [edition evidence](https://appwrite.io/enterprise), [hosting](https://appwrite.io/pricing), [repository](https://github.com/appwrite/appwrite).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/appwrite.md).
 
 Paid restrictions: Premium Enterprise self-hosted edition: console SSO, custom organization roles, activity logs, advanced management tools and compliance options
 

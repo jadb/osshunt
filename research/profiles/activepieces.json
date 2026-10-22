@@ -65,13 +65,14 @@
       "oneTimePrice": null,
       "usagePrice": 0.007,
       "currency": "USD",
-      "unit": "account; overage per credit",
+      "unit": "account",
       "minimumQuantity": null,
       "scope": "commercial cloud or licensed on-prem",
       "notes": "25 users and50,000 credits/month; overage $0.007 per credit, separate usage rate. Plus is $20/month with10,000 credits. Annual total not verified.",
       "sources": [
         "https://www.activepieces.com/pricing"
-      ]
+      ],
+      "usageUnit": "overage credit"
     },
     {
       "role": "enterprise",

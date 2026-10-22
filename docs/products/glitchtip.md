@@ -18,9 +18,9 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 | Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
 |---|---|---|---|---|---|---|---|---|
-| entry | Self-hosted | free | USD 0/organization | — | — | — | unspecified | free self-hosted core. Self-hosted version runs on own server; optional infrastructure charges separate. Hosted Free has 1,000 events/month. [1](https://glitchtip.com/pricing/) |
+| entry | Self-hosted | free | USD 0/organization | — | — | — | unspecified | free self-hosted core. Self-hosted version runs on own server; optional infrastructure charges separate. Hosted Free has 1, 000 events/month. [1](https://glitchtip.com/pricing/) |
 | popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial cloud. No public designation or verified amount found in reviewed pricing page. [1](https://glitchtip.com/pricing/) |
-| business | Medium | published | USD 50/organization | — | — | — | unspecified | vendor commercial cloud. Hosted plan for growing businesses; up to 500,000 events/month. Annual discount exists but annual total is not published. [1](https://glitchtip.com/pricing/) |
+| business | Medium | published | USD 50/organization | — | — | — | unspecified | vendor commercial cloud. Hosted plan for growing businesses; up to 500, 000 events/month. Annual discount exists but annual total is not published. [1](https://glitchtip.com/pricing/) |
 | enterprise | Enterprise / HIPAA contract | quote | — | — | — | — | unspecified | vendor commercial cloud. HIPAA page invites contact to discuss Enterprise pricing. Hosted Large separately lists $250/month; no fabricated custom-contract amount. [1](https://glitchtip.com/hipaa/) |
 
 ## Defensibility assessments
@@ -41,28 +41,28 @@ Status: **business-fallback**. Reviewed project/company sources; no separate cor
 
 ## Self-operation requirements
 
-Mode: **server**. Current guide documents all-in-one and separate worker routes; PostgreSQL required, Redis/Valkey optional. Hardware guide is not a workload guarantee. [1](https://glitchtip.com/documentation/install/)
+Mode: **server**. Current guide documents all-in-one and separate worker routes; Postgre SQL required, Redis/Valkey optional. Hardware guide is not a workload guarantee. [1](https://glitchtip.com/documentation/install/)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
 | Docker runtime or Kubernetes/Helm route | required | — | Always | Production dependency documented by project. [1](https://glitchtip.com/documentation/install/) |
-| PostgreSQL 14+ | required | — | Always | Production dependency documented by project. [1](https://glitchtip.com/documentation/install/) |
+| Postgre SQL 14+ | required | — | Always | Production dependency documented by project. [1](https://glitchtip.com/documentation/install/) |
 | All-in-one service or separate web/worker services | one-of | application-runtime | Choose deployment size | All-in-one supports small instances; separate workers scale independently. [1](https://glitchtip.com/documentation/install/) |
 | Valkey or Redis 7+ | optional | — | Enable for larger/faster deployments | Current guide explicitly optional, not a universal production requirement. [1](https://glitchtip.com/documentation/install/) |
 | SMTP/email transport | conditional | — | When outbound email is needed | EMAIL_URL may use consolemail:// if no email desired. [1](https://glitchtip.com/documentation/install/) |
-| S3-compatible object storage | optional | — | External file uploads/sourcemaps route | Railway buckets are a documented option. [1](https://glitchtip.com/documentation/install/) |
+| S 3-compatible object storage | optional | — | External file uploads/sourcemaps route | Railway buckets are a documented option. [1](https://glitchtip.com/documentation/install/) |
 | nginx or Apache reverse proxy and TLS | conditional | — | Public production ingress | Request-buffering proxy recommended. [1](https://glitchtip.com/documentation/install/) |
 
-Resources: CPU x86 or arm64; memory 512 MB recommended; 256 MB minimum all-in-one; storage Usage-dependent; example 30 GB for 1 million events/month; OS Docker-capable server. Guide allows carefully configured 128 MB plus swap; 512 MB is recommended, disk figure is an example. [1](https://glitchtip.com/documentation/install/)
+Resources: CPU x 86 or arm 64; memory 512 MB recommended; 256 MB minimum all-in-one; storage Usage-dependent; example 30 GB for 1 million events/month; OS Docker-capable server. Guide allows carefully configured 128 MB plus swap; 512 MB is recommended, disk figure is an example. [1](https://glitchtip.com/documentation/install/)
 
 ## One-click and installer options
 
-Status: **offered**. Official guide links Railway, PikaPods, Elestio, Nodion and RepoCloud. Railway template verified; ordinary Compose instructions kept separate. [1](https://glitchtip.com/documentation/install/)
+Status: **offered**. Official guide links Railway, Pika Pods, Elestio, Nodion and Repo Cloud. Railway template verified; ordinary Compose instructions kept separate. [1](https://glitchtip.com/documentation/install/)
 
 Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
 
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
-- [Railway GlitchTip template](https://railway.com/new/template/glitchtip): **one-click**, officially-linked-third-party. Official installation page links template deploying all-in-one app, PostgreSQL and Redis. [1](https://glitchtip.com/documentation/install/)
+- [Railway Glitch Tip template](https://railway.com/new/template/glitchtip): **one-click**, officially-linked-third-party. Official installation page links template deploying all-in-one app, Postgre SQL and Redis. [1](https://glitchtip.com/documentation/install/)
 
 [Structured profile](../../research/profiles/glitchtip.json) · [Claim ledger](../../research/profile-claims/glitchtip.jsonl) · [Research steps](../../research/profile-audits/glitchtip.md)

@@ -35,11 +35,17 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. [1](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/)
+Status: **identified**. Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. Also explicitly thanked:01systems, JackalSoftware, server.camp, ComputerButlerGermanyUG, APPSInventInc. and RadWebHosting; corroborated financial organizations on OpenCollective. Recognition is cumulative/historical with2020–2025 starts, not proof all remain recurring2026 sponsors. [1](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/)
 
 - [Quilvest Capital](https://www.quilvestcapital.com/): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
 - [Route4Me](https://www.route4me.com/): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
 - [Mokas IT](https://www.mokas.lt/): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
+- [01systems](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
+- [Jackal Software](https://opencollective.com/jackal-software): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
+- [server.camp](https://opencollective.com/servercamp): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
+- [ComputerButler Germany UG](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
+- [APPSInvent Inc.](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
+- [Rad Web Hosting](https://opencollective.com/radwebhosting): corporate-sponsor. [Evidence](https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/).
 
 ## Self-operation requirements
 

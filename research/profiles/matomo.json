@@ -1,0 +1,240 @@
+{
+  "id": "matomo",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Inno Craft Limited / Matomo",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "2007 is Piwik/Matomo project origin; renamed Matomo in 2018. December 2016 company announcement identifies newly founded Inno Craft as business steward, separate from Piwik PRO. Current privacy policy names Inno Craft Limited. Exact company formation date, external equity investors and financing unresolved; project age is not company age.",
+    "sources": [
+      "https://matomo.org/about/",
+      "https://matomo.org/changelog/piwik-3-0-0/",
+      "https://fr.matomo.org/politique-de-confidentialite/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Unlimited users/hits; premium plugin bundles and infrastructure separate.",
+      "sources": [
+        "https://matomo.org/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 1450,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid on-premise plugin bundle",
+      "notes": "Explicit Popular badge. Displayed monthly card \u20ac1450; up to 20 users/30 Mhits per month. Annual toggle discounted comparison differs; annual total not verified.",
+      "sources": [
+        "https://matomo.org/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 1450,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid on-premise plugin bundle",
+      "notes": "Named Business bundle; premium features exceed Community scope. Monthly displayed card; annual contract total left unresolved.",
+      "sources": [
+        "https://matomo.org/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": 3400,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid on-premise plugin bundle",
+      "notes": "Displayed monthly card \u20ac3400 up to 50 users/100 Mhits monthly; separate VIP custom offer exists. Annual total unverified.",
+      "sources": [
+        "https://matomo.org/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Long-lived analytics schema, integration/plugin ecosystem and historical report data create migration friction.",
+      "basis": "assessment",
+      "sources": [
+        "https://matomo.org/about/",
+        "https://matomo.org/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Unsampled reporting and visitor segmentation preserve detailed traffic investigation.",
+      "basis": "assessment",
+      "sources": [
+        "https://matomo.org/pricing/"
+      ]
+    },
+    {
+      "claim": "Campaign, ecommerce, internal-search and event reports cover marketing behavior in one analytics interface.",
+      "basis": "assessment",
+      "sources": [
+        "https://matomo.org/pricing/"
+      ]
+    },
+    {
+      "claim": "Tag Manager and tracking/reporting APIs support custom instrumentation and reporting workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://matomo.org/about/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Inno Craft Limited",
+          "url": "https://matomo.org/changelog/piwik-3-0-0/",
+          "relationship": "business-steward",
+          "source": "https://matomo.org/changelog/piwik-3-0-0/"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://matomo.org/changelog/piwik-3-0-0/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP 8 with PDO/PDO_MYSQL or mysqli",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Matomo 5 stable requirements used; Matomo 6.0 beta PHP 8.1 requirements deliberately excluded.",
+          "sources": [
+            "https://matomo.org/faq/on-premise/matomo-requirements/"
+          ]
+        },
+        {
+          "component": "Apache, nginx, IIS or Lite Speed webserver",
+          "necessity": "one-of",
+          "group": "webserver",
+          "condition": "Supported web serving route",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://matomo.org/faq/on-premise/matomo-requirements/"
+          ]
+        },
+        {
+          "component": "My SQL 5.5+; My SQL 8+ recommended",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Matomo 5 database route",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://matomo.org/faq/on-premise/matomo-requirements/"
+          ]
+        },
+        {
+          "component": "Maria DB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Matomo 5 supported database alternative",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://matomo.org/faq/on-premise/matomo-requirements/"
+          ]
+        },
+        {
+          "component": "PHP CLI and scheduled report archiving",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Medium/high traffic production reporting",
+          "notes": "CLI recommended; PHP extensions curl/gd/xml/mbstring enhance reports and integrations.",
+          "sources": [
+            "https://matomo.org/faq/on-premise/matomo-requirements/"
+          ]
+        },
+        {
+          "component": "Email transport",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Scheduled email reports",
+          "notes": "No mandatory external cache/queue identified in basic stable requirements.",
+          "sources": [
+            "https://wordpress.org/plugins/matomo/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 CPU recommended for <=100, 000 monthly pageviews",
+        "memory": "2 GB recommended for <=100, 000 monthly pageviews",
+        "storage": "50 GB SSD recommended for <=100, 000 monthly pageviews",
+        "os": "Linux, Windows, mac OS Server or Free BSD",
+        "notes": "Workload-specific recommended configuration, not absolute minimum; larger traffic tables require larger/multiple servers.",
+        "sources": [
+          "https://matomo.org/faq/on-premise/matomo-requirements/"
+        ]
+      },
+      "notes": "Stable Matomo 5 stack distinguished from documented Matomo 6 beta. PHP application can use standard webserver or Word Press plugin route; My SQL/Maria DB, not Postgre SQL. No mandatory Redis requirement identified.",
+      "sources": [
+        "https://matomo.org/faq/on-premise/matomo-requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Matomo Analytics Word Press plugin",
+          "url": "https://wordpress.org/plugins/matomo/",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Official matomoteam plugin installs analytics inside an existing Word Press installation in a few clicks; not a blank-server deployment.",
+          "sources": [
+            "https://matomo.org/faq/on-premise/matomo-requirements/",
+            "https://wordpress.org/plugins/matomo/"
+          ]
+        }
+      ],
+      "notes": "Requirements guide officially links first-party Word Press plugin; marketplace installation verified. Standalone download/manual server setup separate.",
+      "sources": [
+        "https://matomo.org/faq/on-premise/matomo-requirements/"
+      ]
+    }
+  }
+}

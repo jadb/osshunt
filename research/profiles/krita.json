@@ -129,9 +129,45 @@
           "url": "https://www.fosshub.com/",
           "relationship": "corporate-sponsor",
           "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "Epic Games",
+          "url": "https://www.unrealengine.com/en-US/megagrants",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "Broken Rules",
+          "url": "https://brokenrul.es/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "Gamechuck",
+          "url": "https://game-chuck.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "Agile Coach",
+          "url": "https://agile.coach/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "Private Internet Access",
+          "url": "https://krita.org/en/sponsors/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
+        },
+        {
+          "name": "xoio",
+          "url": "https://xoio.de/",
+          "relationship": "corporate-sponsor",
+          "source": "https://krita.org/en/sponsors/"
         }
       ],
-      "notes": "Intel gold sponsor since 2022; FossHub monthly donor since 2019 on current sponsor page. Historical grants listed separately on page; not equity.",
+      "notes": "Intel gold sponsor since 2022; FossHub monthly donor since 2019 on current sponsor page. Historical grants listed separately on page; not equity. Additional documented corporate assistance: Epic Games grant(2019), Broken Rules(2023), Gamechuck(2019), Agile Coach(2018), Private Internet Access(2017), xoio(2017). These are historical donations/grants; not an assertion of continuing2026 payments. ASIFA-Hollywood is a named nonprofit, excluded from corporate list.",
       "sources": [
         "https://krita.org/en/sponsors/"
       ]

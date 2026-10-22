@@ -38,3 +38,10 @@ Checked 2026-10-21. Public primary sources; facts separated from assessments.
 ## Persistence and validation
 - Wrote profile JSON and per-claim JSONL in the assigned group directory. No repository mutations.
 - Validation command planned/completed centrally for this group: `node scripts/validate-profiles.mjs profiles`.
+
+## Independent source review integration
+
+Official partner thanks roster includes these service/sponsorship businesses alongside DigitalOcean/Fastly. Services versus cash are not individually specified; these are explicit ongoing-work acknowledgments, not inferred customers or integrations. Sources: https://ghost.org/partners/
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

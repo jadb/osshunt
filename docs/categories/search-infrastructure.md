@@ -7,13 +7,17 @@ Audience: Product and platform engineering teams. Engineers maintaining search-b
 Use-case sources: [1](https://typesense.org/), [2](https://opensearch.org/about/).
 
 - [Algolia](https://www.algolia.com/pricing): USD 0.5/usage/month, monthly billing. Grow usage rate: USD 0.50 per additional 1,000 search requests after 10,000/month; 100,000 records included then USD 0.40 per additional 1,000 records. Monthly billing. This is one usage unit, not a complete monthly subscription cost. [Pricing](https://www.algolia.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/algolia.md).
 - [Elastic Cloud](https://www.elastic.co/pricing/): entry amount unverified/quote, monthly billing. Hosted is resource-based and serverless usage-based, billed monthly or prepaid. Region, capacity, deployment and tier affect cost; no reliable static dollar minimum exposed by the reviewed official pricing pages. [Pricing](https://www.elastic.co/pricing/).
+  [Pricing tiers, organization and product reasons](../products/elastic-cloud.md).
 
 ### OpenSearch — A
 
 Foundation-governed open search suite; official principles describe the suite as Apache 2.0, with no paid software edition gates identified. Amazon OpenSearch Service is a separate AWS service, not a foundation-operated SaaS.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/opensearch-project/OpenSearch/blob/ea69463d634e30316a9037e544c0434b4ae80b4a/LICENSE.txt), [edition evidence](https://opensearch.org/about/), [hosting](https://opensearch.org/solutions-providers/), [repository](https://github.com/opensearch-project/OpenSearch).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/opensearch.md).
 
 Service costs/limits: AWS and other providers sell managed hosting; service-specific features and operational tooling are separate from the community distribution.; Self-hosted production clusters require security configuration, capacity planning, backups and upgrades.
 
@@ -26,6 +30,8 @@ Repository: pushed 2026-10-21T22:12:19Z; latest commit 2026-10-21T22:12:19Z; lat
 GPL search engine has the same core APIs/binaries as Cloud. Tier C records the first-party cloud-only visual search-management workflow; equivalent engine operations remain available through APIs. Paid hosting alone does not drive this classification.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/typesense/typesense/blob/66fec878d3e5bff41be13cd1a25c2bbb8313bd77/LICENSE.txt), [edition evidence](https://typesense.org/docs/guide/faqs.html), [hosting](https://cloud.typesense.org/pricing/calculator), [repository](https://github.com/typesense/typesense).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/typesense.md).
 
 Paid restrictions: First-party visual admin UI for synonyms, overrides and merchandising is Typesense Cloud-only; self-hosted product is API-only.; Cloud team RBAC UI is absent from the self-hosted engine.
 

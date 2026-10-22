@@ -35,12 +35,25 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. [1](https://mautic.org/members-partners/)
+Status: **identified**. Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. Hydrated directory pages identify additional corporate financial members/partners. Membership definition explicitly includes financial contributions; names are not inferred from a generic vendor directory. LeuchtfeuerPlatinum, WebmecanikGold; othersCommunity. Acquia retained from existing static evidence but absent hydratedpage1; present status not fully resolved, so no cancellation inferred. [1](https://mautic.org/members-partners/) [2](https://mautic.org/members-partners/?e-page-c9143cd=2)
 
 - [Dropsolid](https://dropsolid.com/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
 - [Acquia](https://www.acquia.com/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
 - [Friendly](https://friendly.ch/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
 - [Aivie](https://aivie.ch/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
+- [Leuchtfeuer Digital Marketing](https://mautic.org/member/leuchtfeuer-digital-marketing/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
+- [Webmecanik](https://mautic.org/member/webmecanik/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
+- [Sales Snap](https://mautic.org/member/sales-snap/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
+- [Axelerant](https://mautic.org/member/axelerant/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
+- [Droptica](https://mautic.org/member/droptica/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/).
+- [Eyedro Green Solutions Inc.](https://mautic.org/member/eyedro-green-solutions/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [Fire Multimedia](https://mautic.org/member/firemultimedia/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [Data Innovation](https://mautic.org/member/data-innovation/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [Hostnet](https://mautic.org/member/hostnet/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [Collabora Productivity / Collabora Office](https://mautic.org/member/collabora-office/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [Stepin Solutions](https://mautic.org/member/stepin-solutions/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [SignPresenter](https://mautic.org/member/signpresenter/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
+- [OPEN](https://mautic.org/member/open/): corporate-sponsor. [Evidence](https://mautic.org/members-partners/?e-page-c9143cd=2).
 
 ## Self-operation requirements
 

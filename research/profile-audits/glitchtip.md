@@ -13,3 +13,17 @@
 
 Decision: preserve explicit unknowns; annual totals differ from monthly billing; popular requires an actual vendor designation. Product reasons and moats are assessments.
 Wrote profile, claim ledger and audit incrementally.
+
+Exact query arguments, in the product research order (queries may have been batched with other products):
+- web.search_query {"q": "site.glitchtip.com about Burke Software"}
+- web.search_query {"q": "site.glitchtip.com \"Burke\""}
+- web.search_query {"q": "site:glitchtip.com \"2020\""}
+
+Repeatable source URL index (read through open/click/search results; chronological decisions and failures above):
+- https://glitchtip.com/
+- https://glitchtip.com/hipaa/
+- https://glitchtip.com/pricing/
+- https://glitchtip.com/documentation/install/
+- https://railway.com/new/template/glitchtip
+
+Output/check steps: wrote assigned profiles, claims and audits only. Local construction scripts batch1.py through batch5.py and finalqa.py are preserved beside outputs. First python command was unavailable; python3 fallback succeeded. Final validation command: node scripts/validate-profiles.mjs profiles . Result:21 valid profiles. Claims checked separately because validator external-directory mode does not read ledgers.

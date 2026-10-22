@@ -2,7 +2,7 @@
   "id": "sentry",
   "checkedAt": "2026-10-21",
   "organization": {
-    "name": "Functional Software, Inc. (Sentry)",
+    "name": "Sentry",
     "kind": "business",
     "foundedYear": null,
     "ageBasis": "unknown",
@@ -39,7 +39,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Official billing help explicitly gives USD29 base Team subscription; usage charges separate. Annual amount unverified because pricing/docs return unsupported markdown.",
+      "notes": "Official billing help explicitly gives USD 29 base Team subscription; usage charges separate. Annual amount unverified because pricing/docs return unsupported markdown.",
       "sources": [
         "https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024"
       ]
@@ -73,7 +73,7 @@
       "unit": "organization",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Official billing help gives USD89 base Business subscription. Usage charges separate; annual amount unresolved.",
+      "notes": "Official billing help gives USD 89 base Business subscription. Usage charges separate; annual amount unresolved.",
       "sources": [
         "https://www.sentry.help/en/articles/13964853-how-is-my-legacy-plan-changing-september-12-2024"
       ]

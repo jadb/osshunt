@@ -62,6 +62,23 @@ test('usage prices retain their denominator without becoming monthly or yearly s
   assert.equal(profile.pricingTiers[0].monthlyPrice, null);
   assert.equal(profile.pricingTiers[0].annualPrice, null);
   assert.match(renderProfile({ name: 'Sample', url: sources[0], profile }), /entry \| Community \| published \| — \| — \| — \| USD 0.25\/GB transferred/);
+  Object.assign(input.pricingTiers[2], { status: 'published', annualPrice: 120, usagePrice: 0.04, unit: 'user', usageUnit: 'AI credit' });
+  const mixed = productProfile(z).parse(input);
+  assert.match(renderProfile({ name: 'Sample', url: sources[0], profile: mixed }), /business \| unknown \| published \| — \| USD 120\/user \| — \| USD 0.04\/AI credit/);
+});
+
+test('quoted subscription can retain an independently published metered rate', () => {
+  const input = fixture();
+  Object.assign(input.pricingTiers[3], {
+    status: 'quote', name: 'Enterprise', usagePrice: 0.035,
+    unit: 'user', usageUnit: 'AI credit',
+    notes: 'Published add-on usage rate; subscription price requires sales quotation.',
+  });
+  const tier = productProfile(z).parse(input).pricingTiers[3];
+  assert.equal(tier.monthlyPrice, null);
+  assert.equal(tier.annualPrice, null);
+  assert.equal(tier.oneTimePrice, null);
+  assert.equal(tier.usagePrice, 0.035);
 });
 
 for (const [name, mutate, expected] of [

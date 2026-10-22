@@ -9,6 +9,7 @@ Use-case sources: [1](https://www.microsoft.com/en-us/power-platform/products/po
 - [Looker](https://cloud.google.com/looker): entry amount unverified/quote, quote billing. Annual platform price requires sales quote; named user licensing also applies. Looker, distinct from Looker Studio. [Pricing](https://cloud.google.com/looker/pricing).
   [Pricing tiers, organization and product reasons](../products/looker.md).
 - [Metabase Pro](https://www.metabase.com/): USD 575/organization/month, monthly billing. Self-hosted Pro $575/month, first 10 users included; additional users $12/month; annual discount available. [Pricing](https://www.metabase.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/metabase-pro.md).
 - [Power BI](https://powerbi.microsoft.com/): USD 14/seat/month, annual billing. Pro USD14/user/month paid yearly; free authoring exists; embedding/capacity priced separately. [Pricing](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing).
   [Pricing tiers, organization and product reasons](../products/power-bi.md).
 - [Tableau](https://www.tableau.com/): USD 15/seat/month, annual billing. Tableau Standard advertised starting price; every deployment requires at least one Creator license, so this is not full deployment cost. [Pricing](https://www.tableau.com/pricing).
@@ -19,6 +20,8 @@ Use-case sources: [1](https://www.microsoft.com/en-us/power-platform/products/po
 Apache project edition provides dashboards, SQL exploration, semantic layer, embedding, RBAC, OAuth/OIDC, LDAP and scheduled reporting in open code. Feature flags and operator setup are not paid software gates. No Apache-operated hosted offer identified; Preset is a separate provider.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/apache/superset/blob/5eaad449f5c2b96a4efdd93beeba83664bf00467/LICENSE.txt), [edition evidence](https://superset.apache.org/), [hosting](https://superset.apache.org/), [repository](https://github.com/apache/superset).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/apache-superset.md).
 
 Service costs/limits: Operate server, metadata database and backups; database drivers and report rendering workers require setup; email/Slack transport configured separately.
 
@@ -33,6 +36,8 @@ Repository: pushed 2026-10-21T22:12:07Z; latest commit 2026-10-21T22:01:20Z; lat
 Tier C because routine tailored report subscriptions and interactive embedded analytics are paid, beyond enterprise administration. OSI status covers AGPL Open Source Edition only; top-level enterprise code and enterprise binaries use Metabase Commercial License, not OSI OSS. Cloud managed operations are separate from software gates.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/metabase/metabase/blob/5049ebe35e5c68575936d0e0d78e5b8de5f06afb/LICENSE.txt), [edition evidence](https://www.metabase.com/pricing), [hosting](https://www.metabase.com/pricing), [repository](https://github.com/metabase/metabase).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/metabase.md).
 
 Paid restrictions: Pro/Enterprise: row and column permissions, JWT/SAML/OIDC SSO, caching controls and usage analytics/auditing. Google Sign-In and LDAP are separate authentication options; not all authentication is paid.; Interactive/SSO embedding, React modular embedding SDK, and whitelabel branding are Pro/Enterprise features; guest/view-only embedding remains possible under the stated license terms.; Per-subscription dashboard filter customization is Pro/Enterprise; basic scheduled email/Slack subscriptions are available.
 

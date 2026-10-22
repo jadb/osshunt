@@ -1,0 +1,139 @@
+{
+  "id": "lansweeper",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Lansweeper NV",
+    "kind": "business",
+    "foundedYear": 2004,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Insight Partners",
+        "source": "https://www.lansweeper.com/blog/press/lansweeper-secures-e130-million-investment-from-insight-partners-to-accelerate-further-growth/"
+      },
+      {
+        "name": "Dovesco",
+        "source": "https://www.lansweeper.com/blog/press/lansweeper-secures-e130-million-investment-from-insight-partners-to-accelerate-further-growth/"
+      },
+      {
+        "name": "Imker Group",
+        "source": "https://www.lansweeper.com/blog/press/bridgepoint-to-acquire-majority-stake-in-lansweeper-to-build-the-global-leader-in-technology-asset-intelligence-powering-enterprise-cybersecurity/"
+      }
+    ],
+    "notes": "Founded 2004 per official About. Private equity financing from Insight Partners and Dovesco disclosed 2021; July 2026 announcement identifies existing shareholder Imker Group. Bridgepoint majority acquisition remains an agreement expected to close by end 2026, subject to conditions in both vendor and acquirer pages. Insight/Imker exit and Dovesco retained minority are prospective terms; completion/current exact holdings unverified.",
+    "sources": [
+      "https://www.lansweeper.com/about/",
+      "https://www.lansweeper.com/blog/press/lansweeper-secures-e130-million-investment-from-insight-partners-to-accelerate-further-growth/",
+      "https://www.lansweeper.com/blog/press/bridgepoint-to-acquire-majority-stake-in-lansweeper-to-build-the-global-leader-in-technology-asset-intelligence-powering-enterprise-cybersecurity/",
+      "https://www.bridgepointgroup.com/investment-strategies/private-equity/portfolio/middle-market/technology/lansweeper"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Lowest paid Starter includes 2000 assets and unlimited seats, annualbilling. Page extraction mixes 245/299/270 without reliable currency labels; price left unresolved.",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Recommended appears on Free, Starter, Pro and Enterprise cards; unique popular designation cannot be established.",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational plan: Pro includes 2000 assets expandable to 9000 and up to 3 installations.449/528/474 amounts have ambiguous currency labels; annual total not invented.",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Enterprise custom annual contract starts 10000 assets; explicit Request a quote. Volume based on assets rather than seats.",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A large asset-recognition dataset and long-developed scanner coverage provide knowledge-base scale benefits; this does not guarantee complete discovery.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lansweeper.com/blog/press/bridgepoint-to-acquire-majority-stake-in-lansweeper-to-build-the-global-leader-in-technology-asset-intelligence-powering-enterprise-cybersecurity/",
+        "https://www.lansweeper.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Agentless IT/OT/cloud discovery and connectors consolidate devices across hybrid environments.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Normalization and federation reconcile inventory from multiple installations and data sources.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Vulnerability/lifecycle insights and relationship diagrams connect asset records to operational risk.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.lansweeper.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

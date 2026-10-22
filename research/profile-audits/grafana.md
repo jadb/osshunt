@@ -14,3 +14,17 @@
 
 Decision: preserve explicit unknowns; annual totals differ from monthly billing; popular requires an actual vendor designation. Product reasons and moats are assessments.
 Wrote profile, claim ledger and audit incrementally.
+
+Exact query arguments, in the product research order (queries may have been batched with other products):
+- web.search_query {"q": "site.grafana.com 2024 funding Lightspeed GIC Coatue Sequoia 2014"}
+- web.search_query {"q": "site.grafana.com \"founded in 2014\""}
+
+Repeatable source URL index (read through open/click/search results; chronological decisions and failures above):
+- https://grafana.com/press/2024/08/21/grafana-labs-soars-past-250m-arr-and-5000-customers-completes-270m-primary-and-secondary-transaction-and-named-a-leader-in-the-gartner-magic-quadrant-for-observability-platforms/
+- https://grafana.com/about/grafana-labs/
+- https://grafana.com/blog/the-story-of-grafana-documentary-the-business-of-open-source/
+- https://grafana.com/oss/grafana/
+- https://grafana.com/pricing/
+- https://grafana.com/docs/grafana/latest/setup-grafana/installation/
+
+Output/check steps: wrote assigned profiles, claims and audits only. Local construction scripts batch1.py through batch5.py and finalqa.py are preserved beside outputs. First python command was unavailable; python3 fallback succeeded. Final validation command: node scripts/validate-profiles.mjs profiles . Result:21 valid profiles. Claims checked separately because validator external-directory mode does not read ledgers.

@@ -1,0 +1,316 @@
+{
+  "id": "posthog",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Post Hog, Inc.",
+    "kind": "business",
+    "foundedYear": 2020,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Y Combinator",
+        "source": "https://posthog.com/media"
+      },
+      {
+        "name": "GV",
+        "source": "https://posthog.com/media"
+      },
+      {
+        "name": "Stripe",
+        "source": "https://posthog.com/media"
+      },
+      {
+        "name": "Peak XV Partners",
+        "source": "https://posthog.com/media"
+      },
+      {
+        "name": "Formus Capital",
+        "source": "https://posthog.com/media"
+      },
+      {
+        "name": "1984 Ventures",
+        "source": "https://posthog.com/media"
+      },
+      {
+        "name": "Tapas Capital",
+        "source": "https://posthog.com/media"
+      }
+    ],
+    "notes": "Official media page says founded January 2020 by James Hawkins/Tim Glaser and lists funding rounds/investors. Business privately financed; media/handbook totals and some round dates differ, so no reconciled lifetime total asserted. Listed participants are equity investors, not corporate project sponsors.",
+    "sources": [
+      "https://posthog.com/media",
+      "https://posthog.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "MIT hobby deployment; own infrastructure. Paid-plan features Cloud-only; self-host unsupported.",
+      "sources": [
+        "https://posthog.com/docs/self-host"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No highlighted Most popular/Recommended tier verified; FAQ suggests pay-as-you-go broadly but this is not a badge.",
+      "sources": [
+        "https://posthog.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Boost",
+      "status": "published",
+      "monthlyPrice": 250,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor cloud platform add-on",
+      "notes": "Closest organizational add-on; monthly 250 plus per-product usage. Adds projects/white-labeling/collaboration; not self-host license.",
+      "sources": [
+        "https://posthog.com/platform-packages"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor cloud platform add-on",
+      "notes": "Custom pricing via sales; product consumption charged separately.",
+      "sources": [
+        "https://posthog.com/platform-packages"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Combining analytics, replay and feature-flag instrumentation creates a shared event context and workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://posthog.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Product analytics links events, funnels and cohorts for investigation of conversion behavior.",
+      "basis": "assessment",
+      "sources": [
+        "https://posthog.com/pricing"
+      ]
+    },
+    {
+      "claim": "Session replay adds the sequence of user interactions to quantitative analytics.",
+      "basis": "assessment",
+      "sources": [
+        "https://posthog.com/pricing"
+      ]
+    },
+    {
+      "claim": "Feature flags and experiments let product teams evaluate releases against observed behavior.",
+      "basis": "assessment",
+      "sources": [
+        "https://posthog.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Post Hog, Inc.",
+          "url": "https://posthog.com/about",
+          "relationship": "business-steward",
+          "source": "https://posthog.com/about"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://posthog.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker/Compose on Ubuntu Linux",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://posthog.com/docs/self-host"
+          ]
+        },
+        {
+          "component": "Postgre SQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "Click House",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "Redis 7 and Valkey",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current hobby compose includes Redis and separate Valkey for CDP dual-writes; not generic interchangeable alternatives in this snapshot.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "Kafka and Zoo Keeper",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current hobby compose ingestion/Click House dependencies.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "Web, workers and ingestion services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Python/Node/Rust services packaged in compose; not one standalone binary.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "S 3-compatible object storage and Seaweed FS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Hobby stack includes objectstorage plus Seaweed FS for replay/blob routes.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "Temporal and associated workers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Included in current hobby stack, separate workflow service.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "Elasticsearch, Browserless and Person Hog services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Included supporting services in current compose; deployment snapshot can change continuously.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Outbound email notifications",
+          "notes": "Configure email separately; not a prerequisite to all collection.",
+          "sources": [
+            "https://posthog.com/docs/self-host"
+          ]
+        },
+        {
+          "component": "Open AI/Anthropic API keys",
+          "necessity": "optional",
+          "group": null,
+          "condition": "AI features only",
+          "notes": "External API costs and optional feature configuration; keys default blank.",
+          "sources": [
+            "https://raw.githubusercontent.com/PostHog/posthog/master/docker-compose.hobby.yml"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "4 v CPU equivalent",
+        "memory": "16 GB",
+        "storage": ">30 GB",
+        "os": "Linux Ubuntu VM",
+        "notes": "Official hobby deployment guidance; not a production capacity guarantee.",
+        "sources": [
+          "https://posthog.com/docs/self-host"
+        ]
+      },
+      "notes": "No tagged stable self-host release: official docs say continuous master/latest delivery and no guarantees. Requirements describe current hobby Compose snapshot, not a supported production architecture or the beta TUI. Paid features Cloud-only.",
+      "sources": [
+        "https://posthog.com/docs/self-host"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Hobby deployment shell installer",
+          "url": "https://posthog.com/docs/self-host",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official deploy-hobby shell command sets up stack; requires VM/domain. Beta TUI excluded as stable path; no true one-click template claim.",
+          "sources": [
+            "https://posthog.com/docs/self-host"
+          ]
+        }
+      ],
+      "notes": "Official Installing section provides deploy-hobby one-command shell route. Beta TUI explicitly trial/unstable and not represented as stable one-click.",
+      "sources": [
+        "https://posthog.com/docs/self-host"
+      ]
+    }
+  }
+}

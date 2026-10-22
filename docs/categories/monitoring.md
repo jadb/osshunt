@@ -9,6 +9,7 @@ Use-case sources: [1](https://www.datadoghq.com/pricing/), [2](https://www.pingd
 - [Datadog](https://www.datadoghq.com/): USD 15/usage/month, annual billing. Infrastructure Pro starts at $15 per host/month billed annually; other modules priced separately. [Pricing](https://www.datadoghq.com/pricing/).
   [Pricing tiers, organization and product reasons](../products/datadog.md).
 - [Pingdom](https://www.pingdom.com/): entry amount unverified/quote, annual billing. Official pricing calculator returned currency placeholders without numeric price; amount unverified. [Pricing](https://www.pingdom.com/pricing/).
+  [Pricing tiers, organization and product reasons](../products/pingdom.md).
 - [Sentry](https://sentry.io/): entry amount unverified/quote, annual billing. Official pricing page unsupported text/markdown in fetch; paid plan entry amount not independently verified. [Pricing](https://sentry.io/pricing/).
   [Pricing tiers, organization and product reasons](../products/sentry.md).
 
@@ -30,6 +31,8 @@ Repository: pushed unknown; latest commit 2026-10-21T06:21:41.000+00:00; latest 
 MIT project; upstream README publishes self-hosted monitoring, notifications, and status pages without commercial edition or feature tiers. No first-party paid hosting identified.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/louislam/uptime-kuma/blob/2adb5bc32cb53a93722a7c348364a8290acd74d4/LICENSE), [edition evidence](https://github.com/louislam/uptime-kuma#-features), [hosting](https://github.com/louislam/uptime-kuma#-how-to-install), [repository](https://github.com/louislam/uptime-kuma).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/uptime-kuma.md).
 
 Repository: pushed 2026-10-21T00:06:24Z; latest commit 2026-10-20T12:15:52Z; latest published release 2.5.6 (2026-10-09T15:46:26Z). Quick analysis: 7.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 

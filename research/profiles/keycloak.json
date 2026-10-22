@@ -118,9 +118,16 @@
   ],
   "alternativeDetails": {
     "sponsorship": {
-      "status": "none-found",
-      "organizations": [],
-      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "ej-technologies",
+          "url": "https://www.ej-technologies.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.keycloak.org/community"
+        }
+      ],
+      "notes": "ej-technologies donates JProfiler licenses to core-team members (explicit in-kind corporate sponsorship); no cash amount or equity relationship inferred.",
       "sources": [
         "https://www.keycloak.org/community"
       ]
@@ -159,7 +166,7 @@
           ]
         },
         {
-          "component": "PostgreSQL 14\u201318; EnterpriseDB 17\u201318; Aurora PostgreSQL 15\u201317",
+          "component": "PostgreSQL 14–18; EnterpriseDB 17–18; Aurora PostgreSQL 15–17",
           "necessity": "one-of",
           "group": "database",
           "condition": "Production relational database",

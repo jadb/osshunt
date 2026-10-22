@@ -15,6 +15,8 @@ GPLv3 analytics core is free; standard ecommerce/event tracking included, but ro
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/matomo-org/matomo/blob/48cb7b1a4c17319cb286f9dc2221a29b707166fb/LICENSE), [edition evidence](https://matomo.org/pricing/), [hosting](https://matomo.org/pricing/), [repository](https://github.com/matomo-org/matomo).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/matomo.md).
+
 Paid restrictions: Funnels premium plugin; Custom Reports premium plugin; Heatmaps and Session Recording premium plugin; Users Flow and Form Analytics premium plugins; Cohorts and multi-channel attribution premium plugins
 
 Repository: pushed 2026-10-21T19:39:12Z; latest commit 2026-10-21T19:07:24Z; latest published release 5.14.1 (2026-10-04T19:50:07Z). Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -26,6 +28,8 @@ Repository: pushed 2026-10-21T19:39:12Z; latest commit 2026-10-21T19:07:24Z; lat
 AGPL Community Edition; official comparison explicitly withholds everyday funnel, journey and revenue functions and releases CE twice yearly.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/plausible/analytics/blob/be3bc8ac721cc6a9721316ff3c8d23addce0ab8a/LICENSE.md), [edition evidence](https://plausible.io/self-hosted-web-analytics), [hosting](https://plausible.io/self-hosted-web-analytics), [repository](https://github.com/plausible/analytics).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/plausible.md).
 
 Paid restrictions: Marketing funnels unavailable in CE; User journeys unavailable in CE; Ecommerce revenue goals unavailable in CE; SSO and Sites API unavailable in CE
 
@@ -39,6 +43,8 @@ MIT applies outside ee/ and third-party exceptions; ee/ has a separate license. 
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/PostHog/posthog/blob/72bb72904c3c22aa744412855ec58bf525276d41/LICENSE), [edition evidence](https://posthog.com/platform-packages), [hosting](https://posthog.com/pricing), [repository](https://github.com/PostHog/posthog).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/posthog.md).
+
 Paid restrictions: Paid-plan features are Cloud-only per self-host documentation; Platform packages reserve high-frequency/real-time alerts and white labeling; Platform packages reserve SAML, RBAC and property access controls
 
 Repository: pushed 2026-10-21T21:28:15Z; latest commit 2026-10-21T21:04:37Z; latest published release posthog-cli/v0.18.12 (2026-10-21T18:12:40Z). Quick analysis: 6.1/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -50,6 +56,8 @@ Repository: pushed 2026-10-21T21:28:15Z; latest commit 2026-10-21T21:04:37Z; lat
 MIT self-host core includes funnels, retention, session replay and heatmaps; official Cloud FAQ nevertheless reserves email reports and streaming API.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/umami-software/umami/blob/e92fdab99508a8ed05249f6c5f07e140deab79e1/LICENSE), [edition evidence](https://umami.is/pricing), [hosting](https://umami.is/pricing), [repository](https://github.com/umami-software/umami).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/umami.md).
 
 Paid restrictions: Email reports available only in Cloud; Streaming API available only in Cloud
 

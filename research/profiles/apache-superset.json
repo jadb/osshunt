@@ -1,0 +1,248 @@
+{
+  "id": "apache-superset",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Apache Software Foundation / Superset PMC",
+    "kind": "foundation",
+    "foundedYear": 1999,
+    "ageBasis": "company-founded",
+    "ownership": "nonprofit",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "ASF is a US 501(c)(3) charitable foundation active since 1999, not a business; age records legal steward formation rather than Superset project start. Superset is ASF project; no company equity investors. Foundation donors are separate sponsors; exact Superset start year not verified here.",
+    "sources": [
+      "https://www.apache.org/foundation/",
+      "https://superset.apache.org/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Apache Superset",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted project",
+      "notes": "Apache 2.0 distribution; own infrastructure/operations separate.",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "ASF commercial plan",
+      "notes": "No ASF Business subscription identified. Preset/other vendors are distinct businesses.",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "ASF commercial plan",
+      "notes": "No ASF Enterprise license offer identified; project describes enterprise-ready capabilities without paid tier.",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad connectors, visualization ecosystem and dashboard investment provide community/workflow defensibility without an exclusive proprietary engine.",
+      "basis": "assessment",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "SQL Lab and visual exploration support both SQL specialists and dashboard builders.",
+      "basis": "assessment",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    },
+    {
+      "claim": "Many chart types and interactive dashboard filters support visual exploration across datasets.",
+      "basis": "assessment",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    },
+    {
+      "claim": "A semantic layer and broad SQL database connectivity centralize reusable metrics across warehouses.",
+      "basis": "assessment",
+      "sources": [
+        "https://superset.apache.org/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Amazon Web Services",
+          "url": "https://aws.amazon.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.apache.org/foundation/sponsors"
+        },
+        {
+          "name": "Google",
+          "url": "https://google.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.apache.org/foundation/sponsors"
+        },
+        {
+          "name": "Microsoft",
+          "url": "https://microsoft.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.apache.org/foundation/sponsors"
+        }
+      ],
+      "notes": "ASF lists AWS, Google and Microsoft as Platinum Foundation sponsors. These fund the steward foundation generally; no Superset-specific earmarking or equity investment asserted.",
+      "sources": [
+        "https://www.apache.org/foundation/sponsors"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Superset Python application with production WSGI server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Stable 6.1 compose uses app-gunicorn; Python package or built container route.",
+          "sources": [
+            "https://raw.githubusercontent.com/apache/superset/6.1.0/docker-compose-non-dev.yml"
+          ]
+        },
+        {
+          "component": "Postgre SQL",
+          "necessity": "one-of",
+          "group": "metadata-database",
+          "condition": "Production metadata option",
+          "notes": "Stable 6.1 compose example uses Postgres 17; live admin docs marked Next are architectural reference only.",
+          "sources": [
+            "https://superset.apache.org/admin-docs/installation/architecture/"
+          ]
+        },
+        {
+          "component": "My SQL",
+          "necessity": "one-of",
+          "group": "metadata-database",
+          "condition": "Alternative production metadata store",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://superset.apache.org/admin-docs/installation/architecture/"
+          ]
+        },
+        {
+          "component": "SQLAlchemy database drivers and connected analytical database",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Warehouse/source connections separate from metadata; lean images need selected driver installation.",
+          "sources": [
+            "https://superset.apache.org/admin-docs/installation/installation-methods/"
+          ]
+        },
+        {
+          "component": "Redis or another supported cache/broker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Caching/async/report functions",
+          "notes": "Redis 7 in 6.1 example; no standalone cache required for every basic synchronous dashboard.",
+          "sources": [
+            "https://superset.apache.org/admin-docs/installation/architecture/"
+          ]
+        },
+        {
+          "component": "Celery worker and beat",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Async SQL, alerts/reports or thumbnails",
+          "notes": "Included in stable compose; configured separately on package route.",
+          "sources": [
+            "https://superset.apache.org/admin-docs/installation/architecture/"
+          ]
+        },
+        {
+          "component": "Headless browser and email/Slack transport",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Rendered scheduled alerts/reports",
+          "notes": "Requires browser/transport setup; not core SQL dashboard prerequisite.",
+          "sources": [
+            "https://superset.apache.org/admin-docs/installation/installation-methods/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal production hardware minimum verified; size to actual workload.",
+        "sources": [
+          "https://superset.apache.org/admin-docs/installation/architecture/"
+        ]
+      },
+      "notes": "Stable 6.1 source confirms application/Postgre SQL/Redis/Celery example, but explicitly states Compose unsupported for production. Use hardened production WSGI/container deployment with external metadata DB; Next admin architecture consulted only for established optional-service roles. SQLite default is evaluation-only, not production.",
+      "sources": [
+        "https://superset.apache.org/admin-docs/installation/architecture/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official deployment instructions; no verified one-click option found. Manual container instructions are not one-click.",
+      "sources": [
+        "https://superset.apache.org/admin-docs/installation/architecture/"
+      ]
+    }
+  }
+}

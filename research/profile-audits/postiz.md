@@ -24,3 +24,10 @@ Persistence command: execute group-local build script; write profile JSON, claim
 Final QA: schema validated all 22 profiles. Commands: python3 records01.py through records06.py (group-local absolute paths); python3 finalize.py; node scripts/validate-profiles.mjs profiles. Initial `python` executable absent; used python3. Claim headings normalized to public page sections/searchable phrases; no JSON machine field used as locator. Full public fetch-result chronology retained in group-local research-web-log.txt (research batches 1–46), including failed URL attempts. Validation command only reads profile files when custom directory supplied; separate parseClaims check validates ledgers.
 
 Final correction: opened https://postiz.com/enterprise; Enterprise Pricing publishes $2500/mo for 5000 channels in Monthly view. Page explicitly not accepting new applications. Replaced initial quote placeholder with published separate SaaS-embedding scope and availability caveat; standard cloud popular remains Ultimate.
+
+## Independent source review integration
+
+Current README explicitly lists ChatbotX and RapidProxy alongside Hostinger/Virlo in Our Sponsors. Paid repository logo/backlink placements are project sponsorship/advertising, not OAuth providers or customers. Sources: https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

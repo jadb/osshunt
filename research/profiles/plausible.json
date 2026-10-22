@@ -1,0 +1,227 @@
+{
+  "id": "plausible",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Plausible Insights O\u00dc",
+    "kind": "business",
+    "foundedYear": 2018,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Uku Taht started Plausible December 2018; paid subscriptions launched 2019. Official About explicitly states self-funded, profitable and no outside investors. Operator Plausible Insights O\u00dc registered Estonia; project start is not asserted to be exact corporate incorporation date.",
+    "sources": [
+      "https://plausible.io/about",
+      "https://plausible.io/procurement"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted CE",
+      "notes": "No vendor license fee; CE differs from Cloud and requires own infrastructure.",
+      "sources": [
+        "https://plausible.io/self-hosted-web-analytics"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://plausible.io/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud Business card at 10 k monthly pageviews displays $19/month; extraction includes monthly/yearly toggles without selected-state evidence, so actual monthly-billed/annual total not asserted. CE does not include all Cloud business features.",
+      "sources": [
+        "https://plausible.io/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Cloud Enterprise explicitly Custom/Contact us; not a CE license charge.",
+      "sources": [
+        "https://plausible.io/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Privacy-focused brand and simple dashboard workflow differentiate adoption, while forkable code limits exclusive control over the engine.",
+      "basis": "assessment",
+      "sources": [
+        "https://plausible.io/about",
+        "https://plausible.io/self-hosted-web-analytics"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Single-page traffic dashboard emphasizes quick interpretation of referrers, pages and campaigns.",
+      "basis": "assessment",
+      "sources": [
+        "https://plausible.io/"
+      ]
+    },
+    {
+      "claim": "Cookie-free, aggregate analytics allows measurement without cross-site visitor profiling.",
+      "basis": "assessment",
+      "sources": [
+        "https://plausible.io/self-hosted-web-analytics"
+      ]
+    },
+    {
+      "claim": "Goals and custom events let teams measure conversions while keeping the reporting interface compact.",
+      "basis": "assessment",
+      "sources": [
+        "https://plausible.io/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Plausible Insights O\u00dc",
+          "url": "https://plausible.io/about",
+          "relationship": "business-steward",
+          "source": "https://plausible.io/about"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://plausible.io/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://github.com/plausible/community-edition"
+          ]
+        },
+        {
+          "component": "Plausible CE 3.2.1 image",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://raw.githubusercontent.com/plausible/community-edition/v3.2.1/compose.yml"
+          ]
+        },
+        {
+          "component": "Postgre SQL 16",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Metadata database in stable pinned compose; not interchangeable with Click House.",
+          "sources": [
+            "https://raw.githubusercontent.com/plausible/community-edition/v3.2.1/compose.yml"
+          ]
+        },
+        {
+          "component": "Click House 24.12",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Event database in stable compose; both Postgres and Click House required.",
+          "sources": [
+            "https://raw.githubusercontent.com/plausible/community-edition/v3.2.1/compose.yml"
+          ]
+        },
+        {
+          "component": "SMTP transport",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email verification/invites/reports requiring delivery",
+          "notes": "Optional deployment configuration; not necessary for all analytics collection.",
+          "sources": [
+            "https://github.com/plausible/community-edition/wiki/configuration"
+          ]
+        },
+        {
+          "component": "Max Mind and Google integrations",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Only when these integrations are enabled",
+          "notes": "Separate configuration routes; not mandatory core services.",
+          "sources": [
+            "https://github.com/plausible/community-edition"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "SSE 4.2 or NEON instruction support",
+        "memory": "At least 2 GB recommended",
+        "storage": null,
+        "os": "Docker-capable host",
+        "notes": "Official repository prerequisites; storage depends on retained traffic, no fixed disk requirement supplied.",
+        "sources": [
+          "https://github.com/plausible/community-edition"
+        ]
+      },
+      "notes": "Verified CE 3.2.1 Compose path: app+Postgre SQL+Click House. No separate Redis/queue required by compose. Built-in TLS enabled by HTTP/HTTPS configuration or use reverse proxy.",
+      "sources": [
+        "https://github.com/plausible/community-edition"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official deployment instructions; no verified one-click option found. Manual container instructions are not one-click.",
+      "sources": [
+        "https://github.com/plausible/community-edition"
+      ]
+    }
+  }
+}

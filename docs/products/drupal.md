@@ -35,9 +35,11 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. June 2026 Drupal Association announcement says Acquia funds a 2% contribution from eligible partner transactions out of its own margin. [1](https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding)
+Status: **identified**. June 2026 Drupal Association announcement says Acquia funds a 2% contribution from eligible partner transactions out of its own margin. Also verified Acro Commerce donated developer hours and Zoocha contributed office space for code sprints (in-kind, not assumed cash sponsorship). Current Zoocha page says Diamond Certified Partner; no recurring cash amount or exhaustive supporter inventory inferred. [1](https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding) [2](https://www.acrocommerce.com/solutions/drupal-and-drupal-commerce) [3](https://www.zoocha.com/systems-partnerships)
 
 - [Acquia](https://www.acquia.com/): corporate-sponsor. [Evidence](https://www.drupal.org/association/blog/acquias-fair-trade-initiative-a-new-model-for-sustainable-drupal-funding).
+- [Acro Commerce](https://www.acrocommerce.com/): corporate-sponsor. [Evidence](https://www.acrocommerce.com/solutions/drupal-and-drupal-commerce).
+- [Zoocha](https://www.zoocha.com/): corporate-sponsor. [Evidence](https://www.zoocha.com/systems-partnerships).
 
 ## Self-operation requirements
 

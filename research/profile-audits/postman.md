@@ -20,3 +20,10 @@ Checked 2026-10-21
 - Four pricing roles retained; annual totals derived only where annual billing is explicit. Unknown does not imply absent.
 - Each of three product reasons and moat marked assessment; sponsors distinguished from investors/customers.
 - Persisted profile, claim ledger and this audit together.
+
+## Independent source review integration
+
+Published AI overage rates areUSD0.05/credit Solo,USD0.04/credit Team,USD0.035/credit Enterprise (volume pricing available). Enterprise base subscription remains quote-only. Source: https://www.postman.com/pricing/. Subscription and usage denominators are separate; no unknown base price invented.
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

@@ -1,0 +1,261 @@
+{
+  "id": "metabase",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Metabase, Inc.",
+    "kind": "business",
+    "foundedYear": 2015,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Insight Partners",
+        "source": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html"
+      },
+      {
+        "name": "Expa",
+        "source": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html"
+      },
+      {
+        "name": "NEA",
+        "source": "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html"
+      }
+    ],
+    "notes": "Official blog says in market since 2015; age is product/business operating history, exact incorporation date not established. Company-issued 2021 Series B announcement verifies Insight Partners, Expa, NEA investors. Historical participation, not current percentage holdings.",
+    "sources": [
+      "https://www.prnewswire.com/news-releases/metabase-raises-30m-in-series-b-financing-to-expand-worldwide-access-to-its-best-in-class-open-source-business-intelligence-platform-301358789.html",
+      "https://www.metabase.com/blog/metabase-alternatives",
+      "https://www.metabase.com/pricing"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted OSS edition",
+      "notes": "Unlimited users; commercial editions and infrastructure separate.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 575,
+      "annualPrice": 6210,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Closest organizational governance offer; base includes 10 users. Additional users $12/month or$130/year; internal and embedded users count. Actual annual total published$6210.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 20000,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid commercial edition",
+      "notes": "Published starting annual price$20, 000; final contract custom via sales, not a fixed full deployment price.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable questions, dashboards and connected semantic context can make replacement costly as teams accumulate analytical workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing",
+        "https://www.metabase.com/blog/metabase-alternatives"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Visual query builder and SQL editor let business users and analysts explore the same source data.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "claim": "Interactive dashboards and drill-through let viewers investigate a metric without starting a new query.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    {
+      "claim": "Scheduled dashboard subscriptions and report sharing bring recurring analysis into team workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.metabase.com/docs/latest/dashboards/subscriptions"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Metabase, Inc.",
+          "url": "https://www.metabase.com/pricing",
+          "relationship": "business-steward",
+          "source": "https://www.metabase.com/pricing"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://www.metabase.com/pricing"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Java 25 JRE standalone JAR",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Native JAR route",
+          "notes": "Current v 0.64 docs require Java 25; Docker preferred by vendor.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file"
+          ]
+        },
+        {
+          "component": "Docker container",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container route",
+          "notes": "JRE bundled; database persistence configured separately.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file"
+          ]
+        },
+        {
+          "component": "Postgre SQL",
+          "necessity": "one-of",
+          "group": "application-database",
+          "condition": "Recommended production option",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/configuring-application-database"
+          ]
+        },
+        {
+          "component": "My SQL 8.4+",
+          "necessity": "one-of",
+          "group": "application-database",
+          "condition": "Alternative production option",
+          "notes": "utf 8 mb 4 required; Apsara DB My SQL unsupported.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/configuring-application-database"
+          ]
+        },
+        {
+          "component": "Maria DB 10.6+",
+          "necessity": "one-of",
+          "group": "application-database",
+          "condition": "Alternative production option",
+          "notes": "utf 8 mb 4 required.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/configuring-application-database"
+          ]
+        },
+        {
+          "component": "Embedded H 2",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Local evaluation only",
+          "notes": "Avoid H 2 in production; separate app DB from queried warehouse.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/configuring-application-database"
+          ]
+        },
+        {
+          "component": "Source databases/warehouses",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "When querying business data",
+          "notes": "Separate from application metadata store.",
+          "sources": [
+            "https://www.metabase.com/pricing"
+          ]
+        },
+        {
+          "component": "SMTP or Slack connection",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Notifications/subscriptions requiring delivery",
+          "notes": "No mandatory Redis/queue service identified in standard production route.",
+          "sources": [
+            "https://www.metabase.com/docs/latest/dashboards/subscriptions"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Any supported Java 25 platform; tested x 86/ARM",
+        "notes": "No universal production CPU/RAM/disk requirement verified in reviewed runtime guide; size app and warehouse separately.",
+        "sources": [
+          "https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file"
+        ]
+      },
+      "notes": "Current v 0.64 runtime/app-db docs; JAR/Docker routes. Production requires external supported app DB, service supervision/backups; default H 2 evaluation only. Elastic Beanstalk now explicitly not recommended, so obsolete one-click route excluded.",
+      "sources": [
+        "https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed installation guide and legacy Elastic Beanstalk page. Elastic Beanstalk now explicitly not recommended for production; no current true one-click template verified. Docker/JAR are manual routes.",
+      "sources": [
+        "https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file"
+      ]
+    }
+  }
+}

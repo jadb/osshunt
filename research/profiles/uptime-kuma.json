@@ -1,0 +1,236 @@
+{
+  "id": "uptime-kuma",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Louis Lam / Uptime Kuma contributors",
+    "kind": "individual",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Individual-led project under louislam; no separate company identified. Exact project launch year not verified in reviewed official pages. Corporate sponsorship is project support, not equity investment.",
+    "sources": [
+      "https://github.com/louislam/uptime-kuma"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Uptime Kuma",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "MIT project distribution, infrastructure separate.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "project commercial edition",
+      "notes": "Project README and installation docs show one distribution; no named Business offer identified.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "project commercial edition",
+      "notes": "No project Enterprise software plan identified in official distribution sources; third-party hosting distinct.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Notification/protocol breadth and community adoption provide ecosystem value, but standardized checks offer a limited proprietary moat.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Protocol checks cover HTTP keywords/JSON, DNS, TCP, push and Docker containers in one dashboard.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    },
+    {
+      "claim": "Many notification connectors route incidents into existing team tools.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    },
+    {
+      "claim": "Multiple status pages with custom domains communicate different service groups to different audiences.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Atlas Cloud",
+          "url": "https://www.atlascloud.ai",
+          "relationship": "corporate-sponsor",
+          "source": "https://github.com/louislam/uptime-kuma"
+        }
+      ],
+      "notes": "Reviewed project sponsorship/governance sources; no corporate financial or in-kind sponsor verified; absence is not proven.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker image",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container route",
+          "notes": "Recommended image packages application runtime.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install"
+          ]
+        },
+        {
+          "component": "Node.js >=20.4 and Git",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Native route",
+          "notes": "PM 2 recommended process supervisor; not required when Docker manages lifecycle.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma"
+          ]
+        },
+        {
+          "component": "SQLite embedded file database",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Small-scale route",
+          "notes": "Data volume must support POSIX locking; avoid NFS locking problems.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma/wiki/Environment-Variables"
+          ]
+        },
+        {
+          "component": "Maria DB external database",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative v 2 database route",
+          "notes": "Production dependency documented by project.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma/wiki/Environment-Variables"
+          ]
+        },
+        {
+          "component": "Maria DB embedded image",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Image variant bundles Maria DB",
+          "notes": "Image selection matters; do not assume all images bundle it.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma/blob/master/src/lang/en.json"
+          ]
+        },
+        {
+          "component": "SMTP or other notification provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only for selected notification integrations",
+          "notes": "Not a required generic queue/cache; external service terms vary.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Major Linux distributions or Windows 10/Server 2012 R 2 x 64+ on native route; Docker route also available",
+        "notes": "README documents runtime/platform constraints; no universal production CPU/RAM/storage minimum verified.",
+        "sources": [
+          "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install"
+        ]
+      },
+      "notes": "Version 2 route supports SQLite and Maria DB; no compulsory Redis or separate queue identified. Database checks being monitored are targets, not backend prerequisites.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Docker run command",
+          "url": "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "One Docker command starts app with persistent volume; requires Docker already installed, not a true one-click template.",
+          "sources": [
+            "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install"
+          ]
+        }
+      ],
+      "notes": "Official installation wiki supplies a Docker run command and links Home Assistant add-on/Helm routes. Only verified one-command route recorded; no true one-click claim.",
+      "sources": [
+        "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install"
+      ]
+    }
+  }
+}

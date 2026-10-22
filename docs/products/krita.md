@@ -35,10 +35,16 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Intel gold sponsor since 2022; FossHub monthly donor since 2019 on current sponsor page. Historical grants listed separately on page; not equity. [1](https://krita.org/en/sponsors/)
+Status: **identified**. Intel gold sponsor since 2022; FossHub monthly donor since 2019 on current sponsor page. Historical grants listed separately on page; not equity. Additional documented corporate assistance: Epic Games grant(2019), Broken Rules(2023), Gamechuck(2019), Agile Coach(2018), Private Internet Access(2017), xoio(2017). These are historical donations/grants; not an assertion of continuing2026 payments. ASIFA-Hollywood is a named nonprofit, excluded from corporate list. [1](https://krita.org/en/sponsors/)
 
 - [Intel](https://www.intel.com/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
 - [FossHub](https://www.fosshub.com/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
+- [Epic Games](https://www.unrealengine.com/en-US/megagrants): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
+- [Broken Rules](https://brokenrul.es/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
+- [Gamechuck](https://game-chuck.com/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
+- [Agile Coach](https://agile.coach/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
+- [Private Internet Access](https://krita.org/en/sponsors/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
+- [xoio](https://xoio.de/): corporate-sponsor. [Evidence](https://krita.org/en/sponsors/).
 
 ## Self-operation requirements
 

@@ -130,11 +130,24 @@
           "url": "https://dev.virlo.ai/",
           "relationship": "corporate-sponsor",
           "source": "https://github.com/gitroomhq/postiz-app"
+        },
+        {
+          "name": "ChatbotX",
+          "url": "https://chatbotx.io/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md"
+        },
+        {
+          "name": "RapidProxy",
+          "url": "https://www.rapidproxy.io/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md"
         }
       ],
-      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors.",
+      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. Current README explicitly lists ChatbotX and RapidProxy alongside Hostinger/Virlo in Our Sponsors. Paid repository logo/backlink placements are project sponsorship/advertising, not OAuth providers or customers.",
       "sources": [
-        "https://github.com/gitroomhq/postiz-app"
+        "https://github.com/gitroomhq/postiz-app",
+        "https://raw.githubusercontent.com/gitroomhq/postiz-app/main/README.md"
       ]
     },
     "selfHosting": {
@@ -276,7 +289,7 @@
         "memory": "2GB light single-user floor;8GB recommended;4GB+ for additional load",
         "storage": "20GB floor;50GB+ recommended plus uploads",
         "os": "Docker-capable Linux; tested Ubuntu24.04",
-        "notes": "Official small-team sizing\u226420users; source build can exceed2GB. These are documented starting points, not workload guarantees.",
+        "notes": "Official small-team sizing≤20users; source build can exceed2GB. These are documented starting points, not workload guarantees.",
         "sources": [
           "https://docs.postiz.com/self-host/installation/system-requirements"
         ]

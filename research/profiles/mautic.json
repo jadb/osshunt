@@ -143,18 +143,97 @@
           "url": "https://aivie.ch/",
           "relationship": "corporate-sponsor",
           "source": "https://mautic.org/members-partners/"
+        },
+        {
+          "name": "Leuchtfeuer Digital Marketing",
+          "url": "https://mautic.org/member/leuchtfeuer-digital-marketing/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/"
+        },
+        {
+          "name": "Webmecanik",
+          "url": "https://mautic.org/member/webmecanik/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/"
+        },
+        {
+          "name": "Sales Snap",
+          "url": "https://mautic.org/member/sales-snap/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/"
+        },
+        {
+          "name": "Axelerant",
+          "url": "https://mautic.org/member/axelerant/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/"
+        },
+        {
+          "name": "Droptica",
+          "url": "https://mautic.org/member/droptica/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/"
+        },
+        {
+          "name": "Eyedro Green Solutions Inc.",
+          "url": "https://mautic.org/member/eyedro-green-solutions/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "Fire Multimedia",
+          "url": "https://mautic.org/member/firemultimedia/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "Data Innovation",
+          "url": "https://mautic.org/member/data-innovation/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "Hostnet",
+          "url": "https://mautic.org/member/hostnet/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "Collabora Productivity / Collabora Office",
+          "url": "https://mautic.org/member/collabora-office/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "Stepin Solutions",
+          "url": "https://mautic.org/member/stepin-solutions/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "SignPresenter",
+          "url": "https://mautic.org/member/signpresenter/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
+        },
+        {
+          "name": "OPEN",
+          "url": "https://mautic.org/member/open/",
+          "relationship": "corporate-sponsor",
+          "source": "https://mautic.org/members-partners/?e-page-c9143cd=2"
         }
       ],
-      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors.",
+      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. Hydrated directory pages identify additional corporate financial members/partners. Membership definition explicitly includes financial contributions; names are not inferred from a generic vendor directory. LeuchtfeuerPlatinum, WebmecanikGold; othersCommunity. Acquia retained from existing static evidence but absent hydratedpage1; present status not fully resolved, so no cancellation inferred.",
       "sources": [
-        "https://mautic.org/members-partners/"
+        "https://mautic.org/members-partners/",
+        "https://mautic.org/members-partners/?e-page-c9143cd=2"
       ]
     },
     "selfHosting": {
       "mode": "server",
       "requirements": [
         {
-          "component": "PHP8.2\u20138.5 and documented extensions",
+          "component": "PHP8.2–8.5 and documented extensions",
           "necessity": "required",
           "group": null,
           "condition": "Mautic7.x runtime.",

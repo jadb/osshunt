@@ -15,8 +15,11 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Aircall](products/aircall.md) | Aircall | unknown | funded | 2014 | company-founded |
 | [Airtable](products/airtable.md) | Airtable | public-subsidiary | funded | 2012 | company-founded |
 | [Akaunting](products/akaunting.md) | Akaunting | private | funded | 2017 | product-launched |
+| [Algolia](products/algolia.md) | Algolia, Inc. | private | funded | 2012 | company-founded |
+| [Apache Superset](products/apache-superset.md) | Apache Software Foundation / Superset PMC | nonprofit | not-applicable | 1999 | company-founded |
 | [AppFlowy client core](products/appflowy.md) | AppFlowy | private | funded | 2021 | project-started |
 | [Appsmith](products/appsmith.md) | Appsmith, Inc. | private | funded | 2019 | company-founded |
+| [Appwrite](products/appwrite.md) | Appwrite | private | funded | 2019 | project-started |
 | [Asana](products/asana.md) | Asana, Inc. | public | funded | 2008 | company-founded |
 | [Asterisk](products/asterisk.md) | Asterisk project / Sangoma Technologies Corporation | public-subsidiary | unknown | unknown | unknown |
 | [Auth0](products/auth0.md) | Auth0 (Okta, Inc.) | public-subsidiary | funded | 2013 | company-founded |
@@ -58,6 +61,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Dropbox](products/dropbox.md) | Dropbox, Inc. | public | funded | 2007 | company-founded |
 | [Drupal](products/drupal.md) | Drupal project; Drupal Association supporting nonprofit | community | not-applicable | 2001 | project-started |
 | [Easy!Appointments](products/easyappointments.md) | Alex Tselegidis / AT Software Development Agency | individual | unknown | 2013 | project-started |
+| [Elastic Cloud](products/elastic-cloud.md) | Elastic N.V. | public | funded | 2012 | company-founded |
 | [Element Server Suite Community](products/element.md) | Element | unknown | funded | 2017 | company-founded |
 | [ERPNext](products/erpnext.md) | Frappe Technologies | private | funded | 2008 | company-founded |
 | [EspoCRM](products/espocrm.md) | EspoCRM team/company | private | unknown | 2011 | company-founded |
@@ -73,10 +77,12 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Frappe HR](products/frappe-hr.md) | Frappe Technologies | private | funded | 2008 | company-founded |
 | [FreeScout](products/freescout.md) | FreeScout project | community | unknown | unknown | unknown |
 | [FreeSWITCH](products/freeswitch.md) | SignalWire, Inc. | unknown | funded | 2017 | company-founded |
+| [Freshservice IT Asset Management](products/freshservice-itam.md) | Freshworks Inc. | public | funded | 2010 | company-founded |
 | [Front](products/front.md) | Front | private | funded | 2013 | company-founded |
 | [Ghost](products/ghost.md) | Ghost Foundation | nonprofit | bootstrapped | 2013 | company-founded |
 | [GIMP](products/gimp.md) | GIMP community | community | not-applicable | 1995 | project-started |
 | [GlitchTip](products/glitchtip.md) | Burke Software and Consulting | private | unknown | unknown | unknown |
+| [GLPI](products/glpi.md) | Teclib' | private | unknown | 2009 | company-founded |
 | [Google Analytics 360](products/google-analytics-360.md) | Google LLC | public-subsidiary | funded | 1998 | company-founded |
 | [Google Meet](products/google-meet.md) | Google LLC | public-subsidiary | funded | 1998 | company-founded |
 | [Google Workspace](products/google-workspace.md) | Google LLC | public-subsidiary | funded | 1998 | company-founded |
@@ -103,6 +109,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Kimai](products/kimai.md) | Kevin Papst / Kimai business | individual | bootstrapped | 2018 | company-founded |
 | [Kopia](products/kopia.md) | Kopia project | community | unknown | unknown | unknown |
 | [Krita](products/krita.md) | Krita Foundation | nonprofit | not-applicable | 2012 | company-founded |
+| [Lansweeper](products/lansweeper.md) | Lansweeper NV | private | funded | 2004 | company-founded |
 | [Lever](products/lever.md) | Lever / Employ Inc. | private | funded | 2012 | company-founded |
 | [LimeSurvey Community Edition](products/limesurvey.md) | LimeSurvey GmbH | private | unknown | unknown | unknown |
 | [Linear](products/linear.md) | Linear | private | funded | 2019 | company-founded |
@@ -115,11 +122,14 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [mailcow: dockerized](products/mailcow.md) | The Infrastructure Company GmbH (Servercow / mailcow) | private | unknown | unknown | unknown |
 | [Make](products/make.md) | Make (Celonis) | private | funded | 2012 | company-founded |
 | [MASV](products/masv.md) | MASV Inc. | private | unknown | 2019 | company-founded |
+| [Matomo](products/matomo.md) | Inno Craft Limited / Matomo | private | unknown | 2007 | project-started |
 | [Mattermost Team Edition](products/mattermost.md) | Mattermost, Inc. | unknown | funded | 2011 | company-founded |
 | [Mautic](products/mautic.md) | Mautic community; fiscal host Open Source Collective | community | not-applicable | 2014 | project-started |
 | [Mayan EDMS](products/mayan-edms.md) | Mayan EDMS LLC / Mayan EDMS project | unknown | unknown | unknown | unknown |
 | [Medusa](products/medusa.md) | Medusa | private | funded | 2021 | company-founded |
 | [Mermaid](products/mermaid.md) | Mermaid community | community | not-applicable | 2014 | product-launched |
+| [Metabase Open Source Edition](products/metabase.md) | Metabase, Inc. | private | funded | 2015 | product-launched |
+| [Metabase Pro](products/metabase-pro.md) | Metabase, Inc. | private | funded | 2015 | product-launched |
 | [Microsoft 365](products/microsoft-365.md) | Microsoft Corporation | public | funded | 1975 | company-founded |
 | [Microsoft Outlook](products/microsoft-outlook.md) | Microsoft Corporation | public | funded | 1975 | company-founded |
 | [Microsoft Teams](products/microsoft-teams.md) | Microsoft Corporation | public | funded | 1975 | company-founded |
@@ -140,6 +150,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Open edX](products/open-edx.md) | Axim Collaborative / Open edX project | nonprofit | not-applicable | 2012 | project-started |
 | [OpenCATS](products/opencats.md) | OpenCATS community | community | not-applicable | unknown | unknown |
 | [OpenProject](products/openproject.md) | OpenProject GmbH | private | bootstrapped | 2011 | project-started |
+| [OpenSearch](products/opensearch.md) | Open Search Software Foundation | nonprofit | not-applicable | 2021 | product-launched |
 | [OpenSign](products/opensign.md) | Qik Innovations Private Limited (OpenSign) | private | unknown | 2023 | product-launched |
 | [OrangeHRM Starter](products/orangehrm-starter.md) | OrangeHRM Inc. | private | funded | 2005 | company-founded |
 | [Otter.ai](products/otter.md) | Otter.ai, Inc. | unknown | funded | 2016 | company-founded |
@@ -151,8 +162,12 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [PDFsam Basic](products/pdfsam-basic.md) | Sober Lemur S.r.l. | private | unknown | unknown | unknown |
 | [Penpot](products/penpot.md) | Kaleidos | private | funded | 2011 | company-founded |
 | [Phraseanet](products/phraseanet.md) | Alchemy | unknown | unknown | 1996 | company-founded |
+| [Pingdom](products/pingdom.md) | Solar Winds Worldwide, LLC / Pingdom | private | funded | 2007 | product-launched |
 | [Plane Community](products/plane.md) | Plane | private | funded | 2022 | company-founded |
 | [PLANKA](products/planka.md) | PLANKA Software GmbH | private | mixed | 2024 | company-founded |
+| [Plausible Community Edition](products/plausible.md) | Plausible Insights OÜ | private | bootstrapped | 2018 | project-started |
+| [PocketBase](products/pocketbase.md) | Gani Georgiev / PocketBase | individual | not-applicable | 2021 | project-started |
+| [PostHog core](products/posthog.md) | Post Hog, Inc. | private | funded | 2020 | company-founded |
 | [Postiz](products/postiz.md) | Gitroom Limited (Postiz); Gitroom LLC holds platform approvals | private | bootstrapped | 2024 | product-launched |
 | [Postman](products/postman.md) | Postman, Inc. | private | funded | 2014 | company-founded |
 | [Power BI](products/power-bi.md) | Microsoft Corporation | public | funded | 1975 | company-founded |
@@ -169,17 +184,19 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [SAP Concur](products/sap-concur.md) | SAP Concur / Concur Technologies | public-subsidiary | funded | 1993 | company-founded |
 | [Screenity](products/screenity.md) | Alyssa X / Screenity | individual | unknown | unknown | unknown |
 | [Seafile Community Edition](products/seafile.md) | Seafile Ltd. / SeaCloud Labs Pte. Ltd. | private | unknown | 2012 | company-founded |
-| [Sentry](products/sentry.md) | Functional Software, Inc. (Sentry) | private | funded | unknown | unknown |
+| [Sentry](products/sentry.md) | Sentry | private | funded | unknown | unknown |
 | [Shopify](products/shopify.md) | Shopify Inc. | public | funded | 2006 | company-founded |
 | [Shotcut](products/shotcut.md) | Meltytech, LLC | private | unknown | unknown | unknown |
 | [Slack](products/slack.md) | Slack (Salesforce) | public-subsidiary | funded | 2014 | product-launched |
 | [Smallpdf](products/smallpdf.md) | Smallpdf AG | unknown | unknown | 2013 | company-founded |
+| [Snipe-IT](products/snipe-it.md) | Grokability, Inc. | private | unknown | 2013 | project-started |
 | [solidtime](products/solidtime.md) | solidtime GesbR | private | unknown | unknown | company-founded |
 | [Spendesk](products/spendesk.md) | Spendesk | private | funded | 2016 | company-founded |
 | [Squarespace](products/squarespace.md) | Squarespace, Inc. | private | funded | 2003 | company-founded |
 | [Stalwart Community](products/stalwart.md) | Stalwart Labs | private | unknown | 2019 | company-founded |
 | [Stirling PDF](products/stirling-pdf.md) | Stirling PDF, Inc. | private | funded | unknown | unknown |
 | [SuiteCRM](products/suitecrm.md) | SuiteCRM Ltd | private | unknown | 2024 | company-founded |
+| [Supabase self-hosted stack](products/supabase.md) | Supabase Inc | private | funded | 2020 | company-founded |
 | [Tableau](products/tableau.md) | Tableau (Salesforce) | public-subsidiary | funded | 2003 | company-founded |
 | [Taiga](products/taiga.md) | TAIGA CLOUD SERVICES, S.L. | unknown | unknown | 2013 | project-started |
 | [Tailscale](products/tailscale.md) | Tailscale Inc. | private | funded | 2019 | company-founded |
@@ -192,7 +209,11 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Trello](products/trello.md) | Atlassian Corporation | public | mixed | 2002 | company-founded |
 | [Twenty](products/twenty.md) | Twenty | private | funded | 2023 | company-founded |
 | [Typeform](products/typeform.md) | Typeform | private | funded | 2012 | company-founded |
+| [Typesense](products/typesense.md) | Typesense, Inc. | private | bootstrapped | 2018 | product-launched |
+| [Umami](products/umami.md) | Umami Software, Inc. | private | funded | unknown | unknown |
+| [Uptime Kuma](products/uptime-kuma.md) | Louis Lam / Uptime Kuma contributors | individual | not-applicable | unknown | unknown |
 | [Vaultwarden](products/vaultwarden.md) | Vaultwarden maintainers | community | unknown | unknown | unknown |
+| [Vercel](products/vercel.md) | Vercel Inc. | private | funded | 2015 | company-founded |
 | [Vosk](products/vosk.md) | Alpha Cephei Inc. | unknown | unknown | unknown | unknown |
 | [Webflow](products/webflow.md) | Webflow, Inc. | private | funded | 2013 | company-founded |
 | [WeKan](products/wekan.md) | WeKan (Lauri Ojansivu sole proprietorship) | individual | unknown | unknown | unknown |

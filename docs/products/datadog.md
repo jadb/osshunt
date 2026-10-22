@@ -22,8 +22,8 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 |---|---|---|---|---|---|---|---|---|
 | entry | Infrastructure Pro | published | — | USD 180/monitored host | — | — | unspecified | paid infrastructure monitoring. Advertised $15 per host/month billed annually, multiplied by 12. $18 is explicitly on-demand; not assumed to be a monthly subscription. Free plan separately covers up to five hosts. [1](https://www.datadoghq.com/pricing/) |
 | popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial cloud. No public designation or verified amount found in reviewed pricing page. [1](https://www.datadoghq.com/pricing/) |
-| business | Infrastructure Pro | published | — | USD 180/monitored host | — | — | unspecified | paid infrastructure monitoring. Closest organizational entry plan; no named Business tier in Infrastructure. Annual $15 x12; other Datadog products charged separately. [1](https://www.datadoghq.com/pricing/) |
-| enterprise | Infrastructure Enterprise | published | — | USD 276/monitored host | — | — | unspecified | paid infrastructure monitoring. Advertised annual-billed $23 per host/month x12. $27 on-demand is separate; excess metrics/containers and other products can add charges. [1](https://www.datadoghq.com/pricing/) |
+| business | Infrastructure Pro | published | — | USD 180/monitored host | — | — | unspecified | paid infrastructure monitoring. Closest organizational entry plan; no named Business tier in Infrastructure. Annual $15 x 12; other Datadog products charged separately. [1](https://www.datadoghq.com/pricing/) |
+| enterprise | Infrastructure Enterprise | published | — | USD 276/monitored host | — | — | unspecified | paid infrastructure monitoring. Advertised annual-billed $23 per host/month x 12. $27 on-demand is separate; excess metrics/containers and other products can add charges. [1](https://www.datadoghq.com/pricing/) |
 
 ## Defensibility assessments
 

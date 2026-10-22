@@ -41,19 +41,19 @@ Status: **business-fallback**. Reviewed project/company sources; no separate cor
 
 ## Self-operation requirements
 
-Mode: **server**. Binary/package and Docker deployment routes. Production should use MySQL or PostgreSQL; SQLite is an embedded evaluation default. No mandatory standalone cache/queue identified for a single Grafana server. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
+Mode: **server**. Binary/package and Docker deployment routes. Production should use My SQL or Postgre SQL; SQLite is an embedded evaluation default. No mandatory standalone cache/queue identified for a single Grafana server. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
 | Grafana binary/package or Docker image | required | — | Always | Production dependency documented by project. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
-| MySQL 8.0+ | one-of | metadata-database | Production metadata database option | Production dependency documented by project. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
-| PostgreSQL 12+ | one-of | metadata-database | Production metadata database option | Production dependency documented by project. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
+| My SQL 8.0+ | one-of | metadata-database | Production metadata database option | Production dependency documented by project. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
+| Postgre SQL 12+ | one-of | metadata-database | Production metadata database option | Production dependency documented by project. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
 | SQLite 3 embedded database | conditional | — | Default for evaluation/small local instances; explicitly not recommended for production | Production dependency documented by project. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
 | Telemetry data sources such as Prometheus/Loki/Tempo | conditional | — | As required by dashboard and alert queries | Separate systems with separate sizing; Grafana is not itself their storage backend. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
 | Image renderer service | conditional | — | When image rendering is required | Separate renderer worker; about 1 GB memory each. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
 | Redis session store or sticky sessions | conditional | — | Multiple Grafana instances / HA | Alternative session routes; Redis is not mandatory for a single server. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) |
 
-Resources: CPU 1 core evaluation floor; memory 512 MB minimum recommended; production sizing higher; storage not specified; OS Linux, Windows, macOS supported installation routes. Documented evaluation floor covers Grafana process only; production capacity and data backends sized separately. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
+Resources: CPU 1 core evaluation floor; memory 512 MB minimum recommended; production sizing higher; storage not specified; OS Linux, Windows, mac OS supported installation routes. Documented evaluation floor covers Grafana process only; production capacity and data backends sized separately. [1](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
 
 ## One-click and installer options
 

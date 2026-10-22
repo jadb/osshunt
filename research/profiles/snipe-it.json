@@ -1,0 +1,277 @@
+{
+  "id": "snipe-it",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Grokability, Inc.",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Grokability, Inc. makes Snipe-IT. Official About says Alison Gianotto created the project in 2013; exact company incorporation year is unverified. Reviewed company and project sources do not resolve outside equity funding or investors; funding remains unknown.",
+    "sources": [
+      "https://snipeitapp.com/company",
+      "https://snipeitapp.com/faq"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Free software; own infrastructure. Hosted subscriptions and professional support are separate.",
+      "sources": [
+        "https://snipeitapp.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No unique vendor popular designation found.",
+      "sources": [
+        "https://snipeitapp.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Small Business Hosting",
+      "status": "published",
+      "monthlyPrice": 99.99,
+      "annualPrice": 999.99,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Managed Small Business Hosting: unlimited assets/users. Monthly$99.99 or total annual$999.99 explicitly published; hosting differences are services, not a separate software edition.",
+      "sources": [
+        "https://snipeitapp.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Support",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 4999.99,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "support subscription for self-hosted software",
+      "notes": "Enterprise Support FAQ explicitly gives$4, 999.99 USD per year. Self-hosted support service, not proprietary software features or hosting.",
+      "sources": [
+        "https://snipeitapp.com/support"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Accumulated custody records and integration workflows create practical migration costs; the open distribution limits proprietary feature lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://snipeitapp.com/product"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Checkout acceptance, digital signatures and assignment history establish custody of physical equipment.",
+      "basis": "assessment",
+      "sources": [
+        "https://snipeitapp.com/product"
+      ]
+    },
+    {
+      "claim": "Barcode/QR scanning, custom fields and asset auditing support inventory reconciliation.",
+      "basis": "assessment",
+      "sources": [
+        "https://snipeitapp.com/product"
+      ]
+    },
+    {
+      "claim": "License expiry alerts, accessory/consumable records and REST integrations extend asset tracking beyond laptop lists.",
+      "basis": "assessment",
+      "sources": [
+        "https://snipeitapp.com/product"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Grokability, Inc.",
+          "url": "https://snipeitapp.com/company",
+          "relationship": "business-steward",
+          "source": "https://snipeitapp.com/company"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://snipeitapp.com/company"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP>=8.2<8.6 and required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "JSON, Open SSL, PDO, Mbstring, Tokenizer, c URL, My SQLi, ZIP, Fileinfo, BCMath, XML, Sodium and Exif documented.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/requirements"
+          ]
+        },
+        {
+          "component": "My SQL 5.7+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Supported database route",
+          "notes": "Use supported My SQL/Maria DB backend.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/requirements"
+          ]
+        },
+        {
+          "component": "Maria DB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative database route",
+          "notes": "Current config supports only My SQL/Maria DB, not every Laravel SQLdriver.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/requirements"
+          ]
+        },
+        {
+          "component": "GD>=2.0",
+          "necessity": "one-of",
+          "group": "image-library",
+          "condition": "Barcode and image handling",
+          "notes": "GD image-library route.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/requirements"
+          ]
+        },
+        {
+          "component": "Imagick>=6.3.8",
+          "necessity": "one-of",
+          "group": "image-library",
+          "condition": "Alternative barcode and image handling",
+          "notes": "Imagick image-library route.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/requirements"
+          ]
+        },
+        {
+          "component": "Webserver and Composer dependencies",
+          "necessity": "required",
+          "group": null,
+          "condition": "Native production install",
+          "notes": "Official Dockerimage bundles application runtime/webserver dependencies.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/installation"
+          ]
+        },
+        {
+          "component": "SMTP, PHPmail or sendmail",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email alerts, password resets and acceptance workflows",
+          "notes": "Log mail driver possible without delivery; email-dependent workflows then unavailable.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/configuration"
+          ]
+        },
+        {
+          "component": "LDAPextension and directory",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "LDAPintegration only",
+          "notes": "Optional integration dependencies.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/requirements"
+          ]
+        },
+        {
+          "component": "Redis, Memcached, APC or database sessions/cache",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative cache/session route",
+          "notes": "File defaults and syncqueue do not require external Redis or worker.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/configuration"
+          ]
+        },
+        {
+          "component": "S 3-compatible object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "External upload storage instead of local disk",
+          "notes": "Public/private S 3 settings optional; AWSSES is also an optional alternative to SMTP.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/configuration"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux, Windows or mac OS webserver; Docker-capable host",
+        "notes": "No universal production CPU/RAM/disk minimum verified; inventory and attachment volume drive sizing.",
+        "sources": [
+          "https://snipe-it.readme.io/docs/requirements"
+        ]
+      },
+      "notes": "Native PHP/webserver/Composer or official snipe/snipe-it Docker route. SQL restricted to My SQL/Maria DB. Default file sessions/cache and synchronous queue need no separate Redis/queue service. Retain database, uploads and APP_KEY for recovery.",
+      "sources": [
+        "https://snipe-it.readme.io/docs/requirements"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Linux install.sh installer",
+          "url": "https://snipe-it.readme.io/docs/downloading",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Download and chmod script, then run ./install.sh on a fresh Cent OS/RHEL or Debian/Ubuntu system with no other sites. Preparation required; not a provider deployment button.",
+          "sources": [
+            "https://snipe-it.readme.io/docs/downloading"
+          ]
+        }
+      ],
+      "notes": "Official Downloading guide documents install.sh automation. Download/chmod preparation required, then installer command automates a fresh Linux system. This is one-command installation, not true one-click. Unverified Digital Ocean route excluded.",
+      "sources": [
+        "https://snipe-it.readme.io/docs/requirements"
+      ]
+    }
+  }
+}

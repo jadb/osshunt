@@ -1,0 +1,348 @@
+{
+  "id": "appwrite",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Appwrite",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Tiger Global Management",
+        "source": "https://www.prnewswire.com/news-releases/appwrite-raises-27m-to-support-massive-open-source-adoption-of-backend-as-a-service-platform-for-developers-301517781.html"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.prnewswire.com/news-releases/appwrite-raises-27m-to-support-massive-open-source-adoption-of-backend-as-a-service-platform-for-developers-301517781.html"
+      },
+      {
+        "name": "Flybridge Capital Partners",
+        "source": "https://www.prnewswire.com/news-releases/appwrite-raises-27m-to-support-massive-open-source-adoption-of-backend-as-a-service-platform-for-developers-301517781.html"
+      },
+      {
+        "name": "Ibex Investors",
+        "source": "https://www.prnewswire.com/news-releases/appwrite-raises-27m-to-support-massive-open-source-adoption-of-backend-as-a-service-platform-for-developers-301517781.html"
+      },
+      {
+        "name": "Seedcamp",
+        "source": "https://www.prnewswire.com/news-releases/appwrite-raises-27m-to-support-massive-open-source-adoption-of-backend-as-a-service-platform-for-developers-301517781.html"
+      },
+      {
+        "name": "Abraham Fund",
+        "source": "https://appwrite.io/company"
+      }
+    ],
+    "notes": "Private venture-backed steward.2019 is public project launch; company formation followed seed financing. Company timeline dates conflict with dated press release, so $27m Series A dated April2022 from issuer release. Historical investors below; no cap-table percentages.",
+    "sources": [
+      "https://appwrite.io/company",
+      "https://www.prnewswire.com/news-releases/appwrite-raises-27m-to-support-massive-open-source-adoption-of-backend-as-a-service-platform-for-developers-301517781.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted community core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Self-hosted source distinct from Cloud Free/Pro and custom enterprise self-hosting; infrastructure separate.",
+      "sources": [
+        "https://appwrite.io/docs/advanced/self-hosting"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization starting base",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Popular badge. Starting monthly base includes database compute credit; dedicated database compute and overages can add charges. Annual contract price not verified.",
+      "sources": [
+        "https://appwrite.io/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization starting base",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational plan, unlimited organization members. No separately named Team/Business subscription; database compute tier named Business is an add-on, not this role.",
+      "sources": [
+        "https://appwrite.io/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor enterprise cloud; custom self-hosting separately available",
+      "notes": "Custom; Contact us. No numeric enterprise subscription verified.",
+      "sources": [
+        "https://appwrite.io/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared identity, permissions and event APIs across several backend services create integration-specific switching friction; competing backend platforms offer overlapping capabilities.",
+      "basis": "assessment",
+      "sources": [
+        "https://appwrite.io/products/auth",
+        "https://appwrite.io/products/realtime",
+        "https://appwrite.io/products/functions"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Combine passwordless and social authentication with tenant teams, roles and MFA controls.",
+      "basis": "assessment",
+      "sources": [
+        "https://appwrite.io/products/auth"
+      ]
+    },
+    {
+      "claim": "Subscribe to permission-filtered events from data, files, functions and presence through one WebSocket client.",
+      "basis": "assessment",
+      "sources": [
+        "https://appwrite.io/products/realtime"
+      ]
+    },
+    {
+      "claim": "Run HTTP handlers, scheduled jobs and platform event handlers in multiple language runtimes with Git-triggered builds.",
+      "basis": "assessment",
+      "sources": [
+        "https://appwrite.io/products/functions"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Appwrite",
+          "url": "https://appwrite.io",
+          "relationship": "business-steward",
+          "source": "https://appwrite.io/company"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://appwrite.io/company"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Compose v2",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Standard documented installer route.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default for new installs",
+          "notes": "Appwrite PostgreSQL image documented.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/configuration/databases"
+          ]
+        },
+        {
+          "component": "MariaDB10.11",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select at installation",
+          "notes": "Alternative SQL backend.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/configuration/databases"
+          ]
+        },
+        {
+          "component": "MongoDB8.2.5 replica set",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select at installation",
+          "notes": "Alternative document backend; choice cannot change in-place.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/configuration/databases"
+          ]
+        },
+        {
+          "component": "Redis7.4.7",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled cache and queue service.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        },
+        {
+          "component": "Appwrite API, realtime, workers, schedulers and Traefik",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Combined workers/schedulers default; separate queue containers optional.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        },
+        {
+          "component": "ClickHouse",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled usage database in current standard configuration.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        },
+        {
+          "component": "OpenRuntimes executor/orchestrator",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Functions/Sites execution",
+          "notes": "Bundled execution containers use Docker socket.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        },
+        {
+          "component": "SMTP server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Verification, password recovery or invitation emails",
+          "notes": "Mail disabled without SMTP configuration.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/configuration/email"
+          ]
+        },
+        {
+          "component": "External object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local default; S3, DigitalOceanSpaces, Backblaze, Akamai and Wasabi adapters.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/configuration/storage"
+          ]
+        },
+        {
+          "component": "AutoGravity, browser, EXIF and geo auxiliary containers",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Corresponding image previews/metadata/geolocation features",
+          "notes": "Listed auxiliary services; AutoGravity can be disabled, embeddings use opt-in profile.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2cores minimum",
+        "memory": "4GB RAM +2GB swap minimum",
+        "storage": null,
+        "os": "Any Docker-compatible OS; Kubernetes alternative",
+        "notes": "Published minimum2cores,4GB RAM and2GB swap; workload storage capacity not specified.",
+        "sources": [
+          "https://appwrite.io/docs/advanced/self-hosting/installation"
+        ]
+      },
+      "notes": "Database choice is installation-time. Current docs examples name2.5.0 although input release is2.6.1; requirements scoped to current published deployment. No external language runtime installation for containerized functions.",
+      "sources": [
+        "https://appwrite.io/docs/advanced/self-hosting/installation",
+        "https://appwrite.io/docs/advanced/self-hosting/configuration/databases",
+        "https://appwrite.io/docs/advanced/self-hosting/configuration/email",
+        "https://appwrite.io/docs/advanced/self-hosting/configuration/storage"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean Appwrite marketplace",
+          "url": "https://marketplace.digitalocean.com/apps/appwrite",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official self-hosting page links provider installation.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting"
+          ]
+        },
+        {
+          "name": "Akamai/Linode Appwrite marketplace",
+          "url": "https://www.linode.com/docs/marketplace-docs/guides/appwrite/",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official self-hosting page links marketplace.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting"
+          ]
+        },
+        {
+          "name": "AWS Appwrite marketplace",
+          "url": "https://aws.amazon.com/marketplace/pp/prodview-2hiaeo2px4md6",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Vendor-listed AWS marketplace installation.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting"
+          ]
+        },
+        {
+          "name": "Docker installer command",
+          "url": "https://appwrite.io/docs/advanced/self-hosting/installation",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "One docker run installer command opens setup wizard; not browser one-click.",
+          "sources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://appwrite.io/docs/advanced/self-hosting/installation",
+        "https://appwrite.io/docs/advanced/self-hosting"
+      ]
+    }
+  }
+}

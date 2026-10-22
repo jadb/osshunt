@@ -78,18 +78,20 @@
     {
       "role": "business",
       "name": "Blaze",
-      "status": "unknown",
+      "status": "published",
       "monthlyPrice": null,
       "annualPrice": null,
       "oneTimePrice": null,
       "currency": "USD",
-      "unit": "service-specific usage",
+      "unit": "project",
       "minimumQuantity": null,
-      "scope": "paid product",
-      "notes": "Pay as you go, not a fixed subscription; includes applicable free quotas. Example App Hosting cached outgoing bandwidth above 10 GiB/month costs $0.15/GiB; uncached $0.20/GiB. Other Cloud services billed separately; no synthetic annual total.",
+      "scope": "Blaze example: App Hosting cached outgoing bandwidth",
+      "notes": "Scoped published example, not the aggregate Firebase price: cached App Hosting outgoing bandwidth above10GiB/month is$0.15/GiB; uncached is$0.20/GiB. Allowance and rates effectiveAugust1,2025. Other Firebase/Google Cloud services have separate rates; no fixed monthly/annual suite total. Classic Hosting usesGB; this App Hosting rate usesGiB.",
       "sources": [
         "https://firebase.google.com/pricing"
-      ]
+      ],
+      "usagePrice": 0.15,
+      "usageUnit": "GiB cached App Hosting outgoing bandwidth"
     },
     {
       "role": "enterprise",

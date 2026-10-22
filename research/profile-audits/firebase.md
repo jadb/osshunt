@@ -15,3 +15,10 @@ Checked 2026-10-21. Chronological research and output decisions.
 - Final ledger QA: rebuilt organization field claims with specific source mappings; each investor uses its primary funding/investor URL; public headings/searchable text added to claim locators. Executed group-local finalize.py; validated all23 profiles and companion files.
 
 - Final validation: all23 assigned IDs have profiles, JSONL claims and chronological audit companions. Four unique pricing roles, exactlythree functional assessments and nonempty source/limitation notes checked. Edits restricted to assigned group directory. Final artifacts authoritative; build.py is intermediate and not a regeneration entrypoint.
+
+## Independent source review integration
+
+Blaze App Hosting cached outgoing bandwidth above10GiB/month has a publishedUSD0.15/GiB rate; it is a scoped example, not a Firebase subscription total. Source: https://firebase.google.com/pricing. Subscription and usage denominators are separate; no unknown base price invented.
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

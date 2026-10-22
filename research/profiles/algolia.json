@@ -1,0 +1,154 @@
+{
+  "id": "algolia",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Algolia, Inc.",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Lone Pine Capital",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      },
+      {
+        "name": "Fidelity Management & Research Company",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      },
+      {
+        "name": "STEADFAST Capital Ventures",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      },
+      {
+        "name": "Glynn Capital",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      },
+      {
+        "name": "Twilio",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      },
+      {
+        "name": "Accel",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+      }
+    ],
+    "notes": "Company-founded 2012 verified in official company press history; private financing documented. Company announcement states July 28 2021 Series D led by Lone Pine with listed participants; blog republished 2023. Investors historical, not a current capitalization table; customers/integrations excluded.",
+    "sources": [
+      "https://www.algolia.com/about",
+      "https://www.algolia.com/about/news/algolia-appoints-ashley-stirrup-as-chief-marketing-officer",
+      "https://www.algolia.com/blog/algolia/algolia-funding-news-2021"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Grow",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": 0.5,
+      "currency": "USD",
+      "unit": "additional 1, 000 search requests in monthly usage",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Lowest paid production usage offer:10 K search requests/month included, then$0.50/1 K; 100 K records included then$0.40/1 Krecords. Monthly billing, no synthetic fixed monthly/annual total.",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Best value appears on multiple calculator cards; no unique Most popular/Recommended badge verified.",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Grow Plus",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": 1.75,
+      "currency": "USD",
+      "unit": "additional 1, 000 search requests in monthly usage",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational AI plan:10 Ksearch requests included, then$1.75/1 K; 100 Krecords included then$0.40/1 Krecords. No Business-named tier; record/recommend/crawler charges separate.",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Elevate",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom volume-based enterprise offer requires annual contract and sales evaluation; no annual total published.",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Developer libraries, search UI integrations and accumulated relevance/merchandising configuration create an ecosystem and workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.algolia.com/pricing",
+        "https://www.algolia.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Neural Search combines keyword and semantic retrieval for queries that need meaning as well as exact terms.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    },
+    {
+      "claim": "Visual merchandising rules, synonyms and ranking controls let search teams curate results.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    },
+    {
+      "claim": "Search analytics and A/B testing support measuring relevance changes against user outcomes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.algolia.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

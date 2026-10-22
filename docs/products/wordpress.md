@@ -35,9 +35,12 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Official Five for the Future page identifies Salesforce’s in-kind Slack sponsorship; contributor pledges are distinct from equity investment. [1](https://wordpress.org/five-for-the-future/)
+Status: **identified**. Official Five for the Future page identifies Salesforce’s in-kind Slack sponsorship; contributor pledges are distinct from equity investment. Also verified in-kind staff contributions from XWP, Bluehost and Multidots in Contributor experiences. Salesforce infrastructure and these delivered staff-time examples are distinct; the wider pledge directory is not an audited complete corporate-donor list. [1](https://wordpress.org/five-for-the-future/)
 
 - [Salesforce](https://www.salesforce.com/): corporate-sponsor. [Evidence](https://wordpress.org/five-for-the-future/).
+- [XWP](https://wordpress.org/five-for-the-future/): corporate-sponsor. [Evidence](https://wordpress.org/five-for-the-future/).
+- [Bluehost](https://wordpress.org/five-for-the-future/): corporate-sponsor. [Evidence](https://wordpress.org/five-for-the-future/).
+- [Multidots](https://wordpress.org/five-for-the-future/): corporate-sponsor. [Evidence](https://wordpress.org/five-for-the-future/).
 
 ## Self-operation requirements
 

@@ -76,7 +76,7 @@
       "unit": "monitored host",
       "minimumQuantity": null,
       "scope": "paid infrastructure monitoring",
-      "notes": "Closest organizational entry plan; no named Business tier in Infrastructure. Annual $15 x12; other Datadog products charged separately.",
+      "notes": "Closest organizational entry plan; no named Business tier in Infrastructure. Annual $15 x 12; other Datadog products charged separately.",
       "sources": [
         "https://www.datadoghq.com/pricing/"
       ]
@@ -93,7 +93,7 @@
       "unit": "monitored host",
       "minimumQuantity": null,
       "scope": "paid infrastructure monitoring",
-      "notes": "Advertised annual-billed $23 per host/month x12. $27 on-demand is separate; excess metrics/containers and other products can add charges.",
+      "notes": "Advertised annual-billed $23 per host/month x 12. $27 on-demand is separate; excess metrics/containers and other products can add charges.",
       "sources": [
         "https://www.datadoghq.com/pricing/"
       ]

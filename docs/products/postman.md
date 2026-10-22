@@ -18,10 +18,10 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 | Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
 |---|---|---|---|---|---|---|---|---|
-| entry | Solo | published | — | USD 108/individual account;AI overage per credit | — | USD 0.05/individual account;AI overage per credit | unspecified | vendor commercial cloud. $9/month annual-billed ×12=$108/year. Optional AI overage$0.05/credit; free core client separate. Other metered products/add-ons have own rates. [1](https://www.postman.com/pricing/) |
+| entry | Solo | published | — | USD 108/individual account | — | USD 0.05/AI overage credit | unspecified | vendor commercial cloud. $9/month annual-billed ×12=$108/year. Optional AI overage$0.05/credit; free core client separate. Other metered products/add-ons have own rates. [1](https://www.postman.com/pricing/) |
 | popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial cloud. No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred. [1](https://www.postman.com/pricing/) |
-| business | Team | published | — | USD 228/user;AI overage per credit | — | USD 0.04/user;AI overage per credit | unspecified | vendor commercial cloud. $19/user/month annual-billed ×12=$228/user/year. Optional AI overage$0.04/credit; external service fees separate. [1](https://www.postman.com/pricing/) |
-| enterprise | Enterprise | quote | — | — | — | — | unspecified | vendor commercial cloud. Contact sales for subscription; comparison lists AI overage$0.035/credit with volume pricing available. No invented annual seat amount. [1](https://www.postman.com/pricing/) |
+| business | Team | published | — | USD 228/user | — | USD 0.04/AI overage credit | unspecified | vendor commercial cloud. $19/user/month annual-billed ×12=$228/user/year. Optional AI overage$0.04/credit; external service fees separate. [1](https://www.postman.com/pricing/) |
+| enterprise | Enterprise | quote | — | — | — | USD 0.035/AI overage credit | unspecified | vendor commercial cloud. Contact sales for subscription; comparison lists AI overage$0.035/credit with volume pricing available. No invented annual seat amount. [1](https://www.postman.com/pricing/) |
 
 ## Defensibility assessments
 

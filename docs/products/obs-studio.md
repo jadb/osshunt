@@ -35,9 +35,19 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Official source identifies corporate project investment/contribution. [1](https://obsproject.com/contribute)
+Status: **identified**. Official source identifies corporate project investment/contribution. Complete named roster visible in the hydrated sponsor page: PremierYouTube/Logitech/Twitch; DiamondNVIDIA/AMD/Intel/Yamaha/Steinberg; GoldOverwolf; BronzeMultiMediaLLC and ReleafDispensaryLtd. Releaf target footer verifies corporate identity. Unnamed guest excluded; CDN download footer alone is not sponsorship evidence. [1](https://obsproject.com/contribute)
 
 - [Multi Media LLC](https://obsproject.com/contribute): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [YouTube](https://www.youtube.com/): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Logitech](https://www.logitech.com): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Twitch](https://twitch.tv): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [NVIDIA](https://www.nvidia.com/broadcast): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Advanced Micro Devices (AMD)](https://www.amd.com/): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Intel](https://intel.com): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Yamaha](https://www.yamaha.com/2/ag/): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Steinberg](https://www.steinberg.net/): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Overwolf](https://www.overwolf.com/): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
+- [Releaf Dispensary Ltd](https://releaf.co.uk/medical-cannabis-glossary): corporate-sponsor. [Evidence](https://obsproject.com/contribute).
 
 ## Self-operation requirements
 

@@ -141,11 +141,66 @@
           "url": "https://www.mathema.de/",
           "relationship": "corporate-sponsor",
           "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Vercel",
+          "url": "https://vercel.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+        },
+        {
+          "name": "Sentry",
+          "url": "https://sentry.io",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+        },
+        {
+          "name": "Crowdin",
+          "url": "https://crowdin.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+        },
+        {
+          "name": "Agendalink.com",
+          "url": "https://www.agendalink.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Scott Logic Ltd.",
+          "url": "https://www.scottlogic.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "sipgate GmbH",
+          "url": "https://opencollective.com/sipgate",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Improving",
+          "url": "https://opencollective.com/improving",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Eraser",
+          "url": "https://www.eraser.io/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Taskade",
+          "url": "https://opencollective.com/taskade",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
         }
       ],
-      "notes": "Official repository links collective. Top organizational financial contributors include Datadog/Craft/Slite; MATHEMA recurring contribution dated 2026-10-20. Historical totals do not imply current recurring contracts.",
+      "notes": "Official repository links collective. Top organizational financial contributors include Datadog/Craft/Slite; MATHEMA recurring contribution dated 2026-10-20. Historical totals do not imply current recurring contracts. README explicitly thanks Vercel/Sentry/Crowdin for free services. OpenCollective also recognizes Agendalink, ScottLogic, sipgate, Improving, Eraser and Taskade financial contributions; totals are cumulative/historical, not all current recurring pledges. Taskade verified2020–2021 history; sipgateSeptember2026 transaction. Logseq donor business identity remains unverified and excluded from corporate list.",
       "sources": [
-        "https://opencollective.com/excalidraw"
+        "https://opencollective.com/excalidraw",
+        "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
       ]
     },
     "selfHosting": {

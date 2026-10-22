@@ -35,10 +35,22 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Official partners page thanks businesses providing services and sponsorships; DigitalOcean powers Ghost(Pro), and Fastly is listed. These are not equity investors. [1](https://ghost.org/partners/)
+Status: **identified**. Official partners page thanks businesses providing services and sponsorships; DigitalOcean powers Ghost(Pro), and Fastly is listed. These are not equity investors. Official partner thanks roster includes these service/sponsorship businesses alongside DigitalOcean/Fastly. Services versus cash are not individually specified; these are explicit ongoing-work acknowledgments, not inferred customers or integrations. [1](https://ghost.org/partners/)
 
 - [DigitalOcean](https://www.digitalocean.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
 - [Fastly](https://www.fastly.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Tinybird](https://tbrd.co/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Ahrefs](https://ahrefs.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [1Password](https://1password.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Netlify](https://netlify.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Zapier](https://zapier.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Tuple](https://tuple.app/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Shopify](https://shopify.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [BairesDev](https://www.bairesdev.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Icons8](https://icons8.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Clay](https://clay.global/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [BuiltWith](https://builtwith.com/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
+- [Segment.io](https://segment.io/): corporate-sponsor. [Evidence](https://ghost.org/partners/).
 
 ## Self-operation requirements
 

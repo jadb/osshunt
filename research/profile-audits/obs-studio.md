@@ -877,3 +877,10 @@ Requirements KB dated2021 says macOS11+, current download says13+; current binar
 Public-page headings/searchable phrases and evidence paraphrases accompany every ledger claim. Structural validation run after final updates; generated files counted against all23 assigned IDs.
 
 Final QA command: group-only Python pass appended specific OS/hardware evidence routes for Jitsi,OBS,Cap,Vosk and program-sponsorship evidence for Zulip; reran validator and coverage/count checks. No source or repository mutation.
+
+## Independent source review integration
+
+Complete named roster visible in the hydrated sponsor page: PremierYouTube/Logitech/Twitch; DiamondNVIDIA/AMD/Intel/Yamaha/Steinberg; GoldOverwolf; BronzeMultiMediaLLC and ReleafDispensaryLtd. Releaf target footer verifies corporate identity. Unnamed guest excluded; CDN download footer alone is not sponsorship evidence. Sources: https://obsproject.com/contribute
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

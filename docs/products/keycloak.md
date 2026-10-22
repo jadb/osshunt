@@ -35,8 +35,9 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **none-found**. Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors. [1](https://www.keycloak.org/community)
+Status: **identified**. ej-technologies donates JProfiler licenses to core-team members (explicit in-kind corporate sponsorship); no cash amount or equity relationship inferred. [1](https://www.keycloak.org/community)
 
+- [ej-technologies](https://www.ej-technologies.com/): corporate-sponsor. [Evidence](https://www.keycloak.org/community).
 
 ## Self-operation requirements
 

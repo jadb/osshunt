@@ -35,9 +35,11 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **business-fallback**. No separate corporate sponsor identified in checked official sources; verified business steward included. [1](https://www.borgbackup.org/support/fund.html)
+Status: **identified**. Arcanite made documented2023/2024 financial contributions; SWEETGOOD made observedMay–July2026 monthly contributions. OpenCollective totals are cumulative, not all current recurring payments. WaldmannEDV remains business steward, not an outside financial donor; unverified business identities excluded. [1](https://www.borgbackup.org/support/fund.html) [2](https://opencollective.com/borgbackup)
 
 - [Waldmann EDV](https://www.borgbackup.org/support/fund.html): business-steward. [Evidence](https://www.borgbackup.org/support/fund.html).
+- [Arcanite](https://opencollective.com/arcanite): corporate-sponsor. [Evidence](https://opencollective.com/borgbackup).
+- [SWEETGOOD](https://opencollective.com/sweetgood): corporate-sponsor. [Evidence](https://opencollective.com/borgbackup).
 
 ## Self-operation requirements
 

@@ -5,3 +5,10 @@ Web opens: GitHub repository, raw README, developer development docs, Plus home/
 Decision: persisted profile and claim ledger; unknowns remain explicit, all assessments based on cited functional facts.
 QA command: python3 temporary-research/qa.py; JSON/schema cardinalities checked; claim ledger regenerated with field-specific corporate source routing and public page heading/searchable-text locators. No repository changes. Numeric unknowns preserved; sponsor customers/investors kept distinct. Earlier build.py invocation with python failed (binary unavailable), retried successfully with python3; alternatives.py persisted profiles. Final23-record coverage validated.
 QA command: python3 temporary-research/qa.py; JSON/schema cardinalities checked; claim ledger regenerated with field-specific corporate source routing and public page heading/searchable-text locators. No repository changes. Numeric unknowns preserved; sponsor customers/investors kept distinct. Earlier build.py invocation with python failed (binary unavailable), retried successfully with python3; alternatives.py persisted profiles. Final23-record coverage validated.
+
+## Independent source review integration
+
+README explicitly thanks Vercel/Sentry/Crowdin for free services. OpenCollective also recognizes Agendalink, ScottLogic, sipgate, Improving, Eraser and Taskade financial contributions; totals are cumulative/historical, not all current recurring pledges. Taskade verified2020–2021 history; sipgateSeptember2026 transaction. Logseq donor business identity remains unverified and excluded from corporate list. Sources: https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md, https://opencollective.com/excalidraw
+Reviewed exact browser requests, locators and failures in the shared profile review record. Applied with the review integration helper; retained original evidence and appended correcting claims. No historical builder rerun.
+
+Shared full review transcript: research/profile-review.md ; primary source locators and query/fetch failures retained there. Integration used the review helper to update profile fields and append evidence.

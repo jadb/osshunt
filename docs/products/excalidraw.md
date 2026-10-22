@@ -35,12 +35,21 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 ## Corporate sponsorship
 
-Status: **identified**. Official repository links collective. Top organizational financial contributors include Datadog/Craft/Slite; MATHEMA recurring contribution dated 2026-10-20. Historical totals do not imply current recurring contracts. [1](https://opencollective.com/excalidraw)
+Status: **identified**. Official repository links collective. Top organizational financial contributors include Datadog/Craft/Slite; MATHEMA recurring contribution dated 2026-10-20. Historical totals do not imply current recurring contracts. README explicitly thanks Vercel/Sentry/Crowdin for free services. OpenCollective also recognizes Agendalink, ScottLogic, sipgate, Improving, Eraser and Taskade financial contributions; totals are cumulative/historical, not all current recurring pledges. Taskade verified2020–2021 history; sipgateSeptember2026 transaction. Logseq donor business identity remains unverified and excluded from corporate list. [1](https://opencollective.com/excalidraw) [2](https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md)
 
 - [Datadog](https://www.datadoghq.com/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
 - [Craft Docs](https://www.craft.do/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
 - [Slite](https://slite.com/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
 - [MATHEMA GmbH](https://www.mathema.de/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
+- [Vercel](https://vercel.com): corporate-sponsor. [Evidence](https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md).
+- [Sentry](https://sentry.io): corporate-sponsor. [Evidence](https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md).
+- [Crowdin](https://crowdin.com): corporate-sponsor. [Evidence](https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md).
+- [Agendalink.com](https://www.agendalink.com/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
+- [Scott Logic Ltd.](https://www.scottlogic.com/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
+- [sipgate GmbH](https://opencollective.com/sipgate): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
+- [Improving](https://opencollective.com/improving): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
+- [Eraser](https://www.eraser.io/): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
+- [Taskade](https://opencollective.com/taskade): corporate-sponsor. [Evidence](https://opencollective.com/excalidraw).
 
 ## Self-operation requirements
 

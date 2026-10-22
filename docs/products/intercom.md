@@ -22,10 +22,10 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 
 | Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
 |---|---|---|---|---|---|---|---|---|
-| entry | Essential | published | — | USD 348/seat | — | — | unspecified | paid product. Annual-billed $29/seat/month multiplied by12. Fin from $0.99/outcome extra; channel usage additional. Monthly-billed amount not verified. [1](https://www.intercom.com/pricing) |
+| entry | Essential | published | — | USD 348/seat | — | USD 0.99/Fin outcome | unspecified | paid product. Annual-billed $29/seat/month multiplied by12. Fin from $0.99/outcome extra; channel usage additional. Monthly-billed amount not verified. Verified Fin usage starts at$0.99/outcome, separate from the per-seat subscription and other channel charges. [1](https://www.intercom.com/pricing) |
 | popular | unknown | unknown | — | — | — | — | unspecified | product plans. No explicitly highlighted Most popular or Recommended plan found in the public pricing page. [1](https://www.intercom.com/pricing) |
-| business | Advanced | published | — | USD 1020/seat | — | — | unspecified | paid product. Closest growing-team plan. Annual-billed $85/seat/month multiplied by12, plus Fin outcomes and channel usage. [1](https://www.intercom.com/pricing) |
-| enterprise | Expert | published | — | USD 1584/seat | — | — | unspecified | paid product. Closest large-team security/multibrand plan; no separately named Enterprise price. Annual-billed $132/seat/month multiplied by12; usage extra. [1](https://www.intercom.com/pricing) |
+| business | Advanced | published | — | USD 1020/seat | — | USD 0.99/Fin outcome | unspecified | paid product. Closest growing-team plan. Annual-billed $85/seat/month multiplied by12, plus Fin outcomes and channel usage. Verified Fin usage starts at$0.99/outcome, separate from the per-seat subscription and other channel charges. [1](https://www.intercom.com/pricing) |
+| enterprise | Expert | published | — | USD 1584/seat | — | USD 0.99/Fin outcome | unspecified | paid product. Closest large-team security/multibrand plan; no separately named Enterprise price. Annual-billed $132/seat/month multiplied by12; usage extra. Verified Fin usage starts at$0.99/outcome, separate from the per-seat subscription and other channel charges. [1](https://www.intercom.com/pricing) |
 
 ## Defensibility assessments
 

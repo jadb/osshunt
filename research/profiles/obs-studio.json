@@ -127,9 +127,69 @@
           "url": "https://obsproject.com/contribute",
           "relationship": "corporate-sponsor",
           "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Logitech",
+          "url": "https://www.logitech.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Twitch",
+          "url": "https://twitch.tv",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://www.nvidia.com/broadcast",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Advanced Micro Devices (AMD)",
+          "url": "https://www.amd.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Intel",
+          "url": "https://intel.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Yamaha",
+          "url": "https://www.yamaha.com/2/ag/",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Steinberg",
+          "url": "https://www.steinberg.net/",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Overwolf",
+          "url": "https://www.overwolf.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
+        },
+        {
+          "name": "Releaf Dispensary Ltd",
+          "url": "https://releaf.co.uk/medical-cannabis-glossary",
+          "relationship": "corporate-sponsor",
+          "source": "https://obsproject.com/contribute"
         }
       ],
-      "notes": "Official source identifies corporate project investment/contribution.",
+      "notes": "Official source identifies corporate project investment/contribution. Complete named roster visible in the hydrated sponsor page: PremierYouTube/Logitech/Twitch; DiamondNVIDIA/AMD/Intel/Yamaha/Steinberg; GoldOverwolf; BronzeMultiMediaLLC and ReleafDispensaryLtd. Releaf target footer verifies corporate identity. Unnamed guest excluded; CDN download footer alone is not sponsorship evidence.",
       "sources": [
         "https://obsproject.com/contribute"
       ]

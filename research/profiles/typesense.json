@@ -1,0 +1,227 @@
+{
+  "id": "typesense",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Typesense, Inc.",
+    "kind": "business",
+    "foundedYear": 2018,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Official About names Typesense Inc. and customer-funded team. Timeline idea 2015, firstopen-source release 2018, Cloud 2020; age uses public product launch, not incorporation. Founder article explicitly explains not raising VC; no outside equity investors identified from these affirmative funding statements.",
+    "sources": [
+      "https://typesense.org/about/",
+      "https://typesense.org/blog/why-we-are-not-raising-funds/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Typesense Server",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "free self-hosted engine",
+      "notes": "Open source engine; infrastructure and Cloud-only workflow features separate.",
+      "sources": [
+        "https://typesense.org/docs/guide/install-typesense.html"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No public designation or verified amount found in reviewed pricing page.",
+      "sources": [
+        "https://cloud.typesense.org/pricing/calculator"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Dedicated Cloud cluster",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "cluster resources/hour plus bandwidth",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational offer; capacity, HA, region, SDN affect calculator. No reliable numeric selected-configuration price extracted; no fixed record/query fee inferred.",
+      "sources": [
+        "https://cloud.typesense.org/pricing/calculator"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom Cloud configuration",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Configuration assistance/contact exists, but no explicit Enterprise plan or sales quote requirement verified; amount unknown.",
+      "sources": [
+        "https://cloud.typesense.org/pricing/calculator"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Opinionated relevance defaults and search UI/client ecosystem lower adoption friction, but open engine and standard API workflows limit proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://typesense.org/",
+        "https://typesense.org/about/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Typo-tolerant search-as-you-type and faceting support interactive catalog discovery.",
+      "basis": "assessment",
+      "sources": [
+        "https://typesense.org/"
+      ]
+    },
+    {
+      "claim": "Vector and semantic retrieval combine exact and meaning-based search within the same engine.",
+      "basis": "assessment",
+      "sources": [
+        "https://typesense.org/"
+      ]
+    },
+    {
+      "claim": "Geo search and federated/union results can serve location-aware discovery across collections.",
+      "basis": "assessment",
+      "sources": [
+        "https://typesense.org/docs/guide/faqs.html"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Typesense, Inc.",
+          "url": "https://typesense.org/about/",
+          "relationship": "business-steward",
+          "source": "https://typesense.org/about/"
+        }
+      ],
+      "notes": "Reviewed project/company sources; no separate corporate sponsor verified. Verified business steward supplied as fallback.",
+      "sources": [
+        "https://typesense.org/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Typesense native binary/package",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Linux/mac OS native route",
+          "notes": "Ubuntu 20+/recent Linuxkernel; mac OS 13+ native; Windows WSL available.",
+          "sources": [
+            "https://typesense.org/docs/guide/install-typesense.html"
+          ]
+        },
+        {
+          "component": "Official Docker image",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container route",
+          "notes": "Engine includes persistence; no external SQL/Redis/queue required in documented basic route.",
+          "sources": [
+            "https://typesense.org/docs/guide/install-typesense.html"
+          ]
+        },
+        {
+          "component": "Persistent disk",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Raw records on disk, search index in RAM; SSD recommended.",
+          "sources": [
+            "https://typesense.org/docs/guide/system-requirements.html"
+          ]
+        },
+        {
+          "component": "3 or 5-node cluster",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended production HA",
+          "notes": "Raft requires 3 nodes to tolerate 1 failure; single node possible without HA.",
+          "sources": [
+            "https://typesense.org/docs/guide/system-requirements.html"
+          ]
+        },
+        {
+          "component": "Local embedding model OR remote embedding provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Semantic/hybrid search automatic embeddings",
+          "notes": "Localmodel adds 2\u20136 GBRAM; remote embedding APIs have separate costs. Keyword search needs neither.",
+          "sources": [
+            "https://typesense.org/docs/guide/system-requirements.html"
+          ]
+        },
+        {
+          "component": "NVIDIA GPU/CUDA/cu DNN",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Acceleration for local embeddings/voice",
+          "notes": "CPU inference supported; GPU not mandatory.",
+          "sources": [
+            "https://typesense.org/docs/guide/install-typesense.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "At least 2 v CPUs",
+        "memory": "Keyword index typically 2\u20133 times indexed-field data; localembeddings add 2\u20136 GB",
+        "storage": "At least raw dataset size; SSD recommended",
+        "os": "Linux; mac OS 13+; Windowsvia WSL; Dockerhosts",
+        "notes": "Workload-dependent estimates, not guaranteed capacity. Empty process 20 MB is not a production sizing recommendation.",
+        "sources": [
+          "https://typesense.org/docs/guide/install-typesense.html"
+        ]
+      },
+      "notes": "Standalone engine, container/package/mac OS/WSL routes; no mandatory external SQL/cache/queue. Configure API keys, TLS and backups. Cloud provisioning is managed service, not self-host one-click.",
+      "sources": [
+        "https://typesense.org/docs/guide/install-typesense.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official deployment instructions; no verified one-click option found. Manual container instructions are not one-click.",
+      "sources": [
+        "https://typesense.org/docs/guide/install-typesense.html"
+      ]
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "vercel",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Vercel Inc.",
+    "kind": "business",
+    "foundedYear": 2015,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://vercel.com/blog/series-f"
+      },
+      {
+        "name": "GIC",
+        "source": "https://vercel.com/blog/series-f"
+      },
+      {
+        "name": "Nat Friedman",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Jordan Walke",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Naval Ravikant",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Jessie Frazelle",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Ilya Sukhar",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "David Cramer",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Anthony Casalena",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Soleio Cuervo",
+        "source": "https://vercel.com/about"
+      },
+      {
+        "name": "Matias Woloski",
+        "source": "https://vercel.com/about"
+      }
+    ],
+    "notes": "Private independent company founded2015 as affirmed by founder anniversary account. September2025 SeriesF $300m co-led Accel/GIC; separate approximately$300m tender is liquidity, not additional company primary capital. Selected officially named investors below; full historical roster not reconstructed.",
+    "sources": [
+      "https://io.linkedin.com/company/vercel",
+      "https://vercel.com/blog/series-f",
+      "https://vercel.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 20,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "team base with1 deploying seat",
+      "minimumQuantity": null,
+      "scope": "paid Vercel platform",
+      "notes": "Lowest paid platform plan; Hobby free separately. Monthly platform fee includes1 deploying seat and$20 usage credit; extra deploying seats$20/month each plus metered resources/add-ons. No annual contract amount verified.",
+      "sources": [
+        "https://vercel.com/docs/plans/pro-plan"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 20,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": 0.007,
+      "currency": "USD",
+      "unit": "team",
+      "minimumQuantity": null,
+      "scope": "paid Vercel platform",
+      "notes": "Explicit Popular badge; monthly base20 with one deploying seat and usage credit. Basic-machine build usage$0.007/minute, separately metered; compute/storage/CDN other rates vary.",
+      "sources": [
+        "https://vercel.com/pricing"
+      ],
+      "usageUnit": "basic build minute"
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 20,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "team base with1 deploying seat",
+      "minimumQuantity": null,
+      "scope": "paid Vercel platform",
+      "notes": "Closest organizational self-serve plan; unlimited viewer seats, additional deploying seats$20/month. No separately named Business subscription.",
+      "sources": [
+        "https://vercel.com/docs/plans/pro-plan"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "paid Vercel platform",
+      "notes": "Custom; Contact Sales. No numeric base or usage contract price assumed.",
+      "sources": [
+        "https://vercel.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Framework development and integrated deployment workflows create ecosystem distribution and workflow switching friction; application code and competing deployment systems remain portable.",
+      "basis": "assessment",
+      "sources": [
+        "https://io.linkedin.com/company/vercel",
+        "https://vercel.com/docs/deployments/environments",
+        "https://vercel.com/docs/fluid-compute"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Review branch and pull-request changes through isolated preview URLs and promote verified builds to production.",
+      "basis": "assessment",
+      "sources": [
+        "https://vercel.com/docs/deployments/environments"
+      ]
+    },
+    {
+      "claim": "Process concurrent I/O-bound function invocations within one Node.js or Python instance using Fluid compute.",
+      "basis": "assessment",
+      "sources": [
+        "https://vercel.com/docs/fluid-compute"
+      ]
+    },
+    {
+      "claim": "Inspect incoming application traffic and apply custom WAF rules alongside platform DDoS mitigation.",
+      "basis": "assessment",
+      "sources": [
+        "https://vercel.com/docs/vercel-firewall"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

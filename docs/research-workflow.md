@@ -64,3 +64,17 @@ Recurring work worth scripting: company-entity source registry shared across pro
 New contract checks reject duplicate pricing roles, numeric sales quotes, nonzero free plans, ungrouped dependency alternatives, unsupported sponsor labels, bootstrap/investor conflicts, future founding dates and empty installation offerings. Assembly preserves project-versus-company age and rejects orphan profiles. The coverage report lists missing profiles, unresolved funding/ownership/year facts and pricing statuses rather than hiding unknowns.
 
 Profile coverage checks also compare reviewed source IDs with generated products: a merge override cannot remove or move an enriched profile while the coverage manifest still claims it is complete. The guard exercises the real override deletion path.
+
+The generated [profile coverage report](../research/profile-coverage.json) also inventories public URLs reused across multiple product profiles, counted once per product. This provides a concrete starting point for shared company/source lookup and fetch caching. Reuse does not establish that a page still supports an unchanged claim; refresh dates, redirects, page sections and edition/version scope still need verification.
+
+## Observed source-review failures to automate next
+
+| Repeated failure | Concrete cases | Proposed guard |
+|---|---|---|
+| Static extraction omits sponsor logos or later pages | OBS, Mautic | Empty named roster with tier headings triggers browser rendering; retain every page and corporate identity check |
+| Research samples only a few entries from an explicit roster | GIMP, Krita, Ghost, SuiteCRM | Compare all source sponsor sections with captured names; distinguish historic, cash, hardware and staff-time assistance |
+| Generic contributor acknowledgment hides actual in-kind support | Keycloak, restic, Excalidraw, WordPress | Scan Thanks/Sponsorship blocks for donated services or staff time; do not infer sponsorship from integration logos |
+| Known usage rate lost because subscription is quoted | Postman; concurrent seat/outcome fees at Intercom | Separate base and metered amounts/units; regression retains published add-on rate without inventing base price |
+| Current ownership confused with an announced deal | Lansweeper | Require completed/closed evidence; announced conditional acquisition remains pending |
+
+[Review findings, exact source requests and resolutions](../research/profile-review.md) retain the evidence for these automation candidates.

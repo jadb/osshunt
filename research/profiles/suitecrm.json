@@ -63,7 +63,7 @@
       "unit": "instance",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Hosted shared-service package;\u00a3180/month billed annually multiplied by12; excludes VAT. Recommended up to50users; not a per-user minimum.",
+      "notes": "Hosted shared-service package;£180/month billed annually multiplied by12; excludes VAT. Recommended up to50users; not a per-user minimum.",
       "sources": [
         "https://suitecrm.com/suitecrmhosted/"
       ]
@@ -79,7 +79,7 @@
       "unit": "instance",
       "minimumQuantity": null,
       "scope": "vendor commercial cloud",
-      "notes": "Closest enterprise-grade hosted offer starts\u00a33200/year, excluding VAT and application support.",
+      "notes": "Closest enterprise-grade hosted offer starts£3200/year, excluding VAT and application support.",
       "sources": [
         "https://suitecrm.com/suitecrmhosted/"
       ]
@@ -138,9 +138,45 @@
           "url": "https://www.mokas.lt/",
           "relationship": "corporate-sponsor",
           "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "01systems",
+          "url": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "Jackal Software",
+          "url": "https://opencollective.com/jackal-software",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "server.camp",
+          "url": "https://opencollective.com/servercamp",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "ComputerButler Germany UG",
+          "url": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "APPSInvent Inc.",
+          "url": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
+        },
+        {
+          "name": "Rad Web Hosting",
+          "url": "https://opencollective.com/radwebhosting",
+          "relationship": "corporate-sponsor",
+          "source": "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
         }
       ],
-      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors.",
+      "notes": "Sponsorship status limited to the official sources checked; donors and investors are not treated as corporate sponsors. Also explicitly thanked:01systems, JackalSoftware, server.camp, ComputerButlerGermanyUG, APPSInventInc. and RadWebHosting; corroborated financial organizations on OpenCollective. Recognition is cumulative/historical with2020–2025 starts, not proof all remain recurring2026 sponsors.",
       "sources": [
         "https://suitecrm.com/join-the-project/suitecrm-community-sponsorship/"
       ]

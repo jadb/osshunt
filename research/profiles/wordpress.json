@@ -124,9 +124,27 @@
           "url": "https://www.salesforce.com/",
           "relationship": "corporate-sponsor",
           "source": "https://wordpress.org/five-for-the-future/"
+        },
+        {
+          "name": "XWP",
+          "url": "https://wordpress.org/five-for-the-future/",
+          "relationship": "corporate-sponsor",
+          "source": "https://wordpress.org/five-for-the-future/"
+        },
+        {
+          "name": "Bluehost",
+          "url": "https://wordpress.org/five-for-the-future/",
+          "relationship": "corporate-sponsor",
+          "source": "https://wordpress.org/five-for-the-future/"
+        },
+        {
+          "name": "Multidots",
+          "url": "https://wordpress.org/five-for-the-future/",
+          "relationship": "corporate-sponsor",
+          "source": "https://wordpress.org/five-for-the-future/"
         }
       ],
-      "notes": "Official Five for the Future page identifies Salesforce’s in-kind Slack sponsorship; contributor pledges are distinct from equity investment.",
+      "notes": "Official Five for the Future page identifies Salesforce’s in-kind Slack sponsorship; contributor pledges are distinct from equity investment. Also verified in-kind staff contributions from XWP, Bluehost and Multidots in Contributor experiences. Salesforce infrastructure and these delivered staff-time examples are distinct; the wider pledge directory is not an audited complete corporate-donor list.",
       "sources": [
         "https://wordpress.org/five-for-the-future/"
       ]
