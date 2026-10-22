@@ -17,9 +17,9 @@ No Internet Archive requests made for this parser work. Fixtures are synthetic r
    `npm audit --json` reported zero known advisories. Empirically verified parser source offsets and entity decoding.
 6. Wrote extraction/link tests before implementation; both files failed with missing-module errors.
 7. Implemented inert parsing, conservative card/table/JSON-LD proposals and scoped historical links.
-8. Ran `node --test test/pricing-extract.test.mjs test/pricing-links.test.mjs`: 18 tests passed.
+8. Ran `node --test test/pricing-extract.test.mjs test/pricing-links.test.mjs`: 19 tests passed.
    Reintroduced original defects for space-delimited `/ month`, mixed displayed totals,
-   hidden-ancestor billing variants and object-vs-array structured evidence locators;
+   hidden-ancestor billing variants, object-vs-array structured evidence locators and malformed structured specifications;
    regression guards failed as expected, restored fixes, suite passed.
 9. Bundled extraction with esbuild `--bundle --format=esm --platform=browser --target=es2022`;
    imported bundle and checked structured offer extraction. No Node built-ins required.

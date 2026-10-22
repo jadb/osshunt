@@ -94,3 +94,9 @@ test('structured source locators distinguish object from array price specificati
   assert.match(r.plans[0].offers[0].source.locator, /:\$\[0\]\.priceSpecification$/);
   assert.match(r.plans[1].offers[0].source.locator, /:\$\[1\]\.priceSpecification\[0\]$/);
 });
+test('malformed structured specifications stay unavailable instead of throwing', () => {
+  const r = extractPricing('<script type="application/ld+json">{"@type":"Offer","name":"Pro","priceSpecification":[null,"not a specification",{"price":"9","priceCurrency":"USD"}]}</script>');
+  assert.equal(r.plans[0].offers.length, 1);
+  assert.equal(r.plans[0].offers[0].amount, '9');
+  assert.ok(r.issues.some(i => /invalid.*specification/i.test(i)));
+});
