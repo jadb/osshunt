@@ -24,3 +24,10 @@ test('Calendly billing state and host scope require affirmative evidence', () =>
  assert.equal(extractPricing(html,{originalUrl:'https://other.example/pricing'}).plans.length,0);
  assert.equal(extractPricing(html,{originalUrl:'https://calendly.com/product'}).plans.length,0);
 });
+test('hidden billing controls and negated recommendation prose do not establish active state', () => {
+ const modified=html.replace('<div role="button" aria-pressed="true" aria-label="Billed yearly"></div>', '<div hidden><div role="button" aria-pressed="true" aria-label="Billed yearly"></div></div>').replace('Recommended plan','Not recommended plan for solo users.');
+ const plans=extractPricing(modified,{originalUrl:'https://calendly.com/pricing'}).plans;
+ assert.equal(plans[1].offers[0].commitment,'unknown');assert.equal(plans[2].popular,null);
+ const hidden=extractPricing(html.replace('<h5>Standard','<span hidden></span><h5>Standard').replace('data-testid="pricing-plan-card"><span hidden','data-testid="pricing-plan-card" hidden><span hidden'),{originalUrl:'https://calendly.com/pricing'}).plans;
+ assert.equal(hidden[1].offers[0].qualifications.billingVariant,'unknown-active-variant');
+});
