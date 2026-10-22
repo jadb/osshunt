@@ -56,12 +56,20 @@ export function pricingForFrame(observations, frameDate) {
 
 export function offerLabel(offer) {
   const parts = [];
+  const literal = offer.literal || '';
+  const periods = {
+    month: /(?:\bper\s+|\/\s*)(?:month|mo)\b|\bmonthly\b/i,
+    year: /(?:\bper\s+|\/\s*)(?:year|yr)\b|\b(?:yearly|annually|annual)\b/i,
+    'one-time': /\bone[ -]time\b/i,
+  };
+  const unit = offer.unit?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const literalUnit = unit && new RegExp(`(?:\\bper\\s+|/\\s*|\\beach\\s+)${unit}s?(?=$|[\\s,.;/])`, 'i').test(literal);
   if (offer.literal) parts.push(offer.literal);
   else if (offer.amount != null) parts.push(`${offer.currency || 'Currency unknown'} ${offer.amount}`);
   else parts.push('Price unknown');
   if (offer.amount != null && !offer.currency) parts.push('currency unknown');
-  if (offer.billingPeriod && offer.billingPeriod !== 'unknown') parts.push(`per ${offer.billingPeriod}`);
-  if (offer.unit) parts.push(`per ${offer.unit}`);
+  if (offer.billingPeriod && offer.billingPeriod !== 'unknown' && !periods[offer.billingPeriod]?.test(literal)) parts.push(`per ${offer.billingPeriod}`);
+  if (offer.unit && !literalUnit) parts.push(`per ${offer.unit}`);
   if (offer.commitment && offer.commitment !== 'unknown') parts.push(`${offer.commitment} commitment`);
   if (offer.minimumQuantity != null) parts.push(`minimum ${offer.minimumQuantity}`);
   const q = offer.qualifications ?? {};

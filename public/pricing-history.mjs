@@ -7,6 +7,7 @@ const messages = {
   awaiting_discovery: 'Historical pricing has not been checked yet.',
   archive_cooldown: 'The archive has asked us to wait. Saved pricing remains available.',
   archive_unavailable: 'The archive is temporarily unavailable. Saved confirmed pricing remains available.',
+  inventory_limit: 'Pricing discovery reached its saved inventory limit. Confirmed observations remain available.',
   incomplete_inventory: 'Pricing discovery is incomplete. Continue the saved search when the archive is available.',
   missing_landing: 'No archived landing page was available for the sampled dates.',
   missing_pricing: 'No matching archived pricing page was available for the sampled dates.',
@@ -96,6 +97,9 @@ export class PricingHistory extends BaseElement {
     if (this.index < 0) this.index = this.observations.length - 1;
     if (this.getAttribute('frame-date')) this.associateFrame();
     this.render();
+    if (this.manifest.product) this.dispatchEvent(new CustomEvent('pricingload', {
+      detail: { product: this.manifest.product }, bubbles: true, composed: true,
+    }));
   }
   associateFrame() {
     this.associated = Boolean(this.getAttribute('frame-date'));

@@ -40,6 +40,12 @@ test('price labels preserve unknown currency and commitment rather than invent p
   assert.match(offerLabel({ amount: '12.50', currency: 'EUR', billingPeriod: 'month', unit: 'user' }), /EUR 12.50.*month.*user/);
 });
 
+test('offer labels avoid repeating literal periods and units while retaining qualifications', () => {
+  assert.equal(offerLabel({ literal: 'USD 12 per month per user', amount: '12', currency: 'USD', billingPeriod: 'month', unit: 'user', commitment: 'annual' }), 'USD 12 per month per user · annual commitment');
+  assert.equal(offerLabel({ literal: '$12/mo/user', amount: '12', currency: null, billingPeriod: 'month', unit: 'user', commitment: 'annual' }), '$12/mo/user · currency unknown · annual commitment');
+  assert.equal(offerLabel({ literal: 'USD 12', amount: '12', currency: 'USD', billingPeriod: 'month', unit: 'user' }), 'USD 12 · per month · per user');
+});
+
 test('pricing links require exact archive host, replay timestamp and matching source date', () => {
   const link = 'https://web.archive.org/web/20200131120000id_/https://example.com/pricing';
   assert.equal(sourceArchiveLink(link, '2020-01-31T12:00:00Z'), link);
@@ -71,16 +77,19 @@ test('pricing component aborts product switches, ignores stale replies, and fram
   try {
     const { PricingHistory } = await import('../public/pricing-history.mjs');
     const player = new PricingHistory();
+    const loaded = [];
+    player.addEventListener('pricingload', event => loaded.push(event.detail.product));
     player.setAttribute('product-id', 'one');
     const first = player.load(true);
     player.setAttribute('product-id', 'two');
     const second = player.load(true);
     assert.equal(requests[0].options.signal.aborted, true);
-    reply(requests[1], { status: 'confirmed', nextCheckAt: '2999-01-01', observations: [observation({ id: 'two', productId: 'two', plans: [{ name: '<img src=x onerror=alert(1)>', status: 'quote', offers: [{ literal: 'Contact sales', amount: null, currency: null }], features: [{ name: 'Members', value: 'Unlimited' }] }] })] });
+    reply(requests[1], { product: { id: 'two', name: 'Product Two' }, status: 'confirmed', nextCheckAt: '2999-01-01', observations: [observation({ id: 'two', productId: 'two', plans: [{ name: '<img src=x onerror=alert(1)>', status: 'quote', offers: [{ literal: 'Contact sales', amount: null, currency: null }], features: [{ name: 'Members', value: 'Unlimited' }] }] })] });
     await second;
     reply(requests[0], { status: 'confirmed', observations: [observation({ id: 'one' })] });
     await first;
     assert.equal(player.observations[0].id, 'two');
+    assert.deepEqual(loaded, [{ id: 'two', name: 'Product Two' }], 'pricing load exposes product identity without an image or extra requests');
     const card = player.$('.plans').children[0];
     assert.equal(card.children[0].textContent, '<img src=x onerror=alert(1)>', 'archived names stay inert text');
     assert.match(card.children[1].textContent, /Contact sales/);

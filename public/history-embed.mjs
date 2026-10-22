@@ -16,14 +16,18 @@ export function initializeEmbed({ search, document: page }) {
   if (pricing) pricing.hidden = false;
   error.hidden = true;
   page.querySelector('#embed-gallery').href = `/?product=${encodeURIComponent(productId)}`;
+  const updateTitle = product => {
+    if (typeof product?.name !== 'string' || !product.name) return;
+    page.querySelector('#embed-title').textContent = product.name;
+    page.title = `${product.name} website history — OSS Hunt`;
+  };
+  pricing?.addEventListener('pricingload', event => {
+    if (event.detail?.product?.id === productId) updateTitle(event.detail.product);
+  });
   player.addEventListener('framechange', event => {
     const capturedAt = event.detail?.frame?.capturedAt;
     if (pricing && capturedAt) pricing.setAttribute('frame-date', capturedAt);
-    const name = player.manifest?.product?.name;
-    if (name) {
-      page.querySelector('#embed-title').textContent = name;
-      page.title = `${name} website history — OSS Hunt`;
-    }
+    updateTitle(player.manifest?.product);
   });
   if (pricing) pricing.setAttribute('product-id', productId);
   player.setAttribute('product-id', productId);
