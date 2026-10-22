@@ -12,6 +12,7 @@ export class WebsiteHistory extends BaseElement {
     this.playing = false;
     this.loading = false;
     this.imageLoading = false;
+    this.pendingIndex = null;
     this.imageToken = 0;
     this.requestToken = 0;
     this.failed = false;
@@ -39,8 +40,9 @@ export class WebsiteHistory extends BaseElement {
     this.$('.next').addEventListener('click', () => this.step(1));
     this.$('.play').addEventListener('click', () => this.togglePlayback());
     this.$('#history-position').addEventListener('input', event => {
+      const target = Number(event.target.value);
       this.pause();
-      this.showFrame(Number(event.target.value));
+      this.showFrame(target);
     });
     this.$('#history-speed').addEventListener('change', () => this.schedule());
     this.$('.reload').addEventListener('click', () => this.imageError ? this.showFrame(this.failedImageIndex) : this.load());
@@ -89,6 +91,7 @@ export class WebsiteHistory extends BaseElement {
       this.manifest = null; this.index = -1; this.imageToken++;
       this.imageError = null;
       this.imageLoading = false;
+      this.pendingIndex = null;
       this.$('.image-loading').hidden = true;
       this.$('.image-stage').setAttribute('aria-busy', 'false');
       this.$('.image-mount').replaceChildren();
@@ -184,6 +187,7 @@ export class WebsiteHistory extends BaseElement {
     const frame = this.frames[index];
     const token = ++this.imageToken;
     this.imageLoading = true;
+    this.pendingIndex = index;
     this.updateControls();
     this.$('.image-loading').hidden = false;
     this.$('.image-stage').setAttribute('aria-busy', 'true');
@@ -204,6 +208,7 @@ export class WebsiteHistory extends BaseElement {
     image.onerror = null;
     if (token !== this.imageToken) return false;
     this.imageLoading = false;
+    this.pendingIndex = null;
     this.$('.image-loading').hidden = true;
     this.$('.image-stage').setAttribute('aria-busy', 'false');
     if (!success) {
@@ -240,10 +245,11 @@ export class WebsiteHistory extends BaseElement {
     this.$('.play-label').textContent = this.playing ? 'Pause history' : 'Play history';
     this.$('.play-icon').textContent = this.playing ? 'Ⅱ' : '▶';
     const slider = this.$('#history-position');
+    const position = this.pendingIndex ?? this.index;
     slider.disabled = !hasMany;
     slider.max = Math.max(0, count - 1);
-    slider.value = Math.max(0, this.index);
-    slider.setAttribute('aria-valuetext', this.index >= 0 ? `${archiveDate(this.frames[this.index]?.capturedAt)}, image ${this.index + 1} of ${count}` : 'No image selected');
+    slider.value = Math.max(0, position);
+    slider.setAttribute('aria-valuetext', position >= 0 ? `${archiveDate(this.frames[position]?.capturedAt)}, image ${position + 1} of ${count}` : 'No image selected');
     this.$('#history-speed').disabled = !hasMany;
     this.$('.enlarge').disabled = this.index < 0;
     this.$('.reload').disabled = this.loading || this.imageLoading;

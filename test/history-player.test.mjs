@@ -106,6 +106,17 @@ test('player preserves a loaded image on failure, pauses, and ignores superseded
     player.manifest.error = null;
     assert.equal(player.$('.next').disabled, true);
     assert.equal(player.$('#history-position').getAttribute('aria-valuetext'), 'January 1, 2021, image 3 of 3');
+    const slider = player.$('#history-position');
+    slider.value = '0';
+    slider.dispatchEvent(new Event('input'));
+    const scrubbedImage = images.at(-1);
+    const scrubbedSource = scrubbedImage.src;
+    const pendingPosition = Number(slider.value);
+    scrubbedImage.onload();
+    await new Promise(resolve => setImmediate(resolve));
+    assert.match(scrubbedSource, /\/frames\/first\/image$/, 'range input loads the requested position before pause can reset it');
+    assert.equal(pendingPosition, 0, 'slider retains the requested position while image loads');
+    assert.equal(player.index, 0, 'range input selects the requested frame');
     player.manifest.frames = [];
     player.index = -1;
     player.updateControls();
