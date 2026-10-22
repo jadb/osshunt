@@ -159,3 +159,70 @@ test('landing extraction does not treat an explicitly unsupported whole-product 
   assert.equal(row.proposal.provenance, 'archived-link');
   assert.equal(row.proposal.pricingUrl, 'https://sample.example.com/pricing');
 });
+
+for (const mode of ['operator', 'production']) for (const dedicated of ['priced', 'missing'])
+  test(`${mode} defers unknown-price landing structure until dedicated pricing is ${dedicated}`, async t => {
+    const partial = { ...observation().plans[0], status: 'unknown', offers: [] };
+    const f = await fixture(t, { landingHtml: '<a href="/pricing">Pricing</a>', extractor: (html, opts) =>
+      opts.originalUrl === product.url ? { plans: [partial], quality: 'partial', issues: ['No archived price'],
+        diagnostics: { classification: 'partial_pricing', flags: [] } } : extractPricing(html, opts) });
+    const originalQuery = f.common.archive.queryLatestHtml;
+    const originalPage = f.common.archive.queryHtmlPage;
+    if (dedicated === 'missing') {
+      f.common.archive.queryLatestHtml = async url => url === product.url ? originalQuery(url) : { record: null, query: { url, status: 200 } };
+      f.common.archive.queryHtmlPage = async url => url === product.url ? originalPage(url) : { records: [], query: { url, status: 200 }, complete: true, resumeKey: null };
+    }
+    let proposal;
+    if (mode === 'operator') proposal = (await f.sample()).products[0].proposal;
+    else {
+      await f.refresh();
+      const paused = (await f.store.read(product.id)).checkpoint;
+      assert.equal(paused.complete, false, 'dedicated query consumes request budget before body retrieval');
+      assert.equal(paused.active.landingFallback.provenance, 'landing-page');
+      for (let i = 0; i < 5; i++) { await f.refresh(); if ((await f.store.read(product.id)).checkpoint.complete) break; }
+      proposal = (await f.store.read(product.id)).checkpoint.proposals[0];
+    }
+    assert.equal(proposal.provenance, dedicated === 'priced' ? 'archived-link' : 'landing-page');
+    assert.equal(proposal.plans[0].offers[0]?.amount ?? null, dedicated === 'priced' ? '12.50' : null);
+    assert.equal(proposal.plans[0].status, dedicated === 'priced' ? 'paid' : 'unknown');
+    assert.equal(proposal.reviewState, 'proposed');
+  });
+
+test('operator resumes a partial landing fallback without repeating source calls and rejects an edited fallback', async t => {
+  let landingExtractions = 0, saved;
+  const partial = { ...observation().plans[0], status: 'unknown', offers: [] };
+  const f = await fixture(t, { landingHtml: '<a href="/pricing">Pricing</a>', extractor: (html, opts) => {
+    if (opts.originalUrl === product.url) {
+      landingExtractions++;
+      return { plans: [partial], quality: 'partial', issues: [] };
+    }
+    return extractPricing(html, opts);
+  } });
+  await assert.rejects(f.sample({ save: async state => {
+    saved = structuredClone(state);
+    if (state.products[0].stage === 'links') throw Error('simulated pause');
+  } }), /persist/);
+  assert.equal(saved.products[0].landingFallback.provenance, 'landing-page');
+  assert.equal(f.calls.length, 2);
+  const edited = structuredClone(saved);
+  edited.products[0].landingFallback.sourceSha256 = 'a'.repeat(64);
+  await assert.rejects(f.sample({ journal: edited }), /capture|evidence/i);
+  assert.equal(f.calls.length, 2);
+  const resumed = await f.sample({ journal: saved });
+  assert.equal(resumed.products[0].proposal.provenance, 'archived-link');
+  assert.equal(landingExtractions, 1);
+  assert.equal(f.calls.length, 4);
+});
+
+for (const mode of ['operator', 'production']) for (const kind of ['paid', 'quote'])
+  test(`${mode} actionable ${kind} landing pricing avoids an unnecessary dedicated lookup`, async t => {
+    const html = (kind === 'paid' ? pricingHtml : '<article class="pricing-card"><h2>Enterprise</h2><p>Contact sales</p></article>') +
+      '<a href="/pricing">Pricing</a>';
+    const f = await fixture(t, { landingHtml: html });
+    let proposal;
+    if (mode === 'operator') proposal = (await f.sample()).products[0].proposal;
+    else { await f.refresh(); proposal = (await f.store.read(product.id)).checkpoint.proposals[0]; }
+    assert.equal(proposal.provenance, 'landing-page');
+    assert.equal(proposal.plans[0].status, kind);
+    assert.equal(f.calls.length, 2);
+  });
