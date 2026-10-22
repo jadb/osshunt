@@ -78,4 +78,22 @@ The reusable sampler now validates the whole cohort before source requests, free
 
 The report generator separates raw fragments, schema-valid proposals and confirmation, while excluding cookies, HTML and private checkpoints. Cached evidence supports offline integrity checks and discovery comparisons without consuming source requests. Discovery changes are evaluated after the immutable baseline; improvements cannot retroactively raise its coverage.
 
+The [post-baseline discovery shadow](pricing-twenty-tool-discovery-shadow.json) rechecked 15 retained landing pages with zero source requests. Four selections changed: 1Password's competitor comparison gave way to its labelled pricing hint; Confluence's Marketing Plan and Mattermost's generic comparison disappeared; Zendesk's Accessibility Plan gave way to its pricing root. Newly selected sources were not fetched or counted as successful extractions. XAM still precedes 1Password's general pricing, so edition selection remains unresolved.
+
+An initial offline correction also lost genuine HubSpot and Microsoft links and displaced Google's plain pricing URL. Exact retained-anchor regression tests exposed those problems before further collection. The final correction preserves those three baseline selections, strengthens explicit pricing labels, and ranks tracking-only query variants lower only when a matching query-free archived anchor exists. Exact URLs and provenance remain separate; billing, region and active-tab query variants are not merged. Ranking remains a discovery heuristic, not proof of edition equivalence.
+
+| Work performed | Automation evidence / remaining manual step |
+| --- | --- |
+| Freeze cohort, parser and catalog inputs | Manifest saved before live collection; changed-parser journal replay rejected before any fetch. |
+| Collect and stage sources | One serial batch; 78 audited requests; source restrictions and integrity rejections retained. |
+| Check interruption and rate-limit behavior | Synthetic tests cover durable-candidate resume, lease/checkpoint ownership, shared cooldown and retryable exit status. No live 429 occurred. |
+| Check repeat and cache integrity | Completed frozen replay made zero fetch attempts; 37 evidence roles independently verified offline. |
+| Review every nonempty extraction | Mailchimp's ten fragments and 17 offers inspected; none publishable. Manual semantic review remains required. |
+| Diagnose empty results | Retained sources reviewed separately for static prices, embedded data and wrong product scope; absence of parser output never treated as absence of pricing. |
+| Correct discovery | Offline shadow plus minimal source-anchor regression tests; original defects reintroduced to confirm test failures, then restored green. |
+
+No bespoke product adapter was added to improve the blind result. Collection implementation, offline review and subsequent discovery corrections were human-directed interventions; active effort was not timed. This run therefore supports repeatable staging and diagnostics, not a claim of zero-touch operation.
+
+Final local validation: `make check` passed the collection/site build, schema checks, 261 Node tests and five Python tests. Regression tests failed when the original defects were reintroduced and passed after restoration. No production deployment was performed for this verification.
+
 **Automate collection, cache reuse, audit export and integrity checks. Keep extraction and publication behind explicit review.** Next work: generic static card/table extraction with billing and product-group relationships; supported embedded-data readers with proven amount units; edition/deployment scope and pricing aliases; broader held-out evaluations with measured review effort. Current full-history inventory limits also remain unresolved. These 20 tools validate a bounded process and expose its gaps; they do not establish general pricing accuracy or complete six-month histories.

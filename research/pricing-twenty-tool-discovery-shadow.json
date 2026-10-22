@@ -1,0 +1,236 @@
+{
+  "formatVersion": 1,
+  "mode": "offline-link-fix-shadow",
+  "baselineChanged": false,
+  "sourceRequests": 0,
+  "landings": 15,
+  "changed": 4,
+  "results": [
+    {
+      "productId": "1password",
+      "changed": true,
+      "before": [
+        "https://1password.com/pricing/xam",
+        "https://1password.com/compare/password-manager"
+      ],
+      "after": [
+        "https://1password.com/pricing/xam",
+        "https://1password.com/pricing"
+      ],
+      "removed": [
+        "https://1password.com/compare/password-manager"
+      ],
+      "added": [
+        "https://1password.com/pricing"
+      ],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "confluence",
+      "changed": true,
+      "before": [
+        "https://www.atlassian.com/software/confluence/pricing",
+        "https://www.atlassian.com/software/confluence/templates/marketing-plan"
+      ],
+      "after": [
+        "https://www.atlassian.com/software/confluence/pricing"
+      ],
+      "removed": [
+        "https://www.atlassian.com/software/confluence/templates/marketing-plan"
+      ],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "jira",
+      "changed": false,
+      "before": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ],
+      "after": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "hubspot",
+      "changed": false,
+      "before": [
+        "https://www.hubspot.com/products/sales"
+      ],
+      "after": [
+        "https://www.hubspot.com/products/sales"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "intercom",
+      "changed": false,
+      "before": [
+        "https://www.intercom.com/pricing"
+      ],
+      "after": [
+        "https://www.intercom.com/pricing"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "zendesk",
+      "changed": true,
+      "before": [
+        "https://www.zendesk.com/pricing/featured/",
+        "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/"
+      ],
+      "after": [
+        "https://www.zendesk.com/pricing/featured/",
+        "https://www.zendesk.com/pricing/"
+      ],
+      "removed": [
+        "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/"
+      ],
+      "added": [
+        "https://www.zendesk.com/pricing/"
+      ],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "mailchimp",
+      "changed": false,
+      "before": [
+        "https://mailchimp.com/pricing/marketing/",
+        "https://mailchimp.com/pricing/marketing/compare-plans/"
+      ],
+      "after": [
+        "https://mailchimp.com/pricing/marketing/",
+        "https://mailchimp.com/pricing/marketing/compare-plans/"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "datadog",
+      "changed": false,
+      "before": [
+        "https://www.datadoghq.com/pricing/"
+      ],
+      "after": [
+        "https://www.datadoghq.com/pricing/"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "google-workspace",
+      "changed": false,
+      "before": [
+        "https://workspace.google.com/",
+        "https://workspace.google.com/pricing.html"
+      ],
+      "after": [
+        "https://workspace.google.com/",
+        "https://workspace.google.com/pricing.html"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "microsoft-365",
+      "changed": false,
+      "before": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+        "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing"
+      ],
+      "after": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+        "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "squarespace",
+      "changed": false,
+      "before": [
+        "https://www.squarespace.com/pricing"
+      ],
+      "after": [
+        "https://www.squarespace.com/pricing"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "webflow",
+      "changed": false,
+      "before": [
+        "https://webflow.com/pricing"
+      ],
+      "after": [
+        "https://webflow.com/pricing"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "ghost",
+      "changed": false,
+      "before": [
+        "https://ghost.org/pricing/"
+      ],
+      "after": [
+        "https://ghost.org/pricing/"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "mattermost",
+      "changed": true,
+      "before": [
+        "https://mattermost.com/pricing/",
+        "https://mattermost.com/compare/"
+      ],
+      "after": [
+        "https://mattermost.com/pricing/"
+      ],
+      "removed": [
+        "https://mattermost.com/compare/"
+      ],
+      "added": [],
+      "sourceRequests": 0
+    },
+    {
+      "productId": "passbolt",
+      "changed": false,
+      "before": [
+        "https://www.passbolt.com/pricing/pro",
+        "https://www.passbolt.com/pricing/cloud"
+      ],
+      "after": [
+        "https://www.passbolt.com/pricing/pro",
+        "https://www.passbolt.com/pricing/cloud"
+      ],
+      "removed": [],
+      "added": [],
+      "sourceRequests": 0
+    }
+  ],
+  "baselineParserCommit": "3ebf6a6b75a3bf5a018a5d3ff80bde63a6b6abc0",
+  "discoveryCommit": "a085fdb5744b0b2e9b10cf039d5d7dba54bad103",
+  "candidateLimit": 2,
+  "baselineJournalSha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+  "newSourcesFetched": false
+}
