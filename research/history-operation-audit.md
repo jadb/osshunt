@@ -73,3 +73,7 @@ The batch's initial two-second spacing proved too aggressive. Default spacing is
 - Use cache-only probes before every image backfill; skip existing bytes and stop on rate limits.
 - Re-run dry run, migrations and binding checks for storage changes; inspect retention rules independently of CDN headers.
 - Promote live integration failures into stream/lifecycle/request-header tests, preserving source bytes and exact capture dates.
+
+## Portable embedding verification
+
+Added `/embed.html?product=ID` and [embedding instructions](../docs/embedding.md). A separate-origin HTTP page embedded the deployed HTTPS player using the documented iframe. WordPress heading, 54-frame inventory, original archive link, and stepping from 2011-12-21 to 2012-01-30 verified in the browser without parent-side scripts or API CORS configuration. Browser error log empty. Unit guards reject absent/invalid identifiers before initialization; HTTP flow verifies the standalone embed is served without frame-blocking headers. Full gate: 106 Node tests and 5 Python tests pass.

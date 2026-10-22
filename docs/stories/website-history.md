@@ -9,5 +9,6 @@ Acceptance:
 - Frame dates reflect original screenshot captures at least 30 days apart.
 - Existing image copies persist, and repeated visitors share the same 30-day refresh gate.
 - A failed load preserves the previous visible image; a failed check preserves known history.
+- A product-only iframe embeds on another website without a parent-side script or cross-origin API setup; native same-origin embedding and hosting requirements are documented.
 
 Verification: history module/service/player/backfill tests; live archive image proof and browser playback checks described in the operation report.

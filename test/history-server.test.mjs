@@ -26,6 +26,11 @@ test('HTTP gallery flow discovers history, fills once and serves immutable image
   t.after(() => new Promise(resolve => server.close(resolve)));
   const base = `http://127.0.0.1:${server.address().port}`;
   assert.match(await (await fetch(base)).text(), /<website-history/);
+  const embed = await fetch(`${base}/embed.html?product=fixture`);
+  assert.equal(embed.status, 200);
+  assert.match(await embed.text(), /history-embed\.mjs/);
+  assert.equal(embed.headers.get('x-frame-options'), null, 'hosted embed can be framed on another website');
+  assert.doesNotMatch(embed.headers.get('content-security-policy') || '', /frame-ancestors\s+'(?:none|self)'/);
   assert.deepEqual(await (await fetch(`${base}/api/catalog`)).json(), catalog);
   assert.equal((await (await fetch(`${base}/api/history/fixture`)).json()).status, 'pending');
   const refresh = () => fetch(`${base}/api/history/fixture/refresh`, { method: 'POST' });

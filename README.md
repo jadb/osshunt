@@ -10,6 +10,7 @@ A sourced seed for discovering open-source alternatives to software businesses p
 - [Refresh workflow, repeated steps and test opportunities](docs/research-workflow.md)
 - [Collections contract and queries](docs/collections.md)
 - [Website history player, preview and deployment](docs/website-history.md)
+- [Embed a player on any page — snippets and requirements](docs/embedding.md)
 
 Audience positions are editorial reach estimates, not measured market-size counts. A/B/C describe paid feature restrictions; S/U entries stay outside default OSS recommendations. Migration fit is recorded per mapping. A does not mean feature parity with the paid incumbent or free infrastructure.
 

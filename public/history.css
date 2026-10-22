@@ -16,6 +16,10 @@
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; background: var(--paper); }
+.embed-page { padding: 12px; }
+.embed-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.embed-heading h1 { margin: 0; font: 400 22px/1.2 var(--serif); letter-spacing: -.5px; }
+.embed-heading a { font-size: 11px; white-space: nowrap; }
 button, input, select { font: inherit; }
 button, select { cursor: pointer; }
 button { color: inherit; }

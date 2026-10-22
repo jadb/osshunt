@@ -44,14 +44,16 @@ The batch waits one minute between products and new image copies (`--delay-ms` a
 
 ## Embed
 
-Serve the module and stylesheet with the backend on the same origin:
+For any website, use the standalone iframe at `/embed.html?product=ID`. [Copy-and-paste examples, requirements and troubleshooting](embedding.md) cover hosted iframes, native components, reverse proxies and independent hosting.
+
+For a native component, serve the module, its helper and stylesheet with the backend on the same origin:
 
 ```html
 <script type="module" src="/history-player.mjs"></script>
-<website-history product-id="slack"></website-history>
+<website-history product-id="wordpress"></website-history>
 ```
 
-`api-base` can select another backend when the hosting application supplies appropriate cross-origin access. The player emits `framechange` with `{frame,index,total}`. The standalone gallery uses `?product=ID` for shareable selection.
+`api-base` can select another backend when that backend supplies appropriate cross-origin access; it does not enable CORS by itself. The deployed service's native API is same-origin. The iframe works across websites without exposing a cross-origin API. The player emits `framechange` with `{frame,index,total}`. The standalone gallery uses `?product=ID` for shareable selection.
 
 ## Cloudflare backend
 
