@@ -1,0 +1,571 @@
+{
+  "formatVersion": 1,
+  "mode": "independent-retained-source-review",
+  "sourceRequests": 0,
+  "confirmedObservations": 0,
+  "rawPlans": 0,
+  "validProposals": 0,
+  "offerPrecision": "Not estimable: no raw offers or valid proposals, so zero denominator.",
+  "classificationCounts": {
+    "static_pricing_unsupported": 3,
+    "missing_landing_in_window": 5,
+    "mixed_discovery_integrity_gap": 1,
+    "partial_client_pricing_gap": 1,
+    "discovery_locale_bundle_scope_gap": 1,
+    "static_landing_pricing_with_discovery_scope_gap": 2,
+    "client_rendered_fallback_shell": 1,
+    "source_size_policy_gap": 1,
+    "incomplete_static_landing_rate_missing_pricing_capture": 1,
+    "quote_only_static_structure_miss": 1,
+    "missing_pricing_capture": 1,
+    "no_pricing_candidate_discovered": 1,
+    "embedded_landing_offers_missing_pricing_capture": 1
+  },
+  "manualEffort": {
+    "activeReviewMinutes": null,
+    "engineeringMinutes": null,
+    "note": "Active effort not separately instrumented; live collection timestamps and source traces retained."
+  },
+  "products": [
+    {
+      "productId": "front",
+      "classification": "static_pricing_unsupported",
+      "finding": "Retained pricing page contains named Starter, Growth, Scale and Premier tiers, billing and seat qualifications, a feature comparison and separate add-ons; parser returned zero plans.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Dollar glyph alone does not establish ISO currency.",
+        "Starter upper seat limit is not a minimum.",
+        "Growth free 14-day trial is not a recurring free tier.",
+        "Add-ons use separate seat/month, resolution and conversation units."
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://front.com/",
+          "capturedAt": "2025-06-25T07:47:00.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625074700id_/https://front.com/",
+          "grade": "verified",
+          "sha256": "4ed84154739bd39be541a42355495b2457392eb4bcbfd4ff7533557a9cbb786d"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://front.com/pricing",
+          "capturedAt": "2025-06-14T10:47:19.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250614104719id_/https://front.com/pricing",
+          "grade": "verified",
+          "sha256": "90baa14c266beecd500906346cda975d7ea65cdac6bdf0763d63725068f5ec6f"
+        }
+      ]
+    },
+    {
+      "productId": "microsoft-outlook",
+      "classification": "missing_landing_in_window",
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "baselineStatus": "missing_landing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "sources": []
+    },
+    {
+      "productId": "adobe-acrobat",
+      "classification": "mixed_discovery_integrity_gap",
+      "finding": "Verified landing contains unresolved price/term macros and external Adobe merch fragments, plus individual, student, business and standard/pro links. Student candidate has no capture; second comparison candidate record exists but replay was rejected for digest mismatch and not retained. Aggregate missing_pricing masks that integrity failure.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Cannot classify rejected pricing body as static, embedded, empty or quote-only.",
+        "Student edition consumed first candidate; canonical general pricing hint was not reached within the two-candidate budget.",
+        "Landing remote fragment and milo.adobe.com price sources are not approved retained pricing evidence; no external fetch or script execution attempted."
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+          "grade": "verified",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "capturedAt": "2025-06-29T20:22:37.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629202237id_/https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "grade": "missing"
+        }
+      ]
+    },
+    {
+      "productId": "smallpdf",
+      "classification": "partial_client_pricing_gap",
+      "finding": "Verified pricing HTML contains Free, Pro and Pro for Teams names, features, billing labels and team range, but paid amounts remain literal ellipsis placeholders. Free zero is visible. Large preloaded state contains mixed executable expressions and content/translation data; no defensible paid numeric price found in inspected data.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Not a genuinely empty JavaScript shell: plan structure and free tier exist.",
+        "No claim that paid amounts are recoverable from inline data; no scripts evaluated.",
+        "Do not turn placeholders, team range, trial duration or plan prices into invented amounts.",
+        "Monthly/yearly active billing state and currency require explicit evidence."
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://smallpdf.com/",
+          "capturedAt": "2025-06-30T04:34:28.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630043428id_/https://smallpdf.com/",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "03be87e02edf4a7b22348a665b685ad2441bd770be585f96cb545144c040d4b7"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://smallpdf.com/pricing",
+          "capturedAt": "2025-06-16T01:10:18.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing",
+          "grade": "verified",
+          "sha256": "cb6b7c40c7d3360e7359c2dd39599c7083be58bfc4d299783e1f578be3687b43"
+        }
+      ]
+    },
+    {
+      "productId": "microsoft-teams",
+      "classification": "missing_landing_in_window",
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "baselineStatus": "missing_landing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "sources": []
+    },
+    {
+      "productId": "google-meet",
+      "classification": "discovery_locale_bundle_scope_gap",
+      "finding": "Verified retained landing is German-language content at the canonical products/meet URL. It explicitly links German Workspace pricing pages outside the configured /products/meet prefix. No approved pricing candidate was retained; this is not evidence that no pricing page or paid offering exists.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Retain observed German locale; do not assume English/USD from catalog URL.",
+        "Meet premium functionality is described through Workspace and Google One bundles; those require explicit product/edition association.",
+        "Empty rejectedCandidates array does not mean no source pricing links: link helper filtered scope before recording candidates."
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://workspace.google.com/products/meet/",
+          "capturedAt": "2025-06-30T23:53:00.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+          "grade": "verified",
+          "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76"
+        }
+      ]
+    },
+    {
+      "productId": "wix",
+      "classification": "static_pricing_unsupported",
+      "finding": "Retained pricing HTML contains named Business Elite, Business, Core and Light tiers with literal monthly amounts, features and recommendation; parser returned zero plans. Currency/tax interpretation is unresolved because visible dollar/GST text, VAT caveat and embedded EUR/en-ie site configuration do not establish one consistent offer basis.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No normalized currency inferred from dollar glyph or generic site currency configuration.",
+        "Do not silently choose between GST-inclusive card text and VAT-exclusive caveat.",
+        "A 14-day money-back guarantee and Start for Free CTA do not establish free recurring paid tiers.",
+        "Commitment unknown unless an explicit active billing state can be tied to these offers."
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.wix.com/",
+          "capturedAt": "2025-06-30T22:11:08.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630221108id_/https://www.wix.com/",
+          "grade": "verified",
+          "sha256": "3470a182b501cef639ecf7d9f5dc6850bbce743df4328b6928c3573cda53a570"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://www.wix.com/plans",
+          "capturedAt": "2025-06-26T21:26:50.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626212650id_/https://www.wix.com/plans",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "68c8688f006afa176dd1a3ee2ad0284bc69557f9f835cf2a13fca6b07afc658f"
+        }
+      ]
+    },
+    {
+      "productId": "acronis-cyber-protect",
+      "classification": "missing_landing_in_window",
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "baselineStatus": "missing_landing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "sources": []
+    },
+    {
+      "productId": "backblaze-business-backup",
+      "classification": "static_landing_pricing_with_discovery_scope_gap",
+      "finding": "Verified business landing itself contains named Business Backup price and Enterprise Control add-on information. No approved pricing candidate was selected. Landing links Computer Backup pricing at a sibling path outside the /cloud-backup/business prefix; unrelated B2 storage pricing is also present.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Missing_pricing does not mean no retained priced source material: landing already has offers.",
+        "Per-computer basis must not become per-user or organization price.",
+        "Separate add-on explicit amount from quote-only customized enterprise configuration.",
+        "Sibling Computer Backup pricing needs a verified product alias; B2 storage pricing is a different product.",
+        "Do not normalize currency from dollar glyph alone."
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.backblaze.com/cloud-backup/business",
+          "capturedAt": "2025-06-24T16:27:54.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+          "grade": "verified",
+          "sha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7"
+        }
+      ]
+    },
+    {
+      "productId": "masv",
+      "classification": "missing_landing_in_window",
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "baselineStatus": "missing_landing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "sources": []
+    },
+    {
+      "productId": "wetransfer",
+      "classification": "client_rendered_fallback_shell",
+      "finding": "Verified pricing HTML and legacy-unverified landing show a JavaScript-required failure fallback, not a price list. Embedded Next data contains locale/configuration, no retained plan amounts. The first plan-limit hint has no eligible pricing capture; the second exact pricing URL has this shell.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "landing archive digest remains legacy unverified",
+        "No claim that executing or downloading historical external JavaScript would recover prices"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://wetransfer.com/",
+          "capturedAt": "2025-06-30T23:18:40.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630231840id_/https://wetransfer.com/",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "c67c443d838a9d055b4217d0c6b5bab3149ead608a21ab351dfec42737dfa40a"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://wetransfer.com/pricing",
+          "capturedAt": "2025-06-16T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250616030427id_/https://wetransfer.com/pricing",
+          "grade": "verified",
+          "sha256": "eddda15aa814b150fb687619b300082bae03e7d385885662046c4e2f545393da"
+        }
+      ]
+    },
+    {
+      "productId": "cal-com",
+      "classification": "source_size_policy_gap",
+      "finding": "Exact landing record selected, but replay exceeds the configured response-size limit before a retained body is available. No inference about plan structure or JavaScript requirements is possible.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "archive_too_large",
+        "No verified cached landing HTML"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://cal.com/",
+          "capturedAt": "2025-06-30T03:15:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630031558id_/https://cal.com/",
+          "grade": "missing"
+        }
+      ]
+    },
+    {
+      "productId": "docusign",
+      "classification": "static_landing_pricing_with_discovery_scope_gap",
+      "finding": "Verified landing contains named eSignature tiers, monthly-equivalent amounts, annual bills and a separate trial. No candidate selected because its pricing link uses an unapproved subdomain and path.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Catalog edition/deployment unknown",
+        "Dollar symbol does not independently establish ISO currency",
+        "Landing prices were not extracted by the frozen pipeline",
+        "30-day trial and $36 savings statistic are not recurring prices"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.docusign.com/products/electronic-signature",
+          "capturedAt": "2025-06-20T00:45:50.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+          "grade": "verified",
+          "sha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d"
+        }
+      ]
+    },
+    {
+      "productId": "expensify",
+      "classification": "incomplete_static_landing_rate_missing_pricing_capture",
+      "finding": "Legacy-qualified landing contains a company starting rate per member and an individual-free-use claim, without a billing period or named tier tied to that rate. Exact query-bearing pricing hint has no eligible capture.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Billing interval unknown: do not infer $5/month",
+        "Starting rate, not unconditional fixed price",
+        "Individual free use is distinct from company pricing",
+        "The archived payload digest remains unverified"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.expensify.com/",
+          "capturedAt": "2025-06-29T12:11:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629121129id_/https://www.expensify.com/",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "0afa7c76c7c683abf1336927a8dcd33247e563cadb956ba059b8f5c4d62564fa"
+        }
+      ]
+    },
+    {
+      "productId": "sap-concur",
+      "classification": "missing_landing_in_window",
+      "finding": "Exact Concur Expense landing index has no eligible record in the fixed window; no retained landing or pricing HTML supports semantic classification.",
+      "baselineStatus": "missing_landing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No inference that the product is quote-only or requires JavaScript"
+      ],
+      "sources": []
+    },
+    {
+      "productId": "spendesk",
+      "classification": "quote_only_static_structure_miss",
+      "finding": "Verified pricing HTML describes a Foundations base package, selectable functional modules and contact-based quotation with no numeric subscription rates. Transaction volume changes pricing; monthly rolling and annual contract options are stated. The secondary subscription-management URL is a feature page, not a vendor pricing page.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Free quote and zero physical card fees are not a free product tier",
+        "Base package plus optional modules is not a ranked tier ladder",
+        "Candidate false positive: /platform/subscription-management/",
+        "Landing payload digest remains legacy unverified"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.spendesk.com/",
+          "capturedAt": "2025-06-24T11:24:01.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624112401id_/https://www.spendesk.com/",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "9c4672110e8575f0bc770298f9d338f9ec036c89c1f1ee9051dcc082dadfabfe"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://www.spendesk.com/pricing/",
+          "capturedAt": "2025-06-15T00:14:01.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/",
+          "grade": "verified",
+          "sha256": "92878086c058d8849beb67428c1e5cf362c5d29b6a4a8781f4c68ddc4364f263"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://www.spendesk.com/platform/subscription-management/",
+          "capturedAt": "2025-06-24T09:54:54.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624095454id_/https://www.spendesk.com/platform/subscription-management/",
+          "grade": "verified",
+          "sha256": "e64ba933d6ac6f906afb3c11e9e530c72ed62a4cb07303cbd2a3f7c4dc7c179f"
+        }
+      ]
+    },
+    {
+      "productId": "docuware",
+      "classification": "missing_pricing_capture",
+      "finding": "Verified product landing contains demos, use cases and trial-related calls to action but no published rate structure. The exact FAQ pricing hint has no eligible archived capture. Hint content was not fetched, so quote-only or wrong-page status is unproven.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "No pricing-body semantics available",
+        "Do not infer subscription cost from free webinars or demo offers"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://start.docuware.com/",
+          "capturedAt": "2025-06-25T04:02:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625040212id_/https://start.docuware.com/",
+          "grade": "verified",
+          "sha256": "3a76919463a3e1dc28e4d1c306c451d131654d422d610258cf03ab3773431b87"
+        }
+      ]
+    },
+    {
+      "productId": "m-files",
+      "classification": "no_pricing_candidate_discovered",
+      "finding": "Verified product landing has a 30-day free trial and an editions navigation link, without published recurring prices or an eligible discovered pricing URL. This is a bounded discovery gap, not evidence of absent historic pricing, quote-only plans or an empty JavaScript shell.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Trial is temporary, not a permanent free product plan",
+        "Unfetched editions URL may contain relevant structure; not followed in frozen baseline"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://www.m-files.com/",
+          "capturedAt": "2025-06-22T21:50:56.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250622215056id_/https://www.m-files.com/",
+          "grade": "verified",
+          "sha256": "f938751554db0f3f1e60d77a6dcccbb2bddb9ce5ca04d1d3017f83b7918bba3a"
+        }
+      ]
+    },
+    {
+      "productId": "fireflies",
+      "classification": "embedded_landing_offers_missing_pricing_capture",
+      "finding": "Legacy-qualified landing contains four named USD offers in inert Product AggregateOffer data. Billing period, commitment and unit are absent. Exact pricing hint has no eligible capture; pipeline never extracted the landing offers.",
+      "baselineStatus": "missing_pricing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Named nested Offers are distinct from aggregate lowPrice/highPrice metadata",
+        "Aggregate lowPrice zero is not a whole-product price",
+        "Do not infer monthly billing or per-user units from integer amounts",
+        "Archived payload digest remains unverified",
+        "Not an empty client-only shell"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://fireflies.ai/",
+          "capturedAt": "2025-06-30T09:04:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630090436id_/https://fireflies.ai/",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "393d50029c4c8b20462f991ffdf7ae6cfc46961d33be8cb529f8e17886293c1d"
+        }
+      ]
+    },
+    {
+      "productId": "otter",
+      "classification": "static_pricing_unsupported",
+      "finding": "Legacy-qualified pricing HTML contains named paid/free tiers, separate monthly and annual variants, education discounts and an unpriced enterprise demo call to action. Parser returned no plans; qualifications must remain distinct.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "manualReviewNotes": [
+        "Both landing and pricing payload digests remain legacy unverified",
+        "Monthly and annual variants must stay separate; active state not executed",
+        "Education discounts require .edu eligibility: Pro USD 6.67/month with USD 79.99 billed annually, or USD 13.59 monthly",
+        "Do not derive annual totals by multiplying rounded monthly display amounts",
+        "Workspace limits are maximums, not minimum purchasing quantities",
+        "Enterprise demo CTA does not supply a numeric price"
+      ],
+      "sources": [
+        {
+          "role": "landing",
+          "originalUrl": "https://otter.ai/",
+          "capturedAt": "2025-06-30T17:42:01.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630174201id_/https://otter.ai/",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "6c8fb51579073d250023d49cbbafe4c31bf6a47072e3c0144d4653eff477b880"
+        },
+        {
+          "role": "pricing",
+          "originalUrl": "https://otter.ai/pricing",
+          "capturedAt": "2025-06-22T16:12:46.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250622161246id_/https://otter.ai/pricing",
+          "grade": "legacy_chunked_unverified",
+          "sha256": "6b042e3c7c7ee5e98d67e4e6cf334bd4079a2bafb0e0f697201b77c58fdff65f"
+        }
+      ]
+    }
+  ]
+}

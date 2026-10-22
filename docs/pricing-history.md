@@ -97,6 +97,8 @@ The [ten-tool verification](../research/pricing-ten-tool-verification.md) produc
 
 The subsequent [blind twenty-tool verification](../research/pricing-twenty-tool-verification.md) completed all 20 tools in 78 source requests, then repeated with zero fetch attempts. Twelve tools had retained pricing material, but the unchanged parser produced **zero valid new observations**. Static layouts, embedded data and edition/discovery gaps prevent unattended price extraction. Collection, caching and audit checks can be automated; publication still requires evidence review. The eight earlier observations remain unchanged.
 
+[Batch three](../research/pricing-batch-three-verification.md) applied the revised discovery to the next 20 untried paid catalog tools: 56 HTTP-successful requests, another zero-fetch replay, and **zero valid new observations**. Independent review found missed static pricing on both landing and dedicated pages, an actual JavaScript failure fallback, paid-price placeholders, quote-only structure and locale/scope gaps. Candidate-level error facets now expose mixed failures; collection completion still does not establish correct extraction.
+
 Recheck retained evidence without network requests or changes to discovery gates:
 
 ```sh
