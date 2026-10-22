@@ -6968,6 +6968,269 @@
     }
   },
   {
+    "id": "pricing-manual-083786fc35b10f3f4083919372ede9de65cbe97796b1586de1fc16dcf0f2e47e",
+    "productId": "tableau",
+    "scope": {
+      "edition": "Tableau Cloud Enterprise and Tableau+ editions",
+      "deployment": "hosted"
+    },
+    "anchorAt": "2025-06-30T20:03:44.000Z",
+    "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+    "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T20:03:44.000Z",
+    "landingUrl": "https://www.tableau.com/",
+    "pricingUrl": "https://www.tableau.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:76132-76420"
+    },
+    "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+    "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+    "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+    "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+    "fetchedAt": "2026-10-22T20:15:52.429Z",
+    "landingFetchedAt": "2026-10-22T20:15:32.876Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 18:42:58 GMT",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481494.71-0013/CC-MAIN-20250618165201-20250618195201-00269.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 20:03:44 GMT",
+      "originalUrl": "https://www.tableau.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701025918_3788cc7b/www.eg.org-inf-20250630-192402-m7qb4-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Source selectors retain Enterprise edition and USD as statically selected. Other explicit edition/currency alternatives are preserved with qualifications; runtime/checkout not executed.",
+      "Currency codes bound by data-currency attributes and the matching Change Currency options. No exchange-rate or annual-total arithmetic.",
+      "Source separately advertises a new-customer20% Enterprise webstore promotion expiringJuly31,2025, terms apply; no discounted rate calculated or substituted.",
+      "Cloud add-on quotes kept separate from base license tiers. Resource Block period and concurrency are explicitly stated."
+    ],
+    "plans": [
+      {
+        "name": "Data Connect",
+        "order": 0,
+        "popular": null,
+        "kind": "addon",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:201841-202322",
+              "text": "Data Connect; available for Enterprise and Tableau+ customers; Contact sales"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:202010-202075",
+          "text": "Data Connect"
+        }
+      },
+      {
+        "name": "Resource Blocks",
+        "order": 1,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$250",
+            "amount": "250",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Resource Block",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "1 Resource Block runs1concurrent Prep Flow at a time; only Tableau Cloud Enterprise and Tableau+ editions",
+              "billingVariant": "Explicit USD currency alternative; statically selected USD; runtime not executed"
+            },
+            "source": {
+              "locator": "offset:203500-203555|offset:203780-204065|offset:120580-120958",
+              "text": "$250; data-currency=USD; Resource Block/month billed annually; only Tableau Cloud Enterprise and Tableau+;1Resource Block runs1concurrent Prep Flow"
+            }
+          },
+          {
+            "literal": "€250",
+            "amount": "250",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Resource Block",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "1 Resource Block runs1concurrent Prep Flow at a time; only Tableau Cloud Enterprise and Tableau+ editions",
+              "billingVariant": "Explicit EUR currency alternative; statically selected USD; runtime not executed"
+            },
+            "source": {
+              "locator": "offset:203557-203594|offset:203780-204065|offset:120580-120958",
+              "text": "€250; data-currency=EUR; Resource Block/month billed annually; only Tableau Cloud Enterprise and Tableau+;1Resource Block runs1concurrent Prep Flow"
+            }
+          },
+          {
+            "literal": "£200",
+            "amount": "200",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Resource Block",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "1 Resource Block runs1concurrent Prep Flow at a time; only Tableau Cloud Enterprise and Tableau+ editions",
+              "billingVariant": "Explicit GBP currency alternative; statically selected USD; runtime not executed"
+            },
+            "source": {
+              "locator": "offset:203596-203633|offset:203780-204065|offset:120580-120958",
+              "text": "£200; data-currency=GBP; Resource Block/month billed annually; only Tableau Cloud Enterprise and Tableau+;1Resource Block runs1concurrent Prep Flow"
+            }
+          },
+          {
+            "literal": "¥30,000",
+            "amount": "30000",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Resource Block",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "1 Resource Block runs1concurrent Prep Flow at a time; only Tableau Cloud Enterprise and Tableau+ editions",
+              "billingVariant": "Explicit JPY currency alternative; statically selected USD; runtime not executed"
+            },
+            "source": {
+              "locator": "offset:203635-203675|offset:203780-204065|offset:120580-120958",
+              "text": "¥30,000; data-currency=JPY; Resource Block/month billed annually; only Tableau Cloud Enterprise and Tableau+;1Resource Block runs1concurrent Prep Flow"
+            }
+          },
+          {
+            "literal": "kr2,500",
+            "amount": "2500",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Resource Block",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "1 Resource Block runs1concurrent Prep Flow at a time; only Tableau Cloud Enterprise and Tableau+ editions",
+              "billingVariant": "Explicit SEK currency alternative; statically selected USD; runtime not executed"
+            },
+            "source": {
+              "locator": "offset:203677-203717|offset:203780-204065|offset:120580-120958",
+              "text": "kr2,500; data-currency=SEK; Resource Block/month billed annually; only Tableau Cloud Enterprise and Tableau+;1Resource Block runs1concurrent Prep Flow"
+            }
+          },
+          {
+            "literal": "$350",
+            "amount": "350",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "Resource Block",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "1 Resource Block runs1concurrent Prep Flow at a time; only Tableau Cloud Enterprise and Tableau+ editions",
+              "billingVariant": "Explicit AUD currency alternative; statically selected USD; runtime not executed"
+            },
+            "source": {
+              "locator": "offset:203719-203756|offset:203780-204065|offset:120580-120958",
+              "text": "$350; data-currency=AUD; Resource Block/month billed annually; only Tableau Cloud Enterprise and Tableau+;1Resource Block runs1concurrent Prep Flow"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:202973-203027",
+          "text": "Resource Blocks"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.064Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-089993d56dfae790a4d070ecae813f1a252a200da8809a80789c89be90482c6c",
     "productId": "datadog",
     "scope": {
@@ -8716,6 +8979,571 @@
     }
   },
   {
+    "id": "pricing-manual-1c4ad1fe14125b3b8d72cc3ba22946c4e10d62c71ee3cc49befa2486e9be8c37",
+    "productId": "tableau",
+    "scope": {
+      "edition": "Standard Edition",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T20:03:44.000Z",
+    "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+    "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T20:03:44.000Z",
+    "landingUrl": "https://www.tableau.com/",
+    "pricingUrl": "https://www.tableau.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:76132-76420"
+    },
+    "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+    "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+    "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+    "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+    "fetchedAt": "2026-10-22T20:15:52.429Z",
+    "landingFetchedAt": "2026-10-22T20:15:32.876Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 18:42:58 GMT",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481494.71-0013/CC-MAIN-20250618165201-20250618195201-00269.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 20:03:44 GMT",
+      "originalUrl": "https://www.tableau.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701025918_3788cc7b/www.eg.org-inf-20250630-192402-m7qb4-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Source selectors retain Enterprise edition and USD as statically selected. Other explicit edition/currency alternatives are preserved with qualifications; runtime/checkout not executed.",
+      "Currency codes bound by data-currency attributes and the matching Change Currency options. No exchange-rate or annual-total arithmetic.",
+      "Source separately advertises a new-customer20% Enterprise webstore promotion expiringJuly31,2025, terms apply; no discounted rate calculated or substituted.",
+      "Base licenses offered on Tableau Cloud or Tableau Server; deployment not inferred. Creator minimum1 is deployment-wide; Explorer/Viewer minima unknown."
+    ],
+    "plans": [
+      {
+        "name": "Tableau Creator",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$75",
+            "amount": "75",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and USD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121333-121387|offset:121941-121983|offset:120580-120958|offset:122068-122113|offset:210987-211086|offset:122223-122336",
+              "text": "$75; data-currency=USD; Tableau Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "€75",
+            "amount": "75",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and EUR currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121388-121424|offset:121941-121983|offset:120580-120958|offset:122068-122113|offset:210987-211086|offset:122223-122336",
+              "text": "€75; data-currency=EUR; Tableau Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "£60",
+            "amount": "60",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and GBP currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121425-121461|offset:121941-121983|offset:120580-120958|offset:122068-122113|offset:210987-211086|offset:122223-122336",
+              "text": "£60; data-currency=GBP; Tableau Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "¥9,000",
+            "amount": "9000",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and JPY currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121462-121501|offset:121941-121983|offset:120580-120958|offset:122068-122113|offset:210987-211086|offset:122223-122336",
+              "text": "¥9,000; data-currency=JPY; Tableau Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "kr750",
+            "amount": "750",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and SEK currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121502-121540|offset:121941-121983|offset:120580-120958|offset:122068-122113|offset:210987-211086|offset:122223-122336",
+              "text": "kr750; data-currency=SEK; Tableau Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "$105",
+            "amount": "105",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and AUD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121541-121578|offset:121941-121983|offset:120580-120958|offset:122068-122113|offset:210987-211086|offset:122223-122336",
+              "text": "$105; data-currency=AUD; Tableau Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Includes",
+            "value": "Includes: Tableau Desktop, Tableau Prep Builder, one Creator license on Tableau Cloud or Server, and Tableau Pulse (only available on Tableau Cloud).",
+            "source": {
+              "locator": "offset:123261-123457",
+              "text": "Includes: Tableau Desktop, Tableau Prep Builder, one Creator license on Tableau Cloud or Server, and Tableau Pulse (only available on Tableau Cloud)."
+            }
+          },
+          {
+            "name": "Deployment minimum",
+            "value": "Every deployment requires at least one Creator",
+            "source": {
+              "locator": "offset:122223-122336",
+              "text": "Every deployment requires at least one Creator"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:122068-122113",
+          "text": "Tableau Creator"
+        }
+      },
+      {
+        "name": "Tableau Explorer",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$42",
+            "amount": "42",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and USD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124161-124215|offset:124762-124830|offset:120580-120958|offset:124915-124961|offset:210987-211086",
+              "text": "$42; data-currency=USD; Tableau Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "€42",
+            "amount": "42",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and EUR currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124216-124252|offset:124762-124830|offset:120580-120958|offset:124915-124961|offset:210987-211086",
+              "text": "€42; data-currency=EUR; Tableau Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "£34",
+            "amount": "34",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and GBP currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124253-124289|offset:124762-124830|offset:120580-120958|offset:124915-124961|offset:210987-211086",
+              "text": "£34; data-currency=GBP; Tableau Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "¥5,040",
+            "amount": "5040",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and JPY currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124290-124329|offset:124762-124830|offset:120580-120958|offset:124915-124961|offset:210987-211086",
+              "text": "¥5,040; data-currency=JPY; Tableau Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "kr420",
+            "amount": "420",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and SEK currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124330-124368|offset:124762-124830|offset:120580-120958|offset:124915-124961|offset:210987-211086",
+              "text": "kr420; data-currency=SEK; Tableau Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "$59",
+            "amount": "59",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and AUD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124369-124405|offset:124762-124830|offset:120580-120958|offset:124915-124961|offset:210987-211086",
+              "text": "$59; data-currency=AUD; Tableau Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Includes",
+            "value": "Includes: One Explorer license on Tableau Cloud or Server and Tableau Pulse (only available on Tableau Cloud).",
+            "source": {
+              "locator": "offset:125948-126105",
+              "text": "Includes: One Explorer license on Tableau Cloud or Server and Tableau Pulse (only available on Tableau Cloud)."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:124915-124961",
+          "text": "Tableau Explorer"
+        }
+      },
+      {
+        "name": "Tableau Viewer",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$15",
+            "amount": "15",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and USD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:126766-126820|offset:127367-127409|offset:120580-120958|offset:127494-127538|offset:210987-211086",
+              "text": "$15; data-currency=USD; Tableau Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "€15",
+            "amount": "15",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and EUR currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:126821-126857|offset:127367-127409|offset:120580-120958|offset:127494-127538|offset:210987-211086",
+              "text": "€15; data-currency=EUR; Tableau Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "£12",
+            "amount": "12",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and GBP currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:126858-126894|offset:127367-127409|offset:120580-120958|offset:127494-127538|offset:210987-211086",
+              "text": "£12; data-currency=GBP; Tableau Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "¥1,800",
+            "amount": "1800",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and JPY currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:126895-126934|offset:127367-127409|offset:120580-120958|offset:127494-127538|offset:210987-211086",
+              "text": "¥1,800; data-currency=JPY; Tableau Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "kr150",
+            "amount": "150",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and SEK currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:126935-126973|offset:127367-127409|offset:120580-120958|offset:127494-127538|offset:210987-211086",
+              "text": "kr150; data-currency=SEK; Tableau Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "$21",
+            "amount": "21",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit standard edition and AUD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:126974-127010|offset:127367-127409|offset:120580-120958|offset:127494-127538|offset:210987-211086",
+              "text": "$21; data-currency=AUD; Tableau Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Includes",
+            "value": "Includes: One Viewer license on Tableau Cloud or Server and Tableau Pulse (only available on Tableau Cloud).",
+            "source": {
+              "locator": "offset:128514-128669",
+              "text": "Includes: One Viewer license on Tableau Cloud or Server and Tableau Pulse (only available on Tableau Cloud)."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:127494-127538",
+          "text": "Tableau Viewer"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.054Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-23849eca7dcf313deb325ae02d31402404de840d0ab913163a892127010fc8ee",
     "productId": "zendesk",
     "scope": {
@@ -9587,6 +10415,571 @@
       "reviewedAt": "2026-10-22T19:11:41.654Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-2f786eb8f9cbac38be6e92cf4283b4d2c268de273d3ce2e22dbd1cdd7a382f18",
+    "productId": "tableau",
+    "scope": {
+      "edition": "Enterprise Edition",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T20:03:44.000Z",
+    "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+    "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T20:03:44.000Z",
+    "landingUrl": "https://www.tableau.com/",
+    "pricingUrl": "https://www.tableau.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:76132-76420"
+    },
+    "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+    "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+    "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+    "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+    "fetchedAt": "2026-10-22T20:15:52.429Z",
+    "landingFetchedAt": "2026-10-22T20:15:32.876Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 18:42:58 GMT",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481494.71-0013/CC-MAIN-20250618165201-20250618195201-00269.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 20:03:44 GMT",
+      "originalUrl": "https://www.tableau.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701025918_3788cc7b/www.eg.org-inf-20250630-192402-m7qb4-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Source selectors retain Enterprise edition and USD as statically selected. Other explicit edition/currency alternatives are preserved with qualifications; runtime/checkout not executed.",
+      "Currency codes bound by data-currency attributes and the matching Change Currency options. No exchange-rate or annual-total arithmetic.",
+      "Source separately advertises a new-customer20% Enterprise webstore promotion expiringJuly31,2025, terms apply; no discounted rate calculated or substituted.",
+      "Base licenses offered on Tableau Cloud or Tableau Server; deployment not inferred. Creator minimum1 is deployment-wide; Explorer/Viewer minima unknown."
+    ],
+    "plans": [
+      {
+        "name": "Enterprise Creator",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$115",
+            "amount": "115",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and USD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121635-121690|offset:121941-121983|offset:120580-120958|offset:122134-122184|offset:210987-211086|offset:122223-122336",
+              "text": "$115; data-currency=USD; Enterprise Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "€115",
+            "amount": "115",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and EUR currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121691-121728|offset:121941-121983|offset:120580-120958|offset:122134-122184|offset:210987-211086|offset:122223-122336",
+              "text": "€115; data-currency=EUR; Enterprise Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "£92",
+            "amount": "92",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and GBP currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121729-121765|offset:121941-121983|offset:120580-120958|offset:122134-122184|offset:210987-211086|offset:122223-122336",
+              "text": "£92; data-currency=GBP; Enterprise Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "¥13,800",
+            "amount": "13800",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and JPY currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121766-121806|offset:121941-121983|offset:120580-120958|offset:122134-122184|offset:210987-211086|offset:122223-122336",
+              "text": "¥13,800; data-currency=JPY; Enterprise Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "kr1,150",
+            "amount": "1150",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and SEK currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121807-121847|offset:121941-121983|offset:120580-120958|offset:122134-122184|offset:210987-211086|offset:122223-122336",
+              "text": "kr1,150; data-currency=SEK; Enterprise Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "$161",
+            "amount": "161",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": 1,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and AUD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:121848-121885|offset:121941-121983|offset:120580-120958|offset:122134-122184|offset:210987-211086|offset:122223-122336",
+              "text": "$161; data-currency=AUD; Enterprise Creator; user/month billed annually; every deployment requires at least one Creator; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Includes",
+            "value": "Includes: Tableau Desktop, Tableau Prep Builder, and one Creator license on Tableau Cloud or Server with Advanced Management and Data Management, Tableau Pulse (only available on Tableau Cloud), and a year of access to eLearning for Creators.",
+            "source": {
+              "locator": "offset:123478-123769",
+              "text": "Includes: Tableau Desktop, Tableau Prep Builder, and one Creator license on Tableau Cloud or Server with Advanced Management and Data Management, Tableau Pulse (only available on Tableau Cloud), and a year of access to eLearning for Creators."
+            }
+          },
+          {
+            "name": "Deployment minimum",
+            "value": "Every deployment requires at least one Creator",
+            "source": {
+              "locator": "offset:122223-122336",
+              "text": "Every deployment requires at least one Creator"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:122134-122184",
+          "text": "Enterprise Creator"
+        }
+      },
+      {
+        "name": "Enterprise Explorer",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$70",
+            "amount": "70",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and USD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124462-124516|offset:124762-124830|offset:120580-120958|offset:124982-125033|offset:210987-211086",
+              "text": "$70; data-currency=USD; Enterprise Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "€70",
+            "amount": "70",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and EUR currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124517-124553|offset:124762-124830|offset:120580-120958|offset:124982-125033|offset:210987-211086",
+              "text": "€70; data-currency=EUR; Enterprise Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "£56",
+            "amount": "56",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and GBP currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124554-124590|offset:124762-124830|offset:120580-120958|offset:124982-125033|offset:210987-211086",
+              "text": "£56; data-currency=GBP; Enterprise Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "¥8,400",
+            "amount": "8400",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and JPY currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124591-124630|offset:124762-124830|offset:120580-120958|offset:124982-125033|offset:210987-211086",
+              "text": "¥8,400; data-currency=JPY; Enterprise Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "kr700",
+            "amount": "700",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and SEK currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124631-124669|offset:124762-124830|offset:120580-120958|offset:124982-125033|offset:210987-211086",
+              "text": "kr700; data-currency=SEK; Enterprise Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "$98",
+            "amount": "98",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and AUD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:124670-124706|offset:124762-124830|offset:120580-120958|offset:124982-125033|offset:210987-211086",
+              "text": "$98; data-currency=AUD; Enterprise Explorer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Includes",
+            "value": "Includes: One Explorer license on Tableau Cloud or Server with Advanced Management and Data Management, Tableau Pulse (only available on Tableau Cloud), and a year of access to eLearning for Explorers.",
+            "source": {
+              "locator": "offset:126126-126376",
+              "text": "Includes: One Explorer license on Tableau Cloud or Server with Advanced Management and Data Management, Tableau Pulse (only available on Tableau Cloud), and a year of access to eLearning for Explorers."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:124982-125033",
+          "text": "Enterprise Explorer"
+        }
+      },
+      {
+        "name": "Enterprise Viewer",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$35",
+            "amount": "35",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and USD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:127067-127121|offset:127367-127409|offset:120580-120958|offset:127559-127608|offset:210987-211086",
+              "text": "$35; data-currency=USD; Enterprise Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "€35",
+            "amount": "35",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and EUR currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:127122-127158|offset:127367-127409|offset:120580-120958|offset:127559-127608|offset:210987-211086",
+              "text": "€35; data-currency=EUR; Enterprise Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "£28",
+            "amount": "28",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and GBP currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:127159-127195|offset:127367-127409|offset:120580-120958|offset:127559-127608|offset:210987-211086",
+              "text": "£28; data-currency=GBP; Enterprise Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "¥4,200",
+            "amount": "4200",
+            "currency": "JPY",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and JPY currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:127196-127235|offset:127367-127409|offset:120580-120958|offset:127559-127608|offset:210987-211086",
+              "text": "¥4,200; data-currency=JPY; Enterprise Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "kr350",
+            "amount": "350",
+            "currency": "SEK",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and SEK currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:127236-127274|offset:127367-127409|offset:120580-120958|offset:127559-127608|offset:210987-211086",
+              "text": "kr350; data-currency=SEK; Enterprise Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          },
+          {
+            "literal": "$49",
+            "amount": "49",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "All user licenses on a deployment must be on the same edition; editions cannot be mixed.",
+              "billingVariant": "Explicit enterprise edition and AUD currency alternative; static selectors Enterprise and USD; runtime selection not executed"
+            },
+            "source": {
+              "locator": "offset:127275-127311|offset:127367-127409|offset:120580-120958|offset:127559-127608|offset:210987-211086",
+              "text": "$49; data-currency=AUD; Enterprise Viewer; user/month billed annually; all user licenses on a deployment must use the same edition; editions cannot be mixed"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Includes",
+            "value": "Includes: One Viewer license on Tableau Cloud or Server with Advanced Management and Data Management, and Tableau Pulse (only available on Tableau Cloud).",
+            "source": {
+              "locator": "offset:128690-128893",
+              "text": "Includes: One Viewer license on Tableau Cloud or Server with Advanced Management and Data Management, and Tableau Pulse (only available on Tableau Cloud)."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:127559-127608",
+          "text": "Enterprise Viewer"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.058Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -13597,6 +14990,117 @@
       "reviewedAt": "2026-10-22T19:11:41.561Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-7644ff9d3428cb5670c4b4107085f03afea800956b2c3f1527d0017f40bf88a6",
+    "productId": "tableau",
+    "scope": {
+      "edition": "Enterprise and Tableau+ add-ons",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T20:03:44.000Z",
+    "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+    "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T20:03:44.000Z",
+    "landingUrl": "https://www.tableau.com/",
+    "pricingUrl": "https://www.tableau.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:76132-76420"
+    },
+    "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+    "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+    "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+    "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+    "fetchedAt": "2026-10-22T20:15:52.429Z",
+    "landingFetchedAt": "2026-10-22T20:15:32.876Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 18:42:58 GMT",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481494.71-0013/CC-MAIN-20250618165201-20250618195201-00269.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 20:03:44 GMT",
+      "originalUrl": "https://www.tableau.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701025918_3788cc7b/www.eg.org-inf-20250630-192402-m7qb4-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Source selectors retain Enterprise edition and USD as statically selected. Other explicit edition/currency alternatives are preserved with qualifications; runtime/checkout not executed.",
+      "Currency codes bound by data-currency attributes and the matching Change Currency options. No exchange-rate or annual-total arithmetic.",
+      "Source separately advertises a new-customer20% Enterprise webstore promotion expiringJuly31,2025, terms apply; no discounted rate calculated or substituted.",
+      "Private Connect deployment unknown: its retained card establishes Enterprise/Tableau+ eligibility but does not explicitly name Cloud or Server."
+    ],
+    "plans": [
+      {
+        "name": "Private Connect",
+        "order": 0,
+        "popular": null,
+        "kind": "addon",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:202324-202795",
+              "text": "Private Connect; available for Enterprise and Tableau+ customers; Contact sales"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:202493-202561",
+          "text": "Private Connect"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.066Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -19048,6 +20552,117 @@
     }
   },
   {
+    "id": "pricing-manual-a8d1a03411ae1d239a0048de2043b3b273a5fa415388c998e9a368dd681f6a74",
+    "productId": "tableau",
+    "scope": {
+      "edition": "Tableau+",
+      "deployment": "hosted"
+    },
+    "anchorAt": "2025-06-30T20:03:44.000Z",
+    "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+    "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T20:03:44.000Z",
+    "landingUrl": "https://www.tableau.com/",
+    "pricingUrl": "https://www.tableau.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:76132-76420"
+    },
+    "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+    "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+    "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+    "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+    "fetchedAt": "2026-10-22T20:15:52.429Z",
+    "landingFetchedAt": "2026-10-22T20:15:32.876Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 18:42:58 GMT",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481494.71-0013/CC-MAIN-20250618165201-20250618195201-00269.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 20:03:44 GMT",
+      "originalUrl": "https://www.tableau.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701025918_3788cc7b/www.eg.org-inf-20250630-192402-m7qb4-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Source selectors retain Enterprise edition and USD as statically selected. Other explicit edition/currency alternatives are preserved with qualifications; runtime/checkout not executed.",
+      "Currency codes bound by data-currency attributes and the matching Change Currency options. No exchange-rate or annual-total arithmetic.",
+      "Source separately advertises a new-customer20% Enterprise webstore promotion expiringJuly31,2025, terms apply; no discounted rate calculated or substituted.",
+      "Premium Tableau+ prices unavailable; Cloud-only scope explicitly stated."
+    ],
+    "plans": [
+      {
+        "name": "Tableau+",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact Sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:119559-119946",
+              "text": "Tableau+; available on Tableau Cloud only; Contact Sales to learn more"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:119624-119656",
+          "text": "Tableau+"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.061Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-b3cb358734bb97b2af322b9c939ab5b1fe4a4f486a0c18956d3c1ab3e50948e7",
     "productId": "datadog",
     "scope": {
@@ -19397,6 +21012,117 @@
       "reviewedAt": "2026-10-22T19:11:41.700Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-b8c3fec3eeccae4d8d5f2f8bead853846ab832c9012b6086b088af00b4ced612",
+    "productId": "tableau",
+    "scope": {
+      "edition": "Embedded Analytics",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T20:03:44.000Z",
+    "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+    "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T20:03:44.000Z",
+    "landingUrl": "https://www.tableau.com/",
+    "pricingUrl": "https://www.tableau.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:76132-76420"
+    },
+    "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+    "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+    "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+    "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+    "fetchedAt": "2026-10-22T20:15:52.429Z",
+    "landingFetchedAt": "2026-10-22T20:15:32.876Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 18:42:58 GMT",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481494.71-0013/CC-MAIN-20250618165201-20250618195201-00269.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 20:03:44 GMT",
+      "originalUrl": "https://www.tableau.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701025918_3788cc7b/www.eg.org-inf-20250630-192402-m7qb4-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Source selectors retain Enterprise edition and USD as statically selected. Other explicit edition/currency alternatives are preserved with qualifications; runtime/checkout not executed.",
+      "Currency codes bound by data-currency attributes and the matching Change Currency options. No exchange-rate or annual-total arithmetic.",
+      "Source separately advertises a new-customer20% Enterprise webstore promotion expiringJuly31,2025, terms apply; no discounted rate calculated or substituted.",
+      "Embedded Analytics has no numeric price in retained source."
+    ],
+    "plans": [
+      {
+        "name": "Embedded Analytics",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact Sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Role-based, usage-based or core-based licensing; Tableau Cloud or Tableau Server",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:205280-206347",
+              "text": "Embedded Analytics; Cloud or Server; role-based, usage-based or core-based licensing; Contact Sales"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:205358-205423",
+          "text": "Embedded Analytics"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.069Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -25848,6 +27574,362 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:10:54.641Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-f4285b4a61a55e6654d9fe4afe4d95014b860bab934c5ee545c47fe20e7701db",
+    "productId": "looker",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T18:34:10.000Z",
+    "landingCapturedAt": "2025-06-30T18:34:10.000Z",
+    "pricingCapturedAt": "2025-06-30T18:34:10.000Z",
+    "evidenceAvailableAt": "2025-06-30T18:34:10.000Z",
+    "landingUrl": "https://cloud.google.com/looker",
+    "pricingUrl": "https://cloud.google.com/looker",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630183410id_/https://cloud.google.com/looker",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630183410id_/https://cloud.google.com/looker",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Standard",
+      "locator": "offset:1453266-1453283"
+    },
+    "sourceSha256": "73f4bf328b39b6402db7ece2fa4e4ebd983a799025cbb8b6ed7f131aff37d586",
+    "landingSha256": "73f4bf328b39b6402db7ece2fa4e4ebd983a799025cbb8b6ed7f131aff37d586",
+    "sourceDigest": "2CFY3BPXUEASF5YKBN4XB2WAR6EKL5DS",
+    "landingDigest": "2CFY3BPXUEASF5YKBN4XB2WAR6EKL5DS",
+    "fetchedAt": "2026-10-22T20:14:45.685Z",
+    "landingFetchedAt": "2026-10-22T20:14:45.685Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "2CFY3BPXUEASF5YKBN4XB2WAR6EKL5DS",
+      "actualDigest": "7Y3PBF5RG3IWCIMWQCE7EN5RUVBM6CAK",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "2CFY3BPXUEASF5YKBN4XB2WAR6EKL5DS",
+      "actualDigest": "7Y3PBF5RG3IWCIMWQCE7EN5RUVBM6CAK",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 18:34:10 GMT",
+      "originalUrl": "https://cloud.google.com/looker",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250630181558-crawl902/SPNOUTLINKS-20250630182827-00010.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 18:34:10 GMT",
+      "originalUrl": "https://cloud.google.com/looker",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250630181558-crawl902/SPNOUTLINKS-20250630182827-00010.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual read of retained2,009,915-character HTML; baseline2,000,000-character parser/discovery guard unchanged.",
+      "Only Looker Google Cloud core platform editions and user-license components retained; no numeric rate is published in this landing table.",
+      "Edition rows explicitly annual commitment; user-license rows do not establish period or commitment. Included users/API allowances are not minimum purchases.",
+      "Repeated desktop/mobile component tables deduplicated; no runtime selected state inferred.",
+      "Archive payload digest remains unverified; partial evidence requires explicit acceptance.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Standard",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Annual commitment. Work with sales to identify a solution that works for you.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Standard: A Looker (Google Cloud core) product for small organizations or teams with fewer than 50 users that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 1,000 query-based API calls per month, and up to 1,000 administrative API calls per month.",
+              "billingVariant": "Repeated desktop/mobile representations; selected viewport unknown; deduplicated by identical named component"
+            },
+            "source": {
+              "locator": "offset:1453576-1453871",
+              "text": "Annual commitment. Work with sales to identify a solution that works for you."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Component details",
+            "value": "Standard: A Looker (Google Cloud core) product for small organizations or teams with fewer than 50 users that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 1,000 query-based API calls per month, and up to 1,000 administrative API calls per month.",
+            "source": {
+              "locator": "offset:1453152-1453576",
+              "text": "Standard: A Looker (Google Cloud core) product for small organizations or teams with fewer than 50 users that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 1,000 query-based API calls per month, and up to 1,000 administrative API calls per month."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:1453266-1453283",
+          "text": "Standard"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Annual commitment. Work with sales to identify a solution that works for you.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Enterprise: A Looker (Google Cloud core) product with enhanced security features for a wide variety of internal BI and analytics use cases that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 100,000 query-based API calls per month, and up to 10,000 administrative API calls per month.",
+              "billingVariant": "Repeated desktop/mobile representations; selected viewport unknown; deduplicated by identical named component"
+            },
+            "source": {
+              "locator": "offset:1454366-1454661",
+              "text": "Annual commitment. Work with sales to identify a solution that works for you."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Component details",
+            "value": "Enterprise: A Looker (Google Cloud core) product with enhanced security features for a wide variety of internal BI and analytics use cases that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 100,000 query-based API calls per month, and up to 10,000 administrative API calls per month.",
+            "source": {
+              "locator": "offset:1453905-1454366",
+              "text": "Enterprise: A Looker (Google Cloud core) product with enhanced security features for a wide variety of internal BI and analytics use cases that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 100,000 query-based API calls per month, and up to 10,000 administrative API calls per month."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:1454019-1454037",
+          "text": "Enterprise"
+        }
+      },
+      {
+        "name": "Embed",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Annual commitment. Work with sales to identify a solution that works for you.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Embed: A Looker (Google Cloud core) product for deploying and maintaining external analytics and custom applications at scale that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 500,000 query-based API calls per month, and up to 100,000 administrative API calls per month.",
+              "billingVariant": "Repeated desktop/mobile representations; selected viewport unknown; deduplicated by identical named component"
+            },
+            "source": {
+              "locator": "offset:1455144-1455439",
+              "text": "Annual commitment. Work with sales to identify a solution that works for you."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Component details",
+            "value": "Embed: A Looker (Google Cloud core) product for deploying and maintaining external analytics and custom applications at scale that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 500,000 query-based API calls per month, and up to 100,000 administrative API calls per month.",
+            "source": {
+              "locator": "offset:1454695-1455144",
+              "text": "Embed: A Looker (Google Cloud core) product for deploying and maintaining external analytics and custom applications at scale that includes one production instance, 10 standard users, 2 developer users, upgrades, up to 500,000 query-based API calls per month, and up to 100,000 administrative API calls per month."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:1454809-1454822",
+          "text": "Embed"
+        }
+      },
+      {
+        "name": "Developer user",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Connect with our sales team to get a custom quote for your organization.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Developer user: An end user provisioned on a Looker (Google Cloud core) platform for access to any combination of Looker interfaces including Administration, LookML Models (including Development Mode), Folders, Boards, Dashboards, Looks (individual reports and charts), Explore, SQL Runner, Scheduling, the Looker API interfaces, and access to Support.",
+              "billingVariant": "Repeated desktop/mobile representations; selected viewport unknown; deduplicated by identical named component"
+            },
+            "source": {
+              "locator": "offset:1456113-1456409",
+              "text": "Connect with our sales team to get a custom quote for your organization."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Component details",
+            "value": "Developer user: An end user provisioned on a Looker (Google Cloud core) platform for access to any combination of Looker interfaces including Administration, LookML Models (including Development Mode), Folders, Boards, Dashboards, Looks (individual reports and charts), Explore, SQL Runner, Scheduling, the Looker API interfaces, and access to Support.",
+            "source": {
+              "locator": "offset:1455619-1456113",
+              "text": "Developer user: An end user provisioned on a Looker (Google Cloud core) platform for access to any combination of Looker interfaces including Administration, LookML Models (including Development Mode), Folders, Boards, Dashboards, Looks (individual reports and charts), Explore, SQL Runner, Scheduling, the Looker API interfaces, and access to Support."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:1455739-1455761",
+          "text": "Developer user"
+        }
+      },
+      {
+        "name": "Standard user",
+        "order": 4,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Connect with our sales team to get a custom quote for your organization.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Standard user: An end user provisioned on a Looker (Google Cloud core) platform for access to Folders, Boards, Dashboards, Looks (individual reports and charts), Explore, SQL Runner, and Scheduling Looker interfaces. Standard user privileges include data filtering, drill-to-row-level-detail, data downloads, Dashboard or Look creation, and view-only access to LookML. Standard user privileges do not include access to Development Mode, Administration, the Looker API interfaces, or Support.",
+              "billingVariant": "Repeated desktop/mobile representations; selected viewport unknown; deduplicated by identical named component"
+            },
+            "source": {
+              "locator": "offset:1457081-1457377",
+              "text": "Connect with our sales team to get a custom quote for your organization."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Component details",
+            "value": "Standard user: An end user provisioned on a Looker (Google Cloud core) platform for access to Folders, Boards, Dashboards, Looks (individual reports and charts), Explore, SQL Runner, and Scheduling Looker interfaces. Standard user privileges include data filtering, drill-to-row-level-detail, data downloads, Dashboard or Look creation, and view-only access to LookML. Standard user privileges do not include access to Development Mode, Administration, the Looker API interfaces, or Support.",
+            "source": {
+              "locator": "offset:1456448-1457081",
+              "text": "Standard user: An end user provisioned on a Looker (Google Cloud core) platform for access to Folders, Boards, Dashboards, Looks (individual reports and charts), Explore, SQL Runner, and Scheduling Looker interfaces. Standard user privileges include data filtering, drill-to-row-level-detail, data downloads, Dashboard or Look creation, and view-only access to LookML. Standard user privileges do not include access to Development Mode, Administration, the Looker API interfaces, or Support."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:1456568-1456590",
+          "text": "Standard user"
+        }
+      },
+      {
+        "name": "Viewer user",
+        "order": 5,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Connect with our sales team to get a custom quote for your organization.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Viewer user: An end user provisioned on a Looker (Google Cloud core) platform for access to Folders, Boards, Dashboards, and Looks (individual reports and charts) Looker interfaces. Viewer User privileges include data filtering, drill-to-row-level-detail, Scheduling, data downloads, and view-only access to LookML. Viewer user privileges do not include Dashboard or Look creation, or access to Development Mode, Administration, SQL Runner, Explore, the Looker API interfaces, or Support.",
+              "billingVariant": "Repeated desktop/mobile representations; selected viewport unknown; deduplicated by identical named component"
+            },
+            "source": {
+              "locator": "offset:1458046-1458342",
+              "text": "Connect with our sales team to get a custom quote for your organization."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Component details",
+            "value": "Viewer user: An end user provisioned on a Looker (Google Cloud core) platform for access to Folders, Boards, Dashboards, and Looks (individual reports and charts) Looker interfaces. Viewer User privileges include data filtering, drill-to-row-level-detail, Scheduling, data downloads, and view-only access to LookML. Viewer user privileges do not include Dashboard or Look creation, or access to Development Mode, Administration, SQL Runner, Explore, the Looker API interfaces, or Support.",
+            "source": {
+              "locator": "offset:1457416-1458046",
+              "text": "Viewer user: An end user provisioned on a Looker (Google Cloud core) platform for access to Folders, Boards, Dashboards, and Looks (individual reports and charts) Looker interfaces. Viewer User privileges include data filtering, drill-to-row-level-detail, Scheduling, data downloads, and view-only access to LookML. Viewer user privileges do not include Dashboard or Look creation, or access to Development Mode, Administration, SQL Runner, Explore, the Looker API interfaces, or Support."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:1457536-1457556",
+          "text": "Viewer user"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:24:08.140Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   },
   {

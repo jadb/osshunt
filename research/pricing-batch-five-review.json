@@ -1,0 +1,601 @@
+{
+  "formatVersion": 1,
+  "mode": "frozen-ten-tool-baseline-plus-reviewed-source-recovery",
+  "historicalComplete": false,
+  "counts": {
+    "newToolsAttempted": 10,
+    "discoveryCompleted": 10,
+    "sourceRequests": 27,
+    "baselineSourceRequests": 26,
+    "supplementalSourceRequests": 1,
+    "baselineSchemaValidProposals": 2,
+    "newProductsWithPositivePrices": 2,
+    "newProductsWithPositiveCorePlanPrices": 1,
+    "newProductsWithAddonPricesOnly": 1,
+    "newProductsWithAnyReviewedStructure": 5,
+    "newObservations": 10,
+    "totalProductsWithPositivePrices": 34,
+    "totalProductsWithPositiveCorePlanPrices": 33,
+    "totalProductsWithAnyStructure": 51,
+    "totalObservations": 112,
+    "totalPlans": 289,
+    "totalOffers": 511
+  },
+  "baseline": {
+    "journalSha256": "56c395a8569ee976ec40890bdae216cc9715c7299da8e3b4b6cd796ff573dc0a",
+    "extractorVersion": "1.2.0",
+    "fingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+    "fingerprintUnchanged": true,
+    "statuses": {
+      "missing_pricing": 1,
+      "error": 3,
+      "extraction_unavailable": 2,
+      "review_pending": 2,
+      "missing_landing": 2
+    }
+  },
+  "verification": {
+    "original102ObservationsUnchanged": true,
+    "oldProductStatesUnchanged": 70,
+    "oldStatesAllUnchanged": true,
+    "frozenJournals": [
+      {
+        "sha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+        "unchanged": true
+      },
+      {
+        "sha256": "73a6751afa281b822be189a677fc54145e68fd8f83172879726b42dfcee77ead",
+        "unchanged": true
+      },
+      {
+        "sha256": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+        "unchanged": true
+      }
+    ],
+    "sourceRoleChecks": 224,
+    "repeatNetworkAttempts": 0,
+    "reservations": [
+      {
+        "productId": "google-analytics-360",
+        "checkedAt": "2026-10-22T20:11:40.547Z",
+        "nextCheckAt": "2027-04-22T20:11:40.547Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "bamboohr",
+        "checkedAt": "2026-10-22T20:11:51.445Z",
+        "nextCheckAt": "2027-04-22T20:11:51.445Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "aircall",
+        "checkedAt": "2026-10-22T20:12:14.404Z",
+        "nextCheckAt": "2027-04-22T20:12:14.404Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "ringcentral",
+        "checkedAt": "2026-10-22T20:12:52.338Z",
+        "nextCheckAt": "2027-04-22T20:12:52.338Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "brandfolder",
+        "checkedAt": "2026-10-22T20:13:36.582Z",
+        "nextCheckAt": "2027-04-22T20:13:36.582Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "bynder",
+        "checkedAt": "2026-10-22T20:14:11.927Z",
+        "nextCheckAt": "2027-04-22T20:14:11.927Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "looker",
+        "checkedAt": "2026-10-22T20:14:27.410Z",
+        "nextCheckAt": "2027-04-22T20:14:27.410Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "metabase-pro",
+        "checkedAt": "2026-10-22T20:14:45.725Z",
+        "nextCheckAt": "2027-04-22T20:14:45.725Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "power-bi",
+        "checkedAt": "2026-10-22T20:15:02.742Z",
+        "nextCheckAt": "2027-04-22T20:15:02.742Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "tableau",
+        "checkedAt": "2026-10-22T20:15:11.210Z",
+        "nextCheckAt": "2027-04-22T20:15:11.210Z",
+        "checkpointPreserved": true,
+        "released": true
+      }
+    ]
+  },
+  "products": [
+    {
+      "productId": "google-analytics-360",
+      "name": "Google Analytics 360",
+      "baselineStatus": "missing_pricing",
+      "baselineError": null,
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Verified landing contains enterprise product capabilities and sales links, no pricing amount or explicit price tier. Inline scripts contain no pricing/offer data.",
+      "remainingGaps": [
+        "No approved pricing candidate selected. Free small-business navigation wording belongs another product.",
+        "Talk to Sales alone does not prove quote-only pricing; no amount or edition invented."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Analytics 360 is tailored for large enterprises; no price stated.",
+          "source": {
+            "locator": "offset:25960-26121",
+            "text": "Analytics 360 is tailored for the unique measurement needs of large enterprises with advanced customization, scalable tools, and enterprise-level support.",
+            "url": "https://marketingplatform.google.com/about/analytics-360/",
+            "capturedAt": "2025-06-28T20:00:32.000Z",
+            "sha256": "43fb5893dad3abdfc2bb06a46922a7d4190743664cf22244109b84070d13e833"
+          }
+        },
+        {
+          "fact": "Talk to Sales invitation, without explicit quote pricing.",
+          "source": {
+            "locator": "offset:26147-26395",
+            "text": "Talk to Sales",
+            "url": "https://marketingplatform.google.com/about/analytics-360/",
+            "capturedAt": "2025-06-28T20:00:32.000Z",
+            "sha256": "43fb5893dad3abdfc2bb06a46922a7d4190743664cf22244109b84070d13e833"
+          }
+        },
+        {
+          "fact": "Premium feature section exists; no pricing plan or numerical rate.",
+          "source": {
+            "locator": "offset:42533-42622",
+            "text": "The power of 360.",
+            "url": "https://marketingplatform.google.com/about/analytics-360/",
+            "capturedAt": "2025-06-28T20:00:32.000Z",
+            "sha256": "43fb5893dad3abdfc2bb06a46922a7d4190743664cf22244109b84070d13e833"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "google-analytics-360",
+          "kind": "landing",
+          "url": "https://marketingplatform.google.com/about/analytics-360/",
+          "capturedAt": "2025-06-28T20:00:32.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628200032id_/https://marketingplatform.google.com/about/analytics-360/",
+          "sha256": "43fb5893dad3abdfc2bb06a46922a7d4190743664cf22244109b84070d13e833",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "NEMK7EDEUIQ5G6UIXLIMVVNA5HJ7E4TK",
+            "actualDigest": "NEMK7EDEUIQ5G6UIXLIMVVNA5HJ7E4TK"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "bamboohr",
+      "name": "BambooHR",
+      "baselineStatus": "error",
+      "baselineError": "archive_redirect",
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Selected landing replay returned302 and was rejected; no source body retained for semantic review.",
+      "remainingGaps": [
+        "No inference about plans or prices; selected source failure does not prove no other archive captures."
+      ],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "bamboohr",
+          "kind": "landing",
+          "url": "https://www.bamboohr.com/",
+          "capturedAt": "2025-06-30T16:44:54.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630164454id_/https://www.bamboohr.com/",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "aircall",
+      "name": "Aircall",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "addon_prices_only",
+      "confirmedObservations": 1,
+      "plans": 5,
+      "offers": 7,
+      "finding": "Base Essentials/Professional rates unresolved; Custom quote minimum 25. Inert same-page data yields two numerical add-ons, 9 and 15 per license/month, currency unknown. June 21 landing separately supports seven-day free trial.",
+      "remainingGaps": [
+        "No core numerical rate or currency. Inert add-on prices are not visibly rendered or region-verified.",
+        "June 21 trial retained as dated raw fact only: not a second same-scope observation within six months and never backdated onto May 26 pricing."
+      ],
+      "rawFacts": [
+        {
+          "fact": "AI Voice Agent embedded annual/monthly price fields both +.99 per minute; copied detailed-price text instead says per month, applied on all licenses. Currency and active state unknown; not normalized.",
+          "source": {
+            "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[1]",
+            "text": "AI Voice Agent; annual_price=+.99; monthly_price=+.99; price_per=/minute; detailed_price=per month, applied on all Aircall licenses",
+            "url": "https://aircall.io/pricing/",
+            "capturedAt": "2025-05-26T17:46:06.000Z",
+            "sha256": "24d7ee986a82e2f07d1e9628420227d4c7de6e39c60e844966a628af8201baba"
+          }
+        },
+        {
+          "fact": "WhatsApp in Aircall embedded amount15 per license/month is explicitly coming soon; paid Aircall plan and WhatsApp messaging costs excluded. Not an available offer.",
+          "source": {
+            "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[3]",
+            "text": "WhatsApp in Aircall; +15; /license*; per month, applied on all Aircall licenses; Coming soon",
+            "url": "https://aircall.io/pricing/",
+            "capturedAt": "2025-05-26T17:46:06.000Z",
+            "sha256": "24d7ee986a82e2f07d1e9628420227d4c7de6e39c60e844966a628af8201baba"
+          }
+        },
+        {
+          "fact": "June 21 landing explicitly offers a seven-day free trial; renewal price unknown. Not assigned to May 26 pricing source, and not imported as a second same-scope observation within six months.",
+          "source": {
+            "locator": "offset:113403-113949",
+            "text": "Start your 7-day free trial today to take a peek at what’s possible.",
+            "url": "https://aircall.io",
+            "capturedAt": "2025-06-21T17:42:17.000Z",
+            "sha256": "dbee77cf00f1cc674b22e336b22723c5a55dfe4689c6149e41304ed88e20028d"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "aircall",
+          "kind": "landing",
+          "url": "https://aircall.io",
+          "capturedAt": "2025-06-21T17:42:17.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250621174217id_/https://aircall.io",
+          "sha256": "dbee77cf00f1cc674b22e336b22723c5a55dfe4689c6149e41304ed88e20028d",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "3L246KP4FDIB6HCO66BLB3O6GFNUIM2O",
+            "actualDigest": "3L246KP4FDIB6HCO66BLB3O6GFNUIM2O"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "aircall",
+          "kind": "pricing",
+          "url": "https://aircall.io/pricing/",
+          "capturedAt": "2025-05-26T17:46:06.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250526174606id_/https://aircall.io/pricing/",
+          "sha256": "24d7ee986a82e2f07d1e9628420227d4c7de6e39c60e844966a628af8201baba",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PPTWND47FSLH76ZLXFEGVNFYQYBLVMNQ",
+            "actualDigest": "PPTWND47FSLH76ZLXFEGVNFYQYBLVMNQ"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "ringcentral",
+      "name": "RingCentral RingEX",
+      "baselineStatus": "review_pending",
+      "baselineError": null,
+      "category": "structure_only",
+      "confirmedObservations": 1,
+      "plans": 3,
+      "offers": 1,
+      "finding": "RingEX14-day trial and Advanced/Ultra capabilities supported; numeric core rates absent. Raw parser selected unrelated Video Solutions/Events product quote blocks.",
+      "remainingGaps": [
+        "External RingEX data source absent; no numerical amount inferred.",
+        "No Core tier invented solely from external/current product knowledge."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Video Solutions belongs to a separate product family; its Contact sales block is not a RingEX tier.",
+          "source": {
+            "locator": "offset:171533-179459",
+            "text": "RingCentral Video Solutions",
+            "url": "https://www.ringcentral.com/office/plansandpricing.html",
+            "capturedAt": "2025-06-24T03:01:44.000Z",
+            "sha256": "6995d10b41ca94e9940ced06cde4103ea8feb603c532b1f4635e655d1ebd3601"
+          }
+        },
+        {
+          "fact": "Events belongs to a separate product family; its Contact sales block is not a RingEX tier.",
+          "source": {
+            "locator": "offset:193850-201719",
+            "text": "RingCentral Events",
+            "url": "https://www.ringcentral.com/office/plansandpricing.html",
+            "capturedAt": "2025-06-24T03:01:44.000Z",
+            "sha256": "6995d10b41ca94e9940ced06cde4103ea8feb603c532b1f4635e655d1ebd3601"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "ringcentral",
+          "kind": "landing",
+          "url": "https://www.ringcentral.com/",
+          "capturedAt": "2025-06-24T12:21:06.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624122106id_/https://www.ringcentral.com/",
+          "sha256": "b07e37db3273c88c7e5509b4b110ac28da75e7d5574307119579b716a1876484",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT",
+            "actualDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "ringcentral",
+          "kind": "pricing",
+          "url": "https://www.ringcentral.com/office/plansandpricing.html",
+          "capturedAt": "2025-06-24T03:01:44.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624030144id_/https://www.ringcentral.com/office/plansandpricing.html",
+          "sha256": "6995d10b41ca94e9940ced06cde4103ea8feb603c532b1f4635e655d1ebd3601",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR",
+            "actualDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "brandfolder",
+      "name": "Brandfolder",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "structure_only",
+      "confirmedObservations": 1,
+      "plans": 2,
+      "offers": 0,
+      "finding": "Premium and Enterprise feature tiers explicit, no numerical amounts or terms. Book a demo does not establish a tier price or free edition.",
+      "remainingGaps": [
+        "Numeric price, currency, interval, quantity and contractual commitment unknown.",
+        "No separate Core tier inferred from wording."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Generic footer offers a quote, without binding that offer to a named tier.",
+          "source": {
+            "locator": "offset:37102-37135",
+            "text": "Get a quote",
+            "url": "https://brandfolder.com/pricing/",
+            "capturedAt": "2025-05-27T22:13:12.000Z",
+            "sha256": "4218a597929a849eb3a5933ec87c0676beb2871b4bde823c1005694ddddb6f0c"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "brandfolder",
+          "kind": "landing",
+          "url": "https://brandfolder.com/",
+          "capturedAt": "2025-06-24T09:45:42.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624094542id_/https://brandfolder.com/",
+          "sha256": "870ff6e3178d0b498309c12c268974997488c08890c937f4a6f41594aec36166",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "J6C62EFUBW5LGKTGK7WPRKCTXZH2O66O",
+            "actualDigest": "J6C62EFUBW5LGKTGK7WPRKCTXZH2O66O"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "brandfolder",
+          "kind": "pricing",
+          "url": "https://brandfolder.com/pricing/",
+          "capturedAt": "2025-05-27T22:13:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250527221312id_/https://brandfolder.com/pricing/",
+          "sha256": "4218a597929a849eb3a5933ec87c0676beb2871b4bde823c1005694ddddb6f0c",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UM3XBQ5WBRBUNY53NTAHG7TCJIWKLOAE",
+            "actualDigest": "UM3XBQ5WBRBUNY53NTAHG7TCJIWKLOAE"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "bynder",
+      "name": "Bynder",
+      "baselineStatus": "missing_landing",
+      "baselineError": null,
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Exact landing lookup returned no capture in sampled June2025window; no product HTML available.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": []
+    },
+    {
+      "productId": "looker",
+      "name": "Looker",
+      "baselineStatus": "error",
+      "baselineError": "sampling_error",
+      "category": "quote_only",
+      "confirmedObservations": 1,
+      "plans": 6,
+      "offers": 6,
+      "finding": "Retained source exceeds parser guard by9915characters; six named quote components and dedicated archived pricing link recovered without changing limits.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "looker",
+          "kind": "landing",
+          "url": "https://cloud.google.com/looker",
+          "capturedAt": "2025-06-30T18:34:10.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630183410id_/https://cloud.google.com/looker",
+          "sha256": "73f4bf328b39b6402db7ece2fa4e4ebd983a799025cbb8b6ed7f131aff37d586",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "2CFY3BPXUEASF5YKBN4XB2WAR6EKL5DS",
+            "actualDigest": "7Y3PBF5RG3IWCIMWQCE7EN5RUVBM6CAK",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "metabase-pro",
+      "name": "Metabase Pro",
+      "baselineStatus": "error",
+      "baselineError": "archive_digest_mismatch",
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Landing rejected for archived digest mismatch; no cached body available to support source-bound pricing.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "metabase-pro",
+          "kind": "landing",
+          "url": "https://www.metabase.com/",
+          "capturedAt": "2025-06-27T13:27:17.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627132717id_/https://www.metabase.com/",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "power-bi",
+      "name": "Power BI",
+      "baselineStatus": "missing_landing",
+      "baselineError": null,
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Exact landing lookup returned no capture in sampled June2025window; no product HTML available.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": []
+    },
+    {
+      "productId": "tableau",
+      "name": "Tableau",
+      "baselineStatus": "review_pending",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 6,
+      "plans": 11,
+      "offers": 46,
+      "finding": "Raw mixed-edition/currency Tableau plan not suitable for confirmation. Manual source binding recovers6named base license tiers36rates plus Resource Blocks6rates and4quote structures.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "tableau",
+          "kind": "landing",
+          "url": "https://www.tableau.com/",
+          "capturedAt": "2025-06-30T20:03:44.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+          "sha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+            "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "tableau",
+          "kind": "pricing",
+          "url": "https://www.tableau.com/pricing",
+          "capturedAt": "2025-06-18T18:42:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+          "sha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+            "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "supplementalRecovery": {
+    "productId": "looker",
+    "reason": "Saved landing exceeds parser/discovery character limit; exact pricing link recovered manually from retained evidence",
+    "reservationCheckedAt": "2026-10-22T20:14:27.410Z",
+    "candidate": {
+      "url": "https://cloud.google.com/looker/pricing",
+      "label": "View all pricing details",
+      "locator": "offset:1458719-1458854",
+      "provenance": "archived-link"
+    },
+    "bounds": {
+      "from": "2025-05-31T18:34:10.000Z",
+      "cutoff": "2025-06-30T18:34:10.000Z"
+    },
+    "requests": [
+      {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fcloud.google.com%2Flooker%2Fpricing&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&filter=statuscode%3A200&to=20250630183410&limit=-1&fastLatest=true&filter=mimetype%3Atext%2Fhtml&from=20250531183410",
+        "startedAt": "2026-10-22T20:18:28.247Z",
+        "status": 200,
+        "finishedAt": "2026-10-22T20:18:28.732Z",
+        "headers": {
+          "content-type": "application/json"
+        }
+      }
+    ],
+    "status": "missing_pricing"
+  },
+  "validation": {
+    "build": "passed",
+    "catalogAndProfileChecks": "passed",
+    "nodeTests": 356,
+    "pythonTests": 5,
+    "workerDryRun": "passed"
+  },
+  "reviewInputHashes": {
+    "firstFive": "18c890b9465873d7083c96d529f4ff19f744c101abf8fd224c269f7e696bf1e1",
+    "lastFive": "4c322a88109e47e6587f4ad4c78114c5ddb8704d236376c47a653f0a272f1d8e",
+    "firstFiveApproval": "622cd924b3c5942ca6e9c335ff861fd06e911a2ef28de8b52a6eac7cf110c4b2",
+    "lastFiveApproval": "11a40a4a4f363d6a7e77f49cd589c2045f4af15490d6b21e68ee25f521a0e895"
+  }
+}
