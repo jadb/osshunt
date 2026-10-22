@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { extractPricing } from '../lib/pricing/extract.mjs';
 import assert from 'node:assert/strict';
 import { documentOf } from '../lib/pricing/html.mjs';
 import { businessPlans } from '../lib/pricing/extract-business.mjs';
@@ -84,3 +85,5 @@ test('Trello quantity estimates remain unknown when no explicit input value exis
   const r = extract(grid.replace('value="50"', ''), 'https://trello.com/pricing');
   assert.ok(r.plans[3].offers.every((o) => o.minimumQuantity === null && /unknown/i.test(o.qualifications.volume)));
 });
+
+test('public extractor invokes business adapters', () => assert.equal(extractPricing(faq, {originalUrl:'https://airtable.com/pricing'}).plans.length, 4));

@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { extractPricing } from '../lib/pricing/extract.mjs';
 import assert from 'node:assert/strict';
 import { documentOf } from '../lib/pricing/html.mjs';
 import { modernPlans } from '../lib/pricing/extract-modern.mjs';
@@ -111,3 +112,5 @@ test('hidden nested term labels do not establish currency, commitment or a free 
   const a = extract(asana.replace('<span>Free forever</span>', '<span hidden>Free forever</span>'), 'https://asana.com/pricing');
   assert.equal(a.plans[0].status, 'unknown');
 });
+
+test('public extractor invokes modern adapters', () => assert.equal(extractPricing(figma, { originalUrl: 'https://figma.com/pricing/' }).plans.length, 4));
