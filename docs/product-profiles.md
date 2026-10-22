@@ -11,7 +11,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Adobe Lightroom](products/adobe-lightroom.md) | Adobe Inc. | public | funded | 1982 | company-founded |
 | [Adobe Photoshop](products/adobe-photoshop.md) | Adobe Inc. | public | funded | 1982 | company-founded |
 | [Adobe Premiere Pro](products/adobe-premiere-pro.md) | Adobe Inc. | public | funded | 1982 | company-founded |
-| [AFFiNE (mixed-license stack; review required)](products/affine.md) | TOEVERYTHING PTE. LTD. | unknown | unknown | 2022 | project-started |
+| [AFFiNE](products/affine.md) | TOEVERYTHING PTE. LTD. | unknown | unknown | 2022 | project-started |
 | [Aircall](products/aircall.md) | Aircall | unknown | funded | 2014 | company-founded |
 | [Airtable](products/airtable.md) | Airtable | public-subsidiary | funded | 2012 | company-founded |
 | [Akaunting](products/akaunting.md) | Akaunting | private | funded | 2017 | product-launched |
@@ -44,7 +44,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Cap](products/cap.md) | Cap Software, Inc. | unknown | unknown | unknown | unknown |
 | [Chatwoot](products/chatwoot.md) | Chatwoot Inc. | private | funded | 2020 | company-founded |
 | [Cloudflare Access](products/cloudflare-access.md) | Cloudflare, Inc. | public | funded | 2009 | company-founded |
-| [Collabora Online (CODE)](products/collabora-online.md) | Collabora Productivity | unknown | unknown | 2013 | company-founded |
+| [Collabora Online](products/collabora-online.md) | Collabora Productivity | unknown | unknown | 2013 | company-founded |
 | [Confluence](products/confluence.md) | Atlassian Corporation | public | mixed | 2002 | company-founded |
 | [Coolify](products/coolify.md) | coolLabs Solutions Kft. | private | bootstrapped | unknown | unknown |
 | [copyparty](products/copyparty.md) | 9001 and copyparty contributors | individual | unknown | unknown | unknown |
@@ -137,7 +137,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [Miro](products/miro.md) | Miro | private | funded | 2011 | company-founded |
 | [Mixpost Lite](products/mixpost.md) | Inovector (Mixpost) | private | unknown | 2023 | product-launched |
 | [Moodle LMS](products/moodle.md) | Moodle Pty Ltd / Moodle project | private | funded | 2002 | product-launched |
-| [n8n (source available)](products/n8n.md) | n8n GmbH | private | funded | 2019 | company-founded |
+| [n8n](products/n8n.md) | n8n GmbH | private | funded | 2019 | company-founded |
 | [NetBird Community Edition](products/netbird.md) | NetBird GmbH | private | funded | unknown | unknown |
 | [Nextcloud Hub](products/nextcloud.md) | Nextcloud GmbH | private | bootstrapped | 2016 | company-founded |
 | [NocoDB Community](products/nocodb.md) | NocoDB, Inc. | private | funded | 2021 | product-launched |
@@ -154,8 +154,8 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [OpenSign](products/opensign.md) | Qik Innovations Private Limited (OpenSign) | private | unknown | 2023 | product-launched |
 | [OrangeHRM Starter](products/orangehrm-starter.md) | OrangeHRM Inc. | private | funded | 2005 | company-founded |
 | [Otter.ai](products/otter.md) | Otter.ai, Inc. | unknown | funded | 2016 | company-founded |
-| [Outline (source-available)](products/outline.md) | General Outline, Inc. | private | bootstrapped | 2020 | company-founded |
-| [ownCloud Infinite Scale (oCIS source edition)](products/owncloud-ocis.md) | ownCloud GmbH (Kiteworks company) | private | funded | 2011 | company-founded |
+| [Outline](products/outline.md) | General Outline, Inc. | private | bootstrapped | 2020 | company-founded |
+| [ownCloud Infinite Scale](products/owncloud-ocis.md) | ownCloud GmbH (Kiteworks company) | private | funded | 2011 | company-founded |
 | [Paperless-ngx](products/paperless-ngx.md) | Paperless-ngx community | community | not-applicable | unknown | unknown |
 | [Passbolt Community Edition](products/passbolt.md) | Passbolt S.A. | private | funded | 2016 | company-founded |
 | [PDF Arranger](products/pdf-arranger.md) | PDF Arranger community | community | not-applicable | unknown | unknown |
@@ -219,7 +219,7 @@ Sourced organization history, ownership, funding, investors and pricing; product
 | [WeKan](products/wekan.md) | WeKan (Lauri Ojansivu sole proprietorship) | individual | unknown | unknown | unknown |
 | [WeTransfer](products/wetransfer.md) | WeTransfer B.V. | private | funded | 2009 | company-founded |
 | [Whisper](products/whisper.md) | OpenAI Group PBC | private | funded | 2019 | company-founded |
-| [Windmill (OSS source build)](products/windmill.md) | Windmill Labs, Inc. | private | funded | 2022 | company-founded |
+| [Windmill](products/windmill.md) | Windmill Labs, Inc. | private | funded | 2022 | company-founded |
 | [Wix](products/wix.md) | Wix.com Ltd. | public | funded | 2006 | company-founded |
 | [WooCommerce](products/woocommerce.md) | Woo; Automattic Inc. | private | funded | 2008 | company-founded |
 | [WordPress](products/wordpress.md) | WordPress open-source project | community | not-applicable | 2003 | project-started |

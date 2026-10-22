@@ -74,7 +74,7 @@
   "oss": [
     {
       "id": "collabora-online",
-      "name": "Collabora Online (CODE)",
+      "name": "Collabora Online",
       "url": "https://www.collaboraonline.com/code/",
       "categories": [
         "office-files"
@@ -144,7 +144,7 @@
     },
     {
       "id": "owncloud-ocis",
-      "name": "ownCloud Infinite Scale (oCIS source edition)",
+      "name": "ownCloud Infinite Scale",
       "url": "https://owncloud.com/ocis/",
       "categories": [
         "office-files"

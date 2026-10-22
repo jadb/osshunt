@@ -159,7 +159,7 @@
     },
     {
       "id": "affine",
-      "name": "AFFiNE (mixed-license stack; review required)",
+      "name": "AFFiNE",
       "url": "https://affine.pro/",
       "categories": [
         "docs-wiki"
@@ -195,7 +195,7 @@
     },
     {
       "id": "outline",
-      "name": "Outline (source-available)",
+      "name": "Outline",
       "url": "https://www.getoutline.com/",
       "categories": [
         "docs-wiki"

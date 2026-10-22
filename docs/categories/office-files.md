@@ -13,7 +13,7 @@ Use-case sources: [1](https://workspace.google.com/pricing), [2](https://www.mic
 - [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products): USD 5.4/seat/month, annual billing. Business Basic without Teams USD $5.40/user/month paid yearly; web/mobile apps. Basic with Teams $7; desktop apps require another plan. [Pricing](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products).
   [Pricing tiers, organization and product reasons](../products/microsoft-365.md).
 
-### Collabora Online (CODE) — A
+### Collabora Online — A
 
 Source and functionality remain open; commercial offering sells stable supported builds. CODE rolling builds lack SLA/LTS and are not recommended by vendor for production. September 2026 maintainer confirms default CODE has no document/connection caps; optional home mode introduces 20-connection/10-document limits. Source is now in Gerrit; GitHub source mirror used for health, not old issue-only repository.
 
@@ -23,8 +23,8 @@ License: MPL-2.0; identified core OSI: yes; self-hostable: yes; first-party host
 
 Repository: pushed 2026-10-21T20:43:38Z; latest commit 2026-10-21T20:41:59Z; latest published release unverified or unavailable (n/a). Quick analysis: 4.7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
-- Google Workspace → Collabora Online (CODE): **partial**. Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat. [1](https://www.collaboraonline.com/de/code/) [2](https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/)
-- Microsoft 365 → Collabora Online (CODE): **partial**. Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat. [1](https://www.collaboraonline.com/de/code/) [2](https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/)
+- Google Workspace → Collabora Online: **partial**. Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat. [1](https://www.collaboraonline.com/de/code/) [2](https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/)
+- Microsoft 365 → Collabora Online: **partial**. Editor component for documents/spreadsheets/slides, requiring external file storage/authentication such as Nextcloud, ownCloud or Seafile. Does not supply the full email/calendar/meetings/storage suite; test Office-format, macro and layout fidelity. CODE rolling builds carry production stability caveat. [1](https://www.collaboraonline.com/de/code/) [2](https://www.collaboraonline.com/blog/why-the-best-online-office-doesnt-try-to-store-your-files/)
 
 ### Nextcloud Hub — B
 
@@ -42,7 +42,7 @@ Repository: pushed 2026-10-21T16:37:10Z; latest commit 2026-10-21T14:56:02Z; lat
 - Google Workspace → Nextcloud Hub: **partial**. Broad collaboration hub: file sync/share, groupware, calls and document collaboration via apps. Configure an office engine and existing email server/provider; not a replacement for all proprietary desktop features, advanced formulas/macros, tenant identity or compliance services. Export native cloud document formats to portable Office/ODF files and pilot fidelity before migrating. [1](https://nextcloud.com/) [2](https://nextcloud.com/enterprises/) [3](https://docs.nextcloud.com/server/stable/admin_manual/office/index.html)
 - Microsoft 365 → Nextcloud Hub: **partial**. Broad collaboration hub: file sync/share, groupware, calls and document collaboration via apps. Configure an office engine and existing email server/provider; not a replacement for all proprietary desktop features, advanced formulas/macros, tenant identity or compliance services. Export native cloud document formats to portable Office/ODF files and pilot fidelity before migrating. [1](https://nextcloud.com/) [2](https://nextcloud.com/enterprises/) [3](https://docs.nextcloud.com/server/stable/admin_manual/office/index.html)
 
-### ownCloud Infinite Scale (oCIS source edition) — B
+### ownCloud Infinite Scale — B
 
 Apache-2.0 backend plus in-tree web source; May 2026 vendor statement defines complete core EFSS/federation/APIs/governance/clients with enterprise compliance extras. Some vendor stable binaries carry separate EULA; source-build rights and vendor packaged licensing must be distinguished. Exact enterprise boundary not exhaustively enumerated. Hosted ownCloud offering exists, but its backend/version equivalence to this source edition is not verified.
 
@@ -54,9 +54,9 @@ Paid restrictions: Enterprise compliance and policy-enforcement layer
 
 Repository: pushed 2026-10-21T13:45:37Z; latest commit 2026-10-21T08:45:18Z; latest published release v8.2.2 (2026-10-21T10:09:21Z). Quick analysis: 7.4/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
-- Dropbox → ownCloud Infinite Scale (oCIS source edition): **partial**. File sync/share with team-owned spaces, desktop/mobile clients and WebDAV. Recreate sharing/permissions and evaluate editor integrations; does not cover all Dropbox PDF/signing/video/AI bundles. Separate source rights from vendor stable binary EULA. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
-- Google Workspace → ownCloud Infinite Scale (oCIS source edition): **partial**. Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
-- Microsoft 365 → ownCloud Infinite Scale (oCIS source edition): **partial**. Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
+- Dropbox → ownCloud Infinite Scale: **partial**. File sync/share with team-owned spaces, desktop/mobile clients and WebDAV. Recreate sharing/permissions and evaluate editor integrations; does not cover all Dropbox PDF/signing/video/AI bundles. Separate source rights from vendor stable binary EULA. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
+- Google Workspace → ownCloud Infinite Scale: **partial**. Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
+- Microsoft 365 → ownCloud Infinite Scale: **partial**. Replaces Drive/OneDrive file sync/share portion with team spaces and WebDAV APIs; Office editors integrated separately. Mail/calendar/meetings and proprietary tenant services require other products. Choose source or vendor build after checking relevant distribution terms. [1](https://github.com/owncloud/ocis) [2](https://owncloud.com/features/spaces/)
 
 ### ONLYOFFICE Docs Community — C
 

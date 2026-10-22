@@ -5,7 +5,7 @@
   "entries": [
     {
       "id": "collabora-online",
-      "name": "Collabora Online (CODE)",
+      "name": "Collabora Online",
       "currentUrl": "https://www.collaboraonline.com/code/",
       "action": "retain",
       "historyUrl": "https://www.collaboraonline.com/code/",
@@ -55,7 +55,7 @@
     },
     {
       "id": "owncloud-ocis",
-      "name": "ownCloud Infinite Scale (oCIS source edition)",
+      "name": "ownCloud Infinite Scale",
       "currentUrl": "https://owncloud.com/ocis/",
       "action": "retain",
       "historyUrl": "https://owncloud.com/ocis/",

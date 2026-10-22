@@ -1,4 +1,4 @@
-# AFFiNE (mixed-license stack; review required)
+# AFFiNE
 
 [Product](https://affine.pro/) · Checked 2026-10-21. Unknown means unverified; not-offered means no matching offering established in the reviewed scope. Moats and selection reasons are editorial assessments based on the linked product facts, not proven competitive outcomes.
 
