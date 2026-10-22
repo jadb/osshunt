@@ -45,3 +45,36 @@ remain partial and require confirmation before publication.
    same test failed with an empty plan list. Restored adapter; all 33 extraction/link tests passed.
 6. Re-ran extraction against the actual cached Dropbox pricing body; recovered the three plans and exact amounts above.
    Figma's actual body still correctly returned no plans. Adapter success therefore includes actual source verification.
+
+## Zoom: split header and comparison tables
+
+[Pricing capture](https://web.archive.org/web/20151013071321/http://zoom.us/pricing),
+2015-10-13T07:13:21Z, 56,116 bytes. CDX SHA-1/base32 `FKU366K45G7XR6FECQWEPL3WYRK4MQ5B` verified against
+cached bytes. SHA-256 `141f3a247a9167946335194c96811e83a0ed1b52618b2bbb4936ac08dbaae48f`.
+
+Actual markup separates four plan headings in `plans_header` from offers/features in `plans`; a final spanned footnote
+made generic comparison extraction reject the table. A Zoom `/pricing` adapter joins the explicit four header columns
+to equal-width participant rows. Row capacities remain offer qualifications; hidden 100/200-participant expansion
+rows retain unknown active state. No archived scripts or CSS executed.
+
+| Plan | 50 participants | 100 participants, hidden | 200 participants, hidden | Explicit host condition |
+| --- | --- | --- | --- | --- |
+| Basic | Free | No observed offer | No observed offer | Unknown |
+| Pro | $14.99 /mo/host | $54.99 /mo/host | $104.99 /mo/host | Up to 9 hosts |
+| Business | $19.99 /mo/host | $59.99 /mo/host | $109.99 /mo/host | 10 or more hosts |
+| Enterprise | Contact Sales | Contact Sales | Contact Sales | Unknown |
+
+Dollar currency remains unknown. Paid offers retain monthly period, host denominator and unknown commitment;
+Business explicitly requires a minimum of 10 hosts. Participant capacities and upper/lower host conditions remain
+literal volume qualifications. Quote amounts stay unknown. No empty offer cell becomes a zero or an excluded feature.
+Offer evidence joins exact header, participant-label and price-cell locators so conditions cannot detach from prices.
+
+Literal table values retain meeting-duration and meeting-count limits. Symbol-only checked classes are retained as
+`marker: checked`, with attribute evidence; no claim that an unrendered CSS marker proves inclusion or exclusion.
+Empty cells remain unnormalized. Starred rows retain the explicit add-on footnote. All results partial pending review.
+
+An authored split-table fixture used different amounts/capacities/minimum quantity. It first failed with no plans,
+passed after adaptation, failed again when the original omission was restored, then passed after restoration.
+All 34 extraction/link tests passed. Actual cached Zoom bytes independently produced four named plans, ten qualified
+offers and the amounts above after a fresh payload-integrity check. Figma remained unavailable; Dropbox remained three
+plans. No full archived HTML or current page data committed.

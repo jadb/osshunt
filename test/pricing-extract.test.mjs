@@ -182,3 +182,32 @@ test('legacy Dropbox row cards retain named plans, capacity and price evidence w
   assert.equal(r.quality, 'partial');
   assert.equal(extractPricing(html, { originalUrl: 'https://unrelated.example/pricing' }).plans.length, 0);
 });
+test('legacy Zoom split tables retain participant offers, host quantities and literal feature markers', () => {
+  const html = `<table id="plans_header"><tr><th>Participants join free</th>
+    <th><div class="title">Basic</div></th><th><div class="title">Pro</div><div class="desc">Up to 7 hosts</div></th>
+    <th><div class="title">Business</div><div class="desc">12 or more hosts</div></th><th><div class="title">Enterprise</div></th></tr></table>
+    <table id="plans"><tr><td>40 participants<a>More participants?</a></td><td>Free</td>
+    <td><div class="plan-price"><div class="price">$13.25</div><div class="per">/mo/host</div></div></td>
+    <td><div class="plan-price"><div class="price">$18.50</div><div class="per">/mo/host</div></div></td><td>Contact Sales</td></tr>
+    <tr style="display:none"><td>80 participants</td><td></td>
+    <td><div class="plan-price"><div class="price">$43.25</div><div class="per">/mo/host</div></div></td>
+    <td><div class="plan-price"><div class="price">$48.50</div><div class="per">/mo/host</div></div></td><td>Contact Sales</td></tr>
+    <tr><td>Group meeting duration</td><td>35 minutes</td><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td></tr>
+    <tr><td>SSO</td><td></td><td></td><td><span class="checked"></span></td><td><span class="checked"></span></td></tr>
+    <tr class="footnote"><td colspan="5">An add-on subscription purchase is required.</td></tr></table>`;
+  const r = extractPricing(html, { originalUrl: 'http://zoom.us/pricing' });
+  assert.deepEqual(r.plans.map(p => p.name), ['Basic', 'Pro', 'Business', 'Enterprise']);
+  assert.deepEqual(r.plans[1].offers.map(o => o.amount), ['13.25', '43.25']);
+  assert.ok(r.plans[1].offers.every(o => o.unit === 'host' && o.billingPeriod === 'month' && o.commitment === 'unknown' && o.currency === null));
+  assert.equal(r.plans[2].offers[0].minimumQuantity, 12);
+  assert.match(r.plans[2].offers[0].source.text, /12 or more hosts/);
+  assert.match(r.plans[1].offers[0].qualifications.volume, /40 participants.*Up to 7 hosts/);
+  assert.match(r.plans[1].offers[1].qualifications.volume, /80 participants/);
+  assert.equal(r.plans[1].offers[1].qualifications.billingVariant, 'unknown-active-variant');
+  assert.equal(r.plans[0].features.find(f => f.name === 'Group meeting duration').value, '35 minutes');
+  assert.equal(r.plans[2].features.find(f => f.name === 'SSO').value, 'marker: checked');
+  assert.equal(r.plans[1].features.find(f => f.name === 'SSO'), undefined);
+  assert.equal(r.plans[3].status, 'quote'); assert.equal(r.plans[3].offers[0].amount, null);
+  assert.ok(!r.issues.some(i => /Complex comparison table/.test(i)));
+  assert.equal(extractPricing(html, { originalUrl: 'https://unrelated.example/pricing' }).plans.length, 0);
+});
