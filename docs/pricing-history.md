@@ -99,6 +99,8 @@ The subsequent [blind twenty-tool verification](../research/pricing-twenty-tool-
 
 [Batch three](../research/pricing-batch-three-verification.md) applied the revised discovery to the next 20 untried paid catalog tools: 56 HTTP-successful requests, another zero-fetch replay, and **zero valid new observations**. Independent review found missed static pricing on both landing and dedicated pages, an actual JavaScript failure fallback, paid-price placeholders, quote-only structure and locale/scope gaps. Candidate-level error facets now expose mixed failures; collection completion still does not establish correct extraction.
 
+[Batch four](../research/pricing-batch-four-verification.md) tests the implemented landing-source, generic structure and discovery improvements on 20 new tools. Three schema-valid proposals remain unready unchanged after independent review: QuickBooks price conflicts, Buffer title contamination and Zapier product-family/qualification gaps. A fourth raw extraction is schema-invalid Toggl duplicate structure. All 23 raw offers were inspected; no new observations were confirmed. The completed replay made zero requests; retained evidence and all six-month reservation gates were checked offline. Cached development results remain separate from fresh performance. [Implementation details](architecture/pricing-extraction-improvements.md).
+
 Recheck retained evidence without network requests or changes to discovery gates:
 
 ```sh

@@ -1,0 +1,2913 @@
+{
+  "formatVersion": 1,
+  "inputs": {
+    "ids": [
+      "figjam",
+      "quickbooks-online",
+      "xero",
+      "harvest",
+      "toggl-track",
+      "docebo",
+      "talentlms",
+      "salesforce",
+      "bigcommerce",
+      "shopify",
+      "adobe-lightroom",
+      "adobe-photoshop",
+      "lucidchart",
+      "microsoft-visio",
+      "adobe-premiere-pro",
+      "final-cut-pro",
+      "buffer",
+      "hootsuite",
+      "make",
+      "zapier"
+    ],
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z",
+    "maxCandidates": 2,
+    "catalog": [
+      {
+        "id": "figjam",
+        "name": "FigJam",
+        "url": "https://www.figma.com/figjam/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/figjam"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "quickbooks-online",
+        "name": "QuickBooks Online",
+        "url": "https://quickbooks.intuit.com/online/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/online"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "xero",
+        "name": "Xero",
+        "url": "https://www.xero.com/us/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/us"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.xero.com/us/pricing-plans/"
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "Harvest",
+        "url": "https://www.getharvest.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.getharvest.com/pricing"
+        ]
+      },
+      {
+        "id": "toggl-track",
+        "name": "Toggl Track",
+        "url": "https://toggl.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://toggl.com/pricing"
+        ]
+      },
+      {
+        "id": "docebo",
+        "name": "Docebo",
+        "url": "https://www.docebo.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.docebo.com/pricing/"
+        ]
+      },
+      {
+        "id": "talentlms",
+        "name": "TalentLMS",
+        "url": "https://www.talentlms.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.talentlms.com/prices"
+        ]
+      },
+      {
+        "id": "salesforce",
+        "name": "Salesforce",
+        "url": "https://www.salesforce.com/sales/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/sales"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.salesforce.com/sales/pricing/"
+        ]
+      },
+      {
+        "id": "bigcommerce",
+        "name": "BigCommerce",
+        "url": "https://www.bigcommerce.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.bigcommerce.com/pricing/"
+        ]
+      },
+      {
+        "id": "shopify",
+        "name": "Shopify",
+        "url": "https://www.shopify.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.shopify.com/pricing"
+        ]
+      },
+      {
+        "id": "adobe-lightroom",
+        "name": "Adobe Lightroom",
+        "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/photoshop-lightroom"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.adobe.com/products/photoshop-lightroom/plans.html"
+        ]
+      },
+      {
+        "id": "adobe-photoshop",
+        "name": "Adobe Photoshop",
+        "url": "https://www.adobe.com/products/photoshop.html",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/photoshop"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.adobe.com/products/photoshop/plans.html"
+        ]
+      },
+      {
+        "id": "lucidchart",
+        "name": "Lucidchart",
+        "url": "https://lucid.co/lucidchart",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/lucidchart"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "microsoft-visio",
+        "name": "Microsoft Visio",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/visio",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/en-us/microsoft-365/visio"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+        ]
+      },
+      {
+        "id": "adobe-premiere-pro",
+        "name": "Adobe Premiere Pro",
+        "url": "https://www.adobe.com/products/premiere.html",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/premiere"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.adobe.com/products/premiere/plans.html"
+        ]
+      },
+      {
+        "id": "final-cut-pro",
+        "name": "Final Cut Pro",
+        "url": "https://www.apple.com/final-cut-pro/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/final-cut-pro"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "buffer",
+        "name": "Buffer",
+        "url": "https://buffer.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://buffer.com/pricing"
+        ]
+      },
+      {
+        "id": "hootsuite",
+        "name": "Hootsuite",
+        "url": "https://www.hootsuite.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.hootsuite.com/plans"
+        ]
+      },
+      {
+        "id": "make",
+        "name": "Make",
+        "url": "https://www.make.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.make.com/pricing"
+        ]
+      },
+      {
+        "id": "zapier",
+        "name": "Zapier",
+        "url": "https://zapier.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://zapier.com/pricing"
+        ]
+      }
+    ]
+  },
+  "extractorVersion": "1.1.0",
+  "baselineFingerprint": "5ff89cf8af058cc70f494cfaa539fca10f8d0e2c5e09f430d4fc48195c0364a9",
+  "startedAt": "2026-10-22T17:28:15.248Z",
+  "finishedAt": "2026-10-22T17:38:20.501Z",
+  "stopped": null,
+  "historicalComplete": false,
+  "automaticallyConfirmed": 0,
+  "summary": {
+    "products": 20,
+    "completed": 20,
+    "statuses": {
+      "wrong_scope": 1,
+      "review_pending": 3,
+      "error": 5,
+      "extraction_unavailable": 4,
+      "missing_pricing": 3,
+      "missing_landing": 4
+    },
+    "requests": 60,
+    "candidates": 15,
+    "candidateStatuses": {
+      "missing_pricing": 5,
+      "extraction_unavailable": 6,
+      "error": 2,
+      "review_pending": 2
+    },
+    "candidateErrorCodes": {
+      "archive_digest_mismatch": 2
+    },
+    "productsWithCandidateErrors": 2,
+    "productsWithMixedCandidateOutcomes": 2,
+    "rawLandingFragments": 4,
+    "rawLandingOffers": 4,
+    "extractionClassifications": {
+      "unsupported": 17,
+      "embedded_pricing": 1,
+      "partial_pricing": 1,
+      "static_pricing": 2
+    },
+    "invalidExtractions": 1,
+    "productsWithInvalidExtractions": 1,
+    "discoveryRejections": 4,
+    "omittedDiscoveryRejections": 0,
+    "observed429": 0,
+    "responsesMissing": 2,
+    "productsWithNonemptyFragments": 4,
+    "nonemptyCandidateExtractions": 3,
+    "rawCandidateFragments": 17,
+    "rawCandidateOffers": 19,
+    "rawProposals": 3,
+    "rawPlans": 14,
+    "rawOffers": 17
+  },
+  "products": [
+    {
+      "id": "figjam",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "wrong_scope",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T17:28:15.249Z",
+      "nextCheckAt": "2027-04-22T17:28:15.249Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [
+        {
+          "url": "https://www.figma.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:167916-168023",
+          "provenance": "archived-link",
+          "reason": "outside_product_path"
+        }
+      ],
+      "discoveryRejectionSummary": {
+        "total": 1,
+        "retained": 1,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "quickbooks-online",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T17:28:30.254Z",
+      "nextCheckAt": "2027-04-22T17:28:30.254Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "review_pending",
+        "extractionStatus": "review_pending",
+        "rawPlans": 4,
+        "rawOffers": 4,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "embedded_pricing"
+        },
+        "unvalidatedFragments": [
+          {
+            "name": "Simple Start",
+            "status": "paid",
+            "kind": "plan",
+            "popular": null,
+            "offers": [
+              {
+                "literal": "17.50",
+                "amount": "17.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                },
+                "sourceLocator": "offset:421570-428578:$.mainEntity.offers.offers[0]"
+              }
+            ]
+          },
+          {
+            "name": "Essentials",
+            "status": "paid",
+            "kind": "plan",
+            "popular": null,
+            "offers": [
+              {
+                "literal": "32.50",
+                "amount": "32.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                },
+                "sourceLocator": "offset:421570-428578:$.mainEntity.offers.offers[1]"
+              }
+            ]
+          },
+          {
+            "name": "Plus",
+            "status": "paid",
+            "kind": "plan",
+            "popular": null,
+            "offers": [
+              {
+                "literal": "49.50",
+                "amount": "49.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                },
+                "sourceLocator": "offset:421570-428578:$.mainEntity.offers.offers[2]"
+              }
+            ]
+          },
+          {
+            "name": "Advanced",
+            "status": "paid",
+            "kind": "plan",
+            "popular": null,
+            "offers": [
+              {
+                "literal": "117.50",
+                "amount": "117.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                },
+                "sourceLocator": "offset:421570-428578:$.mainEntity.offers.offers[3]"
+              }
+            ]
+          }
+        ]
+      },
+      "discoveryRejections": [
+        {
+          "url": "https://quickbooks.intuit.com/pricing/",
+          "label": "Plans & Pricing",
+          "locator": "offset:37492-38098",
+          "provenance": "archived-link",
+          "reason": "outside_product_path"
+        }
+      ],
+      "discoveryRejectionSummary": {
+        "total": 1,
+        "retained": 1,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": [],
+      "observation": {
+        "id": "pricing-81a918f03c52f8cadd41257b5fa5d6882ce9a4715c578a9b27ea6ce4ac873763",
+        "productId": "quickbooks-online",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-19T04:53:12.000Z",
+        "landingCapturedAt": "2025-06-19T04:53:12.000Z",
+        "pricingCapturedAt": "2025-06-19T04:53:12.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/",
+        "provenance": "landing-page",
+        "sourceSha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+        "landingSha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+        "sourceDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+        "landingDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+        "sourceIntegrity": {
+          "status": "verified",
+          "expectedDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+          "actualDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H"
+        },
+        "landingIntegrity": {
+          "status": "verified",
+          "expectedDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+          "actualDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H"
+        },
+        "quality": "partial",
+        "issues": [],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Simple Start",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "17.50",
+                "amount": "17.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Essentials",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "32.50",
+                "amount": "32.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Plus",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "49.50",
+                "amount": "49.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Advanced",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "117.50",
+                "amount": "117.50",
+                "currency": "USD",
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "xero",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-query",
+      "done": true,
+      "errorCode": "archive_timeout",
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T17:28:49.106Z",
+      "nextCheckAt": "2027-04-22T17:28:49.106Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "harvest",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T17:29:10.296Z",
+      "nextCheckAt": "2027-04-22T17:29:10.296Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "missing_pricing": 1,
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": true
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.getharvest.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:21027-21177",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.getharvest.com/customers/juicyorange",
+          "label": "Harvest helps web design company Juicyorange justify their pricing.",
+          "locator": "offset:94045-94420",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.getharvest.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:21027-21177",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.getharvest.com/customers/juicyorange",
+          "label": "Harvest helps web design company Juicyorange justify their pricing.",
+          "locator": "offset:94045-94420",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.getharvest.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:21027-21177",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.getharvest.com/customers/juicyorange",
+            "label": "Harvest helps web design company Juicyorange justify their pricing.",
+            "locator": "offset:94045-94420",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250625234652id_/https://www.getharvest.com/customers/juicyorange",
+          "integrity": "legacy_chunked_unverified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "toggl-track",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T17:29:51.119Z",
+      "nextCheckAt": "2027-04-22T17:29:51.119Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250628072852id_/https://toggl.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "extraction_unavailable": 2
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://toggl.com/track/pricing/",
+          "label": "Pricing",
+          "locator": "offset:39946-39983",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://toggl.com/plan/",
+          "label": "Beautifully simple team planning",
+          "locator": "offset:289648-295199",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://toggl.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://toggl.com/track/pricing/",
+          "label": "Pricing",
+          "locator": "offset:39946-39983",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://toggl.com/plan/",
+          "label": "Beautifully simple team planning",
+          "locator": "offset:289648-295199",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://toggl.com/track/pricing/",
+            "label": "Pricing",
+            "locator": "offset:39946-39983",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250614082257id_/https://toggl.com/track/pricing/",
+          "integrity": "verified",
+          "extractionStatus": "invalid",
+          "extractionIssueCodes": [
+            "duplicate_plan_identity",
+            "invalid_observation"
+          ],
+          "rawPlans": 7,
+          "rawOffers": 6,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "partial_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Free",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 0 Free for up to 5 users.",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:54254-68273"
+                }
+              ]
+            },
+            {
+              "name": "Starter",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 10 $ 9 per user per month",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:68273-72538"
+                }
+              ]
+            },
+            {
+              "name": "Premium",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 20 $ 18 per user per month",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:72538-85499"
+                }
+              ]
+            },
+            {
+              "name": "Enterprise",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": []
+            },
+            {
+              "name": "Free",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 0 Free for up to 5 users.",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:88696-91066"
+                }
+              ]
+            },
+            {
+              "name": "Starter",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 10 $ 9 per user per month",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:91066-91732"
+                }
+              ]
+            },
+            {
+              "name": "Premium",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 20 $ 18 per user per month",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:91732-97021"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://toggl.com/plan/",
+            "label": "Beautifully simple team planning",
+            "locator": "offset:289648-295199",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250622093807id_/https://toggl.com/plan/",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "docebo",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T17:30:52.745Z",
+      "nextCheckAt": "2027-04-22T17:30:52.745Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250605212725id_/https://www.docebo.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "missing_pricing": 2
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.docebo.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:67289-67415",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.docebo.com/pricing/",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.docebo.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:67289-67415",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.docebo.com/pricing/",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.docebo.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:67289-67415",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.docebo.com/pricing/",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "talentlms",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 3,
+      "checkedAt": "2026-10-22T17:31:39.600Z",
+      "nextCheckAt": "2027-04-22T17:31:39.600Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630200514id_/https://www.talentlms.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "missing_pricing": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.talentlms.com/prices",
+          "label": "Pricing Pricing",
+          "locator": "offset:386139-387471",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.talentlms.com/prices",
+          "label": "Pricing Pricing",
+          "locator": "offset:386139-387471",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.talentlms.com/prices",
+            "label": "Pricing Pricing",
+            "locator": "offset:386139-387471",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "salesforce",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T17:32:03.131Z",
+      "nextCheckAt": "2027-04-22T17:32:03.131Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "bigcommerce",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T17:32:10.924Z",
+      "nextCheckAt": "2027-04-22T17:32:10.924Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "extraction_unavailable": 1,
+          "missing_pricing": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": true
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.bigcommerce.com/enterprise-pricing/",
+          "label": "Pricing",
+          "locator": "offset:481102-481423",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.bigcommerce.com/pricing/",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.bigcommerce.com/enterprise-pricing/",
+          "label": "Pricing",
+          "locator": "offset:481102-481423",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.bigcommerce.com/pricing/",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.bigcommerce.com/enterprise-pricing/",
+            "label": "Pricing",
+            "locator": "offset:481102-481423",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        },
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.bigcommerce.com/pricing/",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "shopify",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-body",
+      "done": true,
+      "errorCode": "archive_timeout",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T17:33:08.037Z",
+      "nextCheckAt": "2027-04-22T17:33:08.037Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630215326id_/https://www.shopify.com/",
+      "landingIntegrity": null,
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "adobe-lightroom",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "complete",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T17:33:35.508Z",
+      "nextCheckAt": "2027-04-22T17:33:35.508Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [
+        {
+          "url": "https://milo.adobe.com/tools/ost?osi=YbmrrnDXjKp75tHcS_wDjwLhuZl3uldCu00qBXGJFMc&type=price&term=true&seat=false&tax=false&old=false&exclusive=false",
+          "label": "PRICE - ABM - Lightroom plan with 1TB",
+          "locator": "offset:6879-7109",
+          "provenance": "archived-link",
+          "reason": "unapproved_host"
+        }
+      ],
+      "discoveryRejectionSummary": {
+        "total": 1,
+        "retained": 1,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "error": 1
+        },
+        "errorCodes": {
+          "archive_digest_mismatch": 1
+        },
+        "hasErrors": true,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "error",
+          "errorCode": "archive_digest_mismatch",
+          "candidate": {
+            "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250529233022id_/https://www.adobe.com/products/photoshop-lightroom/plans.html",
+          "integrity": null,
+          "extractionStatus": "error",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "adobe-photoshop",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "complete",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T17:34:06.460Z",
+      "nextCheckAt": "2027-04-22T17:34:06.460Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [
+        {
+          "url": "https://milo.adobe.com/tools/ost?osi=A1xn6EL4pK93bWjM8flffQpfEL-bnvtoQKQAvkx574M&type=price&term=true&seat=false&tax=false&old=false&exclusive=false",
+          "label": "PRICE - ABM - Photoshop{{small-tax-incl-label}}",
+          "locator": "offset:6526-6766",
+          "provenance": "archived-link",
+          "reason": "unapproved_host"
+        }
+      ],
+      "discoveryRejectionSummary": {
+        "total": 1,
+        "retained": 1,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "error": 1
+        },
+        "errorCodes": {
+          "archive_digest_mismatch": 1
+        },
+        "hasErrors": true,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.adobe.com/products/photoshop/plans.html",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.adobe.com/products/photoshop/plans.html",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "error",
+          "errorCode": "archive_digest_mismatch",
+          "candidate": {
+            "url": "https://www.adobe.com/products/photoshop/plans.html",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250622075801id_/https://www.adobe.com/products/photoshop/plans.html",
+          "integrity": null,
+          "extractionStatus": "error",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "lucidchart",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T17:34:46.230Z",
+      "nextCheckAt": "2027-04-22T17:34:46.230Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "microsoft-visio",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T17:34:56.044Z",
+      "nextCheckAt": "2027-04-22T17:34:56.044Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "adobe-premiere-pro",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-body",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T17:35:12.032Z",
+      "nextCheckAt": "2027-04-22T17:35:12.032Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630005517id_/https://www.adobe.com/products/premiere.html",
+      "landingIntegrity": null,
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "final-cut-pro",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T17:35:31.050Z",
+      "nextCheckAt": "2027-04-22T17:35:31.050Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "buffer",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T17:35:51.573Z",
+      "nextCheckAt": "2027-04-22T17:35:51.573Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630094134id_/https://buffer.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "label": "Pricing",
+          "locator": "offset:32108-32208",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://buffer.com/transparent-pricing",
+          "label": "Transparent Pricing",
+          "locator": "offset:173042-173129",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://buffer.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "label": "Pricing",
+          "locator": "offset:32108-32208",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://buffer.com/transparent-pricing",
+          "label": "Transparent Pricing",
+          "locator": "offset:173042-173129",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+            "label": "Pricing",
+            "locator": "offset:32108-32208",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250628103723id_/https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "integrity": "legacy_chunked_unverified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 2,
+          "rawOffers": 4,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "static_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Essentials Recommended",
+              "status": "paid",
+              "kind": "plan",
+              "popular": true,
+              "offers": [
+                {
+                  "literal": "$5 /month",
+                  "amount": "5",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:61826-71382"
+                },
+                {
+                  "literal": "1 channel $ 60 billed yearly (save 2 months)",
+                  "amount": "60",
+                  "currency": null,
+                  "billingPeriod": "year",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:61826-71382"
+                }
+              ]
+            },
+            {
+              "name": "Team Placeholder",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$10 /month",
+                  "amount": "10",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:71382-82856"
+                },
+                {
+                  "literal": "1 channel $ 120 billed yearly (save 2 months)",
+                  "amount": "120",
+                  "currency": null,
+                  "billingPeriod": "year",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:71382-82856"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-ad8cd5f172b8065bb0bf4c0d6359ec871623d1af16f26b3e39a9a2bfb59fb12c",
+        "productId": "buffer",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-30T09:41:34.000Z",
+        "landingCapturedAt": "2025-06-30T09:41:34.000Z",
+        "pricingCapturedAt": "2025-06-28T10:37:23.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630094134id_/https://buffer.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250628103723id_/https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+        "provenance": "archived-link",
+        "sourceSha256": "e1671652c9f62aecc1208a21afa4e3aacf280c3b5221cb31c061f477aa2d97cd",
+        "landingSha256": "4d5132c0cca7f3cac32d9042bf155394a731b3861f66945df8ae44300d2fdfcd",
+        "sourceDigest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+        "landingDigest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+        "sourceIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+          "actualDigest": "OTD7ZKATU3IXV6YPR2LT4US3P3RU4KT3",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "landingIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+          "actualDigest": "RDOGU6RSZJCXMSUZRXL6WLZSPIHTJTMU",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "quality": "partial",
+        "issues": [
+          "Complex comparison table requires an adapter",
+          "Explicitly hidden contextual terms excluded from billing and quantity inference",
+          "Unknown currency: $5 /month",
+          "Unknown currency: 1 channel $ 60 billed yearly (save 2 months)",
+          "Unknown currency: $10 /month",
+          "Unknown currency: 1 channel $ 120 billed yearly (save 2 months)",
+          "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        ],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Essentials Recommended",
+            "status": "paid",
+            "popular": true,
+            "kind": "plan",
+            "features": 9,
+            "offers": [
+              {
+                "literal": "$5 /month",
+                "amount": "5",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "1 channel $ 60 billed yearly (save 2 months)",
+                "amount": "60",
+                "currency": null,
+                "billingPeriod": "year",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Team Placeholder",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 11,
+            "offers": [
+              {
+                "literal": "$10 /month",
+                "amount": "10",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "1 channel $ 120 billed yearly (save 2 months)",
+                "amount": "120",
+                "currency": null,
+                "billingPeriod": "year",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hootsuite",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T17:36:26.975Z",
+      "nextCheckAt": "2027-04-22T17:36:26.975Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "extraction_unavailable": 2
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.hootsuite.com/plans",
+          "label": "Pricing",
+          "locator": "offset:124770-124877",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.hootsuite.com/plans/enterprise",
+          "label": "Enterprise",
+          "locator": "offset:124950-125073",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.hootsuite.com/plans/standard",
+          "label": "Standard",
+          "locator": "offset:259410-259594",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.hootsuite.com/plans/advanced",
+          "label": "Advanced",
+          "locator": "offset:259603-259787",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.hootsuite.com/plans",
+          "label": "Pricing",
+          "locator": "offset:124770-124877",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.hootsuite.com/plans/enterprise",
+          "label": "Enterprise",
+          "locator": "offset:124950-125073",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.hootsuite.com/plans",
+            "label": "Pricing",
+            "locator": "offset:124770-124877",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.hootsuite.com/plans/enterprise",
+            "label": "Enterprise",
+            "locator": "offset:124950-125073",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "make",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T17:37:38.703Z",
+      "nextCheckAt": "2027-04-22T17:37:38.703Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "zapier",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T17:37:39.061Z",
+      "nextCheckAt": "2027-04-22T17:37:39.061Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://zapier.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:77678-77799",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://zapier.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:77678-77799",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://zapier.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:77678-77799",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 8,
+          "rawOffers": 9,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "static_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Free",
+              "status": "free",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Free",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:142985-223393"
+                },
+                {
+                  "literal": "$ 0 /mo Free forever",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:142985-223393"
+                }
+              ]
+            },
+            {
+              "name": "Professional",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 19 . 99 /mo Billed annually",
+                  "amount": "19.99",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:223393-235045"
+                }
+              ]
+            },
+            {
+              "name": "Team",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 69 /mo Billed annually",
+                  "amount": "69",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:235045-246371"
+                }
+              ]
+            },
+            {
+              "name": "Enterprise",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Contact Sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:246371-257376"
+                }
+              ]
+            },
+            {
+              "name": "Agents",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at $ 50 /mo",
+                  "amount": "50",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:361343-367840"
+                }
+              ]
+            },
+            {
+              "name": "Chatbots",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at $ 20 /mo",
+                  "amount": "20",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:367840-369701"
+                }
+              ]
+            },
+            {
+              "name": "Interfaces",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at $ 20 /mo",
+                  "amount": "20",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:369701-371540"
+                }
+              ]
+            },
+            {
+              "name": "Tables",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at $ 20 /mo",
+                  "amount": "20",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:371540-373236"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-da909e69a60dde716667bba8c7c2d96ae4a0b8af9dda8d51b0d87caab8a34f77",
+        "productId": "zapier",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-29T12:32:00.000Z",
+        "landingCapturedAt": "2025-06-29T12:32:00.000Z",
+        "pricingCapturedAt": "2025-06-26T03:04:27.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+        "provenance": "archived-link",
+        "sourceSha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+        "landingSha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+        "sourceDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+        "landingDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+        "sourceIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+          "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "landingIntegrity": {
+          "status": "verified",
+          "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+          "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6"
+        },
+        "quality": "partial",
+        "issues": [
+          "Explicitly hidden contextual terms excluded from billing and quantity inference",
+          "Unknown currency: $ 0 /mo Free forever",
+          "Unknown currency: $ 19 . 99 /mo Billed annually",
+          "Unknown currency: $ 69 /mo Billed annually",
+          "Unknown currency: Starts at $ 50 /mo",
+          "Unknown currency: Starts at $ 20 /mo",
+          "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        ],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Free",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$ 0 /mo Free forever",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Professional",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "$ 19 . 99 /mo Billed annually",
+                "amount": "19.99",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Team",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "$ 69 /mo Billed annually",
+                "amount": "69",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "quote",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Contact Sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Agents",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Starts at $ 50 /mo",
+                "amount": "50",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Chatbots",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Starts at $ 20 /mo",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Interfaces",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Starts at $ 20 /mo",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Tables",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Starts at $ 20 /mo",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

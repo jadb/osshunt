@@ -1,0 +1,187 @@
+{
+  "formatVersion": 1,
+  "mode": "development-cached-source-reassessment",
+  "extractorVersion": "1.1.0",
+  "sourceRequests": 0,
+  "confirmedObservations": 0,
+  "products": 8,
+  "validProposals": 7,
+  "notBlind": true,
+  "results": [
+    {
+      "productId": "front",
+      "kind": "pricing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250625074700id_/https://front.com/",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250614104719id_/https://front.com/pricing",
+      "sourceSha256": "90baa14c266beecd500906346cda975d7ea65cdac6bdf0763d63725068f5ec6f",
+      "integrity": "verified",
+      "status": "review_pending",
+      "classification": "static_pricing",
+      "rawPlans": 4,
+      "rawOffers": 4,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "currency",
+        "billingPeriod",
+        "commitment",
+        "unit",
+        "amount"
+      ],
+      "remainingLimitations": []
+    },
+    {
+      "productId": "wix",
+      "kind": "pricing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630221108id_/https://www.wix.com/",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250626212650id_/https://www.wix.com/plans",
+      "sourceSha256": "68c8688f006afa176dd1a3ee2ad0284bc69557f9f835cf2a13fca6b07afc658f",
+      "integrity": "legacy_chunked_unverified",
+      "status": "review_pending",
+      "classification": "static_pricing",
+      "rawPlans": 4,
+      "rawOffers": 4,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "currency",
+        "commitment",
+        "unit"
+      ],
+      "remainingLimitations": [
+        "Currency, tax, commitment and variant ambiguity remain."
+      ]
+    },
+    {
+      "productId": "otter",
+      "kind": "pricing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630174201id_/https://otter.ai/",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250622161246id_/https://otter.ai/pricing",
+      "sourceSha256": "6b042e3c7c7ee5e98d67e4e6cf334bd4079a2bafb0e0f697201b77c58fdff65f",
+      "integrity": "legacy_chunked_unverified",
+      "status": "invalid",
+      "classification": "partial_pricing",
+      "rawPlans": 8,
+      "rawOffers": 6,
+      "proposalPresent": false,
+      "quality": null,
+      "unknownFields": [],
+      "remainingLimitations": [
+        "Duplicate billing representations; no schema-valid proposal."
+      ]
+    },
+    {
+      "productId": "smallpdf",
+      "kind": "pricing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630043428id_/https://smallpdf.com/",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing",
+      "sourceSha256": "cb6b7c40c7d3360e7359c2dd39599c7083be58bfc4d299783e1f578be3687b43",
+      "integrity": "verified",
+      "status": "review_pending",
+      "classification": "partial_pricing",
+      "rawPlans": 3,
+      "rawOffers": 4,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "currency",
+        "billingPeriod",
+        "commitment",
+        "unit",
+        "amount"
+      ],
+      "remainingLimitations": [
+        "Paid-price placeholders remain unknown."
+      ]
+    },
+    {
+      "productId": "spendesk",
+      "kind": "pricing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250624112401id_/https://www.spendesk.com/",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/",
+      "sourceSha256": "92878086c058d8849beb67428c1e5cf362c5d29b6a4a8781f4c68ddc4364f263",
+      "integrity": "verified",
+      "status": "review_pending",
+      "classification": "quote_only",
+      "rawPlans": 7,
+      "rawOffers": 7,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "currency",
+        "billingPeriod",
+        "commitment",
+        "unit",
+        "amount"
+      ],
+      "remainingLimitations": [
+        "Quote-only base and modules; no numerical base price."
+      ]
+    },
+    {
+      "productId": "docusign",
+      "kind": "landing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+      "sourceSha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d",
+      "integrity": "verified",
+      "status": "review_pending",
+      "classification": "static_pricing",
+      "rawPlans": 3,
+      "rawOffers": 6,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "currency",
+        "unit"
+      ],
+      "remainingLimitations": []
+    },
+    {
+      "productId": "backblaze-business-backup",
+      "kind": "landing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+      "sourceSha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7",
+      "integrity": "verified",
+      "status": "review_pending",
+      "classification": "static_pricing",
+      "rawPlans": 2,
+      "rawOffers": 3,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "currency",
+        "commitment",
+        "unit",
+        "billingPeriod",
+        "amount"
+      ],
+      "remainingLimitations": [
+        "Additional numeric add-on rate is not fully bound to plan structure."
+      ]
+    },
+    {
+      "productId": "fireflies",
+      "kind": "landing",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630090436id_/https://fireflies.ai/",
+      "sourceArchiveUrl": "https://web.archive.org/web/20250630090436id_/https://fireflies.ai/",
+      "sourceSha256": "393d50029c4c8b20462f991ffdf7ae6cfc46961d33be8cb529f8e17886293c1d",
+      "integrity": "legacy_chunked_unverified",
+      "status": "review_pending",
+      "classification": "embedded_pricing",
+      "rawPlans": 4,
+      "rawOffers": 4,
+      "proposalPresent": true,
+      "quality": "partial",
+      "unknownFields": [
+        "billingPeriod",
+        "commitment",
+        "unit"
+      ],
+      "remainingLimitations": [
+        "Embedded amounts have unknown billing period, commitment and unit."
+      ]
+    }
+  ]
+}

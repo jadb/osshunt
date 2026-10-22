@@ -1,0 +1,1150 @@
+{
+  "formatVersion": 1,
+  "mode": "independent-retained-source-semantic-review",
+  "frozenCommit": "9e5dfe4",
+  "extractorVersion": "1.1.0",
+  "sourceRequests": 0,
+  "baselineChanged": false,
+  "summary": {
+    "productsReviewed": 20,
+    "schemaValidProposals": 3,
+    "rawPlanFragments": 21,
+    "rawOffersReviewed": 23,
+    "semanticallyReadyWholeProposals": 0,
+    "completeQualifiedRecurringTuples": 0,
+    "confirmedObservations": 0,
+    "conflictingStructuredPriceOffers": 4,
+    "contaminatedPlanNames": 2,
+    "mixedProductFamilyRecords": 4
+  },
+  "metricDefinitions": {
+    "rawFragments": "Includes duplicate plan representations and schema-invalid structures; not a distinct-tier count.",
+    "rawOffersReviewed": "All retained raw offer records, including invalid Toggl fragments, quote nulls and multiple free representations.",
+    "semanticReadiness": "Whole proposal can publish unchanged only after source, identity and qualification review. Supported numeric literals alone are insufficient.",
+    "completeQualifiedRecurringTuples": "Requires supported product/plan, amount, currency, billing basis and applicable commitment/quantity/conditions; preserved unknowns are not invented facts."
+  },
+  "products": [
+    {
+      "productId": "figjam",
+      "classification": "evidenced_pricing_scope_gap",
+      "finding": "Verified product landing has no rate table; its shared Figma pricing link is correctly retained as an outside_product_path rejection. The landing explicitly describes inclusion with seats across plans, requiring reviewed bundle association.",
+      "baselineStatus": "wrong_scope",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "Product/bundle scope for shared Figma pricing",
+          "Temporary guest access must not become a permanent free tier"
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-25T16:10:40.000Z",
+          "sha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+          "grade": "verified",
+          "role": "landing",
+          "originalUrl": "https://www.figma.com/figjam/",
+          "archiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/"
+        }
+      ]
+    },
+    {
+      "productId": "quickbooks-online",
+      "classification": "conflicting_structured_and_visible_prices",
+      "finding": "Four named JSON-LD offers are extracted correctly as embedded literals, but every amount conflicts with both the visible regular and promotional cards. The proposal omits an explicit promotion/conflict issue. Tier identities are useful; these offers cannot represent an unqualified current recurring price.",
+      "baselineStatus": "review_pending",
+      "proposalPresent": true,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 4,
+        "offersReviewed": 4,
+        "usefulNamedPlans": 4,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "publicationBlocked": true,
+        "fieldErrors": [
+          {
+            "type": "source_price_conflict_and_missing_qualification",
+            "plans": [
+              "Simple Start",
+              "Essentials",
+              "Plus",
+              "Advanced"
+            ],
+            "structuredAmounts": [
+              "17.50",
+              "32.50",
+              "49.50",
+              "117.50"
+            ],
+            "visibleRegularAmounts": [
+              "35",
+              "65",
+              "99",
+              "235"
+            ],
+            "visiblePromotionalAmounts": [
+              "3.50",
+              "6.50",
+              "9.90",
+              "23.50"
+            ],
+            "visibleBillingPeriod": "month",
+            "visiblePromotion": "90% off for 3 months",
+            "extractedPromotion": null,
+            "severity": "material"
+          }
+        ],
+        "unresolved": [
+          "Structured billing period, commitment and unit remain unknown; those unknowns were preserved correctly.",
+          "No claim that the structured values are active discounted prices; conflicts require explicit review.",
+          "Proposal is schema-valid, not semantically confirmed."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-19T04:53:12.000Z",
+          "sha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+          "grade": "verified",
+          "role": "landing",
+          "originalUrl": "https://quickbooks.intuit.com/online/",
+          "archiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/"
+        }
+      ]
+    },
+    {
+      "productId": "xero",
+      "classification": "source_query_timeout",
+      "finding": "Landing query timed out before a selected record or retained body was available; no source-content or pricing-absence inference is possible.",
+      "baselineStatus": "error",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "No retained source body"
+        ]
+      },
+      "sources": []
+    },
+    {
+      "productId": "harvest",
+      "classification": "missing_pricing_capture_and_wrong_topic_candidate",
+      "finding": "Verified landing contains no vendor rate table. Exact pricing candidate has no eligible capture; second retained candidate is a customer case study about the customer pricing its own services, not Harvest subscription prices. Generic extractor correctly returned no offers from either retained body.",
+      "baselineStatus": "extraction_unavailable",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "Broad pricing-label intent admitted customer-story prose",
+          "No conclusion about pricing at other URLs or dates"
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-27T02:29:33.000Z",
+          "sha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681",
+          "grade": "verified",
+          "role": "landing",
+          "originalUrl": "https://www.getharvest.com/",
+          "archiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/"
+        },
+        {
+          "capturedAt": "2025-06-25T23:46:52.000Z",
+          "sha256": "88a05b5055094ff63a5354f1f7335ebb08ad53ed2b04ad7ba116849f97f9dda4",
+          "grade": "legacy_chunked_unverified",
+          "role": "pricing",
+          "originalUrl": "https://www.getharvest.com/customers/juicyorange",
+          "archiveUrl": "https://web.archive.org/web/20250625234652id_/https://www.getharvest.com/customers/juicyorange"
+        }
+      ]
+    },
+    {
+      "productId": "toggl-track",
+      "classification": "static_pricing_partial_invalid_duplicates_and_wrong_product_candidate",
+      "finding": "Verified Track pricing page has Free, Starter, Premium and Enterprise tiers. Extractor retained seven desktop/mobile representations, with duplicated Free/Starter/Premium identities. Free zeros are source-supported; competing paid monthly/annual amounts were conservatively left null. No valid proposal. The second candidate is the separate Toggl Plan product, not Track.",
+      "baselineStatus": "extraction_unavailable",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 7,
+        "offersReviewed": 6,
+        "usefulNamedPlans": 4,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "sourceSupportedNumericOfferAssertions": 2,
+        "unknownAmountOffers": 4,
+        "unresolved": [
+          "Duplicate representations require identity/variant reconciliation, not blind name-based merge.",
+          "Raw Free status remains unknown despite explicit Free tier; safe under-extraction.",
+          "Paid offers contain both monthly/annual display amounts; selected active variant and currency remain unknown.",
+          "Enterprise has explicit custom-pricing wording but no extracted offer.",
+          "Toggl Plan is a different product and must not supply Track prices.",
+          "Maximum five free users is not a minimum seat purchase.",
+          "Premium free 30-day trial is not a permanent paid-tier zero."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-28T07:28:52.000Z",
+          "sha256": "29359d0d80952960993f0773f985522683350e96c141e551f5d01104a08c5396",
+          "grade": "legacy_chunked_unverified",
+          "role": "landing",
+          "originalUrl": "https://toggl.com/",
+          "archiveUrl": "https://web.archive.org/web/20250628072852id_/https://toggl.com/"
+        },
+        {
+          "capturedAt": "2025-06-14T08:22:57.000Z",
+          "sha256": "57e13fb501a658c2e266228e493c269666dc8317769bf35a72b8b860cf52634e",
+          "grade": "verified",
+          "role": "pricing",
+          "originalUrl": "https://toggl.com/track/pricing/",
+          "archiveUrl": "https://web.archive.org/web/20250614082257id_/https://toggl.com/track/pricing/"
+        },
+        {
+          "capturedAt": "2025-06-22T09:38:07.000Z",
+          "sha256": "2af66655efc7c5fd0c8c2c5a4c5466fce92583e79b3d1c855a714ddd5b50067d",
+          "grade": "verified",
+          "role": "pricing",
+          "originalUrl": "https://toggl.com/plan/",
+          "archiveUrl": "https://web.archive.org/web/20250622093807id_/https://toggl.com/plan/"
+        }
+      ]
+    },
+    {
+      "productId": "docebo",
+      "classification": "missing_pricing_capture",
+      "finding": "Verified learning-platform landing has product descriptions, demos and press content but no vendor rate structure. Both exact pricing URL variants have no eligible capture in the fixed lookup window.",
+      "baselineStatus": "missing_pricing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "No retained pricing body: quote-only, paid-rate and JavaScript-source status remain unproven.",
+          "Free-learning charity press coverage is not a recurring commercial free tier."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-05T21:27:25.000Z",
+          "sha256": "7704f73c1a10a2d2e6dbb2f31110b0f50a96e6b1ef110e4110443370c5a5b4ed",
+          "grade": "verified",
+          "role": "landing",
+          "originalUrl": "https://www.docebo.com/",
+          "archiveUrl": "https://web.archive.org/web/20250605212725id_/https://www.docebo.com/"
+        }
+      ]
+    },
+    {
+      "productId": "talentlms",
+      "classification": "missing_pricing_capture",
+      "finding": "Verified product landing has feature/customer content and a free-signup call to action but no named pricing structure or rates. The exact /prices candidate has no eligible capture.",
+      "baselineStatus": "missing_pricing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "A free CTA alone is not a priced named recurring tier.",
+          "No conclusion about pricing availability at other URLs or dates."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-30T20:05:14.000Z",
+          "sha256": "b87a64e381785b032f0c0f65f161b92322f57d4bf170dcf00af4d7787e16f306",
+          "grade": "verified",
+          "role": "landing",
+          "originalUrl": "https://www.talentlms.com/",
+          "archiveUrl": "https://web.archive.org/web/20250630200514id_/https://www.talentlms.com/"
+        }
+      ]
+    },
+    {
+      "productId": "salesforce",
+      "classification": "missing_landing_in_window",
+      "finding": "No successful exact canonical landing HTML capture in the fixed June 2025 window; no retained source content to classify.",
+      "baselineStatus": "missing_landing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "No inference about other canonical URLs, locales, capture dates or commercial offers."
+        ]
+      },
+      "sources": []
+    },
+    {
+      "productId": "bigcommerce",
+      "classification": "quote_only_enterprise_structure_missed",
+      "finding": "Verified Enterprise pricing page explicitly requests quotation and states that pricing is tailored to merchant needs. It lists included capabilities rather than numeric subscription rates. The general pricing hint has no eligible capture. Extractor returned no plans.",
+      "baselineStatus": "extraction_unavailable",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "Observed enterprise scope is narrower than all BigCommerce editions.",
+          "Zero additional transaction fees is not a zero subscription price.",
+          "ROI statistics and migration-cost statements are not recurring prices.",
+          "No claim that other editions are quote-only."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-28T19:11:18.000Z",
+          "sha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+          "grade": "legacy_chunked_unverified",
+          "role": "landing",
+          "originalUrl": "https://www.bigcommerce.com/",
+          "archiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/"
+        },
+        {
+          "capturedAt": "2025-06-21T16:53:25.000Z",
+          "sha256": "419a17a61d322ba7c3c20ccc1f2c63f50798497c07063c69773c87c3488bafc7",
+          "grade": "verified",
+          "role": "pricing",
+          "originalUrl": "https://www.bigcommerce.com/enterprise-pricing/",
+          "archiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/"
+        }
+      ]
+    },
+    {
+      "productId": "shopify",
+      "classification": "selected_landing_replay_timeout",
+      "finding": "A landing HTML record was selected, but replay timed out before an immutable body was retained. No semantic classification of page structure or prices is possible.",
+      "baselineStatus": "error",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "reviewed": true,
+        "rawPlans": 0,
+        "offersReviewed": 0,
+        "usefulNamedPlans": 0,
+        "usefulProposal": false,
+        "semanticallyUsableOffers": 0,
+        "completeRecurringPriceTuples": 0,
+        "fieldErrors": [],
+        "unresolved": [
+          "HTTP/index success does not establish a retained valid body.",
+          "Do not classify as a JavaScript shell, missing price list or no commercial offer."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-30T21:53:26.000Z",
+          "grade": "missing",
+          "role": "landing",
+          "originalUrl": "https://www.shopify.com/",
+          "archiveUrl": "https://web.archive.org/web/20250630215326id_/https://www.shopify.com/"
+        }
+      ]
+    },
+    {
+      "productId": "adobe-lightroom",
+      "classification": "templated_landing_with_pricing_integrity_gap",
+      "finding": "Verified Lightroom landing retains unexpanded product and commerce tokens rather than observed numeric prices. The selected pricing capture failed payload-digest verification, so no pricing facts can be assessed from it.",
+      "baselineStatus": "error",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "grade": "verified",
+          "digest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "landing",
+          "originalUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html"
+        }
+      ],
+      "rejectedSources": [
+        {
+          "capturedAt": "2025-05-29T23:30:22.000Z",
+          "sha256": null,
+          "grade": "rejected_digest_mismatch",
+          "digest": "765QEU6NFVPM2FA5JOZVLXQXUQWZN7LE",
+          "role": "pricing",
+          "originalUrl": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+          "archiveUrl": "https://web.archive.org/web/20250529233022id_/https://www.adobe.com/products/photoshop-lightroom/plans.html"
+        }
+      ]
+    },
+    {
+      "productId": "adobe-photoshop",
+      "classification": "templated_landing_with_pricing_integrity_gap",
+      "finding": "Verified Photoshop landing contains unexpanded product, purchase and trial tokens; no supported numeric plan rates. Its selected pricing capture failed payload-digest verification. Business and student options are referenced but their pricing is not evidenced here.",
+      "baselineStatus": "error",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "grade": "verified",
+          "digest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "landing",
+          "originalUrl": "https://www.adobe.com/products/photoshop.html",
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html"
+        }
+      ],
+      "rejectedSources": [
+        {
+          "capturedAt": "2025-06-22T07:58:01.000Z",
+          "sha256": null,
+          "grade": "rejected_digest_mismatch",
+          "digest": "FUF5AU64XHXY7IHEJ6EEUO52TC7MIX2Z",
+          "role": "pricing",
+          "originalUrl": "https://www.adobe.com/products/photoshop/plans.html",
+          "archiveUrl": "https://web.archive.org/web/20250622075801id_/https://www.adobe.com/products/photoshop/plans.html"
+        }
+      ]
+    },
+    {
+      "productId": "lucidchart",
+      "classification": "missing_landing_capture",
+      "finding": "The exact approved Lucidchart landing has no eligible archive record in the frozen window. Product or edition pricing cannot be inferred from an absent source.",
+      "baselineStatus": "missing_landing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [],
+      "rejectedSources": []
+    },
+    {
+      "productId": "microsoft-visio",
+      "classification": "missing_landing_capture",
+      "finding": "The exact approved Visio landing has no eligible archive record in the frozen window; no retained HTML supports a pricing assessment.",
+      "baselineStatus": "missing_landing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [],
+      "rejectedSources": []
+    },
+    {
+      "productId": "adobe-premiere-pro",
+      "classification": "landing_integrity_rejection",
+      "finding": "The selected Premiere landing failed archive payload-digest verification before retained HTML extraction. No price or edition claims assessed.",
+      "baselineStatus": "error",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [],
+      "rejectedSources": [
+        {
+          "capturedAt": "2025-06-30T00:55:17.000Z",
+          "sha256": null,
+          "grade": "rejected_digest_mismatch",
+          "digest": "BLSJ5O75D7JPBL73PFMPNSKPPHVSOUTT",
+          "role": "landing",
+          "originalUrl": "https://www.adobe.com/products/premiere.html",
+          "archiveUrl": "https://web.archive.org/web/20250630005517id_/https://www.adobe.com/products/premiere.html"
+        }
+      ]
+    },
+    {
+      "productId": "final-cut-pro",
+      "classification": "no_pricing_candidate_discovered",
+      "finding": "Verified Final Cut Pro for Mac landing contains product features, trial and purchase links, but no displayed numeric rate and no selected pricing candidate. iPad and education-bundle references are distinct offerings and do not establish a Mac price.",
+      "baselineStatus": "missing_pricing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-27T04:39:00.000Z",
+          "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578",
+          "grade": "verified",
+          "digest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+          "expectedDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+          "actualDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "landing",
+          "originalUrl": "https://www.apple.com/final-cut-pro/",
+          "archiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/"
+        }
+      ],
+      "rejectedSources": []
+    },
+    {
+      "productId": "buffer",
+      "classification": "supported_prices_with_contaminated_tier_names",
+      "finding": "Two paid tier groups expose four supported numeric display values, but both normalized names contain badge text. Essentials includes the recommendation badge; Team includes an explicitly hidden placeholder badge. Monthly equivalents and yearly totals are preserved separately. Currency, annual commitment and channel basis require qualification before use.",
+      "baselineStatus": "review_pending",
+      "proposalPresent": true,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 2,
+        "rawOfferCount": 4,
+        "numericLiteralsReviewed": 4,
+        "supportedNumericLiterals": 4,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 4,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": true,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [
+          {
+            "planIndex": 0,
+            "field": "name",
+            "actual": "Essentials Recommended",
+            "supportedName": "Essentials",
+            "reason": "A separate recommendation badge was concatenated with the plan-title span.",
+            "locator": "offset:61867-62059"
+          },
+          {
+            "planIndex": 1,
+            "field": "name",
+            "actual": "Team Placeholder",
+            "supportedName": "Team",
+            "reason": "An aria-hidden placeholder badge was concatenated with the plan-title span.",
+            "locator": "offset:71423-71691"
+          }
+        ],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [
+          {
+            "fields": [
+              "commitment"
+            ],
+            "records": 4,
+            "reason": "Billed-yearly lines and the selected yearly radio support annual billing, but normalized commitment remains unknown."
+          },
+          {
+            "fields": [
+              "unit",
+              "quantity basis"
+            ],
+            "records": 4,
+            "reason": "The displayed rate group specifies one channel; denominator and selected quantity were not normalized."
+          },
+          {
+            "fields": [
+              "feature labels"
+            ],
+            "reason": "Several feature labels include duplicate hidden description text; feature identities require cleanup."
+          }
+        ],
+        "reviewedOffers": [
+          {
+            "planIndex": 0,
+            "offerIndex": 0,
+            "plan": "Essentials Recommended",
+            "sourceURL": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+            "capturedAt": "2025-06-28T10:37:23.000Z",
+            "locator": "offset:61826-71382",
+            "amount": "5",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 0,
+            "offerIndex": 1,
+            "plan": "Essentials Recommended",
+            "sourceURL": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+            "capturedAt": "2025-06-28T10:37:23.000Z",
+            "locator": "offset:61826-71382",
+            "amount": "60",
+            "currency": null,
+            "billingPeriod": "year",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 1,
+            "offerIndex": 0,
+            "plan": "Team Placeholder",
+            "sourceURL": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+            "capturedAt": "2025-06-28T10:37:23.000Z",
+            "locator": "offset:71382-82856",
+            "amount": "10",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 1,
+            "offerIndex": 1,
+            "plan": "Team Placeholder",
+            "sourceURL": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+            "capturedAt": "2025-06-28T10:37:23.000Z",
+            "locator": "offset:71382-82856",
+            "amount": "120",
+            "currency": null,
+            "billingPeriod": "year",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          }
+        ],
+        "correctPartialUnknowns": [
+          "Dollar symbol alone is not an ISO currency assertion; null currency is conservative.",
+          "Unknown billing commitment and unit are omissions, not invented monthly-subscription or per-user claims.",
+          "The visible positive recommendation badge supports popular:true for Essentials.",
+          "Secondary 14-day trial calls to action were not turned into permanent free paid tiers."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-30T09:41:34.000Z",
+          "sha256": "4d5132c0cca7f3cac32d9042bf155394a731b3861f66945df8ae44300d2fdfcd",
+          "grade": "legacy_chunked_unverified",
+          "digest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+          "expectedDigest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+          "actualDigest": "RDOGU6RSZJCXMSUZRXL6WLZSPIHTJTMU",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "landing",
+          "originalUrl": "https://buffer.com/",
+          "archiveUrl": "https://web.archive.org/web/20250630094134id_/https://buffer.com/"
+        },
+        {
+          "capturedAt": "2025-06-28T10:37:23.000Z",
+          "sha256": "e1671652c9f62aecc1208a21afa4e3aacf280c3b5221cb31c061f477aa2d97cd",
+          "grade": "legacy_chunked_unverified",
+          "digest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+          "expectedDigest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+          "actualDigest": "OTD7ZKATU3IXV6YPR2LT4US3P3RU4KT3",
+          "extractionClassification": "static_pricing",
+          "rawPlanCount": 2,
+          "rawOfferCount": 4,
+          "role": "pricing",
+          "originalUrl": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "archiveUrl": "https://web.archive.org/web/20250628103723id_/https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1"
+        }
+      ],
+      "rejectedSources": []
+    },
+    {
+      "productId": "hootsuite",
+      "classification": "partial_static_and_embedded_structure_miss",
+      "finding": "Verified plans HTML and inert serialized data identify Standard, Advanced and Enterprise. Published numeric rates are absent from retained price components; annual-per-month and per-user basis fields exist, with null customPrice references. The page explicitly offers 30-day trials and Enterprise contact-based pricing. This is a partial named-structure/quote miss, not an empty JavaScript-only page.",
+      "baselineStatus": "extraction_unavailable",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-30T09:46:38.000Z",
+          "sha256": "41094667da6fb7558734deec1b11387ea58aa13cb5124b746160ff7f2d93ad30",
+          "grade": "verified",
+          "digest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+          "expectedDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+          "actualDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "landing",
+          "originalUrl": "https://www.hootsuite.com/",
+          "archiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/"
+        },
+        {
+          "capturedAt": "2025-06-24T21:06:36.000Z",
+          "sha256": "c08164cacdb0d3a4019a0647a7a4736ff1c92f744d63457daec7ad9814e77ef0",
+          "grade": "verified",
+          "digest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+          "expectedDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+          "actualDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "pricing",
+          "originalUrl": "https://www.hootsuite.com/plans",
+          "archiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans"
+        },
+        {
+          "capturedAt": "2025-06-25T23:41:17.000Z",
+          "sha256": "fdb5c26d45e150661160a1039758fd086109a0f81bff8dc0db3bad18fe7f214f",
+          "grade": "verified",
+          "digest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+          "expectedDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+          "actualDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "pricing",
+          "originalUrl": "https://www.hootsuite.com/plans/enterprise",
+          "archiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise"
+        }
+      ],
+      "rejectedSources": []
+    },
+    {
+      "productId": "make",
+      "classification": "missing_landing_capture",
+      "finding": "The exact approved Make landing has no eligible archive record in the fixed window; no retained source supports plan or price assessment.",
+      "baselineStatus": "missing_landing",
+      "proposalPresent": false,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 0,
+        "rawOfferCount": 0,
+        "numericLiteralsReviewed": 0,
+        "supportedNumericLiterals": 0,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 0,
+        "uniqueSupportedFreeTiers": 0,
+        "unknownOrIncompleteTuples": 0,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": false,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [],
+        "reviewedOffers": []
+      },
+      "sources": [],
+      "rejectedSources": []
+    },
+    {
+      "productId": "zapier",
+      "classification": "supported_numeric_values_with_mixed_product_groups",
+      "finding": "The extraction combines four main automation tiers with four separately marketed product-family offerings. All eight numeric literals are supported, including two representations of the Free zero price, but the latter four records need separate product grouping and starting-price qualifiers. Professional and Team monthly-equivalent annual commitments are supported; Enterprise quotation is supported. No invented numeric price or permanent-free/trial conflation detected.",
+      "baselineStatus": "review_pending",
+      "proposalPresent": true,
+      "confirmed": false,
+      "semanticAssessment": {
+        "rawPlanCount": 8,
+        "rawOfferCount": 9,
+        "numericLiteralsReviewed": 8,
+        "supportedNumericLiterals": 8,
+        "unsupportedNumericLiterals": 0,
+        "supportedQuoteOffers": 1,
+        "uniqueSupportedFreeTiers": 1,
+        "unknownOrIncompleteTuples": 9,
+        "completeQualifiedRecurringTuples": 0,
+        "schemaValidProposal": true,
+        "semanticallyReadyProposal": false,
+        "automaticConfirmation": false,
+        "planFieldErrors": [],
+        "offerFieldErrors": [],
+        "qualificationOmissions": [
+          {
+            "field": "startingAt",
+            "planIndices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "reason": "Each product-family card explicitly states a starting price, while the normalized flag remains null."
+          },
+          {
+            "fields": [
+              "task tier",
+              "quantity basis"
+            ],
+            "reason": "Task-volume controls are separate from the captured tier amounts and were not normalized; no quantity should be invented."
+          }
+        ],
+        "reviewedOffers": [
+          {
+            "planIndex": 0,
+            "offerIndex": 0,
+            "plan": "Free",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:142985-223393",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 0,
+            "offerIndex": 1,
+            "plan": "Free",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:142985-223393",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 1,
+            "offerIndex": 0,
+            "plan": "Professional",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:223393-235045",
+            "amount": "19.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 2,
+            "offerIndex": 0,
+            "plan": "Team",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:235045-246371",
+            "amount": "69",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 3,
+            "offerIndex": 0,
+            "plan": "Enterprise",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:246371-257376",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 4,
+            "offerIndex": 0,
+            "plan": "Agents",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:361343-367840",
+            "amount": "50",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 5,
+            "offerIndex": 0,
+            "plan": "Chatbots",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:367840-369701",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 6,
+            "offerIndex": 0,
+            "plan": "Interfaces",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:369701-371540",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          },
+          {
+            "planIndex": 7,
+            "offerIndex": 0,
+            "plan": "Tables",
+            "sourceURL": "https://zapier.com/pricing",
+            "capturedAt": "2025-06-26T03:04:27.000Z",
+            "locator": "offset:371540-373236",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "startingAt": null,
+            "billingVariant": null
+          }
+        ],
+        "mainAutomationTierRecords": 4,
+        "separateProductFamilyRecords": 4,
+        "productGroupingIssues": [
+          {
+            "records": [
+              "Agents",
+              "Chatbots",
+              "Interfaces",
+              "Tables"
+            ],
+            "reason": "Separate product-family cards were flattened alongside Free/Professional/Team/Enterprise automation tiers; not eight comparable tier records."
+          }
+        ],
+        "correctPartialUnknowns": [
+          "The page has a USD selector, but extracted currency:null remains an explicit unknown rather than an invented currency.",
+          "Professional19.99 and Team69 are monthly equivalents billed annually, not monthly-contract prices.",
+          "The Free tier is explicitly permanent; two zero-price representations do not establish two separate free tiers.",
+          "Enterprise quotation is null-priced, and paid-product trial calls to action were not converted into free plans."
+        ]
+      },
+      "sources": [
+        {
+          "capturedAt": "2025-06-29T12:32:00.000Z",
+          "sha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+          "grade": "verified",
+          "digest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+          "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+          "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+          "extractionClassification": "unsupported",
+          "rawPlanCount": 0,
+          "rawOfferCount": 0,
+          "role": "landing",
+          "originalUrl": "https://zapier.com/",
+          "archiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/"
+        },
+        {
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "grade": "legacy_chunked_unverified",
+          "digest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+          "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+          "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+          "extractionClassification": "static_pricing",
+          "rawPlanCount": 8,
+          "rawOfferCount": 9,
+          "role": "pricing",
+          "originalUrl": "https://zapier.com/pricing",
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing"
+        }
+      ],
+      "rejectedSources": []
+    }
+  ]
+}

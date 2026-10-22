@@ -1,0 +1,327 @@
+{
+  "formatVersion": 1,
+  "offline": true,
+  "repeat": {
+    "exitCode": 0,
+    "fetchAttempts": 0,
+    "journalSha256Before": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+    "journalSha256After": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+    "unchanged": true
+  },
+  "frozenCollector": {
+    "files": [
+      {
+        "file": "lib/history/archive.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/history/selection.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/history/stores-file.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/aliases.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/application.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/archive.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/calendar.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/checkpoint.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/compare.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-adapters.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-bounds.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-business.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-calendly.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-generic.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-modern.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-offers.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract-structured.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/extract.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/html.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/links.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/proposal.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/review.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/sampling-support.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/sampling.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/schema.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/scope.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/service.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/stores-cloudflare.mjs",
+        "matches": true
+      },
+      {
+        "file": "lib/pricing/stores-file.mjs",
+        "matches": true
+      },
+      {
+        "file": "scripts/sample-pricing.mjs",
+        "matches": true
+      }
+    ],
+    "catalogMatches": true,
+    "lockMatches": true
+  },
+  "reservationChecks": [
+    {
+      "productId": "figjam",
+      "checkedAt": "2026-10-22T17:28:15.249Z",
+      "nextCheckAt": "2027-04-22T17:28:15.249Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "quickbooks-online",
+      "checkedAt": "2026-10-22T17:28:30.254Z",
+      "nextCheckAt": "2027-04-22T17:28:30.254Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "xero",
+      "checkedAt": "2026-10-22T17:28:49.106Z",
+      "nextCheckAt": "2027-04-22T17:28:49.106Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "harvest",
+      "checkedAt": "2026-10-22T17:29:10.296Z",
+      "nextCheckAt": "2027-04-22T17:29:10.296Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "toggl-track",
+      "checkedAt": "2026-10-22T17:29:51.119Z",
+      "nextCheckAt": "2027-04-22T17:29:51.119Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "docebo",
+      "checkedAt": "2026-10-22T17:30:52.745Z",
+      "nextCheckAt": "2027-04-22T17:30:52.745Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "talentlms",
+      "checkedAt": "2026-10-22T17:31:39.600Z",
+      "nextCheckAt": "2027-04-22T17:31:39.600Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "salesforce",
+      "checkedAt": "2026-10-22T17:32:03.131Z",
+      "nextCheckAt": "2027-04-22T17:32:03.131Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "bigcommerce",
+      "checkedAt": "2026-10-22T17:32:10.924Z",
+      "nextCheckAt": "2027-04-22T17:32:10.924Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "shopify",
+      "checkedAt": "2026-10-22T17:33:08.037Z",
+      "nextCheckAt": "2027-04-22T17:33:08.037Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "adobe-lightroom",
+      "checkedAt": "2026-10-22T17:33:35.508Z",
+      "nextCheckAt": "2027-04-22T17:33:35.508Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "adobe-photoshop",
+      "checkedAt": "2026-10-22T17:34:06.460Z",
+      "nextCheckAt": "2027-04-22T17:34:06.460Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "lucidchart",
+      "checkedAt": "2026-10-22T17:34:46.230Z",
+      "nextCheckAt": "2027-04-22T17:34:46.230Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "microsoft-visio",
+      "checkedAt": "2026-10-22T17:34:56.044Z",
+      "nextCheckAt": "2027-04-22T17:34:56.044Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "adobe-premiere-pro",
+      "checkedAt": "2026-10-22T17:35:12.032Z",
+      "nextCheckAt": "2027-04-22T17:35:12.032Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "final-cut-pro",
+      "checkedAt": "2026-10-22T17:35:31.050Z",
+      "nextCheckAt": "2027-04-22T17:35:31.050Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "buffer",
+      "checkedAt": "2026-10-22T17:35:51.573Z",
+      "nextCheckAt": "2027-04-22T17:35:51.573Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "hootsuite",
+      "checkedAt": "2026-10-22T17:36:26.975Z",
+      "nextCheckAt": "2027-04-22T17:36:26.975Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "make",
+      "checkedAt": "2026-10-22T17:37:38.703Z",
+      "nextCheckAt": "2027-04-22T17:37:38.703Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    },
+    {
+      "productId": "zapier",
+      "checkedAt": "2026-10-22T17:37:39.061Z",
+      "nextCheckAt": "2027-04-22T17:37:39.061Z",
+      "checkedAtMatches": true,
+      "cadenceMatches": true,
+      "released": true,
+      "checkpointPreserved": true
+    }
+  ],
+  "evidenceVerification": {
+    "total": 25,
+    "verified": 15,
+    "unknown": 0,
+    "legacyUnverified": 6,
+    "missing": 4,
+    "errors": 0
+  }
+}

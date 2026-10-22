@@ -54,3 +54,5 @@ The gallery and iframe also include an independent pricing timeline. Archived HT
 A [blind test of 20 more tools](research/pricing-twenty-tool-verification.md) completed collection and a zero-fetch repeat, but produced no valid new pricing observations. Unattended extraction needs broader layout and edition support; collection and evidence audits are repeatable now.
 
 The [next 20 paid tools](research/pricing-batch-three-verification.md) likewise completed collection and a zero-fetch replay without valid new observations. Source review separates missed landing-page prices, quote-only structure, client placeholders/fallbacks, and discovery or capture gaps; it identifies the next automation improvements.
+
+The [improved extractor's fresh 20-tool reassessment](research/pricing-batch-four-verification.md) produced three schema-valid proposals, but source review found price conflicts, plan-name contamination and mixed product families. Landing extraction, partial/quote structures, dated scoped aliases and rejection diagnostics now work across production and operator collection. No new prices were confirmed.
