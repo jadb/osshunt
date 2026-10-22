@@ -55,12 +55,17 @@
       "originalDigest": null
     },
     "aliasEvidenceAt": [],
-    "extractorVersion": "1.2.0",
+    "extractorVersion": "manual-1.0.0",
     "reviewState": "confirmed",
     "quality": "partial",
     "issues": [
-      "Only fixed general Site Basic/CMS rates recovered; Starter, variable Business, Enterprise, Ecommerce and Workspace groups omitted",
-      "Webflow data-yearly-price is a monthly equivalent billed yearly; both attribute variants retained without executing scripts",
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Workspace Free seat row says $15 in visible text but attributes encode zero; conflict quarantined, no numerical fact asserted.",
+      "Workspace base plans versus per-member global note require unit reconciliation.",
+      "Site/Ecommerce/Workspace/seat types must not be combined into one tier ladder.",
+      "Captured payload has legacy_chunked_unverified integrity; these facts require explicit review acceptance.",
+      "Manual recovery; product groups retained separately.",
+      "Existing Basic/CMS records preserved; Business base attributes added manually. CMS-item and bandwidth upgrade surcharges remain separate and unnormalized.",
       "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
       "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
     ],
@@ -184,12 +189,72 @@
           "locator": "offset:133049-133628|offset:156664-156782",
           "text": "CMS Popular $ 23 /mo billed yearly For blogs or other content-driven sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"29\" | data-yearly-price=\"23\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
         }
+      },
+      {
+        "name": "Business",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "39",
+            "amount": "39",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Base listed rate; optional CMS-item and bandwidth upgrades have separate encoded surcharges.",
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:139973-140573|offset:140203-140280|offset:156664-156782",
+              "text": "Business Flexible $ 39 /mo billed yearly For larger sites that need more flexibility. | 39 | All prices are in USD and charged per site with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "49",
+            "amount": "49",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Base listed rate; optional CMS-item and bandwidth upgrades have separate encoded surcharges.",
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:139973-140573|offset:140203-140280|offset:156664-156782",
+              "text": "Business Flexible $ 39 /mo billed yearly For larger sites that need more flexibility. | 39 | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:139973-140573",
+          "text": "Business Flexible $ 39 /mo billed yearly For larger sites that need more flexibility."
+        }
       }
     ],
     "planIdentities": {},
     "review": {
       "reviewer": "osshunt-editorial",
-      "reviewedAt": "2026-10-22T18:37:30.107Z",
+      "reviewedAt": "2026-10-22T19:10:54.506Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
     }
@@ -5957,6 +6022,439 @@
     }
   },
   {
+    "id": "pricing-manual-120a533d1310d7be20a74197209828a9f9d968488537a7d63b463f2581ef916e",
+    "productId": "mailchimp",
+    "scope": {
+      "edition": "Email Marketing",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T16:36:44.000Z",
+    "landingCapturedAt": "2025-06-30T16:36:44.000Z",
+    "pricingCapturedAt": "2025-06-29T17:12:04.000Z",
+    "evidenceAvailableAt": "2025-06-30T16:36:44.000Z",
+    "landingUrl": "https://mailchimp.com/",
+    "pricingUrl": "https://mailchimp.com/pricing/marketing/compare-plans/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630163644id_/https://mailchimp.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Essentials",
+      "locator": "offset:312510-312568"
+    },
+    "sourceSha256": "fe9b50b41704ab9cc89e410f951d85b45bec88bbf77b39e2aaf9ca994b5d2cdf",
+    "landingSha256": "e7da965f8d1ffc9e1d2c9e3e8a922d8dae54a6181b811c859ea787d369317e5d",
+    "sourceDigest": "CSS7EJ2SJVYBLOA3DW27VTL7ALUI5KQ5",
+    "landingDigest": "RQH2T3ZXCZ5Z7DJGDFMA3S73Z5VST3FY",
+    "fetchedAt": "2026-10-22T15:29:56.141Z",
+    "landingFetchedAt": "2026-10-22T15:29:18.473Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "CSS7EJ2SJVYBLOA3DW27VTL7ALUI5KQ5",
+      "actualDigest": "RJK3KJNWQ2GWMQVEHM43ZXPR2QM5KJZR",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "RQH2T3ZXCZ5Z7DJGDFMA3S73Z5VST3FY",
+      "actualDigest": "2QYSBREZ5XH64HHULEYKL5CBV3YF6C2H",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 17:12:04 GMT",
+      "originalUrl": "https://mailchimp.com/pricing/marketing/compare-plans/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "REDDIT-20250629140643-crawl907/REDDIT-20250629165450-00008.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 16:36:44 GMT",
+      "originalUrl": "https://mailchimp.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630174827/spn2-20250630161150-wwwb-app50.us.archive.org-8007.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual extraction from retained capture; incomplete feature matrix. Unknown fields remain null or unknown.",
+      "Archived payload digest remains unverified under qualified legacy chunked transport; explicit acknowledgement required.",
+      "Default contact counts are preserved as package/volume conditions, never unit=contact or purchase minima. Commitment unknown; no annual total calculated.",
+      "Selected June29 comparison body is legacy-qualified; independently verified June30 pricing source corroborates starting350/20/13/0 with explicit10000/500/500/500 contact bases.",
+      "Free-trial zero is never used as a permanent paid-plan price. Promotional arithmetic and dynamic price placeholders excluded.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Premium",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "Premium plan starting at $350 a month",
+            "amount": "350",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": "Starting rate at 10000 contacts from explicit baseContacts configuration; active contact selector not executed.",
+              "billingVariant": "Responsive/contact-selector representations; active purchase state unknown"
+            },
+            "source": {
+              "locator": "offset:365723-365802|offset:279833-280133|offset:279409-279500|offset:375842-376942",
+              "text": "Premium; starting at $350 a month; selected USD; base contact configuration 10000"
+            }
+          },
+          {
+            "literal": "Contact us for a custom plan",
+            "amount": null,
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Custom contact-volume plan; no numerical rate supplied.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:701151-701415|offset:279409-279500",
+              "text": "Contact us for a custom plan | Contact us for a custom plan | $ USD"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:365723-365802",
+          "text": "Premium"
+        }
+      },
+      {
+        "name": "Standard",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$20",
+            "amount": "20",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Free 14-day trial before the displayed paid starting rate; separate 15 percent promotional widgets not reconciled.",
+              "startingAt": true,
+              "range": null,
+              "volume": "Starting rate at 500 contacts from explicit baseContacts configuration; active contact selector not executed.",
+              "billingVariant": "Responsive/contact-selector representations; active purchase state unknown"
+            },
+            "source": {
+              "locator": "offset:379039-379119|offset:381004-381056|offset:279409-279500|offset:392175-393277|offset:380848-381115",
+              "text": "Standard; $20; selected USD; base contact configuration 500; Then, starts at $20 /month†"
+            }
+          },
+          {
+            "literal": "Up to 100,000 contacts with our $800/mo tier",
+            "amount": "800",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Source maximum-contact tier: up to 100000 contacts. This is a package tier, not per-contact pricing.",
+              "billingVariant": "Comparison-table volume tier; active purchase selector unknown"
+            },
+            "source": {
+              "locator": "offset:701495-701663|offset:279409-279500",
+              "text": "Up to 100,000 contacts with our $800/mo tier | $ USD"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:379039-379119",
+          "text": "Standard"
+        }
+      },
+      {
+        "name": "Essentials",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$13",
+            "amount": "13",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Free 14-day trial before the displayed paid starting rate; separate 15 percent promotional widgets not reconciled.",
+              "startingAt": true,
+              "range": null,
+              "volume": "Starting rate at 500 contacts from explicit baseContacts configuration; active contact selector not executed.",
+              "billingVariant": "Responsive/contact-selector representations; active purchase state unknown"
+            },
+            "source": {
+              "locator": "offset:395368-395450|offset:397336-397388|offset:279409-279500|offset:408513-409619|offset:397180-397447",
+              "text": "Essentials; $13; selected USD; base contact configuration 500; Then, starts at $13 /month†"
+            }
+          },
+          {
+            "literal": "Up to 50,000 contacts with our $385/mo tier",
+            "amount": "385",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Source maximum-contact tier: up to 50000 contacts. This is a package tier, not per-contact pricing.",
+              "billingVariant": "Comparison-table volume tier; active purchase selector unknown"
+            },
+            "source": {
+              "locator": "offset:701749-701916|offset:279409-279500",
+              "text": "Up to 50,000 contacts with our $385/mo tier | $ USD"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:395368-395450",
+          "text": "Essentials"
+        }
+      },
+      {
+        "name": "Free",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Starts at $0 per month for {contacts} contacts",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to500 contacts;1000 monthly email sends, daily limit 500.",
+              "billingVariant": "Responsive/contact-selector representations; active purchase state unknown"
+            },
+            "source": {
+              "locator": "offset:411688-411764|offset:470039-470277|offset:279409-279500|offset:415483-416589",
+              "text": "Free; Starts at $0 per month for {contacts} contacts; selected USD; base contact configuration 500"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:411688-411764",
+          "text": "Free"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.593Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-1b39ae4cc29ce69774fb51373ba7650e8f33051b6fc487702d6fdbfa5bf7ab71",
+    "productId": "hootsuite",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T09:46:38.000Z",
+    "landingCapturedAt": "2025-06-30T09:46:38.000Z",
+    "pricingCapturedAt": "2025-06-24T21:06:36.000Z",
+    "evidenceAvailableAt": "2025-06-30T09:46:38.000Z",
+    "landingUrl": "https://www.hootsuite.com/",
+    "pricingUrl": "https://www.hootsuite.com/plans",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:124770-124877"
+    },
+    "sourceSha256": "c08164cacdb0d3a4019a0647a7a4736ff1c92f744d63457daec7ad9814e77ef0",
+    "landingSha256": "41094667da6fb7558734deec1b11387ea58aa13cb5124b746160ff7f2d93ad30",
+    "sourceDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+    "landingDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+    "fetchedAt": "2026-10-22T17:37:18.192Z",
+    "landingFetchedAt": "2026-10-22T17:36:50.828Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+      "actualDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+      "actualDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 21:06:36 GMT",
+      "originalUrl": "https://www.hootsuite.com/plans",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250624202242743-00550-00601-wbgrp-crawl041/LUX-029-2025-06-23-20250624210553275-00565-1777502~wbgrp-crawl041.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 09:46:38 GMT",
+      "originalUrl": "https://www.hootsuite.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630121206_94c11489/creativecommons.org-inf-20250630-050819-18gf4-00001.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Standard/Advanced named plan structures retained with empty offers: captured markup has per-user/month labels but no numeric price values.",
+      "Enterprise explicit Custom quote retained; no numeric starting amount.",
+      "Free 30-day trial does not establish a permanent free tier. Feature coverage partial."
+    ],
+    "plans": [
+      {
+        "name": "Standard",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [],
+        "source": {
+          "locator": "offset:101319-101340",
+          "text": "Standard"
+        }
+      },
+      {
+        "name": "Advanced",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [],
+        "source": {
+          "locator": "offset:108515-108536",
+          "text": "Advanced"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Custom",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:115889-115908",
+              "text": "Custom"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:115737-115760",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.739Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-2810b9516b2441cf274fe502e20623483e4f72c19a5e6e0fcf6c1a5a269a6f25",
     "productId": "m-files",
     "scope": {
@@ -6072,6 +6570,468 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:10:31.753Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-2a4dbe2513929c12ae99aebf7ac62fbd2e137e3e5144b4655653e77a2d178126",
+    "productId": "zapier",
+    "scope": {
+      "edition": "Interfaces",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T12:32:00.000Z",
+    "landingCapturedAt": "2025-06-29T12:32:00.000Z",
+    "pricingCapturedAt": "2025-06-26T03:04:27.000Z",
+    "evidenceAvailableAt": "2025-06-29T12:32:00.000Z",
+    "landingUrl": "https://zapier.com/",
+    "pricingUrl": "https://zapier.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:77678-77799"
+    },
+    "sourceSha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+    "landingSha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+    "sourceDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+    "landingDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+    "fetchedAt": "2026-10-22T17:38:20.358Z",
+    "landingFetchedAt": "2026-10-22T17:38:00.509Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+      "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+      "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 03:04:27 GMT",
+      "originalUrl": "https://zapier.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250626025241-crawl528/SPNOUTLINKS-20250626030250-00200.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 12:32:00 GMT",
+      "originalUrl": "https://zapier.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629233159_b783a6eb/forum.sentry.io-inf-20250629-101410-1gzp0-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Separate product-family starting rate, not an AI automation tier or a named paid sub-tier.",
+      "Currency unknown: family card uses $; automation-group USD selector is not assumed to bind this separate product family.",
+      "Billing period monthly from /mo; commitment, task capacity, per-seat basis and active monthly/annual variant not stated in this family card.",
+      "Free to try is not a permanent free plan. Feature coverage partial.",
+      "Retained replay has a qualified legacy chunked digest mismatch; payload SHA256 verified, original CDX SHA1 not verified. Maintainer acceptance required.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Interfaces",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 20 /mo",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Product-family starting price; commitment unspecified"
+            },
+            "source": {
+              "locator": "offset:371079-371214",
+              "text": "$ 20 /mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:370809-370848",
+          "text": "Interfaces"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.783Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-359c39a6d4f3330dc58593e2fa5d91ee4a97180f43c07d3baaddb4914b1369f6",
+    "productId": "zapier",
+    "scope": {
+      "edition": "Chatbots",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T12:32:00.000Z",
+    "landingCapturedAt": "2025-06-29T12:32:00.000Z",
+    "pricingCapturedAt": "2025-06-26T03:04:27.000Z",
+    "evidenceAvailableAt": "2025-06-29T12:32:00.000Z",
+    "landingUrl": "https://zapier.com/",
+    "pricingUrl": "https://zapier.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:77678-77799"
+    },
+    "sourceSha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+    "landingSha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+    "sourceDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+    "landingDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+    "fetchedAt": "2026-10-22T17:38:20.358Z",
+    "landingFetchedAt": "2026-10-22T17:38:00.509Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+      "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+      "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 03:04:27 GMT",
+      "originalUrl": "https://zapier.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250626025241-crawl528/SPNOUTLINKS-20250626030250-00200.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 12:32:00 GMT",
+      "originalUrl": "https://zapier.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629233159_b783a6eb/forum.sentry.io-inf-20250629-101410-1gzp0-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Separate product-family starting rate, not an AI automation tier or a named paid sub-tier.",
+      "Currency unknown: family card uses $; automation-group USD selector is not assumed to bind this separate product family.",
+      "Billing period monthly from /mo; commitment, task capacity, per-seat basis and active monthly/annual variant not stated in this family card.",
+      "Free to try is not a permanent free plan. Feature coverage partial.",
+      "Retained replay has a qualified legacy chunked digest mismatch; payload SHA256 verified, original CDX SHA1 not verified. Maintainer acceptance required.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Chatbots",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 20 /mo",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Product-family starting price; commitment unspecified"
+            },
+            "source": {
+              "locator": "offset:369260-369395",
+              "text": "$ 20 /mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:368959-368996",
+          "text": "Chatbots"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.777Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-38ecece5d1ce8a902c5661a756cd6b1ebcd0074b6c8c2c86e0097311d00b2c4b",
+    "productId": "zapier",
+    "scope": {
+      "edition": "Agents",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T12:32:00.000Z",
+    "landingCapturedAt": "2025-06-29T12:32:00.000Z",
+    "pricingCapturedAt": "2025-06-26T03:04:27.000Z",
+    "evidenceAvailableAt": "2025-06-29T12:32:00.000Z",
+    "landingUrl": "https://zapier.com/",
+    "pricingUrl": "https://zapier.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:77678-77799"
+    },
+    "sourceSha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+    "landingSha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+    "sourceDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+    "landingDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+    "fetchedAt": "2026-10-22T17:38:20.358Z",
+    "landingFetchedAt": "2026-10-22T17:38:00.509Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+      "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+      "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 03:04:27 GMT",
+      "originalUrl": "https://zapier.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250626025241-crawl528/SPNOUTLINKS-20250626030250-00200.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 12:32:00 GMT",
+      "originalUrl": "https://zapier.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629233159_b783a6eb/forum.sentry.io-inf-20250629-101410-1gzp0-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Separate product-family starting rate, not an AI automation tier or a named paid sub-tier.",
+      "Currency unknown: family card uses $; automation-group USD selector is not assumed to bind this separate product family.",
+      "Billing period monthly from /mo; commitment, task capacity, per-seat basis and active monthly/annual variant not stated in this family card.",
+      "Free to try is not a permanent free plan. Feature coverage partial.",
+      "Retained replay has a qualified legacy chunked digest mismatch; payload SHA256 verified, original CDX SHA1 not verified. Maintainer acceptance required.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Agents",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 50 /mo",
+            "amount": "50",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Product-family starting price; commitment unspecified"
+            },
+            "source": {
+              "locator": "offset:365073-365783",
+              "text": "$ 50 /mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:363473-363508",
+          "text": "Agents"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.772Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-4a0b063c64b2d1d3e1784044ad93f128b63e36b30ac18b9871e10ca3281871f8",
+    "productId": "intercom",
+    "scope": {
+      "edition": "Proactive Support Plus add-on",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T15:33:35.000Z",
+    "landingCapturedAt": "2025-06-30T15:33:35.000Z",
+    "pricingCapturedAt": "2025-06-18T20:12:42.000Z",
+    "evidenceAvailableAt": "2025-06-30T15:33:35.000Z",
+    "landingUrl": "https://www.intercom.com/",
+    "pricingUrl": "https://www.intercom.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+    "provenance": "current-source-hint",
+    "discovery": {
+      "label": "Current pricing source",
+      "locator": "hint:0"
+    },
+    "sourceSha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+    "landingSha256": "1bd42cc354f8d7628fdc027725508fb6194ebc3303098a17509670f6c851955f",
+    "sourceDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+    "landingDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+    "fetchedAt": "2026-10-22T15:27:58.133Z",
+    "landingFetchedAt": "2026-10-22T15:27:35.740Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+      "actualDigest": "D7H7C534RUFSPKYXBJMLVTTE3XCMV2KE",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+      "actualDigest": "DS6U6PS7KYM336YXMAHQ3JCVCAZXZKXO",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 20:12:42 GMT",
+      "originalUrl": "https://www.intercom.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250618200133-crawl919/SPNOUTLINKS-20250618201058-00108.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 15:33:35 GMT",
+      "originalUrl": "https://www.intercom.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "REDDIT-20250630070912-crawl925/REDDIT-20250630153156-00005.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Optional add-on for an existing Intercom plan; excess usage charged separately.",
+      "Manual recovery; independent usage/add-on scope, not a seat-subscription price.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Proactive Support Plus",
+        "order": 0,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "99",
+            "amount": "99",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Included usage: 500 messages sent per month",
+              "billingVariant": "Archived displayed rate; checkout state not verified"
+            },
+            "source": {
+              "locator": "offset:75364-77402|offset:75849-75886|offset:95607-95840|offset:75809-75929",
+              "text": "Proactive Support Plus Advanced in-app and outbound support features including Posts, Checklists, Product Tours, Surveys, and Series campaign builder. $99 /mo Includes 500 Messages Sent/mo Learn more Copilot Increase agent efficiency with a personal AI assistant in the inbox. Free to use in 10 Copilot and 10 AI Auto-translation conversations per agent/mo. $29 per agent/mo, billed annually Unlimited usage Learn more | $99 | Intercom is billed in United States Dollars (USD) only. This applies across our whole platform, including seat pricing, additional usage charges, add-ons, and Premier Services. Right now, we can’t bill in any other currencies. | $99 /mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:75364-77402",
+          "text": "Proactive Support Plus Advanced in-app and outbound support features including Posts, Checklists, Product Tours, Surveys, and Series campaign builder. $99 /mo Includes 500 Messages Sent/mo Learn more Copilot Increase agent efficiency with a personal AI assistant in the inbox. Free to use in 10 Copilot and 10 AI Auto-translation conversations per agent/mo. $29 per agent/mo, billed annually Unlimited usage Learn more"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.549Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   },
   {
@@ -7837,6 +8797,321 @@
     }
   },
   {
+    "id": "pricing-manual-9a49786a60b5c778a6272a8da9b39fa316518ef4025dddbf560c81eb75d50b80",
+    "productId": "microsoft-365",
+    "scope": {
+      "edition": "Microsoft Teams Enterprise",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T11:31:13.000Z",
+    "landingCapturedAt": "2025-06-30T11:31:13.000Z",
+    "pricingCapturedAt": "2025-06-29T07:29:14.000Z",
+    "evidenceAvailableAt": "2025-06-30T11:31:13.000Z",
+    "landingUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+    "pricingUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing for enterprise",
+      "locator": "offset:21046-21326"
+    },
+    "sourceSha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+    "landingSha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+    "sourceDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+    "landingDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+    "fetchedAt": "2026-10-22T15:32:35.845Z",
+    "landingFetchedAt": "2026-10-22T15:32:08.314Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+      "actualDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+      "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 07:29:14 GMT",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "IA-COLLIE-008-20250629072530927-17836-17884-wbgrp-crawl247/IA-COLLIE-008-20250629072530927-17836-793759~wbgrp-crawl247.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 11:31:13 GMT",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "PL-20250630090810-crawl918/PL-20250630112903-00813.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "$ does not establish USD; locale en-us was not used as currency proof.",
+      "No minimum purchase quantity supported by retained price fields.",
+      "Hidden old/current accessibility price duplicates have equal values; no promotion inferred.",
+      "Commercial Microsoft subscription plan amounts are supported; hosted versus installed-app deployment taxonomy is not inferred from plan names.",
+      "Manual recovery; product groups retained separately.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Microsoft Teams Enterprise",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5.25",
+            "amount": "5.25",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:536626-536748|offset:537632-537705|offset:537097-537964",
+              "text": "Microsoft Teams Enterprise | $5.25 | Originally starting from $5.25 now starting from $5.25 $5.25 $5.25 user/month, paid yearly (Annual subscription—auto renews) 20"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:536626-536748",
+          "text": "Microsoft Teams Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.477Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-9a9b15cf34b0f22dcc059966b23586ff7cc0c27030f765c6908d740c588fc8bc",
+    "productId": "webflow",
+    "scope": {
+      "edition": "Workspace plans: freelancers/agencies",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T04:05:26.000Z",
+    "landingCapturedAt": "2025-06-30T04:05:26.000Z",
+    "pricingCapturedAt": "2025-06-29T21:36:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T04:05:26.000Z",
+    "landingUrl": "https://webflow.com/",
+    "pricingUrl": "https://webflow.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:107141-107752"
+    },
+    "sourceSha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+    "landingSha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+    "sourceDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+    "landingDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+    "fetchedAt": "2026-10-22T15:33:56.031Z",
+    "landingFetchedAt": "2026-10-22T15:33:37.179Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+      "actualDigest": "UOT52N2SDWNJ2OX5U4OKHXHVKPHFQ4HM",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+      "actualDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 21:36:58 GMT",
+      "originalUrl": "https://webflow.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629222447/spn2-20250629192742-wwwb-spn28.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 04:05:26 GMT",
+      "originalUrl": "https://webflow.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630041744_8d971985/www.rotundapublicaffairs.com-inf-20250630-040518-8kgd7-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Workspace Free seat row says $15 in visible text but attributes encode zero; conflict quarantined, no numerical fact asserted.",
+      "Workspace base plans versus per-member global note require unit reconciliation.",
+      "Site/Ecommerce/Workspace/seat types must not be combined into one tier ladder.",
+      "Captured payload has legacy_chunked_unverified integrity; these facts require explicit review acceptance.",
+      "Manual recovery; product groups retained separately.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Freelancer",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "16",
+            "amount": "16",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:369695-370253|offset:369904-369981|offset:315100-315224",
+              "text": "Freelancer $ 16 /mo billed yearly For those with a few clients. | 16 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "24",
+            "amount": "24",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:369695-370253|offset:369904-369981|offset:315100-315224",
+              "text": "Freelancer $ 16 /mo billed yearly For those with a few clients. | 16 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:369695-370253",
+          "text": "Freelancer $ 16 /mo billed yearly For those with a few clients."
+        }
+      },
+      {
+        "name": "Agency",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "35",
+            "amount": "35",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:373607-374160|offset:373812-373889|offset:315100-315224",
+              "text": "Agency $ 35 /mo billed yearly For those with many clients. | 35 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "42",
+            "amount": "42",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:373607-374160|offset:373812-373889|offset:315100-315224",
+              "text": "Agency $ 35 /mo billed yearly For those with many clients. | 35 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:373607-374160",
+          "text": "Agency $ 35 /mo billed yearly For those with many clients."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.520Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
     "id": "pricing-manual-a1b8c8a6e0789a61d2c5b798f140c5ca37b7314b3539678c7c12e414fcf4e282",
     "productId": "front",
     "scope": {
@@ -8215,6 +9490,312 @@
     }
   },
   {
+    "id": "pricing-manual-a43e8b8ec66810dcfdf285b2ee1d86894275eb350759fe096517926f67ce1f00",
+    "productId": "zapier",
+    "scope": {
+      "edition": "Tables",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T12:32:00.000Z",
+    "landingCapturedAt": "2025-06-29T12:32:00.000Z",
+    "pricingCapturedAt": "2025-06-26T03:04:27.000Z",
+    "evidenceAvailableAt": "2025-06-29T12:32:00.000Z",
+    "landingUrl": "https://zapier.com/",
+    "pricingUrl": "https://zapier.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:77678-77799"
+    },
+    "sourceSha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+    "landingSha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+    "sourceDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+    "landingDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+    "fetchedAt": "2026-10-22T17:38:20.358Z",
+    "landingFetchedAt": "2026-10-22T17:38:00.509Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+      "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+      "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 03:04:27 GMT",
+      "originalUrl": "https://zapier.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250626025241-crawl528/SPNOUTLINKS-20250626030250-00200.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 12:32:00 GMT",
+      "originalUrl": "https://zapier.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629233159_b783a6eb/forum.sentry.io-inf-20250629-101410-1gzp0-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Separate product-family starting rate, not an AI automation tier or a named paid sub-tier.",
+      "Currency unknown: family card uses $; automation-group USD selector is not assumed to bind this separate product family.",
+      "Billing period monthly from /mo; commitment, task capacity, per-seat basis and active monthly/annual variant not stated in this family card.",
+      "Free to try is not a permanent free plan. Feature coverage partial.",
+      "Retained replay has a qualified legacy chunked digest mismatch; payload SHA256 verified, original CDX SHA1 not verified. Maintainer acceptance required.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Tables",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 20 /mo",
+            "amount": "20",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Product-family starting price; commitment unspecified"
+            },
+            "source": {
+              "locator": "offset:372929-373064",
+              "text": "$ 20 /mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:372683-372718",
+          "text": "Tables"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.788Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-a59a782e1cd4b66a7ea2aa4cde8f9135298dd27986af45635d3c03864f5e835d",
+    "productId": "microsoft-365",
+    "scope": {
+      "edition": "Microsoft 365 enterprise",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T11:31:13.000Z",
+    "landingCapturedAt": "2025-06-30T11:31:13.000Z",
+    "pricingCapturedAt": "2025-06-29T07:29:14.000Z",
+    "evidenceAvailableAt": "2025-06-30T11:31:13.000Z",
+    "landingUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+    "pricingUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing for enterprise",
+      "locator": "offset:21046-21326"
+    },
+    "sourceSha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+    "landingSha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+    "sourceDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+    "landingDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+    "fetchedAt": "2026-10-22T15:32:35.845Z",
+    "landingFetchedAt": "2026-10-22T15:32:08.314Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+      "actualDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+      "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 07:29:14 GMT",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "IA-COLLIE-008-20250629072530927-17836-17884-wbgrp-crawl247/IA-COLLIE-008-20250629072530927-17836-793759~wbgrp-crawl247.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 11:31:13 GMT",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "PL-20250630090810-crawl918/PL-20250630112903-00813.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "$ does not establish USD; locale en-us was not used as currency proof.",
+      "No minimum purchase quantity supported by retained price fields.",
+      "Hidden old/current accessibility price duplicates have equal values; no promotion inferred.",
+      "Commercial Microsoft subscription plan amounts are supported; hosted versus installed-app deployment taxonomy is not inferred from plan names.",
+      "Manual recovery; product groups retained separately.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Microsoft 365 E3 (no Teams)",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$33.75",
+            "amount": "33.75",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Monthly rate paid yearly, annual commitment.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:104462-104585|offset:105602-105679|offset:105064-105877",
+              "text": "Microsoft 365 E3 (no Teams) | $33.75 | Originally starting from $33.75 now starting from $33.75 $33.75 $33.75 user/month, paid yearly (Annual commitment)"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:104462-104585",
+          "text": "Microsoft 365 E3 (no Teams)"
+        }
+      },
+      {
+        "name": "Microsoft 365 E5 (no Teams)",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$54.75",
+            "amount": "54.75",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Monthly rate paid yearly, annual commitment.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:156441-156564|offset:157581-157658|offset:157043-157856",
+              "text": "Microsoft 365 E5 (no Teams) | $54.75 | Originally starting from $54.75 now starting from $54.75 $54.75 $54.75 user/month, paid yearly (Annual commitment)"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:156441-156564",
+          "text": "Microsoft 365 E5 (no Teams)"
+        }
+      },
+      {
+        "name": "Microsoft 365 F3",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$8.00",
+            "amount": "8.00",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Monthly rate paid yearly, annual commitment.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:207730-207842|offset:208856-208932|offset:208321-209130",
+              "text": "Microsoft 365 F3 | $8.00 | Originally starting from $8.00 now starting from $8.00 $8.00 $8.00 user/month, paid yearly (Annual commitment)"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:207730-207842",
+          "text": "Microsoft 365 F3"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.472Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
     "id": "pricing-manual-bb7b34b3e3582d1611641f9dffe0f7d3c8f56eb9df2e1531759a3e68a8a2b06f",
     "productId": "adobe-acrobat",
     "scope": {
@@ -8368,6 +9949,1500 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:10:31.706Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-c33254bda505626a4974c119ae30976e1192fcac2e1e418d240390b24d309a1a",
+    "productId": "bigcommerce",
+    "scope": {
+      "edition": "Enterprise",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-28T19:11:18.000Z",
+    "landingCapturedAt": "2025-06-28T19:11:18.000Z",
+    "pricingCapturedAt": "2025-06-21T16:53:25.000Z",
+    "evidenceAvailableAt": "2025-06-28T19:11:18.000Z",
+    "landingUrl": "https://www.bigcommerce.com/",
+    "pricingUrl": "https://www.bigcommerce.com/enterprise-pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:481102-481423"
+    },
+    "sourceSha256": "419a17a61d322ba7c3c20ccc1f2c63f50798497c07063c69773c87c3488bafc7",
+    "landingSha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+    "sourceDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY",
+    "landingDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+    "fetchedAt": "2026-10-22T17:32:51.971Z",
+    "landingFetchedAt": "2026-10-22T17:32:32.510Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY",
+      "actualDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+      "actualDigest": "4TSBYA4KHHISES6HJZ6ERMLW7VHXVPNJ",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 21 Jun 2025 16:53:25 GMT",
+      "originalUrl": "https://www.bigcommerce.com/enterprise-pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481688.37-0024/CC-MAIN-20250621160942-20250621190942-00485.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 19:11:18 GMT",
+      "originalUrl": "https://www.bigcommerce.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250628234908/spn2-20250628184713-wwwb-spn27.us.archive.org-8001.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Named Enterprise pricing structure only; no numeric base subscription rate retained.",
+      "No additional transaction fees is not a zero-cost subscription. General pricing hint has no selected capture.",
+      "Feature coverage partial.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "BigCommerce Enterprise Pricing",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Request a quote",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:415573-415687",
+              "text": "Request a quote"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:414571-414662",
+          "text": "BigCommerce Enterprise Pricing"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.713Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-c429a7ce6e1373502ecfe396181eac26c0863e50e495db349840378eff4de46b",
+    "productId": "google-workspace",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T23:13:25.000Z",
+    "landingCapturedAt": "2025-06-30T23:13:25.000Z",
+    "pricingCapturedAt": "2025-06-30T23:13:25.000Z",
+    "evidenceAvailableAt": "2025-06-30T23:13:25.000Z",
+    "landingUrl": "https://workspace.google.com/",
+    "pricingUrl": "https://workspace.google.com/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Starter",
+      "locator": "offset:276068-276136"
+    },
+    "sourceSha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+    "landingSha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+    "sourceDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+    "landingDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+    "fetchedAt": "2026-10-22T15:31:18.930Z",
+    "landingFetchedAt": "2026-10-22T15:31:18.930Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+      "actualDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+      "actualDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 23:13:25 GMT",
+      "originalUrl": "https://workspace.google.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "ARCHIVEIT-5591-2025071016-00000/ARCHIVEIT-5591-TEST-JOB2573392-SEED1022266-20250630195003978-00000-h3.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 23:13:25 GMT",
+      "originalUrl": "https://workspace.google.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "ARCHIVEIT-5591-2025071016-00000/ARCHIVEIT-5591-TEST-JOB2573392-SEED1022266-20250630195003978-00000-h3.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manual extraction from retained capture; incomplete feature matrix. Unknown fields remain null or unknown.",
+      "Canonical landing scope retained; Business product family appears in source footnotes. Annual values are monthly rates with 1 year commitment, not annual totals.",
+      "Monthly-billed alternatives keep commitment unknown; monthly billing alone does not establish contract duration.",
+      "Four tier identities appear in three responsive copies; same-name local paired billing rates retained once."
+    ],
+    "plans": [
+      {
+        "name": "Starter",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "7 USD per user/month; 1 year commitment",
+            "amount": "7",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Business plans support a maximum 300 users; this is not a minimum purchase.",
+              "billingVariant": "Explicit alternative billing representation; responsive duplicate cards removed"
+            },
+            "source": {
+              "locator": "offset:276068-276136|offset:276364-276379|offset:276385-276537|offset:276916-276964|offset:370077-370353",
+              "text": "7 USD per user/month; 1 year commitment | Starter | $7 | USD | per user / month, 1 year commitment | per user / month, 1 year commitment | per user / month, 1 year commitment | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          },
+          {
+            "literal": "8.40 USD per user/month; when billed monthly",
+            "amount": "8.40",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Business plans support a maximum 300 users; this is not a minimum purchase.",
+              "billingVariant": "Explicit alternative billing representation; responsive duplicate cards removed"
+            },
+            "source": {
+              "locator": "offset:276068-276136|offset:277313-277331|offset:276385-276537|offset:276916-276964|offset:277307-277373|offset:370077-370353",
+              "text": "8.40 USD per user/month; when billed monthly | Starter | $8.40 | USD | per user / month, 1 year commitment | Or $8.40 per user / month, when billed monthly | per user / month, 1 year commitment | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:276068-276136",
+          "text": "Starter"
+        }
+      },
+      {
+        "name": "Standard",
+        "order": 1,
+        "popular": true,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "14 USD per user/month; 1 year commitment",
+            "amount": "14",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Business plans support a maximum 300 users; this is not a minimum purchase.",
+              "billingVariant": "Explicit alternative billing representation; responsive duplicate cards removed"
+            },
+            "source": {
+              "locator": "offset:282741-282810|offset:283038-283054|offset:283060-283212|offset:283591-283639|offset:370077-370353",
+              "text": "14 USD per user/month; 1 year commitment | Standard | $14 | USD | per user / month, 1 year commitment | per user / month, 1 year commitment | per user / month, 1 year commitment | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          },
+          {
+            "literal": "16.80 USD per user/month; when billed monthly",
+            "amount": "16.80",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Business plans support a maximum 300 users; this is not a minimum purchase.",
+              "billingVariant": "Explicit alternative billing representation; responsive duplicate cards removed"
+            },
+            "source": {
+              "locator": "offset:282741-282810|offset:283989-284008|offset:283060-283212|offset:283591-283639|offset:283983-284067|offset:370077-370353",
+              "text": "16.80 USD per user/month; when billed monthly | Standard | $16.80 | USD | per user / month, 1 year commitment | Or $16.80 per user / month, when billed monthly | per user / month, 1 year commitment | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:282741-282810",
+          "text": "Standard"
+        }
+      },
+      {
+        "name": "Plus",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "22 USD per user/month; 1 year commitment",
+            "amount": "22",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Business plans support a maximum 300 users; this is not a minimum purchase.",
+              "billingVariant": "Explicit alternative billing representation; responsive duplicate cards removed"
+            },
+            "source": {
+              "locator": "offset:291295-291360|offset:291588-291604|offset:291610-291762|offset:292141-292189|offset:370077-370353",
+              "text": "22 USD per user/month; 1 year commitment | Plus | $22 | USD | per user / month, 1 year commitment | per user / month, 1 year commitment | per user / month, 1 year commitment | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          },
+          {
+            "literal": "26.40 USD per user/month; when billed monthly",
+            "amount": "26.40",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Business plans support a maximum 300 users; this is not a minimum purchase.",
+              "billingVariant": "Explicit alternative billing representation; responsive duplicate cards removed"
+            },
+            "source": {
+              "locator": "offset:291295-291360|offset:292535-292554|offset:291610-291762|offset:292141-292189|offset:292529-292613|offset:370077-370353",
+              "text": "26.40 USD per user/month; when billed monthly | Plus | $26.40 | USD | per user / month, 1 year commitment | Or $26.40 per user / month, when billed monthly | per user / month, 1 year commitment | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:291295-291360",
+          "text": "Plus"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact sales for pricing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "No minimum or maximum user limit for Enterprise plans.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:299031-299069|offset:370077-370353",
+              "text": "Contact sales for pricing | Contact sales for pricing | Business Starter, Business Standard, and Business Plus plans can be purchased for a maximum of 300 users. There is no minimum or maximum user limit for Enterpri"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:298531-298602",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.615Z",
+      "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-c5604c15c84227b217a3b869b8b61534494b43cc4caf540478aed0691072acd6",
+    "productId": "zapier",
+    "scope": {
+      "edition": "AI automation plans",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T12:32:00.000Z",
+    "landingCapturedAt": "2025-06-29T12:32:00.000Z",
+    "pricingCapturedAt": "2025-06-26T03:04:27.000Z",
+    "evidenceAvailableAt": "2025-06-29T12:32:00.000Z",
+    "landingUrl": "https://zapier.com/",
+    "pricingUrl": "https://zapier.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:77678-77799"
+    },
+    "sourceSha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+    "landingSha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+    "sourceDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+    "landingDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+    "fetchedAt": "2026-10-22T17:38:20.358Z",
+    "landingFetchedAt": "2026-10-22T17:38:00.509Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+      "actualDigest": "MC76VFDGY6XGG6JANY7VGMPDBTVWSW5T",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+      "actualDigest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 26 Jun 2025 03:04:27 GMT",
+      "originalUrl": "https://zapier.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250626025241-crawl528/SPNOUTLINKS-20250626030250-00200.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 12:32:00 GMT",
+      "originalUrl": "https://zapier.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250629233159_b783a6eb/forum.sentry.io-inf-20250629-101410-1gzp0-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Four AI automation tiers kept separate from Agents/Chatbots/Interfaces/Tables product-family offers.",
+      "USD selected currency explicitly displayed for AI automation pricing.",
+      "Professional/Team rates are monthly equivalents billed annually. Task selector says Select a task tier: no 750/2000/default task allocation invented.",
+      "Team includes 25 users; this is not a per-user price or minimum seat purchase.",
+      "Free forever explicit; free trials not modeled as permanent free plans. Feature coverage partial.",
+      "Retained replay has a qualified legacy chunked digest mismatch; payload SHA256 verified, original CDX SHA1 not verified. Maintainer acceptance required.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$ 0 /mo",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "100 tasks per month",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:149788-150398",
+              "text": "$ 0 /mo"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Tasks",
+            "value": "100 tasks per month",
+            "source": {
+              "locator": "offset:149252-149354",
+              "text": "100 tasks per month."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:148539-148593",
+          "text": "Free"
+        }
+      },
+      {
+        "name": "Professional",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 19 . 99 /mo",
+            "amount": "19.99",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Task tier not specified in retained selector",
+              "billingVariant": "Billed annually"
+            },
+            "source": {
+              "locator": "offset:224024-224344",
+              "text": "$ 19 . 99 /mo Billed annually"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:223771-223833",
+          "text": "Professional"
+        }
+      },
+      {
+        "name": "Team",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 69 /mo",
+            "amount": "69",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Task tier not specified in retained selector",
+              "billingVariant": "Billed annually"
+            },
+            "source": {
+              "locator": "offset:235657-235861",
+              "text": "$ 69 /mo Billed annually"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Users",
+            "value": "25 users",
+            "source": {
+              "locator": "offset:238636-238697",
+              "text": "25 users"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:235409-235463",
+          "text": "Team"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact for pricing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:247507-247579",
+              "text": "Contact for pricing"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:246749-246809",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.767Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-c918564af5339b972442086eef7dadd31cf2152497595d47071a89594bbe51b2",
+    "productId": "toggl-track",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-28T07:28:52.000Z",
+    "landingCapturedAt": "2025-06-28T07:28:52.000Z",
+    "pricingCapturedAt": "2025-06-14T08:22:57.000Z",
+    "evidenceAvailableAt": "2025-06-28T07:28:52.000Z",
+    "landingUrl": "https://toggl.com/",
+    "pricingUrl": "https://toggl.com/track/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250628072852id_/https://toggl.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250614082257id_/https://toggl.com/track/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:39946-39983"
+    },
+    "sourceSha256": "57e13fb501a658c2e266228e493c269666dc8317769bf35a72b8b860cf52634e",
+    "landingSha256": "29359d0d80952960993f0773f985522683350e96c141e551f5d01104a08c5396",
+    "sourceDigest": "TL42PVZ63VS2G467F3NAUDFBSY2KO4H7",
+    "landingDigest": "ATWUYQ6QEJZQQI6L7IPCQT72X2GJ6Y67",
+    "fetchedAt": "2026-10-22T17:30:31.749Z",
+    "landingFetchedAt": "2026-10-22T17:30:12.253Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "TL42PVZ63VS2G467F3NAUDFBSY2KO4H7",
+      "actualDigest": "TL42PVZ63VS2G467F3NAUDFBSY2KO4H7"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "ATWUYQ6QEJZQQI6L7IPCQT72X2GJ6Y67",
+      "actualDigest": "K7BHOT5ULZZ6CPJFIUI26QP6KK7XOHWH",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 14 Jun 2025 08:22:57 GMT",
+      "originalUrl": "https://toggl.com/track/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481310.69-0036/CC-MAIN-20250614065311-20250614095311-00736.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 07:28:52 GMT",
+      "originalUrl": "https://toggl.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250628082142/spn2-20250628045831-wwwb-spn36.us.archive.org-8003.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Desktop/mobile duplicate cards reconciled into four named tiers; no duplication of offers.",
+      "Annual choice is the static highlighted toggle (background translated to first option and annual text highlighted); discounted 9/18 associated with that option.",
+      "Crossed-out 10/20 retained only as reference rates with commitment unknown; separate monthly contract not independently established by saved page.",
+      "USD is explicit in matching named-plan JSON-LD; visible rate cards use $.",
+      "Free cap of five users is a maximum, not a minimum seat purchase. Premium 30-day trial not modeled as a free plan.",
+      "Toggl Plan is a different product; saved /plan/ source is excluded. Feature coverage partial.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$ 0",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:56305-56326",
+              "text": "$ 0"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "User limit",
+            "value": "Up to 5 users",
+            "source": {
+              "locator": "offset:56326-56360",
+              "text": "Free for up to 5 users."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:55233-55285",
+          "text": "Free"
+        }
+      },
+      {
+        "name": "Starter",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 9",
+            "amount": "9",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Save 10% with Annual billing",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Annual option statically highlighted; non-struck amount"
+            },
+            "source": {
+              "locator": "offset:68597-69221",
+              "text": "$ 10 $ 9 per user per month"
+            }
+          },
+          {
+            "literal": "$ 10",
+            "amount": "10",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Crossed-out comparison price",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Reference only; independent monthly commitment not established"
+            },
+            "source": {
+              "locator": "offset:68597-69221",
+              "text": "$ 10 $ 9 per user per month"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:68424-68479",
+          "text": "Starter"
+        }
+      },
+      {
+        "name": "Premium",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 18",
+            "amount": "18",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Save 10% with Annual billing",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Annual option statically highlighted; non-struck amount"
+            },
+            "source": {
+              "locator": "offset:75124-75622",
+              "text": "$ 20 $ 18 per user per month"
+            }
+          },
+          {
+            "literal": "$ 20",
+            "amount": "20",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Crossed-out comparison price",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Reference only; independent monthly commitment not established"
+            },
+            "source": {
+              "locator": "offset:75124-75622",
+              "text": "$ 20 $ 18 per user per month"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:74109-74164",
+          "text": "Premium"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Custom pricing. Turnkey solution.",
+            "amount": null,
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:85873-85917",
+              "text": "Custom pricing. Turnkey solution."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:85650-85708",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.663Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-cf974cb95d21ed0c3b0c2366c29bdd81c12c7e3639d5095ae5169b8aa6e2eb55",
+    "productId": "intercom",
+    "scope": {
+      "edition": "Fin with existing external helpdesk",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T15:33:35.000Z",
+    "landingCapturedAt": "2025-06-30T15:33:35.000Z",
+    "pricingCapturedAt": "2025-06-18T20:12:42.000Z",
+    "evidenceAvailableAt": "2025-06-30T15:33:35.000Z",
+    "landingUrl": "https://www.intercom.com/",
+    "pricingUrl": "https://www.intercom.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+    "provenance": "current-source-hint",
+    "discovery": {
+      "label": "Current pricing source",
+      "locator": "hint:0"
+    },
+    "sourceSha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+    "landingSha256": "1bd42cc354f8d7628fdc027725508fb6194ebc3303098a17509670f6c851955f",
+    "sourceDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+    "landingDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+    "fetchedAt": "2026-10-22T15:27:58.133Z",
+    "landingFetchedAt": "2026-10-22T15:27:35.740Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+      "actualDigest": "D7H7C534RUFSPKYXBJMLVTTE3XCMV2KE",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+      "actualDigest": "DS6U6PS7KYM336YXMAHQ3JCVCAZXZKXO",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 20:12:42 GMT",
+      "originalUrl": "https://www.intercom.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250618200133-crawl919/SPNOUTLINKS-20250618201058-00108.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 15:33:35 GMT",
+      "originalUrl": "https://www.intercom.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "REDDIT-20250630070912-crawl925/REDDIT-20250630153156-00005.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Usage charge; separate from seat subscriptions. No recurring time denominator asserted for each resolution.",
+      "Manual recovery; independent usage/add-on scope, not a seat-subscription price.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Fin AI Agent",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "0.99",
+            "amount": "0.99",
+            "currency": "USD",
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "resolved conversation",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Trial: 14 days; paid usage rate remains separate",
+              "startingAt": null,
+              "range": null,
+              "volume": "Minimum usage: 50 resolutions per month",
+              "billingVariant": "Archived displayed rate; checkout state not verified"
+            },
+            "source": {
+              "locator": "offset:67677-72755|offset:68498-68537|offset:95607-95840",
+              "text": "Already have a helpdesk? Fin AI Agent Use Fin with your current helpdesk including Zendesk, Salesforce, and more. Learn more $0.99 per Fin resolution 50 resolutions per month minimum Free 14 day trial Get a demo Features include Set up in under an hour on your current helpdesk Answers email, live chat, phone and more Customizable tone & answer length Takes action on external systems Hands off to agents in preferred Inbox | $0.99 | Intercom is billed in United States Dollars (USD) only. This applies across our whole platform, including seat pricing, additional usage charges, add-ons, and Premier Services. Right now, we can’t bill in any other currencies."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:67677-72755",
+          "text": "Already have a helpdesk? Fin AI Agent Use Fin with your current helpdesk including Zendesk, Salesforce, and more. Learn more $0.99 per Fin resolution 50 resolutions per month minimum Free 14 day trial Get a demo Features include Set up in under an hour on your current helpdesk Answers email, live chat, phone and more Customizable tone & answer length Takes action on external systems Hands off to agents in preferred Inbox"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.547Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-d056dc18338370b0b506977f16ea3dfb9d393e67ddc7b5fe6ea783ae33bf8908",
+    "productId": "webflow",
+    "scope": {
+      "edition": "Ecommerce Site plans",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T04:05:26.000Z",
+    "landingCapturedAt": "2025-06-30T04:05:26.000Z",
+    "pricingCapturedAt": "2025-06-29T21:36:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T04:05:26.000Z",
+    "landingUrl": "https://webflow.com/",
+    "pricingUrl": "https://webflow.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:107141-107752"
+    },
+    "sourceSha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+    "landingSha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+    "sourceDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+    "landingDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+    "fetchedAt": "2026-10-22T15:33:56.031Z",
+    "landingFetchedAt": "2026-10-22T15:33:37.179Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+      "actualDigest": "UOT52N2SDWNJ2OX5U4OKHXHVKPHFQ4HM",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+      "actualDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 21:36:58 GMT",
+      "originalUrl": "https://webflow.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629222447/spn2-20250629192742-wwwb-spn28.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 04:05:26 GMT",
+      "originalUrl": "https://webflow.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630041744_8d971985/www.rotundapublicaffairs.com-inf-20250630-040518-8kgd7-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Workspace Free seat row says $15 in visible text but attributes encode zero; conflict quarantined, no numerical fact asserted.",
+      "Workspace base plans versus per-member global note require unit reconciliation.",
+      "Site/Ecommerce/Workspace/seat types must not be combined into one tier ladder.",
+      "Captured payload has legacy_chunked_unverified integrity; these facts require explicit review acceptance.",
+      "Manual recovery; product groups retained separately.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Standard",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "29",
+            "amount": "29",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:239865-240408|offset:240043-240120|offset:251615-251708",
+              "text": "Standard $ 29 /mo billed yearly Perfect for businesses getting off the ground | 29 | All prices are in USD and are charged per site, per month. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "42",
+            "amount": "42",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:239865-240408|offset:240043-240120|offset:251615-251708",
+              "text": "Standard $ 29 /mo billed yearly Perfect for businesses getting off the ground | 29 | All prices are in USD and are charged per site, per month. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:239865-240408",
+          "text": "Standard $ 29 /mo billed yearly Perfect for businesses getting off the ground"
+        }
+      },
+      {
+        "name": "Plus",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "74",
+            "amount": "74",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:246068-246595|offset:246242-246319|offset:251615-251708",
+              "text": "Plus $ 74 /mo billed yearly Best for higher volume businesses | 74 | All prices are in USD and are charged per site, per month. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "84",
+            "amount": "84",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:246068-246595|offset:246242-246319|offset:251615-251708",
+              "text": "Plus $ 74 /mo billed yearly Best for higher volume businesses | 74 | All prices are in USD and are charged per site, per month. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:246068-246595",
+          "text": "Plus $ 74 /mo billed yearly Best for higher volume businesses"
+        }
+      },
+      {
+        "name": "Advanced",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "212",
+            "amount": "212",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:248804-249346|offset:248982-249062|offset:251615-251708",
+              "text": "Advanced $ 212 /mo billed yearly Scale your online business to new heights | 212 | All prices are in USD and are charged per site, per month. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "235",
+            "amount": "235",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:248804-249346|offset:248982-249062|offset:251615-251708",
+              "text": "Advanced $ 212 /mo billed yearly Scale your online business to new heights | 212 | All prices are in USD and are charged per site, per month. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:248804-249346",
+          "text": "Advanced $ 212 /mo billed yearly Scale your online business to new heights"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.511Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-d50384a3310eeb720049e81490758189280ffe2defbf4248cc4c68edb62d72f8",
+    "productId": "1password",
+    "scope": {
+      "edition": "XAM components",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T19:28:07.000Z",
+    "landingCapturedAt": "2025-06-30T19:28:07.000Z",
+    "pricingCapturedAt": "2025-06-19T13:07:29.000Z",
+    "evidenceAvailableAt": "2025-06-30T19:28:07.000Z",
+    "landingUrl": "https://1password.com/",
+    "pricingUrl": "https://1password.com/pricing/xam",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "View plans",
+      "locator": "offset:12928-13569"
+    },
+    "sourceSha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+    "landingSha256": "3904f60770cfa8dd87448636d6502a54cf7134b7fdf67e032b340955f4025e23",
+    "sourceDigest": "QQ43ZSBVXW5BEV3FY3P6SEBXRIZK6LWY",
+    "landingDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+    "fetchedAt": "2026-10-22T15:24:16.820Z",
+    "landingFetchedAt": "2026-10-22T15:23:57.560Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "QQ43ZSBVXW5BEV3FY3P6SEBXRIZK6LWY",
+      "actualDigest": "NTGDHDVX6THFBBN7WHNQNBMXXSFYSMVR",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+      "actualDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 19 Jun 2025 13:07:29 GMT",
+      "originalUrl": "https://1password.com/pricing/xam",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250619131407/spn2-20250619125719-wwwb-spn30.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 19:28:07 GMT",
+      "originalUrl": "https://1password.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_urls_20250630192839_48973f3f/urls_20250630192839_48973f3f.1743749985.megawarc.warc.zst",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Manually reviewed XAM component quotations; no general password-manager numerical prices established.",
+      "Dedicated support for 100+ users is a support condition, not a subscription purchase minimum.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Enterprise Password Manager",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Request a quote",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Volume-based pricing available; purchase minimum unknown",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:13056-16554",
+              "text": "Enterprise Password Manager; Request a quote"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:13056-16554",
+          "text": "Enterprise Password Manager; Request a quote"
+        }
+      },
+      {
+        "name": "Device Trust",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Request a quote",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:16554-20100",
+              "text": "Device Trust; Request a quote"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:16554-20100",
+          "text": "Device Trust; Request a quote"
+        }
+      },
+      {
+        "name": "Trelica by 1Password",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Request a quote",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:20100-23616",
+              "text": "Trelica by 1Password; Request a quote"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:20100-23616",
+          "text": "Trelica by 1Password; Request a quote"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.569Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   },
   {
@@ -8662,6 +11737,363 @@
       "reviewedAt": "2026-10-22T19:10:31.538Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-d9351f82b6b7b5fdaf5b44791f6c8f73f9bf6d6bd3e4b876de43b51065163136",
+    "productId": "buffer",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T09:41:34.000Z",
+    "landingCapturedAt": "2025-06-30T09:41:34.000Z",
+    "pricingCapturedAt": "2025-06-28T10:37:23.000Z",
+    "evidenceAvailableAt": "2025-06-30T09:41:34.000Z",
+    "landingUrl": "https://buffer.com/",
+    "pricingUrl": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630094134id_/https://buffer.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250628103723id_/https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:32108-32208"
+    },
+    "sourceSha256": "e1671652c9f62aecc1208a21afa4e3aacf280c3b5221cb31c061f477aa2d97cd",
+    "landingSha256": "4d5132c0cca7f3cac32d9042bf155394a731b3861f66945df8ae44300d2fdfcd",
+    "sourceDigest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+    "landingDigest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+    "fetchedAt": "2026-10-22T17:36:26.885Z",
+    "landingFetchedAt": "2026-10-22T17:36:11.288Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+      "actualDigest": "OTD7ZKATU3IXV6YPR2LT4US3P3RU4KT3",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+      "actualDigest": "RDOGU6RSZJCXMSUZRXL6WLZSPIHTJTMU",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 28 Jun 2025 10:37:23 GMT",
+      "originalUrl": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250628113711/spn2-20250628091048-wwwb-spn30.us.archive.org-8005.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 09:41:34 GMT",
+      "originalUrl": "https://buffer.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630115617/spn2-20250630083957-wwwb-spn21.us.archive.org-8001.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Essentials and Team names exclude Recommended/aria-hidden Placeholder badges; Recommended retained as popular=true for Essentials only.",
+      "Yearly radio is explicitly checked. The monthly equivalents and yearly totals are the same quotes, not separate monthly-commitment offers.",
+      "Currency unknown: $ present, no independent ISO currency scalar found.",
+      "One channel is displayed quantity, not an evidenced minimum. Free up-to-three-channel limit is a maximum.",
+      "Paid 14-day trials are not permanent free tiers. Feature coverage partial.",
+      "Retained replay has a qualified legacy chunked digest mismatch; payload SHA256 verified, original CDX SHA1 not verified. Maintainer acceptance required.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Free forever",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:55347-55479",
+              "text": "Free forever"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Channels",
+            "value": "Connect up to 3 channels",
+            "source": {
+              "locator": "offset:55479-55560",
+              "text": "Connect up to 3 channels"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:55126-55190",
+          "text": "Free"
+        }
+      },
+      {
+        "name": "Essentials",
+        "order": 1,
+        "popular": true,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5 /month",
+            "amount": "5",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "channel",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "save 2 months",
+              "startingAt": null,
+              "range": null,
+              "volume": "1 channel",
+              "billingVariant": "Monthly equivalent of selected yearly billing"
+            },
+            "source": {
+              "locator": "offset:62059-62188",
+              "text": "$5 /month"
+            }
+          },
+          {
+            "literal": "1 channel · $ 60 billed yearly (save 2 months)",
+            "amount": "60",
+            "currency": null,
+            "billingPeriod": "year",
+            "commitment": "annual",
+            "unit": "channel",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "save 2 months",
+              "startingAt": null,
+              "range": null,
+              "volume": "1 channel",
+              "billingVariant": "Yearly billed total for same selected quote"
+            },
+            "source": {
+              "locator": "offset:62188-62362",
+              "text": "1 channel · $ 60 billed yearly (save 2 months)"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:61914-61984",
+          "text": "Essentials"
+        }
+      },
+      {
+        "name": "Team",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$10 /month",
+            "amount": "10",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "channel",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "save 2 months",
+              "startingAt": null,
+              "range": null,
+              "volume": "1 channel",
+              "billingVariant": "Monthly equivalent of selected yearly billing"
+            },
+            "source": {
+              "locator": "offset:71691-71821",
+              "text": "$10 /month"
+            }
+          },
+          {
+            "literal": "1 channel · $ 120 billed yearly (save 2 months)",
+            "amount": "120",
+            "currency": null,
+            "billingPeriod": "year",
+            "commitment": "annual",
+            "unit": "channel",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "save 2 months",
+              "startingAt": null,
+              "range": null,
+              "volume": "1 channel",
+              "billingVariant": "Yearly billed total for same selected quote"
+            },
+            "source": {
+              "locator": "offset:71821-71996",
+              "text": "1 channel · $ 120 billed yearly (save 2 months)"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:71470-71534",
+          "text": "Team"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.684Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-e40356ff5fdf5ee736693a1d826773d48a5995e88499715a526770e435bb1e09",
+    "productId": "hootsuite",
+    "scope": {
+      "edition": "Enterprise",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T09:46:38.000Z",
+    "landingCapturedAt": "2025-06-30T09:46:38.000Z",
+    "pricingCapturedAt": "2025-06-25T23:41:17.000Z",
+    "evidenceAvailableAt": "2025-06-30T09:46:38.000Z",
+    "landingUrl": "https://www.hootsuite.com/",
+    "pricingUrl": "https://www.hootsuite.com/plans/enterprise",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Enterprise",
+      "locator": "offset:124950-125073"
+    },
+    "sourceSha256": "fdb5c26d45e150661160a1039758fd086109a0f81bff8dc0db3bad18fe7f214f",
+    "landingSha256": "41094667da6fb7558734deec1b11387ea58aa13cb5124b746160ff7f2d93ad30",
+    "sourceDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+    "landingDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+    "fetchedAt": "2026-10-22T17:37:38.664Z",
+    "landingFetchedAt": "2026-10-22T17:36:50.828Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+      "actualDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+      "actualDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 25 Jun 2025 23:41:17 GMT",
+      "originalUrl": "https://www.hootsuite.com/plans/enterprise",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250625223509500-01124-01172-wbgrp-crawl041/LUX-029-2025-06-23-20250625233134787-01149-1777502~wbgrp-crawl041.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 09:46:38 GMT",
+      "originalUrl": "https://www.hootsuite.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630121206_94c11489/creativecommons.org-inf-20250630-050819-18gf4-00001.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Quote-only Enterprise structure; no numeric rate, price currency, billing period or per-seat charge stated.",
+      "Annual commitment from Enterprise yearly-contract FAQ; monthly billing not inferred.",
+      "Source heading names Hootsuite Enterprise; no trial modeled as permanent free. Feature coverage partial."
+    ],
+    "plans": [
+      {
+        "name": "Hootsuite Enterprise",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "get custom pricing based on your organization’s needs.",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:108454-108591",
+              "text": "get custom pricing based on your organization’s needs."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:95855-96021",
+          "text": "Hootsuite Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.742Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -8996,6 +12428,521 @@
     }
   },
   {
+    "id": "pricing-manual-e9464dda854ef4c52d834aeee0800f82a5136f32268ef6bef0b4c851fd45c65b",
+    "productId": "webflow",
+    "scope": {
+      "edition": "Workspace plans: in-house",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T04:05:26.000Z",
+    "landingCapturedAt": "2025-06-30T04:05:26.000Z",
+    "pricingCapturedAt": "2025-06-29T21:36:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T04:05:26.000Z",
+    "landingUrl": "https://webflow.com/",
+    "pricingUrl": "https://webflow.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:107141-107752"
+    },
+    "sourceSha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+    "landingSha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+    "sourceDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+    "landingDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+    "fetchedAt": "2026-10-22T15:33:56.031Z",
+    "landingFetchedAt": "2026-10-22T15:33:37.179Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+      "actualDigest": "UOT52N2SDWNJ2OX5U4OKHXHVKPHFQ4HM",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+      "actualDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 21:36:58 GMT",
+      "originalUrl": "https://webflow.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629222447/spn2-20250629192742-wwwb-spn28.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 04:05:26 GMT",
+      "originalUrl": "https://webflow.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630041744_8d971985/www.rotundapublicaffairs.com-inf-20250630-040518-8kgd7-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Workspace Free seat row says $15 in visible text but attributes encode zero; conflict quarantined, no numerical fact asserted.",
+      "Workspace base plans versus per-member global note require unit reconciliation.",
+      "Site/Ecommerce/Workspace/seat types must not be combined into one tier ladder.",
+      "Captured payload has legacy_chunked_unverified integrity; these facts require explicit review acceptance.",
+      "Manual recovery; product groups retained separately.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Core",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "19",
+            "amount": "19",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:289020-289612|offset:289217-289294|offset:315100-315224",
+              "text": "Core $ 19 /mo billed yearly For those who need enhanced staging capabilities. | 19 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "28",
+            "amount": "28",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:289020-289612|offset:289217-289294|offset:315100-315224",
+              "text": "Core $ 19 /mo billed yearly For those who need enhanced staging capabilities. | 19 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:289020-289612",
+          "text": "Core $ 19 /mo billed yearly For those who need enhanced staging capabilities."
+        }
+      },
+      {
+        "name": "Growth",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "49",
+            "amount": "49",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:294902-295491|offset:295101-295178|offset:315100-315224",
+              "text": "Growth $ 49 /mo billed yearly For those who need unlimited staging and advanced collaboration tools. | 49 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "60",
+            "amount": "60",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:294902-295491|offset:295101-295178|offset:315100-315224",
+              "text": "Growth $ 49 /mo billed yearly For those who need unlimited staging and advanced collaboration tools. | 49 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:294902-295491",
+          "text": "Growth $ 49 /mo billed yearly For those who need unlimited staging and advanced collaboration tools."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.516Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-efffce311be053bdf7f24f4eb58c0c82c4496069c8d070b66841383c15fee8a0",
+    "productId": "quickbooks-online",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-19T04:53:12.000Z",
+    "landingCapturedAt": "2025-06-19T04:53:12.000Z",
+    "pricingCapturedAt": "2025-06-19T04:53:12.000Z",
+    "evidenceAvailableAt": "2025-06-19T04:53:12.000Z",
+    "landingUrl": "https://quickbooks.intuit.com/online/",
+    "pricingUrl": "https://quickbooks.intuit.com/online/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Simple Start",
+      "locator": "offset:78293-78500"
+    },
+    "sourceSha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+    "landingSha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+    "sourceDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+    "landingDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+    "fetchedAt": "2026-10-22T17:28:48.919Z",
+    "landingFetchedAt": "2026-10-22T17:28:48.919Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+      "actualDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+      "actualDigest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 19 Jun 2025 04:53:12 GMT",
+      "originalUrl": "https://quickbooks.intuit.com/online/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250619072452_22884d3c/paysimple.com-inf-20250619-040029-2rq4k-00000.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 19 Jun 2025 04:53:12 GMT",
+      "originalUrl": "https://quickbooks.intuit.com/online/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250619072452_22884d3c/paysimple.com-inf-20250619-040029-2rq4k-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Visible regular/promotional cards used; same-plan JSON-LD amounts 17.50/32.50/49.50/117.50 conflict and are excluded.",
+      "USD comes only from explicit same-plan JSON-LD currency scalars; visible cards use $. Scalar currency retained independently from rejected structured amounts.",
+      "Promotional amounts reconstruct adjacent whole-number and cents nodes; no change to literal source text.",
+      "Crossed-out regular rates are comparison references. Terms promise then-current list price, so no guaranteed future renewal amount asserted.",
+      "Offer available at capture; promotion expiry June 27 is retained without projecting it beyond capture.",
+      "Feature coverage not exhaustive."
+    ],
+    "plans": [
+      {
+        "name": "Simple Start",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 35",
+            "amount": "35",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "Crossed-out regular/list-price reference; not a guaranteed renewal rate.",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Regular reference for Buy Now monthly plan"
+            },
+            "source": {
+              "locator": "offset:78569-78724",
+              "text": "$ 35"
+            }
+          },
+          {
+            "literal": "$ 3 50 / mo",
+            "amount": "3.50",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "90% off for 3 months; new QBO customers; Buy Now monthly plan; ends June 27",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Promotional monthly plan"
+            },
+            "source": {
+              "locator": "offset:78730-79623",
+              "text": "$ 3 50 / mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:78293-78500",
+          "text": "Simple Start"
+        }
+      },
+      {
+        "name": "Essentials",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 65",
+            "amount": "65",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "Crossed-out regular/list-price reference; not a guaranteed renewal rate.",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Regular reference for Buy Now monthly plan"
+            },
+            "source": {
+              "locator": "offset:108135-108290",
+              "text": "$ 65"
+            }
+          },
+          {
+            "literal": "$ 6 50 / mo",
+            "amount": "6.50",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "90% off for 3 months; new QBO customers; Buy Now monthly plan; ends June 27",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Promotional monthly plan"
+            },
+            "source": {
+              "locator": "offset:108296-109189",
+              "text": "$ 6 50 / mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:107861-108066",
+          "text": "Essentials"
+        }
+      },
+      {
+        "name": "Plus",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 99",
+            "amount": "99",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "Crossed-out regular/list-price reference; not a guaranteed renewal rate.",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Regular reference for Buy Now monthly plan"
+            },
+            "source": {
+              "locator": "offset:142197-142352",
+              "text": "$ 99"
+            }
+          },
+          {
+            "literal": "$ 9 90 / mo",
+            "amount": "9.90",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "90% off for 3 months; new QBO customers; Buy Now monthly plan; ends June 27",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Promotional monthly plan"
+            },
+            "source": {
+              "locator": "offset:142358-143251",
+              "text": "$ 9 90 / mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:141929-142128",
+          "text": "Plus"
+        }
+      },
+      {
+        "name": "Advanced",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 235",
+            "amount": "235",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "Crossed-out regular/list-price reference; not a guaranteed renewal rate.",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Regular reference for Buy Now monthly plan"
+            },
+            "source": {
+              "locator": "offset:180170-180326",
+              "text": "$ 235"
+            }
+          },
+          {
+            "literal": "$ 23 50 / mo",
+            "amount": "23.50",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Sales tax may be applied where applicable.",
+              "promotion": "90% off for 3 months; new QBO customers; Buy Now monthly plan; ends June 27",
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Promotional monthly plan"
+            },
+            "source": {
+              "locator": "offset:180332-181226",
+              "text": "$ 23 50 / mo"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:179898-180101",
+          "text": "Advanced"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.641Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-f840cc820d463c6870f7443da9983b55839220b750497172f0764ff4b1cf720c",
     "productId": "google-meet",
     "scope": {
@@ -9119,6 +13066,205 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:10:31.729Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-fa665360223585a1603006356c08b73e6bd9a1cbbff4cc5db8045d16956235be",
+    "productId": "webflow",
+    "scope": {
+      "edition": "Workspace seat types (not Site or base Workspace plans)",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T04:05:26.000Z",
+    "landingCapturedAt": "2025-06-30T04:05:26.000Z",
+    "pricingCapturedAt": "2025-06-29T21:36:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T04:05:26.000Z",
+    "landingUrl": "https://webflow.com/",
+    "pricingUrl": "https://webflow.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:107141-107752"
+    },
+    "sourceSha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+    "landingSha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+    "sourceDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+    "landingDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+    "fetchedAt": "2026-10-22T15:33:56.031Z",
+    "landingFetchedAt": "2026-10-22T15:33:37.179Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+      "actualDigest": "UOT52N2SDWNJ2OX5U4OKHXHVKPHFQ4HM",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+      "actualDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 21:36:58 GMT",
+      "originalUrl": "https://webflow.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629222447/spn2-20250629192742-wwwb-spn28.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 04:05:26 GMT",
+      "originalUrl": "https://webflow.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630041744_8d971985/www.rotundapublicaffairs.com-inf-20250630-040518-8kgd7-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Workspace Free seat row says $15 in visible text but attributes encode zero; conflict quarantined, no numerical fact asserted.",
+      "Workspace base plans versus per-member global note require unit reconciliation.",
+      "Site/Ecommerce/Workspace/seat types must not be combined into one tier ladder.",
+      "Captured payload has legacy_chunked_unverified integrity; these facts require explicit review acceptance.",
+      "Manual recovery; product groups retained separately.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Full",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "39",
+            "amount": "39",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "One Full seat included for the Workspace owner; listed price applies to additional seats.",
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:311884-312569|offset:312169-312246|offset:315100-315224; html:319742-319951 (included owner seat)",
+              "text": "Full 1 included $ 39 /mo per seat, billed yearly Design full sites or manage admin settings. ‍ | 39 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text; One full seat is included for the Workspace owner."
+            }
+          },
+          {
+            "literal": "45",
+            "amount": "45",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "One Full seat included for the Workspace owner; listed price applies to additional seats.",
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:311884-312569|offset:312169-312246|offset:315100-315224; html:319742-319951 (included owner seat)",
+              "text": "Full 1 included $ 39 /mo per seat, billed yearly Design full sites or manage admin settings. ‍ | 39 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label; One full seat is included for the Workspace owner."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:311884-312569",
+          "text": "Full 1 included $ 39 /mo per seat, billed yearly Design full sites or manage admin settings. ‍"
+        }
+      },
+      {
+        "name": "Limited",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "15",
+            "amount": "15",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:313053-313674|offset:313253-313330|offset:315100-315224",
+              "text": "Limited $ 15 /mo per seat, billed yearly Edit content or build pages with components. ‍ | 15 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-yearly-price plus adjacent billed yearly text"
+            }
+          },
+          {
+            "literal": "19",
+            "amount": "19",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing.",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Encoded alternate billing rates; active selection unknown"
+            },
+            "source": {
+              "locator": "offset:313053-313674|offset:313253-313330|offset:315100-315224",
+              "text": "Limited $ 15 /mo per seat, billed yearly Edit content or build pages with components. ‍ | 15 | All prices are in USD and are charged per member with applicable taxes added at checkout. | data-monthly-price plus adjacent data-billing-monthly label"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:313053-313674",
+          "text": "Limited $ 15 /mo per seat, billed yearly Edit content or build pages with components. ‍"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T19:10:54.524Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   }
 ]
