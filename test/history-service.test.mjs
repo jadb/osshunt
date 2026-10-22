@@ -196,7 +196,9 @@ test('filesystem objects are immutable even across competing store instances', a
 test('D1 SQL atomically gates competing refreshes, stale writes and image leases', async t => {
   const { DatabaseSync } = await import('node:sqlite');
   const db = new DatabaseSync(':memory:'); t.after(() => db.close());
-  db.exec(await readFile(new URL('../worker/history/migrations/0001_history.sql', import.meta.url), 'utf8'));
+  for (const name of ['0001_history.sql', '0002_archive_cooldown.sql']) {
+    db.exec(await readFile(new URL(`../worker/history/migrations/${name}`, import.meta.url), 'utf8'));
+  }
   const binding = { prepare(sql) { return { bind(...params) { return {
     async first() { return db.prepare(sql).get(...params) || null; },
     async run() { return { meta: { changes: db.prepare(sql).run(...params).changes } }; },
@@ -214,6 +216,10 @@ test('D1 SQL atomically gates competing refreshes, stale writes and image leases
   await store.finishImage('image', lease, 3600100);
   assert.equal(await store.reserveImage('image', 3600099, 30000), null);
   assert.ok(await store.reserveImage('image', 3600100, 30000));
+  assert.equal(await store.archiveRetryAt(), 0);
+  await Promise.all([store.deferArchive(7200000), store.deferArchive(3600000)]);
+  assert.equal(await store.archiveRetryAt(), 7200000);
+  assert.equal(await store.deferArchive(100), 7200000);
 });
 
 test('R2 adapter uses conditional create and reads the winning immutable object', async () => {
@@ -237,7 +243,7 @@ test('archive rate limits retain public error codes and retry instructions', asy
   f.state.response = () => new Response(null, { status: 429, headers: { 'Retry-After': '8000' } });
   const image = await f.request(imagePath(a)); assert.equal(image.headers.get('Retry-After'), '8000');
   assert.equal((await image.json()).code, 'archive_rate_limited');
-  f.restart(); f.state.now += 3600000; assert.equal((await f.request(imagePath(a))).status, 503);
+  f.restart(); f.state.now += 3600000; assert.equal((await f.request(imagePath(a))).status, 429);
 });
 
 test('final response URL must retain exact archived timestamp and source', async t => {
@@ -368,4 +374,52 @@ test('archive image requests identify the public history application', async t =
   } });
   await f.request('/refresh', 'POST');
   assert.equal((await f.request(imagePath(a))).status, 200);
+});
+
+const distinctCatalog = [...catalog, { ...catalog[0], id: 'other', name: 'Other', url: 'https://other.example/' }];
+
+test('archive rate limits gate all products durably without consuming unattempted monthly reservations', async t => {
+  const f = await fixture(t, { catalog: distinctCatalog });
+  await f.request('/refresh', 'POST'); await f.request(imagePath(a));
+  f.state.now += MONTH;
+  f.state.discoveryError = Object.assign(new Error('Rate limit'), { code: 'archive_rate_limited' });
+  const attempted = await body(await f.request('/refresh', 'POST'));
+  assert.equal(attempted.errorCode, 'archive_rate_limited');
+  f.state.discoveryError = false; f.restart();
+  const denied = await f.direct('/api/history/other/refresh', 'POST');
+  assert.equal(denied.status, 429); assert.equal(denied.headers.get('Retry-After'), '3600');
+  const manifest = await denied.json();
+  assert.equal(manifest.code, 'archive_rate_limited'); assert.equal(manifest.checkedAt, null);
+  assert.equal((await body(await f.direct('/api/history/other'))).checkedAt, null);
+  assert.equal(f.state.discovers, 2);
+  assert.equal((await f.request(imagePath(a))).status, 200);
+  assert.equal((await f.request(imagePath(b))).status, 429); assert.equal(f.state.fetches, 1);
+  f.state.now += 3599999;
+  const boundary = await f.direct('/api/history/other/refresh', 'POST');
+  assert.equal(boundary.status, 429); assert.equal(boundary.headers.get('Retry-After'), '1');
+  f.state.now++; f.state.frames = [];
+  const eligible = await f.direct('/api/history/other/refresh', 'POST');
+  assert.equal(eligible.status, 200); assert.equal((await eligible.json()).status, 'empty');
+  assert.equal(f.state.discovers, 3);
+  await f.request('/refresh', 'POST'); assert.equal(f.state.discovers, 3);
+});
+
+test('image rate limits persist the shared archive cooldown while cached bodies remain readable', async t => {
+  const f = await fixture(t, { catalog: distinctCatalog }); await f.request('/refresh', 'POST'); await f.request(imagePath(a));
+  f.state.response = () => new Response(null, { status: 429, headers: { 'Retry-After': '7200' } });
+  const limited = await f.request(imagePath(b)); assert.equal((await limited.json()).code, 'archive_rate_limited');
+  f.restart();
+  const denied = await f.direct('/api/history/other/refresh', 'POST');
+  assert.equal(denied.status, 429); assert.equal(denied.headers.get('Retry-After'), '7200');
+  assert.equal((await f.request(imagePath(a))).status, 200);
+  assert.equal((await f.request(imagePath(b))).status, 429); assert.equal(f.state.fetches, 2);
+  f.state.now += 7200000; f.state.response = null;
+  assert.equal((await f.request(imagePath(b))).status, 200); assert.equal(f.state.fetches, 3);
+});
+
+test('filesystem archive cooldown extends atomically across independent store instances', async t => {
+  const f = await fixture(t), other = new FileHistoryStore(f.directory);
+  await Promise.all([f.store.deferArchive(7200000), other.deferArchive(3600000)]);
+  assert.equal(await new FileHistoryStore(f.directory).archiveRetryAt(), 7200000);
+  assert.equal(await other.deferArchive(100), 7200000);
 });
