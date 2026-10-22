@@ -1,0 +1,627 @@
+{
+  "nonRootCount": 62,
+  "overrideCount": 26,
+  "retainCount": 36,
+  "entries": [
+    {
+      "id": "collabora-online",
+      "name": "Collabora Online (CODE)",
+      "currentUrl": "https://www.collaboraonline.com/code/",
+      "action": "retain",
+      "historyUrl": "https://www.collaboraonline.com/code/",
+      "officialSourceUrl": "https://www.collaboraonline.com/code/",
+      "verification": "unavailable_or_interstitial",
+      "reason": "Current product path retained; live page verification failed with HTTP502. No alternate guessed."
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "currentUrl": "https://www.dropbox.com/plans",
+      "action": "override",
+      "historyUrl": "https://www.dropbox.com/",
+      "officialSourceUrl": "https://www.dropbox.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "currentUrl": "https://workspace.google.com/pricing",
+      "action": "override",
+      "historyUrl": "https://workspace.google.com/",
+      "officialSourceUrl": "https://workspace.google.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "currentUrl": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+      "action": "override",
+      "historyUrl": "https://www.microsoft.com/en-us/microsoft-365/business/",
+      "officialSourceUrl": "https://www.microsoft.com/en-us/microsoft-365/business/",
+      "verification": "official_page_read",
+      "reason": "Keep business product family rather than generic Microsoft company home."
+    },
+    {
+      "id": "onlyoffice-docs",
+      "name": "ONLYOFFICE Docs Community",
+      "currentUrl": "https://www.onlyoffice.com/docs",
+      "action": "retain",
+      "historyUrl": "https://www.onlyoffice.com/docs",
+      "officialSourceUrl": "https://www.onlyoffice.com/docs",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "owncloud-ocis",
+      "name": "ownCloud Infinite Scale (oCIS source edition)",
+      "currentUrl": "https://owncloud.com/ocis/",
+      "action": "retain",
+      "historyUrl": "https://owncloud.com/ocis/",
+      "officialSourceUrl": "https://owncloud.com/ocis/",
+      "verification": "unavailable_or_interstitial",
+      "reason": "Current dedicated product path retained; page presented request-verification interstitial. No alternate guessed."
+    },
+    {
+      "id": "microsoft-outlook",
+      "name": "Microsoft Outlook",
+      "currentUrl": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+      "action": "retain",
+      "historyUrl": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+      "officialSourceUrl": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+      "verification": "official_page_read",
+      "reason": "Dedicated product path; current official redirect is /en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook."
+    },
+    {
+      "id": "thunderbird",
+      "name": "Thunderbird",
+      "currentUrl": "https://www.thunderbird.net/en-US/desktop/",
+      "action": "retain",
+      "historyUrl": "https://www.thunderbird.net/en-US/desktop/",
+      "officialSourceUrl": "https://www.thunderbird.net/en-US/desktop/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "vaultwarden",
+      "name": "Vaultwarden",
+      "currentUrl": "https://github.com/dani-garcia/vaultwarden",
+      "action": "retain",
+      "historyUrl": "https://github.com/dani-garcia/vaultwarden",
+      "officialSourceUrl": "https://github.com/dani-garcia/vaultwarden",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "adobe-acrobat",
+      "name": "Adobe Acrobat",
+      "currentUrl": "https://www.adobe.com/acrobat.html",
+      "action": "retain",
+      "historyUrl": "https://www.adobe.com/acrobat.html",
+      "officialSourceUrl": "https://www.adobe.com/acrobat.html",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "pdf-arranger",
+      "name": "PDF Arranger",
+      "currentUrl": "https://github.com/pdfarranger/pdfarranger",
+      "action": "retain",
+      "historyUrl": "https://github.com/pdfarranger/pdfarranger",
+      "officialSourceUrl": "https://github.com/pdfarranger/pdfarranger",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "pdfsam-basic",
+      "name": "PDFsam Basic",
+      "currentUrl": "https://pdfsam.org/pdfsam-basic/",
+      "action": "retain",
+      "historyUrl": "https://pdfsam.org/pdfsam-basic/",
+      "officialSourceUrl": "https://pdfsam.org/pdfsam-basic/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "element",
+      "name": "Element Server Suite Community",
+      "currentUrl": "https://element.io/en/server-suite/community",
+      "action": "retain",
+      "historyUrl": "https://element.io/en/server-suite/community",
+      "officialSourceUrl": "https://element.io/en/server-suite/community",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "currentUrl": "https://www.microsoft.com/microsoft-teams",
+      "action": "retain",
+      "historyUrl": "https://www.microsoft.com/microsoft-teams",
+      "officialSourceUrl": "https://www.microsoft.com/microsoft-teams",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "google-meet",
+      "name": "Google Meet",
+      "currentUrl": "https://workspace.google.com/pricing",
+      "action": "override",
+      "historyUrl": "https://workspace.google.com/products/meet/",
+      "officialSourceUrl": "https://workspace.google.com/products/meet/",
+      "verification": "official_page_read",
+      "reason": "Dedicated Google Meet landing page; current URL incorrectly duplicates Workspace pricing."
+    },
+    {
+      "id": "jitsi-meet",
+      "name": "Jitsi Meet",
+      "currentUrl": "https://jitsi.org/jitsi-meet/",
+      "action": "retain",
+      "historyUrl": "https://jitsi.org/jitsi-meet/",
+      "officialSourceUrl": "https://jitsi.org/jitsi-meet/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "currentUrl": "https://zoom.us/pricing",
+      "action": "override",
+      "historyUrl": "https://zoom.us/",
+      "officialSourceUrl": "https://zoom.us/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "currentUrl": "https://www.squarespace.com/pricing",
+      "action": "override",
+      "historyUrl": "https://www.squarespace.com/",
+      "officialSourceUrl": "https://www.squarespace.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "currentUrl": "https://webflow.com/pricing",
+      "action": "override",
+      "historyUrl": "https://webflow.com/",
+      "officialSourceUrl": "https://webflow.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "wix",
+      "name": "Wix",
+      "currentUrl": "https://www.wix.com/plans",
+      "action": "override",
+      "historyUrl": "https://www.wix.com/",
+      "officialSourceUrl": "https://www.wix.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "acronis-cyber-protect",
+      "name": "Acronis Cyber Protect",
+      "currentUrl": "https://www.acronis.com/en/products/cyber-protect/",
+      "action": "retain",
+      "historyUrl": "https://www.acronis.com/en/products/cyber-protect/",
+      "officialSourceUrl": "https://www.acronis.com/en/products/cyber-protect/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "backblaze-business-backup",
+      "name": "Backblaze Business Backup",
+      "currentUrl": "https://www.backblaze.com/cloud-backup/business",
+      "action": "retain",
+      "historyUrl": "https://www.backblaze.com/cloud-backup/business",
+      "officialSourceUrl": "https://www.backblaze.com/cloud-backup/business",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "currentUrl": "https://www.atlassian.com/en/software/confluence/pricing",
+      "action": "override",
+      "historyUrl": "https://www.atlassian.com/software/confluence",
+      "officialSourceUrl": "https://www.atlassian.com/software/confluence/",
+      "verification": "official_page_read",
+      "reason": "Official trailing-slash product URL redirects to this exact product landing URL."
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "currentUrl": "https://www.notion.com/pricing",
+      "action": "override",
+      "historyUrl": "https://www.notion.com/",
+      "officialSourceUrl": "https://www.notion.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "currentUrl": "https://www.atlassian.com/software/jira",
+      "action": "retain",
+      "historyUrl": "https://www.atlassian.com/software/jira",
+      "officialSourceUrl": "https://www.atlassian.com/software/jira",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "copyparty",
+      "name": "copyparty",
+      "currentUrl": "https://github.com/9001/copyparty",
+      "action": "retain",
+      "historyUrl": "https://github.com/9001/copyparty",
+      "officialSourceUrl": "https://github.com/9001/copyparty",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "docusign",
+      "name": "Docusign",
+      "currentUrl": "https://www.docusign.com/products/electronic-signature",
+      "action": "retain",
+      "historyUrl": "https://www.docusign.com/products/electronic-signature",
+      "officialSourceUrl": "https://www.docusign.com/products/electronic-signature",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "erpnext",
+      "name": "ERPNext",
+      "currentUrl": "https://frappe.io/erpnext",
+      "action": "retain",
+      "historyUrl": "https://frappe.io/erpnext",
+      "officialSourceUrl": "https://frappe.io/erpnext",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "frappe-hr",
+      "name": "Frappe HR",
+      "currentUrl": "https://frappe.io/hr",
+      "action": "retain",
+      "historyUrl": "https://frappe.io/hr",
+      "officialSourceUrl": "https://frappe.io/hr",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "sap-concur",
+      "name": "SAP Concur",
+      "currentUrl": "https://www.concur.com/products/concur-expense",
+      "action": "retain",
+      "historyUrl": "https://www.concur.com/products/concur-expense",
+      "officialSourceUrl": "https://www.concur.com/products/concur-expense",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "vosk",
+      "name": "Vosk",
+      "currentUrl": "https://alphacephei.com/vosk/",
+      "action": "retain",
+      "historyUrl": "https://alphacephei.com/vosk/",
+      "officialSourceUrl": "https://alphacephei.com/vosk/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper",
+      "currentUrl": "https://github.com/openai/whisper",
+      "action": "retain",
+      "historyUrl": "https://github.com/openai/whisper",
+      "officialSourceUrl": "https://github.com/openai/whisper",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "figjam",
+      "name": "FigJam",
+      "currentUrl": "https://www.figma.com/figjam/",
+      "action": "retain",
+      "historyUrl": "https://www.figma.com/figjam/",
+      "officialSourceUrl": "https://www.figma.com/figjam/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "quickbooks-online",
+      "name": "QuickBooks Online",
+      "currentUrl": "https://quickbooks.intuit.com/pricing/",
+      "action": "override",
+      "historyUrl": "https://quickbooks.intuit.com/online/",
+      "officialSourceUrl": "https://quickbooks.intuit.com/online/",
+      "verification": "official_page_read",
+      "reason": "Keep QuickBooks Online product rather than generic Intuit company home."
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "currentUrl": "https://www.xero.com/us/pricing-plans/",
+      "action": "override",
+      "historyUrl": "https://www.xero.com/us/",
+      "officialSourceUrl": "https://www.xero.com/us/",
+      "verification": "official_page_read",
+      "reason": "Retain existing US locale; generic root was observed redirecting to AU based on fetch location."
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest",
+      "currentUrl": "https://www.getharvest.com/pricing",
+      "action": "override",
+      "historyUrl": "https://www.getharvest.com/",
+      "officialSourceUrl": "https://www.getharvest.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "kimai",
+      "name": "Kimai",
+      "currentUrl": "https://www.kimai.org/en/",
+      "action": "retain",
+      "historyUrl": "https://www.kimai.org/en/",
+      "officialSourceUrl": "https://www.kimai.org/en/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "toggl-track",
+      "name": "Toggl Track",
+      "currentUrl": "https://toggl.com/pricing",
+      "action": "override",
+      "historyUrl": "https://toggl.com/",
+      "officialSourceUrl": "https://toggl.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "currentUrl": "https://www.hubspot.com/pricing/sales",
+      "action": "override",
+      "historyUrl": "https://www.hubspot.com/products/sales",
+      "officialSourceUrl": "https://www.hubspot.com/products/sales",
+      "verification": "official_page_read",
+      "reason": "Keep Sales Hub context of existing Sales pricing URL."
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "currentUrl": "https://www.salesforce.com/sales/pricing/",
+      "action": "override",
+      "historyUrl": "https://www.salesforce.com/sales/",
+      "officialSourceUrl": "https://www.salesforce.com/sales/",
+      "verification": "official_page_read",
+      "reason": "Keep Sales Cloud context of existing Sales pricing URL."
+    },
+    {
+      "id": "prestashop",
+      "name": "PrestaShop",
+      "currentUrl": "https://prestashop.com/open-source/",
+      "action": "retain",
+      "historyUrl": "https://prestashop.com/open-source/",
+      "officialSourceUrl": "https://prestashop.com/open-source/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "currentUrl": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+      "action": "override",
+      "historyUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "officialSourceUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "currentUrl": "https://www.adobe.com/products/photoshop/plans.html",
+      "action": "override",
+      "historyUrl": "https://www.adobe.com/products/photoshop.html",
+      "officialSourceUrl": "https://www.adobe.com/products/photoshop.html",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "lucidchart",
+      "name": "Lucidchart",
+      "currentUrl": "https://lucid.co/lucidchart",
+      "action": "retain",
+      "historyUrl": "https://lucid.co/lucidchart",
+      "officialSourceUrl": "https://lucid.co/lucidchart",
+      "verification": "official_page_read",
+      "reason": "Dedicated product landing page; official https://www.lucidchart.com/ also redirects here."
+    },
+    {
+      "id": "microsoft-visio",
+      "name": "Microsoft Visio",
+      "currentUrl": "https://www.microsoft.com/en-us/microsoft-365/visio",
+      "action": "retain",
+      "historyUrl": "https://www.microsoft.com/en-us/microsoft-365/visio",
+      "officialSourceUrl": "https://www.microsoft.com/en-us/microsoft-365/visio",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "adobe-premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "currentUrl": "https://www.adobe.com/products/premiere/plans.html",
+      "action": "override",
+      "historyUrl": "https://www.adobe.com/products/premiere.html",
+      "officialSourceUrl": "https://www.adobe.com/products/premiere.html",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "currentUrl": "https://www.apple.com/final-cut-pro/",
+      "action": "retain",
+      "historyUrl": "https://www.apple.com/final-cut-pro/",
+      "officialSourceUrl": "https://www.apple.com/final-cut-pro/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "currentUrl": "https://www.make.com/pricing",
+      "action": "override",
+      "historyUrl": "https://www.make.com/",
+      "officialSourceUrl": "https://www.make.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "currentUrl": "https://zapier.com/pricing",
+      "action": "override",
+      "historyUrl": "https://zapier.com/",
+      "officialSourceUrl": "https://zapier.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "google-analytics-360",
+      "name": "Google Analytics 360",
+      "currentUrl": "https://marketingplatform.google.com/about/analytics-360/",
+      "action": "retain",
+      "historyUrl": "https://marketingplatform.google.com/about/analytics-360/",
+      "officialSourceUrl": "https://marketingplatform.google.com/about/analytics-360/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "orangehrm-starter",
+      "name": "OrangeHRM Starter",
+      "currentUrl": "https://orangehrm.com/orangehrm-starter-open-source-software",
+      "action": "retain",
+      "historyUrl": "https://orangehrm.com/orangehrm-starter-open-source-software",
+      "officialSourceUrl": "https://orangehrm.com/orangehrm-starter-open-source-software",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "freeswitch",
+      "name": "FreeSWITCH",
+      "currentUrl": "https://signalwire.com/developers/freeswitch",
+      "action": "retain",
+      "historyUrl": "https://signalwire.com/developers/freeswitch",
+      "officialSourceUrl": "https://signalwire.com/developers/freeswitch",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "looker",
+      "name": "Looker",
+      "currentUrl": "https://cloud.google.com/looker",
+      "action": "retain",
+      "historyUrl": "https://cloud.google.com/looker",
+      "officialSourceUrl": "https://cloud.google.com/looker",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "fastmail",
+      "name": "Fastmail Business",
+      "currentUrl": "https://www.fastmail.com/pricing/us/",
+      "action": "override",
+      "historyUrl": "https://www.fastmail.com/business/",
+      "officialSourceUrl": "https://www.fastmail.com/business/",
+      "verification": "official_page_read",
+      "reason": "Keep Business edition matching catalog product name."
+    },
+    {
+      "id": "zoho-mail",
+      "name": "Zoho Mail",
+      "currentUrl": "https://www.zoho.com/mail/zohomail-pricing.html",
+      "action": "override",
+      "historyUrl": "https://www.zoho.com/mail/",
+      "officialSourceUrl": "https://www.zoho.com/mail/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "cloudflare-access",
+      "name": "Cloudflare Access",
+      "currentUrl": "https://www.cloudflare.com/sase/products/access/",
+      "action": "retain",
+      "historyUrl": "https://www.cloudflare.com/sase/products/access/",
+      "officialSourceUrl": "https://www.cloudflare.com/sase/products/access/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "headscale",
+      "name": "Headscale",
+      "currentUrl": "https://headscale.net/stable/",
+      "action": "retain",
+      "historyUrl": "https://headscale.net/stable/",
+      "officialSourceUrl": "https://headscale.net/stable/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "currentUrl": "https://tailscale.com/pricing",
+      "action": "override",
+      "historyUrl": "https://tailscale.com/",
+      "officialSourceUrl": "https://tailscale.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "freshservice-itam",
+      "name": "Freshservice IT Asset Management",
+      "currentUrl": "https://www.freshworks.com/freshservice/itam/",
+      "action": "retain",
+      "historyUrl": "https://www.freshworks.com/freshservice/itam/",
+      "officialSourceUrl": "https://www.freshworks.com/freshservice/itam/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product path; current official redirect is https://www.freshworks.com/freshservice/it-asset-management/."
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana OSS",
+      "currentUrl": "https://grafana.com/oss/grafana/",
+      "action": "retain",
+      "historyUrl": "https://grafana.com/oss/grafana/",
+      "officialSourceUrl": "https://grafana.com/oss/grafana/",
+      "verification": "official_page_read",
+      "reason": "Dedicated product, edition, locale or official project path; do not replace with generic vendor home."
+    },
+    {
+      "id": "algolia",
+      "name": "Algolia",
+      "currentUrl": "https://www.algolia.com/pricing",
+      "action": "override",
+      "historyUrl": "https://www.algolia.com/",
+      "officialSourceUrl": "https://www.algolia.com/",
+      "verification": "official_page_read",
+      "reason": "Verified product landing page replaces pricing/comparison page."
+    },
+    {
+      "id": "elastic-cloud",
+      "name": "Elastic Cloud",
+      "currentUrl": "https://www.elastic.co/pricing/",
+      "action": "override",
+      "historyUrl": "https://www.elastic.co/cloud/",
+      "officialSourceUrl": "https://www.elastic.co/cloud/",
+      "verification": "official_page_read",
+      "reason": "Keep Elastic Cloud product rather than generic Elastic home."
+    }
+  ]
+}
