@@ -120,6 +120,9 @@ test('pricing component aborts product switches, ignores stale replies, and fram
     now += 60000; timer.callback();
     assert.equal(player.$('.resume').disabled, false, 'continuation re-enables after cooldown without a source fetch');
     assert.equal(requests.length, 4);
+    player.accept({ status: 'confirmed', observations: [observation({ sourceIntegrity: { status: 'legacy_chunked_unverified' }, quality: 'partial', issues: [] })] });
+    player.select(0);
+    assert.match(player.$('.quality').textContent, /original archive digest remains unverified/i, 'integrity qualification survives absent extraction issues');
     player.accept({ status: 'incomplete_inventory', observations: [], retryAfter: 60 });
     assert.equal(player.manifest.retryAt, '2026-10-22T12:02:00.000Z', 'seconds fallback anchored to receipt');
     player.disconnectedCallback();

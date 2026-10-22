@@ -178,7 +178,8 @@ export class PricingHistory extends BaseElement {
       this.$('.plans').append(card);
     }
     if (!observation.plans?.length) this.$('.plans').append(this.node('p', 'No confirmed plan structure is available for this observation.'));
-    this.$('.quality').textContent = [observation.quality === 'partial' ? 'Partial evidence; missing fields remain unknown.' : '', ...(observation.issues ?? [])].filter(Boolean).join(' ');
+    const legacyDigest = [observation.sourceIntegrity, observation.landingIntegrity].some(value => value?.status === 'legacy_chunked_unverified');
+    this.$('.quality').textContent = [legacyDigest ? 'Original archive digest remains unverified; this observation uses qualified legacy evidence.' : '', observation.quality === 'partial' ? 'Partial evidence; missing fields remain unknown.' : '', ...(observation.issues ?? [])].filter(Boolean).join(' ');
     const comparison = this.manifest?.changes?.find(item => item.toId === observation.id);
     if (comparison) {
       this.$('.changes').append(this.node('h3', 'Changes since the previous observation'));
