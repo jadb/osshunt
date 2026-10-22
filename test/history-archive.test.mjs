@@ -66,6 +66,31 @@ test('discovery follows opaque resume keys without changing query scope', async 
   assert.equal(calls.length, 7);
 });
 
+test('CDX leading-www aliases preserve the exact indexed source and catalog landing URL', async () => {
+  // CDX exact lookup for github.com returned this existing www.github.com image.
+  const source = 'http://web.archive.org/screenshot/http://www.github.com/';
+  const row = ['20120111144336', source, 'image/png', '-', 'AWNL27Y2NKUGNJDHCAYX7VXH4P45KPLY'];
+  let calls = 0;
+  const result = await discoverScreenshots('https://github.com/', { fetchImpl: async () =>
+    json(++calls === 1 ? [FIELDS, row] : []) });
+  assert.equal(result.frames[0].originalUrl, 'https://github.com/');
+  assert.equal(result.frames[0].sourceImageUrl, `https://web.archive.org/web/${row[0]}id_/${source}`);
+  assert.equal(result.frames[0].digest, row[4]);
+
+  const withoutWww = row.with(1, source.replace('www.github.com', 'github.com'));
+  calls = 0;
+  const reverse = await discoverScreenshots('https://www.github.com/', { fetchImpl: async () =>
+    json(++calls === 1 ? [FIELDS, withoutWww] : []) });
+  assert.equal(reverse.frames[0].originalUrl, 'https://www.github.com/');
+  assert.match(reverse.frames[0].sourceImageUrl, /screenshot\/http:\/\/github\.com\/$/);
+
+  for (const host of ['docs.github.com', 'www.www.github.com', 'github.com.evil.org']) {
+    const unrelated = row.with(1, source.replace('www.github.com', host));
+    await assert.rejects(discoverScreenshots('https://github.com/', { fetchImpl: async () => json([FIELDS, unrelated]) }),
+      { code: 'archive_bad_response' });
+  }
+});
+
 test('empty validated responses differ from unavailable, malformed and rate-limited responses', async () => {
   assert.deepEqual((await discoverScreenshots(landing, { fetchImpl: async () => json([]) })).frames, []);
   await assert.rejects(discoverScreenshots(landing, { fetchImpl: async () => { throw new Error('offline'); } }), { code: 'archive_unavailable' });

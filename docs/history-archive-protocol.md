@@ -10,6 +10,8 @@ Discovery issues exact CDX queries for both HTTP and HTTPS landing URL variants 
 - `screenshot:<landing-url>`: Brozzler screenshot resource records.
 - `thumbnail:<landing-url>`: Brozzler thumbnail resource records, identified as thumbnails in frame metadata.
 
+CDX exact lookups can return both bare-host and leading-`www.` records. Landing identity accepts only this precise host alias and HTTP/HTTPS equivalence; other subdomains, paths and query strings remain distinct. The exact indexed source target is preserved for replay.
+
 The [CDX-Writer source](https://github.com/internetarchive/CDX-Writer/blob/master/cdx_writer.py) maps metadata image records into the legacy screenshot namespace. Its screenshot handler inherits the record date and does not assign an HTTP response status. Consequently, `statuscode=-` is valid; discovery must not require HTTP 200 in CDX metadata. The [Brozzler source](https://github.com/internetarchive/brozzler/blob/master/brozzler/worker.py) records screenshot and thumbnail JPEG resources under their separate URI schemes.
 
 A frame's `timestamp` and `capturedAt` describe the image WARC record, never a nearby HTML capture. `originalUrl` remains the catalog landing URL. `sourceImageUrl` and `archiveUrl` point to the exact indexed image target:
@@ -73,6 +75,15 @@ curl --max-time 25 -sS \
 ```
 
 The first query returned HTTP 200 with three `image/png`, dash-status rows at `20120329224219`, `20120627200053` and `20120908045637`. Their original target was `http://web.archive.org/screenshot/http://webapps.stackexchange.com/`, even though the query used the HTTPS landing variant. The two-record query returned an opaque continuation in the documented JSON shape. The Brozzler namespace query returned HTTP 200 with `[]`.
+
+A further exact query for the GitHub root confirmed the leading-`www.` alias:
+
+```sh
+curl --max-time 20 -sS \
+  'https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fweb.archive.org%2Fscreenshot%2Fhttps%3A%2F%2Fgithub.com%2F&output=json&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&limit=10'
+```
+
+Its first record was timestamp `20120111144336`, target `http://web.archive.org/screenshot/http://www.github.com/`, MIME `image/png`, status `-`, digest `AWNL27Y2NKUGNJDHCAYX7VXH4P45KPLY`. Later rows included bare `github.com` targets. Both forms belong to the same lookup; neither is rewritten in the image source URL.
 
 The exact replay request returned HTTP 200, unchanged final URL, 964,029 bytes and `Content-Type: image/png`. `Memento-Datetime` was `Thu, 29 Mar 2012 22:42:19 GMT`. Native verification established dimensions 1024 × 4096 and these checksums:
 
