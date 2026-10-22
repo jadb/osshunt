@@ -48,3 +48,24 @@ test('vendor product scopes never yield global or other-product archived links; 
   assert.deepEqual(links.map(l => [l.url, l.provenance]), [['https://www.atlassian.com/products/jira/plans', 'archived-link'],
     ['https://www.atlassian.com/pricing', 'current-source-hint']]);
 });
+test('unpriced plans and competitor comparison topics cannot consume the pricing candidate budget', () => {
+  const links = discoverPricingLinks('<a href="/templates/marketing-plan">Try it out</a>' +
+    '<a href="/company/policies-and-guidelines/accessibility-plan/">Accessibility Plan</a>' +
+    '<a href="/compare/password-manager">Comparison</a>', {
+      landingUrl: 'https://vendor.com/', hints: ['https://vendor.com/pricing'] });
+  assert.deepEqual(links.map(l => [l.url, l.provenance]), [['https://vendor.com/pricing', 'current-source-hint']]);
+});
+test('explicit rates, subscriptions, plan navigation and genuine plan comparisons stay eligible', () => {
+  const links = discoverPricingLinks('<a href="/pricing/xam">View plans</a><a href="/price">Price</a>' +
+    '<a href="/subscriptions">Subscriptions</a><a href="/account-options">Plans</a>' +
+    '<a href="/plans">Learn more</a><a href="/plan/starter">Learn more</a>' +
+    '<a href="/compare-plan-options">Compare plans</a>', { landingUrl: 'https://vendor.com/' });
+  assert.equal(links.length, 7);
+  assert.ok(links.every(l => l.provenance === 'archived-link' && l.locator.startsWith('offset:')));
+});
+test('an ambiguous top-level comparison navigation ranks below a known pricing source hint', () => {
+  const links = discoverPricingLinks('<a href="/compare">Compare</a>', { landingUrl: 'https://vendor.com/',
+    hints: ['https://vendor.com/pricing'] });
+  assert.deepEqual(links.map(l => [l.url, l.provenance]), [['https://vendor.com/pricing', 'current-source-hint'],
+    ['https://vendor.com/compare', 'archived-link']]);
+});
