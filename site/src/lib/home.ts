@@ -62,7 +62,7 @@ export async function homeData() {
     .filter((p) => p.kind === 'paid' && p.pricing.entryAmount != null && p.pricing.unit === 'seat')
     .sort((a, b) => rankOf(a) - rankOf(b) || a.name.localeCompare(b.name))
     .slice(0, 10)
-    .map((p) => ({ id: p.id, name: p.name, price: money((p as any).pricing), source: (p as any).pricing.source, alts: altCount.get(p.id) ?? 0 }));
+    .map((p) => ({ id: p.id, name: p.name, price: money((p as any).pricing), yearly: (p as any).pricing.period === 'year', source: (p as any).pricing.source, alts: altCount.get(p.id) ?? 0 }));
 
   const reachOrder = ['universal', 'broad', 'functional', 'specialist'] as const;
   const groups = reachOrder.map((reach) => ({
@@ -82,6 +82,6 @@ export async function homeData() {
   return {
     counts: { paid: paid.length, oss: oss.length, maps: maps.length, cats: cats.length },
     scenes, prices, groups,
-    search: paid.map((p) => ({ id: p.id, name: p.name })).sort((a, b) => a.name.localeCompare(b.name)),
+    search: [...paid.map((p) => ({ id: p.id, name: p.name, k: 'software' })), ...oss.map((p) => ({ id: p.id, name: p.name, k: 'alternatives' }))].sort((a, b) => a.name.localeCompare(b.name)),
   };
 }

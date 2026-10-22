@@ -17,7 +17,6 @@ const { title, description } = Astro.props;
   <slot />
   <footer class="foot">
     <div class="wrap">
-      
       <p>Fit is not feature parity. Unknown means unverified. Logos belong to their owners and appear only to identify the products.</p>
     </div>
   </footer>
@@ -32,7 +31,6 @@ const { title, description } = Astro.props;
   nav a:hover { text-decoration: underline; }
   .checked { margin: 0 0 0 auto; font-size: 0.875rem; font-weight: 600; }
   .foot { margin-top: clamp(40px, 6vw, 80px); border-top: var(--rule-8) solid var(--ink); padding-block: 22px 40px; }
-  .foot a { margin-right: 24px; font-weight: 700; }
   .foot p { margin: 14px 0 0; font-size: 0.8125rem; color: var(--ink-2); max-width: 70ch; }
 
   @media (max-width: 900px) { .checked { margin-left: 0; } }

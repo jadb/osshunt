@@ -1,13 +1,13 @@
 ---
-interface Props { tools: { id: string; name: string }[] }
+interface Props { tools: { id: string; name: string; k: string }[] }
 const { tools } = Astro.props;
 ---
 <form class="search" role="search" action="#categories" data-search>
-  <label class="sr" for="tool-q">Search a paid tool</label>
-  <input id="tool-q" name="q" type="search" autocomplete="off" placeholder="Search a paid tool, e.g. Slack" role="combobox" aria-expanded="false" aria-controls="tool-list" aria-autocomplete="list" />
+  <label class="sr" for="tool-q">Search a paid tool or an open-source alternative</label>
+  <input id="tool-q" name="q" type="search" autocomplete="off" placeholder="Search a tool" role="combobox" aria-expanded="false" aria-controls="tool-list" aria-autocomplete="list" />
   <button type="submit">Find</button>
   <ul id="tool-list" role="listbox" hidden></ul>
-  <p id="tool-msg" class="msg" role="status" hidden>No paid tool matches. <a href="#categories">Browse by category</a></p>
+  <p id="tool-msg" class="msg" role="status" hidden>Nothing matches. <a href="#categories">Browse by category</a> or try another spelling.</p>
   <script type="application/json" id="tool-data" set:html={JSON.stringify(tools)} />
 </form>
 
@@ -29,19 +29,19 @@ const { tools } = Astro.props;
 <script>
   const form = document.querySelector<HTMLFormElement>('[data-search]');
   if (form) {
-    const tools: { id: string; name: string }[] = JSON.parse(document.getElementById('tool-data')!.textContent!);
+    const tools: { id: string; name: string; k: string }[] = JSON.parse(document.getElementById('tool-data')!.textContent!);
     const input = form.querySelector('input')!;
     const list = form.querySelector<HTMLUListElement>('#tool-list')!;
     const msg = form.querySelector<HTMLElement>('#tool-msg')!;
     let hits: typeof tools = [];
     let sel = -1;
-    const go = (id: string) => { location.href = `/software/${id}/`; };
+    const go = (t: { id: string; k: string }) => { location.href = `/${t.k}/${t.id}/`; };
     const paint = () => {
       list.replaceChildren(...hits.map((t, i) => {
         const li = document.createElement('li');
-        li.id = `tool-${t.id}`; li.role = 'option'; li.textContent = t.name;
+        li.id = `tool-${t.id}`; li.role = 'option'; li.textContent = t.k === 'alternatives' ? `${t.name} (open-source)` : t.name;
         li.setAttribute('aria-selected', String(i === sel));
-        li.addEventListener('mousedown', (e) => { e.preventDefault(); go(t.id); });
+        li.addEventListener('mousedown', (e) => { e.preventDefault(); go(t); });
         return li;
       }));
       list.hidden = !hits.length;
@@ -61,7 +61,7 @@ const { tools } = Astro.props;
     input.addEventListener('blur', () => { hits = []; sel = -1; paint(); });
     form.addEventListener('submit', (e) => {
       const pick = hits[Math.max(sel, 0)];
-      if (pick) { e.preventDefault(); go(pick.id); }
+      if (pick) { e.preventDefault(); go(pick); }
       else if (input.value.trim()) { e.preventDefault(); input.dispatchEvent(new Event('input')); }
     });
   }

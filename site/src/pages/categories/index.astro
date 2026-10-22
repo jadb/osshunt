@@ -1,7 +1,7 @@
 ---
 import Avatars from '../../components/Avatars.astro';
 import Page from '../../layouts/Page.astro';
-import { categoriesIndex, REACH_LABEL, LOGOS } from '../../lib/compare';
+import { categoriesIndex, REACH_LABEL } from '../../lib/compare';
 const { groups } = await categoriesIndex();
 const total = groups.reduce((n, g) => n + g.items.length, 0);
 ---
@@ -16,7 +16,7 @@ const total = groups.reduce((n, g) => n + g.items.length, 0);
           {g.items.map((c) => (
             <li>
               <a href={`/categories/${c.id}/`}><b>{c.name}</b><span>{c.tools} tool{c.tools === 1 ? '' : 's'} · {c.maps} mapping{c.maps === 1 ? '' : 's'}</span><em>{c.description}</em>
-                <span class="flow"><Avatars items={c.toolList} />{c.altList.some((a) => LOGOS[a.id]) && c.toolList.some((t) => LOGOS[t.id]) && <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-label="replaced by" role="img"><path d="M3 12h16M13 6l6 6-6 6" /></svg>}<Avatars items={c.altList} /></span>
+                <span class="flow"><Avatars items={c.toolList} />{c.altList.length > 0 && <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-label="replaced by" role="img"><path d="M3 12h16M13 6l6 6-6 6" /></svg>}<Avatars items={c.altList} /></span>
               </a>
             </li>
           ))}
