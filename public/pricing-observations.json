@@ -9590,6 +9590,211 @@
     }
   },
   {
+    "id": "pricing-manual-322f2246babd5ce7564b8fbdbdc64dcbe0a2b798194f1558ff6a176aada80e95",
+    "productId": "brandfolder",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-24T09:45:42.000Z",
+    "landingCapturedAt": "2025-06-24T09:45:42.000Z",
+    "pricingCapturedAt": "2025-05-27T22:13:12.000Z",
+    "evidenceAvailableAt": "2025-06-24T09:45:42.000Z",
+    "landingUrl": "https://brandfolder.com/",
+    "pricingUrl": "https://brandfolder.com/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250624094542id_/https://brandfolder.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250527221312id_/https://brandfolder.com/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:20876-20938"
+    },
+    "sourceSha256": "4218a597929a849eb3a5933ec87c0676beb2871b4bde823c1005694ddddb6f0c",
+    "landingSha256": "870ff6e3178d0b498309c12c268974997488c08890c937f4a6f41594aec36166",
+    "sourceDigest": "UM3XBQ5WBRBUNY53NTAHG7TCJIWKLOAE",
+    "landingDigest": "J6C62EFUBW5LGKTGK7WPRKCTXZH2O66O",
+    "fetchedAt": "2026-10-22T20:14:11.912Z",
+    "landingFetchedAt": "2026-10-22T20:13:52.208Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "UM3XBQ5WBRBUNY53NTAHG7TCJIWKLOAE",
+      "actualDigest": "UM3XBQ5WBRBUNY53NTAHG7TCJIWKLOAE"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "J6C62EFUBW5LGKTGK7WPRKCTXZH2O66O",
+      "actualDigest": "J6C62EFUBW5LGKTGK7WPRKCTXZH2O66O"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 27 May 2025 22:13:12 GMT",
+      "originalUrl": "https://brandfolder.com/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250527221003-crawl921/SPNOUTLINKS-20250527221311-00130.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 09:45:42 GMT",
+      "originalUrl": "https://brandfolder.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709779183.68-0007/CC-MAIN-20250624091149-20250624121149-00151.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Premium and Enterprise feature tiers are explicit; numerical amounts, currency, billing, units and commitment unknown.",
+      "Plan buttons say Book a demo. Generic footer Get a quote is not bound to either tier; no quote-only tier or free price inferred.",
+      "No named Core plan invented from the phrase All of the core, plus."
+    ],
+    "plans": [
+      {
+        "name": "Premium",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Asset analytics",
+            "value": "Get insights into your top-performing assets and how they're being used",
+            "source": {
+              "locator": "offset:30014-30038|offset:30038-30121",
+              "text": "Asset analytics: Get insights into your top-performing assets and how they're being used"
+            }
+          },
+          {
+            "name": "Document intelligence",
+            "value": "OCR technology indexes in-document text and images to make them searchable",
+            "source": {
+              "locator": "offset:30278-30308|offset:30308-30389",
+              "text": "Document intelligence: OCR technology indexes in-document text and images to make them searchable"
+            }
+          },
+          {
+            "name": "Easier administration at scale",
+            "value": "Bulk update and upload thousands of assets with ease",
+            "source": {
+              "locator": "offset:30542-30581|offset:30581-30679",
+              "text": "Easier administration at scale: Bulk update and upload thousands of assets with ease"
+            }
+          },
+          {
+            "name": "Single sign-on integration",
+            "value": "Enhanced permissions and team support via SAML and SSO",
+            "source": {
+              "locator": "offset:30816-30851|offset:30851-30912",
+              "text": "Single sign-on integration: Enhanced permissions and team support via SAML and SSO"
+            }
+          },
+          {
+            "name": "Asset availability controls",
+            "value": "Manage content lifecycles by setting automatic publish and expiration dates",
+            "source": {
+              "locator": "offset:31052-31088|offset:31088-31170",
+              "text": "Asset availability controls: Manage content lifecycles by setting automatic publish and expiration dates"
+            }
+          },
+          {
+            "name": "Video AI",
+            "value": "Auto-tags, scene count detection, speech-to-text transcription and text extraction for video files",
+            "source": {
+              "locator": "offset:31334-31351|offset:31351-31456",
+              "text": "Video AI: Auto-tags, scene count detection, speech-to-text transcription and text extraction for video files"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:29345-29361",
+          "text": "Premium"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Included tier",
+            "value": "Everything Premium",
+            "source": {
+              "locator": "offset:32375-32407",
+              "text": "Everything premium, plus:"
+            }
+          },
+          {
+            "name": "Custom Automation",
+            "value": "Automate the manual work out of your asset management process",
+            "source": {
+              "locator": "offset:32725-32751|offset:32751-32819",
+              "text": "Custom Automation: Automate the manual work out of your asset management process"
+            }
+          },
+          {
+            "name": "Tighter asset permissions",
+            "value": "Unlock more granular control over your assets and how they're viewed",
+            "source": {
+              "locator": "offset:32967-33001|offset:33001-33081",
+              "text": "Tighter asset permissions: Unlock more granular control over your assets and how they're viewed"
+            }
+          },
+          {
+            "name": "Finer organizational controls",
+            "value": "Manage several independent teams, brands or customers within Brandfolder",
+            "source": {
+              "locator": "offset:33240-33278|offset:33278-33357",
+              "text": "Finer organizational controls: Manage several independent teams, brands or customers within Brandfolder"
+            }
+          },
+          {
+            "name": "Enterprise creative tooling",
+            "value": "Take advantage of editable metadata, colorspace conversions and more",
+            "source": {
+              "locator": "offset:33514-33550|offset:33550-33625",
+              "text": "Enterprise creative tooling: Take advantage of editable metadata, colorspace conversions and more"
+            }
+          },
+          {
+            "name": "Insights data connector",
+            "value": "Report on your Brandfolder data from your favorite BI tools",
+            "source": {
+              "locator": "offset:33772-33804|offset:33804-33870",
+              "text": "Insights data connector: Report on your Brandfolder data from your favorite BI tools"
+            }
+          },
+          {
+            "name": "Vanity URL",
+            "value": "Customize your Brandfolder URL for a more branded experience",
+            "source": {
+              "locator": "offset:34014-34033|offset:34033-34100",
+              "text": "Vanity URL: Customize your Brandfolder URL for a more branded experience"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:31983-32002",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:22:01.742Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-348fb663c1b607f021b1ff1fefb503359be2a6d763f948fd18013087379521d8",
     "productId": "zendesk",
     "scope": {
@@ -10256,6 +10461,178 @@
       "reviewedAt": "2026-10-22T19:10:54.772Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-44592981aabd9375a47976a7e391f234c08998d204dbb8e3bc643e8c82e4d5cf",
+    "productId": "ringcentral",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-24T12:21:06.000Z",
+    "landingCapturedAt": "2025-06-24T12:21:06.000Z",
+    "pricingCapturedAt": "2025-06-24T03:01:44.000Z",
+    "evidenceAvailableAt": "2025-06-24T12:21:06.000Z",
+    "landingUrl": "https://www.ringcentral.com/",
+    "pricingUrl": "https://www.ringcentral.com/office/plansandpricing.html",
+    "landingArchiveUrl": "https://web.archive.org/web/20250624122106id_/https://www.ringcentral.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250624030144id_/https://www.ringcentral.com/office/plansandpricing.html",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "See pricing",
+      "locator": "offset:91339-91669"
+    },
+    "sourceSha256": "6995d10b41ca94e9940ced06cde4103ea8feb603c532b1f4635e655d1ebd3601",
+    "landingSha256": "b07e37db3273c88c7e5509b4b110ac28da75e7d5574307119579b716a1876484",
+    "sourceDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR",
+    "landingDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT",
+    "fetchedAt": "2026-10-22T20:13:36.524Z",
+    "landingFetchedAt": "2026-10-22T20:13:14.174Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR",
+      "actualDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT",
+      "actualDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 03:01:44 GMT",
+      "originalUrl": "https://www.ringcentral.com/office/plansandpricing.html",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709776891.98-0046/CC-MAIN-20250624025904-20250624055904-00925.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 12:21:06 GMT",
+      "originalUrl": "https://www.ringcentral.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709779241.94-0029/CC-MAIN-20250624121833-20250624151833-00598.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Only RingEX trial and explicitly named Advanced/Ultra package capabilities retained. No base subscription amount recovered.",
+      "RingEX pricing cards and comparison require an external data source absent from retained HTML; no external resource fetched.",
+      "Generic parser instead proposed RingCentral Video Solutions and Events quote blocks. These are different products and excluded from RingEX plans.",
+      "FAQ content is retained collapsed/static copy; no checkout interaction, active plan or runtime state inferred."
+    ],
+    "plans": [
+      {
+        "name": "RingEX free trial",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Free trial is available to new subscribers only. During the 14-day free trial, you will receive support for up to 20 phone lines.",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "14-day free trial; new subscribers only; renewal price unknown.",
+              "startingAt": null,
+              "range": null,
+              "volume": "Up to 20 phone lines and 2 desktop phones during trial; these are maxima, not purchase minima.",
+              "billingVariant": "Retained FAQ text; not a checkout state."
+            },
+            "source": {
+              "locator": "offset:111150-111504",
+              "text": "Free trial is available to new subscribers only. During the 14-day free trial, you will receive support for up to 20 phone lines."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Trial inclusions and SMS exclusion",
+            "value": "Voice, auto attendant, online meetings, team messaging, fax and conferencing; SMS excluded.",
+            "source": {
+              "locator": "offset:111506-111708",
+              "text": "The entire suite of RingEX features, including voice, auto attendant, online meetings, team messaging, fax and conferencing are available during the trial. SMS is not available for trial use."
+            }
+          },
+          {
+            "name": "Trial hardware return",
+            "value": "Return free trial hardware within 21 days of cancellation to avoid hardware charges.",
+            "source": {
+              "locator": "offset:111710-111834",
+              "text": "Any free trial hardware must be returned within 21 days of trial cancellation in order to avoid hardware charges."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:109653-109748",
+          "text": "Is RingEX free to use? How long is RingEX free Trial?"
+        }
+      },
+      {
+        "name": "Advanced",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Administration and analytics",
+            "value": "Cost center management, multi-support admin and management, custom roles and permissions; adoption analytics and Business Analytics Essentials.",
+            "source": {
+              "locator": "offset:116668-117179",
+              "text": "There are 3 key administrative and 2 analytics features in the Advanced and Ultra packages that help organizations realize the benefits of consolidating and managing their communications in the cloud. Key administrative features include cost center management, multi-support admin and management and custom roles and permissions to control administrative functions. Analytics features include adoption analytics and Business Analytics Essentials providing key insights with ongoing usage."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:116668-117179",
+          "text": "There are 3 key administrative and 2 analytics features in the Advanced and Ultra packages that help organizations realize the benefits of consolidating and managing their communications in the cloud."
+        }
+      },
+      {
+        "name": "Ultra",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Administration and analytics",
+            "value": "Cost center management, multi-support admin and management, custom roles and permissions; adoption analytics and Business Analytics Essentials.",
+            "source": {
+              "locator": "offset:116668-117179",
+              "text": "There are 3 key administrative and 2 analytics features in the Advanced and Ultra packages that help organizations realize the benefits of consolidating and managing their communications in the cloud. Key administrative features include cost center management, multi-support admin and management and custom roles and permissions to control administrative functions. Analytics features include adoption analytics and Business Analytics Essentials providing key insights with ongoing usage."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:116668-117179",
+          "text": "There are 3 key administrative and 2 analytics features in the Advanced and Ultra packages that help organizations realize the benefits of consolidating and managing their communications in the cloud."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:22:01.698Z",
+      "decision": "confirmed"
     }
   },
   {
@@ -12073,6 +12450,565 @@
     "review": {
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:33:34.867Z",
+      "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-6fe72d87d45ab9383a4a2ceac23fc39ad75b39679eafc3f01244c7ab4cee5721",
+    "productId": "aircall",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-21T17:42:17.000Z",
+    "landingCapturedAt": "2025-06-21T17:42:17.000Z",
+    "pricingCapturedAt": "2025-05-26T17:46:06.000Z",
+    "evidenceAvailableAt": "2025-06-21T17:42:17.000Z",
+    "landingUrl": "https://aircall.io",
+    "pricingUrl": "https://aircall.io/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250621174217id_/https://aircall.io/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250526174606id_/https://aircall.io/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:39236-39318"
+    },
+    "sourceSha256": "24d7ee986a82e2f07d1e9628420227d4c7de6e39c60e844966a628af8201baba",
+    "landingSha256": "dbee77cf00f1cc674b22e336b22723c5a55dfe4689c6149e41304ed88e20028d",
+    "sourceDigest": "PPTWND47FSLH76ZLXFEGVNFYQYBLVMNQ",
+    "landingDigest": "3L246KP4FDIB6HCO66BLB3O6GFNUIM2O",
+    "fetchedAt": "2026-10-22T20:12:52.265Z",
+    "landingFetchedAt": "2026-10-22T20:12:33.088Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "PPTWND47FSLH76ZLXFEGVNFYQYBLVMNQ",
+      "actualDigest": "PPTWND47FSLH76ZLXFEGVNFYQYBLVMNQ"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "3L246KP4FDIB6HCO66BLB3O6GFNUIM2O",
+      "actualDigest": "3L246KP4FDIB6HCO66BLB3O6GFNUIM2O"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 26 May 2025 17:46:06 GMT",
+      "originalUrl": "https://aircall.io/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250526214743_f1f06740/aircall.io-inf-20250526-032757-6846g-00005.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sat, 21 Jun 2025 17:42:17 GMT",
+      "originalUrl": "https://aircall.io",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481688.37-0017/CC-MAIN-20250621160942-20250621190942-00340.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Essentials and Professional base amounts unresolved; Custom quote has no numerical rate. Numeric facts here are add-ons, not core subscription prices.",
+      "Country selector is unresolved. No ISO currency inferred from location, language or unrelated values.",
+      "Annual minimum 3 follows retained state; monthly minimum 4 follows explicit embedded monthly policy. Custom minimum 25 is separate.",
+      "Add-on values recovered from inert same-page JSON; amounts are not visibly rendered and active configuration is unknown. Equal annual/monthly values merged without claiming contractual commitment.",
+      "AI Voice Agent 0.99 has minute versus copied per-month/all-license wording; retained as unresolved raw fact. WhatsApp 15 is coming soon and excluded from active offers."
+    ],
+    "plans": [
+      {
+        "name": "Essentials",
+        "order": 0,
+        "popular": false,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [
+          {
+            "literal": "/license; {licenses} licenses for {total}, billed annually; 3 licenses minimum",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "annual",
+            "unit": "license",
+            "minimumQuantity": 3,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Annual selector displays -25%; no price or discount amount calculated.",
+              "startingAt": null,
+              "range": null,
+              "volume": "At least 3 licenses in retained annual state.",
+              "billingVariant": "Annual billing; amount unresolved in retained HTML."
+            },
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].items[0].annual_price|$.props.pageProps.story.content.body[0].items[0].detailed_annual_price|$.props.pageProps.story.content.body[0].min_licenses_warning",
+              "text": "/license; {licenses} licenses for {total}, billed annually; 3 licenses minimum"
+            }
+          },
+          {
+            "literal": "/license; {licenses} licenses for {total}, billed monthly; Minimum of 4 licenses for monthly billing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "monthly",
+            "unit": "license",
+            "minimumQuantity": 4,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Minimum of 4 licenses for monthly billing.",
+              "billingVariant": "Monthly billing alternative in embedded page data; amount unresolved."
+            },
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].items[0].monthly_price|$.props.pageProps.story.content.body[0].items[0].detailed_price|$.props.pageProps.story.content.body[0].monthly_min_licenses_tooltip",
+              "text": "/license; {licenses} licenses for {total}, billed monthly; Minimum of 4 licenses for monthly billing"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "100 + Integrations and API access",
+            "value": "100 + Integrations and API access",
+            "source": {
+              "locator": "offset:67850-67890",
+              "text": "100 + Integrations and API access"
+            }
+          },
+          {
+            "name": "Essential telephony features including IVR, call recording and click-to-dial",
+            "value": "Essential telephony features including IVR, call recording and click-to-dial",
+            "source": {
+              "locator": "offset:67899-67982",
+              "text": "Essential telephony features including IVR, call recording and click-to-dial"
+            }
+          },
+          {
+            "name": "Send and receive SMS and MMS***",
+            "value": "Send and receive SMS and MMS***",
+            "source": {
+              "locator": "offset:67991-68029",
+              "text": "Send and receive SMS and MMS***"
+            }
+          },
+          {
+            "name": "Softphone for desktop, Android, iOS",
+            "value": "Softphone for desktop, Android, iOS",
+            "source": {
+              "locator": "offset:68038-68080",
+              "text": "Softphone for desktop, Android, iOS"
+            }
+          },
+          {
+            "name": "Unlimited simultaneous outbound calls",
+            "value": "Unlimited simultaneous outbound calls",
+            "source": {
+              "locator": "offset:68089-68133",
+              "text": "Unlimited simultaneous outbound calls"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].items[0].name",
+          "text": "Essentials"
+        }
+      },
+      {
+        "name": "Professional",
+        "order": 1,
+        "popular": true,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [
+          {
+            "literal": "/license; {licenses} licenses for {total}, billed annually; 3 licenses minimum",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "annual",
+            "unit": "license",
+            "minimumQuantity": 3,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Annual selector displays -25%; no price or discount amount calculated.",
+              "startingAt": null,
+              "range": null,
+              "volume": "At least 3 licenses in retained annual state.",
+              "billingVariant": "Annual billing; amount unresolved in retained HTML."
+            },
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].items[1].annual_price|$.props.pageProps.story.content.body[0].items[1].detailed_annual_price|$.props.pageProps.story.content.body[0].min_licenses_warning",
+              "text": "/license; {licenses} licenses for {total}, billed annually; 3 licenses minimum"
+            }
+          },
+          {
+            "literal": "/license; {licenses} licenses for {total}, billed monthly; Minimum of 4 licenses for monthly billing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "monthly",
+            "unit": "license",
+            "minimumQuantity": 4,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Minimum of 4 licenses for monthly billing.",
+              "billingVariant": "Monthly billing alternative in embedded page data; amount unresolved."
+            },
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].items[1].monthly_price|$.props.pageProps.story.content.body[0].items[1].detailed_price|$.props.pageProps.story.content.body[0].monthly_min_licenses_tooltip",
+              "text": "/license; {licenses} licenses for {total}, billed monthly; Minimum of 4 licenses for monthly billing"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Included tier",
+            "value": "All features from Essentials",
+            "source": {
+              "locator": "offset:69814-69908",
+              "text": "All features from the Essentials plan, plus:"
+            }
+          },
+          {
+            "name": "Salesforce integration",
+            "value": "Salesforce integration",
+            "source": {
+              "locator": "offset:69949-69978",
+              "text": "Salesforce integration"
+            }
+          },
+          {
+            "name": "Mandatory call tagging",
+            "value": "Mandatory call tagging",
+            "source": {
+              "locator": "offset:69987-70016",
+              "text": "Mandatory call tagging"
+            }
+          },
+          {
+            "name": "Advanced analytics and live monitoring",
+            "value": "Advanced analytics and live monitoring",
+            "source": {
+              "locator": "offset:70025-70070",
+              "text": "Advanced analytics and live monitoring"
+            }
+          },
+          {
+            "name": "Advanced support features including queue call back and smart routing",
+            "value": "Advanced support features including queue call back and smart routing",
+            "source": {
+              "locator": "offset:70079-70155",
+              "text": "Advanced support features including queue call back and smart routing"
+            }
+          },
+          {
+            "name": "Advanced sales features including Power Dialer & Voicemail Drop",
+            "value": "Advanced sales features including Power Dialer & Voicemail Drop",
+            "source": {
+              "locator": "offset:70164-70251",
+              "text": "Advanced sales features including Power Dialer & Voicemail Drop"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].items[1].name",
+          "text": "Professional"
+        }
+      },
+      {
+        "name": "Custom",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Call for details",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "license",
+            "minimumQuantity": 25,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "25 licenses minimum.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:70742-70817",
+              "text": "Call for details"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Included tier",
+            "value": "All features from Professional",
+            "source": {
+              "locator": "offset:71247-71343",
+              "text": "All features from the Professional plan, plus:"
+            }
+          },
+          {
+            "name": "Custom onboarding",
+            "value": "Custom onboarding",
+            "source": {
+              "locator": "offset:71384-71408",
+              "text": "Custom onboarding"
+            }
+          },
+          {
+            "name": "Access to API developer support",
+            "value": "Access to API developer support",
+            "source": {
+              "locator": "offset:71417-71456",
+              "text": "Access to API developer support"
+            }
+          },
+          {
+            "name": "Service-level agreement (SLA)",
+            "value": "Service-level agreement (SLA)",
+            "source": {
+              "locator": "offset:71465-71501",
+              "text": "Service-level agreement (SLA)"
+            }
+          },
+          {
+            "name": "Single sign-on*",
+            "value": "Single sign-on*",
+            "source": {
+              "locator": "offset:71510-71532",
+              "text": "Single sign-on*"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:70544-70597",
+          "text": "Custom"
+        }
+      },
+      {
+        "name": "AI Assist",
+        "order": 3,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "+9; +9; /license; per month, applied on all Aircall licenses",
+            "amount": "9",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "license",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "per month, applied on all Aircall licenses",
+              "billingVariant": "Embedded page data; amount not visibly rendered. Equal annual_price and monthly_price values retained once; contractual commitment, selected country and currency unknown."
+            },
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].annual_price|$.props.pageProps.story.content.body[0].pricing_addon[0].monthly_price|$.props.pageProps.story.content.body[0].pricing_addon[0].price_per|$.props.pageProps.story.content.body[0].pricing_addon[0].detailed_price|$.props.pageProps.story.content.body[0].pricing_addon[0].detailed_annual_price",
+              "text": "+9; +9; /license; per month, applied on all Aircall licenses"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Call summaries",
+            "value": "Call summaries",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[0]",
+              "text": "Call summaries"
+            }
+          },
+          {
+            "name": "Key topic recognition",
+            "value": "Key topic recognition",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[1]",
+              "text": "Key topic recognition"
+            }
+          },
+          {
+            "name": "Talk-to-listen ratios",
+            "value": "Talk-to-listen ratios",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[2]",
+              "text": "Talk-to-listen ratios"
+            }
+          },
+          {
+            "name": "Action items",
+            "value": "Action items",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[3]",
+              "text": "Action items"
+            }
+          },
+          {
+            "name": "Sentiment analysis",
+            "value": "Sentiment analysis",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[4]",
+              "text": "Sentiment analysis"
+            }
+          },
+          {
+            "name": "Trending topics",
+            "value": "Trending topics",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[5]",
+              "text": "Trending topics"
+            }
+          },
+          {
+            "name": "Call scoring",
+            "value": "Call scoring",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[6]",
+              "text": "Call scoring"
+            }
+          },
+          {
+            "name": "CRM logging",
+            "value": "CRM logging",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[7]",
+              "text": "CRM logging"
+            }
+          },
+          {
+            "name": "AI and Transcription API",
+            "value": "AI and Transcription API",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].features.content[0].content[8]",
+              "text": "AI and Transcription API"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[0].name",
+          "text": "AI Assist"
+        }
+      },
+      {
+        "name": "Analytics+ Add-on",
+        "order": 4,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "+15; +15; /license; per month, applied on all Aircall licenses",
+            "amount": "15",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "license",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "per month, applied on all Aircall licenses",
+              "billingVariant": "Embedded page data; amount not visibly rendered. Equal annual_price and monthly_price values retained once; contractual commitment, selected country and currency unknown."
+            },
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].annual_price|$.props.pageProps.story.content.body[0].pricing_addon[2].monthly_price|$.props.pageProps.story.content.body[0].pricing_addon[2].price_per|$.props.pageProps.story.content.body[0].pricing_addon[2].detailed_price|$.props.pageProps.story.content.body[0].pricing_addon[2].detailed_annual_price",
+              "text": "+15; +15; /license; per month, applied on all Aircall licenses"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Unlimited history",
+            "value": "Unlimited history",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].features.content[0].content[0]",
+              "text": "Unlimited history"
+            }
+          },
+          {
+            "name": "Drill down and export",
+            "value": "Drill down and export",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].features.content[0].content[1]",
+              "text": "Drill down and export"
+            }
+          },
+          {
+            "name": "Easy-to-understand charts and heatmaps",
+            "value": "Easy-to-understand charts and heatmaps",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].features.content[0].content[2]",
+              "text": "Easy-to-understand charts and heatmaps"
+            }
+          },
+          {
+            "name": "Advanced filters",
+            "value": "Advanced filters",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].features.content[0].content[3]",
+              "text": "Advanced filters"
+            }
+          },
+          {
+            "name": "Dashboards built for key areas of interest e.g. outbound activity, unanswered calls",
+            "value": "Dashboards built for key areas of interest e.g. outbound activity, unanswered calls",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].features.content[0].content[4]",
+              "text": "Dashboards built for key areas of interest e.g. outbound activity, unanswered calls"
+            }
+          },
+          {
+            "name": "Advanced live monitoring",
+            "value": "Advanced live monitoring",
+            "source": {
+              "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].features.content[0].content[5]",
+              "text": "Advanced live monitoring"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:101643-669486:$.props.pageProps.story.content.body[0].pricing_addon[2].name",
+          "text": "Analytics+ Add-on"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:22:01.643Z",
       "decision": "confirmed"
     }
   },
