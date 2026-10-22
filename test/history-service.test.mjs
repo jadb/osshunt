@@ -6,6 +6,7 @@ import { join } from 'node:path';
 import { createHistoryService, validateReplay } from '../lib/history/service.mjs';
 import { FileHistoryStore } from '../lib/history/stores-file.mjs';
 import { CloudflareHistoryStore } from '../lib/history/stores-cloudflare.mjs';
+import { preserveHistoryRequest } from '../worker/history/request-lifecycle.mjs';
 
 const MONTH = 30 * 86400000;
 const catalog = [{ id: 'example', name: 'Example', url: 'https://example.org/', kind: 'alternative', categories: ['Tools'] }];
@@ -284,4 +285,48 @@ test('Memento-Datetime must exactly match the frame when the archive sends it', 
   const f = await fixture(t); await f.request('/refresh', 'POST');
   f.state.response = () => new Response(png, { headers: { 'Content-Type': 'image/png', 'Memento-Datetime': 'Wed, 01 Jan 2020 00:00:00 GMT' } });
   assert.equal((await f.request(imagePath(a))).status, 200);
+});
+
+for (const [label, error] of [['generic Error', new Error('Generic failure')],
+  ['null error code', Object.assign(new Error('Null code'), { code: null })]]) {
+  test(`${label} uses the public fallback code`, async t => {
+    const f = await fixture(t); f.state.discoveryError = error;
+    const manifest = await body(await f.request('/refresh', 'POST'));
+    assert.equal(manifest.errorCode, 'archive_unavailable');
+  });
+}
+
+test('generic image verification errors use the public fallback code', async t => {
+  const f = await fixture(t); await f.request('/refresh', 'POST'); f.state.badDigest = true;
+  assert.equal((await body(await f.request(imagePath(a)))).code, 'archive_unavailable');
+});
+
+
+test('Worker waitUntil retains the same request through delayed metadata completion', async () => {
+  let release; const written = new Promise(resolve => { release = resolve; });
+  let finished = false, registrations = 0, protectedWork;
+  const context = { waitUntil(promise) { registrations++; protectedWork = promise.then(() => { finished = true; }); } };
+  const assets = { fetch: async () => Response.json(catalog) };
+  let metadataWritten = false;
+  const db = { async finish() { await written; metadataWritten = true; } };
+  const response = preserveHistoryRequest(async () => {
+    const products = await (await assets.fetch()).json();
+    await db.finish(); return Response.json({ product: products[0], status: 'ready' });
+  }, context);
+  assert.equal(registrations, 1); assert.equal(finished, false); assert.equal(metadataWritten, false);
+  // Completing the request no longer depends on a client consuming its response.
+  release(); await protectedWork;
+  assert.equal(finished, true); assert.equal(metadataWritten, true);
+  assert.equal((await (await response).json()).status, 'ready');
+});
+
+test('bounded archive deadline aborts discovery and persists an explicit timeout code', async t => {
+  const f = await fixture(t); f.state.discoveryWait = new Promise(() => {});
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const response = f.request('/refresh', 'POST');
+  while (!f.state.discovers) await new Promise(resolve => setImmediate(resolve));
+  t.mock.timers.tick(22000);
+  const manifest = await (await response).json();
+  assert.equal(manifest.status, 'error'); assert.equal(manifest.errorCode, 'archive_timeout');
+  assert.ok(manifest.nextCheckAt);
 });

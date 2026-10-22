@@ -3,6 +3,7 @@ import { CloudflareHistoryStore } from '../../lib/history/stores-cloudflare.mjs'
 import { discoverScreenshots, assertExactReplayUrl } from '../../lib/history/archive.mjs';
 import { selectHistoricalFrames, selectNewFrame } from '../../lib/history/selection.mjs';
 import { verifyImage } from '../../lib/history/image.mjs';
+import { preserveHistoryRequest } from './request-lifecycle.mjs';
 
 const services = new WeakMap();
 async function service(env, origin) {
@@ -19,9 +20,11 @@ async function service(env, origin) {
   return services.get(env.DB);
 }
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, context) {
     if (!new URL(request.url).pathname.startsWith('/api/')) return env.ASSETS.fetch(request);
-    try { return (await service(env, new URL(request.url).origin)).fetch(request); }
-    catch { return Response.json({ error: 'History is temporarily unavailable' }, { status: 503 }); }
+    return preserveHistoryRequest(async () => {
+      try { return await (await service(env, new URL(request.url).origin)).fetch(request); }
+      catch { return Response.json({ error: 'History is temporarily unavailable' }, { status: 503 }); }
+    }, context);
   },
 };
