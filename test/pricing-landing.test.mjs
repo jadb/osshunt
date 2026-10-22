@@ -226,3 +226,15 @@ for (const mode of ['operator', 'production']) for (const kind of ['paid', 'quot
     assert.equal(proposal.plans[0].status, kind);
     assert.equal(f.calls.length, 2);
   });
+
+for (const mode of ['operator', 'production']) test(`${mode} malformed null landing tier cannot prevent dedicated fallback`, async t => {
+  const f = await fixture(t, { landingHtml: '<a href="/pricing">Pricing</a>', extractor: (html, opts) =>
+    opts.originalUrl === product.url ? { plans: [null], quality: 'partial', issues: [] } : extractPricing(html, opts) });
+  let proposal;
+  if (mode === 'operator') proposal = (await f.sample()).products[0].proposal;
+  else {
+    for (let i = 0; i < 5; i++) { await f.refresh(); if ((await f.store.read(product.id)).checkpoint.complete) break; }
+    proposal = (await f.store.read(product.id)).checkpoint.proposals[0];
+  }
+  assert.equal(proposal?.provenance, 'archived-link');
+});
