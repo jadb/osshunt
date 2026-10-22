@@ -1,0 +1,28 @@
+@import url('./history.css');
+:host { display: block; margin-top: 24px; }
+.pricing { border: 1px solid var(--line); background: var(--white); }
+header, footer { padding: 18px 21px; }
+header { border-bottom: 1px solid var(--line); }
+h2 { margin: 0; font: 400 26px/1.2 var(--serif); }
+header p, .association, .scope, .quality, footer p, .sources { font-size: 11px; color: var(--muted); }
+header p, footer p { margin: 6px 0 0; }
+.pricing-navigation { display: flex; align-items: center; gap: 10px; padding: 16px 21px 0; }
+.pricing-navigation label { font-size: 11px; }
+button, select { min-height: 40px; border: 1px solid var(--line); border-radius: 2px; background: var(--white); color: var(--ink); padding: 7px 10px; }
+select { min-width: 0; max-width: 100%; }
+.association, .observation-date, .scope, .quality, .sources, .changes { margin: 12px 21px; }
+.observation-date { font-weight: 600; }
+.sources { display: flex; gap: 12px; flex-wrap: wrap; }
+.sources p { flex-basis: 100%; margin: 0; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; padding: 0 21px 18px; }
+.plan { border: 1px solid var(--line); padding: 14px; overflow-wrap: anywhere; }
+.plan h3 { font: 400 23px/1.2 var(--serif); margin: 0 0 10px; }
+.plan-note { font-size: 11px; color: var(--muted); margin: 6px 0; }
+.offer { font-size: 13px; font-weight: 600; }
+ul { padding-left: 18px; font-size: 12px; }
+.changes { font-size: 12px; }
+.changes h3 { font-size: 13px; }
+footer { border-top: 1px solid var(--line); background: #faf8f2; }
+footer button { margin-top: 10px; font-size: 11px; }
+.association:empty, .scope:empty, .quality:empty, .changes:empty, .sources:empty, .observation-date:empty { display: none; }
+@media (max-width: 480px) { .pricing-navigation { flex-wrap: wrap; } .pricing-navigation label { flex-basis: calc(100% - 60px); } }

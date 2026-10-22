@@ -6,9 +6,10 @@ function fixture() {
   const player = new EventTarget();
   player.attributes = new Map();
   player.setAttribute = (key, value) => player.attributes.set(key, value);
-  const nodes = new Map([['website-history', player], ['#embed-error', {}], ['#embed-gallery', {}], ['#embed-title', {}]]);
+  const pricing = { attributes: new Map(), setAttribute(key, value) { this.attributes.set(key, value); } };
+  const nodes = new Map([['website-history', player], ['pricing-history', pricing], ['#embed-error', {}], ['#embed-gallery', {}], ['#embed-title', {}]]);
   const document = { querySelector: selector => nodes.get(selector) };
-  return { player, document, nodes };
+  return { player, pricing, document, nodes };
 }
 
 test('standalone embed selects only the requested catalog identifier and links its gallery', () => {
@@ -31,4 +32,14 @@ test('missing or invalid embed identifiers never initialize an archive request',
     assert.equal(player.hidden, true);
     assert.equal(nodes.get('#embed-error').hidden, false);
   }
+});
+
+test('embed initializes pricing independently and forwards only selected image dates', () => {
+  const { player, pricing, document } = fixture();
+  initializeEmbed({ search: '?product=wordpress', document });
+  assert.equal(pricing.attributes.get('product-id'), 'wordpress');
+  const event = new Event('framechange');
+  event.detail = { frame: { capturedAt: '2020-01-01T00:00:00Z' } };
+  player.dispatchEvent(event);
+  assert.equal(pricing.attributes.get('frame-date'), '2020-01-01T00:00:00Z');
 });

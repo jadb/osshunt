@@ -1,10 +1,15 @@
 import './history-player.mjs';
+import './pricing-history.mjs';
 import { filterCatalog, safeLink } from './history-utils.mjs';
 
 const $ = selector => document.querySelector(selector);
 let catalog = [];
 let selectedId = null;
 const player = $('website-history');
+const pricing = $('pricing-history');
+player.addEventListener('framechange', event => {
+  if (event.detail?.frame?.capturedAt) pricing.setAttribute('frame-date', event.detail.frame.capturedAt);
+});
 
 function selectProduct(product, updateURL = true) {
   selectedId = product.id;
@@ -15,6 +20,8 @@ function selectProduct(product, updateURL = true) {
   const url = safeLink(product.url);
   link.hidden = !url;
   if (url) link.href = url;
+  pricing.removeAttribute('frame-date');
+  pricing.setAttribute('product-id', product.id);
   player.setAttribute('product-id', product.id);
   if (updateURL) {
     const location = new URL(window.location.href);
