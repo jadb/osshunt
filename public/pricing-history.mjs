@@ -163,6 +163,7 @@ export class PricingHistory extends BaseElement {
       link.href = safe; link.target = '_blank'; link.rel = 'noopener noreferrer';
       this.$('.sources').append(link);
     }
+    if (observation.provenance === 'landing-page') this.$('.sources').append(this.node('p', 'Pricing extracted directly from this archived landing page; both source links identify the same capture.'));
     if (observation.provenance === 'current-source-hint') this.$('.sources').append(this.node('p', 'Pricing URL supplied by a current source hint; historical landing linkage is unverified.'));
     for (const plan of observation.plans ?? []) {
       const card = this.node('article', null, 'plan');

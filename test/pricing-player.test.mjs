@@ -123,6 +123,9 @@ test('pricing component aborts product switches, ignores stale replies, and fram
     player.accept({ status: 'confirmed', observations: [observation({ sourceIntegrity: { status: 'legacy_chunked_unverified' }, quality: 'partial', issues: [] })] });
     player.select(0);
     assert.match(player.$('.quality').textContent, /original archive digest remains unverified/i, 'integrity qualification survives absent extraction issues');
+    player.accept({ status: 'confirmed', observations: [observation({ provenance: 'landing-page' })] });
+    player.select(0);
+    assert.ok(player.$('.sources').children.some(node => /pricing.*landing page/i.test(node.textContent || '')));
     player.accept({ status: 'incomplete_inventory', observations: [], retryAfter: 60 });
     assert.equal(player.manifest.retryAt, '2026-10-22T12:02:00.000Z', 'seconds fallback anchored to receipt');
     player.disconnectedCallback();

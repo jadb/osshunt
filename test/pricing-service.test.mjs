@@ -1,3 +1,4 @@
+import { observation } from './fixtures/pricing-observation.mjs';
 import { sha256 } from '../lib/pricing/archive.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -82,7 +83,7 @@ test('bounded discovery resumes original cutoff, actual pricing spacing, private
       store,
       clock: () => Date.parse(at),
       archive,
-      extractor: () => ({ plans: [{ name: 'Pro', offers: [] }], quality: 'partial', issues: [] }),
+      extractor: (_, { originalUrl }) => ({ plans: originalUrl.endsWith('/pricing') ? [{ ...observation().plans[0], offers: [] }] : [], quality: 'partial', issues: [] }),
       discoverLinks: () => [
         { url: 'https://vendor.com/pricing', label: 'Pricing', locator: 'a', provenance: 'archived-link' },
       ],

@@ -57,6 +57,20 @@ export async function withSamplingJournalLock(path, action) {
     await rmdir(lockPath);
   }
 }
+export async function samplingFingerprint(root) {
+  const filenames = (await readdir(join(root, 'lib/pricing')))
+    .filter((name) => name.endsWith('.mjs'))
+    .map(name => `lib/pricing/${name}`)
+    .concat(['scripts/sample-pricing.mjs', 'lib/history/archive.mjs', 'lib/history/selection.mjs', 'lib/history/stores-file.mjs'])
+    .sort();
+  return sha256(
+    (
+      await Promise.all(
+        filenames.map(async (name) => `${name}\n${await readFile(join(root, name), 'utf8')}`),
+      )
+    ).join('\n'),
+  );
+}
 async function main() {
   const { values } = parseArgs({
     options: {
@@ -75,16 +89,7 @@ async function main() {
   const ids = values.products ? values.products.split(',') : existing?.inputs.ids,
     from = values.from || existing?.inputs.from,
     cutoff = values.to || existing?.inputs.cutoff;
-  const filenames = (await readdir(join(root, 'lib/pricing')))
-    .filter((name) => /^(?:extract.*|html|links|scope)\.mjs$/.test(name))
-    .sort();
-  const baselineFingerprint = await sha256(
-    (
-      await Promise.all(
-        filenames.map(async (name) => `${name}\n${await readFile(join(root, 'lib/pricing', name), 'utf8')}`),
-      )
-    ).join('\n'),
-  );
+  const baselineFingerprint = await samplingFingerprint(root);
   await samplingInputs({
     catalog,
     ids,

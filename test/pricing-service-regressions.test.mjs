@@ -1,3 +1,4 @@
+import { observation } from './fixtures/pricing-observation.mjs';
 import { sha256, fetchHtml } from '../lib/pricing/archive.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -59,7 +60,7 @@ function service(
       { url: 'https://vendor.com/pricing', label: 'Pricing', locator: 'a[1]', provenance: 'archived-link' },
     ],
     extractor: (html) => ({
-      plans: html === 'valid' ? [{ name: 'Pro', offers: [] }] : [],
+      plans: html === 'valid' ? [{ ...observation().plans[0], offers: [] }] : [],
       quality: html === 'valid' ? 'partial' : 'unavailable',
       issues: [],
     }),
@@ -74,9 +75,9 @@ function service(
       },
       async fetchHtml(r) {
         return {
-          bytes: new TextEncoder().encode(r.originalUrl.endsWith('/pricing') ? secondHtml : firstHtml),
+          bytes: new TextEncoder().encode(r.originalUrl === product.url ? 'landing' : r.originalUrl.endsWith('/pricing') ? secondHtml : firstHtml),
           metadata: {
-            sha256: await sha256(r.originalUrl.endsWith('/pricing') ? secondHtml : firstHtml),
+            sha256: await sha256(r.originalUrl === product.url ? 'landing' : r.originalUrl.endsWith('/pricing') ? secondHtml : firstHtml),
             fetchedAt: at,
           },
         };
@@ -256,7 +257,7 @@ test('legacy transport evidence stays private and forces partial unconfirmed pro
       discoverLinks: () => [
         { url: 'https://vendor.com/pricing', label: 'Pricing', locator: 'a', provenance: 'archived-link' },
       ],
-      extractor: () => ({ plans: [{ name: 'Pro', offers: [] }], quality: 'complete', issues: [] }),
+      extractor: (_, { originalUrl }) => ({ plans: originalUrl === product.url ? [] : [{ ...observation().plans[0], offers: [] }], quality: 'complete', issues: [] }),
       archive: {
         async queryHtmlPage(url) {
           return {
