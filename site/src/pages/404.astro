@@ -1,0 +1,14 @@
+---
+import Page from '../layouts/Page.astro';
+---
+<Page title="Page not found | OSSHunt" description="This page does not exist.">
+  <main id="main" class="wrap nf">
+    <h1>Page not found</h1>
+    <p>Check the address, or start from the <a href="/">home page</a>, the <a href="/software/">software list</a> or the <a href="/categories/">categories</a>.</p>
+  </main>
+</Page>
+<style>
+  .nf { padding-block: 48px 80px; }
+  h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-family: var(--display); font-weight: 900; line-height: 1; margin-bottom: 18px; }
+  p { max-width: 56ch; font-size: 1.0625rem; }
+</style>
