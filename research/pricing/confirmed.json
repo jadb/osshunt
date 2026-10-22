@@ -1,1 +1,1846 @@
-[]
+[
+  {
+    "id": "pricing-a12f7b6bdacf8e144e3acced471f6caf357550d17a6e412ce9902cdef8d4490f",
+    "productId": "dropbox",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2011-02-02T03:39:49.000Z",
+    "landingCapturedAt": "2011-02-02T03:39:49.000Z",
+    "pricingCapturedAt": "2011-01-03T06:55:07.000Z",
+    "evidenceAvailableAt": "2011-02-02T03:39:49.000Z",
+    "landingUrl": "https://www.dropbox.com/",
+    "pricingUrl": "http://www.dropbox.com:80/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20110202033949id_/https://www.dropbox.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20110103065507id_/http://www.dropbox.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:15823-15853"
+    },
+    "sourceSha256": "d508382586442c6b62140e00e565b92ccd32fd6bb89977881ad6637d0749269e",
+    "landingSha256": "cb4d4dad367236ddaabaca858387f2814a5070198e3eedd99c586fbf896e0a95",
+    "sourceDigest": "GJKOVM37BHUG5HIYJZOYFIPN4AOX5MGD",
+    "landingDigest": "VJLFERABFYQOXAF4RIXNUI5FGKLQKIJS",
+    "fetchedAt": "2026-10-22T14:20:16.440Z",
+    "landingFetchedAt": "2026-10-22T14:19:57.413Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "GJKOVM37BHUG5HIYJZOYFIPN4AOX5MGD",
+      "actualDigest": "GJKOVM37BHUG5HIYJZOYFIPN4AOX5MGD"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "VJLFERABFYQOXAF4RIXNUI5FGKLQKIJS",
+      "actualDigest": "VJLFERABFYQOXAF4RIXNUI5FGKLQKIJS"
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Unknown currency: $9.99 /month",
+      "Unknown currency: $19.99 /month"
+    ],
+    "plans": [
+      {
+        "name": "Basic",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Free",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:10873-10941",
+              "text": "Free"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Storage",
+            "value": "2GB",
+            "source": {
+              "locator": "offset:10657-10698",
+              "text": "2GB"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:10491-10986",
+          "text": "2GB Basic Free"
+        }
+      },
+      {
+        "name": "Pro 50",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$9.99 /month",
+            "amount": "9.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:11444-11528",
+              "text": "$9.99 /month"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Storage",
+            "value": "50GB",
+            "source": {
+              "locator": "offset:11226-11268",
+              "text": "50GB"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:11059-11805",
+          "text": "50GB Pro 50 $9.99 /month Upgrade to Pro 50"
+        }
+      },
+      {
+        "name": "Pro 100",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$19.99 /month",
+            "amount": "19.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:12268-12353",
+              "text": "$19.99 /month"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Storage",
+            "value": "100GB",
+            "source": {
+              "locator": "offset:12048-12091",
+              "text": "100GB"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:11881-12632",
+          "text": "100GB Pro 100 $19.99 /month Upgrade to Pro 100"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:41:56.317Z",
+      "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-d55d0ed3d204f4e182b96814ee42dc35ffcad0264c28773d98ff3a487b2a5689",
+    "productId": "zoom",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2015-10-18T15:38:21.000Z",
+    "landingCapturedAt": "2015-10-18T15:38:21.000Z",
+    "pricingCapturedAt": "2015-10-13T07:13:21.000Z",
+    "evidenceAvailableAt": "2015-10-18T15:38:21.000Z",
+    "landingUrl": "http://zoom.us:80/",
+    "pricingUrl": "http://zoom.us:80/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20151018153821id_/http://zoom.us/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20151013071321id_/http://zoom.us/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "PLANS",
+      "locator": "offset:7365-7420"
+    },
+    "sourceSha256": "141f3a247a9167946335194c96811e83a0ed1b52618b2bbb4936ac08dbaae48f",
+    "landingSha256": "d8ca4ac5ac04f050ee38de4b8771f3f733b93933153b022445c413ddd5048241",
+    "sourceDigest": "FKU366K45G7XR6FECQWEPL3WYRK4MQ5B",
+    "landingDigest": "22NOHGOD755XWVU6TTCPXPRJC4KPMSLI",
+    "fetchedAt": "2026-10-22T14:21:09.227Z",
+    "landingFetchedAt": "2026-10-22T14:20:39.400Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "FKU366K45G7XR6FECQWEPL3WYRK4MQ5B",
+      "actualDigest": "FKU366K45G7XR6FECQWEPL3WYRK4MQ5B"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "22NOHGOD755XWVU6TTCPXPRJC4KPMSLI",
+      "actualDigest": "22NOHGOD755XWVU6TTCPXPRJC4KPMSLI"
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Unknown currency: $14.99 /mo/host",
+      "Unknown currency: $19.99 /mo/host",
+      "Unknown currency: $54.99 /mo/host",
+      "Billing variant active state unknown; archived scripts not executed",
+      "Unknown currency: $59.99 /mo/host",
+      "Unknown currency: $104.99 /mo/host",
+      "Unknown currency: $109.99 /mo/host",
+      "Symbol-only comparison markers retained literally; inclusion/exclusion requires review"
+    ],
+    "plans": [
+      {
+        "name": "Basic",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Free",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "50 participants",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:25383-25624|offset:26517-26644|offset:26652-26697",
+              "text": "Basic Sign Up | 50 participants Need more participants? | Free"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "1 to 1 meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28474-28511|offset:28519-28538",
+              "text": "1 to 1 meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Number of meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28683-28723|offset:28731-28750",
+              "text": "Number of meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Group meeting duration",
+            "value": "40 minutes per meeting",
+            "source": {
+              "locator": "offset:28883-28927|offset:28935-28975",
+              "text": "Group meeting duration | 40 minutes per meeting"
+            }
+          },
+          {
+            "name": "HD video",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29573-29603|offset:29611-29649|offset:29615-29644",
+              "text": "HD video |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "HD voice",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29849-29879|offset:29887-29925|offset:29891-29920",
+              "text": "HD voice |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dynamic voice detection",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30129-30174|offset:30182-30220|offset:30186-30215",
+              "text": "Dynamic voice detection |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Full screen and gallery view",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30420-30470|offset:30478-30516|offset:30482-30511",
+              "text": "Full screen and gallery view |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dual stream for dual screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30720-30769|offset:30777-30815|offset:30781-30810",
+              "text": "Dual stream for dual screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by telephone call-in",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31015-31123|offset:31131-31169|offset:31135-31164",
+              "text": "Join by telephone call-in |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Desktop and application sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31792-31845|offset:31853-31891|offset:31857-31886",
+              "text": "Desktop and application sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Personal room or meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32111-32160|offset:32168-32206|offset:32172-32201",
+              "text": "Personal room or meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Instant or scheduled meetings",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32419-32470|offset:32478-32516|offset:32482-32511",
+              "text": "Instant or scheduled meetings |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Google Chrome and Outlook plug-ins",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32716-32817|offset:32825-32863|offset:32829-32858",
+              "text": "Google Chrome and Outlook plug-ins |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "MP4 or M4A local recording",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33067-33115|offset:33123-33161|offset:33127-33156",
+              "text": "MP4 or M4A local recording |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Private and group chat",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33616-33660|offset:33668-33706|offset:33672-33701",
+              "text": "Private and group chat |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Host controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33906-33941|offset:33949-33987|offset:33953-33982",
+              "text": "Host controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Raise hand",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34191-34223|offset:34231-34269|offset:34235-34264",
+              "text": "Raise hand |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Mac, Windows, iOS and Android",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34902-34953|offset:34961-34999|offset:34965-34994",
+              "text": "Mac, Windows, iOS and Android |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Group messaging and presence",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35207-35304|offset:35312-35350|offset:35316-35345",
+              "text": "Group messaging and presence |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35562-35641|offset:35649-35687|offset:35653-35682",
+              "text": "Screen sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen share any iPad/iPhone app",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35896-35950|offset:35958-35996|offset:35962-35991",
+              "text": "Screen share any iPad/iPhone app |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Co-annotation on shared screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36208-36260|offset:36268-36306|offset:36272-36301",
+              "text": "Co-annotation on shared screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Keyboard/mouse control",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36514-36558|offset:36566-36604|offset:36570-36599",
+              "text": "Keyboard/mouse control |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Whiteboarding",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36816-36851|offset:36859-36897|offset:36863-36892",
+              "text": "Whiteboarding |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Secure Socket Layer (SSL) encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37538-37596|offset:37604-37642|offset:37608-37637",
+              "text": "Secure Socket Layer (SSL) encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "AES 128 bits encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37849-37894|offset:37902-37940|offset:37906-37935",
+              "text": "AES 128 bits encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "User management",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38452-38489|offset:38497-38535|offset:38501-38530",
+              "text": "User management |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Online support",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38741-38777|offset:38785-38823|offset:38789-38818",
+              "text": "Online support |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "REST API",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43248-43278|offset:43286-43324|offset:43290-43319",
+              "text": "REST API |  | class=\"checked\""
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:25383-25624",
+          "text": "Basic Sign Up"
+        }
+      },
+      {
+        "name": "Pro",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$14.99 /mo/host",
+            "amount": "14.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "host",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "50 participants; Up to 9 hosts",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:25632-25870|offset:26517-26644|offset:26705-26932",
+              "text": "Pro Up to 9 hosts Buy Now | 50 participants Need more participants? | $14.99 /mo/host"
+            }
+          },
+          {
+            "literal": "$54.99 /mo/host",
+            "amount": "54.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "host",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "100 participants; Up to 9 hosts",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:25632-25870|offset:27263-27301|offset:27344-27555",
+              "text": "Pro Up to 9 hosts Buy Now | 100 participants | $54.99 /mo/host"
+            }
+          },
+          {
+            "literal": "$104.99 /mo/host",
+            "amount": "104.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "host",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "200 participants; Up to 9 hosts",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:25632-25870|offset:27890-27928|offset:27971-28183",
+              "text": "Pro Up to 9 hosts Buy Now | 200 participants | $104.99 /mo/host"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "1 to 1 meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28474-28511|offset:28546-28579",
+              "text": "1 to 1 meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Number of meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28683-28723|offset:28758-28791",
+              "text": "Number of meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Group meeting duration",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28883-28927|offset:28983-29016",
+              "text": "Group meeting duration | Unlimited"
+            }
+          },
+          {
+            "name": "HD video",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29573-29603|offset:29657-29710|offset:29676-29705",
+              "text": "HD video |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "HD voice",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29849-29879|offset:29933-29986|offset:29952-29981",
+              "text": "HD voice |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dynamic voice detection",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30129-30174|offset:30228-30281|offset:30247-30276",
+              "text": "Dynamic voice detection |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Full screen and gallery view",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30420-30470|offset:30524-30577|offset:30543-30572",
+              "text": "Full screen and gallery view |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dual stream for dual screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30720-30769|offset:30823-30876|offset:30842-30871",
+              "text": "Dual stream for dual screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by telephone call-in",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31015-31123|offset:31177-31230|offset:31196-31225",
+              "text": "Join by telephone call-in |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Desktop and application sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31792-31845|offset:31899-31952|offset:31918-31947",
+              "text": "Desktop and application sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Personal room or meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32111-32160|offset:32214-32267|offset:32233-32262",
+              "text": "Personal room or meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Instant or scheduled meetings",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32419-32470|offset:32524-32577|offset:32543-32572",
+              "text": "Instant or scheduled meetings |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Google Chrome and Outlook plug-ins",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32716-32817|offset:32871-32924|offset:32890-32919",
+              "text": "Google Chrome and Outlook plug-ins |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "MP4 or M4A local recording",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33067-33115|offset:33169-33222|offset:33188-33217",
+              "text": "MP4 or M4A local recording |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Private and group chat",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33616-33660|offset:33714-33767|offset:33733-33762",
+              "text": "Private and group chat |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Host controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33906-33941|offset:33995-34048|offset:34014-34043",
+              "text": "Host controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Raise hand",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34191-34223|offset:34277-34330|offset:34296-34325",
+              "text": "Raise hand |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Mac, Windows, iOS and Android",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34902-34953|offset:35007-35060|offset:35026-35055",
+              "text": "Mac, Windows, iOS and Android |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Group messaging and presence",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35207-35304|offset:35358-35411|offset:35377-35406",
+              "text": "Group messaging and presence |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35562-35641|offset:35695-35748|offset:35714-35743",
+              "text": "Screen sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen share any iPad/iPhone app",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35896-35950|offset:36004-36057|offset:36023-36052",
+              "text": "Screen share any iPad/iPhone app |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Co-annotation on shared screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36208-36260|offset:36314-36367|offset:36333-36362",
+              "text": "Co-annotation on shared screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Keyboard/mouse control",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36514-36558|offset:36612-36665|offset:36631-36660",
+              "text": "Keyboard/mouse control |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Whiteboarding",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36816-36851|offset:36905-36958|offset:36924-36953",
+              "text": "Whiteboarding |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Secure Socket Layer (SSL) encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37538-37596|offset:37650-37703|offset:37669-37698",
+              "text": "Secure Socket Layer (SSL) encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "AES 128 bits encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37849-37894|offset:37948-38001|offset:37967-37996",
+              "text": "AES 128 bits encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "User management",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38452-38489|offset:38543-38596|offset:38562-38591",
+              "text": "User management |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Online support",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38741-38777|offset:38831-38884|offset:38850-38879",
+              "text": "Online support |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Admin feature controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39250-39294|offset:39319-39357|offset:39323-39352",
+              "text": "Admin feature controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Reporting",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39500-39531|offset:39556-39609|offset:39575-39604",
+              "text": "Reporting |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Zoom Rooms",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39748-39827|offset:39852-39905|offset:39871-39900",
+              "text": "Join by Zoom Rooms |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by H.323/SIP room systems *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40048-40151|offset:40176-40229|offset:44123-44239|offset:40195-40224",
+              "text": "Join by H.323/SIP room systems * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Toll-Free dialing *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40368-40465|offset:40490-40543|offset:44123-44239|offset:40509-40538",
+              "text": "Join by Toll-Free dialing * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Call Me *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40686-40773|offset:40798-40851|offset:44123-44239|offset:40817-40846",
+              "text": "Join by Call Me * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Video Webinar *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40990-41070|offset:41095-41148|offset:44123-44239|offset:41114-41143",
+              "text": "Video Webinar * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Custom Personal Meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41291-41339|offset:41364-41417|offset:41383-41412",
+              "text": "Custom Personal Meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Assign scheduler",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41556-41594|offset:41628-41681|offset:41647-41676",
+              "text": "Assign scheduler |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "REST API",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43248-43278|offset:43332-43385|offset:43351-43380",
+              "text": "REST API |  | class=\"checked\""
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:25632-25870",
+          "text": "Pro Up to 9 hosts Buy Now"
+        }
+      },
+      {
+        "name": "Business",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$19.99 /mo/host",
+            "amount": "19.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "host",
+            "minimumQuantity": 10,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "50 participants; 10 or more hosts",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:25878-26120|offset:26517-26644|offset:26940-27139",
+              "text": "Business 10 or more hosts Buy Now | 50 participants Need more participants? | $19.99 /mo/host"
+            }
+          },
+          {
+            "literal": "$59.99 /mo/host",
+            "amount": "59.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "host",
+            "minimumQuantity": 10,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "100 participants; 10 or more hosts",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:25878-26120|offset:27263-27301|offset:27563-27759",
+              "text": "Business 10 or more hosts Buy Now | 100 participants | $59.99 /mo/host"
+            }
+          },
+          {
+            "literal": "$109.99 /mo/host",
+            "amount": "109.99",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "host",
+            "minimumQuantity": 10,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "200 participants; 10 or more hosts",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:25878-26120|offset:27890-27928|offset:28191-28388",
+              "text": "Business 10 or more hosts Buy Now | 200 participants | $109.99 /mo/host"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "1 to 1 meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28474-28511|offset:28587-28606",
+              "text": "1 to 1 meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Number of meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28683-28723|offset:28799-28818",
+              "text": "Number of meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Group meeting duration",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28883-28927|offset:29024-29051",
+              "text": "Group meeting duration | Unlimited"
+            }
+          },
+          {
+            "name": "HD video",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29573-29603|offset:29718-29756|offset:29722-29751",
+              "text": "HD video |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "HD voice",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29849-29879|offset:29994-30032|offset:29998-30027",
+              "text": "HD voice |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dynamic voice detection",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30129-30174|offset:30289-30327|offset:30293-30322",
+              "text": "Dynamic voice detection |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Full screen and gallery view",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30420-30470|offset:30585-30623|offset:30589-30618",
+              "text": "Full screen and gallery view |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dual stream for dual screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30720-30769|offset:30884-30922|offset:30888-30917",
+              "text": "Dual stream for dual screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by telephone call-in",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31015-31123|offset:31238-31276|offset:31242-31271",
+              "text": "Join by telephone call-in |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Desktop and application sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31792-31845|offset:31960-31998|offset:31964-31993",
+              "text": "Desktop and application sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Personal room or meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32111-32160|offset:32275-32313|offset:32279-32308",
+              "text": "Personal room or meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Instant or scheduled meetings",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32419-32470|offset:32585-32623|offset:32589-32618",
+              "text": "Instant or scheduled meetings |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Google Chrome and Outlook plug-ins",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32716-32817|offset:32932-32970|offset:32936-32965",
+              "text": "Google Chrome and Outlook plug-ins |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "MP4 or M4A local recording",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33067-33115|offset:33230-33268|offset:33234-33263",
+              "text": "MP4 or M4A local recording |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "MP4 or M4A cloud recording *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:33361-33424|offset:33481-33519|offset:44123-44239|offset:33485-33514",
+              "text": "MP4 or M4A cloud recording * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Private and group chat",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33616-33660|offset:33775-33813|offset:33779-33808",
+              "text": "Private and group chat |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Host controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33906-33941|offset:34056-34094|offset:34060-34089",
+              "text": "Host controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Raise hand",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34191-34223|offset:34338-34376|offset:34342-34371",
+              "text": "Raise hand |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Mac, Windows, iOS and Android",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34902-34953|offset:35068-35106|offset:35072-35101",
+              "text": "Mac, Windows, iOS and Android |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Group messaging and presence",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35207-35304|offset:35419-35457|offset:35423-35452",
+              "text": "Group messaging and presence |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35562-35641|offset:35756-35794|offset:35760-35789",
+              "text": "Screen sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen share any iPad/iPhone app",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35896-35950|offset:36065-36103|offset:36069-36098",
+              "text": "Screen share any iPad/iPhone app |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Co-annotation on shared screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36208-36260|offset:36375-36413|offset:36379-36408",
+              "text": "Co-annotation on shared screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Keyboard/mouse control",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36514-36558|offset:36673-36711|offset:36677-36706",
+              "text": "Keyboard/mouse control |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Whiteboarding",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36816-36851|offset:36966-37004|offset:36970-36999",
+              "text": "Whiteboarding |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Secure Socket Layer (SSL) encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37538-37596|offset:37711-37749|offset:37715-37744",
+              "text": "Secure Socket Layer (SSL) encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "AES 128 bits encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37849-37894|offset:38009-38047|offset:38013-38042",
+              "text": "AES 128 bits encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "User management",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38452-38489|offset:38604-38642|offset:38608-38637",
+              "text": "User management |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Online support",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38741-38777|offset:38892-38930|offset:38896-38925",
+              "text": "Online support |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Phone support",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39027-39062|offset:39119-39157|offset:39123-39152",
+              "text": "Phone support |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Admin feature controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39250-39294|offset:39365-39403|offset:39369-39398",
+              "text": "Admin feature controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Reporting",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39500-39531|offset:39617-39655|offset:39621-39650",
+              "text": "Reporting |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Zoom Rooms",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39748-39827|offset:39913-39951|offset:39917-39946",
+              "text": "Join by Zoom Rooms |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by H.323/SIP room systems *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40048-40151|offset:40237-40275|offset:44123-44239|offset:40241-40270",
+              "text": "Join by H.323/SIP room systems * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Toll-Free dialing *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40368-40465|offset:40551-40589|offset:44123-44239|offset:40555-40584",
+              "text": "Join by Toll-Free dialing * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Call Me *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40686-40773|offset:40859-40897|offset:44123-44239|offset:40863-40892",
+              "text": "Join by Call Me * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Video Webinar *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40990-41070|offset:41156-41194|offset:44123-44239|offset:41160-41189",
+              "text": "Video Webinar * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Custom Personal Meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41291-41339|offset:41425-41463|offset:41429-41458",
+              "text": "Custom Personal Meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Assign scheduler",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41556-41594|offset:41689-41727|offset:41693-41722",
+              "text": "Assign scheduler |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Personal Vanity URL",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41824-41865|offset:41922-41960|offset:41926-41955",
+              "text": "Personal Vanity URL |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "On-premise deployment",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42053-42150|offset:42207-42245|offset:42211-42240",
+              "text": "On-premise deployment |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Managed domains",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42342-42379|offset:42436-42474|offset:42440-42469",
+              "text": "Managed domains |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Single sign-on",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42567-42603|offset:42660-42698|offset:42664-42693",
+              "text": "Single sign-on |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Company branding",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42795-42833|offset:42890-42928|offset:42894-42923",
+              "text": "Company branding |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Custom emails",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43021-43056|offset:43113-43151|offset:43117-43146",
+              "text": "Custom emails |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "REST API",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43248-43278|offset:43393-43431|offset:43397-43426",
+              "text": "REST API |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "LTI integration",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43524-43561|offset:43618-43656|offset:43622-43651",
+              "text": "LTI integration |  | class=\"checked\""
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:25878-26120",
+          "text": "Business 10 or more hosts Buy Now"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact Sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "50 participants",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:26128-26398|offset:26517-26644|offset:27147-27187",
+              "text": "Enterprise Contact Sales | 50 participants Need more participants? | Contact Sales"
+            }
+          },
+          {
+            "literal": "Contact Sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "100 participants",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:26128-26398|offset:27263-27301|offset:27767-27807",
+              "text": "Enterprise Contact Sales | 100 participants | Contact Sales"
+            }
+          },
+          {
+            "literal": "Contact Sales",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "200 participants",
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:26128-26398|offset:27890-27928|offset:28396-28436",
+              "text": "Enterprise Contact Sales | 200 participants | Contact Sales"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "1 to 1 meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28474-28511|offset:28614-28633",
+              "text": "1 to 1 meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Number of meetings",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28683-28723|offset:28826-28845",
+              "text": "Number of meetings | Unlimited"
+            }
+          },
+          {
+            "name": "Group meeting duration",
+            "value": "Unlimited",
+            "source": {
+              "locator": "offset:28883-28927|offset:29059-29086",
+              "text": "Group meeting duration | Unlimited"
+            }
+          },
+          {
+            "name": "HD video",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29573-29603|offset:29764-29802|offset:29768-29797",
+              "text": "HD video |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "HD voice",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:29849-29879|offset:30040-30078|offset:30044-30073",
+              "text": "HD voice |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dynamic voice detection",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30129-30174|offset:30335-30373|offset:30339-30368",
+              "text": "Dynamic voice detection |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Full screen and gallery view",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30420-30470|offset:30631-30669|offset:30635-30664",
+              "text": "Full screen and gallery view |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Dual stream for dual screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:30720-30769|offset:30930-30968|offset:30934-30963",
+              "text": "Dual stream for dual screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by telephone call-in",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31015-31123|offset:31284-31322|offset:31288-31317",
+              "text": "Join by telephone call-in |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Desktop and application sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:31792-31845|offset:32006-32044|offset:32010-32039",
+              "text": "Desktop and application sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Personal room or meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32111-32160|offset:32321-32359|offset:32325-32354",
+              "text": "Personal room or meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Instant or scheduled meetings",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32419-32470|offset:32631-32669|offset:32635-32664",
+              "text": "Instant or scheduled meetings |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Google Chrome and Outlook plug-ins",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:32716-32817|offset:32978-33016|offset:32982-33011",
+              "text": "Google Chrome and Outlook plug-ins |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "MP4 or M4A local recording",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33067-33115|offset:33276-33314|offset:33280-33309",
+              "text": "MP4 or M4A local recording |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "MP4 or M4A cloud recording *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:33361-33424|offset:33527-33565|offset:44123-44239|offset:33531-33560",
+              "text": "MP4 or M4A cloud recording * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Private and group chat",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33616-33660|offset:33821-33859|offset:33825-33854",
+              "text": "Private and group chat |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Host controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:33906-33941|offset:34102-34140|offset:34106-34135",
+              "text": "Host controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Raise hand",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34191-34223|offset:34384-34422|offset:34388-34417",
+              "text": "Raise hand |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Mac, Windows, iOS and Android",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:34902-34953|offset:35114-35152|offset:35118-35147",
+              "text": "Mac, Windows, iOS and Android |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Group messaging and presence",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35207-35304|offset:35465-35503|offset:35469-35498",
+              "text": "Group messaging and presence |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen sharing",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35562-35641|offset:35802-35840|offset:35806-35835",
+              "text": "Screen sharing |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Screen share any iPad/iPhone app",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:35896-35950|offset:36111-36149|offset:36115-36144",
+              "text": "Screen share any iPad/iPhone app |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Co-annotation on shared screen",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36208-36260|offset:36421-36459|offset:36425-36454",
+              "text": "Co-annotation on shared screen |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Keyboard/mouse control",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36514-36558|offset:36719-36757|offset:36723-36752",
+              "text": "Keyboard/mouse control |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Whiteboarding",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:36816-36851|offset:37012-37050|offset:37016-37045",
+              "text": "Whiteboarding |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Secure Socket Layer (SSL) encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37538-37596|offset:37757-37795|offset:37761-37790",
+              "text": "Secure Socket Layer (SSL) encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "AES 128 bits encryption",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:37849-37894|offset:38055-38093|offset:38059-38088",
+              "text": "AES 128 bits encryption |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "User management",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38452-38489|offset:38650-38688|offset:38654-38683",
+              "text": "User management |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Online support",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:38741-38777|offset:38938-38976|offset:38942-38971",
+              "text": "Online support |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Phone support",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39027-39062|offset:39165-39203|offset:39169-39198",
+              "text": "Phone support |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Admin feature controls",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39250-39294|offset:39411-39449|offset:39415-39444",
+              "text": "Admin feature controls |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Reporting",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39500-39531|offset:39663-39701|offset:39667-39696",
+              "text": "Reporting |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Zoom Rooms",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:39748-39827|offset:39959-39997|offset:39963-39992",
+              "text": "Join by Zoom Rooms |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by H.323/SIP room systems *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40048-40151|offset:40283-40321|offset:44123-44239|offset:40287-40316",
+              "text": "Join by H.323/SIP room systems * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Toll-Free dialing *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40368-40465|offset:40597-40635|offset:44123-44239|offset:40601-40630",
+              "text": "Join by Toll-Free dialing * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Join by Call Me *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40686-40773|offset:40905-40943|offset:44123-44239|offset:40909-40938",
+              "text": "Join by Call Me * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Video Webinar *",
+            "value": "marker: checked; * An add-on subscription purchase is required.",
+            "source": {
+              "locator": "offset:40990-41070|offset:41202-41240|offset:44123-44239|offset:41206-41235",
+              "text": "Video Webinar * |  | * An add-on subscription purchase is required. | class=\"checked\""
+            }
+          },
+          {
+            "name": "Custom Personal Meeting ID",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41291-41339|offset:41471-41509|offset:41475-41504",
+              "text": "Custom Personal Meeting ID |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Assign scheduler",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41556-41594|offset:41735-41773|offset:41739-41768",
+              "text": "Assign scheduler |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Personal Vanity URL",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:41824-41865|offset:41968-42006|offset:41972-42001",
+              "text": "Personal Vanity URL |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "On-premise deployment",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42053-42150|offset:42253-42291|offset:42257-42286",
+              "text": "On-premise deployment |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Managed domains",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42342-42379|offset:42482-42520|offset:42486-42515",
+              "text": "Managed domains |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Single sign-on",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42567-42603|offset:42706-42744|offset:42710-42739",
+              "text": "Single sign-on |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Company branding",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:42795-42833|offset:42936-42974|offset:42940-42969",
+              "text": "Company branding |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Custom emails",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43021-43056|offset:43159-43197|offset:43163-43192",
+              "text": "Custom emails |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "REST API",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43248-43278|offset:43439-43477|offset:43443-43472",
+              "text": "REST API |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "LTI integration",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43524-43561|offset:43664-43702|offset:43668-43697",
+              "text": "LTI integration |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Lync integration",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43753-43791|offset:43865-43903|offset:43869-43898",
+              "text": "Lync integration |  | class=\"checked\""
+            }
+          },
+          {
+            "name": "Customization",
+            "value": "marker: checked",
+            "source": {
+              "locator": "offset:43950-43985|offset:44059-44097|offset:44063-44092",
+              "text": "Customization |  | class=\"checked\""
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:26128-26398",
+          "text": "Enterprise Contact Sales"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T14:41:56.328Z",
+      "decision": "confirmed"
+    }
+  }
+]

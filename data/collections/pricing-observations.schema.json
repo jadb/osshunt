@@ -141,6 +141,242 @@
         "format": "date-time",
         "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
       },
+      "sourceIntegrity": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unknown",
+              "legacy_chunked_unverified"
+            ]
+          },
+          "expectedDigest": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(?:sha1:)?[A-Z2-7]{32}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "actualDigest": {
+            "type": "string",
+            "pattern": "^[A-Z2-7]{32}$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "status",
+          "expectedDigest",
+          "actualDigest"
+        ],
+        "additionalProperties": false
+      },
+      "landingIntegrity": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unknown",
+              "legacy_chunked_unverified"
+            ]
+          },
+          "expectedDigest": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(?:sha1:)?[A-Z2-7]{32}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "actualDigest": {
+            "type": "string",
+            "pattern": "^[A-Z2-7]{32}$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "status",
+          "expectedDigest",
+          "actualDigest"
+        ],
+        "additionalProperties": false
+      },
+      "sourceTransport": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "mementoDatetime": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "originalUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "archivedTransferEncoding": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "originalContentEncoding": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceWarc": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 512
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "originalDigest": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(?:sha1:)?[A-Z2-7]{32}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "status",
+          "mementoDatetime",
+          "originalUrl",
+          "archivedTransferEncoding",
+          "originalContentEncoding",
+          "sourceWarc",
+          "originalDigest"
+        ],
+        "additionalProperties": false
+      },
+      "landingTransport": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "mementoDatetime": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "originalUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "archivedTransferEncoding": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "originalContentEncoding": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceWarc": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 512
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "originalDigest": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(?:sha1:)?[A-Z2-7]{32}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "status",
+          "mementoDatetime",
+          "originalUrl",
+          "archivedTransferEncoding",
+          "originalContentEncoding",
+          "sourceWarc",
+          "originalDigest"
+        ],
+        "additionalProperties": false
+      },
       "aliasEvidenceAt": {
         "type": "array",
         "items": {
@@ -509,6 +745,9 @@
           "decision": {
             "type": "string",
             "const": "confirmed"
+          },
+          "acceptedUnverifiedArchiveDigest": {
+            "type": "boolean"
           }
         },
         "required": [
