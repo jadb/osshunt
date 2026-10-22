@@ -11741,6 +11741,694 @@
     }
   },
   {
+    "id": "pricing-manual-37744be0319305e0ae978a957d35c3ed660bf3ba9cb3264e0ae5e08ea1c34b79",
+    "productId": "tailscale",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T23:05:52.000Z",
+    "landingCapturedAt": "2025-06-30T23:05:52.000Z",
+    "pricingCapturedAt": "2025-06-29T16:13:54.000Z",
+    "evidenceAvailableAt": "2025-06-30T23:05:52.000Z",
+    "landingUrl": "https://tailscale.com/",
+    "pricingUrl": "https://tailscale.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630230552id_/https://tailscale.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629161354id_/https://tailscale.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:13067-13550"
+    },
+    "sourceSha256": "a7d71a541657d38e5b707ec07ed3e689f57ee9bb5b6f753d015ce0bd799edc25",
+    "landingSha256": "2aee9ebc21dc315b482b5eb2439b98c7af76f91cff8aa0c9d21228372e2aaca5",
+    "sourceDigest": "QVEZFXINBXQM4W7MJLBWBAMYKXKILVK2",
+    "landingDigest": "35GB63HEFXVYBVHB6KHCK75XYOEIDGKR",
+    "fetchedAt": "2026-10-22T20:34:00.840Z",
+    "landingFetchedAt": "2026-10-22T20:33:41.531Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "QVEZFXINBXQM4W7MJLBWBAMYKXKILVK2",
+      "actualDigest": "QVEZFXINBXQM4W7MJLBWBAMYKXKILVK2"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "35GB63HEFXVYBVHB6KHCK75XYOEIDGKR",
+      "actualDigest": "WDSLEOYJVXEAC3KRZ3UT2LXE3RIWAXBK",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 16:13:54 GMT",
+      "originalUrl": "https://tailscale.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630003045_25463623/forum.tailscale.com-inf-20250629-150644-akane-00000.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 23:05:52 GMT",
+      "originalUrl": "https://tailscale.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630232635/spn2-20250630213114-wwwb-spn31.us.archive.org-8003.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Core plan prices recovered manually from named cards; raw generic CTA-derived plan not retained.",
+      "Dollar symbol only: no ISO currency or explicit dollar country established. All currencies unknown.",
+      "Monthly price denominator and end-of-month active-user billing do not establish monthly contract duration; commitments unknown.",
+      "Personal free plan is distinct from commercial14daytrial; Personal Plus intended for family/personal use, not substituted for business licensing.",
+      "Device/user limits are included allowances or upper limits, not minimum purchases.",
+      "Pricing body CDX verified; landing payload digest remains unverified and requires explicit acceptance with partial quality.",
+      "Commercial use trial is a descriptive label for the explicit14-day commercial trial, not a separate edition or branded subscription tier.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Personal",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$0 Free forever",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Limited to 3 users; 100 devices",
+              "billingVariant": "Explicit retained price; Personal/Business selector and slider not executed. Personal cards dimmed in retained Business presentation; availability of named alternatives preserved, runtime active variant unknown."
+            },
+            "source": {
+              "locator": "offset:48245-48392|offset:47852-48043|offset:49208-49445|offset:49445-49675",
+              "text": "Personal; $0 Free forever; Limited to 3 users; 100 devices"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Intended use",
+            "value": "For individuals who want to securely connect personal devices, for free.",
+            "source": {
+              "locator": "offset:48043-48231",
+              "text": "For individuals who want to securely connect personal devices, for free."
+            }
+          },
+          {
+            "name": "Plan highlight1",
+            "value": "Limited to 3 users",
+            "source": {
+              "locator": "offset:49208-49445",
+              "text": "Limited to 3 users"
+            }
+          },
+          {
+            "name": "Plan highlight2",
+            "value": "100 devices",
+            "source": {
+              "locator": "offset:49445-49675",
+              "text": "100 devices"
+            }
+          },
+          {
+            "name": "Plan highlight3",
+            "value": "Access nearly all of Tailscale’s features",
+            "source": {
+              "locator": "offset:49675-49935",
+              "text": "Access nearly all of Tailscale’s features"
+            }
+          },
+          {
+            "name": "Plan highlight4",
+            "value": "Use Tailscale for free, indefinitely",
+            "source": {
+              "locator": "offset:49935-50190",
+              "text": "Use Tailscale for free, indefinitely"
+            }
+          },
+          {
+            "name": "Plan highlight5",
+            "value": "Add-on devices for $0.50 each per month",
+            "source": {
+              "locator": "offset:50190-50448",
+              "text": "Add-on devices for $0.50 each per month"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:47852-48043",
+          "text": "Personal"
+        }
+      },
+      {
+        "name": "Personal Plus",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5 Per month",
+            "amount": "5",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Limited to 6 users; 100 devices",
+              "billingVariant": "Explicit retained price; Personal/Business selector and slider not executed. Personal cards dimmed in retained Business presentation; availability of named alternatives preserved, runtime active variant unknown."
+            },
+            "source": {
+              "locator": "offset:51271-51415|offset:50854-51055|offset:52231-52468|offset:52468-52698",
+              "text": "Personal Plus; $5 Per month; Limited to 6 users; 100 devices"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Intended use",
+            "value": "For individuals who want to securely connect personal devices with friends and family.",
+            "source": {
+              "locator": "offset:51055-51257",
+              "text": "For individuals who want to securely connect personal devices with friends and family."
+            }
+          },
+          {
+            "name": "Plan highlight1",
+            "value": "Limited to 6 users",
+            "source": {
+              "locator": "offset:52231-52468",
+              "text": "Limited to 6 users"
+            }
+          },
+          {
+            "name": "Plan highlight2",
+            "value": "100 devices",
+            "source": {
+              "locator": "offset:52468-52698",
+              "text": "100 devices"
+            }
+          },
+          {
+            "name": "Plan highlight3",
+            "value": "Access nearly all of Tailscale’s features",
+            "source": {
+              "locator": "offset:52698-52958",
+              "text": "Access nearly all of Tailscale’s features"
+            }
+          },
+          {
+            "name": "Plan highlight4",
+            "value": "Share Tailscale with family and friends",
+            "source": {
+              "locator": "offset:52958-53217",
+              "text": "Share Tailscale with family and friends"
+            }
+          },
+          {
+            "name": "Plan highlight5",
+            "value": "Add-on devices for $0.50 each per month",
+            "source": {
+              "locator": "offset:53217-53475",
+              "text": "Add-on devices for $0.50 each per month"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:50854-51055",
+          "text": "Personal Plus"
+        }
+      },
+      {
+        "name": "Starter",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$6 Per active user, per month",
+            "amount": "6",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "active user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "100 devices + 10 per user; Human readable DNS names for devices/services with MagicDNS",
+              "billingVariant": "Explicit retained price; Personal/Business selector and slider not executed. Personal cards dimmed in retained Business presentation; availability of named alternatives preserved, runtime active variant unknown."
+            },
+            "source": {
+              "locator": "offset:54182-54343|offset:53773-53962|offset:208343-208463|offset:55174-55418|offset:56170-56448",
+              "text": "Starter; $6 Per active user, per month; monthly active users charged at end of each month; 100 devices + 10 per user; Human readable DNS names for devices/services with MagicDNS"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Intended use",
+            "value": "For small teams seeking an easy-to-use and quick-to-deploy secure network access solution.",
+            "source": {
+              "locator": "offset:53962-54168",
+              "text": "For small teams seeking an easy-to-use and quick-to-deploy secure network access solution."
+            }
+          },
+          {
+            "name": "Plan highlight1",
+            "value": "100 devices + 10 per user",
+            "source": {
+              "locator": "offset:55174-55418",
+              "text": "100 devices + 10 per user"
+            }
+          },
+          {
+            "name": "Plan highlight2",
+            "value": "Add-on devices for $0.50 each per month",
+            "source": {
+              "locator": "offset:55418-55676",
+              "text": "Add-on devices for $0.50 each per month"
+            }
+          },
+          {
+            "name": "Plan highlight3",
+            "value": "Multiple OS/platform/cloud compatibility",
+            "source": {
+              "locator": "offset:55676-55935",
+              "text": "Multiple OS/platform/cloud compatibility"
+            }
+          },
+          {
+            "name": "Plan highlight4",
+            "value": "Split tunnelling",
+            "source": {
+              "locator": "offset:55935-56170",
+              "text": "Split tunnelling"
+            }
+          },
+          {
+            "name": "Plan highlight5",
+            "value": "Human readable DNS names for devices/services with MagicDNS",
+            "source": {
+              "locator": "offset:56170-56448",
+              "text": "Human readable DNS names for devices/services with MagicDNS"
+            }
+          },
+          {
+            "name": "Plan highlight6",
+            "value": "Network-level access policies (ACLs - limited functionality)",
+            "source": {
+              "locator": "offset:56448-56727",
+              "text": "Network-level access policies (ACLs - limited functionality)"
+            }
+          },
+          {
+            "name": "Plan highlight7",
+            "value": "Kubernetes networking through Tailscale Kubernetes Operator",
+            "source": {
+              "locator": "offset:56727-57005",
+              "text": "Kubernetes networking through Tailscale Kubernetes Operator"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:53773-53962",
+          "text": "Starter"
+        }
+      },
+      {
+        "name": "Premium",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$18 Per active user, per month",
+            "amount": "18",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "active user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "100 devices + 20 per user",
+              "billingVariant": "Explicit retained price; Personal/Business selector and slider not executed. Personal cards dimmed in retained Business presentation; availability of named alternatives preserved, runtime active variant unknown."
+            },
+            "source": {
+              "locator": "offset:57726-57888|offset:57303-57492|offset:208343-208463|offset:58732-58976",
+              "text": "Premium; $18 Per active user, per month; monthly active users charged at end of each month; 100 devices + 20 per user"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Intended use",
+            "value": "For growing teams seeking advanced service/resource-level networking and identity-aware access controls.",
+            "source": {
+              "locator": "offset:57492-57712",
+              "text": "For growing teams seeking advanced service/resource-level networking and identity-aware access controls."
+            }
+          },
+          {
+            "name": "Plan highlight1",
+            "value": "100 devices + 20 per user",
+            "source": {
+              "locator": "offset:58732-58976",
+              "text": "100 devices + 20 per user"
+            }
+          },
+          {
+            "name": "Plan highlight2",
+            "value": "Automatic key management through Tailscale SSH",
+            "source": {
+              "locator": "offset:58976-59241",
+              "text": "Automatic key management through Tailscale SSH"
+            }
+          },
+          {
+            "name": "Plan highlight3",
+            "value": "Advanced service-level networking through Tailscale Funnel",
+            "source": {
+              "locator": "offset:59241-59518",
+              "text": "Advanced service-level networking through Tailscale Funnel"
+            }
+          },
+          {
+            "name": "Plan highlight4",
+            "value": "Identity-aware access policies (ACLs - full functionality)",
+            "source": {
+              "locator": "offset:59518-59795",
+              "text": "Identity-aware access policies (ACLs - full functionality)"
+            }
+          },
+          {
+            "name": "Plan highlight5",
+            "value": "MDM policies",
+            "source": {
+              "locator": "offset:59795-60026",
+              "text": "MDM policies"
+            }
+          },
+          {
+            "name": "Plan highlight6",
+            "value": "Configuration audit and network flow logging",
+            "source": {
+              "locator": "offset:60026-60289",
+              "text": "Configuration audit and network flow logging"
+            }
+          },
+          {
+            "name": "Plan highlight7",
+            "value": "Priority support",
+            "source": {
+              "locator": "offset:60289-60524",
+              "text": "Priority support"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:57303-57492",
+          "text": "Premium"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 4,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Custom",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "Explicit retained price; Personal/Business selector and slider not executed. Personal cards dimmed in retained Business presentation; availability of named alternatives preserved, runtime active variant unknown."
+            },
+            "source": {
+              "locator": "offset:61252-61391|offset:60822-61017",
+              "text": "Enterprise; Custom"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Intended use",
+            "value": "For organizations seeking advanced user and posture management, robust compliance, and dedicated support.",
+            "source": {
+              "locator": "offset:61017-61238",
+              "text": "For organizations seeking advanced user and posture management, robust compliance, and dedicated support."
+            }
+          },
+          {
+            "name": "Plan highlight1",
+            "value": "Custom device limits",
+            "source": {
+              "locator": "offset:62155-62394",
+              "text": "Custom device limits"
+            }
+          },
+          {
+            "name": "Plan highlight2",
+            "value": "Integrations for user/group provisioning",
+            "source": {
+              "locator": "offset:62394-62653",
+              "text": "Integrations for user/group provisioning"
+            }
+          },
+          {
+            "name": "Plan highlight3",
+            "value": "Endpoint management through Tailnet Lock",
+            "source": {
+              "locator": "offset:62653-62912",
+              "text": "Endpoint management through Tailnet Lock"
+            }
+          },
+          {
+            "name": "Plan highlight4",
+            "value": "Advanced posture management",
+            "source": {
+              "locator": "offset:62912-63158",
+              "text": "Advanced posture management"
+            }
+          },
+          {
+            "name": "Plan highlight5",
+            "value": "Auditing support through Tailscale SSH recording and log streaming",
+            "source": {
+              "locator": "offset:63158-63443",
+              "text": "Auditing support through Tailscale SSH recording and log streaming"
+            }
+          },
+          {
+            "name": "Plan highlight6",
+            "value": "Dedicated support",
+            "source": {
+              "locator": "offset:63443-63679",
+              "text": "Dedicated support"
+            }
+          },
+          {
+            "name": "Plan highlight7",
+            "value": "Options to pay by invoice and/or annual billing",
+            "source": {
+              "locator": "offset:63679-63945",
+              "text": "Options to pay by invoice and/or annual billing"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:60822-61017",
+          "text": "Enterprise"
+        }
+      },
+      {
+        "name": "Mullvad",
+        "order": 5,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$5",
+            "amount": "5",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Mullvad on up to5devices",
+              "billingVariant": "Optional add-on; retained source card, no runtime checkout executed"
+            },
+            "source": {
+              "locator": "offset:183044-183082|offset:183082-183160|offset:182850-182964",
+              "text": "Mullvad; $5; Per month for Mullvad on up to 5 devices; Mullvad on up to5devices"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Description",
+            "value": "Browse the internet privately, and securely with Tailscale and Mullvad.",
+            "source": {
+              "locator": "offset:182850-182964",
+              "text": "Browse the internet privately, and securely with Tailscale and Mullvad."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:177529-177560",
+          "text": "Mullvad"
+        }
+      },
+      {
+        "name": "Add-on devices",
+        "order": 6,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$0.50",
+            "amount": "0.50",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "device",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Additional device capacity beyond plan allowance; charged per additional device",
+              "billingVariant": "Optional add-on; retained source card, no runtime checkout executed"
+            },
+            "source": {
+              "locator": "offset:184172-184213|offset:184213-184272|offset:183942-184092",
+              "text": "Add-on devices; $0.50; Per device, per month; Additional device capacity beyond plan allowance; charged per additional device"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Description",
+            "value": "If you’ve run out of devices on your plan and you need to connect more, get more capacity with this add-on.",
+            "source": {
+              "locator": "offset:183942-184092",
+              "text": "If you’ve run out of devices on your plan and you need to connect more, get more capacity with this add-on."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:183898-183936",
+          "text": "Add-on devices"
+        }
+      },
+      {
+        "name": "Commercial use trial",
+        "order": 7,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "14-day trial",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "14-day trial; no user limit; commercial use; offer terms apply",
+              "volume": null,
+              "billingVariant": "Trial FAQ disclosure read inertly; not recurring free plan or zero-dollar renewal"
+            },
+            "source": {
+              "locator": "offset:206746-207007",
+              "text": "Yes! Customers who want to use Tailscale for commercial use will get a 14-day trial* of the product with no user limit. Customers who use Tailscale for personal use cases (e.g., homelabs, home VPN etc.) will continue to have access to the free tier plan."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:206746-207007",
+          "text": "Yes! Customers who want to use Tailscale for commercial use will get a 14-day trial* of the product with no user limit. Customers who use Tailscale for personal use cases (e.g., homelabs, home VPN etc.) will continue to have access to the free tier plan."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:41:03.779Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
     "id": "pricing-manual-38ecece5d1ce8a902c5661a756cd6b1ebcd0074b6c8c2c86e0097311d00b2c4b",
     "productId": "zapier",
     "scope": {
@@ -12480,6 +13168,2744 @@
     "review": {
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:11:41.639Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-manual-4ef07c6db5ff54e50355cda1c20db1973a0cdd718643c78ed8d0443aff8116f2",
+    "productId": "auth0",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T16:13:44.000Z",
+    "landingCapturedAt": "2025-06-30T16:13:44.000Z",
+    "pricingCapturedAt": "2025-06-24T22:56:14.000Z",
+    "evidenceAvailableAt": "2025-06-30T16:13:44.000Z",
+    "landingUrl": "https://auth0.com/",
+    "pricingUrl": "https://auth0.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630161344id_/https://auth0.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250624225614id_/https://auth0.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:174980-175055"
+    },
+    "sourceSha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988",
+    "landingSha256": "cd9a2acd05ca69ffc3d9a7d0b9775b87485d4fef22cc4cb5f0ac7944303b742c",
+    "sourceDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E",
+    "landingDigest": "DFDC4SOGIOG4M7VB325NQ2VT4VRW376R",
+    "fetchedAt": "2026-10-22T20:32:40.426Z",
+    "landingFetchedAt": "2026-10-22T20:32:22.048Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E",
+      "actualDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "DFDC4SOGIOG4M7VB325NQ2VT4VRW376R",
+      "actualDigest": "ZDLPXXAUJTH5RXH2Z5PZERYVARKVGYP2",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 22:56:14 GMT",
+      "originalUrl": "https://auth0.com/pricing",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709779945.75-0036/CC-MAIN-20250624213510-20250625003510-00722.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 16:13:44 GMT",
+      "originalUrl": "https://auth0.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250630180222/spn2-20250630155700-wwwb-spn06.us.archive.org-8007.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Retained pricing body is a blank client-rendered shell with public definitions in inert same-page JSON. No application code executed.",
+      "Seven public definitions retained; public:false Trial and Paid Default Plan excluded. Raw feature keys/limits retain their literal values; undefined units or periods are not invented.",
+      "Free zero is supported by public Free definition with zero cost and explicit free forever developer-plan metadata. Other public plans retain unknown displayed amounts/terms; custom_agreement is preserved as raw type without inventing a quote CTA.",
+      "Nonzero cost coefficients are not normalized as plan prices: no currency, evaluated total, selected quantity or price formula verified. annual_multiplier=11 is not an annual price or independently proven contractual commitment.",
+      "Auth0 landing original archive digest remains legacy-qualified and unverified; explicit acceptance and visible partial-evidence warning required.",
+      "Two candidate roles reuse the identical pricing record and body hash; only one pricing observation, no duplicate price facts.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "Free; cost.external=0; free forever dev plan",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Raw users_limits.external=25000, external breakpoints=[7500]; these are distinct configuration fields, not a proven selected MAU allowance or purchase minimum.",
+              "billingVariant": "Inert public definition; no rendered card, selected experiment or checkout verified."
+            },
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].cost|$.props.pageProps.pageProps.metadata.description",
+              "text": "Free; cost.external=0; free forever dev plan"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=free; type=self_service; public=true; plan_version=v5.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].plan_version",
+              "text": "free; self_service; public=true; v5.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":25000,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].users_limits",
+              "text": "{\"external\":25000,\"employee\":0}"
+            }
+          },
+          {
+            "name": "action_libraries (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.action_libraries",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":3}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.admin_roles",
+              "text": "{\"max\":3}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":1000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.apiCalls",
+              "text": "{\"max\":1000}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.custom_domains",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "custom_email_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.custom_email_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.custom_social_connections",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":5}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.forms_and_actions",
+              "text": "{\"max\":5}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.logs",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "marketplace (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.marketplace",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":5}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.orgs",
+              "text": "{\"max\":5}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.tenants",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].name",
+          "text": "Free"
+        }
+      },
+      {
+        "name": "B2C - Essentials",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=b2c_essentials; type=self_service; public=true; plan_version=v3.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].plan_version",
+              "text": "b2c_essentials; self_service; public=true; v3.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":100000,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].users_limits",
+              "text": "{\"external\":100000,\"employee\":0}"
+            }
+          },
+          {
+            "name": "action_libraries (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.action_libraries",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_viewer (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.admin_rbac_viewer",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":10000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.admin_roles",
+              "text": "{\"max\":10000}"
+            }
+          },
+          {
+            "name": "advanced_customizations_universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.advanced_customizations_universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":1000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.apiCalls",
+              "text": "{\"max\":1000}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.custom_domains",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_prompts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.custom_prompts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.custom_social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "email_workflow (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.email_workflow",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "event_streams (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.event_streams",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.forms_and_actions",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "link_accounts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.link_accounts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "log_streaming (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.log_streaming",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":5}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.logs",
+              "text": "{\"max\":5}"
+            }
+          },
+          {
+            "name": "marketplace (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.marketplace",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.orgs",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "role_management (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.role_management",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "standard_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.standard_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":3}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.tenants",
+              "text": "{\"max\":3}"
+            }
+          },
+          {
+            "name": "third_party_mfa_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.third_party_mfa_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_insights (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].features.user_insights",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].name",
+          "text": "B2C - Essentials"
+        }
+      },
+      {
+        "name": "B2C - Essentials (Loyalty)",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=b2c_essentials_loyalty; type=self_service; public=true; plan_version=v3.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].plan_version",
+              "text": "b2c_essentials_loyalty; self_service; public=true; v3.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":100000,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].users_limits",
+              "text": "{\"external\":100000,\"employee\":0}"
+            }
+          },
+          {
+            "name": "action_libraries (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.action_libraries",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_viewer (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.admin_rbac_viewer",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":10000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.admin_roles",
+              "text": "{\"max\":10000}"
+            }
+          },
+          {
+            "name": "advanced_customizations_universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.advanced_customizations_universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":1000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.apiCalls",
+              "text": "{\"max\":1000}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.custom_domains",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_prompts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.custom_prompts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.custom_social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "email_workflow (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.email_workflow",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "event_streams (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.event_streams",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.forms_and_actions",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "link_accounts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.link_accounts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "log_streaming (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.log_streaming",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":5}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.logs",
+              "text": "{\"max\":5}"
+            }
+          },
+          {
+            "name": "marketplace (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.marketplace",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.orgs",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "role_management (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.role_management",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "standard_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.standard_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":3}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.tenants",
+              "text": "{\"max\":3}"
+            }
+          },
+          {
+            "name": "third_party_mfa_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.third_party_mfa_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_insights (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].features.user_insights",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].name",
+          "text": "B2C - Essentials (Loyalty)"
+        }
+      },
+      {
+        "name": "B2C - Professional",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=b2c_professional; type=self_service; public=true; plan_version=v3.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].plan_version",
+              "text": "b2c_professional; self_service; public=true; v3.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":100000,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].users_limits",
+              "text": "{\"external\":100000,\"employee\":0}"
+            }
+          },
+          {
+            "name": "action_libraries (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.action_libraries",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_editor (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.admin_rbac_editor",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_viewer (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.admin_rbac_viewer",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":10000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.admin_roles",
+              "text": "{\"max\":10000}"
+            }
+          },
+          {
+            "name": "advanced_customizations_universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.advanced_customizations_universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":5000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.apiCalls",
+              "text": "{\"max\":5000}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.custom_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.custom_domains",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_prompts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.custom_prompts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.custom_social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "customer_sso (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.customer_sso",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "email_workflow (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.email_workflow",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "event_streams (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.event_streams",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":15}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.forms_and_actions",
+              "text": "{\"max\":15}"
+            }
+          },
+          {
+            "name": "link_accounts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.link_accounts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "log_streaming (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.log_streaming",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.logs",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "marketplace (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.marketplace",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "mfa_enterprise_addon (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.mfa_enterprise_addon",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "mfa_factors_count (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.mfa_factors_count",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.orgs",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "password_breach_detection (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.password_breach_detection",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "password_complexity (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.password_complexity",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "role_management (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.role_management",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "standard_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.standard_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":6}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.tenants",
+              "text": "{\"max\":6}"
+            }
+          },
+          {
+            "name": "third_party_mfa_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.third_party_mfa_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_insights (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].features.user_insights",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].name",
+          "text": "B2C - Professional"
+        }
+      },
+      {
+        "name": "B2B - Essentials",
+        "order": 4,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=b2b_essentials; type=self_service; public=true; plan_version=v3.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].plan_version",
+              "text": "b2b_essentials; self_service; public=true; v3.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":100000,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].users_limits",
+              "text": "{\"external\":100000,\"employee\":0}"
+            }
+          },
+          {
+            "name": "action_libraries (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.action_libraries",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_viewer (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.admin_rbac_viewer",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":10000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.admin_roles",
+              "text": "{\"max\":10000}"
+            }
+          },
+          {
+            "name": "advanced_customizations_universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.advanced_customizations_universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":1000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.apiCalls",
+              "text": "{\"max\":1000}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.custom_domains",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_prompts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.custom_prompts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.custom_social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "email_workflow (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.email_workflow",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "enterprise_connections (raw feature setting)",
+            "value": "{\"max\":3}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.enterprise_connections",
+              "text": "{\"max\":3}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "event_streams (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.event_streams",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.forms_and_actions",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "home_realm_discover (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.home_realm_discover",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "link_accounts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.link_accounts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "log_streaming (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.log_streaming",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":5}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.logs",
+              "text": "{\"max\":5}"
+            }
+          },
+          {
+            "name": "marketplace (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.marketplace",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "mfa_enterprise_addon (raw feature setting)",
+            "value": "{\"max\":\"0\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.mfa_enterprise_addon",
+              "text": "{\"max\":\"0\"}"
+            }
+          },
+          {
+            "name": "mfa_factors_count (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.mfa_factors_count",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.orgs",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "role_management (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.role_management",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "scim (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.scim",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "standard_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.standard_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":3}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.tenants",
+              "text": "{\"max\":3}"
+            }
+          },
+          {
+            "name": "third_party_mfa_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.third_party_mfa_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_insights (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].features.user_insights",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].name",
+          "text": "B2B - Essentials"
+        }
+      },
+      {
+        "name": "B2B - Professional",
+        "order": 5,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=b2b_professional; type=self_service; public=true; plan_version=v3.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].plan_version",
+              "text": "b2b_professional; self_service; public=true; v3.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":100000,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].users_limits",
+              "text": "{\"external\":100000,\"employee\":0}"
+            }
+          },
+          {
+            "name": "action_libraries (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.action_libraries",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_editor (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.admin_rbac_editor",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_viewer (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.admin_rbac_viewer",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":10000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.admin_roles",
+              "text": "{\"max\":10000}"
+            }
+          },
+          {
+            "name": "advanced_customizations_universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.advanced_customizations_universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":5000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.apiCalls",
+              "text": "{\"max\":5000}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.custom_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.custom_domains",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_prompts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.custom_prompts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.custom_social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "customer_sso (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.customer_sso",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "email_workflow (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.email_workflow",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "enterprise_connections (raw feature setting)",
+            "value": "{\"max\":5}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.enterprise_connections",
+              "text": "{\"max\":5}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "event_streams (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.event_streams",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":15}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.forms_and_actions",
+              "text": "{\"max\":15}"
+            }
+          },
+          {
+            "name": "has_pro_form_features (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.has_pro_form_features",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "home_realm_discover (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.home_realm_discover",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "link_accounts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.link_accounts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "log_streaming (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.log_streaming",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":10}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.logs",
+              "text": "{\"max\":10}"
+            }
+          },
+          {
+            "name": "marketplace (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.marketplace",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "mfa_enterprise_addon (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.mfa_enterprise_addon",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "mfa_factors_count (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.mfa_factors_count",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.orgs",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "password_breach_detection (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.password_breach_detection",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "password_complexity (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.password_complexity",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "protocol_completeness_orgs (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.protocol_completeness_orgs",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "role_management (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.role_management",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "scim (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.scim",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "self_service_sso (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.self_service_sso",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "standard_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.standard_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":6}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.tenants",
+              "text": "{\"max\":6}"
+            }
+          },
+          {
+            "name": "third_party_mfa_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.third_party_mfa_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_insights (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].features.user_insights",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].name",
+          "text": "B2B - Professional"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 6,
+        "popular": null,
+        "kind": "plan",
+        "status": "unknown",
+        "offers": [],
+        "features": [
+          {
+            "name": "Definition identity",
+            "value": "plan=enterprise; type=custom_agreement; public=true; plan_version=v4.0.0",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].plan|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].type|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].public|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].plan_version",
+              "text": "enterprise; custom_agreement; public=true; v4.0.0"
+            }
+          },
+          {
+            "name": "User limits (raw configuration)",
+            "value": "{\"external\":0,\"employee\":0}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].users_limits",
+              "text": "{\"external\":0,\"employee\":0}"
+            }
+          },
+          {
+            "name": "ad_connector (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.ad_connector",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "adaptive_mfa (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.adaptive_mfa",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_admin (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.admin_rbac_admin",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_editor (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.admin_rbac_editor",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_rbac_viewer (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.admin_rbac_viewer",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "admin_roles (raw feature setting)",
+            "value": "{\"max\":100000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.admin_roles",
+              "text": "{\"max\":100000}"
+            }
+          },
+          {
+            "name": "adv_password_breach_detection (raw feature setting)",
+            "value": "{\"max\":\"0\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.adv_password_breach_detection",
+              "text": "{\"max\":\"0\"}"
+            }
+          },
+          {
+            "name": "advanced_customizations_universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.advanced_customizations_universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "advanced_identity_security (raw feature setting)",
+            "value": "{\"max\":\"0\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.advanced_identity_security",
+              "text": "{\"max\":\"0\"}"
+            }
+          },
+          {
+            "name": "apiCalls (raw feature setting)",
+            "value": "{\"max\":5000}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.apiCalls",
+              "text": "{\"max\":5000}"
+            }
+          },
+          {
+            "name": "bot_detection (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.bot_detection",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "client_initiated_backchannel_authentication (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.client_initiated_backchannel_authentication",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "community_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.community_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "compliance_certifications (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.compliance_certifications",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_domains (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_domains",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_email_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_email_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_emails (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_emails",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_prompts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_prompts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "custom_token_exchange (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.custom_token_exchange",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "customer_sso (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.customer_sso",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "db_migration (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.db_migration",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "email_workflow (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.email_workflow",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "enterprise_integrations (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.enterprise_integrations",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "entity_token_exchange_profiles (raw feature setting)",
+            "value": "{\"max\":100}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.entity_token_exchange_profiles",
+              "text": "{\"max\":100}"
+            }
+          },
+          {
+            "name": "event_streams (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.event_streams",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "forms_and_actions (raw feature setting)",
+            "value": "{\"max\":30}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.forms_and_actions",
+              "text": "{\"max\":30}"
+            }
+          },
+          {
+            "name": "has_custom_form_components (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.has_custom_form_components",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "has_pro_form_features (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.has_pro_form_features",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "hipaa_baa (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.hipaa_baa",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "home_realm_discover (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.home_realm_discover",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "identity_security_center (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.identity_security_center",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "link_accounts (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.link_accounts",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "log_streaming (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.log_streaming",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "logs (raw feature setting)",
+            "value": "{\"max\":30}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.logs",
+              "text": "{\"max\":30}"
+            }
+          },
+          {
+            "name": "long_lived_sessions (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.long_lived_sessions",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "metadatas (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.metadatas",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "mfa_enterprise_addon (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.mfa_enterprise_addon",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "multi_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.multi_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_access_gateway (raw feature setting)",
+            "value": "{\"max\":\"0\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.okta_access_gateway",
+              "text": "{\"max\":\"0\"}"
+            }
+          },
+          {
+            "name": "okta_enterprise_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.okta_enterprise_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "okta_universal_logout (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.okta_universal_logout",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "on_premises_deployment (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.on_premises_deployment",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "orgs (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.orgs",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passkeys (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.passkeys",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "password_breach_detection (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.password_breach_detection",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "password_complexity (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.password_complexity",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "passwordless_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.passwordless_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "performance_tier_multiplier (raw feature setting)",
+            "value": "{\"max\":\"0\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.performance_tier_multiplier",
+              "text": "{\"max\":\"0\"}"
+            }
+          },
+          {
+            "name": "premium_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.premium_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "protocol_completeness_orgs (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.protocol_completeness_orgs",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "role_management (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.role_management",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "rules_hooks_actions (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.rules_hooks_actions",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "scim (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.scim",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "security_center_destinations (raw feature setting)",
+            "value": "{\"max\":2}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.security_center_destinations",
+              "text": "{\"max\":2}"
+            }
+          },
+          {
+            "name": "self_service_sso (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.self_service_sso",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "session_extensibility (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.session_extensibility",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "single_user_brute_force (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.single_user_brute_force",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "sla (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.sla",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "social_connections (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.social_connections",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "sso_for_auth0_dashboard (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.sso_for_auth0_dashboard",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "standard_support (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.standard_support",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenants (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.tenants",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "tenant_access_controls (raw feature setting)",
+            "value": "{\"max\":1}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.tenant_access_controls",
+              "text": "{\"max\":1}"
+            }
+          },
+          {
+            "name": "third_party_mfa_provider (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.third_party_mfa_provider",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "universal_login (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.universal_login",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "unlimited_actions (raw feature setting)",
+            "value": "{\"max\":\"0\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.unlimited_actions",
+              "text": "{\"max\":\"0\"}"
+            }
+          },
+          {
+            "name": "user_database (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.user_database",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_insights (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.user_insights",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          },
+          {
+            "name": "user_stores (raw feature setting)",
+            "value": "{\"max\":\"Infinity\"}",
+            "source": {
+              "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].features.user_stores",
+              "text": "{\"max\":\"Infinity\"}"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].name",
+          "text": "Enterprise"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:41:03.665Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
     }
@@ -15469,6 +18895,130 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T19:29:39.643Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-manual-81bdc75eff91777e661dd67743af821bc2571fa8e5906ec41618b7e131ac1a95",
+    "productId": "fastmail",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-29T08:26:13.000Z",
+    "landingCapturedAt": "2025-06-29T08:26:13.000Z",
+    "pricingCapturedAt": "2025-06-29T08:26:13.000Z",
+    "evidenceAvailableAt": "2025-06-29T08:26:13.000Z",
+    "landingUrl": "https://www.fastmail.com/business/",
+    "pricingUrl": "https://www.fastmail.com/business/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250629082613id_/https://www.fastmail.com/business/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629082613id_/https://www.fastmail.com/business/",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Free trial",
+      "locator": "offset:28426-28740"
+    },
+    "sourceSha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20",
+    "landingSha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20",
+    "sourceDigest": "PZDEY4Y7JZRBXL5LWG7FAOAJEZG6XOFD",
+    "landingDigest": "PZDEY4Y7JZRBXL5LWG7FAOAJEZG6XOFD",
+    "fetchedAt": "2026-10-22T20:31:40.762Z",
+    "landingFetchedAt": "2026-10-22T20:31:40.762Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "PZDEY4Y7JZRBXL5LWG7FAOAJEZG6XOFD",
+      "actualDigest": "PGH6NUEXI6LWT63D42ZMIVRTVT67LABV",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "PZDEY4Y7JZRBXL5LWG7FAOAJEZG6XOFD",
+      "actualDigest": "PGH6NUEXI6LWT63D42ZMIVRTVT67LABV",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 08:26:13 GMT",
+      "originalUrl": "https://www.fastmail.com/business/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629093716/spn2-20250629063330-wwwb-spn34.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 08:26:13 GMT",
+      "originalUrl": "https://www.fastmail.com/business/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629093716/spn2-20250629063330-wwwb-spn34.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Canonical business landing explicitly offers a temporary 30-day free trial; no permanent free plan or recurring paid amount inferred.",
+      "Source archive digest remains legacy-qualified and unverified; explicit acceptance and partial-evidence warning required.",
+      "Official business-pricing link leaves /business; exact dated alias proof separately prepared. No personal plan or new scope inferred before supplemental source review.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Free trial",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "Try free for 30 days; No obligation, no credit card required.",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Free for 30 days; renewal rate unknown.",
+              "startingAt": null,
+              "range": null,
+              "volume": "No obligation, no credit card required.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:28426-28740|offset:28376-28831",
+              "text": "Try free for 30 days; No obligation, no credit card required."
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Business custom domain addresses",
+            "value": "Give organization members addresses on their domain; extra sales@ and support@ addresses at no extra cost.",
+            "source": {
+              "locator": "offset:36188-36371",
+              "text": "Give everyone in your org a professional email address at your domain. Extra addresses like sales@ and support@ can be added at no extra cost."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:28426-28740",
+          "text": "Try free for 30 days"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:41:03.726Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   },
   {

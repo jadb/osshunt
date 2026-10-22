@@ -1,0 +1,112 @@
+[
+  {
+    "productId": "greenhouse",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630111506",
+      "capturedAt": "2025-06-30T11:15:06.000Z",
+      "originalUrl": "https://www.greenhouse.com/",
+      "digest": "UTTH3JATTCEZVFPKGUOATIXMUU3WVG6Y",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "lever",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250628195946",
+      "capturedAt": "2025-06-28T19:59:46.000Z",
+      "originalUrl": "https://www.lever.co/",
+      "digest": "XZUNCDMVJKJLJAE6YL5P7PJ2EUXPGJAE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "fastmail",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629082613",
+      "capturedAt": "2025-06-29T08:26:13.000Z",
+      "originalUrl": "https://www.fastmail.com/business/",
+      "digest": "PZDEY4Y7JZRBXL5LWG7FAOAJEZG6XOFD",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zoho-mail",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630144050",
+      "capturedAt": "2025-06-30T14:40:50.000Z",
+      "originalUrl": "https://www.zoho.com/mail/",
+      "digest": "W7MB3OCSYFZ2SXDYA3JYFO7IFPE3IEX2",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "auth0",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630161344",
+      "capturedAt": "2025-06-30T16:13:44.000Z",
+      "originalUrl": "https://auth0.com/",
+      "digest": "DFDC4SOGIOG4M7VB325NQ2VT4VRW376R",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "auth0",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624225614",
+      "capturedAt": "2025-06-24T22:56:14.000Z",
+      "originalUrl": "https://auth0.com/pricing",
+      "digest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "okta",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629213406",
+      "capturedAt": "2025-06-29T21:34:06.000Z",
+      "originalUrl": "https://www.okta.com/",
+      "digest": "E6XMUWQBVURGEX5V2YCNFNUJVPNZDZBJ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "tailscale",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630230552",
+      "capturedAt": "2025-06-30T23:05:52.000Z",
+      "originalUrl": "https://tailscale.com/",
+      "digest": "35GB63HEFXVYBVHB6KHCK75XYOEIDGKR",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "tailscale",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250629161354",
+      "capturedAt": "2025-06-29T16:13:54.000Z",
+      "originalUrl": "https://tailscale.com/pricing",
+      "digest": "QVEZFXINBXQM4W7MJLBWBAMYKXKILVK2",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "freshservice-itam",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250612180559",
+      "capturedAt": "2025-06-12T18:05:59.000Z",
+      "originalUrl": "https://www.freshworks.com/freshservice/itam/",
+      "digest": "UF7YHM2CC5JDWYM5MGKA75HVMFPQHSEP",
+      "mimeType": "text/html"
+    }
+  }
+]

@@ -54,5 +54,33 @@
       "deployment": "hosted"
     },
     "locale": "en"
+  },
+  {
+    "productId": "fastmail",
+    "url": "https://www.fastmail.com/pricing/?plan-type=business",
+    "evidenceCapturedAt": "2025-06-29T08:26:13.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250629082613id_/https://www.fastmail.com/business/",
+    "evidenceSha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20",
+    "locator": "offset:54830-55372",
+    "label": "See business pricing",
+    "scope": {
+      "edition": "Business pricing",
+      "deployment": "unknown"
+    },
+    "locale": "en"
+  },
+  {
+    "productId": "freshservice-itam",
+    "url": "https://www.freshworks.com/freshservice/pricing/",
+    "evidenceCapturedAt": "2025-06-12T18:05:59.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250612180559id_/https://www.freshworks.com/freshservice/itam/",
+    "evidenceSha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a",
+    "locator": "offset:110630-110902",
+    "label": "Pricing",
+    "scope": {
+      "edition": "Freshservice suite pricing",
+      "deployment": "unknown"
+    },
+    "locale": "en"
   }
 ]
