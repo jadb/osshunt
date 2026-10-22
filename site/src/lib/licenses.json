@@ -1,0 +1,610 @@
+{
+  "AGPL-3.0": {
+    "title": "GNU Affero General Public License v3.0",
+    "description": "Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      },
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "Network use is distribution",
+        "description": "Users who interact with the licensed material via network are given the right to receive a copy of the source code."
+      },
+      {
+        "label": "Same license",
+        "description": "Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/agpl-3.0/"
+  },
+  "MIT": {
+    "title": "MIT License",
+    "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/mit/"
+  },
+  "Apache-2.0": {
+    "title": "Apache License 2.0",
+    "description": "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Trademark use",
+        "description": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights."
+      },
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/apache-2.0/"
+  },
+  "GPL-3.0": {
+    "title": "GNU General Public License v3.0",
+    "description": "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      },
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "Same license",
+        "description": "Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/gpl-3.0/"
+  },
+  "GPL-2.0": {
+    "title": "GNU General Public License v2.0",
+    "description": "The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      },
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "Same license",
+        "description": "Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/gpl-2.0/"
+  },
+  "MPL-2.0": {
+    "title": "Mozilla Public License 2.0",
+    "description": "Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "Same license (file)",
+        "description": "Modifications of existing files must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Trademark use",
+        "description": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/mpl-2.0/"
+  },
+  "BSD-3-Clause": {
+    "title": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "description": "A permissive license similar to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/bsd-3-clause/"
+  },
+  "BSD-2-Clause": {
+    "title": "BSD 2-Clause \"Simplified\" License",
+    "description": "A permissive license that comes in two variants, the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause</a> and <a href=\"/licenses/bsd-3-clause/\">BSD 3-Clause</a>. Both have very minute differences to the MIT license.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/bsd-2-clause/"
+  },
+  "LGPL-3.0": {
+    "title": "GNU Lesser General Public License v3.0",
+    "description": "Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      },
+      {
+        "label": "Same license (library)",
+        "description": "Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used, or this condition may not apply to works that use the licensed material as a library."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/lgpl-3.0/"
+  },
+  "EPL-2.0": {
+    "title": "Eclipse Public License 2.0",
+    "description": "This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "Same license",
+        "description": "Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/epl-2.0/"
+  },
+  "OSL-3.0": {
+    "title": "Open Software License 3.0",
+    "description": "Permissions of this copyleft license are conditioned on distributing source code of licensed works and modifications under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. Using the work or modifications to provide services to external users is treated as distribution and also requires making source code available. Works that merely link to a licensed work are considered collective works and are not subject to the license's reciprocity requirements.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "Disclose source",
+        "description": "Source code must be made available when the licensed material is distributed."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      },
+      {
+        "label": "Network use is distribution",
+        "description": "Users who interact with the licensed material via network are given the right to receive a copy of the source code."
+      },
+      {
+        "label": "Same license",
+        "description": "Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Trademark use",
+        "description": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights."
+      },
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/osl-3.0/"
+  },
+  "AFL-3.0": {
+    "title": "Academic Free License v3.0",
+    "description": "The Academic Free License is a variant of the Open Software License that does not require that the source code of derivative works be disclosed. It contains explicit copyright and patent grants and reserves trademark rights in the author.",
+    "permissions": [
+      {
+        "label": "Commercial use",
+        "description": "The licensed material and derivatives may be used for commercial purposes."
+      },
+      {
+        "label": "Modification",
+        "description": "The licensed material may be modified."
+      },
+      {
+        "label": "Distribution",
+        "description": "The licensed material may be distributed."
+      },
+      {
+        "label": "Private use",
+        "description": "The licensed material may be used and modified in private."
+      },
+      {
+        "label": "Patent use",
+        "description": "This license provides an express grant of patent rights from contributors."
+      }
+    ],
+    "conditions": [
+      {
+        "label": "License and copyright notice",
+        "description": "A copy of the license and copyright notice must be included with the licensed material."
+      },
+      {
+        "label": "State changes",
+        "description": "Changes made to the licensed material must be documented."
+      }
+    ],
+    "limitations": [
+      {
+        "label": "Trademark use",
+        "description": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights."
+      },
+      {
+        "label": "Liability",
+        "description": "This license includes a limitation of liability."
+      },
+      {
+        "label": "Warranty",
+        "description": "This license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "url": "https://choosealicense.com/licenses/afl-3.0/"
+  }
+}

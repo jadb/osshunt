@@ -1,0 +1,75 @@
+---
+import FactsLabel from './FactsLabel.astro';
+import { type homeData } from '../lib/home';
+interface Props { scenes: Awaited<ReturnType<typeof homeData>>['scenes'] }
+const { scenes } = Astro.props;
+---
+<div class="loop" data-loop role="group" aria-roledescription="carousel" aria-live="off" aria-label="Examples of paid tools and their open-source alternatives">
+  {scenes.flatMap((s, si) => s.pages.map((pg, pi) => {
+    const next = s.pages[(pi + 1) % s.pages.length];
+    const shown = Math.min((pi + 1) * 2, s.total);
+    return (
+      <section class:list={['view', { on: si === 0 && pi === 0 }]} data-scene={si} data-page={pi} aria-label={`${s.name}, alternatives ${pi * 2 + 1} to ${shown} of ${s.total}`} aria-hidden={si === 0 && pi === 0 ? 'false' : 'true'}>
+        <div class="inc">
+          <span class="tile">{s.logo && <img src={`/logos/${s.logo}.svg`} alt="" width="56" height="56" />}</span>
+          <p class="inc-text"><b>{s.name}</b><span>Entry price {s.price}</span></p>
+        </div>
+        <div class="alts">{pg.map((a) => <FactsLabel {...a} incumbent={s.name} />)}</div>
+        <p class="loop-foot"><span>{shown} of {s.total}</span>{s.pages.length > 1 && <button type="button" class="next" data-next>Next: {next.map((a) => a.short).join(' | ')}</button>}</p>
+      </section>
+    );
+  }))}
+</div>
+
+<style>
+  /* All views share one grid cell so the hero keeps the height of the tallest one. */
+  .loop { display: grid; }
+  .view { grid-area: 1 / 1; visibility: hidden; opacity: 0; transform: translateX(14px); transition: opacity 0.25s ease-out, transform 0.25s ease-out, visibility 0s linear 0.25s; }
+  .view.on { visibility: visible; opacity: 1; transform: none; transition: opacity 0.25s ease-out 0.05s, transform 0.25s ease-out 0.05s, visibility 0s; }
+  .inc { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .tile { width: 76px; height: 76px; border: var(--rule-3) solid var(--ink); display: grid; place-items: center; flex: none; }
+  .tile img { width: 56px; height: 56px; object-fit: contain; }
+  .inc-text { margin: 0; display: grid; font-size: 0.9375rem; }
+  .inc-text b { font-size: 1.5rem; font-family: var(--display); font-weight: 900; line-height: 1.1; }
+  .alts { display: grid; gap: 12px; }
+  .loop-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 0.8125rem; color: var(--ink-2); margin: 10px 0 0; }
+  .next { font: 400 0.8125rem 'Archivo', sans-serif; text-align: right; color: var(--ink); background: none; border: 0; border-bottom: 2px solid var(--ink); padding: 2px 0; cursor: pointer; }
+  .next:hover { background: var(--band); }
+  @media (prefers-reduced-motion: reduce) { .view, .view.on { transition: none; transform: none; } }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-loop]');
+  if (root) {
+    const views = [...root.querySelectorAll<HTMLElement>('[data-view], .view')];
+    const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
+    const still = matchMedia('(prefers-reduced-motion: reduce)');
+    const pagesOf = (s: number) => views.filter((v) => Number(v.dataset.scene) === s).length;
+    let scene = 0, page = 0, timer = 0, stopped = false;
+    const show = (s: number, p: number) => {
+      scene = (s + chips.length) % chips.length; page = p;
+      views.forEach((v) => {
+        const on = Number(v.dataset.scene) === scene && Number(v.dataset.page) === page;
+        v.classList.toggle('on', on); v.setAttribute('aria-hidden', String(!on));
+      });
+      chips.forEach((c, n) => c.setAttribute('aria-pressed', String(n === scene)));
+    };
+    // Rotates samples until the first click, key press or focus anywhere; hover pauses it.
+    const start = () => {
+      window.clearInterval(timer);
+      if (!stopped && !still.matches) timer = window.setInterval(() => show(scene + 1, 0), 8000);
+    };
+    const stop = () => { stopped = true; window.clearInterval(timer); };
+    chips.forEach((c, n) => c.addEventListener('click', () => show(n, 0)));
+    root.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('[data-next]')) show(scene, (page + 1) % pagesOf(scene));
+    });
+    document.addEventListener('click', stop, { once: true, capture: true });
+    document.addEventListener('keydown', stop, { once: true, capture: true });
+    document.addEventListener('focusin', stop, { once: true });
+    root.addEventListener('pointerenter', () => window.clearInterval(timer));
+    root.addEventListener('pointerleave', start);
+    still.addEventListener('change', start);
+    start();
+  }
+</script>

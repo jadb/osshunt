@@ -1,0 +1,20 @@
+---
+import Page from '../../layouts/Page.astro';
+import { indexData } from '../../lib/compare';
+const { oss } = await indexData();
+const open = oss.filter((o) => 'ABC'.includes(o.tier));
+const rest = oss.filter((o) => !'ABC'.includes(o.tier));
+---
+<Page title="Open-source alternatives | OSSHunt" description={`${open.length} open-source alternatives and ${rest.length} source-available or unresolved candidates, each mapped to the paid tools it replaces.`}>
+  <main id="main" class="wrap ix">
+    <h1>Alternatives</h1>
+    <p class="lede">{open.length} open-source projects. The number is how many paid tools each is mapped from.</p>
+    <ul>{open.map((p) => <li><a href={`/alternatives/${p.id}/`}>{p.name}<span>{p.n}</span></a></li>)}</ul>
+    <h2>Source-available or unresolved</h2>
+    <p class="lede">Kept apart: not OSI open source, or license scope not settled.</p>
+    <ul>{rest.map((p) => <li><a href={`/alternatives/${p.id}/`}>{p.name}<span>{p.tier}</span></a></li>)}</ul>
+  </main>
+</Page>
+<style is:global>
+  .ix h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 40px 0 6px; }
+</style>
