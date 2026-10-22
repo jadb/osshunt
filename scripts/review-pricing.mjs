@@ -6,7 +6,7 @@ import { promisify } from 'node:util';
 import { parseArgs } from 'node:util';
 import { FilePricingStore } from '../lib/pricing/stores-file.mjs';
 import { FileHistoryStore } from '../lib/history/stores-file.mjs';
-import { exportReview, importReview, observationBodies } from '../lib/pricing/review.mjs';
+import { exportReview, importReview, observationBodies, reviewBodyMetadata, verifyReviewBody } from '../lib/pricing/review.mjs';
 import { sha256 } from '../lib/pricing/archive.mjs';
 import { buildPricingCollection } from './build-pricing-collection.mjs';
 
@@ -38,14 +38,16 @@ export async function downloadCloudReview({ productId, store, database, bucket, 
     checkpoint: row.checkpoint ? JSON.parse(row.checkpoint) : null };
   for (const proposal of record.checkpoint?.proposals || []) {
     for (const source of observationBodies(proposal)) {
-      if (await store.getBody(source.identity)) continue;
+      const existing = await store.getBody(source.identity);
+      if (existing) { await verifyReviewBody(source, existing); continue; }
       const key = await sha256(source.identity), file = resolve(store.storage.root, `${key}.download`);
       await mkdir(store.storage.root, { recursive: true });
       await command('wrangler', ['r2', 'object', 'get', `${bucket}/pricing-evidence/${key}`, '--remote', '--file', file,
         '--config', config], { maxBuffer: 1024 * 1024, timeout: 60000 });
       const bytes = new Uint8Array(await readFile(file));
       if (await sha256(bytes) !== source.sha256) throw new Error('Cloud source hash mismatch');
-      await store.putBody(source.identity, bytes, { sha256: source.sha256, mimeType: 'text/html' });
+      const checked = await verifyReviewBody(source, { bytes, metadata: reviewBodyMetadata(source) });
+      await store.putBody(source.identity, bytes, checked.metadata);
     }
   }
   await store.storage.atomic(store.storage.path(`pricing-${productId}`), record);
@@ -73,7 +75,7 @@ export async function reviewPricing(argv = process.argv.slice(2)) {
     const output = resolve(values.out);
     for (const item of document.observations) for (const source of item.sources) {
       const body = await store.getBody(source.identity);
-      if (!body || await sha256(body.bytes) !== source.sha256) throw new Error('Source body missing or changed');
+      await verifyReviewBody(source, body);
       const target = resolve(dirname(output), source.file);
       await mkdir(dirname(target), { recursive: true });
       await writeFile(target, body.bytes, { mode: 0o600 });
