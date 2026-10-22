@@ -1,5 +1,7 @@
 ---
 import Page from '../../layouts/Page.astro';
+import SourceLinks from '../../components/SourceLinks.astro';
+import FitMark from '../../components/FitMark.astro';
 import FactsLabel from '../../components/FactsLabel.astro';
 import { alternativePaths, alternativeData, LOGOS, usd } from '../../lib/compare';
 
@@ -21,6 +23,7 @@ const price = (p: (typeof replaces)[number]['pricing']) =>
         <h1>{alt.name}</h1>
         <p class="lede">Open-source alternative · mapped from {replaces.length} paid tool{replaces.length === 1 ? '' : 's'}. Fit is not feature parity.</p>
       </div>
+      <SourceLinks url={alt.url} repo={alt.repo} name={alt.name} />
     </header>
 
     <div class="cols">
@@ -39,7 +42,7 @@ const price = (p: (typeof replaces)[number]['pricing']) =>
           {replaces.map((r, i) => (
             <li class="slide">
               <div class="who">{LOGOS[r.id] && <span class="tile sm"><img src={`/logos/${LOGOS[r.id]}.svg`} alt="" width="36" height="36" /></span>}<p><b>{r.name}</b><span>Entry price {price(r.pricing)}</span></p></div>
-              <p class="fitline"><b>Fit: {r.fitLabel}.</b></p>
+              <p class="fitline"><b class="fl">Fit: <FitMark fit={r.fit} size={22} align="left" /></b></p>
               <p>{r.notes}</p>
               <p class="note">Sources: {r.sources.map((u, n) => <>{n ? ', ' : ''}<a href={u}>{new URL(u).hostname}</a></>)} · checked {CHECKED}</p>
               <a class="go" href={`/compare/${r.pair}/`}>Full comparison: {r.name} vs {alt.name}</a>
@@ -72,6 +75,7 @@ const price = (p: (typeof replaces)[number]['pricing']) =>
   .who { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
   .who p { margin: 0; display: grid; font-size: 0.875rem; }
   .who b { font-family: var(--display); font-weight: 900; font-size: 1.5rem; line-height: 1.1; }
+  .fl { display: inline-flex; align-items: center; gap: 6px; margin-right: 8px; }
   .fitline { background: var(--band); border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); padding: 6px 10px; margin: 0 0 12px; display: inline-block; }
   .slide > p { max-width: 62ch; }
   .go { display: inline-block; margin-top: 8px; font-weight: 800; }

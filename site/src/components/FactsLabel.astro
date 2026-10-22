@@ -1,18 +1,20 @@
 ---
-import { FIT_LABEL, type Fit } from '../lib/home';
+import { type Fit } from '../lib/home';
+import FitMark from './FitMark.astro';
 import TierBox from './TierBox.astro';
 import License from './License.astro';
 import Tip from './Tip.astro';
 import Icon from './Icon.astro';
+import SourceLinks from './SourceLinks.astro';
 interface Props {
-  name: string; logo?: string; fit?: Fit; license: string; osi: boolean; tier: string;
-  selfHost: boolean; limits: number; incumbent?: string; hideHead?: boolean; noFit?: boolean;
+  id?: string; name: string; logo?: string; fit?: Fit; license: string; osi: boolean; tier: string;
+  selfHost: boolean; limits: number; incumbent?: string; hideHead?: boolean; noFit?: boolean; url?: string; repo?: string;
 }
 const a = Astro.props;
 ---
 <article class="facts">
-  {!a.hideHead && <header class="facts-head">{a.logo && <img src={`/logos/${a.logo}.svg`} alt="" width="28" height="28" />}<h3>{a.name}</h3></header>}
-  {!a.noFit && a.fit && <div class="facts-row fit"><span>Fit for {a.incumbent}</span><span>{FIT_LABEL[a.fit]}</span></div>}
+  {!a.hideHead && <header class="facts-head">{a.logo && <img src={`/logos/${a.logo}.svg`} alt="" width="28" height="28" />}<h3>{a.id ? <a href={`/alternatives/${a.id}/`}>{a.name}</a> : a.name}</h3><SourceLinks url={a.url} repo={a.repo} name={a.name} /></header>}
+  {!a.noFit && a.fit && <div class="facts-row fit"><span>Fit for {a.incumbent}</span><FitMark fit={a.fit} /></div>}
   <div class="facts-row" class:list={[{ lead: a.noFit }]}><span>License</span><License license={a.license} osi={a.osi} /></div>
   <div class="facts-row"><span>Paid-feature tier</span><TierBox tier={a.tier} /></div>
   <div class="facts-row"><span>Self-host</span>

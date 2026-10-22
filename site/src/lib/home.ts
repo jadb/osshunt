@@ -1,4 +1,6 @@
 import { getCollection } from 'astro:content';
+import { LOGOS } from './logos';
+import { shortName } from './names';
 
 export const CHECKED = '2026-10-21';
 
@@ -9,16 +11,17 @@ export const FIT_LABEL: Record<Fit, string> = {
   'different-approach': 'Different approach',
 };
 
-// Scenes need a logo for the incumbent and every alternative shown; svgl coverage decides.
+// Samples shown in the hero; chip is the short label. Every mapped alternative becomes a sheet, two per page.
 const SCENES = [
-  { id: 'slack', logo: 'slack', alts: [['mattermost', 'mattermost-light'], ['zulip', 'zulip']] },
-  { id: 'microsoft-teams', logo: 'microsoft-teams', alts: [['mattermost', 'mattermost-light'], ['zulip', 'zulip']] },
-  { id: 'firebase', logo: 'firebase', alts: [['appwrite', 'appwrite'], ['supabase', 'supabase']] },
-  { id: '1password', logo: '1password-light', alts: [['bitwarden', 'bitwarden']] },
-  { id: 'figma', logo: 'figma', alts: [['penpot', 'penpot']] },
-  { id: 'postman', logo: 'postman', alts: [['hoppscotch', 'hoppscotch']] },
-  { id: 'datadog', logo: 'datadog', alts: [['grafana', 'grafana']] },
+  { id: 'slack', chip: 'Slack', lead: ['mattermost', 'zulip'] },
+  { id: 'microsoft-teams', chip: 'Teams', lead: ['mattermost', 'zulip'] },
+  { id: 'firebase', chip: 'Firebase', lead: ['appwrite', 'supabase'] },
+  { id: '1password', chip: '1Password', lead: ['bitwarden'] },
+  { id: 'figma', chip: 'Figma', lead: ['penpot'] },
+  { id: 'postman', chip: 'Postman', lead: ['hoppscotch'] },
+  { id: 'datadog', chip: 'Datadog', lead: ['grafana'] },
 ] as const;
+const PAGE = 2;
 
 const money = (p: { entryAmount: number | null; currency: string; unit: string; period: string; model: string }) => {
   if (p.entryAmount == null) {
@@ -42,19 +45,19 @@ export async function homeData() {
   const scenes = SCENES.map((s) => {
     const inc = P.get(s.id)!;
     if (inc.kind !== 'paid') throw new Error(`${s.id} is not a paid incumbent`);
-    return {
-      id: s.id, name: inc.name, logo: s.logo,
-      price: money(inc.pricing), priceSource: inc.pricing.source,
-      alts: s.alts.map(([id, logo]) => {
-        const a = P.get(id)!;
-        if (a.kind !== 'oss') throw new Error(`${id} is not an alternative`);
-        const map = maps.find((m) => m.data.id === `${s.id}--${id}`)!.data;
-        return { id, logo, name: a.name, fit: map.fit as Fit, license: a.license, osi: a.osi, tier: a.tier,
-          selfHost: a.selfHostable,
-          limits: a.locked.length };
-      }),
-      total: altCount.get(s.id) ?? 0,
-    };
+    const order = { 'drop-in': 0, partial: 1, 'different-approach': 2 } as Record<string, number>;
+    const alts = maps.filter((m) => m.data.from === s.id).map((m) => {
+      const a = P.get(m.data.to)!;
+      if (a.kind !== 'oss') throw new Error(`${m.data.to} is not an alternative`);
+      return { id: a.id, logo: LOGOS[a.id], name: a.name, short: shortName(a.name), fit: m.data.fit as Fit, license: a.license, osi: a.osi,
+        tier: a.tier, selfHost: a.selfHostable, url: a.url, repo: a.repo, limits: a.locked.length };
+    }).sort((x, y) => {
+      const lx = (s.lead as readonly string[]).indexOf(x.id), ly = (s.lead as readonly string[]).indexOf(y.id);
+      if ((lx >= 0) !== (ly >= 0)) return lx >= 0 ? -1 : 1;
+      return lx - ly || Number(!!y.logo) - Number(!!x.logo) || order[x.fit] - order[y.fit] || x.name.localeCompare(y.name);
+    });
+    const pages = Array.from({ length: Math.ceil(alts.length / PAGE) }, (_, i) => alts.slice(i * PAGE, (i + 1) * PAGE));
+    return { id: s.id, chip: s.chip, name: inc.name, logo: LOGOS[s.id], price: money(inc.pricing), total: alts.length, pages };
   });
 
   const rankOf = (p: (typeof paid)[number]) => Math.min(...p.categories.map((c) => rank.get(c) ?? 999));

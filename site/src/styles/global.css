@@ -47,7 +47,7 @@ h1, h2, h3 { margin: 0; text-wrap: balance; }
 .facts-row { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-bottom: var(--rule-1) solid var(--ink); padding: 3px 0; }
 .facts-row > :first-child { flex: none; }
 .facts-row > :last-child { text-align: right; margin-left: auto; min-width: 0; overflow-wrap: anywhere; }
-.facts-row.fit { border-bottom: 4px solid var(--ink); background: var(--band); padding: 5px 6px; margin-inline: -6px; font-weight: 800; }
+.facts-row.fit { border-bottom: 4px solid var(--ink); background: var(--band); padding: 5px 6px; margin-inline: 0; font-weight: 800; }
 .facts-row:last-child { border-bottom: 0; }
 .facts-row:first-child.fit { border-top: 0; }
 .facts-row.lead { border-top: 0; }
@@ -74,6 +74,16 @@ details.group > summary > * { margin: 0; }
 .lic { display: inline-flex; gap: 6px; align-items: center; }
 .licmark { display: grid; place-items: center; }
 .licmark img { width: 20px; height: 20px; object-fit: contain; }
-.ic { display: inline-grid; place-items: center; width: 30px; height: 30px; border: 2px solid var(--ink); color: var(--ink); }
-.ic.no { color: #767676; border-color: #767676; background: repeating-linear-gradient(135deg, transparent 0 7px, #cfcfcf 7px 8px); }
+.ic { display: inline-grid; place-items: center; width: 30px; height: 30px; color: var(--ink); }
+.ic.no { color: #767676; background: repeating-linear-gradient(135deg, transparent 0 7px, #cfcfcf 7px 8px); }
 .facts-foot { margin: 6px 0 0; font-size: 0.75rem; color: var(--ink-2); }
+.fitmark svg { flex: none; }
+.slinks { display: inline-flex; gap: 10px; align-items: center; }
+.slinks a { display: grid; place-items: center; width: 24px; height: 24px; color: var(--ink); text-decoration: none; }
+.slinks a:hover { background: var(--band); }
+.slinks img { width: 20px; height: 20px; }
+.facts-head .slinks { margin-left: auto; }
+.head > .slinks { margin-left: auto; }
+.who .slinks { margin-left: auto; }
+.facts-head h3 a { text-decoration: none; }
+.facts-head h3 a:hover { text-decoration: underline; background: none; }

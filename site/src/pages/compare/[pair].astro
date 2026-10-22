@@ -1,7 +1,9 @@
 ---
 import Page from '../../layouts/Page.astro';
 import Switcher from '../../components/Switcher.astro';
+import SourceLinks from '../../components/SourceLinks.astro';
 import RunKit from '../../components/RunKit.astro';
+import FitMark from '../../components/FitMark.astro';
 import FactsLabel from '../../components/FactsLabel.astro';
 import { comparePaths, compareData, LOGOS, usd } from '../../lib/compare';
 
@@ -30,7 +32,7 @@ const logoOf = (id: string) => LOGOS[id];
 
     <header class="cmp-head">
       <h1>{inc.name} <span>vs</span> {alt.name}</h1>
-      <p class="fitline"><b>Fit: {fitLabel}.</b> Fit is not feature parity.</p>
+      <p class="fitline"><b class="fl">Fit: <FitMark fit={map.fit} size={24} align="left" /></b></p>
     </header>
 
     {siblings.length > 1 && <Switcher label={`All ${inc.name} comparisons`} items={siblings.map((x) => ({ href: `/compare/${x.id}/`, name: x.name, fit: x.fit }))} current={`/compare/${map.id}/`} />}
@@ -43,7 +45,7 @@ const logoOf = (id: string) => LOGOS[id];
 
     <section class="sheets" aria-label="Side-by-side facts">
       <div class="sheet-col">
-        <div class="who">{logoOf(inc.id) && <span class="tile"><img src={`/logos/${logoOf(inc.id)}.svg`} alt="" width="48" height="48" /></span>}<p><b>{inc.name}</b><span>Paid incumbent</span></p></div>
+        <div class="who">{logoOf(inc.id) && <span class="tile"><img src={`/logos/${logoOf(inc.id)}.svg`} alt="" width="48" height="48" /></span>}<p><b><a href={`/software/${inc.id}/`}>{inc.name}</a></b><span>Paid incumbent</span></p></div>
         <article class="facts">
                     <div class="facts-row fit"><span>Entry price</span><span>{inc.pricing.entryAmount != null ? `${usd(inc.pricing.entryAmount)} / ${inc.pricing.unit} / ${inc.pricing.period}` : inc.pricing.model === 'usage' ? 'Usage-based' : 'Not established'}</span></div>
           <div class="facts-row"><span>Pricing model</span><span>{inc.pricing.model}, billed {inc.pricing.billing}</span></div>
@@ -58,7 +60,7 @@ const logoOf = (id: string) => LOGOS[id];
       </div>
 
       <div class="sheet-col">
-        <div class="who">{logoOf(alt.id) && <span class="tile"><img src={`/logos/${logoOf(alt.id)}.svg`} alt="" width="48" height="48" /></span>}<p><b>{alt.name}</b><span>Open-source alternative</span></p></div>
+        <div class="who">{logoOf(alt.id) && <span class="tile"><img src={`/logos/${logoOf(alt.id)}.svg`} alt="" width="48" height="48" /></span>}<p><b><a href={`/alternatives/${alt.id}/`}>{alt.name}</a></b><span>Open-source alternative</span></p><SourceLinks url={alt.url} repo={alt.repo} name={alt.name} /></div>
         <FactsLabel name={alt.name} fit={map.fit} license={alt.license} osi={alt.osi} tier={alt.tier}
           selfHost={alt.selfHostable}
           limits={alt.locked.length} incumbent={inc.name} hideHead />
@@ -94,6 +96,7 @@ const logoOf = (id: string) => LOGOS[id];
   .crumbs span { color: var(--ink-2); }
   h1 { font-size: clamp(2.25rem, 5vw, 4.25rem); line-height: 1; font-family: var(--display); font-weight: 900; margin-bottom: 14px; }
   h1 span { font-weight: 400; font-family: 'Archivo', sans-serif; font-size: 0.5em; vertical-align: 0.25em; }
+  .fl { display: inline-flex; align-items: center; gap: 6px; margin-right: 8px; }
   .fitline { margin: 0 0 24px; font-size: 1.0625rem; background: var(--band); border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); padding: 8px 12px; display: inline-block; }
   h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin-bottom: 10px; }
   h3 { font-size: 0.9375rem; font-weight: 800; margin: 14px 0 4px; }
@@ -104,6 +107,8 @@ const logoOf = (id: string) => LOGOS[id];
   .sheets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin-bottom: 36px; align-items: start; }
   .who { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
   .who p { margin: 0; display: grid; font-size: 0.875rem; }
+  .who b a { text-decoration: none; }
+  .who b a:hover { text-decoration: underline; background: none; }
   .who b { font-family: var(--display); font-weight: 900; font-size: 1.5rem; line-height: 1.1; }
   .tile { width: 64px; height: 64px; border: 3px solid var(--ink); display: grid; place-items: center; }
   .tile img { width: 44px; height: 44px; object-fit: contain; }
