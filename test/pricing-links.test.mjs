@@ -69,3 +69,51 @@ test('an ambiguous top-level comparison navigation ranks below a known pricing s
   assert.deepEqual(links.map(l => [l.url, l.provenance]), [['https://vendor.com/pricing', 'current-source-hint'],
     ['https://vendor.com/compare', 'archived-link']]);
 });
+
+test('free and premium plan navigation retains the scoped HubSpot sales price source', () => {
+  const links = discoverPricingLinks('<a href="//www.hubspot.com/products/marketing">Free and premium plans</a>' +
+    '<a href="//www.hubspot.com/products/sales">Free and premium plans</a>', {
+      landingUrl: 'https://www.hubspot.com/products/sales', productPaths: ['/products/sales'] });
+  assert.deepEqual(links.map(l => [l.url, l.label, l.provenance]), [
+    ['https://www.hubspot.com/products/sales', 'Free and premium plans', 'archived-link']]);
+});
+test('explicit business pricing comparison stays ahead of later enterprise and nonprofit navigation', () => {
+  const business = 'https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2';
+  const enterprise = 'https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing';
+  const nonprofit = 'https://www.microsoft.com/en-us/microsoft-365/enterprise/nonprofit-plans-and-pricing';
+  const links = discoverPricingLinks(`<a href="${business}">Pricing for business</a>` +
+    `<a href="${enterprise}">Pricing for enterprise</a><a href="${nonprofit}">For Nonprofits</a>` +
+    '<a href="https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products">Plans and pricing</a>', {
+      landingUrl: 'https://www.microsoft.com/en-us/microsoft-365/business',
+      productPaths: ['/en-us/microsoft-365/business', '/en-us/microsoft-365/enterprise'] });
+  assert.deepEqual(links.slice(0, 2).map(l => l.url), [business, enterprise]);
+  assert.equal(links[0].label, 'Pricing for business');
+});
+test('exact archived query variants remain separate while a query-free pricing anchor gets budget priority', () => {
+  const query = 'https://workspace.google.com/pricing.html?source=gafb-alpha_%5Bbasename%5D_6803441-globalnav-en';
+  const plain = 'https://workspace.google.com/pricing.html';
+  const links = discoverPricingLinks(`<a href="${query}#add-ons-sold-separately">Add-ons</a>` +
+    `<a href="${query}">Pricing</a><a href="#pricing">Plans &amp; pricing</a>` +
+    `<a href="${plain}">Compare pricing plans</a>`, { landingUrl: 'https://workspace.google.com/' });
+  assert.deepEqual(links.slice(0, 2).map(l => l.url), ['https://workspace.google.com/', plain]);
+  assert.deepEqual(links.map(l => l.url).sort(), ['https://workspace.google.com/', plain, query].sort());
+  const retained = links.find(l => l.url === query);
+  assert.equal(retained.label, 'Pricing');
+  assert.match(retained.locator, /^offset:/);
+  assert.equal(retained.provenance, 'archived-link');
+});
+
+test('billing and regional query variants keep their exact independent source identities', () => {
+  const urls = ['https://vendor.com/pricing?billing=annual&region=CA',
+    'https://vendor.com/pricing?billing=monthly&region=US'];
+  const html = urls.map(url => `<a href="${url}">Pricing</a>`).join('');
+  const separate = discoverPricingLinks(html, { landingUrl: 'https://vendor.com/' });
+  assert.deepEqual(separate.map(l => l.url), urls);
+  const withPlain = discoverPricingLinks(html + '<a href="/pricing">Pricing</a>', {
+    landingUrl: 'https://vendor.com/' });
+  assert.deepEqual(withPlain.map(l => l.url), [...urls, 'https://vendor.com/pricing']);
+  assert.ok(withPlain.every(l => l.provenance === 'archived-link'));
+  const hintOnly = discoverPricingLinks(html, { landingUrl: 'https://vendor.com/',
+    hints: ['https://vendor.com/pricing'] });
+  assert.deepEqual(hintOnly.map(l => l.url), [...urls, 'https://vendor.com/pricing']);
+});
