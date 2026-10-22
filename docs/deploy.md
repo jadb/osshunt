@@ -12,12 +12,8 @@ The Astro site in `site/` builds to static files in `site/dist` and is served by
 
 ## Custom domain
 
-Add a route to `site/wrangler.jsonc` once the domain's DNS is a zone in the same Cloudflare account:
+`osshunt.com` is served by this worker (`routes` with `custom_domain: true` in `site/wrangler.jsonc`). The zone is in the Idea Crafters Cloudflare account and the registrar nameservers point at Cloudflare. `workers_dev` and `preview_urls` stay on, so the workers.dev address and PR preview URLs keep working.
 
-```jsonc
-"routes": [{ "pattern": "osshunt.com", "custom_domain": true }]
-```
-
-Cloudflare then creates the DNS record and certificate on the next deploy. A domain whose nameservers are at another provider is not eligible until its zone is added to the account and the registrar points to Cloudflare's nameservers.
+For a new site, the `cfsite` helper (`~/.agents/scripts/cfsite`) scaffolds the workflow, creates the zone, checks and sets the registrar nameservers, creates the scoped deploy token, sets the repo secrets and deploys.
 
 The history backend in `worker/history/` is a separate Worker and is not deployed by this workflow.
