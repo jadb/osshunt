@@ -10,8 +10,8 @@ const total = groups.reduce((n, g) => n + g.items.length, 0);
     <h1>Categories</h1>
     <p class="lede">{total} categories, ordered by editorial audience reach. Audience position is an estimate, not a measured market size.</p>
     {groups.map((g) => (
-      <section aria-labelledby={`r-${g.reach}`}>
-        <h2 id={`r-${g.reach}`}>{REACH_LABEL[g.reach]}</h2>
+      <details class="sec group" open>
+        <summary><h2 id={`r-${g.reach}`}>{REACH_LABEL[g.reach]}</h2></summary>
         <ul>
           {g.items.map((c) => (
             <li>
@@ -21,7 +21,7 @@ const total = groups.reduce((n, g) => n + g.items.length, 0);
             </li>
           ))}
         </ul>
-      </section>
+      </details>
     ))}
   </main>
 </Page>
@@ -30,6 +30,9 @@ const total = groups.reduce((n, g) => n + g.items.length, 0);
   .cats { padding-block: 32px 64px; }
   h1 { font-size: clamp(2.25rem, 5vw, 4rem); font-family: var(--display); font-weight: 900; line-height: 1; }
   .lede { color: var(--ink-2); margin: 10px 0 8px; max-width: 70ch; }
+  .sec > summary { margin-top: 36px; padding-bottom: 6px; }
+  .sec > ul { border-top: 3px solid var(--ink); }
+  .sec > summary h2 { border: 0; margin: 0; padding: 0; }
   h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 36px 0 0; }
   ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); border-left: 1px solid var(--ink); }
   li { border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }

@@ -56,3 +56,10 @@ h1, h2, h3 { margin: 0; text-wrap: balance; }
 .facts-row.tier > :first-child a { font-size: 0.75rem; margin-left: 6px; }
 .tier-v { display: inline-flex; align-items: center; gap: 8px; justify-content: flex-end; }
 .tierbox { display: inline-grid; place-items: center; min-width: 24px; height: 24px; border: 2px solid var(--ink); font-weight: 900; flex: none; }
+
+/* Collapsible groups */
+details.group > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; width: fit-content; }
+details.group > summary::-webkit-details-marker { display: none; }
+details.group > summary::after { content: '[+]'; font-weight: 700; font-size: 0.875rem; letter-spacing: 0.02em; flex: none; }
+details.group[open] > summary::after { content: '[-]'; }
+details.group > summary > * { margin: 0; }
