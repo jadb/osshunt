@@ -19,3 +19,12 @@ test('Webflow recovery requires named Site group, complete attributes and explic
  const alien=extractPricing(html,{originalUrl:'https://elsewhere.example/pricing'});
  assert.ok(!alien.plans.find(p=>p.name==='Basic'&&p.offers.some(o=>o.amount==='18'&&o.commitment==='monthly')));
 });
+test('Webflow Site footer binds explicit USD, per-site denominator and tax without borrowing other groups',()=>{
+ const note='<div id="site-plan-compare"><div>All prices are in USD and charged per site with applicable taxes added at checkout.</div></div>';
+ const result=run(html+note);
+ assert.ok(result.plans.every(p=>p.offers.every(o=>o.currency==='USD'&&o.unit==='site'&&o.qualifications.tax==='Applicable taxes added at checkout')));
+ assert.match(result.plans[0].offers[0].source.text,/All prices are in USD and charged per site/);
+ assert.match(result.plans[0].offers[0].source.locator,/\|offset:/);
+ const outside=run(html+note.replace('site-plan-compare','ecommerce-plan-compare'));
+ assert.ok(outside.plans.every(p=>p.offers.every(o=>o.currency===null&&o.unit===null)));
+});
