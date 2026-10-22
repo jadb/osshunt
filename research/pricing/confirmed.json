@@ -12429,6 +12429,1104 @@
     }
   },
   {
+    "id": "pricing-manual-38915d0f274a42bbd50951fb00b2c7a702d6c9a8c451a1376b401fe95eaf6bf9",
+    "productId": "freshservice-itam",
+    "scope": {
+      "edition": "Freshservice suite pricing",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-12T18:05:59.000Z",
+    "landingCapturedAt": "2025-06-12T18:05:59.000Z",
+    "pricingCapturedAt": "2025-05-22T16:21:33.000Z",
+    "evidenceAvailableAt": "2025-06-12T18:05:59.000Z",
+    "landingUrl": "https://www.freshworks.com/freshservice/itam/",
+    "pricingUrl": "https://www.freshworks.com/freshservice/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250612180559id_/https://www.freshworks.com/freshservice/itam/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250522162133id_/https://www.freshworks.com/freshservice/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:110630-110902"
+    },
+    "sourceSha256": "ab45a1ddf1ec6f6c87d188efe372c7c2c22c2fafe0798a4e1803c24bfc973710",
+    "landingSha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a",
+    "sourceDigest": "ETUMFEM3N5IBMJBOSZCLGRLCTAKMMNOQ",
+    "landingDigest": "UF7YHM2CC5JDWYM5MGKA75HVMFPQHSEP",
+    "fetchedAt": "2026-10-22T20:37:34.095Z",
+    "landingFetchedAt": "2026-10-22T20:34:20.743Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "ETUMFEM3N5IBMJBOSZCLGRLCTAKMMNOQ",
+      "actualDigest": "XBWAAJIITKJPJA2QDM4QP7424WJ7572V",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "UF7YHM2CC5JDWYM5MGKA75HVMFPQHSEP",
+      "actualDigest": "UF7YHM2CC5JDWYM5MGKA75HVMFPQHSEP"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 22 May 2025 16:21:33 GMT",
+      "originalUrl": "https://www.freshworks.com/freshservice/pricing/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250522205809/spn2-20250522161641-wwwb-front8.us.archive.org-8005.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Thu, 12 Jun 2025 18:05:59 GMT",
+      "originalUrl": "https://www.freshworks.com/freshservice/itam/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709481188.61-0004/CC-MAIN-20250612173611-20250612203611-00081.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [
+      "2025-06-12T18:05:59.000Z"
+    ],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Dated alias from verifiedJune12ITAMlanding to retainedMay22suitepricing; no current-page substitution or backdating.",
+      "Starter excluded from ITAM pricing because all11ITAMfeatureflags false. Growth/Pro/Enterprise ITAM entitlements are source-bound to same named plan records.",
+      "Monthly/annual and5currency fields recovered from inert __NEXT_DATA__; displayed annualUSD prices49/99 match source HTML. Inactive alternatives retained with qualifications; checkout not executed.",
+      "Enterprise hidePrices=true and displayed Custom overrides internal167/139etc values, preserved only as unpublished research facts.",
+      "Suite per-agent subscriptions are not complete ITAM invoices: asset packs, AdvancedITAMdevicepricing andSaaSemployeefees separately qualified.",
+      "Dollar-only add-ons have unknown ISO currency; no currency borrowed from another family or feature field.",
+      "May22suite trial retained in same observation; June12module trial preserved only as research fact.",
+      "Pricing payload archive digest remains unverified; partial evidence requires explicit acknowledgement.",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Growth",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "priceUsd=59; /agent/month, billed monthly",
+            "amount": "59",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceUsd alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541153-541168|offset:441059-441100|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceUsd=59; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceUsdAnnual=49; /agent/month, billed annually",
+            "amount": "49",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceUsdAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541169-541190|offset:441101-441149|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceUsdAnnual=49; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceInr=4,299; /agent/month, billed monthly",
+            "amount": "4299",
+            "currency": "INR",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceInr alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541191-541209|offset:441059-441100|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceInr=4,299; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceInrAnnual=3,599; /agent/month, billed annually",
+            "amount": "3599",
+            "currency": "INR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceInrAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541210-541234|offset:441101-441149|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceInrAnnual=3,599; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceGbp=45; /agent/month, billed monthly",
+            "amount": "45",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceGbp alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541235-541250|offset:441059-441100|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceGbp=45; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceGbpAnnual=40; /agent/month, billed annually",
+            "amount": "40",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceGbpAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541251-541272|offset:441101-441149|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceGbpAnnual=40; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceAud=85; /agent/month, billed monthly",
+            "amount": "85",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceAud alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541273-541288|offset:441059-441100|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceAud=85; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceAudAnnual=70; /agent/month, billed annually",
+            "amount": "70",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceAudAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541289-541310|offset:441101-441149|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceAudAnnual=70; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceEur=50; /agent/month, billed monthly",
+            "amount": "50",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceEur alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541311-541326|offset:441059-441100|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceEur=50; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceEurAnnual=40; /agent/month, billed annually",
+            "amount": "40",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device fees may apply.",
+              "billingVariant": "Inert named priceEurAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:541327-541348|offset:441101-441149|offset:440919-440938|offset:472849-473142|offset:474123-474411",
+              "text": "Growth; priceEurAnnual=40; /agent/month, billed annually"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Auto-discovery",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:463434-463457|offset:463598-463633|offset:464061-464082",
+              "text": "Auto-discovery; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "IT Inventory Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:464408-464440|offset:464581-464616|offset:465071-465092",
+              "text": "IT Inventory Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Lifecycle Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:465421-465456|offset:465597-465632|offset:466051-466072",
+              "text": "Asset Lifecycle Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Relationship Mapping",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:466401-466436|offset:466577-466612|offset:467023-467044",
+              "text": "Asset Relationship Mapping; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Purchase Order Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:467372-467406|offset:467547-467582|offset:468027-468048",
+              "text": "Purchase Order Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Software Asset Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:468376-468410|offset:468551-468586|offset:469035-469056",
+              "text": "Software Asset Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "SaaS Management",
+            "value": "includedInPlan=false",
+            "source": {
+              "locator": "offset:469374-469398|offset:469539-469574|offset:469975-469997",
+              "text": "SaaS Management; category IT Asset Management (ITAM); includedInPlan=false"
+            }
+          },
+          {
+            "name": "Contract Management",
+            "value": "includedInPlan=false",
+            "source": {
+              "locator": "offset:470319-470347|offset:470488-470523|offset:470918-470940",
+              "text": "Contract Management; category IT Asset Management (ITAM); includedInPlan=false"
+            }
+          },
+          {
+            "name": "QR and Asset Barcode Scanner",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:471263-471300|offset:471441-471476|offset:471864-471885",
+              "text": "QR and Asset Barcode Scanner; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Pack",
+            "value": "includedInPlan=true; Includes 100 assets by default, with the option to add 500 assets for $125/month.",
+            "source": {
+              "locator": "offset:472199-472218|offset:472359-472394|offset:472827-472848|offset:472849-473142",
+              "text": "Asset Pack; category IT Asset Management (ITAM); includedInPlan=true; Includes 100 assets by default, with the option to add 500 assets for $125/month."
+            }
+          },
+          {
+            "name": "Advanced ITAM",
+            "value": "includedInPlan=true; Pricing is based on the number of devices. Contact sales for custom pricing.",
+            "source": {
+              "locator": "offset:473457-473479|offset:473620-473655|offset:474101-474122|offset:474123-474411",
+              "text": "Advanced ITAM; category IT Asset Management (ITAM); includedInPlan=true; Pricing is based on the number of devices. Contact sales for custom pricing."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:440919-440938",
+          "text": "Growth"
+        }
+      },
+      {
+        "name": "Pro",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "priceUsd=119; /agent/month, billed monthly",
+            "amount": "119",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceUsd alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643622-643638|offset:541739-541780|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceUsd=119; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceUsdAnnual=99; /agent/month, billed annually",
+            "amount": "99",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceUsdAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643639-643660|offset:541781-541829|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceUsdAnnual=99; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceInr=8,799; /agent/month, billed monthly",
+            "amount": "8799",
+            "currency": "INR",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceInr alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643661-643679|offset:541739-541780|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceInr=8,799; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceInrAnnual=7,299; /agent/month, billed annually",
+            "amount": "7299",
+            "currency": "INR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceInrAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643680-643704|offset:541781-541829|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceInrAnnual=7,299; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceGbp=95; /agent/month, billed monthly",
+            "amount": "95",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceGbp alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643705-643720|offset:541739-541780|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceGbp=95; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceGbpAnnual=79; /agent/month, billed annually",
+            "amount": "79",
+            "currency": "GBP",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceGbpAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643721-643742|offset:541781-541829|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceGbpAnnual=79; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceAud=169; /agent/month, billed monthly",
+            "amount": "169",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceAud alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643743-643759|offset:541739-541780|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceAud=169; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceAudAnnual=141; /agent/month, billed annually",
+            "amount": "141",
+            "currency": "AUD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceAudAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643760-643782|offset:541781-541829|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceAudAnnual=141; /agent/month, billed annually"
+            }
+          },
+          {
+            "literal": "priceEur=102; /agent/month, billed monthly",
+            "amount": "102",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceEur alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643783-643799|offset:541739-541780|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceEur=102; /agent/month, billed monthly"
+            }
+          },
+          {
+            "literal": "priceEurAnnual=84; /agent/month, billed annually",
+            "amount": "84",
+            "currency": "EUR",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite license includes ITAM capabilities;100assets included by default; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Inert named priceEurAnnual alternative; retained visible page shows annual USD, monthly/other currencies not executed"
+            },
+            "source": {
+              "locator": "offset:643800-643821|offset:541781-541829|offset:541617-541633|offset:570271-570575|offset:573417-573710|offset:574689-574977",
+              "text": "Pro; priceEurAnnual=84; /agent/month, billed annually"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Auto-discovery",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:563727-563750|offset:563891-563926|offset:564354-564375",
+              "text": "Auto-discovery; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "IT Inventory Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:564698-564730|offset:564871-564906|offset:565361-565382",
+              "text": "IT Inventory Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Lifecycle Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:565708-565743|offset:565884-565919|offset:566338-566359",
+              "text": "Asset Lifecycle Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Relationship Mapping",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:566684-566719|offset:566860-566895|offset:567306-567327",
+              "text": "Asset Relationship Mapping; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Purchase Order Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:567652-567686|offset:567827-567862|offset:568307-568328",
+              "text": "Purchase Order Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Software Asset Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:568653-568687|offset:568828-568863|offset:569312-569333",
+              "text": "Software Asset Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "SaaS Management",
+            "value": "includedInPlan=true; $1/employee/month Billed based on total employee count. Valid through end of billing cycle.",
+            "source": {
+              "locator": "offset:569648-569672|offset:569813-569848|offset:570249-570270|offset:570271-570575",
+              "text": "SaaS Management; category IT Asset Management (ITAM); includedInPlan=true; $1/employee/month Billed based on total employee count. Valid through end of billing cycle."
+            }
+          },
+          {
+            "name": "Contract Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:570894-570922|offset:571063-571098|offset:571493-571514",
+              "text": "Contract Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "QR and Asset Barcode Scanner",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:571834-571871|offset:572012-572047|offset:572435-572456",
+              "text": "QR and Asset Barcode Scanner; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Pack",
+            "value": "includedInPlan=true; Includes 100 assets by default, with the option to add 500 assets for $125/month.",
+            "source": {
+              "locator": "offset:572767-572786|offset:572927-572962|offset:573395-573416|offset:573417-573710",
+              "text": "Asset Pack; category IT Asset Management (ITAM); includedInPlan=true; Includes 100 assets by default, with the option to add 500 assets for $125/month."
+            }
+          },
+          {
+            "name": "Advanced ITAM",
+            "value": "includedInPlan=true; Pricing is based on the number of devices. Contact sales for custom pricing.",
+            "source": {
+              "locator": "offset:574023-574045|offset:574186-574221|offset:574667-574688|offset:574689-574977",
+              "text": "Advanced ITAM; category IT Asset Management (ITAM); includedInPlan=true; Pricing is based on the number of devices. Contact sales for custom pricing."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:541617-541633",
+          "text": "Pro"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Custom",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Suite ITAM capabilities included; additional asset/device/SaaS fees may apply.",
+              "billingVariant": "Explicit hidePrices=true; hidden internal numeric fields excluded from published prices"
+            },
+            "source": {
+              "locator": "offset:744672-744697|offset:744654-744671",
+              "text": "Enterprise; hidePrices=true; displayed Custom"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "Auto-discovery",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:663988-664011|offset:664152-664187|offset:664615-664636",
+              "text": "Auto-discovery; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "IT Inventory Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:664965-664997|offset:665138-665173|offset:665628-665649",
+              "text": "IT Inventory Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Lifecycle Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:665981-666016|offset:666157-666192|offset:666611-666632",
+              "text": "Asset Lifecycle Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Relationship Mapping",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:666965-667000|offset:667141-667176|offset:667587-667608",
+              "text": "Asset Relationship Mapping; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Purchase Order Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:667940-667974|offset:668115-668150|offset:668595-668616",
+              "text": "Purchase Order Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Software Asset Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:668948-668982|offset:669123-669158|offset:669607-669628",
+              "text": "Software Asset Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "QR and Asset Barcode Scanner",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:669955-669992|offset:670133-670168|offset:670556-670577",
+              "text": "QR and Asset Barcode Scanner; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Contract Management",
+            "value": "includedInPlan=true",
+            "source": {
+              "locator": "offset:670903-670931|offset:671072-671107|offset:671502-671523",
+              "text": "Contract Management; category IT Asset Management (ITAM); includedInPlan=true"
+            }
+          },
+          {
+            "name": "Asset Pack",
+            "value": "includedInPlan=true; Includes 100 assets by default, with the option to add 500 assets for $125/month.",
+            "source": {
+              "locator": "offset:671841-671860|offset:672001-672036|offset:672469-672490|offset:672491-672784",
+              "text": "Asset Pack; category IT Asset Management (ITAM); includedInPlan=true; Includes 100 assets by default, with the option to add 500 assets for $125/month."
+            }
+          },
+          {
+            "name": "Advanced ITAM",
+            "value": "includedInPlan=true; Pricing is based on the number of devices. Contact sales for custom pricing.",
+            "source": {
+              "locator": "offset:673104-673126|offset:673267-673302|offset:673748-673769|offset:673770-674058",
+              "text": "Advanced ITAM; category IT Asset Management (ITAM); includedInPlan=true; Pricing is based on the number of devices. Contact sales for custom pricing."
+            }
+          },
+          {
+            "name": "SaaS Management",
+            "value": "includedInPlan=true; $1/employee/month Billed based on total employee count. Valid through end of billing cycle.",
+            "source": {
+              "locator": "offset:674380-674404|offset:674545-674580|offset:674981-675002|offset:675003-675307",
+              "text": "SaaS Management; category IT Asset Management (ITAM); includedInPlan=true; $1/employee/month Billed based on total employee count. Valid through end of billing cycle."
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:644096-644119",
+          "text": "Enterprise"
+        }
+      },
+      {
+        "name": "Asset Pack",
+        "order": 3,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$125/month for500additional assets",
+            "amount": "125",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "pack of500additional assets",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Includes100assets by default; option to add500assets; applies to Growth, Pro and Enterprise source descriptions",
+              "billingVariant": "Inert feature-description price; dollar currency and contract duration unknown"
+            },
+            "source": {
+              "locator": "offset:472849-473142|offset:573417-573710|offset:672491-672784",
+              "text": "Includes 100 assets by default, with the option to add 500 assets for $125/month."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:472199-472218",
+          "text": "Asset Pack"
+        }
+      },
+      {
+        "name": "SaaS Management",
+        "order": 4,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$1/employee/month",
+            "amount": "1",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "employee",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Billed based on total employee count; valid through end of billing cycle; source description on Pro and Enterprise, absent from Growth",
+              "billingVariant": "Inert feature-description price; dollar currency and contract duration unknown"
+            },
+            "source": {
+              "locator": "offset:570271-570575|offset:675003-675307",
+              "text": "$1/employee/month Billed based on total employee count. Valid through end of billing cycle."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:569648-569672",
+          "text": "SaaS Management"
+        }
+      },
+      {
+        "name": "Advanced ITAM",
+        "order": 5,
+        "popular": null,
+        "kind": "addon",
+        "status": "quote",
+        "offers": [
+          {
+            "literal": "Contact sales for custom pricing",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "device",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Pricing based on number of devices; Growth, Pro and Enterprise feature descriptions",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:474123-474411|offset:574689-574977|offset:673770-674058",
+              "text": "Pricing is based on the number of devices. Contact sales for custom pricing."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:473457-473479",
+          "text": "Advanced ITAM"
+        }
+      },
+      {
+        "name": "Freddy AI Copilot",
+        "order": 6,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$29/agent/month",
+            "amount": "29",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "agent",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Addon rate shown in Pro and Enterprise columns; not standalone ITAM price",
+              "billingVariant": "Static table annual selection; add-on contract commitment not independently established"
+            },
+            "source": {
+              "locator": "offset:264116-264211|offset:266175-266246|offset:266380-266451|offset:173862-194548",
+              "text": "Freddy AI Copilot; $29/agent/month in Pro and Enterprise columns"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:264116-264211",
+          "text": "Freddy AI Copilot"
+        }
+      },
+      {
+        "name": "Day Passes",
+        "order": 7,
+        "popular": null,
+        "kind": "addon",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "starting from $3",
+            "amount": "3",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "Day Pass",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": "For occasional agents;3freeDayPasses at signup; no additional price or recurring period established",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:301874-302476",
+              "text": "In Freshservice, an agent can either be full-time or occasional, depending on your requirement. A full-time agent is someone who is part of your core service desk team. An occasional agent is someone who requires access to the service desk only on need-to basis. By default, Freshservice offers 3 free Day Passes at the time of sign up. For adding more occasional agents, you can purchase Day Passes starting from $3. Anybody can be added as an occasional agent, and the admin can define their role and scope of access to the service desk portal."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:301874-302476",
+          "text": "Occasional-agent Day Passes"
+        }
+      },
+      {
+        "name": "14-day free trial",
+        "order": 8,
+        "popular": null,
+        "kind": "plan",
+        "status": "trial",
+        "offers": [
+          {
+            "literal": "14-day free trial",
+            "amount": null,
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": "14days; unrestricted access to all Freshservice features; thereafter upgrade to suitable plan",
+              "volume": null,
+              "billingVariant": "Explicit limited trial; no zero-dollar recurring renewal price"
+            },
+            "source": {
+              "locator": "offset:296056-296270",
+              "text": "After you sign up, you get free unrestricted access to all the features available in Freshservice for 14 days. Thereafter, you can upgrade to a suitable plan."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:296056-296270",
+          "text": "After you sign up, you get free unrestricted access to all the features available in Freshservice for 14 days. Thereafter, you can upgrade to a suitable plan."
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T20:48:50.313Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
     "id": "pricing-manual-38ecece5d1ce8a902c5661a756cd6b1ebcd0074b6c8c2c86e0097311d00b2c4b",
     "productId": "zapier",
     "scope": {

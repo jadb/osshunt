@@ -1,0 +1,715 @@
+{
+  "formatVersion": 1,
+  "mode": "frozen-ten-tool-baseline-plus-reviewed-source-recovery",
+  "historicalComplete": false,
+  "counts": {
+    "newToolsAttempted": 10,
+    "discoveryCompleted": 10,
+    "sourceRequests": 30,
+    "baselineSourceRequests": 27,
+    "supplementalSourceRequests": 3,
+    "baselineSchemaValidProposals": 1,
+    "newProductsWithPositivePrices": 2,
+    "newProductsWithPositiveCorePlanPrices": 2,
+    "newProductsWithAddonPricesOnly": 0,
+    "newProductsWithAnyReviewedStructure": 4,
+    "newObservations": 4,
+    "totalProductsWithPositivePrices": 36,
+    "totalProductsWithPositiveCorePlanPrices": 35,
+    "totalProductsWithAnyStructure": 55,
+    "totalObservations": 116,
+    "totalPlans": 314,
+    "totalOffers": 548
+  },
+  "baseline": {
+    "journalSha256": "8b45e84eb24bd0254561b7102767adee120f298a38a99fca2f42dcaba7601cb4",
+    "extractorVersion": "1.2.0",
+    "fingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+    "fingerprintUnchanged": true,
+    "statuses": {
+      "missing_pricing": 3,
+      "wrong_scope": 1,
+      "error": 3,
+      "extraction_unavailable": 1,
+      "missing_landing": 1,
+      "review_pending": 1
+    }
+  },
+  "verification": {
+    "original112ObservationsUnchanged": true,
+    "oldProductStatesUnchanged": 80,
+    "oldStatesAllUnchanged": true,
+    "frozenJournals": [
+      {
+        "sha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+        "unchanged": true
+      },
+      {
+        "sha256": "73a6751afa281b822be189a677fc54145e68fd8f83172879726b42dfcee77ead",
+        "unchanged": true
+      },
+      {
+        "sha256": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+        "unchanged": true
+      },
+      {
+        "sha256": "56c395a8569ee976ec40890bdae216cc9715c7299da8e3b4b6cd796ff573dc0a",
+        "unchanged": true
+      }
+    ],
+    "sourceRoleChecks": 232,
+    "catalogOnlyApprovedAliasesChanged": true,
+    "postBaselineAliasTargets": [
+      {
+        "productId": "fastmail",
+        "url": "https://www.fastmail.com/pricing/?plan-type=business"
+      },
+      {
+        "productId": "freshservice-itam",
+        "url": "https://www.freshworks.com/freshservice/pricing/"
+      }
+    ],
+    "repeatNetworkAttempts": 0,
+    "reservations": [
+      {
+        "productId": "greenhouse",
+        "checkedAt": "2026-10-22T20:30:19.692Z",
+        "nextCheckAt": "2027-04-22T20:30:19.692Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "lever",
+        "checkedAt": "2026-10-22T20:30:40.765Z",
+        "nextCheckAt": "2027-04-22T20:30:40.765Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "fastmail",
+        "checkedAt": "2026-10-22T20:31:25.766Z",
+        "nextCheckAt": "2027-04-22T20:31:25.766Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "zoho-mail",
+        "checkedAt": "2026-10-22T20:31:40.813Z",
+        "nextCheckAt": "2027-04-22T20:31:40.813Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "auth0",
+        "checkedAt": "2026-10-22T20:32:02.585Z",
+        "nextCheckAt": "2027-04-22T20:32:02.585Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "okta",
+        "checkedAt": "2026-10-22T20:32:50.185Z",
+        "nextCheckAt": "2027-04-22T20:32:50.185Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "cloudflare-access",
+        "checkedAt": "2026-10-22T20:33:15.107Z",
+        "nextCheckAt": "2027-04-22T20:33:15.107Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "tailscale",
+        "checkedAt": "2026-10-22T20:33:20.478Z",
+        "nextCheckAt": "2027-04-22T20:33:20.478Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "freshservice-itam",
+        "checkedAt": "2026-10-22T20:34:00.921Z",
+        "nextCheckAt": "2027-04-22T20:34:00.921Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "lansweeper",
+        "checkedAt": "2026-10-22T20:34:30.216Z",
+        "nextCheckAt": "2027-04-22T20:34:30.216Z",
+        "checkpointPreserved": true,
+        "released": true
+      }
+    ]
+  },
+  "products": [
+    {
+      "productId": "greenhouse",
+      "name": "Greenhouse",
+      "baselineStatus": "missing_pricing",
+      "baselineError": null,
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Verified product landing and all inline scripts contain no named license tier or numerical price. Bounded exact pricing capture absent.",
+      "remainingGaps": [
+        "No quote price inferred from demonstration invitation; no historical tiers invented."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Official /pricing link; eligible exact pricing capture absent.",
+          "source": {
+            "locator": "offset:140859-141306",
+            "text": "Pricing",
+            "url": "https://www.greenhouse.com/",
+            "capturedAt": "2025-06-30T11:15:06.000Z",
+            "sha256": "01512527bcd9d3331dc76348397405bb4ee8528c799ebfc835b2ac6f59d7362c"
+          }
+        },
+        {
+          "fact": "AI hiring-platform capabilities; no price or entitlement tier.",
+          "source": {
+            "locator": "offset:102513-102669",
+            "text": "Save more, hire with confidence and move faster with AI-powered tools that streamline every step of the hiring process – from sourcing to onboarding.",
+            "url": "https://www.greenhouse.com/",
+            "capturedAt": "2025-06-30T11:15:06.000Z",
+            "sha256": "01512527bcd9d3331dc76348397405bb4ee8528c799ebfc835b2ac6f59d7362c"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "greenhouse",
+          "kind": "landing",
+          "url": "https://www.greenhouse.com/",
+          "capturedAt": "2025-06-30T11:15:06.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630111506id_/https://www.greenhouse.com/",
+          "sha256": "01512527bcd9d3331dc76348397405bb4ee8528c799ebfc835b2ac6f59d7362c",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UTTH3JATTCEZVFPKGUOATIXMUU3WVG6Y",
+            "actualDigest": "UTTH3JATTCEZVFPKGUOATIXMUU3WVG6Y"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "lever",
+      "name": "Lever",
+      "baselineStatus": "missing_pricing",
+      "baselineError": null,
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Verified landing has AI interview capability and two coming-soon AI components; no numerical plan rate or pricing structure. Both selected pricing-link exact queries had no eligible capture.",
+      "remainingGaps": [
+        "AI Screening/Sourcing Coming Soon are not available paid plans.",
+        "Related JazzHR/Jobvite products are not Lever license tiers; no quote price inferred from demo invitation."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Navigation pricing link retains its tracking query; selected capture absent.",
+          "source": {
+            "locator": "offset:266969-267137",
+            "text": "Pricing",
+            "url": "https://www.lever.co/",
+            "capturedAt": "2025-06-28T19:59:46.000Z",
+            "sha256": "d22d71125e91aefd613e1f632c93ae7e7712f197dfea63deb317d4e1c2cb6478"
+          }
+        },
+        {
+          "fact": "AI Interview Companion capability only; no standalone price.",
+          "source": {
+            "locator": "offset:301672-302261",
+            "text": "AI Interview Companion Checks and balances that create a consistent, fair interview process. Learn More",
+            "url": "https://www.lever.co/",
+            "capturedAt": "2025-06-28T19:59:46.000Z",
+            "sha256": "d22d71125e91aefd613e1f632c93ae7e7712f197dfea63deb317d4e1c2cb6478"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "lever",
+          "kind": "landing",
+          "url": "https://www.lever.co/",
+          "capturedAt": "2025-06-28T19:59:46.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628195946id_/https://www.lever.co/",
+          "sha256": "d22d71125e91aefd613e1f632c93ae7e7712f197dfea63deb317d4e1c2cb6478",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "XZUNCDMVJKJLJAE6YL5P7PJ2EUXPGJAE",
+            "actualDigest": "XZUNCDMVJKJLJAE6YL5P7PJ2EUXPGJAE"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "fastmail",
+      "name": "Fastmail Business",
+      "baselineStatus": "wrong_scope",
+      "baselineError": null,
+      "category": "trial_only",
+      "confirmedObservations": 1,
+      "plans": 1,
+      "offers": 1,
+      "finding": "Business landing supports 30-day temporary free trial; explicit See business pricing link points to exact /pricing/?plan-type=business outside canonical /business path. After frozen baseline and approved dated alias, one root supplemental query returned no eligible pricing capture.",
+      "remainingGaps": [
+        "Exact approved supplemental query returned no eligible pricing capture; other times or URLs not inferred absent.",
+        "No numerical paid rate, currency or personal-plan assumptions."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Official business-pricing target; dated exact alias independently approved separately.",
+          "source": {
+            "locator": "offset:54830-55372",
+            "text": "See business pricing",
+            "url": "https://www.fastmail.com/business/",
+            "capturedAt": "2025-06-29T08:26:13.000Z",
+            "sha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "fastmail",
+          "kind": "landing",
+          "url": "https://www.fastmail.com/business/",
+          "capturedAt": "2025-06-29T08:26:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629082613id_/https://www.fastmail.com/business/",
+          "sha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "PZDEY4Y7JZRBXL5LWG7FAOAJEZG6XOFD",
+            "actualDigest": "PGH6NUEXI6LWT63D42ZMIVRTVT67LABV",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "zoho-mail",
+      "name": "Zoho Mail",
+      "baselineStatus": "error",
+      "baselineError": "archive_digest_mismatch",
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Selected landing replay rejected for archive digest mismatch; no body retained for source-bound semantic review.",
+      "remainingGaps": [
+        "No claim that prices or other captures are absent; no current Zoho Mail or Workplace rates substituted."
+      ],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "zoho-mail",
+          "kind": "landing",
+          "url": "https://www.zoho.com/mail/",
+          "capturedAt": "2025-06-30T14:40:50.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630144050id_/https://www.zoho.com/mail/",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "auth0",
+      "name": "Auth0",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "free_or_partial",
+      "confirmedObservations": 1,
+      "plans": 7,
+      "offers": 1,
+      "finding": "Verified pricing payload supplies seven public named definitions and free zero, with raw entitlements and unevaluated costs; no displayed paid total, ISO currency or payment basis.",
+      "remainingGaps": [
+        "Raw cost coefficients remain unresolved parameters, not numerical subscription prices.",
+        "Public:false Trial/Default and zero Enterprise coefficients do not establish public free offerings.",
+        "Pricing source strictly verified; landing remains legacy-qualified."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Free: unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].breakpoints|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[0].custom_deal_money_threshold",
+            "text": "{\"plan\":\"Free\",\"cost\":{\"external\":0,\"employee\":0,\"apiCalls\":0},\"breakpoints\":{\"external\":[7500],\"apiCalls\":[1000],\"employee\":[0]},\"annual_multiplier\":11,\"custom_deal_money_threshold\":0}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        },
+        {
+          "fact": "B2C - Essentials: unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].breakpoints|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].custom_deal_money_threshold|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[1].volume_discount",
+            "text": "{\"plan\":\"B2C - Essentials\",\"cost\":{\"external\":0.1,\"employee\":0,\"apiCalls\":0},\"breakpoints\":{\"external\":[250,500,1000,2500,5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000],\"apiCalls\":[1000],\"employee\":[0]},\"annual_multiplier\":11,\"custom_deal_money_threshold\":{\"month\":1800,\"year\":20000},\"volume_discount\":{\"external\":[{\"bound\":0,\"discount\":0},{\"bound\":250,\"discount\":0},{\"bound\":500,\"discount\":0.3}]}}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        },
+        {
+          "fact": "B2C - Essentials (Loyalty): unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].breakpoints|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[2].custom_deal_money_threshold",
+            "text": "{\"plan\":\"B2C - Essentials (Loyalty)\",\"cost\":{\"external\":0.0228,\"employee\":0,\"apiCalls\":0},\"breakpoints\":{\"external\":[250,500,1000,2500,5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000],\"apiCalls\":[1000],\"employee\":[0]},\"annual_multiplier\":11,\"custom_deal_money_threshold\":{\"month\":1800,\"year\":20000}}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        },
+        {
+          "fact": "B2C - Professional: unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].breakpoints|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].custom_deal_money_threshold|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[3].volume_discount",
+            "text": "{\"plan\":\"B2C - Professional\",\"cost\":{\"external\":0.24,\"employee\":0,\"apiCalls\":0.004},\"breakpoints\":{\"external\":[1000,2500,5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000],\"apiCalls\":[5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,250000,300000],\"employee\":[0]},\"annual_multiplier\":11,\"custom_deal_money_threshold\":{\"month\":1800,\"year\":20000},\"volume_discount\":{\"external\":[{\"bound\":0,\"discount\":0},{\"bound\":1000,\"discount\":0},{\"bound\":2500,\"discount\":0.09167},{\"bound\":5000,\"discount\":0.1667},{\"bound\":7500,\"discount\":0.33334}],\"apiCalls\":[{\"bound\":5000,\"discount\":1},{\"bound\":7500,\"discount\":0},{\"bound\":60000,\"discount\":0},{\"bound\":70000,\"discount\":0},{\"bound\":80000,\"discount\":0},{\"bound\":90000,\"discount\":0},{\"bound\":100000,\"discount\":0},{\"bound\":125000,\"discount\":0},{\"bound\":150000,\"discount\":0},{\"bound\":175000,\"discount\":0},{\"bound\":200000,\"discount\":0},{\"bound\":250000,\"discount\":0},{\"bound\":300000,\"discount\":0}]}}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        },
+        {
+          "fact": "B2B - Essentials: unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].breakpoints|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].custom_deal_money_threshold|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[4].volume_discount",
+            "text": "{\"plan\":\"B2B - Essentials\",\"cost\":{\"external\":0.3,\"employee\":0,\"apiCalls\":0},\"breakpoints\":{\"external\":[500,1000,2500,5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000],\"apiCalls\":[1000],\"employee\":[0]},\"annual_multiplier\":11,\"custom_deal_money_threshold\":{\"month\":1800,\"year\":20000},\"volume_discount\":{\"external\":[{\"bound\":0,\"discount\":0},{\"bound\":2500,\"discount\":0.0667},{\"bound\":5000,\"discount\":0.1334},{\"bound\":7500,\"discount\":0.2334},{\"bound\":10000,\"discount\":0.3},{\"bound\":20000,\"discount\":0.3667}]}}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        },
+        {
+          "fact": "B2B - Professional: unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].breakpoints|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].custom_deal_money_threshold|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[5].volume_discount",
+            "text": "{\"plan\":\"B2B - Professional\",\"cost\":{\"external\":1,\"employee\":0,\"apiCalls\":0.004,\"enterprise_connections\":100},\"breakpoints\":{\"external\":[1000,2500,5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000],\"apiCalls\":[5000,7500,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,250000,300000],\"enterprise_connections\":[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],\"employee\":[0]},\"annual_multiplier\":11,\"custom_deal_money_threshold\":{\"month\":1800,\"year\":20000},\"volume_discount\":{\"external\":[{\"bound\":0,\"discount\":0},{\"bound\":1000,\"discount\":0.2},{\"bound\":2500,\"discount\":0.52},{\"bound\":5000,\"discount\":0.7},{\"bound\":7500,\"discount\":0.76}],\"apiCalls\":[{\"bound\":5000,\"discount\":1},{\"bound\":7500,\"discount\":0},{\"bound\":60000,\"discount\":0},{\"bound\":70000,\"discount\":0},{\"bound\":80000,\"discount\":0},{\"bound\":90000,\"discount\":0},{\"bound\":100000,\"discount\":0},{\"bound\":125000,\"discount\":0},{\"bound\":150000,\"discount\":0},{\"bound\":175000,\"discount\":0},{\"bound\":200000,\"discount\":0},{\"bound\":250000,\"discount\":0},{\"bound\":300000,\"discount\":0}]}}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        },
+        {
+          "fact": "Enterprise: unevaluated cost coefficients and available pricing-configuration parameters. Currency, price formula, denomination, contract and active quantity are not established; no calculated price imported.",
+          "source": {
+            "locator": "offset:12478-33714:$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].cost|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].annual_multiplier|$.props.pageProps.pageProps.externalDataMain.pricingDefinitions[6].custom_deal_money_threshold",
+            "text": "{\"plan\":\"Enterprise\",\"cost\":{\"external\":0,\"employee\":0,\"apiCalls\":0.004},\"annual_multiplier\":0,\"custom_deal_money_threshold\":0}",
+            "url": "https://auth0.com/pricing",
+            "capturedAt": "2025-06-24T22:56:14.000Z",
+            "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "auth0",
+          "kind": "landing",
+          "url": "https://auth0.com/",
+          "capturedAt": "2025-06-30T16:13:44.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630161344id_/https://auth0.com/",
+          "sha256": "cd9a2acd05ca69ffc3d9a7d0b9775b87485d4fef22cc4cb5f0ac7944303b742c",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "DFDC4SOGIOG4M7VB325NQ2VT4VRW376R",
+            "actualDigest": "ZDLPXXAUJTH5RXH2Z5PZERYVARKVGYP2",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "auth0",
+          "kind": "pricing",
+          "url": "https://auth0.com/pricing",
+          "capturedAt": "2025-06-24T22:56:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624225614id_/https://auth0.com/pricing",
+          "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E",
+            "actualDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "auth0",
+          "kind": "pricing",
+          "url": "https://auth0.com/pricing",
+          "capturedAt": "2025-06-24T22:56:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624225614id_/https://auth0.com/pricing",
+          "sha256": "1bd233791e0adb6daf4cb3fd42bb3f9b655a91be29e04eb7639948737565d988",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E",
+            "actualDigest": "RFCLA776UQB2C6FNL64O4UCX6MGGO74E"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "okta",
+      "name": "Okta Workforce Identity",
+      "baselineStatus": "error",
+      "baselineError": "archive_unavailable",
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Selected canonical Okta landing replay returnedHTTP500; no cached payload. No CIAM or Workforce pricing substitution.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "okta",
+          "kind": "landing",
+          "url": "https://www.okta.com/",
+          "capturedAt": "2025-06-29T21:34:06.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213406id_/https://www.okta.com/",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "cloudflare-access",
+      "name": "Cloudflare Access",
+      "baselineStatus": "missing_landing",
+      "baselineError": null,
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Exact canonical Access landing lookup returned200empty forJune2025; no retained body supports a Zero Trust/Access bundle claim.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": []
+    },
+    {
+      "productId": "tailscale",
+      "name": "Tailscale",
+      "baselineStatus": "review_pending",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 8,
+      "offers": 8,
+      "finding": "Named core plans, optional add-ons and commercial trial recovered; generic CTA-derived plan excluded. Dollar country/ISO and contract duration not established.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "tailscale",
+          "kind": "landing",
+          "url": "https://tailscale.com/",
+          "capturedAt": "2025-06-30T23:05:52.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630230552id_/https://tailscale.com/",
+          "sha256": "2aee9ebc21dc315b482b5eb2439b98c7af76f91cff8aa0c9d21228372e2aaca5",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "35GB63HEFXVYBVHB6KHCK75XYOEIDGKR",
+            "actualDigest": "WDSLEOYJVXEAC3KRZ3UT2LXE3RIWAXBK",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "tailscale",
+          "kind": "pricing",
+          "url": "https://tailscale.com/pricing",
+          "capturedAt": "2025-06-29T16:13:54.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629161354id_/https://tailscale.com/pricing",
+          "sha256": "a7d71a541657d38e5b707ec07ed3e689f57ee9bb5b6f753d015ce0bd799edc25",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "QVEZFXINBXQM4W7MJLBWBAMYKXKILVK2",
+            "actualDigest": "QVEZFXINBXQM4W7MJLBWBAMYKXKILVK2"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "freshservice-itam",
+      "name": "Freshservice IT Asset Management",
+      "baselineStatus": "missing_pricing",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 9,
+      "offers": 27,
+      "finding": "Verified ITAM landing preserves14-day trial and exact suite pricing link. Separately retained suite payload supports Growth/Pro ITAM entitlements and20rates, customEnterprise plus scoped add-ons; Starter ITAMexcluded and hiddenEnterprise rates suppressed.",
+      "remainingGaps": [],
+      "rawFacts": [
+        {
+          "field": "trial",
+          "value": "14-day free trial; no credit card required; no strings attached",
+          "source": {
+            "url": "https://www.freshworks.com/freshservice/itam/",
+            "capturedAt": "2025-06-12T18:05:59.000Z",
+            "sha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a",
+            "locator": "offset:250289-250409",
+            "text": "14-day free trial. No credit card required. No strings attached."
+          }
+        },
+        {
+          "field": "suite_pricing_link",
+          "value": "https://www.freshworks.com/freshservice/pricing/",
+          "source": {
+            "locator": "offset:110630-110902",
+            "text": "Pricing",
+            "url": "https://www.freshworks.com/freshservice/itam/",
+            "capturedAt": "2025-06-12T18:05:59.000Z",
+            "sha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a"
+          },
+          "qualification": "Destination link only; ITAM entitlement not inferred."
+        }
+      ],
+      "sources": [
+        {
+          "productId": "freshservice-itam",
+          "kind": "landing",
+          "url": "https://www.freshworks.com/freshservice/itam/",
+          "capturedAt": "2025-06-12T18:05:59.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250612180559id_/https://www.freshworks.com/freshservice/itam/",
+          "sha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UF7YHM2CC5JDWYM5MGKA75HVMFPQHSEP",
+            "actualDigest": "UF7YHM2CC5JDWYM5MGKA75HVMFPQHSEP"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "freshservice-itam",
+          "kind": "pricing",
+          "url": "https://www.freshworks.com/freshservice/pricing/",
+          "capturedAt": "2025-05-22T16:21:33.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250522162133id_/https://www.freshworks.com/freshservice/pricing/",
+          "sha256": "ab45a1ddf1ec6f6c87d188efe372c7c2c22c2fafe0798a4e1803c24bfc973710",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ETUMFEM3N5IBMJBOSZCLGRLCTAKMMNOQ",
+            "actualDigest": "XBWAAJIITKJPJA2QDM4QP7424WJ7572V",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null,
+          "supplemental": true
+        }
+      ]
+    },
+    {
+      "productId": "lansweeper",
+      "name": "Lansweeper",
+      "baselineStatus": "error",
+      "baselineError": "archive_unavailable",
+      "category": "no_confirmed_observation",
+      "confirmedObservations": 0,
+      "plans": 0,
+      "offers": 0,
+      "finding": "Exact canonical landing CDX returnedHTTP403 before a record/body could be selected.",
+      "remainingGaps": [],
+      "rawFacts": [],
+      "sources": []
+    }
+  ],
+  "supplementalRecovery": [
+    {
+      "productId": "fastmail",
+      "reason": "Exact business pricing link leaves catalog business path; dated reviewed exact-query alias added after frozen baseline",
+      "reservationCheckedAt": "2026-10-22T20:31:25.766Z",
+      "candidate": {
+        "url": "https://www.fastmail.com/pricing/?plan-type=business",
+        "label": "See business pricing",
+        "locator": "offset:54830-55372",
+        "provenance": "archived-link"
+      },
+      "bounds": {
+        "from": "2025-05-30T08:26:13.000Z",
+        "cutoff": "2025-06-29T08:26:13.000Z"
+      },
+      "requests": [
+        {
+          "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.fastmail.com%2Fpricing%2F%3Fplan-type%3Dbusiness&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&filter=statuscode%3A200&to=20250629082613&limit=-1&fastLatest=true&filter=mimetype%3Atext%2Fhtml&from=20250530082613",
+          "startedAt": "2026-10-22T20:35:59.606Z",
+          "status": 200,
+          "finishedAt": "2026-10-22T20:36:00.944Z",
+          "headers": {
+            "content-type": "application/json"
+          }
+        }
+      ],
+      "status": "missing_pricing"
+    },
+    {
+      "productId": "freshservice-itam",
+      "reason": "Exact ITAM landing pricing link leaves module path; dated reviewed exact suite-pricing alias added after frozen baseline",
+      "reservationCheckedAt": "2026-10-22T20:34:00.921Z",
+      "candidate": {
+        "url": "https://www.freshworks.com/freshservice/pricing/",
+        "label": "Pricing",
+        "locator": "offset:110630-110902",
+        "provenance": "archived-link"
+      },
+      "bounds": {
+        "from": "2025-05-13T18:05:59.000Z",
+        "cutoff": "2025-06-12T18:05:59.000Z"
+      },
+      "requests": [
+        {
+          "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.freshworks.com%2Ffreshservice%2Fpricing%2F&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&filter=statuscode%3A200&to=20250612180559&limit=-1&fastLatest=true&filter=mimetype%3Atext%2Fhtml&from=20250513180559",
+          "startedAt": "2026-10-22T20:37:21.945Z",
+          "status": 200,
+          "finishedAt": "2026-10-22T20:37:23.110Z",
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20250522162133id_/https://www.freshworks.com/freshservice/pricing/",
+          "startedAt": "2026-10-22T20:37:31.946Z",
+          "status": 200,
+          "finishedAt": "2026-10-22T20:37:33.718Z",
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "memento-datetime": "Thu, 22 May 2025 16:21:33 GMT",
+            "x-archive-src": "spn2-20250522205809/spn2-20250522161641-wwwb-front8.us.archive.org-8005.warc.gz"
+          }
+        }
+      ],
+      "status": "retained_for_review"
+    }
+  ],
+  "validation": {
+    "build": "passed",
+    "catalogAndProfileChecks": "passed",
+    "nodeTests": 356,
+    "pythonTests": 5,
+    "workerDryRun": "passed"
+  },
+  "reviewInputHashes": {
+    "firstFive": "fe30515a223ef9f3bda4d8025f99992fd6fe39e38928a1ff5cea682138b45e76",
+    "lastFive": "03679a50408690696682952dfc9204c4e1333a9b84563b22652e55d5eeabb0cb",
+    "firstFiveApproval": "e34f7fa2604303346c5ee15fb387e1b661856317bad23b3aac98523dc9c9e52d",
+    "lastFiveApproval": "fb24d281070fa24019e4504caee81333903cffa2ae1de24520b4dabb2a353487"
+  }
+}
