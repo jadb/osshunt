@@ -1,0 +1,61 @@
+---
+import Page from '../../layouts/Page.astro';
+import { categoryPaths, categoryData, REACH_LABEL, TIER_MEANING } from '../../lib/compare';
+
+export const getStaticPaths = categoryPaths;
+const { id } = Astro.params;
+const { cat, tools, CHECKED } = await categoryData(id!);
+const nAlts = tools.reduce((n, t) => n + t.alts.length, 0);
+---
+<Page title={`${cat.name}: paid tools and open-source alternatives | OSSHunt`} description={`${tools.length} paid tool${tools.length === 1 ? '' : 's'} in ${cat.name.toLowerCase()} with ${nAlts} mapped open-source alternatives. Checked ${CHECKED}.`}>
+  <main id="main" class="wrap cat">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/categories/">Categories</a><span>/</span><span aria-current="page">{cat.name}</span></nav>
+    <header>
+      <h1>{cat.name}</h1>
+      <p class="lede">{cat.description}</p>
+    </header>
+
+    <section aria-labelledby="tools-h">
+      <h2 id="tools-h">Paid tools and their alternatives</h2>
+      <p class="note">Each chip links to a comparison. Hover a tier letter for its meaning.</p>
+      {tools.length === 0 && <p class="u">No paid tool is mapped in this category yet.</p>}
+      <ul class="tools">
+        {tools.map((t) => (
+          <li>
+            <div class="t-head"><h3><a href={`/software/${t.id}/`}>{t.name}</a></h3><span class="price">{t.price}</span></div>
+            {t.alts.length > 0
+              ? <ul class="alts">{t.alts.map((a) => <li><a href={`/compare/${a.pair}/`}><b>{a.name}</b><small>{a.fit} · <abbr title={TIER_MEANING[a.tier]}>tier {a.tier}</abbr></small></a></li>)}</ul>
+              : <p class="u">No alternative mapped.</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section aria-labelledby="aud-h" class="aud">
+      <h2 id="aud-h">Why this category sits where it does</h2>
+      <p><b>{REACH_LABEL[cat.audienceReach]}, position {cat.audienceRank} of 48.</b> {cat.audienceRationale}</p>
+      <p class="note">Audience: {cat.audience.replace(/\.$/, '')}. Editorial estimate, not a measured market size. Sources: {cat.audienceSources.map((u, i) => <>{i ? ', ' : ''}<a href={u}>{new URL(u).hostname}</a></>)}. Checked {CHECKED}.</p>
+    </section>
+  </main>
+</Page>
+
+<style>
+  .cat { padding-block: 24px clamp(32px, 5vw, 64px); }
+  .crumbs { display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.875rem; font-weight: 600; margin-bottom: 18px; }
+  .crumbs span { color: var(--ink-2); }
+  h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1; font-family: var(--display); font-weight: 900; }
+  .lede { margin: 10px 0 28px; color: var(--ink-2); max-width: 70ch; }
+  h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 0 0 4px; }
+  .tools, .alts { list-style: none; margin: 0; padding: 0; }
+  .tools > li { border-bottom: 1px solid var(--ink); padding: 16px 0; }
+  .t-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+  h3 { font-size: 1.375rem; font-family: var(--display); font-weight: 900; line-height: 1.15; }
+  .price { font-size: 0.875rem; font-weight: 600; }
+  .alts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .alts a { display: grid; border: 2px solid var(--ink); padding: 7px 12px; text-decoration: none; line-height: 1.25; }
+  .alts a:hover { background: var(--band); }
+  .alts small { font-size: 0.75rem; }
+  .aud { margin-top: 40px; max-width: 80ch; }
+  .aud p { margin: 10px 0 0; }
+  .note { font-size: 0.8125rem; color: var(--ink-2); }
+</style>

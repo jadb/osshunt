@@ -1,0 +1,70 @@
+---
+import Icon from './Icon.astro';
+import { marks } from '../lib/stack';
+
+interface Props {
+  hosted: boolean; selfHost: boolean | null; oneClick: boolean | null; hardware: boolean;
+  required: string[]; oneOf: { group: string | null; name: string }[];
+}
+const { hosted, selfHost, oneClick, hardware, required, oneOf } = Astro.props;
+// null = not established (dashed); false = no (struck through); true = yes.
+const caps = [
+  { icon: 'cloud', label: 'Hosted offer from the project', v: hosted },
+  { icon: 'server', label: 'Self-hostable', v: selfHost },
+  { icon: 'zap', label: 'Verified one-click install', v: oneClick },
+  { icon: 'cpu', label: 'Hardware minimum', v: hardware ? true : null },
+];
+const state = (v: boolean | null) => (v === true ? 'yes' : v === false ? 'no' : 'unk');
+const word = (v: boolean | null) => (v === true ? 'yes' : v === false ? 'no' : 'not established');
+const groups = new Map<string, string[]>();
+for (const r of oneOf) groups.set(r.group ?? 'other', [...(groups.get(r.group ?? 'other') ?? []), r.name]);
+---
+<div class="runkit">
+  <ul class="row" aria-label="Capabilities">
+    {caps.map((c) => (
+      <li class={`tile ${state(c.v)}`} tabindex="0" data-tip={`${c.label}: ${word(c.v)}`} aria-label={`${c.label}: ${word(c.v)}`}><Icon name={c.icon} /></li>
+    ))}
+  </ul>
+
+  <div class="stack">
+  {required.length > 0 && (
+    <ul class="row" aria-label="Required components">
+      {marks(required).map((m) => (
+        <li class="tile yes" tabindex="0" data-tip={`Required: ${m.label}`} aria-label={`Required: ${m.label}`}>
+          {'logo' in m && m.logo ? <img src={`/logos/${m.logo}.svg`} alt="" width="28" height="28" /> : 'icon' in m && m.icon ? <Icon name={m.icon} /> : <span class="txt">{m.label}</span>}
+        </li>
+      ))}
+    </ul>
+  )}
+
+  {[...groups.entries()].map(([g, names]) => (
+    <ul class="row alt" aria-label={`One of, ${g}`}>
+      {marks(names).map((m, i) => (
+        <>
+          {i > 0 && <li class="or" aria-hidden="true">or</li>}
+          <li class="tile yes" tabindex="0" data-tip={`${g}: ${m.label}`} aria-label={`One of (${g}): ${m.label}`}>
+            {'logo' in m && m.logo ? <img src={`/logos/${m.logo}.svg`} alt="" width="28" height="28" /> : 'icon' in m && m.icon ? <Icon name={m.icon} /> : <span class="txt">{m.label}</span>}
+          </li>
+        </>
+      ))}
+    </ul>
+  ))}
+  </div>
+  <p class="hint">Hover or focus an icon for its name. Dashed means not established; struck through means no; grouped icons are alternatives.</p>
+</div>
+
+<style>
+  .runkit { display: grid; gap: 12px; }
+  .row { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .tile { position: relative; min-width: 52px; min-height: 52px; padding: 0 8px; border: 3px solid var(--ink); display: grid; place-items: center; background: var(--paper); color: var(--ink); }
+  .tile img { width: 28px; height: 28px; object-fit: contain; }
+  .tile .txt { font-size: 0.75rem; font-weight: 700; line-height: 1.1; text-align: center; max-width: 150px; overflow-wrap: anywhere; }
+  .tile.no { color: #767676; border-color: #767676; background: repeating-linear-gradient(135deg, transparent 0 9px, #cfcfcf 9px 10px); }
+  .tile.unk { color: #767676; border: 3px dashed #767676; }
+  .stack { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .row.alt { padding: 4px; background: #ececec; }
+  .or { font-size: 0.75rem; font-weight: 700; color: var(--ink-2); }
+  .tile::after { content: attr(data-tip); position: absolute; left: 0; bottom: calc(100% + 6px); background: var(--ink); color: var(--paper); font-size: 0.75rem; font-weight: 600; padding: 4px 8px; white-space: nowrap; opacity: 0; pointer-events: none; z-index: 3; }
+  .tile:hover::after, .tile:focus-visible::after { opacity: 1; }
+  .hint { margin: 0; font-size: 0.75rem; color: var(--ink-2); }
+</style>

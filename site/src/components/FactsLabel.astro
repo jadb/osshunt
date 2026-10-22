@@ -1,0 +1,24 @@
+---
+import { FIT_LABEL, CHECKED, type Fit } from '../lib/home';
+interface Props {
+  name: string; logo?: string; fit?: Fit; license: string; osi: boolean; tier: string;
+  selfHost: boolean; limits: number; incumbent?: string; hideHead?: boolean; noFit?: boolean;
+}
+const a = Astro.props;
+const TIER = {
+  A: 'No paid feature gates in the self-run edition',
+  B: 'Paid extras for admin, identity or audit',
+  C: 'Daily-workflow features need a paid edition',
+  S: 'Source-available license, not OSI',
+  U: 'License or parity scope unresolved',
+} as Record<string, string>;
+---
+<article class="facts">
+  {!a.hideHead && <header class="facts-head">{a.logo && <img src={`/logos/${a.logo}.svg`} alt="" width="28" height="28" />}<h3>{a.name}</h3></header>}
+  {!a.noFit && a.fit && <div class="facts-row fit"><span>Fit for {a.incumbent}</span><span>{FIT_LABEL[a.fit]}</span></div>}
+  <div class="facts-row" class:list={[{ lead: a.noFit }]}><span>License</span><span>{a.license}{a.osi ? ' · OSI' : ''}</span></div>
+  <div class="facts-row tier"><span>Paid-feature tier</span><span class="tier-v"><b class="tierbox">{a.tier}</b>{TIER[a.tier]}</span></div>
+  <div class="facts-row"><span>Self-host</span><span>{a.selfHost ? 'Yes' : 'No'}</span></div>
+  <div class="facts-row"><span>Paid-feature limits</span>{a.limits ? <span>{a.limits} noted</span> : <span class="u">None established</span>}</div>
+  <p class="facts-foot">Checked {CHECKED}. Fit is not feature parity.</p>
+</article>

@@ -1,0 +1,44 @@
+---
+import Page from '../../layouts/Page.astro';
+const tiers = [
+  ['A', 'No paid feature gates in the self-run edition', 'Paid hosting or support may still exist.'],
+  ['B', 'Paid extras for admin, identity or audit', 'Everyday use works without paying.'],
+  ['C', 'Daily-workflow features need a paid edition', 'Capacity, collaboration or essential integrations are gated. The code can still be open.'],
+  ['S', 'Source-available license, not OSI', 'Kept outside default open-source recommendations.'],
+  ['U', 'License or parity scope unresolved', 'Kept outside default recommendations until resolved.'],
+];
+const fits = [
+  ['Drop-in', 'Everyday workflows carry over with little rebuilding.'],
+  ['Partial', 'Core overlap exists; named gaps need replacing or rebuilding.'],
+  ['Different approach', 'Solves the same job differently; plan a redesign, not a copy.'],
+];
+---
+<Page title="Method and legend | OSSHunt" description="How OSSHunt grades paid-feature tiers and fit, and what unknown means.">
+  <main id="main" class="wrap m">
+    <h1>Method and legend</h1>
+    <section id="tiers" aria-labelledby="t-h">
+      <h2 id="t-h">Paid-feature tier</h2>
+      <p>Describes what the self-run edition withholds. It is not a quality score and does not mean feature parity with the paid tool.</p>
+      <dl>{tiers.map(([k, t, d]) => <><dt><b class="tierbox">{k}</b>{t}</dt><dd>{d}</dd></>)}</dl>
+    </section>
+    <section id="fit" aria-labelledby="f-h">
+      <h2 id="f-h">Fit</h2>
+      <p>Judged per pair of products, never per project.</p>
+      <dl>{fits.map(([t, d]) => <><dt>{t}</dt><dd>{d}</dd></>)}</dl>
+    </section>
+    <section aria-labelledby="u-h">
+      <h2 id="u-h">Unknown</h2>
+      <p>Shown in italics as not established. It means unverified, not zero and not no. A dash in a price is unresolved, not free.</p>
+    </section>
+    <p class="note">Full criteria: <a href="https://github.com/jadb/osshunt/blob/main/docs/methodology.md">docs/methodology.md</a>.</p>
+  </main>
+</Page>
+
+<style>
+  .m { padding-block: 32px 64px; max-width: 900px; }
+  h1 { font-size: clamp(2.25rem, 5vw, 4rem); font-family: var(--display); font-weight: 900; line-height: 1; margin-bottom: 28px; }
+  h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 28px 0 10px; }
+  dt { display: flex; gap: 10px; align-items: center; font-weight: 800; margin-top: 14px; }
+  dd { margin: 4px 0 0 0; padding-left: 36px; color: var(--ink-2); }
+  .note { font-size: 0.875rem; margin-top: 28px; }
+</style>

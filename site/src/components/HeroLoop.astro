@@ -1,0 +1,57 @@
+---
+import FactsLabel from './FactsLabel.astro';
+import { type homeData } from '../lib/home';
+interface Props { scenes: Awaited<ReturnType<typeof homeData>>['scenes'] }
+const { scenes } = Astro.props;
+---
+<div class="loop" data-loop role="group" aria-roledescription="carousel" aria-label="Examples of paid tools and their open-source alternatives">
+  {scenes.map((s, i) => (
+    <section class="scene" data-scene={s.id} aria-label={`${s.name} and its alternatives`} hidden={i !== 0}>
+      <div class="inc">
+        <span class="tile"><img src={`/logos/${s.logo}.svg`} alt="" width="56" height="56" /></span>
+        <p class="inc-text"><b>{s.name}</b><span>Entry price {s.price}</span></p>
+      </div>
+      <div class="alts">
+        {s.alts.map((a) => <FactsLabel {...a} incumbent={s.name} />)}
+      </div>
+      <p class="loop-foot">{s.alts.length} of {s.total} mapped alternatives shown. {s.alts.map((a, n) => <>{n ? ', ' : ''}<a href={`/compare/${s.id}--${a.id}/`}>{s.name} vs {a.name}</a></>)}</p>
+    </section>
+  ))}
+</div>
+
+<style>
+  .loop { border-top: var(--rule-8) solid var(--ink); padding-top: 14px; }
+  .scene[hidden] { display: none; }
+  .inc { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .tile { width: 76px; height: 76px; border: var(--rule-3) solid var(--ink); display: grid; place-items: center; flex: none; }
+  .tile img { width: 56px; height: 56px; object-fit: contain; }
+  .inc-text { margin: 0; display: grid; font-size: 0.9375rem; }
+  .inc-text b { font-size: 1.5rem; font-family: var(--display); font-weight: 900; line-height: 1.1; }
+  .alts { display: grid; gap: 12px; }
+  .loop-foot { font-size: 0.8125rem; color: var(--ink-2); margin: 10px 0 0; }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-loop]');
+  if (root) {
+    const scenes = [...root.querySelectorAll<HTMLElement>('[data-scene]')];
+    const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
+    const still = matchMedia('(prefers-reduced-motion: reduce)');
+    let idx = 0;
+    let timer = 0;
+    const show = (i: number) => {
+      idx = (i + scenes.length) % scenes.length;
+      scenes.forEach((s, n) => { s.hidden = n !== idx; });
+      chips.forEach((c, n) => c.setAttribute('aria-pressed', String(n === idx)));
+    };
+    // Rotates until the first click anywhere on the page, then stays put.
+    const start = () => {
+      if (!still.matches) timer = window.setInterval(() => show(idx + 1), 8000);
+    };
+    const stop = () => { window.clearInterval(timer); still.removeEventListener('change', start); };
+    chips.forEach((c, n) => c.addEventListener('click', () => show(n)));
+    document.addEventListener('click', stop, { once: true, capture: true });
+    still.addEventListener('change', start);
+    start();
+  }
+</script>

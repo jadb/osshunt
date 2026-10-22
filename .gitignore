@@ -5,3 +5,4 @@ tracks/
 
 .local/
 __pycache__/
+site/dist/

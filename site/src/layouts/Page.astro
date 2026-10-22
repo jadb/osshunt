@@ -1,0 +1,39 @@
+---
+import Base from './Base.astro';
+import { CHECKED } from '../lib/home';
+interface Props { title: string; description: string }
+const { title, description } = Astro.props;
+---
+<Base title={title} description={description}>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="/">OSSHunt</a>
+      <nav aria-label="Primary">
+        <a href="/software/">Software</a><a href="/categories/">Categories</a><a href="/alternatives/">Alternatives</a>
+      </nav>
+      <p class="checked">Checked {CHECKED}</p>
+    </div>
+  </header>
+  <slot />
+  <footer class="foot">
+    <div class="wrap">
+      
+      <p>Fit is not feature parity. Unknown means unverified. Logos belong to their owners and appear only to identify the products.</p>
+    </div>
+  </footer>
+</Base>
+
+<style is:global>
+  .top { border-bottom: var(--rule-8) solid var(--ink); }
+  .bar { display: flex; align-items: center; gap: 24px 32px; flex-wrap: wrap; padding-block: 14px; }
+  .brand { font-size: 1.5rem; font-family: var(--display); font-weight: 900; text-decoration: none; }
+  nav { display: flex; gap: 6px 22px; flex-wrap: wrap; font-weight: 600; }
+  nav a { text-decoration: none; padding: 4px 0; }
+  nav a:hover { text-decoration: underline; }
+  .checked { margin: 0 0 0 auto; font-size: 0.875rem; font-weight: 600; }
+  .foot { margin-top: clamp(40px, 6vw, 80px); border-top: var(--rule-8) solid var(--ink); padding-block: 22px 40px; }
+  .foot a { margin-right: 24px; font-weight: 700; }
+  .foot p { margin: 14px 0 0; font-size: 0.8125rem; color: var(--ink-2); max-width: 70ch; }
+
+  @media (max-width: 900px) { .checked { margin-left: 0; } }
+</style>

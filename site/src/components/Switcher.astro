@@ -1,0 +1,23 @@
+---
+// Row of links to sibling pages with previous/next; current item marked.
+interface Props { label: string; items: { href: string; name: string; fit?: string }[]; current?: string }
+const { label, items, current } = Astro.props;
+---
+<nav class="switcher" aria-label={label}>
+  <p class="sw-label">{label}</p>
+  <ul>
+    {items.map((x) => (
+      <li><a href={x.href} aria-current={x.href === current ? 'page' : undefined}>{x.name}{x.fit && <small>{x.fit}</small>}</a></li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .switcher { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 10px 0; margin-bottom: 24px; }
+  .sw-label { margin: 0 0 8px; font-weight: 800; font-size: 0.9375rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  li a { display: grid; border: 2px solid var(--ink); padding: 7px 12px; text-decoration: none; font-weight: 700; font-size: 0.875rem; line-height: 1.2; }
+  li a small { font-weight: 400; font-size: 0.75rem; }
+  li a:hover { background: var(--band); }
+  li a[aria-current='page'] { background: var(--ink); color: var(--paper); }
+</style>

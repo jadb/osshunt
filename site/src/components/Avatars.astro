@@ -1,0 +1,21 @@
+---
+import { LOGOS } from '../lib/logos';
+interface Props { items: { id: string; name: string }[]; max?: number }
+const { items, max = 5 } = Astro.props;
+const shown = items.filter((i) => LOGOS[i.id]);
+const head = shown.slice(0, max);
+const more = shown.length - head.length;
+---
+{head.length > 0 && (
+  <span class="avatars" role="img" aria-label={shown.map((i) => i.name).join(', ')}>
+    {head.map((i, n) => <img src={`/logos/${LOGOS[i.id]}.svg`} alt="" title={i.name} width="28" height="28" loading="lazy" style={`z-index:${max - n}`} />)}
+    {more > 0 && <span class="more">+{more}</span>}
+  </span>
+)}
+
+<style>
+  .avatars { display: inline-flex; align-items: center; }
+  img, .more { width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); padding: 5px; object-fit: contain; margin-left: -9px; position: relative; }
+  img:first-child { margin-left: 0; }
+  .more { display: grid; place-items: center; font-size: 0.6875rem; font-weight: 800; padding: 0; }
+</style>

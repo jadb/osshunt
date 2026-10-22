@@ -1,0 +1,80 @@
+---
+import Page from '../../layouts/Page.astro';
+import FactsLabel from '../../components/FactsLabel.astro';
+import { alternativePaths, alternativeData, LOGOS, usd } from '../../lib/compare';
+
+export const getStaticPaths = alternativePaths;
+const { id } = Astro.params;
+const { alt, replaces, CHECKED } = await alternativeData(id!);
+const host = alt.profile?.alternativeDetails?.selfHosting;
+const logo = LOGOS[alt.id];
+const price = (p: (typeof replaces)[number]['pricing']) =>
+  p.entryAmount != null ? `${usd(p.entryAmount)} / ${p.unit} / ${p.period}` : p.model === 'usage' ? 'Usage-based' : 'Not established';
+---
+<Page title={`${alt.name}: what it replaces, fit and limits | OSSHunt`} description={`${alt.name} is mapped from ${replaces.length} paid tool${replaces.length === 1 ? '' : 's'}. License, paid-feature tier, limits and fit per tool. Checked ${CHECKED}.`}>
+  <main id="main" class="wrap alt">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/alternatives/">Alternatives</a><span>/</span><span aria-current="page">{alt.name}</span></nav>
+
+    <header class="head">
+      {logo && <span class="tile"><img src={`/logos/${logo}.svg`} alt="" width="52" height="52" /></span>}
+      <div>
+        <h1>{alt.name}</h1>
+        <p class="lede">Open-source alternative · mapped from {replaces.length} paid tool{replaces.length === 1 ? '' : 's'}. Fit is not feature parity.</p>
+      </div>
+    </header>
+
+    <div class="cols">
+      <section aria-labelledby="facts-h">
+        <h2 id="facts-h">Facts</h2>
+        <FactsLabel name={alt.name} noFit hideHead license={alt.license} osi={alt.osi} tier={alt.tier} selfHost={alt.selfHostable}
+          limits={alt.locked.length} />
+        {alt.locked.length > 0 && <ul class="locked">{alt.locked.map((l) => <li>{l}</li>)}</ul>}
+        <p class="note">Tier {alt.tier}: {alt.classificationReason} <a href={alt.sources.license}>License source</a>. Repository: <a href={alt.repo}>{new URL(alt.repo).pathname.slice(1)}</a>. Self-host: {host ? host.mode : 'not established'}; hosted offer from the project: {alt.hostedOffer ? 'yes' : 'no'}.</p>
+      </section>
+
+      <section class="replaces" aria-labelledby="rep-h">
+        <h2 id="rep-h">{replaces.length > 1 ? `Replaces ${replaces.length} paid tools` : 'Replaces'}</h2>
+        {replaces.length === 0 && <p class="u">No paid tool is mapped to this project yet.</p>}
+        <ul class="track">
+          {replaces.map((r, i) => (
+            <li class="slide">
+              <div class="who">{LOGOS[r.id] && <span class="tile sm"><img src={`/logos/${LOGOS[r.id]}.svg`} alt="" width="36" height="36" /></span>}<p><b>{r.name}</b><span>Entry price {price(r.pricing)}</span></p></div>
+              <p class="fitline"><b>Fit: {r.fitLabel}.</b></p>
+              <p>{r.notes}</p>
+              <p class="note">Sources: {r.sources.map((u, n) => <>{n ? ', ' : ''}<a href={u}>{new URL(u).hostname}</a></>)} · checked {CHECKED}</p>
+              <a class="go" href={`/compare/${r.pair}/`}>Full comparison: {r.name} vs {alt.name}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </main>
+</Page>
+
+<style>
+  .alt { padding-block: 24px clamp(32px, 5vw, 64px); }
+  .crumbs { display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.875rem; font-weight: 600; margin-bottom: 18px; }
+  .crumbs span { color: var(--ink-2); }
+  .head { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+  .tile { width: 84px; height: 84px; border: 3px solid var(--ink); display: grid; place-items: center; flex: none; }
+  .tile.sm { width: 56px; height: 56px; }
+  .tile img { width: 52px; height: 52px; object-fit: contain; }
+  .tile.sm img { width: 36px; height: 36px; }
+  h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1; font-family: var(--display); font-weight: 900; }
+  .lede { margin: 8px 0 0; color: var(--ink-2); }
+  h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin-bottom: 12px; }
+  .cols { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .locked { margin: 12px 0 0; padding-left: 20px; }
+  .locked li { margin-bottom: 4px; }
+  .note { font-size: 0.8125rem; color: var(--ink-2); margin: 10px 0 0; }
+  .track { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .slide { border: 3px solid var(--ink); padding: 16px; }
+  .who { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .who p { margin: 0; display: grid; font-size: 0.875rem; }
+  .who b { font-family: var(--display); font-weight: 900; font-size: 1.5rem; line-height: 1.1; }
+  .fitline { background: var(--band); border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); padding: 6px 10px; margin: 0 0 12px; display: inline-block; }
+  .slide > p { max-width: 62ch; }
+  .go { display: inline-block; margin-top: 8px; font-weight: 800; }
+  @media (max-width: 900px) { .cols { grid-template-columns: minmax(0, 1fr); } }
+</style>
+
