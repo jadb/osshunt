@@ -261,3 +261,39 @@ test('three consecutive failed products stop even when their landing and pricing
     assert.equal(result.products[3].status, 'pending');
     assert.equal(await opts.store.read('tool-3'), null);
   }));
+test('resume skips a terminal failed candidate saved before index advancement', () =>
+  fixture(async ({ opts, getJournal }) => {
+    const base = opts.fetchImpl;
+    let badQueries = 0,
+      interrupt = true;
+    const save = opts.save;
+    const scenario = {
+      ...opts,
+      ids: ['tool-0'],
+      discoverLinks: () => [
+        { url: 'https://tool-0.com/pricing-bad', label: 'Pricing', locator: 'a:1', provenance: 'archived-link' },
+        { url: 'https://tool-0.com/pricing-good', label: 'Plans', locator: 'a:2', provenance: 'archived-link' },
+      ],
+      fetchImpl: async (value) => {
+        const u = new URL(value);
+        if (u.pathname.startsWith('/cdx/') && u.searchParams.get('url').endsWith('/pricing-bad')) {
+          badQueries++;
+          return new Response('unavailable', { status: 503 });
+        }
+        return base(value);
+      },
+      save: async (value) => {
+        await save(value);
+        if (interrupt && value.products[0].candidateResults[0]?.status === 'error') {
+          interrupt = false;
+          throw Error('simulated interruption after durable error');
+        }
+      },
+    };
+    await assert.rejects(samplePricingBatch(scenario), /persist/);
+    assert.equal(badQueries, 1);
+    assert.equal(getJournal().products[0].candidateIndex, 0);
+    const result = await samplePricingBatch({ ...scenario, journal: getJournal() });
+    assert.equal(result.products[0].status, 'review_pending');
+    assert.equal(badQueries, 1);
+  }));
