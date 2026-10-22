@@ -1,0 +1,409 @@
+[
+  {
+    "productId": "1password",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630192807",
+      "capturedAt": "2025-06-30T19:28:07.000Z",
+      "originalUrl": "https://1password.com/",
+      "digest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "1password",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250619130729",
+      "capturedAt": "2025-06-19T13:07:29.000Z",
+      "originalUrl": "https://1password.com/pricing/xam",
+      "digest": "QQ43ZSBVXW5BEV3FY3P6SEBXRIZK6LWY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "1password",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250619130843",
+      "capturedAt": "2025-06-19T13:08:43.000Z",
+      "originalUrl": "https://1password.com/compare/password-manager",
+      "digest": "PM4E3HFHSG3CX26JNBGZ62B25KSESMDE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "bitwarden",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630085312",
+      "capturedAt": "2025-06-30T08:53:12.000Z",
+      "originalUrl": "https://bitwarden.com/",
+      "digest": "YSCEVFNGJVGNKTXZGRLA742OB5QLCIVV",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "confluence",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629165214",
+      "capturedAt": "2025-06-29T16:52:14.000Z",
+      "originalUrl": "https://www.atlassian.com/software/confluence",
+      "digest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "confluence",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250628091512",
+      "capturedAt": "2025-06-28T09:15:12.000Z",
+      "originalUrl": "https://www.atlassian.com/software/confluence/pricing",
+      "digest": "A47AU6U34Q5AF6ZMXQNMBSUG6LQQ6B2K",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "jira",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630040424",
+      "capturedAt": "2025-06-30T04:04:24.000Z",
+      "originalUrl": "https://www.atlassian.com/software/jira",
+      "digest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "jira",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250623023614",
+      "capturedAt": "2025-06-23T02:36:14.000Z",
+      "originalUrl": "https://www.atlassian.com/software/jira/pricing",
+      "digest": "FBA4SVL5OBJBDPHFFDKGPKOQRMEWSL2X",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "hubspot",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250627052208",
+      "capturedAt": "2025-06-27T05:22:08.000Z",
+      "originalUrl": "https://www.hubspot.com/products/sales",
+      "digest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "hubspot",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250627052208",
+      "capturedAt": "2025-06-27T05:22:08.000Z",
+      "originalUrl": "https://www.hubspot.com/products/sales",
+      "digest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "intercom",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630153335",
+      "capturedAt": "2025-06-30T15:33:35.000Z",
+      "originalUrl": "https://www.intercom.com/",
+      "digest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "intercom",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250618201242",
+      "capturedAt": "2025-06-18T20:12:42.000Z",
+      "originalUrl": "https://www.intercom.com/pricing",
+      "digest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zendesk",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250627060351",
+      "capturedAt": "2025-06-27T06:03:51.000Z",
+      "originalUrl": "https://www.zendesk.com/",
+      "digest": "IAGGFWNKY5QOQ6XK7K7FMMRPQUWBRD6U",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zendesk",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250625024934",
+      "capturedAt": "2025-06-25T02:49:34.000Z",
+      "originalUrl": "https://www.zendesk.com/pricing/featured/",
+      "digest": "FIW2O7DUTUI3Q4DG6JU53UHC6VB3XB4U",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zendesk",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250625025002",
+      "capturedAt": "2025-06-25T02:50:02.000Z",
+      "originalUrl": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+      "digest": "6ZSO75CR7P2NDKREPO2ULOWVRZY3A34X",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "mailchimp",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630163644",
+      "capturedAt": "2025-06-30T16:36:44.000Z",
+      "originalUrl": "https://mailchimp.com/",
+      "digest": "RQH2T3ZXCZ5Z7DJGDFMA3S73Z5VST3FY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "mailchimp",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630162355",
+      "capturedAt": "2025-06-30T16:23:55.000Z",
+      "originalUrl": "https://mailchimp.com/pricing/marketing/",
+      "digest": "IPQZ2XQIFDYH7JHTOYXRQFBYJNI3TWJU",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "mailchimp",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250629171204",
+      "capturedAt": "2025-06-29T17:12:04.000Z",
+      "originalUrl": "https://mailchimp.com/pricing/marketing/compare-plans/",
+      "digest": "CSS7EJ2SJVYBLOA3DW27VTL7ALUI5KQ5",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "datadog",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630172700",
+      "capturedAt": "2025-06-30T17:27:00.000Z",
+      "originalUrl": "https://www.datadoghq.com/",
+      "digest": "DCOLI4R5TB5EMDOYTQVI744GRUDTQB4F",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "datadog",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250618082912",
+      "capturedAt": "2025-06-18T08:29:12.000Z",
+      "originalUrl": "https://www.datadoghq.com/pricing/",
+      "digest": "SPCBNWLP53NM2YAKOWSANEEMHRKLKGPL",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "google-workspace",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630231325",
+      "capturedAt": "2025-06-30T23:13:25.000Z",
+      "originalUrl": "https://workspace.google.com/",
+      "digest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "google-workspace",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630231325",
+      "capturedAt": "2025-06-30T23:13:25.000Z",
+      "originalUrl": "https://workspace.google.com/",
+      "digest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "google-workspace",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630182909",
+      "capturedAt": "2025-06-30T18:29:09.000Z",
+      "originalUrl": "https://workspace.google.com/pricing.html",
+      "digest": "ZGQKYHQTTUDLVQA4TU34BWIKMZFP7YQY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "microsoft-365",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630113113",
+      "capturedAt": "2025-06-30T11:31:13.000Z",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+      "digest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "microsoft-365",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250629072914",
+      "capturedAt": "2025-06-29T07:29:14.000Z",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+      "digest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "squarespace",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630215929",
+      "capturedAt": "2025-06-30T21:59:29.000Z",
+      "originalUrl": "https://www.squarespace.com/",
+      "digest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "squarespace",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624193439",
+      "capturedAt": "2025-06-24T19:34:39.000Z",
+      "originalUrl": "https://www.squarespace.com/pricing",
+      "digest": "75HXPH2GEHL4BHDVS3ZIJSLAOFETIJQ7",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "webflow",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630040526",
+      "capturedAt": "2025-06-30T04:05:26.000Z",
+      "originalUrl": "https://webflow.com/",
+      "digest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "webflow",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250629213658",
+      "capturedAt": "2025-06-29T21:36:58.000Z",
+      "originalUrl": "https://webflow.com/pricing",
+      "digest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "ghost",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630221056",
+      "capturedAt": "2025-06-30T22:10:56.000Z",
+      "originalUrl": "https://ghost.org/",
+      "digest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "ghost",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630110730",
+      "capturedAt": "2025-06-30T11:07:30.000Z",
+      "originalUrl": "https://ghost.org/pricing/",
+      "digest": "LRJNYH6XNYSGPJ75VJ2EY7NJTARDVY36",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "mattermost",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630153551",
+      "capturedAt": "2025-06-30T15:35:51.000Z",
+      "originalUrl": "https://mattermost.com/",
+      "digest": "TKREQ7IUWRJ56MU6L5PBN7HS76COFICY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "mattermost",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624042646",
+      "capturedAt": "2025-06-24T04:26:46.000Z",
+      "originalUrl": "https://mattermost.com/pricing/",
+      "digest": "UETZWONG22RJU7ECXGDQILMTIFYUN365",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "mattermost",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624034347",
+      "capturedAt": "2025-06-24T03:43:47.000Z",
+      "originalUrl": "https://mattermost.com/compare/",
+      "digest": "EOXPEM45FWDXBXCURROSXVZX6HMJCUE3",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "passbolt",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630023104",
+      "capturedAt": "2025-06-30T02:31:04.000Z",
+      "originalUrl": "https://www.passbolt.com/",
+      "digest": "P7VWE2RIVG7PIVAPSZCSGIMJTUSQAQEG",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "passbolt",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624103143",
+      "capturedAt": "2025-06-24T10:31:43.000Z",
+      "originalUrl": "https://www.passbolt.com/pricing/pro",
+      "digest": "LAXVTSQWDNNUTVHUNL3T7GKQONLU6AFS",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "passbolt",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624043851",
+      "capturedAt": "2025-06-24T04:38:51.000Z",
+      "originalUrl": "https://www.passbolt.com/pricing/cloud",
+      "digest": "E3XTYJBHU6ZXSS6GEPUFYZRXLXMUMHLP",
+      "mimeType": "text/html"
+    }
+  }
+]

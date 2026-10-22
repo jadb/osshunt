@@ -1,0 +1,277 @@
+[
+  {
+    "productId": "figjam",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250625161040",
+      "capturedAt": "2025-06-25T16:10:40.000Z",
+      "originalUrl": "https://www.figma.com/figjam/",
+      "digest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "quickbooks-online",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250619045312",
+      "capturedAt": "2025-06-19T04:53:12.000Z",
+      "originalUrl": "https://quickbooks.intuit.com/online/",
+      "digest": "ZQLKE5NYXEFGLMZ2PSH2LRQRDB6BG47H",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "harvest",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250627022933",
+      "capturedAt": "2025-06-27T02:29:33.000Z",
+      "originalUrl": "https://www.getharvest.com/",
+      "digest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "harvest",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250625234652",
+      "capturedAt": "2025-06-25T23:46:52.000Z",
+      "originalUrl": "https://www.getharvest.com/customers/juicyorange",
+      "digest": "ABY5VLWC7H6QWINZ3P2OVT4FR3NRJTOZ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "toggl-track",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250628072852",
+      "capturedAt": "2025-06-28T07:28:52.000Z",
+      "originalUrl": "https://toggl.com/",
+      "digest": "ATWUYQ6QEJZQQI6L7IPCQT72X2GJ6Y67",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "toggl-track",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250614082257",
+      "capturedAt": "2025-06-14T08:22:57.000Z",
+      "originalUrl": "https://toggl.com/track/pricing/",
+      "digest": "TL42PVZ63VS2G467F3NAUDFBSY2KO4H7",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "toggl-track",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250622093807",
+      "capturedAt": "2025-06-22T09:38:07.000Z",
+      "originalUrl": "https://toggl.com/plan/",
+      "digest": "XJZ6JDXEGSHTLJQQ43OAKTVJG3EDHBDW",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "docebo",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250605212725",
+      "capturedAt": "2025-06-05T21:27:25.000Z",
+      "originalUrl": "https://www.docebo.com/",
+      "digest": "A4YH3WR3KXXHHIHSTCVRGL5TI4NAFGAP",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "talentlms",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630200514",
+      "capturedAt": "2025-06-30T20:05:14.000Z",
+      "originalUrl": "https://www.talentlms.com/",
+      "digest": "5CTEVLMEJ3XH3ZIZL6ZU63UVMBDTGKGB",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "bigcommerce",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250628191118",
+      "capturedAt": "2025-06-28T19:11:18.000Z",
+      "originalUrl": "https://www.bigcommerce.com/",
+      "digest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "bigcommerce",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250621165325",
+      "capturedAt": "2025-06-21T16:53:25.000Z",
+      "originalUrl": "https://www.bigcommerce.com/enterprise-pricing/",
+      "digest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "shopify",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630215326",
+      "capturedAt": "2025-06-30T21:53:26.000Z",
+      "originalUrl": "https://www.shopify.com/",
+      "digest": "ITVWX74KMFINLJBU5PK7PM7P6MXO4JTE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-lightroom",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250628134755",
+      "capturedAt": "2025-06-28T13:47:55.000Z",
+      "originalUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+      "digest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-lightroom",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250529233022",
+      "capturedAt": "2025-05-29T23:30:22.000Z",
+      "originalUrl": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+      "digest": "765QEU6NFVPM2FA5JOZVLXQXUQWZN7LE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-photoshop",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630055312",
+      "capturedAt": "2025-06-30T05:53:12.000Z",
+      "originalUrl": "https://www.adobe.com/products/photoshop.html",
+      "digest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-photoshop",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250622075801",
+      "capturedAt": "2025-06-22T07:58:01.000Z",
+      "originalUrl": "https://www.adobe.com/products/photoshop/plans.html",
+      "digest": "FUF5AU64XHXY7IHEJ6EEUO52TC7MIX2Z",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-premiere-pro",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630005517",
+      "capturedAt": "2025-06-30T00:55:17.000Z",
+      "originalUrl": "https://www.adobe.com/products/premiere.html",
+      "digest": "BLSJ5O75D7JPBL73PFMPNSKPPHVSOUTT",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "final-cut-pro",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250627043900",
+      "capturedAt": "2025-06-27T04:39:00.000Z",
+      "originalUrl": "https://www.apple.com/final-cut-pro/",
+      "digest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "buffer",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630094134",
+      "capturedAt": "2025-06-30T09:41:34.000Z",
+      "originalUrl": "https://buffer.com/",
+      "digest": "G5ZAWEQUOMRFMS6BVCUP2HRICMCUNLI7",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "buffer",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250628103723",
+      "capturedAt": "2025-06-28T10:37:23.000Z",
+      "originalUrl": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+      "digest": "AZM6SWYO5UVJCDUNS6WV6VUW3KPITPG5",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "hootsuite",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630094638",
+      "capturedAt": "2025-06-30T09:46:38.000Z",
+      "originalUrl": "https://www.hootsuite.com/",
+      "digest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "hootsuite",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624210636",
+      "capturedAt": "2025-06-24T21:06:36.000Z",
+      "originalUrl": "https://www.hootsuite.com/plans",
+      "digest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "hootsuite",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250625234117",
+      "capturedAt": "2025-06-25T23:41:17.000Z",
+      "originalUrl": "https://www.hootsuite.com/plans/enterprise",
+      "digest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zapier",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629123200",
+      "capturedAt": "2025-06-29T12:32:00.000Z",
+      "originalUrl": "https://zapier.com/",
+      "digest": "3SKMZSUIWXPKL32XOT7DZXIMLMEBK6K6",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "zapier",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250626030427",
+      "capturedAt": "2025-06-26T03:04:27.000Z",
+      "originalUrl": "https://zapier.com/pricing",
+      "digest": "KJRPJLCSTL2NGE3NMMAJ4DCWIFBV77ZK",
+      "mimeType": "text/html"
+    }
+  }
+]

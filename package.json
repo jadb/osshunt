@@ -11,15 +11,20 @@
     "./loaders": "./lib/loaders.mjs"
   },
   "scripts": {
-    "build": "python3 scripts/assemble.py research/categories && node scripts/sync.mjs && node scripts/render.mjs && node scripts/render-profiles.mjs && node scripts/profile-coverage.mjs && node scripts/build-history-catalog.mjs",
+    "build": "python3 scripts/assemble.py research/categories && node scripts/sync.mjs && node scripts/render.mjs && node scripts/render-profiles.mjs && node scripts/profile-coverage.mjs && node scripts/build-history-catalog.mjs && node scripts/build-pricing-collection.mjs",
     "history:serve": "node scripts/history-server.mjs",
     "history:backfill": "node scripts/backfill-history.mjs",
     "check": "node scripts/validate.mjs && node scripts/validate-profiles.mjs",
-    "test": "node --test test/*.test.mjs && python3 -m unittest discover -s test -p '*_test.py'"
+    "test": "node --test test/*.test.mjs && python3 -m unittest discover -s test -p '*_test.py'",
+    "pricing:review": "node scripts/review-pricing.mjs",
+    "pricing:backfill": "node scripts/backfill-pricing.mjs",
+    "pricing:sample": "node scripts/sample-pricing.mjs",
+    "pricing:sample-report": "node scripts/summarize-pricing-samples.mjs"
   },
   "dependencies": {
-    "zod": "4.6.5",
-    "yaml": "2.9.1"
+    "parse5": "8.0.1",
+    "yaml": "2.9.1",
+    "zod": "4.6.5"
   },
   "devDependencies": {
     "ajv": "8.20.0",

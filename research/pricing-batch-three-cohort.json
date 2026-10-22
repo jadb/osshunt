@@ -1,0 +1,421 @@
+{
+  "formatVersion": 1,
+  "baselineCommit": "3afc9c602ede0069bc4c714be7e58a32ff486260",
+  "selection": "Next twenty previously unsampled paid catalog entries in audience order; exclude all thirty prior samples",
+  "window": {
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z"
+  },
+  "products": [
+    {
+      "id": "front",
+      "name": "Front",
+      "url": "https://front.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://front.com/pricing"
+      ],
+      "audienceRank": 2
+    },
+    {
+      "id": "microsoft-outlook",
+      "name": "Microsoft Outlook",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/en-us/microsoft-365/outlook"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+      ],
+      "audienceRank": 2
+    },
+    {
+      "id": "adobe-acrobat",
+      "name": "Adobe Acrobat",
+      "url": "https://www.adobe.com/acrobat.html",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/acrobat"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.adobe.com/acrobat/pricing.html"
+      ],
+      "audienceRank": 4
+    },
+    {
+      "id": "smallpdf",
+      "name": "Smallpdf",
+      "url": "https://smallpdf.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://smallpdf.com/pricing"
+      ],
+      "audienceRank": 4
+    },
+    {
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "url": "https://www.microsoft.com/microsoft-teams",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/en-US/microsoft-teams",
+        "/microsoft-teams"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+      ],
+      "audienceRank": 5
+    },
+    {
+      "id": "google-meet",
+      "name": "Google Meet",
+      "url": "https://workspace.google.com/products/meet/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/products/meet"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 6
+    },
+    {
+      "id": "wix",
+      "name": "Wix",
+      "url": "https://www.wix.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.wix.com/plans"
+      ],
+      "audienceRank": 7
+    },
+    {
+      "id": "acronis-cyber-protect",
+      "name": "Acronis Cyber Protect",
+      "url": "https://www.acronis.com/en/products/cyber-protect/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/en/products/cyber-protect"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 8
+    },
+    {
+      "id": "backblaze-business-backup",
+      "name": "Backblaze Business Backup",
+      "url": "https://www.backblaze.com/cloud-backup/business",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/cloud-backup/business"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 8
+    },
+    {
+      "id": "masv",
+      "name": "MASV",
+      "url": "https://masv.io/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://masv.io/pricing"
+      ],
+      "audienceRank": 11
+    },
+    {
+      "id": "wetransfer",
+      "name": "WeTransfer",
+      "url": "https://wetransfer.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://wetransfer.com/help-center/subscriptions/plan-limits",
+        "https://wetransfer.com/pricing"
+      ],
+      "audienceRank": 11
+    },
+    {
+      "id": "cal-com",
+      "name": "Cal.com",
+      "url": "https://cal.com",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://cal.com/pricing"
+      ],
+      "audienceRank": 14
+    },
+    {
+      "id": "docusign",
+      "name": "Docusign",
+      "url": "https://www.docusign.com/products/electronic-signature",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/products/electronic-signature"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 15
+    },
+    {
+      "id": "expensify",
+      "name": "Expensify",
+      "url": "https://www.expensify.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.expensify.com/pricing?swcfpc=1"
+      ],
+      "audienceRank": 16
+    },
+    {
+      "id": "sap-concur",
+      "name": "SAP Concur",
+      "url": "https://www.concur.com/products/concur-expense",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/products/concur-expense"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 16
+    },
+    {
+      "id": "spendesk",
+      "name": "Spendesk",
+      "url": "https://www.spendesk.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.spendesk.com/pricing/"
+      ],
+      "audienceRank": 16
+    },
+    {
+      "id": "docuware",
+      "name": "DocuWare",
+      "url": "https://start.docuware.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://start.docuware.com/faq/docuware-pricing"
+      ],
+      "audienceRank": 17
+    },
+    {
+      "id": "m-files",
+      "name": "M-Files",
+      "url": "https://www.m-files.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 17
+    },
+    {
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "url": "https://fireflies.ai",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://fireflies.ai/pricing"
+      ],
+      "audienceRank": 18
+    },
+    {
+      "id": "otter",
+      "name": "Otter.ai",
+      "url": "https://otter.ai",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://otter.ai/pricing"
+      ],
+      "audienceRank": 18
+    }
+  ],
+  "parserFiles": [
+    {
+      "file": "lib/pricing/extract-adapters.mjs",
+      "sha256": "9934dd423f318f09488efcd298558ff6b69b03d081414dd91ee54039991da5ea"
+    },
+    {
+      "file": "lib/pricing/extract-business.mjs",
+      "sha256": "5c918239c1d48217f71580a0440cde9d1be6959d56a775f661b815f70fcf94ed"
+    },
+    {
+      "file": "lib/pricing/extract-calendly.mjs",
+      "sha256": "65c34f1fb2b481cf69d0516bf08a44a090c78ee7b1b7cb8ae78551ecab445c8b"
+    },
+    {
+      "file": "lib/pricing/extract-modern.mjs",
+      "sha256": "8f71f93da800e5b3b18157cbf892e887ef197f9a06cc9d14e15376b1c134b80a"
+    },
+    {
+      "file": "lib/pricing/extract-offers.mjs",
+      "sha256": "2cfb6391f08c797bb1d0f75dec74dbc36600b1fbb1b5646cadafc547fe16999a"
+    },
+    {
+      "file": "lib/pricing/extract-structured.mjs",
+      "sha256": "1d4fead805ccb7574ee2d925d236d5f1a170848fbffc5b73ab10d4fa3062ecb7"
+    },
+    {
+      "file": "lib/pricing/extract.mjs",
+      "sha256": "b5d8b8aa441dd8cbd09ad648e7121f739073df71d8bd55b8c5d9b957f3a22ed6"
+    },
+    {
+      "file": "lib/pricing/html.mjs",
+      "sha256": "378c04b98f9622eb40da2386f7922d8aee129484104a22592d159eb5ea169ff6"
+    },
+    {
+      "file": "lib/pricing/links.mjs",
+      "sha256": "a43ad1a20118d408038dca59a9b7480ae6c0851c00cf091b731e7d1670d095a7"
+    },
+    {
+      "file": "lib/pricing/scope.mjs",
+      "sha256": "e2eba673c2d27404750847e9fd1d1f351b23f7efac7e6531f80c31ef8a8bc958"
+    }
+  ],
+  "collectorFiles": [
+    {
+      "file": "lib/pricing/archive.mjs",
+      "sha256": "34718d2261c2dbac8ee8d002f151e22a8994a0d923f60fadb14c860fae2c8c7f"
+    },
+    {
+      "file": "lib/pricing/sampling.mjs",
+      "sha256": "d47553a96c45fb82e486303a663a475fc89428b61bc5b0e85c50aceac33fa0ca"
+    },
+    {
+      "file": "lib/pricing/sampling-support.mjs",
+      "sha256": "53f06820f068b404c4599a60c3a57b6dcda6cb6d5783ad761f12656ddff80bf6"
+    },
+    {
+      "file": "lib/pricing/stores-file.mjs",
+      "sha256": "cf1652e40d6f69afeefe7816ed514da2318070a6a3c61f09c09aa2cf53588995"
+    },
+    {
+      "file": "scripts/sample-pricing.mjs",
+      "sha256": "6b7a388c7377dcb1a4b7ebc73e572fdb9304e504233002102d77fa86f4aa73fd"
+    }
+  ],
+  "catalogSha256": "24e6a8b5ecf0e0400b7dd4dd554551e4260943dfb4585f3e8026665ea8c4d6fa",
+  "preflight": {
+    "originalFailures": [
+      {
+        "id": "adobe-acrobat",
+        "preflight": "failed",
+        "message": "Landing page outside product scope"
+      }
+    ],
+    "allPassedBeforeCollection": true
+  },
+  "policy": {
+    "maxCandidates": 2,
+    "pricingLookbackDays": 30,
+    "minimumDiscoveryInterval": "six calendar months",
+    "rateLimit": "serial ten-second pacing; shared cooldown; stop on 429",
+    "publication": "explicit per-observation review only",
+    "baseline": "no parser or catalog changes during collection",
+    "repeat": "completed same-journal replay requires zero fetch attempts"
+  }
+}

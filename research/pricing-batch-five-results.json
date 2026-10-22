@@ -1,0 +1,1941 @@
+{
+  "formatVersion": 1,
+  "inputs": {
+    "ids": [
+      "google-analytics-360",
+      "bamboohr",
+      "aircall",
+      "ringcentral",
+      "brandfolder",
+      "bynder",
+      "looker",
+      "metabase-pro",
+      "power-bi",
+      "tableau"
+    ],
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z",
+    "maxCandidates": 2,
+    "catalog": [
+      {
+        "id": "google-analytics-360",
+        "name": "Google Analytics 360",
+        "url": "https://marketingplatform.google.com/about/analytics-360/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/about/analytics-360"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "bamboohr",
+        "name": "BambooHR",
+        "url": "https://www.bamboohr.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.bamboohr.com/pricing/"
+        ]
+      },
+      {
+        "id": "aircall",
+        "name": "Aircall",
+        "url": "https://aircall.io",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://aircall.io/pricing/"
+        ]
+      },
+      {
+        "id": "ringcentral",
+        "name": "RingCentral RingEX",
+        "url": "https://www.ringcentral.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+        ]
+      },
+      {
+        "id": "brandfolder",
+        "name": "Brandfolder",
+        "url": "https://brandfolder.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://brandfolder.com/pricing/"
+        ]
+      },
+      {
+        "id": "bynder",
+        "name": "Bynder",
+        "url": "https://www.bynder.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.bynder.com/en/pricing/"
+        ]
+      },
+      {
+        "id": "looker",
+        "name": "Looker",
+        "url": "https://cloud.google.com/looker",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/looker"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://cloud.google.com/looker/pricing"
+        ]
+      },
+      {
+        "id": "metabase-pro",
+        "name": "Metabase Pro",
+        "url": "https://www.metabase.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.metabase.com/pricing"
+        ]
+      },
+      {
+        "id": "power-bi",
+        "name": "Power BI",
+        "url": "https://powerbi.microsoft.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "tableau",
+        "name": "Tableau",
+        "url": "https://www.tableau.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.tableau.com/pricing"
+        ]
+      }
+    ]
+  },
+  "extractorVersion": "1.2.0",
+  "baselineFingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+  "startedAt": "2026-10-22T20:11:40.546Z",
+  "finishedAt": "2026-10-22T20:15:52.544Z",
+  "stopped": null,
+  "historicalComplete": false,
+  "automaticallyConfirmed": 0,
+  "summary": {
+    "products": 10,
+    "completed": 10,
+    "statuses": {
+      "missing_pricing": 1,
+      "error": 3,
+      "extraction_unavailable": 2,
+      "review_pending": 2,
+      "missing_landing": 2
+    },
+    "requests": 26,
+    "candidates": 4,
+    "candidateStatuses": {
+      "extraction_unavailable": 2,
+      "review_pending": 2
+    },
+    "candidateErrorCodes": {},
+    "productsWithCandidateErrors": 0,
+    "productsWithMixedCandidateOutcomes": 0,
+    "rawLandingFragments": 0,
+    "rawLandingOffers": 0,
+    "extractionClassifications": {
+      "unsupported": 7,
+      "quote_only": 1,
+      "partial_pricing": 1
+    },
+    "invalidExtractions": 1,
+    "productsWithInvalidExtractions": 1,
+    "discoveryRejections": 0,
+    "omittedDiscoveryRejections": 0,
+    "observed429": 0,
+    "responsesMissing": 0,
+    "productsWithNonemptyFragments": 2,
+    "nonemptyCandidateExtractions": 2,
+    "rawCandidateFragments": 6,
+    "rawCandidateOffers": 25,
+    "rawProposals": 2,
+    "rawPlans": 6,
+    "rawOffers": 25
+  },
+  "products": [
+    {
+      "id": "google-analytics-360",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T20:11:40.547Z",
+      "nextCheckAt": "2027-04-22T20:11:40.547Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250628200032id_/https://marketingplatform.google.com/about/analytics-360/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "bamboohr",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-body",
+      "done": true,
+      "errorCode": "archive_redirect",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T20:11:51.445Z",
+      "nextCheckAt": "2027-04-22T20:11:51.445Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630164454id_/https://www.bamboohr.com/",
+      "landingIntegrity": null,
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "aircall",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T20:12:14.404Z",
+      "nextCheckAt": "2027-04-22T20:12:14.404Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250621174217id_/https://aircall.io/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://aircall.io/pricing/",
+          "label": "Pricing",
+          "locator": "offset:39236-39318",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://aircall.io/pricing/",
+          "label": "Pricing",
+          "locator": "offset:39236-39318",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://aircall.io/pricing/",
+            "label": "Pricing",
+            "locator": "offset:39236-39318",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250526174606id_/https://aircall.io/pricing/",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ringcentral",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T20:12:52.338Z",
+      "nextCheckAt": "2027-04-22T20:12:52.338Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250624122106id_/https://www.ringcentral.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.ringcentral.com/office/plansandpricing.html",
+          "label": "See pricing",
+          "locator": "offset:91339-91669",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.ringcentral.com/office/plansandpricing.html",
+          "label": "See pricing",
+          "locator": "offset:91339-91669",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://www.ringcentral.com/office/plansandpricing.html",
+            "label": "See pricing",
+            "locator": "offset:91339-91669",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624030144id_/https://www.ringcentral.com/office/plansandpricing.html",
+          "integrity": "verified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 2,
+          "rawOffers": 2,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "quote_only"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "RingCentral Video Solutions",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Contact sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:171158-179468"
+                }
+              ]
+            },
+            {
+              "name": "RingCentral Events",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Contact sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:193411-201728"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-329e5fd0184f5a41980933705f9c991be95bd5048edce6d84aa69c9e946786e5",
+        "productId": "ringcentral",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-24T12:21:06.000Z",
+        "landingCapturedAt": "2025-06-24T12:21:06.000Z",
+        "pricingCapturedAt": "2025-06-24T03:01:44.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250624122106id_/https://www.ringcentral.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250624030144id_/https://www.ringcentral.com/office/plansandpricing.html",
+        "provenance": "archived-link",
+        "sourceSha256": "6995d10b41ca94e9940ced06cde4103ea8feb603c532b1f4635e655d1ebd3601",
+        "landingSha256": "b07e37db3273c88c7e5509b4b110ac28da75e7d5574307119579b716a1876484",
+        "sourceDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR",
+        "landingDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT",
+        "sourceIntegrity": {
+          "status": "verified",
+          "expectedDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR",
+          "actualDigest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR"
+        },
+        "landingIntegrity": {
+          "status": "verified",
+          "expectedDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT",
+          "actualDigest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT"
+        },
+        "quality": "partial",
+        "issues": [],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "RingCentral Video Solutions",
+            "status": "quote",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Contact sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "RingCentral Events",
+            "status": "quote",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Contact sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "brandfolder",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T20:13:36.582Z",
+      "nextCheckAt": "2027-04-22T20:13:36.582Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250624094542id_/https://brandfolder.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://brandfolder.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:20876-20938",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://brandfolder.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:20876-20938",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://brandfolder.com/pricing/",
+            "label": "Pricing",
+            "locator": "offset:20876-20938",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250527221312id_/https://brandfolder.com/pricing/",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bynder",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T20:14:11.927Z",
+      "nextCheckAt": "2027-04-22T20:14:11.927Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "looker",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "links",
+      "done": true,
+      "errorCode": "sampling_error",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T20:14:27.410Z",
+      "nextCheckAt": "2027-04-22T20:14:27.410Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630183410id_/https://cloud.google.com/looker",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "invalid",
+        "extractionStatus": "invalid",
+        "extractionIssueCodes": [
+          "extraction_failed"
+        ],
+        "rawPlans": 0,
+        "rawOffers": 0
+      },
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "metabase-pro",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-body",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T20:14:45.725Z",
+      "nextCheckAt": "2027-04-22T20:14:45.725Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250627132717id_/https://www.metabase.com/",
+      "landingIntegrity": null,
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "power-bi",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T20:15:02.742Z",
+      "nextCheckAt": "2027-04-22T20:15:02.742Z",
+      "cacheHits": 0,
+      "discoveryRejections": [],
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "tableau",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T20:15:11.210Z",
+      "nextCheckAt": "2027-04-22T20:15:11.210Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.tableau.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:76132-76420",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.tableau.com/product-and-pricing-selector",
+          "label": "Pricing Calculator",
+          "locator": "offset:77149-77446",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.tableau.com/pricing/tableau-plus",
+          "label": "Buy Tableau+",
+          "locator": "offset:77747-78024",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.tableau.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:76132-76420",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.tableau.com/product-and-pricing-selector",
+          "label": "Pricing Calculator",
+          "locator": "offset:77149-77446",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://www.tableau.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:76132-76420",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+          "integrity": "verified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 4,
+          "rawOffers": 23,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "partial_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Tableau",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$75",
+                  "amount": "75",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "€75",
+                  "amount": "75",
+                  "currency": "EUR",
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "£60",
+                  "amount": "60",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "¥9,000",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "$105",
+                  "amount": "105",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "$115",
+                  "amount": "115",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "€115",
+                  "amount": "115",
+                  "currency": "EUR",
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "£92",
+                  "amount": "92",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "¥13,800",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "$161",
+                  "amount": "161",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "$42",
+                  "amount": "42",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "€42",
+                  "amount": "42",
+                  "currency": "EUR",
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "£34",
+                  "amount": "34",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "¥5,040",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "$59",
+                  "amount": "59",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                },
+                {
+                  "literal": "$70",
+                  "amount": "70",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:117986-139194"
+                }
+              ]
+            },
+            {
+              "name": "Data Connect",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Contact sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:201841-202322"
+                }
+              ]
+            },
+            {
+              "name": "Private Connect",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Contact sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:202324-202795"
+                }
+              ]
+            },
+            {
+              "name": "Resource Blocks",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$250",
+                  "amount": "250",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:202797-204224"
+                },
+                {
+                  "literal": "€250",
+                  "amount": "250",
+                  "currency": "EUR",
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:202797-204224"
+                },
+                {
+                  "literal": "£200",
+                  "amount": "200",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:202797-204224"
+                },
+                {
+                  "literal": "¥30,000",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:202797-204224"
+                },
+                {
+                  "literal": "$350",
+                  "amount": "350",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:202797-204224"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-0506ff30e59190385d84f7bc7cf1294e3e2eb5d382d2ab5a5c69efc6431f6dbc",
+        "productId": "tableau",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-30T20:03:44.000Z",
+        "landingCapturedAt": "2025-06-30T20:03:44.000Z",
+        "pricingCapturedAt": "2025-06-18T18:42:58.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630200344id_/https://www.tableau.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250618184258id_/https://www.tableau.com/pricing",
+        "provenance": "archived-link",
+        "sourceSha256": "99dd4e00cf8865a86e0374866bc4f1f7ce843d85fc2e8f4ed29fec22e949951b",
+        "landingSha256": "fe217453aa642c6ac737082803cbecf426f30d9219618b9fe2d94ca43b9dd85b",
+        "sourceDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+        "landingDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+        "sourceIntegrity": {
+          "status": "verified",
+          "expectedDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+          "actualDigest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3"
+        },
+        "landingIntegrity": {
+          "status": "verified",
+          "expectedDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+          "actualDigest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ"
+        },
+        "quality": "partial",
+        "issues": [
+          "Complex comparison table requires an adapter",
+          "Unknown currency: $75",
+          "Unknown currency: £60",
+          "Ambiguous numeric amount: ¥9,000",
+          "Unknown currency: ¥9,000",
+          "Unknown currency: $105",
+          "Unknown currency: $115",
+          "Unknown currency: £92",
+          "Ambiguous numeric amount: ¥13,800",
+          "Unknown currency: ¥13,800",
+          "Unknown currency: $161",
+          "Unknown currency: $42",
+          "Unknown currency: £34",
+          "Ambiguous numeric amount: ¥5,040",
+          "Unknown currency: ¥5,040",
+          "Unknown currency: $59",
+          "Unknown currency: $70",
+          "Unknown currency: £56",
+          "Ambiguous numeric amount: ¥8,400",
+          "Unknown currency: ¥8,400",
+          "Unknown currency: $98",
+          "Unknown currency: $15",
+          "Unknown currency: £12",
+          "Ambiguous numeric amount: ¥1,800",
+          "Unknown currency: ¥1,800",
+          "Unknown currency: $21",
+          "Unknown currency: $35",
+          "Unknown currency: £28",
+          "Ambiguous numeric amount: ¥4,200",
+          "Unknown currency: ¥4,200",
+          "Unknown currency: $49",
+          "Additional extraction issues truncated at explicit issue limit"
+        ],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Tableau",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "$75",
+                "amount": "75",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "€75",
+                "amount": "75",
+                "currency": "EUR",
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "£60",
+                "amount": "60",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "¥9,000",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$105",
+                "amount": "105",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$115",
+                "amount": "115",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "€115",
+                "amount": "115",
+                "currency": "EUR",
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "£92",
+                "amount": "92",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "¥13,800",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$161",
+                "amount": "161",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$42",
+                "amount": "42",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "€42",
+                "amount": "42",
+                "currency": "EUR",
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "£34",
+                "amount": "34",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "¥5,040",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$59",
+                "amount": "59",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$70",
+                "amount": "70",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Data Connect",
+            "status": "quote",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Contact sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Private Connect",
+            "status": "quote",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Contact sales",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Resource Blocks",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "$250",
+                "amount": "250",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "€250",
+                "amount": "250",
+                "currency": "EUR",
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "£200",
+                "amount": "200",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "¥30,000",
+                "amount": null,
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$350",
+                "amount": "350",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en-US",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

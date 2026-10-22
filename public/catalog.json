@@ -11,9 +11,13 @@
     "categoryNames": [
       "Office suite and files"
     ],
+    "pricingHints": [],
     "audienceRank": 1,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/code"
+    ]
   },
   {
     "id": "dropbox",
@@ -27,7 +31,11 @@
     "categoryNames": [
       "Office suite and files"
     ],
-    "audienceRank": 1
+    "pricingHints": [
+      "https://www.dropbox.com/plans"
+    ],
+    "audienceRank": 1,
+    "productPaths": []
   },
   {
     "id": "google-workspace",
@@ -43,7 +51,11 @@
       "Business email hosting",
       "Office suite and files"
     ],
-    "audienceRank": 1
+    "pricingHints": [
+      "https://workspace.google.com/pricing?hl=en&region=US"
+    ],
+    "audienceRank": 1,
+    "productPaths": []
   },
   {
     "id": "microsoft-365",
@@ -59,7 +71,15 @@
       "Business email hosting",
       "Office suite and files"
     ],
-    "audienceRank": 1
+    "pricingHints": [
+      "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing",
+      "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+    ],
+    "audienceRank": 1,
+    "productPaths": [
+      "/en-us/microsoft-365/business",
+      "/en-us/microsoft-365/enterprise"
+    ]
   },
   {
     "id": "nextcloud",
@@ -73,9 +93,13 @@
     "categoryNames": [
       "Office suite and files"
     ],
+    "pricingHints": [
+      "https://nextcloud.com/pricing/"
+    ],
     "audienceRank": 1,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "onlyoffice-docs",
@@ -89,9 +113,13 @@
     "categoryNames": [
       "Office suite and files"
     ],
+    "pricingHints": [],
     "audienceRank": 1,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": [
+      "/docs"
+    ]
   },
   {
     "id": "owncloud-ocis",
@@ -105,9 +133,13 @@
     "categoryNames": [
       "Office suite and files"
     ],
+    "pricingHints": [],
     "audienceRank": 1,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": [
+      "/ocis"
+    ]
   },
   {
     "id": "seafile",
@@ -121,9 +153,11 @@
     "categoryNames": [
       "Office suite and files"
     ],
+    "pricingHints": [],
     "audienceRank": 1,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "front",
@@ -137,7 +171,11 @@
     "categoryNames": [
       "Email clients and webmail"
     ],
-    "audienceRank": 2
+    "pricingHints": [
+      "https://front.com/pricing"
+    ],
+    "audienceRank": 2,
+    "productPaths": []
   },
   {
     "id": "microsoft-outlook",
@@ -151,7 +189,13 @@
     "categoryNames": [
       "Email clients and webmail"
     ],
-    "audienceRank": 2
+    "pricingHints": [
+      "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+    ],
+    "audienceRank": 2,
+    "productPaths": [
+      "/en-us/microsoft-365/outlook"
+    ]
   },
   {
     "id": "roundcube",
@@ -165,9 +209,11 @@
     "categoryNames": [
       "Email clients and webmail"
     ],
+    "pricingHints": [],
     "audienceRank": 2,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "thunderbird",
@@ -181,9 +227,13 @@
     "categoryNames": [
       "Email clients and webmail"
     ],
+    "pricingHints": [],
     "audienceRank": 2,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/en-US/desktop"
+    ]
   },
   {
     "id": "1password",
@@ -197,7 +247,13 @@
     "categoryNames": [
       "Password managers"
     ],
-    "audienceRank": 3
+    "pricingHints": [
+      "https://1password.com/pricing",
+      "https://1password.com/pricing/business",
+      "https://1password.com/pricing/personal"
+    ],
+    "audienceRank": 3,
+    "productPaths": []
   },
   {
     "id": "bitwarden",
@@ -211,9 +267,13 @@
     "categoryNames": [
       "Password managers"
     ],
+    "pricingHints": [
+      "https://bitwarden.com/pricing/"
+    ],
     "audienceRank": 3,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "passbolt",
@@ -227,9 +287,13 @@
     "categoryNames": [
       "Password managers"
     ],
+    "pricingHints": [
+      "https://www.passbolt.com/pricing/pro"
+    ],
     "audienceRank": 3,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "vaultwarden",
@@ -243,9 +307,13 @@
     "categoryNames": [
       "Password managers"
     ],
+    "pricingHints": [],
     "audienceRank": 3,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/dani-garcia/vaultwarden"
+    ]
   },
   {
     "id": "adobe-acrobat",
@@ -259,7 +327,13 @@
     "categoryNames": [
       "PDF editing and processing"
     ],
-    "audienceRank": 4
+    "pricingHints": [
+      "https://www.adobe.com/acrobat/pricing.html"
+    ],
+    "audienceRank": 4,
+    "productPaths": [
+      "/acrobat"
+    ]
   },
   {
     "id": "pdf-arranger",
@@ -273,9 +347,13 @@
     "categoryNames": [
       "PDF editing and processing"
     ],
+    "pricingHints": [],
     "audienceRank": 4,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/pdfarranger/pdfarranger"
+    ]
   },
   {
     "id": "pdfsam-basic",
@@ -289,9 +367,13 @@
     "categoryNames": [
       "PDF editing and processing"
     ],
+    "pricingHints": [],
     "audienceRank": 4,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/pdfsam-basic"
+    ]
   },
   {
     "id": "smallpdf",
@@ -305,7 +387,11 @@
     "categoryNames": [
       "PDF editing and processing"
     ],
-    "audienceRank": 4
+    "pricingHints": [
+      "https://smallpdf.com/pricing"
+    ],
+    "audienceRank": 4,
+    "productPaths": []
   },
   {
     "id": "stirling-pdf",
@@ -319,9 +405,13 @@
     "categoryNames": [
       "PDF editing and processing"
     ],
+    "pricingHints": [
+      "https://www.stirling.com/pricing"
+    ],
     "audienceRank": 4,
     "osi": false,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "element",
@@ -335,9 +425,13 @@
     "categoryNames": [
       "Team chat"
     ],
+    "pricingHints": [],
     "audienceRank": 5,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": [
+      "/en/server-suite/community"
+    ]
   },
   {
     "id": "mattermost",
@@ -351,9 +445,13 @@
     "categoryNames": [
       "Team chat"
     ],
+    "pricingHints": [
+      "https://mattermost.com/pricing/"
+    ],
     "audienceRank": 5,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "microsoft-teams",
@@ -367,7 +465,14 @@
     "categoryNames": [
       "Team chat"
     ],
-    "audienceRank": 5
+    "pricingHints": [
+      "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+    ],
+    "audienceRank": 5,
+    "productPaths": [
+      "/en-US/microsoft-teams",
+      "/microsoft-teams"
+    ]
   },
   {
     "id": "rocket-chat",
@@ -381,9 +486,13 @@
     "categoryNames": [
       "Team chat"
     ],
+    "pricingHints": [
+      "https://www.rocket.chat/plans"
+    ],
     "audienceRank": 5,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "slack",
@@ -397,7 +506,11 @@
     "categoryNames": [
       "Team chat"
     ],
-    "audienceRank": 5
+    "pricingHints": [
+      "https://slack.com/pricing"
+    ],
+    "audienceRank": 5,
+    "productPaths": []
   },
   {
     "id": "zulip",
@@ -411,9 +524,13 @@
     "categoryNames": [
       "Team chat"
     ],
+    "pricingHints": [
+      "https://zulip.com/plans/"
+    ],
     "audienceRank": 5,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "bigbluebutton",
@@ -427,9 +544,11 @@
     "categoryNames": [
       "Video calls"
     ],
+    "pricingHints": [],
     "audienceRank": 6,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "google-meet",
@@ -443,7 +562,26 @@
     "categoryNames": [
       "Video calls"
     ],
-    "audienceRank": 6
+    "pricingHints": [],
+    "audienceRank": 6,
+    "productPaths": [
+      "/products/meet"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://workspace.google.com/intl/de/pricing.html",
+        "evidenceCapturedAt": "2025-06-30T23:53:00.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+        "evidenceSha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+        "locator": "offset:343348-343696",
+        "label": "Preise",
+        "scope": {
+          "edition": "Google Workspace bundle",
+          "deployment": "hosted"
+        },
+        "locale": "de"
+      }
+    ]
   },
   {
     "id": "jitsi-meet",
@@ -457,9 +595,13 @@
     "categoryNames": [
       "Video calls"
     ],
+    "pricingHints": [],
     "audienceRank": 6,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/jitsi-meet"
+    ]
   },
   {
     "id": "zoom",
@@ -473,7 +615,11 @@
     "categoryNames": [
       "Video calls"
     ],
-    "audienceRank": 6
+    "pricingHints": [
+      "https://zoom.us/pricing"
+    ],
+    "audienceRank": 6,
+    "productPaths": []
   },
   {
     "id": "drupal",
@@ -487,9 +633,11 @@
     "categoryNames": [
       "Websites and CMS"
     ],
+    "pricingHints": [],
     "audienceRank": 7,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "ghost",
@@ -503,9 +651,13 @@
     "categoryNames": [
       "Websites and CMS"
     ],
+    "pricingHints": [
+      "https://ghost.org/pricing/"
+    ],
     "audienceRank": 7,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "squarespace",
@@ -519,7 +671,11 @@
     "categoryNames": [
       "Websites and CMS"
     ],
-    "audienceRank": 7
+    "pricingHints": [
+      "https://www.squarespace.com/pricing"
+    ],
+    "audienceRank": 7,
+    "productPaths": []
   },
   {
     "id": "webflow",
@@ -533,7 +689,11 @@
     "categoryNames": [
       "Websites and CMS"
     ],
-    "audienceRank": 7
+    "pricingHints": [
+      "https://webflow.com/pricing"
+    ],
+    "audienceRank": 7,
+    "productPaths": []
   },
   {
     "id": "wix",
@@ -547,7 +707,11 @@
     "categoryNames": [
       "Websites and CMS"
     ],
-    "audienceRank": 7
+    "pricingHints": [
+      "https://www.wix.com/plans"
+    ],
+    "audienceRank": 7,
+    "productPaths": []
   },
   {
     "id": "wordpress",
@@ -561,9 +725,11 @@
     "categoryNames": [
       "Websites and CMS"
     ],
+    "pricingHints": [],
     "audienceRank": 7,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "acronis-cyber-protect",
@@ -577,7 +743,11 @@
     "categoryNames": [
       "Backup and recovery"
     ],
-    "audienceRank": 8
+    "pricingHints": [],
+    "audienceRank": 8,
+    "productPaths": [
+      "/en/products/cyber-protect"
+    ]
   },
   {
     "id": "backblaze-business-backup",
@@ -591,7 +761,26 @@
     "categoryNames": [
       "Backup and recovery"
     ],
-    "audienceRank": 8
+    "pricingHints": [],
+    "audienceRank": 8,
+    "productPaths": [
+      "/cloud-backup/business"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.backblaze.com/cloud-backup/pricing",
+        "evidenceCapturedAt": "2025-06-24T16:27:54.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+        "evidenceSha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7",
+        "locator": "offset:46689-46914",
+        "label": "Computer Backup Unlimited data protection, transparent pricing",
+        "scope": {
+          "edition": "Computer Backup (shared pricing)",
+          "deployment": "hosted"
+        },
+        "locale": null
+      }
+    ]
   },
   {
     "id": "borgbackup",
@@ -605,9 +794,11 @@
     "categoryNames": [
       "Backup and recovery"
     ],
+    "pricingHints": [],
     "audienceRank": 8,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "kopia",
@@ -621,9 +812,11 @@
     "categoryNames": [
       "Backup and recovery"
     ],
+    "pricingHints": [],
     "audienceRank": 8,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "restic",
@@ -637,9 +830,11 @@
     "categoryNames": [
       "Backup and recovery"
     ],
+    "pricingHints": [],
     "audienceRank": 8,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "affine",
@@ -653,9 +848,13 @@
     "categoryNames": [
       "Docs and wiki"
     ],
+    "pricingHints": [
+      "https://affine.pro/pricing"
+    ],
     "audienceRank": 9,
     "osi": false,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "appflowy",
@@ -669,9 +868,13 @@
     "categoryNames": [
       "Docs and wiki"
     ],
+    "pricingHints": [
+      "https://appflowy.com/pricing"
+    ],
     "audienceRank": 9,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "bookstack",
@@ -685,9 +888,11 @@
     "categoryNames": [
       "Docs and wiki"
     ],
+    "pricingHints": [],
     "audienceRank": 9,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "confluence",
@@ -701,7 +906,13 @@
     "categoryNames": [
       "Docs and wiki"
     ],
-    "audienceRank": 9
+    "pricingHints": [
+      "https://www.atlassian.com/software/confluence/pricing"
+    ],
+    "audienceRank": 9,
+    "productPaths": [
+      "/software/confluence"
+    ]
   },
   {
     "id": "docmost",
@@ -715,9 +926,13 @@
     "categoryNames": [
       "Docs and wiki"
     ],
+    "pricingHints": [
+      "https://docmost.com/pricing"
+    ],
     "audienceRank": 9,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "notion",
@@ -731,7 +946,11 @@
     "categoryNames": [
       "Docs and wiki"
     ],
-    "audienceRank": 9
+    "pricingHints": [
+      "https://www.notion.com/pricing"
+    ],
+    "audienceRank": 9,
+    "productPaths": []
   },
   {
     "id": "outline",
@@ -745,9 +964,13 @@
     "categoryNames": [
       "Docs and wiki"
     ],
+    "pricingHints": [
+      "https://www.getoutline.com/pricing"
+    ],
     "audienceRank": 9,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "asana",
@@ -761,7 +984,11 @@
     "categoryNames": [
       "Project management"
     ],
-    "audienceRank": 10
+    "pricingHints": [
+      "https://asana.com/pricing"
+    ],
+    "audienceRank": 10,
+    "productPaths": []
   },
   {
     "id": "huly",
@@ -775,9 +1002,13 @@
     "categoryNames": [
       "Project management"
     ],
+    "pricingHints": [
+      "https://huly.io/pricing"
+    ],
     "audienceRank": 10,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "jira",
@@ -791,7 +1022,13 @@
     "categoryNames": [
       "Project management"
     ],
-    "audienceRank": 10
+    "pricingHints": [
+      "https://www.atlassian.com/software/jira/pricing"
+    ],
+    "audienceRank": 10,
+    "productPaths": [
+      "/software/jira"
+    ]
   },
   {
     "id": "linear",
@@ -805,7 +1042,11 @@
     "categoryNames": [
       "Project management"
     ],
-    "audienceRank": 10
+    "pricingHints": [
+      "https://linear.app/pricing"
+    ],
+    "audienceRank": 10,
+    "productPaths": []
   },
   {
     "id": "openproject",
@@ -819,9 +1060,13 @@
     "categoryNames": [
       "Project management"
     ],
+    "pricingHints": [
+      "https://www.openproject.org/pricing/"
+    ],
     "audienceRank": 10,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "plane",
@@ -835,9 +1080,13 @@
     "categoryNames": [
       "Project management"
     ],
+    "pricingHints": [
+      "https://plane.so/pricing"
+    ],
     "audienceRank": 10,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "taiga",
@@ -851,9 +1100,13 @@
     "categoryNames": [
       "Project management"
     ],
+    "pricingHints": [
+      "https://taiga.io/deployment-pricing-options/"
+    ],
     "audienceRank": 10,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "copyparty",
@@ -867,9 +1120,13 @@
     "categoryNames": [
       "File transfer"
     ],
+    "pricingHints": [],
     "audienceRank": 11,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/9001/copyparty"
+    ]
   },
   {
     "id": "masv",
@@ -883,7 +1140,11 @@
     "categoryNames": [
       "File transfer"
     ],
-    "audienceRank": 11
+    "pricingHints": [
+      "https://masv.io/pricing"
+    ],
+    "audienceRank": 11,
+    "productPaths": []
   },
   {
     "id": "projectsend",
@@ -897,9 +1158,11 @@
     "categoryNames": [
       "File transfer"
     ],
+    "pricingHints": [],
     "audienceRank": 11,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "wetransfer",
@@ -913,7 +1176,12 @@
     "categoryNames": [
       "File transfer"
     ],
-    "audienceRank": 11
+    "pricingHints": [
+      "https://wetransfer.com/help-center/subscriptions/plan-limits",
+      "https://wetransfer.com/pricing"
+    ],
+    "audienceRank": 11,
+    "productPaths": []
   },
   {
     "id": "formbricks",
@@ -927,9 +1195,13 @@
     "categoryNames": [
       "Forms and surveys"
     ],
+    "pricingHints": [
+      "https://formbricks.com/pricing"
+    ],
     "audienceRank": 12,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "heyform",
@@ -943,9 +1215,13 @@
     "categoryNames": [
       "Forms and surveys"
     ],
+    "pricingHints": [
+      "https://heyform.net/pricing"
+    ],
     "audienceRank": 12,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "limesurvey",
@@ -959,9 +1235,11 @@
     "categoryNames": [
       "Forms and surveys"
     ],
+    "pricingHints": [],
     "audienceRank": 12,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "typeform",
@@ -975,7 +1253,11 @@
     "categoryNames": [
       "Forms and surveys"
     ],
-    "audienceRank": 12
+    "pricingHints": [
+      "https://www.typeform.com/pricing"
+    ],
+    "audienceRank": 12,
+    "productPaths": []
   },
   {
     "id": "kanboard",
@@ -989,9 +1271,11 @@
     "categoryNames": [
       "Kanban"
     ],
+    "pricingHints": [],
     "audienceRank": 13,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "planka",
@@ -1005,9 +1289,13 @@
     "categoryNames": [
       "Kanban"
     ],
+    "pricingHints": [
+      "https://planka.app/pricing"
+    ],
     "audienceRank": 13,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "trello",
@@ -1021,7 +1309,11 @@
     "categoryNames": [
       "Kanban"
     ],
-    "audienceRank": 13
+    "pricingHints": [
+      "https://trello.com/pricing"
+    ],
+    "audienceRank": 13,
+    "productPaths": []
   },
   {
     "id": "wekan",
@@ -1035,9 +1327,11 @@
     "categoryNames": [
       "Kanban"
     ],
+    "pricingHints": [],
     "audienceRank": 13,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "cal-com",
@@ -1051,7 +1345,11 @@
     "categoryNames": [
       "Appointment scheduling"
     ],
-    "audienceRank": 14
+    "pricingHints": [
+      "https://cal.com/pricing"
+    ],
+    "audienceRank": 14,
+    "productPaths": []
   },
   {
     "id": "cal-diy",
@@ -1065,9 +1363,11 @@
     "categoryNames": [
       "Appointment scheduling"
     ],
+    "pricingHints": [],
     "audienceRank": 14,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "calendly",
@@ -1081,7 +1381,11 @@
     "categoryNames": [
       "Appointment scheduling"
     ],
-    "audienceRank": 14
+    "pricingHints": [
+      "https://calendly.com/pricing"
+    ],
+    "audienceRank": 14,
+    "productPaths": []
   },
   {
     "id": "easyappointments",
@@ -1095,9 +1399,11 @@
     "categoryNames": [
       "Appointment scheduling"
     ],
+    "pricingHints": [],
     "audienceRank": 14,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "documenso",
@@ -1111,9 +1417,13 @@
     "categoryNames": [
       "E-signature"
     ],
+    "pricingHints": [
+      "https://documenso.com/pricing"
+    ],
     "audienceRank": 15,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "docuseal",
@@ -1127,9 +1437,13 @@
     "categoryNames": [
       "E-signature"
     ],
+    "pricingHints": [
+      "https://www.docuseal.com/pricing"
+    ],
     "audienceRank": 15,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "docusign",
@@ -1143,7 +1457,26 @@
     "categoryNames": [
       "E-signature"
     ],
-    "audienceRank": 15
+    "pricingHints": [],
+    "audienceRank": 15,
+    "productPaths": [
+      "/products/electronic-signature"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://ecom.docusign.com/plans-and-pricing/esignature",
+        "evidenceCapturedAt": "2025-06-20T00:45:50.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+        "evidenceSha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d",
+        "locator": "offset:90609-90886",
+        "label": "Plans & Pricing",
+        "scope": {
+          "edition": "eSignature",
+          "deployment": "hosted"
+        },
+        "locale": null
+      }
+    ]
   },
   {
     "id": "opensign",
@@ -1157,9 +1490,13 @@
     "categoryNames": [
       "E-signature"
     ],
+    "pricingHints": [
+      "https://www.opensignlabs.com/plans-pricing"
+    ],
     "audienceRank": 15,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "erpnext",
@@ -1175,9 +1512,15 @@
       "Accounting and ERP",
       "Expense reimbursements"
     ],
+    "pricingHints": [
+      "https://frappe.io/erpnext/pricing"
+    ],
     "audienceRank": 16,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/erpnext"
+    ]
   },
   {
     "id": "expensify",
@@ -1191,7 +1534,11 @@
     "categoryNames": [
       "Expense reimbursements"
     ],
-    "audienceRank": 16
+    "pricingHints": [
+      "https://www.expensify.com/pricing?swcfpc=1"
+    ],
+    "audienceRank": 16,
+    "productPaths": []
   },
   {
     "id": "frappe-hr",
@@ -1209,9 +1556,15 @@
       "Human resources",
       "Recruiting and applicant tracking"
     ],
+    "pricingHints": [
+      "https://frappe.io/hr/pricing"
+    ],
     "audienceRank": 16,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/hr"
+    ]
   },
   {
     "id": "sap-concur",
@@ -1225,7 +1578,11 @@
     "categoryNames": [
       "Expense reimbursements"
     ],
-    "audienceRank": 16
+    "pricingHints": [],
+    "audienceRank": 16,
+    "productPaths": [
+      "/products/concur-expense"
+    ]
   },
   {
     "id": "spendesk",
@@ -1239,7 +1596,11 @@
     "categoryNames": [
       "Expense reimbursements"
     ],
-    "audienceRank": 16
+    "pricingHints": [
+      "https://www.spendesk.com/pricing/"
+    ],
+    "audienceRank": 16,
+    "productPaths": []
   },
   {
     "id": "docuware",
@@ -1253,7 +1614,11 @@
     "categoryNames": [
       "Document Management"
     ],
-    "audienceRank": 17
+    "pricingHints": [
+      "https://start.docuware.com/faq/docuware-pricing"
+    ],
+    "audienceRank": 17,
+    "productPaths": []
   },
   {
     "id": "m-files",
@@ -1267,7 +1632,9 @@
     "categoryNames": [
       "Document Management"
     ],
-    "audienceRank": 17
+    "pricingHints": [],
+    "audienceRank": 17,
+    "productPaths": []
   },
   {
     "id": "mayan-edms",
@@ -1281,9 +1648,11 @@
     "categoryNames": [
       "Document Management"
     ],
+    "pricingHints": [],
     "audienceRank": 17,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "paperless-ngx",
@@ -1297,9 +1666,11 @@
     "categoryNames": [
       "Document Management"
     ],
+    "pricingHints": [],
     "audienceRank": 17,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "fireflies",
@@ -1313,7 +1684,11 @@
     "categoryNames": [
       "Transcription & Meeting Notes"
     ],
-    "audienceRank": 18
+    "pricingHints": [
+      "https://fireflies.ai/pricing"
+    ],
+    "audienceRank": 18,
+    "productPaths": []
   },
   {
     "id": "otter",
@@ -1327,7 +1702,11 @@
     "categoryNames": [
       "Transcription & Meeting Notes"
     ],
-    "audienceRank": 18
+    "pricingHints": [
+      "https://otter.ai/pricing"
+    ],
+    "audienceRank": 18,
+    "productPaths": []
   },
   {
     "id": "vosk",
@@ -1341,9 +1720,13 @@
     "categoryNames": [
       "Transcription & Meeting Notes"
     ],
+    "pricingHints": [],
     "audienceRank": 18,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/vosk"
+    ]
   },
   {
     "id": "whisper",
@@ -1357,9 +1740,13 @@
     "categoryNames": [
       "Transcription & Meeting Notes"
     ],
+    "pricingHints": [],
     "audienceRank": 18,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/openai/whisper"
+    ]
   },
   {
     "id": "excalidraw",
@@ -1373,9 +1760,11 @@
     "categoryNames": [
       "Whiteboards and UI design"
     ],
+    "pricingHints": [],
     "audienceRank": 19,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "figjam",
@@ -1389,7 +1778,26 @@
     "categoryNames": [
       "Whiteboards and UI design"
     ],
-    "audienceRank": 19
+    "pricingHints": [],
+    "audienceRank": 19,
+    "productPaths": [
+      "/figjam"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.figma.com/pricing/",
+        "evidenceCapturedAt": "2025-06-25T16:10:40.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/",
+        "evidenceSha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+        "locator": "offset:167916-168023",
+        "label": "Pricing",
+        "scope": {
+          "edition": "Collab seats (FigJam included)",
+          "deployment": "hosted"
+        },
+        "locale": "en"
+      }
+    ]
   },
   {
     "id": "figma",
@@ -1403,7 +1811,11 @@
     "categoryNames": [
       "Whiteboards and UI design"
     ],
-    "audienceRank": 19
+    "pricingHints": [
+      "https://www.figma.com/pricing/"
+    ],
+    "audienceRank": 19,
+    "productPaths": []
   },
   {
     "id": "miro",
@@ -1417,7 +1829,11 @@
     "categoryNames": [
       "Whiteboards and UI design"
     ],
-    "audienceRank": 19
+    "pricingHints": [
+      "https://miro.com/pricing/"
+    ],
+    "audienceRank": 19,
+    "productPaths": []
   },
   {
     "id": "penpot",
@@ -1431,9 +1847,13 @@
     "categoryNames": [
       "Whiteboards and UI design"
     ],
+    "pricingHints": [
+      "https://penpot.app/pricing/self-host"
+    ],
     "audienceRank": 19,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "tldraw",
@@ -1447,9 +1867,13 @@
     "categoryNames": [
       "Whiteboards and UI design"
     ],
+    "pricingHints": [
+      "https://tldraw.dev/pricing"
+    ],
     "audienceRank": 19,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "akaunting",
@@ -1463,9 +1887,13 @@
     "categoryNames": [
       "Accounting and ERP"
     ],
+    "pricingHints": [
+      "https://akaunting.com/plans-on-premise"
+    ],
     "audienceRank": 20,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "invoice-ninja",
@@ -1479,9 +1907,13 @@
     "categoryNames": [
       "Accounting and ERP"
     ],
+    "pricingHints": [
+      "https://invoiceninja.com/pricing-plans/"
+    ],
     "audienceRank": 20,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "odoo-ce",
@@ -1497,9 +1929,13 @@
       "Accounting and ERP",
       "CRM"
     ],
+    "pricingHints": [
+      "https://www.odoo.com/pricing"
+    ],
     "audienceRank": 20,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "quickbooks-online",
@@ -1513,7 +1949,11 @@
     "categoryNames": [
       "Accounting and ERP"
     ],
-    "audienceRank": 20
+    "pricingHints": [],
+    "audienceRank": 20,
+    "productPaths": [
+      "/online"
+    ]
   },
   {
     "id": "xero",
@@ -1527,7 +1967,13 @@
     "categoryNames": [
       "Accounting and ERP"
     ],
-    "audienceRank": 20
+    "pricingHints": [
+      "https://www.xero.com/us/pricing-plans/"
+    ],
+    "audienceRank": 20,
+    "productPaths": [
+      "/us"
+    ]
   },
   {
     "id": "harvest",
@@ -1541,7 +1987,11 @@
     "categoryNames": [
       "Time tracking"
     ],
-    "audienceRank": 21
+    "pricingHints": [
+      "https://www.getharvest.com/pricing"
+    ],
+    "audienceRank": 21,
+    "productPaths": []
   },
   {
     "id": "kimai",
@@ -1555,9 +2005,15 @@
     "categoryNames": [
       "Time tracking"
     ],
+    "pricingHints": [
+      "https://www.kimai.org/en/blog/2026/fair-pricing"
+    ],
     "audienceRank": 21,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": [
+      "/en"
+    ]
   },
   {
     "id": "solidtime",
@@ -1571,9 +2027,13 @@
     "categoryNames": [
       "Time tracking"
     ],
+    "pricingHints": [
+      "https://www.solidtime.io/pricing/on-premise"
+    ],
     "audienceRank": 21,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "toggl-track",
@@ -1587,7 +2047,11 @@
     "categoryNames": [
       "Time tracking"
     ],
-    "audienceRank": 21
+    "pricingHints": [
+      "https://toggl.com/pricing"
+    ],
+    "audienceRank": 21,
+    "productPaths": []
   },
   {
     "id": "docebo",
@@ -1601,7 +2065,11 @@
     "categoryNames": [
       "Learning management"
     ],
-    "audienceRank": 22
+    "pricingHints": [
+      "https://www.docebo.com/pricing/"
+    ],
+    "audienceRank": 22,
+    "productPaths": []
   },
   {
     "id": "moodle",
@@ -1615,9 +2083,11 @@
     "categoryNames": [
       "Learning management"
     ],
+    "pricingHints": [],
     "audienceRank": 22,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "open-edx",
@@ -1631,9 +2101,11 @@
     "categoryNames": [
       "Learning management"
     ],
+    "pricingHints": [],
     "audienceRank": 22,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "talentlms",
@@ -1647,7 +2119,11 @@
     "categoryNames": [
       "Learning management"
     ],
-    "audienceRank": 22
+    "pricingHints": [
+      "https://www.talentlms.com/prices"
+    ],
+    "audienceRank": 22,
+    "productPaths": []
   },
   {
     "id": "espocrm",
@@ -1661,9 +2137,11 @@
     "categoryNames": [
       "CRM"
     ],
+    "pricingHints": [],
     "audienceRank": 23,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "hubspot",
@@ -1677,7 +2155,11 @@
     "categoryNames": [
       "CRM"
     ],
-    "audienceRank": 23
+    "pricingHints": [],
+    "audienceRank": 23,
+    "productPaths": [
+      "/products/sales"
+    ]
   },
   {
     "id": "salesforce",
@@ -1691,7 +2173,13 @@
     "categoryNames": [
       "CRM"
     ],
-    "audienceRank": 23
+    "pricingHints": [
+      "https://www.salesforce.com/sales/pricing/"
+    ],
+    "audienceRank": 23,
+    "productPaths": [
+      "/sales"
+    ]
   },
   {
     "id": "suitecrm",
@@ -1705,9 +2193,11 @@
     "categoryNames": [
       "CRM"
     ],
+    "pricingHints": [],
     "audienceRank": 23,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "twenty",
@@ -1721,9 +2211,13 @@
     "categoryNames": [
       "CRM"
     ],
+    "pricingHints": [
+      "https://twenty.com/pricing"
+    ],
     "audienceRank": 23,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "chatwoot",
@@ -1737,9 +2231,14 @@
     "categoryNames": [
       "Support and helpdesk"
     ],
+    "pricingHints": [
+      "https://www.chatwoot.com/pricing",
+      "https://www.chatwoot.com/pricing/self-hosted-plans"
+    ],
     "audienceRank": 24,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "freescout",
@@ -1753,9 +2252,11 @@
     "categoryNames": [
       "Support and helpdesk"
     ],
+    "pricingHints": [],
     "audienceRank": 24,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "intercom",
@@ -1769,7 +2270,11 @@
     "categoryNames": [
       "Support and helpdesk"
     ],
-    "audienceRank": 24
+    "pricingHints": [
+      "https://www.intercom.com/pricing"
+    ],
+    "audienceRank": 24,
+    "productPaths": []
   },
   {
     "id": "zammad",
@@ -1783,9 +2288,13 @@
     "categoryNames": [
       "Support and helpdesk"
     ],
+    "pricingHints": [
+      "https://zammad.com/en/pricing"
+    ],
     "audienceRank": 24,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "zendesk",
@@ -1799,7 +2308,11 @@
     "categoryNames": [
       "Support and helpdesk"
     ],
-    "audienceRank": 24
+    "pricingHints": [
+      "https://www.zendesk.com/pricing/"
+    ],
+    "audienceRank": 24,
+    "productPaths": []
   },
   {
     "id": "keila",
@@ -1813,9 +2326,13 @@
     "categoryNames": [
       "Email marketing"
     ],
+    "pricingHints": [
+      "https://www.keila.io/pricing/"
+    ],
     "audienceRank": 25,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "listmonk",
@@ -1829,9 +2346,11 @@
     "categoryNames": [
       "Email marketing"
     ],
+    "pricingHints": [],
     "audienceRank": 25,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "mailchimp",
@@ -1845,7 +2364,11 @@
     "categoryNames": [
       "Email marketing"
     ],
-    "audienceRank": 25
+    "pricingHints": [
+      "https://mailchimp.com/pricing/marketing/"
+    ],
+    "audienceRank": 25,
+    "productPaths": []
   },
   {
     "id": "mautic",
@@ -1859,9 +2382,11 @@
     "categoryNames": [
       "Email marketing"
     ],
+    "pricingHints": [],
     "audienceRank": 25,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "airtable",
@@ -1875,7 +2400,11 @@
     "categoryNames": [
       "Spreadsheet databases"
     ],
-    "audienceRank": 26
+    "pricingHints": [
+      "https://airtable.com/pricing"
+    ],
+    "audienceRank": 26,
+    "productPaths": []
   },
   {
     "id": "baserow",
@@ -1889,9 +2418,13 @@
     "categoryNames": [
       "Spreadsheet databases"
     ],
+    "pricingHints": [
+      "https://baserow.io/pricing"
+    ],
     "audienceRank": 26,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "grist",
@@ -1905,9 +2438,13 @@
     "categoryNames": [
       "Spreadsheet databases"
     ],
+    "pricingHints": [
+      "https://www.getgrist.com/pricing/"
+    ],
     "audienceRank": 26,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "nocodb",
@@ -1921,9 +2458,13 @@
     "categoryNames": [
       "Spreadsheet databases"
     ],
+    "pricingHints": [
+      "https://nocodb.com/pricing"
+    ],
     "audienceRank": 26,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "teable",
@@ -1937,9 +2478,13 @@
     "categoryNames": [
       "Spreadsheet databases"
     ],
+    "pricingHints": [
+      "https://teable.ai/pricing"
+    ],
     "audienceRank": 26,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "bigcommerce",
@@ -1953,7 +2498,11 @@
     "categoryNames": [
       "Ecommerce"
     ],
-    "audienceRank": 27
+    "pricingHints": [
+      "https://www.bigcommerce.com/pricing/"
+    ],
+    "audienceRank": 27,
+    "productPaths": []
   },
   {
     "id": "medusa",
@@ -1967,9 +2516,13 @@
     "categoryNames": [
       "Ecommerce"
     ],
+    "pricingHints": [
+      "https://medusajs.com/pricing"
+    ],
     "audienceRank": 27,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "prestashop",
@@ -1983,9 +2536,13 @@
     "categoryNames": [
       "Ecommerce"
     ],
+    "pricingHints": [],
     "audienceRank": 27,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/open-source"
+    ]
   },
   {
     "id": "shopify",
@@ -1999,7 +2556,11 @@
     "categoryNames": [
       "Ecommerce"
     ],
-    "audienceRank": 27
+    "pricingHints": [
+      "https://www.shopify.com/pricing"
+    ],
+    "audienceRank": 27,
+    "productPaths": []
   },
   {
     "id": "woocommerce",
@@ -2013,9 +2574,13 @@
     "categoryNames": [
       "Ecommerce"
     ],
+    "pricingHints": [
+      "https://woocommerce.com/pricing/"
+    ],
     "audienceRank": 27,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "adobe-lightroom",
@@ -2029,7 +2594,13 @@
     "categoryNames": [
       "Image editing"
     ],
-    "audienceRank": 28
+    "pricingHints": [
+      "https://www.adobe.com/products/photoshop-lightroom/plans.html"
+    ],
+    "audienceRank": 28,
+    "productPaths": [
+      "/products/photoshop-lightroom"
+    ]
   },
   {
     "id": "adobe-photoshop",
@@ -2043,7 +2614,13 @@
     "categoryNames": [
       "Image editing"
     ],
-    "audienceRank": 28
+    "pricingHints": [
+      "https://www.adobe.com/products/photoshop/plans.html"
+    ],
+    "audienceRank": 28,
+    "productPaths": [
+      "/products/photoshop"
+    ]
   },
   {
     "id": "darktable",
@@ -2057,9 +2634,11 @@
     "categoryNames": [
       "Image editing"
     ],
+    "pricingHints": [],
     "audienceRank": 28,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "gimp",
@@ -2073,9 +2652,11 @@
     "categoryNames": [
       "Image editing"
     ],
+    "pricingHints": [],
     "audienceRank": 28,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "krita",
@@ -2089,9 +2670,11 @@
     "categoryNames": [
       "Image editing"
     ],
+    "pricingHints": [],
     "audienceRank": 28,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "drawio",
@@ -2105,9 +2688,11 @@
     "categoryNames": [
       "Diagramming"
     ],
+    "pricingHints": [],
     "audienceRank": 29,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "lucidchart",
@@ -2121,7 +2706,11 @@
     "categoryNames": [
       "Diagramming"
     ],
-    "audienceRank": 29
+    "pricingHints": [],
+    "audienceRank": 29,
+    "productPaths": [
+      "/lucidchart"
+    ]
   },
   {
     "id": "mermaid",
@@ -2135,9 +2724,11 @@
     "categoryNames": [
       "Diagramming"
     ],
+    "pricingHints": [],
     "audienceRank": 29,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "microsoft-visio",
@@ -2151,7 +2742,13 @@
     "categoryNames": [
       "Diagramming"
     ],
-    "audienceRank": 29
+    "pricingHints": [
+      "https://www.microsoft.com/en-us/microsoft-365/visio/visio-plans-and-pricing"
+    ],
+    "audienceRank": 29,
+    "productPaths": [
+      "/en-us/microsoft-365/visio"
+    ]
   },
   {
     "id": "adobe-premiere-pro",
@@ -2165,7 +2762,13 @@
     "categoryNames": [
       "Video editing"
     ],
-    "audienceRank": 30
+    "pricingHints": [
+      "https://www.adobe.com/products/premiere/plans.html"
+    ],
+    "audienceRank": 30,
+    "productPaths": [
+      "/products/premiere"
+    ]
   },
   {
     "id": "final-cut-pro",
@@ -2179,7 +2782,11 @@
     "categoryNames": [
       "Video editing"
     ],
-    "audienceRank": 30
+    "pricingHints": [],
+    "audienceRank": 30,
+    "productPaths": [
+      "/final-cut-pro"
+    ]
   },
   {
     "id": "kdenlive",
@@ -2193,9 +2800,11 @@
     "categoryNames": [
       "Video editing"
     ],
+    "pricingHints": [],
     "audienceRank": 30,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "shotcut",
@@ -2209,9 +2818,11 @@
     "categoryNames": [
       "Video editing"
     ],
+    "pricingHints": [],
     "audienceRank": 30,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "buffer",
@@ -2225,7 +2836,11 @@
     "categoryNames": [
       "Social publishing"
     ],
-    "audienceRank": 31
+    "pricingHints": [
+      "https://buffer.com/pricing"
+    ],
+    "audienceRank": 31,
+    "productPaths": []
   },
   {
     "id": "hootsuite",
@@ -2239,7 +2854,11 @@
     "categoryNames": [
       "Social publishing"
     ],
-    "audienceRank": 31
+    "pricingHints": [
+      "https://www.hootsuite.com/plans"
+    ],
+    "audienceRank": 31,
+    "productPaths": []
   },
   {
     "id": "mixpost",
@@ -2253,9 +2872,13 @@
     "categoryNames": [
       "Social publishing"
     ],
+    "pricingHints": [
+      "https://mixpost.app/pricing"
+    ],
     "audienceRank": 31,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "postiz",
@@ -2269,9 +2892,13 @@
     "categoryNames": [
       "Social publishing"
     ],
+    "pricingHints": [
+      "https://postiz.com/pricing"
+    ],
     "audienceRank": 31,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "activepieces",
@@ -2285,9 +2912,13 @@
     "categoryNames": [
       "Workflow automation"
     ],
+    "pricingHints": [
+      "https://www.activepieces.com/pricing"
+    ],
     "audienceRank": 32,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "make",
@@ -2301,7 +2932,11 @@
     "categoryNames": [
       "Workflow automation"
     ],
-    "audienceRank": 32
+    "pricingHints": [
+      "https://www.make.com/pricing"
+    ],
+    "audienceRank": 32,
+    "productPaths": []
   },
   {
     "id": "n8n",
@@ -2315,9 +2950,13 @@
     "categoryNames": [
       "Workflow automation"
     ],
+    "pricingHints": [
+      "https://n8n.io/pricing/"
+    ],
     "audienceRank": 32,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "node-red",
@@ -2331,9 +2970,11 @@
     "categoryNames": [
       "Workflow automation"
     ],
+    "pricingHints": [],
     "audienceRank": 32,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "windmill",
@@ -2347,9 +2988,13 @@
     "categoryNames": [
       "Workflow automation"
     ],
+    "pricingHints": [
+      "https://www.windmill.dev/pricing"
+    ],
     "audienceRank": 32,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "zapier",
@@ -2363,7 +3008,11 @@
     "categoryNames": [
       "Workflow automation"
     ],
-    "audienceRank": 32
+    "pricingHints": [
+      "https://zapier.com/pricing"
+    ],
+    "audienceRank": 32,
+    "productPaths": []
   },
   {
     "id": "google-analytics-360",
@@ -2377,7 +3026,11 @@
     "categoryNames": [
       "Web analytics"
     ],
-    "audienceRank": 33
+    "pricingHints": [],
+    "audienceRank": 33,
+    "productPaths": [
+      "/about/analytics-360"
+    ]
   },
   {
     "id": "matomo",
@@ -2391,9 +3044,13 @@
     "categoryNames": [
       "Web analytics"
     ],
+    "pricingHints": [
+      "https://matomo.org/pricing/"
+    ],
     "audienceRank": 33,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "plausible",
@@ -2407,9 +3064,11 @@
     "categoryNames": [
       "Web analytics"
     ],
+    "pricingHints": [],
     "audienceRank": 33,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "posthog",
@@ -2423,9 +3082,13 @@
     "categoryNames": [
       "Web analytics"
     ],
+    "pricingHints": [
+      "https://posthog.com/pricing"
+    ],
     "audienceRank": 33,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "umami",
@@ -2439,9 +3102,13 @@
     "categoryNames": [
       "Web analytics"
     ],
+    "pricingHints": [
+      "https://umami.is/pricing"
+    ],
     "audienceRank": 33,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "cap",
@@ -2455,9 +3122,13 @@
     "categoryNames": [
       "Screen recording and asynchronous video"
     ],
+    "pricingHints": [
+      "https://cap.so/pricing"
+    ],
     "audienceRank": 34,
     "osi": true,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "loom",
@@ -2471,7 +3142,11 @@
     "categoryNames": [
       "Screen recording and asynchronous video"
     ],
-    "audienceRank": 34
+    "pricingHints": [
+      "https://www.loom.com/pricing"
+    ],
+    "audienceRank": 34,
+    "productPaths": []
   },
   {
     "id": "obs-studio",
@@ -2485,9 +3160,11 @@
     "categoryNames": [
       "Screen recording and asynchronous video"
     ],
+    "pricingHints": [],
     "audienceRank": 34,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "screenity",
@@ -2501,9 +3178,11 @@
     "categoryNames": [
       "Screen recording and asynchronous video"
     ],
+    "pricingHints": [],
     "audienceRank": 34,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "bamboohr",
@@ -2517,7 +3196,11 @@
     "categoryNames": [
       "Human resources"
     ],
-    "audienceRank": 35
+    "pricingHints": [
+      "https://www.bamboohr.com/pricing/"
+    ],
+    "audienceRank": 35,
+    "productPaths": []
   },
   {
     "id": "orangehrm-starter",
@@ -2531,9 +3214,13 @@
     "categoryNames": [
       "Human resources"
     ],
+    "pricingHints": [],
     "audienceRank": 35,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": [
+      "/orangehrm-starter-open-source-software"
+    ]
   },
   {
     "id": "aircall",
@@ -2547,7 +3234,11 @@
     "categoryNames": [
       "Telephony"
     ],
-    "audienceRank": 36
+    "pricingHints": [
+      "https://aircall.io/pricing/"
+    ],
+    "audienceRank": 36,
+    "productPaths": []
   },
   {
     "id": "asterisk",
@@ -2561,9 +3252,11 @@
     "categoryNames": [
       "Telephony"
     ],
+    "pricingHints": [],
     "audienceRank": 36,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "freeswitch",
@@ -2577,9 +3270,13 @@
     "categoryNames": [
       "Telephony"
     ],
+    "pricingHints": [],
     "audienceRank": 36,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": [
+      "/developers/freeswitch"
+    ]
   },
   {
     "id": "ringcentral",
@@ -2593,7 +3290,11 @@
     "categoryNames": [
       "Telephony"
     ],
-    "audienceRank": 36
+    "pricingHints": [
+      "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+    ],
+    "audienceRank": 36,
+    "productPaths": []
   },
   {
     "id": "brandfolder",
@@ -2607,7 +3308,11 @@
     "categoryNames": [
       "Digital Asset Management"
     ],
-    "audienceRank": 37
+    "pricingHints": [
+      "https://brandfolder.com/pricing/"
+    ],
+    "audienceRank": 37,
+    "productPaths": []
   },
   {
     "id": "bynder",
@@ -2621,7 +3326,11 @@
     "categoryNames": [
       "Digital Asset Management"
     ],
-    "audienceRank": 37
+    "pricingHints": [
+      "https://www.bynder.com/en/pricing/"
+    ],
+    "audienceRank": 37,
+    "productPaths": []
   },
   {
     "id": "phraseanet",
@@ -2635,9 +3344,11 @@
     "categoryNames": [
       "Digital Asset Management"
     ],
+    "pricingHints": [],
     "audienceRank": 37,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "resourcespace",
@@ -2651,9 +3362,13 @@
     "categoryNames": [
       "Digital Asset Management"
     ],
+    "pricingHints": [
+      "https://www.resourcespace.com/pricing"
+    ],
     "audienceRank": 37,
     "osi": false,
-    "tier": "U"
+    "tier": "U",
+    "productPaths": []
   },
   {
     "id": "apache-superset",
@@ -2667,9 +3382,11 @@
     "categoryNames": [
       "Business intelligence"
     ],
+    "pricingHints": [],
     "audienceRank": 38,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "looker",
@@ -2683,7 +3400,13 @@
     "categoryNames": [
       "Business intelligence"
     ],
-    "audienceRank": 38
+    "pricingHints": [
+      "https://cloud.google.com/looker/pricing"
+    ],
+    "audienceRank": 38,
+    "productPaths": [
+      "/looker"
+    ]
   },
   {
     "id": "metabase",
@@ -2697,9 +3420,13 @@
     "categoryNames": [
       "Business intelligence"
     ],
+    "pricingHints": [
+      "https://www.metabase.com/pricing"
+    ],
     "audienceRank": 38,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "metabase-pro",
@@ -2713,7 +3440,11 @@
     "categoryNames": [
       "Business intelligence"
     ],
-    "audienceRank": 38
+    "pricingHints": [
+      "https://www.metabase.com/pricing"
+    ],
+    "audienceRank": 38,
+    "productPaths": []
   },
   {
     "id": "power-bi",
@@ -2727,7 +3458,9 @@
     "categoryNames": [
       "Business intelligence"
     ],
-    "audienceRank": 38
+    "pricingHints": [],
+    "audienceRank": 38,
+    "productPaths": []
   },
   {
     "id": "tableau",
@@ -2741,7 +3474,11 @@
     "categoryNames": [
       "Business intelligence"
     ],
-    "audienceRank": 38
+    "pricingHints": [
+      "https://www.tableau.com/pricing"
+    ],
+    "audienceRank": 38,
+    "productPaths": []
   },
   {
     "id": "greenhouse",
@@ -2755,7 +3492,11 @@
     "categoryNames": [
       "Recruiting and applicant tracking"
     ],
-    "audienceRank": 39
+    "pricingHints": [
+      "https://www.greenhouse.com/pricing"
+    ],
+    "audienceRank": 39,
+    "productPaths": []
   },
   {
     "id": "lever",
@@ -2769,7 +3510,11 @@
     "categoryNames": [
       "Recruiting and applicant tracking"
     ],
-    "audienceRank": 39
+    "pricingHints": [
+      "https://www.lever.co/pricing"
+    ],
+    "audienceRank": 39,
+    "productPaths": []
   },
   {
     "id": "opencats",
@@ -2783,9 +3528,11 @@
     "categoryNames": [
       "Recruiting and applicant tracking"
     ],
+    "pricingHints": [],
     "audienceRank": 39,
     "osi": false,
-    "tier": "S"
+    "tier": "S",
+    "productPaths": []
   },
   {
     "id": "fastmail",
@@ -2799,7 +3546,26 @@
     "categoryNames": [
       "Business email hosting"
     ],
-    "audienceRank": 40
+    "pricingHints": [],
+    "audienceRank": 40,
+    "productPaths": [
+      "/business"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.fastmail.com/pricing/?plan-type=business",
+        "evidenceCapturedAt": "2025-06-29T08:26:13.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250629082613id_/https://www.fastmail.com/business/",
+        "evidenceSha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20",
+        "locator": "offset:54830-55372",
+        "label": "See business pricing",
+        "scope": {
+          "edition": "Business pricing",
+          "deployment": "unknown"
+        },
+        "locale": "en"
+      }
+    ]
   },
   {
     "id": "mailcow",
@@ -2813,9 +3579,11 @@
     "categoryNames": [
       "Business email hosting"
     ],
+    "pricingHints": [],
     "audienceRank": 40,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "stalwart",
@@ -2829,9 +3597,14 @@
     "categoryNames": [
       "Business email hosting"
     ],
+    "pricingHints": [
+      "https://stalw.art/compare/",
+      "https://stalw.art/pricing/"
+    ],
     "audienceRank": 40,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "zoho-mail",
@@ -2845,7 +3618,14 @@
     "categoryNames": [
       "Business email hosting"
     ],
-    "audienceRank": 40
+    "pricingHints": [
+      "https://www.zoho.com/mail/zohomail-pricing.html",
+      "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
+    ],
+    "audienceRank": 40,
+    "productPaths": [
+      "/mail"
+    ]
   },
   {
     "id": "auth0",
@@ -2859,7 +3639,11 @@
     "categoryNames": [
       "Login and single sign-on"
     ],
-    "audienceRank": 41
+    "pricingHints": [
+      "https://auth0.com/pricing"
+    ],
+    "audienceRank": 41,
+    "productPaths": []
   },
   {
     "id": "authelia",
@@ -2873,9 +3657,11 @@
     "categoryNames": [
       "Login and single sign-on"
     ],
+    "pricingHints": [],
     "audienceRank": 41,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "authentik",
@@ -2889,9 +3675,13 @@
     "categoryNames": [
       "Login and single sign-on"
     ],
+    "pricingHints": [
+      "https://goauthentik.io/pricing/"
+    ],
     "audienceRank": 41,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "keycloak",
@@ -2905,9 +3695,11 @@
     "categoryNames": [
       "Login and single sign-on"
     ],
+    "pricingHints": [],
     "audienceRank": 41,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "okta",
@@ -2921,7 +3713,11 @@
     "categoryNames": [
       "Login and single sign-on"
     ],
-    "audienceRank": 41
+    "pricingHints": [
+      "https://www.okta.com/pricing/"
+    ],
+    "audienceRank": 41,
+    "productPaths": []
   },
   {
     "id": "zitadel",
@@ -2935,9 +3731,13 @@
     "categoryNames": [
       "Login and single sign-on"
     ],
+    "pricingHints": [
+      "https://zitadel.com/pricing"
+    ],
     "audienceRank": 41,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "cloudflare-access",
@@ -2951,7 +3751,11 @@
     "categoryNames": [
       "VPN and private network access"
     ],
-    "audienceRank": 42
+    "pricingHints": [],
+    "audienceRank": 42,
+    "productPaths": [
+      "/sase/products/access"
+    ]
   },
   {
     "id": "headscale",
@@ -2965,9 +3769,13 @@
     "categoryNames": [
       "VPN and private network access"
     ],
+    "pricingHints": [],
     "audienceRank": 42,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": [
+      "/stable"
+    ]
   },
   {
     "id": "netbird",
@@ -2981,9 +3789,13 @@
     "categoryNames": [
       "VPN and private network access"
     ],
+    "pricingHints": [
+      "https://netbird.io/pricing"
+    ],
     "audienceRank": 42,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "tailscale",
@@ -2997,7 +3809,11 @@
     "categoryNames": [
       "VPN and private network access"
     ],
-    "audienceRank": 42
+    "pricingHints": [
+      "https://tailscale.com/pricing"
+    ],
+    "audienceRank": 42,
+    "productPaths": []
   },
   {
     "id": "freshservice-itam",
@@ -3011,7 +3827,28 @@
     "categoryNames": [
       "IT asset management"
     ],
-    "audienceRank": 43
+    "pricingHints": [
+      "https://www.freshworks.com/freshservice/itam/pricing/"
+    ],
+    "audienceRank": 43,
+    "productPaths": [
+      "/freshservice/itam"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.freshworks.com/freshservice/pricing/",
+        "evidenceCapturedAt": "2025-06-12T18:05:59.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250612180559id_/https://www.freshworks.com/freshservice/itam/",
+        "evidenceSha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a",
+        "locator": "offset:110630-110902",
+        "label": "Pricing",
+        "scope": {
+          "edition": "Freshservice suite pricing",
+          "deployment": "unknown"
+        },
+        "locale": "en"
+      }
+    ]
   },
   {
     "id": "glpi",
@@ -3025,9 +3862,13 @@
     "categoryNames": [
       "IT asset management"
     ],
+    "pricingHints": [
+      "https://www.glpi-project.org/en/pricing/"
+    ],
     "audienceRank": 43,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "lansweeper",
@@ -3041,7 +3882,11 @@
     "categoryNames": [
       "IT asset management"
     ],
-    "audienceRank": 43
+    "pricingHints": [
+      "https://www.lansweeper.com/pricing/"
+    ],
+    "audienceRank": 43,
+    "productPaths": []
   },
   {
     "id": "snipe-it",
@@ -3055,9 +3900,13 @@
     "categoryNames": [
       "IT asset management"
     ],
+    "pricingHints": [
+      "https://snipeitapp.com/pricing"
+    ],
     "audienceRank": 43,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "appwrite",
@@ -3071,9 +3920,13 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
+    "pricingHints": [
+      "https://appwrite.io/pricing"
+    ],
     "audienceRank": 44,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "coolify",
@@ -3087,9 +3940,13 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
+    "pricingHints": [
+      "https://coolify.io/pricing"
+    ],
     "audienceRank": 44,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "dokku",
@@ -3103,9 +3960,11 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
+    "pricingHints": [],
     "audienceRank": 44,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "firebase",
@@ -3119,7 +3978,11 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
-    "audienceRank": 44
+    "pricingHints": [
+      "https://firebase.google.com/pricing"
+    ],
+    "audienceRank": 44,
+    "productPaths": []
   },
   {
     "id": "heroku",
@@ -3133,7 +3996,11 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
-    "audienceRank": 44
+    "pricingHints": [
+      "https://www.heroku.com/pricing/"
+    ],
+    "audienceRank": 44,
+    "productPaths": []
   },
   {
     "id": "pocketbase",
@@ -3147,9 +4014,11 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
+    "pricingHints": [],
     "audienceRank": 44,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "supabase",
@@ -3163,9 +4032,13 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
+    "pricingHints": [
+      "https://supabase.com/pricing"
+    ],
     "audienceRank": 44,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "vercel",
@@ -3179,7 +4052,12 @@
     "categoryNames": [
       "Application hosting and backends"
     ],
-    "audienceRank": 44
+    "pricingHints": [
+      "https://vercel.com/docs/plans/pro-plan",
+      "https://vercel.com/pricing"
+    ],
+    "audienceRank": 44,
+    "productPaths": []
   },
   {
     "id": "datadog",
@@ -3193,7 +4071,11 @@
     "categoryNames": [
       "Monitoring and observability"
     ],
-    "audienceRank": 45
+    "pricingHints": [
+      "https://www.datadoghq.com/pricing/"
+    ],
+    "audienceRank": 45,
+    "productPaths": []
   },
   {
     "id": "glitchtip",
@@ -3207,9 +4089,13 @@
     "categoryNames": [
       "Monitoring and observability"
     ],
+    "pricingHints": [
+      "https://glitchtip.com/pricing/"
+    ],
     "audienceRank": 45,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "grafana",
@@ -3223,9 +4109,13 @@
     "categoryNames": [
       "Monitoring and observability"
     ],
+    "pricingHints": [],
     "audienceRank": 45,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": [
+      "/oss/grafana"
+    ]
   },
   {
     "id": "pingdom",
@@ -3239,7 +4129,11 @@
     "categoryNames": [
       "Monitoring and observability"
     ],
-    "audienceRank": 45
+    "pricingHints": [
+      "https://www.pingdom.com/pricing/"
+    ],
+    "audienceRank": 45,
+    "productPaths": []
   },
   {
     "id": "sentry",
@@ -3253,7 +4147,11 @@
     "categoryNames": [
       "Monitoring and observability"
     ],
-    "audienceRank": 45
+    "pricingHints": [
+      "https://sentry.io/pricing/"
+    ],
+    "audienceRank": 45,
+    "productPaths": []
   },
   {
     "id": "uptime-kuma",
@@ -3267,9 +4165,11 @@
     "categoryNames": [
       "Monitoring and observability"
     ],
+    "pricingHints": [],
     "audienceRank": 45,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "appsmith",
@@ -3283,9 +4183,13 @@
     "categoryNames": [
       "Internal tools and low-code apps"
     ],
+    "pricingHints": [
+      "https://www.appsmith.com/pricing"
+    ],
     "audienceRank": 46,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "budibase",
@@ -3299,9 +4203,13 @@
     "categoryNames": [
       "Internal tools and low-code apps"
     ],
+    "pricingHints": [
+      "https://budibase.com/pricing/"
+    ],
     "audienceRank": 46,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "retool",
@@ -3315,7 +4223,11 @@
     "categoryNames": [
       "Internal tools and low-code apps"
     ],
-    "audienceRank": 46
+    "pricingHints": [
+      "https://retool.com/pricing"
+    ],
+    "audienceRank": 46,
+    "productPaths": []
   },
   {
     "id": "tooljet",
@@ -3329,9 +4241,13 @@
     "categoryNames": [
       "Internal tools and low-code apps"
     ],
+    "pricingHints": [
+      "https://tooljet.com/pricing"
+    ],
     "audienceRank": 46,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "bruno",
@@ -3345,9 +4261,13 @@
     "categoryNames": [
       "API clients and testing"
     ],
+    "pricingHints": [
+      "https://www.usebruno.com/pricing"
+    ],
     "audienceRank": 47,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   },
   {
     "id": "hoppscotch",
@@ -3361,9 +4281,13 @@
     "categoryNames": [
       "API clients and testing"
     ],
+    "pricingHints": [
+      "https://hoppscotch.com/pricing"
+    ],
     "audienceRank": 47,
     "osi": true,
-    "tier": "B"
+    "tier": "B",
+    "productPaths": []
   },
   {
     "id": "insomnia",
@@ -3377,7 +4301,11 @@
     "categoryNames": [
       "API clients and testing"
     ],
-    "audienceRank": 47
+    "pricingHints": [
+      "https://insomnia.rest/pricing"
+    ],
+    "audienceRank": 47,
+    "productPaths": []
   },
   {
     "id": "postman",
@@ -3391,7 +4319,11 @@
     "categoryNames": [
       "API clients and testing"
     ],
-    "audienceRank": 47
+    "pricingHints": [
+      "https://www.postman.com/pricing/"
+    ],
+    "audienceRank": 47,
+    "productPaths": []
   },
   {
     "id": "algolia",
@@ -3405,7 +4337,11 @@
     "categoryNames": [
       "Search infrastructure"
     ],
-    "audienceRank": 48
+    "pricingHints": [
+      "https://www.algolia.com/pricing"
+    ],
+    "audienceRank": 48,
+    "productPaths": []
   },
   {
     "id": "elastic-cloud",
@@ -3419,7 +4355,26 @@
     "categoryNames": [
       "Search infrastructure"
     ],
-    "audienceRank": 48
+    "pricingHints": [],
+    "audienceRank": 48,
+    "productPaths": [
+      "/cloud"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.elastic.co/pricing/serverless-search",
+        "evidenceCapturedAt": "2025-06-09T06:00:52.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250609060052id_/https://www.elastic.co/cloud/",
+        "evidenceSha256": "63fe7f1ce814d21123ed53c16172b40712d5a4ee53df89f6a028a4543a2fcd1e",
+        "locator": "offset:124621-124970",
+        "label": "Elastic Cloud Serverless pricing",
+        "scope": {
+          "edition": "Elastic Cloud Serverless",
+          "deployment": "hosted"
+        },
+        "locale": "en"
+      }
+    ]
   },
   {
     "id": "opensearch",
@@ -3433,9 +4388,11 @@
     "categoryNames": [
       "Search infrastructure"
     ],
+    "pricingHints": [],
     "audienceRank": 48,
     "osi": true,
-    "tier": "A"
+    "tier": "A",
+    "productPaths": []
   },
   {
     "id": "typesense",
@@ -3449,8 +4406,10 @@
     "categoryNames": [
       "Search infrastructure"
     ],
+    "pricingHints": [],
     "audienceRank": 48,
     "osi": true,
-    "tier": "C"
+    "tier": "C",
+    "productPaths": []
   }
 ]

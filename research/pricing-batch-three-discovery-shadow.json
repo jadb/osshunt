@@ -1,0 +1,1103 @@
+{
+  "formatVersion": 1,
+  "mode": "offline-cached-discovery-shadow",
+  "sourceRequests": 0,
+  "independentlyRecomputed": true,
+  "baselineChanged": false,
+  "beforeParserCommit": "578289452c9c1873a8abbcd9c2f88c74e9563b0c",
+  "afterParserCommit": "8898166de517b3f35d222d087941ad5c03a923ea",
+  "batches": [
+    {
+      "cohort": "batch-three",
+      "retainedLandings": 14,
+      "selectedChanges": 1,
+      "results": [
+        {
+          "id": "front",
+          "landing": {
+            "timestamp": "20250625074700",
+            "capturedAt": "2025-06-25T07:47:00.000Z",
+            "originalUrl": "https://front.com/",
+            "digest": "XGBN6O32WKA2EO6AR3ZW46A6N4UYGKRY",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://front.com/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://front.com/pricing",
+              "label": "Pricing",
+              "locator": "offset:10767-10883",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://front.com/pricing",
+              "label": "Pricing",
+              "locator": "offset:10767-10883",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "adobe-acrobat",
+          "landing": {
+            "timestamp": "20250630192921",
+            "capturedAt": "2025-06-30T19:29:21.000Z",
+            "originalUrl": "https://www.adobe.com/acrobat.html",
+            "digest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.adobe.com/acrobat/pricing/students",
+            "https://www.adobe.com/acrobat/pricing/compare-versions.html"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.adobe.com/acrobat/pricing/students",
+              "label": "students and teachers.",
+              "locator": "offset:10345-10407",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+              "label": "Acrobat Standard and Acrobat Pro",
+              "locator": "offset:30073-30179",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.adobe.com/acrobat/pricing/students",
+              "label": "students and teachers.",
+              "locator": "offset:10345-10407",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+              "label": "Acrobat Standard and Acrobat Pro",
+              "locator": "offset:30073-30179",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 3,
+          "afterCandidates": 3
+        },
+        {
+          "id": "smallpdf",
+          "landing": {
+            "timestamp": "20250630043428",
+            "capturedAt": "2025-06-30T04:34:28.000Z",
+            "originalUrl": "https://smallpdf.com/",
+            "digest": "QL2RJC5BHMO7Z7HAEOIGE22GSLRAFUYG",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://smallpdf.com/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://smallpdf.com/pricing",
+              "label": "Pricing",
+              "locator": "offset:239257-239374",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://smallpdf.com/pricing",
+              "label": "Pricing",
+              "locator": "offset:239257-239374",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "google-meet",
+          "landing": {
+            "timestamp": "20250630235300",
+            "capturedAt": "2025-06-30T23:53:00.000Z",
+            "originalUrl": "https://workspace.google.com/products/meet/",
+            "digest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [],
+          "beforeSelected": [],
+          "afterSelected": [],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 0,
+          "afterCandidates": 0
+        },
+        {
+          "id": "wix",
+          "landing": {
+            "timestamp": "20250630221108",
+            "capturedAt": "2025-06-30T22:11:08.000Z",
+            "originalUrl": "https://www.wix.com/",
+            "digest": "CTW6NEX6YW63CAVRYNVTZZCZEVEWQSJC",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.wix.com/plans"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.wix.com/plans",
+              "label": "Pricing",
+              "locator": "offset:959777-959881",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.wix.com/plans",
+              "label": "Pricing",
+              "locator": "offset:959777-959881",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "backblaze-business-backup",
+          "landing": {
+            "timestamp": "20250624162754",
+            "capturedAt": "2025-06-24T16:27:54.000Z",
+            "originalUrl": "https://www.backblaze.com/cloud-backup/business",
+            "digest": "HIDH5QUYQGNCTLK65UMFD6DNREQ6CEPV",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [],
+          "beforeSelected": [],
+          "afterSelected": [],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 0,
+          "afterCandidates": 0
+        },
+        {
+          "id": "wetransfer",
+          "landing": {
+            "timestamp": "20250630231840",
+            "capturedAt": "2025-06-30T23:18:40.000Z",
+            "originalUrl": "https://wetransfer.com/",
+            "digest": "56GBCRCBNOMUMTZUQXBKCJDNXCM52DFT",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://wetransfer.com/help-center/subscriptions/plan-limits",
+            "https://wetransfer.com/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://wetransfer.com/help-center/subscriptions/plan-limits",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            },
+            {
+              "url": "https://wetransfer.com/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:1",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://wetransfer.com/help-center/subscriptions/plan-limits",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            },
+            {
+              "url": "https://wetransfer.com/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:1",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 2,
+          "afterCandidates": 2
+        },
+        {
+          "id": "docusign",
+          "landing": {
+            "timestamp": "20250620004550",
+            "capturedAt": "2025-06-20T00:45:50.000Z",
+            "originalUrl": "https://www.docusign.com/products/electronic-signature",
+            "digest": "OEUVGECQOFN5LRNV2TY7P5IO6UL44FVI",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [],
+          "beforeSelected": [],
+          "afterSelected": [],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 0,
+          "afterCandidates": 0
+        },
+        {
+          "id": "expensify",
+          "landing": {
+            "timestamp": "20250629121129",
+            "capturedAt": "2025-06-29T12:11:29.000Z",
+            "originalUrl": "https://www.expensify.com/",
+            "digest": "IKXD2ZD5FVMOY755AOBK3PRV2PUORCDU",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://www.expensify.com/pricing?swcfpc=1"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.expensify.com/pricing?swcfpc=1",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.expensify.com/pricing?swcfpc=1",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "spendesk",
+          "landing": {
+            "timestamp": "20250624112401",
+            "capturedAt": "2025-06-24T11:24:01.000Z",
+            "originalUrl": "https://www.spendesk.com/",
+            "digest": "U3KE2P47QSK55P5BTZKJSQCZTKKS4JHA",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://www.spendesk.com/pricing/",
+            "https://www.spendesk.com/platform/subscription-management/"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.spendesk.com/pricing/",
+              "label": "Pricing",
+              "locator": "offset:273044-273207",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.spendesk.com/platform/subscription-management/",
+              "label": "Subscription management",
+              "locator": "offset:258257-259001",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.spendesk.com/pricing/",
+              "label": "Pricing",
+              "locator": "offset:273044-273207",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": true,
+          "removed": [
+            {
+              "url": "https://www.spendesk.com/platform/subscription-management/",
+              "label": "Subscription management",
+              "locator": "offset:258257-259001",
+              "provenance": "archived-link"
+            }
+          ],
+          "added": [],
+          "beforeCandidates": 2,
+          "afterCandidates": 1
+        },
+        {
+          "id": "docuware",
+          "landing": {
+            "timestamp": "20250625040212",
+            "capturedAt": "2025-06-25T04:02:12.000Z",
+            "originalUrl": "https://start.docuware.com/",
+            "digest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://start.docuware.com/faq/docuware-pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://start.docuware.com/faq/docuware-pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://start.docuware.com/faq/docuware-pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "m-files",
+          "landing": {
+            "timestamp": "20250622215056",
+            "capturedAt": "2025-06-22T21:50:56.000Z",
+            "originalUrl": "https://www.m-files.com/",
+            "digest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [],
+          "beforeSelected": [],
+          "afterSelected": [],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 0,
+          "afterCandidates": 0
+        },
+        {
+          "id": "fireflies",
+          "landing": {
+            "timestamp": "20250630090436",
+            "capturedAt": "2025-06-30T09:04:36.000Z",
+            "originalUrl": "https://fireflies.ai/",
+            "digest": "ERCUGHYVTAOXCOV6O6KVQALHZHENJQEO",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://fireflies.ai/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://fireflies.ai/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://fireflies.ai/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "otter",
+          "landing": {
+            "timestamp": "20250630174201",
+            "capturedAt": "2025-06-30T17:42:01.000Z",
+            "originalUrl": "https://otter.ai/",
+            "digest": "3KJ2YE6NRKZ2I6ZUCE4ZDPUDFOSLRITN",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://otter.ai/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://otter.ai/pricing",
+              "label": "Pricing",
+              "locator": "offset:36021-36107",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://otter.ai/pricing",
+              "label": "Pricing",
+              "locator": "offset:36021-36107",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        }
+      ]
+    },
+    {
+      "cohort": "previous-twenty",
+      "retainedLandings": 15,
+      "selectedChanges": 0,
+      "results": [
+        {
+          "id": "1password",
+          "landing": {
+            "timestamp": "20250630192807",
+            "capturedAt": "2025-06-30T19:28:07.000Z",
+            "originalUrl": "https://1password.com/",
+            "digest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://1password.com/pricing/xam",
+            "https://1password.com/compare/password-manager"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://1password.com/pricing/xam",
+              "label": "Pricing",
+              "locator": "offset:84802-85024",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://1password.com/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://1password.com/pricing/xam",
+              "label": "Pricing",
+              "locator": "offset:84802-85024",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://1password.com/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 4,
+          "afterCandidates": 4
+        },
+        {
+          "id": "confluence",
+          "landing": {
+            "timestamp": "20250629165214",
+            "capturedAt": "2025-06-29T16:52:14.000Z",
+            "originalUrl": "https://www.atlassian.com/software/confluence",
+            "digest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.atlassian.com/software/confluence/pricing",
+            "https://www.atlassian.com/software/confluence/templates/marketing-plan"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.atlassian.com/software/confluence/pricing",
+              "label": "Pricing",
+              "locator": "offset:167707-168143",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.atlassian.com/software/confluence/pricing",
+              "label": "Pricing",
+              "locator": "offset:167707-168143",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "jira",
+          "landing": {
+            "timestamp": "20250630040424",
+            "capturedAt": "2025-06-30T04:04:24.000Z",
+            "originalUrl": "https://www.atlassian.com/software/jira",
+            "digest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.atlassian.com/software/jira/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.atlassian.com/software/jira/pricing",
+              "label": "Pricing",
+              "locator": "offset:198789-199213",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.atlassian.com/software/jira/pricing",
+              "label": "Pricing",
+              "locator": "offset:198789-199213",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "hubspot",
+          "landing": {
+            "timestamp": "20250627052208",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "originalUrl": "https://www.hubspot.com/products/sales",
+            "digest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.hubspot.com/products/sales"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.hubspot.com/products/sales",
+              "label": "Free and premium plans",
+              "locator": "offset:439655-439880",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.hubspot.com/products/sales",
+              "label": "Free and premium plans",
+              "locator": "offset:439655-439880",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "intercom",
+          "landing": {
+            "timestamp": "20250630153335",
+            "capturedAt": "2025-06-30T15:33:35.000Z",
+            "originalUrl": "https://www.intercom.com/",
+            "digest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://www.intercom.com/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.intercom.com/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.intercom.com/pricing",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "zendesk",
+          "landing": {
+            "timestamp": "20250627060351",
+            "capturedAt": "2025-06-27T06:03:51.000Z",
+            "originalUrl": "https://www.zendesk.com/",
+            "digest": "IAGGFWNKY5QOQ6XK7K7FMMRPQUWBRD6U",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://www.zendesk.com/pricing/featured/",
+            "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.zendesk.com/pricing/featured/",
+              "label": "Pricing",
+              "locator": "offset:411536-411907",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.zendesk.com/pricing/",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.zendesk.com/pricing/featured/",
+              "label": "Pricing",
+              "locator": "offset:411536-411907",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.zendesk.com/pricing/",
+              "label": "Current pricing source",
+              "locator": "hint:0",
+              "provenance": "current-source-hint"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 2,
+          "afterCandidates": 2
+        },
+        {
+          "id": "mailchimp",
+          "landing": {
+            "timestamp": "20250630163644",
+            "capturedAt": "2025-06-30T16:36:44.000Z",
+            "originalUrl": "https://mailchimp.com/",
+            "digest": "RQH2T3ZXCZ5Z7DJGDFMA3S73Z5VST3FY",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://mailchimp.com/pricing/marketing/",
+            "https://mailchimp.com/pricing/marketing/compare-plans/"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://mailchimp.com/pricing/marketing/",
+              "label": "Pricing",
+              "locator": "offset:135566-135626",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+              "label": "plans and pricing",
+              "locator": "offset:354260-354325",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://mailchimp.com/pricing/marketing/",
+              "label": "Pricing",
+              "locator": "offset:135566-135626",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+              "label": "plans and pricing",
+              "locator": "offset:354260-354325",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [
+            {
+              "url": "https://mailchimp.com/integrations/?categories=Subscription+Management",
+              "label": "Subscription management",
+              "locator": "offset:122526-122739",
+              "provenance": "archived-link"
+            }
+          ],
+          "added": [],
+          "beforeCandidates": 4,
+          "afterCandidates": 3
+        },
+        {
+          "id": "datadog",
+          "landing": {
+            "timestamp": "20250630172700",
+            "capturedAt": "2025-06-30T17:27:00.000Z",
+            "originalUrl": "https://www.datadoghq.com/",
+            "digest": "DCOLI4R5TB5EMDOYTQVI744GRUDTQB4F",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.datadoghq.com/pricing/"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.datadoghq.com/pricing/",
+              "label": "View pricing",
+              "locator": "offset:18749-18867",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.datadoghq.com/pricing/",
+              "label": "View pricing",
+              "locator": "offset:18749-18867",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "google-workspace",
+          "landing": {
+            "timestamp": "20250630231325",
+            "capturedAt": "2025-06-30T23:13:25.000Z",
+            "originalUrl": "https://workspace.google.com/",
+            "digest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://workspace.google.com/",
+            "https://workspace.google.com/pricing.html"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://workspace.google.com/",
+              "label": "Plans & pricing",
+              "locator": "offset:212660-212915",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://workspace.google.com/pricing.html",
+              "label": "Compare pricing plans",
+              "locator": "offset:442178-442524",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://workspace.google.com/",
+              "label": "Plans & pricing",
+              "locator": "offset:212660-212915",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://workspace.google.com/pricing.html",
+              "label": "Compare pricing plans",
+              "locator": "offset:442178-442524",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 4,
+          "afterCandidates": 4
+        },
+        {
+          "id": "microsoft-365",
+          "landing": {
+            "timestamp": "20250630113113",
+            "capturedAt": "2025-06-30T11:31:13.000Z",
+            "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+            "digest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+            "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+              "label": "Pricing for business",
+              "locator": "offset:19053-19368",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+              "label": "Pricing for enterprise",
+              "locator": "offset:21046-21326",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+              "label": "Pricing for business",
+              "locator": "offset:19053-19368",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+              "label": "Pricing for enterprise",
+              "locator": "offset:21046-21326",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 7,
+          "afterCandidates": 7
+        },
+        {
+          "id": "squarespace",
+          "landing": {
+            "timestamp": "20250630215929",
+            "capturedAt": "2025-06-30T21:59:29.000Z",
+            "originalUrl": "https://www.squarespace.com/",
+            "digest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.squarespace.com/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.squarespace.com/pricing",
+              "label": "Pricing Pricing",
+              "locator": "offset:260214-260638",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.squarespace.com/pricing",
+              "label": "Pricing Pricing",
+              "locator": "offset:260214-260638",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "webflow",
+          "landing": {
+            "timestamp": "20250630040526",
+            "capturedAt": "2025-06-30T04:05:26.000Z",
+            "originalUrl": "https://webflow.com/",
+            "digest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://webflow.com/pricing"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://webflow.com/pricing",
+              "label": "Pricing",
+              "locator": "offset:107141-107752",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://webflow.com/pricing",
+              "label": "Pricing",
+              "locator": "offset:107141-107752",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "ghost",
+          "landing": {
+            "timestamp": "20250630221056",
+            "capturedAt": "2025-06-30T22:10:56.000Z",
+            "originalUrl": "https://ghost.org/",
+            "digest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://ghost.org/pricing/"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://ghost.org/pricing/",
+              "label": "Pricing",
+              "locator": "offset:36486-36579",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://ghost.org/pricing/",
+              "label": "Pricing",
+              "locator": "offset:36486-36579",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "mattermost",
+          "landing": {
+            "timestamp": "20250630153551",
+            "capturedAt": "2025-06-30T15:35:51.000Z",
+            "originalUrl": "https://mattermost.com/",
+            "digest": "TKREQ7IUWRJ56MU6L5PBN7HS76COFICY",
+            "mimeType": "text/html"
+          },
+          "integrity": "legacy_chunked_unverified",
+          "frozenSelected": [
+            "https://mattermost.com/pricing/",
+            "https://mattermost.com/compare/"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://mattermost.com/pricing/",
+              "label": "Pricing",
+              "locator": "offset:101717-101820",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://mattermost.com/pricing/",
+              "label": "Pricing",
+              "locator": "offset:101717-101820",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 1,
+          "afterCandidates": 1
+        },
+        {
+          "id": "passbolt",
+          "landing": {
+            "timestamp": "20250630023104",
+            "capturedAt": "2025-06-30T02:31:04.000Z",
+            "originalUrl": "https://www.passbolt.com/",
+            "digest": "P7VWE2RIVG7PIVAPSZCSGIMJTUSQAQEG",
+            "mimeType": "text/html"
+          },
+          "integrity": "verified",
+          "frozenSelected": [
+            "https://www.passbolt.com/pricing/pro",
+            "https://www.passbolt.com/pricing/cloud"
+          ],
+          "beforeSelected": [
+            {
+              "url": "https://www.passbolt.com/pricing/pro",
+              "label": "Pricing",
+              "locator": "offset:14386-14823",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.passbolt.com/pricing/cloud",
+              "label": "Cloud-managed Skip the technical setup.",
+              "locator": "offset:15779-16411",
+              "provenance": "archived-link"
+            }
+          ],
+          "afterSelected": [
+            {
+              "url": "https://www.passbolt.com/pricing/pro",
+              "label": "Pricing",
+              "locator": "offset:14386-14823",
+              "provenance": "archived-link"
+            },
+            {
+              "url": "https://www.passbolt.com/pricing/cloud",
+              "label": "Cloud-managed Skip the technical setup.",
+              "locator": "offset:15779-16411",
+              "provenance": "archived-link"
+            }
+          ],
+          "selectedChanged": false,
+          "removed": [],
+          "added": [],
+          "beforeCandidates": 2,
+          "afterCandidates": 2
+        }
+      ]
+    }
+  ]
+}

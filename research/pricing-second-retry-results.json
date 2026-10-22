@@ -1,0 +1,1397 @@
+{
+  "formatVersion": 1,
+  "mode": "original-second-cohort-cached-recovery-reassessment",
+  "sourceRequests": 0,
+  "originalLiveBaseline": {
+    "extractorCommit": "3ebf6a6b75a3bf5a018a5d3ff80bde63a6b6abc0",
+    "tools": 20,
+    "requests": 78,
+    "schemaValidProposals": 0,
+    "newConfirmedObservations": 0
+  },
+  "beforeRecovery": {
+    "extractorVersion": "1.1.0",
+    "codeFingerprint": "5ff89cf8af058cc70f494cfaa539fca10f8d0e2c5e09f430d4fc48195c0364a9",
+    "summary": {
+      "toolsAttempted": 20,
+      "retainedSourceRoles": 34,
+      "schemaValidSourceProposals": 9,
+      "toolsWithSchemaValidProposals": 6,
+      "toolsWithRawPlans": 9,
+      "confirmedObservations": 0
+    },
+    "products": [
+      {
+        "id": "1password",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://1password.com/",
+            "capturedAt": "2025-06-30T19:28:07.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+            "sha256": "3904f60770cfa8dd87448636d6502a54cf7134b7fdf67e032b340955f4025e23",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://1password.com/pricing/xam",
+            "capturedAt": "2025-06-19T13:07:29.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+            "sha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "quote_only",
+            "rawPlans": 3,
+            "rawOffers": 3,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://1password.com/compare/password-manager",
+            "capturedAt": "2025-06-19T13:08:43.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager",
+            "sha256": "23c0182733283eb49a3b54fe16cf3cff8304d3480c05314f68ee4f9a2bf7287d",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "bitwarden",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://bitwarden.com/",
+            "capturedAt": "2025-06-30T08:53:12.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630085312id_/https://bitwarden.com/",
+            "status": "missing_body",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "confluence",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.atlassian.com/software/confluence",
+            "capturedAt": "2025-06-29T16:52:14.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+            "sha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.atlassian.com/software/confluence/pricing",
+            "capturedAt": "2025-06-28T09:15:12.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+            "sha256": "5bdd8367832627e50cb01bd6a54905a988578cef85725806afe5040b338b0c0c",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "jira",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.atlassian.com/software/jira",
+            "capturedAt": "2025-06-30T04:04:24.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+            "sha256": "6bdc692d5f503a30f43bb5186c5bed69393becd266148dcfb1e5402b90fe9ffc",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.atlassian.com/software/jira/pricing",
+            "capturedAt": "2025-06-23T02:36:14.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+            "sha256": "570fb681f3469bc286e60fef2e79ef1eea7749e91e3af5e6202daab940527e43",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "typeform",
+        "originalStatus": "error",
+        "sources": []
+      },
+      {
+        "id": "miro",
+        "originalStatus": "error",
+        "sources": []
+      },
+      {
+        "id": "hubspot",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 4,
+            "rawOffers": 5,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 4,
+            "rawOffers": 5,
+            "schemaValid": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "intercom",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.intercom.com/",
+            "capturedAt": "2025-06-30T15:33:35.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+            "sha256": "1bd42cc354f8d7628fdc027725508fb6194ebc3303098a17509670f6c851955f",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.intercom.com/pricing",
+            "capturedAt": "2025-06-18T20:12:42.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+            "sha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "zendesk",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.zendesk.com/",
+            "capturedAt": "2025-06-27T06:03:51.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250627060351id_/https://www.zendesk.com/",
+            "sha256": "443ade4e2974f5128721a22c82fc7c65d731dc2d34e690b16c053b16a9c1cdd2",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "quote_only",
+            "rawPlans": 1,
+            "rawOffers": 1,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.zendesk.com/pricing/featured/",
+            "capturedAt": "2025-06-25T02:49:34.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+            "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 8,
+            "rawOffers": 8,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+            "capturedAt": "2025-06-25T02:50:02.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250625025002id_/https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+            "sha256": "f674603603d11163d8a937eae79677fa3f918f73ece3ffbb6eb6e68b3a9d11d1",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "mailchimp",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://mailchimp.com/",
+            "capturedAt": "2025-06-30T16:36:44.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630163644id_/https://mailchimp.com/",
+            "sha256": "e7da965f8d1ffc9e1d2c9e3e8a922d8dae54a6181b811c859ea787d369317e5d",
+            "integrity": "legacy_chunked_unverified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 2,
+            "rawOffers": 3,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mailchimp.com/pricing/marketing/",
+            "capturedAt": "2025-06-30T16:23:55.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630162355id_/https://mailchimp.com/pricing/marketing/",
+            "sha256": "f304740b33a2f1c2d96b0bd872b4c036feac23709145d4a44fa410557abfaf8c",
+            "integrity": "verified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 2,
+            "rawOffers": 3,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+            "capturedAt": "2025-06-29T17:12:04.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/",
+            "sha256": "fe9b50b41704ab9cc89e410f951d85b45bec88bbf77b39e2aaf9ca994b5d2cdf",
+            "integrity": "legacy_chunked_unverified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 8,
+            "rawOffers": 14,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "loom",
+        "originalStatus": "error",
+        "sources": []
+      },
+      {
+        "id": "datadog",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.datadoghq.com/",
+            "capturedAt": "2025-06-30T17:27:00.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630172700id_/https://www.datadoghq.com/",
+            "sha256": "72cd5968b58e1607770344c31c615da456a3e302096662ef393d8408d66ae96a",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.datadoghq.com/pricing/",
+            "capturedAt": "2025-06-18T08:29:12.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+            "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 4,
+            "rawOffers": 30,
+            "schemaValid": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "sentry",
+        "originalStatus": "missing_landing",
+        "sources": []
+      },
+      {
+        "id": "google-workspace",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://workspace.google.com/",
+            "capturedAt": "2025-06-30T23:13:25.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+            "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+            "integrity": "verified",
+            "status": "invalid",
+            "classification": "static_pricing",
+            "rawPlans": 12,
+            "rawOffers": 21,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://workspace.google.com/",
+            "capturedAt": "2025-06-30T23:13:25.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+            "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+            "integrity": "verified",
+            "status": "invalid",
+            "classification": "static_pricing",
+            "rawPlans": 12,
+            "rawOffers": 21,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://workspace.google.com/pricing.html",
+            "capturedAt": "2025-06-30T18:29:09.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630182909id_/https://workspace.google.com/pricing.html",
+            "sha256": "1d6239e17a2f2d0e643461aec485fb2b470004badefd1081c3918639621b964f",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "microsoft-365",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/business",
+            "capturedAt": "2025-06-30T11:31:13.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+            "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 3,
+            "rawOffers": 9,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+            "capturedAt": "2025-06-29T07:29:14.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+            "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 2,
+            "rawOffers": 6,
+            "schemaValid": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "squarespace",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.squarespace.com/",
+            "capturedAt": "2025-06-30T21:59:29.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+            "sha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.squarespace.com/pricing",
+            "capturedAt": "2025-06-24T19:34:39.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624193439id_/https://www.squarespace.com/pricing",
+            "status": "missing_body",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "webflow",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://webflow.com/",
+            "capturedAt": "2025-06-30T04:05:26.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+            "sha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://webflow.com/pricing",
+            "capturedAt": "2025-06-29T21:36:58.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+            "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+            "integrity": "legacy_chunked_unverified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 21,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ghost",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://ghost.org/",
+            "capturedAt": "2025-06-30T22:10:56.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+            "sha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://ghost.org/pricing/",
+            "capturedAt": "2025-06-30T11:07:30.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630110730id_/https://ghost.org/pricing/",
+            "status": "missing_body",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "mattermost",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://mattermost.com/",
+            "capturedAt": "2025-06-30T15:35:51.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630153551id_/https://mattermost.com/",
+            "sha256": "7e236a515e5cf7f08a81c39a4a353a236089fdfbe3615474b5061b7c7c98cc8c",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mattermost.com/pricing/",
+            "capturedAt": "2025-06-24T04:26:46.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+            "sha256": "1a9bfe0f17391c47623bb716b8f5e300c4a2b91c7f96ebf0c8ab9433e154389c",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "quote_only",
+            "rawPlans": 1,
+            "rawOffers": 1,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mattermost.com/compare/",
+            "capturedAt": "2025-06-24T03:43:47.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624034347id_/https://mattermost.com/compare/",
+            "sha256": "4594c5273819e245b1592b72f38f402b801a01d135c8c1b9e6f2b7b8c7614776",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "passbolt",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.passbolt.com/",
+            "capturedAt": "2025-06-30T02:31:04.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630023104id_/https://www.passbolt.com/",
+            "sha256": "2952360cdda1ef1a73fbd15af0bee4817d704810169e67d2f0dee491e705d2f0",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.passbolt.com/pricing/pro",
+            "capturedAt": "2025-06-24T10:31:43.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+            "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.passbolt.com/pricing/cloud",
+            "capturedAt": "2025-06-24T04:38:51.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+            "sha256": "f32dc605242a0398f0291c48f6deb1dc13fbe80ae59b95d14bdda12b48902e60",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "afterRecovery": {
+    "extractorVersion": "1.2.0",
+    "codeFingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+    "summary": {
+      "toolsAttempted": 20,
+      "retainedSourceRoles": 34,
+      "schemaValidSourceProposals": 11,
+      "toolsWithSchemaValidProposals": 8,
+      "toolsWithRawPlans": 10,
+      "confirmedObservations": 0
+    },
+    "products": [
+      {
+        "id": "1password",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://1password.com/",
+            "capturedAt": "2025-06-30T19:28:07.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+            "sha256": "3904f60770cfa8dd87448636d6502a54cf7134b7fdf67e032b340955f4025e23",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://1password.com/pricing/xam",
+            "capturedAt": "2025-06-19T13:07:29.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+            "sha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "quote_only",
+            "rawPlans": 3,
+            "rawOffers": 3,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://1password.com/compare/password-manager",
+            "capturedAt": "2025-06-19T13:08:43.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager",
+            "sha256": "23c0182733283eb49a3b54fe16cf3cff8304d3480c05314f68ee4f9a2bf7287d",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "bitwarden",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://bitwarden.com/",
+            "capturedAt": "2025-06-30T08:53:12.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630085312id_/https://bitwarden.com/",
+            "status": "missing_body",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "confluence",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.atlassian.com/software/confluence",
+            "capturedAt": "2025-06-29T16:52:14.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+            "sha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.atlassian.com/software/confluence/pricing",
+            "capturedAt": "2025-06-28T09:15:12.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+            "sha256": "5bdd8367832627e50cb01bd6a54905a988578cef85725806afe5040b338b0c0c",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "jira",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.atlassian.com/software/jira",
+            "capturedAt": "2025-06-30T04:04:24.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+            "sha256": "6bdc692d5f503a30f43bb5186c5bed69393becd266148dcfb1e5402b90fe9ffc",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.atlassian.com/software/jira/pricing",
+            "capturedAt": "2025-06-23T02:36:14.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+            "sha256": "570fb681f3469bc286e60fef2e79ef1eea7749e91e3af5e6202daab940527e43",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "typeform",
+        "originalStatus": "error",
+        "sources": []
+      },
+      {
+        "id": "miro",
+        "originalStatus": "error",
+        "sources": []
+      },
+      {
+        "id": "hubspot",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 4,
+            "rawOffers": 5,
+            "schemaValid": true,
+            "selectedForReviewedConfirmation": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 4,
+            "rawOffers": 5,
+            "schemaValid": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "intercom",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.intercom.com/",
+            "capturedAt": "2025-06-30T15:33:35.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+            "sha256": "1bd42cc354f8d7628fdc027725508fb6194ebc3303098a17509670f6c851955f",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.intercom.com/pricing",
+            "capturedAt": "2025-06-18T20:12:42.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+            "sha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 3,
+            "rawOffers": 3,
+            "schemaValid": true,
+            "selectedForReviewedConfirmation": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "zendesk",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.zendesk.com/",
+            "capturedAt": "2025-06-27T06:03:51.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250627060351id_/https://www.zendesk.com/",
+            "sha256": "443ade4e2974f5128721a22c82fc7c65d731dc2d34e690b16c053b16a9c1cdd2",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "quote_only",
+            "rawPlans": 1,
+            "rawOffers": 1,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.zendesk.com/pricing/featured/",
+            "capturedAt": "2025-06-25T02:49:34.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+            "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 8,
+            "rawOffers": 8,
+            "schemaValid": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+            "capturedAt": "2025-06-25T02:50:02.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250625025002id_/https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+            "sha256": "f674603603d11163d8a937eae79677fa3f918f73ece3ffbb6eb6e68b3a9d11d1",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "mailchimp",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://mailchimp.com/",
+            "capturedAt": "2025-06-30T16:36:44.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630163644id_/https://mailchimp.com/",
+            "sha256": "e7da965f8d1ffc9e1d2c9e3e8a922d8dae54a6181b811c859ea787d369317e5d",
+            "integrity": "legacy_chunked_unverified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 2,
+            "rawOffers": 3,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mailchimp.com/pricing/marketing/",
+            "capturedAt": "2025-06-30T16:23:55.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630162355id_/https://mailchimp.com/pricing/marketing/",
+            "sha256": "f304740b33a2f1c2d96b0bd872b4c036feac23709145d4a44fa410557abfaf8c",
+            "integrity": "verified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 2,
+            "rawOffers": 3,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+            "capturedAt": "2025-06-29T17:12:04.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/",
+            "sha256": "fe9b50b41704ab9cc89e410f951d85b45bec88bbf77b39e2aaf9ca994b5d2cdf",
+            "integrity": "legacy_chunked_unverified",
+            "status": "invalid",
+            "classification": "partial_pricing",
+            "rawPlans": 8,
+            "rawOffers": 14,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "loom",
+        "originalStatus": "error",
+        "sources": []
+      },
+      {
+        "id": "datadog",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.datadoghq.com/",
+            "capturedAt": "2025-06-30T17:27:00.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630172700id_/https://www.datadoghq.com/",
+            "sha256": "72cd5968b58e1607770344c31c615da456a3e302096662ef393d8408d66ae96a",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.datadoghq.com/pricing/",
+            "capturedAt": "2025-06-18T08:29:12.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+            "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 4,
+            "rawOffers": 30,
+            "schemaValid": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "sentry",
+        "originalStatus": "missing_landing",
+        "sources": []
+      },
+      {
+        "id": "google-workspace",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://workspace.google.com/",
+            "capturedAt": "2025-06-30T23:13:25.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+            "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+            "integrity": "verified",
+            "status": "invalid",
+            "classification": "static_pricing",
+            "rawPlans": 12,
+            "rawOffers": 21,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://workspace.google.com/",
+            "capturedAt": "2025-06-30T23:13:25.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+            "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+            "integrity": "verified",
+            "status": "invalid",
+            "classification": "static_pricing",
+            "rawPlans": 12,
+            "rawOffers": 21,
+            "schemaValid": false,
+            "issueCodes": [
+              "Invalid pricing observation schema: Duplicate plan name or identity"
+            ]
+          },
+          {
+            "kind": "pricing",
+            "url": "https://workspace.google.com/pricing.html",
+            "capturedAt": "2025-06-30T18:29:09.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630182909id_/https://workspace.google.com/pricing.html",
+            "sha256": "1d6239e17a2f2d0e643461aec485fb2b470004badefd1081c3918639621b964f",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "microsoft-365",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/business",
+            "capturedAt": "2025-06-30T11:31:13.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+            "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 4,
+            "rawOffers": 4,
+            "schemaValid": true,
+            "selectedForReviewedConfirmation": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+            "capturedAt": "2025-06-29T07:29:14.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+            "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "partial_pricing",
+            "rawPlans": 2,
+            "rawOffers": 6,
+            "schemaValid": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "squarespace",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.squarespace.com/",
+            "capturedAt": "2025-06-30T21:59:29.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+            "sha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.squarespace.com/pricing",
+            "capturedAt": "2025-06-24T19:34:39.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624193439id_/https://www.squarespace.com/pricing",
+            "status": "missing_body",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "webflow",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://webflow.com/",
+            "capturedAt": "2025-06-30T04:05:26.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+            "sha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://webflow.com/pricing",
+            "capturedAt": "2025-06-29T21:36:58.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+            "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+            "integrity": "legacy_chunked_unverified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 2,
+            "rawOffers": 4,
+            "schemaValid": true,
+            "selectedForReviewedConfirmation": true,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "ghost",
+        "originalStatus": "error",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://ghost.org/",
+            "capturedAt": "2025-06-30T22:10:56.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+            "sha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://ghost.org/pricing/",
+            "capturedAt": "2025-06-30T11:07:30.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630110730id_/https://ghost.org/pricing/",
+            "status": "missing_body",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "mattermost",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://mattermost.com/",
+            "capturedAt": "2025-06-30T15:35:51.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630153551id_/https://mattermost.com/",
+            "sha256": "7e236a515e5cf7f08a81c39a4a353a236089fdfbe3615474b5061b7c7c98cc8c",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mattermost.com/pricing/",
+            "capturedAt": "2025-06-24T04:26:46.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+            "sha256": "1a9bfe0f17391c47623bb716b8f5e300c4a2b91c7f96ebf0c8ab9433e154389c",
+            "integrity": "verified",
+            "status": "review_pending",
+            "classification": "static_pricing",
+            "rawPlans": 1,
+            "rawOffers": 1,
+            "schemaValid": true,
+            "selectedForReviewedConfirmation": true,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://mattermost.com/compare/",
+            "capturedAt": "2025-06-24T03:43:47.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624034347id_/https://mattermost.com/compare/",
+            "sha256": "4594c5273819e245b1592b72f38f402b801a01d135c8c1b9e6f2b7b8c7614776",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      },
+      {
+        "id": "passbolt",
+        "originalStatus": "extraction_unavailable",
+        "sources": [
+          {
+            "kind": "landing",
+            "url": "https://www.passbolt.com/",
+            "capturedAt": "2025-06-30T02:31:04.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250630023104id_/https://www.passbolt.com/",
+            "sha256": "2952360cdda1ef1a73fbd15af0bee4817d704810169e67d2f0dee491e705d2f0",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.passbolt.com/pricing/pro",
+            "capturedAt": "2025-06-24T10:31:43.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+            "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+            "integrity": "verified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          },
+          {
+            "kind": "pricing",
+            "url": "https://www.passbolt.com/pricing/cloud",
+            "capturedAt": "2025-06-24T04:38:51.000Z",
+            "archiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+            "sha256": "f32dc605242a0398f0291c48f6deb1dc13fbe80ae59b95d14bdda12b48902e60",
+            "integrity": "legacy_chunked_unverified",
+            "status": "extraction_unavailable",
+            "classification": "unsupported",
+            "rawPlans": 0,
+            "rawOffers": 0,
+            "schemaValid": false,
+            "issueCodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "reviewedImport": {
+    "sourceRequests": 0,
+    "newConfirmedProducts": [
+      "hubspot",
+      "intercom",
+      "microsoft-365",
+      "webflow",
+      "mattermost"
+    ],
+    "previousConfirmed": 8,
+    "confirmed": 13,
+    "existingObservationsUnchanged": true,
+    "originalJournalSha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+    "originalJournalUnchanged": true,
+    "reservationsAndProductionCheckpointsUnchanged": true,
+    "plans": 46,
+    "offers": 66
+  },
+  "evidenceVerification": {
+    "total": 37,
+    "verified": 19,
+    "unknown": 0,
+    "legacyUnverified": 15,
+    "missing": 3,
+    "errors": 0
+  },
+  "initialEightReextraction": {
+    "sourceRequests": 0,
+    "results": [
+      {
+        "id": "airtable",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 4,
+        "currentPlans": 4
+      },
+      {
+        "id": "trello",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 4,
+        "currentPlans": 4
+      },
+      {
+        "id": "dropbox",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 3,
+        "currentPlans": 3
+      },
+      {
+        "id": "figma",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 4,
+        "currentPlans": 4
+      },
+      {
+        "id": "calendly",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 4,
+        "currentPlans": 4
+      },
+      {
+        "id": "zoom",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 4,
+        "currentPlans": 4
+      },
+      {
+        "id": "notion",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 4,
+        "currentPlans": 4
+      },
+      {
+        "id": "asana",
+        "numericalAndBillingFieldsUnchanged": true,
+        "confirmedPlans": 5,
+        "currentPlans": 5
+      }
+    ]
+  },
+  "recoveryCodeCommit": "9664938"
+}

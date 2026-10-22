@@ -1,0 +1,3467 @@
+{
+  "formatVersion": 1,
+  "inputs": {
+    "ids": [
+      "firebase",
+      "heroku",
+      "vercel",
+      "pingdom",
+      "retool",
+      "insomnia",
+      "postman",
+      "algolia",
+      "elastic-cloud"
+    ],
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z",
+    "maxCandidates": 2,
+    "catalog": [
+      {
+        "id": "firebase",
+        "name": "Firebase",
+        "url": "https://firebase.google.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://firebase.google.com/pricing"
+        ]
+      },
+      {
+        "id": "heroku",
+        "name": "Heroku",
+        "url": "https://www.heroku.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.heroku.com/pricing/"
+        ]
+      },
+      {
+        "id": "vercel",
+        "name": "Vercel",
+        "url": "https://vercel.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://vercel.com/docs/plans/pro-plan",
+          "https://vercel.com/pricing"
+        ]
+      },
+      {
+        "id": "pingdom",
+        "name": "Pingdom",
+        "url": "https://www.pingdom.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.pingdom.com/pricing/"
+        ]
+      },
+      {
+        "id": "retool",
+        "name": "Retool",
+        "url": "https://retool.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://retool.com/pricing"
+        ]
+      },
+      {
+        "id": "insomnia",
+        "name": "Insomnia paid plans",
+        "url": "https://insomnia.rest/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://insomnia.rest/pricing"
+        ]
+      },
+      {
+        "id": "postman",
+        "name": "Postman",
+        "url": "https://www.postman.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.postman.com/pricing/"
+        ]
+      },
+      {
+        "id": "algolia",
+        "name": "Algolia",
+        "url": "https://www.algolia.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.algolia.com/pricing"
+        ]
+      },
+      {
+        "id": "elastic-cloud",
+        "name": "Elastic Cloud",
+        "url": "https://www.elastic.co/cloud/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/cloud"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      }
+    ]
+  },
+  "extractorVersion": "1.2.0",
+  "baselineFingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+  "startedAt": "2026-10-22T21:01:01.411Z",
+  "finishedAt": "2026-10-22T21:06:54.953Z",
+  "stopped": null,
+  "historicalComplete": false,
+  "automaticallyConfirmed": 0,
+  "summary": {
+    "products": 9,
+    "completed": 9,
+    "statuses": {
+      "extraction_unavailable": 4,
+      "missing_pricing": 1,
+      "review_pending": 3,
+      "wrong_scope": 1
+    },
+    "requests": 36,
+    "candidates": 10,
+    "candidateStatuses": {
+      "extraction_unavailable": 4,
+      "missing_pricing": 2,
+      "error": 1,
+      "review_pending": 3
+    },
+    "candidateErrorCodes": {
+      "archive_digest_mismatch": 1
+    },
+    "productsWithCandidateErrors": 1,
+    "productsWithMixedCandidateOutcomes": 2,
+    "rawLandingFragments": 0,
+    "rawLandingOffers": 0,
+    "extractionClassifications": {
+      "unsupported": 11,
+      "partial_pricing": 2,
+      "static_pricing": 3
+    },
+    "invalidExtractions": 2,
+    "productsWithInvalidExtractions": 2,
+    "discoveryRejections": 2,
+    "omittedDiscoveryRejections": 0,
+    "observed429": 0,
+    "responsesMissing": 0,
+    "productsWithNonemptyFragments": 5,
+    "nonemptyCandidateExtractions": 5,
+    "rawCandidateFragments": 63,
+    "rawCandidateOffers": 79,
+    "rawProposals": 3,
+    "rawPlans": 10,
+    "rawOffers": 24
+  },
+  "products": [
+    {
+      "id": "firebase",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T21:01:01.412Z",
+      "nextCheckAt": "2027-04-22T21:01:01.412Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630103258id_/https://firebase.google.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://firebase.google.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:35765-36262",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://firebase.google.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:35765-36262",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://firebase.google.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:35765-36262",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250625084413id_/https://firebase.google.com/pricing/",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "heroku",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T21:01:32.654Z",
+      "nextCheckAt": "2027-04-22T21:01:32.654Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630200641id_/https://www.heroku.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.heroku.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:141020-141109",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.heroku.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:141020-141109",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.heroku.com/pricing/",
+            "label": "Pricing",
+            "locator": "offset:141020-141109",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250630111025id_/https://www.heroku.com/pricing/",
+          "integrity": "verified",
+          "extractionStatus": "invalid",
+          "extractionIssueCodes": [
+            "duplicate_plan_identity",
+            "invalid_observation"
+          ],
+          "rawPlans": 21,
+          "rawOffers": 21,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "partial_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Eco and Basic",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$5 and up per month",
+                  "amount": "5",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:152364-153376"
+                }
+              ]
+            },
+            {
+              "name": "Production",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.035/hour and up (max of $25/month and up)",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:153379-154441"
+                }
+              ]
+            },
+            {
+              "name": "Advanced",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.347/hour and up (max of $250/month and up)",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": "Advanced ~$0.347/hour and up (max of $250/month and up) Mission-critical apps with complex functionality that require high availability, very low latency, and handling a high volume of concurrent requests.",
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:154444-155564"
+                }
+              ]
+            },
+            {
+              "name": "Eco",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Eco Test ideas or run apps that see intermittent use. ~$0.005/hour (flat fee of $5/month)",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:160066-160462"
+                }
+              ]
+            },
+            {
+              "name": "Basic",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.01 per hour (max of $7 per month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:161917-162351"
+                }
+              ]
+            },
+            {
+              "name": "Standard",
+              "status": "unknown",
+              "kind": "addon",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.03 to $0.06/hour (max of $25 to $50/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:163954-164392"
+                }
+              ]
+            },
+            {
+              "name": "Performance",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.34 to $2.08/hour (max of $250 to $1500/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:166091-166546"
+                }
+              ]
+            },
+            {
+              "name": "Cedar Private",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.17 to $2.08/hour (max of $125 to $1500/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:170344-170731"
+                }
+              ]
+            },
+            {
+              "name": "Shield",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.20 to $2.50/hour (max of $150 to $1800/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:172196-174379"
+                }
+              ]
+            },
+            {
+              "name": "Essential 0",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.007/hour (max of $5/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:178202-178670"
+                }
+              ]
+            },
+            {
+              "name": "Essential 1",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.012/hour (max of $9/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:179866-180384"
+                }
+              ]
+            },
+            {
+              "name": "Essential 2",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.027/hour (max of $20/month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:181581-182086"
+                }
+              ]
+            },
+            {
+              "name": "Standard",
+              "status": "unknown",
+              "kind": "addon",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at ~$0.06 per hour (max of $50 and up per month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:183303-185662"
+                }
+              ]
+            },
+            {
+              "name": "Premium",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at ~$0.27 per hour (max of $200 and up per month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:185665-188056"
+                }
+              ]
+            },
+            {
+              "name": "Mini",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "~$0.004 per hour (max of $3 per month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:191688-193668"
+                }
+              ]
+            },
+            {
+              "name": "Premium 0 – 5",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at ~$0.02 per hour (max of $15 and up per month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:193671-195757"
+                }
+              ]
+            },
+            {
+              "name": "Premium 7 – 14",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starts at ~$1.04 per hour (max of $750 and up per month) Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:195760-197870"
+                }
+              ]
+            },
+            {
+              "name": "Basic",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$100 to $175 per month Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": "Basic Multi-tenant Kafka for development, testing, and low-volume production event streams.",
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:201628-203604"
+                }
+              ]
+            },
+            {
+              "name": "Standard",
+              "status": "unknown",
+              "kind": "addon",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$1,500 to $3,200 per month Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": "Standard Dedicated Kafka for high-volume event streams.",
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:203607-205708"
+                }
+              ]
+            },
+            {
+              "name": "Extended",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$4,000 to $8,700 per month Prorated to the second",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": "$4,000 to $8,700 per month Prorated to the second Extended features Dedicated clusters, optimized for highest throughput and massive volume Highest retention (up to 6 weeks) Highest data durability and replication factor: 5 Kafka brokers Workloads that need massive event streams",
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:205711-207817"
+                }
+              ]
+            },
+            {
+              "name": "Demo Edition",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$0 per month",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en-US",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:251002-253192"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vercel",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T21:02:12.831Z",
+      "nextCheckAt": "2027-04-22T21:02:12.831Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630154022id_/https://vercel.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "extraction_unavailable": 1,
+          "missing_pricing": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": true
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://vercel.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:84360-84481",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://vercel.com/docs/plans/pro-plan",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://vercel.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:84360-84481",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://vercel.com/docs/plans/pro-plan",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://vercel.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:84360-84481",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250627083535id_/https://vercel.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "extractionStatus": "invalid",
+          "extractionIssueCodes": [
+            "duplicate_plan_identity",
+            "invalid_observation"
+          ],
+          "rawPlans": 32,
+          "rawOffers": 34,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "partial_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start a free trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:143914-145183"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $2 per 1M",
+                  "amount": "2",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:217108-217954"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.15 per GB",
+                  "amount": "0.15",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:222687-223536"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.50 per 1M allowed requests",
+                  "amount": "0.50",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:243399-244294"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$1 per 1,000 Deep Analysis checks",
+                  "amount": "1",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:267863-268504"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.40 per 1M",
+                  "amount": "0.40",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:311758-312619"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $4 per 1M",
+                  "amount": "4",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:315159-316016"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then $0.023/GB",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:325385-326224"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then $0.40/1M",
+                  "amount": "0.40",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:328763-329605"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then $5.00/1M",
+                  "amount": "5.00",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:332145-332986"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.05/GB",
+                  "amount": "0.05",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:335525-336378"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.05 per 1K",
+                  "amount": "0.05",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:348024-348889"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.40 per 1M",
+                  "amount": "0.40",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:351438-352304"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $4.00 per 1M",
+                  "amount": "4.00",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:354852-355718"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $3.00 per 1M",
+                  "amount": "3.00",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:365882-366742"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$5.00 per 500 writes",
+                  "amount": "5.00",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:369293-370153"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.128 per hour",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:385974-386844"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.0106 per GB-Hour",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:389396-390273"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.60 per 1M",
+                  "amount": "0.60",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:392810-393671"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.128 per hour",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:404046-404915"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.0106 per GB-hr",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:407469-408345"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.60 per 1M",
+                  "amount": "0.60",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:410882-411748"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.15 per GB",
+                  "amount": "0.15",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:414284-415148"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then starting at $0.06 per GB",
+                  "amount": "0.06",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "GB",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:429701-430552"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then $50 per additional machine",
+                  "amount": "50",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:479584-480452"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starting at $0.014 per minute",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:482070-482707"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Starting at $0.028 per minute",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": true,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:484313-484950"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then $20 per seat",
+                  "amount": "20",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "seat",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:522766-523598"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$10/month (1M events included)",
+                  "amount": "10",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:574937-575173"
+                },
+                {
+                  "literal": "then $1.2 per 1 million events",
+                  "amount": "1.2",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:575173-575408"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$10 /project",
+                  "amount": "10",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": "project",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:595988-596210"
+                },
+                {
+                  "literal": "then $0.65 per 10,000 events",
+                  "amount": "0.65",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:596210-596447"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "then $3 per 100,000 events",
+                  "amount": "3",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:601150-601990"
+                }
+              ]
+            },
+            {
+              "name": "pro",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$10 / team",
+                  "amount": "10",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:605649-606246"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://vercel.com/docs/plans/pro-plan",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "pingdom",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T21:03:04.260Z",
+      "nextCheckAt": "2027-04-22T21:03:04.260Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630130725id_/https://www.pingdom.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "error": 1,
+          "missing_pricing": 1
+        },
+        "errorCodes": {
+          "archive_digest_mismatch": 1
+        },
+        "hasErrors": true,
+        "mixedOutcomes": true
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.pingdom.com/pricing/",
+          "label": "PRICING",
+          "locator": "offset:45165-45266",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.pingdom.com/wp-content/uploads/2020/12/Pingdom_Pricing_Datasheet.pdf",
+          "label": "Pricing and Packaging",
+          "locator": "offset:69595-69839",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.pingdom.com/pricing/",
+          "label": "PRICING",
+          "locator": "offset:45165-45266",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.pingdom.com/wp-content/uploads/2020/12/Pingdom_Pricing_Datasheet.pdf",
+          "label": "Pricing and Packaging",
+          "locator": "offset:69595-69839",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "error",
+          "errorCode": "archive_digest_mismatch",
+          "candidate": {
+            "url": "https://www.pingdom.com/pricing/",
+            "label": "PRICING",
+            "locator": "offset:45165-45266",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250607070608id_/https://www.pingdom.com/pricing/",
+          "integrity": null,
+          "extractionStatus": "error",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.pingdom.com/wp-content/uploads/2020/12/Pingdom_Pricing_Datasheet.pdf",
+            "label": "Pricing and Packaging",
+            "locator": "offset:69595-69839",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "extractionStatus": "missing_pricing",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "retool",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T21:03:52.100Z",
+      "nextCheckAt": "2027-04-22T21:03:52.100Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630110734id_/https://retool.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://retool.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:20306-20509",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://retool.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:20306-20509",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://retool.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:20306-20509",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250620035649id_/https://retool.com/pricing",
+          "integrity": "verified",
+          "extractionStatus": "extraction_unavailable",
+          "rawPlans": 0,
+          "rawOffers": 0,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "unsupported"
+          }
+        }
+      ]
+    },
+    {
+      "id": "insomnia",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T21:04:32.800Z",
+      "nextCheckAt": "2027-04-22T21:04:32.800Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250625235453id_/https://insomnia.rest/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://insomnia.rest/pricing",
+          "label": "Pricing",
+          "locator": "offset:69270-69300",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://insomnia.rest/pricing/contact",
+          "label": "Contact Sales",
+          "locator": "offset:76030-76440",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://insomnia.rest/pricing",
+          "label": "Pricing",
+          "locator": "offset:69270-69300",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://insomnia.rest/pricing/contact",
+          "label": "Contact Sales",
+          "locator": "offset:76030-76440",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://insomnia.rest/pricing",
+            "label": "Pricing",
+            "locator": "offset:69270-69300",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250614045514id_/https://insomnia.rest/pricing",
+          "integrity": "verified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 3,
+          "rawOffers": 3,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "static_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Hobby",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 0",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": null,
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:68550-70639"
+                }
+              ]
+            },
+            {
+              "name": "Pro 15% savings",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 12",
+                  "amount": "12",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": null,
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:70639-73259"
+                }
+              ]
+            },
+            {
+              "name": "Enterprise",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$ 45",
+                  "amount": "45",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "annual",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": null,
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:73259-78427"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-2012caa6502f68f4020e6be0f2d261c6385dbe113fda979e31ed180d668370c5",
+        "productId": "insomnia",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-25T23:54:53.000Z",
+        "landingCapturedAt": "2025-06-25T23:54:53.000Z",
+        "pricingCapturedAt": "2025-06-14T04:55:14.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250625235453id_/https://insomnia.rest/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250614045514id_/https://insomnia.rest/pricing",
+        "provenance": "archived-link",
+        "sourceSha256": "b38d749dda3a616b34088d674414b392fc1641fb76cb7945df281bc5ec062c5b",
+        "landingSha256": "c7b1a832809952055fce943f72b55209fc502e73d1969f179d982adb64c489a1",
+        "sourceDigest": "WQZJO5GLFN4UOIGN2BMXHJG3OAY37VP3",
+        "landingDigest": "RBWBTUUCXWJDP6JZVMTXPMLG4C6JLALZ",
+        "sourceIntegrity": {
+          "status": "verified",
+          "expectedDigest": "WQZJO5GLFN4UOIGN2BMXHJG3OAY37VP3",
+          "actualDigest": "WQZJO5GLFN4UOIGN2BMXHJG3OAY37VP3"
+        },
+        "landingIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "RBWBTUUCXWJDP6JZVMTXPMLG4C6JLALZ",
+          "actualDigest": "TFWOF33XMC4C77GXRFW4JY2NI2LPEOAK",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "quality": "partial",
+        "issues": [
+          "Unknown currency: $ 0",
+          "Unknown currency: $ 12",
+          "Unknown currency: $ 45",
+          "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        ],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Hobby",
+            "status": "unknown",
+            "popular": null,
+            "kind": "plan",
+            "features": 4,
+            "offers": [
+              {
+                "literal": "$ 0",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Pro 15% savings",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 5,
+            "offers": [
+              {
+                "literal": "$ 12",
+                "amount": "12",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 10,
+            "offers": [
+              {
+                "literal": "$ 45",
+                "amount": "45",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "annual",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": null,
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "postman",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T21:05:13.390Z",
+      "nextCheckAt": "2027-04-22T21:05:13.390Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250629231320id_/https://www.postman.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.postman.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:313835-313933",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.postman.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:313835-313933",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://www.postman.com/pricing/",
+            "label": "Pricing",
+            "locator": "offset:313835-313933",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250613021229id_/https://www.postman.com/pricing/",
+          "integrity": "legacy_chunked_unverified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 6,
+          "rawOffers": 20,
+          "omittedPlans": 2,
+          "diagnostics": {
+            "classification": "static_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Free",
+              "status": "free",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Free",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:326614-331138"
+                },
+                {
+                  "literal": "$0",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:326614-331138"
+                }
+              ]
+            },
+            {
+              "name": "Basic",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$19 per user/month, billed monthly",
+                  "amount": "19",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "monthly",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:331138-334843"
+                },
+                {
+                  "literal": "$14 per user/month, billed annually",
+                  "amount": "14",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "annual",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:331138-334843"
+                }
+              ]
+            },
+            {
+              "name": "Professional",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$39 per user/month, billed monthly",
+                  "amount": "39",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "monthly",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:334843-339252"
+                },
+                {
+                  "literal": "$29 per user/month, billed annually",
+                  "amount": "29",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "annual",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:334843-339252"
+                }
+              ]
+            },
+            {
+              "name": "Enterprise",
+              "status": "paid",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "$49 per user/month, billed annually",
+                  "amount": "49",
+                  "currency": null,
+                  "billingPeriod": "month",
+                  "commitment": "annual",
+                  "unit": "user",
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:339252-346320"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-686b1293939aa97bc5d98d88408123caafb1f6d691892fb5e86597273be48f16",
+        "productId": "postman",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-29T23:13:20.000Z",
+        "landingCapturedAt": "2025-06-29T23:13:20.000Z",
+        "pricingCapturedAt": "2025-06-13T02:12:29.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250629231320id_/https://www.postman.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250613021229id_/https://www.postman.com/pricing/",
+        "provenance": "archived-link",
+        "sourceSha256": "ccce2a265dfc5127cbae7e947734d15d1df07899d329cad32762b460ce707dc5",
+        "landingSha256": "aa29898435d85818fe4bec6d2235d6aa3a3554e55774b7f497a4bf2e2ac6af7d",
+        "sourceDigest": "DS6TE2X6VNZOTKIFRO3I5H3C4GQVSJTF",
+        "landingDigest": "I6PNB6Y3I3RTHN7E3RCBOVYNA6C5GVXU",
+        "sourceIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "DS6TE2X6VNZOTKIFRO3I5H3C4GQVSJTF",
+          "actualDigest": "NXY5C7W35T7ETHOZ63VQ2TODDNC7TLGN",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "landingIntegrity": {
+          "status": "verified",
+          "expectedDigest": "I6PNB6Y3I3RTHN7E3RCBOVYNA6C5GVXU",
+          "actualDigest": "I6PNB6Y3I3RTHN7E3RCBOVYNA6C5GVXU"
+        },
+        "quality": "partial",
+        "issues": [
+          "Unknown currency: $0",
+          "Explicitly hidden contextual terms excluded from billing and quantity inference",
+          "Unknown currency: $19 per user/month, billed monthly",
+          "Billing variant active state unknown; archived scripts not executed",
+          "Unknown currency: $14 per user/month, billed annually",
+          "Unknown currency: $39 per user/month, billed monthly",
+          "Unknown currency: $29 per user/month, billed annually",
+          "Unknown currency: $49 per user/month, billed annually",
+          "Unknown currency: $9 per seat/month",
+          "Unknown currency: $19 per seat/month",
+          "Unknown currency: $49 per seat/month",
+          "Unknown currency: Starting at $29 per seat/month",
+          "Unknown currency: Starting at $49 per seat/month",
+          "Unknown currency: $29 per seat/month",
+          "Unknown currency: Starting at $9 per seat/month",
+          "Unknown currency: Starting at $12 per seat/month",
+          "Unknown currency: Starting at $20 per seat/month",
+          "Unknown currency: $20 per 50,000 requests/month",
+          "Unknown currency: $10 per domain",
+          "Additional extraction issues truncated at explicit issue limit",
+          "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        ],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "popular": null,
+            "kind": "plan",
+            "features": 13,
+            "offers": [
+              {
+                "literal": "Free",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              },
+              {
+                "literal": "$0",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Basic",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 10,
+            "offers": [
+              {
+                "literal": "$19 per user/month, billed monthly",
+                "amount": "19",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "monthly",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$14 per user/month, billed annually",
+                "amount": "14",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Professional",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 11,
+            "offers": [
+              {
+                "literal": "$39 per user/month, billed monthly",
+                "amount": "39",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "monthly",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$29 per user/month, billed annually",
+                "amount": "29",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 16,
+            "offers": [
+              {
+                "literal": "$49 per user/month, billed annually",
+                "amount": "49",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "annual",
+                "unit": "user",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          },
+          {
+            "name": "Maximize your productivity with add-ons",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 20,
+            "offers": [
+              {
+                "literal": "$9 per seat/month",
+                "amount": "9",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$19 per seat/month",
+                "amount": "19",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$49 per seat/month",
+                "amount": "49",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "Starting at $29 per seat/month",
+                "amount": "29",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": true,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "Starting at $49 per seat/month",
+                "amount": "49",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": true,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$29 per seat/month",
+                "amount": "29",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$49 per seat/month",
+                "amount": "49",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "Starting at $9 per seat/month",
+                "amount": "9",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": true,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "Starting at $12 per seat/month",
+                "amount": "12",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": true,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "Starting at $20 per seat/month",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": "seat",
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": true,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Fuel your projects with resources",
+            "status": "paid",
+            "popular": null,
+            "kind": "plan",
+            "features": 13,
+            "offers": [
+              {
+                "literal": "$20 per 50,000 requests/month",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$20 per 50,000 requests/month",
+                "amount": "20",
+                "currency": null,
+                "billingPeriod": "month",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              },
+              {
+                "literal": "$10 per domain",
+                "amount": "10",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": "unknown-active-variant"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "algolia",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "review_pending",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T21:05:52.951Z",
+      "nextCheckAt": "2027-04-22T21:05:52.951Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630230633id_/https://www.algolia.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [],
+      "discoveryRejectionSummary": {
+        "total": 0,
+        "retained": 0,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "review_pending": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.algolia.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:48378-48552",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.algolia.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:48378-48552",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "review_pending",
+          "candidate": {
+            "url": "https://www.algolia.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:48378-48552",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250630162234id_/https://www.algolia.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "extractionStatus": "review_pending",
+          "rawPlans": 1,
+          "rawOffers": 1,
+          "omittedPlans": 0,
+          "diagnostics": {
+            "classification": "static_pricing"
+          },
+          "unvalidatedFragments": [
+            {
+              "name": "Free",
+              "status": "free",
+              "kind": "addon",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Free",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:79367-79556"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "observation": {
+        "id": "pricing-f969f319b5da25b0e7d43efdecf54b4a686d1b0cd5d5b36ab91645d55f57aa3b",
+        "productId": "algolia",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "anchorAt": "2025-06-30T23:06:33.000Z",
+        "landingCapturedAt": "2025-06-30T23:06:33.000Z",
+        "pricingCapturedAt": "2025-06-30T16:22:34.000Z",
+        "landingArchiveUrl": "https://web.archive.org/web/20250630230633id_/https://www.algolia.com/",
+        "pricingArchiveUrl": "https://web.archive.org/web/20250630162234id_/https://www.algolia.com/pricing",
+        "provenance": "archived-link",
+        "sourceSha256": "af1585266e2a82b09e1844b797be4e0b47ca6296356daedb425fd3f2e47ccfe0",
+        "landingSha256": "eecb2995093dab37e1583bbb9ff99804c7cbb4cca460e1fd6be161f03bd9ec9a",
+        "sourceDigest": "APTSIDQ2DEN3UTBZRJSSXPOIRTWY33A5",
+        "landingDigest": "PQSJS2ZCM5ZBVOIKRA5BAC656Q2HOOV4",
+        "sourceIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "APTSIDQ2DEN3UTBZRJSSXPOIRTWY33A5",
+          "actualDigest": "YMQH6REMVFVCY2CRTHSQJZBXJY3RBLMZ",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "landingIntegrity": {
+          "status": "legacy_chunked_unverified",
+          "expectedDigest": "PQSJS2ZCM5ZBVOIKRA5BAC656Q2HOOV4",
+          "actualDigest": "IPLJPGFFZME3KZX6MQF7OVVFRR6MAZ2V",
+          "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        },
+        "quality": "partial",
+        "issues": [
+          "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+        ],
+        "reviewState": "proposed",
+        "plans": [
+          {
+            "name": "Free",
+            "status": "free",
+            "popular": null,
+            "kind": "addon",
+            "features": 0,
+            "offers": [
+              {
+                "literal": "Free",
+                "amount": "0",
+                "currency": null,
+                "billingPeriod": "unknown",
+                "commitment": "unknown",
+                "unit": null,
+                "minimumQuantity": null,
+                "qualifications": {
+                  "region": null,
+                  "locale": "en",
+                  "tax": null,
+                  "promotion": null,
+                  "startingAt": null,
+                  "range": null,
+                  "volume": null,
+                  "billingVariant": null
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "elastic-cloud",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "wrong_scope",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T21:06:32.396Z",
+      "nextCheckAt": "2027-04-22T21:06:32.396Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250609060052id_/https://www.elastic.co/cloud/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "landingExtraction": {
+        "status": "extraction_unavailable",
+        "extractionStatus": "extraction_unavailable",
+        "rawPlans": 0,
+        "rawOffers": 0,
+        "omittedPlans": 0,
+        "diagnostics": {
+          "classification": "unsupported"
+        }
+      },
+      "discoveryRejections": [
+        {
+          "url": "https://www.elastic.co/pricing/serverless-search",
+          "label": "Elastic Cloud Serverless pricing",
+          "locator": "offset:124621-124970",
+          "provenance": "archived-link",
+          "reason": "outside_product_path"
+        },
+        {
+          "url": "https://www.elastic.co/pricing",
+          "label": "Pricing",
+          "locator": "offset:159033-159122",
+          "provenance": "archived-link",
+          "reason": "outside_product_path"
+        }
+      ],
+      "discoveryRejectionSummary": {
+        "total": 2,
+        "retained": 2,
+        "omitted": 0
+      },
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    }
+  ]
+}

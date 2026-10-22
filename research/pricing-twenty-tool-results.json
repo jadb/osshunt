@@ -1,0 +1,1930 @@
+{
+  "formatVersion": 1,
+  "inputs": {
+    "ids": [
+      "1password",
+      "bitwarden",
+      "confluence",
+      "jira",
+      "typeform",
+      "miro",
+      "hubspot",
+      "intercom",
+      "zendesk",
+      "mailchimp",
+      "loom",
+      "datadog",
+      "sentry",
+      "google-workspace",
+      "microsoft-365",
+      "squarespace",
+      "webflow",
+      "ghost",
+      "mattermost",
+      "passbolt"
+    ],
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z",
+    "maxCandidates": 2,
+    "catalog": [
+      {
+        "id": "1password",
+        "name": "1Password",
+        "url": "https://1password.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://1password.com/pricing",
+          "https://1password.com/pricing/business",
+          "https://1password.com/pricing/personal"
+        ]
+      },
+      {
+        "id": "bitwarden",
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com",
+        "kind": "oss",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://bitwarden.com/pricing/"
+        ]
+      },
+      {
+        "id": "confluence",
+        "name": "Confluence",
+        "url": "https://www.atlassian.com/software/confluence",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/software/confluence"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.atlassian.com/software/confluence/pricing"
+        ]
+      },
+      {
+        "id": "jira",
+        "name": "Jira",
+        "url": "https://www.atlassian.com/software/jira",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/software/jira"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.atlassian.com/software/jira/pricing"
+        ]
+      },
+      {
+        "id": "typeform",
+        "name": "Typeform",
+        "url": "https://www.typeform.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.typeform.com/pricing"
+        ]
+      },
+      {
+        "id": "miro",
+        "name": "Miro",
+        "url": "https://miro.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://miro.com/pricing/"
+        ]
+      },
+      {
+        "id": "hubspot",
+        "name": "HubSpot",
+        "url": "https://www.hubspot.com/products/sales",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/sales"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "intercom",
+        "name": "Intercom",
+        "url": "https://www.intercom.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.intercom.com/pricing"
+        ]
+      },
+      {
+        "id": "zendesk",
+        "name": "Zendesk",
+        "url": "https://www.zendesk.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.zendesk.com/pricing/"
+        ]
+      },
+      {
+        "id": "mailchimp",
+        "name": "Mailchimp",
+        "url": "https://mailchimp.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://mailchimp.com/pricing/marketing/"
+        ]
+      },
+      {
+        "id": "loom",
+        "name": "Loom",
+        "url": "https://www.loom.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.loom.com/pricing"
+        ]
+      },
+      {
+        "id": "datadog",
+        "name": "Datadog",
+        "url": "https://www.datadoghq.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.datadoghq.com/pricing/"
+        ]
+      },
+      {
+        "id": "sentry",
+        "name": "Sentry",
+        "url": "https://sentry.io/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://sentry.io/pricing/"
+        ]
+      },
+      {
+        "id": "google-workspace",
+        "name": "Google Workspace",
+        "url": "https://workspace.google.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://workspace.google.com/pricing?hl=en&region=US"
+        ]
+      },
+      {
+        "id": "microsoft-365",
+        "name": "Microsoft 365",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/business/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/en-us/microsoft-365/business",
+          "/en-us/microsoft-365/enterprise"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing",
+          "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+        ]
+      },
+      {
+        "id": "squarespace",
+        "name": "Squarespace",
+        "url": "https://www.squarespace.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.squarespace.com/pricing"
+        ]
+      },
+      {
+        "id": "webflow",
+        "name": "Webflow",
+        "url": "https://webflow.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://webflow.com/pricing"
+        ]
+      },
+      {
+        "id": "ghost",
+        "name": "Ghost",
+        "url": "https://ghost.org/",
+        "kind": "oss",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://ghost.org/pricing/"
+        ]
+      },
+      {
+        "id": "mattermost",
+        "name": "Mattermost Team Edition",
+        "url": "https://mattermost.com",
+        "kind": "oss",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://mattermost.com/pricing/"
+        ]
+      },
+      {
+        "id": "passbolt",
+        "name": "Passbolt Community Edition",
+        "url": "https://www.passbolt.com",
+        "kind": "oss",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.passbolt.com/pricing/pro"
+        ]
+      }
+    ]
+  },
+  "extractorVersion": "1.0.0",
+  "baselineFingerprint": "a2f8d7181bf4cf651c77cbe95d161c314b62dc1ca7144e3f6ca4f0fbf49e7bf4",
+  "startedAt": "2026-10-22T15:23:44.380Z",
+  "finishedAt": "2026-10-22T15:36:36.168Z",
+  "stopped": null,
+  "historicalComplete": false,
+  "automaticallyConfirmed": 0,
+  "summary": {
+    "products": 20,
+    "completed": 20,
+    "statuses": {
+      "extraction_unavailable": 12,
+      "error": 7,
+      "missing_landing": 1
+    },
+    "requests": 78,
+    "observed429": 0,
+    "responsesMissing": 0,
+    "productsWithNonemptyFragments": 1,
+    "nonemptyCandidateExtractions": 2,
+    "rawCandidateFragments": 10,
+    "rawCandidateOffers": 17,
+    "rawProposals": 0,
+    "rawPlans": 0,
+    "rawOffers": 0
+  },
+  "products": [
+    {
+      "id": "1password",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T15:23:44.381Z",
+      "nextCheckAt": "2027-04-22T15:23:44.381Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://1password.com/pricing/xam",
+          "label": "View plans",
+          "locator": "offset:12928-13569",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://1password.com/compare/password-manager",
+          "label": "Comparison",
+          "locator": "offset:84202-84327",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://1password.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        },
+        {
+          "url": "https://1password.com/pricing/business",
+          "label": "Current pricing source",
+          "locator": "hint:1",
+          "provenance": "current-source-hint"
+        },
+        {
+          "url": "https://1password.com/pricing/personal",
+          "label": "Current pricing source",
+          "locator": "hint:2",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://1password.com/pricing/xam",
+          "label": "View plans",
+          "locator": "offset:12928-13569",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://1password.com/compare/password-manager",
+          "label": "Comparison",
+          "locator": "offset:84202-84327",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://1password.com/pricing/xam",
+            "label": "View plans",
+            "locator": "offset:12928-13569",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://1password.com/compare/password-manager",
+            "label": "Comparison",
+            "locator": "offset:84202-84327",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "bitwarden",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-body",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T15:24:35.488Z",
+      "nextCheckAt": "2027-04-22T15:24:35.488Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630085312id_/https://bitwarden.com/",
+      "landingIntegrity": null,
+      "cacheHits": 0,
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "confluence",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T15:24:56.377Z",
+      "nextCheckAt": "2027-04-22T15:24:56.377Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.atlassian.com/software/confluence/pricing",
+          "label": "Pricing",
+          "locator": "offset:167707-168143",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.atlassian.com/software/confluence/templates/marketing-plan",
+          "label": "Try it out",
+          "locator": "offset:261790-262864",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.atlassian.com/software/confluence/pricing",
+          "label": "Pricing",
+          "locator": "offset:167707-168143",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.atlassian.com/software/confluence/templates/marketing-plan",
+          "label": "Try it out",
+          "locator": "offset:261790-262864",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.atlassian.com/software/confluence/pricing",
+            "label": "Pricing",
+            "locator": "offset:167707-168143",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.atlassian.com/software/confluence/templates/marketing-plan",
+            "label": "Try it out",
+            "locator": "offset:261790-262864",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "jira",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T15:25:44.974Z",
+      "nextCheckAt": "2027-04-22T15:25:44.974Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.atlassian.com/software/jira/pricing",
+          "label": "Pricing",
+          "locator": "offset:198789-199213",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.atlassian.com/software/jira/pricing",
+          "label": "Pricing",
+          "locator": "offset:198789-199213",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.atlassian.com/software/jira/pricing",
+            "label": "Pricing",
+            "locator": "offset:198789-199213",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "typeform",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-query",
+      "done": true,
+      "errorCode": "archive_unavailable",
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T15:26:28.559Z",
+      "nextCheckAt": "2027-04-22T15:26:28.559Z",
+      "cacheHits": 0,
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "miro",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-query",
+      "done": true,
+      "errorCode": "archive_unavailable",
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T15:26:36.050Z",
+      "nextCheckAt": "2027-04-22T15:26:36.050Z",
+      "cacheHits": 0,
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "hubspot",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 3,
+      "checkedAt": "2026-10-22T15:26:44.773Z",
+      "nextCheckAt": "2027-04-22T15:26:44.773Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+      "landingIntegrity": "verified",
+      "cacheHits": 1,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.hubspot.com/products/sales",
+          "label": "Free and premium plans",
+          "locator": "offset:439655-439880",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.hubspot.com/products/sales",
+          "label": "Free and premium plans",
+          "locator": "offset:439655-439880",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.hubspot.com/products/sales",
+            "label": "Free and premium plans",
+            "locator": "offset:439655-439880",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "intercom",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T15:27:15.107Z",
+      "nextCheckAt": "2027-04-22T15:27:15.107Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.intercom.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.intercom.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.intercom.com/pricing",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "zendesk",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T15:27:58.153Z",
+      "nextCheckAt": "2027-04-22T15:27:58.153Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250627060351id_/https://www.zendesk.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "label": "Pricing",
+          "locator": "offset:411536-411907",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "label": "Accessibility Plan",
+          "locator": "offset:416922-417388",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.zendesk.com/pricing/",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "label": "Pricing",
+          "locator": "offset:411536-411907",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "label": "Accessibility Plan",
+          "locator": "offset:416922-417388",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.zendesk.com/pricing/featured/",
+            "label": "Pricing",
+            "locator": "offset:411536-411907",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+            "label": "Accessibility Plan",
+            "locator": "offset:416922-417388",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250625025002id_/https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "mailchimp",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "complete",
+      "done": true,
+      "errorCode": "extraction_error",
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T15:28:56.724Z",
+      "nextCheckAt": "2027-04-22T15:28:56.724Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630163644id_/https://mailchimp.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://mailchimp.com/pricing/marketing/",
+          "label": "Start today.",
+          "locator": "offset:67630-67890",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+          "label": "Essentials",
+          "locator": "offset:312510-312568",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mailchimp.com/pricing/premium-details/",
+          "label": "Premium",
+          "locator": "offset:313575-313622",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mailchimp.com/integrations/?categories=Subscription+Management",
+          "label": "Subscription management",
+          "locator": "offset:122526-122739",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mailchimp.com/resources/mailchimp-comparisons/",
+          "label": "How We Compare",
+          "locator": "offset:360291-360429",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://mailchimp.com/pricing/marketing/",
+          "label": "Start today.",
+          "locator": "offset:67630-67890",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+          "label": "Essentials",
+          "locator": "offset:312510-312568",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "error",
+          "errorCode": "extraction_error",
+          "candidate": {
+            "url": "https://mailchimp.com/pricing/marketing/",
+            "label": "Start today.",
+            "locator": "offset:67630-67890",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250630162355id_/https://mailchimp.com/pricing/marketing/",
+          "integrity": "verified",
+          "rawPlans": 2,
+          "rawOffers": 3,
+          "unvalidatedFragments": [
+            {
+              "name": "standard",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:292870-292915"
+                },
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:292924-292968"
+                }
+              ]
+            },
+            {
+              "name": "standard",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Free Trial Terms",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:293444-301112"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "status": "error",
+          "errorCode": "extraction_error",
+          "candidate": {
+            "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+            "label": "Essentials",
+            "locator": "offset:312510-312568",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 8,
+          "rawOffers": 14,
+          "unvalidatedFragments": [
+            {
+              "name": "premium",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Talk to Sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:366154-366642"
+                }
+              ]
+            },
+            {
+              "name": "standard",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:385149-385194"
+                },
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:385203-385247"
+                }
+              ]
+            },
+            {
+              "name": "essential",
+              "status": "trial",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:401492-401537"
+                },
+                {
+                  "literal": "Free Trial",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:401546-401584"
+                }
+              ]
+            },
+            {
+              "name": "standard",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:445867-445912"
+                },
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:445921-445965"
+                }
+              ]
+            },
+            {
+              "name": "essential",
+              "status": "trial",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:460015-460060"
+                },
+                {
+                  "literal": "Free Trial",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": null
+                  },
+                  "sourceLocator": "offset:460069-460107"
+                }
+              ]
+            },
+            {
+              "name": "premium",
+              "status": "quote",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Talk to Sales",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:642250-642738"
+                }
+              ]
+            },
+            {
+              "name": "standard",
+              "status": "unknown",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:657147-657192"
+                },
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:657201-657245"
+                }
+              ]
+            },
+            {
+              "name": "essential",
+              "status": "trial",
+              "kind": "plan",
+              "popular": null,
+              "offers": [
+                {
+                  "literal": "Start Free Trial",
+                  "amount": null,
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:669745-669790"
+                },
+                {
+                  "literal": "Free Trial",
+                  "amount": "0",
+                  "currency": null,
+                  "billingPeriod": "unknown",
+                  "commitment": "unknown",
+                  "unit": null,
+                  "minimumQuantity": null,
+                  "qualifications": {
+                    "region": null,
+                    "locale": "en",
+                    "tax": null,
+                    "promotion": null,
+                    "startingAt": null,
+                    "range": null,
+                    "volume": null,
+                    "billingVariant": "unknown-active-variant"
+                  },
+                  "sourceLocator": "offset:669799-669837"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loom",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-query",
+      "done": true,
+      "errorCode": "archive_unavailable",
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T15:29:56.230Z",
+      "nextCheckAt": "2027-04-22T15:29:56.230Z",
+      "cacheHits": 0,
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "datadog",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T15:30:04.884Z",
+      "nextCheckAt": "2027-04-22T15:30:04.884Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630172700id_/https://www.datadoghq.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.datadoghq.com/pricing/",
+          "label": "View pricing",
+          "locator": "offset:18749-18867",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.datadoghq.com/pricing/",
+          "label": "View pricing",
+          "locator": "offset:18749-18867",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.datadoghq.com/pricing/",
+            "label": "View pricing",
+            "locator": "offset:18749-18867",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "sentry",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T15:30:50.369Z",
+      "nextCheckAt": "2027-04-22T15:30:50.369Z",
+      "cacheHits": 0,
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "google-workspace",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T15:30:55.233Z",
+      "nextCheckAt": "2027-04-22T15:30:55.233Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 1,
+      "discoveredCandidates": [
+        {
+          "url": "https://workspace.google.com/",
+          "label": "Plans & pricing",
+          "locator": "offset:212660-212915",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://workspace.google.com/pricing.html",
+          "label": "Compare pricing plans",
+          "locator": "offset:442178-442524",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://workspace.google.com/pricing.html?source=gafb-alpha_%5Bbasename%5D_6803441-globalnav-en",
+          "label": "Add-ons",
+          "locator": "offset:61421-61679",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://workspace.google.com/pricing?hl=en&region=US",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://workspace.google.com/",
+          "label": "Plans & pricing",
+          "locator": "offset:212660-212915",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://workspace.google.com/pricing.html",
+          "label": "Compare pricing plans",
+          "locator": "offset:442178-442524",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://workspace.google.com/",
+            "label": "Plans & pricing",
+            "locator": "offset:212660-212915",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://workspace.google.com/pricing.html",
+            "label": "Compare pricing plans",
+            "locator": "offset:442178-442524",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250630182909id_/https://workspace.google.com/pricing.html",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "microsoft-365",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T15:31:50.847Z",
+      "nextCheckAt": "2027-04-22T15:31:50.847Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+          "label": "Pricing for business",
+          "locator": "offset:19053-19368",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "label": "Pricing for enterprise",
+          "locator": "offset:21046-21326",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+          "label": "Plans and pricing",
+          "locator": "offset:32735-33000",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business",
+          "label": "Compare plans and pricing",
+          "locator": "offset:89219-89635",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/nonprofit-plans-and-pricing",
+          "label": "For Nonprofits",
+          "locator": "offset:30121-30382",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-for-business-support-options",
+          "label": "Support plans",
+          "locator": "offset:42765-43039",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plan-chooser",
+          "label": "Help me choose",
+          "locator": "offset:89647-90161",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?rtc=1",
+          "label": "Shop for business",
+          "locator": "offset:538746-539288",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
+          "label": "Current pricing source",
+          "locator": "hint:1",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+          "label": "Pricing for business",
+          "locator": "offset:19053-19368",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "label": "Pricing for enterprise",
+          "locator": "offset:21046-21326",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products?&activetab=tab:primaryr2",
+            "label": "Pricing for business",
+            "locator": "offset:19053-19368",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+            "label": "Pricing for enterprise",
+            "locator": "offset:21046-21326",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "squarespace",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "complete",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T15:32:35.918Z",
+      "nextCheckAt": "2027-04-22T15:32:35.918Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.squarespace.com/pricing",
+          "label": "Pricing Pricing",
+          "locator": "offset:260214-260638",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.squarespace.com/pricing",
+          "label": "Pricing Pricing",
+          "locator": "offset:260214-260638",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "error",
+          "errorCode": "archive_digest_mismatch",
+          "candidate": {
+            "url": "https://www.squarespace.com/pricing",
+            "label": "Pricing Pricing",
+            "locator": "offset:260214-260638",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624193439id_/https://www.squarespace.com/pricing",
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "webflow",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T15:33:22.010Z",
+      "nextCheckAt": "2027-04-22T15:33:22.010Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://webflow.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:107141-107752",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://webflow.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:107141-107752",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://webflow.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:107141-107752",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "ghost",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "complete",
+      "done": true,
+      "errorCode": "archive_digest_mismatch",
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T15:33:56.089Z",
+      "nextCheckAt": "2027-04-22T15:33:56.089Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://ghost.org/pricing/",
+          "label": "Pricing",
+          "locator": "offset:36486-36579",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://ghost.org/pricing/",
+          "label": "Pricing",
+          "locator": "offset:36486-36579",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "error",
+          "errorCode": "archive_digest_mismatch",
+          "candidate": {
+            "url": "https://ghost.org/pricing/",
+            "label": "Pricing",
+            "locator": "offset:36486-36579",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250630110730id_/https://ghost.org/pricing/",
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "mattermost",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T15:34:35.934Z",
+      "nextCheckAt": "2027-04-22T15:34:35.934Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630153551id_/https://mattermost.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://mattermost.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:101717-101820",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mattermost.com/compare/",
+          "label": "Comparison Guide",
+          "locator": "offset:160531-160593",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://mattermost.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:101717-101820",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://mattermost.com/compare/",
+          "label": "Comparison Guide",
+          "locator": "offset:160531-160593",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://mattermost.com/pricing/",
+            "label": "Pricing",
+            "locator": "offset:101717-101820",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://mattermost.com/compare/",
+            "label": "Comparison Guide",
+            "locator": "offset:160531-160593",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624034347id_/https://mattermost.com/compare/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "passbolt",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T15:35:36.474Z",
+      "nextCheckAt": "2027-04-22T15:35:36.474Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630023104id_/https://www.passbolt.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "discoveredCandidates": [
+        {
+          "url": "https://www.passbolt.com/pricing/pro",
+          "label": "Pro Self-hosted professional edition. Ideal for growing businesses and larger teams.",
+          "locator": "offset:12742-13662",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.passbolt.com/pricing/cloud",
+          "label": "Cloud-managed Skip the technical setup.",
+          "locator": "offset:15779-16411",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.passbolt.com/pricing/pro",
+          "label": "Pro Self-hosted professional edition. Ideal for growing businesses and larger teams.",
+          "locator": "offset:12742-13662",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.passbolt.com/pricing/cloud",
+          "label": "Cloud-managed Skip the technical setup.",
+          "locator": "offset:15779-16411",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.passbolt.com/pricing/pro",
+            "label": "Pro Self-hosted professional edition. Ideal for growing businesses and larger teams.",
+            "locator": "offset:12742-13662",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.passbolt.com/pricing/cloud",
+            "label": "Cloud-managed Skip the technical setup.",
+            "locator": "offset:15779-16411",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,18 +1,20 @@
-import { createHistoryService } from '../../lib/history/service.mjs';
+import { createArchiveApplication } from '../../lib/pricing/application.mjs';
 import { CloudflareHistoryStore } from '../../lib/history/stores-cloudflare.mjs';
-import { discoverScreenshots, assertExactReplayUrl } from '../../lib/history/archive.mjs';
-import { selectHistoricalFrames, selectNewFrame } from '../../lib/history/selection.mjs';
-import { verifyImage } from '../../lib/history/image.mjs';
+import { CloudflarePricingStore } from '../../lib/pricing/stores-cloudflare.mjs';
 import { preserveHistoryRequest } from './request-lifecycle.mjs';
 
 const services = new WeakMap();
 async function service(env, origin) {
   if (!services.has(env.DB)) {
     const pending = (async () => {
-      const response = await env.ASSETS.fetch(new Request(`${origin}/catalog.json`));
-      if (!response.ok) throw new Error('Catalog unavailable');
-      return createHistoryService({ catalog: await response.json(), store: new CloudflareHistoryStore(env.DB, env.MEDIA),
-        archive: { discoverScreenshots, assertExactReplayUrl, selectHistoricalFrames, selectNewFrame, verifyImage } });
+      const [response, observations] = await Promise.all([
+        env.ASSETS.fetch(new Request(`${origin}/catalog.json`)),
+        env.ASSETS.fetch(new Request(`${origin}/pricing-observations.json`)),
+      ]);
+      if (!response.ok || !observations.ok) throw new Error('Catalog unavailable');
+      const historyStore = new CloudflareHistoryStore(env.DB, env.MEDIA);
+      return createArchiveApplication({ catalog: await response.json(), confirmed: await observations.json(),
+        historyStore, pricingStore: new CloudflarePricingStore(env.DB, env.MEDIA, { historyStore }) });
     })();
     services.set(env.DB, pending);
     pending.catch(() => services.delete(env.DB));

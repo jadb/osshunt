@@ -1,0 +1,134 @@
+[
+  {
+    "productId": "google-analytics-360",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250628200032",
+      "capturedAt": "2025-06-28T20:00:32.000Z",
+      "originalUrl": "https://marketingplatform.google.com/about/analytics-360/",
+      "digest": "NEMK7EDEUIQ5G6UIXLIMVVNA5HJ7E4TK",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "bamboohr",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630164454",
+      "capturedAt": "2025-06-30T16:44:54.000Z",
+      "originalUrl": "https://www.bamboohr.com/",
+      "digest": "HBBA6SQ3KZSKY3F4V3UJGCTDNWREDZUP",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "aircall",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250621174217",
+      "capturedAt": "2025-06-21T17:42:17.000Z",
+      "originalUrl": "https://aircall.io",
+      "digest": "3L246KP4FDIB6HCO66BLB3O6GFNUIM2O",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "aircall",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250526174606",
+      "capturedAt": "2025-05-26T17:46:06.000Z",
+      "originalUrl": "https://aircall.io/pricing/",
+      "digest": "PPTWND47FSLH76ZLXFEGVNFYQYBLVMNQ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "ringcentral",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250624122106",
+      "capturedAt": "2025-06-24T12:21:06.000Z",
+      "originalUrl": "https://www.ringcentral.com/",
+      "digest": "WYJU5CSWWFKCAER5CGP4ZR565GTH3DFT",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "ringcentral",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624030144",
+      "capturedAt": "2025-06-24T03:01:44.000Z",
+      "originalUrl": "https://www.ringcentral.com/office/plansandpricing.html",
+      "digest": "KXJ3V23NPLYRGEPDHYUVHOGU4TFOSJYR",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "brandfolder",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250624094542",
+      "capturedAt": "2025-06-24T09:45:42.000Z",
+      "originalUrl": "https://brandfolder.com/",
+      "digest": "J6C62EFUBW5LGKTGK7WPRKCTXZH2O66O",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "brandfolder",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250527221312",
+      "capturedAt": "2025-05-27T22:13:12.000Z",
+      "originalUrl": "https://brandfolder.com/pricing/",
+      "digest": "UM3XBQ5WBRBUNY53NTAHG7TCJIWKLOAE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "looker",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630183410",
+      "capturedAt": "2025-06-30T18:34:10.000Z",
+      "originalUrl": "https://cloud.google.com/looker",
+      "digest": "2CFY3BPXUEASF5YKBN4XB2WAR6EKL5DS",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "metabase-pro",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250627132717",
+      "capturedAt": "2025-06-27T13:27:17.000Z",
+      "originalUrl": "https://www.metabase.com/",
+      "digest": "IPOOGV7GLKSGYZJN2H6IDTKWLSYNWXIK",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "tableau",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630200344",
+      "capturedAt": "2025-06-30T20:03:44.000Z",
+      "originalUrl": "https://www.tableau.com/",
+      "digest": "ZUGM74F7YPTAZAUIUSVPF322HNOBJKMQ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "tableau",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250618184258",
+      "capturedAt": "2025-06-18T18:42:58.000Z",
+      "originalUrl": "https://www.tableau.com/pricing",
+      "digest": "LTHPWTFFCHFSXYVOWCNJ7QU5LHI2MPZ3",
+      "mimeType": "text/html"
+    }
+  }
+]

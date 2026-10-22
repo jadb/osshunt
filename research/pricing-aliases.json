@@ -1,0 +1,100 @@
+[
+  {
+    "productId": "docusign",
+    "url": "https://ecom.docusign.com/plans-and-pricing/esignature",
+    "evidenceCapturedAt": "2025-06-20T00:45:50.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+    "evidenceSha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d",
+    "locator": "offset:90609-90886",
+    "label": "Plans & Pricing",
+    "scope": {
+      "edition": "eSignature",
+      "deployment": "hosted"
+    },
+    "locale": null
+  },
+  {
+    "productId": "google-meet",
+    "url": "https://workspace.google.com/intl/de/pricing.html",
+    "evidenceCapturedAt": "2025-06-30T23:53:00.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+    "evidenceSha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+    "locator": "offset:343348-343696",
+    "label": "Preise",
+    "scope": {
+      "edition": "Google Workspace bundle",
+      "deployment": "hosted"
+    },
+    "locale": "de"
+  },
+  {
+    "productId": "backblaze-business-backup",
+    "url": "https://www.backblaze.com/cloud-backup/pricing",
+    "evidenceCapturedAt": "2025-06-24T16:27:54.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+    "evidenceSha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7",
+    "locator": "offset:46689-46914",
+    "label": "Computer Backup Unlimited data protection, transparent pricing",
+    "scope": {
+      "edition": "Computer Backup (shared pricing)",
+      "deployment": "hosted"
+    },
+    "locale": null
+  },
+  {
+    "productId": "figjam",
+    "url": "https://www.figma.com/pricing/",
+    "evidenceCapturedAt": "2025-06-25T16:10:40.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/",
+    "evidenceSha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+    "locator": "offset:167916-168023",
+    "label": "Pricing",
+    "scope": {
+      "edition": "Collab seats (FigJam included)",
+      "deployment": "hosted"
+    },
+    "locale": "en"
+  },
+  {
+    "productId": "fastmail",
+    "url": "https://www.fastmail.com/pricing/?plan-type=business",
+    "evidenceCapturedAt": "2025-06-29T08:26:13.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250629082613id_/https://www.fastmail.com/business/",
+    "evidenceSha256": "eccc9ae56123dfcaaa92019a5a186111a379f1ed60d87dbfd50cda40c4e16e20",
+    "locator": "offset:54830-55372",
+    "label": "See business pricing",
+    "scope": {
+      "edition": "Business pricing",
+      "deployment": "unknown"
+    },
+    "locale": "en"
+  },
+  {
+    "productId": "freshservice-itam",
+    "url": "https://www.freshworks.com/freshservice/pricing/",
+    "evidenceCapturedAt": "2025-06-12T18:05:59.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250612180559id_/https://www.freshworks.com/freshservice/itam/",
+    "evidenceSha256": "8c19ed4e1d5a79859f352f4235b1265428a82051441e7dabccc29a9384f33d3a",
+    "locator": "offset:110630-110902",
+    "label": "Pricing",
+    "scope": {
+      "edition": "Freshservice suite pricing",
+      "deployment": "unknown"
+    },
+    "locale": "en"
+  },
+  {
+    "productId": "elastic-cloud",
+    "url": "https://www.elastic.co/pricing/serverless-search",
+    "evidenceCapturedAt": "2025-06-09T06:00:52.000Z",
+    "evidenceArchiveUrl": "https://web.archive.org/web/20250609060052id_/https://www.elastic.co/cloud/",
+    "evidenceSha256": "63fe7f1ce814d21123ed53c16172b40712d5a4ee53df89f6a028a4543a2fcd1e",
+    "locator": "offset:124621-124970",
+    "label": "Elastic Cloud Serverless pricing",
+    "scope": {
+      "edition": "Elastic Cloud Serverless",
+      "deployment": "hosted"
+    },
+    "locale": "en"
+  }
+]

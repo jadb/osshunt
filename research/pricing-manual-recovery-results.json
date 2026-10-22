@@ -1,0 +1,3909 @@
+{
+  "formatVersion": 1,
+  "mode": "reviewed-manual-recovery-from-retained-sources",
+  "sourceRequests": 0,
+  "counts": {
+    "sampledProducts": 70,
+    "representedProducts": 37,
+    "positivePriceProducts": 29,
+    "observations": 92,
+    "plans": 239,
+    "offers": 370,
+    "newObservations": 79,
+    "extendedExistingObservations": 1,
+    "newPositivePriceProducts": 16
+  },
+  "categories": {
+    "quote_only": 3,
+    "no_confirmed_observation": 33,
+    "structure_only": 2,
+    "positive_price": 29,
+    "free_only": 2,
+    "trial_only": 1
+  },
+  "verification": {
+    "bodyChecks": 184,
+    "unchangedFrozenJournals": [
+      {
+        "cohort": "second",
+        "sha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+        "unchanged": true
+      },
+      {
+        "cohort": "third",
+        "sha256": "73a6751afa281b822be189a677fc54145e68fd8f83172879726b42dfcee77ead",
+        "unchanged": true
+      },
+      {
+        "cohort": "fourth",
+        "sha256": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+        "unchanged": true
+      }
+    ],
+    "unchangedSavedProductStates": 70,
+    "allSavedProductStatesUnchanged": true,
+    "originalObservations": [
+      {
+        "productId": "webflow",
+        "observationId": "pricing-2474db7e5681d2e0b6c3a8b0e3e87b2990cd95a06656d39c155459377851ee91",
+        "unchanged": false,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "airtable",
+        "observationId": "pricing-2559051b4649ba992a9852132392ec4a88e22248d536d28680f82750f3581ee8",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "intercom",
+        "observationId": "pricing-637f824f7686a76d5c4806df84c3a8b9d0a27bfa957c9c71dc7b18bb63501dc5",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "trello",
+        "observationId": "pricing-7a7022f22bc9eaa523bf7ef6b5edc36cbfbfdd9258aaf284e9c84d8079775834",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "hubspot",
+        "observationId": "pricing-9610d4301cb6f15b58a33bdc753b21a86bb07a1d37b08340f470a40404188857",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "dropbox",
+        "observationId": "pricing-a12f7b6bdacf8e144e3acced471f6caf357550d17a6e412ce9902cdef8d4490f",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "microsoft-365",
+        "observationId": "pricing-b06d33327ce31e82bc0a8248b51bd0d258782bb98e31950d2a0638acfbe17b28",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "figma",
+        "observationId": "pricing-ca5f79bfe630b14ef7a6353f3ede6dbf67bc563776792f1fd6737a02c3ab2a15",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "calendly",
+        "observationId": "pricing-cee3a904c852b9f0716e1bb312ab067ef9d66d7443c3fd0e8c34254594dfaa23",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "mattermost",
+        "observationId": "pricing-d2bb5f2ac65b5925d708a7d08e24f095ea6b347be20bdb6efde741d809da9f91",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "zoom",
+        "observationId": "pricing-d55d0ed3d204f4e182b96814ee42dc35ffcad0264c28773d98ff3a487b2a5689",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "notion",
+        "observationId": "pricing-e4d9ce401eea98a22ec5f925874d43bc16bbd1b1716da29d7854f7091306640c",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      },
+      {
+        "productId": "asana",
+        "observationId": "pricing-ed6fa0e1ddfcc0f371573b4d5187bf032df4152e0506c46f27218838186092a5",
+        "unchanged": true,
+        "allPriorPlansUnchanged": true
+      }
+    ]
+  },
+  "products": [
+    {
+      "productId": "1password",
+      "name": "1Password",
+      "category": "quote_only",
+      "observations": 1,
+      "plans": 3,
+      "offers": 3,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Selected XAM quote-only modules and a competitor comparison; canonical general password-manager hints were not reached within the two-candidate budget.",
+      "remainingGaps": [
+        "Selected XAM quote-only modules and a competitor comparison; canonical general password-manager hints were not reached within the two-candidate budget."
+      ],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-manual-d50384a3310eeb720049e81490758189280ffe2defbf4248cc4c68edb62d72f8",
+          "scope": {
+            "edition": "XAM components",
+            "deployment": "unknown"
+          },
+          "url": "https://1password.com/pricing/xam",
+          "capturedAt": "2025-06-19T13:07:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+          "sha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "acronis-cyber-protect",
+      "name": "Acronis Cyber Protect",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "adobe-acrobat",
+      "name": "Adobe Acrobat",
+      "category": "structure_only",
+      "observations": 1,
+      "plans": 2,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Edition features only; price fragments unresolved and rejected comparison body unavailable.",
+        "No monetary offer, trial price or paid subscription status inferred from navigation."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "adobe-acrobat-0",
+          "kind": "landing",
+          "url": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "actualDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html"
+        },
+        {
+          "sourceId": "adobe-acrobat-1",
+          "kind": "pricing",
+          "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "capturedAt": "2025-06-29T20:22:37.000Z",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "archiveUrl": "https://web.archive.org/web/20250629202237id_/https://www.adobe.com/acrobat/pricing/compare-versions.html"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-bb7b34b3e3582d1611641f9dffe0f7d3c8f56eb9df2e1531759a3e68a8a2b06f",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified landing contains unresolved PRICE/annual-plan/tax tokens, not a numeric price. Selected plans body rejected digest validation and unavailable.",
+      "remainingGaps": [
+        "Verified landing contains unresolved PRICE/annual-plan/tax tokens, not a numeric price. Selected plans body rejected digest validation and unavailable."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "adobe-lightroom-0",
+          "kind": "landing",
+          "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified landing contains unresolved PRICE/tax/annual-plan tokens. Selected plans body rejected digest validation and unavailable; no price reconstructed.",
+      "remainingGaps": [
+        "Verified landing contains unresolved PRICE/tax/annual-plan tokens. Selected plans body rejected digest validation and unavailable; no price reconstructed."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "adobe-photoshop-0",
+          "kind": "landing",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "adobe-premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Selected landing body rejected digest validation; no usable cached evidence.",
+      "remainingGaps": [
+        "Selected landing body rejected digest validation; no usable cached evidence."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "airtable",
+      "name": "Airtable",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 4,
+      "numericalOffers": 3,
+      "positiveAmountOffers": 2,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-2559051b4649ba992a9852132392ec4a88e22248d536d28680f82750f3581ee8",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://airtable.com/pricing",
+          "capturedAt": "2025-06-30T15:57:02.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630155702id_/https://airtable.com/pricing",
+          "sha256": "a62bbb57ea1ecf4b64ea2116352baf76d5f4d6f18fc858e07517d5c6927dcdcb",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "asana",
+      "name": "Asana",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 5,
+      "offers": 7,
+      "numericalOffers": 5,
+      "positiveAmountOffers": 4,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-ed6fa0e1ddfcc0f371573b4d5187bf032df4152e0506c46f27218838186092a5",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://asana.com/pricing",
+          "capturedAt": "2025-06-24T06:53:17.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624065317id_/https://asana.com/pricing",
+          "sha256": "7438c627b2b897bf1998e7f72fc6df712e2fae642a22c22e679bcfd4bd0b95b4",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "backblaze-business-backup",
+      "name": "Backblaze Business Backup",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 2,
+      "offers": 3,
+      "numericalOffers": 2,
+      "positiveAmountOffers": 2,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Business Computer Backup only; B2 storage excluded.",
+        "Currency unknown; yearly denominator does not itself establish contractual commitment.",
+        "Enterprise Control has an explicit additional annual fee and a separate contact-based configuration; no base-plus-add-on total computed."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "backblaze-business-backup-0",
+          "kind": "landing",
+          "url": "https://www.backblaze.com/cloud-backup/business",
+          "capturedAt": "2025-06-24T16:27:54.000Z",
+          "sha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "HIDH5QUYQGNCTLK65UMFD6DNREQ6CEPV",
+            "actualDigest": "HIDH5QUYQGNCTLK65UMFD6DNREQ6CEPV"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-881c9b336b4374653b0e59b4437ec893c52039eb166db2feae30353f80299608",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.backblaze.com/cloud-backup/business",
+          "capturedAt": "2025-06-24T16:27:54.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+          "sha256": "1f677501a932d8d3fae7ac92b0c5d7782ad412a0b1fc9570bd6b071bf45f80b7",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "bigcommerce",
+      "name": "BigCommerce",
+      "category": "quote_only",
+      "observations": 1,
+      "plans": 1,
+      "offers": 1,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Dedicated Enterprise page names Enterprise pricing and explicitly requests a quote. No numeric base price, trial-free plan or zero-fee subscription claim.",
+      "remainingGaps": [],
+      "inspectedSources": [
+        {
+          "sourceId": "bigcommerce-0",
+          "kind": "landing",
+          "url": "https://www.bigcommerce.com/",
+          "capturedAt": "2025-06-28T19:11:18.000Z",
+          "sha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+          "integrity": "legacy_chunked_unverified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/"
+        },
+        {
+          "sourceId": "bigcommerce-1",
+          "kind": "pricing",
+          "url": "https://www.bigcommerce.com/enterprise-pricing/",
+          "capturedAt": "2025-06-21T16:53:25.000Z",
+          "sha256": "419a17a61d322ba7c3c20ccc1f2c63f50798497c07063c69773c87c3488bafc7",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-c33254bda505626a4974c119ae30976e1192fcac2e1e418d240390b24d309a1a",
+          "scope": {
+            "edition": "Enterprise",
+            "deployment": "unknown"
+          },
+          "url": "https://www.bigcommerce.com/enterprise-pricing/",
+          "capturedAt": "2025-06-21T16:53:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/",
+          "sha256": "419a17a61d322ba7c3c20ccc1f2c63f50798497c07063c69773c87c3488bafc7",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "bitwarden",
+      "name": "Bitwarden",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Landing payload digest failed; no pricing body retained.",
+      "remainingGaps": [
+        "Landing payload digest failed; no pricing body retained."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "buffer",
+      "name": "Buffer",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 3,
+      "offers": 5,
+      "numericalOffers": 5,
+      "positiveAmountOffers": 4,
+      "newObservations": 1,
+      "finding": "Permanent Free plus Essentials and Team. Annual monthly equivalents 5/10 and yearly totals 60/120 quote one channel; ISO currency unknown.",
+      "remainingGaps": [],
+      "inspectedSources": [
+        {
+          "sourceId": "buffer-0",
+          "kind": "landing",
+          "url": "https://buffer.com/",
+          "capturedAt": "2025-06-30T09:41:34.000Z",
+          "sha256": "4d5132c0cca7f3cac32d9042bf155394a731b3861f66945df8ae44300d2fdfcd",
+          "integrity": "legacy_chunked_unverified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630094134id_/https://buffer.com/"
+        },
+        {
+          "sourceId": "buffer-1",
+          "kind": "pricing",
+          "url": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "capturedAt": "2025-06-28T10:37:23.000Z",
+          "sha256": "e1671652c9f62aecc1208a21afa4e3aacf280c3b5221cb31c061f477aa2d97cd",
+          "integrity": "legacy_chunked_unverified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250628103723id_/https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-d9351f82b6b7b5fdaf5b44791f6c8f73f9bf6d6bd3e4b876de43b51065163136",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "capturedAt": "2025-06-28T10:37:23.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628103723id_/https://buffer.com/pricing?cta=bufferSite-globalNav-pricing-pricing-1",
+          "sha256": "e1671652c9f62aecc1208a21afa4e3aacf280c3b5221cb31c061f477aa2d97cd",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "cal-com",
+      "name": "Cal.com",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Exact landing record selected, but replay exceeds the configured response-size limit before a retained body is available. No inference about plan structure or JavaScript requirements is possible.",
+      "remainingGaps": [
+        "archive_too_large",
+        "No verified cached landing HTML"
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "cal-com-0",
+          "kind": "landing",
+          "url": "https://cal.com/",
+          "capturedAt": "2025-06-30T03:15:58.000Z",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "archiveUrl": "https://web.archive.org/web/20250630031558id_/https://cal.com/"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "calendly",
+      "name": "Calendly",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 4,
+      "numericalOffers": 4,
+      "positiveAmountOffers": 3,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-cee3a904c852b9f0716e1bb312ab067ef9d66d7443c3fd0e8c34254594dfaa23",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://calendly.com/pricing",
+          "capturedAt": "2025-06-12T14:21:19.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250612142119id_/https://calendly.com/pricing",
+          "sha256": "996691c1718b2ccb071c2ece2bfb23bfa1871caf3b6198dc018dd2b77540fa21",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "confluence",
+      "name": "Confluence",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Raw serialized pricing schedules preserved separately; currency-dependent amount scaling remains unproven. No confirmed numerical price inferred.",
+      "remainingGaps": [
+        "Raw serialized amounts require an authoritative currency-specific unit/scale contract."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "confluence-0",
+          "kind": "landing",
+          "url": "https://www.atlassian.com/software/confluence",
+          "capturedAt": "2025-06-29T16:52:14.000Z",
+          "sha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+            "actualDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence"
+        },
+        {
+          "sourceId": "confluence-1",
+          "kind": "pricing",
+          "url": "https://www.atlassian.com/software/confluence/pricing",
+          "capturedAt": "2025-06-28T09:15:12.000Z",
+          "sha256": "5bdd8367832627e50cb01bd6a54905a988578cef85725806afe5040b338b0c0c",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "A47AU6U34Q5AF6ZMXQNMBSUG6LQQ6B2K",
+            "actualDigest": "56CN47KRJJ6ZZCWRRVRZ2T3AKXMXHL6J",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": [
+        {
+          "file": "pricing-manual-atlassian-research.json",
+          "schedules": 68,
+          "normalization": "unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "datadog",
+      "name": "Datadog",
+      "category": "positive_price",
+      "observations": 35,
+      "plans": 80,
+      "offers": 156,
+      "numericalOffers": 150,
+      "positiveAmountOffers": 148,
+      "newObservations": 35,
+      "finding": "Source-bound manual pricing reviewed and imported.",
+      "remainingGaps": [
+        "Unnamed empty Infrastructure placeholder omitted; no plan identity or base price.",
+        "Only explicit static card rates and their conditions imported; dynamic region/retention/volume arithmetic and worked-example totals excluded."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "datadog-0",
+          "kind": "landing",
+          "url": "https://www.datadoghq.com/",
+          "capturedAt": "2025-06-30T17:27:00.000Z",
+          "sha256": "72cd5968b58e1607770344c31c615da456a3e302096662ef393d8408d66ae96a",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "DCOLI4R5TB5EMDOYTQVI744GRUDTQB4F",
+            "actualDigest": "DCOLI4R5TB5EMDOYTQVI744GRUDTQB4F"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630172700id_/https://www.datadoghq.com/"
+        },
+        {
+          "sourceId": "datadog-1",
+          "kind": "pricing",
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "SPCBNWLP53NM2YAKOWSANEEMHRKLKGPL",
+            "actualDigest": "XC3LPM3MPJ3DW6KDMD44TBXKAM7XDWFR",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-00eaf6dab431f453ae03da66919c4bfed64648781fa84f82cbbdccb532e0a684",
+          "scope": {
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-078ae05aa81538940d60d2eadc3345d70db28c927e50608c7b926884f1b3398c",
+          "scope": {
+            "edition": "Product Analytics",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-089993d56dfae790a4d070ecae813f1a252a200da8809a80789c89be90482c6c",
+          "scope": {
+            "edition": "Code Security",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-0b1efd270d997631fcd9281451f6120347d9cd7379ddc969eb0fca344e58486b",
+          "scope": {
+            "edition": "Internal Developer Portal",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-0b2f642ab57805989f298bcedbfc08d4288a27d649d0d4a035ea774bd1b548f8",
+          "scope": {
+            "edition": "App and API Protection",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-10d1eec99bea0334a32484f1ccdba83a72a8be3b00505af2c228bb485b3f647e",
+          "scope": {
+            "edition": "Sensitive Data Scanner",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-15800ecdd074d7c39626c530b676b3fb8b8d287976be8f060947c4562109ba52",
+          "scope": {
+            "edition": "CI Pipeline Visibility",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-29b67b15939e3b699e607a903effc4af15461b43886c5fdc5f8edf99a79efb62",
+          "scope": {
+            "edition": "Bits AI",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-2aaffac702f6309bfcccb0eaaec3ee067bc485a23771f4474e16f47bc51fa545",
+          "scope": {
+            "edition": "Serverless Monitoring — AWS STEP FUNCTIONS",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-2bd1453a21170b7f8b46327045280a6bc612bf20cfd37fe11719dc1dd0419bd8",
+          "scope": {
+            "edition": "Cloud SIEM",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-35b39672565d637c1de66c6ab87b27f73876c198a1ba4899b97d33008d039380",
+          "scope": {
+            "edition": "Cloud Cost Management",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-4ebc6897b6230311ffbed8032e67250fa9431a4eb263f1ac280a2bab982abe6e",
+          "scope": {
+            "edition": "Network Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-5bd944f0f72a4a152a11fb186e6d6c27a9085f155f8f33893dc9810a5092eb4a",
+          "scope": {
+            "edition": "Serverless Monitoring — AWS LAMBDA",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-725ab16b57bb99722c4c1ead43d40e285825a7d67c341727bbc038011fc589f1",
+          "scope": {
+            "edition": "Workflow Automation",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-75239f51f1ba3eeff54a0900d6e7e81518d7e2f36f2ce0725d5f2dc93fc5ca22",
+          "scope": {
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-86b7bd278014240488ef1857d0180d8adb641aa0ce14668173ee5f77227df0f7",
+          "scope": {
+            "edition": "Universal Service Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-8c43610ab31a26559e1aa19b735f9876412ae10a613937b07000f2ea39f1a0dd",
+          "scope": {
+            "edition": "Real User Monitoring & Session Replay",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-94d3025d3d17ff490667f0251e8db66a957e8eb12b67146b608d6f3752341e05",
+          "scope": {
+            "edition": "Continuous Testing",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-973bf19f471c3c52bc7920f16bcb34f905a9eb4c43de9f25dd2c431953bb889b",
+          "scope": {
+            "edition": "LLM Observability",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-9e0caf512f65ab602053ce158a81e8446584260b0c0526b06c10979f442776e2",
+          "scope": {
+            "edition": "Event Management",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-a7decfcc259e200b9b4fba9f3b8706952bdd2a59a899c49db9c28dc6b37e91e4",
+          "scope": {
+            "edition": "Data Streams Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-a8878b86b8bab747c468427250cb919fce49fb50c7a85144037f76ad6acc9831",
+          "scope": {
+            "edition": "Data Jobs Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-a8badd19772347fd54dd76042a32ef78b8af595b965b6145f34e941724417687",
+          "scope": {
+            "edition": "Serverless Monitoring — AZURE CONTAINER APPS",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-b3cb358734bb97b2af322b9c939ab5b1fe4a4f486a0c18956d3c1ab3e50948e7",
+          "scope": {
+            "edition": "Workload Protection",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-b4bc0160c5da717f9f54535a785c4ebd6ef5b38c036edb28b9d5203cb4106fa3",
+          "scope": {
+            "edition": "Observability Pipelines",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-be4124fb79d550a889a6c28ac5053436472d9cf0e1d98b4c3dec16f64b15060d",
+          "scope": {
+            "edition": "Cloud Security",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-bea538477653722cc25c2c8aca6d16540dcb4c0309353fdbc0ffc4d7274310b7",
+          "scope": {
+            "edition": "Serverless Monitoring — GCP CLOUD RUN",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-ce93bbfaaa40dc82ae0a7c48a971ce3ac313bc016ec54cfe39b1508a47c6d500",
+          "scope": {
+            "edition": "Synthetic Testing & Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-d43270c808177671121df688a28a5abd7ed1b794829e290a9c7f50601bde8843",
+          "scope": {
+            "edition": "Error Tracking",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-e4bdeb45500c1847fb53393d7f02b232a63c18b34ca126b5c2f8938714bf23d9",
+          "scope": {
+            "edition": "Audit Trail",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-e4eb85331a8eabe91d38a80db7a1d5f47a5045823f8142433d9313ce5c316ee9",
+          "scope": {
+            "edition": "Incident Response",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-e8709a6106e95f5427eb5977fc0559c98212357b9df3b0346ee32173c689b9a1",
+          "scope": {
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-eca086b2062c47389247a41620ada6ce0d278e58c3c800a181130e3f3949b7c0",
+          "scope": {
+            "edition": "App Builder",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-ef6104947f099bde6acd979ae4fac00e96d9a069fdacc038426120eeae84177c",
+          "scope": {
+            "edition": "Test Optimization",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-f769b33944e2f733ef7b66433800f69e2c0c85b184325b933ce5b747c0fa531c",
+          "scope": {
+            "edition": "Database Monitoring",
+            "deployment": "unknown"
+          },
+          "url": "https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "docebo",
+      "name": "Docebo",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified product landing has no numerical or named quote structure. Exact pricing variants lack selected captures; generic sales contact is insufficient.",
+      "remainingGaps": [
+        "Verified product landing has no numerical or named quote structure. Exact pricing variants lack selected captures; generic sales contact is insufficient."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "docebo-0",
+          "kind": "landing",
+          "url": "https://www.docebo.com/",
+          "capturedAt": "2025-06-05T21:27:25.000Z",
+          "sha256": "7704f73c1a10a2d2e6dbb2f31110b0f50a96e6b1ef110e4110443370c5a5b4ed",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250605212725id_/https://www.docebo.com/"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "docusign",
+      "name": "Docusign",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 7,
+      "numericalOffers": 7,
+      "positiveAmountOffers": 6,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Currency unknown; dollar symbol is not an ISO code.",
+        "Annual bill totals are not additional charges or separate monthly contracts.",
+        "Annual-total per-user denominator left unknown where that exact line omits it; monthly Standard/Business Pro explicitly per user.",
+        "Landing source uses canonical catalog scope; no external pricing alias needed."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "docusign-0",
+          "kind": "landing",
+          "url": "https://www.docusign.com/products/electronic-signature",
+          "capturedAt": "2025-06-20T00:45:50.000Z",
+          "sha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "OEUVGECQOFN5LRNV2TY7P5IO6UL44FVI",
+            "actualDigest": "OEUVGECQOFN5LRNV2TY7P5IO6UL44FVI"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-950a094536ef2facdd7fde58ec414f8f668d0b3ff90f34e249674a816cc4c4dd",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.docusign.com/products/electronic-signature",
+          "capturedAt": "2025-06-20T00:45:50.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+          "sha256": "01bb0099a59971524fc91620c22f59accc8cc1f500d6a80d14b8ee6ac0f9e46d",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "docuware",
+      "name": "DocuWare",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified product landing contains demos, use cases and trial-related calls to action but no published rate structure. The exact FAQ pricing hint has no eligible archived capture. Hint content was not fetched, so quote-only or wrong-page status is unproven.",
+      "remainingGaps": [
+        "No pricing-body semantics available",
+        "Do not infer subscription cost from free webinars or demo offers"
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "docuware-0",
+          "kind": "landing",
+          "url": "https://start.docuware.com/",
+          "capturedAt": "2025-06-25T04:02:12.000Z",
+          "sha256": "3a76919463a3e1dc28e4d1c306c451d131654d422d610258cf03ab3773431b87",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K",
+            "actualDigest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625040212id_/https://start.docuware.com/"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "dropbox",
+      "name": "Dropbox",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 3,
+      "offers": 3,
+      "numericalOffers": 3,
+      "positiveAmountOffers": 2,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-a12f7b6bdacf8e144e3acced471f6caf357550d17a6e412ce9902cdef8d4490f",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "http://www.dropbox.com:80/pricing",
+          "capturedAt": "2011-01-03T06:55:07.000Z",
+          "archiveUrl": "https://web.archive.org/web/20110103065507id_/http://www.dropbox.com/pricing",
+          "sha256": "d508382586442c6b62140e00e565b92ccd32fd6bb89977881ad6637d0749269e",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "expensify",
+      "name": "Expensify",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 2,
+      "offers": 2,
+      "numericalOffers": 2,
+      "positiveAmountOffers": 1,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Unnamed company-plan category is a manual descriptive label, not a claimed formal tier.",
+        "Billing interval, commitment and currency unknown; do not infer5/month.",
+        "Cost disclosure read inertly from collapsed FAQ; cashback is conditional offset, not a zero-price company tier.",
+        "Original archive digest remains unverified; retained immutable bytes manually reviewed with legacy transport qualification."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "expensify-0",
+          "kind": "landing",
+          "url": "https://www.expensify.com/",
+          "capturedAt": "2025-06-29T12:11:29.000Z",
+          "sha256": "0afa7c76c7c683abf1336927a8dcd33247e563cadb956ba059b8f5c4d62564fa",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "IKXD2ZD5FVMOY755AOBK3PRV2PUORCDU",
+            "actualDigest": "BUC7D3B5WX7M2PEIPZPZWFMO3RSQXWYY",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250629121129id_/https://www.expensify.com/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-7aa628b5063031fe65e814f1fe65f09389d9207a4b3f8a5f0d5504e6e476012e",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.expensify.com/",
+          "capturedAt": "2025-06-29T12:11:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629121129id_/https://www.expensify.com/",
+          "sha256": "0afa7c76c7c683abf1336927a8dcd33247e563cadb956ba059b8f5c4d62564fa",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "figjam",
+      "name": "FigJam",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Landing has seat/bundle inclusion descriptions and generic sales links, not a named rate table; shared Figma pricing is outside catalog product path. No independent FigJam rate invented.",
+      "remainingGaps": [
+        "Landing has seat/bundle inclusion descriptions and generic sales links, not a named rate table; shared Figma pricing is outside catalog product path. No independent FigJam rate invented."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "figjam-0",
+          "kind": "landing",
+          "url": "https://www.figma.com/figjam/",
+          "capturedAt": "2025-06-25T16:10:40.000Z",
+          "sha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "figma",
+      "name": "Figma Design",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 10,
+      "numericalOffers": 10,
+      "positiveAmountOffers": 9,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-ca5f79bfe630b14ef7a6353f3ede6dbf67bc563776792f1fd6737a02c3ab2a15",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.figma.com/pricing/",
+          "capturedAt": "2025-06-26T04:09:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+          "sha256": "54f93e0b39da2f4e54df8b0e16093fad967ac634ec432abdff0831704e0f2472",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified Mac product landing retains features/trial/buy links, no amount. Distinct iPad/education offers not substituted.",
+      "remainingGaps": [
+        "Verified Mac product landing retains features/trial/buy links, no amount. Distinct iPad/education offers not substituted."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "final-cut-pro-0",
+          "kind": "landing",
+          "url": "https://www.apple.com/final-cut-pro/",
+          "capturedAt": "2025-06-27T04:39:00.000Z",
+          "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "fireflies",
+      "name": "Fireflies.ai",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 4,
+      "numericalOffers": 4,
+      "positiveAmountOffers": 3,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Inert named JSON-LD Offers only; not the aggregate lowPrice/highPrice metadata.",
+        "Billing period, commitment and unit are absent and remain unknown.",
+        "Original archive digest remains unverified; retained immutable bytes manually reviewed with legacy transport qualification."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "fireflies-0",
+          "kind": "landing",
+          "url": "https://fireflies.ai/",
+          "capturedAt": "2025-06-30T09:04:36.000Z",
+          "sha256": "393d50029c4c8b20462f991ffdf7ae6cfc46961d33be8cb529f8e17886293c1d",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ERCUGHYVTAOXCOV6O6KVQALHZHENJQEO",
+            "actualDigest": "NFFOQ5VXGBI4DPBABV46PATXRERIUIAQ",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630090436id_/https://fireflies.ai/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-69a3988676610990aeab60e6098e035abb8625c17c4ef0dcf5596dfa3153e675",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://fireflies.ai/",
+          "capturedAt": "2025-06-30T09:04:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630090436id_/https://fireflies.ai/",
+          "sha256": "393d50029c4c8b20462f991ffdf7ae6cfc46961d33be8cb529f8e17886293c1d",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "front",
+      "name": "Front",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 8,
+      "offers": 8,
+      "numericalOffers": 7,
+      "positiveAmountOffers": 6,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Dollar currency unknown; no ISO code inferred.",
+        "Annual main-card rates and separately scoped premium add-ons; alternate month-to-month rates not stated.",
+        "Trial is temporary; feature matrix is not exhaustively transcribed."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "front-0",
+          "kind": "landing",
+          "url": "https://front.com/",
+          "capturedAt": "2025-06-25T07:47:00.000Z",
+          "sha256": "4ed84154739bd39be541a42355495b2457392eb4bcbfd4ff7533557a9cbb786d",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "XGBN6O32WKA2EO6AR3ZW46A6N4UYGKRY",
+            "actualDigest": "XGBN6O32WKA2EO6AR3ZW46A6N4UYGKRY"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625074700id_/https://front.com/"
+        },
+        {
+          "sourceId": "front-1",
+          "kind": "pricing",
+          "url": "https://front.com/pricing",
+          "capturedAt": "2025-06-14T10:47:19.000Z",
+          "sha256": "90baa14c266beecd500906346cda975d7ea65cdac6bdf0763d63725068f5ec6f",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "GDFQ35AUYLOANXWPA7L2JZ4JQR4PYV7T",
+            "actualDigest": "GDFQ35AUYLOANXWPA7L2JZ4JQR4PYV7T"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250614104719id_/https://front.com/pricing"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-a1b8c8a6e0789a61d2c5b798f140c5ca37b7314b3539678c7c12e414fcf4e282",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://front.com/pricing",
+          "capturedAt": "2025-06-14T10:47:19.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250614104719id_/https://front.com/pricing",
+          "sha256": "90baa14c266beecd500906346cda975d7ea65cdac6bdf0763d63725068f5ec6f",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "ghost",
+      "name": "Ghost",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Pricing payload digest failed; body not retained for content classification.",
+      "remainingGaps": [
+        "Pricing payload digest failed; body not retained for content classification."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "google-meet",
+      "name": "Google Meet",
+      "category": "free_only",
+      "observations": 1,
+      "plans": 1,
+      "offers": 1,
+      "numericalOffers": 1,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "German free-version disclosure retained; no Workspace/GoogleOne bundle price invented.",
+        "Source language de; currency, recurring interval and paid-edition entitlements unknown."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "google-meet-0",
+          "kind": "landing",
+          "url": "https://workspace.google.com/products/meet/",
+          "capturedAt": "2025-06-30T23:53:00.000Z",
+          "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II",
+            "actualDigest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-f840cc820d463c6870f7443da9983b55839220b750497172f0764ff4b1cf720c",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://workspace.google.com/products/meet/",
+          "capturedAt": "2025-06-30T23:53:00.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+          "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "google-workspace",
+      "name": "Google Workspace",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 7,
+      "numericalOffers": 6,
+      "positiveAmountOffers": 6,
+      "newObservations": 1,
+      "finding": "Source-bound manual pricing reviewed and imported.",
+      "remainingGaps": [
+        "Separate June30 pricing-page three-month promotional capture retained in research only; same-period duplicate observation not imported."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "google-workspace-0",
+          "kind": "landing",
+          "url": "https://workspace.google.com/",
+          "capturedAt": "2025-06-30T23:13:25.000Z",
+          "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+            "actualDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/"
+        },
+        {
+          "sourceId": "google-workspace-1",
+          "kind": "pricing",
+          "url": "https://workspace.google.com/pricing.html",
+          "capturedAt": "2025-06-30T18:29:09.000Z",
+          "sha256": "1d6239e17a2f2d0e643461aec485fb2b470004badefd1081c3918639621b964f",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ZGQKYHQTTUDLVQA4TU34BWIKMZFP7YQY",
+            "actualDigest": "BEBX74PMMWMXXZ53UXTYBFDSOXVWTBCV",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630182909id_/https://workspace.google.com/pricing.html"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-c429a7ce6e1373502ecfe396181eac26c0863e50e495db349840378eff4de46b",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://workspace.google.com/",
+          "capturedAt": "2025-06-30T23:13:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+          "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": [
+        {
+          "id": "google-workspace-fact-7",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Starter",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "3.50",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "promotional",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "7",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Starter",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496454-496587"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-8",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Starter",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "7",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "undiscounted_comparison",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "7",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Starter",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496454-496587"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-9",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Standard",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "7",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "promotional",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "14",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Standard",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499971-500102"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-10",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Standard",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "14",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "undiscounted_comparison",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "14",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Standard",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499971-500102"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-11",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Plus",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "14.67",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "promotional",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "33",
+            "baseAmount": "22",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Plus",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504367-504502"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-12",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Plus",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "22",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "undiscounted_comparison",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "33",
+            "baseAmount": "22",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Plus",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504367-504502"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "productId": "harvest",
+      "name": "Harvest",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified landing has no price structure; pricing candidates either missing or a customer story. Standalone dollar symbol is not an amount.",
+      "remainingGaps": [
+        "Verified landing has no price structure; pricing candidates either missing or a customer story. Standalone dollar symbol is not an amount."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "harvest-0",
+          "kind": "landing",
+          "url": "https://www.getharvest.com/",
+          "capturedAt": "2025-06-27T02:29:33.000Z",
+          "sha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/"
+        },
+        {
+          "sourceId": "harvest-1",
+          "kind": "pricing",
+          "url": "https://www.getharvest.com/customers/juicyorange",
+          "capturedAt": "2025-06-25T23:46:52.000Z",
+          "sha256": "88a05b5055094ff63a5354f1f7335ebb08ad53ed2b04ad7ba116849f97f9dda4",
+          "integrity": "legacy_chunked_unverified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625234652id_/https://www.getharvest.com/customers/juicyorange"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "hootsuite",
+      "name": "Hootsuite",
+      "category": "structure_only",
+      "observations": 2,
+      "plans": 4,
+      "offers": 2,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 2,
+      "finding": "Standard and Advanced names retained without numeric rates; explicit custom Enterprise structure and separate Enterprise yearly-contract quote preserved. Trial duration not a zero-price subscription.",
+      "remainingGaps": [],
+      "inspectedSources": [
+        {
+          "sourceId": "hootsuite-0",
+          "kind": "landing",
+          "url": "https://www.hootsuite.com/",
+          "capturedAt": "2025-06-30T09:46:38.000Z",
+          "sha256": "41094667da6fb7558734deec1b11387ea58aa13cb5124b746160ff7f2d93ad30",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/"
+        },
+        {
+          "sourceId": "hootsuite-1",
+          "kind": "pricing",
+          "url": "https://www.hootsuite.com/plans",
+          "capturedAt": "2025-06-24T21:06:36.000Z",
+          "sha256": "c08164cacdb0d3a4019a0647a7a4736ff1c92f744d63457daec7ad9814e77ef0",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans"
+        },
+        {
+          "sourceId": "hootsuite-2",
+          "kind": "pricing",
+          "url": "https://www.hootsuite.com/plans/enterprise",
+          "capturedAt": "2025-06-25T23:41:17.000Z",
+          "sha256": "fdb5c26d45e150661160a1039758fd086109a0f81bff8dc0db3bad18fe7f214f",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-1b39ae4cc29ce69774fb51373ba7650e8f33051b6fc487702d6fdbfa5bf7ab71",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.hootsuite.com/plans",
+          "capturedAt": "2025-06-24T21:06:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans",
+          "sha256": "c08164cacdb0d3a4019a0647a7a4736ff1c92f744d63457daec7ad9814e77ef0",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-e40356ff5fdf5ee736693a1d826773d48a5995e88499715a526770e435bb1e09",
+          "scope": {
+            "edition": "Enterprise",
+            "deployment": "unknown"
+          },
+          "url": "https://www.hootsuite.com/plans/enterprise",
+          "capturedAt": "2025-06-25T23:41:17.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise",
+          "sha256": "fdb5c26d45e150661160a1039758fd086109a0f81bff8dc0db3bad18fe7f214f",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "hubspot",
+      "name": "HubSpot",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 5,
+      "numericalOffers": 5,
+      "positiveAmountOffers": 4,
+      "newObservations": 0,
+      "finding": "Static Sales tiers and promotional versus regular rates exist; allowed discovery points back to the Sales landing; pricing/sales is outside current product paths.",
+      "remainingGaps": [
+        "Static Sales tiers and promotional versus regular rates exist; allowed discovery points back to the Sales landing; pricing/sales is outside current product paths."
+      ],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-9610d4301cb6f15b58a33bdc753b21a86bb07a1d37b08340f470a40404188857",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.hubspot.com/products/sales",
+          "capturedAt": "2025-06-27T05:22:08.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+          "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "1.2.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "intercom",
+      "name": "Intercom",
+      "category": "positive_price",
+      "observations": 3,
+      "plans": 5,
+      "offers": 5,
+      "numericalOffers": 5,
+      "positiveAmountOffers": 5,
+      "newObservations": 2,
+      "finding": "Fin metered usage and optional Proactive Support Plus recovered separately.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-637f824f7686a76d5c4806df84c3a8b9d0a27bfa957c9c71dc7b18bb63501dc5",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.intercom.com/pricing",
+          "capturedAt": "2025-06-18T20:12:42.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+          "sha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.2.0"
+        },
+        {
+          "observationId": "pricing-manual-4a0b063c64b2d1d3e1784044ad93f128b63e36b30ac18b9871e10ca3281871f8",
+          "scope": {
+            "edition": "Proactive Support Plus add-on",
+            "deployment": "unknown"
+          },
+          "url": "https://www.intercom.com/pricing",
+          "capturedAt": "2025-06-18T20:12:42.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+          "sha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-cf974cb95d21ed0c3b0c2366c29bdd81c12c7e3639d5095ae5169b8aa6e2eb55",
+          "scope": {
+            "edition": "Fin with existing external helpdesk",
+            "deployment": "unknown"
+          },
+          "url": "https://www.intercom.com/pricing",
+          "capturedAt": "2025-06-18T20:12:42.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+          "sha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "jira",
+      "name": "Jira",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Raw serialized pricing schedules preserved separately; currency-dependent amount scaling remains unproven. No confirmed numerical price inferred.",
+      "remainingGaps": [
+        "Raw serialized amounts require an authoritative currency-specific unit/scale contract."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "jira-0",
+          "kind": "landing",
+          "url": "https://www.atlassian.com/software/jira",
+          "capturedAt": "2025-06-30T04:04:24.000Z",
+          "sha256": "6bdc692d5f503a30f43bb5186c5bed69393becd266148dcfb1e5402b90fe9ffc",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+            "actualDigest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira"
+        },
+        {
+          "sourceId": "jira-1",
+          "kind": "pricing",
+          "url": "https://www.atlassian.com/software/jira/pricing",
+          "capturedAt": "2025-06-23T02:36:14.000Z",
+          "sha256": "570fb681f3469bc286e60fef2e79ef1eea7749e91e3af5e6202daab940527e43",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "FBA4SVL5OBJBDPHFFDKGPKOQRMEWSL2X",
+            "actualDigest": "J2WYYZYJ3RWJ7HKPOZUKEYMNBMGPVAFE",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": [
+        {
+          "file": "pricing-manual-atlassian-research.json",
+          "schedules": 40,
+          "normalization": "unresolved"
+        }
+      ]
+    },
+    {
+      "productId": "linear",
+      "name": "Linear",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No usable source-bound pricing recovered in the saved sample.",
+      "remainingGaps": [
+        "Saved sample has no publishable pricing."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "loom",
+      "name": "Loom",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "remainingGaps": [
+        "Archive returned HTTP 403 for the source query."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "lucidchart",
+      "name": "Lucidchart",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No successful exact landing capture in fixed window; no retained bytes.",
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "m-files",
+      "name": "M-Files",
+      "category": "trial_only",
+      "observations": 1,
+      "plans": 1,
+      "offers": 1,
+      "numericalOffers": 1,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Temporary trial only, not a permanent free edition.",
+        "Paid platform-editions page was not retained; no recurring paid tier or amount invented."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "m-files-0",
+          "kind": "landing",
+          "url": "https://www.m-files.com/",
+          "capturedAt": "2025-06-22T21:50:56.000Z",
+          "sha256": "f938751554db0f3f1e60d77a6dcccbb2bddb9ce5ca04d1d3017f83b7918bba3a",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H",
+            "actualDigest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250622215056id_/https://www.m-files.com/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-2810b9516b2441cf274fe502e20623483e4f72c19a5e6e0fcf6c1a5a269a6f25",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.m-files.com/",
+          "capturedAt": "2025-06-22T21:50:56.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250622215056id_/https://www.m-files.com/",
+          "sha256": "f938751554db0f3f1e60d77a6dcccbb2bddb9ce5ca04d1d3017f83b7918bba3a",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "mailchimp",
+      "name": "Mailchimp",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 7,
+      "numericalOffers": 6,
+      "positiveAmountOffers": 5,
+      "newObservations": 1,
+      "finding": "Source-bound manual pricing reviewed and imported.",
+      "remainingGaps": [
+        "No exact promotional discounted amount or full checkout eligibility inferred.",
+        "Higher contact dropdown choices do not supply all intermediate rates."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "mailchimp-0",
+          "kind": "landing",
+          "url": "https://mailchimp.com/",
+          "capturedAt": "2025-06-30T16:36:44.000Z",
+          "sha256": "e7da965f8d1ffc9e1d2c9e3e8a922d8dae54a6181b811c859ea787d369317e5d",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "RQH2T3ZXCZ5Z7DJGDFMA3S73Z5VST3FY",
+            "actualDigest": "2QYSBREZ5XH64HHULEYKL5CBV3YF6C2H",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630163644id_/https://mailchimp.com/"
+        },
+        {
+          "sourceId": "mailchimp-1",
+          "kind": "pricing",
+          "url": "https://mailchimp.com/pricing/marketing/",
+          "capturedAt": "2025-06-30T16:23:55.000Z",
+          "sha256": "f304740b33a2f1c2d96b0bd872b4c036feac23709145d4a44fa410557abfaf8c",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "IPQZ2XQIFDYH7JHTOYXRQFBYJNI3TWJU",
+            "actualDigest": "IPQZ2XQIFDYH7JHTOYXRQFBYJNI3TWJU"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630162355id_/https://mailchimp.com/pricing/marketing/"
+        },
+        {
+          "sourceId": "mailchimp-2",
+          "kind": "pricing",
+          "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+          "capturedAt": "2025-06-29T17:12:04.000Z",
+          "sha256": "fe9b50b41704ab9cc89e410f951d85b45bec88bbf77b39e2aaf9ca994b5d2cdf",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "CSS7EJ2SJVYBLOA3DW27VTL7ALUI5KQ5",
+            "actualDigest": "RJK3KJNWQ2GWMQVEHM43ZXPR2QM5KJZR",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-120a533d1310d7be20a74197209828a9f9d968488537a7d63b463f2581ef916e",
+          "scope": {
+            "edition": "Email Marketing",
+            "deployment": "unknown"
+          },
+          "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+          "capturedAt": "2025-06-29T17:12:04.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/",
+          "sha256": "fe9b50b41704ab9cc89e410f951d85b45bec88bbf77b39e2aaf9ca994b5d2cdf",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "make",
+      "name": "Make",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No successful exact landing capture in fixed window; no retained bytes.",
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "masv",
+      "name": "MASV",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "mattermost",
+      "name": "Mattermost Team Edition",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 1,
+      "offers": 1,
+      "numericalOffers": 1,
+      "positiveAmountOffers": 1,
+      "newObservations": 0,
+      "finding": "Static paid self-hosted Professional license and enterprise quotes; distinguish from the free OSS edition.",
+      "remainingGaps": [
+        "Static paid self-hosted Professional license and enterprise quotes; distinguish from the free OSS edition."
+      ],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-d2bb5f2ac65b5925d708a7d08e24f095ea6b347be20bdb6efde741d809da9f91",
+          "scope": {
+            "edition": "Professional",
+            "deployment": "unknown"
+          },
+          "url": "https://mattermost.com/pricing/",
+          "capturedAt": "2025-06-24T04:26:46.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+          "sha256": "1a9bfe0f17391c47623bb716b8f5e300c4a2b91c7f96ebf0c8ab9433e154389c",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.2.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "microsoft-365",
+      "name": "Microsoft 365",
+      "category": "positive_price",
+      "observations": 3,
+      "plans": 8,
+      "offers": 8,
+      "numericalOffers": 8,
+      "positiveAmountOffers": 8,
+      "newObservations": 2,
+      "finding": "Enterprise suites and standalone Teams component separately recovered.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-b06d33327ce31e82bc0a8248b51bd0d258782bb98e31950d2a0638acfbe17b28",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.microsoft.com/en-us/microsoft-365/business",
+          "capturedAt": "2025-06-30T11:31:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+          "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.2.0"
+        },
+        {
+          "observationId": "pricing-manual-9a49786a60b5c778a6272a8da9b39fa316518ef4025dddbf560c81eb75d50b80",
+          "scope": {
+            "edition": "Microsoft Teams Enterprise",
+            "deployment": "unknown"
+          },
+          "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "capturedAt": "2025-06-29T07:29:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-a59a782e1cd4b66a7ea2aa4cde8f9135298dd27986af45635d3c03864f5e835d",
+          "scope": {
+            "edition": "Microsoft 365 enterprise",
+            "deployment": "unknown"
+          },
+          "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "capturedAt": "2025-06-29T07:29:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "microsoft-outlook",
+      "name": "Microsoft Outlook",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "microsoft-visio",
+      "name": "Microsoft Visio",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No successful exact landing capture in fixed window; no retained bytes.",
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "miro",
+      "name": "Miro",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "remainingGaps": [
+        "Archive returned HTTP 403 for the source query."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "notion",
+      "name": "Notion",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 4,
+      "numericalOffers": 3,
+      "positiveAmountOffers": 2,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-e4d9ce401eea98a22ec5f925874d43bc16bbd1b1716da29d7854f7091306640c",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.notion.com/pricing",
+          "capturedAt": "2025-06-30T00:20:39.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630002039id_/https://www.notion.com/pricing",
+          "sha256": "3d2a9e402ed61f28a56485c590c15a5216e72404236d968414744ccfe1e57192",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "otter",
+      "name": "Otter.ai",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 9,
+      "numericalOffers": 8,
+      "positiveAmountOffers": 7,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Monthly and annual responsive rows manually merged by demonstrated plan identity; active state remains unknown.",
+        "Education annual total79.99 is explicit; not derived from rounded6.67 monthly equivalent.",
+        "Education per-user denominator is absent from FAQ and remains unknown.",
+        "Enterprise demo is not an explicit price quote; amount/status remain unknown.",
+        "Original archive digest remains unverified; retained immutable bytes manually reviewed with legacy transport qualification."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "otter-0",
+          "kind": "landing",
+          "url": "https://otter.ai/",
+          "capturedAt": "2025-06-30T17:42:01.000Z",
+          "sha256": "6c8fb51579073d250023d49cbbafe4c31bf6a47072e3c0144d4653eff477b880",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "3KJ2YE6NRKZ2I6ZUCE4ZDPUDFOSLRITN",
+            "actualDigest": "SCTUDCOLUPT27ZO5YVESJR2ZKSAXTTZH",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630174201id_/https://otter.ai/"
+        },
+        {
+          "sourceId": "otter-1",
+          "kind": "pricing",
+          "url": "https://otter.ai/pricing",
+          "capturedAt": "2025-06-22T16:12:46.000Z",
+          "sha256": "6b042e3c7c7ee5e98d67e4e6cf334bd4079a2bafb0e0f697201b77c58fdff65f",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "SWJQ56ICR6I22MBSBHR3LLMOGB7P3URE",
+            "actualDigest": "7X7GVDTANGXPGP2Z3AWTL3RG5RUCTX2W",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250622161246id_/https://otter.ai/pricing"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-66fc0878c97c0f04cfb69387f5071c7b03290949ea89278e86f294bb2dac9cc9",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://otter.ai/pricing",
+          "capturedAt": "2025-06-22T16:12:46.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250622161246id_/https://otter.ai/pricing",
+          "sha256": "6b042e3c7c7ee5e98d67e4e6cf334bd4079a2bafb0e0f697201b77c58fdff65f",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "passbolt",
+      "name": "Passbolt Community Edition",
+      "category": "positive_price",
+      "observations": 5,
+      "plans": 5,
+      "offers": 6,
+      "numericalOffers": 4,
+      "positiveAmountOffers": 3,
+      "newObservations": 5,
+      "finding": "Source-bound manual pricing reviewed and imported.",
+      "remainingGaps": [
+        "Cloud annual toggle advertises10percent off but no annual amount retained.",
+        "Intermediate self-hosted user dropdown values do not supply intermediate prices."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "passbolt-0",
+          "kind": "landing",
+          "url": "https://www.passbolt.com/",
+          "capturedAt": "2025-06-30T02:31:04.000Z",
+          "sha256": "2952360cdda1ef1a73fbd15af0bee4817d704810169e67d2f0dee491e705d2f0",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "P7VWE2RIVG7PIVAPSZCSGIMJTUSQAQEG",
+            "actualDigest": "P7VWE2RIVG7PIVAPSZCSGIMJTUSQAQEG"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630023104id_/https://www.passbolt.com/"
+        },
+        {
+          "sourceId": "passbolt-1",
+          "kind": "pricing",
+          "url": "https://www.passbolt.com/pricing/pro",
+          "capturedAt": "2025-06-24T10:31:43.000Z",
+          "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "LAXVTSQWDNNUTVHUNL3T7GKQONLU6AFS",
+            "actualDigest": "LAXVTSQWDNNUTVHUNL3T7GKQONLU6AFS"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro"
+        },
+        {
+          "sourceId": "passbolt-2",
+          "kind": "pricing",
+          "url": "https://www.passbolt.com/pricing/cloud",
+          "capturedAt": "2025-06-24T04:38:51.000Z",
+          "sha256": "f32dc605242a0398f0291c48f6deb1dc13fbe80ae59b95d14bdda12b48902e60",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "E3XTYJBHU6ZXSS6GEPUFYZRXLXMUMHLP",
+            "actualDigest": "M2JOLLKUCU4MP5VF7UEB4TQ2WRLRZRPE",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-03a19cff5833ec5c39d4951f51d361232107ecc1adf43831c2d8d19288134a8e",
+          "scope": {
+            "edition": "Business",
+            "deployment": "hosted"
+          },
+          "url": "https://www.passbolt.com/pricing/cloud",
+          "capturedAt": "2025-06-24T04:38:51.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+          "sha256": "f32dc605242a0398f0291c48f6deb1dc13fbe80ae59b95d14bdda12b48902e60",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-a460ed703a9b7c3e5526f4d98647e81cf4808ff9988289c6fa58b96f14fb26be",
+          "scope": {
+            "edition": "Community (CE)",
+            "deployment": "self-hosted"
+          },
+          "url": "https://www.passbolt.com/pricing/pro",
+          "capturedAt": "2025-06-24T10:31:43.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+          "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-cc42c83ffd719ec10b3dbc72220488ac0585aa52307c825536878147feab5982",
+          "scope": {
+            "edition": "Business",
+            "deployment": "self-hosted"
+          },
+          "url": "https://www.passbolt.com/pricing/pro",
+          "capturedAt": "2025-06-24T10:31:43.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+          "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-d0d900dc11b3b73a7100e2e0754248030b4b7e13c62e641f99b68d4d85724008",
+          "scope": {
+            "edition": "Enterprise",
+            "deployment": "self-hosted"
+          },
+          "url": "https://www.passbolt.com/pricing/pro",
+          "capturedAt": "2025-06-24T10:31:43.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+          "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-ebb256e40a9d48b20d20e60878c757f5f6c447270cf6ae3fa9abde6c40776bf8",
+          "scope": {
+            "edition": "Enterprise",
+            "deployment": "hosted"
+          },
+          "url": "https://www.passbolt.com/pricing/cloud",
+          "capturedAt": "2025-06-24T04:38:51.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+          "sha256": "f32dc605242a0398f0291c48f6deb1dc13fbe80ae59b95d14bdda12b48902e60",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "quickbooks-online",
+      "name": "QuickBooks Online",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 8,
+      "numericalOffers": 8,
+      "positiveAmountOffers": 8,
+      "newObservations": 1,
+      "finding": "Four visible card tiers; promotional and crossed-out regular amounts retained separately with exact capture and terms. Contradictory structured amounts excluded.",
+      "remainingGaps": [],
+      "inspectedSources": [
+        {
+          "sourceId": "quickbooks-online-0",
+          "kind": "landing",
+          "url": "https://quickbooks.intuit.com/online/",
+          "capturedAt": "2025-06-19T04:53:12.000Z",
+          "sha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-efffce311be053bdf7f24f4eb58c0c82c4496069c8d070b66841383c15fee8a0",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://quickbooks.intuit.com/online/",
+          "capturedAt": "2025-06-19T04:53:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250619045312id_/https://quickbooks.intuit.com/online/",
+          "sha256": "cc1a941e497883f1352708381be6694df17ccb2bb5f63570ffb5eed14db427c4",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "salesforce",
+      "name": "Salesforce",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No successful exact landing capture in fixed window; no retained bytes available.",
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes available."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "sap-concur",
+      "name": "SAP Concur",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Exact Concur Expense landing index has no eligible record in the fixed window; no retained landing or pricing HTML supports semantic classification.",
+      "remainingGaps": [
+        "No inference that the product is quote-only or requires JavaScript"
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "sentry",
+      "name": "Sentry",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No exact successful landing capture in the fixed June 2025 window.",
+      "remainingGaps": [
+        "No exact successful landing capture in the fixed June 2025 window."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "shopify",
+      "name": "Shopify",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Selected landing body timed out and is absent. No usable retained bytes.",
+      "remainingGaps": [
+        "Selected landing body timed out and is absent. No usable retained bytes."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "slack",
+      "name": "Slack",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "No usable source-bound pricing recovered in the saved sample.",
+      "remainingGaps": [
+        "Saved sample has no publishable pricing."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "smallpdf",
+      "name": "Smallpdf",
+      "category": "free_only",
+      "observations": 1,
+      "plans": 4,
+      "offers": 5,
+      "numericalOffers": 2,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Paid prices are ellipsis placeholders; no paid amount invented.",
+        "Annual billing labels support commitment but active selector state/currency remain unknown.",
+        "Trial zero is temporary; Pro/Teams remain unknown-priced partial editions."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "smallpdf-0",
+          "kind": "landing",
+          "url": "https://smallpdf.com/",
+          "capturedAt": "2025-06-30T04:34:28.000Z",
+          "sha256": "03be87e02edf4a7b22348a665b685ad2441bd770be585f96cb545144c040d4b7",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "QL2RJC5BHMO7Z7HAEOIGE22GSLRAFUYG",
+            "actualDigest": "KINP53JNYIQY53YJYPRNC3BLENRDZAHB",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630043428id_/https://smallpdf.com/"
+        },
+        {
+          "sourceId": "smallpdf-1",
+          "kind": "pricing",
+          "url": "https://smallpdf.com/pricing",
+          "capturedAt": "2025-06-16T01:10:18.000Z",
+          "sha256": "cb6b7c40c7d3360e7359c2dd39599c7083be58bfc4d299783e1f578be3687b43",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE",
+            "actualDigest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-e89e9eb438ef671b49afaa7cec7839df91b4c88e0cddb2481f1602136651533c",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://smallpdf.com/pricing",
+          "capturedAt": "2025-06-16T01:10:18.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing",
+          "sha256": "cb6b7c40c7d3360e7359c2dd39599c7083be58bfc4d299783e1f578be3687b43",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "spendesk",
+      "name": "Spendesk",
+      "category": "quote_only",
+      "observations": 1,
+      "plans": 7,
+      "offers": 7,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Quote-only customizable solution: Foundations base and optional modules.",
+        "No recurring free plan inferred from card fee statements.",
+        "Contract alternatives retained as qualifications, without manufacturing separate fixed prices."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "spendesk-0",
+          "kind": "landing",
+          "url": "https://www.spendesk.com/",
+          "capturedAt": "2025-06-24T11:24:01.000Z",
+          "sha256": "9c4672110e8575f0bc770298f9d338f9ec036c89c1f1ee9051dcc082dadfabfe",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "U3KE2P47QSK55P5BTZKJSQCZTKKS4JHA",
+            "actualDigest": "JV2YA2D3ACN6TFRVJ7GI65JYJHGCNKK3",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250624112401id_/https://www.spendesk.com/"
+        },
+        {
+          "sourceId": "spendesk-1",
+          "kind": "pricing",
+          "url": "https://www.spendesk.com/pricing/",
+          "capturedAt": "2025-06-15T00:14:01.000Z",
+          "sha256": "92878086c058d8849beb67428c1e5cf362c5d29b6a4a8781f4c68ddc4364f263",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD",
+            "actualDigest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/"
+        },
+        {
+          "sourceId": "spendesk-2",
+          "kind": "pricing",
+          "url": "https://www.spendesk.com/platform/subscription-management/",
+          "capturedAt": "2025-06-24T09:54:54.000Z",
+          "sha256": "e64ba933d6ac6f906afb3c11e9e530c72ed62a4cb07303cbd2a3f7c4dc7c179f",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP",
+            "actualDigest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250624095454id_/https://www.spendesk.com/platform/subscription-management/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-92c01d2f5ca1bf7498b5cd77451646f6103aea00e0ca08258af70ebfe3d99630",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.spendesk.com/pricing/",
+          "capturedAt": "2025-06-15T00:14:01.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/",
+          "sha256": "92878086c058d8849beb67428c1e5cf362c5d29b6a4a8781f4c68ddc4364f263",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "squarespace",
+      "name": "Squarespace",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Pricing payload digest failed; body not retained for content classification.",
+      "remainingGaps": [
+        "Pricing payload digest failed; body not retained for content classification."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "talentlms",
+      "name": "TalentLMS",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified landing has free-signup CTA but no named offer/rate structure. No /prices capture; no invented free tier.",
+      "remainingGaps": [
+        "Verified landing has free-signup CTA but no named offer/rate structure. No /prices capture; no invented free tier."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "talentlms-0",
+          "kind": "landing",
+          "url": "https://www.talentlms.com/",
+          "capturedAt": "2025-06-30T20:05:14.000Z",
+          "sha256": "b87a64e381785b032f0c0f65f161b92322f57d4bf170dcf00af4d7787e16f306",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630200514id_/https://www.talentlms.com/"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "toggl-track",
+      "name": "Toggl Track",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 6,
+      "numericalOffers": 5,
+      "positiveAmountOffers": 4,
+      "newObservations": 1,
+      "finding": "Four distinct tiers reconciled across responsive duplicates. Annual 9/18 and crossed-out 10/20 reference rates retained separately; Free permanent cap and Enterprise custom quote retained.",
+      "remainingGaps": [],
+      "inspectedSources": [
+        {
+          "sourceId": "toggl-track-0",
+          "kind": "landing",
+          "url": "https://toggl.com/",
+          "capturedAt": "2025-06-28T07:28:52.000Z",
+          "sha256": "29359d0d80952960993f0773f985522683350e96c141e551f5d01104a08c5396",
+          "integrity": "legacy_chunked_unverified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250628072852id_/https://toggl.com/"
+        },
+        {
+          "sourceId": "toggl-track-1",
+          "kind": "pricing",
+          "url": "https://toggl.com/track/pricing/",
+          "capturedAt": "2025-06-14T08:22:57.000Z",
+          "sha256": "57e13fb501a658c2e266228e493c269666dc8317769bf35a72b8b860cf52634e",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250614082257id_/https://toggl.com/track/pricing/"
+        },
+        {
+          "sourceId": "toggl-track-2",
+          "kind": "pricing",
+          "url": "https://toggl.com/plan/",
+          "capturedAt": "2025-06-22T09:38:07.000Z",
+          "sha256": "2af66655efc7c5fd0c8c2c5a4c5466fce92583e79b3d1c855a714ddd5b50067d",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250622093807id_/https://toggl.com/plan/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-c918564af5339b972442086eef7dadd31cf2152497595d47071a89594bbe51b2",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://toggl.com/track/pricing/",
+          "capturedAt": "2025-06-14T08:22:57.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250614082257id_/https://toggl.com/track/pricing/",
+          "sha256": "57e13fb501a658c2e266228e493c269666dc8317769bf35a72b8b860cf52634e",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "trello",
+      "name": "Trello",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 7,
+      "numericalOffers": 7,
+      "positiveAmountOffers": 6,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-7a7022f22bc9eaa523bf7ef6b5edc36cbfbfdd9258aaf284e9c84d8079775834",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://trello.com/pricing",
+          "capturedAt": "2025-06-27T22:17:39.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627221739id_/https://trello.com/pricing",
+          "sha256": "fdcb48a3e4217e9abed4d4d1a227dc5d8476d13fbf7c741652517797c2ff9b47",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "typeform",
+      "name": "Typeform",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "remainingGaps": [
+        "Archive returned HTTP 403 for the source query."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "webflow",
+      "name": "Webflow",
+      "category": "positive_price",
+      "observations": 5,
+      "plans": 12,
+      "offers": 24,
+      "numericalOffers": 24,
+      "positiveAmountOffers": 24,
+      "newObservations": 4,
+      "finding": "Business Site base rates and distinct Ecommerce/Workspace groups recovered; existing Basic/CMS preserved.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-2474db7e5681d2e0b6c3a8b0e3e87b2990cd95a06656d39c155459377851ee91",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://webflow.com/pricing",
+          "capturedAt": "2025-06-29T21:36:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-9a9b15cf34b0f22dcc059966b23586ff7cc0c27030f765c6908d740c588fc8bc",
+          "scope": {
+            "edition": "Workspace plans: freelancers/agencies",
+            "deployment": "unknown"
+          },
+          "url": "https://webflow.com/pricing",
+          "capturedAt": "2025-06-29T21:36:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-d056dc18338370b0b506977f16ea3dfb9d393e67ddc7b5fe6ea783ae33bf8908",
+          "scope": {
+            "edition": "Ecommerce Site plans",
+            "deployment": "unknown"
+          },
+          "url": "https://webflow.com/pricing",
+          "capturedAt": "2025-06-29T21:36:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-e9464dda854ef4c52d834aeee0800f82a5136f32268ef6bef0b4c851fd45c65b",
+          "scope": {
+            "edition": "Workspace plans: in-house",
+            "deployment": "unknown"
+          },
+          "url": "https://webflow.com/pricing",
+          "capturedAt": "2025-06-29T21:36:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-fa665360223585a1603006356c08b73e6bd9a1cbbff4cc5db8045d16956235be",
+          "scope": {
+            "edition": "Workspace seat types (not Site or base Workspace plans)",
+            "deployment": "unknown"
+          },
+          "url": "https://webflow.com/pricing",
+          "capturedAt": "2025-06-29T21:36:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "wetransfer",
+      "name": "WeTransfer",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Verified pricing HTML and legacy-unverified landing show a JavaScript-required failure fallback, not a price list. Embedded Next data contains locale/configuration, no retained plan amounts. The first plan-limit hint has no eligible pricing capture; the second exact pricing URL has this shell.",
+      "remainingGaps": [
+        "landing archive digest remains legacy unverified",
+        "No claim that executing or downloading historical external JavaScript would recover prices"
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "wetransfer-0",
+          "kind": "landing",
+          "url": "https://wetransfer.com/",
+          "capturedAt": "2025-06-30T23:18:40.000Z",
+          "sha256": "c67c443d838a9d055b4217d0c6b5bab3149ead608a21ab351dfec42737dfa40a",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "56GBCRCBNOMUMTZUQXBKCJDNXCM52DFT",
+            "actualDigest": "S4HZNKBOGM733JOMHWHQRJVF4FQHRPMU",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630231840id_/https://wetransfer.com/"
+        },
+        {
+          "sourceId": "wetransfer-1",
+          "kind": "pricing",
+          "url": "https://wetransfer.com/pricing",
+          "capturedAt": "2025-06-16T03:04:27.000Z",
+          "sha256": "eddda15aa814b150fb687619b300082bae03e7d385885662046c4e2f545393da",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62",
+            "actualDigest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250616030427id_/https://wetransfer.com/pricing"
+        }
+      ],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "wix",
+      "name": "Wix",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 4,
+      "numericalOffers": 4,
+      "positiveAmountOffers": 4,
+      "newObservations": 1,
+      "finding": "Supported manual plans/offers/features retained; unresolved fields explicitly unknown.",
+      "remainingGaps": [
+        "Currency unknown: dollar glyph conflicts with embedded EUR/en-ie configuration.",
+        "Tax interpretation unknown: card GST-inclusive statement and VAT-exclusive global caveat conflict; neither normalized.",
+        "Commitment and active billing variant unknown; feature selections partial.",
+        "Original archive digest remains unverified; retained immutable bytes manually reviewed with legacy transport qualification."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "wix-0",
+          "kind": "landing",
+          "url": "https://www.wix.com/",
+          "capturedAt": "2025-06-30T22:11:08.000Z",
+          "sha256": "3470a182b501cef639ecf7d9f5dc6850bbce743df4328b6928c3573cda53a570",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "CTW6NEX6YW63CAVRYNVTZZCZEVEWQSJC",
+            "actualDigest": "CTW6NEX6YW63CAVRYNVTZZCZEVEWQSJC"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250630221108id_/https://www.wix.com/"
+        },
+        {
+          "sourceId": "wix-1",
+          "kind": "pricing",
+          "url": "https://www.wix.com/plans",
+          "capturedAt": "2025-06-26T21:26:50.000Z",
+          "sha256": "68c8688f006afa176dd1a3ee2ad0284bc69557f9f835cf2a13fca6b07afc658f",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "KQT2WZVNQMDHP56ECOIL7QUCUD4OJKRH",
+            "actualDigest": "ZKHZX5RAWLQZNVJG5Q4G7W2XYRMD4S4D",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250626212650id_/https://www.wix.com/plans"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-d688a436f8d66fa71c1745546008c8cdee4dd58cc7ec9792f3870df9adaa8017",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "https://www.wix.com/plans",
+          "capturedAt": "2025-06-26T21:26:50.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626212650id_/https://www.wix.com/plans",
+          "sha256": "68c8688f006afa176dd1a3ee2ad0284bc69557f9f835cf2a13fca6b07afc658f",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "xero",
+      "name": "Xero",
+      "category": "no_confirmed_observation",
+      "observations": 0,
+      "plans": 0,
+      "offers": 0,
+      "numericalOffers": 0,
+      "positiveAmountOffers": 0,
+      "newObservations": 0,
+      "finding": "Landing query timed out. No usable retained bytes; no price recovery attempted.",
+      "remainingGaps": [
+        "Landing query timed out. No usable retained bytes; no price recovery attempted."
+      ],
+      "inspectedSources": [],
+      "sources": [],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "zapier",
+      "name": "Zapier",
+      "category": "positive_price",
+      "observations": 5,
+      "plans": 8,
+      "offers": 8,
+      "numericalOffers": 7,
+      "positiveAmountOffers": 6,
+      "newObservations": 5,
+      "finding": "Four AI automation tiers separated from four product-family starting-price cards. Annual rates and unresolved task tier retained explicitly; currency scope distinguished.",
+      "remainingGaps": [],
+      "inspectedSources": [
+        {
+          "sourceId": "zapier-0",
+          "kind": "landing",
+          "url": "https://zapier.com/",
+          "capturedAt": "2025-06-29T12:32:00.000Z",
+          "sha256": "be2e2c609baacdae793000c42d22e1437d491fee5b030473af1b27988b621c3c",
+          "integrity": "verified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250629123200id_/https://zapier.com/"
+        },
+        {
+          "sourceId": "zapier-1",
+          "kind": "pricing",
+          "url": "https://zapier.com/pricing",
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "integrity": "legacy_chunked_unverified",
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-2a4dbe2513929c12ae99aebf7ac62fbd2e137e3e5144b4655653e77a2d178126",
+          "scope": {
+            "edition": "Interfaces",
+            "deployment": "unknown"
+          },
+          "url": "https://zapier.com/pricing",
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-359c39a6d4f3330dc58593e2fa5d91ee4a97180f43c07d3baaddb4914b1369f6",
+          "scope": {
+            "edition": "Chatbots",
+            "deployment": "unknown"
+          },
+          "url": "https://zapier.com/pricing",
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-38ecece5d1ce8a902c5661a756cd6b1ebcd0074b6c8c2c86e0097311d00b2c4b",
+          "scope": {
+            "edition": "Agents",
+            "deployment": "unknown"
+          },
+          "url": "https://zapier.com/pricing",
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-a43e8b8ec66810dcfdf285b2ee1d86894275eb350759fe096517926f67ce1f00",
+          "scope": {
+            "edition": "Tables",
+            "deployment": "unknown"
+          },
+          "url": "https://zapier.com/pricing",
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-c5604c15c84227b217a3b869b8b61534494b43cc4caf540478aed0691072acd6",
+          "scope": {
+            "edition": "AI automation plans",
+            "deployment": "unknown"
+          },
+          "url": "https://zapier.com/pricing",
+          "capturedAt": "2025-06-26T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626030427id_/https://zapier.com/pricing",
+          "sha256": "5676a3191715fe088317781a973b2c36892edeafbc36e1b6838438a7fa64b208",
+          "integrity": "legacy_chunked_unverified",
+          "landingIntegrity": "verified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "zendesk",
+      "name": "Zendesk",
+      "category": "positive_price",
+      "observations": 5,
+      "plans": 14,
+      "offers": 18,
+      "numericalOffers": 18,
+      "positiveAmountOffers": 18,
+      "newObservations": 5,
+      "finding": "Source-bound manual pricing reviewed and imported.",
+      "remainingGaps": [
+        "Hidden Enterprise hero115 is excluded; no currency inferred from dollars.",
+        "Full matrix entitlement and negotiated volume-discount terms not normalized."
+      ],
+      "inspectedSources": [
+        {
+          "sourceId": "zendesk-0",
+          "kind": "landing",
+          "url": "https://www.zendesk.com/",
+          "capturedAt": "2025-06-27T06:03:51.000Z",
+          "sha256": "443ade4e2974f5128721a22c82fc7c65d731dc2d34e690b16c053b16a9c1cdd2",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "IAGGFWNKY5QOQ6XK7K7FMMRPQUWBRD6U",
+            "actualDigest": "AG6XAJ7VZBJHMGXWCBQFPYB7GNO6ASSM",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250627060351id_/https://www.zendesk.com/"
+        },
+        {
+          "sourceId": "zendesk-1",
+          "kind": "pricing",
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "FIW2O7DUTUI3Q4DG6JU53UHC6VB3XB4U",
+            "actualDigest": "FIW2O7DUTUI3Q4DG6JU53UHC6VB3XB4U"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/"
+        },
+        {
+          "sourceId": "zendesk-2",
+          "kind": "pricing",
+          "url": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "capturedAt": "2025-06-25T02:50:02.000Z",
+          "sha256": "f674603603d11163d8a937eae79677fa3f918f73ece3ffbb6eb6e68b3a9d11d1",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "6ZSO75CR7P2NDKREPO2ULOWVRZY3A34X",
+            "actualDigest": "6ZSO75CR7P2NDKREPO2ULOWVRZY3A34X"
+          },
+          "retained": true,
+          "archiveUrl": "https://web.archive.org/web/20250625025002id_/https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/"
+        }
+      ],
+      "sources": [
+        {
+          "observationId": "pricing-manual-0f03eaa1c236fc173f9c1de6723fac5bfd917703128727f35e47dc6a3884d25d",
+          "scope": {
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-23849eca7dcf313deb325ae02d31402404de840d0ab913163a892127010fc8ee",
+          "scope": {
+            "edition": "Sunshine Conversations",
+            "deployment": "unknown"
+          },
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-348fb663c1b607f021b1ff1fefb503359be2a6d763f948fd18013087379521d8",
+          "scope": {
+            "edition": "Add-ons",
+            "deployment": "unknown"
+          },
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-be1b2f68ee88cb65f8099cc724094921fa3b50afbaeee4bee789e494a6fdf961",
+          "scope": {
+            "edition": "AI agents",
+            "deployment": "unknown"
+          },
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        },
+        {
+          "observationId": "pricing-manual-c88c80bb667d77fdfa8ea5c10cbd3f98e4c246d7ccefddea2842e3c7488b71fe",
+          "scope": {
+            "edition": "Support",
+            "deployment": "unknown"
+          },
+          "url": "https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrity": "verified",
+          "landingIntegrity": "legacy_chunked_unverified",
+          "producer": "manual-1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    },
+    {
+      "productId": "zoom",
+      "name": "Zoom",
+      "category": "positive_price",
+      "observations": 1,
+      "plans": 4,
+      "offers": 10,
+      "numericalOffers": 7,
+      "positiveAmountOffers": 6,
+      "newObservations": 0,
+      "finding": "Existing reviewed snapshot retained.",
+      "remainingGaps": [],
+      "inspectedSources": [],
+      "sources": [
+        {
+          "observationId": "pricing-d55d0ed3d204f4e182b96814ee42dc35ffcad0264c28773d98ff3a487b2a5689",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "url": "http://zoom.us:80/pricing",
+          "capturedAt": "2015-10-13T07:13:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20151013071321id_/http://zoom.us/pricing",
+          "sha256": "141f3a247a9167946335194c96811e83a0ed1b52618b2bbb4936ac08dbaae48f",
+          "integrity": "verified",
+          "landingIntegrity": "verified",
+          "producer": "1.0.0"
+        }
+      ],
+      "researchFactsNotImported": []
+    }
+  ],
+  "validation": {
+    "nodeTests": 356,
+    "pythonTests": 5,
+    "build": "passed",
+    "catalogAndProfileChecks": "passed",
+    "workerDryRun": "passed"
+  }
+}

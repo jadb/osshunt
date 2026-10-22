@@ -1,0 +1,273 @@
+{
+  "formatVersion": 1,
+  "baselineCommit": "3ebf6a6b75a3bf5a018a5d3ff80bde63a6b6abc0",
+  "selection": "Twenty previously unsampled catalog tools; broad collaboration, marketing, support, monitoring, security and site-building coverage; include commercial OSS offerings",
+  "window": {
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z"
+  },
+  "products": [
+    {
+      "id": "1password",
+      "name": "1Password",
+      "url": "https://1password.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://1password.com/pricing",
+        "https://1password.com/pricing/business",
+        "https://1password.com/pricing/personal"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "url": "https://bitwarden.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://bitwarden.com/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "url": "https://www.atlassian.com/software/confluence",
+      "productPaths": [
+        "/software/confluence"
+      ],
+      "pricingHints": [
+        "https://www.atlassian.com/software/confluence/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "url": "https://www.atlassian.com/software/jira",
+      "productPaths": [
+        "/software/jira"
+      ],
+      "pricingHints": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "typeform",
+      "name": "Typeform",
+      "url": "https://www.typeform.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.typeform.com/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "miro",
+      "name": "Miro",
+      "url": "https://miro.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://miro.com/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "url": "https://www.hubspot.com/products/sales",
+      "productPaths": [
+        "/products/sales"
+      ],
+      "pricingHints": [],
+      "allowedHosts": []
+    },
+    {
+      "id": "intercom",
+      "name": "Intercom",
+      "url": "https://www.intercom.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.intercom.com/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "url": "https://www.zendesk.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.zendesk.com/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "url": "https://mailchimp.com/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://mailchimp.com/pricing/marketing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "loom",
+      "name": "Loom",
+      "url": "https://www.loom.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.loom.com/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "url": "https://www.datadoghq.com/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.datadoghq.com/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "url": "https://sentry.io/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://sentry.io/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "url": "https://workspace.google.com/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://workspace.google.com/pricing?hl=en&region=US"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/business/",
+      "productPaths": [
+        "/en-us/microsoft-365/business",
+        "/en-us/microsoft-365/enterprise"
+      ],
+      "pricingHints": [
+        "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing",
+        "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "url": "https://www.squarespace.com/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.squarespace.com/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "url": "https://webflow.com/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://webflow.com/pricing"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "url": "https://ghost.org/",
+      "productPaths": [],
+      "pricingHints": [
+        "https://ghost.org/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "mattermost",
+      "name": "Mattermost Team Edition",
+      "url": "https://mattermost.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://mattermost.com/pricing/"
+      ],
+      "allowedHosts": []
+    },
+    {
+      "id": "passbolt",
+      "name": "Passbolt Community Edition",
+      "url": "https://www.passbolt.com",
+      "productPaths": [],
+      "pricingHints": [
+        "https://www.passbolt.com/pricing/pro"
+      ],
+      "allowedHosts": []
+    }
+  ],
+  "parserFiles": [
+    {
+      "file": "lib/pricing/extract-adapters.mjs",
+      "sha256": "9934dd423f318f09488efcd298558ff6b69b03d081414dd91ee54039991da5ea"
+    },
+    {
+      "file": "lib/pricing/extract-business.mjs",
+      "sha256": "5c918239c1d48217f71580a0440cde9d1be6959d56a775f661b815f70fcf94ed"
+    },
+    {
+      "file": "lib/pricing/extract-calendly.mjs",
+      "sha256": "65c34f1fb2b481cf69d0516bf08a44a090c78ee7b1b7cb8ae78551ecab445c8b"
+    },
+    {
+      "file": "lib/pricing/extract-modern.mjs",
+      "sha256": "8f71f93da800e5b3b18157cbf892e887ef197f9a06cc9d14e15376b1c134b80a"
+    },
+    {
+      "file": "lib/pricing/extract-offers.mjs",
+      "sha256": "2cfb6391f08c797bb1d0f75dec74dbc36600b1fbb1b5646cadafc547fe16999a"
+    },
+    {
+      "file": "lib/pricing/extract-structured.mjs",
+      "sha256": "1d4fead805ccb7574ee2d925d236d5f1a170848fbffc5b73ab10d4fa3062ecb7"
+    },
+    {
+      "file": "lib/pricing/extract.mjs",
+      "sha256": "b5d8b8aa441dd8cbd09ad648e7121f739073df71d8bd55b8c5d9b957f3a22ed6"
+    },
+    {
+      "file": "lib/pricing/html.mjs",
+      "sha256": "378c04b98f9622eb40da2386f7922d8aee129484104a22592d159eb5ea169ff6"
+    },
+    {
+      "file": "lib/pricing/links.mjs",
+      "sha256": "1a830119431510e320c86e0ef684136b59d91f32af6e183e98cd4303a5f6faae"
+    },
+    {
+      "file": "lib/pricing/scope.mjs",
+      "sha256": "c9bfe8d88a74c4c9bb01afed0ec341056359b993d97c7e6c6ffd96c48f23fa96"
+    }
+  ],
+  "policy": {
+    "maxCandidates": 2,
+    "pricingLookbackDays": 30,
+    "minimumDiscoveryInterval": "six calendar months",
+    "rateLimit": "shared archive cooldown; serial pacing; stop on 429",
+    "publication": "per-observation evidence review required; proposals alone never publish",
+    "baseline": "no parser or catalog changes until all twenty outcomes recorded",
+    "repeat": "same completed journal makes zero source requests",
+    "scope": "bounded historical samples; complete longitudinal histories not implied"
+  }
+}

@@ -1,0 +1,2983 @@
+{
+  "formatVersion": 1,
+  "mode": "exhaustive-retained-cache-reinspection",
+  "sourceRequests": 0,
+  "counts": {
+    "sampledProducts": 70,
+    "remainingProductsAtStart": 41,
+    "productsWithSavedSources": 22,
+    "productsWithoutSavedSources": 19,
+    "usableSavedSourceIdentities": 34,
+    "newPositivePriceProducts": 3,
+    "totalPositivePriceProducts": 32,
+    "totalRepresentedProducts": 46,
+    "totalObservations": 102,
+    "newObservations": 10,
+    "totalPlans": 262,
+    "totalOffers": 451
+  },
+  "cacheInventory": {
+    "uniqueBodies": 103,
+    "bodyCopies": 638,
+    "globallyUsableBodies": 102,
+    "rejectedBodyIdentitiesOutsideRemainingProducts": 1,
+    "additionalBodiesBeyondExistingCache": 0
+  },
+  "verification": {
+    "allPrior92ObservationsUnchanged": true,
+    "savedProductStatesUnchanged": true,
+    "savedProductStates": 70,
+    "frozenJournals": [
+      {
+        "sha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+        "unchanged": true
+      },
+      {
+        "sha256": "73a6751afa281b822be189a677fc54145e68fd8f83172879726b42dfcee77ead",
+        "unchanged": true
+      },
+      {
+        "sha256": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+        "unchanged": true
+      }
+    ],
+    "bodyChecks": 204
+  },
+  "products": [
+    {
+      "productId": "1password",
+      "name": "1Password",
+      "categoryBefore": "quote_only",
+      "categoryAfter": "quote_only",
+      "usableSourceCount": 3,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://1password.com/pricing/xam",
+          "capturedAt": "2025-06-19T13:07:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+          "digest": "QQ43ZSBVXW5BEV3FY3P6SEBXRIZK6LWY",
+          "sha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+          "bytes": 169490,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "QQ43ZSBVXW5BEV3FY3P6SEBXRIZK6LWY",
+            "actualDigest": "NTGDHDVX6THFBBN7WHNQNBMXXSFYSMVR",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://1password.com/compare/password-manager",
+          "capturedAt": "2025-06-19T13:08:43.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager",
+          "digest": "PM4E3HFHSG3CX26JNBGZ62B25KSESMDE",
+          "sha256": "23c0182733283eb49a3b54fe16cf3cff8304d3480c05314f68ee4f9a2bf7287d",
+          "bytes": 204593,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "PM4E3HFHSG3CX26JNBGZ62B25KSESMDE",
+            "actualDigest": "LKPMHOWDBWGG4MNHMD7ZVCFAR7C2GHN5",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://1password.com/",
+          "capturedAt": "2025-06-30T19:28:07.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+          "digest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+          "sha256": "3904f60770cfa8dd87448636d6502a54cf7134b7fdf67e032b340955f4025e23",
+          "bytes": 273992,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+            "actualDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Imported XAM component quotes, volume pricing and dedicated support for 100+ users remain supported. No additional numerical password-manager rate in saved landing or comparison.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://1password.com/",
+          "capturedAt": "2025-06-30T19:28:07.000Z",
+          "retained": true,
+          "sha256": "3904f60770cfa8dd87448636d6502a54cf7134b7fdf67e032b340955f4025e23",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD",
+            "actualDigest": "4DHYKYBBP44ALTSBXAB2PLFIDOVK3DZD"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://1password.com/pricing/xam",
+          "capturedAt": "2025-06-19T13:07:29.000Z",
+          "retained": true,
+          "sha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "QQ43ZSBVXW5BEV3FY3P6SEBXRIZK6LWY",
+            "actualDigest": "NTGDHDVX6THFBBN7WHNQNBMXXSFYSMVR",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://1password.com/compare/password-manager",
+          "capturedAt": "2025-06-19T13:08:43.000Z",
+          "retained": true,
+          "sha256": "23c0182733283eb49a3b54fe16cf3cff8304d3480c05314f68ee4f9a2bf7287d",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "PM4E3HFHSG3CX26JNBGZ62B25KSESMDE",
+            "actualDigest": "LKPMHOWDBWGG4MNHMD7ZVCFAR7C2GHN5",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager"
+        }
+      ],
+      "remainingGaps": [
+        "100+ users is a support threshold, not a purchase minimum.",
+        "General password-manager pricing page was not retained."
+      ]
+    },
+    {
+      "productId": "acronis-cyber-protect",
+      "name": "Acronis Cyber Protect",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ]
+    },
+    {
+      "productId": "adobe-acrobat",
+      "name": "Adobe Acrobat",
+      "categoryBefore": "structure_only",
+      "categoryAfter": "structure_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [
+        {
+          "sourceUrl": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+          "digest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "bytes": 34991,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "actualDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+          "digest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "bytes": 10004,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+            "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+          "digest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "bytes": 12854,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+            "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [
+        {
+          "productId": "adobe-acrobat",
+          "sourceUrl": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "capturedAt": "2025-06-29T20:22:37.000Z",
+          "digest": "G7U4AKRMEBE53KXGHNFJQIAHOSLSJ27S",
+          "outcome": "missing_pricing",
+          "errorCode": null
+        }
+      ],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "Imported Standard/Pro feature-only structure remains supported. Landing contains no amount; comparison replay was rejected and absent. External price fragments were not retained.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "retained": true,
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "actualDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "capturedAt": "2025-06-29T20:22:37.000Z",
+          "retained": false
+        }
+      ],
+      "remainingGaps": [
+        "No additional numerical rates or resolved commerce variables."
+      ]
+    },
+    {
+      "productId": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "structure_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+          "digest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "bytes": 10004,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+            "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+          "digest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "bytes": 34991,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "actualDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+          "digest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "bytes": 12854,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+            "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [
+        {
+          "productId": "adobe-lightroom",
+          "sourceUrl": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+          "capturedAt": "2025-05-29T23:30:22.000Z",
+          "digest": "765QEU6NFVPM2FA5JOZVLXQXUQWZN7LE",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "Verified landing contains a Lightroom plan with 1TB price marker, product features and an explicit free-trial link. No amount or currency value; pricing replay rejected and absent.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-5f4e0bb1934cf4d7b3f01757300fb67c4773c56de4065367d4fdad5c6155d226",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+          "plans": 2,
+          "offers": 2,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+            "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+            "Unresolved PRICE/annual-paid-monthly/tax macros are not normalized prices or contract terms. External merchandising links were not fetched."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Unresolved plan marker, not a numerical price.",
+          "source": {
+            "locator": "offset:6831-7177",
+            "text": "{{plans-starting-at}} PRICE - ABM - Lightroom plan with 1TB {{small-tax-incl-label}} for the {{annual-paid-monthly-plan}}.",
+            "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+            "capturedAt": "2025-06-28T13:47:55.000Z",
+            "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a"
+          }
+        },
+        {
+          "fact": "Explicit free trial; duration and renewal unknown.",
+          "source": {
+            "locator": "offset:7316-7535",
+            "text": "Free trial|Free trial {{lightroom}}",
+            "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+            "capturedAt": "2025-06-28T13:47:55.000Z",
+            "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a"
+          }
+        },
+        {
+          "fact": "Quick Actions and Generative Remove capabilities.",
+          "source": {
+            "locator": "offset:5667-5898",
+            "text": "New Quick Actions give you creative assistance tailored to your unique photo.",
+            "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+            "capturedAt": "2025-06-28T13:47:55.000Z",
+            "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "retained": true,
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+            "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+          "capturedAt": "2025-05-29T23:30:22.000Z",
+          "retained": false
+        }
+      ],
+      "remainingGaps": [
+        "Untranslated macros do not establish annual commitment or tax treatment.",
+        "Remote merchandising fragments were not retained."
+      ]
+    },
+    {
+      "productId": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "structure_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+          "digest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "bytes": 12854,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+            "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+          "digest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "bytes": 34991,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "actualDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+          "digest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "bytes": 10004,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+            "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [
+        {
+          "productId": "adobe-photoshop",
+          "sourceUrl": "https://www.adobe.com/products/photoshop/plans.html",
+          "capturedAt": "2025-06-22T07:58:01.000Z",
+          "digest": "FUF5AU64XHXY7IHEJ6EEUO52TC7MIX2Z",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "Verified landing contains a Photoshop price marker, free-trial/buy links and editing features. Numerical pricing replay was rejected and absent.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-67f244453222451d680f21103c4fa69ef49ab5926de723f35d936b9ecf2f3598",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+          "plans": 2,
+          "offers": 2,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+            "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+            "Merchandising price fragments remain unresolved; no seven-day trial or numerical rate inferred."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Unresolved price macro; no numerical amount.",
+          "source": {
+            "locator": "offset:6523-6809",
+            "text": "PRICE - ABM - Photoshop{{small-tax-incl-label}} . for the {{annual-paid-monthly-plan}}.",
+            "url": "https://www.adobe.com/products/photoshop.html",
+            "capturedAt": "2025-06-30T05:53:12.000Z",
+            "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524"
+          }
+        },
+        {
+          "fact": "Distraction Removal capability.",
+          "source": {
+            "locator": "offset:8568-8737",
+            "text": "Tidy up your scene in a click. Distraction Removal in the Remove tool automatically detects and deletes unwanted elements like wires and people in the",
+            "url": "https://www.adobe.com/products/photoshop.html",
+            "capturedAt": "2025-06-30T05:53:12.000Z",
+            "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524"
+          }
+        },
+        {
+          "fact": "Combine, edit and blend images capability.",
+          "source": {
+            "locator": "offset:9117-9242",
+            "text": "Combine, edit, and blend multiple images and graphics to craft something truly unique. Play with it ‘til it’s amazing.",
+            "url": "https://www.adobe.com/products/photoshop.html",
+            "capturedAt": "2025-06-30T05:53:12.000Z",
+            "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "retained": true,
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+            "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.adobe.com/products/photoshop/plans.html",
+          "capturedAt": "2025-06-22T07:58:01.000Z",
+          "retained": false
+        }
+      ],
+      "remainingGaps": [
+        "Macro tokens do not establish the displayed billing contract or tax treatment.",
+        "Missing replay and external fragments cannot supply a price."
+      ]
+    },
+    {
+      "productId": "adobe-premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 3,
+      "sources": [],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.adobe.com/acrobat.html",
+          "capturedAt": "2025-06-30T19:29:21.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+          "digest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+          "sha256": "6650efce7b683c6957546381786c64d22e4633ceffe301824157a8cc51641cfb",
+          "bytes": 34991,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+            "actualDigest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+          "capturedAt": "2025-06-28T13:47:55.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628134755id_/https://www.adobe.com/products/photoshop-lightroom.html",
+          "digest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+          "sha256": "e5e7a110ae6f3467bafcaa8e389ceace6f3230297800e4e18ea333b5caa7f12a",
+          "bytes": 10004,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K",
+            "actualDigest": "IQ3TXSOY3ALP553XODMBCYQ3WNHJDB5K"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.adobe.com/products/photoshop.html",
+          "capturedAt": "2025-06-30T05:53:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630055312id_/https://www.adobe.com/products/photoshop.html",
+          "digest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+          "sha256": "46c71c09bf8fcd0ef50ba484ae7a639b087a6497c20967cf7fb754daf0a7b524",
+          "bytes": 12854,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP",
+            "actualDigest": "WCXZAA7KDEXL7YX4IV4P2QCP6SOWZAVP"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [
+        {
+          "productId": "adobe-premiere-pro",
+          "sourceUrl": "https://www.adobe.com/products/premiere.html",
+          "capturedAt": "2025-06-30T00:55:17.000Z",
+          "digest": "BLSJ5O75D7JPBL73PFMPNSKPPHVSOUTT",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required.",
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Selected landing body rejected digest validation; no usable cached evidence.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Selected landing body rejected digest validation; no usable cached evidence."
+      ]
+    },
+    {
+      "productId": "bigcommerce",
+      "name": "BigCommerce",
+      "categoryBefore": "quote_only",
+      "categoryAfter": "positive_price",
+      "usableSourceCount": 2,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.bigcommerce.com/enterprise-pricing/",
+          "capturedAt": "2025-06-21T16:53:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/",
+          "digest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY",
+          "sha256": "419a17a61d322ba7c3c20ccc1f2c63f50798497c07063c69773c87c3488bafc7",
+          "bytes": 690550,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY",
+            "actualDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.bigcommerce.com/",
+          "capturedAt": "2025-06-28T19:11:18.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/",
+          "digest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+          "sha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+          "bytes": 1042229,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+            "actualDigest": "4TSBYA4KHHISES6HJZ6ERMLW7VHXVPNJ",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Retained landing embeds Standard/Plus/Pro pricing: 39/29, 105/79, 399/299 per month; annual variants explicitly billed annually. Additional storefronts cost 30/50/100 per month. Embedded values are not visibly rendered; currency and active configuration are unknown. Original archive digest remains legacy-qualified and unverified.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-c8358b4186fc4a53cf90aba9d6dfb0c8fb8cf8cc20b4fb5092b253cf1980a62e",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.bigcommerce.com/",
+          "capturedAt": "2025-06-28T19:11:18.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/",
+          "plans": 6,
+          "offers": 9,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual recovery from inert __NEXT_DATA__ pricing namespace; not visibly rendered on selected landing. Runtime/checkout applicability unknown.",
+            "Currency unknown: no ISO code in embedded pricing namespace; no scale conversion applied.",
+            "Monthly variant has monthly denominator but contract duration unknown; annual variant explicitly Billed Annually.",
+            "Sales ceilings are trailing12month volume conditions, not minimum purchases.",
+            "Existing dedicated Enterprise observation unchanged; no duplicate Enterprise quote imported.",
+            "PayPal/Braintree processing fees are third-party conditions; Pro mobileList2.05% conflicts with comparison row2.35%, so no normalized processing fee asserted.",
+            "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+            "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "field": "Pro payment-processing fee",
+          "values": [
+            "2.05% + $0.49 in mobileList",
+            "2.35% + $0.49 in comparison cells"
+          ],
+          "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2].mobileList[1]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[9].subRows[1].cells[2]",
+          "reason": "Conflicting third-party optional payment rates; not subscription prices.",
+          "sourceUrl": "https://www.bigcommerce.com/",
+          "capturedAt": "2025-06-28T19:11:18.000Z",
+          "sha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a"
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.bigcommerce.com/",
+          "capturedAt": "2025-06-28T19:11:18.000Z",
+          "retained": true,
+          "sha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "TWDMHBWMK44JDNQBAB6FYWRRA3J7IGOG",
+            "actualDigest": "4TSBYA4KHHISES6HJZ6ERMLW7VHXVPNJ",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250628191118id_/https://www.bigcommerce.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.bigcommerce.com/enterprise-pricing/",
+          "capturedAt": "2025-06-21T16:53:25.000Z",
+          "retained": true,
+          "sha256": "419a17a61d322ba7c3c20ccc1f2c63f50798497c07063c69773c87c3488bafc7",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY",
+            "actualDigest": "YOXEQLXQJXVIUNNQTMX2HFQLT7ZZRAYY"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250621165325id_/https://www.bigcommerce.com/enterprise-pricing/"
+        }
+      ],
+      "remainingGaps": [
+        "Monthly variant commitment unknown.",
+        "Payment-provider processing fees are not BigCommerce base subscription prices."
+      ]
+    },
+    {
+      "productId": "bitwarden",
+      "name": "Bitwarden",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "bitwarden",
+          "sourceUrl": "https://bitwarden.com/",
+          "capturedAt": "2025-06-30T08:53:12.000Z",
+          "digest": "YSCEVFNGJVGNKTXZGRLA742OB5QLCIVV",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Landing payload digest failed; no pricing body retained.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Landing payload digest failed; no pricing body retained."
+      ]
+    },
+    {
+      "productId": "cal-com",
+      "name": "Cal.com",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "cal-com",
+          "sourceUrl": "https://cal.com/",
+          "capturedAt": "2025-06-30T03:15:58.000Z",
+          "digest": "IO2HDUGLCOQAI7QIOBXHESDQSHF7PZ5A",
+          "outcome": "error",
+          "errorCode": "archive_too_large"
+        }
+      ],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Exact landing record selected, but replay exceeds the configured response-size limit before a retained body is available. No inference about plan structure or JavaScript requirements is possible.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "archive_too_large",
+        "No verified cached landing HTML"
+      ]
+    },
+    {
+      "productId": "confluence",
+      "name": "Confluence",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "positive_price",
+      "usableSourceCount": 2,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [
+        {
+          "sourceUrl": "https://www.atlassian.com/software/confluence",
+          "capturedAt": "2025-06-29T16:52:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+          "digest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+          "sha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+          "bytes": 470588,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+            "actualDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.atlassian.com/software/confluence/pricing",
+          "capturedAt": "2025-06-28T09:15:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+          "digest": "A47AU6U34Q5AF6ZMXQNMBSUG6LQQ6B2K",
+          "sha256": "5bdd8367832627e50cb01bd6a54905a988578cef85725806afe5040b338b0c0c",
+          "bytes": 931273,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "A47AU6U34Q5AF6ZMXQNMBSUG6LQQ6B2K",
+            "actualDigest": "56CN47KRJJ6ZZCWRRVRZ2T3AKXMXHL6J",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.atlassian.com/software/jira",
+          "capturedAt": "2025-06-30T04:04:24.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+          "digest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+          "sha256": "6bdc692d5f503a30f43bb5186c5bed69393becd266148dcfb1e5402b90fe9ffc",
+          "bytes": 497389,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+            "actualDigest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.atlassian.com/software/jira/pricing",
+          "capturedAt": "2025-06-23T02:36:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+          "digest": "FBA4SVL5OBJBDPHFFDKGPKOQRMEWSL2X",
+          "sha256": "570fb681f3469bc286e60fef2e79ef1eea7749e91e3af5e6202daab940527e43",
+          "bytes": 975656,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "FBA4SVL5OBJBDPHFFDKGPKOQRMEWSL2X",
+            "actualDigest": "J2WYYZYJ3RWJ7HKPOZUKEYMNBMGPVAFE",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "Direct decimal unit_price fields in the verified June 29 landing pricing map recovered with USD/JPY and encoded user tiers. Billing period/commitment and selected variant remain unknown. No conversion from separate catalog integer fields.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-95fd63e67b65bfb8963a493c6e302c79e471cceed676eea6d5fc8601ef16b211",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.atlassian.com/software/confluence",
+          "capturedAt": "2025-06-29T16:52:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+          "plans": 3,
+          "offers": 60,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Direct legacy unit_price values from this verified landing only; no divide-by100, cross-capture price conversion or annual/monthly arithmetic.",
+            "All billing periods and commitments unknown. Source identifies user units and marginal/fixed-cost quantity bands, not current selected checkout price.",
+            "USD and JPY alternatives are both retained with unknown active currency. Tier ranges are raw quantity conditions, not minimum purchase quantities.",
+            "Separate catalog unitAmount/flatAmount scaling remains unresolved; its108raw schedules are already preserved as research and are not duplicated here."
+          ]
+        }
+      ],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Separate pricing-page unitAmount/flatAmount scaling remains unresolved. Existing raw schedules remain research only."
+      ]
+    },
+    {
+      "productId": "docebo",
+      "name": "Docebo",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.docebo.com/",
+          "capturedAt": "2025-06-05T21:27:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250605212725id_/https://www.docebo.com/",
+          "digest": "A4YH3WR3KXXHHIHSTCVRGL5TI4NAFGAP",
+          "sha256": "7704f73c1a10a2d2e6dbb2f31110b0f50a96e6b1ef110e4110443370c5a5b4ed",
+          "bytes": 140649,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "A4YH3WR3KXXHHIHSTCVRGL5TI4NAFGAP",
+            "actualDigest": "A4YH3WR3KXXHHIHSTCVRGL5TI4NAFGAP"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Landing names the Docebo Learning Platform and AI/content/workflow capabilities. No named priced tiers, numerical rates or explicit custom-pricing offer. Pricing captures absent.",
+      "newObservations": [],
+      "rawFacts": [
+        {
+          "fact": "Named Docebo Learning Platform.",
+          "source": {
+            "locator": "offset:46458-46792",
+            "text": "The Docebo Learning Platform",
+            "url": "https://www.docebo.com/",
+            "capturedAt": "2025-06-05T21:27:25.000Z",
+            "sha256": "7704f73c1a10a2d2e6dbb2f31110b0f50a96e6b1ef110e4110443370c5a5b4ed"
+          }
+        },
+        {
+          "fact": "AI content production, workflow automation and learner experience are product capabilities; no price entitlement established.",
+          "source": {
+            "locator": "offset:96924-97146",
+            "text": "We harness the power of AI to accelerate content production, automate workflows and improve the learner experience.",
+            "url": "https://www.docebo.com/",
+            "capturedAt": "2025-06-05T21:27:25.000Z",
+            "sha256": "7704f73c1a10a2d2e6dbb2f31110b0f50a96e6b1ef110e4110443370c5a5b4ed"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.docebo.com/",
+          "capturedAt": "2025-06-05T21:27:25.000Z",
+          "retained": true,
+          "sha256": "7704f73c1a10a2d2e6dbb2f31110b0f50a96e6b1ef110e4110443370c5a5b4ed",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "A4YH3WR3KXXHHIHSTCVRGL5TI4NAFGAP",
+            "actualDigest": "A4YH3WR3KXXHHIHSTCVRGL5TI4NAFGAP"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250605212725id_/https://www.docebo.com/"
+        }
+      ],
+      "remainingGaps": [
+        "Demo invitation does not establish a quote-only license plan.",
+        "Nonprofit partnership announcement does not establish a generic free edition."
+      ]
+    },
+    {
+      "productId": "docuware",
+      "name": "DocuWare",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://start.docuware.com/",
+          "capturedAt": "2025-06-25T04:02:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625040212id_/https://start.docuware.com/",
+          "digest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K",
+          "sha256": "3a76919463a3e1dc28e4d1c306c451d131654d422d610258cf03ab3773431b87",
+          "bytes": 154163,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K",
+            "actualDigest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Landing names Intelligent Document Processing, OCR/HTR features and a free IDP invitation. No numerical subscription rate or named license edition recovered.",
+      "newObservations": [],
+      "rawFacts": [
+        {
+          "fact": "Intelligent Document Processing component.",
+          "source": {
+            "locator": "offset:60171-60211",
+            "text": "Intelligent Document Processing",
+            "url": "https://start.docuware.com/",
+            "capturedAt": "2025-06-25T04:02:12.000Z",
+            "sha256": "3a76919463a3e1dc28e4d1c306c451d131654d422d610258cf03ab3773431b87"
+          }
+        },
+        {
+          "fact": "OCR/HTR extraction capability; no price entitlement established.",
+          "source": {
+            "locator": "offset:60228-60291",
+            "text": "AI-Driven Data Extraction through advanced OCR & HTR",
+            "url": "https://start.docuware.com/",
+            "capturedAt": "2025-06-25T04:02:12.000Z",
+            "sha256": "3a76919463a3e1dc28e4d1c306c451d131654d422d610258cf03ab3773431b87"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://start.docuware.com/",
+          "capturedAt": "2025-06-25T04:02:12.000Z",
+          "retained": true,
+          "sha256": "3a76919463a3e1dc28e4d1c306c451d131654d422d610258cf03ab3773431b87",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K",
+            "actualDigest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250625040212id_/https://start.docuware.com/"
+        }
+      ],
+      "remainingGaps": [
+        "Free webinars and demos are not subscription prices.",
+        "Free invitation does not establish a permanent free edition or trial duration; pricing FAQ absent."
+      ]
+    },
+    {
+      "productId": "figjam",
+      "name": "FigJam",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "positive_price",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 4,
+      "sources": [
+        {
+          "sourceUrl": "https://www.figma.com/figjam/",
+          "capturedAt": "2025-06-25T16:10:40.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/",
+          "digest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ",
+          "sha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+          "bytes": 985282,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ",
+            "actualDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.figma.com/",
+          "capturedAt": "2018-05-18T02:09:28.000Z",
+          "archiveUrl": "https://web.archive.org/web/20180518020928id_/https://www.figma.com/",
+          "digest": "HMNVRFKLYILSCORLVUC3OAUW3WTYZCHQ",
+          "sha256": "1be4b4f5b76db6bed0551b5ab0cdec0a49608bf7103db59d056fe4a0ed42fda9",
+          "bytes": 175598,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "HMNVRFKLYILSCORLVUC3OAUW3WTYZCHQ",
+            "actualDigest": "HMNVRFKLYILSCORLVUC3OAUW3WTYZCHQ"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.figma.com/pricing",
+          "capturedAt": "2018-04-30T04:13:41.000Z",
+          "archiveUrl": "https://web.archive.org/web/20180430041341id_/https://www.figma.com/pricing",
+          "digest": "4MQLGRRV5BDNMCHNOQ3ATYSUYK2BYXAC",
+          "sha256": "dffdae2f9e0b1f61e9537e7a11a2913bc0b9f941ec010b6dcee2dcb48d8fddd9",
+          "bytes": 6887,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4MQLGRRV5BDNMCHNOQ3ATYSUYK2BYXAC",
+            "actualDigest": "4MQLGRRV5BDNMCHNOQ3ATYSUYK2BYXAC"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.figma.com/pricing/",
+          "capturedAt": "2025-06-26T04:09:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+          "digest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+          "sha256": "54f93e0b39da2f4e54df8b0e16093fad967ac634ec432abdff0831704e0f2472",
+          "bytes": 1294827,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+            "actualDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": true
+        },
+        {
+          "sourceUrl": "https://www.figma.com/",
+          "capturedAt": "2025-06-29T12:39:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629123912id_/https://www.figma.com/",
+          "digest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3",
+          "sha256": "5dda6111308b2cdc8a3a30b88c4fe1324477867607640a45daeeaa2d7b08eeda",
+          "bytes": 852130,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3",
+            "actualDigest": "PHFXT6IC34272WXOFA2KI26LST5OXQX3"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "FigJam is included with all seats on every plan. Verified June 26 pricing supplies Professional 3, Organization 5 and Enterprise 5 USD per Collab seat/month, annually billed. Collab seats bundle FigJam and Figma Slides.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-7b8fc5f75d06db1fb2b47fba51953518863b1140e5d090cb728b2aec46b800f9",
+          "scope": {
+            "edition": "Collab seats (FigJam included)",
+            "deployment": "hosted"
+          },
+          "sourceUrl": "https://www.figma.com/pricing/",
+          "capturedAt": "2025-06-26T04:09:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/",
+          "plans": 3,
+          "offers": 3,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Reused verified Figma pricing captureJune26 with dated FigJam pricing-link evidenceJune25. Anchor isJune26; not backdated toJune25.",
+            "Collab seats include FigJam and Figma Slides; bundled Figma tier rates, not independent FigJam-only offers.",
+            "Only Professional/Organization/Enterprise Collab seats retained; other seat products and coming-soon Content seats excluded.",
+            "Professional annual commitment follows static checked annual switch; Organization/Enterprise explicitly billed annually.",
+            "No purchase minima or unsupported feature entitlements inferred."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Coming-soon Content seat includes FigJam: Professional 8/10, Organization 18, Enterprise 25 per seat/month. Unavailable at capture; excluded from current offers.",
+          "source": {
+            "locator": "offset:327669-328570",
+            "text": "Available on all paid plans for $8/$10 on Professional, $18 on Organization, and $25 on Enterprise per seat/month.",
+            "url": "https://www.figma.com/pricing/",
+            "capturedAt": "2025-06-26T04:09:36.000Z",
+            "sha256": "54f93e0b39da2f4e54df8b0e16093fad967ac634ec432abdff0831704e0f2472"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.figma.com/figjam/",
+          "capturedAt": "2025-06-25T16:10:40.000Z",
+          "retained": true,
+          "sha256": "ee13911bb3370e553054f5583842f325bbacd976b4de4609aaaf5e9b382ba480",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ",
+            "actualDigest": "C46VA264TNDWWONWFAJLGJG3X432TDIQ"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250625161040id_/https://www.figma.com/figjam/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.figma.com/pricing/",
+          "capturedAt": "2025-06-26T04:09:36.000Z",
+          "retained": true,
+          "sha256": "54f93e0b39da2f4e54df8b0e16093fad967ac634ec432abdff0831704e0f2472",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE",
+            "actualDigest": "ASBPCXY4S5HFPI4DJUYSHRHOUS7334FE"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250626040936id_/https://www.figma.com/pricing/"
+        }
+      ],
+      "remainingGaps": [
+        "Anchor must be June 26 or later; never backdate to June 25 landing.",
+        "Exact dated pricing alias and bundle scope required; these are not standalone FigJam-only rates."
+      ]
+    },
+    {
+      "productId": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "structure_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.apple.com/final-cut-pro/",
+          "capturedAt": "2025-06-27T04:39:00.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/",
+          "digest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+          "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578",
+          "bytes": 160835,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+            "actualDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Verified landing and application metadata name Final Cut Pro for Mac. Free trial and education bundle are present without a numerical purchase rate.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-6e37737f65594691794dd42dfc2ba2a5e4a3a09fec096e8e192806aad6d2d07e",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.apple.com/final-cut-pro/",
+          "capturedAt": "2025-06-27T04:39:00.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/",
+          "plans": 3,
+          "offers": 1,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+            "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+            "Education bundle is a separately named package with unknown price, not a standalone Final Cut Pro price. App Store link was not fetched."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Free trial; duration absent from saved page.",
+          "source": {
+            "locator": "offset:85461-85712",
+            "text": "Free Trial Free Trial",
+            "url": "https://www.apple.com/final-cut-pro/",
+            "capturedAt": "2025-06-27T04:39:00.000Z",
+            "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578"
+          }
+        },
+        {
+          "fact": "Named Final Cut Pro 11 application and product capabilities.",
+          "source": {
+            "locator": "offset:86691-86869",
+            "text": "Final Cut Pro 11. Simply intelligent.",
+            "url": "https://www.apple.com/final-cut-pro/",
+            "capturedAt": "2025-06-27T04:39:00.000Z",
+            "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578"
+          }
+        },
+        {
+          "fact": "Education bundle for qualifying college students, teachers and institutions: Final Cut Pro, Motion, Compressor, Logic Pro and MainStage. Special price unspecified.",
+          "source": {
+            "locator": "offset:133520-133845",
+            "text": "Unleash your creative potential with the Pro Apps Bundle for qualifying college students, teachers, and education institutions. Get all five",
+            "url": "https://www.apple.com/final-cut-pro/",
+            "capturedAt": "2025-06-27T04:39:00.000Z",
+            "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.apple.com/final-cut-pro/",
+          "capturedAt": "2025-06-27T04:39:00.000Z",
+          "retained": true,
+          "sha256": "097789e8c2704471a59e0bacd63b24fdb09f2da83fb039c4d018e6da67759578",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46",
+            "actualDigest": "4A763K6RNSWUFTQB2PW6WSWT44YMWX46"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250627043900id_/https://www.apple.com/final-cut-pro/"
+        }
+      ],
+      "remainingGaps": [
+        "App Store installation link is not a retained price source.",
+        "No purchase price, trial duration or education-bundle amount was inferred."
+      ]
+    },
+    {
+      "productId": "ghost",
+      "name": "Ghost",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "trial_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://ghost.org/",
+          "capturedAt": "2025-06-30T22:10:56.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+          "digest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+          "sha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+          "bytes": 133629,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+            "actualDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "ghost",
+          "sourceUrl": "https://ghost.org/pricing/",
+          "capturedAt": "2025-06-30T11:07:30.000Z",
+          "digest": "LRJNYH6XNYSGPJ75VJ2EY7NJTARDVY36",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ],
+      "notes": [],
+      "finding": "Verified landing explicitly offers a free 14-day Ghost trial. Pricing replay rejected and absent; no paid subscription amount recovered.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-d5732e36f62c5c5b6fd1a001787c4b9f8aa66bb7e9d939a55848d7d438fd7c3e",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://ghost.org/",
+          "capturedAt": "2025-06-30T22:10:56.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+          "plans": 1,
+          "offers": 1,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+            "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+            "Rejected pricing replay remains absent. Publisher revenue and member-subscription amounts are not Ghost license prices."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Ghost is completely free for 14 days.",
+          "source": {
+            "locator": "offset:62664-62901",
+            "text": "Try Ghost completely free for 14 days →",
+            "url": "https://ghost.org/",
+            "capturedAt": "2025-06-30T22:10:56.000Z",
+            "sha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://ghost.org/",
+          "capturedAt": "2025-06-30T22:10:56.000Z",
+          "retained": true,
+          "sha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+            "actualDigest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://ghost.org/pricing/",
+          "capturedAt": "2025-06-30T11:07:30.000Z",
+          "retained": false
+        }
+      ],
+      "remainingGaps": [
+        "Publisher membership/revenue amounts are not Ghost license prices.",
+        "Rejected pricing replay supplies no retained paid-tier price."
+      ]
+    },
+    {
+      "productId": "google-meet",
+      "name": "Google Meet",
+      "categoryBefore": "free_only",
+      "categoryAfter": "free_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [
+        {
+          "sourceUrl": "https://workspace.google.com/products/meet/",
+          "capturedAt": "2025-06-30T23:53:00.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+          "digest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II",
+          "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+          "bytes": 364842,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II",
+            "actualDigest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://workspace.google.com/",
+          "capturedAt": "2025-06-30T23:13:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+          "digest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+          "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+          "bytes": 492295,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+            "actualDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://workspace.google.com/pricing.html",
+          "capturedAt": "2025-06-30T18:29:09.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630182909id_/https://workspace.google.com/pricing.html",
+          "digest": "ZGQKYHQTTUDLVQA4TU34BWIKMZFP7YQY",
+          "sha256": "1d6239e17a2f2d0e643461aec485fb2b470004badefd1081c3918639621b964f",
+          "bytes": 856200,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ZGQKYHQTTUDLVQA4TU34BWIKMZFP7YQY",
+            "actualDigest": "BEBX74PMMWMXXZ53UXTYBFDSOXVWTBCV",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "Imported German free version with 100 participants and 60-minute group calls remains supported. Premium 24-hour calls apply to certain Google One/Workspace bundles; no named paid Meet rate.",
+      "newObservations": [],
+      "rawFacts": [
+        {
+          "fact": "Certain premium subscriptions support group calls up to 24 hours; no named rate.",
+          "source": {
+            "locator": "offset:247652-249101",
+            "text": "Diese Funktion ist verfügbar für bestimmte Abos von Google One , Google Workspace Business und Google Workspace Große Unternehmen .",
+            "url": "https://workspace.google.com/products/meet/",
+            "capturedAt": "2025-06-30T23:53:00.000Z",
+            "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76"
+          },
+          "additionalEvidence": [
+            {
+              "locator": "offset:249022-249101",
+              "text": "Sie können Gruppenanrufe mit einer Länge von bis zu 24 Stunden abhalten.",
+              "url": "https://workspace.google.com/products/meet/",
+              "capturedAt": "2025-06-30T23:53:00.000Z",
+              "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76"
+            }
+          ]
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://workspace.google.com/products/meet/",
+          "capturedAt": "2025-06-30T23:53:00.000Z",
+          "retained": true,
+          "sha256": "ebf676240b86f5bf9f25c5fa7120e4f4ad664fbad836cf6a85e9b2ea61b3db76",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II",
+            "actualDigest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/"
+        }
+      ],
+      "remainingGaps": [
+        "No currency, price or exact entitlement-to-tier binding established."
+      ]
+    },
+    {
+      "productId": "harvest",
+      "name": "Harvest",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "trial_only",
+      "usableSourceCount": 2,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.getharvest.com/",
+          "capturedAt": "2025-06-27T02:29:33.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/",
+          "digest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+          "sha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681",
+          "bytes": 147167,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+            "actualDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.getharvest.com/customers/juicyorange",
+          "capturedAt": "2025-06-25T23:46:52.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625234652id_/https://www.getharvest.com/customers/juicyorange",
+          "digest": "ABY5VLWC7H6QWINZ3P2OVT4FR3NRJTOZ",
+          "sha256": "88a05b5055094ff63a5354f1f7335ebb08ad53ed2b04ad7ba116849f97f9dda4",
+          "bytes": 79089,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ABY5VLWC7H6QWINZ3P2OVT4FR3NRJTOZ",
+            "actualDigest": "MCZPW4N2XLOXIHCOB5KGVEICS52Z3AHX",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Verified landing explicitly offers a free 30-day trial. Selected customer story discusses the customer’s prices, not Harvest subscription rates.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-079120482473d9213a3cb44a70b37d51c7c095991a2970eee5900f4a7bdfe023",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.getharvest.com/",
+          "capturedAt": "2025-06-27T02:29:33.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/",
+          "plans": 1,
+          "offers": 1,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+            "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+            "Customer-story pricing and invoiced revenue are not Harvest subscription rates."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Free 30-day trial, no credit card required.",
+          "source": {
+            "locator": "offset:50840-50942",
+            "text": "Free 30-day trial. No credit card required.",
+            "url": "https://www.getharvest.com/",
+            "capturedAt": "2025-06-27T02:29:33.000Z",
+            "sha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.getharvest.com/",
+          "capturedAt": "2025-06-27T02:29:33.000Z",
+          "retained": true,
+          "sha256": "93db056a7a3ff6db791c0f27025046237105190f35a145b539591fa41c95a681",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ",
+            "actualDigest": "3I3T2RYNFGF7JJMLBE3WXMR2PBEAE6GJ"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250627022933id_/https://www.getharvest.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.getharvest.com/customers/juicyorange",
+          "capturedAt": "2025-06-25T23:46:52.000Z",
+          "retained": true,
+          "sha256": "88a05b5055094ff63a5354f1f7335ebb08ad53ed2b04ad7ba116849f97f9dda4",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ABY5VLWC7H6QWINZ3P2OVT4FR3NRJTOZ",
+            "actualDigest": "MCZPW4N2XLOXIHCOB5KGVEICS52Z3AHX",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250625234652id_/https://www.getharvest.com/customers/juicyorange"
+        }
+      ],
+      "remainingGaps": [
+        "Exact pricing URL had no capture in the original window.",
+        "Customer revenue and invoices are not Harvest license prices."
+      ]
+    },
+    {
+      "productId": "hootsuite",
+      "name": "Hootsuite",
+      "categoryBefore": "structure_only",
+      "categoryAfter": "structure_only",
+      "usableSourceCount": 3,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.hootsuite.com/plans",
+          "capturedAt": "2025-06-24T21:06:36.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans",
+          "digest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+          "sha256": "c08164cacdb0d3a4019a0647a7a4736ff1c92f744d63457daec7ad9814e77ef0",
+          "bytes": 567654,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+            "actualDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.hootsuite.com/plans/enterprise",
+          "capturedAt": "2025-06-25T23:41:17.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise",
+          "digest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+          "sha256": "fdb5c26d45e150661160a1039758fd086109a0f81bff8dc0db3bad18fe7f214f",
+          "bytes": 357931,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+            "actualDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.hootsuite.com/",
+          "capturedAt": "2025-06-30T09:46:38.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/",
+          "digest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+          "sha256": "41094667da6fb7558734deec1b11387ea58aa13cb5124b746160ff7f2d93ad30",
+          "bytes": 460352,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+            "actualDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Standard/Advanced unknown prices and Enterprise custom quote/annual contract remain. No additional numerical price in retained plan, Enterprise or landing sources.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.hootsuite.com/",
+          "capturedAt": "2025-06-30T09:46:38.000Z",
+          "retained": true,
+          "sha256": "41094667da6fb7558734deec1b11387ea58aa13cb5124b746160ff7f2d93ad30",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY",
+            "actualDigest": "W5ZG4NWASBB5COSMDJCAUNRLYJPPJFDY"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630094638id_/https://www.hootsuite.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.hootsuite.com/plans",
+          "capturedAt": "2025-06-24T21:06:36.000Z",
+          "retained": true,
+          "sha256": "c08164cacdb0d3a4019a0647a7a4736ff1c92f744d63457daec7ad9814e77ef0",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF",
+            "actualDigest": "DXMERRXMYROZUJI4DAC6DDUU7TDERGOF"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250624210636id_/https://www.hootsuite.com/plans"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.hootsuite.com/plans/enterprise",
+          "capturedAt": "2025-06-25T23:41:17.000Z",
+          "retained": true,
+          "sha256": "fdb5c26d45e150661160a1039758fd086109a0f81bff8dc0db3bad18fe7f214f",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH",
+            "actualDigest": "64NITLQKXUNDCFO6IGGJETYFJPPOILYH"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250625234117id_/https://www.hootsuite.com/plans/enterprise"
+        }
+      ],
+      "remainingGaps": [
+        "Per-user/month labels without amounts are not numerical rates."
+      ]
+    },
+    {
+      "productId": "jira",
+      "name": "Jira",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 2,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [
+        {
+          "sourceUrl": "https://www.atlassian.com/software/jira",
+          "capturedAt": "2025-06-30T04:04:24.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+          "digest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+          "sha256": "6bdc692d5f503a30f43bb5186c5bed69393becd266148dcfb1e5402b90fe9ffc",
+          "bytes": 497389,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH",
+            "actualDigest": "4D4E6AEP2MK6HWMFYKVDX7BKRXUOR6EH"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.atlassian.com/software/jira/pricing",
+          "capturedAt": "2025-06-23T02:36:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+          "digest": "FBA4SVL5OBJBDPHFFDKGPKOQRMEWSL2X",
+          "sha256": "570fb681f3469bc286e60fef2e79ef1eea7749e91e3af5e6202daab940527e43",
+          "bytes": 975656,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "FBA4SVL5OBJBDPHFFDKGPKOQRMEWSL2X",
+            "actualDigest": "J2WYYZYJ3RWJ7HKPOZUKEYMNBMGPVAFE",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.atlassian.com/software/confluence",
+          "capturedAt": "2025-06-29T16:52:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+          "digest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+          "sha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+          "bytes": 470588,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M",
+            "actualDigest": "PWPI6DEHIZU2OKUEXIIKVYCEXE56CQ6M"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.atlassian.com/software/confluence/pricing",
+          "capturedAt": "2025-06-28T09:15:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+          "digest": "A47AU6U34Q5AF6ZMXQNMBSUG6LQQ6B2K",
+          "sha256": "5bdd8367832627e50cb01bd6a54905a988578cef85725806afe5040b338b0c0c",
+          "bytes": 931273,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "A47AU6U34Q5AF6ZMXQNMBSUG6LQQ6B2K",
+            "actualDigest": "56CN47KRJJ6ZZCWRRVRZ2T3AKXMXHL6J",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required."
+      ],
+      "finding": "Raw serialized pricing schedules preserved separately; currency-dependent amount scaling remains unproven. No confirmed numerical price inferred.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Raw serialized amounts require an authoritative currency-specific unit/scale contract."
+      ]
+    },
+    {
+      "productId": "linear",
+      "name": "Linear",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "linear",
+          "sourceUrl": "https://linear.app/",
+          "capturedAt": "2025-06-30T15:32:09.000Z",
+          "digest": "ZTI4VFUU4VISEDSYMWQSO7BOS3W5TH2G",
+          "outcome": "archive_too_large",
+          "errorCode": "Archive response exceeds limit"
+        }
+      ],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "No usable source-bound pricing recovered in the saved sample.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Saved sample has no publishable pricing."
+      ]
+    },
+    {
+      "productId": "loom",
+      "name": "Loom",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Archive returned HTTP 403 for the source query."
+      ]
+    },
+    {
+      "productId": "lucidchart",
+      "name": "Lucidchart",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "No successful exact landing capture in fixed window; no retained bytes.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes."
+      ]
+    },
+    {
+      "productId": "m-files",
+      "name": "M-Files",
+      "categoryBefore": "trial_only",
+      "categoryAfter": "trial_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.m-files.com/",
+          "capturedAt": "2025-06-22T21:50:56.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250622215056id_/https://www.m-files.com/",
+          "digest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H",
+          "sha256": "f938751554db0f3f1e60d77a6dcccbb2bddb9ce5ca04d1d3017f83b7918bba3a",
+          "bytes": 770938,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H",
+            "actualDigest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Imported 30-day trial remains unchanged. Landing links Platform Editions but retained payload contains no named license-tier price.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.m-files.com/",
+          "capturedAt": "2025-06-22T21:50:56.000Z",
+          "retained": true,
+          "sha256": "f938751554db0f3f1e60d77a6dcccbb2bddb9ce5ca04d1d3017f83b7918bba3a",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H",
+            "actualDigest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250622215056id_/https://www.m-files.com/"
+        }
+      ],
+      "remainingGaps": [
+        "Editions page absent; customer implementation counts are not prices."
+      ]
+    },
+    {
+      "productId": "make",
+      "name": "Make",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "No successful exact landing capture in fixed window; no retained bytes.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes."
+      ]
+    },
+    {
+      "productId": "masv",
+      "name": "MASV",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ]
+    },
+    {
+      "productId": "microsoft-outlook",
+      "name": "Microsoft Outlook",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "capturedAt": "2025-06-29T07:29:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "digest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+          "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+          "bytes": 610389,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+            "actualDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+          "capturedAt": "2025-06-30T11:31:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+          "digest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+          "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+          "bytes": 639037,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+            "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required.",
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ]
+    },
+    {
+      "productId": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "capturedAt": "2025-06-29T07:29:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "digest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+          "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+          "bytes": 610389,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+            "actualDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+          "capturedAt": "2025-06-30T11:31:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+          "digest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+          "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+          "bytes": 639037,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+            "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required.",
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Exact canonical landing lookup returned no successful HTML record in the fixed June 2025 window. No conclusion about other URLs, locales, dates, paid offerings or source contents.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No retained HTML to inspect.",
+        "Do not classify as an empty JavaScript shell or absence of pricing."
+      ]
+    },
+    {
+      "productId": "microsoft-visio",
+      "name": "Microsoft Visio",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 2,
+      "sources": [],
+      "relatedVendorSources": [
+        {
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "capturedAt": "2025-06-29T07:29:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "digest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+          "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+          "bytes": 610389,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+            "actualDigest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        },
+        {
+          "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+          "capturedAt": "2025-06-30T11:31:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+          "digest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+          "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+          "bytes": 639037,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+            "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": false,
+          "mapping": "related_vendor_only",
+          "selectedInJuneSample": false,
+          "usedForThisProductAfterReview": false
+        }
+      ],
+      "failedSelectedRecords": [],
+      "notes": [
+        "Related vendor sources are not automatically product-specific pricing; manual bundle or edition association required.",
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "No successful exact landing capture in fixed window; no retained bytes.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes."
+      ]
+    },
+    {
+      "productId": "miro",
+      "name": "Miro",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Archive returned HTTP 403 for the source query."
+      ]
+    },
+    {
+      "productId": "salesforce",
+      "name": "Salesforce",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "No successful exact landing capture in fixed window; no retained bytes available.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No successful exact landing capture in fixed window; no retained bytes available."
+      ]
+    },
+    {
+      "productId": "sap-concur",
+      "name": "SAP Concur",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Exact Concur Expense landing index has no eligible record in the fixed window; no retained landing or pricing HTML supports semantic classification.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No inference that the product is quote-only or requires JavaScript"
+      ]
+    },
+    {
+      "productId": "sentry",
+      "name": "Sentry",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "No exact successful landing capture in the fixed June 2025 window.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "No exact successful landing capture in the fixed June 2025 window."
+      ]
+    },
+    {
+      "productId": "shopify",
+      "name": "Shopify",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "shopify",
+          "sourceUrl": "https://www.shopify.com/",
+          "capturedAt": "2025-06-30T21:53:26.000Z",
+          "digest": "ITVWX74KMFINLJBU5PK7PM7P6MXO4JTE",
+          "outcome": "error",
+          "errorCode": "archive_timeout"
+        }
+      ],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Selected landing body timed out and is absent. No usable retained bytes.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Selected landing body timed out and is absent. No usable retained bytes."
+      ]
+    },
+    {
+      "productId": "slack",
+      "name": "Slack",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "free_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://slack.com/",
+          "capturedAt": "2014-05-23T01:57:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20140523015725id_/https://slack.com/",
+          "digest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+          "sha256": "3238ec0a692b95819b283c7f903a7c4eb3ebd2acdcdebbe401cd47cb55bce41f",
+          "bytes": 9541,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX",
+            "actualDigest": "BYDEMA2OKEAVKYNTG5TAGZSWCFWKZWUX"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": false
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "slack",
+          "sourceUrl": "https://slack.com/",
+          "capturedAt": "2025-06-30T19:48:37.000Z",
+          "digest": "U7RJMH3RM6JTBU2PW4GNYAXQVLU4OCW4",
+          "outcome": "archive_digest_mismatch",
+          "errorCode": "HTML does not match archived payload digest"
+        }
+      ],
+      "notes": [],
+      "finding": "Explicit May2014 free-to-use and unlimited-people claim recovered. No paid prices or current-price inference.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-db164b9b3c63e6a8fe058244f97bca327354ea3fa32974d1a9df5018eb1eb113",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://slack.com/",
+          "capturedAt": "2014-05-23T01:57:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20140523015725id_/https://slack.com/",
+          "plans": 1,
+          "offers": 1,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "HistoricalMay2014snapshot only; no claim about current Slack pricing.",
+            "General product free-to-use statement, not an invented Free-branded tier. No recurring period or currency inferred.",
+            "Exact pricing page lookup preceding this landing returned no record; paid tier structure remains unavailable."
+          ]
+        }
+      ],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Saved sample has no publishable pricing."
+      ]
+    },
+    {
+      "productId": "smallpdf",
+      "name": "Smallpdf",
+      "categoryBefore": "free_only",
+      "categoryAfter": "free_only",
+      "usableSourceCount": 2,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://smallpdf.com/pricing",
+          "capturedAt": "2025-06-16T01:10:18.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing",
+          "digest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE",
+          "sha256": "cb6b7c40c7d3360e7359c2dd39599c7083be58bfc4d299783e1f578be3687b43",
+          "bytes": 1695774,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE",
+            "actualDigest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://smallpdf.com/",
+          "capturedAt": "2025-06-30T04:34:28.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630043428id_/https://smallpdf.com/",
+          "digest": "QL2RJC5BHMO7Z7HAEOIGE22GSLRAFUYG",
+          "sha256": "03be87e02edf4a7b22348a665b685ad2441bd770be585f96cb545144c040d4b7",
+          "bytes": 340462,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "QL2RJC5BHMO7Z7HAEOIGE22GSLRAFUYG",
+            "actualDigest": "KINP53JNYIQY53YJYPRNC3BLENRDZAHB",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Imported free version, unknown Pro/Teams prices and seven-day trial remain supported. Embedded data contains no defensible additional named paid rate.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://smallpdf.com/",
+          "capturedAt": "2025-06-30T04:34:28.000Z",
+          "retained": true,
+          "sha256": "03be87e02edf4a7b22348a665b685ad2441bd770be585f96cb545144c040d4b7",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "QL2RJC5BHMO7Z7HAEOIGE22GSLRAFUYG",
+            "actualDigest": "KINP53JNYIQY53YJYPRNC3BLENRDZAHB",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630043428id_/https://smallpdf.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://smallpdf.com/pricing",
+          "capturedAt": "2025-06-16T01:10:18.000Z",
+          "retained": true,
+          "sha256": "cb6b7c40c7d3360e7359c2dd39599c7083be58bfc4d299783e1f578be3687b43",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE",
+            "actualDigest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing"
+        }
+      ],
+      "remainingGaps": [
+        "Placeholders, team quantity ranges and trial duration are not paid amounts.",
+        "No scripts executed or remote commerce requests made."
+      ]
+    },
+    {
+      "productId": "spendesk",
+      "name": "Spendesk",
+      "categoryBefore": "quote_only",
+      "categoryAfter": "quote_only",
+      "usableSourceCount": 3,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.spendesk.com/",
+          "capturedAt": "2025-06-24T11:24:01.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624112401id_/https://www.spendesk.com/",
+          "digest": "U3KE2P47QSK55P5BTZKJSQCZTKKS4JHA",
+          "sha256": "9c4672110e8575f0bc770298f9d338f9ec036c89c1f1ee9051dcc082dadfabfe",
+          "bytes": 532582,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "U3KE2P47QSK55P5BTZKJSQCZTKKS4JHA",
+            "actualDigest": "JV2YA2D3ACN6TFRVJ7GI65JYJHGCNKK3",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.spendesk.com/platform/subscription-management/",
+          "capturedAt": "2025-06-24T09:54:54.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624095454id_/https://www.spendesk.com/platform/subscription-management/",
+          "digest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP",
+          "sha256": "e64ba933d6ac6f906afb3c11e9e530c72ed62a4cb07303cbd2a3f7c4dc7c179f",
+          "bytes": 434586,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP",
+            "actualDigest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://www.spendesk.com/pricing/",
+          "capturedAt": "2025-06-15T00:14:01.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/",
+          "digest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD",
+          "sha256": "92878086c058d8849beb67428c1e5cf362c5d29b6a4a8781f4c68ddc4364f263",
+          "bytes": 370822,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD",
+            "actualDigest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Imported Foundations and optional-module quotes remain supported. Monthly platform plus usage fees and contract options contain no numerical rate in retained sources.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.spendesk.com/",
+          "capturedAt": "2025-06-24T11:24:01.000Z",
+          "retained": true,
+          "sha256": "9c4672110e8575f0bc770298f9d338f9ec036c89c1f1ee9051dcc082dadfabfe",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "U3KE2P47QSK55P5BTZKJSQCZTKKS4JHA",
+            "actualDigest": "JV2YA2D3ACN6TFRVJ7GI65JYJHGCNKK3",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250624112401id_/https://www.spendesk.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.spendesk.com/pricing/",
+          "capturedAt": "2025-06-15T00:14:01.000Z",
+          "retained": true,
+          "sha256": "92878086c058d8849beb67428c1e5cf362c5d29b6a4a8781f4c68ddc4364f263",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD",
+            "actualDigest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.spendesk.com/platform/subscription-management/",
+          "capturedAt": "2025-06-24T09:54:54.000Z",
+          "retained": true,
+          "sha256": "e64ba933d6ac6f906afb3c11e9e530c72ed62a4cb07303cbd2a3f7c4dc7c179f",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP",
+            "actualDigest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250624095454id_/https://www.spendesk.com/platform/subscription-management/"
+        }
+      ],
+      "remainingGaps": [
+        "Zero card fees and free quotes do not establish a free platform plan."
+      ]
+    },
+    {
+      "productId": "squarespace",
+      "name": "Squarespace",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "trial_only",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.squarespace.com/",
+          "capturedAt": "2025-06-30T21:59:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+          "digest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+          "sha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+          "bytes": 303167,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+            "actualDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [
+        {
+          "productId": "squarespace",
+          "sourceUrl": "https://www.squarespace.com/pricing",
+          "capturedAt": "2025-06-24T19:34:39.000Z",
+          "digest": "75HXPH2GEHL4BHDVS3ZIJSLAOFETIJQ7",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ],
+      "notes": [],
+      "finding": "Verified landing offers a free website trial without a credit card. Pricing replay rejected and absent; trial duration and paid rates unknown.",
+      "newObservations": [
+        {
+          "id": "pricing-manual-0ea2a79ca35fc14d0cb74ca175ee52ce592f0d561a9c89ca2ad905006fb5c88b",
+          "scope": {
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "sourceUrl": "https://www.squarespace.com/",
+          "capturedAt": "2025-06-30T21:59:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+          "plans": 1,
+          "offers": 1,
+          "issues": [
+            "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+            "Manual partial/trial recovery from the retained landing. No paid subscription or purchase amount inferred.",
+            "A zero trial amount is temporary, never a permanent free tier. Currency, recurring period, contract and purchase units remain unknown.",
+            "No trial duration inferred from general knowledge. Rejected pricing replay remains absent."
+          ]
+        }
+      ],
+      "rawFacts": [
+        {
+          "fact": "Free website trial, no credit card required; duration unknown.",
+          "source": {
+            "locator": "offset:126302-126587",
+            "text": "Get your free website trial today. No credit card required.",
+            "url": "https://www.squarespace.com/",
+            "capturedAt": "2025-06-30T21:59:29.000Z",
+            "sha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.squarespace.com/",
+          "capturedAt": "2025-06-30T21:59:29.000Z",
+          "retained": true,
+          "sha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+            "actualDigest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://www.squarespace.com/pricing",
+          "capturedAt": "2025-06-24T19:34:39.000Z",
+          "retained": false
+        }
+      ],
+      "remainingGaps": [
+        "First-year free-domain promotion does not establish a website subscription price."
+      ]
+    },
+    {
+      "productId": "talentlms",
+      "name": "TalentLMS",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 1,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://www.talentlms.com/",
+          "capturedAt": "2025-06-30T20:05:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630200514id_/https://www.talentlms.com/",
+          "digest": "5CTEVLMEJ3XH3ZIZL6ZU63UVMBDTGKGB",
+          "sha256": "b87a64e381785b032f0c0f65f161b92322f57d4bf170dcf00af4d7787e16f306",
+          "bytes": 569339,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "5CTEVLMEJ3XH3ZIZL6ZU63UVMBDTGKGB",
+            "actualDigest": "5CTEVLMEJ3XH3ZIZL6ZU63UVMBDTGKGB"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Landing and application metadata name TalentLMS, features and a free-signup invitation. No named pricing plans or offer amounts in retained structured data.",
+      "newObservations": [],
+      "rawFacts": [
+        {
+          "fact": "Free signup invitation; no proven permanent tier.",
+          "source": {
+            "locator": "offset:503124-503281",
+            "text": "Get TalentLMS free",
+            "url": "https://www.talentlms.com/",
+            "capturedAt": "2025-06-30T20:05:14.000Z",
+            "sha256": "b87a64e381785b032f0c0f65f161b92322f57d4bf170dcf00af4d7787e16f306"
+          }
+        },
+        {
+          "fact": "AI course creation capability; entitlement boundaries unknown.",
+          "source": {
+            "locator": "offset:459760-460173",
+            "text": "Embrace AI, generate comprehensive training Quality content in just a few clicks? Check! Text, images, tests—cover every element of course creation",
+            "url": "https://www.talentlms.com/",
+            "capturedAt": "2025-06-30T20:05:14.000Z",
+            "sha256": "b87a64e381785b032f0c0f65f161b92322f57d4bf170dcf00af4d7787e16f306"
+          }
+        }
+      ],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://www.talentlms.com/",
+          "capturedAt": "2025-06-30T20:05:14.000Z",
+          "retained": true,
+          "sha256": "b87a64e381785b032f0c0f65f161b92322f57d4bf170dcf00af4d7787e16f306",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "5CTEVLMEJ3XH3ZIZL6ZU63UVMBDTGKGB",
+            "actualDigest": "5CTEVLMEJ3XH3ZIZL6ZU63UVMBDTGKGB"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630200514id_/https://www.talentlms.com/"
+        }
+      ],
+      "remainingGaps": [
+        "No free-plan limits inferred from prior knowledge.",
+        "Exact prices capture absent; billing interval, currency and rate unknown."
+      ]
+    },
+    {
+      "productId": "typeform",
+      "name": "Typeform",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Archive returned HTTP 403 for the source query."
+      ]
+    },
+    {
+      "productId": "wetransfer",
+      "name": "WeTransfer",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 2,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [
+        {
+          "sourceUrl": "https://wetransfer.com/pricing",
+          "capturedAt": "2025-06-16T03:04:27.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250616030427id_/https://wetransfer.com/pricing",
+          "digest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62",
+          "sha256": "eddda15aa814b150fb687619b300082bae03e7d385885662046c4e2f545393da",
+          "bytes": 10862,
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62",
+            "actualDigest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62"
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        },
+        {
+          "sourceUrl": "https://wetransfer.com/",
+          "capturedAt": "2025-06-30T23:18:40.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630231840id_/https://wetransfer.com/",
+          "digest": "56GBCRCBNOMUMTZUQXBKCJDNXCM52DFT",
+          "sha256": "c67c443d838a9d055b4217d0c6b5bab3149ead608a21ab351dfec42737dfa40a",
+          "bytes": 10992,
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "56GBCRCBNOMUMTZUQXBKCJDNXCM52DFT",
+            "actualDigest": "S4HZNKBOGM733JOMHWHQRJVF4FQHRPMU",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "usable": true,
+          "inCatalogScopeAtInventory": true,
+          "mapping": "catalog_url_scope",
+          "selectedInJuneSample": true
+        }
+      ],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [],
+      "finding": "Landing and pricing bodies are JavaScript-required failure shells. Embedded data contains runtime configuration and locale, without named pricing offers.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [
+        {
+          "kind": "landing",
+          "url": "https://wetransfer.com/",
+          "capturedAt": "2025-06-30T23:18:40.000Z",
+          "retained": true,
+          "sha256": "c67c443d838a9d055b4217d0c6b5bab3149ead608a21ab351dfec42737dfa40a",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "56GBCRCBNOMUMTZUQXBKCJDNXCM52DFT",
+            "actualDigest": "S4HZNKBOGM733JOMHWHQRJVF4FQHRPMU",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "archiveUrl": "https://web.archive.org/web/20250630231840id_/https://wetransfer.com/"
+        },
+        {
+          "kind": "pricing",
+          "url": "https://wetransfer.com/pricing",
+          "capturedAt": "2025-06-16T03:04:27.000Z",
+          "retained": true,
+          "sha256": "eddda15aa814b150fb687619b300082bae03e7d385885662046c4e2f545393da",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62",
+            "actualDigest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62"
+          },
+          "archiveUrl": "https://web.archive.org/web/20250616030427id_/https://wetransfer.com/pricing"
+        }
+      ],
+      "remainingGaps": [
+        "Fallback currency configuration is not an offer currency.",
+        "No external scripts executed or downloaded; runtime flags are not prices."
+      ]
+    },
+    {
+      "productId": "xero",
+      "name": "Xero",
+      "categoryBefore": "no_confirmed_observation",
+      "categoryAfter": "no_confirmed_observation",
+      "usableSourceCount": 0,
+      "relatedVendorOnlySourceCount": 0,
+      "sources": [],
+      "relatedVendorSources": [],
+      "failedSelectedRecords": [],
+      "notes": [
+        "No usable immutable archived HTML body for this product found in audited cache roots; profile/source links alone excluded."
+      ],
+      "finding": "Landing query timed out. No usable retained bytes; no price recovery attempted.",
+      "newObservations": [],
+      "rawFacts": [],
+      "factSourceProofs": [],
+      "remainingGaps": [
+        "Landing query timed out. No usable retained bytes; no price recovery attempted."
+      ]
+    }
+  ],
+  "auditInputHashes": {
+    "inventory": "728f474865b49900d3913d4637f70b6b111aee35461a9bdee4a992ac57391a16",
+    "researchLedger": "79f2e7b39ffc1e76473f9f354f1bb078e5e487ccfaa2a8088c7d53d1c75f0d78",
+    "confluenceSlack": "f786c985709c585381521e57a474afe2315aed54d3445b0d5f47fd11936c2fa9",
+    "bigcommerce": "5f19bc9d61b8770757bdaf34c1567cd3dca0a0e8544127fd2d60149505414622",
+    "figjam": "4d5f53f12f74c500effb345e019f2c029429d7c514a6c9034f5262236a5d1128",
+    "trialPartialStructures": "4bd1fcc3b08f97f5e4ba4fd8e77da858c2f73679751bc9647053b7172bc98b40"
+  },
+  "validation": {
+    "nodeTests": 356,
+    "pythonTests": 5,
+    "build": "passed",
+    "catalogAndProfileChecks": "passed",
+    "workerDryRun": "passed"
+  },
+  "additionalResearch": [
+    {
+      "productId": "bigcommerce",
+      "sourceUrl": "https://www.bigcommerce.com/",
+      "capturedAt": "2025-06-28T19:11:18.000Z",
+      "sha256": "640404cbccdcd1f9fd4c3ba98ee504f5a9ec8466c13b4ccd64b88efc4d89c91a",
+      "field": "Pro payment-processing fee",
+      "values": [
+        "2.05% + $0.49 in mobileList",
+        "2.35% + $0.49 in comparison cells"
+      ],
+      "locator": "offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.pricingPlans[2].mobileList[1]|offset:648727-1042028:$.props.pageProps.__namespaces.pricing.tableData.rows[9].subRows[1].cells[2]",
+      "reason": "Conflicting third-party optional payment rates; not subscription prices."
+    }
+  ]
+}

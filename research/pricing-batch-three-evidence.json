@@ -1,0 +1,255 @@
+[
+  {
+    "productId": "front",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250625074700",
+      "capturedAt": "2025-06-25T07:47:00.000Z",
+      "originalUrl": "https://front.com/",
+      "digest": "XGBN6O32WKA2EO6AR3ZW46A6N4UYGKRY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "front",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250614104719",
+      "capturedAt": "2025-06-14T10:47:19.000Z",
+      "originalUrl": "https://front.com/pricing",
+      "digest": "GDFQ35AUYLOANXWPA7L2JZ4JQR4PYV7T",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-acrobat",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630192921",
+      "capturedAt": "2025-06-30T19:29:21.000Z",
+      "originalUrl": "https://www.adobe.com/acrobat.html",
+      "digest": "KQJELEKO6XJV6AG55DO6LKLEOXYNURWK",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "adobe-acrobat",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250629202237",
+      "capturedAt": "2025-06-29T20:22:37.000Z",
+      "originalUrl": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+      "digest": "G7U4AKRMEBE53KXGHNFJQIAHOSLSJ27S",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "smallpdf",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630043428",
+      "capturedAt": "2025-06-30T04:34:28.000Z",
+      "originalUrl": "https://smallpdf.com/",
+      "digest": "QL2RJC5BHMO7Z7HAEOIGE22GSLRAFUYG",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "smallpdf",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250616011018",
+      "capturedAt": "2025-06-16T01:10:18.000Z",
+      "originalUrl": "https://smallpdf.com/pricing",
+      "digest": "UHG2IWFGVD7QGKBADYDHHQLOFPPXXRZE",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "google-meet",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630235300",
+      "capturedAt": "2025-06-30T23:53:00.000Z",
+      "originalUrl": "https://workspace.google.com/products/meet/",
+      "digest": "JKPSVP4EQAO62PYB4CTFYANZDPDBR3II",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "wix",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630221108",
+      "capturedAt": "2025-06-30T22:11:08.000Z",
+      "originalUrl": "https://www.wix.com/",
+      "digest": "CTW6NEX6YW63CAVRYNVTZZCZEVEWQSJC",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "wix",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250626212650",
+      "capturedAt": "2025-06-26T21:26:50.000Z",
+      "originalUrl": "https://www.wix.com/plans",
+      "digest": "KQT2WZVNQMDHP56ECOIL7QUCUD4OJKRH",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "backblaze-business-backup",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250624162754",
+      "capturedAt": "2025-06-24T16:27:54.000Z",
+      "originalUrl": "https://www.backblaze.com/cloud-backup/business",
+      "digest": "HIDH5QUYQGNCTLK65UMFD6DNREQ6CEPV",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "wetransfer",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630231840",
+      "capturedAt": "2025-06-30T23:18:40.000Z",
+      "originalUrl": "https://wetransfer.com/",
+      "digest": "56GBCRCBNOMUMTZUQXBKCJDNXCM52DFT",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "wetransfer",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250616030427",
+      "capturedAt": "2025-06-16T03:04:27.000Z",
+      "originalUrl": "https://wetransfer.com/pricing",
+      "digest": "NPEHFFMIZJ7NYXXSQQET6PZWECSEJY62",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "cal-com",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630031558",
+      "capturedAt": "2025-06-30T03:15:58.000Z",
+      "originalUrl": "https://cal.com/",
+      "digest": "IO2HDUGLCOQAI7QIOBXHESDQSHF7PZ5A",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "docusign",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250620004550",
+      "capturedAt": "2025-06-20T00:45:50.000Z",
+      "originalUrl": "https://www.docusign.com/products/electronic-signature",
+      "digest": "OEUVGECQOFN5LRNV2TY7P5IO6UL44FVI",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "expensify",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629121129",
+      "capturedAt": "2025-06-29T12:11:29.000Z",
+      "originalUrl": "https://www.expensify.com/",
+      "digest": "IKXD2ZD5FVMOY755AOBK3PRV2PUORCDU",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "spendesk",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250624112401",
+      "capturedAt": "2025-06-24T11:24:01.000Z",
+      "originalUrl": "https://www.spendesk.com/",
+      "digest": "U3KE2P47QSK55P5BTZKJSQCZTKKS4JHA",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "spendesk",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250615001401",
+      "capturedAt": "2025-06-15T00:14:01.000Z",
+      "originalUrl": "https://www.spendesk.com/pricing/",
+      "digest": "PHSFVKXMVDZGG257XAWJIAMH4GVQAOTD",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "spendesk",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250624095454",
+      "capturedAt": "2025-06-24T09:54:54.000Z",
+      "originalUrl": "https://www.spendesk.com/platform/subscription-management/",
+      "digest": "TOTEZA7M3VMNHWT3E5PTMF3SIQ24K4AP",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "docuware",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250625040212",
+      "capturedAt": "2025-06-25T04:02:12.000Z",
+      "originalUrl": "https://start.docuware.com/",
+      "digest": "RIGIJ5PXR7J26YTDJR2JBDEVBK62AS5K",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "m-files",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250622215056",
+      "capturedAt": "2025-06-22T21:50:56.000Z",
+      "originalUrl": "https://www.m-files.com/",
+      "digest": "UVDLBIMIQBB5ITFN3XZE636PFKFGCA4H",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "fireflies",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630090436",
+      "capturedAt": "2025-06-30T09:04:36.000Z",
+      "originalUrl": "https://fireflies.ai/",
+      "digest": "ERCUGHYVTAOXCOV6O6KVQALHZHENJQEO",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "otter",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630174201",
+      "capturedAt": "2025-06-30T17:42:01.000Z",
+      "originalUrl": "https://otter.ai/",
+      "digest": "3KJ2YE6NRKZ2I6ZUCE4ZDPUDFOSLRITN",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "otter",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250622161246",
+      "capturedAt": "2025-06-22T16:12:46.000Z",
+      "originalUrl": "https://otter.ai/pricing",
+      "digest": "SWJQ56ICR6I22MBSBHR3LLMOGB7P3URE",
+      "mimeType": "text/html"
+    }
+  }
+]
