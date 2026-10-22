@@ -1,0 +1,1309 @@
+{
+  "formatVersion": 1,
+  "inputs": {
+    "ids": [
+      "front",
+      "microsoft-outlook",
+      "adobe-acrobat",
+      "smallpdf",
+      "microsoft-teams",
+      "google-meet",
+      "wix",
+      "acronis-cyber-protect",
+      "backblaze-business-backup",
+      "masv",
+      "wetransfer",
+      "cal-com",
+      "docusign",
+      "expensify",
+      "sap-concur",
+      "spendesk",
+      "docuware",
+      "m-files",
+      "fireflies",
+      "otter"
+    ],
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z",
+    "maxCandidates": 2,
+    "catalog": [
+      {
+        "id": "front",
+        "name": "Front",
+        "url": "https://front.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://front.com/pricing"
+        ]
+      },
+      {
+        "id": "microsoft-outlook",
+        "name": "Microsoft Outlook",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/en-us/microsoft-365/outlook"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing"
+        ]
+      },
+      {
+        "id": "adobe-acrobat",
+        "name": "Adobe Acrobat",
+        "url": "https://www.adobe.com/acrobat.html",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/acrobat"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.adobe.com/acrobat/pricing.html"
+        ]
+      },
+      {
+        "id": "smallpdf",
+        "name": "Smallpdf",
+        "url": "https://smallpdf.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://smallpdf.com/pricing"
+        ]
+      },
+      {
+        "id": "microsoft-teams",
+        "name": "Microsoft Teams",
+        "url": "https://www.microsoft.com/microsoft-teams",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/en-US/microsoft-teams",
+          "/microsoft-teams"
+        ],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.microsoft.com/en-US/microsoft-teams/compare-microsoft-teams-business-options"
+        ]
+      },
+      {
+        "id": "google-meet",
+        "name": "Google Meet",
+        "url": "https://workspace.google.com/products/meet/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/meet"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "wix",
+        "name": "Wix",
+        "url": "https://www.wix.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.wix.com/plans"
+        ]
+      },
+      {
+        "id": "acronis-cyber-protect",
+        "name": "Acronis Cyber Protect",
+        "url": "https://www.acronis.com/en/products/cyber-protect/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/en/products/cyber-protect"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "backblaze-business-backup",
+        "name": "Backblaze Business Backup",
+        "url": "https://www.backblaze.com/cloud-backup/business",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/cloud-backup/business"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "masv",
+        "name": "MASV",
+        "url": "https://masv.io/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://masv.io/pricing"
+        ]
+      },
+      {
+        "id": "wetransfer",
+        "name": "WeTransfer",
+        "url": "https://wetransfer.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://wetransfer.com/help-center/subscriptions/plan-limits",
+          "https://wetransfer.com/pricing"
+        ]
+      },
+      {
+        "id": "cal-com",
+        "name": "Cal.com",
+        "url": "https://cal.com",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://cal.com/pricing"
+        ]
+      },
+      {
+        "id": "docusign",
+        "name": "Docusign",
+        "url": "https://www.docusign.com/products/electronic-signature",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/electronic-signature"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "expensify",
+        "name": "Expensify",
+        "url": "https://www.expensify.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.expensify.com/pricing?swcfpc=1"
+        ]
+      },
+      {
+        "id": "sap-concur",
+        "name": "SAP Concur",
+        "url": "https://www.concur.com/products/concur-expense",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [
+          "/products/concur-expense"
+        ],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "spendesk",
+        "name": "Spendesk",
+        "url": "https://www.spendesk.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://www.spendesk.com/pricing/"
+        ]
+      },
+      {
+        "id": "docuware",
+        "name": "DocuWare",
+        "url": "https://start.docuware.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://start.docuware.com/faq/docuware-pricing"
+        ]
+      },
+      {
+        "id": "m-files",
+        "name": "M-Files",
+        "url": "https://www.m-files.com/",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": []
+      },
+      {
+        "id": "fireflies",
+        "name": "Fireflies.ai",
+        "url": "https://fireflies.ai",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://fireflies.ai/pricing"
+        ]
+      },
+      {
+        "id": "otter",
+        "name": "Otter.ai",
+        "url": "https://otter.ai",
+        "kind": "paid",
+        "scope": {
+          "edition": null,
+          "deployment": "unknown"
+        },
+        "productPaths": [],
+        "allowedHosts": [],
+        "pricingHints": [
+          "https://otter.ai/pricing"
+        ]
+      }
+    ]
+  },
+  "extractorVersion": "1.0.0",
+  "baselineFingerprint": "33b4401300b710f2c5c820222a623b8feea1dd1fc7a13469491347992001edae",
+  "startedAt": "2026-10-22T16:39:51.407Z",
+  "finishedAt": "2026-10-22T16:49:02.241Z",
+  "stopped": null,
+  "historicalComplete": false,
+  "automaticallyConfirmed": 0,
+  "summary": {
+    "products": 20,
+    "completed": 20,
+    "statuses": {
+      "extraction_unavailable": 6,
+      "missing_landing": 5,
+      "missing_pricing": 8,
+      "error": 1
+    },
+    "requests": 56,
+    "candidates": 13,
+    "candidateStatuses": {
+      "extraction_unavailable": 7,
+      "missing_pricing": 5,
+      "error": 1
+    },
+    "candidateErrorCodes": {
+      "archive_digest_mismatch": 1
+    },
+    "productsWithCandidateErrors": 1,
+    "productsWithMixedCandidateOutcomes": 2,
+    "observed429": 0,
+    "responsesMissing": 0,
+    "productsWithNonemptyFragments": 0,
+    "nonemptyCandidateExtractions": 0,
+    "rawCandidateFragments": 0,
+    "rawCandidateOffers": 0,
+    "rawProposals": 0,
+    "rawPlans": 0,
+    "rawOffers": 0
+  },
+  "products": [
+    {
+      "id": "front",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T16:39:51.408Z",
+      "nextCheckAt": "2027-04-22T16:39:51.408Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250625074700id_/https://front.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://front.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:10767-10883",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://front.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:10767-10883",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://front.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:10767-10883",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250614104719id_/https://front.com/pricing",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "microsoft-outlook",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T16:40:22.854Z",
+      "nextCheckAt": "2027-04-22T16:40:22.854Z",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "adobe-acrobat",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T16:40:32.920Z",
+      "nextCheckAt": "2027-04-22T16:40:32.920Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630192921id_/https://www.adobe.com/acrobat.html",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "missing_pricing": 1,
+          "error": 1
+        },
+        "errorCodes": {
+          "archive_digest_mismatch": 1
+        },
+        "hasErrors": true,
+        "mixedOutcomes": true
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.adobe.com/acrobat/pricing/students",
+          "label": "students and teachers.",
+          "locator": "offset:10345-10407",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "label": "Acrobat Standard and Acrobat Pro",
+          "locator": "offset:30073-30179",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.adobe.com/acrobat/pricing.html",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.adobe.com/acrobat/pricing/students",
+          "label": "students and teachers.",
+          "locator": "offset:10345-10407",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "label": "Acrobat Standard and Acrobat Pro",
+          "locator": "offset:30073-30179",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.adobe.com/acrobat/pricing/students",
+            "label": "students and teachers.",
+            "locator": "offset:10345-10407",
+            "provenance": "archived-link"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "error",
+          "errorCode": "archive_digest_mismatch",
+          "candidate": {
+            "url": "https://www.adobe.com/acrobat/pricing/compare-versions.html",
+            "label": "Acrobat Standard and Acrobat Pro",
+            "locator": "offset:30073-30179",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250629202237id_/https://www.adobe.com/acrobat/pricing/compare-versions.html",
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "smallpdf",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T16:41:22.415Z",
+      "nextCheckAt": "2027-04-22T16:41:22.415Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630043428id_/https://smallpdf.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://smallpdf.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:239257-239374",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://smallpdf.com/pricing",
+          "label": "Pricing",
+          "locator": "offset:239257-239374",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://smallpdf.com/pricing",
+            "label": "Pricing",
+            "locator": "offset:239257-239374",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250616011018id_/https://smallpdf.com/pricing",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "microsoft-teams",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T16:42:02.934Z",
+      "nextCheckAt": "2027-04-22T16:42:02.934Z",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "google-meet",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T16:42:19.324Z",
+      "nextCheckAt": "2027-04-22T16:42:19.324Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630235300id_/https://workspace.google.com/products/meet/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "wix",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T16:42:34.811Z",
+      "nextCheckAt": "2027-04-22T16:42:34.811Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630221108id_/https://www.wix.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.wix.com/plans",
+          "label": "Pricing",
+          "locator": "offset:959777-959881",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.wix.com/plans",
+          "label": "Pricing",
+          "locator": "offset:959777-959881",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.wix.com/plans",
+            "label": "Pricing",
+            "locator": "offset:959777-959881",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250626212650id_/https://www.wix.com/plans",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "acronis-cyber-protect",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T16:43:14.984Z",
+      "nextCheckAt": "2027-04-22T16:43:14.984Z",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "backblaze-business-backup",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T16:43:22.470Z",
+      "nextCheckAt": "2027-04-22T16:43:22.470Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250624162754id_/https://www.backblaze.com/cloud-backup/business",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "masv",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T16:43:42.989Z",
+      "nextCheckAt": "2027-04-22T16:43:42.989Z",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "wetransfer",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 5,
+      "checkedAt": "2026-10-22T16:43:52.102Z",
+      "nextCheckAt": "2027-04-22T16:43:52.102Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630231840id_/https://wetransfer.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "missing_pricing": 1,
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": true
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://wetransfer.com/help-center/subscriptions/plan-limits",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        },
+        {
+          "url": "https://wetransfer.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:1",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://wetransfer.com/help-center/subscriptions/plan-limits",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        },
+        {
+          "url": "https://wetransfer.com/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:1",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://wetransfer.com/help-center/subscriptions/plan-limits",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://wetransfer.com/pricing",
+            "label": "Current pricing source",
+            "locator": "hint:1",
+            "provenance": "current-source-hint"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250616030427id_/https://wetransfer.com/pricing",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "cal-com",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "error",
+      "stage": "landing-body",
+      "done": true,
+      "errorCode": "archive_too_large",
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T16:44:42.478Z",
+      "nextCheckAt": "2027-04-22T16:44:42.478Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630031558id_/https://cal.com/",
+      "landingIntegrity": null,
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "docusign",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T16:45:03.766Z",
+      "nextCheckAt": "2027-04-22T16:45:03.766Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250620004550id_/https://www.docusign.com/products/electronic-signature",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "expensify",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 3,
+      "checkedAt": "2026-10-22T16:45:22.903Z",
+      "nextCheckAt": "2027-04-22T16:45:22.903Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250629121129id_/https://www.expensify.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "missing_pricing": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.expensify.com/pricing?swcfpc=1",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.expensify.com/pricing?swcfpc=1",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://www.expensify.com/pricing?swcfpc=1",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "sap-concur",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_landing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 1,
+      "checkedAt": "2026-10-22T16:45:51.793Z",
+      "nextCheckAt": "2027-04-22T16:45:51.793Z",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "spendesk",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 6,
+      "checkedAt": "2026-10-22T16:46:02.084Z",
+      "nextCheckAt": "2027-04-22T16:46:02.084Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250624112401id_/https://www.spendesk.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 2,
+        "statuses": {
+          "extraction_unavailable": 2
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://www.spendesk.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:273044-273207",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.spendesk.com/platform/subscription-management/",
+          "label": "Subscription management",
+          "locator": "offset:258257-259001",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://www.spendesk.com/pricing/",
+          "label": "Pricing",
+          "locator": "offset:273044-273207",
+          "provenance": "archived-link"
+        },
+        {
+          "url": "https://www.spendesk.com/platform/subscription-management/",
+          "label": "Subscription management",
+          "locator": "offset:258257-259001",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.spendesk.com/pricing/",
+            "label": "Pricing",
+            "locator": "offset:273044-273207",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250615001401id_/https://www.spendesk.com/pricing/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        },
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://www.spendesk.com/platform/subscription-management/",
+            "label": "Subscription management",
+            "locator": "offset:258257-259001",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250624095454id_/https://www.spendesk.com/platform/subscription-management/",
+          "integrity": "verified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "docuware",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 3,
+      "checkedAt": "2026-10-22T16:47:04.004Z",
+      "nextCheckAt": "2027-04-22T16:47:04.004Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250625040212id_/https://start.docuware.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "missing_pricing": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://start.docuware.com/faq/docuware-pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://start.docuware.com/faq/docuware-pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://start.docuware.com/faq/docuware-pricing",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "m-files",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 2,
+      "checkedAt": "2026-10-22T16:47:32.255Z",
+      "nextCheckAt": "2027-04-22T16:47:32.255Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250622215056id_/https://www.m-files.com/",
+      "landingIntegrity": "verified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 0,
+        "statuses": {},
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [],
+      "rejectedCandidates": [],
+      "candidates": [],
+      "candidateResults": []
+    },
+    {
+      "id": "fireflies",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "missing_pricing",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 3,
+      "checkedAt": "2026-10-22T16:47:53.303Z",
+      "nextCheckAt": "2027-04-22T16:47:53.303Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630090436id_/https://fireflies.ai/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "missing_pricing": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://fireflies.ai/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://fireflies.ai/pricing",
+          "label": "Current pricing source",
+          "locator": "hint:0",
+          "provenance": "current-source-hint"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "missing_pricing",
+          "candidate": {
+            "url": "https://fireflies.ai/pricing",
+            "label": "Current pricing source",
+            "locator": "hint:0",
+            "provenance": "current-source-hint"
+          },
+          "integrity": null,
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    },
+    {
+      "id": "otter",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "status": "extraction_unavailable",
+      "stage": "complete",
+      "done": true,
+      "errorCode": null,
+      "outboundAttempts": 4,
+      "checkedAt": "2026-10-22T16:48:22.293Z",
+      "nextCheckAt": "2027-04-22T16:48:22.293Z",
+      "landingArchiveUrl": "https://web.archive.org/web/20250630174201id_/https://otter.ai/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "cacheHits": 0,
+      "candidateSummary": {
+        "candidates": 1,
+        "statuses": {
+          "extraction_unavailable": 1
+        },
+        "errorCodes": {},
+        "hasErrors": false,
+        "mixedOutcomes": false
+      },
+      "discoveredCandidates": [
+        {
+          "url": "https://otter.ai/pricing",
+          "label": "Pricing",
+          "locator": "offset:36021-36107",
+          "provenance": "archived-link"
+        }
+      ],
+      "rejectedCandidates": [],
+      "candidates": [
+        {
+          "url": "https://otter.ai/pricing",
+          "label": "Pricing",
+          "locator": "offset:36021-36107",
+          "provenance": "archived-link"
+        }
+      ],
+      "candidateResults": [
+        {
+          "status": "extraction_unavailable",
+          "candidate": {
+            "url": "https://otter.ai/pricing",
+            "label": "Pricing",
+            "locator": "offset:36021-36107",
+            "provenance": "archived-link"
+          },
+          "pricingArchiveUrl": "https://web.archive.org/web/20250622161246id_/https://otter.ai/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "rawPlans": 0,
+          "rawOffers": 0
+        }
+      ]
+    }
+  ]
+}
