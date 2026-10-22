@@ -101,6 +101,8 @@ The subsequent [blind twenty-tool verification](../research/pricing-twenty-tool-
 
 [Batch four](../research/pricing-batch-four-verification.md) tests the implemented landing-source, generic structure and discovery improvements on 20 new tools. Three schema-valid proposals remain unready unchanged after independent review: QuickBooks price conflicts, Buffer title contamination and Zapier product-family/qualification gaps. A fourth raw extraction is schema-invalid Toggl duplicate structure. All 23 raw offers were inspected; no new observations were confirmed. The completed replay made zero requests; retained evidence and all six-month reservation gates were checked offline. Cached development results remain separate from fresh performance. [Implementation details](architecture/pricing-extraction-improvements.md).
 
+The [original second-cohort retry](../research/pricing-second-retry-verification.md) applies source-specific recovery to the same cached captures. Five additions—HubSpot Sales, Intercom, Microsoft 365 Business, Webflow Site and Mattermost Professional—bring reviewed coverage to **13 tools, 46 plan records and 66 offer records**. Offers include qualified variants and one explicitly inactive reference price. All observations remain partial; four additions retain legacy integrity qualifications. Five other tools have source-reviewed numerical facts awaiting tested readers. Re-extraction reproduces the original eight pricing/billing outputs unchanged; zero source requests and no discovery-gate changes.
+
 Recheck retained evidence without network requests or changes to discovery gates:
 
 ```sh

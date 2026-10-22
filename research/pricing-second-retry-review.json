@@ -1,0 +1,4999 @@
+{
+  "formatVersion": 1,
+  "mode": "original-second-cohort-source-recovery-review",
+  "sourceRequests": 0,
+  "automaticConfirmations": 0,
+  "summary": {
+    "productsReviewed": 20,
+    "toolsWithSupportedNumericalPrices": 10,
+    "toolsWithCaptureGaps": 7,
+    "toolsWithUnresolvedEmbeddedMonetaryScale": 2,
+    "toolsWithSelectedWrongEditionQuoteOnly": 1
+  },
+  "products": [
+    {
+      "productId": "1password",
+      "classification": "quote_only_selected_product_modules_and_comparison",
+      "finding": "Selected XAM source has three quote-only modules: Enterprise Password Manager, Device Trust, Trelica by1Password. Other selected source is competitor comparison, not a numerical tier ladder.",
+      "sources": [
+        {
+          "role": "landing",
+          "url": "https://1password.com/",
+          "capturedAt": "2025-06-30T19:28:07.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+          "sha256": "3904f60770cfa8dd87448636d6502a54cf7134b7fdf67e032b340955f4025e23",
+          "integrityGrade": "verified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 0,
+          "currentOffers": 0
+        },
+        {
+          "role": "pricing",
+          "url": "https://1password.com/pricing/xam",
+          "capturedAt": "2025-06-19T13:07:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+          "sha256": "c72e8691172c372d3e419d5e7656459824f1928a2b021e95ea636357c950f072",
+          "integrityGrade": "legacy_chunked_unverified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 3,
+          "currentOffers": 3
+        },
+        {
+          "role": "pricing",
+          "url": "https://1password.com/compare/password-manager",
+          "capturedAt": "2025-06-19T13:08:43.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager",
+          "sha256": "23c0182733283eb49a3b54fe16cf3cff8304d3480c05314f68ee4f9a2bf7287d",
+          "integrityGrade": "legacy_chunked_unverified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 0,
+          "currentOffers": 0
+        }
+      ],
+      "supportedOfferFacts": [],
+      "unknowns": [
+        "100+ users support is not a proved minimum purchase.",
+        "No numerical general password manager prices established by selected cached sources."
+      ],
+      "quoteModules": [
+        {
+          "name": "Enterprise Password Manager",
+          "locator": "offset:13056-16554",
+          "amount": null,
+          "status": "quote_only",
+          "scope": "Extended Access Management modules"
+        },
+        {
+          "name": "Device Trust",
+          "locator": "offset:16554-20100",
+          "amount": null,
+          "status": "quote_only",
+          "scope": "Extended Access Management modules"
+        },
+        {
+          "name": "Trelica by1Password",
+          "locator": "offset:20100-23616",
+          "amount": null,
+          "status": "quote_only",
+          "scope": "Extended Access Management modules"
+        }
+      ]
+    },
+    {
+      "productId": "bitwarden",
+      "classification": "inaccessible_source",
+      "finding": "Selected landing rejected for archive digest mismatch; no retained body.",
+      "sources": [
+        {
+          "role": "landing",
+          "url": "https://bitwarden.com/",
+          "capturedAt": "2025-06-30T08:53:12.000Z",
+          "retained": false
+        }
+      ],
+      "supportedOfferFacts": [],
+      "unknowns": [
+        "Content type and presence or absence of prices cannot be inferred from an inaccessible source."
+      ]
+    },
+    {
+      "productId": "confluence",
+      "classification": "embedded_commerce_catalog_parser_gap",
+      "finding": "Paid named tier data and free-edition limits are present in inert inline JSON; visible HTML is title-only. Generic extraction misses embedded catalog.",
+      "sources": [
+        {
+          "role": "landing",
+          "url": "https://www.atlassian.com/software/confluence",
+          "capturedAt": "2025-06-29T16:52:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+          "sha256": "6c442f96565742a81863d81d001ea8c635303f483de96878f64c50428258cc08",
+          "integrityGrade": "verified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 0,
+          "currentOffers": 0
+        },
+        {
+          "role": "pricing",
+          "url": "https://www.atlassian.com/software/confluence/pricing",
+          "capturedAt": "2025-06-28T09:15:12.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+          "sha256": "5bdd8367832627e50cb01bd6a54905a988578cef85725806afe5040b338b0c0c",
+          "integrityGrade": "legacy_chunked_unverified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 0,
+          "currentOffers": 0
+        }
+      ],
+      "supportedOfferFacts": [],
+      "unknowns": [
+        "Major/minor currency-unit scale must be independently established before normalized paid rates.",
+        "Do not mix localizedPriceBlockDropdown deployment/billing with CCP cloud catalog.",
+        "Historical/related plans are not current default offers."
+      ]
+    },
+    {
+      "productId": "jira",
+      "classification": "embedded_commerce_catalog_parser_gap",
+      "finding": "Paid named tier data and free-edition limits are present in inert inline JSON; visible HTML is title-only. Generic extraction misses embedded catalog.",
+      "sources": [
+        {
+          "role": "landing",
+          "url": "https://www.atlassian.com/software/jira",
+          "capturedAt": "2025-06-30T04:04:24.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+          "sha256": "6bdc692d5f503a30f43bb5186c5bed69393becd266148dcfb1e5402b90fe9ffc",
+          "integrityGrade": "verified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 0,
+          "currentOffers": 0
+        },
+        {
+          "role": "pricing",
+          "url": "https://www.atlassian.com/software/jira/pricing",
+          "capturedAt": "2025-06-23T02:36:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+          "sha256": "570fb681f3469bc286e60fef2e79ef1eea7749e91e3af5e6202daab940527e43",
+          "integrityGrade": "legacy_chunked_unverified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 0,
+          "currentOffers": 0
+        }
+      ],
+      "supportedOfferFacts": [],
+      "unknowns": [
+        "Major/minor currency-unit scale must be independently established before normalized paid rates.",
+        "Do not mix localizedPriceBlockDropdown deployment/billing with CCP cloud catalog.",
+        "Historical/related plans are not current default offers."
+      ]
+    },
+    {
+      "productId": "typeform",
+      "classification": "inaccessible_source",
+      "finding": "Original landing query returned HTTP403; no retained HTML.",
+      "sources": [],
+      "supportedOfferFacts": [],
+      "unknowns": [
+        "Content type and presence or absence of prices cannot be inferred from an inaccessible source."
+      ]
+    },
+    {
+      "productId": "miro",
+      "classification": "inaccessible_source",
+      "finding": "Original landing query returned HTTP403; no retained HTML.",
+      "sources": [],
+      "supportedOfferFacts": [],
+      "unknowns": [
+        "Content type and presence or absence of prices cannot be inferred from an inaccessible source."
+      ]
+    },
+    {
+      "productId": "hubspot",
+      "classification": "static_named_numerical_pricing",
+      "finding": "Current generic parser identifies four tiers but duplicates Free and loses Starter amount, module-scoped USD, starting-at and promotional/reference identities.",
+      "sources": [
+        {
+          "role": "landing",
+          "url": "https://www.hubspot.com/products/sales",
+          "capturedAt": "2025-06-27T05:22:08.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+          "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+          "integrityGrade": "verified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 4,
+          "currentOffers": 5
+        },
+        {
+          "role": "pricing",
+          "url": "https://www.hubspot.com/products/sales",
+          "capturedAt": "2025-06-27T05:22:08.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+          "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+          "integrityGrade": "verified",
+          "retained": true,
+          "baselinePlanCount": 0,
+          "currentPlanCount": 4,
+          "currentOffers": 5
+        }
+      ],
+      "supportedOfferFacts": [
+        {
+          "name": "Free",
+          "amount": "0",
+          "currency": "USD",
+          "billingPeriod": "month",
+          "unit": "unknown",
+          "commitment": "unknown",
+          "minimumQuantity": null,
+          "startingAt": null,
+          "identity": "standard",
+          "promotion": null,
+          "tax": "subject to applicable tax",
+          "source": {
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrityGrade": "verified"
+          },
+          "evidence": {
+            "planAmountBillingUnit": "offset:670904-673675",
+            "currencyTaxPromotion": "offset:684671-685155",
+            "referenceMarker": null
+          }
+        },
+        {
+          "name": "Starter",
+          "amount": "15",
+          "currency": "USD",
+          "billingPeriod": "month",
+          "unit": "seat",
+          "commitment": "unknown",
+          "minimumQuantity": null,
+          "startingAt": true,
+          "identity": "promotion",
+          "promotion": {
+            "audience": "new customers only",
+            "endDate": null,
+            "canBeDiscontinued": true
+          },
+          "tax": "subject to applicable tax",
+          "source": {
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrityGrade": "verified"
+          },
+          "evidence": {
+            "planAmountBillingUnit": "offset:673727-677077",
+            "currencyTaxPromotion": "offset:684671-685155",
+            "referenceMarker": null
+          }
+        },
+        {
+          "name": "Starter",
+          "amount": "20",
+          "currency": "USD",
+          "billingPeriod": "month",
+          "unit": "seat",
+          "commitment": "unknown",
+          "minimumQuantity": null,
+          "startingAt": true,
+          "identity": "struck-through-reference",
+          "promotion": null,
+          "tax": "subject to applicable tax",
+          "source": {
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrityGrade": "verified"
+          },
+          "evidence": {
+            "planAmountBillingUnit": "offset:673727-677077",
+            "currencyTaxPromotion": "offset:684671-685155",
+            "referenceMarker": "offset:673727-677077 <s>"
+          }
+        },
+        {
+          "name": "Professional",
+          "amount": "100",
+          "currency": "USD",
+          "billingPeriod": "month",
+          "unit": "seat",
+          "commitment": "unknown",
+          "minimumQuantity": null,
+          "startingAt": true,
+          "identity": "standard",
+          "promotion": null,
+          "tax": "subject to applicable tax",
+          "source": {
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrityGrade": "verified"
+          },
+          "evidence": {
+            "planAmountBillingUnit": "offset:677129-680532",
+            "currencyTaxPromotion": "offset:684671-685155",
+            "referenceMarker": null
+          }
+        },
+        {
+          "name": "Enterprise",
+          "amount": "150",
+          "currency": "USD",
+          "billingPeriod": "month",
+          "unit": "seat",
+          "commitment": "unknown",
+          "minimumQuantity": null,
+          "startingAt": true,
+          "identity": "standard",
+          "promotion": null,
+          "tax": "subject to applicable tax",
+          "source": {
+            "url": "https://www.hubspot.com/products/sales",
+            "capturedAt": "2025-06-27T05:22:08.000Z",
+            "sha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+            "integrityGrade": "verified"
+          },
+          "evidence": {
+            "planAmountBillingUnit": "offset:680584-684016",
+            "currencyTaxPromotion": "offset:684671-685155",
+            "referenceMarker": null
+          }
+        }
+      ],
+      "unknowns": [
+        "Monthly display denominator does not prove month-to-month commitment.",
+        "Free has no explicit per-seat denominator.",
+        "No annual rate, minimum seats or promotion renewal term inferred.",
+        "Landing and pricing roles are the same source record; facts counted once."
+      ]
+    },
+    {
+      "productId": "intercom",
+      "baselineOutcome": "extraction_unavailable",
+      "sources": [
+        {
+          "id": "intercom-0",
+          "role": "landing",
+          "sourceURL": "https://www.intercom.com/",
+          "archiveURL": "https://web.archive.org/web/20250630153335/https://www.intercom.com/",
+          "capturedAt": "2025-06-30T15:33:35.000Z",
+          "sha256": "1bd42cc354f8d7628fdc027725508fb6194ebc3303098a17509670f6c851955f",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+          "actualArchiveDigest": "DS6U6PS7KYM336YXMAHQ3JCVCAZXZKXO"
+        },
+        {
+          "id": "intercom-1",
+          "role": "pricing",
+          "sourceURL": "https://www.intercom.com/pricing",
+          "archiveURL": "https://web.archive.org/web/20250618201242/https://www.intercom.com/pricing",
+          "capturedAt": "2025-06-18T20:12:42.000Z",
+          "sha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+          "actualArchiveDigest": "D7H7C534RUFSPKYXBJMLVTTE3XCMV2KE"
+        }
+      ],
+      "supportedPriceFacts": [
+        {
+          "id": "intercom-fact-1",
+          "scope": {
+            "product": "intercom",
+            "edition": "Customer service platform",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "29",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "seat",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "trial",
+            "durationDays": 14,
+            "paidRenewalAmountPreserved": true
+          },
+          "activeVariant": "annual price displayed",
+          "planName": "Essential",
+          "evidence": {
+            "planName": {
+              "sourceId": "intercom-1",
+              "locator": "offset:54030-54128"
+            },
+            "amount": {
+              "sourceId": "intercom-1",
+              "locator": "offset:55346-55532"
+            },
+            "currency": {
+              "sourceId": "intercom-1",
+              "locator": "offset:95607-95840"
+            },
+            "billingPeriod": {
+              "sourceId": "intercom-1",
+              "locator": "offset:55346-55532"
+            },
+            "commitment": {
+              "sourceId": "intercom-1",
+              "locator": "offset:55346-55532"
+            },
+            "unit": {
+              "sourceId": "intercom-1",
+              "locator": "offset:55346-55532"
+            },
+            "promotion": {
+              "sourceId": "intercom-1",
+              "locator": "offset:53917-58322"
+            }
+          }
+        },
+        {
+          "id": "intercom-fact-2",
+          "scope": {
+            "product": "intercom",
+            "edition": "Customer service platform",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "85",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "seat",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "trial",
+            "durationDays": 14,
+            "paidRenewalAmountPreserved": true
+          },
+          "activeVariant": "annual price displayed",
+          "planName": "Advanced",
+          "evidence": {
+            "planName": {
+              "sourceId": "intercom-1",
+              "locator": "offset:58434-58531"
+            },
+            "amount": {
+              "sourceId": "intercom-1",
+              "locator": "offset:59743-59928"
+            },
+            "currency": {
+              "sourceId": "intercom-1",
+              "locator": "offset:95607-95840"
+            },
+            "billingPeriod": {
+              "sourceId": "intercom-1",
+              "locator": "offset:59743-59928"
+            },
+            "commitment": {
+              "sourceId": "intercom-1",
+              "locator": "offset:59743-59928"
+            },
+            "unit": {
+              "sourceId": "intercom-1",
+              "locator": "offset:59743-59928"
+            },
+            "promotion": {
+              "sourceId": "intercom-1",
+              "locator": "offset:58322-63002"
+            }
+          }
+        },
+        {
+          "id": "intercom-fact-3",
+          "scope": {
+            "product": "intercom",
+            "edition": "Customer service platform",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "132",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "seat",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "trial",
+            "durationDays": 14,
+            "paidRenewalAmountPreserved": true
+          },
+          "activeVariant": "annual price displayed",
+          "planName": "Expert",
+          "evidence": {
+            "planName": {
+              "sourceId": "intercom-1",
+              "locator": "offset:63112-63207"
+            },
+            "amount": {
+              "sourceId": "intercom-1",
+              "locator": "offset:64424-64608"
+            },
+            "currency": {
+              "sourceId": "intercom-1",
+              "locator": "offset:95607-95840"
+            },
+            "billingPeriod": {
+              "sourceId": "intercom-1",
+              "locator": "offset:64424-64608"
+            },
+            "commitment": {
+              "sourceId": "intercom-1",
+              "locator": "offset:64424-64608"
+            },
+            "unit": {
+              "sourceId": "intercom-1",
+              "locator": "offset:64424-64608"
+            },
+            "promotion": {
+              "sourceId": "intercom-1",
+              "locator": "offset:63002-67677"
+            }
+          }
+        },
+        {
+          "id": "intercom-fact-4",
+          "scope": {
+            "product": "intercom",
+            "edition": "Fin with existing external helpdesk",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.99",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "unknown",
+          "commitment": "unknown",
+          "unit": "resolved conversation",
+          "quantity": {
+            "type": "minimum_usage",
+            "amount": "50",
+            "unit": "resolutions per month"
+          },
+          "startingAt": null,
+          "promotion": {
+            "type": "trial",
+            "durationDays": 14
+          },
+          "activeVariant": "unknown",
+          "planName": "Fin AI Agent",
+          "notes": [
+            "Usage charge; separate from seat subscriptions. No recurring time denominator asserted for each resolution."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "intercom-1",
+              "locator": "offset:67677-72755"
+            },
+            "amount": {
+              "sourceId": "intercom-1",
+              "locator": "offset:68498-68537"
+            },
+            "currency": {
+              "sourceId": "intercom-1",
+              "locator": "offset:95607-95840"
+            },
+            "unit": {
+              "sourceId": "intercom-1",
+              "locator": "offset:67677-72755"
+            },
+            "quantity": {
+              "sourceId": "intercom-1",
+              "locator": "offset:67677-72755"
+            },
+            "promotion": {
+              "sourceId": "intercom-1",
+              "locator": "offset:67677-72755"
+            }
+          }
+        },
+        {
+          "id": "intercom-fact-5",
+          "scope": {
+            "product": "intercom",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "99",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": null,
+          "quantity": {
+            "type": "included_usage",
+            "amount": "500",
+            "unit": "messages sent per month"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "unknown",
+          "planName": "Proactive Support Plus",
+          "notes": [
+            "Optional add-on for an existing Intercom plan; excess usage charged separately."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "intercom-1",
+              "locator": "offset:75364-77402"
+            },
+            "amount": {
+              "sourceId": "intercom-1",
+              "locator": "offset:75849-75886"
+            },
+            "currency": {
+              "sourceId": "intercom-1",
+              "locator": "offset:95607-95840"
+            },
+            "billingPeriod": {
+              "sourceId": "intercom-1",
+              "locator": "offset:75809-75929"
+            },
+            "quantity": {
+              "sourceId": "intercom-1",
+              "locator": "offset:75364-77402"
+            }
+          }
+        }
+      ],
+      "remainingGaps": [
+        "Both retained sources have legacy_chunked_unverified integrity; historical confirmation requires explicit acknowledgement.",
+        "Copilot card says29 per agent/month billed annually; FAQ says35 per seat/month without commitment. Preserve as conflicting representations; no single reconciled Copilot offer recovered.",
+        "Fin on Intercom also incurs0.99 per resolution in addition to seat fees; do not treat seat amount as total cost.",
+        "No annual total computed; no tax or geographic eligibility inferred."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [
+          {
+            "sourceId": "intercom-0",
+            "planRecords": 0,
+            "offerRecords": 0,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "unsupported",
+              "flags": []
+            }
+          },
+          {
+            "sourceId": "intercom-1",
+            "planRecords": 0,
+            "offerRecords": 0,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "unsupported",
+              "flags": []
+            }
+          }
+        ],
+        "findings": [
+          "Both landing and pricing still return zero plans despite static named priced cards. All recovered facts require manual extraction."
+        ]
+      }
+    },
+    {
+      "productId": "zendesk",
+      "baselineOutcome": "extraction_unavailable",
+      "sources": [
+        {
+          "id": "zendesk-0",
+          "role": "landing",
+          "sourceURL": "https://www.zendesk.com/",
+          "archiveURL": "https://web.archive.org/web/20250627060351/https://www.zendesk.com/",
+          "capturedAt": "2025-06-27T06:03:51.000Z",
+          "sha256": "443ade4e2974f5128721a22c82fc7c65d731dc2d34e690b16c053b16a9c1cdd2",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "IAGGFWNKY5QOQ6XK7K7FMMRPQUWBRD6U",
+          "actualArchiveDigest": "AG6XAJ7VZBJHMGXWCBQFPYB7GNO6ASSM"
+        },
+        {
+          "id": "zendesk-1",
+          "role": "pricing",
+          "sourceURL": "https://www.zendesk.com/pricing/featured/",
+          "archiveURL": "https://web.archive.org/web/20250625024934/https://www.zendesk.com/pricing/featured/",
+          "capturedAt": "2025-06-25T02:49:34.000Z",
+          "sha256": "010bf11b0bef78b73b6753c594f3d0e51ca489a751f33ad6330004cb9d930306",
+          "integrityGrade": "verified",
+          "expectedArchiveDigest": "FIW2O7DUTUI3Q4DG6JU53UHC6VB3XB4U",
+          "actualArchiveDigest": "FIW2O7DUTUI3Q4DG6JU53UHC6VB3XB4U"
+        },
+        {
+          "id": "zendesk-2",
+          "role": "pricing",
+          "sourceURL": "https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "archiveURL": "https://web.archive.org/web/20250625025002/https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "capturedAt": "2025-06-25T02:50:02.000Z",
+          "sha256": "f674603603d11163d8a937eae79677fa3f918f73ece3ffbb6eb6e68b3a9d11d1",
+          "integrityGrade": "verified",
+          "expectedArchiveDigest": "6ZSO75CR7P2NDKREPO2ULOWVRZY3A34X",
+          "actualArchiveDigest": "6ZSO75CR7P2NDKREPO2ULOWVRZY3A34X"
+        }
+      ],
+      "supportedPriceFacts": [
+        {
+          "id": "zendesk-fact-1",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Support",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "19",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Support Team",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:386026-386284"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388418-388695"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-2",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "55",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Suite Team",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:386284-386540"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388695-388972"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-3",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "115",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Suite Professional",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:386540-387005"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388972-389270"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-4",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "169",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Suite Enterprise",
+          "notes": [
+            "Hidden hero115 is not treated as an active Enterprise rate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:387005-387267"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389270-389548"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:388175-388418"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-5",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Support",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "25",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "monthly",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Support Team",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:386026-386284"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389974-390251"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-6",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "69",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "monthly",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Suite Team",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:386284-386540"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:390251-390528"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-7",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "149",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "monthly",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Suite Professional",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:386540-387005"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:390528-390826"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-8",
+          "scope": {
+            "product": "zendesk",
+            "edition": "Suite",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "219",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "monthly",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit comparison-table billing alternative",
+          "planName": "Suite Enterprise",
+          "notes": [
+            "Hidden hero115 is not treated as an active Enterprise rate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:387005-387267"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:390826-391104"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:389730-389974"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-9",
+          "scope": {
+            "product": "zendesk",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "50",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "static add-on price",
+          "planName": "Copilot",
+          "notes": [
+            "Only Professional and higher plan levels."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:342498-349512"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:343008-343113"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:342498-349512"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:342498-349512"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:342498-349512"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-10",
+          "scope": {
+            "product": "zendesk",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "25",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "static add-on price",
+          "planName": "Zendesk Workforce Management",
+          "notes": [
+            "Available for all Zendesk plans."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:349650-356508"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:350173-350253"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:349650-356508"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:349650-356508"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:349650-356508"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-11",
+          "scope": {
+            "product": "zendesk",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "35",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "static add-on price",
+          "planName": "Zendesk Quality Assurance",
+          "notes": [
+            "Available for all Zendesk plans."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:356784-364632"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:357318-357398"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:356784-364632"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:356784-364632"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:356784-364632"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-12",
+          "scope": {
+            "product": "zendesk",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "50",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "static add-on price",
+          "planName": "Zendesk Workforce Engagement Bundle",
+          "notes": [
+            "Separate discounted WFM and QA bundle."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:364770-366189"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:365317-365397"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:364770-366189"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:364770-366189"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:364770-366189"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-13",
+          "scope": {
+            "product": "zendesk",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "50",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "static add-on price",
+          "planName": "Advanced Data Privacy and Protection",
+          "notes": [],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:366465-373539"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:366997-367077"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:366465-373539"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:366465-373539"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:366465-373539"
+            }
+          }
+        },
+        {
+          "id": "zendesk-fact-14",
+          "scope": {
+            "product": "zendesk",
+            "edition": null,
+            "deployment": "unknown"
+          },
+          "kind": "addon",
+          "amount": "50",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "agent",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "static add-on price",
+          "planName": "Contact Center",
+          "notes": [
+            "Available on all Suite plans; additional AWS costs may apply."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:373677-381922"
+            },
+            "amount": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:374197-374277"
+            },
+            "billingPeriod": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:373677-381922"
+            },
+            "commitment": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:373677-381922"
+            },
+            "unit": {
+              "sourceId": "zendesk-1",
+              "locator": "offset:373677-381922"
+            }
+          }
+        }
+      ],
+      "remainingGaps": [
+        "Dollar symbol does not independently establish ISO currency in reviewed local price evidence; currency remains unknown.",
+        "Navigation Contact is not a subscription tier.",
+        "Suite Enterprise hidden hero115 excluded; comparison-table169 annual-term and219 monthly-term retained.",
+        "Broader table usage overages and additional SKUs not exhaustively recovered."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [
+          {
+            "sourceId": "zendesk-0",
+            "planRecords": 1,
+            "offerRecords": 1,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "quote_only",
+              "flags": [
+                "unknown-billing",
+                "unknown-commitment",
+                "unknown-unit",
+                "variant-state-unknown"
+              ]
+            }
+          },
+          {
+            "sourceId": "zendesk-1",
+            "planRecords": 8,
+            "offerRecords": 8,
+            "numericOffers": 7,
+            "diagnostics": {
+              "classification": "static_pricing",
+              "flags": [
+                "unknown-currency",
+                "unknown-billing",
+                "unknown-commitment",
+                "unknown-unit",
+                "variant-state-unknown"
+              ]
+            }
+          },
+          {
+            "sourceId": "zendesk-2",
+            "planRecords": 0,
+            "offerRecords": 0,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "unsupported",
+              "flags": []
+            }
+          }
+        ],
+        "findings": [
+          "Landing and pricing produce false Contact plan from navigation.",
+          "Pricing recovers Support Team19 with correct agent/month/annual terms, but misses three core Suite plans and the monthly-term row.",
+          "Six correctly priced add-ons are incorrectly typed as standalone plans; preserve addon kind and eligibility.",
+          "Accessibility Plan source has no pricing and remains excluded."
+        ]
+      }
+    },
+    {
+      "productId": "mailchimp",
+      "baselineOutcome": "error",
+      "sources": [
+        {
+          "id": "mailchimp-0",
+          "role": "landing",
+          "sourceURL": "https://mailchimp.com/",
+          "archiveURL": "https://web.archive.org/web/20250630163644/https://mailchimp.com/",
+          "capturedAt": "2025-06-30T16:36:44.000Z",
+          "sha256": "e7da965f8d1ffc9e1d2c9e3e8a922d8dae54a6181b811c859ea787d369317e5d",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "RQH2T3ZXCZ5Z7DJGDFMA3S73Z5VST3FY",
+          "actualArchiveDigest": "2QYSBREZ5XH64HHULEYKL5CBV3YF6C2H"
+        },
+        {
+          "id": "mailchimp-1",
+          "role": "pricing",
+          "sourceURL": "https://mailchimp.com/pricing/marketing/",
+          "archiveURL": "https://web.archive.org/web/20250630162355/https://mailchimp.com/pricing/marketing/",
+          "capturedAt": "2025-06-30T16:23:55.000Z",
+          "sha256": "f304740b33a2f1c2d96b0bd872b4c036feac23709145d4a44fa410557abfaf8c",
+          "integrityGrade": "verified",
+          "expectedArchiveDigest": "IPQZ2XQIFDYH7JHTOYXRQFBYJNI3TWJU",
+          "actualArchiveDigest": "IPQZ2XQIFDYH7JHTOYXRQFBYJNI3TWJU"
+        },
+        {
+          "id": "mailchimp-2",
+          "role": "pricing",
+          "sourceURL": "https://mailchimp.com/pricing/marketing/compare-plans/",
+          "archiveURL": "https://web.archive.org/web/20250629171204/https://mailchimp.com/pricing/marketing/compare-plans/",
+          "capturedAt": "2025-06-29T17:12:04.000Z",
+          "sha256": "fe9b50b41704ab9cc89e410f951d85b45bec88bbf77b39e2aaf9ca994b5d2cdf",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "CSS7EJ2SJVYBLOA3DW27VTL7ALUI5KQ5",
+          "actualArchiveDigest": "RJK3KJNWQ2GWMQVEHM43ZXPR2QM5KJZR"
+        }
+      ],
+      "supportedPriceFacts": [
+        {
+          "id": "mailchimp-fact-1",
+          "scope": {
+            "product": "mailchimp",
+            "edition": "Email Marketing",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "350",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": null,
+          "quantity": {
+            "type": "price_at_contacts",
+            "amount": "10000",
+            "unit": "contacts"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "explicit starting-price comparison row",
+          "planName": "Premium",
+          "notes": [
+            "Starting price and displayed contact basis; not a per-contact unit rate or minimum-seat requirement.",
+            "Applicable taxes and fees excluded per pricing footnote; free trials and15percent promotions are separate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:321374-324300"
+            },
+            "amount": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325582-325892"
+            },
+            "currency": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325582-325892"
+            },
+            "billingPeriod": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325582-325892"
+            },
+            "quantity": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325582-325892"
+            },
+            "startingAt": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:324605-325576"
+            }
+          }
+        },
+        {
+          "id": "mailchimp-fact-2",
+          "scope": {
+            "product": "mailchimp",
+            "edition": "Email Marketing",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "20",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": null,
+          "quantity": {
+            "type": "price_at_contacts",
+            "amount": "500",
+            "unit": "contacts"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "explicit starting-price comparison row",
+          "planName": "Standard",
+          "notes": [
+            "Starting price and displayed contact basis; not a per-contact unit rate or minimum-seat requirement.",
+            "Applicable taxes and fees excluded per pricing footnote; free trials and15percent promotions are separate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:321374-324300"
+            },
+            "amount": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325894-326197"
+            },
+            "currency": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325894-326197"
+            },
+            "billingPeriod": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325894-326197"
+            },
+            "quantity": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:325894-326197"
+            },
+            "startingAt": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:324605-325576"
+            }
+          }
+        },
+        {
+          "id": "mailchimp-fact-3",
+          "scope": {
+            "product": "mailchimp",
+            "edition": "Email Marketing",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "13",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": null,
+          "quantity": {
+            "type": "price_at_contacts",
+            "amount": "500",
+            "unit": "contacts"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "explicit starting-price comparison row",
+          "planName": "Essentials",
+          "notes": [
+            "Starting price and displayed contact basis; not a per-contact unit rate or minimum-seat requirement.",
+            "Applicable taxes and fees excluded per pricing footnote; free trials and15percent promotions are separate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:321374-324300"
+            },
+            "amount": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326199-326477"
+            },
+            "currency": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326199-326477"
+            },
+            "billingPeriod": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326199-326477"
+            },
+            "quantity": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326199-326477"
+            },
+            "startingAt": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:324605-325576"
+            }
+          }
+        },
+        {
+          "id": "mailchimp-fact-4",
+          "scope": {
+            "product": "mailchimp",
+            "edition": "Email Marketing",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "0",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": null,
+          "quantity": {
+            "type": "maximum_contacts",
+            "amount": "500",
+            "unit": "contacts"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "explicit starting-price comparison row",
+          "planName": "Free",
+          "notes": [
+            "Starting price and displayed contact basis; not a per-contact unit rate or minimum-seat requirement.",
+            "Applicable taxes and fees excluded per pricing footnote; free trials and15percent promotions are separate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:321374-324300"
+            },
+            "amount": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326479-326762"
+            },
+            "currency": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326479-326762"
+            },
+            "billingPeriod": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326479-326762"
+            },
+            "quantity": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:326479-326762"
+            },
+            "startingAt": {
+              "sourceId": "mailchimp-1",
+              "locator": "offset:324605-325576"
+            }
+          }
+        }
+      ],
+      "remainingGaps": [
+        "Live contact/currency selectors, trial CTAs, hidden responsive copies and15percent promotional alternatives are not reconciled into one active purchase state.",
+        "Commitment unknown; monthly price does not prove a monthly contract.",
+        "Exact overage rates and contact-volume tiers not exhaustively recovered.",
+        "Legacy landing/comparison body grades remain qualified even though marketing pricing page digest is verified."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [
+          {
+            "sourceId": "mailchimp-0",
+            "planRecords": 2,
+            "offerRecords": 3,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "partial_pricing",
+              "flags": [
+                "unknown-billing",
+                "unknown-commitment",
+                "unknown-unit",
+                "duplicate-plan-names",
+                "partial-named-structure"
+              ]
+            }
+          },
+          {
+            "sourceId": "mailchimp-1",
+            "planRecords": 2,
+            "offerRecords": 3,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "partial_pricing",
+              "flags": [
+                "unknown-billing",
+                "unknown-commitment",
+                "unknown-unit",
+                "duplicate-plan-names",
+                "partial-named-structure"
+              ]
+            }
+          },
+          {
+            "sourceId": "mailchimp-2",
+            "planRecords": 8,
+            "offerRecords": 14,
+            "numericOffers": 3,
+            "diagnostics": {
+              "classification": "partial_pricing",
+              "flags": [
+                "unknown-currency",
+                "unknown-billing",
+                "unknown-commitment",
+                "unknown-unit",
+                "variant-state-unknown",
+                "duplicate-plan-names",
+                "partial-named-structure"
+              ]
+            }
+          }
+        ],
+        "findings": [
+          "Current parser still returns duplicated lowercase standard/premium/essential CTA fragments rather than the authoritative starting-price row.",
+          "Free Trial amount0 is duration-limited trial evidence and must not become the free subscription price; actual Free0 comes from its own table column.",
+          "No numeric paid starting offer recovered automatically on the verified marketing pricing page."
+        ]
+      }
+    },
+    {
+      "productId": "loom",
+      "baselineOutcome": "error",
+      "sources": [],
+      "supportedPriceFacts": [],
+      "remainingGaps": [
+        "Original landing index request returned HTTP403; no landing or pricing bytes retained. No offline numeric recovery possible."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [],
+        "findings": [
+          "No retained source; no parser success or failure inferred."
+        ]
+      }
+    },
+    {
+      "productId": "datadog",
+      "baselineOutcome": "extraction_unavailable",
+      "sources": [
+        {
+          "id": "datadog-0",
+          "role": "landing",
+          "sourceURL": "https://www.datadoghq.com/",
+          "archiveURL": "https://web.archive.org/web/20250630172700/https://www.datadoghq.com/",
+          "capturedAt": "2025-06-30T17:27:00.000Z",
+          "sha256": "72cd5968b58e1607770344c31c615da456a3e302096662ef393d8408d66ae96a",
+          "integrityGrade": "verified",
+          "expectedArchiveDigest": "DCOLI4R5TB5EMDOYTQVI744GRUDTQB4F",
+          "actualArchiveDigest": "DCOLI4R5TB5EMDOYTQVI744GRUDTQB4F"
+        },
+        {
+          "id": "datadog-1",
+          "role": "pricing",
+          "sourceURL": "https://www.datadoghq.com/pricing/",
+          "archiveURL": "https://web.archive.org/web/20250618082912/https://www.datadoghq.com/pricing/",
+          "capturedAt": "2025-06-18T08:29:12.000Z",
+          "sha256": "b2531ed5123f2d117be15034edfb68a96e4f70ed3b82c0f3c3c9013af6239dbc",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "SPCBNWLP53NM2YAKOWSANEEMHRKLKGPL",
+          "actualArchiveDigest": "XC3LPM3MPJ3DW6KDMD44TBXKAM7XDWFR"
+        }
+      ],
+      "supportedPriceFacts": [
+        {
+          "id": "datadog-fact-1",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "15",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "Pro",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199499-199735"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199849-200172"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199849-200172"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:200555-200824"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199849-200172"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199427-201051"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-2",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "18",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "Pro",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199499-199735"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:200555-200824"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199849-200172"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199849-200172"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:199427-201051"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-3",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "23",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "Enterprise",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201319-201569"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201683-202012"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201683-202012"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:202301-202576"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201683-202012"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201247-202803"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-4",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "27",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "Enterprise",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201319-201569"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:202301-202576"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201683-202012"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201683-202012"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:201247-202803"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-5",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "22",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "DevSecOps Pro",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204360-204618"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204732-205073"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204732-205073"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:206024-206311"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204732-205073"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204288-206538"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-6",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "27",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "DevSecOps Pro",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204360-204618"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:206024-206311"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204732-205073"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204732-205073"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:204288-206538"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-7",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "34",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "DevSecOps Enterprise",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:206812-207084"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:207198-207539"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:207198-207539"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:208197-208484"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:207198-207539"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:206740-208711"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-8",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "41",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "DevSecOps Enterprise",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:206812-207084"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:208197-208484"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:207198-207539"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:207198-207539"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:206740-208711"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-9",
+          "scope": {
+            "product": "datadog",
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "31",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "APM",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268265-268501"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268615-268938"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268615-268938"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:269660-269929"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268615-268938"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268193-270156"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-10",
+          "scope": {
+            "product": "datadog",
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "36",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "APM",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268265-268501"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:269660-269929"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268615-268938"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268615-268938"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:268193-270156"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-11",
+          "scope": {
+            "product": "datadog",
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "35",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "APM Pro",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270424-270670"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270784-271113"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270784-271113"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:271665-271940"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270784-271113"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270352-272167"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-12",
+          "scope": {
+            "product": "datadog",
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "42",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "APM Pro",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270424-270670"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:271665-271940"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270784-271113"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270784-271113"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:270352-272167"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-13",
+          "scope": {
+            "product": "datadog",
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "40",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "APM Enterprise",
+          "notes": [
+            "Displayed rate with annual billing; no annual total calculated."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272435-272695"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272809-273138"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272809-273138"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:273826-274101"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272809-273138"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272363-274328"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-14",
+          "scope": {
+            "product": "datadog",
+            "edition": "Application Performance Monitoring",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "48",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "host",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "APM Enterprise",
+          "notes": [
+            "Explicit on-demand alternative; no annual commitment or year-denominated price asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272435-272695"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:273826-274101"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272809-273138"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272809-273138"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:272363-274328"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-15",
+          "scope": {
+            "product": "datadog",
+            "edition": "Infrastructure",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "0",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "unknown",
+          "commitment": "unknown",
+          "unit": null,
+          "quantity": {
+            "type": "maximum_hosts",
+            "amount": "5",
+            "unit": "hosts"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "unknown; region/category scripts not executed",
+          "planName": "Free",
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:197966-198204"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:198318-198627"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:197894-199234"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-16",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.10",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "ingested or scanned GB",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Ingest",
+          "notes": [
+            "Annual-billing rate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:368787-369029"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:369143-369491"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:369143-369491"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:370161-370536"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:369143-369491"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:368699-370763"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-17",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.10",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "ingested or scanned GB",
+          "quantity": null,
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Ingest",
+          "notes": [
+            "On-demand alternative; no annual commitment asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:368787-369029"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:370161-370536"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:369143-369491"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:369143-369491"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:368699-370763"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-18",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "1.70",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "million log events",
+          "quantity": {
+            "type": "retention",
+            "amount": "15",
+            "unit": "days"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Standard Indexing",
+          "notes": [
+            "Annual-billing rate.",
+            "Only displayed15day retention option recovered."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:372074-372340"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:373742-374129"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:373742-374129"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:374905-375224"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:373742-374129"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:371986-375573"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:371986-375573"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-19",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "2.55",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "million log events",
+          "quantity": {
+            "type": "retention",
+            "amount": "15",
+            "unit": "days"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Standard Indexing",
+          "notes": [
+            "On-demand alternative; no annual commitment asserted.",
+            "Only displayed15day retention option recovered."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:372074-372340"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:374905-375224"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:373742-374129"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:373742-374129"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:371986-375573"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:371986-375573"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-20",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.05",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "million events stored",
+          "quantity": {
+            "type": "retention_range",
+            "minimum": "1",
+            "maximum": "15",
+            "unit": "months"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Flex Storage",
+          "notes": [
+            "Annual-billing rate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378577-378833"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378947-379306"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378947-379306"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:379867-380203"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378947-379306"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378489-380430"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378489-380430"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-21",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.075",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "million events stored",
+          "quantity": {
+            "type": "retention_range",
+            "minimum": "1",
+            "maximum": "15",
+            "unit": "months"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Flex Storage",
+          "notes": [
+            "On-demand alternative; no annual commitment asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378577-378833"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:379867-380203"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378947-379306"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378947-379306"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378489-380430"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:378489-380430"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-22",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.60",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "million events stored",
+          "quantity": {
+            "type": "retention_options",
+            "values": [
+              "6",
+              "12",
+              "15"
+            ],
+            "unit": "months"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Flex Logs Starter",
+          "notes": [
+            "Annual-billing rate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385114-385380"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385494-385855"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385494-385855"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:386501-386853"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385494-385855"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385026-387080"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385026-387080"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-23",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.90",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "million events stored",
+          "quantity": {
+            "type": "retention_options",
+            "values": [
+              "6",
+              "12",
+              "15"
+            ],
+            "unit": "months"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "Flex Logs Starter",
+          "notes": [
+            "On-demand alternative; no annual commitment asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385114-385380"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:386501-386853"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385494-385855"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385494-385855"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385026-387080"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:385026-387080"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-24",
+          "scope": {
+            "product": "datadog",
+            "edition": "LLM Observability",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "8",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "10000 monitored LLM requests",
+          "quantity": {
+            "type": "minimum_usage",
+            "amount": "100000",
+            "unit": "LLM requests per month"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "LLM Observability",
+          "notes": [
+            "Annual-billing rate."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:409816-422231"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:413129-413495"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:413129-413495"
+            },
+            "commitment": {
+              "sourceId": "datadog-1",
+              "locator": "offset:414086-414356"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:413129-413495"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:412986-414493"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:412986-414493"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-25",
+          "scope": {
+            "product": "datadog",
+            "edition": "LLM Observability",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "12",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "10000 monitored LLM requests",
+          "quantity": {
+            "type": "minimum_usage",
+            "amount": "100000",
+            "unit": "LLM requests per month"
+          },
+          "startingAt": true,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/retention scripts not executed",
+          "planName": "LLM Observability",
+          "notes": [
+            "On-demand alternative; no annual commitment asserted."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:409816-422231"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:414086-414356"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:413129-413495"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:413129-413495"
+            },
+            "quantity": {
+              "sourceId": "datadog-1",
+              "locator": "offset:412986-414493"
+            },
+            "startingAt": {
+              "sourceId": "datadog-1",
+              "locator": "offset:412986-414493"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-26",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.05",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "instance-hour",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/compute-size scripts not executed",
+          "planName": "Flex Compute",
+          "notes": [
+            "Displayed compute-size rate; no annual commitment inferred from other cards."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:381717-381973"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:382953-383335"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:382953-383335"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:382953-383335"
+            }
+          }
+        },
+        {
+          "id": "datadog-fact-27",
+          "scope": {
+            "product": "datadog",
+            "edition": "Log Management",
+            "deployment": "unknown"
+          },
+          "kind": "usage",
+          "amount": "0.25",
+          "currency": null,
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "GB outbound per destination",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "unknown; region/category/compute-size scripts not executed",
+          "planName": "Log Forwarding to Custom Destinations",
+          "notes": [
+            "Uncompressed outbound data per destination; no annual commitment inferred."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "datadog-1",
+              "locator": "offset:387712-388018"
+            },
+            "amount": {
+              "sourceId": "datadog-1",
+              "locator": "offset:388132-388475"
+            },
+            "billingPeriod": {
+              "sourceId": "datadog-1",
+              "locator": "offset:388132-388475"
+            },
+            "unit": {
+              "sourceId": "datadog-1",
+              "locator": "offset:388132-388475"
+            }
+          }
+        }
+      ],
+      "remainingGaps": [
+        "Legacy-chunked archive digest unverified; no facts automatically confirmed.",
+        "Dollar-only static rates retain currency unknown and region/active-variant unknown.",
+        "Many additional product-specific prices exist on the large page; this is a bounded recovery of Infrastructure, APM, Log Management and LLM cards, not a complete Datadog price inventory.",
+        "Custom quote cards, unnamed placeholder card and unsupported compute/retention selector variants excluded."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [
+          {
+            "sourceId": "datadog-0",
+            "planRecords": 0,
+            "offerRecords": 0,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "unsupported",
+              "flags": []
+            }
+          },
+          {
+            "sourceId": "datadog-1",
+            "planRecords": 4,
+            "offerRecords": 30,
+            "numericOffers": 29,
+            "diagnostics": {
+              "classification": "partial_pricing",
+              "flags": [
+                "unknown-currency",
+                "unknown-billing",
+                "unknown-unit",
+                "partial-named-structure"
+              ]
+            }
+          }
+        ],
+        "findings": [
+          "Four broad product groups flatten30 raw offers, combining different named editions and usage SKUs.",
+          "On-demand18/27/41/36/42/48 and several log alternatives are incorrectly labeled year billing and/or annual commitment; these are alternatives to annual billing, not annual-total prices.",
+          "Infrastructure name erases Pro/Enterprise/DevSecOps distinctions; APM group erases APM/APMPro/APMEnterprise distinctions.",
+          "Unnamed empty card contributes an unbound duplicate27; exclude it.",
+          "Unit/minimum/retention/starting-price qualifications remain absent in typed fields despite readable source; LLM8/12 requires10k request rate unit and100k monthly minimum.",
+          "Raw serialized source representations do not establish active region/category state."
+        ]
+      }
+    },
+    {
+      "productId": "sentry",
+      "baselineOutcome": "missing_landing",
+      "sources": [],
+      "supportedPriceFacts": [],
+      "remainingGaps": [
+        "Original exact landing index returned no eligible June2025 capture. No landing or pricing bytes retained. No offline numeric recovery possible."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [],
+        "findings": [
+          "No retained source; no parser success or failure inferred."
+        ]
+      }
+    },
+    {
+      "productId": "google-workspace",
+      "baselineOutcome": "extraction_unavailable",
+      "sources": [
+        {
+          "id": "google-workspace-0",
+          "role": "landing",
+          "sourceURL": "https://workspace.google.com/",
+          "archiveURL": "https://web.archive.org/web/20250630231325/https://workspace.google.com/",
+          "capturedAt": "2025-06-30T23:13:25.000Z",
+          "sha256": "1bf9bbd6e0d2df1ffd40ecf6634948d9b472820091d0d96501614d14e642f6e2",
+          "integrityGrade": "verified",
+          "expectedArchiveDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ",
+          "actualArchiveDigest": "7W2CG5JPZABIJ5KMKEZMVNNNC6DQSZTZ"
+        },
+        {
+          "id": "google-workspace-1",
+          "role": "pricing",
+          "sourceURL": "https://workspace.google.com/pricing.html",
+          "archiveURL": "https://web.archive.org/web/20250630182909/https://workspace.google.com/pricing.html",
+          "capturedAt": "2025-06-30T18:29:09.000Z",
+          "sha256": "1d6239e17a2f2d0e643461aec485fb2b470004badefd1081c3918639621b964f",
+          "integrityGrade": "legacy_chunked_unverified",
+          "expectedArchiveDigest": "ZGQKYHQTTUDLVQA4TU34BWIKMZFP7YQY",
+          "actualArchiveDigest": "BEBX74PMMWMXXZ53UXTYBFDSOXVWTBCV"
+        }
+      ],
+      "supportedPriceFacts": [
+        {
+          "id": "google-workspace-fact-1",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Starter",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "7",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": {
+            "type": "maximum_users",
+            "amount": "300",
+            "unit": "users"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit alternative billing terms",
+          "planName": "Starter",
+          "notes": [
+            "Annual term price is a monthly per-user rate, not annual total. Billed-monthly alternative does not independently prove contract duration."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276068-276136"
+            },
+            "amount": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276364-276379"
+            },
+            "currency": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276385-276537"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276916-276964"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276916-276964"
+            },
+            "unit": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276916-276964"
+            },
+            "quantity": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:370077-370353"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-2",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Starter",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "8.40",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "user",
+          "quantity": {
+            "type": "maximum_users",
+            "amount": "300",
+            "unit": "users"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit alternative billing terms",
+          "planName": "Starter",
+          "notes": [
+            "Annual term price is a monthly per-user rate, not annual total. Billed-monthly alternative does not independently prove contract duration."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276068-276136"
+            },
+            "amount": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:277313-277331"
+            },
+            "currency": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276385-276537"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276916-276964"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:277307-277373"
+            },
+            "unit": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:276916-276964"
+            },
+            "quantity": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:370077-370353"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-3",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Standard",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "14",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": {
+            "type": "maximum_users",
+            "amount": "300",
+            "unit": "users"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit alternative billing terms",
+          "planName": "Standard",
+          "notes": [
+            "Annual term price is a monthly per-user rate, not annual total. Billed-monthly alternative does not independently prove contract duration."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:282741-282810"
+            },
+            "amount": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283038-283054"
+            },
+            "currency": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283060-283212"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283591-283639"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283591-283639"
+            },
+            "unit": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283591-283639"
+            },
+            "quantity": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:370077-370353"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-4",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Standard",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "16.80",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "user",
+          "quantity": {
+            "type": "maximum_users",
+            "amount": "300",
+            "unit": "users"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit alternative billing terms",
+          "planName": "Standard",
+          "notes": [
+            "Annual term price is a monthly per-user rate, not annual total. Billed-monthly alternative does not independently prove contract duration."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:282741-282810"
+            },
+            "amount": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283989-284008"
+            },
+            "currency": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283060-283212"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283591-283639"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283983-284067"
+            },
+            "unit": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:283591-283639"
+            },
+            "quantity": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:370077-370353"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-5",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Plus",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "22",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": {
+            "type": "maximum_users",
+            "amount": "300",
+            "unit": "users"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit alternative billing terms",
+          "planName": "Plus",
+          "notes": [
+            "Annual term price is a monthly per-user rate, not annual total. Billed-monthly alternative does not independently prove contract duration."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:291295-291360"
+            },
+            "amount": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:291588-291604"
+            },
+            "currency": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:291610-291762"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292141-292189"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292141-292189"
+            },
+            "unit": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292141-292189"
+            },
+            "quantity": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:370077-370353"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-6",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Plus",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "26.40",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "unknown",
+          "unit": "user",
+          "quantity": {
+            "type": "maximum_users",
+            "amount": "300",
+            "unit": "users"
+          },
+          "startingAt": null,
+          "promotion": null,
+          "activeVariant": "explicit alternative billing terms",
+          "planName": "Plus",
+          "notes": [
+            "Annual term price is a monthly per-user rate, not annual total. Billed-monthly alternative does not independently prove contract duration."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:291295-291360"
+            },
+            "amount": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292535-292554"
+            },
+            "currency": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:291610-291762"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292141-292189"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292529-292613"
+            },
+            "unit": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:292141-292189"
+            },
+            "quantity": {
+              "sourceId": "google-workspace-0",
+              "locator": "offset:370077-370353"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-7",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Starter",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "3.50",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "promotional",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "7",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Starter",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496454-496587"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-8",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Starter",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "7",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "undiscounted_comparison",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "7",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Starter",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496454-496587"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496435-496663"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:496282-499798"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-9",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Standard",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "7",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "promotional",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "14",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Standard",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499971-500102"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-10",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Standard",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "14",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "undiscounted_comparison",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "50",
+            "baseAmount": "14",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Standard",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499971-500102"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499952-500178"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:499798-504198"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-11",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Plus",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "14.67",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "promotional",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "33",
+            "baseAmount": "22",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Plus",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504367-504502"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            }
+          }
+        },
+        {
+          "id": "google-workspace-fact-12",
+          "scope": {
+            "product": "google-workspace",
+            "edition": "Business Plus",
+            "deployment": "unknown"
+          },
+          "kind": "plan",
+          "amount": "22",
+          "currency": "USD",
+          "currencySymbol": "$",
+          "billingPeriod": "month",
+          "commitment": "annual",
+          "unit": "user",
+          "quantity": null,
+          "startingAt": null,
+          "promotion": {
+            "type": "undiscounted_comparison",
+            "durationMonths": 3,
+            "advertisedDiscountPercent": "33",
+            "baseAmount": "22",
+            "eligibility": "Offer valid for limited time; checkout applies discount; full eligibility not established"
+          },
+          "activeVariant": "source annual option displayed; scripts not executed",
+          "planName": "Plus",
+          "notes": [
+            "Displayed annual1year commitment section bills monthly. Broken Allprices0.0USD placeholder is currency context, never a free tier.",
+            "Different source capture from the verified landing; not an unqualified cross-date price merge."
+          ],
+          "evidence": {
+            "planName": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            },
+            "amount": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504367-504502"
+            },
+            "currency": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:513517-513546"
+            },
+            "billingPeriod": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "commitment": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:495297-496256"
+            },
+            "unit": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504348-504578"
+            },
+            "promotion": {
+              "sourceId": "google-workspace-1",
+              "locator": "offset:504198-507696"
+            }
+          }
+        }
+      ],
+      "remainingGaps": [
+        "Three responsive duplicate landing plan sets must be reconciled by explicit repeated structure, not counted as12 distinct plans.",
+        "Pricing page promotional amounts have legacy_chunked_unverified integrity; landing6nonzero offers digestverified.",
+        "Full promotion eligibility and active checkout state unavailable.",
+        "Enterprise is quote-only; no numeric starting rate inferred from unrelated embedded arrays or placeholder0.0."
+      ],
+      "beforeRecoveryParserSemantics": {
+        "sourceResults": [
+          {
+            "sourceId": "google-workspace-0",
+            "planRecords": 12,
+            "offerRecords": 21,
+            "numericOffers": 18,
+            "diagnostics": {
+              "classification": "static_pricing",
+              "flags": [
+                "unknown-currency",
+                "unknown-billing",
+                "unknown-commitment",
+                "unknown-unit",
+                "duplicate-plan-names"
+              ]
+            }
+          },
+          {
+            "sourceId": "google-workspace-1",
+            "planRecords": 0,
+            "offerRecords": 0,
+            "numericOffers": 0,
+            "diagnostics": {
+              "classification": "unsupported",
+              "flags": []
+            }
+          }
+        ],
+        "findings": [
+          "Verified landing now produces12 plan records/21 offers:4plan identities repeated3times.",
+          "Base7/14/22 offers incorrectly commitmentmonthly; source explicitly1yearcommitment. 8.40/16.80/26.40 alternatives are explicitly billed monthly, but no contract duration is asserted for those alternatives.",
+          "Typed base billingPeriod unknown and missing user unit are omissions; normalize only from the local clarification.",
+          "Separate pricing page still zero plans despite static price and promotion cards."
+        ]
+      }
+    },
+    {
+      "productId": "microsoft-365",
+      "baselineOutcome": "extraction_unavailable",
+      "recovered": true,
+      "findings": [
+        {
+          "group": "business",
+          "edition": "Microsoft 365 Business Basic",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:landing",
+          "name": "Microsoft 365 Business Basic",
+          "offers": [
+            {
+              "amount": "6.00",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:163237-163310",
+              "literal": "$6.00",
+              "currencySymbol": "$",
+              "billingLocator": "offset:162702-163603",
+              "qualification": "Monthly rate paid yearly; annual subscription auto-renews."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:162085-162209"
+        },
+        {
+          "group": "business",
+          "edition": "Microsoft 365 Business Standard",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:landing",
+          "name": "Microsoft 365 Business Standard",
+          "offers": [
+            {
+              "amount": "12.50",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:187376-187450",
+              "literal": "$12.50",
+              "currencySymbol": "$",
+              "billingLocator": "offset:186838-187743",
+              "qualification": "Monthly rate paid yearly; annual subscription auto-renews."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:186218-186345"
+        },
+        {
+          "group": "business",
+          "edition": "Microsoft 365 Business Premium",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:landing",
+          "name": "Microsoft 365 Business Premium",
+          "offers": [
+            {
+              "amount": "22.00",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:212617-212694",
+              "literal": "$22.00",
+              "currencySymbol": "$",
+              "billingLocator": "offset:212079-212987",
+              "qualification": "Monthly rate paid yearly; annual subscription auto-renews."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:211460-211586"
+        },
+        {
+          "group": "business",
+          "edition": "Microsoft 365 Apps for business",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:landing",
+          "name": "Microsoft 365 Apps for business",
+          "offers": [
+            {
+              "amount": "8.25",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:245257-245333",
+              "literal": "$8.25",
+              "currencySymbol": "$",
+              "billingLocator": "offset:244722-245626",
+              "qualification": "Monthly rate paid yearly; annual subscription auto-renews."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:244100-244227"
+        },
+        {
+          "group": "enterprise",
+          "edition": "Microsoft 365 E3 (no Teams)",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:candidate-1",
+          "name": "Microsoft 365 E3 (no Teams)",
+          "offers": [
+            {
+              "amount": "33.75",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:105602-105679",
+              "literal": "$33.75",
+              "currencySymbol": "$",
+              "billingLocator": "offset:105064-105877",
+              "qualification": "Monthly rate paid yearly, annual commitment."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:104462-104585"
+        },
+        {
+          "group": "enterprise",
+          "edition": "Microsoft 365 E5 (no Teams)",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:candidate-1",
+          "name": "Microsoft 365 E5 (no Teams)",
+          "offers": [
+            {
+              "amount": "54.75",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:157581-157658",
+              "literal": "$54.75",
+              "currencySymbol": "$",
+              "billingLocator": "offset:157043-157856",
+              "qualification": "Monthly rate paid yearly, annual commitment."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:156441-156564"
+        },
+        {
+          "group": "enterprise",
+          "edition": "Microsoft 365 F3",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:candidate-1",
+          "name": "Microsoft 365 F3",
+          "offers": [
+            {
+              "amount": "8.00",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:208856-208932",
+              "literal": "$8.00",
+              "currencySymbol": "$",
+              "billingLocator": "offset:208321-209130",
+              "qualification": "Monthly rate paid yearly, annual commitment."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:207730-207842"
+        },
+        {
+          "group": "enterprise component",
+          "edition": "Microsoft Teams Enterprise",
+          "deployment": "unknown",
+          "sourceRef": "microsoft-365:candidate-1",
+          "name": "Microsoft Teams Enterprise",
+          "offers": [
+            {
+              "amount": "5.25",
+              "currency": null,
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:537632-537705",
+              "literal": "$5.25",
+              "currencySymbol": "$",
+              "billingLocator": "offset:537097-537964"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "qualification": "Standalone Teams component shown separately; not an E3/E5 suite price.",
+          "nameLocator": "offset:536626-536748"
+        }
+      ],
+      "excludedScopes": [
+        {
+          "group": "nonprofit",
+          "reason": "No retained nonprofit pricing capture. Business/enterprise amounts do not establish nonprofit rates."
+        }
+      ],
+      "unknowns": [
+        "$ does not establish USD; locale en-us was not used as currency proof.",
+        "No minimum purchase quantity supported by retained price fields.",
+        "Hidden old/current accessibility price duplicates have equal values; no promotion inferred.",
+        "Commercial Microsoft subscription plan amounts are supported; hosted versus installed-app deployment taxonomy is not inferred from plan names."
+      ],
+      "parserAssessment": "Current generic parser misses Business Basic, duplicates other list/MSRP values, and loses per-user/yearly binding. Enterprise parse also misses E5/F3. Actual retained HTML supplies all seven suite rates.",
+      "sources": {
+        "microsoft-365:landing": {
+          "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+          "capturedAt": "2025-06-30T11:31:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+          "digest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+          "sha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+          "integrity": "legacy_chunked_unverified"
+        },
+        "microsoft-365:candidate-1": {
+          "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "capturedAt": "2025-06-29T07:29:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "digest": "6T2QKV7H3URXEZBZHQPWGD65M6IACIUD",
+          "sha256": "2f4e42464e3e9ef631625db663a23993c6e114862c8197b8cb48eb5f69a5f803",
+          "integrity": "verified"
+        }
+      }
+    },
+    {
+      "productId": "squarespace",
+      "baselineOutcome": "error",
+      "recovered": false,
+      "findings": [],
+      "reason": "Selected pricing capture body is absent from immutable cache; verified landing has no numerical plan prices.",
+      "excludedMisleadingNumbers": [
+        "Fourteen-day trial is not a zero-priced paid plan.",
+        "Promotional boilerplate lacks a plan-specific discounted amount."
+      ],
+      "nextStep": "A separately authorized source retry is required to retrieve the exact missing pricing capture; no offline parser can recover absent bytes.",
+      "sources": {
+        "squarespace:landing": {
+          "originalUrl": "https://www.squarespace.com/",
+          "capturedAt": "2025-06-30T21:59:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+          "digest": "N5I4BCJSFFJMYVGHQIZ6VK5XW6IDGSRU",
+          "sha256": "14622a5ef52c4dab17ec62c243df9db3285d7e04536eede72d2f9558d78085e2",
+          "integrity": "verified"
+        },
+        "squarespace:candidate-0": {
+          "originalUrl": "https://www.squarespace.com/pricing",
+          "capturedAt": "2025-06-24T19:34:39.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624193439id_/https://www.squarespace.com/pricing",
+          "digest": "75HXPH2GEHL4BHDVS3ZIJSLAOFETIJQ7",
+          "sha256": null,
+          "integrity": "missing_body"
+        }
+      }
+    },
+    {
+      "productId": "webflow",
+      "baselineOutcome": "extraction_unavailable",
+      "recovered": true,
+      "findings": [
+        {
+          "group": "Site plans",
+          "edition": "Basic",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Basic",
+          "offers": [
+            {
+              "amount": "14",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:127337-127414",
+              "literal": "14",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:156664-156782"
+            },
+            {
+              "amount": "18",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:127337-127414",
+              "literal": "18",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:156664-156782"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:127201-127716",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Site plans",
+          "edition": "CMS",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "CMS",
+          "offers": [
+            {
+              "amount": "23",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:133268-133345",
+              "literal": "23",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:156664-156782"
+            },
+            {
+              "amount": "29",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:133268-133345",
+              "literal": "29",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:156664-156782"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:133049-133628",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Site plans",
+          "edition": "Business",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Business",
+          "offers": [
+            {
+              "amount": "39",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:140203-140280",
+              "literal": "39",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:156664-156782"
+            },
+            {
+              "amount": "49",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:140203-140280",
+              "literal": "49",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:156664-156782"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:139973-140573",
+          "priceQualification": "Base listed rate; optional CMS-item and bandwidth upgrades have separate encoded surcharges.",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Ecommerce Site plans",
+          "edition": "Standard",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Standard",
+          "offers": [
+            {
+              "amount": "29",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:240043-240120",
+              "literal": "29",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:251615-251708"
+            },
+            {
+              "amount": "42",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:240043-240120",
+              "literal": "42",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:251615-251708"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:239865-240408",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Ecommerce Site plans",
+          "edition": "Plus",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Plus",
+          "offers": [
+            {
+              "amount": "74",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:246242-246319",
+              "literal": "74",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:251615-251708"
+            },
+            {
+              "amount": "84",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:246242-246319",
+              "literal": "84",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:251615-251708"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:246068-246595",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Ecommerce Site plans",
+          "edition": "Advanced",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Advanced",
+          "offers": [
+            {
+              "amount": "212",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:248982-249062",
+              "literal": "212",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:251615-251708"
+            },
+            {
+              "amount": "235",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "site",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:248982-249062",
+              "literal": "235",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:251615-251708"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:248804-249346",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Workspace plans: in-house",
+          "edition": "Core",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Core",
+          "offers": [
+            {
+              "amount": "19",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:289217-289294",
+              "literal": "19",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:315100-315224"
+            },
+            {
+              "amount": "28",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:289217-289294",
+              "literal": "28",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:315100-315224"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:289020-289612",
+          "unitQualification": "Plan includes 1 full seat; global note says charged per member. Retain ambiguity; do not normalize to per-user rate.",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Workspace plans: in-house",
+          "edition": "Growth",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Growth",
+          "offers": [
+            {
+              "amount": "49",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:295101-295178",
+              "literal": "49",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:315100-315224"
+            },
+            {
+              "amount": "60",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:295101-295178",
+              "literal": "60",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:315100-315224"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:294902-295491",
+          "unitQualification": "Plan includes 1 full seat; global note says charged per member. Retain ambiguity; do not normalize to per-user rate.",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Workspace plans: freelancers/agencies",
+          "edition": "Freelancer",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Freelancer",
+          "offers": [
+            {
+              "amount": "16",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:369904-369981",
+              "literal": "16",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:315100-315224"
+            },
+            {
+              "amount": "24",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:369904-369981",
+              "literal": "24",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:315100-315224"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:369695-370253",
+          "unitQualification": "Plan includes 1 full seat; global note says charged per member. Retain ambiguity; do not normalize to per-user rate.",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Workspace plans: freelancers/agencies",
+          "edition": "Agency",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Agency",
+          "offers": [
+            {
+              "amount": "35",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:373812-373889",
+              "literal": "35",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:315100-315224"
+            },
+            {
+              "amount": "42",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:373812-373889",
+              "literal": "42",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:315100-315224"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:373607-374160",
+          "unitQualification": "Plan includes 1 full seat; global note says charged per member. Retain ambiguity; do not normalize to per-user rate.",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Workspace seat types (not Site or base Workspace plans)",
+          "edition": "Full",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Full",
+          "offers": [
+            {
+              "amount": "39",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "seat",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:312169-312246",
+              "literal": "39",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:315100-315224"
+            },
+            {
+              "amount": "45",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "seat",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:312169-312246",
+              "literal": "45",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:315100-315224"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:311884-312569",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        },
+        {
+          "group": "Workspace seat types (not Site or base Workspace plans)",
+          "edition": "Limited",
+          "deployment": "hosted",
+          "sourceRef": "webflow:candidate-0",
+          "name": "Limited",
+          "offers": [
+            {
+              "amount": "15",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "seat",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:313253-313330",
+              "literal": "15",
+              "evidenceBasis": "data-yearly-price plus adjacent billed yearly text",
+              "variantActivation": "yearly markup",
+              "currencyLocator": "offset:315100-315224"
+            },
+            {
+              "amount": "19",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "seat",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:313253-313330",
+              "literal": "19",
+              "evidenceBasis": "data-monthly-price plus adjacent data-billing-monthly label",
+              "variantActivation": "encoded alternate; not observed active",
+              "currencyLocator": "offset:315100-315224"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:313053-313674",
+          "tax": "Applicable taxes added at checkout; per-month rate under annual billing differs from month-to-month billing."
+        }
+      ],
+      "explicitNonNumeric": [
+        {
+          "group": "Site plans",
+          "name": "Starter",
+          "status": "free",
+          "sourceRef": "webflow:candidate-0",
+          "sourceLocator": "offset:122516-127107"
+        },
+        {
+          "group": "Site plans",
+          "name": "Enterprise",
+          "status": "quote",
+          "sourceRef": "webflow:candidate-0",
+          "sourceLocator": "offset:152114-152177"
+        }
+      ],
+      "unknowns": [
+        "Workspace Free seat row says $15 in visible text but attributes encode zero; conflict quarantined, no numerical fact asserted.",
+        "Workspace base plans versus per-member global note require unit reconciliation.",
+        "Site/Ecommerce/Workspace/seat types must not be combined into one tier ladder.",
+        "Captured payload has legacy_chunked_unverified integrity; these facts require explicit review acceptance."
+      ],
+      "parserAssessment": "Current generic parser returns21 fragments including headings such as Publishing, Staging and15, with no offers. Named pricing-card headers and inert monthly/yearly attributes recover actual prices without executing scripts.",
+      "sources": {
+        "webflow:landing": {
+          "originalUrl": "https://webflow.com/",
+          "capturedAt": "2025-06-30T04:05:26.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+          "digest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+          "sha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+          "integrity": "verified"
+        },
+        "webflow:candidate-0": {
+          "originalUrl": "https://webflow.com/pricing",
+          "capturedAt": "2025-06-29T21:36:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "digest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+          "sha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+          "integrity": "legacy_chunked_unverified"
+        }
+      }
+    },
+    {
+      "productId": "ghost",
+      "baselineOutcome": "error",
+      "recovered": false,
+      "findings": [],
+      "reason": "Selected Ghost pricing capture body absent from immutable cache. Verified landing contains no Ghost subscription plan amounts.",
+      "excludedMisleadingNumbers": [
+        "Publisher revenue totals and customer MRR are not Ghost plan fees.",
+        "Reader subscription features and free trial wording do not establish hosting prices."
+      ],
+      "nextStep": "A separately authorized source retry is required for the exact missing pricing capture. Keep hosted Ghost(Pro) separate from free self-hosted software.",
+      "sources": {
+        "ghost:landing": {
+          "originalUrl": "https://ghost.org/",
+          "capturedAt": "2025-06-30T22:10:56.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+          "digest": "JUHISBL5XBNP6VO6INDG4BM7UOPCRWBE",
+          "sha256": "f437dce0cf3d5d8820d47bbc7163eab1c80e5f811e458412b9621df6d589cd03",
+          "integrity": "verified"
+        },
+        "ghost:candidate-0": {
+          "originalUrl": "https://ghost.org/pricing/",
+          "capturedAt": "2025-06-30T11:07:30.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630110730id_/https://ghost.org/pricing/",
+          "digest": "LRJNYH6XNYSGPJ75VJ2EY7NJTARDVY36",
+          "sha256": null,
+          "integrity": "missing_body"
+        }
+      }
+    },
+    {
+      "productId": "mattermost",
+      "baselineOutcome": "extraction_unavailable",
+      "recovered": true,
+      "findings": [
+        {
+          "group": "commercial Professional",
+          "edition": "Professional",
+          "deployment": "unknown",
+          "sourceRef": "mattermost:candidate-0",
+          "name": "Professional",
+          "offers": [
+            {
+              "amount": "10",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:231878-231922",
+              "literal": "$10",
+              "billingLocator": "offset:232117-232199",
+              "currencyUnitLocator": "offset:231996-232069"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:231626-231665",
+          "scopeEvidence": "Professional price card has data-option sh; separate closed pricing-modal heading describes self-hosted Professional licenses. No href/data-target binding retained.",
+          "scopeQualification": "Professional commercial plan, distinct from Team Edition. Closed modal describes self-hosted licenses, but retained HTML does not prove the Buy Now class-to-modal runtime binding; deployment remains unknown.",
+          "scopeLocator": "offset:316563-316625"
+        }
+      ],
+      "explicitNonNumeric": [
+        {
+          "name": "Enterprise",
+          "status": "quote",
+          "sourceRef": "mattermost:candidate-0",
+          "nameLocator": "offset:255904-255941",
+          "sourceLocator": "offset:256635-256782"
+        },
+        {
+          "name": "Enterprise Advanced",
+          "status": "quote",
+          "sourceRef": "mattermost:candidate-0",
+          "nameLocator": "offset:287901-287947",
+          "sourceLocator": "offset:288641-288781"
+        }
+      ],
+      "unknowns": [
+        "No numeric Team Edition price is established by the Professional commercial page.",
+        "Cloud Enterprise is separately offered; no hosted price is shown."
+      ],
+      "parserAssessment": "Current generic parser recovers only FAQ heading Order and Invoice as a quote plan, missing actual Professional price. Reject that FAQ as a product tier.",
+      "sources": {
+        "mattermost:landing": {
+          "originalUrl": "https://mattermost.com/",
+          "capturedAt": "2025-06-30T15:35:51.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630153551id_/https://mattermost.com/",
+          "digest": "TKREQ7IUWRJ56MU6L5PBN7HS76COFICY",
+          "sha256": "7e236a515e5cf7f08a81c39a4a353a236089fdfbe3615474b5061b7c7c98cc8c",
+          "integrity": "legacy_chunked_unverified"
+        },
+        "mattermost:candidate-0": {
+          "originalUrl": "https://mattermost.com/pricing/",
+          "capturedAt": "2025-06-24T04:26:46.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+          "digest": "UETZWONG22RJU7ECXGDQILMTIFYUN365",
+          "sha256": "1a9bfe0f17391c47623bb716b8f5e300c4a2b91c7f96ebf0c8ab9433e154389c",
+          "integrity": "verified"
+        },
+        "mattermost:candidate-1": {
+          "originalUrl": "https://mattermost.com/compare/",
+          "capturedAt": "2025-06-24T03:43:47.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624034347id_/https://mattermost.com/compare/",
+          "digest": "EOXPEM45FWDXBXCURROSXVZX6HMJCUE3",
+          "sha256": "4594c5273819e245b1592b72f38f402b801a01d135c8c1b9e6f2b7b8c7614776",
+          "integrity": "verified"
+        }
+      }
+    },
+    {
+      "productId": "passbolt",
+      "baselineOutcome": "extraction_unavailable",
+      "recovered": true,
+      "findings": [
+        {
+          "group": "Community Edition",
+          "edition": "Community (CE)",
+          "deployment": "self-hosted",
+          "sourceRef": "passbolt:candidate-0",
+          "name": "Community",
+          "offers": [
+            {
+              "amount": "0",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "unknown",
+              "unit": null,
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:26472-26563",
+              "literal": "$0",
+              "quantityQualification": "Unlimited users",
+              "quantityLocator": "offset:26734-26836",
+              "currencyLocator": "offset:25435-25767"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:26135-26190"
+        },
+        {
+          "group": "Pro self-hosted",
+          "edition": "Business",
+          "deployment": "self-hosted",
+          "sourceRef": "passbolt:candidate-0",
+          "name": "Business",
+          "offers": [
+            {
+              "amount": "49",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "annual",
+              "unit": "10-user license package",
+              "minimumQuantity": 10,
+              "promotion": null,
+              "sourceLocator": "offset:29061-29152",
+              "literal": "$49",
+              "billingLocator": "offset:31296-31393",
+              "quantityLocator": "offset:29751-31284",
+              "currencyLocator": "offset:25435-25767",
+              "quantityQualification": "Displayed10-user tier; minimum dropdown option10, hidden quantity field10. No invented per-user49 rate."
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:28719-28773"
+        },
+        {
+          "group": "Cloud-managed",
+          "edition": "Business",
+          "deployment": "hosted",
+          "sourceRef": "passbolt:candidate-1",
+          "name": "Business",
+          "offers": [
+            {
+              "amount": "54",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "10-user included package",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:26812-26905",
+              "literal": "$54",
+              "includedUsers": 10,
+              "billingLocator": "offset:26905-27078",
+              "quantityLocator": "offset:27084-27160",
+              "currencyLocator": "offset:25026-25358"
+            },
+            {
+              "amount": "5.4",
+              "currency": "USD",
+              "billingPeriod": "month",
+              "commitment": "monthly",
+              "unit": "additional user",
+              "minimumQuantity": null,
+              "promotion": null,
+              "sourceLocator": "offset:27229-27273",
+              "literal": "$5.4",
+              "rateRole": "additional-user charge",
+              "currencyLocator": "offset:25026-25358"
+            }
+          ],
+          "reviewState": "proposed_manual_recovery",
+          "nameLocator": "offset:25749-25803",
+          "promotion": "Yearly toggle advertises10% off but no annual amount is retained; no arithmetic annual price invented.",
+          "promotionLocator": "offset:26149-26489"
+        }
+      ],
+      "explicitNonNumeric": [
+        {
+          "group": "Pro self-hosted",
+          "name": "Enterprise",
+          "status": "quote",
+          "sourceRef": "passbolt:candidate-0",
+          "nameLocator": "offset:35458-35514",
+          "sourceLocator": "offset:35783-35879"
+        },
+        {
+          "group": "Cloud-managed",
+          "name": "Enterprise",
+          "status": "quote",
+          "sourceRef": "passbolt:candidate-1",
+          "nameLocator": "offset:28490-28546",
+          "sourceLocator": "offset:28823-28921"
+        }
+      ],
+      "parserAssessment": "Both dedicated captures have static named cards, active USD controls, explicit quantity and billing; current parser returns no plans. CE free, Pro paid self-hosted and managed cloud remain separate.",
+      "sources": {
+        "passbolt:landing": {
+          "originalUrl": "https://www.passbolt.com/",
+          "capturedAt": "2025-06-30T02:31:04.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630023104id_/https://www.passbolt.com/",
+          "digest": "P7VWE2RIVG7PIVAPSZCSGIMJTUSQAQEG",
+          "sha256": "2952360cdda1ef1a73fbd15af0bee4817d704810169e67d2f0dee491e705d2f0",
+          "integrity": "verified"
+        },
+        "passbolt:candidate-0": {
+          "originalUrl": "https://www.passbolt.com/pricing/pro",
+          "capturedAt": "2025-06-24T10:31:43.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+          "digest": "LAXVTSQWDNNUTVHUNL3T7GKQONLU6AFS",
+          "sha256": "63fc2a7c513b400d4f0b10c28434bfb2cc867cb3beb04fabd87e58691cab0bc6",
+          "integrity": "verified"
+        },
+        "passbolt:candidate-1": {
+          "originalUrl": "https://www.passbolt.com/pricing/cloud",
+          "capturedAt": "2025-06-24T04:38:51.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+          "digest": "E3XTYJBHU6ZXSS6GEPUFYZRXLXMUMHLP",
+          "sha256": "f32dc605242a0398f0291c48f6deb1dc13fbe80ae59b95d14bdda12b48902e60",
+          "integrity": "legacy_chunked_unverified"
+        }
+      }
+    }
+  ],
+  "reviewedCollectionAdditions": [
+    "hubspot",
+    "intercom",
+    "microsoft-365",
+    "webflow",
+    "mattermost"
+  ],
+  "independentConfirmationChecks": {
+    "hubspot": "Four active displayed tier rates and one struck-through reference; USD, seat/month, promotion and tax bindings checked.",
+    "intercom": "Three USD seat/month rates, annual commitment, linked collapsed currency disclosure and qualified legacy evidence checked.",
+    "webflow": "Four USD per-site/month billing variants; fixed Site Basic/CMS group only; annual rates are monthly equivalents; legacy evidence checked.",
+    "microsoft-365": "Four Business named rates per-user/month paid yearly; currency remains unknown; enterprise and nonprofit excluded; legacy evidence checked.",
+    "mattermost": "Commercial Professional USD10/user/month annually; explicit Professional scope and unknown deployment; Team Edition not repriced; legacy landing qualified."
+  },
+  "parserSnapshotVersion": "1.1.0",
+  "parserSnapshotPhase": "before source-specific recovery; final 1.2.0 outcomes in pricing-second-retry-results.json"
+}

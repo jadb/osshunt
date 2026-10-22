@@ -1,5 +1,200 @@
 [
   {
+    "id": "pricing-2474db7e5681d2e0b6c3a8b0e3e87b2990cd95a06656d39c155459377851ee91",
+    "productId": "webflow",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T04:05:26.000Z",
+    "landingCapturedAt": "2025-06-30T04:05:26.000Z",
+    "pricingCapturedAt": "2025-06-29T21:36:58.000Z",
+    "evidenceAvailableAt": "2025-06-30T04:05:26.000Z",
+    "landingUrl": "https://webflow.com/",
+    "pricingUrl": "https://webflow.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:107141-107752"
+    },
+    "sourceSha256": "44f2560f98eb2b35e83df6d1a34354fa0f28a63fb0ff01ce38118c0731fdf1c3",
+    "landingSha256": "657e6e5ec5898411574481081d16efb4e9a29028b8387955ce97664ddfe6437e",
+    "sourceDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+    "landingDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+    "fetchedAt": "2026-10-22T15:33:56.031Z",
+    "landingFetchedAt": "2026-10-22T15:33:37.179Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "G5VP6USYHXQXPXRQIWXUCIFKW4LJBHF7",
+      "actualDigest": "UOT52N2SDWNJ2OX5U4OKHXHVKPHFQ4HM",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H",
+      "actualDigest": "NA55HXF2DVWDZPS5CQBTGOZRLZ5SF23H"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Sun, 29 Jun 2025 21:36:58 GMT",
+      "originalUrl": "https://webflow.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "spn2-20250629222447/spn2-20250629192742-wwwb-spn28.us.archive.org-8004.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 04:05:26 GMT",
+      "originalUrl": "https://webflow.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250630041744_8d971985/www.rotundapublicaffairs.com-inf-20250630-040518-8kgd7-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.2.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Only fixed general Site Basic/CMS rates recovered; Starter, variable Business, Enterprise, Ecommerce and Workspace groups omitted",
+      "Webflow data-yearly-price is a monthly equivalent billed yearly; both attribute variants retained without executing scripts",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Basic",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "data-monthly-price=\"18\"; /mo; billed monthly",
+            "amount": "18",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:127201-127716|offset:156664-156782",
+              "text": "Basic $ 14 /mo billed yearly For relatively simple, static sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"18\" | data-yearly-price=\"14\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
+            }
+          },
+          {
+            "literal": "data-yearly-price=\"14\"; /mo; billed yearly",
+            "amount": "14",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:127201-127716|offset:156664-156782",
+              "text": "Basic $ 14 /mo billed yearly For relatively simple, static sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"18\" | data-yearly-price=\"14\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:127201-127716|offset:156664-156782",
+          "text": "Basic $ 14 /mo billed yearly For relatively simple, static sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"18\" | data-yearly-price=\"14\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
+        }
+      },
+      {
+        "name": "CMS",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "data-monthly-price=\"29\"; /mo; billed monthly",
+            "amount": "29",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "monthly",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:133049-133628|offset:156664-156782",
+              "text": "CMS Popular $ 23 /mo billed yearly For blogs or other content-driven sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"29\" | data-yearly-price=\"23\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
+            }
+          },
+          {
+            "literal": "data-yearly-price=\"23\"; /mo; billed yearly",
+            "amount": "23",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "site",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "Applicable taxes added at checkout",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": "unknown-active-variant"
+            },
+            "source": {
+              "locator": "offset:133049-133628|offset:156664-156782",
+              "text": "CMS Popular $ 23 /mo billed yearly For blogs or other content-driven sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"29\" | data-yearly-price=\"23\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:133049-133628|offset:156664-156782",
+          "text": "CMS Popular $ 23 /mo billed yearly For blogs or other content-driven sites. | All prices are in USD and charged per site with applicable taxes added at checkout. | data-monthly-price=\"29\" | data-yearly-price=\"23\" | data-billing-monthly=\"billed monthly\" | data-billing-yearly=\"billed yearly\""
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T18:37:30.107Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
     "id": "pricing-2559051b4649ba992a9852132392ec4a88e22248d536d28680f82750f3581ee8",
     "productId": "airtable",
     "scope": {
@@ -220,6 +415,193 @@
     "review": {
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T14:50:28.108Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-637f824f7686a76d5c4806df84c3a8b9d0a27bfa957c9c71dc7b18bb63501dc5",
+    "productId": "intercom",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T15:33:35.000Z",
+    "landingCapturedAt": "2025-06-30T15:33:35.000Z",
+    "pricingCapturedAt": "2025-06-18T20:12:42.000Z",
+    "evidenceAvailableAt": "2025-06-30T15:33:35.000Z",
+    "landingUrl": "https://www.intercom.com/",
+    "pricingUrl": "https://www.intercom.com/pricing",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+    "provenance": "current-source-hint",
+    "discovery": {
+      "label": "Current pricing source",
+      "locator": "hint:0"
+    },
+    "sourceSha256": "3f83d479745dc9d1f4d6f9818c173ab790abb2be7ecf53e7e024ed4f1fa41b49",
+    "landingSha256": "1bd42cc354f8d7628fdc027725508fb6194ebc3303098a17509670f6c851955f",
+    "sourceDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+    "landingDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+    "fetchedAt": "2026-10-22T15:27:58.133Z",
+    "landingFetchedAt": "2026-10-22T15:27:35.740Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "ZTUTTKO4KBGQO7G52OBRPQ63I3JSFNHJ",
+      "actualDigest": "D7H7C534RUFSPKYXBJMLVTTE3XCMV2KE",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "RUHU5T4NMBWVPY5ZOSVAVBAL6LNVAYJN",
+      "actualDigest": "DS6U6PS7KYM336YXMAHQ3JCVCAZXZKXO",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 18 Jun 2025 20:12:42 GMT",
+      "originalUrl": "https://www.intercom.com/pricing",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "SPNOUTLINKS-20250618200133-crawl919/SPNOUTLINKS-20250618201058-00108.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 15:33:35 GMT",
+      "originalUrl": "https://www.intercom.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "REDDIT-20250630070912-crawl925/REDDIT-20250630153156-00005.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.2.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Intercom USD policy read inertly from linked collapsed currency FAQ; disclosure visibility is not price selection",
+      "Intercom seat plans only; Fin usage charges, add-ons, trial terms and feature entitlements remain incomplete",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Essential",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 29 per seat/mo, billed annually",
+            "amount": "29",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:55346-55532 + offset:95042-95337 + offset:95607-95840",
+              "text": "$ 29 per seat/mo, billed annually; Can I pay in my local currency?; Intercom is billed in United States Dollars (USD) only. This applies across our whole platform, including seat pricing, additional usage charges, add-ons, and Premier Services. Right now, we can’t bill in any other currencies."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:54066-54122",
+          "text": "Essential plan"
+        }
+      },
+      {
+        "name": "Advanced",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 85 per seat/mo, billed annually",
+            "amount": "85",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:59743-59928 + offset:95042-95337 + offset:95607-95840",
+              "text": "$ 85 per seat/mo, billed annually; Can I pay in my local currency?; Intercom is billed in United States Dollars (USD) only. This applies across our whole platform, including seat pricing, additional usage charges, add-ons, and Premier Services. Right now, we can’t bill in any other currencies."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:58470-58525",
+          "text": "Advanced plan"
+        }
+      },
+      {
+        "name": "Expert",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$ 132 per seat/mo, billed annually",
+            "amount": "132",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": "en-US",
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:64424-64608 + offset:95042-95337 + offset:95607-95840",
+              "text": "$ 132 per seat/mo, billed annually; Can I pay in my local currency?; Intercom is billed in United States Dollars (USD) only. This applies across our whole platform, including seat pricing, additional usage charges, add-ons, and Premier Services. Right now, we can’t bill in any other currencies."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:63148-63201",
+          "text": "Expert plan"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T18:37:30.071Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
     }
@@ -857,6 +1239,247 @@
     }
   },
   {
+    "id": "pricing-9610d4301cb6f15b58a33bdc753b21a86bb07a1d37b08340f470a40404188857",
+    "productId": "hubspot",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-27T05:22:08.000Z",
+    "landingCapturedAt": "2025-06-27T05:22:08.000Z",
+    "pricingCapturedAt": "2025-06-27T05:22:08.000Z",
+    "evidenceAvailableAt": "2025-06-27T05:22:08.000Z",
+    "landingUrl": "https://www.hubspot.com/products/sales",
+    "pricingUrl": "https://www.hubspot.com/products/sales",
+    "landingArchiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Free",
+      "locator": "offset:670904-673675"
+    },
+    "sourceSha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+    "landingSha256": "6c9801bbb80ef4ddf6c2205f90759ef5e0923ffd7ce05c1cba3aad08cd779f16",
+    "sourceDigest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+    "landingDigest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+    "fetchedAt": "2026-10-22T15:27:07.887Z",
+    "landingFetchedAt": "2026-10-22T15:27:07.887Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+      "actualDigest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L",
+      "actualDigest": "CSOEFJTVEANRQ3MGHY22SNCGL3QLXP7L"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 05:22:08 GMT",
+      "originalUrl": "https://www.hubspot.com/products/sales",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250627085137_d9b4ea29/neumannmonson.com-inf-20250627-050334-bohki-00000.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Fri, 27 Jun 2025 05:22:08 GMT",
+      "originalUrl": "https://www.hubspot.com/products/sales",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250627085137_d9b4ea29/neumannmonson.com-inf-20250627-050334-bohki-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.2.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "HubSpot Sales displayed card rates only; billing commitment, minimum quantities and full feature structure remain unknown"
+    ],
+    "plans": [
+      {
+        "name": "Free",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "$0/month",
+            "amount": "0",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "subject to applicable tax",
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:671336-671400|offset:671251-671323|offset:684671-685155",
+              "text": "$0/month | No credit card required | *Discount available for new customers only. Offer has no set end date and can be discontinued at any time. For more detailed information on product packaging and the limits that apply, please see our pricing page . Price shown in USD and subject to applicable tax."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:670904-673675",
+          "text": "Free No credit card required $0/month Popular features Contact management Deal pipeline Quotes Live chat Meeting scheduling"
+        }
+      },
+      {
+        "name": "Starter",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$15/month per seat*",
+            "amount": "15",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "subject to applicable tax",
+              "promotion": "Discount available for new customers only. Offer has no set end date and can be discontinued at any time.",
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:674327-674419|offset:674255-674314|offset:684671-685155",
+              "text": "$15/month $20/month per seat* | Starts at | *Discount available for new customers only. Offer has no set end date and can be discontinued at any time. For more detailed information on product packaging and the limits that apply, please see our pricing page . Price shown in USD and subject to applicable tax."
+            }
+          },
+          {
+            "literal": "$20/month",
+            "amount": "20",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "subject to applicable tax",
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": "struck-through reference price; not an active offer"
+            },
+            "source": {
+              "locator": "offset:674327-674419|offset:674255-674314|offset:684671-685155",
+              "text": "$15/month $20/month per seat* | Starts at | *Discount available for new customers only. Offer has no set end date and can be discontinued at any time. For more detailed information on product packaging and the limits that apply, please see our pricing page . Price shown in USD and subject to applicable tax. | struck-through reference price (<s> or <del>)"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:673727-677077",
+          "text": "Starter Starts at $15/month $20/month per seat* Popular features Everything in Free Sales automation Goals Sales content analytics Payments Task queues"
+        }
+      },
+      {
+        "name": "Professional",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$100/month per seat",
+            "amount": "100",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "subject to applicable tax",
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:677759-677834|offset:677688-677746|offset:684671-685155",
+              "text": "$100/month per seat | Starts at | *Discount available for new customers only. Offer has no set end date and can be discontinued at any time. For more detailed information on product packaging and the limits that apply, please see our pricing page . Price shown in USD and subject to applicable tax."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:677129-680532",
+          "text": "Professional Starts at $100/month per seat Popular features Everything in Starter Prospecting & lead management Sequences Forecasting Custom reporting & sales analytics Playbooks"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$150/month per seat",
+            "amount": "150",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "seat",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": "subject to applicable tax",
+              "promotion": null,
+              "startingAt": true,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:681228-681303|offset:681157-681215|offset:684671-685155",
+              "text": "$150/month per seat | Starts at | *Discount available for new customers only. Offer has no set end date and can be discontinued at any time. For more detailed information on product packaging and the limits that apply, please see our pricing page . Price shown in USD and subject to applicable tax."
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:680584-684016",
+          "text": "Enterprise Starts at $150/month per seat Popular features Everything in Professional Custom objects Predictive lead scoring Conversation intelligence Recurring revenue tracking Deal journey analytics"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T18:37:30.052Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-a12f7b6bdacf8e144e3acced471f6caf357550d17a6e412ce9902cdef8d4490f",
     "productId": "dropbox",
     "scope": {
@@ -1045,6 +1668,230 @@
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T14:41:56.317Z",
       "decision": "confirmed"
+    }
+  },
+  {
+    "id": "pricing-b06d33327ce31e82bc0a8248b51bd0d258782bb98e31950d2a0638acfbe17b28",
+    "productId": "microsoft-365",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T11:31:13.000Z",
+    "landingCapturedAt": "2025-06-30T11:31:13.000Z",
+    "pricingCapturedAt": "2025-06-30T11:31:13.000Z",
+    "evidenceAvailableAt": "2025-06-30T11:31:13.000Z",
+    "landingUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+    "pricingUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+    "provenance": "landing-page",
+    "discovery": {
+      "label": "Microsoft 365 Business Basic",
+      "locator": "offset:162085-162209"
+    },
+    "sourceSha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+    "landingSha256": "5860b5f7c405ff141c6c6cc26bd85b7e3f9fdcd69f87406c12c54f7f33eb91ec",
+    "sourceDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+    "landingDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+    "fetchedAt": "2026-10-22T15:32:08.314Z",
+    "landingFetchedAt": "2026-10-22T15:32:08.314Z",
+    "sourceIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+      "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "XE7ILG5GYFARNO6N2VBW6Q73GMO2PEC4",
+      "actualDigest": "AQDZZGSE63QABH4HGC4X2RVGNDLBPMOP",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 11:31:13 GMT",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "PL-20250630090810-crawl918/PL-20250630112903-00813.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 11:31:13 GMT",
+      "originalUrl": "https://www.microsoft.com/en-us/microsoft-365/business",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "PL-20250630090810-crawl918/PL-20250630112903-00813.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.2.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Business SKU prices only; enterprise, nonprofit, alternative billing and full feature coverage are not extracted",
+      "Dollar currency remains unknown; locale is not currency evidence",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Microsoft 365 Business Basic",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$6.00",
+            "amount": "6.00",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:162394-163742",
+              "text": "Originally starting from $6.00 now starting from $6.00 $6.00 $6.00 user/month, paid yearly (Annual subscription—auto renews) 1"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:162085-162209",
+          "text": "Microsoft 365 Business Basic"
+        }
+      },
+      {
+        "name": "Microsoft 365 Business Standard",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$12.50",
+            "amount": "12.50",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:186530-187882",
+              "text": "Originally starting from $12.50 now starting from $12.50 $12.50 $12.50 user/month, paid yearly (Annual subscription—auto renews) 1"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:186218-186345",
+          "text": "Microsoft 365 Business Standard"
+        }
+      },
+      {
+        "name": "Microsoft 365 Business Premium",
+        "order": 2,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$22.00",
+            "amount": "22.00",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:211771-213126",
+              "text": "Originally starting from $22.00 now starting from $22.00 $22.00 $22.00 user/month, paid yearly (Annual subscription—auto renews) 1"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:211460-211586",
+          "text": "Microsoft 365 Business Premium"
+        }
+      },
+      {
+        "name": "Microsoft 365 Apps for business",
+        "order": 3,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$8.25",
+            "amount": "8.25",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:244413-245765",
+              "text": "Originally starting from $8.25 now starting from $8.25 $8.25 $8.25 user/month, paid yearly (Annual subscription—auto renews) 1"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:244100-244227",
+          "text": "Microsoft 365 Apps for business"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T18:37:30.091Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
     }
   },
   {
@@ -1949,6 +2796,118 @@
     "review": {
       "reviewer": "osshunt-editorial",
       "reviewedAt": "2026-10-22T14:50:28.119Z",
+      "decision": "confirmed",
+      "acceptedUnverifiedArchiveDigest": true
+    }
+  },
+  {
+    "id": "pricing-d2bb5f2ac65b5925d708a7d08e24f095ea6b347be20bdb6efde741d809da9f91",
+    "productId": "mattermost",
+    "scope": {
+      "edition": "Professional",
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T15:35:51.000Z",
+    "landingCapturedAt": "2025-06-30T15:35:51.000Z",
+    "pricingCapturedAt": "2025-06-24T04:26:46.000Z",
+    "evidenceAvailableAt": "2025-06-30T15:35:51.000Z",
+    "landingUrl": "https://mattermost.com/",
+    "pricingUrl": "https://mattermost.com/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630153551id_/https://mattermost.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:101717-101820"
+    },
+    "sourceSha256": "1a9bfe0f17391c47623bb716b8f5e300c4a2b91c7f96ebf0c8ab9433e154389c",
+    "landingSha256": "7e236a515e5cf7f08a81c39a4a353a236089fdfbe3615474b5061b7c7c98cc8c",
+    "sourceDigest": "UETZWONG22RJU7ECXGDQILMTIFYUN365",
+    "landingDigest": "TKREQ7IUWRJ56MU6L5PBN7HS76COFICY",
+    "fetchedAt": "2026-10-22T15:35:15.868Z",
+    "landingFetchedAt": "2026-10-22T15:35:01.372Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "UETZWONG22RJU7ECXGDQILMTIFYUN365",
+      "actualDigest": "UETZWONG22RJU7ECXGDQILMTIFYUN365"
+    },
+    "landingIntegrity": {
+      "status": "legacy_chunked_unverified",
+      "expectedDigest": "TKREQ7IUWRJ56MU6L5PBN7HS76COFICY",
+      "actualDigest": "4VUNG7PHG6HLON6YSNHT3O2N5MWO6CYQ",
+      "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Tue, 24 Jun 2025 04:26:46 GMT",
+      "originalUrl": "https://mattermost.com/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "CC-MAIN-2025-26-1749709776891.98-0008/CC-MAIN-20250624025904-20250624055904-00161.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 15:35:51 GMT",
+      "originalUrl": "https://mattermost.com/",
+      "archivedTransferEncoding": "chunked",
+      "originalContentEncoding": null,
+      "sourceWarc": "REDDIT-20250630153231-crawl903/REDDIT-20250630153507-00013.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "1.2.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Commercial Professional price only; deployment binding requires review, no paid price inferred for Team Edition or cloud",
+      "Enterprise quotes, feature matrix and purchase FAQ are not extracted as Professional tiers",
+      "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified.",
+      "Original archive payload digest remains unverified; maintainer explicitly accepted retained evidence."
+    ],
+    "plans": [
+      {
+        "name": "Professional",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "$10",
+            "amount": "10",
+            "currency": "USD",
+            "billingPeriod": "month",
+            "commitment": "annual",
+            "unit": "user",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": null,
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:231838-232268",
+              "text": "$10 USD /user /month Billed annually"
+            }
+          }
+        ],
+        "features": [],
+        "source": {
+          "locator": "offset:231626-231665",
+          "text": "Professional"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T18:37:30.122Z",
       "decision": "confirmed",
       "acceptedUnverifiedArchiveDigest": true
     }
