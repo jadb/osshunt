@@ -1,0 +1,871 @@
+{
+  "formatVersion": 1,
+  "mode": "frozen-final-nine-tool-baseline-plus-reviewed-source-recovery",
+  "historicalComplete": false,
+  "counts": {
+    "newToolsAttempted": 9,
+    "discoveryCompleted": 9,
+    "sourceRequests": 38,
+    "baselineSourceRequests": 36,
+    "supplementalSourceRequests": 2,
+    "baselineSchemaValidProposals": 3,
+    "newProductsWithPositivePrices": 7,
+    "newProductsWithPositiveCorePlanPrices": 7,
+    "newProductsWithAddonPricesOnly": 0,
+    "newProductsWithUsageOnlyPrices": 2,
+    "newProductsWithSubscriptionPlanRates": 5,
+    "newProductsWithAnyReviewedStructure": 9,
+    "newObservations": 13,
+    "totalProductsWithPositivePrices": 43,
+    "totalProductsWithPositiveCorePlanPrices": 42,
+    "totalProductsWithAnyStructure": 64,
+    "totalObservations": 129,
+    "totalPlans": 386,
+    "totalOffers": 697
+  },
+  "baseline": {
+    "journalSha256": "5c490f9e3824d858e4c28ad84f77f98de28c98d1fb35e6e19dfa232574d3540d",
+    "extractorVersion": "1.2.0",
+    "fingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+    "fingerprintUnchanged": true,
+    "statuses": {
+      "extraction_unavailable": 4,
+      "missing_pricing": 1,
+      "review_pending": 3,
+      "wrong_scope": 1
+    }
+  },
+  "verification": {
+    "original116ObservationsUnchanged": true,
+    "oldProductStatesUnchanged": 90,
+    "oldStatesAllUnchanged": true,
+    "frozenJournals": [
+      {
+        "sha256": "d76c2c341e657dbaab26df77505d97af5ccbf309fa9a69b3f55eedb358256022",
+        "unchanged": true
+      },
+      {
+        "sha256": "73a6751afa281b822be189a677fc54145e68fd8f83172879726b42dfcee77ead",
+        "unchanged": true
+      },
+      {
+        "sha256": "56014aa01569586b48ea5933d47ac5a44743b0d33f125a84f74f709c1b1fa4b1",
+        "unchanged": true
+      },
+      {
+        "sha256": "56c395a8569ee976ec40890bdae216cc9715c7299da8e3b4b6cd796ff573dc0a",
+        "unchanged": true
+      },
+      {
+        "sha256": "8b45e84eb24bd0254561b7102767adee120f298a38a99fca2f42dcaba7601cb4",
+        "unchanged": true
+      }
+    ],
+    "sourceRoleChecks": 258,
+    "catalogOnlyApprovedAliasesChanged": true,
+    "postBaselineAliasTargets": [
+      {
+        "productId": "elastic-cloud",
+        "url": "https://www.elastic.co/pricing/serverless-search"
+      }
+    ],
+    "repeatNetworkAttempts": 0,
+    "reservations": [
+      {
+        "productId": "firebase",
+        "checkedAt": "2026-10-22T21:01:01.412Z",
+        "nextCheckAt": "2027-04-22T21:01:01.412Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "heroku",
+        "checkedAt": "2026-10-22T21:01:32.654Z",
+        "nextCheckAt": "2027-04-22T21:01:32.654Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "vercel",
+        "checkedAt": "2026-10-22T21:02:12.831Z",
+        "nextCheckAt": "2027-04-22T21:02:12.831Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "pingdom",
+        "checkedAt": "2026-10-22T21:03:04.260Z",
+        "nextCheckAt": "2027-04-22T21:03:04.260Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "retool",
+        "checkedAt": "2026-10-22T21:03:52.100Z",
+        "nextCheckAt": "2027-04-22T21:03:52.100Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "insomnia",
+        "checkedAt": "2026-10-22T21:04:32.800Z",
+        "nextCheckAt": "2027-04-22T21:04:32.800Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "postman",
+        "checkedAt": "2026-10-22T21:05:13.390Z",
+        "nextCheckAt": "2027-04-22T21:05:13.390Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "algolia",
+        "checkedAt": "2026-10-22T21:05:52.951Z",
+        "nextCheckAt": "2027-04-22T21:05:52.951Z",
+        "checkpointPreserved": true,
+        "released": true
+      },
+      {
+        "productId": "elastic-cloud",
+        "checkedAt": "2026-10-22T21:06:32.396Z",
+        "nextCheckAt": "2027-04-22T21:06:32.396Z",
+        "checkpointPreserved": true,
+        "released": true
+      }
+    ]
+  },
+  "products": [
+    {
+      "productId": "firebase",
+      "name": "Firebase",
+      "pricingMode": "usage_only",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 2,
+      "offers": 18,
+      "finding": "Spark no-cost plan and17service-specific Blaze usage rates recovered; no fixedBlaze base fee. Future bandwidth and streaming-cent literal retained separately.",
+      "remainingGaps": [
+        "Many services link to external Google Cloud rates; those unretained prices not guessed.",
+        "AppHosting storage effective-date context ambiguous; row has no date, bandwidth row is explicitly future."
+      ],
+      "rawFacts": [
+        {
+          "fact": "App Hosting outgoing bandwidth future-effective August1,2025: uncached0.20/GiB and cached0.15/GiB after10GiB/month free. Not treated as an effective June25rate.",
+          "source": {
+            "locator": "offset:592020-592826",
+            "text": "Outgoing bandwidth Uncached Cached Starting August 1, 2025 No-cost up to 10 GiB/month, then $0.20/GiB $0.15/GiB",
+            "url": "https://firebase.google.com/pricing/",
+            "capturedAt": "2025-06-25T08:44:13.000Z",
+            "sha256": "9795fe7243de48c218f2ca6d9b8d1bca5f95b35ecfe0647cfd449e7ee5ab25c6"
+          }
+        },
+        {
+          "fact": "Android Device Streaming:30no-cost minutes per project/month, then15cents per additional minute. Literal subunit retained; no invented ISO or derived major-unit price.",
+          "source": {
+            "locator": "offset:633117-633385",
+            "text": "30 no-cost minutes per project, per month 15 cents for each additional minute",
+            "url": "https://firebase.google.com/pricing/",
+            "capturedAt": "2025-06-25T08:44:13.000Z",
+            "sha256": "9795fe7243de48c218f2ca6d9b8d1bca5f95b35ecfe0647cfd449e7ee5ab25c6"
+          }
+        },
+        {
+          "fact": "New firebasestorage.app/additional-bucket no-cost quotas only for us-central1/us-west1/us-east1; do not apply legacy appspot rates to these buckets.",
+          "source": {
+            "locator": "offset:614744-615658",
+            "text": "*.firebasestorage.app and any additional buckets Note: No-cost quotas are only available for buckets in the following regions: us-central1 , us-west1 , us-east1 .",
+            "url": "https://firebase.google.com/pricing/",
+            "capturedAt": "2025-06-25T08:44:13.000Z",
+            "sha256": "9795fe7243de48c218f2ca6d9b8d1bca5f95b35ecfe0647cfd449e7ee5ab25c6"
+          }
+        },
+        {
+          "fact": "Blaze no-cost usage calculated daily; Cloud Functions,ML,PhoneAuth andTestLab differ. Individual row quota periods retained, not rewritten as a uniform monthly limit.",
+          "source": {
+            "locator": "offset:640449-640666",
+            "text": "* No-cost usage on Blaze plan is calculated daily. Details differ slightly for Cloud Functions, Firebase ML, Phone Auth, and Test Lab.",
+            "url": "https://firebase.google.com/pricing/",
+            "capturedAt": "2025-06-25T08:44:13.000Z",
+            "sha256": "9795fe7243de48c218f2ca6d9b8d1bca5f95b35ecfe0647cfd449e7ee5ab25c6"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "firebase",
+          "kind": "landing",
+          "url": "https://firebase.google.com/",
+          "capturedAt": "2025-06-30T10:32:58.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630103258id_/https://firebase.google.com/",
+          "sha256": "c314ceabde14b25868d773c8adc666628e3bacd4467e0404b8c64f6029aef9e1",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "EDF7XWYJSKFNOEHYVUSO6OY2IGPFCCXK",
+            "actualDigest": "EDF7XWYJSKFNOEHYVUSO6OY2IGPFCCXK"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "firebase",
+          "kind": "pricing",
+          "url": "https://firebase.google.com/pricing/",
+          "capturedAt": "2025-06-25T08:44:13.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625084413id_/https://firebase.google.com/pricing/",
+          "sha256": "9795fe7243de48c218f2ca6d9b8d1bca5f95b35ecfe0647cfd449e7ee5ab25c6",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "NZWHYTNAJ3GOLQHBHL7MO4PDOWZHAJVI",
+            "actualDigest": "NZWHYTNAJ3GOLQHBHL7MO4PDOWZHAJVI"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "heroku",
+      "name": "Heroku",
+      "pricingMode": "mixed",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 5,
+      "plans": 27,
+      "offers": 41,
+      "finding": "Eco flat monthly pool plus named dyno/data service rates, explicit monthly caps/ranges and Connect demo/quotes recovered; not a single platform subscription price.",
+      "remainingGaps": [
+        "Not a complete bill or list of every third-party marketplace add-on.",
+        "Included CI/CD/support/Teams components retained as raw facts without invented zero prices."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Included component; not converted into a standalone zero-priced subscription.",
+          "source": {
+            "locator": "offset:231768-231783",
+            "text": "Included",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        },
+        {
+          "fact": "Included component; not converted into a standalone zero-priced subscription.",
+          "source": {
+            "locator": "offset:236727-236742",
+            "text": "Included",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        },
+        {
+          "fact": "Included component; not converted into a standalone zero-priced subscription.",
+          "source": {
+            "locator": "offset:238797-238812",
+            "text": "Included",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        },
+        {
+          "fact": "Included component; not converted into a standalone zero-priced subscription.",
+          "source": {
+            "locator": "offset:241044-241059",
+            "text": "Included",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        },
+        {
+          "fact": "Included component; not converted into a standalone zero-priced subscription.",
+          "source": {
+            "locator": "offset:246651-246666",
+            "text": "Included",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        },
+        {
+          "fact": "Eco approximate0.005/hour is illustrative; actualcharge is flat5/month for up to1000hours across apps.",
+          "source": {
+            "locator": "offset:160066-160462",
+            "text": "Eco Test ideas or run apps that see intermittent use. ~$0.005/hour (flat fee of $5/month)",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        },
+        {
+          "fact": "App-type overview rounded hourly estimates differ from detailed family rate cards; detailed rates retained without silently reconciling.",
+          "source": {
+            "locator": "offset:157815-158090",
+            "text": "The price per dyno per month listed for each dyno type is the maximum you’re charged if you run the dyno 24 hours a day, 7 days a week since your last billing cycle. Eco dynos are not prorated and are a flat-rate price for up to 1,000 hours of usage across apps.",
+            "url": "https://www.heroku.com/pricing/",
+            "capturedAt": "2025-06-30T11:10:25.000Z",
+            "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "heroku",
+          "kind": "landing",
+          "url": "https://www.heroku.com/",
+          "capturedAt": "2025-06-30T20:06:41.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630200641id_/https://www.heroku.com/",
+          "sha256": "98147dfcd597d4f5ffc40aee13d9f1a97e489b20554cc0acb65f736b5a5f416f",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "C2FJJJBL4ZKFOTLR6VF7Z6VMLHQORXAY",
+            "actualDigest": "C2FJJJBL4ZKFOTLR6VF7Z6VMLHQORXAY"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "heroku",
+          "kind": "pricing",
+          "url": "https://www.heroku.com/pricing/",
+          "capturedAt": "2025-06-30T11:10:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630111025id_/https://www.heroku.com/pricing/",
+          "sha256": "cadedf4d77f24c3bfa9c2f78eaaa1e3659f5191a9aaafec410229a04c9f2d854",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "G4ED7NDQFH4MKNERNP5VFD5UKA4ICAKB",
+            "actualDigest": "G4ED7NDQFH4MKNERNP5VFD5UKA4ICAKB"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "vercel",
+      "name": "Vercel",
+      "pricingMode": "mixed",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 6,
+      "offers": 37,
+      "finding": "Hobby free, Pro20/month plus29component/seat rates, Enterprise custom pricing and3named optional analytics/observability components recovered. All dollar currencies unknown; legacy digest qualification retained.",
+      "remainingGaps": [
+        "Starting rates may vary by region; no external pricing documentation fetched.",
+        "No annual commitment or trial duration inferred.",
+        "Not a calculated invoice; base subscription and optional/usage charges must not be summed blindly."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Pro free trial is offered but no duration or recurring zero charge inferred.",
+          "source": {
+            "locator": "offset:127511-127726",
+            "text": "Start a free trial",
+            "url": "https://vercel.com/pricing",
+            "capturedAt": "2025-06-27T08:35:35.000Z",
+            "sha256": "90fafeb865dc97202ed692b522bdb6e99910c1a6956bed995689a6edaa861877"
+          }
+        },
+        {
+          "fact": "Enterprise trial requested through team; duration and prices unknown.",
+          "source": {
+            "locator": "offset:747480-749181",
+            "text": "Looking for even more scale? Get a trial from the Vercel team. Get an Enterprise Trial",
+            "url": "https://vercel.com/pricing",
+            "capturedAt": "2025-06-27T08:35:35.000Z",
+            "sha256": "90fafeb865dc97202ed692b522bdb6e99910c1a6956bed995689a6edaa861877"
+          }
+        },
+        {
+          "fact": "Hobby is personal/non-commercial; additional usage purchases limited to Pro.",
+          "source": {
+            "locator": "offset:751599-751899",
+            "text": "Our Hobby plan is for personal, non-commercial use. Pro is for small teams with moderate usage and collaboration requirements. Enterprise is for teams seeking greater performance, collaboration, and security. Contact our sales team to learn more.",
+            "url": "https://vercel.com/pricing",
+            "capturedAt": "2025-06-27T08:35:35.000Z",
+            "sha256": "90fafeb865dc97202ed692b522bdb6e99910c1a6956bed995689a6edaa861877"
+          }
+        },
+        {
+          "fact": "Pro usage may be purchased uncapped above included allowance; numerical rates remain starting rates when labeled.",
+          "source": {
+            "locator": "offset:756566-757007",
+            "text": "Yes! On top of your included usage on Pro, you can pay as you go for additional products like Fast Data Transfer (starting at $0.15 per GB) and Edge Requests (starting at $2 per million), uncapped. If you have a free Hobby account, you are limited to the usage constraints listed on this page and cannot purchase additional usage. Read more details in our documentation .",
+            "url": "https://vercel.com/pricing",
+            "capturedAt": "2025-06-27T08:35:35.000Z",
+            "sha256": "90fafeb865dc97202ed692b522bdb6e99910c1a6956bed995689a6edaa861877"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "vercel",
+          "kind": "landing",
+          "url": "https://vercel.com/",
+          "capturedAt": "2025-06-30T15:40:22.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630154022id_/https://vercel.com/",
+          "sha256": "0adac783f77c9b0fd8711ba5f05808aed3b5fd81d4c16f57f123497fc722f3c1",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ZMIQV5BLTCVEE3272QODMXYCHOKBJYV2",
+            "actualDigest": "JCKCWWO6SHCKE7VDP574VXKCLJEBGWFW",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "vercel",
+          "kind": "pricing",
+          "url": "https://vercel.com/pricing",
+          "capturedAt": "2025-06-27T08:35:35.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250627083535id_/https://vercel.com/pricing",
+          "sha256": "90fafeb865dc97202ed692b522bdb6e99910c1a6956bed995689a6edaa861877",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "RD5ETUZR6B5OKI3MGVNSSIJD7UCNXNI6",
+            "actualDigest": "ADHAKDNRR2SIZ3QJ6XZJU5U4CKDXO6JA",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "pingdom",
+      "name": "Pingdom",
+      "pricingMode": "trial",
+      "baselineStatus": "missing_pricing",
+      "baselineError": null,
+      "category": "trial_only",
+      "confirmedObservations": 1,
+      "plans": 1,
+      "offers": 1,
+      "finding": "30-day fully functional free trial recovered. Selected June7pricing capture failed digest validation; no retained paid-price evidence.",
+      "remainingGaps": [
+        "Primary pricing replay archive_digest_mismatch, not absence of an archived pricing capture.",
+        "PDF candidate had no qualifying HTML record; landing contains no supported numerical paid rate."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Dated official pricing navigation; capture selected but body not retained after digest mismatch.",
+          "source": {
+            "locator": "offset:45165-45266",
+            "text": "PRICING",
+            "url": "https://www.pingdom.com/",
+            "capturedAt": "2025-06-30T13:07:25.000Z",
+            "sha256": "e25ef3e60596eb24f1f106d4fa4522f6dd79d9c76bc2ec07f4840190a92b86e6"
+          }
+        },
+        {
+          "fact": "Official pricing-and-packaging PDF link was a second candidate; no qualifying HTML record in bounded lookup.",
+          "source": {
+            "locator": "offset:69595-69839",
+            "text": "Pricing and Packaging",
+            "url": "https://www.pingdom.com/",
+            "capturedAt": "2025-06-30T13:07:25.000Z",
+            "sha256": "e25ef3e60596eb24f1f106d4fa4522f6dd79d9c76bc2ec07f4840190a92b86e6"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "pingdom",
+          "kind": "landing",
+          "url": "https://www.pingdom.com/",
+          "capturedAt": "2025-06-30T13:07:25.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630130725id_/https://www.pingdom.com/",
+          "sha256": "e25ef3e60596eb24f1f106d4fa4522f6dd79d9c76bc2ec07f4840190a92b86e6",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "OOOOJS6H5IVLJTF7IMHHZSPCWO5IFT46",
+            "actualDigest": "OOOOJS6H5IVLJTF7IMHHZSPCWO5IFT46"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "pingdom",
+          "kind": "pricing",
+          "url": "https://www.pingdom.com/pricing/",
+          "capturedAt": "2025-06-07T07:06:08.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250607070608id_/https://www.pingdom.com/pricing/",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "retool",
+      "name": "Retool",
+      "pricingMode": "mixed",
+      "baselineStatus": "extraction_unavailable",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 5,
+      "offers": 10,
+      "finding": "Cloud annual-billed Team10standard/5end-user and Business50standard/15end-user monthly equivalents, Free tier, Enterprise custom pricing, conditional external-user bands and75per5000workflow-run monthly add-on recovered.",
+      "remainingGaps": [
+        "Animated hero counters do not safely expose unselected monthly/self-hosted prices.",
+        "No ISO dollar currency in retained pricing evidence.",
+        "Agent capacity has allowances and paid eligibility but no recovered numerical overage rate.",
+        "External-user tier formula unknown beyond literal quantity bands."
+      ],
+      "rawFacts": [
+        {
+          "fact": "Retained controls explicitly select Annual billing and Cloud, with billed-annually Team/Business labels; unselected Monthly/SelfHost alternatives not invented.",
+          "source": {
+            "locator": "offset:139018-141188|offset:143296-143394|offset:143604-143702",
+            "text": "Monthly Annually Cloud Self Host",
+            "url": "https://retool.com/pricing",
+            "capturedAt": "2025-06-20T03:56:49.000Z",
+            "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b"
+          }
+        },
+        {
+          "fact": "Animated hero price counters contain every digit0–9; these are not reliable literal amounts. Fixed comparison-table text used instead.",
+          "source": {
+            "locator": "offset:149431-151774",
+            "text": "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9",
+            "url": "https://retool.com/pricing",
+            "capturedAt": "2025-06-20T03:56:49.000Z",
+            "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b"
+          }
+        },
+        {
+          "fact": "Self-hosted applications with external-user pricing require a custom annual plan; Cloud bands not transferred to self-hosted deployments.",
+          "source": {
+            "locator": "offset:202727-202981",
+            "text": "Deploy branded customer-facing portals with built-in user management and permissions. Applications with external user pricing require a custom annual plan for self-hosted deployments",
+            "url": "https://retool.com/pricing",
+            "capturedAt": "2025-06-20T03:56:49.000Z",
+            "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b"
+          }
+        },
+        {
+          "fact": "Students and educators can apply for a free Business account; non-profits can apply for25free seats. Conditional offers, not a generally free paid tier.",
+          "source": {
+            "locator": "offset:369067-370201",
+            "text": "Students and educators: Complete a student and educators application ↗ to claim a free Business account. Nonprofits: Complete a nonprofits application ↗ to claim 25 free seats.",
+            "url": "https://retool.com/pricing",
+            "capturedAt": "2025-06-20T03:56:49.000Z",
+            "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b"
+          }
+        },
+        {
+          "fact": "Agents additional capacity available in paid tiers, but no supported numerical capacity rate recovered.",
+          "source": {
+            "locator": "offset:270545-271519",
+            "text": "Up to 20/month Additional capacity is available in Team, Business, or Enterprise plans.",
+            "url": "https://retool.com/pricing",
+            "capturedAt": "2025-06-20T03:56:49.000Z",
+            "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "productId": "retool",
+          "kind": "landing",
+          "url": "https://retool.com/",
+          "capturedAt": "2025-06-30T11:07:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630110734id_/https://retool.com/",
+          "sha256": "7a001b667103e62537f0bef60b49bd1112841d62513c30acb019bcc92681326f",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "ORCISMV35K63NMW4EQZCWJSIJPTRNPVD",
+            "actualDigest": "O5KUKRNAEWEPTVORPN6WTXNGIN66CERY",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "retool",
+          "kind": "pricing",
+          "url": "https://retool.com/pricing",
+          "capturedAt": "2025-06-20T03:56:49.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250620035649id_/https://retool.com/pricing",
+          "sha256": "413023cf2f8314f038bf128c6f5e7ce47a0d652c3a50a2e94a2e126abdfbaf1b",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "C7UHD3BWUPTWLUYUSBQGSBNEH2EB5JWI",
+            "actualDigest": "C7UHD3BWUPTWLUYUSBQGSBNEH2EB5JWI"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "insomnia",
+      "name": "Insomnia paid plans",
+      "pricingMode": "mixed",
+      "baselineStatus": "review_pending",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 4,
+      "offers": 5,
+      "finding": "Visible named subscription tiers and optional mock-request usage packs recovered; hidden savings text excluded from plan identity.",
+      "remainingGaps": [
+        "ISOcurrency unknown; unrendered checkout state not executed; some addon contract terms unknown."
+      ],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "insomnia",
+          "kind": "landing",
+          "url": "https://insomnia.rest/",
+          "capturedAt": "2025-06-25T23:54:53.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250625235453id_/https://insomnia.rest/",
+          "sha256": "c7b1a832809952055fce943f72b55209fc502e73d1969f179d982adb64c489a1",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "RBWBTUUCXWJDP6JZVMTXPMLG4C6JLALZ",
+            "actualDigest": "TFWOF33XMC4C77GXRFW4JY2NI2LPEOAK",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "insomnia",
+          "kind": "pricing",
+          "url": "https://insomnia.rest/pricing",
+          "capturedAt": "2025-06-14T04:55:14.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250614045514id_/https://insomnia.rest/pricing",
+          "sha256": "b38d749dda3a616b34088d674414b392fc1641fb76cb7945df281bc5ec062c5b",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "WQZJO5GLFN4UOIGN2BMXHJG3OAY37VP3",
+            "actualDigest": "WQZJO5GLFN4UOIGN2BMXHJG3OAY37VP3"
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "postman",
+      "name": "Postman",
+      "pricingMode": "mixed",
+      "baselineStatus": "review_pending",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 13,
+      "offers": 21,
+      "finding": "Named core subscription billing variants and individually scoped add-on/resource rates recovered; generic whole-section addon names not used.",
+      "remainingGaps": [
+        "ISOcurrency unknown; unrendered checkout state not executed; some addon contract terms unknown."
+      ],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "postman",
+          "kind": "landing",
+          "url": "https://www.postman.com/",
+          "capturedAt": "2025-06-29T23:13:20.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250629231320id_/https://www.postman.com/",
+          "sha256": "aa29898435d85818fe4bec6d2235d6aa3a3554e55774b7f497a4bf2e2ac6af7d",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "I6PNB6Y3I3RTHN7E3RCBOVYNA6C5GVXU",
+            "actualDigest": "I6PNB6Y3I3RTHN7E3RCBOVYNA6C5GVXU"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "postman",
+          "kind": "pricing",
+          "url": "https://www.postman.com/pricing/",
+          "capturedAt": "2025-06-13T02:12:29.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250613021229id_/https://www.postman.com/pricing/",
+          "sha256": "ccce2a265dfc5127cbae7e947734d15d1df07899d329cad32762b460ce707dc5",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "DS6TE2X6VNZOTKIFRO3I5H3C4GQVSJTF",
+            "actualDigest": "NXY5C7W35T7ETHOZ63VQ2TODDNC7TLGN",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "algolia",
+      "name": "Algolia",
+      "pricingMode": "usage_only",
+      "baselineStatus": "review_pending",
+      "baselineError": null,
+      "category": "positive_price",
+      "confirmedObservations": 1,
+      "plans": 13,
+      "offers": 15,
+      "finding": "Grow numeric core service rates are usage-only after free allowances; annual Premium/Elevate quoted. No numeric flat base fee established.",
+      "remainingGaps": [
+        "ISOcurrency unknown; exact annual quote/addon amounts unknown; incremental search-request billingperiod unknown."
+      ],
+      "rawFacts": [],
+      "sources": [
+        {
+          "productId": "algolia",
+          "kind": "landing",
+          "url": "https://www.algolia.com/",
+          "capturedAt": "2025-06-30T23:06:33.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630230633id_/https://www.algolia.com/",
+          "sha256": "eecb2995093dab37e1583bbb9ff99804c7cbb4cca460e1fd6be161f03bd9ec9a",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "PQSJS2ZCM5ZBVOIKRA5BAC656Q2HOOV4",
+            "actualDigest": "IPLJPGFFZME3KZX6MQF7OVVFRR6MAZ2V",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "algolia",
+          "kind": "pricing",
+          "url": "https://www.algolia.com/pricing",
+          "capturedAt": "2025-06-30T16:22:34.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250630162234id_/https://www.algolia.com/pricing",
+          "sha256": "af1585266e2a82b09e1844b797be4e0b47ca6296356daedb425fd3f2e47ccfe0",
+          "integrity": {
+            "status": "legacy_chunked_unverified",
+            "expectedDigest": "APTSIDQ2DEN3UTBZRJSSXPOIRTWY33A5",
+            "actualDigest": "YMQH6REMVFVCY2CRTHSQJZBXJY3RBLMZ",
+            "reason": "The archived digest may include legacy HTTP chunk framing; this cause is unproven. Original digest remains unverified."
+          },
+          "retained": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "productId": "elastic-cloud",
+      "name": "Elastic Cloud",
+      "pricingMode": "trial",
+      "baselineStatus": "wrong_scope",
+      "baselineError": null,
+      "category": "trial_only",
+      "confirmedObservations": 1,
+      "plans": 1,
+      "offers": 1,
+      "finding": "Verified landing supports only named free-trial CTA and hosted/serverless structure. Supplemental dedicated pricing replay failed digest integrity and no body/rate retained.",
+      "remainingGaps": [
+        "Numeric Cloud pricing, trial duration and renewal terms unavailable."
+      ],
+      "rawFacts": [
+        {
+          "field": "reviewed_pricing_alias",
+          "value": "https://www.elastic.co/pricing/serverless-search",
+          "source": {
+            "url": "https://www.elastic.co/cloud/",
+            "capturedAt": "2025-06-09T06:00:52.000Z",
+            "sha256": "63fe7f1ce814d21123ed53c16172b40712d5a4ee53df89f6a028a4543a2fcd1e",
+            "locator": "offset:124621-124970",
+            "text": "Elastic Cloud Serverless pricing"
+          },
+          "qualification": "Dated exact destination discovery only; failed replay provides no pricing evidence."
+        }
+      ],
+      "sources": [
+        {
+          "productId": "elastic-cloud",
+          "kind": "landing",
+          "url": "https://www.elastic.co/cloud/",
+          "capturedAt": "2025-06-09T06:00:52.000Z",
+          "archiveUrl": "https://web.archive.org/web/20250609060052id_/https://www.elastic.co/cloud/",
+          "sha256": "63fe7f1ce814d21123ed53c16172b40712d5a4ee53df89f6a028a4543a2fcd1e",
+          "integrity": {
+            "status": "verified",
+            "expectedDigest": "AO3JURDQNLJMRXGL7TVO6CEB4ZW5V4GY",
+            "actualDigest": "AO3JURDQNLJMRXGL7TVO6CEB4ZW5V4GY"
+          },
+          "retained": true,
+          "error": null
+        },
+        {
+          "productId": "elastic-cloud",
+          "kind": "pricing",
+          "url": "https://www.elastic.co/pricing/serverless-search",
+          "capturedAt": "2025-06-04T15:28:54.000Z",
+          "sha256": null,
+          "integrity": null,
+          "retained": false,
+          "error": "HTML does not match archived payload digest",
+          "supplemental": true
+        }
+      ]
+    }
+  ],
+  "supplementalRecovery": [
+    {
+      "productId": "elastic-cloud",
+      "reason": "Exact named Cloud Serverless pricing link leaves Cloud path; dated reviewed exact serverless-search alias added after frozen baseline",
+      "reservationCheckedAt": "2026-10-22T21:06:32.396Z",
+      "candidate": {
+        "url": "https://www.elastic.co/pricing/serverless-search",
+        "label": "Elastic Cloud Serverless pricing",
+        "locator": "offset:124621-124970",
+        "provenance": "archived-link"
+      },
+      "bounds": {
+        "from": "2025-05-10T06:00:52.000Z",
+        "cutoff": "2025-06-09T06:00:52.000Z"
+      },
+      "requests": [
+        {
+          "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.elastic.co%2Fpricing%2Fserverless-search&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cmimetype%2Cstatuscode%2Cdigest&filter=statuscode%3A200&to=20250609060052&limit=-1&fastLatest=true&filter=mimetype%3Atext%2Fhtml&from=20250510060052",
+          "startedAt": "2026-10-22T21:09:42.765Z",
+          "status": 200,
+          "finishedAt": "2026-10-22T21:09:43.315Z",
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/20250604152854id_/https://www.elastic.co/pricing/serverless-search",
+          "startedAt": "2026-10-22T21:09:52.767Z",
+          "status": 200,
+          "finishedAt": "2026-10-22T21:09:54.607Z",
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "memento-datetime": "Wed, 04 Jun 2025 15:28:54 GMT",
+            "x-archive-src": "spn2-20250604153603/spn2-20250604150820-wwwb-spn35.us.archive.org-8006.warc.gz"
+          }
+        }
+      ],
+      "status": "error"
+    }
+  ],
+  "validation": {
+    "build": "passed",
+    "catalogAndProfileChecks": "passed",
+    "nodeTests": 356,
+    "pythonTests": 5,
+    "workerDryRun": "passed"
+  },
+  "reviewInputHashes": {
+    "firstFive": "e904435b65da7019640d89c2167dbaead4daf6ed6bae4a3f8a2b0e6326eeb6c4",
+    "lastFour": "dc4188d49b87dc93aac9a9b273756d1edaf39b564f8fc4999a7a96b459ce9b20",
+    "firstFiveApproval": "e2e68f0b838a2a2077f0a259d82aec27fff77dc4485f1c82536837d957077c87",
+    "lastFourApproval": "7c951340844e9e36285e3afef088c8c56d4f017a922f7bf4a53d200ebef14b35"
+  }
+}

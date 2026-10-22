@@ -4359,6 +4359,21 @@
     "audienceRank": 48,
     "productPaths": [
       "/cloud"
+    ],
+    "pricingAliases": [
+      {
+        "url": "https://www.elastic.co/pricing/serverless-search",
+        "evidenceCapturedAt": "2025-06-09T06:00:52.000Z",
+        "evidenceArchiveUrl": "https://web.archive.org/web/20250609060052id_/https://www.elastic.co/cloud/",
+        "evidenceSha256": "63fe7f1ce814d21123ed53c16172b40712d5a4ee53df89f6a028a4543a2fcd1e",
+        "locator": "offset:124621-124970",
+        "label": "Elastic Cloud Serverless pricing",
+        "scope": {
+          "edition": "Elastic Cloud Serverless",
+          "deployment": "hosted"
+        },
+        "locale": "en"
+      }
     ]
   },
   {
