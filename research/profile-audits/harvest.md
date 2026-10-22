@@ -72,14 +72,27 @@ Shared research batches retained in order, including follow-ups and failed loads
   Fetch failures: L0: Failed to fetch https://raw.githubusercontent.com/overhangio/tutor/release/docs/install.rst: (404) Not Found
 - shortcuts-current.json: {"open": [{"ref_id": "https://moodle.com/news/moodle-goals-help-us-advance-mission-empowering-educators-improve-world/"}, {"ref_id": "https://raw.githubusercontent.com/overhangio/tutor/release/docs/install.md"}], "search_query": [{"q": "Kimai app", "domains": ["cloudron.io", "yunohost.org"]}, {"q": "Tutor installation one command launch", "domains": ["docs.tutor.edly.io", "openedx.org"]}], "find": [{"ref_id": "https://raw.githubusercontent.com/orangehrm/orangehrm/v5.9/installer/Util/SystemCheck.php", "pattern": "MINIMUM"}, {"ref_id": "https://raw.githubusercontent.com/overhangio/tutor/release/tutor/templates/config/defaults.yml", "pattern": "MYSQL"}], "response_length": "long"}
   Fetch failures: L0: Failed to fetch https://moodle.com/news/moodle-goals-help-us-advance-mission-empowering-educators-improve-world/: (403) Forbidden; L0: Failed to fetch https://raw.githubusercontent.com/overhangio/tutor/release/docs/install.md: Cache miss
+- historical-investor-check.json: {"open": [{"ref_id": "https://www.sec.gov/Archives/edgar/data/1066026/000119312508161414/dex991.htm"}, {"ref_id": "https://investors.intuit.com/sec-filings/all-sec-filings/content/0000891618-99-000740/0000891618-99-000740.pdf"}], "response_length": "long"}
+- intuit-investor-proof.json: {"open": [{"ref_id": "https://www.kleinerperkins.com/companies/"}, {"ref_id": "https://www.kleinerperkins.com/partnerships/"}], "search_query": [{"q": "Intuit", "domains": ["kleinerperkins.com"]}], "response_length": "long"}
+  Fetch failures: L0: URL https://www.kleinerperkins.com/companies/ is not accessible via this tool.; L0: Failed to fetch https://www.kleinerperkins.com/partnerships/: (400) Content length is too large: 4194305+
+- dependency-source-qa.json: {"open": [{"ref_id": "https://www.kimai.org/documentation/emails.html"}, {"ref_id": "https://docs.frappe.io/erpnext/user/manual/en/email-account"}], "search_query": [{"q": "Odoo 19 source install wkhtmltopdf rtlcss Nodejs", "domains": ["odoo.com"]}], "response_length": "long"}
+- email-routing-final.json: {"find": [{"ref_id": "https://www.kimai.org/documentation/emails.html", "pattern": "SMTP"}, {"ref_id": "https://docs.frappe.io/erpnext/email-account", "pattern": "SMTP"}], "response_length": "long"}
 
 ## Sources and decisions
 
 - https://www.getharvest.com/terms-of-service
 - https://www.getharvest.com/about
+- https://investors.bendingspoons.com/newsroom/bending-spoons-completes-acquisition-of-airtable
 - https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons
 - https://www.getharvest.com/pricing
 
-Discovered current ownership changed; did not reuse older bootstrap story. Current terms directly establish operator and parent; adviser corroborates acquisition. Parent IPO/funding from October2026 primary company release; ticker withheld. Current Teams/Enterprise usage-linked pricing distinguished from legacy Pro pricing.
+Final QA: individual organization claims cite distinct funding/history/ownership sources; investor and current-parent facts kept distinct. All earlier search batches and failures retained above. Intuit1999 supplied13D concerns Excite shares, so not used as evidence of Kleiner equity; actual KP investment story used. InvoiceNinja hardware source corrected to first-party getting-started page.
 
 Persistence command: python3 build_profiles.py writes this profile, claim ledger and audit after constructing each completed product. Validation uses node scripts/validate-profiles.mjs on this group only.
+
+
+## Final validation
+
+- Ran `python3 build_profiles.py` after routing Frappe outgoing-mail facts to Email Account §3.4 and Kimai mail transport facts to Emails/MAILER_URL examples (SMTP or Sendmail; null transport disables mail).
+- Ran `node scripts/validate-profiles.mjs profiles`: 23 valid profiles. Custom-directory mode intentionally skips claims; its reported zero sourced claims is not a ledger count.
+- Separately imported `lib/claims.mjs` parseClaims and checked all assigned IDs, dates, profile/claims/audit exact coverage, organization fields, all pricing roles, assessments and every alternative requirement/resource/shortcut field. Result: 23 profiles, 550 valid claims, 23 audits. Exact summary saved to validation.json. No repository files changed.

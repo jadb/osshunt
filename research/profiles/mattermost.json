@@ -1,0 +1,264 @@
+{
+  "id": "mattermost",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Mattermost, Inc.",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Y Combinator Continuity",
+        "source": "https://www.globenewswire.com/news-release/2019/06/19/1871403/0/en/yc-leads-50m-series-b-in-mattermost-the-open-source-slack-alternative.html"
+      },
+      {
+        "name": "Battery Ventures",
+        "source": "https://www.globenewswire.com/news-release/2019/06/19/1871403/0/en/yc-leads-50m-series-b-in-mattermost-the-open-source-slack-alternative.html"
+      },
+      {
+        "name": "Redpoint",
+        "source": "https://www.globenewswire.com/news-release/2019/06/19/1871403/0/en/yc-leads-50m-series-b-in-mattermost-the-open-source-slack-alternative.html"
+      },
+      {
+        "name": "S28 Capital",
+        "source": "https://www.globenewswire.com/news-release/2019/06/19/1871403/0/en/yc-leads-50m-series-b-in-mattermost-the-open-source-slack-alternative.html"
+      }
+    ],
+    "notes": "2011 founding as SpinPunch; Mattermost product open source since 2015. Historical Series B investors; current equity ownership unresolved.",
+    "sources": [
+      "https://mattermost.com/open-source/",
+      "https://www.globenewswire.com/news-release/2019/06/19/1871403/0/en/yc-leads-50m-series-b-in-mattermost-the-open-source-slack-alternative.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Team Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://docs.mattermost.com/product-overview/editions-and-offerings"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Professional",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Professional organizational tier exists; numeric prices not exposed in reviewed pricing extraction.",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Enterprise and Enterprise Advanced exist; no numeric amount or quotation text verified in extraction.",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Existing operational integrations and conversation history can create switching costs; Team Edition has narrower capabilities than commercial editions.",
+      "basis": "assessment",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Threaded channel discussions and searchable file conversations support asynchronous operations.",
+      "basis": "assessment",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Webhooks and slash commands put operational actions into team chat.",
+      "basis": "assessment",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ]
+    },
+    {
+      "claim": "One-to-one audio calls with screen sharing support quick troubleshooting within conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://mattermost.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Mattermost, Inc.",
+          "url": "https://mattermost.com/open-source/",
+          "relationship": "business-steward",
+          "source": "https://mattermost.com/open-source/"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://mattermost.com/open-source/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Mattermost Linux binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/product-overview/editions-and-offerings"
+          ]
+        },
+        {
+          "component": "PostgreSQL 15+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Current v12 database; MySQL historical not asserted supported",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        },
+        {
+          "component": "Amazon Aurora PostgreSQL equivalent",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Documented PostgreSQL-compatible alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        },
+        {
+          "component": "Local disk",
+          "necessity": "one-of",
+          "group": "files",
+          "condition": "Default/single-server storage option",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        },
+        {
+          "component": "NFS network drive",
+          "necessity": "one-of",
+          "group": "files",
+          "condition": "Documented file storage alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "one-of",
+          "group": "files",
+          "condition": "Documented alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Container deployment route instead of native Linux binary",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        },
+        {
+          "component": "Elasticsearch/OpenSearch; Prometheus/Grafana",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Documented enterprise cluster/search and monitoring recommendations; not baseline Team services",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+        ]
+      },
+      "notes": "v12 current requirements. PostgreSQL required, no generic SQL substitution. Search/monitoring services described for enterprise scope, not a Team prerequisite.",
+      "sources": [
+        "https://docs.mattermost.com/deployment-guide/software-hardware-requirements",
+        "https://docs.mattermost.com/product-overview/editions-and-offerings"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://docs.mattermost.com/deployment-guide/software-hardware-requirements"
+      ]
+    }
+  }
+}

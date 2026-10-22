@@ -1,0 +1,167 @@
+{
+  "id": "docusign",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Docusign, Inc.",
+    "kind": "business",
+    "foundedYear": 2003,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:DOCU"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Google Ventures",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Visa",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Sapphire Ventures",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Kleiner Perkins",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Accel Partners",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Bain Capital Ventures",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Scale Venture Partners",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Comcast Ventures",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Samsung Venture Investment Corporation",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      },
+      {
+        "name": "Telstra Ventures",
+        "source": "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+      }
+    ],
+    "notes": "Founded2003; IPO2018; currently Nasdaq:DOCU. Listed equity investors are historical2015 disclosed funders, not claims of current shareholding. Underwriters not treated as investors.",
+    "sources": [
+      "https://www.docusign.com/company/news-center/docusign-announces-closing-of-initial-public-offering-and-full-exercise-of-underwriters-option-to-purchase-additional-shares",
+      "https://investor.docusign.com/overview/",
+      "https://investor.docusign.com/news-and-events/press-releases/news-details/2015/DocuSign-Accelerates-Momentum-Helping-More-Companies-Go-Digital-in-Breakout-2014/default.aspx"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Personal",
+      "status": "published",
+      "monthlyPrice": 11,
+      "annualPrice": 132,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account (1 sender;5 envelopes/month)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current US checkout: annual commitment paid in monthly installments, not cancel-anytime monthly. Published total annual commitment$132; tax extra.",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Standard",
+      "status": "published",
+      "monthlyPrice": 30,
+      "annualPrice": 360,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "sender user (100 envelopes/year)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit MOST POPULAR. Annual commitment billed monthly; up to50 users; tax extra.",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business Pro",
+      "status": "published",
+      "monthlyPrice": 45,
+      "annualPrice": 540,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "sender user (100 envelopes/year)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Annual commitment billed monthly; up to50 users; recipient signers do not need paid accounts.",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enhanced plans",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Customized eSignature or IAM plan and envelope limits; no fixed public price.",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Large recipient adoption and extensive business integrations reinforce trust familiarity and integration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://investor.docusign.com/overview/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Reusable/shared templates and collaborative commenting support consistent agreement preparation across teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    },
+    {
+      "claim": "Bulk sending, web forms and payment collection automate high-volume signature workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    },
+    {
+      "claim": "Delegated signing, custody transfer and audit trails support controlled handoffs and traceable agreement completion.",
+      "basis": "assessment",
+      "sources": [
+        "https://ecom.docusign.com/en-US/plans-and-pricing/esignature"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

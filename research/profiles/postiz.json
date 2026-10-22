@@ -69,17 +69,17 @@
     {
       "role": "enterprise",
       "name": "Enterprise",
-      "status": "quote",
-      "monthlyPrice": null,
+      "status": "published",
+      "monthlyPrice": 2500,
       "annualPrice": null,
       "oneTimePrice": null,
       "currency": "USD",
-      "unit": "organization",
+      "unit": "SaaS platform account including 5000 channels",
       "minimumQuantity": null,
-      "scope": "vendor enterprise commercial offer",
-      "notes": "Enterprise/SaaS partner offer sales-led; public standard catalog tops out at Ultimate.",
+      "scope": "vendor commercial SaaS embedding / white-label offer",
+      "notes": "Enterprise Pricing page publishes $2500/mo in its Monthly view, including 5000 channels and unlimited users/posts/API calls. Separate SaaS embedding product scope from standard Team/Ultimate cloud. Page currently says not accepting new applications; published price is not a guarantee of availability.",
       "sources": [
-        "https://postiz.com/pricing"
+        "https://postiz.com/enterprise"
       ]
     }
   ],

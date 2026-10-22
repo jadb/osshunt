@@ -1,0 +1,129 @@
+{
+  "id": "calendly",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Calendly LLC",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "OpenView Venture Partners",
+        "source": "https://openviewpartners.com/"
+      },
+      {
+        "name": "ICONIQ Growth",
+        "source": "https://www.iconiq.com/growth/companies"
+      }
+    ],
+    "notes": "Tope Awotona founded Calendly in 2013 initially using personal savings. Current investor portfolio pages verify OpenView and ICONIQ backing; funding status is not inferred from its initially self-funded origin. No exchange listing or parent established; private company classification follows investor portfolio context. Exact cumulative raise not asserted.",
+    "sources": [
+      "https://calendly.com/about",
+      "https://openviewpartners.com/",
+      "https://www.iconiq.com/growth/companies"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Lowest paid scheduling plan; Free separate. Yearly-billed $10/seat/month multiplied by 12. Optional Notetaker/Callie add-ons excluded.",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Teams",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 192,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Explicit Popular plan badge. Yearly-billed $16/seat/month multiplied by 12; optional add-ons separate.",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Teams",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 192,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "Named team plan; yearly-billed $16/seat/month multiplied by 12.",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 15000,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization contract starting at 50 seats",
+      "minimumQuantity": 50,
+      "scope": "paid product",
+      "notes": "Starts at $15,000/year for organization; starts at 50 seats, USD only. This is a contract starting total, not $15,000 per seat.",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Widely shared booking links and a large integration ecosystem support distribution and embedded workflow switching costs; scheduling itself remains replicable.",
+      "basis": "assessment",
+      "sources": [
+        "https://calendly.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Round-robin scheduling and qualification routing distribute incoming meetings across a team.",
+      "basis": "assessment",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    },
+    {
+      "claim": "Multiple calendar conflict checks and automated reminders coordinate availability and reduce manual follow-up.",
+      "basis": "assessment",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    },
+    {
+      "claim": "Stripe and PayPal connections collect payments as part of the booking workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://calendly.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

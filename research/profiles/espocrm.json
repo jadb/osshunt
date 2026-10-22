@@ -246,7 +246,7 @@
       ],
       "notes": "Official script automates Docker/Nginx/MariaDB provisioning with domain/TLS options; terminal access and sudo required.",
       "sources": [
-        "https://docs.espocrm.com/administration/server-configuration/"
+        "https://docs.espocrm.com/administration/installation-by-script/"
       ]
     }
   }

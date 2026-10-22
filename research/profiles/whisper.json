@@ -1,0 +1,226 @@
+{
+  "id": "whisper",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "OpenAI",
+    "kind": "business",
+    "foundedYear": 2015,
+    "ageBasis": "company-founded",
+    "ownership": "nonprofit",
+    "parent": "OpenAI Foundation controls for-profit business",
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [],
+    "notes": "Organization founded as nonprofit2015; Whisper released2022. Nonprofit control is distinct from equity ownership in its business. Exact investor roster not established in reviewed structural announcement; no absence claim.",
+    "sources": [
+      "https://openai.com/index/built-to-benefit-everyone/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Whisper code and weights",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "local installation",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No business-priced local code/model edition in repository. Separate paid API not substituted for local code.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No enterprise-priced local edition in repository. Local compute supplied by user.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Published pretrained multilingual models and established integrations support adoption, while permissive code/weights keep exclusive lock-in limited.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multilingual transcription, language identification and translation to English share one model pipeline.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    },
+    {
+      "claim": "Six model sizes let users choose inference speed and memory tradeoffs.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    },
+    {
+      "claim": "CLI and Python interface support batch transcription and embedding in custom workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/built-to-benefit-everyone/",
+          "relationship": "business-steward",
+          "source": "https://openai.com/index/built-to-benefit-everyone/"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://openai.com/index/built-to-benefit-everyone/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "library",
+      "requirements": [
+        {
+          "component": "Python 3.8\u20133.11 and PyTorch",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "README compatibility scope; training tested Python3.9.9/PyTorch1.10.1, recent PyTorch expected.",
+          "sources": [
+            "https://github.com/openai/whisper"
+          ]
+        },
+        {
+          "component": "Whisper model weights, tiktoken and Python package dependencies",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/openai/whisper"
+          ]
+        },
+        {
+          "component": "FFmpeg command-line tool",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/openai/whisper"
+          ]
+        },
+        {
+          "component": "Rust toolchain",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "tiktoken has no prebuilt wheel on selected platform",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/openai/whisper"
+          ]
+        },
+        {
+          "component": "CUDA GPU",
+          "necessity": "optional",
+          "group": null,
+          "condition": "GPU acceleration; CPU inference also possible",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/openai/whisper"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://github.com/openai/whisper"
+        ],
+        "cpu": null,
+        "memory": "GPU VRAM approx1GB tiny/base;2GB small;5GB medium;10GB large;6GB turbo",
+        "storage": null,
+        "os": "Linux/macOS/Windows package examples",
+        "notes": "VRAM table is model-dependent GPU guidance, not total system RAM minimum. Library/CLI, not a meeting notes server."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Python package install",
+          "url": "https://github.com/openai/whisper#setup",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "pip install -U openai-whisper installs library; Python/FFmpeg prerequisites remain.",
+          "sources": [
+            "https://github.com/openai/whisper"
+          ]
+        }
+      ],
+      "notes": "Verified options classified individually; configuration may still be required.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    }
+  }
+}

@@ -17,6 +17,8 @@ Tier A applies to the PrestaShop Project core (OSL-3.0) and bundled modules (AFL
 
 License: OSL-3.0 AND AFL-3.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/PrestaShop/PrestaShop/blob/6d78ac503209f6dc86488644abe7cf15c01d348c/LICENSE.md), [edition evidence](https://prestashop.com/prestashop-offers/), [hosting](https://prestashop.com/prestashop-offers/), [repository](https://github.com/PrestaShop/PrestaShop).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/prestashop.md).
+
 Service costs/limits: Paid hosting, support, payment processing and optional marketplace modules/services can add costs.
 
 Repository: pushed 2026-10-21T12:33:35Z; latest commit 2026-10-21T12:33:34Z; latest published release 9.2.0 (2026-09-30T09:56:24Z). Quick analysis: 5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -28,6 +30,8 @@ Repository: pushed 2026-10-21T12:33:35Z; latest commit 2026-10-21T12:33:34Z; lat
 MIT core is self-hostable; root LICENSE explicitly excludes proprietary Enterprise materials listed in ENTERPRISE-LICENSE.md. RBAC and SSO are licensed software gates, not just hosting benefits. Tier B and osi=true refer to MIT core only.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/medusajs/medusa/blob/f7add009dd2f142d98090a5194750e71b2147ddf/LICENSE), [edition evidence](https://medusajs.com/pricing), [hosting](https://medusajs.com/pricing), [repository](https://github.com/medusajs/medusa).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/medusa.md).
 
 Paid restrictions: Role-based access control (RBAC) requires an Enterprise commercial agreement.; Single sign-on (SSO) requires an Enterprise commercial agreement.
 
@@ -42,6 +46,8 @@ Repository: pushed 2026-10-21T20:53:22Z; latest commit 2026-10-21T13:35:10Z; lat
 GPL WooCommerce core is free and self-hostable. Tier C reflects first-party paid software extensions for recurring commerce workflows, including WooCommerce Subscriptions. The extensions remain GPL; this is a paid acquisition boundary, not a claim of proprietary licensing. Core one-time storefront, catalog and order workflows remain available without that extension.
 
 License: GPL-2.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/woocommerce/woocommerce/blob/f9281bb7f7f44b95fa700b3b1b0a07f263bd2df5/license.txt), [edition evidence](https://woocommerce.com/products/woocommerce-subscriptions/), [hosting](https://wordpress.com/support/plan-features/ecommerce-plan/), [repository](https://github.com/woocommerce/woocommerce).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/woocommerce.md).
 
 Paid restrictions: First-party WooCommerce Subscriptions adds recurring billing, automatic renewal retries and subscriber plan management through a paid annual extension; GPL licensing does not make vendor acquisition free.
 

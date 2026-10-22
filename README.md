@@ -14,7 +14,7 @@ Audience positions are editorial reach estimates, not measured market-size count
 
 ## Profile enrichment — in progress
 
-145/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
+183/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
 
 ## Data
 

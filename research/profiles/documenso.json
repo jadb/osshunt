@@ -1,0 +1,294 @@
+{
+  "id": "documenso",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Documenso, Inc.",
+    "kind": "business",
+    "foundedYear": 2022,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "OSS Capital",
+        "source": "https://documenso.com/blog/pre-seed"
+      },
+      {
+        "name": "John Harrison",
+        "source": "https://documenso.com/blog/pre-seed"
+      }
+    ],
+    "notes": "2022 dates public project announcement December 29; first release announced for 2023. Exact company incorporation date unresolved. July 2023 pre-seed $1.25M (announced August) brought total to $1.54M; investors historical.",
+    "sources": [
+      "https://documenso.com/blog",
+      "https://documenso.com/self-hosted",
+      "https://documenso.com/blog/pre-seed"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://documenso.com/self-hosted"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://documenso.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business Edition",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Paid self-host license with fixed yearly billing is explicitly offered; amount not published in reviewed comparison. Distinct cloud Teams plan is $480/year for five users, $40/month annual equivalent.",
+      "sources": [
+        "https://documenso.com/self-hosted"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Edition",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-host license or commercial cloud",
+      "notes": "Tailored Pricing; contact for organization-specific offer. Infrastructure and maintenance responsibilities remain separate.",
+      "sources": [
+        "https://documenso.com/self-hosted"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Developer-oriented signing APIs and reusable signing workflows can create integration switching costs, while open core keeps base technology contestable.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/documenso/documenso"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Reusable templates and team sharing reduce repeated setup of recurring signature requests.",
+      "basis": "assessment",
+      "sources": [
+        "https://documenso.com/blog"
+      ]
+    },
+    {
+      "claim": "Direct links let recipients initiate signing without waiting for an individually addressed invitation.",
+      "basis": "assessment",
+      "sources": [
+        "https://documenso.com/blog"
+      ]
+    },
+    {
+      "claim": "Multi-document envelopes and API V2 support automating a complete signature package within another application.",
+      "basis": "assessment",
+      "sources": [
+        "https://documenso.com/blog"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Documenso, Inc.",
+          "url": "https://documenso.com/",
+          "relationship": "business-steward",
+          "source": "https://documenso.com/self-hosted"
+        }
+      ],
+      "notes": "No named independent corporate financial sponsor verified in repository or commercial pages; verified Documenso, Inc. business supplied as steward fallback. OSS Capital is an investor, not counted as sponsor.",
+      "sources": [
+        "https://github.com/documenso/documenso",
+        "https://documenso.com/self-hosted"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PostgreSQL 14+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Primary data and default document storage. MySQL/SQLite/MongoDB not supported; pooler optional.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "one-of",
+          "group": "email",
+          "condition": "SMTP auth/API OR Resend OR MailChannels",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "Resend API",
+          "necessity": "one-of",
+          "group": "email",
+          "condition": "Resend OR SMTP OR MailChannels",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "MailChannels API",
+          "necessity": "one-of",
+          "group": "email",
+          "condition": "MailChannels OR SMTP OR Resend",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "X.509 .p12 signing certificate",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Not bundled; self-signed or CA-issued; Google Cloud HSM is another documented signing option.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "HTTPS reverse proxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Nginx/Caddy/Traefik/HAProxy or cloud load balancer.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "Node.js runtime or Docker image",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Source build requires Node24+ and npm11.17+; bundled images avoid local build tooling.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "PostgreSQL-based job queue",
+          "necessity": "one-of",
+          "group": "job-provider",
+          "condition": "Default queue OR BullMQ/Redis OR Inngest",
+          "notes": "Uses existing database; no extra broker.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "BullMQ with Redis 6.2+",
+          "necessity": "one-of",
+          "group": "job-provider",
+          "condition": "Alternative job provider selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "Inngest",
+          "necessity": "one-of",
+          "group": "job-provider",
+          "condition": "Alternative managed/cloud job provider selected",
+          "notes": "External service keys required.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "External documents instead of default PostgreSQL",
+          "notes": "S3, R2, Spaces or compatible self-host provider; not baseline required.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2+ cores production recommended",
+        "memory": "2+ GB production recommended",
+        "storage": "20+ GB production recommended",
+        "os": "Modern Linux; Docker/Kubernetes/PaaS; Windows via Docker or WSL2",
+        "notes": "Testing minimum1core/1GB/10GB distinct from production recommendation; size documents separately.",
+        "sources": [
+          "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+        ]
+      },
+      "notes": "Current production requirements; persistent PostgreSQL mandatory, mail transport and signing certificate required for usable signing. Queue alternatives explicit; no unconditional Redis dependency.",
+      "sources": [
+        "https://docs.documenso.com/docs/self-hosting/getting-started/requirements"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official Railway deployment guide",
+          "url": "https://docs.documenso.com/docs/self-hosting/deployment/railway",
+          "kind": "one-click",
+          "officialStatus": "first-party",
+          "notes": "Official docs explicitly provide one-click template flow provisioning app and PostgreSQL; SMTP and signing certificate still need configuration.",
+          "sources": [
+            "https://docs.documenso.com/docs/self-hosting/deployment/railway"
+          ]
+        }
+      ],
+      "notes": "First-party documented Railway one-click deployment; manual Docker Compose is a separate route.",
+      "sources": [
+        "https://docs.documenso.com/docs/self-hosting/deployment/railway"
+      ]
+    }
+  }
+}

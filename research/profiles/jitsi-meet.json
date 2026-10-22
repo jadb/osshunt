@@ -1,0 +1,219 @@
+{
+  "id": "jitsi-meet",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Jitsi project / 8x8, Inc.",
+    "kind": "community",
+    "foundedYear": 2014,
+    "ageBasis": "project-started",
+    "ownership": "public-subsidiary",
+    "parent": "8x8, Inc. (NASDAQ:EGHT)",
+    "stockSymbols": [
+      "NASDAQ:EGHT"
+    ],
+    "funding": "mixed",
+    "investors": [],
+    "notes": "2014 is Jitsi Meet start; predecessor SIP Communicator began 2003. 8x8 acquired team and technology in 2018; project remains community-developed. Acquisition is not a named equity round in the project.",
+    "sources": [
+      "https://jitsi.org/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Jitsi Meet core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://jitsi.org/about/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://jitsi.org/about/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No separate business-priced core code edition on reviewed project page; JaaS is a distinct 8x8 managed offer, not substituted.",
+      "sources": [
+        "https://jitsi.org/about/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No enterprise-priced core code edition verified; optional deployment/integration services distinct.",
+      "sources": [
+        "https://jitsi.org/about/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its established WebRTC routing stack and extension projects form reusable integration expertise; the code is readily forkable.",
+      "basis": "assessment",
+      "sources": [
+        "https://jitsi.org/about/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "WebRTC participation enables meetings directly in compatible browsers.",
+      "basis": "assessment",
+      "sources": [
+        "https://jitsi.org/about/"
+      ]
+    },
+    {
+      "claim": "Simulcast and scalable video coding adapt conference streams to participant bandwidth.",
+      "basis": "assessment",
+      "sources": [
+        "https://jitsi.org/about/"
+      ]
+    },
+    {
+      "claim": "Separate recording and SIP bridge projects extend meetings into capture and telephone workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://jitsi.org/about/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "8x8",
+          "url": "https://jitsi.org/about/",
+          "relationship": "corporate-sponsor",
+          "source": "https://jitsi.org/about/"
+        }
+      ],
+      "notes": "Official source identifies corporate project investment/contribution.",
+      "sources": [
+        "https://jitsi.org/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "OpenJDK 17, Jitsi Videobridge and Jicofo",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/"
+          ]
+        },
+        {
+          "component": "Prosody XMPP server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/"
+          ]
+        },
+        {
+          "component": "nginx-full and HTTPS/DNS configuration",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/"
+          ]
+        },
+        {
+          "component": "coturn",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "TCP fallback media / restricted networks; optional STUN enabled separately",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/"
+          ]
+        },
+        {
+          "component": "Jibri / Jigasi",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recording/streaming / SIP dial-in respectively",
+          "notes": "Separate add-on processes; PSTN carrier connectivity external, not bundled telephone service.",
+          "sources": [
+            "https://jitsi.org/about/"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+        ],
+        "cpu": "4 dedicated cores basic planning guidance",
+        "memory": "8 GB suggested; 4 GB small meetings; 2 GB tests",
+        "storage": "20 GB without heavy logging/recording",
+        "os": "Debian 12+ or Ubuntu 24.04+ native packages; Docker/openSUSE guides linked",
+        "notes": "Planning guidance, not participant capacity guarantee. Recording raises requirements."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/",
+        "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/",
+        "https://jitsi.org/about/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/"
+      ]
+    }
+  }
+}

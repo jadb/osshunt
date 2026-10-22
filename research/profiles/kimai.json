@@ -196,13 +196,13 @@
           ]
         },
         {
-          "component": "SMTP service",
+          "component": "SMTP or Sendmail transport",
           "necessity": "conditional",
           "group": null,
-          "condition": "Outgoing application email configured",
-          "notes": "Mail delivery requires a relay; no mandatory external Redis/search/queue/object-store established for core.",
+          "condition": "Outgoing application email enabled",
+          "notes": "MAILER_URL supports SMTP, Sendmail and hosted SMTP providers; null://null disables email. Configure one transport, not all providers; no mandatory external Redis/search/queue/object-store established for core.",
           "sources": [
-            "https://www.kimai.org/documentation/installation.html"
+            "https://www.kimai.org/documentation/emails.html"
           ]
         }
       ],
@@ -220,7 +220,8 @@
       "sources": [
         "https://www.kimai.org/documentation/installation.html",
         "https://github.com/kimai/kimai/blob/main/README.md",
-        "https://www.kimai.org/en/download.html"
+        "https://www.kimai.org/en/download.html",
+        "https://www.kimai.org/documentation/emails.html"
       ]
     },
     "oneClickInstall": {

@@ -59,12 +59,12 @@ Resources: CPU 4 cores recommended minimum; memory 4GB minimum plus at least1GB 
 
 ## One-click and installer options
 
-Status: **offered**. Official DigitalOcean guide explicitly links 1-click k8s marketplace. Docker Compose instructions are manual. [1](https://developers.chatwoot.com/self-hosted/deployment/requirements)
+Status: **offered**. Official DigitalOcean guide explicitly links 1-click k8s marketplace. Docker Compose instructions are manual. [1](https://developers.chatwoot.com/self-hosted/deployment/digitalocean)
 
 Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
 
 One-command installers are labelled separately; manual Docker Compose instructions are not one-click deployment.
 
-- [DigitalOcean Kubernetes marketplace](https://developers.chatwoot.com/self-hosted/deployment/digitalocean): **marketplace**, first-party. Official docs link a 1-click Kubernetes marketplace app; droplet instructions themselves remain manual. [1](https://developers.chatwoot.com/self-hosted/deployment/digitalocean)
+- [DigitalOcean Kubernetes marketplace](https://developers.chatwoot.com/self-hosted/deployment/digitalocean): **marketplace**, officially-linked-third-party. Official docs link a 1-click Kubernetes marketplace app; droplet instructions themselves remain manual. [1](https://developers.chatwoot.com/self-hosted/deployment/digitalocean)
 
 [Structured profile](../../research/profiles/chatwoot.json) · [Claim ledger](../../research/profile-claims/chatwoot.jsonl) · [Research steps](../../research/profile-audits/chatwoot.md)

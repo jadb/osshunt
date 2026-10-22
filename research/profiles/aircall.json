@@ -1,0 +1,155 @@
+{
+  "id": "aircall",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Aircall",
+    "kind": "business",
+    "foundedYear": 2014,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Goldman Sachs Asset Management",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "eFounders",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "Draper Esprit",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "NextWorld Capital",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "Adams Street Partners",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "DTCP",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "Swisscom Ventures",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      },
+      {
+        "name": "Gaia Capital Partners",
+        "source": "https://aircall.io/en-gb/blog/news/series-d-funding/"
+      }
+    ],
+    "notes": "Disclosed 2021 Series D investors; current cap table not verified.",
+    "sources": [
+      "https://aircall.io/en-gb/blog/news/series-d-funding/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Essentials",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 360,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "license",
+      "minimumQuantity": 3,
+      "scope": "business phone subscription",
+      "notes": "Advertised $30/license/month billed annually \u00d712=$360; monthly-billed amount not verified. At least3 licenses; free trial separate. Extra numbers and calling/AI usage may add charges.",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "business phone subscription",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Professional",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 600,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "license",
+      "minimumQuantity": 3,
+      "scope": "business phone subscription",
+      "notes": "Closest growing-business tier; $50/license/month annual commitment \u00d712=$600. Monthly-billed amount not verified.",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "license",
+      "minimumQuantity": 25,
+      "scope": "business phone subscription",
+      "notes": "Custom pricing, Talk to Sales; at least25 licenses.",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "CRM/helpdesk integration workflows and retained call context can create switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "CRM-aware smart routing and queue callback connect callers with the relevant representative.",
+      "basis": "assessment",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ]
+    },
+    {
+      "claim": "Power Dialer sequences outbound calls from imported contact lists.",
+      "basis": "assessment",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ]
+    },
+    {
+      "claim": "Call transcripts and conversation intelligence expose topics and talk/listen patterns for coaching.",
+      "basis": "assessment",
+      "sources": [
+        "https://aircall.io/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

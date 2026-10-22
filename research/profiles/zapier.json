@@ -1,0 +1,136 @@
+{
+  "id": "zapier",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Zapier, Inc.",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Y Combinator",
+        "source": "https://www.ycombinator.com/companies/zapier"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.ycombinator.com/companies/zapier"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://sequoiacap.com/companies/zapier"
+      }
+    ],
+    "notes": "Independent private business; YC and Bessemer seed backing; Sequoia portfolio relationship also verified. Investor list is historical, not a current cap table.",
+    "sources": [
+      "https://www.ycombinator.com/companies/zapier",
+      "https://sequoiacap.com/companies/zapier"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Professional",
+      "status": "published",
+      "monthlyPrice": 29.99,
+      "annualPrice": 239.88,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Starting tier; annual total = $19.99 \u00d712. Monthly selector shows $29.99. Free plan separately includes 100 tasks/month; higher task volumes cost more.",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 103.5,
+      "annualPrice": 828,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "team account, up to 25 users",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Starting tier; annual total = $69 \u00d712; monthly selector $103.50. Task volume determines actual subscription.",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Contact sales; custom task allowance and organization terms.",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A large integration catalog and installed workflows create ecosystem and migration friction; individual integrations remain replaceable.",
+      "basis": "assessment",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Connect a broad range of business applications through prebuilt trigger/action integrations.",
+      "basis": "assessment",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "claim": "Combine multistep workflows, webhooks and conditional forms for cross-application processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    },
+    {
+      "claim": "Use Tables with linked records and AI fields as structured workflow state.",
+      "basis": "assessment",
+      "sources": [
+        "https://zapier.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

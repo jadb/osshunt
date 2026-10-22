@@ -59,7 +59,7 @@ Resources: CPU not specified; memory not specified; storage not specified; OS PH
 
 ## One-click and installer options
 
-Status: **offered**. Official README Images & One-Click Installs links Softaculous and Cloudron; manual web installer separate. [1](https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide)
+Status: **offered**. Official README Images & One-Click Installs links Softaculous and Cloudron; manual web installer separate. [1](https://github.com/freescout-help-desk/freescout)
 
 Verified one-click/marketplace option: **yes**. Unverified options remain unknown in the status above.
 

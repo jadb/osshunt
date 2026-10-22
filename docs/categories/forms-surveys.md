@@ -7,12 +7,15 @@ Audience: Marketing, customer success, HR, operations, product and research team
 Use-case sources: [1](https://www.typeform.com/pricing), [2](https://www.limesurvey.org/pricing).
 
 - [Typeform](https://www.typeform.com): USD 28/account/month, annual billing. Basic $28/month billed annually; $39/month monthly billing. Includes one user and 100 responses/month. Free plan is distinct from paid Basic. [Pricing](https://www.typeform.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/typeform.md).
 
 ### Formbricks Community Edition — C
 
 OSI AGPL core; MIT SDK/survey packages and separately licensed apps/web/modules/ee. Paid gates include routine feedback workflows and segmentation, not only enterprise administration. Community docs specify unlimited surveys, responses and users; hosted response quotas differ.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/formbricks/formbricks/blob/fd98f4b0ea7d8b6b187e2e894af7b202c91f7a24/LICENSE), [edition evidence](https://formbricks.com/docs/self-hosting/advanced/license), [hosting](https://formbricks.com/pricing), [repository](https://github.com/formbricks/formbricks).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/formbricks.md).
 
 Paid restrictions: Community Edition limited to one workspace; Enterprise license required for contact management and segments, workflows, Unify Feedback and dashboards; Enterprise license required for branding removal, white-label follow-ups, RBAC, SSO and audit logging
 
@@ -26,6 +29,8 @@ AGPL repository documents conversational forms, logic, custom CSS, analytics and
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/heyform/heyform/blob/938c7dfef82969a557da9d479ca249179ff1c206/LICENSE), [edition evidence](https://github.com/heyform/heyform#features), [hosting](https://heyform.net/pricing), [repository](https://github.com/heyform/heyform).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/heyform.md).
+
 Paid restrictions: Self-hosted versus hosted feature parity not fully verified; published cloud plan limits must not be interpreted as OSS limits
 
 Repository: pushed 2026-10-19T01:57:00Z; latest commit 2026-10-19T01:56:54Z; latest published release v3.0.4 (2026-10-15T03:34:57Z). Quick analysis: 4.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -37,6 +42,8 @@ Repository: pushed 2026-10-19T01:57:00Z; latest commit 2026-10-19T01:56:54Z; lat
 GPL CE is self-hostable with mature research survey functionality. Current official site explicitly says Cloud includes exclusive features; older forum assertions of full parity are superseded. Exact exclusives not sufficiently enumerated to assign A/B/C confidently.
 
 License: GPL-2.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/LimeSurvey/LimeSurvey/blob/f485440ff59329d51277cf065e974d82114b9bbc/LICENSE), [edition evidence](https://community.limesurvey.org/comfort-update-extension/), [hosting](https://www.limesurvey.org/pricing), [repository](https://github.com/LimeSurvey/LimeSurvey).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/limesurvey.md).
 
 Paid restrictions: ComfortUpdate automated updates require paid subscription after trial; manual updates remain available; Cloud has exclusive features; complete current Cloud-versus-CE feature list not established
 

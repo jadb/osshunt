@@ -1,0 +1,259 @@
+{
+  "id": "rocket-chat",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Rocket.Chat",
+    "kind": "business",
+    "foundedYear": 2015,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Valor Capital Group",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "Greycroft",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "Monashees",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "NEA",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "e.ventures",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "Graphene Ventures",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "ONEVC",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      },
+      {
+        "name": "DGF",
+        "source": "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+      }
+    ],
+    "notes": "Disclosed Series A investors are historical; current cap table not verified. Community and free proprietary Starter differ.",
+    "sources": [
+      "https://www.rocket.chat/company/newsroom",
+      "https://www.rocket.chat/press-releases/rocket-chat-raises-19-million-in-series-a-funding-confirming-privacy-first-communication-as-a-major-trend-in-2021"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://www.rocket.chat/plans"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Commercial",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial self-hosted or cloud",
+      "notes": "Get pricing CTA; commercial enterprise package, not Community software price.",
+      "sources": [
+        "https://www.rocket.chat/plans"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Defense",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "premium enterprise suite",
+      "notes": "Contact us CTA; Government and Defense are organizational packages; no public numeric amount.",
+      "sources": [
+        "https://www.rocket.chat/plans"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "An extensible communications ecosystem creates integration switching costs, tempered by Community limits and available forks.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Channels and private groups organize persistent team conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ]
+    },
+    {
+      "claim": "Jitsi/BigBlueButton integrations connect text collaboration to live meetings.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ]
+    },
+    {
+      "claim": "API and app integrations connect operational tools with conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.rocket.chat/docs/our-plans"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Rocket.Chat",
+          "url": "https://www.rocket.chat/company/newsroom",
+          "relationship": "business-steward",
+          "source": "https://www.rocket.chat/company/newsroom"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://www.rocket.chat/company/newsroom"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+          ]
+        },
+        {
+          "component": "MongoDB 8 replica set (bundled or external)",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current 8.x guide; external MongoDB Atlas/self-managed replica set supported; not SQL.",
+          "sources": [
+            "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+          ]
+        },
+        {
+          "component": "NATS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+          ]
+        },
+        {
+          "component": "Traefik",
+          "necessity": "one-of",
+          "group": "reverse-proxy",
+          "condition": "HTTPS option with automatic certificates",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+          ]
+        },
+        {
+          "component": "Nginx",
+          "necessity": "one-of",
+          "group": "reverse-proxy",
+          "condition": "Alternative HTTPS option",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+          ]
+        },
+        {
+          "component": "Prometheus, Loki and Grafana",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Monitoring stack; Compose files may be omitted",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+        ]
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://docs.rocket.chat/docs/deploy-with-docker-docker-compose"
+      ]
+    }
+  }
+}

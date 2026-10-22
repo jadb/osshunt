@@ -1,0 +1,240 @@
+{
+  "id": "windmill",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Windmill Labs, Inc.",
+    "kind": "business",
+    "foundedYear": 2022,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Y Combinator",
+        "source": "https://www.ycombinator.com/companies/windmill"
+      },
+      {
+        "name": "Gradient",
+        "source": "https://www.deployed.vc/"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.deployed.vc/"
+      }
+    ],
+    "notes": "Private YC-backed company founded2022. YC portfolio verified; Deployed investor portfolio also identifies Gradient and Bessemer. Round amount/date and current cap table not verified.",
+    "sources": [
+      "https://www.ycombinator.com/companies/windmill",
+      "https://www.windmill.dev/docs/intro",
+      "https://www.deployed.vc/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free and Open-source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Unlimited executions; edition caps apply; infrastructure separate.",
+      "sources": [
+        "https://www.windmill.dev/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted and cloud plans",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://www.windmill.dev/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Enterprise Edition",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "commercial edition",
+      "notes": "Closest organizational edition; page has Pro/Nonprofit/Enterprise and Cloud/Self-host selectors plus seat/compute calculator. Displayed from$120 and $170 example cannot safely be treated as a universal business subscription.",
+      "sources": [
+        "https://www.windmill.dev/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "configured commercial cloud or self-host license",
+      "notes": "Get in touch / download quote; configured developer/operator seats and compute units determine contract. No fake annual total.",
+      "sources": [
+        "https://www.windmill.dev/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared script, workflow and app execution primitives plus dependency metadata can create internal development switching costs; individual scripts remain portable.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.windmill.dev/docs/intro"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Turn typed script parameters into runnable forms automatically.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.windmill.dev/docs/intro"
+      ]
+    },
+    {
+      "claim": "Compose Python, TypeScript, Go, Bash, SQL and other language scripts into branching workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.windmill.dev/docs/intro"
+      ]
+    },
+    {
+      "claim": "Build custom React/Svelte interfaces backed by the same scripts and scheduled/webhook jobs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.windmill.dev/docs/intro"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Windmill Labs, Inc.",
+          "url": "https://www.windmill.dev",
+          "relationship": "business-steward",
+          "source": "https://www.ycombinator.com/companies/windmill"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://www.ycombinator.com/companies/windmill"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Compose",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Small single-host deployment",
+          "notes": "Server and worker containers.",
+          "sources": [
+            "https://www.windmill.dev/docs/advanced/self_host"
+          ]
+        },
+        {
+          "component": "Kubernetes with official Helm chart",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Larger production clusters",
+          "notes": "Recommended production orchestration; Windows workers can run without Docker under applicable edition.",
+          "sources": [
+            "https://www.windmill.dev/docs/advanced/self_host"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "State AND job queue; bundled or external/managed. No Redis queue required.",
+          "sources": [
+            "https://www.windmill.dev/docs/advanced/self_host"
+          ]
+        },
+        {
+          "component": "Windmill server and workers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Separate server/UI/API and worker processes, both connect to Postgres.",
+          "sources": [
+            "https://www.windmill.dev/docs/advanced/self_host"
+          ]
+        },
+        {
+          "component": "LSP, multiplayer, reverse proxy",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Always",
+          "notes": "LSP editor intelligence; multiplayer commercial real-time collaboration; Caddy proxy bundled example, external TLS termination recommended.",
+          "sources": [
+            "https://www.windmill.dev/docs/advanced/self_host"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Enterprise global dependency cache, recommended above20 workers",
+          "notes": "Optional for base system; selected scripts may need additional APIs/databases/language dependencies.",
+          "sources": [
+            "https://www.windmill.dev/docs/advanced/self_host"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "Rule of thumb1vCPU per worker",
+        "memory": "Rule of thumb1\u20132GB per worker",
+        "storage": null,
+        "os": "Linux container host; Kubernetes; Windows workers in applicable edition",
+        "notes": "Per-worker planning guidance, not a total installation minimum; database/server memory additional.",
+        "sources": [
+          "https://www.windmill.dev/docs/advanced/self_host"
+        ]
+      },
+      "notes": "PostgreSQL is platform state/queue, distinct from databases queried by user jobs. Current Compose example uses Postgres18. No claim that every advertised runtime is in every edition.",
+      "sources": [
+        "https://www.windmill.dev/docs/advanced/self_host"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://www.windmill.dev/docs/advanced/self_host"
+      ]
+    }
+  }
+}

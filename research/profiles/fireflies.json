@@ -1,0 +1,132 @@
+{
+  "id": "fireflies",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Fireflies.ai",
+    "kind": "business",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Khosla Ventures",
+        "source": "https://fireflies.ai/blog/fireflies-ai-raises-14-million-series-a-to-automate-work-from-meetings"
+      },
+      {
+        "name": "Canaan Partners",
+        "source": "https://fireflies.ai/blog/fireflies-ai-raises-14-million-series-a-to-automate-work-from-meetings"
+      }
+    ],
+    "notes": "Company-controlled LinkedIn identifies2016 and privately held. Disclosed historical Series A investors; operators at other companies are not those companies investing.",
+    "sources": [
+      "https://www.linkedin.com/company/fireflies-inc",
+      "https://fireflies.ai/blog/fireflies-ai-raises-14-million-series-a-to-automate-work-from-meetings"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 18,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "meeting assistant subscription",
+      "notes": "Free plan separate. $10 annual-billed monthly \u00d712=$120; $18 monthly. AI credits and rate limits apply.",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 29,
+      "annualPrice": 228,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "meeting assistant subscription",
+      "notes": "Explicit MOST POPULAR; $19 annual-billed monthly \u00d712=$228; $29 monthly.",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 29,
+      "annualPrice": 228,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "meeting assistant subscription",
+      "notes": "Named Business tier, also popular. $19\u00d712 annual; AI rate/credit limits remain.",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 468,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "meeting assistant subscription",
+      "notes": "Annual only $39/seat/month \u00d712=$468; Contact Us CTA does not remove published base price.",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A retained conversation corpus plus CRM/task integrations can increase workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multilanguage transcription and real-time notes handle meetings across language workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ]
+    },
+    {
+      "claim": "AskFred and global meeting search retrieve details from recorded conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ]
+    },
+    {
+      "claim": "Conversation intelligence and team analytics surface patterns across meetings.",
+      "basis": "assessment",
+      "sources": [
+        "https://fireflies.ai/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

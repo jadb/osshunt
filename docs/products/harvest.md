@@ -8,9 +8,11 @@ Harvest / Bending Spoons Operations S.p.A. (business); ownership: **public-subsi
 
 Started 2006 (product-launched); years active: 20; years in business: not established/applicable. Ages are approximate calendar-year differences as of 2026-10-21.
 
-Parent: Bending Spoons S.p.A.; publicly listed since July2026 (exact exchange/ticker unverified in reviewed primary pages).
+Parent: Bending Spoons S.p.A.; NASDAQ:BSP.
 
-Age is Harvest product launch2006, not current operator incorporation. Current terms name Bending Spoons Operations S.p.A., wholly controlled by Bending Spoons S.p.A.; parent July2026 IPO confirmed in company announcement. Berkshire investment is parent-level equity, not historic standalone Harvest funding. Parent ticker not primary-source verified; no symbol guessed. [1](https://www.getharvest.com/about) [2](https://www.getharvest.com/terms-of-service) [3](https://hl.com/about-us/transactions/harvest-bending-spoons/) [4](https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons)
+Listed symbols: NASDAQ:BSP (parent Bending Spoons).
+
+Harvest launched2006; age is product launch, not current operator incorporation. Terms name Bending Spoons Operations S.p.A., wholly controlled by Bending Spoons S.p.A. Parent NASDAQ:BSP verified by September2026 company release; Berkshire is parent-level equity investor, not historic standalone Harvest funding. [1](https://www.getharvest.com/about) [2](https://www.getharvest.com/terms-of-service) [3](https://hl.com/about-us/transactions/harvest-bending-spoons/) [4](https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons) [5](https://investors.bendingspoons.com/newsroom/bending-spoons-completes-acquisition-of-airtable)
 
 Known investors: [Berkshire Hathaway (parent Bending Spoons)](https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons).
 

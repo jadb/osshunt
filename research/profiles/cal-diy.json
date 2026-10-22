@@ -236,7 +236,9 @@
       "options": [],
       "notes": "Official Railway, Render and Elestio pages describe One Click Deployment but extracts expose no actual actionable deploy button/template URL. Options not verified enough to list; manual Docker/source route confirmed.",
       "sources": [
-        "https://www.cal.diy/installation"
+        "https://www.cal.diy/deployments/railway",
+        "https://www.cal.diy/deployments/render",
+        "https://www.cal.diy/deployments/elestio"
       ]
     }
   }

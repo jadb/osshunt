@@ -41,7 +41,7 @@ Status: **business-fallback**. No separate corporate financial/in-kind sponsor i
 
 ## Self-operation requirements
 
-Mode: **server**. Current Kimai2 requirements from maintained README and installation guide. No SQLite alternative. Native PHP route or Docker; external database remains required. Old1.14 docs list third-party one-click providers but current official installer no longer endorses them, so no shortcut asserted. [1](https://www.kimai.org/documentation/installation.html) [2](https://github.com/kimai/kimai/blob/main/README.md) [3](https://www.kimai.org/en/download.html)
+Mode: **server**. Current Kimai2 requirements from maintained README and installation guide. No SQLite alternative. Native PHP route or Docker; external database remains required. Old1.14 docs list third-party one-click providers but current official installer no longer endorses them, so no shortcut asserted. [1](https://www.kimai.org/documentation/installation.html) [2](https://github.com/kimai/kimai/blob/main/README.md) [3](https://www.kimai.org/en/download.html) [4](https://www.kimai.org/documentation/emails.html)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
@@ -51,7 +51,7 @@ Mode: **server**. Current Kimai2 requirements from maintained README and install
 | Nginx or Apache with mod_rewrite | required | — | Always | Choose one compatible web server; subdomain required rather than subdirectory. [1](https://www.kimai.org/documentation/installation.html) |
 | Git, Composer and SSH access | required | — | Always | Native installation/administration tooling. Packaged Docker route alternative; FTP upload unsupported. [1](https://www.kimai.org/documentation/installation.html) |
 | Docker Engine / Compose | conditional | — | Container deployment route | Alternative to native PHP installation; multi-step Compose/Caddy setup is not a one-click installer. [1](https://www.kimai.org/en/download.html) |
-| SMTP service | conditional | — | Outgoing application email configured | Mail delivery requires a relay; no mandatory external Redis/search/queue/object-store established for core. [1](https://www.kimai.org/documentation/installation.html) |
+| SMTP or Sendmail transport | conditional | — | Outgoing application email enabled | MAILER_URL supports SMTP, Sendmail and hosted SMTP providers; null://null disables email. Configure one transport, not all providers; no mandatory external Redis/search/queue/object-store established for core. [1](https://www.kimai.org/documentation/emails.html) |
 
 Resources: CPU not specified; memory not specified; storage not specified; OS Linux server; Docker hosts or compatible PHP web hosting with SSH. Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source. [1](https://www.kimai.org/documentation/installation.html)
 

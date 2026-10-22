@@ -1,0 +1,243 @@
+{
+  "id": "element",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Element",
+    "kind": "business",
+    "foundedYear": 2017,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Protocol Labs",
+        "source": "https://element.io/blog/element-raises-30m-as-matrix-explodes/"
+      },
+      {
+        "name": "Metaplanet",
+        "source": "https://element.io/blog/element-raises-30m-as-matrix-explodes/"
+      },
+      {
+        "name": "Automattic",
+        "source": "https://element.io/blog/element-raises-30m-as-matrix-explodes/"
+      },
+      {
+        "name": "Notion",
+        "source": "https://element.io/blog/element-raises-30m-as-matrix-explodes/"
+      }
+    ],
+    "notes": "2017 is company origin, not ESS launch. Disclosed 2021 Series B; current ownership percentages not public in sources reviewed.",
+    "sources": [
+      "https://element.io/en/about",
+      "https://element.io/blog/element-raises-30m-as-matrix-explodes/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "ESS Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "ESS Pro",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted commercial suite",
+      "notes": "README directs professional users to contact Element to upgrade; no numeric price.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "ESS Pro",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted commercial suite",
+      "notes": "Closest enterprise suite, with enterprise identity/compliance/scale; contact Element rather than numeric amount.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Matrix interoperability plus integrated clients and server components can build ecosystem adoption; protocol openness limits exclusive lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Federated Matrix conversations connect users across compatible homeservers.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ]
+    },
+    {
+      "claim": "Integrated Element Call backend adds voice/video to encrypted messaging workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ]
+    },
+    {
+      "claim": "Hookshot links issue-tracking and repository activity into Matrix rooms.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Element",
+          "url": "https://element.io/en/about",
+          "relationship": "business-steward",
+          "source": "https://element.io/en/about"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://element.io/en/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Kubernetes distribution and Helm",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Quick setup uses K3s; other Kubernetes distributions supported.",
+          "sources": [
+            "https://github.com/element-hq/ess-helm"
+          ]
+        },
+        {
+          "component": "Synapse, Matrix Authentication Service, Matrix RTC backend and Element Web",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/element-hq/ess-helm"
+          ]
+        },
+        {
+          "component": "Bundled PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default chart-managed database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/element-hq/ess-helm"
+          ]
+        },
+        {
+          "component": "External PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative dedicated database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/element-hq/ess-helm"
+          ]
+        },
+        {
+          "component": "HAProxy and ingress/TLS/DNS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/element-hq/ess-helm"
+          ]
+        },
+        {
+          "component": "cert-manager",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Let\u2019s Encrypt automated certificates; supplied certificates/existing reverse proxy alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/element-hq/ess-helm"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://github.com/element-hq/ess-helm"
+        ],
+        "cpu": "2 CPU cores quick setup",
+        "memory": "2 GB available quick setup",
+        "storage": null,
+        "os": "Kubernetes-capable Linux; K3s quick setup",
+        "notes": "Quick-setup minimum, not enterprise workload sizing. Community FAQ permits commercial use and no arbitrary hard user cap."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://github.com/element-hq/ess-helm"
+      ]
+    }
+  }
+}

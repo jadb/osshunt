@@ -1,0 +1,266 @@
+{
+  "id": "heyform",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "EarlyBird / HeyForm",
+    "kind": "business",
+    "foundedYear": 2024,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "2024 dates the open-source release announced April 5, not the original product or EarlyBird founding (both unresolved). About explicitly calls EarlyBird a bootstrapped SaaS company, run by Luo Baishun and Wu Qin. No equity investor asserted.",
+    "sources": [
+      "https://heyform.net/blog/open-source/",
+      "https://heyform.net/about-us"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://github.com/heyform/heyform"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Premium",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 288,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "cloud workspace",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Most popular. $24/month billed annually ×12; hosted quotas differ from OSS code. Monthly-billed rate not verified.",
+      "sources": [
+        "https://heyform.net/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 480,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "cloud workspace (up to 10 members)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "$40/month billed annually ×12; 150K responses/month. Commercial Cloud scope, not self-host license.",
+      "sources": [
+        "https://heyform.net/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "cloud organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom pricing; Contact Sales.",
+      "sources": [
+        "https://heyform.net/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Differentiation rests on conversational UX and customizable form workflows; a modest ecosystem offers less defensibility than incumbent form platforms.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/heyform/heyform"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Conversational forms combine varied input types with conditional logic and redirects for adaptive questionnaires.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/heyform/heyform"
+      ]
+    },
+    {
+      "claim": "Visual themes and custom CSS let teams match forms to a detailed brand style.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/heyform/heyform"
+      ]
+    },
+    {
+      "claim": "Drop-off/completion analytics and CSV export help diagnose form performance and reuse collected data.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/heyform/heyform"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "EarlyBird",
+          "url": "https://earlybird.im/",
+          "relationship": "business-steward",
+          "source": "https://heyform.net/about-us"
+        }
+      ],
+      "notes": "Official docs request sponsorship but no named corporate financial sponsor verified. EarlyBird is explicitly a bootstrapped SaaS business and supplied as verified steward fallback; testimonials and integrations are not sponsors.",
+      "sources": [
+        "https://docs.heyform.net/open-source/self-hosting",
+        "https://heyform.net/about-us"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker and Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.heyform.net/open-source/self-hosting"
+          ]
+        },
+        {
+          "component": "MongoDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official example uses Percona Server for MongoDB 4.4; exact current supported version range not specified.",
+          "sources": [
+            "https://docs.heyform.net/open-source/self-hosting"
+          ]
+        },
+        {
+          "component": "KeyDB",
+          "necessity": "one-of",
+          "group": "cache-queue",
+          "condition": "Bundled KeyDB OR compatible external Redis",
+          "notes": "Architecture-specific 6.3.3 images for x86_64/ARM64.",
+          "sources": [
+            "https://docs.heyform.net/open-source/self-hosting"
+          ]
+        },
+        {
+          "component": "Redis-compatible server",
+          "necessity": "one-of",
+          "group": "cache-queue",
+          "condition": "External Redis OR bundled KeyDB",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.heyform.net/open-source/configuration/environment-variables"
+          ]
+        },
+        {
+          "component": "Node.js app runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled in community-edition container; separate Node setup not needed for Docker route.",
+          "sources": [
+            "https://github.com/heyform/heyform"
+          ]
+        },
+        {
+          "component": "Nginx or HTTPS reverse proxy",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Public HTTPS deployment; app itself serves HTTP",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.heyform.net/open-source/self-hosting"
+          ]
+        },
+        {
+          "component": "S3-compatible storage",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative upload storage; local persisted assets in default compose",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.heyform.net/open-source/configuration/environment-variables"
+          ]
+        },
+        {
+          "component": "SMTP server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "For email verification/notification delivery",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.heyform.net/open-source/configuration/environment-variables"
+          ]
+        },
+        {
+          "component": "Stripe, reCAPTCHA/Akismet, OpenAI-compatible API or OIDC provider",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable corresponding payment, spam, AI or SSO integration",
+          "notes": "External provider costs may apply.",
+          "sources": [
+            "https://docs.heyform.net/open-source/configuration/environment-variables"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Docker-compatible Linux/macOS/Windows; matching KeyDB image architecture",
+        "notes": "Official setup guide gives no fixed CPU/RAM/disk minimum.",
+        "sources": [
+          "https://docs.heyform.net/open-source/self-hosting",
+          "https://docs.heyform.net/open-source/configuration/environment-variables"
+        ]
+      },
+      "notes": "Default path uses MongoDB and KeyDB; no SQL database. Bull queue settings use Redis-compatible service, not a separate broker. Docker requirements kept distinct from development tooling.",
+      "sources": [
+        "https://docs.heyform.net/open-source/self-hosting",
+        "https://docs.heyform.net/open-source/configuration/environment-variables"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Zeabur HeyForm template",
+          "url": "https://zeabur.com/templates/9YAUUO",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Current self-host docs link this one-click template; custom domain requires APP_HOMEPAGE_URL update.",
+          "sources": [
+            "https://docs.heyform.net/open-source/self-hosting"
+          ]
+        }
+      ],
+      "notes": "Verified official-link target for Zeabur. Sealos, RepoCloud and Alibaba also named by docs but not independently validated here, so options limited to verified Zeabur target.",
+      "sources": [
+        "https://docs.heyform.net/open-source/self-hosting"
+      ]
+    }
+  }
+}

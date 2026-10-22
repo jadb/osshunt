@@ -7,6 +7,7 @@ Audience: Individuals and organizations reading, organizing, and sending email a
 Use-case sources: [1](https://www.thunderbird.net/en-US/desktop/), [2](https://roundcube.net/about/), [3](https://help.front.com/en/articles/2054).
 
 - [Front](https://front.com/): USD 25/seat/month, annual billing. Starter, billed annually, up to 10 seats; individual inbox included when email is the single channel type. Primarily a collaborative customer-service platform. [Pricing](https://front.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/front.md).
 - [Microsoft Outlook](https://www.microsoft.com/en-us/microsoft-365/outlook): USD 19.99/account/year, annual billing. Microsoft 365 Basic, US annual price; includes ad-free Outlook and 100 GB mailbox. Free Outlook also exists; this record represents paid subscription benefits, not an OSS edition. [Pricing](https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-email-plans-and-pricing).
   [Pricing tiers, organization and product reasons](../products/microsoft-outlook.md).
 

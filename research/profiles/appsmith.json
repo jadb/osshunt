@@ -1,0 +1,273 @@
+{
+  "id": "appsmith",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Appsmith, Inc.",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Insight Partners",
+        "source": "https://www.appsmith.com/blog/series-b-funding"
+      },
+      {
+        "name": "Canaan Partners",
+        "source": "https://www.appsmith.com/blog/series-b-funding"
+      },
+      {
+        "name": "Accel",
+        "source": "https://www.appsmith.com/blog/series-b-funding"
+      },
+      {
+        "name": "Abhinav Asthana",
+        "source": "https://www.appsmith.com/blog/series-b-funding"
+      },
+      {
+        "name": "Jeff Hammerbacher",
+        "source": "https://www.appsmith.com/blog/series-b-funding"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "source": "https://www.businesswire.com/news/home/20211005005171/en/Appsmith-Announces-10.5-Million-Series-A-and-Seed-Funding-Rounds-to-Develop-Low-Code-Open-Source-Software"
+      },
+      {
+        "name": "OSS Capital",
+        "source": "https://www.businesswire.com/news/home/20211005005171/en/Appsmith-Announces-10.5-Million-Series-A-and-Seed-Funding-Rounds-to-Develop-Low-Code-Open-Source-Software"
+      },
+      {
+        "name": "Prasanna Sankar",
+        "source": "https://www.businesswire.com/news/home/20211005005171/en/Appsmith-Announces-10.5-Million-Series-A-and-Seed-Funding-Rounds-to-Develop-Low-Code-Open-Source-Software"
+      }
+    ],
+    "notes": "Private company founded2019. $41m Series B announcedJune2022; identified investors include earlier seed/Series A participants. Historical backing, not current equity proportions.",
+    "sources": [
+      "https://www.accel.com/news/supporting-engineers-app-development-our-investment-in-appsmith",
+      "https://www.appsmith.com/blog/series-b-funding",
+      "https://www.businesswire.com/news/home/20211005005171/en/Appsmith-Announces-10.5-Million-Series-A-and-Seed-Funding-Rounds-to-Develop-Low-Code-Open-Source-Software"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core / cloud free tier",
+      "notes": "Cloud free capped5 users; self-host edition separate resource costs.",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted/cloud editions",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 15,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-host license or vendor cloud",
+      "notes": "Up to99 users; monthly end-of-month billing per FAQ. Developer and end-user counted equally; no separate developer price.",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": 2500,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "instance license starting100 users",
+      "minimumQuantity": 100,
+      "scope": "paid self-host license or vendor cloud",
+      "notes": "Published starting$2,500/month for100 users. Enterprise typically billed annually by agreement; annual total not assumed from this monthly display; airgap/managed hosting extra.",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Widget/query/JavaScript bindings and reusable internal app packages can accumulate organization-specific switching costs; many UI patterns are reproducible elsewhere.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Assemble internal app screens from widgets and bind them to database/API queries.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    },
+    {
+      "claim": "Use custom JavaScript and custom widgets to express logic beyond visual component settings.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    },
+    {
+      "claim": "Version internal app changes in Git and use reusable packages/workflows in commercial editions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.appsmith.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Appsmith, Inc.",
+          "url": "https://www.appsmith.com",
+          "relationship": "business-steward",
+          "source": "https://www.accel.com/news/supporting-engineers-app-development-our-investment-in-appsmith"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://www.accel.com/news/supporting-engineers-app-development-our-investment-in-appsmith"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker20.10.7+ and Compose1.29.2+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented simple route; production Kubernetes recommended when scaling.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/docker"
+          ]
+        },
+        {
+          "component": "MongoDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled state store in all-in-one deployment; can externalize.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/infrastructure-sizing"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled sessions/cache service; can externalize.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/infrastructure-sizing"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current docs explicitly include PostgreSQL supporting store; can externalize. Not a replacement for MongoDB.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/infrastructure-sizing"
+          ]
+        },
+        {
+          "component": "Persistent appsmith-stacks volume",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Persists application data/configuration and embedded services.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/docker"
+          ]
+        },
+        {
+          "component": "Outbound cs.appsmith.com connectivity",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Standard non-air-gapped image/installation path",
+          "notes": "Docs require outbound allowlist; licensed air-gapped edition is separate.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/docker"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "8GB minimum planned for all-in-one host",
+        "storage": null,
+        "os": "Docker-supported host; Linux production",
+        "notes": "At least8GB host RAM for bundled MongoDB+Redis+PostgreSQL; external services alter sizing. CPU/disk minima not fixed in checked docs.",
+        "sources": [
+          "https://docs.appsmith.com/getting-started/setup/installation-guides/docker"
+        ]
+      },
+      "notes": "Current Docker guide uses EE image; Community image/entitlements differ. Requirements reflect current deployment docs, not data-source connectors. SQL backends queried by apps are optional user data sources, not interchangeable platform state stores.",
+      "sources": [
+        "https://docs.appsmith.com/getting-started/setup/installation-guides/docker",
+        "https://docs.appsmith.com/getting-started/setup/infrastructure-sizing"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean preconfigured Droplet",
+          "url": "https://docs.appsmith.com/getting-started/setup/installation-guides/digitalocean",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official deployment guide selects Appsmith image in DigitalOcean Marketplace; provider costs separate.",
+          "sources": [
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/digitalocean"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://docs.appsmith.com/getting-started/setup/installation-guides/docker",
+        "https://docs.appsmith.com/getting-started/setup/installation-guides/digitalocean"
+      ]
+    }
+  }
+}

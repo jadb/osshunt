@@ -281,7 +281,7 @@
           "name": "DigitalOcean Kubernetes marketplace",
           "url": "https://developers.chatwoot.com/self-hosted/deployment/digitalocean",
           "kind": "marketplace",
-          "officialStatus": "first-party",
+          "officialStatus": "officially-linked-third-party",
           "notes": "Official docs link a 1-click Kubernetes marketplace app; droplet instructions themselves remain manual.",
           "sources": [
             "https://developers.chatwoot.com/self-hosted/deployment/digitalocean"
@@ -290,7 +290,7 @@
       ],
       "notes": "Official DigitalOcean guide explicitly links 1-click k8s marketplace. Docker Compose instructions are manual.",
       "sources": [
-        "https://developers.chatwoot.com/self-hosted/deployment/requirements"
+        "https://developers.chatwoot.com/self-hosted/deployment/digitalocean"
       ]
     }
   }

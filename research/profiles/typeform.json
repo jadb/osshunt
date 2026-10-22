@@ -1,0 +1,156 @@
+{
+  "id": "typeform",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Typeform",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Sofina",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "General Atlantic",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "Index Ventures",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "Point Nine Capital",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "Connect Ventures",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "Top Tier Capital Partners",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "GP Bullhound",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "Teamworthy Ventures",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      },
+      {
+        "name": "Trium Venture Partners",
+        "source": "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      }
+    ],
+    "notes": "Founded 2012. March 2022 Series C led by Sofina; investor list is historical participation, not present ownership percentages. Sofina’s listing does not make Typeform public.",
+    "sources": [
+      "https://www.typeform.com/about-us",
+      "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": 39,
+      "annualPrice": 336,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account (1 user; 100 responses/month)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Annual advertised $28/month ×12 = $336; page also shows $468 annualized monthly cost and $132 saving. Used main current card, not stale duplicate comparison fragments. Free plan separate.",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended plan badge verified; generic navigation popular wording is not a plan designation.",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 129,
+      "annualPrice": 1092,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account (5 users; 10,000 responses/month)",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Annual $91/month ×12 = $1,092; response upgrades/add-ons separate.",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Contact sales; customized user and response requirements.",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its recognizable conversational interaction design and integrated marketing workflows create brand and workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.typeform.com/blog/typeform-secures-135-million-series-c-funding-led-by-sofina"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Conversational forms with conditional logic adapt the question path to each respondent.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    },
+    {
+      "claim": "Drop-off and conversion analysis help teams find where respondents abandon a form.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    },
+    {
+      "claim": "AI clarification and video answers support richer qualitative responses than ordinary static fields.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.typeform.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

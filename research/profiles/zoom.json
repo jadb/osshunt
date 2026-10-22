@@ -1,0 +1,129 @@
+{
+  "id": "zoom",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Zoom Communications, Inc.",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:ZM"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.zoom.com/en/about/"
+      }
+    ],
+    "notes": "Company founded 2011; IPO 2019. Sequoia is a disclosed historical investor, not a claim of current ownership.",
+    "sources": [
+      "https://www.zoom.com/en/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 16.99,
+      "annualPrice": 169.92,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "licensed user",
+      "minimumQuantity": null,
+      "scope": "Zoom Workplace subscription",
+      "notes": "Basic free exists. Annual total is advertised $14.16 \u00d7 12; monthly billing $16.99.",
+      "sources": [
+        "https://zoom.us/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Zoom Workplace subscription",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://zoom.us/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 21.99,
+      "annualPrice": 219.96,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "licensed user",
+      "minimumQuantity": null,
+      "scope": "Zoom Workplace subscription",
+      "notes": "Annual total is advertised $18.33 \u00d7 12. Business is named organizational tier.",
+      "sources": [
+        "https://zoom.us/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Zoom Workplace subscription",
+      "notes": "Enterprise listed without verified numeric amount or explicit sales quotation in extracted card; price unknown.",
+      "sources": [
+        "https://zoom.us/pricing"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Integrated meetings, chat and recording workflows create switching costs as teams accumulate conversation history.",
+      "basis": "assessment",
+      "sources": [
+        "https://zoom.us/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Persistent meeting chat carries a discussion between meetings.",
+      "basis": "assessment",
+      "sources": [
+        "https://zoom.us/pricing"
+      ]
+    },
+    {
+      "claim": "In-meeting AI questions and meeting summaries help participants recover decisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://zoom.us/pricing"
+      ]
+    },
+    {
+      "claim": "Breakout rooms, polling and remote keyboard control support interactive sessions.",
+      "basis": "assessment",
+      "sources": [
+        "https://zoom.us/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

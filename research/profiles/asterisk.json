@@ -1,0 +1,220 @@
+{
+  "id": "asterisk",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Asterisk project / Sangoma Technologies Corporation",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "public-subsidiary",
+    "parent": "Sangoma Technologies Corporation",
+    "stockSymbols": [
+      "TSX:STC",
+      "NASDAQ:SANG"
+    ],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Sangoma is verified primary developer and sponsor; project start and company founding are not conflated. Sponsor ownership public; specific project equity financing/investors not established.",
+    "sources": [
+      "https://sangoma.com/company/investor-relations/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Asterisk core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://www.asterisk.org/products/add-ons/g729-codec/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "G.729 codec add-on",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": 8,
+      "currency": "USD",
+      "unit": "concurrent channel",
+      "minimumQuantity": null,
+      "scope": "optional proprietary codec license",
+      "notes": "One-time listed $8 per concurrent channel for G.729 transcoding; not an Asterisk business subscription. Core supports other codecs.",
+      "sources": [
+        "https://www.asterisk.org/products/add-ons/g729-codec/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "Asterisk core",
+      "notes": "No enterprise-priced core edition verified in project introduction; commercial derived products/services separate.",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A long-lived telephony integration ecosystem and specialist dialplan expertise create switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Programmable dialplans build IVR and call-routing behavior beyond a fixed calling app.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ]
+    },
+    {
+      "claim": "PBX, conferencing and VoIP gateways share a communications framework.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ]
+    },
+    {
+      "claim": "Multiple signaling protocols and developer interfaces enable custom telephony integrations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Sangoma",
+          "url": "https://www.asterisk.org/get-started/",
+          "relationship": "corporate-sponsor",
+          "source": "https://www.asterisk.org/get-started/"
+        }
+      ],
+      "notes": "Official source identifies corporate project investment/contribution.",
+      "sources": [
+        "https://www.asterisk.org/get-started/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Linux server and built Asterisk binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/"
+          ]
+        },
+        {
+          "component": "C compiler/build toolchain and development libraries",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Building from source; configure/menuselect resolve module-specific dependencies",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/"
+          ]
+        },
+        {
+          "component": "SIP endpoints and network connectivity",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "VoIP calling integration; endpoints supplied separately",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.asterisk.org/get-started/"
+          ]
+        },
+        {
+          "component": "PSTN trunk/carrier or telephony hardware",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "External public phone calls; numbers/usage separate from source code",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.asterisk.org/get-started/"
+          ]
+        },
+        {
+          "component": "Optional modules and codecs",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "G.729 transcoding requires separately licensed vendor binary; other codecs possible",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.asterisk.org/products/add-ons/g729-codec/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/"
+        ]
+      },
+      "notes": "Developer telephony server, not turnkey agent desktop. Source-build module dependencies vary; no external SQL/cache mandatory stack established in reviewed installation guide.",
+      "sources": [
+        "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/",
+        "https://www.asterisk.org/get-started/",
+        "https://www.asterisk.org/products/add-ons/g729-codec/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/"
+      ]
+    }
+  }
+}

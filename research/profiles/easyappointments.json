@@ -1,0 +1,274 @@
+{
+  "id": "easyappointments",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Alex Tselegidis / AT Software Development Agency",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "project-started",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official anniversary history dates initial Google Code publication to 2013; 2014 stable-release anniversary is distinct. Current agency site verifies commercial stewardship by Alex and his team, but no legal incorporation year or equity funding history established. Public funding/sponsor searches did not establish investors; unknown is not bootstrap classification.",
+    "sources": [
+      "https://alextselegidis.com/",
+      "https://easyappointments.org/blog/10th-anniversary-how-did-it-all-start/",
+      "https://easyappointments.org/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Easy!Appointments",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "GPL core is free; infrastructure and optional premium services separate.",
+      "sources": [
+        "https://easyappointments.org/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "product plans",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found in the public pricing page.",
+      "sources": [
+        "https://easyappointments.org/premium/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premium custom development / managed hosting",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "project or managed installation",
+      "minimumQuantity": null,
+      "scope": "vendor professional services",
+      "notes": "Closest explicitly business service offer; formal custom-development quote and quote form. Not a separate packaged feature edition.",
+      "sources": [
+        "https://easyappointments.org/premium/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Extended License / enterprise-grade managed hosting",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "quoted project or commercial license",
+      "minimumQuantity": null,
+      "scope": "vendor commercial licensing and services",
+      "notes": "White-label Extended License for SaaS providers/resellers and enterprise-grade managed hosting are quoted services; no published recurring Enterprise software tier.",
+      "sources": [
+        "https://easyappointments.org/premium/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A mature appointment, customer and provider data model plus accumulated scheduling configuration can create moderate switching costs; GPL availability limits exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://easyappointments.org/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Separate service and provider schedules model employee availability, breaks and booking rules.",
+      "basis": "assessment",
+      "sources": [
+        "https://easyappointments.org/features/"
+      ]
+    },
+    {
+      "claim": "Group sessions allow several customers to reserve places within one appointment slot.",
+      "basis": "assessment",
+      "sources": [
+        "https://easyappointments.org/features/"
+      ]
+    },
+    {
+      "claim": "Google and CalDAV synchronization connect bookable availability to external calendars.",
+      "basis": "assessment",
+      "sources": [
+        "https://easyappointments.org/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "AT Software Development Agency",
+          "url": "https://alextselegidis.com/",
+          "relationship": "business-steward",
+          "source": "https://alextselegidis.com/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship established in the checked project/business pages; commercial steward included as business fallback.",
+      "sources": [
+        "https://alextselegidis.com/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP >=8.2 and required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Easy!Appointments 1.6.1 stable package.",
+          "notes": "Stable require block lists curl, JSON, mbstring, gd, simplexml and fileinfo; bundled PHP libraries are not external services.",
+          "sources": [
+            "https://raw.githubusercontent.com/alextselegidis/easyappointments/1.6.1/composer.json"
+          ]
+        },
+        {
+          "component": "Apache",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "One supported web-server route.",
+          "notes": "Production web server; older installation article has stale PHP minimum, superseded by stable composer manifest.",
+          "sources": [
+            "https://raw.githubusercontent.com/alextselegidis/easyappointments/develop/README.md"
+          ]
+        },
+        {
+          "component": "Nginx",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Alternative supported web server.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/alextselegidis/easyappointments/develop/README.md"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Production relational data store; official Docker example uses MySQL 8.0.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/alextselegidis/easyappointments-docker/blob/main/README.md"
+          ]
+        },
+        {
+          "component": "Writable persistent storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Sessions, logs and uploaded files.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://easyappointments.org/documentation/installation/"
+          ]
+        },
+        {
+          "component": "Host mail transport",
+          "necessity": "one-of",
+          "group": "notification-email",
+          "condition": "When notification email enabled; default PHP mail transport.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://easyappointments.org/2022/05/16/how-to-fix-email-delivery-problems/"
+          ]
+        },
+        {
+          "component": "Remote SMTP service",
+          "necessity": "one-of",
+          "group": "notification-email",
+          "condition": "Alternative when notification email enabled.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://github.com/alextselegidis/easyappointments-docker/blob/main/README.md"
+          ]
+        },
+        {
+          "component": "Google Calendar API credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only Google synchronization.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://easyappointments.org/documentation/installation/"
+          ]
+        },
+        {
+          "component": "CalDAV server credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only CalDAV synchronization.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://easyappointments.org/features/"
+          ]
+        },
+        {
+          "component": "Composer / Node.js / npm / Git",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Building from development checkout only; not extra production services for a prepared release.",
+          "notes": "Documented production component.",
+          "sources": [
+            "https://raw.githubusercontent.com/alextselegidis/easyappointments/develop/README.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No numerical hardware minima verified in the cited deployment documentation.",
+        "sources": [
+          "https://easyappointments.org/documentation/installation/"
+        ]
+      },
+      "notes": "Production PHP/web-server/MySQL route; official container image bundles application runtime and uses a separate MySQL service. No mandatory Redis, queue broker or search engine documented. Email delivery transport needed only when enabling notifications. Release 1.6.1 PHP floor takes precedence over stale generic installation page.",
+      "sources": [
+        "https://easyappointments.org/documentation/installation/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Softaculous automated installation",
+          "url": "https://easyappointments.org/2020/12/02/automatically-install-easyappointments-on-your-server-with-softaculous/",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official project guide links provider installer; target URL failed tool access, so official deployment guide is used as allowed actionable deployment URL. Current provider search result lists 1.6.0 while project stable is 1.6.1; check version before deployment.",
+          "sources": [
+            "https://easyappointments.org/2020/12/02/automatically-install-easyappointments-on-your-server-with-softaculous/"
+          ]
+        }
+      ],
+      "notes": "Official automated Softaculous deployment documented. Linked target www.softaculous.com/softaculous/apps/others/EasyAppointments inaccessible in fetch; provider search result confirms current listing but one release behind. Manual web wizard and Compose are separate routes.",
+      "sources": [
+        "https://easyappointments.org/2020/12/02/automatically-install-easyappointments-on-your-server-with-softaculous/"
+      ]
+    }
+  }
+}

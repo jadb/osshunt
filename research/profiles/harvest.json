@@ -7,8 +7,10 @@
     "foundedYear": 2006,
     "ageBasis": "product-launched",
     "ownership": "public-subsidiary",
-    "parent": "Bending Spoons S.p.A.; publicly listed since July2026 (exact exchange/ticker unverified in reviewed primary pages)",
-    "stockSymbols": [],
+    "parent": "Bending Spoons S.p.A.; NASDAQ:BSP",
+    "stockSymbols": [
+      "NASDAQ:BSP (parent Bending Spoons)"
+    ],
     "funding": "funded",
     "investors": [
       {
@@ -16,12 +18,13 @@
         "source": "https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons"
       }
     ],
-    "notes": "Age is Harvest product launch2006, not current operator incorporation. Current terms name Bending Spoons Operations S.p.A., wholly controlled by Bending Spoons S.p.A.; parent July2026 IPO confirmed in company announcement. Berkshire investment is parent-level equity, not historic standalone Harvest funding. Parent ticker not primary-source verified; no symbol guessed.",
+    "notes": "Harvest launched2006; age is product launch, not current operator incorporation. Terms name Bending Spoons Operations S.p.A., wholly controlled by Bending Spoons S.p.A. Parent NASDAQ:BSP verified by September2026 company release; Berkshire is parent-level equity investor, not historic standalone Harvest funding.",
     "sources": [
       "https://www.getharvest.com/about",
       "https://www.getharvest.com/terms-of-service",
       "https://hl.com/about-us/transactions/harvest-bending-spoons/",
-      "https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons"
+      "https://investors.bendingspoons.com/newsroom/berkshire-hathaway-invests-further-in-bending-spoons",
+      "https://investors.bendingspoons.com/newsroom/bending-spoons-completes-acquisition-of-airtable"
     ]
   },
   "pricingTiers": [

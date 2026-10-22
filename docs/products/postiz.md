@@ -21,7 +21,7 @@ Monthly is the monthly-billed amount; annual is the full annual amount. Annual t
 | entry | Open-source Postiz | free | USD 0/instance | — | — | — | unspecified | free self-hosted core. AGPL core; production design editor needs independent commercial Polotno license; infrastructure/provider APIs separate. [1](https://github.com/gitroomhq/postiz-app) |
 | popular | Ultimate | published | USD 99/account | USD 948/account | — | — | unspecified | vendor commercial cloud. Explicit Popular badge. Monthly$99; annual$79/month multiplied by12.100channels/unlimited team members. [1](https://postiz.com/pricing) |
 | business | Team | published | USD 39/account | USD 372/account | — | — | unspecified | vendor commercial cloud. Named Team cloud plan: monthly$39; annual$31/month multiplied by12. [1](https://postiz.com/pricing) |
-| enterprise | Enterprise | quote | — | — | — | — | unspecified | vendor enterprise commercial offer. Enterprise/SaaS partner offer sales-led; public standard catalog tops out at Ultimate. [1](https://postiz.com/pricing) |
+| enterprise | Enterprise | published | USD 2500/SaaS platform account including 5000 channels | — | — | — | unspecified | vendor commercial SaaS embedding / white-label offer. Enterprise Pricing page publishes $2500/mo in its Monthly view, including 5000 channels and unlimited users/posts/API calls. Separate SaaS embedding product scope from standard Team/Ultimate cloud. Page currently says not accepting new applications; published price is not a guarantee of availability. [1](https://postiz.com/enterprise) |
 
 ## Defensibility assessments
 

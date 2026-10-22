@@ -1,0 +1,270 @@
+{
+  "id": "bigbluebutton",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "BigBlueButton project",
+    "kind": "community",
+    "foundedYear": 2007,
+    "ageBasis": "project-started",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "External project launch 2007 from Carleton University program. Project itself is not a verified standalone corporation; equity funding/investors unresolved.",
+    "sources": [
+      "https://bigbluebutton.org/open-source-project/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "BigBlueButton core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://bigbluebutton.org/open-source-project/about/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://bigbluebutton.org/open-source-project/about/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial hosted offering",
+      "notes": "Commercial page returned empty extraction; exact packages and amounts unresolved, not presumed quote.",
+      "sources": [
+        "https://bigbluebutton.com/enterprise"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial hosted offering",
+      "notes": "Pricing inaccessible in extraction; unknown rather than inferred quotation.",
+      "sources": [
+        "https://bigbluebutton.com/enterprise"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A teaching-focused integration ecosystem creates domain-specific adoption and workflow familiarity.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.bigbluebutton.org/4.0/development/architecture/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Polling, breakout rooms and timer apps let teachers vary classroom activities.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.bigbluebutton.org/4.0/development/architecture/"
+      ]
+    },
+    {
+      "claim": "Shared whiteboard and presentation conversion put teaching materials inside the live session.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.bigbluebutton.org/4.0/development/architecture/"
+      ]
+    },
+    {
+      "claim": "LMS API integration connects courses, room access and recording workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.bigbluebutton.org/4.0/development/architecture/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Reviewed project source; no verified corporate sponsor or incorporated business steward established. This is not proof none exists.",
+      "sources": [
+        "https://bigbluebutton.org/open-source-project/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker on Ubuntu 24.04 64-bit",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/administration/install/"
+          ]
+        },
+        {
+          "component": "PostgreSQL and Hasura GraphQL service",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "Redis PubSub/DB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "nginx and HAProxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "Java/Scala BBB web and Node.js services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "LiveKit",
+          "necessity": "one-of",
+          "group": "media-backend",
+          "condition": "Default 4.0 unified audio/video/screenshare SFU",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "FreeSWITCH + mediasoup",
+          "necessity": "one-of",
+          "group": "media-backend",
+          "condition": "Alternative configured audio/video bridge",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "FreeSWITCH and external VoIP provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "PSTN dial-in; carrier charges separate",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "LibreOffice",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Office presentation conversion",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        },
+        {
+          "component": "Greenlight or LMS front end",
+          "necessity": "one-of",
+          "group": "front-end",
+          "condition": "Choose room-access front end",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.bigbluebutton.org/4.0/development/architecture/"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://docs.bigbluebutton.org/administration/install/"
+        ],
+        "cpu": "8 cores high single-thread performance production recommendation",
+        "memory": "16 GB with swap production recommendation",
+        "storage": "500 GB recording; 50 GB recording disabled",
+        "os": "Ubuntu 24.04 64-bit, Linux 6.x",
+        "notes": "4.0 production baseline; 250 Mbps symmetric networking and public DNS/TLS required. Development lower limits differ."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://docs.bigbluebutton.org/administration/install/",
+        "https://docs.bigbluebutton.org/4.0/development/architecture/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "bbb-install.sh",
+          "url": "https://github.com/bigbluebutton/bbb-install",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official shell installation script; flags/DNS/server prerequisites required; not a click deployment.",
+          "sources": [
+            "https://docs.bigbluebutton.org/administration/install/"
+          ]
+        }
+      ],
+      "notes": "Verified options classified individually; configuration may still be required.",
+      "sources": [
+        "https://docs.bigbluebutton.org/administration/install/"
+      ]
+    }
+  }
+}

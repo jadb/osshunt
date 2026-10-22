@@ -9,12 +9,15 @@ Use-case sources: [1](https://calendly.com/pricing), [2](https://easyappointment
 - [Cal.com](https://cal.com): USD 12/seat/month, annual billing. Teams $12/user/month billed annually; individual free plan exists. Distinct commercial application from Cal.diy. [Pricing](https://cal.com/pricing).
   [Pricing tiers, organization and product reasons](../products/cal-com.md).
 - [Calendly](https://calendly.com): USD 10/seat/month, annual billing. Standard $10/seat/month billed annually; free plan exists. [Pricing](https://calendly.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/calendly.md).
 
 ### Easy!Appointments — A
 
 Documented application is free/open source; commercial offerings are hosting, support and commissioned customization. No packaged paid edition feature gate identified in official FAQ/features. Custom work can add capabilities absent from standard application.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/alextselegidis/easyappointments/blob/f6c8a4c2f364bf8c64b1f913a531a7134dcfd3c6/LICENSE), [edition evidence](https://easyappointments.org/features/), [hosting](https://easyappointments.org/), [repository](https://github.com/alextselegidis/easyappointments).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/easyappointments.md).
 
 Repository: pushed 2026-10-19T12:47:00Z; latest commit 2026-10-19T08:29:46Z; latest published release 1.6.1 (2026-10-19T08:45:26Z). Quick analysis: 5.8/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 

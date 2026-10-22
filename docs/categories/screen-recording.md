@@ -7,6 +7,7 @@ Audience: Knowledge workers, support, sales, product and training teams. Cross-f
 Use-case sources: [1](https://www.loom.com/pricing), [2](https://github.com/alyssaxuu/screenity).
 
 - [Loom](https://www.loom.com): entry amount unverified/quote, monthly billing. Business displays $18 per user/month; pricing page has monthly/annual toggle without unambiguous captured state, so entry amount not asserted. [Pricing](https://www.loom.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/loom.md).
 
 ### OBS Studio — A
 

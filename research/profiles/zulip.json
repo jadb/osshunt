@@ -1,0 +1,236 @@
+{
+  "id": "zulip",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Zulip Foundation / Kandra Labs",
+    "kind": "business",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
+    "ownership": "nonprofit",
+    "parent": "Zulip Foundation",
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [],
+    "notes": "2016 is Kandra Labs formation; original product startup founded 2012. In 2026 independent nonprofit Zulip Foundation became steward and fully owns Kandra Labs. NSF grants and Google Summer of Code support are not equity investors; no VC funding stated in history.",
+    "sources": [
+      "https://zulip.com/history/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Self-hosted Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://zulip.com/plans/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://zulip.com/plans/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Self-hosted Business",
+      "status": "published",
+      "monthlyPrice": 8,
+      "annualPrice": 80.04,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 25,
+      "scope": "self-hosted vendor notifications/support service",
+      "notes": "All software features remain open source. $6.67 annual-billed monthly \u00d712=$80.04; $8 month-to-month; temporary $20/month first-year promotion excluded.",
+      "sources": [
+        "https://zulip.com/plans/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Self-hosted Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted vendor service",
+      "notes": "Contact sales. All Zulip software features included in Free; vendor mobile notification relay differs.",
+      "sources": [
+        "https://zulip.com/plans/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Topic-based discussion habits and accumulated organized history create adoption-specific switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://zulip.com/plans/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Topic-based threading keeps parallel discussions navigable within channels.",
+      "basis": "assessment",
+      "sources": [
+        "https://zulip.com/plans/"
+      ]
+    },
+    {
+      "claim": "Public-access channels can expose selected discussions to readers without accounts.",
+      "basis": "assessment",
+      "sources": [
+        "https://zulip.com/plans/"
+      ]
+    },
+    {
+      "claim": "Granular groups, guest permissions and searchable history support organized communities.",
+      "basis": "assessment",
+      "sources": [
+        "https://zulip.com/plans/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Kandra Labs",
+          "url": "https://zulip.com/history/",
+          "relationship": "business-steward",
+          "source": "https://zulip.com/history/"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://zulip.com/history/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Dedicated supported Linux VM or server; nginx",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zulip.readthedocs.io/en/stable/production/requirements.html"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/zulip/docker-zulip/blob/main/compose.yaml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/zulip/docker-zulip/blob/main/compose.yaml"
+          ]
+        },
+        {
+          "component": "RabbitMQ",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/zulip/docker-zulip/blob/main/compose.yaml"
+          ]
+        },
+        {
+          "component": "Memcached",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/zulip/docker-zulip/blob/main/compose.yaml"
+          ]
+        },
+        {
+          "component": "SMTP credentials",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zulip.readthedocs.io/en/stable/production/requirements.html"
+          ]
+        },
+        {
+          "component": "Docker and Compose",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Official Docker alternative to native installer",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zulip.readthedocs.io/en/stable/production/requirements.html"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://zulip.readthedocs.io/en/stable/production/requirements.html"
+        ],
+        "cpu": "1 CPU small installations; 2 CPU for 100+ users",
+        "memory": "2 GB minimum with 2 GB swap under 5 GB; 4 GB for 100+ users",
+        "storage": "10 GB free (~25 GB total including OS)",
+        "os": "Ubuntu 22.04/24.04/26.04; Debian 12/13; Docker-capable alternatives",
+        "notes": "Dedicated server recommended; outgoing email credentials required."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://zulip.readthedocs.io/en/stable/production/requirements.html",
+        "https://github.com/zulip/docker-zulip/blob/main/compose.yaml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://zulip.readthedocs.io/en/stable/production/requirements.html"
+      ]
+    }
+  }
+}

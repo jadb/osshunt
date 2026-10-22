@@ -1,0 +1,266 @@
+{
+  "id": "opensign",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Qik Innovations Private Limited (OpenSign)",
+    "kind": "business",
+    "foundedYear": 2023,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "October2023 dates official OpenSign launch; Qik Innovations incorporation date not established. Terms explicitly name private limited business steward. No primary equity funding/investor announcement found in official site search; bootstrapping not inferred.",
+    "sources": [
+      "https://www.opensignlabs.com/post/opensign-the-enterprise-grade-open-source-docusign-alternative",
+      "https://www.opensignlabs.com/terms-and-conditions"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free self-hosted edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://www.opensignlabs.com/faqs"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current official pricing URL renders navigation/footer only; no plan cards or popularity designation available in retrieved content.",
+      "sources": [
+        "https://www.opensignlabs.com/plans-pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current pricing content could not be verified. Official FAQ confirms paid advanced features, but no named organizational plan/amount established.",
+      "sources": [
+        "https://www.opensignlabs.com/plans-pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Enterprise features mentioned by docs, but current sales tier and amount unresolved. Failed/dynamic fetch is not evidence the offer is absent.",
+      "sources": [
+        "https://www.opensignlabs.com/plans-pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its combined signing, template and document-vault workflow can create modest user-data switching costs; small ecosystem limits evidence for a strong moat.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/OpenSignLabs/OpenSign"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Sequential multi-signer invitations and guest email OTP verification support controlled signing without recipient accounts.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/OpenSignLabs/OpenSign"
+      ]
+    },
+    {
+      "claim": "Templates plus document expiration and rejection states streamline repeatable signature collection.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/OpenSignLabs/OpenSign"
+      ]
+    },
+    {
+      "claim": "OpenSign Drive and completion certificates combine document organization with a detailed signing activity record.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/OpenSignLabs/OpenSign"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Qik Innovations Private Limited",
+          "url": "https://www.opensignlabs.com/terms-and-conditions",
+          "relationship": "business-steward",
+          "source": "https://www.opensignlabs.com/terms-and-conditions"
+        }
+      ],
+      "notes": "Repository acknowledgments/contact and official site checked without a named corporate sponsor disclosure. Verified business steward Qik Innovations supplied as fallback; contributor participation is not financial sponsorship.",
+      "sources": [
+        "https://www.opensignlabs.com/terms-and-conditions",
+        "https://github.com/OpenSignLabs/OpenSign"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/"
+          ]
+        },
+        {
+          "component": "Node.js API / Parse Server and React frontend",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Separate server and client containers bundle runtime; no SQL dependency.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/One-click-Install/DigitalOcean/"
+          ]
+        },
+        {
+          "component": "MongoDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Persist /data/db or supply managed MongoDB; main compose uses mongo:latest, no exact version range in this guide.",
+          "sources": [
+            "https://raw.githubusercontent.com/OpenSignLabs/OpenSign/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Caddy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Official compose reverse proxy/TLS route.",
+          "sources": [
+            "https://raw.githubusercontent.com/OpenSignLabs/OpenSign/main/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Local document storage",
+          "necessity": "one-of",
+          "group": "document-storage",
+          "condition": "USE_LOCAL=true OR S3-compatible storage",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/"
+          ]
+        },
+        {
+          "component": "S3 / DigitalOcean Spaces",
+          "necessity": "one-of",
+          "group": "document-storage",
+          "condition": "USE_LOCAL=false; alternative to local files",
+          "notes": "Credentials and browser CORS setup required.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "one-of",
+          "group": "email",
+          "condition": "SMTP_ENABLE=true OR Mailgun",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/"
+          ]
+        },
+        {
+          "component": "Mailgun API",
+          "necessity": "one-of",
+          "group": "email",
+          "condition": "Mailgun when SMTP disabled",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/"
+          ]
+        },
+        {
+          "component": "PFX/P12 signing certificate",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Self-signed permitted; trusted CA certificate needed for recipient software trust indicator.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Docker-compatible Linux/macOS/Windows",
+        "notes": "No fixed CPU/RAM/disk minimum established by current self-host guide.",
+        "sources": [
+          "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/",
+          "https://raw.githubusercontent.com/OpenSignLabs/OpenSign/main/docker-compose.yml"
+        ]
+      },
+      "notes": "Default reviewed stack is frontend, API, MongoDB and Caddy; no required Redis broker documented. Official DigitalOcean demo installer DB lacks persistent storage and must be replaced for production.",
+      "sources": [
+        "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/",
+        "https://raw.githubusercontent.com/OpenSignLabs/OpenSign/main/docker-compose.yml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean install guide",
+          "url": "https://docs.opensignlabs.com/docs/self-host/One-click-Install/DigitalOcean/",
+          "kind": "one-click",
+          "officialStatus": "first-party",
+          "notes": "Official button provisions frontend/API/MongoDB; explicitly not production-ready until nonpersistent container database replaced with persistent MongoDB.",
+          "sources": [
+            "https://docs.opensignlabs.com/docs/self-host/One-click-Install/DigitalOcean/"
+          ]
+        }
+      ],
+      "notes": "Verified current official one-click deployment documentation, with its explicit database-persistence limitation. Compose commands alone are not counted as one-click.",
+      "sources": [
+        "https://docs.opensignlabs.com/docs/self-host/One-click-Install/DigitalOcean/"
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "otter",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Otter.ai, Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Spectrum Equity",
+        "source": "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      },
+      {
+        "name": "Horizons Ventures",
+        "source": "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      },
+      {
+        "name": "Draper Associates",
+        "source": "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      },
+      {
+        "name": "GGV Capital",
+        "source": "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      },
+      {
+        "name": "Draper Dragon Fund",
+        "source": "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+      }
+    ],
+    "notes": "Official funding announcement establishes Series B and historical investors. Founding year not verified in reviewed primary pages; About redirects to careers. Current cap table unresolved.",
+    "sources": [
+      "https://otter.ai/blog/otter-raises-50-million?84d5663d_page=2"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 16.99,
+      "annualPrice": 99.96,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "meeting transcription subscription",
+      "notes": "Free Basic separate. Standard annual-billed $8.33 \u00d712=$99.96; monthly $16.99. India-card promotional prices excluded.",
+      "sources": [
+        "https://otter.ai/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "meeting transcription subscription",
+      "notes": "Business is labelled Best Value, not Most popular/Recommended; no popularity role inferred.",
+      "sources": [
+        "https://otter.ai/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 30,
+      "annualPrice": 239.88,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "meeting transcription subscription",
+      "notes": "Standard $30 monthly; $19.99 annual-billed monthly \u00d712=$239.88. Temporary20% three-month discount excluded.",
+      "sources": [
+        "https://otter.ai/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "meeting transcription subscription",
+      "notes": "Enterprise has Schedule a demo; numeric price and explicit sales quote not verified.",
+      "sources": [
+        "https://otter.ai/pricing"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "An accumulated searchable meeting corpus and team-specific vocabulary can create switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://otter.ai/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Live transcription and speaker identification create a readable conversation record during meetings.",
+      "basis": "assessment",
+      "sources": [
+        "https://otter.ai/pricing"
+      ]
+    },
+    {
+      "claim": "AI Chat spans meetings so users can retrieve decisions across conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://otter.ai/pricing"
+      ]
+    },
+    {
+      "claim": "Team vocabulary and taggable speakers improve organization of domain-specific notes.",
+      "basis": "assessment",
+      "sources": [
+        "https://otter.ai/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

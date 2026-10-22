@@ -1,0 +1,146 @@
+{
+  "id": "ringcentral",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "RingCentral, Inc.",
+    "kind": "business",
+    "foundedYear": 1999,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE:RNG"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Scale Venture Partners",
+        "source": "https://www.globenewswire.com/news-release/2011/09/08/1204054/0/en/RingCentral-Closes-10M-Series-D-Funding-Round-to-Drive-Further-Growth.html"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.globenewswire.com/news-release/2011/09/08/1204054/0/en/RingCentral-Closes-10M-Series-D-Funding-Round-to-Drive-Further-Growth.html"
+      },
+      {
+        "name": "Khosla Ventures",
+        "source": "https://www.globenewswire.com/news-release/2011/09/08/1204054/0/en/RingCentral-Closes-10M-Series-D-Funding-Round-to-Drive-Further-Growth.html"
+      },
+      {
+        "name": "Cisco",
+        "source": "https://www.globenewswire.com/news-release/2011/09/08/1204054/0/en/RingCentral-Closes-10M-Series-D-Funding-Round-to-Drive-Further-Growth.html"
+      },
+      {
+        "name": "DAG Ventures",
+        "source": "https://www.globenewswire.com/news-release/2011/09/08/1204054/0/en/RingCentral-Closes-10M-Series-D-Funding-Round-to-Drive-Further-Growth.html"
+      }
+    ],
+    "notes": "Public company since2013; named pre-IPO investors historical only. Silicon Valley Bank backing not automatically characterized as equity.",
+    "sources": [
+      "https://www.ringcentral.com/company.html",
+      "https://www.globenewswire.com/news-release/2011/09/08/1204054/0/en/RingCentral-Closes-10M-Series-D-Funding-Round-to-Drive-Further-Growth.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Core",
+      "status": "published",
+      "monthlyPrice": 30,
+      "annualPrice": 240,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "US RingEX phone subscription",
+      "notes": "Official search-indexed card: $20/user/month annual \u00d712=$240; $30 monthly. Canonical extraction omits cards and direct parameterized open failed; official indexed result used.",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "RingEX subscription",
+      "notes": "No current explicit Most popular designation verified; old third-party copy excluded.",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Advanced",
+      "status": "published",
+      "monthlyPrice": 35,
+      "annualPrice": 300,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "US RingEX phone subscription",
+      "notes": "Closest organizational tier: official indexed card $25 annual-billed monthly \u00d712=$300, $35 monthly. Features and prices may vary by region/volume.",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "RingEX subscription",
+      "notes": "No distinct Enterprise tier and quotation for it verified; custom bundles exist but not silently substituted.",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html?bmid=SEM2301GGL964077"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A broad communications integration footprint and established number/routing workflows create switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Calling, team messaging and video meetings are accessible in one app.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html"
+      ]
+    },
+    {
+      "claim": "Auto attendant and call queues organize inbound business calls.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html"
+      ]
+    },
+    {
+      "claim": "On-demand recording and integrated AI assistance help retrieve details from conversations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.ringcentral.com/office/plansandpricing.html"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

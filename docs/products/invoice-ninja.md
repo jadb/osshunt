@@ -57,7 +57,7 @@ Mode: **server**. v5 manual PHP stack; current detailed installation guide requi
 | Open Exchange API key | optional | — | Automatic currency conversion updates | External service; daily-update free tier described. [1](https://invoiceninja.github.io/docs/self-host/self-host-installation) |
 | Docker or Podman | conditional | — | Container route | Alternative to manual PHP deployment. [1](https://invoiceninja.github.io/docs/self-host/self-host-installation) |
 
-Resources: CPU 1 vCPU; memory 1 GB minimum; 2 GB recommended; storage 20 GB; OS Linux; Ubuntu 20.04+/CentOS 8+ listed on getting-started page. Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source. [1](https://invoiceninja.github.io/docs/self-host/self-host-installation)
+Resources: CPU 1 vCPU; memory 1 GB minimum; 2 GB recommended; storage 20 GB; OS Linux; Ubuntu 20.04+/CentOS 8+ listed on getting-started page. Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source. [1](https://www.invoiceninja.org/getting-started/)
 
 ## One-click and installer options
 

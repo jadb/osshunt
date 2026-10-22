@@ -1,0 +1,289 @@
+{
+  "id": "docuseal",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "DocuSeal LLC",
+    "kind": "business",
+    "foundedYear": 2023,
+    "ageBasis": "product-launched",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "July10,2023 dates first stable product release, not verified legal incorporation. Current footer identifies DocuSeal LLC. About explicitly states bootstrapped, customer-funded growth without external investors.",
+    "sources": [
+      "https://www.docuseal.com/changelog",
+      "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables",
+      "https://www.docuseal.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://www.docuseal.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit popular/recommended plan badge verified.",
+      "sources": [
+        "https://www.docuseal.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro (On-Premises)",
+      "status": "published",
+      "monthlyPrice": 20,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "Web UI user seat",
+      "minimumQuantity": 1,
+      "scope": "paid self-host Pro license",
+      "notes": "Teams and roles make Pro closest organizational tier. API/embedding adds $0.20 per completed submission, even on premises; multiple files/signers in one submission count once. Cloud Pro annual $200 advertised separately; self-host annual amount not independently verified.",
+      "sources": [
+        "https://www.docuseal.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "custom self-host or cloud Enterprise",
+      "notes": "Contact sales for custom quote on volume and seats; Enterprise offers tailored integrations.",
+      "sources": [
+        "https://www.docuseal.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable document templates and embedded application workflows can create migration costs, although the open document-signing core remains broadly reproducible.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/docusealco/docuseal"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Visual PDF field building and multiple submitters turn existing documents into reusable signing forms.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/docusealco/docuseal"
+      ]
+    },
+    {
+      "claim": "Mobile-optimized signing and multilingual interfaces help recipients finish documents across devices and languages.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/docusealco/docuseal"
+      ]
+    },
+    {
+      "claim": "Signature verification and document audit logs help teams inspect completed-document integrity and signing history.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/docusealco/docuseal"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "DocuSeal LLC",
+          "url": "https://www.docuseal.com/about",
+          "relationship": "business-steward",
+          "source": "https://www.docuseal.com/about"
+        }
+      ],
+      "notes": "No named corporate sponsor found in official About/repository sources. Verified bootstrapped business DocuSeal LLC supplied as steward fallback; customers are not sponsors.",
+      "sources": [
+        "https://www.docuseal.com/about",
+        "https://github.com/docusealco/docuseal"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker image or Ruby on Rails source runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented Docker path bundles application runtime; native source version range not established here.",
+          "sources": [
+            "https://github.com/docusealco/docuseal"
+          ]
+        },
+        {
+          "component": "SQLite",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default embedded DB for small personal/business use OR PostgreSQL/MySQL",
+          "notes": "Partial compatibility relative to PostgreSQL.",
+          "sources": [
+            "https://www.docuseal.com/install"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one database; recommended for production API/embedding",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/on-premises-server-requirements"
+          ]
+        },
+        {
+          "component": "MySQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Alternative for smaller workload; limited compatibility",
+          "notes": "Text-length, full-text-search and partial-index limitations.",
+          "sources": [
+            "https://www.docuseal.com/docs/on-premises-server-requirements"
+          ]
+        },
+        {
+          "component": "Local disk",
+          "necessity": "one-of",
+          "group": "document-storage",
+          "condition": "Default documents OR configured cloud object storage",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/docusealco/docuseal"
+          ]
+        },
+        {
+          "component": "S3-compatible object store",
+          "necessity": "one-of",
+          "group": "document-storage",
+          "condition": "Alternative to local disk/GCS/Azure",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables"
+          ]
+        },
+        {
+          "component": "Google Cloud Storage",
+          "necessity": "one-of",
+          "group": "document-storage",
+          "condition": "Alternative to local disk/S3/Azure",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables"
+          ]
+        },
+        {
+          "component": "Azure Blob storage",
+          "necessity": "one-of",
+          "group": "document-storage",
+          "condition": "Alternative to local disk/S3/GCS",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Sending document requests/notifications",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables"
+          ]
+        },
+        {
+          "component": "Gotenberg",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Pro DOCX/HTML document conversion",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables"
+          ]
+        },
+        {
+          "component": "Stripe API",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Payment collection",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "1 vCPU example for500KB docs",
+        "memory": "1 GB example for500KB docs",
+        "storage": "12 GB example for10,000 single-use/single-signer500KB documents",
+        "os": "Docker-compatible host",
+        "notes": "Workload examples, not universal minima: large100MB docs scenarios call for2vCPU/4GB and terabytes depending reuse/signers.",
+        "sources": [
+          "https://www.docuseal.com/install",
+          "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables",
+          "https://www.docuseal.com/docs/on-premises-server-requirements"
+        ]
+      },
+      "notes": "Baseline Docker app supports embedded SQLite and local disk; no compulsory external Redis/cache broker listed. PostgreSQL specifically recommended for heavier production workflows.",
+      "sources": [
+        "https://www.docuseal.com/install",
+        "https://www.docuseal.com/docs/configuring-docuseal-via-environment-variables",
+        "https://www.docuseal.com/docs/on-premises-server-requirements"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Railway DocuSeal template",
+          "url": "https://railway.com/deploy/IGoDnc",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official install page links this actual template. Infrastructure charges separate.",
+          "sources": [
+            "https://www.docuseal.com/install"
+          ]
+        }
+      ],
+      "notes": "Verified official-link Railway template. Also official Heroku/DigitalOcean/Render links present; no deployment performed.",
+      "sources": [
+        "https://www.docuseal.com/install"
+      ]
+    }
+  }
+}

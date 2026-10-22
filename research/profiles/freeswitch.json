@@ -1,0 +1,259 @@
+{
+  "id": "freeswitch",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "SignalWire, Inc.",
+    "kind": "business",
+    "foundedYear": 2017,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Prosperity7 Ventures",
+        "source": "https://signalwire.com/blog/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+      },
+      {
+        "name": "Storm Ventures",
+        "source": "https://signalwire.com/blog/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+      },
+      {
+        "name": "Samsung NEXT",
+        "source": "https://signalwire.com/blog/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+      },
+      {
+        "name": "AME Cloud Ventures",
+        "source": "https://signalwire.com/blog/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+      },
+      {
+        "name": "Dean Drako",
+        "source": "https://signalwire.com/blog/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+      }
+    ],
+    "notes": "Company formed 2017; FreeSWITCH open-source project since 2006. Named 2021 historical investors; current ownership percentages unresolved.",
+    "sources": [
+      "https://signalwire.com/why-signalwire",
+      "https://signalwire.com/blog/signalwire-secures-30-million-series-b-led-by-prosperity7-ventures-to-build-infrastructure-for-telecom-2-0"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open Source FreeSWITCH",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No recurring license charge for this core scope; infrastructure and optional services separate.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "FreeSWITCH Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial FreeSWITCH subscription",
+      "notes": "Commercially supported edition exists; no numeric business plan or explicit highlighted plan verified.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "FreeSWITCH Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial FreeSWITCH subscription",
+      "notes": "Official manual directs sales contact for subscription; no numeric amount.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Long-lived carrier integrations and specialist media expertise create ecosystem defensibility; source availability enables substitutes.",
+      "basis": "assessment",
+      "sources": [
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Programmable call control supports custom IVR and routing logic.",
+      "basis": "assessment",
+      "sources": [
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    },
+    {
+      "claim": "Media transcoding and protocol bridging connect heterogeneous communications systems.",
+      "basis": "assessment",
+      "sources": [
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    },
+    {
+      "claim": "Conferencing, voicemail and SIP extensions share an extensible telephony engine.",
+      "basis": "assessment",
+      "sources": [
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "SignalWire",
+          "url": "https://signalwire.com/developers/freeswitch",
+          "relationship": "business-steward",
+          "source": "https://signalwire.com/developers/freeswitch"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://signalwire.com/developers/freeswitch"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Supported Linux; Debian/Ubuntu documented",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+          ]
+        },
+        {
+          "component": "FreeSWITCH binary and selected module/sound packages",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+          ]
+        },
+        {
+          "component": "SignalWire account and Personal Access Token",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Official packaged binaries only; public source build needs no token",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+          ]
+        },
+        {
+          "component": "C build toolchain and module-specific build dependencies",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Source build route",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+          ]
+        },
+        {
+          "component": "SIP client/endpoints",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "User calling workflow; software endpoints external",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+          ]
+        },
+        {
+          "component": "PSTN carrier/trunk and phone numbers",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Public telephone connectivity; separate service/usage costs",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://signalwire.com/developers/freeswitch"
+          ]
+        },
+        {
+          "component": "Commercial AMD or G.729 modules",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only when those proprietary capabilities/codecs are selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": null,
+        "notes": "No universal hardware minimum established; workload determines capacity.",
+        "sources": [
+          "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+        ]
+      },
+      "notes": "Telephony server framework, not turnkey contact-center desktop. Package/source routes verified. Database configuration varies by modules; baseline guide does not establish mandatory external SQL/cache.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/foundations/getting-started/",
+        "https://signalwire.com/developers/freeswitch",
+        "https://developer.signalwire.com/freeswitch/module-reference/commercial-modules/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Reviewed official installation guide. Manual packages, build steps and Compose recipes are not treated as one-click. No distinct officially linked template verified.",
+      "sources": [
+        "https://developer.signalwire.com/freeswitch/foundations/getting-started/"
+      ]
+    }
+  }
+}

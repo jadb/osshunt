@@ -1,0 +1,218 @@
+{
+  "id": "node-red",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Node-RED / OpenJS Foundation",
+    "kind": "foundation",
+    "foundedYear": 2013,
+    "ageBasis": "project-started",
+    "ownership": "nonprofit",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "Project began2013 at IBM; OpenJS Foundation project, rather than FlowFuse-owned software. Equity funding is not applicable to the project; sponsor financing is not project equity.",
+    "sources": [
+      "https://nodered.org/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Node-RED core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Apache-licensed project runtime; commercial products built around it are distinct.",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "Node-RED core",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "Node-RED core",
+      "notes": "No project business license tier listed. FlowFuse commercial platform is a separate product, not substituted.",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "Node-RED core",
+      "notes": "No project enterprise license tier listed; downstream commercial offerings are separate.",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A mature edge-automation node and flow ecosystem creates reusable know-how and compatibility value; open JSON flows also reduce lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Wire message-driven processes visually and insert JavaScript functions where logic needs code.",
+      "basis": "assessment",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    },
+    {
+      "claim": "Integrate device and service protocols through a community palette of thousands of nodes.",
+      "basis": "assessment",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    },
+    {
+      "claim": "Share and reuse JSON flows through import/export and the public flow library.",
+      "basis": "assessment",
+      "sources": [
+        "https://nodered.org/about/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "FlowFuse",
+          "url": "https://flowfuse.com",
+          "relationship": "corporate-sponsor",
+          "source": "https://flowfuse.com/blog/2025/11/flowfuse%2Bllm%2Bmcp-equals-text-driven-operations/"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. Listed organizations explicitly support the project; customers and investors excluded.",
+      "sources": [
+        "https://nodered.org/about/",
+        "https://flowfuse.com/blog/2025/11/flowfuse%2Bllm%2Bmcp-equals-text-driven-operations/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Node.js and npm",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Native installation",
+          "notes": "Current docs recommend Node24; Node-RED5.x needs Node22 minimum,4.x needs18. Installed third-party nodes can have additional requirements.",
+          "sources": [
+            "https://nodered.org/docs/faq/node-versions"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container installation",
+          "notes": "Official container bundles runtime; external Node.js install unnecessary for this route.",
+          "sources": [
+            "https://nodered.org/docs/getting-started/local"
+          ]
+        },
+        {
+          "component": "Persistent local user directory",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Flows/settings stored on disk; default context memory. No SQL database/cache/queue required for core.",
+          "sources": [
+            "https://nodered.org/docs/getting-started/local"
+          ]
+        },
+        {
+          "component": "Git / compiler toolchain / external services",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Git Projects, native add-on nodes or selected integration flows",
+          "notes": "Git for Projects; gcc for native components; MQTT/database/API services only as chosen flows require.",
+          "sources": [
+            "https://nodered.org/docs/getting-started/local"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Node.js-supported Linux/macOS/Windows; Docker host",
+        "notes": "Hardware minima not specified in the checked deployment source; size for workload.",
+        "sources": [
+          "https://nodered.org/docs/getting-started/local"
+        ]
+      },
+      "notes": "Core is a Node.js event-driven server with browser editor; not a central SQL-backed SaaS clone. Secure editor/HTTP endpoints for production. No generic external Redis, SQL or SMTP service is required by core.",
+      "sources": [
+        "https://nodered.org/docs/getting-started/local",
+        "https://nodered.org/docs/faq/node-versions"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "npm global installation",
+          "url": "https://nodered.org/docs/getting-started/local",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "One npm installation command after installing supported Node.js; run node-red separately.",
+          "sources": [
+            "https://nodered.org/docs/getting-started/local"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://nodered.org/docs/getting-started/local"
+      ]
+    }
+  }
+}

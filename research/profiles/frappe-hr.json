@@ -217,7 +217,7 @@
           "condition": "Outgoing email notifications",
           "notes": "Mail service configuration needed for actual email delivery; no mandatory paid provider established.",
           "sources": [
-            "https://docs.frappe.io/framework/user/en/installation"
+            "https://docs.frappe.io/erpnext/email-account"
           ]
         },
         {
@@ -245,7 +245,8 @@
       "sources": [
         "https://docs.frappe.io/framework/user/en/installation",
         "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md",
-        "https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml"
+        "https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml",
+        "https://docs.frappe.io/erpnext/email-account"
       ]
     },
     "oneClickInstall": {

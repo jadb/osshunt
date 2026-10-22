@@ -1,0 +1,178 @@
+{
+  "id": "make",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Make (Celonis)",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Celonis",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Qatar Investment Authority",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Activant Capital",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Neuberger Berman-advised fund",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Alta Park Capital",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Commonfund Capital",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Arena Holdings",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "T. Rowe Price-advised funds",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Franklin Templeton",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Durable Capital Partners",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "TCV",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "83North",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Accel Partners",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      },
+      {
+        "name": "Sator Grove",
+        "source": "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+      }
+    ],
+    "notes": "Make was founded as Integromat; Make is currently part of privately held Celonis. Funding and investors below refer to parent Celonis equity, not a separate Make financing; credit-facility lenders excluded.",
+    "sources": [
+      "https://www.make.com/authors/patrik-simek",
+      "https://www.make.com/about",
+      "https://www.celonis.com/news/press/celonis-secures-one-billion-to-help-customers-fight-economic-and-supply-change-challenges"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Core",
+      "status": "published",
+      "monthlyPrice": 10.59,
+      "annualPrice": 108,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization, 10,000 credits/month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Annual total $9 \u00d712; Monthly billing selected shows $10.59. Free plan separately offers1,000 credits/month. Most actions consume one credit; AI can consume more.",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 18.82,
+      "annualPrice": 192,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization, 10,000 credits/month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit Popular badge; annual total $16 \u00d712; monthly selector $18.82.",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Teams",
+      "status": "published",
+      "monthlyPrice": 34.12,
+      "annualPrice": 348,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "organization, 10,000 credits/month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Named team tier; annual total $29 \u00d712; monthly selector $34.12. Higher credit tiers differ.",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom; Talk to sales.",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable scenarios and thousands of app integrations encourage workflow reuse and switching friction, without making its visual model unique.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.make.com/about",
+        "https://www.make.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Model branching integrations on a visual canvas with routers and filters.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "claim": "Transform and aggregate data using built-in tools plus JavaScript or Python code steps.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    },
+    {
+      "claim": "Inspect execution logs with full-text search to diagnose complicated scenarios.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.make.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

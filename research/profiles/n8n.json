@@ -1,0 +1,285 @@
+{
+  "id": "n8n",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "n8n GmbH",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Meritech",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Redpoint",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Evantic",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Visionaries Club",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "NVentures",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "T.Capital",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Felicis Ventures",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Sequoia",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "Highland Europe",
+        "source": "https://blog.n8n.io/series-c/"
+      },
+      {
+        "name": "HV Capital",
+        "source": "https://blog.n8n.io/series-c/"
+      }
+    ],
+    "notes": "Company/project built since2019; private venture-backed business. October2025 Series C announced $180m, $240m total at that time. Historical participants listed; no present ownership percentages established.",
+    "sources": [
+      "https://blog.n8n.io/series-c/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Community self-hosted code is distinct from hosted Starter/Pro subscriptions; infrastructure separate.",
+      "sources": [
+        "https://n8n.io/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "self-hosted and cloud plans",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://n8n.io/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 8004,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "instance,40,000 workflow executions/month",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "\u20ac667 annual-billed monthly display \u00d712 = \u20ac8,004/year; monthly billing price not verified.",
+      "sources": [
+        "https://n8n.io/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "EUR",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "paid self-host license or vendor cloud",
+      "notes": "Contact Sales; custom executions and governance.",
+      "sources": [
+        "https://n8n.io/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A large node/template community and workflows combining code with visual logic produce ecosystem and migration friction.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/n8n-io/n8n"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Mix visual workflow steps with JavaScript/Python and direct HTTP/GraphQL calls.",
+      "basis": "assessment",
+      "sources": [
+        "https://n8n.io/pricing/"
+      ]
+    },
+    {
+      "claim": "Add AI agents, MCP tools and human approval steps within deterministic workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://n8n.io/pricing/"
+      ]
+    },
+    {
+      "claim": "Use reusable integration nodes and execution history to build and inspect cross-application workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/n8n-io/n8n",
+        "https://n8n.io/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "n8n GmbH",
+          "url": "https://n8n.io",
+          "relationship": "business-steward",
+          "source": "https://blog.n8n.io/series-c/"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://blog.n8n.io/series-c/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Compose v2",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current recommended container route; old npm guide is flagged outdated.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/install-options/install-using-docker-compose.md"
+          ]
+        },
+        {
+          "component": "SQLite embedded",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default single-instance setup; light use",
+          "notes": "Built-in file database; no external SQLite service.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/install-options/install-using-docker-compose.md"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Recommended for production; use for distributed queue deployments",
+          "notes": "Current example uses PostgreSQL18; do not infer all version support.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/install-options/install-using-docker-compose.md"
+          ]
+        },
+        {
+          "component": "Redis and n8n workers",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Queue mode for distributed execution",
+          "notes": "Redis message broker plus worker processes; distributed SQLite unsupported.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/configure-n8n/scaling/enable-queue-mode.md"
+          ]
+        },
+        {
+          "component": "Sandbox service / Daytona and model-provider API",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only when optional n8n Assistant is enabled",
+          "notes": "Bundled sandbox/search starts in new one-line stack; docs recommend Daytona for production Assistant; provider credentials required.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/install-options/one-line-setup.md"
+          ]
+        },
+        {
+          "component": "S3-compatible or Azure blob storage",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Shared binary storage/large response offload in applicable configurations",
+          "notes": "Storage mode availability and edition apply; external storage not universal core requirement.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/configure-n8n/scaling/enable-queue-mode.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 vCPU for documented sandbox stack",
+        "memory": "4GB minimum for documented sandbox stack",
+        "storage": null,
+        "os": "Docker-compatible host; Windows via WSL2",
+        "notes": "2vCPU/4GB applies to the documented Compose stack with Docker-in-Docker sandbox; base workflow-only workloads differ.",
+        "sources": [
+          "https://docs.n8n.io/deploy/host-n8n/install-options/install-using-docker-compose.md"
+        ]
+      },
+      "notes": "Current official docs redirect to new install paths and discuss n8n3.0 while examples still mention2.x; these requirements describe the checked documentation, not a pinned release guarantee. No MySQL backend asserted. Base workflows work without Assistant.",
+      "sources": [
+        "https://docs.n8n.io/deploy/host-n8n/install-options/install-using-docker-compose.md",
+        "https://docs.n8n.io/deploy/host-n8n/configure-n8n/scaling/enable-queue-mode.md",
+        "https://docs.n8n.io/deploy/host-n8n/install-options/one-line-setup.md"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official one-line Docker setup",
+          "url": "https://docs.n8n.io/deploy/host-n8n/install-options/one-line-setup.md",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "curl get.n8n.io script; needs Docker/Compose; not a browser one-click.",
+          "sources": [
+            "https://docs.n8n.io/deploy/host-n8n/install-options/one-line-setup.md"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://docs.n8n.io/deploy/host-n8n/install-options/install-using-docker-compose.md",
+        "https://docs.n8n.io/deploy/host-n8n/install-options/one-line-setup.md"
+      ]
+    }
+  }
+}

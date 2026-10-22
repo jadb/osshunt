@@ -1,0 +1,224 @@
+{
+  "id": "limesurvey",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "LimeSurvey GmbH",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "German GmbH operator verified. Project copyright reaches 2003, but copyright alone is not a verified project-start or company-foundation date. Official About/company routes failed and funding/ownership search found no primary transaction announcement; funding and ultimate shareholders remain unresolved.",
+    "sources": [
+      "https://www.limesurvey.org/legal-notice",
+      "https://community.limesurvey.org/licence-trademark/",
+      "https://community.limesurvey.org/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://community.limesurvey.org/licence-trademark/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Expert has Best price label, which is not Most popular or Recommended; no qualifying designation verified.",
+      "sources": [
+        "https://www.limesurvey.org/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 122904,
+      "oneTimePrice": null,
+      "currency": "JPY",
+      "unit": "cloud survey account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current localized page displays JPY10,242/month billed annually ×12. Also displays underlying EUR693 equivalent; local reference exchange rates can change. Cloud scope distinct from CE and paid ComfortUpdate.",
+      "sources": [
+        "https://www.limesurvey.org/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Corporate",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "cloud organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Tailored survey solution via sales; no fixed price.",
+      "sources": [
+        "https://www.limesurvey.org/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A mature research-oriented question/logic model and reusable survey assets create expertise and migration costs for established research teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.limesurvey.org/manual/LimeSurvey_Manual"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "ExpressionScript and question logic enable complex branching, calculations and validation in research questionnaires.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.limesurvey.org/manual/LimeSurvey_Manual"
+      ]
+    },
+    {
+      "claim": "Multilingual surveys and reusable label sets support international research without separate questionnaire systems.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.limesurvey.org/manual/LimeSurvey_Manual"
+      ]
+    },
+    {
+      "claim": "Participant management, quotas and statistical exports support controlled survey sampling and analysis.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.limesurvey.org/manual/LimeSurvey_Manual"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "LimeSurvey GmbH",
+          "url": "https://www.limesurvey.org/",
+          "relationship": "business-steward",
+          "source": "https://www.limesurvey.org/legal-notice"
+        }
+      ],
+      "notes": "Community contribution and donation sources checked without a verified corporate sponsor roster. Verified LimeSurvey GmbH business operator supplied as fallback; commercial partners are not automatically sponsors.",
+      "sources": [
+        "https://community.limesurvey.org/",
+        "https://www.limesurvey.org/legal-notice"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "LS7:8.1.29+ tested through8.4; LS6:8.1–8.3. Match installed major.",
+          "sources": [
+            "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+          ]
+        },
+        {
+          "component": "MariaDB 10.3.38+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported SQL database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+          ]
+        },
+        {
+          "component": "MySQL 8+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported SQL database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+          ]
+        },
+        {
+          "component": "Microsoft SQL Server 2019+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported SQL database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+          ]
+        },
+        {
+          "component": "PostgreSQL 14+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Choose one supported SQL database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+          ]
+        },
+        {
+          "component": "PHP-capable web server and PHP extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "mbstring, correct PDO driver, cURL and default PHP libraries including session, fileinfo, SimpleXML and crypto.",
+          "sources": [
+            "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": "250 MB minimum application disk",
+        "os": null,
+        "notes": "Disk minimum excludes growing survey uploads and database; CPU/RAM minimum not published in reviewed installation page.",
+        "sources": [
+          "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+        ]
+      },
+      "notes": "No baseline Redis, separate queue or object store required in official CE installation. Email delivery configuration needed for invitation workflows; exact SMTP route not verified in this pass.",
+      "sources": [
+        "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation manual documents downloading, uploading and configuring application/database and running browser installer; no currently verified official-link marketplace or one-command install option found.",
+      "sources": [
+        "https://www.limesurvey.org/manual/Installation_-_LimeSurvey_CE"
+      ]
+    }
+  }
+}

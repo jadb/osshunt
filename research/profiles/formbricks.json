@@ -1,0 +1,292 @@
+{
+  "id": "formbricks",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Formbricks GmbH",
+    "kind": "business",
+    "foundedYear": 2022,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "OSS Capital",
+        "source": "https://formbricks.com/about"
+      }
+    ],
+    "notes": "2022 dates snoopForms/Formbricks project work and rebrand, not a verified GmbH incorporation date. German private limited company. OSS Capital equity backing is explicit; individuals described as supporters are not automatically classified as equity investors.",
+    "sources": [
+      "https://formbricks.com/blog",
+      "https://formbricks.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://formbricks.com/docs/self-hosting/advanced/license"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Pro",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Pro explicitly Most popular and displays $74/Month. Static view did not establish selected monthly-versus-annual billing state; numeric subscription fields withheld rather than assigning the wrong term. Scope is commercial Cloud.",
+      "sources": [
+        "https://formbricks.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Scale",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational tier with Teams & access roles and workflows; displays $325/Month. Billing-toggle state not established in static extract, so monthly/annual amount remains unresolved. Scope commercial Cloud.",
+      "sources": [
+        "https://formbricks.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Edition",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-host Enterprise license",
+      "notes": "Core free; advanced features require EE license. Contact licensing team for commercial terms; no verified public amount.",
+      "sources": [
+        "https://formbricks.com/docs/self-hosting/overview"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Survey targeting and an extensible experience-management workflow can create integration switching costs; proprietary EE gates qualify the open-core differentiation.",
+      "basis": "assessment",
+      "sources": [
+        "https://formbricks.com/docs/self-hosting/advanced/license"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Link, website and in-app surveys let teams collect feedback in the user journey rather than only by a standalone form.",
+      "basis": "assessment",
+      "sources": [
+        "https://formbricks.com/pricing"
+      ]
+    },
+    {
+      "claim": "Conditional logic, recalled information and hidden fields support context-aware survey paths.",
+      "basis": "assessment",
+      "sources": [
+        "https://formbricks.com/pricing"
+      ]
+    },
+    {
+      "claim": "Partial responses and file uploads capture unfinished or richer feedback within survey results.",
+      "basis": "assessment",
+      "sources": [
+        "https://formbricks.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://formbricks.com/blog/inaugural-batch-github-accelerator"
+        }
+      ],
+      "notes": "Official April 2023 announcement explicitly states GitHub sponsorship through the inaugural Accelerator. This is verified historical program sponsorship; continuing 2026 financial support was not established.",
+      "sources": [
+        "https://formbricks.com/blog/inaugural-batch-github-accelerator"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Compose or Kubernetes",
+          "necessity": "one-of",
+          "group": "orchestration",
+          "condition": "Docker single-host route OR Kubernetes Helm route",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://formbricks.com/docs/self-hosting/overview"
+          ]
+        },
+        {
+          "component": "PostgreSQL with pgvector",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Current stable compose uses pgvector/pgvector:pg18.",
+          "sources": [
+            "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Valkey",
+          "necessity": "one-of",
+          "group": "cache-queue",
+          "condition": "Bundled Valkey OR external Redis/Valkey",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "one-of",
+          "group": "cache-queue",
+          "condition": "External Redis OR bundled Valkey",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Formbricks app, Hub API and Hub worker",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "v6 multi-service baseline, not a single app container.",
+          "sources": [
+            "https://formbricks.com/docs/self-hosting/overview"
+          ]
+        },
+        {
+          "component": "Cube analytics service",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Semantic layer API with PostgreSQL and memory queue driver in compose.",
+          "sources": [
+            "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "SpiceDB and authorization datastore",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled for all new installs, no EE license check; uses PostgreSQL datastore.",
+          "sources": [
+            "https://formbricks.com/docs/self-hosting/setup/one-click"
+          ]
+        },
+        {
+          "component": "HTTPS reverse proxy / Traefik",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Public domain and open ports 80/443 for certificate issuance.",
+          "sources": [
+            "https://formbricks.com/docs/self-hosting/setup/one-click"
+          ]
+        },
+        {
+          "component": "AI taxonomy service and model provider",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable taxonomy compose profile",
+          "notes": "OpenAI-compatible, Vertex or Bedrock credentials; separate provider costs.",
+          "sources": [
+            "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Local Qwen/vLLM GPU runtime",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Enable qwen compose profile",
+          "notes": "NVIDIA GPU reservation; not baseline.",
+          "sources": [
+            "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Object storage",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended managed service in production Kubernetes deployment",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://formbricks.com/docs/self-hosting/overview"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 vCPU evaluation; 4 vCPU low load",
+        "memory": "4 GB floor evaluation; 8 GB low load",
+        "storage": "20 GB SSD evaluation; 50 GB SSD low load",
+        "os": "Ubuntu for shell installer; Docker-compatible host or Kubernetes otherwise",
+        "notes": "Published single-server sizing derived from chart defaults, not load-tested. Kubernetes recommendation starts 3 nodes of 4 vCPU/8 GB with managed database/cache/object storage.",
+        "sources": [
+          "https://formbricks.com/docs/self-hosting/overview",
+          "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml",
+          "https://formbricks.com/docs/self-hosting/setup/one-click"
+        ]
+      },
+      "notes": "Version 6 baseline has app, Hub API/worker, Cube, PostgreSQL, Redis/Valkey and SpiceDB stack. Do not reuse old PostgreSQL-only v3 requirements.",
+      "sources": [
+        "https://formbricks.com/docs/self-hosting/overview",
+        "https://raw.githubusercontent.com/formbricks/formbricks/stable/docker/docker-compose.yml",
+        "https://formbricks.com/docs/self-hosting/setup/one-click"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Formbricks Ubuntu shell installer",
+          "url": "https://formbricks.com/docs/self-hosting/setup/one-click",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Documentation calls it One-Click Setup but it is a command-line shell installer, with SSH, domain and ports configured first.",
+          "sources": [
+            "https://formbricks.com/docs/self-hosting/setup/one-click"
+          ]
+        }
+      ],
+      "notes": "Verified shell installer; classified one-command, not a graphical one-click marketplace.",
+      "sources": [
+        "https://formbricks.com/docs/self-hosting/setup/one-click"
+      ]
+    }
+  }
+}

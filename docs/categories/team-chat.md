@@ -17,6 +17,8 @@ All self-hosted software features included in every plan; no enterprise code tie
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/zulip/zulip/blob/502a6ba586f40532f15de9a25430028339d61f02/LICENSE), [edition evidence](https://zulip.com/plans/), [hosting](https://zulip.com/plans/), [repository](https://github.com/zulip/zulip).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/zulip.md).
+
 Service costs/limits: Vendor-operated mobile push service for commercial organizations above 10 users requires a paid self-hosted plan; eligible communities can receive it free.
 
 Repository: pushed 2026-10-21T19:55:53Z; latest commit 2026-10-21T19:55:53Z; latest published release 12.3 (2026-09-21T17:10:07Z). Quick analysis: 6.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -29,6 +31,8 @@ Repository: pushed 2026-10-21T19:55:53Z; latest commit 2026-10-21T19:55:53Z; lat
 Complete Matrix stack with Synapse, Matrix Authentication Service, Element Web and Element Call. Identified repo is suite deployment distribution, not just the client. No hard 100-user cap; commercial use allowed by repository FAQ, although vendor recommends Pro for commercial production.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/element-hq/ess-helm/blob/5fa05580d3f818beafa84fbd24b385e010e87c40/LICENSE-AGPL-3.0-only), [edition evidence](https://github.com/element-hq/ess-helm#editions), [hosting](https://element.io/en/server-suite), [repository](https://github.com/element-hq/ess-helm).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/element.md).
 
 Paid restrictions: ESS Pro adds Synapse Pro autoscaling, high availability and multi-tenancy.; Advanced IAM, audit/compliance and central management are Pro features.
 
@@ -43,6 +47,8 @@ Core source AGPLv3; designated webapp/admin/config folders Apache-2.0; vendor-co
 
 License: AGPL-3.0-only AND Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/mattermost/mattermost/blob/5a5cbfc306bb943ae8a6a9bb2f5cac85474d7189/LICENSE.txt), [edition evidence](https://docs.mattermost.com/product-overview/plans), [hosting](https://docs.mattermost.com/product-overview/editions-and-offerings), [repository](https://github.com/mattermost/mattermost).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/mattermost.md).
+
 Paid restrictions: Group calling and guest accounts excluded from Team Edition.; SSO removed from Team Edition; advanced identity, permissions, compliance and HA in proprietary editions.
 
 Repository: pushed 2026-10-21T21:13:41Z; latest commit 2026-10-21T20:38:11Z; latest published release v12.0.0 (2026-10-14T10:08:59Z). Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -55,6 +61,8 @@ Repository: pushed 2026-10-21T21:13:41Z; latest commit 2026-10-21T20:38:11Z; lat
 MIT core excludes ee directories and third-party license exceptions. Proprietary premium-enabled Starter free plan (50 registered users) is separate from Community. Routine collaboration limits justify C. Current paid plans Commercial/Government/Defense; Pro became legacy April 29, 2026.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/RocketChat/Rocket.Chat/blob/aa3ad515571152850b67ba8ac2f60ec7a51deab1/LICENSE), [edition evidence](https://docs.rocket.chat/docs/our-plans), [hosting](https://docs.rocket.chat/docs/our-plans), [repository](https://github.com/RocketChat/Rocket.Chat).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/rocket-chat.md).
 
 Paid restrictions: Community documented for up to 100 concurrent users; vendor push capped at 10,000/month.; Community limited app integrations and video integrations (Jitsi/BigBlueButton only); advanced identity/governance and air-gapped offering require premium plan.
 

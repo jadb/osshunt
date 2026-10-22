@@ -1,0 +1,238 @@
+{
+  "id": "prestashop",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "PrestaShop SA",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "cyber_Pixel sp. z o.o.; ultimate parent cyber_Folks S.A. (Warsaw Stock Exchange)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Serena Capital",
+        "source": "https://www.serena.vc/portfolio-profile/prestashop/"
+      },
+      {
+        "name": "XAnge Private Equity",
+        "source": "https://www.serena.vc/portfolio-profile/prestashop/"
+      },
+      {
+        "name": "Seventure Partners",
+        "source": "https://www.serena.vc/portfolio-profile/prestashop/"
+      }
+    ],
+    "notes": "Founded 2007. February 18, 2026 acquisition supersedes MBE/Fortidia ownership: cyber_Pixel bought 100% of PrestaShop; ultimate group cyber_Folks is Warsaw-listed. Serena, XAnge and Seventure are historical investors, not current owners after full acquisition.",
+    "sources": [
+      "https://prestashop.com/about-us/",
+      "https://investors.cyberfolks.pl/en/reports/current-report-4-2026/",
+      "https://www.serena.vc/portfolio-profile/prestashop/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Classic",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://prestashop.com/prestashop-offers/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://prestashop.com/prestashop-offers/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Hosted",
+      "status": "published",
+      "monthlyPrice": 29,
+      "annualPrice": 288,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "store",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Vendor Hosted bundle, distinct from free Classic source. €24/month annual payment ×12 or €29/month no commitment; VAT excluded.",
+      "sources": [
+        "https://prestashop.com/prestashop-offers/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Current offers page has Classic and Hosted only. Legacy /enterprise URL failed; no current Enterprise offer/quote verified.",
+      "sources": [
+        "https://prestashop.com/prestashop-offers/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its established merchant/module ecosystem and European commerce specialization create localized implementation and extension advantages.",
+      "basis": "assessment",
+      "sources": [
+        "https://prestashop.com/about-us/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "A unified one-page checkout reduces the number of checkout steps merchants need to configure.",
+      "basis": "assessment",
+      "sources": [
+        "https://prestashop.com/about-us/"
+      ]
+    },
+    {
+      "claim": "Localized payments and multi-currency selling support merchants serving multiple national markets.",
+      "basis": "assessment",
+      "sources": [
+        "https://prestashop.com/prestashop-offers/"
+      ]
+    },
+    {
+      "claim": "Catalog connections to social networks and marketing modules link product merchandising to acquisition channels.",
+      "basis": "assessment",
+      "sources": [
+        "https://prestashop.com/prestashop-offers/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "PrestaShop SA",
+          "url": "https://prestashop.com/about-us/",
+          "relationship": "business-steward",
+          "source": "https://prestashop.com/about-us/"
+        }
+      ],
+      "notes": "No independent corporate financial sponsor roster established from current project pages. PrestaShop SA is the verified business steward; its cyber_Folks group backing is ownership, not automatically sponsorship.",
+      "sources": [
+        "https://prestashop.com/about-us/",
+        "https://www.prestashop-project.org/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "PrestaShop 9 docs list PHP 8.1–8.5 depending minor; 8.5 recommended for 9.1. Confirm 9.2 package compatibility; chart reviewed still ends at 9.1.",
+          "sources": [
+            "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+          ]
+        },
+        {
+          "component": "MySQL 5.7+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MySQL OR MariaDB; recent version recommended",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+          ]
+        },
+        {
+          "component": "MariaDB 10.2+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MariaDB OR MySQL; recent version recommended",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+          ]
+        },
+        {
+          "component": "Apache 2.4+",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Apache OR Nginx",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+          ]
+        },
+        {
+          "component": "Nginx 1.0+",
+          "necessity": "one-of",
+          "group": "web-server",
+          "condition": "Nginx OR Apache",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+          ]
+        },
+        {
+          "component": "PHP extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "cURL, DOM, fileinfo, GD, iconv, intl, JSON, mbstring, OpenSSL, PDO/MySQL, SimpleXML and Zip; allow_url_fopen enabled.",
+          "sources": [
+            "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "512 MB PHP memory_limit recommended minimum",
+        "storage": null,
+        "os": "Unix/Linux preferred; macOS works; Windows not actively supported",
+        "notes": "512M is per-script allocation recommendation; no fixed machine CPU/disk minimum published.",
+        "sources": [
+          "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+        ]
+      },
+      "notes": "No required Redis, external queue or object-storage server listed for baseline; modules/payment services may add dependencies. Runtime chart limitation explicitly preserved.",
+      "sources": [
+        "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official project links downloadable releases and manual/CLI/Docker installation; no current officially linked one-click self-host template verified. Hosted subscription is a vendor service, not represented as a self-host installer.",
+      "sources": [
+        "https://www.prestashop-project.org/",
+        "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
+      ]
+    }
+  }
+}

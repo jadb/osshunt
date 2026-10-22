@@ -41,7 +41,7 @@ Status: **business-fallback**. No separate corporate financial/in-kind sponsor i
 
 ## Self-operation requirements
 
-Mode: **server**. Use native Bench or official Docker production setup. MariaDB is the verified default for these applications. Framework installation mentions PostgreSQL, but this is not asserted as a supported ERPNext/HR application backend. No separate object store required by default; local site volumes used. Branch-specific version table preserved. [1](https://docs.frappe.io/framework/user/en/installation) [2](https://raw.githubusercontent.com/frappe/erpnext/develop/README.md) [3](https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml)
+Mode: **server**. Use native Bench or official Docker production setup. MariaDB is the verified default for these applications. Framework installation mentions PostgreSQL, but this is not asserted as a supported ERPNext/HR application backend. No separate object store required by default; local site volumes used. Branch-specific version table preserved. [1](https://docs.frappe.io/framework/user/en/installation) [2](https://raw.githubusercontent.com/frappe/erpnext/develop/README.md) [3](https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml) [4](https://docs.frappe.io/erpnext/email-account)
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
@@ -52,7 +52,7 @@ Mode: **server**. Use native Bench or official Docker production setup. MariaDB 
 | Valkey | one-of | cache-and-queue | Redis or Valkey | Documented Redis-compatible alternative, version 6+ table. [1](https://docs.frappe.io/framework/user/en/installation) |
 | Nginx, application workers, queue workers and scheduler | required | — | Always | Official container stack includes frontend, backend, websocket, short/long queue workers and scheduler; these services are not optional for full production behavior. [1](https://raw.githubusercontent.com/frappe/frappe_docker/main/compose.yaml) |
 | wkhtmltopdf | conditional | — | PDF rendering on v16 and older | v17 replaces it with Chromium; avoid mixing branch requirements. [1](https://docs.frappe.io/framework/user/en/installation) |
-| SMTP service | conditional | — | Outgoing email notifications | Mail service configuration needed for actual email delivery; no mandatory paid provider established. [1](https://docs.frappe.io/framework/user/en/installation) |
+| SMTP service | conditional | — | Outgoing email notifications | Mail service configuration needed for actual email delivery; no mandatory paid provider established. [1](https://docs.frappe.io/erpnext/email-account) |
 | Docker Engine and Compose v2 | conditional | — | Official container deployment route | Container runtime packages application dependencies; native Bench route is an alternative. [1](https://raw.githubusercontent.com/frappe/erpnext/develop/README.md) |
 
 Resources: CPU not specified; memory not specified; storage not specified; OS Debian/Ubuntu production; macOS documented; Windows via WSL. Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source. [1](https://docs.frappe.io/framework/user/en/installation)

@@ -252,7 +252,7 @@
         "os": "Linux; Ubuntu 20.04+/CentOS 8+ listed on getting-started page",
         "notes": "Only explicit documented hardware figures included; null means no minimum verified in reviewed installation source.",
         "sources": [
-          "https://invoiceninja.github.io/docs/self-host/self-host-installation"
+          "https://www.invoiceninja.org/getting-started/"
         ]
       },
       "notes": "v5 manual PHP stack; current detailed installation guide requires PHP 8.2, while general getting-started page says 8.1+. Prefer detailed guide. Hardware figures from first-party getting-started page. Native clients still connect to server API; they do not replace backend.",

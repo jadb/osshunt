@@ -1,0 +1,149 @@
+{
+  "id": "loom",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Loom, Inc. / Atlassian",
+    "kind": "business",
+    "foundedYear": 2015,
+    "ageBasis": "company-founded",
+    "ownership": "public-subsidiary",
+    "parent": "Atlassian Corporation (NASDAQ:TEAM)",
+    "stockSymbols": [
+      "NASDAQ:TEAM"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Andreessen Horowitz",
+        "source": "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+      },
+      {
+        "name": "Coatue",
+        "source": "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+      },
+      {
+        "name": "Kleiner Perkins",
+        "source": "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+      },
+      {
+        "name": "ICONIQ",
+        "source": "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+      },
+      {
+        "name": "General Catalyst",
+        "source": "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+      }
+    ],
+    "notes": "Loom company founded late2015; product launched2016. Historical investors pre-acquisition. Atlassian acquired100% equity on November30,2023; old investors not asserted current owners.",
+    "sources": [
+      "https://www.globenewswire.com/news-release/2021/11/23/2339894/0/en/Loom-Drives-Millions-of-New-Users-Significant-Team-Growth-in-2021.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Business",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "video communication subscription",
+      "notes": "Lowest paid Business shows$18/user/month but toggle state ambiguous in captured page; monthly/annual fields withheld. Starter free separate.",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": "Business + AI",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "video communication subscription",
+      "notes": "Explicit MOST POPULAR. Shows$24/user/month but billing state ambiguous; exact recurring totals unknown.",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "video communication subscription",
+      "notes": "Named Business plan; $18 displayed without unambiguous billing toggle state.",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "video communication subscription",
+      "notes": "Enterprise listed; exact quote/numeric billing not verified in extraction.",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Shared recording libraries and Atlassian workflow integration can create switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Screen-and-camera capture conveys demonstrations with visual context.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ]
+    },
+    {
+      "claim": "Video comments and reactions allow asynchronous feedback tied to recordings.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ]
+    },
+    {
+      "claim": "AI editing and video-to-text automation turn recordings into reusable work artifacts.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.loom.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

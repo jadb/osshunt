@@ -9,12 +9,15 @@ Use-case sources: [1](https://www.zoom.com/en/products/virtual-meetings/), [2](h
 - [Google Meet](https://workspace.google.com/pricing): USD 7/seat/month, annual billing. Workspace Business Starter standard USD/user/month with one-year commitment, billed monthly; bundled suite, not standalone Meet. Promotions excluded. [Pricing](https://workspace.google.com/pricing).
   [Pricing tiers, organization and product reasons](../products/google-meet.md).
 - [Zoom](https://zoom.us/pricing): USD 14.16/seat/month, annual billing. Workplace Pro displayed annual-equivalent USD/user/month; monthly plan $16.99. Basic free plan exists. Tax excluded. [Pricing](https://zoom.us/pricing).
+  [Pricing tiers, organization and product reasons](../products/zoom.md).
 
 ### Jitsi Meet — A
 
 Official FAQ describes entire Jitsi offering as 100% OSS; self-hostable meeting implementation, recorder Jibri and SIP bridge Jigasi available as OSS projects. Hosting/support and third-party phone service incur separate costs; no verified self-hosted edition license gates. JaaS managed service is separate.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/jitsi/jitsi-meet/blob/55430513980db97d73e0f605df591b8028c23342/LICENSE), [edition evidence](https://jitsi.org/user-faq/), [hosting](https://jitsi.org/about/), [repository](https://github.com/jitsi/jitsi-meet).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/jitsi-meet.md).
 
 Repository: pushed 2026-10-21T21:24:56Z; latest commit 2026-10-21T16:34:56Z; latest published release stable/jitsi-meet_11248 (2026-09-14T13:07:11Z). Quick analysis: 7.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
@@ -26,6 +29,8 @@ Repository: pushed 2026-10-21T21:24:56Z; latest commit 2026-10-21T16:34:56Z; lat
 Core conferencing/virtual classroom software is LGPL and supports self-hosting without proprietary restrictions. Commercial Enterprise comparison primarily sells operations/support, but Enhanced plugins/analytics licensing needs item-by-item verification before claiming all functionality is OSS. Tier U concerns feature parity, not core OSS license.
 
 License: LGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/bigbluebutton/bigbluebutton/blob/63e66ed7587ff377b56e396974b423d7423d0ee6/LICENSE), [edition evidence](https://bigbluebutton.com/enterprise), [hosting](https://bigbluebutton.com/), [repository](https://github.com/bigbluebutton/bigbluebutton).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/bigbluebutton.md).
 
 Paid restrictions: Commercial hosted Enhanced offering advertises additional plugins and enterprise analytics; precise OSS availability of all enhancements not established.
 

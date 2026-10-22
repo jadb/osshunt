@@ -1,0 +1,251 @@
+{
+  "id": "woocommerce",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Woo; Automattic Inc.",
+    "kind": "business",
+    "foundedYear": 2008,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Automattic Inc. (privately held)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Salesforce Ventures",
+        "source": "https://www.prnewswire.com/news-releases/automattic-announces-series-d-funding-from-salesforce-ventures-300921452.html"
+      },
+      {
+        "name": "Insight Partners",
+        "source": "https://www.prnewswire.com/news-releases/automattic-announces-series-d-funding-from-salesforce-ventures-300921452.html"
+      },
+      {
+        "name": "Tiger Global",
+        "source": "https://www.prnewswire.com/news-releases/automattic-announces-series-d-funding-from-salesforce-ventures-300921452.html"
+      },
+      {
+        "name": "True Ventures",
+        "source": "https://www.prnewswire.com/news-releases/automattic-announces-series-d-funding-from-salesforce-ventures-300921452.html"
+      }
+    ],
+    "notes": "Woo began as WooThemes in 2008; WooCommerce plugin launched 2011. Automattic acquired WooThemes in 2015. Funding and investor list below refer to parent Automattic, not a separate WooCommerce round; current exact parent cap table not asserted.",
+    "sources": [
+      "https://woocommerce.com/about/",
+      "https://www.prnewswire.com/news-releases/automattic-announces-series-d-funding-from-salesforce-ventures-300921452.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://woocommerce.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://woocommerce.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "Core has no Business subscription tier; extensions and third-party hosting are purchased separately.",
+      "sources": [
+        "https://woocommerce.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise commerce solution",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Official enterprise solution is sales-led via Request a demo; no verified license/subscription amount or explicit pricing quote captured. Core stays free.",
+      "sources": [
+        "https://woocommerce.com/enterprise-ecommerce/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "The WordPress installed base and Woo extension marketplace create complementary-development and migration-cost advantages.",
+      "basis": "assessment",
+      "sources": [
+        "https://woocommerce.com/about/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "WordPress content and store management let merchants combine editorial publishing with product selling.",
+      "basis": "assessment",
+      "sources": [
+        "https://woocommerce.com/about/"
+      ]
+    },
+    {
+      "claim": "Store and checkout customization allow merchants to shape product presentation and buying steps.",
+      "basis": "assessment",
+      "sources": [
+        "https://woocommerce.com/"
+      ]
+    },
+    {
+      "claim": "Marketplace extensions add specialist payment, shipping and merchandising capabilities to an existing catalog.",
+      "basis": "assessment",
+      "sources": [
+        "https://woocommerce.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Woo / Automattic",
+          "url": "https://woocommerce.com/about/",
+          "relationship": "business-steward",
+          "source": "https://woocommerce.com/about/"
+        }
+      ],
+      "notes": "No separate corporate sponsor roster identified on About, pricing or repository leads. Verified commercial steward Woo (Automattic subsidiary) supplied as business fallback, not as an external sponsor.",
+      "sources": [
+        "https://woocommerce.com/about/",
+        "https://woocommerce.com/pricing/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "WordPress 6.9+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://woocommerce.com/document/server-requirements/"
+          ]
+        },
+        {
+          "component": "PHP 8.3+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "WooCommerce 10.8+ recommendations; tested through PHP 8.4.",
+          "sources": [
+            "https://woocommerce.com/document/server-requirements/"
+          ]
+        },
+        {
+          "component": "MySQL 8.0+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MySQL OR MariaDB",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://woocommerce.com/document/server-requirements/"
+          ]
+        },
+        {
+          "component": "MariaDB 10.6+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "MariaDB OR MySQL",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://woocommerce.com/document/server-requirements/"
+          ]
+        },
+        {
+          "component": "Apache or Nginx-compatible PHP web server and HTTPS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://woocommerce.com/document/server-requirements/"
+          ]
+        },
+        {
+          "component": "cURL/fsockopen, SOAP and mbstring extensions",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Relevant payment integrations, extensions or non-English stores",
+          "notes": "Core baseline does not require a separate Redis, search or queue service.",
+          "sources": [
+            "https://woocommerce.com/document/server-requirements/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "256 MB WordPress memory limit or greater",
+        "storage": null,
+        "os": "Compatible PHP/WordPress host",
+        "notes": "256 MB is the WordPress process memory limit, not a guaranteed machine RAM capacity; CPU and disk minimum not specified.",
+        "sources": [
+          "https://woocommerce.com/document/server-requirements/"
+        ]
+      },
+      "notes": "Current WooCommerce 10.8+ documented recommended stack. Redis/object caches and remote gateways are store-specific; gateways can require external paid services.",
+      "sources": [
+        "https://woocommerce.com/document/server-requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "WordPress plugin installer",
+          "url": "https://wordpress.org/plugins/woocommerce/",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Plugin Install Now then Activate in an existing WordPress site; not full server provisioning.",
+          "sources": [
+            "https://woocommerce.com/document/installing-uninstalling-woocommerce/"
+          ]
+        }
+      ],
+      "notes": "Verified built-in WordPress plugin marketplace install; it assumes a working WordPress installation.",
+      "sources": [
+        "https://woocommerce.com/document/installing-uninstalling-woocommerce/"
+      ]
+    }
+  }
+}

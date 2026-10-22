@@ -58,7 +58,7 @@ Resources: CPU not specified; memory not specified; storage not specified; OS no
 
 ## One-click and installer options
 
-Status: **offered**. Official script automates Docker/Nginx/MariaDB provisioning with domain/TLS options; terminal access and sudo required. [1](https://docs.espocrm.com/administration/server-configuration/)
+Status: **offered**. Official script automates Docker/Nginx/MariaDB provisioning with domain/TLS options; terminal access and sudo required. [1](https://docs.espocrm.com/administration/installation-by-script/)
 
 Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
 

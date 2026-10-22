@@ -12,9 +12,9 @@ Parent: SAP SE; Frankfurt: SAP, NYSE ADR: SAP.
 
 Listed symbols: FWB:SAP, NYSE:SAP.
 
-Concur founded 1993; acquired by SAP in 2014. Parent SAP is public (Frankfurt and NYSE ADR SAP). Historical Concur public-company filing establishes equity-financed history; no primary-source historic venture investor list verified, and SAP is the acquirer rather than automatically a venture investor. [1](https://www.concur.com/blog/article/customer-success-concur) [2](https://www.sap.com/about/company/history/2011-2020.html) [3](https://www.sap.com/investors/en/stock/basic-data.html) [4](https://www.sec.gov/Archives/edgar/data/1066026/000106602614000019/cnqr-2014x10k.htm)
+Concur founded1993; SAP acquired company2014. Parent SAP public underSAP inFrankfurt/NYSEADR. American Express bought6.4million newly issued Concur shares in2008 (then13% equity); historical investor, not current ownership. SAP is current acquirer/parent. [1](https://www.concur.com/blog/article/customer-success-concur) [2](https://www.sap.com/about/company/history/2011-2020.html) [3](https://www.sap.com/investors/en/stock/basic-data.html) [4](https://www.sec.gov/Archives/edgar/data/1066026/000106602614000019/cnqr-2014x10k.htm) [5](https://www.sec.gov/Archives/edgar/data/1066026/000119312508161414/dex991.htm)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [American Express](https://www.sec.gov/Archives/edgar/data/1066026/000119312508161414/dex991.htm).
 
 ## Starting prices
 

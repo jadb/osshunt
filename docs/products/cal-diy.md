@@ -58,7 +58,7 @@ Resources: CPU not specified; memory not specified; storage not specified; OS no
 
 ## One-click and installer options
 
-Status: **unknown**. Official Railway, Render and Elestio pages describe One Click Deployment but extracts expose no actual actionable deploy button/template URL. Options not verified enough to list; manual Docker/source route confirmed. [1](https://www.cal.diy/installation)
+Status: **unknown**. Official Railway, Render and Elestio pages describe One Click Deployment but extracts expose no actual actionable deploy button/template URL. Options not verified enough to list; manual Docker/source route confirmed. [1](https://www.cal.diy/deployments/railway) [2](https://www.cal.diy/deployments/render) [3](https://www.cal.diy/deployments/elestio)
 
 Verified one-click/marketplace option: **no**. Unverified options remain unknown in the status above.
 

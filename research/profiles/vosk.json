@@ -1,0 +1,257 @@
+{
+  "id": "vosk",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Alpha Cephei Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Business identity verified by Inc. footer and Enterprise/Mobile commercial offers. Founding year/equity owners/funding unresolved; copyright start not used as founding evidence.",
+    "sources": [
+      "https://alphacephei.com/en/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Vosk API plus separately licensed model",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "local installation",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "Free API/toolkit scope; choose model license individually. Some model catalog entries are noncommercial; API license does not cover every model.",
+      "sources": [
+        "https://alphacephei.com/vosk/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted core",
+      "notes": "No explicitly highlighted popular plan verified in the reviewed official offer. No inferred designation.",
+      "sources": [
+        "https://alphacephei.com/en/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "business",
+      "name": "Vosk Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial Vosk Enterprise",
+      "notes": "Enterprise exists with Contact Us but no numeric pricing or named Business tier verified.",
+      "sources": [
+        "https://alphacephei.com/en/"
+      ],
+      "usagePrice": null
+    },
+    {
+      "role": "enterprise",
+      "name": "Vosk Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial Vosk models/services",
+      "notes": "Contact Us offer; no numeric amount. Commercial models not silently treated as bundled open source.",
+      "sources": [
+        "https://alphacephei.com/en/"
+      ],
+      "usagePrice": null
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Offline multi-platform bindings and model adaptation expertise support integration stickiness; open APIs and varied model licenses limit exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://alphacephei.com/vosk/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Streaming recognition yields partial results for interactive speech workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://alphacephei.com/vosk/"
+      ]
+    },
+    {
+      "claim": "Offline recognition runs without a remote transcription service.",
+      "basis": "assessment",
+      "sources": [
+        "https://alphacephei.com/vosk/"
+      ]
+    },
+    {
+      "claim": "Reconfigurable vocabulary and speaker-identification primitives support domain-specific applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://alphacephei.com/vosk/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Alpha Cephei Inc.",
+          "url": "https://alphacephei.com/en/",
+          "relationship": "business-steward",
+          "source": "https://alphacephei.com/en/"
+        }
+      ],
+      "notes": "No separate corporate sponsor verified in reviewed project sources; accountable business steward included.",
+      "sources": [
+        "https://alphacephei.com/en/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Vosk native library and a licensed language model",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        },
+        {
+          "component": "Python",
+          "necessity": "one-of",
+          "group": "binding-runtime",
+          "condition": "Python pip binding; docs list3.5\u20133.9, potentially dated compatibility",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        },
+        {
+          "component": "Java 8+ / JNA",
+          "necessity": "one-of",
+          "group": "binding-runtime",
+          "condition": "Java binding alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        },
+        {
+          "component": ".NET runtime / Vosk NuGet",
+          "necessity": "one-of",
+          "group": "binding-runtime",
+          "condition": "C# alternative; Linux/Windows documented",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        },
+        {
+          "component": "Node.js / node-ffi-napi",
+          "necessity": "one-of",
+          "group": "binding-runtime",
+          "condition": "JavaScript binding alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Optional Vosk websocket/gRPC/MQTT/WebRTC server route",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/server"
+          ]
+        },
+        {
+          "component": "FFmpeg",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Convert unsupported input audio; native PCM16-bit mono examples do not need it",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        },
+        {
+          "component": "Kaldi, OpenBLAS+CLAPACK or MKL; optional CUDA",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Source build only; prebuilt pip path avoids compilation",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://alphacephei.com/vosk/install"
+          ]
+        }
+      ],
+      "resources": {
+        "sources": [
+          "https://alphacephei.com/vosk/install"
+        ],
+        "cpu": null,
+        "memory": "Some large CARPA server models need16GB or more",
+        "storage": null,
+        "os": "Linux x86_64/arm64; RaspberryPi3/4; macOS x86/M1; Windows x86/64 pip routes",
+        "notes": "Primarily library, with separate server wrappers. Docs exclude ARMv6/WindowsARM64 for pip. Model-specific memory; no universal minimum."
+      },
+      "notes": "Documented default deployment path; optional services are separate from core runtime. No unverified backend alternatives asserted.",
+      "sources": [
+        "https://alphacephei.com/vosk/install",
+        "https://alphacephei.com/vosk/server"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Vosk server Docker launch",
+          "url": "https://alphacephei.com/vosk/server",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official docker run image launches server; model/network/storage choices remain.",
+          "sources": [
+            "https://alphacephei.com/vosk/server"
+          ]
+        }
+      ],
+      "notes": "Verified options classified individually; configuration may still be required.",
+      "sources": [
+        "https://alphacephei.com/vosk/install"
+      ]
+    }
+  }
+}

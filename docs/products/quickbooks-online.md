@@ -10,9 +10,9 @@ Started 1983 (company-founded); years active: 43; years in business: 43. Ages ar
 
 Listed symbols: NASDAQ:INTU.
 
-Company began operations in 1983, incorporated 1984; Nasdaq IPO 1993. Age describes Intuit, not QuickBooks Online launch. Public-equity funding established; historical venture investors not verified in reviewed official history, so investor list is not exhaustive. [1](https://investors.intuit.com/company-information/faq)
+Intuit began operations1983, incorporated1984; Nasdaq IPO1993. Age describes company, not QBO launch. Kleiner Perkins backed Intuit in1990 according to its current portfolio story; historical investment, no current stake inferred. [1](https://investors.intuit.com/company-information/faq) [2](https://www.kleinerperkins.com/perspectives/intuit/)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [Kleiner Perkins](https://www.kleinerperkins.com/perspectives/intuit/).
 
 ## Starting prices
 

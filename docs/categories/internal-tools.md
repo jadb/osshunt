@@ -14,6 +14,8 @@ Apache-2.0 Community core; commercial editions separately gate workflow building
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/appsmithorg/appsmith/blob/67bcbe12c962a5c5feef9793ad87d66c331b8d59/LICENSE), [edition evidence](https://www.appsmith.com/pricing), [hosting](https://www.appsmith.com/pricing), [repository](https://github.com/appsmithorg/appsmith).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/appsmith.md).
+
 Paid restrictions: Workflows and reusable packages; Premium integrations; More than three Git repositories and custom environments; Custom access roles, audit logs, SAML/OIDC SSO and SCIM
 
 Repository: pushed 2026-10-21T21:22:59Z; latest commit 2026-10-21T20:47:06Z; latest published release v2.5.1 (2026-10-21T02:29:46Z). Quick analysis: 6/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -25,6 +27,8 @@ Repository: pushed 2026-10-21T21:22:59Z; latest commit 2026-10-21T20:47:06Z; lat
 GPLv3 core and MPL-2.0 generated-app packages; paid packages/pro uses non-OSI BSL. Unlimited OSS apps/users/actions, but one workspace plus paid backup/environment capabilities warrant C.
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/Budibase/budibase/blob/90aa490bb1692934be473907b77077d94aef6fc1/LICENSE), [edition evidence](https://budibase.com/pricing/), [hosting](https://budibase.com/pricing/), [repository](https://github.com/Budibase/budibase).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/budibase.md).
 
 Paid restrictions: Open source limited to one workspace; Built-in backups and restore, environment variables and custom branding; Enforced SSO, user groups, Active Directory/SCIM and audit logs
 

@@ -1,0 +1,287 @@
+{
+  "id": "budibase",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Budibase",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "SignalFire",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Angular Ventures",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Techstart Ventures",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Ben Lang",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Marcus Eagan",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Jana Iris",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Kyle Parish",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Matt Robinson",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      },
+      {
+        "name": "Ovais Tariq",
+        "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      }
+    ],
+    "notes": "2019 date uses documented project activity, not an independently verified incorporation date. Private business; $7m Seed II announcedNov2022; historical round participants listed.",
+    "sources": [
+      "https://budibase.com/blog/budibase-core-intro/",
+      "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open source",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "One workspace; unlimited apps/actions/users; infrastructure separate.",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "cloud/self-host plans",
+      "notes": "No explicit Most popular or Recommended plan designation verified in the pricing source; no plan inferred.",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 3588,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "workspace account,3 creators and250,000 actions/month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicit cloud plan; $299/yearly-billed month \u00d712. Monthly amount not independently selected. Best value is not a Most popular/Recommended badge. End users and extra creators add fees.",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise self-host",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "usagePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "paid self-host license",
+      "notes": "Custom; contact sales. Self-host Enterprise differs from cloud Business.",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A combined internal app/data/automation model and installed workspace workflows can create migration friction; feature categories overlap competing low-code platforms.",
+      "basis": "assessment",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Build forms and operational apps against built-in tables and external data sources.",
+      "basis": "assessment",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Chain triggers and actions into synchronous automations that return results to apps/webhooks.",
+      "basis": "assessment",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Combine agent instructions, tools and knowledge sources with app data in the same workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://budibase.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Budibase",
+          "url": "https://budibase.com",
+          "relationship": "business-steward",
+          "source": "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+        }
+      ],
+      "notes": "Corporate sponsorship source checked. No separate corporate sponsor verified; accountable commercial steward included.",
+      "sources": [
+        "https://budibase.com/blog/updates/budibase-raises-7m-to-help-every-company-on-the-planet-build-their-own-tools/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine and Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Production service; may be bundled in the documented container stack.",
+          "sources": [
+            "https://docs.budibase.com/docs/docker-compose"
+          ]
+        },
+        {
+          "component": "CouchDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled Budibase database image stores platform data; not an optional Postgres replacement.",
+          "sources": [
+            "https://raw.githubusercontent.com/Budibase/budibase/v3.50.0/hosting/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Sessions/cache/queues used by app and worker.",
+          "sources": [
+            "https://raw.githubusercontent.com/Budibase/budibase/v3.50.0/hosting/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "MinIO object store",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Bundled persistent objects; alternative external S3 configuration not asserted from this source.",
+          "sources": [
+            "https://raw.githubusercontent.com/Budibase/budibase/v3.50.0/hosting/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "App, worker and reverse proxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Separate services in stable3.50.0 Compose.",
+          "sources": [
+            "https://raw.githubusercontent.com/Budibase/budibase/v3.50.0/hosting/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "LiteLLM and PostgreSQL16",
+          "necessity": "required",
+          "group": null,
+          "condition": "Standard3.50.0 Compose stack",
+          "notes": "LiteLLM depends on separate Postgres16; app/worker depend on LiteLLM. SQL database here supports AI gateway, not CouchDB replacement.",
+          "sources": [
+            "https://raw.githubusercontent.com/Budibase/budibase/v3.50.0/hosting/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "External model/API credentials",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AI agents or selected external integrations",
+          "notes": "Chosen provider/model may incur separate API costs.",
+          "sources": [
+            "https://budibase.com/pricing/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "4GB minimum for documented DigitalOcean image",
+        "storage": null,
+        "os": "Docker host: Linux, Windows/macOS via Docker Desktop",
+        "notes": "4GB figure belongs to DigitalOcean documented path; full3.50.0 AI-enabled Compose capacity should be sized separately.",
+        "sources": [
+          "https://docs.budibase.com/docs/docker-compose"
+        ]
+      },
+      "notes": "Requirements verified against stablev3.50.0 Compose, including LiteLLM/Postgres supporting services often missing in older summaries. Database/data connectors such as MySQL/Postgres are not alternative platform state stores.",
+      "sources": [
+        "https://docs.budibase.com/docs/docker-compose",
+        "https://raw.githubusercontent.com/Budibase/budibase/v3.50.0/hosting/docker-compose.yaml",
+        "https://budibase.com/pricing/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "DigitalOcean Budibase Droplet",
+          "url": "https://docs.budibase.com/docs/digitalocean",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official one-click Marketplace offering; choose at least4GB image.",
+          "sources": [
+            "https://docs.budibase.com/docs/digitalocean"
+          ]
+        }
+      ],
+      "notes": "Only verified official deployment options included; one-command installers labelled separately from one-click. Manual Docker Compose alone is not counted as one-click.",
+      "sources": [
+        "https://docs.budibase.com/docs/docker-compose",
+        "https://docs.budibase.com/docs/digitalocean"
+      ]
+    }
+  }
+}

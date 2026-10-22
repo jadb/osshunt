@@ -7,13 +7,17 @@ Audience: People documenting meetings, interviews and recordings; developers bui
 Use-case sources: [1](https://otter.ai/pricing), [2](https://fireflies.ai/pricing), [3](https://alphacephei.com/vosk/).
 
 - [Fireflies.ai](https://fireflies.ai): USD 10/seat/month, annual billing. Pro USD price per seat/month billed annually; monthly $18. Free plan exists; additional AI usage subject to credits/rate limits. [Pricing](https://fireflies.ai/pricing).
+  [Pricing tiers, organization and product reasons](../products/fireflies.md).
 - [Otter.ai](https://otter.ai): USD 8.33/seat/month, annual billing. Pro standard USD price per user/month billed annually; monthly standard $16.99. Conditional regional promotions excluded. [Pricing](https://otter.ai/pricing).
+  [Pricing tiers, organization and product reasons](../products/otter.md).
 
 ### Vosk — A
 
 Tier A for Vosk API plus an Apache-2.0 model such as vosk-model-small-en-us-0.15. Offline library with streaming and speaker-identification primitives; not a meeting-notes application. Model catalog licenses vary, including noncommercial choices; API license does not cover every model.
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/alphacep/vosk-api/blob/4ab9821510b488efb7740094714a130bd3545e90/COPYING), [edition evidence](https://alphacephei.com/vosk/), [hosting](https://alphacephei.com/vosk/server), [repository](https://github.com/alphacep/vosk-api).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/vosk.md).
 
 Service costs/limits: User supplies runtime hardware and integration.; No first-party managed hosting offer verified in reviewed official documentation.; Select models individually: some French/Dutch catalog entries use noncommercial licenses and are outside this scoped OSS recommendation.
 
@@ -27,6 +31,8 @@ Repository: pushed 2026-10-15T08:36:44Z; latest commit 2026-10-15T08:36:44Z; lat
 Tier A for the published speech recognition code and model weights, explicitly MIT in README. Local CLI/Python workflow has no documented paid edition gate. A developer engine, not a meeting-notes workspace. May be run locally or embedded in a self-operated service.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/openai/whisper/blob/86098128c0b4f24f0e2aa2994de830614b474227/LICENSE), [edition evidence](https://github.com/openai/whisper), [hosting](https://developers.openai.com/api/docs/guides/speech-to-text), [repository](https://github.com/openai/whisper).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/whisper.md).
 
 Service costs/limits: Local inference requires user-provided compute and setup.; Optional first-party whisper-1 API is separate hosted usage; current documentation marks it deprecated, available to existing integrations until 2027-02-26.
 

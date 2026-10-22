@@ -1,0 +1,268 @@
+{
+  "id": "medusa",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Medusa",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "LocalGlobe",
+        "source": "https://www.streetinsider.com/Business%2BWire/Medusa%2BRaises%2B%248m%2Bto%2BBuild%2Bthe%2BLeading%2BE-Commerce%2BPlatform%2Bfor%2BDevelopers/20329757.html"
+      },
+      {
+        "name": "Dawn Capital",
+        "source": "https://www.streetinsider.com/Business%2BWire/Medusa%2BRaises%2B%248m%2Bto%2BBuild%2Bthe%2BLeading%2BE-Commerce%2BPlatform%2Bfor%2BDevelopers/20329757.html"
+      },
+      {
+        "name": "Anthony Casalena",
+        "source": "https://www.streetinsider.com/Business%2BWire/Medusa%2BRaises%2B%248m%2Bto%2BBuild%2Bthe%2BLeading%2BE-Commerce%2BPlatform%2Bfor%2BDevelopers/20329757.html"
+      },
+      {
+        "name": "Nicolas Dessaigne",
+        "source": "https://www.streetinsider.com/Business%2BWire/Medusa%2BRaises%2B%248m%2Bto%2BBuild%2Bthe%2BLeading%2BE-Commerce%2BPlatform%2Bfor%2BDevelopers/20329757.html"
+      },
+      {
+        "name": "Scott Williamson",
+        "source": "https://www.streetinsider.com/Business%2BWire/Medusa%2BRaises%2B%248m%2Bto%2BBuild%2Bthe%2BLeading%2BE-Commerce%2BPlatform%2Bfor%2BDevelopers/20329757.html"
+      }
+    ],
+    "notes": "Dawn investor profile dates company founding 2021; earlier client code is not company start. July 2022 seed round raised $8M; named investor list is historical. Exact legal entity and complete current cap table unresolved.",
+    "sources": [
+      "https://www.dawncapital.com/companies/medusa",
+      "https://medusajs.com/pricing",
+      "https://www.streetinsider.com/Business%2BWire/Medusa%2BRaises%2B%248m%2Bto%2BBuild%2Bthe%2BLeading%2BE-Commerce%2BPlatform%2Bfor%2BDevelopers/20329757.html"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Software license cost is zero; infrastructure, extensions and external services can cost extra.",
+      "sources": [
+        "https://github.com/medusajs/medusa"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "site",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified on the current public pricing page.",
+      "sources": [
+        "https://medusajs.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Scale",
+      "status": "published",
+      "monthlyPrice": 299,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "cloud project base",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest explicitly teams-oriented commercial Cloud plan. Starting monthly base; usage/add-ons extra. Not a paid self-host license.",
+      "sources": [
+        "https://medusajs.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial Enterprise license and optional Cloud/BYOC",
+      "notes": "Tailored pricing; RBAC, SSO and audit logs require Enterprise license.",
+      "sources": [
+        "https://medusajs.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Its composable commerce framework can accumulate reusable modules and deep custom workflow integrations, creating specialist switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/medusajs/medusa"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Composable product, cart, order and payment modules let developers change commerce behavior without rebuilding every primitive.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/medusajs/medusa"
+      ]
+    },
+    {
+      "claim": "Workflow orchestration with retries supports custom fulfillment processes spanning several systems.",
+      "basis": "assessment",
+      "sources": [
+        "https://medusajs.com/blog/eight-sleep"
+      ]
+    },
+    {
+      "claim": "Admin dashboard and multi-region commerce models help operate catalogs and orders across channels and markets.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.dawncapital.com/companies/medusa"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Medusa",
+          "url": "https://medusajs.com/",
+          "relationship": "business-steward",
+          "source": "https://medusajs.com/pricing"
+        }
+      ],
+      "notes": "Repository Sponsor affordance and current commercial site checked; no named external corporate sponsor established. Verified commercial Medusa steward supplied as business fallback; investors are not sponsors.",
+      "sources": [
+        "https://github.com/medusajs/medusa",
+        "https://medusajs.com/pricing"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Node.js v22.22.0+ LTS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Next.js starter supports Node v24 LTS or lower in current docs.",
+          "sources": [
+            "https://docs.medusajs.com/learn/installation"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.medusajs.com/learn/deployment/general"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Sessions plus recommended production caching/event bus/workflow engine/locking modules.",
+          "sources": [
+            "https://docs.medusajs.com/learn/deployment/general"
+          ]
+        },
+        {
+          "component": "Medusa server and worker processes",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Two application instances in documented production topology.",
+          "sources": [
+            "https://docs.medusajs.com/learn/deployment/general"
+          ]
+        },
+        {
+          "component": "S3-compatible file provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production uploaded-file storage",
+          "notes": "S3 or another production-ready file provider; local default intended for development.",
+          "sources": [
+            "https://docs.medusajs.com/learn/deployment/general"
+          ]
+        },
+        {
+          "component": "SendGrid or another notification provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Transactional notification delivery",
+          "notes": "External API/provider costs separate.",
+          "sources": [
+            "https://docs.medusajs.com/learn/deployment/general"
+          ]
+        },
+        {
+          "component": "PostHog or other analytics provider",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Only if application analytics used",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.medusajs.com/learn/deployment/general"
+          ]
+        },
+        {
+          "component": "Next.js storefront",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Optional starter frontend; another frontend can call Store API",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.medusajs.com/learn/installation"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "2 GB minimum recommended by deployment guide",
+        "storage": null,
+        "os": null,
+        "notes": "Guide says hosting plan should offer at least 2 GB for optimal experience; no fixed CPU/disk or OS published.",
+        "sources": [
+          "https://docs.medusajs.com/learn/deployment/general",
+          "https://docs.medusajs.com/learn/installation"
+        ]
+      },
+      "notes": "Current v2 production guide. PostgreSQL/Redis and server-worker topology explicit; no undocumented SQL substitutions asserted.",
+      "sources": [
+        "https://docs.medusajs.com/learn/deployment/general",
+        "https://docs.medusajs.com/learn/installation"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official local scaffold is one command for development, but current production guide is manual. Old Railway doc redirects to Cloud-vs-self-hosting; third-party Railway templates found without current official linking, so not promoted as verified options.",
+      "sources": [
+        "https://docs.medusajs.com/learn/deployment/general",
+        "https://docs.medusajs.com/learn/installation"
+      ]
+    }
+  }
+}
