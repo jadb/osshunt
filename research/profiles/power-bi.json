@@ -12,11 +12,17 @@
       "NASDAQ:MSFT"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "investors": [
+      {
+        "name": "Technology Venture Investors (historical)",
+        "source": "https://www.augustcap.com/team/david-marquardt/"
+      }
+    ],
+    "notes": "1975 company founding, not product launch; Microsoft public since1986, NASDAQ:MSFT. Investor primary biography identifies TVI as sole historical venture investor and David Marquardt board tenure1981–2014. No claim TVI remains a shareholder or that current public owners are exhaustive.",
     "sources": [
       "https://news.microsoft.com/facts-about-microsoft/",
-      "https://www.microsoft.com/en-us/investor/FAQ"
+      "https://www.microsoft.com/en-us/investor/FAQ",
+      "https://www.augustcap.com/team/david-marquardt/"
     ]
   },
   "pricingTiers": [
@@ -31,7 +37,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Paid entry $14/user/month yearly \u00d712 = $168. Free report authoring exists; paid sharing licensed separately.",
+      "notes": "Paid entry $14/user/month yearly ×12 = $168. Free report authoring exists; paid sharing licensed separately.",
       "sources": [
         "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
       ]
@@ -63,7 +69,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest advanced organizational tier; $24/user/month paid yearly \u00d712 = $288. Larger model sizes and more frequent refreshes.",
+      "notes": "Closest advanced organizational tier; $24/user/month paid yearly ×12 = $288. Larger model sizes and more frequent refreshes.",
       "sources": [
         "https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing"
       ]

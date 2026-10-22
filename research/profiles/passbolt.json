@@ -47,7 +47,8 @@
     "notes": "Company release dates incorporation to December 2016; idea/prototype history began earlier (2011/2013). Series A investors listed historically; current ownership percentages undisclosed.",
     "sources": [
       "https://www.globenewswire.com/news-release/2025/01/23/3014316/0/en/Passbolt-Secures-8-Million-Series-A-to-Secure-Password-Collaboration-Modernize-Access-Management-for-Teams.html",
-      "https://www.passbolt.com/about"
+      "https://www.passbolt.com/about",
+      "https://www.passbolt.com/terms"
     ]
   },
   "pricingTiers": [
@@ -170,22 +171,72 @@
       "requirements": [
         {
           "component": "Docker and Docker Compose",
-          "necessity": "required",
+          "necessity": "conditional",
           "group": null,
-          "condition": "Always",
+          "condition": "Container installation path",
           "notes": "Documented deployment component.",
           "sources": [
             "https://www.passbolt.com/docs/hosting/install/ce/docker/"
           ]
         },
         {
-          "component": "SQL database in documented stack",
-          "necessity": "required",
-          "group": null,
-          "condition": "Always",
-          "notes": "Docker deployment supplies database configuration; exact supported version range not resolved on checked page.",
+          "component": "MariaDB10.6+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default database, automatically configured by packages and supplied as Docker container",
+          "notes": "Documented deployment component.",
           "sources": [
-            "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+            "https://www.passbolt.com/docs/hosting/configure/database/configure-database/"
+          ]
+        },
+        {
+          "component": "MySQL8.0+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Documented native/source alternative",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/from-source/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Fresh installation alternative; follow driver/schema configuration",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/configure/database/configure-database/postgres/"
+          ]
+        },
+        {
+          "component": "PHP8.2+ with FPM and GnuPG extension",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Native/source install; packaged in container",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/from-source/"
+          ]
+        },
+        {
+          "component": "Apache or Nginx with TLS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Native/source install",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/from-source/"
+          ]
+        },
+        {
+          "component": "GnuPG",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Native/source install; packaged in container",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/install/ce/from-source/"
           ]
         },
         {
@@ -207,21 +258,36 @@
           "sources": [
             "https://www.passbolt.com/docs/hosting/install/ce/docker/"
           ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Non-default cache backend selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.passbolt.com/docs/hosting/environment-reference/"
+          ]
         }
       ],
       "resources": {
-        "cpu": null,
-        "memory": null,
-        "storage": null,
-        "os": "Linux container host",
-        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "cpu": "2 cores recommended minimum VM",
+        "memory": "2GB recommended minimum VM",
+        "storage": "20GB recommended minimum VM",
+        "os": "Stable major Linux distribution",
+        "notes": "Official requirement page recommends these minimum VM specs and10Mbps/internet access; actual sizing depends on workload.",
         "sources": [
-          "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+          "https://www.passbolt.com/docs/hosting/requirements/"
         ]
       },
-      "notes": "Docker Compose is the recommended manual stack; SMTP/NTP explicitly required. Marketplace is a separate documented option.",
+      "notes": "Docker default MariaDB; current docs also describe MySQL and PostgreSQL alternatives. Native PHP/GnuPG/webserver dependencies included in container distribution. Composer/Git are source-install tools, not separate production services. PostgreSQL setup guidance warns against reconfiguring an existing database in place.",
       "sources": [
-        "https://www.passbolt.com/docs/hosting/install/ce/docker/"
+        "https://www.passbolt.com/docs/hosting/install/ce/docker/",
+        "https://www.passbolt.com/docs/hosting/configure/database/configure-database/",
+        "https://www.passbolt.com/docs/hosting/configure/database/configure-database/postgres/",
+        "https://www.passbolt.com/docs/hosting/install/ce/from-source/",
+        "https://www.passbolt.com/docs/hosting/requirements/",
+        "https://www.passbolt.com/docs/hosting/environment-reference/"
       ]
     },
     "oneClickInstall": {

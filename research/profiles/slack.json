@@ -4,8 +4,8 @@
   "organization": {
     "name": "Slack (Salesforce)",
     "kind": "business",
-    "foundedYear": null,
-    "ageBasis": "unknown",
+    "foundedYear": 2014,
+    "ageBasis": "product-launched",
     "ownership": "public-subsidiary",
     "parent": "Salesforce, Inc. (NYSE: CRM)",
     "stockSymbols": [
@@ -18,7 +18,7 @@
         "source": "https://www.accel.com/companies/slack"
       }
     ],
-    "notes": "Slack acquired by Salesforce in 2021. Exact company founding year unresolved: official Slack FAQ says founded 2014 while investor Accel dates initial seed investment to 2009 in predecessor-era company. Accel is historical investor, not a claim of current ownership; WORK listing ended on acquisition.",
+    "notes": "2014 is the branded Slack product era per official Slack founding FAQ, not predecessor Tiny Speck company incorporation. Accel seed investment began2009 in predecessor era. Salesforce acquired Slack2021; Accel historical investor, not current ownership claim; WORK delisted on acquisition.",
     "sources": [
       "https://slack.com/about",
       "https://www.accel.com/companies/slack",
@@ -38,7 +38,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Regular $8.75/user/month monthly; $7.25/user/month annual \u00d712=$87. Introductory 50% promotion excluded.",
+      "notes": "Regular $8.75/user/month monthly; $7.25/user/month annual ×12=$87. Introductory 50% promotion excluded.",
       "sources": [
         "https://slack.com/pricing"
       ]
@@ -70,7 +70,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Regular $18/user/month monthly or $15/user/month annually \u00d712=$180; introductory discount excluded.",
+      "notes": "Regular $18/user/month monthly or $15/user/month annually ×12=$180; introductory discount excluded.",
       "sources": [
         "https://slack.com/pricing"
       ]

@@ -1,0 +1,223 @@
+{
+  "id": "zitadel",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "ZITADEL Inc.",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Nexus Venture Partners",
+        "source": "https://zitadel.com/blog/end-of-year-product-wrap-up"
+      },
+      {
+        "name": "Floodgate",
+        "source": "https://zitadel.com/blog/end-of-year-product-wrap-up"
+      }
+    ],
+    "notes": "Official careers source names ZITADEL Inc. founded 2019. Private company; 2024 annual review confirms $9M Series A with Nexus and Floodgate; ownership percentages not public in checked sources.",
+    "sources": [
+      "https://jobs.zitadel.com/data_request",
+      "https://zitadel.com/blog/end-of-year-product-wrap-up",
+      "https://zitadel.com/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source self-hosted core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "open-source core",
+      "notes": "Code/infrastructure distinct; cloud Free has 100 DAU and separate quotas.",
+      "sources": [
+        "https://zitadel.com/docs/self-hosting/deploy/overview"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://zitadel.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pro",
+      "status": "published",
+      "monthlyPrice": 100,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "cloud instance; included usage quota",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Published US$100/month cloud base; page says 25,000 daily-active users per month included. Exact usage accounting/overages require detailed quote/docs; no annual total inferred.",
+      "sources": [
+        "https://zitadel.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "self-hosted commercial license or enterprise cloud",
+      "notes": "Custom commercial terms; no public annual amount.",
+      "sources": [
+        "https://zitadel.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Tenant-aware identity model and accumulated application/workflow integrations can raise switching costs, while open protocols preserve migration choices.",
+      "basis": "assessment",
+      "sources": [
+        "https://zitadel.com/pricing",
+        "https://zitadel.com/blog/introducting-v2-0"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multi-organization identity management models separate customer tenants within one identity platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://zitadel.com/pricing"
+      ]
+    },
+    {
+      "claim": "Custom workflows and identity-provider federation adapt authentication to application-specific account journeys.",
+      "basis": "assessment",
+      "sources": [
+        "https://zitadel.com/pricing"
+      ]
+    },
+    {
+      "claim": "User management, multifactor/social login and APIs combine application identity lifecycle and authentication.",
+      "basis": "assessment",
+      "sources": [
+        "https://zitadel.com/blog/introducting-v2-0"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "ZITADEL Inc.",
+          "url": "https://jobs.zitadel.com/data_request",
+          "relationship": "business-steward",
+          "source": "https://jobs.zitadel.com/data_request"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://jobs.zitadel.com/data_request"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "ZITADEL binary/container",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zitadel.com/docs/self-hosting/deploy/overview"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zitadel.com/docs/self-hosting/deploy/overview"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production email notifications",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zitadel.com/docs/guides/manage/customize/notification-providers"
+          ]
+        },
+        {
+          "component": "Twilio or custom HTTP SMS provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "SMS verification selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zitadel.com/docs/guides/manage/customize/notification-providers"
+          ]
+        },
+        {
+          "component": "Kubernetes",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Recommended orchestration for high availability",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://zitadel.com/docs/self-hosting/deploy/overview"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "1 CPU sufficient for tests only",
+        "memory": "512MB sufficient for tests only",
+        "storage": null,
+        "os": null,
+        "notes": "Documented figures are test-environment guidance, not production minimum.",
+        "sources": [
+          "https://zitadel.com/docs/self-hosting/deploy/overview"
+        ]
+      },
+      "notes": "Current docs require PostgreSQL; no historical CockroachDB dependency inferred. Container stable tag is production release. Kubernetes/Helm instructions are manual deployment, not browser one-click.",
+      "sources": [
+        "https://zitadel.com/docs/self-hosting/deploy/overview"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://zitadel.com/docs/self-hosting/deploy/overview"
+      ]
+    }
+  }
+}

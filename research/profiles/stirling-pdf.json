@@ -1,0 +1,290 @@
+{
+  "id": "stirling-pdf",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Stirling PDF, Inc.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Open Core Ventures",
+        "source": "https://www.opencoreventures.com/blog/open-source-creator-anthony-stirling-launches-stirling-pdf-to-build-the-first-open-core-pdf-editing-suite"
+      }
+    ],
+    "notes": "OCV primary announcement dates project origin January 2023 and commercial company launch September 2024 with $2M funding. Exact incorporation year not established; About counter values inconsistent with history, so year left null. Named investor historical, not cap-table percentage. Mixed-license product scope retained.",
+    "sources": [
+      "https://www.stirling.com/about",
+      "https://www.opencoreventures.com/blog/open-source-creator-anthony-stirling-launches-stirling-pdf-to-build-the-first-open-core-pdf-editing-suite"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free distributed editor/server",
+      "notes": "Free web/desktop/self-host editor; server user limits and commercial license boundaries separately documented. Processing credit allowances separate from core license.",
+      "sources": [
+        "https://www.stirling.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 99,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "100-user capacity block",
+      "minimumQuantity": null,
+      "scope": "commercial team administration / self-host infrastructure",
+      "notes": "Explicit Popular label; $99/month includes 100 users, added capacity in blocks of 100. No verified annual-prepay total.",
+      "sources": [
+        "https://www.stirling.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": 99,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "100-user capacity block",
+      "minimumQuantity": null,
+      "scope": "commercial team administration / self-host infrastructure",
+      "notes": "Closest named team plan; includes 100 users, not $99/user.",
+      "sources": [
+        "https://www.stirling.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "enterprise self-host agreement",
+      "notes": "Custom committed volume/terms; air-gapped deployments, audit/SCIM capabilities. Processing services priced separately.",
+      "sources": [
+        "https://www.stirling.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad document operations and accumulated automation pipelines can create workflow stickiness; mixed-license boundaries limit assumptions of open-code substitutability.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.stirling.com/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "OCR and format conversion cover scanned and office-document processing.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.stirling.com/"
+      ]
+    },
+    {
+      "claim": "Chained PDF operations automate repeatable batch transformations.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.stirling.com/"
+      ]
+    },
+    {
+      "claim": "API and MCP operations expose document processing to connected workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.stirling.com/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Stirling PDF, Inc.",
+          "url": "https://www.stirling.com/",
+          "relationship": "business-steward",
+          "source": "https://opencollective.com/stirling-pdf"
+        }
+      ],
+      "notes": "Official collective checked: no named corporate donor; business steward verified through company/docs. OCV investor kept separate.",
+      "sources": [
+        "https://opencollective.com/stirling-pdf"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Docker-compatible runtime",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Container deployment",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Install/Docker/"
+          ]
+        },
+        {
+          "component": "Java runtime and document tools",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Bare JAR deployment",
+          "notes": "JAR alternative requires separately installing documented conversion/OCR tools; exact Java version not captured.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Install/JAR/"
+          ]
+        },
+        {
+          "component": "LibreOffice, Tesseract, OCRmyPDF, WeasyPrint, Calibre, Ghostscript, QPDF, ImageMagick",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Full latest container",
+          "notes": "Bundled in full image; ultra-lite excludes OCR/Office/HTML/ebook conversion tools.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Install/Docker/"
+          ]
+        },
+        {
+          "component": "Embedded H2",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default user/team database",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Storage/Database/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "External database on Team/Enterprise",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Storage/Database/"
+          ]
+        },
+        {
+          "component": "Local filesystem",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Default file storage",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Storage/File-Storage/"
+          ]
+        },
+        {
+          "component": "Database file storage",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Team/Enterprise storage selection",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Storage/File-Storage/"
+          ]
+        },
+        {
+          "component": "S3-compatible object store",
+          "necessity": "one-of",
+          "group": "file-storage",
+          "condition": "Team/Enterprise; clustered storage",
+          "notes": "S3, MinIO, R2 and other S3-compatible providers documented.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Storage/File-Storage/"
+          ]
+        },
+        {
+          "component": "SMTP service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email-sharing enabled",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Storage/File-Storage/"
+          ]
+        },
+        {
+          "component": "Bundled AI engine",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Fat image; disabled until enabled",
+          "notes": "AI/processor service usage and external API configuration are separate; default editor does not require paid AI API.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Install/Docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "latest suggested 4GB; fat 6GB+; ultra-lite 2GB",
+        "storage": null,
+        "os": "Container host amd64/arm64; desktop editions separately offered",
+        "notes": "Suggested memory by image, not universal minimum. CPU/storage numeric minima not captured; persist configs/storage volumes.",
+        "sources": [
+          "https://docs.stirlingpdf.com/Server/Install/Docker/"
+        ]
+      },
+      "notes": "Current server docs checked with v3.2.0 catalog lead. Full Docker image is default verified path; H2/local volumes require no external SQL, Redis or queue. PostgreSQL/S3 are licensed alternatives. Desktop is not a server requirement.",
+      "sources": [
+        "https://docs.stirlingpdf.com/Server/Install/Docker/",
+        "https://docs.stirlingpdf.com/Server/Storage/Database/",
+        "https://docs.stirlingpdf.com/Server/Storage/File-Storage/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "TrueNAS Apps",
+          "url": "https://apps.truenas.com/catalog/stirling-pdf/",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official installation page links this distribution; not a hosted server deployment.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Install/Docker/"
+          ]
+        },
+        {
+          "name": "Proxmox Community Scripts",
+          "url": "https://community-scripts.github.io/ProxmoxVE/scripts?id=stirling-pdf",
+          "kind": "one-command",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official documentation links one-line LXC shell installer; not a true one-click browser deployment.",
+          "sources": [
+            "https://docs.stirlingpdf.com/Server/Install/Docker/"
+          ]
+        }
+      ],
+      "notes": "Checked official deployment documentation; manual Docker Compose is not a one-click offer.",
+      "sources": [
+        "https://docs.stirlingpdf.com/Server/Install/Docker/"
+      ]
+    }
+  }
+}

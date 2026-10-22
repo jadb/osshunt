@@ -7,13 +7,17 @@ Audience: Individuals protecting computer files and IT teams operating endpoint 
 Use-case sources: [1](https://www.backblaze.com/cloud-backup/business), [2](https://restic.net/), [3](https://kopia.io/).
 
 - [Acronis Cyber Protect](https://www.acronis.com/en/products/cyber-protect/): entry amount unverified/quote, quote billing. Base amount not rendered in current purchasing page; device/workload-specific licensing. Quote fields represent unverified price, not a claim that every edition is quote-only. Acronis True Image is a separate consumer product. [Pricing](https://www.acronis.com/en/products/cyber-protect/purchasing/).
+  [Pricing tiers, organization and product reasons](../products/acronis-cyber-protect.md).
 - [Backblaze Business Backup](https://www.backblaze.com/cloud-backup/business): USD 99/seat/year, annual billing. Business Backup shown at $99/year per computer subscription; seat means protected computer. Enterprise Control upgrade quoted separately. [Pricing](https://www.backblaze.com/cloud-backup/pricing).
+  [Pricing tiers, organization and product reasons](../products/backblaze-business-backup.md).
 
 ### BorgBackup — A
 
 Official site identifies 100% free BSD software; backup, encryption, compression and restore workflow in open program, paid offerings are support/storage services. Supports local repositories and SSH repository servers. Recommend stable 1.4, not master/2.0 testing.
 
 License: BSD-3-Clause; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/borgbackup/borg/blob/45f8b178ae892ae73fcaa3127c951b0044cd7a7e/LICENSE), [edition evidence](https://www.borgbackup.org/), [hosting](https://www.borgbackup.org/), [repository](https://github.com/borgbackup/borg).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/borgbackup.md).
 
 Service costs/limits: Third-party repository hosting/support costs separate from software; Windows WSL/Cygwin support experimental, not a native Windows managed-backup agent.
 
@@ -27,6 +31,8 @@ Open CLI exposes all features, with official desktop GUI and optional repository
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/kopia/kopia/blob/0835005737025dc3e5203df0138c8265686cb4b3/LICENSE), [edition evidence](https://kopia.io/docs/features/), [hosting](https://kopia.io/docs/), [repository](https://github.com/kopia/kopia).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/kopia.md).
+
 Service costs/limits: User provisions and pays storage separately; no bundled unlimited backup cloud.; Repository server permissions cover snapshot/policy manifests; known content IDs can expose shared repository content.
 
 Repository: pushed 2026-10-20T03:30:12Z; latest commit 2026-10-20T03:30:11Z; latest published release v0.23.1 (2026-06-16T01:27:33Z). Quick analysis: 6.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -39,6 +45,8 @@ Repository: pushed 2026-10-20T03:30:12Z; latest commit 2026-10-20T03:30:11Z; lat
 Entire program described as free and completely open source; no paid software feature gates identified. Locally operated CLI, no dedicated server required; selfHostable=false reflects client-tool scope, while storage can be self-hosted.
 
 License: BSD-2-Clause; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/restic/restic/blob/dd09b6bd01af220b1d5d95c0d4d7d472e05e05c4/LICENSE), [edition evidence](https://restic.net/), [hosting](https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html), [repository](https://github.com/restic/restic).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/restic.md).
 
 Service costs/limits: Storage, remote server operation, scheduling and key custody are the operator’s responsibility; cloud storage fees are separate.
 

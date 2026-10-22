@@ -16,12 +16,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Business Basic | published | USD 4/user | USD 36/user | — | unspecified | paid product. Published $4/user/month monthly or $36 for 12 months. Custom domains require at least one Standard or Professional user on account; Basic lacks third-party mail-client access. [1](https://www.fastmail.com/pricing/us/) |
-| popular | Business Standard | published | USD 6/user | USD 60/user | — | unspecified | paid product. Explicit Most popular badge. Published $6/user/month monthly or $60 for 12 months. [1](https://www.fastmail.com/pricing/us/) |
-| business | Business Standard | published | USD 6/user | USD 60/user | — | unspecified | paid product. Named business plan; 50 GB mail/calendar/contacts plus 10 GB files per user. Published annual total $60. [1](https://www.fastmail.com/pricing/us/) |
-| enterprise | unknown | unknown | — | — | — | unspecified | paid product. No separate named Enterprise tier or quoted enterprise offer identified. Professional is $10 monthly/$108 yearly but not labelled Enterprise; not silently substituted. [1](https://www.fastmail.com/pricing/us/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Business Basic | published | USD 4/user | USD 36/user | — | — | unspecified | paid product. Published $4/user/month monthly or $36 for 12 months. Custom domains require at least one Standard or Professional user on account; Basic lacks third-party mail-client access. [1](https://www.fastmail.com/pricing/us/) |
+| popular | Business Standard | published | USD 6/user | USD 60/user | — | — | unspecified | paid product. Explicit Most popular badge. Published $6/user/month monthly or $60 for 12 months. [1](https://www.fastmail.com/pricing/us/) |
+| business | Business Standard | published | USD 6/user | USD 60/user | — | — | unspecified | paid product. Named business plan; 50 GB mail/calendar/contacts plus 10 GB files per user. Published annual total $60. [1](https://www.fastmail.com/pricing/us/) |
+| enterprise | unknown | unknown | — | — | — | — | unspecified | paid product. No separate named Enterprise tier or quoted enterprise offer identified. Professional is $10 monthly/$108 yearly but not labelled Enterprise; not silently substituted. [1](https://www.fastmail.com/pricing/us/) |
 
 ## Defensibility assessments
 

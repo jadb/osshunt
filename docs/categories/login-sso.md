@@ -29,6 +29,8 @@ Community IAM product; documented SSO, federation, administration, MFA and autho
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/keycloak/keycloak/blob/3c07b879d5cfaf277caa5d4bc96174347f71f91c/LICENSE.txt), [edition evidence](https://www.keycloak.org/), [hosting](https://www.keycloak.org/), [repository](https://github.com/keycloak/keycloak).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/keycloak.md).
+
 Repository: pushed 2026-10-21T15:49:15Z; latest commit 2026-10-21T15:49:14Z; latest published release 26.8.1 (2026-10-13T08:58:15Z). Quick analysis: 5.5/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 
 - Auth0 → Keycloak: **partial**. Reconfigure applications for OIDC/SAML, migrate or federate directories, rebuild policies and login flows. Covers identity provider/login needs; assess workforce lifecycle and vendor integration parity separately. [1](https://www.keycloak.org/)
@@ -39,6 +41,8 @@ Repository: pushed 2026-10-21T15:49:15Z; latest commit 2026-10-21T15:49:14Z; lat
 Current core uses AGPL v3, replacing Apache licensing for v3 onward; commercial license/support and managed cloud available. Vendor describes same core across deployments; cloud usage limits are not self-hosted feature locks. Package exceptions may apply.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/zitadel/zitadel/blob/ce12560d2491f12bb96f20805ad532f7d6dd5875/LICENSE), [edition evidence](https://help.zitadel.com/zitadel-enterprise-cloud-vs-enterprise-self-hosted), [hosting](https://help.zitadel.com/zitadel-enterprise-cloud-vs-enterprise-self-hosted), [repository](https://github.com/zitadel/zitadel).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/zitadel.md).
 
 Repository: pushed 2026-10-21T12:54:22Z; latest commit 2026-10-21T12:54:21Z; latest published release v4.19.5 (2026-10-15T09:40:41Z). Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 

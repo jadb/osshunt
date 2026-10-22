@@ -16,12 +16,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Vaultwarden | free | USD 0/user | USD 0/user | — | unspecified | free self-hosted core. Open program; infrastructure and third-party services are separate. [1](https://github.com/dani-garcia/vaultwarden) |
-| popular | unknown | unknown | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://github.com/dani-garcia/vaultwarden) |
-| business | unknown | not-offered | — | — | — | unspecified | vendor commercial product. No distinct first-party organizational commercial software plan found in the checked project source. [1](https://github.com/dani-garcia/vaultwarden) |
-| enterprise | unknown | not-offered | — | — | — | unspecified | vendor commercial product. No distinct first-party enterprise commercial software plan found in the checked project source. [1](https://github.com/dani-garcia/vaultwarden) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Vaultwarden | free | USD 0/user | USD 0/user | — | — | unspecified | free self-hosted core. Open program; infrastructure and third-party services are separate. [1](https://github.com/dani-garcia/vaultwarden) |
+| popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://github.com/dani-garcia/vaultwarden) |
+| business | unknown | not-offered | — | — | — | — | unspecified | vendor commercial product. No distinct first-party organizational commercial software plan found in the checked project source. [1](https://github.com/dani-garcia/vaultwarden) |
+| enterprise | unknown | not-offered | — | — | — | — | unspecified | vendor commercial product. No distinct first-party enterprise commercial software plan found in the checked project source. [1](https://github.com/dani-garcia/vaultwarden) |
 
 ## Defensibility assessments
 

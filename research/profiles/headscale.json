@@ -1,0 +1,226 @@
+{
+  "id": "headscale",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Headscale authors",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Community implementation of Tailscale control server; not Tailscale Inc. Official sponsor page requests donations via Ko-fi but names no corporate sponsor. Exact project start/funding history unresolved.",
+    "sources": [
+      "https://headscale.net/stable/",
+      "https://headscale.net/stable/about/sponsor/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Headscale",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open program; infrastructure and third-party services are separate.",
+      "sources": [
+        "https://headscale.net/stable/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://headscale.net/stable/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party organizational commercial software plan found in the checked project source.",
+      "sources": [
+        "https://headscale.net/stable/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party enterprise commercial software plan found in the checked project source.",
+      "sources": [
+        "https://headscale.net/stable/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Compatibility and focused small-network community are useful ecosystem assets, with dependence on upstream client/protocol evolution limiting defensibility.",
+      "basis": "assessment",
+      "sources": [
+        "https://headscale.net/stable/",
+        "https://headscale.net/stable/about/faq/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Compatible control-server workflow allows use of the Tailscale client ecosystem.",
+      "basis": "assessment",
+      "sources": [
+        "https://headscale.net/stable/"
+      ]
+    },
+    {
+      "claim": "MagicDNS, split DNS and additional DNS records cover private device naming needs.",
+      "basis": "assessment",
+      "sources": [
+        "https://headscale.net/stable/about/features/"
+      ]
+    },
+    {
+      "claim": "Preauthenticated key and web registration flows support both automated nodes and interactive enrollment.",
+      "basis": "assessment",
+      "sources": [
+        "https://headscale.net/stable/about/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "sources": [
+        "https://headscale.net/stable/about/sponsor/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Headscale binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/setup/requirements/"
+          ]
+        },
+        {
+          "component": "SQLite",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Recommended database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/about/faq/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Supported in maintenance mode",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/about/faq/"
+          ]
+        },
+        {
+          "component": "Compatible Tailscale clients",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/"
+          ]
+        },
+        {
+          "component": "Public IP/domain and HTTPS443",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/setup/requirements/"
+          ]
+        },
+        {
+          "component": "OIDC provider",
+          "necessity": "optional",
+          "group": null,
+          "condition": "OIDC user registration selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/about/features/"
+          ]
+        },
+        {
+          "component": "DERP relay",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Peers cannot establish direct connectivity; use configured relay infrastructure",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://headscale.net/stable/about/features/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Modern Linux or BSD",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://headscale.net/stable/setup/requirements/"
+        ]
+      },
+      "notes": "Official Debian/Ubuntu packages and standalone binaries; manual install. Single-tailnet scope; no first-party web interface included. Separate relay topology and Tailscale client installation required.",
+      "sources": [
+        "https://headscale.net/stable/setup/requirements/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://headscale.net/stable/setup/requirements/"
+      ]
+    }
+  }
+}

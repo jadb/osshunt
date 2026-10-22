@@ -1,0 +1,218 @@
+{
+  "id": "kopia",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Kopia project",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Community open-source backup tool. Exact start year, incorporated steward and capital history not established in checked project material; no inferred bootstrapped company.",
+    "sources": [
+      "https://github.com/kopia/kopia",
+      "https://kopia.io/docs/features/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Kopia",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free CLI, desktop GUI and optional repository server",
+      "notes": "Open program; infrastructure and third-party services are separate.",
+      "sources": [
+        "https://github.com/kopia/kopia"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://github.com/kopia/kopia"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party organizational commercial software plan found in the checked project source.",
+      "sources": [
+        "https://github.com/kopia/kopia"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party enterprise commercial software plan found in the checked project source.",
+      "sources": [
+        "https://github.com/kopia/kopia"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Multiple storage adapters and policy-managed backup histories provide practical workflow retention; repository portability and open code limit exclusive lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://kopia.io/docs/repositories/",
+        "https://kopia.io/docs/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Snapshot policies combine scheduling, retention, exclusions and compression controls.",
+      "basis": "assessment",
+      "sources": [
+        "https://kopia.io/docs/features/",
+        "https://kopia.io/docs/installation/"
+      ]
+    },
+    {
+      "claim": "Content deduplication recognizes copied, moved and renamed files across shared repository snapshots.",
+      "basis": "assessment",
+      "sources": [
+        "https://kopia.io/docs/features/"
+      ]
+    },
+    {
+      "claim": "CLI, desktop GUI and optional repository-server workflows cover individual and multi-machine backup administration.",
+      "basis": "assessment",
+      "sources": [
+        "https://kopia.io/docs/installation/",
+        "https://kopia.io/docs/repository-server/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "sources": [
+        "https://github.com/kopia/kopia"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Kopia standalone binary / KopiaUI",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://kopia.io/docs/installation/"
+          ]
+        },
+        {
+          "component": "Local filesystem / NAS",
+          "necessity": "one-of",
+          "group": "storage",
+          "condition": "Local or mounted repository",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://kopia.io/docs/repositories/"
+          ]
+        },
+        {
+          "component": "S3-compatible, Azure Blob, B2, Google Cloud, WebDAV or SFTP endpoint",
+          "necessity": "one-of",
+          "group": "storage",
+          "condition": "Selected remote backend",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://kopia.io/docs/repositories/"
+          ]
+        },
+        {
+          "component": "Kopia repository server",
+          "necessity": "one-of",
+          "group": "storage",
+          "condition": "Optional mediated repository access",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://kopia.io/docs/repository-server/"
+          ]
+        },
+        {
+          "component": "rclone executable",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Experimental rclone storage backend",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://kopia.io/docs/repositories/"
+          ]
+        },
+        {
+          "component": "TLS certificate",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Repository server selected; can auto-generate",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://kopia.io/docs/repository-server/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Windows, macOS, Linux",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://kopia.io/docs/installation/"
+        ]
+      },
+      "notes": "No external SQL/cache/queue needed for standalone path. Optional repository server requires underlying storage and reachable clients. Server only access-controls snapshot/policy manifests; not arbitrary content-ID reads. Desktop installers are not a server one-click template.",
+      "sources": [
+        "https://kopia.io/docs/installation/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://kopia.io/docs/installation/"
+      ]
+    }
+  }
+}

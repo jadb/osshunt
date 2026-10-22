@@ -1,0 +1,287 @@
+{
+  "id": "stalwart",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Stalwart Labs",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Company founded July 2019; server development started September 2021 and first public release September 2022. Incorporated US/UK. Exact current equity owners and financing history not disclosed in official About/legal/README sources searched; no inference of bootstrapping or absence of investors.",
+    "sources": [
+      "https://stalw.art/about/",
+      "https://stalw.art/legal/",
+      "https://raw.githubusercontent.com/stalwartlabs/stalwart/main/README.md"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "mailbox",
+      "minimumQuantity": null,
+      "scope": "free AGPL self-hosted core",
+      "notes": "Community edition free; Enterprise functions and infrastructure separate.",
+      "sources": [
+        "https://stalw.art/compare/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-hosted editions",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://stalw.art/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Enterprise (25–499 mailboxes band)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 2.4,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "mailbox-year in first pricing band",
+      "minimumQuantity": 25,
+      "scope": "paid self-hosted Enterprise license",
+      "notes": "USD $2.40/mailbox/year for first 25–499 band; minimum 25 mailboxes => $60/year. Graduated rates on additional bands. Monthly billing exists but numeric monthly rate unverified; annual field is per-mailbox annual amount, not entire deployment.",
+      "sources": [
+        "https://stalw.art/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise (100,000+ mailboxes)",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "deployment",
+      "minimumQuantity": 100000,
+      "scope": "paid self-hosted Enterprise license",
+      "notes": "100,000+ mailbox quote; published lower bands use graduated annual rates, not a flat all-mailbox rate.",
+      "sources": [
+        "https://stalw.art/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A unified protocol engine and adaptable storage architecture differentiate Stalwart technically, but standard mail protocols and young project history limit entrenched ecosystem advantage.",
+      "basis": "assessment",
+      "sources": [
+        "https://stalw.art/about/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "JMAP, IMAP, POP3 and SMTP cover modern and legacy mail clients in one product.",
+      "basis": "assessment",
+      "sources": [
+        "https://stalw.art/about/"
+      ]
+    },
+    {
+      "claim": "CalDAV, CardDAV and WebDAV add calendar, contact and file collaboration alongside mail.",
+      "basis": "assessment",
+      "sources": [
+        "https://stalw.art/about/"
+      ]
+    },
+    {
+      "claim": "Built-in statistical spam and phishing protections handle reputation and suspicious messages inside the mail platform.",
+      "basis": "assessment",
+      "sources": [
+        "https://stalw.art/compare/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Stalwart Labs",
+          "url": "https://stalw.art/",
+          "relationship": "business-steward",
+          "source": "https://stalw.art/about/"
+        }
+      ],
+      "notes": "Official About and README identify commercial business building Community and Enterprise. No corporate donor roster found in those sources; verified business steward fallback, not customers/integrators as sponsors.",
+      "sources": [
+        "https://stalw.art/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Stalwart server binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Native Linux/macOS/Windows or Docker image; production pin v0.16 series. Default binary bundles normal storage backend support.",
+          "sources": [
+            "https://stalw.art/docs/install/platform/docker/"
+          ]
+        },
+        {
+          "component": "RocksDB (embedded)",
+          "necessity": "one-of",
+          "group": "data-store",
+          "condition": "Default single-node main data store",
+          "notes": "Also default for blob/search/in-memory stores, no external DB needed.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "data-store",
+          "condition": "Alternative main data store",
+          "notes": "Also supports blob/search/in-memory stores.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "MySQL / MariaDB",
+          "necessity": "one-of",
+          "group": "data-store",
+          "condition": "Alternative main data store",
+          "notes": "Also supports blob/search/in-memory stores.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "SQLite (embedded)",
+          "necessity": "one-of",
+          "group": "data-store",
+          "condition": "Alternative main data store",
+          "notes": "Also supports blob/search/in-memory stores.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "FoundationDB",
+          "necessity": "one-of",
+          "group": "data-store",
+          "condition": "Alternative main data store; recommended multi-node",
+          "notes": "Requires binary compiled with corresponding backend feature and FoundationDB service.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "S3 / MinIO or Azure Blob or filesystem",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Separate attachment/blob storage instead of selected data-store backend",
+          "notes": "Not required for default RocksDB path.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "Elasticsearch or Meilisearch",
+          "necessity": "optional",
+          "group": null,
+          "condition": "External full-text index instead of selected data-store backend",
+          "notes": "No standalone search service required by default.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "optional",
+          "group": null,
+          "condition": "External in-memory store instead of selected data-store backend",
+          "notes": "Default RocksDB handles this role without Redis.",
+          "sources": [
+            "https://stalw.art/docs/storage/backends/"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Container deployment only",
+          "notes": "Native service installer available; not mandatory for native install.",
+          "sources": [
+            "https://stalw.art/docs/install/platform/docker/"
+          ]
+        },
+        {
+          "component": "Public domain, DNS and SMTP connectivity",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Internet-facing mail delivery",
+          "notes": "Production mail requires DNS identity/routing and reachable mail ports; TLS setup and ACME available.",
+          "sources": [
+            "https://stalw.art/docs/install/platform/docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "1 core generally sufficient for low-traffic ~5-user setups",
+        "memory": "1 GB generally sufficient for typical 5–10 users; ~100 MB idle footprint",
+        "storage": null,
+        "os": "Linux; macOS; Windows; Docker-supported hosts",
+        "notes": "Sizing guidance, not hard minima. Concurrency/mail volume dominate. No fixed disk capacity published; provision for mailbox data. Default 8192 concurrent connections configurable.",
+        "sources": [
+          "https://stalw.art/docs/install/requirements/"
+        ]
+      },
+      "notes": "Verified explicit single-node RocksDB default; structured data/blob/search/in-memory stores independently configurable. Redis, SQL, object storage and external search are alternatives rather than universal prerequisites. External auth/AI services optional; Enterprise AI features are not required by Community. Native installer distinct from Docker.",
+      "sources": [
+        "https://stalw.art/docs/install/platform/docker/",
+        "https://stalw.art/docs/storage/backends/",
+        "https://stalw.art/docs/install/requirements/",
+        "https://stalw.art/docs/install/platform/linux/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Stalwart Linux/macOS installer",
+          "url": "https://stalw.art/docs/install/platform/linux/",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Download official install.sh then execute with sudo; documentation separates download and execution for inspection. Classified command-line installer, not true one-click.",
+          "sources": [
+            "https://stalw.art/docs/install/platform/linux/"
+          ]
+        }
+      ],
+      "notes": "First-party shell installer is an automated command-line path, not a graphical one-click cloud deployment. DNS, TLS and storage setup still required.",
+      "sources": [
+        "https://stalw.art/docs/install/platform/linux/"
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "wetransfer",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "WeTransfer B.V.",
+    "kind": "business",
+    "foundedYear": 2009,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Bending Spoons (privately held)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "HPE Growth",
+        "source": "https://www.hpegrowth.com/news/wetransfer-raises-eu35-million-and-joins-forces-with-hpe-growth-to-accelerate-development-of-its-workflow-tools-and-grow-its-user-base-beyond-50-million"
+      },
+      {
+        "name": "Highland Europe",
+        "source": "https://www.hpegrowth.com/news/wetransfer-raises-eu35-million-and-joins-forces-with-hpe-growth-to-accelerate-development-of-its-workflow-tools-and-grow-its-user-base-beyond-50-million"
+      }
+    ],
+    "notes": "Vendor report dates start to 2009; current Bending Spoons portfolio confirms acquisition July 2024. Historical 2019 funding/secondary round included HPE Growth and Highland Europe; not represented as current owners.",
+    "sources": [
+      "https://wetransfer.com/ideas-report/2020/assets/pdf/WeTransfer_Ideas_Report_2020.pdf",
+      "https://bendingspoons.com/",
+      "https://www.hpegrowth.com/news/wetransfer-raises-eu35-million-and-joins-forces-with-hpe-growth-to-accelerate-development-of-its-workflow-tools-and-grow-its-user-base-beyond-50-million"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Current official Help verifies Starter. Pricing page failed to load required JavaScript; no third-party/app-store price substituted.",
+      "sources": [
+        "https://wetransfer.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://wetransfer.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Teams",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Shared workspaces/admin tools verified; current billing amount not established.",
+      "sources": [
+        "https://wetransfer.com/help-center/subscriptions/plan-limits"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Official Help explicitly custom plan negotiated with Sales; SSO/SCIM/storage agreed by contract.",
+      "sources": [
+        "https://wetransfer.com/help-center/subscriptions/plan-limits"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Recognizable recipient-facing delivery experience and broad sender familiarity reduce adoption friction, though link-transfer functionality has many substitutes.",
+      "basis": "assessment",
+      "sources": [
+        "https://bendingspoons.com/",
+        "https://wetransfer.com/help-center/subscriptions/plan-limits"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Transfer preview comments and watermarked previews support review before final file delivery.",
+      "basis": "assessment",
+      "sources": [
+        "https://wetransfer.com/help-center/how-to"
+      ]
+    },
+    {
+      "claim": "Download Access Control tracks or restricts recipients for sensitive transfers.",
+      "basis": "assessment",
+      "sources": [
+        "https://wetransfer.com/help-center/how-to",
+        "https://wetransfer.com/help-center/subscriptions/plan-limits"
+      ]
+    },
+    {
+      "claim": "Recoverable transfers on eligible plans let recipients request access after expiry.",
+      "basis": "assessment",
+      "sources": [
+        "https://wetransfer.com/help-center/how-to"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

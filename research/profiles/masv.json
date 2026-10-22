@@ -1,0 +1,122 @@
+{
+  "id": "masv",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "MASV Inc.",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official About says spun off in late 2019, distinct from earlier networking-company project. Terms identify MASV Inc. Funding/investor names not verified in primary sources: secondary databases surfaced Connetic/Capital Angel Network, but direct investor pages failed or did not identify MASV; retained unknown rather than bootstrapped.",
+    "sources": [
+      "https://masv.io/about-us",
+      "https://masv.io/legal/terms-of-service",
+      "https://masv.io/news/iso-27001"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "On-Demand",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "GB exiting MASV network",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Usage rate US$0.25/GB after15GB free each calendar month. No flat monthly/annual subscription. Storage free5days then$0.07/GB/month.",
+      "sources": [
+        "https://masv.io/pricing"
+      ],
+      "usagePrice": 0.25
+    },
+    {
+      "role": "popular",
+      "name": "Annual Subscription \u2014 250GB",
+      "status": "published",
+      "monthlyPrice": 58,
+      "annualPrice": 696,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account; 250GB refreshed each month",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Explicit Most Popular. Billed monthly with12-month commitment; annual obligation $58\u00d712=$696. Additional monthly volumes500GB/$110,1TB/$215,2TB/$410; overages separate.",
+      "sources": [
+        "https://masv.io/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Annual Subscription \u2014 1TB",
+      "status": "published",
+      "monthlyPrice": 215,
+      "annualPrice": 2580,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account; 1TB nominal refreshed monthly",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Closest predictable team plan; $215 monthly with12-month commitment, \u00d712=$2,580. Vendor notes1TB allocation actually1TiB; not pooled annual transfer balance.",
+      "sources": [
+        "https://masv.io/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Platform",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization; custom workflow/transfer volume",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Tailored high-volume10TB+ monthly workflows. Pre-buy also offered:5TB$1,229,10TB$2,355,25TB$5,632 one-time, credits valid180days; not annual subscriptions.",
+      "sources": [
+        "https://masv.io/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Transfer integrations, automation and embedded media pipelines can create workflow switching costs; network-speed outcomes depend on user connectivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://masv.io/pricing",
+        "https://masv.io/about-us"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Watch Folder triggers and no-code routing automate ingest and delivery to multiple storage destinations.",
+      "basis": "assessment",
+      "sources": [
+        "https://masv.io/pricing"
+      ]
+    },
+    {
+      "claim": "Branded upload Portals collect large datasets from external collaborators.",
+      "basis": "assessment",
+      "sources": [
+        "https://masv.io/pricing"
+      ]
+    },
+    {
+      "claim": "Cross-platform desktop transfer and scheduling support large-file movement around production workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://masv.io/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

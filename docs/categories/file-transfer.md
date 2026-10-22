@@ -7,13 +7,17 @@ Audience: Individuals, client-facing teams, creative studios and organizations e
 Use-case sources: [1](https://wetransfer.com/help-center/subscriptions/plan-limits), [2](https://www.projectsend.org/), [3](https://masv.io/pricing).
 
 - [MASV](https://masv.io/): USD 0.25/usage/month, monthly billing. On-Demand USD $0.25 per GB leaving MASV after 15 GB free monthly; not a flat monthly subscription. Storage beyond five days costs extra. Annual commitments/pre-buy and custom enterprise options also offered. [Pricing](https://masv.io/pricing).
+  [Pricing tiers, organization and product reasons](../products/masv.md).
 - [WeTransfer](https://wetransfer.com/): entry amount unverified/quote, monthly billing. Paid Starter/Ultimate/Teams confirmed in official help. Current entry price could not be verified because pricing page requires JavaScript; do not substitute third-party or app-store prices. [Pricing](https://wetransfer.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/wetransfer.md).
 
 ### copyparty — A
 
 MIT self-operated server; README documents browser uploads, permissions and sharing without a paid edition or license gate. No official managed hosting offer identified; linked read-only demo is not hosting.
 
 License: MIT; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/9001/copyparty/blob/1af7efeca858dcfa29f797d7ae93f22eb2fdecf0/LICENSE), [edition evidence](https://github.com/9001/copyparty), [hosting](https://github.com/9001/copyparty#quickstart), [repository](https://github.com/9001/copyparty).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/copyparty.md).
 
 Service costs/limits: Operator supplies storage, bandwidth, reachable server, TLS and maintenance; no managed delivery network or SLA established.
 
@@ -27,6 +31,8 @@ Repository: pushed 2026-10-21T05:09:01Z; latest commit 2026-10-21T05:09:00Z; lat
 GPL v2 self-hosted core; licensing page explicitly includes client delivery, accounts, permissions, branding, storage and public links without artificial caps. Tier A applies to this complete open core; Cloud fleet operations and optional alternative commercial licensing do not restrict it.
 
 License: GPL-2.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/projectsend/projectsend/blob/f22a346469505bc5542e236b59fdcd2a3e1d3ec5/LICENSE), [edition evidence](https://www.projectsend.org/licensing), [hosting](https://www.projectsend.cloud/), [repository](https://github.com/projectsend/projectsend).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/projectsend.md).
 
 Service costs/limits: Cloud-only services: billing/subscriptions, fleet provisioning, managed backups/restore, monitoring/uptime SLA, email deliverability and cross-organization administration.; Self-hosted operation requires infrastructure, backups and email configuration; Cloud service quotas are not software license gates.
 

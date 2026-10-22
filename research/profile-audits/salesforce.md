@@ -12,3 +12,8 @@ Checked 2026-10-21. Chronological research and output decisions.
 7. web.open and find plan prices and Enterprise+ / Enterprise sections; all introductory discounts excluded.
 8. Current page uses Core, Advanced and Max; avoided stale Enterprise/Unlimited naming.
 9. Wrote profiles/salesforce.json and claims/salesforce.jsonl with group-local build.py save(); validated four unique pricing roles, exactly three functional reasons and 1–3 assessment moats. Unknown values deliberately left null with source limitations.
+
+
+- Final ledger QA: rebuilt organization field claims with specific source mappings; each investor uses its primary funding/investor URL; public headings/searchable text added to claim locators. Executed group-local finalize.py; validated all23 profiles and companion files.
+
+- Final validation: all23 assigned IDs have profiles, JSONL claims and chronological audit companions. Four unique pricing roles, exactlythree functional assessments and nonempty source/limitation notes checked. Edits restricted to assigned group directory. Final artifacts authoritative; build.py is intermediate and not a regeneration entrypoint.

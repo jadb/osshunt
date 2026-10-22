@@ -1,0 +1,252 @@
+{
+  "id": "huly",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Hardcore Engineering, Inc.",
+    "kind": "business",
+    "foundedYear": 2020,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Terms identify business steward; official culture article says startup founded May 2020. Corporate ownership and outside equity financing not disclosed in pages read. Sponsors not inferred from customers or integration logos.",
+    "sources": [
+      "https://huly.io/legal/terms",
+      "https://v1.huly.io/blog/culture/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Open-source self-hosted core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "instance",
+      "minimumQuantity": null,
+      "scope": "free self-hosted code",
+      "notes": "Code remains free; cloud resources are separate. Common cloud also 0 with resource allowances.",
+      "sources": [
+        "https://huly.io/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://huly.io/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Epic",
+      "status": "published",
+      "monthlyPrice": 99.99,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "workspace",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Vendor cloud professional-company tier; no per-user fee or annual discount claimed.",
+      "sources": [
+        "https://huly.io/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom Plan",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "workspace",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Personalized quote for features, storage and support.",
+      "sources": [
+        "https://huly.io/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A single collaboration platform linking issues, documents, calendar and chat can retain accumulated team context.",
+      "basis": "assessment",
+      "sources": [
+        "https://huly.io/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Time-block tasks in a centralized team calendar.",
+      "basis": "assessment",
+      "sources": [
+        "https://huly.io/"
+      ]
+    },
+    {
+      "claim": "Combine issue management, documents and contextual team chat.",
+      "basis": "assessment",
+      "sources": [
+        "https://huly.io/"
+      ]
+    },
+    {
+      "claim": "Create virtual office rooms with integrated audio and video.",
+      "basis": "assessment",
+      "sources": [
+        "https://huly.io/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Hardcore Engineering, Inc.",
+          "url": "https://huly.io/",
+          "relationship": "business-steward",
+          "source": "https://huly.io/legal/terms"
+        }
+      ],
+      "notes": "Official project and deployment pages checked; no separately identified corporate financial or in-kind sponsor. This is a search limitation, not proof none exists.",
+      "sources": [
+        "https://huly.io/legal/terms"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Official multi-container production-tag route.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "CockroachDB",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Default SQL persistence; v24.2 image in compose.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "Redpanda",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Kafka-compatible queue in default compose.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage (bundled pgsty/silo)",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Bundled service named minio in compose.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "Elasticsearch",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Default full-text service, image 7.14.2 with ingest-attachment plugin.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "nginx and Huly application/worker services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default documented deployment",
+          "notes": "Compose includes front, transactor, collaborator, account, rekoni and supporting services.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "MongoDB",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AI bot or Google Calendar service enabled",
+          "notes": "Commented out in default compose; required by aibot/calendar.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "HulyPulse Redis backend selected",
+          "notes": "In-memory HulyPulse backend also documented; Redis optional multi-node choice.",
+          "sources": [
+            "https://raw.githubusercontent.com/hcengineering/huly-selfhost/main/compose.yml"
+          ]
+        },
+        {
+          "component": "OpenAI account/API",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AI Service enabled",
+          "notes": "External API, separate credentials and consumption costs.",
+          "sources": [
+            "https://github.com/hcengineering/huly-selfhost"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 vCPUs minimum; 4 recommended",
+        "memory": "8 GB minimum; 16 GB recommended",
+        "storage": null,
+        "os": "Linux; example Ubuntu 24.04",
+        "notes": "README documents resource-heavy server; persistent data storage needed, no numerical disk minimum verified.",
+        "sources": [
+          "https://github.com/hcengineering/huly-selfhost"
+        ]
+      },
+      "notes": "Current compose uses CockroachDB/Redpanda/object storage/Elasticsearch. MongoDB is conditional for AI/calendar, not the core SQL database. Compose and sample Kubernetes are manual deployments; production v* tags recommended.",
+      "sources": [
+        "https://github.com/hcengineering/huly-selfhost"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation instructions checked. Manual Docker Compose is not a one-click installation; no additional maintained provider template verified.",
+      "sources": [
+        "https://github.com/hcengineering/huly-selfhost"
+      ]
+    }
+  }
+}

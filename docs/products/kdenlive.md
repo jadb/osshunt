@@ -6,9 +6,9 @@
 
 Kdenlive / KDE community (community); ownership: **community**; funding: **not-applicable**.
 
-Started unknown (unknown); years active: unknown; years in business: not established/applicable. Ages are approximate calendar-year differences as of 2026-10-21.
+Started 2003 (product-launched); years active: 23; years in business: not established/applicable. Ages are approximate calendar-year differences as of 2026-10-21.
 
-Official homepage identifies Made by KDE; company founding not applicable. Precise project start not established. Community project; equity-funding classification not applicable; donors are not equity investors. [1](https://kdenlive.org/about/)
+Current official history dates documented launch/version0.2.3 to October2003. KDE community project, not a business founding; no invented incorporation year or equity investors. [1](https://kdenlive.org/about/)
 
 Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
 
@@ -16,12 +16,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Kdenlive | free | USD 0/user | USD 0/user | — | unspecified | free desktop/core. Application/core available without a license subscription; optional distribution/hosting costs are separate. [1](https://kdenlive.org/) |
-| popular | unknown | unknown | — | — | — | unspecified | free desktop/core. No explicitly highlighted Most popular or Recommended plan found. [1](https://kdenlive.org/) |
-| business | unknown | not-offered | — | — | — | unspecified | free desktop/core. No named organizational edition for this exact product in checked official source; separate commercial products are not substituted. [1](https://kdenlive.org/) |
-| enterprise | unknown | not-offered | — | — | — | unspecified | free desktop/core. No separate enterprise edition identified for this exact product in checked official source. [1](https://kdenlive.org/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Kdenlive | free | USD 0/user | USD 0/user | — | — | unspecified | free desktop/core. Application/core available without a license subscription; optional distribution/hosting costs are separate. [1](https://kdenlive.org/) |
+| popular | unknown | unknown | — | — | — | — | unspecified | free desktop/core. No explicitly highlighted Most popular or Recommended plan found. [1](https://kdenlive.org/) |
+| business | unknown | not-offered | — | — | — | — | unspecified | free desktop/core. No named organizational edition for this exact product in checked official source; separate commercial products are not substituted. [1](https://kdenlive.org/) |
+| enterprise | unknown | not-offered | — | — | — | — | unspecified | free desktop/core. No separate enterprise edition identified for this exact product in checked official source. [1](https://kdenlive.org/) |
 
 ## Defensibility assessments
 

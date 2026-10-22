@@ -1,0 +1,143 @@
+{
+  "id": "cloudflare-access",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Cloudflare, Inc.",
+    "kind": "business",
+    "foundedYear": 2009,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE: NET"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Fidelity",
+        "source": "https://blog.cloudflare.com/why-we-raised-110m-from-fidelity-google-microsoft-baidu-and-qualcomm/"
+      },
+      {
+        "name": "Google",
+        "source": "https://blog.cloudflare.com/why-we-raised-110m-from-fidelity-google-microsoft-baidu-and-qualcomm/"
+      },
+      {
+        "name": "Microsoft",
+        "source": "https://blog.cloudflare.com/why-we-raised-110m-from-fidelity-google-microsoft-baidu-and-qualcomm/"
+      },
+      {
+        "name": "Baidu",
+        "source": "https://blog.cloudflare.com/why-we-raised-110m-from-fidelity-google-microsoft-baidu-and-qualcomm/"
+      },
+      {
+        "name": "Qualcomm",
+        "source": "https://blog.cloudflare.com/why-we-raised-110m-from-fidelity-google-microsoft-baidu-and-qualcomm/"
+      }
+    ],
+    "notes": "Company founded 2009; Access is a later product. Official story confirms 2019 public listing NYSE: NET. Named investors are historical 2015 financing participants, not assertions of current holdings.",
+    "sources": [
+      "https://www.cloudflare.com/our-story/",
+      "https://blog.cloudflare.com/why-we-raised-110m-from-fidelity-google-microsoft-baidu-and-qualcomm/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Free Plan",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization; teams under 50 users",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Zero Trust platform free tier includes Access controls.",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Pay-as-you-go",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 84,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "$7/user/month paid annually multiplied by 12; organizational SSE plan, add-ons separate.",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Contract Plan",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Custom per-user contract price, paid annually.",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Global network footprint and integration with Cloudflare security/network services create scale and cross-product advantages; evaluation remains workload-specific.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cloudflare.com/our-story/",
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Contextual policies combine identity groups, device posture, location and session controls for application access.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    },
+    {
+      "claim": "Clientless web access and browser-based SSH/VNC serve contractors and infrastructure sessions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    },
+    {
+      "claim": "Service-token and mTLS authentication cover automated services and certificate-authenticated clients.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.cloudflare.com/sase/products/access/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

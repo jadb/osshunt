@@ -12,11 +12,17 @@
       "NASDAQ:MSFT"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "1975 company founding, not product launch; listed public company. Public equity financing is established by IPO history. Named private-round investors and current beneficial owners not verified; empty investor array does not mean none.",
+    "investors": [
+      {
+        "name": "Technology Venture Investors (historical)",
+        "source": "https://www.augustcap.com/team/david-marquardt/"
+      }
+    ],
+    "notes": "1975 company founding, not product launch; Microsoft public since1986, NASDAQ:MSFT. Investor primary biography identifies TVI as sole historical venture investor and David Marquardt board tenure1981–2014. No claim TVI remains a shareholder or that current public owners are exhaustive.",
     "sources": [
       "https://news.microsoft.com/facts-about-microsoft/",
-      "https://www.microsoft.com/en-us/investor/FAQ"
+      "https://www.microsoft.com/en-us/investor/FAQ",
+      "https://www.augustcap.com/team/david-marquardt/"
     ]
   },
   "pricingTiers": [
@@ -63,7 +69,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "organizational desktop Outlook plus Office apps",
-      "notes": "$10/user/month paid yearly \u00d712 = $120. Desktop Outlook included; this app bundle excludes custom-domain Exchange mail hosting.",
+      "notes": "$10/user/month paid yearly ×12 = $120. Desktop Outlook included; this app bundle excludes custom-domain Exchange mail hosting.",
       "sources": [
         "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing"
       ]
@@ -79,7 +85,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "Microsoft 365 enterprise suite with Teams",
-      "notes": "Advertised $99/user/month paid yearly \u00d712 = $1188; suite includes Teams, Outlook and Office, not standalone app pricing. Monthly billing amount not verified.",
+      "notes": "Advertised $99/user/month paid yearly ×12 = $1188; suite includes Teams, Outlook and Office, not standalone app pricing. Monthly billing amount not verified.",
       "sources": [
         "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
       ]

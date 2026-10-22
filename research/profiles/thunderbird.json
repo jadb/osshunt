@@ -1,0 +1,193 @@
+{
+  "id": "thunderbird",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Thunderbird / MZLA Technologies Corporation",
+    "kind": "business",
+    "foundedYear": 2003,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": "Mozilla Foundation (nonprofit)",
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "2003 is Thunderbird project start, not MZLA incorporation. MZLA is a for-profit wholly owned subsidiary of not-for-profit Mozilla.org. Individual/business contributions sustain the project; donations are not equity investments. No equity investor identities or complete funding history verified.",
+    "sources": [
+      "https://www.thunderbird.net/en-US/about/",
+      "https://www.thunderbird.net/en-US/donate/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Thunderbird Desktop",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Desktop client is free forever. Mail account/service required separately; optional Thundermail excluded.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "desktop client",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "desktop client",
+      "notes": "No separately priced business edition of desktop client shown; full desktop available to organizations.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "desktop client",
+      "notes": "No paid Enterprise desktop edition shown; optional separate services do not establish client license price.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Long-lived cross-platform mail workflows and an add-on ecosystem create familiarity and extensibility advantages, while standard email protocols keep the moat limited.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "A unified inbox manages multiple mail accounts without separate browser sessions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    },
+    {
+      "claim": "Calendar, contacts and tasks connect email to personal planning in one app.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    },
+    {
+      "claim": "Add-ons extend the desktop client for specialized workflows beyond the included interface.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "MZLA Technologies Corporation",
+          "url": "https://www.thunderbird.net/en-US/about/",
+          "relationship": "business-steward",
+          "source": "https://www.thunderbird.net/en-US/donate/"
+        }
+      ],
+      "notes": "Donation/About pages identify for-profit MZLA as sustaining organization. No named separate corporate financial or in-kind sponsors found there; business steward fallback used, not nonprofit parent as sponsor.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/donate/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "Installed Thunderbird binary",
+          "necessity": "required",
+          "group": null,
+          "condition": "Desktop use",
+          "notes": "Windows, macOS or GNU/Linux; packaged binaries avoid build dependencies.",
+          "sources": [
+            "https://www.thunderbird.net/en-US/thunderbird/157.0/system-requirements/"
+          ]
+        },
+        {
+          "component": "Mail account and IMAP/POP/SMTP or compatible mail service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Sending/receiving email",
+          "notes": "This is a mail client; not an email server or hosting provider.",
+          "sources": [
+            "https://www.thunderbird.net/en-US/desktop/"
+          ]
+        },
+        {
+          "component": "Linux shared libraries",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "GNU/Linux desktop",
+          "notes": "glibc 2.17+, GTK+ 3.14+, libglib 2.42+, libstdc++ 4.8.1+, X.Org 1.0+ required; DBus/NetworkManager/PulseAudio recommended.",
+          "sources": [
+            "https://www.thunderbird.net/en-US/thunderbird/157.0/system-requirements/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "Windows: 1 GHz or faster Intel/AMD; Mac: Intel x86 or Apple Silicon",
+        "memory": "Windows recommended: 1 GB (2 GB for 64-bit); macOS: 512 MB",
+        "storage": "Windows: 500 MB; macOS: 200 MB, plus mailbox data",
+        "os": "Windows 10+; macOS 10.15+; GNU/Linux (64-bit)",
+        "notes": "Official version 157.0 requirements inspected. These are recommended desktop hardware values, not server sizing or build requirements.",
+        "sources": [
+          "https://www.thunderbird.net/en-US/thunderbird/157.0/system-requirements/"
+        ]
+      },
+      "notes": "Local desktop installation; no external SQL/cache/queue server required. Existing mailbox service needed for mail. Source build requirements deliberately excluded.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/thunderbird/157.0/system-requirements/",
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "not-applicable",
+      "options": [],
+      "notes": "Desktop download installers offered for Windows/macOS/Linux; no server marketplace or one-click self-host deployment applies.",
+      "sources": [
+        "https://www.thunderbird.net/en-US/desktop/"
+      ]
+    }
+  }
+}

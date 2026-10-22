@@ -1,0 +1,271 @@
+{
+  "id": "netbird",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "NetBird GmbH",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Pace Capital",
+        "source": "https://www.nautacapital.com/news-insights/netbird-10m-series-a"
+      },
+      {
+        "name": "Nauta Capital",
+        "source": "https://www.nautacapital.com/news-insights/netbird-10m-series-a"
+      },
+      {
+        "name": "InReach Ventures",
+        "source": "https://www.nautacapital.com/news-insights/netbird-10m-series-a"
+      },
+      {
+        "name": "Antler",
+        "source": "https://www.nautacapital.com/news-insights/netbird-10m-series-a"
+      }
+    ],
+    "notes": "Official imprint identifies Berlin NetBird GmbH. Investor announces $10M Series A in January 2026 led by Pace with Nauta/InReach/Antler. Founding-year sources conflict (2021 project/2022 earlier investor statement), so company year unresolved.",
+    "sources": [
+      "https://netbird.io/imprint",
+      "https://www.nautacapital.com/news-insights/netbird-10m-series-a"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-hosted community core",
+      "notes": "Commercial self-hosted enterprise gates separate from open core.",
+      "sources": [
+        "https://docs.netbird.io/selfhosted/enterprise"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://netbird.io/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": 12,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "active cloud user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "EUR page rendered \u20ac12/user/month; not self-hosted license price. Additional machines \u20ac0.50/month. Annual commitment/discount not established.",
+      "sources": [
+        "https://netbird.io/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Commercial License",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted enterprise licensing",
+      "notes": "Commercial features described separately; public amount not verified.",
+      "sources": [
+        "https://docs.netbird.io/selfhosted/enterprise"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Integrated peer/routing/DNS administration and growing community create adoption momentum, but competing WireGuard overlays limit protocol-level differentiation.",
+      "basis": "assessment",
+      "sources": [
+        "https://netbird.io/pricing",
+        "https://www.nautacapital.com/news-insights/netbird-10m-series-a"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Peer-to-peer encrypted connections and network routes cover device and site connectivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://netbird.io/pricing"
+      ]
+    },
+    {
+      "claim": "Private DNS and access controls simplify application discovery while restricting network reach.",
+      "basis": "assessment",
+      "sources": [
+        "https://netbird.io/pricing"
+      ]
+    },
+    {
+      "claim": "NetBird SSH and the management dashboard combine remote access with network administration.",
+      "basis": "assessment",
+      "sources": [
+        "https://netbird.io/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "NetBird GmbH",
+          "url": "https://netbird.io/imprint",
+          "relationship": "business-steward",
+          "source": "https://netbird.io/imprint"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://netbird.io/imprint"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker with Compose v2+",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+          ]
+        },
+        {
+          "component": "Combined netbird-server (management, signal, relay, STUN) plus dashboard",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+          ]
+        },
+        {
+          "component": "SQLite embedded",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Default management/auth/activity storage",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/maintenance/configuration-files"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "External database; recommended production and HA",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/maintenance/configuration-files"
+          ]
+        },
+        {
+          "component": "MySQL (deprecated)",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Legacy management store only; migration advised",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/maintenance/configuration-files"
+          ]
+        },
+        {
+          "component": "Traefik or existing supported HTTPS reverse proxy",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+          ]
+        },
+        {
+          "component": "External OIDC identity provider",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Embedded Dex/local user management is default",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+          ]
+        },
+        {
+          "component": "CrowdSec LAPI",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Optional reverse-proxy IP reputation feature",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "1 CPU minimum",
+        "memory": "2GB minimum",
+        "storage": null,
+        "os": "Linux VM",
+        "notes": "Quickstart explicit VM requirements.",
+        "sources": [
+          "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+        ]
+      },
+      "notes": "Current combined setup, not older mandatory external IdP/Coturn multi-container instructions. Public domain and TCP80/443, UDP3478 required. SMTP not established as baseline dependency.",
+      "sources": [
+        "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Official getting-started installer",
+          "url": "https://docs.netbird.io/selfhosted/selfhosted-quickstart",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Interactive shell installer generates Compose; not browser one-click.",
+          "sources": [
+            "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+          ]
+        }
+      ],
+      "notes": "Officially documented install options; one-command is separate from browser one-click.",
+      "sources": [
+        "https://docs.netbird.io/selfhosted/selfhosted-quickstart"
+      ]
+    }
+  }
+}

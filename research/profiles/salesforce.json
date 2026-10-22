@@ -31,7 +31,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "$25/user/month billed monthly or annually; annual total $25\u00d712=$300. Free Suite separately offered.",
+      "notes": "$25/user/month billed monthly or annually; annual total $25×12=$300. Free Suite separately offered.",
       "sources": [
         "https://www.salesforce.com/sales/pricing/"
       ]
@@ -63,7 +63,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest team/business suite; $100/user/month billed annually \u00d712=$1200; quoting, forecasting and customization.",
+      "notes": "Closest team/business suite; $100/user/month billed annually ×12=$1200; quoting, forecasting and customization.",
       "sources": [
         "https://www.salesforce.com/sales/pricing/"
       ]
@@ -79,7 +79,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Current highest named Sales Cloud tier shown, $550/user/month billed annually \u00d712=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted.",
+      "notes": "Current highest named Sales Cloud tier shown, $550/user/month billed annually ×12=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted.",
       "sources": [
         "https://www.salesforce.com/sales/pricing/"
       ]

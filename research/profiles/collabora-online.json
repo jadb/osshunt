@@ -1,0 +1,229 @@
+{
+  "id": "collabora-online",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Collabora Productivity",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": "Collabora (division/group affiliation)",
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Collabora Productivity incorporated September2013; broader Collabora consultancy founded2005. Official About calls Productivity a division of Collabora. Exact equity ownership/private listing status, financing history and investor identities not verified from inspected primary sources; no bootstrapping assumption.",
+    "sources": [
+      "https://www.collaboraonline.com/about-us/",
+      "https://www.collaboraonline.com/blog/collabora-productivity-turns-10/",
+      "https://www.collabora.com/about-us/who-we-are/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "CODE",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free self-hosted development edition",
+      "notes": "Rolling development build for home/testing/startups; vendor does not recommend CODE for production. Paid supported edition separate.",
+      "sources": [
+        "https://www.collaboraonline.com/subscriptions/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Collabora editions",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.collaboraonline.com/subscriptions/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Collabora Online for Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 40.8,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted supported edition",
+      "notes": "Published USD$3.40/user/month; official FAQ says subscriptions based on yearly price, so annual total $3.40×12=$40.80. Up to99 users. Monthly-billed charge not verified; quote confirms final terms.",
+      "sources": [
+        "https://www.collaboraonline.com/subscriptions/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Collabora Online for Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 100,
+      "scope": "paid self-hosted supported edition",
+      "notes": "100+ users; personalized volume discounts/contact sales, no fixed numeric enterprise price.",
+      "sources": [
+        "https://www.collaboraonline.com/subscriptions/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "LibreOffice-derived format/rendering expertise and WOPI integration ecosystem create substantial engineering specialization, though standards allow competing editor engines.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.collaboraonline.com/about-us/",
+        "https://www.collaboraonline.com/faqs/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Writer, Calc, Impress and Draw cover collaborative text, spreadsheets, presentations and diagrams.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.collaboraonline.com/fr/code/"
+      ]
+    },
+    {
+      "claim": "Pivot tables, formulas and per-user spreadsheet views support analytical spreadsheet work alongside collaboration.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.collaboraonline.com/fr/code/"
+      ]
+    },
+    {
+      "claim": "Change tracking and history-based review workflows help teams inspect and control document revisions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.collaboraonline.com/faqs/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Collabora Productivity",
+          "url": "https://www.collaboraonline.com/",
+          "relationship": "business-steward",
+          "source": "https://www.collaboraonline.com/about-us/"
+        }
+      ],
+      "notes": "Official company About identifies business developing Online and contributing LibreOffice engineering. Separate corporate financial/in-kind sponsor roster not found; business-steward fallback; integration partners not automatic sponsors.",
+      "sources": [
+        "https://www.collaboraonline.com/about-us/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Linux system/VM or container host",
+          "necessity": "required",
+          "group": null,
+          "condition": "Server engine",
+          "notes": "CODE prebuilt Docker available for x86-64 and arm64, with ppc64le listed in SDK; no Windows-native server assumption.",
+          "sources": [
+            "https://sdk.collaboraonline.com/25.04/CO-SDK-manual.pdf"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "CODE container path",
+          "notes": "Prebuilt image contains editor engine runtime; native Linux package path also exists.",
+          "sources": [
+            "https://sdk.collaboraonline.com/25.04/CO-SDK-manual.pdf"
+          ]
+        },
+        {
+          "component": "WOPI-compatible document storage/authentication host",
+          "necessity": "required",
+          "group": null,
+          "condition": "Functional document editing integration",
+          "notes": "Nextcloud/ownCloud or custom WOPI host provides persistent documents, access control and users; engine itself does not provide complete document platform.",
+          "sources": [
+            "https://www.collaboraonline.com/faqs/"
+          ]
+        },
+        {
+          "component": "Reverse proxy with WebSocket support and TLS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production HTTPS routing",
+          "notes": "Official integration guide recommends Apache/nginx reverse proxy; secure browser/WOPI URLs must be configured.",
+          "sources": [
+            "https://www.collaboraonline.com/fr/code/"
+          ]
+        },
+        {
+          "component": "Database/cache services for integrated storage platform",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only if WOPI host requires them",
+          "notes": "No standalone SQL/Redis/RabbitMQ requirement for CODE engine verified; dependencies belong to chosen Nextcloud/other host.",
+          "sources": [
+            "https://www.collaboraonline.com/faqs/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "Vendor sizing expectation: about10 users per CPU thread",
+        "memory": "About1 GB system overhead plus50 MB per user, per vendor guidance",
+        "storage": null,
+        "os": "Linux server/VM; Docker image predominantly tested on Linux",
+        "notes": "Vendor capacity estimates, not guaranteed hardware minima. Document size/complexity changes usage; bandwidth guidance about100 kbit/s per user. No fixed storage minimum verified.",
+        "sources": [
+          "https://www.collaboraonline.com/faqs/"
+        ]
+      },
+      "notes": "CODE is rolling development edition, not a stable production release. Current official FAQ plus SDK25.04 installation chapter used because current HTML SDK hit bot challenge; current official Nextcloud app metadata confirms supported built-in integration. WOPI host dependencies must be budgeted separately.",
+      "sources": [
+        "https://www.collaboraonline.com/faqs/",
+        "https://sdk.collaboraonline.com/25.04/CO-SDK-manual.pdf",
+        "https://www.collaboraonline.com/fr/code/",
+        "https://apps.nextcloud.com/apps/richdocumentscode"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Nextcloud built-in CODE Server",
+          "url": "https://apps.nextcloud.com/apps/richdocumentscode",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "Collabora Productivity authored app for existing Nextcloud. Needs Nextcloud Office integration and platform requirements; app edition has different operational characteristics from standalone Docker.",
+          "sources": [
+            "https://apps.nextcloud.com/apps/richdocumentscode"
+          ]
+        }
+      ],
+      "notes": "First-party Collabora-authored built-in CODE Server can be installed through existing Nextcloud App Store. This is an app marketplace integration, not independent turnkey cloud deployment. Manual Docker instructions alone not counted.",
+      "sources": [
+        "https://apps.nextcloud.com/apps/richdocumentscode",
+        "https://collabora-online-for-nextcloud.readthedocs.io/en/stable/install/"
+      ]
+    }
+  }
+}

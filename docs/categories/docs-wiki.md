@@ -7,7 +7,9 @@ Audience: Employees and teams documenting decisions, procedures, project plans a
 Use-case sources: [1](https://www.notion.com/pricing), [2](https://www.atlassian.com/en/software/confluence/pricing).
 
 - [Confluence](https://www.atlassian.com/en/software/confluence/pricing): USD 5.78/seat/month, monthly billing. Standard public calculator displayed $5.78/user/month on monthly billing; price changes with seat count and billing. Free plan up to 10 users exists. [Pricing](https://www.atlassian.com/en/software/confluence/pricing).
+  [Pricing tiers, organization and product reasons](../products/confluence.md).
 - [Notion](https://www.notion.com/pricing): entry amount unverified/quote, monthly billing. Paid Plus exists; page auto-selected EUR 9.50/member/month and billing state was ambiguous. USD entry intentionally unverified; free SaaS tier is not OSS. [Pricing](https://www.notion.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/notion.md).
 
 ### BookStack — A
 

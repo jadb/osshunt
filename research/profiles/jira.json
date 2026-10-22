@@ -1,0 +1,127 @@
+{
+  "id": "jira",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Atlassian Corporation",
+    "kind": "business",
+    "foundedYear": 2002,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:TEAM"
+    ],
+    "funding": "mixed",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://www.accel.com/companies/atlassian"
+      }
+    ],
+    "notes": "Atlassian founded 2002; initially self-funded, later minority equity investment from Accel. Public since 2015, NASDAQ TEAM. Company age is used, not each product launch (Jira 2002, Confluence 2003; Trello acquired 2017). Accel is a historical investor; current holding not asserted.",
+    "sources": [
+      "https://www.atlassian.com/company",
+      "https://www.accel.com/companies/atlassian",
+      "https://www.atlassian.com/blog/news/2010/07/atlassian_closes_60_million_investment_from_accel_partners"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Amount and billing term not independently recoverable from public pricing extraction.",
+      "sources": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premium",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational plan. Live calculator did not expose current price; no outdated third-party rate substituted.",
+      "sources": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Enterprise exists in pricing page title; price/quote action could not be verified in empty live extraction.",
+      "sources": [
+        "https://www.atlassian.com/software/jira/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Integration with Atlassian work and a marketplace of thousands of apps can embed this product deeply in company processes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.atlassian.com/company"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Use customizable project templates for agile sprints and business campaigns.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.atlassian.com/software/jira/features"
+      ]
+    },
+    {
+      "claim": "Track the same work through boards, lists, timelines and calendars.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.atlassian.com/software/jira/features"
+      ]
+    },
+    {
+      "claim": "Bring Confluence, Figma and connected application context into planning through Rovo.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.atlassian.com/software/jira/features"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

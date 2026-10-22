@@ -1,0 +1,332 @@
+{
+  "id": "nextcloud",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Nextcloud GmbH",
+    "kind": "business",
+    "foundedYear": 2016,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "bootstrapped",
+    "investors": [],
+    "notes": "Company started June 2016; fully employee-funded and organically grown. Current official press statement confirms fully employee-owned; no outside equity investors asserted. Hub suite introduced later in 2020.",
+    "sources": [
+      "https://nextcloud.com/about/",
+      "https://nextcloud.com/blog/press_releases/nextcloud-invests-in-digital-sovereignty/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Server download is free; infrastructure and optional vendor enterprise subscription separate.",
+      "sources": [
+        "https://nextcloud.com/install/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Nextcloud Enterprise editions",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://nextcloud.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Enterprise Standard",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 71.29,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 100,
+      "scope": "paid self-hosted enterprise subscription",
+      "notes": "Starting at100 users, €71.29/user/year; full annual per-user amount. At200-user bracket €53.17/user/year. Quote depends on market/scope; no monthly billing amount published.",
+      "sources": [
+        "https://nextcloud.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Ultimate",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 204.75,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "user",
+      "minimumQuantity": 100,
+      "scope": "paid self-hosted enterprise subscription",
+      "notes": "At100-user starting bracket €204.75/user/year; at200 bracket €183.75/user/year. Additional scale/framework agreements quoted; pricing starts100 users.",
+      "sources": [
+        "https://nextcloud.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A large app ecosystem combined with file, groupware and communication workflows creates organization-specific integration switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://nextcloud.com/about/",
+        "https://nextcloud.com/pricing/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "File synchronization and sharing connect desktop, mobile and browser workflows with internal and external collaborators.",
+      "basis": "assessment",
+      "sources": [
+        "https://nextcloud.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Hub combines calendars, contacts, Mail and Talk so document work can connect to scheduling and communication.",
+      "basis": "assessment",
+      "sources": [
+        "https://nextcloud.com/pricing/"
+      ]
+    },
+    {
+      "claim": "Workflow components automate internal processes around shared data and structured Nextcloud Tables.",
+      "basis": "assessment",
+      "sources": [
+        "https://nextcloud.com/pricing/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Nextcloud GmbH",
+          "url": "https://nextcloud.com/",
+          "relationship": "business-steward",
+          "source": "https://nextcloud.com/about/"
+        }
+      ],
+      "notes": "Company explicitly employee-funded and developer/steward. Partner list and event sponsorships checked but not treated as proof of direct financial project sponsorship; business-steward fallback.",
+      "sources": [
+        "https://nextcloud.com/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "PHP 8.3/8.4/8.5; web server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Manual server installation",
+          "notes": "PHP8.4 recommended,8.2 deprecated. Apache2.4 with mod_php or php-fpm recommended; nginx/php-fpm supported. AIO bundles PHP-FPM/web server.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html"
+          ]
+        },
+        {
+          "component": "PostgreSQL 14–18",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "SQL database selection; default in AIO",
+          "notes": "Recommended database; AIO provides bundled PostgreSQL.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html"
+          ]
+        },
+        {
+          "component": "MariaDB 10.6/10.11/11.4/11.8 or MySQL8.0/8.4",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "SQL database selection",
+          "notes": "MariaDB recommended alternatives for manual deployments.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html"
+          ]
+        },
+        {
+          "component": "SQLite3.24+",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Testing/minimal installations",
+          "notes": "Not recommended production alternative for organizational deployment.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html"
+          ]
+        },
+        {
+          "component": "Oracle19c/21c/23ai",
+          "necessity": "conditional",
+          "group": "database",
+          "condition": "Enterprise subscription only",
+          "notes": "Commercially supported database alternative; not community default.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html"
+          ]
+        },
+        {
+          "component": "Redis server >=4 and PHP Redis module",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Bundled required component for official AIO; recommended distributed cache/locking for manual organizational deployments",
+          "notes": "Manual core can run without memcache; Redis recommended for locking and distributed cache. AIO provides it inside deployment.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/caching_configuration.html",
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        },
+        {
+          "component": "APCu PHP extension >=4.0.6",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Bundled AIO local cache; optional recommended manual local cache",
+          "notes": "Manual core does not require memcache. APCu is local cache, not external cache server.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/caching_configuration.html",
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        },
+        {
+          "component": "Zend OPcache",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Recommended PHP opcode optimization; bundled/enabled in AIO",
+          "notes": "Part of PHP core; no external service. Not a universal mandatory core prerequisite.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/caching_configuration.html",
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        },
+        {
+          "component": "Memcached",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Alternative distributed cache in manual clustered deployment",
+          "notes": "Not suitable for reliable transactional file locking; Redis recommended there. Not default AIO cache.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/caching_configuration.html"
+          ]
+        },
+        {
+          "component": "Background job runner",
+          "necessity": "required",
+          "group": null,
+          "condition": "Housekeeping/background processing",
+          "notes": "cron.php supported via AJAX/webcron/system cron; system cron recommended for production. Not external message broker requirement.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/background_jobs_configuration.html"
+          ]
+        },
+        {
+          "component": "SMTP or existing mail server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Password reset/share/activity emails and Mail app transport",
+          "notes": "Nextcloud is not an SMTP mail server; notifications need local or remote functioning mail server.",
+          "sources": [
+            "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/email_configuration.html"
+          ]
+        },
+        {
+          "component": "Collabora/other document editor engine",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Rich collaborative office editing",
+          "notes": "Optional AIO Office/EuroOffice container; base file server does not require editor.",
+          "sources": [
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        },
+        {
+          "component": "Talk high-performance backend/TURN",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Optional enhanced Talk calls",
+          "notes": "AIO includes optional call backend/TURN; not mandatory file storage dependency.",
+          "sources": [
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        },
+        {
+          "component": "ClamAV, Elasticsearch, Imaginary, BorgBackup",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Antivirus/fulltext/previews/backup enabled",
+          "notes": "AIO optional service containers, not universal core dependencies.",
+          "sources": [
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "AIO path only",
+          "notes": "Official automated container bundle; not required for manual PHP deployment.",
+          "sources": [
+            "https://github.com/nextcloud/all-in-one"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "128 MB per PHP process minimum; 512 MB per process recommended",
+        "storage": null,
+        "os": "64-bit Linux; Ubuntu24.04, RHEL10, Debian13 and other listed distributions",
+        "notes": "Per-process PHP memory, not total-server RAM. CPU/storage depend on users/apps/data; no fixed minima verified. AIO container footprint and optional Office/Talk services require additional sizing.",
+        "sources": [
+          "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html"
+        ]
+      },
+      "notes": "Evidence scoped to server33 manual and current official AIO. Default AIO contains PostgreSQL, Redis/APCu, PHP/web server and push; listed manual database alternatives do not mean AIO supports swapping each bundled component. Object storage, LDAP and AI backends are optional integrations, not mandatory core services. Manual documentation inspected is maintained server33, matching supplied catalog release. Docs navigation labels34 stable and35 latest; attempted stable34 requirements URL failed, so exact34 version requirements not asserted.",
+      "sources": [
+        "https://docs.nextcloud.com/server/33/admin_manual/installation/system_requirements.html",
+        "https://github.com/nextcloud/all-in-one",
+        "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/caching_configuration.html",
+        "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/background_jobs_configuration.html",
+        "https://docs.nextcloud.com/server/33/admin_manual/configuration_server/email_configuration.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Nextcloud Snap",
+          "url": "https://snapcraft.io/nextcloud",
+          "kind": "one-command",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Officially linked community Snap; sudo snap install nextcloud after snapd setup, then instance configuration.",
+          "sources": [
+            "https://nextcloud.com/install/"
+          ]
+        }
+      ],
+      "notes": "Official install page links community-maintained Snap package. Command-line installation is distinguished from true one-click cloud deployment. AIO is automated container setup with operator configuration.",
+      "sources": [
+        "https://nextcloud.com/install/",
+        "https://snapcraft.io/nextcloud"
+      ]
+    }
+  }
+}

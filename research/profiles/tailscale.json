@@ -1,0 +1,148 @@
+{
+  "id": "tailscale",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Tailscale Inc.",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://tailscale.com/blog/series-c"
+      },
+      {
+        "name": "CRV",
+        "source": "https://tailscale.com/blog/series-c"
+      },
+      {
+        "name": "Insight Partners",
+        "source": "https://tailscale.com/blog/series-c"
+      },
+      {
+        "name": "Heavybit",
+        "source": "https://tailscale.com/blog/series-c"
+      },
+      {
+        "name": "Uncork Capital",
+        "source": "https://tailscale.com/blog/series-c"
+      },
+      {
+        "name": "George Kurtz",
+        "source": "https://tailscale.com/blog/series-c"
+      },
+      {
+        "name": "Anthony Casalena",
+        "source": "https://tailscale.com/blog/series-c"
+      }
+    ],
+    "notes": "Founder\u2019s 2025 Series C announcement dates start to 2019 and reports $160M raised. Privately financed business; historical round participants listed, current cap table undisclosed.",
+    "sources": [
+      "https://tailscale.com/blog/series-c"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Personal",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "tailnet; up to 6 users",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Personal non-commercial use; commercial use begins trial/paid plan.",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Standard",
+      "status": "published",
+      "monthlyPrice": 8,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Explicit Most popular; seat-based monthly billing, all purchased seats billed including vacant seats. Resource add-ons separate.",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premium",
+      "status": "published",
+      "monthlyPrice": 18,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "seat",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Closest higher organizational plan for compliance/heavy ephemeral usage; $18/seat/month. Tagged/ephemeral resource allowances separate.",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Custom contract; annual invoice available.",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Cross-platform device footprint, identity integrations and policies embedded in infrastructure create switching work; underlying WireGuard is not unique to Tailscale.",
+      "basis": "assessment",
+      "sources": [
+        "https://tailscale.com/pricing",
+        "https://tailscale.com/blog/series-c"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Identity-aware mesh networking connects devices, servers and workloads with reusable access policy.",
+      "basis": "assessment",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    },
+    {
+      "claim": "SSH and Kubernetes access features integrate infrastructure administration with network identity.",
+      "basis": "assessment",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    },
+    {
+      "claim": "Ephemeral workload connectivity covers short-lived CI/CD runners and Kubernetes resources.",
+      "basis": "assessment",
+      "sources": [
+        "https://tailscale.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

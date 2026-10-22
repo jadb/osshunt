@@ -7,13 +7,17 @@ Audience: IT and security teams serving remote staff. Many employees benefit fro
 Use-case sources: [1](https://tailscale.com/pricing), [2](https://www.cloudflare.com/sase/products/access/), [3](https://docs.netbird.io/about-netbird/self-hosted-vs-cloud).
 
 - [Cloudflare Access](https://www.cloudflare.com/sase/products/access/): USD 7/seat/month, annual billing. Pay-as-you-go $7/user/month paid annually. Product page also offers a free plan for teams under 50 users; paid product remains distinct from open-source connector software. [Pricing](https://www.cloudflare.com/sase/products/access/).
+  [Pricing tiers, organization and product reasons](../products/cloudflare-access.md).
 - [Tailscale](https://tailscale.com/pricing): USD 8/seat/month, monthly billing. Standard $8/seat/month. Resource and platform add-ons extra; Personal free plan is non-commercial. Monthly seat billing documented. [Pricing](https://tailscale.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/tailscale.md).
 
 ### Headscale — A
 
 BSD-3-Clause self-hosted control server with no commercial edition or paid software gate found in official project docs. A applies to this narrow server, not enterprise Tailscale platform parity. No built-in web interface; clients are separate.
 
 License: BSD-3-Clause; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/juanfont/headscale/blob/cc66979b16cfbdc76b1d582b028108bb8b823354/LICENSE), [edition evidence](https://headscale.net/stable/about/features/), [hosting](https://headscale.net/stable/), [repository](https://github.com/juanfont/headscale).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/headscale.md).
 
 Service costs/limits: Narrow single-tailnet Tailscale-compatible control-server scope; personal/lab/small-organisation focus.; Requires separately distributed compatible Tailscale clients; community web interfaces are separate projects.; No first-party hosted service identified in official project documentation.
 
@@ -26,6 +30,8 @@ Repository: pushed 2026-10-21T04:29:41Z; latest commit 2026-10-20T09:55:11Z; lat
 OSI community code: root BSD-3-Clause excludes management, signal, relay and combined directories licensed AGPLv3. Core connectivity/access control/routing remain community features; documented enterprise administration, approval and observability gates warrant B. NetBird Cloud tiers are separate from self-hosted Enterprise licensing.
 
 License: BSD-3-Clause AND AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/netbirdio/netbird/blob/b03d1c7d0794dec3d96072c98e01811535ace19a/LICENSE), [edition evidence](https://docs.netbird.io/selfhosted/enterprise), [hosting](https://docs.netbird.io/about-netbird/self-hosted-vs-cloud), [repository](https://github.com/netbirdio/netbird).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/netbird.md).
 
 Paid restrictions: Enterprise Commercial License: active-active HA, SCIM provisioning, EDR/MDM integration, traffic-flow logging/streaming, peer approval, audit-event streaming and notifications.
 

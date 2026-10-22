@@ -8,6 +8,40 @@ import unittest
 
 
 class AssemblyEvidenceContract(unittest.TestCase):
+    def test_profile_join_preserves_company_and_project_age_distinction(self):
+        for kind, basis, business_age in [('business', 'company-founded', 6), ('community', 'project-started', None)]:
+            with self.subTest(basis=basis), tempfile.TemporaryDirectory() as folder:
+                root = Path(folder)
+                (root / 'scripts').mkdir()
+                shutil.copyfile(Path(__file__).parents[1] / 'scripts/assemble.py', root / 'scripts/assemble.py')
+                (root / 'input').mkdir()
+                (root / 'profiles').mkdir()
+                (root / 'input/office-files.json').write_text(json.dumps({'category': {'id': 'office-files'},
+                    'paid': [{'id': 'sample', 'kind': 'paid'}], 'oss': [], 'alternatives': []}))
+                (root / 'profiles/sample.json').write_text(json.dumps({'id': 'sample', 'checkedAt': '2026-10-21',
+                    'organization': {'kind': kind, 'ageBasis': basis, 'foundedYear': 2020}}))
+                result = subprocess.run([sys.executable, str(root / 'scripts/assemble.py'), str(root / 'input'), '--partial'],
+                                        capture_output=True, text=True)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                profile = json.loads((root / 'research/source/products.json').read_text())[0]['profile']
+                self.assertEqual(profile['organization']['yearsActive'], 6)
+                self.assertEqual(profile['organization']['yearsInBusiness'], business_age)
+
+    def test_orphan_profile_cannot_silently_enter_snapshot(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'scripts').mkdir()
+            shutil.copyfile(Path(__file__).parents[1] / 'scripts/assemble.py', root / 'scripts/assemble.py')
+            (root / 'input').mkdir()
+            (root / 'profiles').mkdir()
+            (root / 'input/office-files.json').write_text(json.dumps({'category': {'id': 'office-files'},
+                'paid': [{'id': 'sample', 'kind': 'paid'}], 'oss': [], 'alternatives': []}))
+            (root / 'profiles/absent.json').write_text(json.dumps({'id': 'absent'}))
+            result = subprocess.run([sys.executable, str(root / 'scripts/assemble.py'), str(root / 'input'), '--partial'],
+                                    capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Orphan', result.stderr)
+
     def test_duplicate_product_or_edge_in_one_category_must_fail(self):
         for duplicate in ['product', 'edge']:
             with self.subTest(duplicate=duplicate), tempfile.TemporaryDirectory() as folder:

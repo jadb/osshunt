@@ -141,10 +141,20 @@
       "mode": "server",
       "requirements": [
         {
-          "component": "Docker Compose v2 or Podman",
+          "component": "Docker Composev2",
           "necessity": "one-of",
-          "group": "runtime",
-          "condition": "Container deployment",
+          "group": "container-runtime",
+          "condition": "Compose installation",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://docs.goauthentik.io/install-config/install/docker-compose/"
+          ]
+        },
+        {
+          "component": "Podman",
+          "necessity": "one-of",
+          "group": "container-runtime",
+          "condition": "Alternative container installation",
           "notes": "Documented deployment component.",
           "sources": [
             "https://docs.goauthentik.io/install-config/install/docker-compose/"

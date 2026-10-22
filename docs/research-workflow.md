@@ -47,8 +47,18 @@ Keep a chronological audit as research proceeds. Record commands/tool arguments,
 
 Contract tests cover duplicate/normalized IDs, orphan/duplicate overrides, immutable IDs, RFC 7386 array/null semantics, YAML 1.2 scalars, duplicate YAML keys, broken/directed edges, unknown categories, source-available OSI mislabelling, tier-A feature gates, archived projects and URL formats. Evidence tests require license requests to use observed commits and preserve release failures. Assembly tests require explicit evidence paths and canonical repository alias matching, preservation of reviewed release sources, calendar-only dates, unknown API flags and one-time billing. New claim ledgers require public source URLs, dated page locators and nonempty evidence.
 
-Seven regression guards were checked by deliberately reintroducing defects: the headless store adapter, unpinned license request, discarded schema defaults, collapsed product IDs, collapsed mapping IDs lost shared-product restrictions and erased canonical release evidence. Their regression checks failed with the defects restored and passed after restoration. The evidence is in `research/mutation-results.json`.
+Seven regression guards were checked by deliberately reintroducing defects: the headless store adapter, unpinned license request, discarded schema defaults, collapsed product IDs, collapsed mapping IDs, lost shared-product restrictions and erased canonical release evidence. Their regression checks failed with the defects restored and passed after restoration. The evidence is in `research/mutation-results.json`.
 
 ## Evidence improvements still needed
 
 Web edition/pricing claims currently retain checked-date URLs, paraphrases and tool steps; every rendered page body or screenshot is not frozen for replay. The second batch adds validated claim ledgers with stable section locators; backfill these for the first batch. Timestamped comparison-table captures and explicit supersession records remain improvements. Compact evidence projections would avoid repeated truncated output; shared authentication/cache preflight would avoid repeated permission/rate-limit failures. Test checkbox/icon interpretation, recommended versus enforced capacities, first-party versus third-party hosting, and stale error notes superseded by later successful captures.
+
+## Product profile enrichment
+
+For each stable product ID, research organization history, ownership and funding through first-party histories, investor announcements and filings. Record historical investor names without implying current cap-table ownership. Open alternatives also require sponsor/backing evidence, supported production deployment dependencies and documented installation shortcuts.
+
+Use `research/profiles/<id>.json`, `research/profile-claims/<id>.jsonl` and `research/profile-audits/<id>.md`. Claims need actual page headings or searchable locations, not just JSON field names. Preserve every search, failed URL and fallback in chronological order. Source bodies are not universally archived.
+
+Recurring work worth scripting: company-entity source registry shared across products; locale and billing-selector capture; company versus project age reconciliation; sponsor/investor/customer relationship checks; production Compose dependency extraction with environment-controlled optional services; template-link freshness checks. Automated extraction must retain human verification for sponsor relationships, source interpretation and competitive assessments.
+
+New contract checks reject duplicate pricing roles, numeric sales quotes, nonzero free plans, ungrouped dependency alternatives, unsupported sponsor labels, bootstrap/investor conflicts, future founding dates and empty installation offerings. Assembly preserves project-versus-company age and rejects orphan profiles. The coverage report lists missing profiles, unresolved funding/ownership/year facts and pricing statuses rather than hiding unknowns.

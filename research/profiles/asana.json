@@ -1,0 +1,147 @@
+{
+  "id": "asana",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Asana, Inc.",
+    "kind": "business",
+    "foundedYear": 2008,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NYSE:ASAN"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Generation Investment Management",
+        "source": "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471"
+      },
+      {
+        "name": "8VC",
+        "source": "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471"
+      },
+      {
+        "name": "Benchmark Capital",
+        "source": "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471"
+      },
+      {
+        "name": "Founders Fund",
+        "source": "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471"
+      },
+      {
+        "name": "Lead Edge Capital",
+        "source": "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471"
+      },
+      {
+        "name": "World Innovation Lab",
+        "source": "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471"
+      }
+    ],
+    "notes": "Company founded 2008 per investor presentation. Historical Series E investors listed, not a claim about present holdings. Public ownership/ASAN identified in investor material; parent not identified.",
+    "sources": [
+      "https://asana.com/company",
+      "https://asana.com/press/releases/pr/asana-raises-50-million-series-e-funding-to-fuel-international-growth-and-enterprise-scale/70d74b90-9afe-4fb5-a3c7-304da7175471",
+      "https://investors.asana.com/static-files/e88261ce-714a-4fb8-82b0-8e357b3f98d9"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Starter",
+      "status": "published",
+      "monthlyPrice": 13.49,
+      "annualPrice": 131.88,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "10.99 annual-billed monthly \u00d712. Personal free tier is separate.",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Advanced",
+      "status": "published",
+      "monthlyPrice": 30.49,
+      "annualPrice": 299.88,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest growing-team plan; 24.99 annual-billed monthly \u00d712.",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Contact sales for custom organizational pricing.",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A shared Work Graph and embedded cross-team workflows create switching costs as task relationships accumulate.",
+      "basis": "assessment",
+      "sources": [
+        "https://asana.com/company"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Multi-home one task across projects while keeping updates synchronized.",
+      "basis": "assessment",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    },
+    {
+      "claim": "Connect daily execution to goals and multi-project portfolios.",
+      "basis": "assessment",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    },
+    {
+      "claim": "Route requests through branching forms, approvals and asset proofing.",
+      "basis": "assessment",
+      "sources": [
+        "https://asana.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

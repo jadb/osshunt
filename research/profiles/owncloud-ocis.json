@@ -1,0 +1,239 @@
+{
+  "id": "owncloud-ocis",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "ownCloud GmbH (Kiteworks company)",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Kiteworks (privately held)",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "General Catalyst Partners",
+        "source": "https://owncloud.com/blogs/popular-open-source-sync-and-share-start-up-owncloud-closes-2-5-million-seed-round/"
+      }
+    ],
+    "notes": "ownCloud company founded 2011, predecessor community project 2010; these dates do not date Infinite Scale launch. Current 2026 post confirms acquired 2023. General Catalyst is historical ownCloud Inc. seed investor; not asserted current holder of GmbH or Kiteworks.",
+    "sources": [
+      "https://owncloud.com/team/",
+      "https://owncloud.com/blogs/tomorrow-we-put-it-all-in-writing-see-you-on-the-other-side/",
+      "https://owncloud.com/blogs/popular-open-source-sync-and-share-start-up-owncloud-closes-2-5-million-seed-round/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Apache-2.0 source edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "source-build open edition",
+      "notes": "Repository Apache2.0. Some stable vendor builds have separate EULA, so their rights/packaging must be evaluated separately.",
+      "sources": [
+        "https://github.com/owncloud/ocis"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://owncloud.com/pricing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Standard",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 25,
+      "scope": "vendor commercial on-premises package",
+      "notes": "Yearly commitment; public amount absent. Backend/edition and enterprise-module scope must be agreed.",
+      "sources": [
+        "https://owncloud.com/pricing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial enterprise package",
+      "notes": "Commercial requirements/pricing via sales; source edition remains distinct.",
+      "sources": [
+        "https://owncloud.com/pricing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Established file-client ecosystem and federation/Spaces workflows create adoption and migration costs, while Apache source rights allow independent implementations.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/owncloud/ocis",
+        "https://owncloud.com/blogs/open-source-efss-is-not-a-stepping-stone-to-a-sales-call/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Spaces organize shared files independently of a single user\u2019s personal ownership.",
+      "basis": "assessment",
+      "sources": [
+        "https://doc.owncloud.com/ocis/9.0/admin/prerequisites/prerequisites.html"
+      ]
+    },
+    {
+      "claim": "WebDAV/CS3 interfaces and desktop/mobile/web clients support a broad file-access workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/owncloud/ocis"
+      ]
+    },
+    {
+      "claim": "WOPI integration connects collaborative document editors such as Collabora and ONLYOFFICE.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/owncloud/ocis"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "ownCloud GmbH",
+          "url": "https://owncloud.com/blogs/tomorrow-we-put-it-all-in-writing-see-you-on-the-other-side/",
+          "relationship": "business-steward",
+          "source": "https://owncloud.com/blogs/tomorrow-we-put-it-all-in-writing-see-you-on-the-other-side/"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://owncloud.com/blogs/tomorrow-we-put-it-all-in-writing-see-you-on-the-other-side/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "oCIS binary or container",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/owncloud/ocis"
+          ]
+        },
+        {
+          "component": "Persistent local/POSIX filesystem",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://doc.owncloud.com/ocis/9.0/admin/prerequisites/prerequisites.html"
+          ]
+        },
+        {
+          "component": "Embedded identity provider",
+          "necessity": "one-of",
+          "group": "identity",
+          "condition": "Self-contained default",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/owncloud/ocis"
+          ]
+        },
+        {
+          "component": "External OIDC provider such as Keycloak",
+          "necessity": "one-of",
+          "group": "identity",
+          "condition": "Alternative production identity integration",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/owncloud/ocis"
+          ]
+        },
+        {
+          "component": "Docker Compose and HTTPS reverse proxy",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Documented Ubuntu Compose production example",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://doc.owncloud.com/ocis/9.0/admin/depl-examples/ubuntu-compose/ubuntu-compose-prod.html"
+          ]
+        },
+        {
+          "component": "Collabora/ONLYOFFICE/Microsoft Office server",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Online document editing via WOPI",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/owncloud/ocis"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Object-storage deployment selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://doc.owncloud.com/ocis/9.0/admin/prerequisites/prerequisites.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux recommended; documented binary/container architectures vary",
+        "notes": "Hardware workload-dependent;9.0 prerequisites discuss512MB test/4GB starting guidance, deliberately not promoted to verified8.2.2 minimum.",
+        "sources": [
+          "https://doc.owncloud.com/ocis/9.0/admin/depl-examples/ubuntu-compose/ubuntu-compose-prod.html"
+        ]
+      },
+      "notes": "Self-contained default has no external SQL database/IdP requirement. Current official next links redirect to9.0 docs, whereas public repository release metadata cites8.2.2; version-specific production matrix not fully reconciled. No unsupported universal Redis/queue requirement asserted.",
+      "sources": [
+        "https://doc.owncloud.com/ocis/9.0/admin/depl-examples/ubuntu-compose/ubuntu-compose-prod.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://doc.owncloud.com/ocis/9.0/admin/depl-examples/ubuntu-compose/ubuntu-compose-prod.html"
+      ]
+    }
+  }
+}

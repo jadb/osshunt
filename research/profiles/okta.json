@@ -12,12 +12,30 @@
       "NASDAQ: OKTA"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "Co-founder biography dates company founding to 2009. Current financial release verifies NASDAQ listing. Historical venture investor names not resolved from checked official funding queries; investor list left empty rather than implying no investors.",
+    "investors": [
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm"
+      },
+      {
+        "name": "Andreessen Horowitz",
+        "source": "https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm"
+      },
+      {
+        "name": "Greylock Partners",
+        "source": "https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm"
+      },
+      {
+        "name": "Khosla Ventures",
+        "source": "https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm"
+      }
+    ],
+    "notes": "Co-founder biography dates company founding to 2009. Current financial release verifies NASDAQ:OKTA.2017 SEC S-1/A Principal Stockholders identifies historical Sequoia, Andreessen Horowitz and Greylock holdings; current holdings/percentages not inferred.",
     "sources": [
       "https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/",
       "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-Second-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
-      "https://www.okta.com/company/"
+      "https://www.okta.com/company/",
+      "https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm"
     ]
   },
   "pricingTiers": [

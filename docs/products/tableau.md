@@ -20,12 +20,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Tableau Standard | published | — | USD 180/user | — | unspecified | paid product. Starting at $15/user/month billed annually ×12 = $180. Entry role is not complete deployment cost: at least one Creator required. [1](https://www.tableau.com/pricing) |
-| popular | unknown | unknown | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://www.tableau.com/pricing) |
-| business | Tableau Standard | published | — | USD 180/user | — | unspecified | paid product. Closest organizational edition; starting Viewer-level amount $15/user/month yearly ×12. Creator/Explorer/Viewer mix determines total; at least one Creator required. [1](https://www.tableau.com/pricing) |
-| enterprise | Tableau Enterprise | published | — | USD 420/user | — | unspecified | paid product. Starting $35/user/month billed annually ×12 = $420; at least one Creator required. Cloud+ and capacity pricing require sales quote. [1](https://www.tableau.com/pricing) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Tableau Standard | published | — | USD 180/user | — | — | unspecified | paid product. Starting at $15/user/month billed annually ×12 = $180. Entry role is not complete deployment cost: at least one Creator required. [1](https://www.tableau.com/pricing) |
+| popular | unknown | unknown | — | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://www.tableau.com/pricing) |
+| business | Tableau Standard | published | — | USD 180/user | — | — | unspecified | paid product. Closest organizational edition; starting Viewer-level amount $15/user/month yearly ×12. Creator/Explorer/Viewer mix determines total; at least one Creator required. [1](https://www.tableau.com/pricing) |
+| enterprise | Tableau Enterprise | published | — | USD 420/user | — | — | unspecified | paid product. Starting $35/user/month billed annually ×12 = $420; at least one Creator required. Cloud+ and capacity pricing require sales quote. [1](https://www.tableau.com/pricing) |
 
 ## Defensibility assessments
 

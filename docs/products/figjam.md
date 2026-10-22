@@ -18,12 +18,12 @@ Known investors: [Index Ventures](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Professional Collab seat | published | — | USD 36/collab seat | — | unspecified | paid product. Annual-billed monthly rate multiplied by 12; cancellable-monthly amount not established. Starter free limited access also offered. [1](https://www.figma.com/pricing/) |
-| popular | unknown | unknown | — | — | — | unspecified | paid product. No public designation or amount established from checked pricing page. [1](https://www.figma.com/pricing/) |
-| business | Organization Collab seat | published | — | USD 60/collab seat | — | unspecified | paid product. Organization is named organizational plan; annual-billed rate ×12. [1](https://www.figma.com/pricing/) |
-| enterprise | Enterprise Collab seat | published | — | USD 60/collab seat | — | unspecified | paid product. Annual-billed seat rate ×12; sales contact also offered. [1](https://www.figma.com/pricing/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Professional Collab seat | published | — | USD 36/collab seat | — | — | unspecified | paid product. Annual-billed monthly rate multiplied by 12; cancellable-monthly amount not established. Starter free limited access also offered. [1](https://www.figma.com/pricing/) |
+| popular | unknown | unknown | — | — | — | — | unspecified | paid product. No public designation or amount established from checked pricing page. [1](https://www.figma.com/pricing/) |
+| business | Organization Collab seat | published | — | USD 60/collab seat | — | — | unspecified | paid product. Organization is named organizational plan; annual-billed rate ×12. [1](https://www.figma.com/pricing/) |
+| enterprise | Enterprise Collab seat | published | — | USD 60/collab seat | — | — | unspecified | paid product. Annual-billed seat rate ×12; sales contact also offered. [1](https://www.figma.com/pricing/) |
 
 ## Defensibility assessments
 

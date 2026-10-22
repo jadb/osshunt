@@ -46,6 +46,8 @@ Mixed-license project. Pinned root grants MIT only outside eight excluded direct
 
 License: MIT AND LicenseRef-Stirling-PDF-User-License; identified core OSI: no/unresolved; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/Stirling-Tools/Stirling-PDF/blob/dd48e0b25f364e587f308b279d6d60c365fcd24d/LICENSE), [edition evidence](https://docs.stirlingpdf.com/Server/Licensing/Plans-and-Licences/), [hosting](https://docs.stirlingpdf.com/Server/), [repository](https://github.com/Stirling-Tools/Stirling-PDF).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/stirling-pdf.md).
+
 Paid restrictions: Login-capable Free server limited to five users; Team adds capacity.; External database, clustering, S3/database file storage, metrics and custom metadata require Team.; SAML, audit logs and offline license activation require Enterprise.
 
 Service costs/limits: Processor/AI automation and API-key calls can draw on processing allowances; these are separate from software admin gates.

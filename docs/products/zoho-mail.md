@@ -16,12 +16,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Mail Lite (5 GB) | published | — | USD 12/user | — | unspecified | paid product. Official USD search-rendered comparison lists US$1/user/month billed annually ×12=$12; no monthly plan. Base page omitted numeric prices in rendered extraction. [1](https://www.zoho.com/mail/zohomail-pricing.html?src=howto) |
-| popular | unknown | unknown | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://www.zoho.com/mail/zohomail-pricing.html) |
-| business | Mail Premium | published | — | USD 48/user | — | unspecified | paid product. Closest mail-only organizational advanced plan; US$4/user/month annually ×12=$48; no monthly plan. Workplace bundles are a broader scope. [1](https://www.zoho.com/mail/zohomail-pricing.html?src=howto) |
-| enterprise | Workplace Enterprise | quote | — | — | — | unspecified | Zoho Workplace enterprise suite including Mail. Contact sales for custom pricing; broader Workplace suite with Mail pooled storage and custom limits, not mail-only price. [1](https://www.zoho.com/mail/zohomail-pricing.html) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Mail Lite (5 GB) | published | — | USD 12/user | — | — | unspecified | paid product. Official USD search-rendered comparison lists US$1/user/month billed annually ×12=$12; no monthly plan. Base page omitted numeric prices in rendered extraction. [1](https://www.zoho.com/mail/zohomail-pricing.html?src=howto) |
+| popular | unknown | unknown | — | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://www.zoho.com/mail/zohomail-pricing.html) |
+| business | Mail Premium | published | — | USD 48/user | — | — | unspecified | paid product. Closest mail-only organizational advanced plan; US$4/user/month annually ×12=$48; no monthly plan. Workplace bundles are a broader scope. [1](https://www.zoho.com/mail/zohomail-pricing.html?src=howto) |
+| enterprise | Workplace Enterprise | quote | — | — | — | — | unspecified | Zoho Workplace enterprise suite including Mail. Contact sales for custom pricing; broader Workplace suite with Mail pooled storage and custom limits, not mail-only price. [1](https://www.zoho.com/mail/zohomail-pricing.html) |
 
 ## Defensibility assessments
 

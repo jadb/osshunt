@@ -1,0 +1,119 @@
+{
+  "id": "airtable",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Airtable",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "unknown",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [],
+    "notes": "Official About says started 2012. Official company-updates index records Series F $735 million. Original funding article redirects to newsroom; exact investor names and present legal ownership not confirmed from successfully read primary pages, so investor array empty and ownership unknown.",
+    "sources": [
+      "https://www.airtable.com/about",
+      "https://blog.airtable.com/tag/company-updates/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Team",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 240,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "20 annual-billed monthly \u00d712. Free separate. Billable users have edit permissions on a base.",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 540,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "45 annual-billed monthly \u00d712. Monthly-billing amount unverified; editor-seat denominator.",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Scale",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom pricing based on organizational needs and scale; contact sales.",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Operational apps built atop linked company data can become an embedded system of work with migration costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.airtable.com/about"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Build relational data models that connect records across operational workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    },
+    {
+      "claim": "Create tailored interfaces and reports over shared data.",
+      "basis": "assessment",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    },
+    {
+      "claim": "Automate multi-step operations and embed agents inside business applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://airtable.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

@@ -17,27 +17,44 @@
       {
         "name": "Andy Bechtolsheim (historical seed investor)",
         "source": "https://about.google/company-info/our-story/"
+      },
+      {
+        "name": "Sequoia Capital (historical1999)",
+        "source": "https://googlepress.blogspot.com/1999/06/google-receives-25-million-in-equity.html"
+      },
+      {
+        "name": "Kleiner Perkins Caufield & Byers (historical1999)",
+        "source": "https://googlepress.blogspot.com/1999/06/google-receives-25-million-in-equity.html"
+      },
+      {
+        "name": "Stanford University (historical1999)",
+        "source": "https://googlepress.blogspot.com/1999/06/google-receives-25-million-in-equity.html"
+      },
+      {
+        "name": "Ram Shriram (historical1999)",
+        "source": "https://googlepress.blogspot.com/1999/06/google-receives-25-million-in-equity.html"
       }
     ],
-    "notes": "1998 is Google incorporation, not each product launch. Alphabet is public parent; historical seed investor Andy Bechtolsheim identified, not represented as a current shareholder. No exhaustive current investor list attempted.",
+    "notes": "1998 is Google incorporation, not product launch. Public parent Alphabet (GOOG/GOOGL). Historical investors include Andy Bechtolsheim and the1999 equity investors named in official release: Sequoia, Kleiner Perkins, Stanford University and Ram Shriram; not current shareholder claims or exhaustive current cap table.",
     "sources": [
       "https://about.google/company-info/our-story/",
-      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf"
+      "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/0d622f48-4b36-4bc0-8342-396f49f8e340.pdf",
+      "https://googlepress.blogspot.com/1999/06/google-receives-25-million-in-equity.html"
     ]
   },
   "pricingTiers": [
     {
       "role": "entry",
-      "name": "Spark",
-      "status": "free",
-      "monthlyPrice": 0,
+      "name": "Blaze",
+      "status": "unknown",
+      "monthlyPrice": null,
       "annualPrice": null,
       "oneTimePrice": null,
       "currency": "USD",
-      "unit": "project",
+      "unit": "service-specific usage",
       "minimumQuantity": null,
-      "scope": "vendor commercial cloud free quotas",
-      "notes": "No-cost Spark within service-specific quotas; phone auth and some services differ.",
+      "scope": "vendor commercial cloud usage",
+      "notes": "Lowest paid option is Blaze pay-as-you-go; no single fixed subscription amount. Spark free quotas also exist. Individual-service usage rates and free limits apply; aggregate monthly/annual cost unknown.",
       "sources": [
         "https://firebase.google.com/pricing"
       ]

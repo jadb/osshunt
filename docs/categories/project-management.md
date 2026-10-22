@@ -7,14 +7,19 @@ Audience: Business teams, project managers and product/development teams. Cross-
 Use-case sources: [1](https://asana.com/pricing), [2](https://www.openproject.org/pricing/).
 
 - [Asana](https://asana.com): USD 10.99/seat/month, annual billing. Starter USD10.99 per user/month billed annually; USD13.49 monthly; free tier also exists. [Pricing](https://asana.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/asana.md).
 - [Jira](https://www.atlassian.com/software/jira): USD 9.7/seat/month, monthly billing. Standard USD9.70 per user/month for first 100 users, progressive seat pricing effective October 13, 2026. Annual billing uses user tiers; free plan also exists. [Pricing](https://www.atlassian.com/licensing/future-pricing/cloud/list/faqs).
+  [Pricing tiers, organization and product reasons](../products/jira.md).
 - [Linear](https://linear.app): USD 10/seat/month, annual billing. Basic USD10 per user/month billed yearly; free tier also exists. [Pricing](https://linear.app/pricing).
+  [Pricing tiers, organization and product reasons](../products/linear.md).
 
 ### Huly — A
 
 Root platform EPL-2.0. Official docs allow self-hosting cloud capabilities; paid cloud plans charge storage/traffic rather than unlock product features. Some integrations require separate setup and cloud infrastructure services are not prepackaged.
 
 License: EPL-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/hcengineering/platform/blob/8ed328fef4d3f37824a01b32bab13257116c6c45/LICENSE), [edition evidence](https://docs.huly.io/getting-started/self-host/), [hosting](https://huly.io/pricing), [repository](https://github.com/hcengineering/platform).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/huly.md).
 
 Repository: pushed 2026-10-19T06:40:36Z; latest commit 2026-10-19T06:40:35Z; latest published release v0.7.426 (2026-07-05T03:43:54Z). Quick analysis: 7/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
 

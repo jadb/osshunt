@@ -1,0 +1,260 @@
+{
+  "id": "onlyoffice-docs",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Ascensio System SIA (ONLYOFFICE)",
+    "kind": "business",
+    "foundedYear": 2009,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "ONLYOFFICE Capital Group Pte. Ltd. (Singapore)",
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "2009 is Latvian company founding, 2010 TeamLab public launch. Official About identifies Ascensio as IP holder and Singapore holding company. Ultimate beneficial owners, outside equity investors and financing history not disclosed by these primary sources searched; holding company is not assumed venture investor.",
+    "sources": [
+      "https://www.onlyoffice.com/about",
+      "https://www.onlyoffice.com/blog/2026/06/remember-2009-saas-tools",
+      "https://www.onlyoffice.com/blog/2023/08/onlyoffice-opens-holding-in-singapore"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Docs Community",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free AGPL self-hosted Docs engine",
+      "notes": "Free Community engine; edition limitations apply. Not DocSpace/Workspace subscription.",
+      "sources": [
+        "https://www.onlyoffice.com/compare-editions"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Docs engine editions",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://www.onlyoffice.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Docs Connect",
+      "status": "published",
+      "monthlyPrice": 8,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "commercial cloud editor integration add-on",
+      "notes": "Current pricing page lists $8/user/month add-on for embedding online editors. Broader room/admin platform has separate costs; not a paid Community self-host license or complete deployment price.",
+      "sources": [
+        "https://www.onlyoffice.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Docs Enterprise",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "license/configured users or connections",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted commercial Docs engine",
+      "notes": "Paid downloadable Enterprise confirmed. Legacy Enterprise price URLs redirect to new broader pricing page; indexed legacy From$1500/configured$2100 amounts conflict in scope/duration, so no current numeric total asserted; request edition-specific quote.",
+      "sources": [
+        "https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Format-compatibility work and embeddable editing integrations create specialized engineering differentiation, though open document standards and competing engines constrain lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.onlyoffice.com/about",
+        "https://www.onlyoffice.com/docs"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Browser editors cover documents, spreadsheets, presentations, forms and PDFs within existing collaboration platforms.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.onlyoffice.com/docs"
+      ]
+    },
+    {
+      "claim": "Microsoft Office and OpenDocument format support suits exchanging complex documents across different office suites.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.onlyoffice.com/about"
+      ]
+    },
+    {
+      "claim": "Real-time document coauthoring lets multiple collaborators work in the embedded editing workflow.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.onlyoffice.com/docs"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Ascensio System SIA",
+          "url": "https://www.onlyoffice.com/",
+          "relationship": "business-steward",
+          "source": "https://www.onlyoffice.com/about"
+        }
+      ],
+      "notes": "Official About identifies Ascensio as business building open-source project and IP holder. No separate corporate sponsor list identified; partner/customer relationships not treated as sponsorship.",
+      "sources": [
+        "https://www.onlyoffice.com/about"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Documented Community Docker path",
+          "notes": "Supported Docker release; image bundles runtime services. Native Linux installation available separately.",
+          "sources": [
+            "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx"
+          ]
+        },
+        {
+          "component": "Document editor/conversion processes and nginx",
+          "necessity": "required",
+          "group": null,
+          "condition": "Bundled Docs engine",
+          "notes": "Docker contains application and web runtime; no separate Node.js installation on host needed.",
+          "sources": [
+            "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx"
+          ]
+        },
+        {
+          "component": "Document storage/integration platform",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production collaborative document workflow",
+          "notes": "Connect engine to Nextcloud/ownCloud/other system for document management and user access; Docs is engine, not complete storage platform.",
+          "sources": [
+            "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx"
+          ]
+        },
+        {
+          "component": "TLS certificate and JWT integration secret",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Secured production integration",
+          "notes": "Persistent JWT secret avoids regeneration/integration failures; TLS certificate required for chosen HTTPS endpoint.",
+          "sources": [
+            "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "commercial-database",
+          "condition": "Enterprise/Developer commercial image SQL store; default backend, bundled locally unless replaced",
+          "notes": "Current official README places DB_TYPE/DB_HOST parameters under Enterprise and Developer Edition Parameters only. Not a required external Community component.",
+          "sources": [
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/README.md",
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/run-document-server.sh"
+          ]
+        },
+        {
+          "component": "MySQL / MariaDB / MSSQL / Oracle / Dameng",
+          "necessity": "one-of",
+          "group": "commercial-database",
+          "condition": "Enterprise/Developer commercial edition only; replacement SQL backend instead of PostgreSQL",
+          "notes": "DB_TYPE values documented for commercial builds; not simultaneous requirements. Exact database server versions not provided in inspected configuration table. No Community support claimed.",
+          "sources": [
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/README.md"
+          ]
+        },
+        {
+          "component": "RabbitMQ or ActiveMQ message broker",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Enterprise/Developer commercial image only",
+          "notes": "RabbitMQ default bundled locally; AMQP_TYPE can select ActiveMQ replacement. Startup gates broker initialization on commercial edition. No external broker requirement established for current Community path.",
+          "sources": [
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/README.md",
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/run-document-server.sh"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Enterprise/Developer commercial image only",
+          "notes": "Bundled locally or externalizable through commercial dependency parameters; startup gates service initialization on commercial edition. No external Redis prerequisite claimed for current Community.",
+          "sources": [
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/README.md",
+            "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/run-document-server.sh"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "Dual-core 2 GHz or better",
+        "memory": "4 GB RAM or more; at least4 GB swap, OS dependent",
+        "storage": "40 GB free disk minimum",
+        "os": "amd64 Linux, kernel3.10+ for documented Docker path",
+        "notes": "Current Community Docker installation hardware minimums; dedicated DigitalOcean example recommends4 CPUs/8 GB, a larger deployment choice rather than revised universal minimum.",
+        "sources": [
+          "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx"
+        ]
+      },
+      "notes": "Current Docs10 Community Docker guide is the verified installation path and needs supported Docker plus bundled editor runtime; no separate host Node.js or external SQL/cache/broker prerequisite established. Current official Docker README/startup source explicitly gates PostgreSQL/RabbitMQ/Redis configuration to Enterprise/Developer, so commercial dependencies are conditional and SQL backends are replacements. Exact Docker v10.0.0 source tag URLs404; source-level edition details refer to current master and must be rechecked against chosen image. Community embedded storage implementation not named by these sources; no guessed SQLite claim. Document storage/authentication host separate for real collaboration. Exact internal SQL/cache/queue components inside the chosen stable Community image remain unresolved; absence of external configuration parameters is not evidence of absent bundled internals.",
+      "sources": [
+        "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx",
+        "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/README.md",
+        "https://raw.githubusercontent.com/ONLYOFFICE/Docker-DocumentServer/master/run-document-server.sh"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "ONLYOFFICE Docs DigitalOcean Marketplace",
+          "url": "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx",
+          "kind": "marketplace",
+          "officialStatus": "first-party",
+          "notes": "First-party documented one-click app deploys Ubuntu/Docker/Docs. Choose droplet size and then integrate storage platform.",
+          "sources": [
+            "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx"
+          ]
+        }
+      ],
+      "notes": "Official Docs Community documentation provides DigitalOcean Marketplace one-click image; cloud server charges separate. Manual Docker run is a command-line alternative, not graphical one-click.",
+      "sources": [
+        "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx"
+      ]
+    }
+  }
+}

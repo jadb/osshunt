@@ -1,0 +1,274 @@
+{
+  "id": "tldraw",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "tldraw",
+    "kind": "business",
+    "foundedYear": 2021,
+    "ageBasis": "project-started",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Lux Capital",
+        "source": "https://tldraw.dev/blog/announcing-tldraw-series-a"
+      },
+      {
+        "name": "Definition",
+        "source": "https://tldraw.dev/blog/announcing-tldraw-series-a"
+      }
+    ],
+    "notes": "Official founder announcement dates side-project start to2021, not company incorporation. April2025 $10M Series A led by Lux Capital and Definition; historical investors, no ownership percentages. Current SDK source-available development-only by default.",
+    "sources": [
+      "https://tldraw.dev/blog/announcing-tldraw-series-a",
+      "https://tldraw.dev/community/license"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "SDK commercial license",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "commercial product/license agreement",
+      "minimumQuantity": null,
+      "scope": "paid production SDK license",
+      "notes": "Value-based sales quote. Free 100-day evaluation and discretionary noncommercial hobby license distinct from commercial entry.",
+      "sources": [
+        "https://tldraw.dev/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://tldraw.dev/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "SDK commercial license",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "commercial product/license agreement",
+      "minimumQuantity": null,
+      "scope": "paid production SDK license",
+      "notes": "Closest business offering; startup discount application available, no published amount.",
+      "sources": [
+        "https://tldraw.dev/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid production SDK license",
+      "notes": "No distinct named enterprise tier found; commercial license sales-led. Do not invent separate enterprise plan.",
+      "sources": [
+        "https://tldraw.dev/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Specialized extensible canvas infrastructure and integration work create switching costs for applications built on the SDK.",
+      "basis": "assessment",
+      "sources": [
+        "https://tldraw.dev/quick-start"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Custom shapes, tools and interactions adapt the canvas to domain applications.",
+      "basis": "assessment",
+      "sources": [
+        "https://tldraw.dev/quick-start"
+      ]
+    },
+    {
+      "claim": "Runtime editor API can create and control canvas content programmatically.",
+      "basis": "assessment",
+      "sources": [
+        "https://tldraw.dev/quick-start"
+      ]
+    },
+    {
+      "claim": "Realtime cursors, viewport following and cursor chat support collaborative canvas workflows.",
+      "basis": "assessment",
+      "sources": [
+        "https://tldraw.dev/quick-start"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "tldraw",
+          "url": "https://tldraw.dev/",
+          "relationship": "business-steward",
+          "source": "https://tldraw.dev/community/license"
+        }
+      ],
+      "notes": "No corporate sponsor roster established in checked official pages. Verified SDK business included; investors/customers excluded as sponsors.",
+      "sources": [
+        "https://tldraw.dev/community/license"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "React application and browser runtime",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://tldraw.dev/quick-start"
+          ]
+        },
+        {
+          "component": "Node.js/package manager",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "SDK build and npm scaffolding",
+          "notes": "Build tooling; not evidence of a mandatory separate production Node server.",
+          "sources": [
+            "https://tldraw.dev/quick-start"
+          ]
+        },
+        {
+          "component": "Cloudflare Workers/Durable Objects with embedded SQLite",
+          "necessity": "one-of",
+          "group": "sync-runtime",
+          "condition": "Recommended multiplayer template backend",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        },
+        {
+          "component": "JavaScript server supporting WebSockets",
+          "necessity": "one-of",
+          "group": "sync-runtime",
+          "condition": "Custom multiplayer backend; Node example provided",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        },
+        {
+          "component": "SQLite",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended production persistence for custom sync backend",
+          "notes": "In-memory storage default loses restart data; snapshot persistence can be integrated with own database.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        },
+        {
+          "component": "Cloudflare R2",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Binary assets on recommended Cloudflare template",
+          "notes": "Own backend can implement another asset-store provider.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        },
+        {
+          "component": "Asset upload/download storage provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Custom multiplayer backend with image/video assets",
+          "notes": "Separate from document-state persistence.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        },
+        {
+          "component": "URL unfurling service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Built-in bookmark shape metadata",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        },
+        {
+          "component": "Application authentication/authorization and upload limits",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production collaboration access control",
+          "notes": "Must add yourself; template does not supply complete application security.",
+          "sources": [
+            "https://tldraw.dev/docs/sync"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Browser; Cloudflare or WebSocket-capable JavaScript server platform",
+        "notes": "No universal CPU/RAM/storage minimum published; size and concurrent rooms determine capacity. Hosted demo sync suitable only for prototyping.",
+        "sources": [
+          "https://tldraw.dev/docs/sync"
+        ]
+      },
+      "notes": "SDK operates single-user in browser with local persistence; multiplayer production requires your sync backend. Cloudflare template uses Durable Objects SQLite/R2; custom WebSocket JavaScript backend supported. Valid license needed for production.",
+      "sources": [
+        "https://tldraw.dev/docs/sync",
+        "https://tldraw.dev/quick-start",
+        "https://tldraw.dev/community/license"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "npm create tldraw",
+          "url": "https://tldraw.dev/quick-start",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official starter scaffolding command, not an installed production server; license and backend deployment still required.",
+          "sources": [
+            "https://tldraw.dev/quick-start"
+          ]
+        }
+      ],
+      "notes": "Checked official deployment documentation; manual Docker Compose is not a one-click offer.",
+      "sources": [
+        "https://tldraw.dev/docs/sync"
+      ]
+    }
+  }
+}

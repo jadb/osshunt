@@ -1,0 +1,256 @@
+{
+  "id": "roundcube",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Roundcube project, steward Nextcloud GmbH",
+    "kind": "community",
+    "foundedYear": 2005,
+    "ageBasis": "project-started",
+    "ownership": "community",
+    "parent": "Nextcloud GmbH (project organization stewardship since 2023)",
+    "stockSymbols": [],
+    "funding": "mixed",
+    "investors": [],
+    "notes": "2005 project start, not steward company founding (Nextcloud 2016). Project organization and strategic/operational responsibilities transferred to Nextcloud in 2023; open-source contributor copyrights are not represented as corporate equity. Funding combines community contributions and commercial steward resources; equity investor list not applicable to project.",
+    "sources": [
+      "https://roundcube.net/news/2005/05/31/project-started",
+      "https://roundcube.net/news/2023/11/30/nextcloud-the-new-home-for-roundcube",
+      "https://nextcloud.com/roundcube/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Roundcube core",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free self-hosted webmail core",
+      "notes": "GPL core download; infrastructure, IMAP/SMTP mailbox service and optional extensions separate.",
+      "sources": [
+        "https://roundcube.net/about/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "Roundcube editions",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://nextcloud.com/roundcube/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Roundcube Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial support subscription",
+      "notes": "Closest organizational commercial offer; get sales quote. Core remains free.",
+      "sources": [
+        "https://nextcloud.com/roundcube/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Roundcube Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "commercial support subscription",
+      "notes": "Nextcloud vendor enterprise subscription; optional Dovecot/Stalwart mail-server and Mailvelope bundles priced separately by quote.",
+      "sources": [
+        "https://nextcloud.com/roundcube/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad IMAP adoption, familiar webmail interaction and plugin integrations create an ecosystem moat, though open protocols make substitution possible.",
+      "basis": "assessment",
+      "sources": [
+        "https://roundcube.net/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Responsive browser webmail exposes multiple sender identities, threaded messages and drag-and-drop organization.",
+      "basis": "assessment",
+      "sources": [
+        "https://roundcube.net/"
+      ]
+    },
+    {
+      "claim": "Address-book groups and LDAP connectors fit organizations with shared directory contacts.",
+      "basis": "assessment",
+      "sources": [
+        "https://roundcube.net/"
+      ]
+    },
+    {
+      "claim": "Plugin API and OpenPGP integration allow tailored workflows and encrypted mail handling.",
+      "basis": "assessment",
+      "sources": [
+        "https://roundcube.net/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Nextcloud GmbH",
+          "url": "https://nextcloud.com/",
+          "relationship": "business-steward",
+          "source": "https://roundcube.net/news/2023/11/30/nextcloud-the-new-home-for-roundcube"
+        }
+      ],
+      "notes": "Nextcloud assumed project organization and operational responsibilities; commercial backing confirmed on Roundcube Enterprise page. Separate sponsor roster not found on About/support; steward fallback used.",
+      "sources": [
+        "https://roundcube.net/news/2023/11/30/nextcloud-the-new-home-for-roundcube"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Web server",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Apache, Lighttpd, nginx, IIS, Cherokee or Hiawatha supported.",
+          "sources": [
+            "https://roundcube.net/about/"
+          ]
+        },
+        {
+          "component": "PHP 8.1+ and required extensions",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Required PCRE, DOM, JSON, Session, Sockets, OpenSSL, Mbstring, Filter, Ctype, Intl, PDO driver. Version 1.7.5 composer constraint >=8.1 <8.6.",
+          "sources": [
+            "https://raw.githubusercontent.com/roundcube/roundcubemail/1.7.5/docs/INSTALL.md"
+          ]
+        },
+        {
+          "component": "MySQL / MariaDB",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select one SQL database",
+          "notes": "PDO driver and create-table permission required.",
+          "sources": [
+            "https://roundcube.net/about/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select one SQL database",
+          "notes": "PDO driver required.",
+          "sources": [
+            "https://roundcube.net/about/"
+          ]
+        },
+        {
+          "component": "SQLite",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Select one SQL database",
+          "notes": "Embedded file database; writable database directory.",
+          "sources": [
+            "https://roundcube.net/about/"
+          ]
+        },
+        {
+          "component": "IMAP and SMTP servers",
+          "necessity": "required",
+          "group": null,
+          "condition": "Mail use",
+          "notes": "IMAP4rev1 mailbox access and SMTP delivery; can be external existing mail services.",
+          "sources": [
+            "https://roundcube.net/about/"
+          ]
+        },
+        {
+          "component": "Composer / bundled PHP packages",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Non-complete source package",
+          "notes": "Complete release bundles dependencies; source checkout needs dependency install/build tooling.",
+          "sources": [
+            "https://raw.githubusercontent.com/roundcube/roundcubemail/1.7.5/docs/INSTALL.md"
+          ]
+        },
+        {
+          "component": "LDAP / GD / Imagick / XMLWriter",
+          "necessity": "optional",
+          "group": null,
+          "condition": "LDAP directory, thumbnails or QR-code features",
+          "notes": "Install only extensions matching optional features.",
+          "sources": [
+            "https://raw.githubusercontent.com/roundcube/roundcubemail/1.7.5/docs/INSTALL.md"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": "PHP memory_limit >16 MB",
+        "storage": null,
+        "os": "Web/PHP supported OS; Linux/Unix common",
+        "notes": "PHP process memory configuration requirement, not full-server RAM recommendation. No CPU/storage minimum verified; depends on users and mailbox backend.",
+        "sources": [
+          "https://raw.githubusercontent.com/roundcube/roundcubemail/1.7.5/docs/INSTALL.md"
+        ]
+      },
+      "notes": "Version 1.7.5 stable confirmed on download page; deployment source is current official install documentation plus 1.7.5 composer.json. No Redis/queue/object store required by core path; mail transport separate.",
+      "sources": [
+        "https://roundcube.net/about/",
+        "https://raw.githubusercontent.com/roundcube/roundcubemail/1.7.5/docs/INSTALL.md",
+        "https://raw.githubusercontent.com/roundcube/roundcubemail/1.7.5/composer.json"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Softaculous Roundcube auto installer",
+          "url": "https://www.softaculous.com/",
+          "kind": "one-click",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Available through a hosting control panel with Softaculous; official Roundcube download page links it.",
+          "sources": [
+            "https://roundcube.net/download/"
+          ]
+        }
+      ],
+      "notes": "Official download page explicitly links Softaculous/cPanel auto installers and Cloudron app store; Docker Compose examples are manual, not one-click. Provider availability and versions must be checked on target host.",
+      "sources": [
+        "https://roundcube.net/download/"
+      ]
+    }
+  }
+}

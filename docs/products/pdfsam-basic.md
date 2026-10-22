@@ -16,12 +16,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | PDFsam Basic | free | USD 0/user | USD 0/user | — | unspecified | free desktop/core. Application/core available without a license subscription; optional distribution/hosting costs are separate. [1](https://pdfsam.org/pdfsam-basic/) |
-| popular | unknown | unknown | — | — | — | unspecified | free desktop/core. No explicitly highlighted Most popular or Recommended plan found. [1](https://pdfsam.org/pdfsam-basic/) |
-| business | unknown | not-offered | — | — | — | unspecified | free desktop/core. No named organizational edition for this exact product in checked official source; separate commercial products are not substituted. [1](https://pdfsam.org/pdfsam-basic/) |
-| enterprise | unknown | not-offered | — | — | — | unspecified | free desktop/core. No separate enterprise edition identified for this exact product in checked official source. [1](https://pdfsam.org/pdfsam-basic/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | PDFsam Basic | free | USD 0/user | USD 0/user | — | — | unspecified | free desktop/core. Application/core available without a license subscription; optional distribution/hosting costs are separate. [1](https://pdfsam.org/pdfsam-basic/) |
+| popular | unknown | unknown | — | — | — | — | unspecified | free desktop/core. No explicitly highlighted Most popular or Recommended plan found. [1](https://pdfsam.org/pdfsam-basic/) |
+| business | unknown | not-offered | — | — | — | — | unspecified | free desktop/core. No named organizational edition for this exact product in checked official source; separate commercial products are not substituted. [1](https://pdfsam.org/pdfsam-basic/) |
+| enterprise | unknown | not-offered | — | — | — | — | unspecified | free desktop/core. No separate enterprise edition identified for this exact product in checked official source. [1](https://pdfsam.org/pdfsam-basic/) |
 
 ## Defensibility assessments
 

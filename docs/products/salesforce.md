@@ -18,12 +18,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Starter Suite | published | USD 25/user | USD 300/user | — | unspecified | paid product. $25/user/month billed monthly or annually; annual total $25×12=$300. Free Suite separately offered. [1](https://www.salesforce.com/sales/pricing/) |
-| popular | unknown | unknown | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://www.salesforce.com/sales/pricing/) |
-| business | Pro Suite | published | — | USD 1200/user | — | unspecified | paid product. Closest team/business suite; $100/user/month billed annually ×12=$1200; quoting, forecasting and customization. [1](https://www.salesforce.com/sales/pricing/) |
-| enterprise | Sales Cloud Max | published | — | USD 6600/user | — | unspecified | paid product. Current highest named Sales Cloud tier shown, $550/user/month billed annually ×12=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted. [1](https://www.salesforce.com/sales/pricing/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Starter Suite | published | USD 25/user | USD 300/user | — | — | unspecified | paid product. $25/user/month billed monthly or annually; annual total $25×12=$300. Free Suite separately offered. [1](https://www.salesforce.com/sales/pricing/) |
+| popular | unknown | unknown | — | — | — | — | unspecified | paid product. No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred. [1](https://www.salesforce.com/sales/pricing/) |
+| business | Pro Suite | published | — | USD 1200/user | — | — | unspecified | paid product. Closest team/business suite; $100/user/month billed annually ×12=$1200; quoting, forecasting and customization. [1](https://www.salesforce.com/sales/pricing/) |
+| enterprise | Sales Cloud Max | published | — | USD 6600/user | — | — | unspecified | paid product. Current highest named Sales Cloud tier shown, $550/user/month billed annually ×12=$6600. Organization credits and add-ons subject to detailed sales terms; old Enterprise label not substituted. [1](https://www.salesforce.com/sales/pricing/) |
 
 ## Defensibility assessments
 

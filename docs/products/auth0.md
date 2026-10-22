@@ -18,12 +18,12 @@ Known investors: [Salesforce Ventures](https://auth0.com/blog/auth0-announces-12
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Free | free | USD 0/tenant; up to 25,000 monthly active users | USD 0/tenant; up to 25,000 monthly active users | — | unspecified | vendor commercial product. Free customer-identity tier, with feature limits. [1](https://auth0.com/pricing) |
-| popular | unknown | unknown | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://auth0.com/pricing) |
-| business | Professional | unknown | — | — | — | unspecified | vendor commercial product. Closest organizational production plan; page displays $240/month for 500 MAU, but monthly/yearly selector state not proven. Amount deliberately null. [1](https://auth0.com/pricing) |
-| enterprise | Enterprise | quote | — | — | — | unspecified | vendor commercial product. Custom user/SSO tiers; enterprise quote. [1](https://auth0.com/pricing) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Free | free | USD 0/tenant; up to 25,000 monthly active users | USD 0/tenant; up to 25,000 monthly active users | — | — | unspecified | vendor commercial product. Free customer-identity tier, with feature limits. [1](https://auth0.com/pricing) |
+| popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://auth0.com/pricing) |
+| business | Professional | unknown | — | — | — | — | unspecified | vendor commercial product. Closest organizational production plan; page displays $240/month for 500 MAU, but monthly/yearly selector state not proven. Amount deliberately null. [1](https://auth0.com/pricing) |
+| enterprise | Enterprise | quote | — | — | — | — | unspecified | vendor commercial product. Custom user/SSO tiers; enterprise quote. [1](https://auth0.com/pricing) |
 
 ## Defensibility assessments
 

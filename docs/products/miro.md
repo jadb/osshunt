@@ -16,12 +16,12 @@ Known investors: [ICONIQ Growth](https://miro.com/newsroom/miro-series-c/), [Acc
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Starter | unknown | — | — | — | unspecified | paid product. Named paid plan verified; current numeric prices not captured reliably. Free plan has 3 editable boards. [1](https://miro.com/pricing/) |
-| popular | unknown | unknown | — | — | — | unspecified | paid product. No public designation or amount established from checked pricing page. [1](https://miro.com/pricing/) |
-| business | Business | unknown | — | — | — | unspecified | paid product. Named Business plan verified; numeric amount unresolved. Card subscriptions have no license minimum; invoice minimum 5. [1](https://miro.com/pricing/) |
-| enterprise | Enterprise | quote | — | — | — | unspecified | paid product. Enterprise custom controls; sales-led pricing, no verified numeric price. [1](https://miro.com/pricing/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Starter | published | — | USD 96/member | — | — | unspecified | paid product. Current yearly-billed rate $8/month/member multiplied by 12; monthly cancellable amount not captured. Card billing has no seat minimum; invoice minimum differs. [1](https://miro.com/pricing/) |
+| popular | unknown | unknown | — | — | — | — | unspecified | paid product. No public designation or amount established from checked pricing page. [1](https://miro.com/pricing/) |
+| business | Business | published | — | USD 240/member | — | — | unspecified | paid product. Current yearly-billed rate $20/month/member multiplied by 12; monthly cancellable amount not captured. Card billing has no seat minimum; invoice minimum differs. [1](https://miro.com/pricing/) |
+| enterprise | Enterprise | quote | — | — | — | — | 30 | paid product. Current pricing says custom pricing from 30 members; sales quote, no invented amount. [1](https://miro.com/pricing/) |
 
 ## Defensibility assessments
 

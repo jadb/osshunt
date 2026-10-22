@@ -1,0 +1,133 @@
+{
+  "id": "notion",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Notion Labs, Inc.",
+    "kind": "business",
+    "foundedYear": 2013,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "GIC",
+        "source": "https://www.notion.com/blog/gic-sequoia-index-purchase-notion-shares"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.notion.com/blog/gic-sequoia-index-purchase-notion-shares"
+      },
+      {
+        "name": "Index Ventures",
+        "source": "https://www.notion.com/blog/gic-sequoia-index-purchase-notion-shares"
+      }
+    ],
+    "notes": "Founder states started in 2013; distinguished from 2018 Notion 2.0 traction. January 2026 private employee tender verifies private equity ownership and named investors; tender is secondary liquidity rather than new company financing. Investor list partial.",
+    "sources": [
+      "https://www.notion.com/about",
+      "https://www.notion.com/blog/gic-sequoia-index-purchase-notion-shares",
+      "https://www.notion.com/es/blog/100-million-of-you"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Plus",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Displayed 10 per member/month treated as yearly-selector rate: \u00d712; monthly-billing rate not independently verified. Free separate.",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 240,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Explicitly Recommended; displayed yearly-selector 20/member/month \u00d712.",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 240,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "20 annual-billed monthly \u00d712; monthly-billing figure unverified.",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom pricing; Contact Sales.",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Reusable workspace structures, linked knowledge and a large user/template community can increase switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.notion.com/es/blog/100-million-of-you"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Combine editable documents with databases, dependencies and custom properties.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "claim": "Use AI meeting notes and multi-step agents within the workspace.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "claim": "Search connected applications and restrict database access to assigned rows.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

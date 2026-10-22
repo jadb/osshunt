@@ -41,6 +41,15 @@ test('profiles retain alternatives, optional components, unknown prices and inst
   assert.match(text, /business \| unknown \| not-offered \| — \| —/);
 });
 
+test('usage prices retain their denominator without becoming monthly or yearly subscriptions', () => {
+  const input = fixture();
+  Object.assign(input.pricingTiers[0], { status: 'published', monthlyPrice: null, usagePrice: 0.25, unit: 'GB transferred' });
+  const profile = productProfile(z).parse(input);
+  assert.equal(profile.pricingTiers[0].monthlyPrice, null);
+  assert.equal(profile.pricingTiers[0].annualPrice, null);
+  assert.match(renderProfile({ name: 'Sample', url: sources[0], profile }), /entry \| Community \| published \| — \| — \| — \| USD 0.25\/GB transferred/);
+});
+
 for (const [name, mutate, expected] of [
   ['duplicate pricing roles', p => p.pricingTiers[1].role = 'entry', /distinct pricing roles/],
   ['invented quote amount', p => Object.assign(p.pricingTiers[3], { status: 'quote', monthlyPrice: 99 }), /cannot have numeric/],

@@ -29,7 +29,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Official USD search-rendered comparison lists US$1/user/month billed annually \u00d712=$12; no monthly plan. Base page omitted numeric prices in rendered extraction.",
+      "notes": "Official USD search-rendered comparison lists US$1/user/month billed annually ×12=$12; no monthly plan. Base page omitted numeric prices in rendered extraction.",
       "sources": [
         "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
       ]
@@ -61,7 +61,7 @@
       "unit": "user",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Closest mail-only organizational advanced plan; US$4/user/month annually \u00d712=$48; no monthly plan. Workplace bundles are a broader scope.",
+      "notes": "Closest mail-only organizational advanced plan; US$4/user/month annually ×12=$48; no monthly plan. Workplace bundles are a broader scope.",
       "sources": [
         "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
       ]

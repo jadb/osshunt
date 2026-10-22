@@ -1,0 +1,222 @@
+{
+  "id": "seafile",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Seafile Ltd. / SeaCloud Labs Pte. Ltd.",
+    "kind": "business",
+    "foundedYear": 2012,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official About dates Seafile establishment to 2012; earlier concept 2009. Seafile Ltd. and SeaCloud Labs develop product; SeaCloud Labs established in 2025 to operate SaaS. Equity ownership and investment history unresolved from About/funding search, so no bootstrapping claim.",
+    "sources": [
+      "https://www.seafile.com/en/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Community Edition",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-hosted Community Edition",
+      "notes": "Core sync/share/versioning, separate paid Professional capabilities.",
+      "sources": [
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Professional Edition",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Edition verified, current price unresolved: official shop pricing returned HTTP502; no historical rate reused.",
+      "sources": [
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Professional Edition",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid self-hosted license",
+      "notes": "Professional includes enterprise/HA features; separate Enterprise price/tier not established.",
+      "sources": [
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Specialized sync engine, virtual drive and existing library histories create practical workflow differentiation, while interoperability/export reduces exclusivity.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.seafile.com/en/about/",
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Cross-platform file synchronization keeps libraries available on multiple devices.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    },
+    {
+      "claim": "Version control supports revisiting prior file states in collaborative libraries.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.seafile.com/en/product/seafile_on_premise/"
+      ]
+    },
+    {
+      "claim": "Virtual-drive access retrieves files on demand without requiring full local synchronization.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.seafile.com/en/about/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Seafile Ltd.",
+          "url": "https://www.seafile.com/en/about/",
+          "relationship": "business-steward",
+          "source": "https://www.seafile.com/en/about/"
+        }
+      ],
+      "notes": "No separate corporate sponsor identified in checked official sources; verified business steward included.",
+      "sources": [
+        "https://www.seafile.com/en/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker / Docker Compose",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+          ]
+        },
+        {
+          "component": "MySQL-compatible database",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented default DB service and three schemas; no PostgreSQL/SQLite production option established for this current CE path.",
+          "sources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "one-of",
+          "group": "cache",
+          "condition": "Default/recommended cache since Seafile13",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+          ]
+        },
+        {
+          "component": "Memcached",
+          "necessity": "one-of",
+          "group": "cache",
+          "condition": "Manual alternative; no longer bundled by default since13",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+          ]
+        },
+        {
+          "component": "Caddy HTTPS proxy",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Documented HTTPS container configuration",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+          ]
+        },
+        {
+          "component": "SeaDoc",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Collaborative document editing selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "2 cores above 2GHz recommended",
+        "memory": "2GB recommended",
+        "storage": null,
+        "os": "Linux Docker host",
+        "notes": "Official CE guide general recommendation, not guaranteed production sizing.",
+        "sources": [
+          "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+        ]
+      },
+      "notes": "Current manual uses Seafile13 Compose. Database/cache and persistent volumes required; no separate Elasticsearch assumed for Community (full-text search is Professional). Compose is manual, not one-click.",
+      "sources": [
+        "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://manual.seafile.com/latest/setup/setup_ce_by_docker/"
+      ]
+    }
+  }
+}

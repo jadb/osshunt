@@ -1,0 +1,137 @@
+{
+  "id": "acronis-cyber-protect",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Acronis",
+    "kind": "business",
+    "foundedYear": 2003,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": "Majority investment by EQT X fund; Acronis remains privately held",
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "EQT X",
+        "source": "https://eqtgroup.com/about/current-portfolio/acronis"
+      },
+      {
+        "name": "CVC-managed funds/accounts",
+        "source": "https://www.acronis.com/en/pr/2024/eqt-to-acquire-a-majority-stake-in-acronis/"
+      },
+      {
+        "name": "Springcoast-managed funds/accounts",
+        "source": "https://www.acronis.com/en/pr/2024/eqt-to-acquire-a-majority-stake-in-acronis/"
+      },
+      {
+        "name": "BlackRock Private Equity Partners-managed funds/accounts",
+        "source": "https://www.acronis.com/en/pr/2024/eqt-to-acquire-a-majority-stake-in-acronis/"
+      }
+    ],
+    "notes": "Founded 2003. 2024 agreement described majority EQT X investment, retaining founders/management and CVC/Springcoast/BlackRock-managed interests as minorities; current EQT portfolio records 2025 entry. Acronis has no separate public listing; investment-manager stock not inherited.",
+    "sources": [
+      "https://eqtgroup.com/about/current-portfolio/acronis",
+      "https://www.acronis.com/en/pr/2024/eqt-to-acquire-a-majority-stake-in-acronis/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Cyber Protect Standard",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "protected machine/physical host",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Edition offered, base price not rendered. Not a claim that all editions are quote-only.",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Cyber Protect Advanced",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "protected machine/physical host",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Closest organizational edition for larger environments; workload/term-specific amount not verified.",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization/workload",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No separate named Enterprise edition price established on checked purchasing page; request applicable configuration from vendor.",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Backup formats, workload agents and integrated protection/management workflows create switching effort, reinforced by an established MSP ecosystem.",
+      "basis": "assessment",
+      "sources": [
+        "https://eqtgroup.com/about/current-portfolio/acronis",
+        "https://www.acronis.com/en/products/cyber-protect/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Full-image and file-level protection cover physical and virtual workloads alongside application data.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/"
+      ]
+    },
+    {
+      "claim": "Integrated malware scanning and safe recovery help avoid restoring compromised backups; edition restrictions apply.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      ]
+    },
+    {
+      "claim": "Central backup plans, tape support and storage snapshots cover more complex recovery environments in Advanced editions.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.acronis.com/en/products/cyber-protect/purchasing/"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

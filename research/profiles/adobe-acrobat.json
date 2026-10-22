@@ -12,11 +12,21 @@
       "NASDAQ:ADBE"
     ],
     "funding": "funded",
-    "investors": [],
-    "notes": "Adobe founded in 1982; company age rather than app launch. Official fast facts identifies 1986 IPO and NASDAQ ADBE. Public equity financed; historical venture investors not established in checked corporate sources, so investor list not exhaustive.",
+    "investors": [
+      {
+        "name": "Hambrecht & Quist",
+        "source": "https://archive.computerhistory.org/resources/text/Adobe/adobe.founders_final.1992.062304109.pdf"
+      },
+      {
+        "name": "Apple",
+        "source": "https://archive.computerhistory.org/resources/text/Adobe/adobe.founders_final.1992.062304109.pdf"
+      }
+    ],
+    "notes": "Adobe company founded1982; NASDAQ:ADBE, IPO1986. Founder oral history identifies historical Hambrecht & Quist funding and Apple1983 investment; no present holdings asserted.",
     "sources": [
       "https://www.adobe.com/about-adobe.html",
-      "https://www.adobe.com/content/dam/cc/en/fast-facts/pdfs/fast-facts.pdf"
+      "https://www.adobe.com/content/dam/cc/en/fast-facts/pdfs/fast-facts.pdf",
+      "https://archive.computerhistory.org/resources/text/Adobe/adobe.founders_final.1992.062304109.pdf"
     ]
   },
   "pricingTiers": [

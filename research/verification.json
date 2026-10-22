@@ -9,14 +9,19 @@
   "completedSecondBatchCategories": 24,
   "secondBatchClaimLedgers": 24,
   "secondBatchSourcedClaims": 445,
-  "contractTests": 21,
+  "contractTests": 34,
   "mutationGuards": 7,
   "deterministicSnapshots": {
     "categories.json": "995de5070b4c398a775406b73a6732eda99624f4e6cc26e69a0dfc4f0be45612",
     "alternatives.json": "06f1e66b91727d9cddefeb1e8b454d5e361928826e3d459accd99f2e6ea44d13",
     "categories.schema.json": "4465e27d9a22df038e78fc2182cbd69206e4fbad15e55c15cdc80be09089a70b",
-    "products.json": "641e5c7556e0ea57bfb5dc8ebd8ad6b85cabad875856cfdec7b52e94b46c74de",
+    "products.json": "3fc8872743a1d287d13fd35537c77d840ac27468573a02b724df2c833e276678",
     "alternatives.schema.json": "e96d16748223d1b42ae129ef77280a59b9d673f6020eecb28fd29caf474f61fe",
-    "products.schema.json": "9ed2f1a2ee48cece0515070112eb00b476d1a6f509ef51815f8cf3ec5f0c10e3"
-  }
+    "products.schema.json": "a99587092ae8cc3832b92753147049a4535b629bf46f81c1f4d6535be5bda451"
+  },
+  "productProfiles": 80,
+  "profileClaimLedgers": 80,
+  "profileAudits": 80,
+  "profileSourcedClaims": 1942,
+  "enrichmentStatus": "in-progress"
 }

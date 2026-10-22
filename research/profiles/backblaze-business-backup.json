@@ -1,0 +1,129 @@
+{
+  "id": "backblaze-business-backup",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Backblaze, Inc.",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ: BLZE"
+    ],
+    "funding": "mixed",
+    "investors": [
+      {
+        "name": "TMT Investments",
+        "source": "https://www.backblaze.com/blog/backblaze-raises-5-million-why-we-took-funding-after-5-years-of-bootstrapping/"
+      }
+    ],
+    "notes": "Incorporated April 2007. Initially bootstrapped, then raised $5M from TMT in 2012; current investor overview confirms NASDAQ: BLZE. TMT is a historical investor; current holding not asserted.",
+    "sources": [
+      "https://www.backblaze.com/blog/backblaze-turns-5-a-startup-grows-up/",
+      "https://ir.backblaze.com/overview/default.aspx",
+      "https://www.backblaze.com/blog/backblaze-raises-5-million-why-we-took-funding-after-5-years-of-bootstrapping/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Business Backup",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 99,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "computer",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Published annual computer backup subscription. Monthly selector exists but monthly amount not reliably extracted.",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business Backup",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 99,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "computer",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Business computer protection; B2 object-storage consumption separate.",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise Control",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "computer/organization contract",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Enterprise control upgrade requires sales; no public amount.",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Owned storage infrastructure plus endpoint adoption and backup history create operational scale and migration costs; underlying file backup remains competitive.",
+      "basis": "assessment",
+      "sources": [
+        "https://ir.backblaze.com/overview/default.aspx",
+        "https://www.backblaze.com/cloud-backup/business"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Automatic Mac/Windows backup includes user-generated files and attached external drives by default.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing",
+        "https://www.backblaze.com/cloud-backup/business"
+      ]
+    },
+    {
+      "claim": "Centralized group administration manages multiple computers and IT/end-user restore privileges.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing"
+      ]
+    },
+    {
+      "claim": "Enterprise Control adds backup lockdown and restricted restore access for centrally governed recovery.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.backblaze.com/cloud-backup/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

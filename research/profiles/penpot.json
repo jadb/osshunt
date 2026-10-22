@@ -1,0 +1,307 @@
+{
+  "id": "penpot",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Kaleidos",
+    "kind": "business",
+    "foundedYear": 2011,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Decibel Partners",
+        "source": "https://community.penpot.app/t/penpot-our-time-has-come/1563"
+      },
+      {
+        "name": "Athos Capital",
+        "source": "https://community.penpot.app/t/penpot-our-time-has-come/1563"
+      },
+      {
+        "name": "CDTI Innvierte",
+        "source": "https://community.penpot.app/t/penpot-our-time-has-come/1563"
+      },
+      {
+        "name": "Eric Wittman",
+        "source": "https://community.penpot.app/t/penpot-our-time-has-come/1563"
+      },
+      {
+        "name": "Dave Crossland",
+        "source": "https://community.penpot.app/t/penpot-our-time-has-come/1563"
+      }
+    ],
+    "notes": "Kaleidos founded 2011; Penpot project launched later. Company-operated product; official 2021 seed and 2022 Series A establish funding. Named investors historical; 2026 rumored/public-private round not verified from primary announcement here.",
+    "sources": [
+      "https://www.kaleidos.net/",
+      "https://community.penpot.app/t/penpot-our-time-has-come/1563",
+      "https://www.kaleidos.net/blog/Taiga-and-Penpot-lead-our-new-chapter-at-Kaleidos"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Professional",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-host core",
+      "notes": "Unlimited users/teams/files and all design/prototyping; infrastructure separate.",
+      "sources": [
+        "https://penpot.app/pricing/self-host"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://penpot.app/pricing/self-host"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Professional",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "self-host team core",
+      "notes": "Closest team-capable core plan; advanced organizational governance belongs to Enterprise.",
+      "sources": [
+        "https://penpot.app/pricing/self-host"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": 25,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "member; organization floor $950/month",
+      "minimumQuantity": null,
+      "scope": "paid self-host governance license",
+      "notes": "Published $25/member/month starting at $950/month organization; minimum seat quantity and annual commitment not established.",
+      "sources": [
+        "https://penpot.app/pricing/self-host"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Web-standard design artifacts and shared design systems create workflow investment while open formats reduce proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://penpot.app/features"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "SVG-native vector editing keeps designs aligned with web graphics.",
+      "basis": "assessment",
+      "sources": [
+        "https://penpot.app/features"
+      ]
+    },
+    {
+      "claim": "Flex and CSS Grid layouts reproduce responsive web layout behavior.",
+      "basis": "assessment",
+      "sources": [
+        "https://penpot.app/features"
+      ]
+    },
+    {
+      "claim": "Shared components and design systems keep interface assets consistent across teams.",
+      "basis": "assessment",
+      "sources": [
+        "https://penpot.app/features"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "Kaleidos",
+          "url": "https://www.kaleidos.net/",
+          "relationship": "business-steward",
+          "source": "https://www.kaleidos.net/"
+        }
+      ],
+      "notes": "No separate corporate sponsorship roster found in checked official company/product sources; verified product business included. Equity investors not reclassified as sponsors.",
+      "sources": [
+        "https://www.kaleidos.net/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker with Compose",
+          "necessity": "one-of",
+          "group": "orchestration",
+          "condition": "Official container deployment",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://help.penpot.app/technical-guide/getting-started/docker/"
+          ]
+        },
+        {
+          "component": "Kubernetes with official Helm chart",
+          "necessity": "one-of",
+          "group": "orchestration",
+          "condition": "Alternative orchestration",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://help.penpot.app/technical-guide/getting-started/docker/"
+          ]
+        },
+        {
+          "component": "Penpot frontend/backend/exporter services",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "PostgreSQL 15",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Default compose database, persistent volume; not an optional external service.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Valkey 8.1",
+          "necessity": "one-of",
+          "group": "cache",
+          "condition": "Current compose cache and websocket notifications",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Redis",
+          "necessity": "one-of",
+          "group": "cache",
+          "condition": "Documented compatible cache alternative",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://help.penpot.app/technical-guide/getting-started/recommended-settings/"
+          ]
+        },
+        {
+          "component": "Filesystem asset volume",
+          "necessity": "one-of",
+          "group": "asset-storage",
+          "condition": "Default asset storage",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "S3-compatible object storage",
+          "necessity": "one-of",
+          "group": "asset-storage",
+          "condition": "Configured alternative to filesystem",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "SMTP provider",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Production registration confirmations and invitations",
+          "notes": "Compose mailcatcher is temporary testing substitute, not production mail delivery.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        },
+        {
+          "component": "Admin console service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Enterprise administration",
+          "notes": "2.18 compose includes console and MCP services; governance license scope separate.",
+          "sources": [
+            "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "4 CPUs sufficient for thousands of users (recommendation)",
+        "memory": "16GB sufficient for thousands of users (not minimum)",
+        "storage": "Recommended elastic database baseline 50\u2013100GB for up to 10 editors",
+        "os": "Linux server; recent browser on user devices",
+        "notes": "Recommended-settings server figures; storage scales with documents. Elestio guide separately suggests 2GB for 20-person managed team, not same deployment envelope.",
+        "sources": [
+          "https://help.penpot.app/technical-guide/getting-started/recommended-settings/"
+        ]
+      },
+      "notes": "2.18 compose plus current technical docs verified. Cache/websocket services and PostgreSQL required on standard path. Filesystem default; S3 alternative. SMTP required for real email flows, mailcatcher for evaluation. CPU/RAM recommendation is scale example, not enforced minimum.",
+      "sources": [
+        "https://help.penpot.app/technical-guide/getting-started/docker/",
+        "https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml",
+        "https://help.penpot.app/technical-guide/getting-started/recommended-settings/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Elestio",
+          "url": "https://help.penpot.app/technical-guide/getting-started/elestio/",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official guide walks managed service creation; dedicated instance deployed through marketplace settings.",
+          "sources": [
+            "https://help.penpot.app/technical-guide/getting-started/elestio/"
+          ]
+        },
+        {
+          "name": "TrueNAS Apps",
+          "url": "https://apps.truenas.com/catalog/penpot/",
+          "kind": "marketplace",
+          "officialStatus": "officially-linked-third-party",
+          "notes": "Official installation page links this distribution; not a hosted server deployment.",
+          "sources": [
+            "https://help.penpot.app/technical-guide/getting-started/"
+          ]
+        }
+      ],
+      "notes": "Checked official deployment documentation; manual Docker Compose is not a one-click offer.",
+      "sources": [
+        "https://help.penpot.app/technical-guide/getting-started/docker/"
+      ]
+    }
+  }
+}

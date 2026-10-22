@@ -14,7 +14,7 @@ Audience positions are editorial reach estimates, not measured market-size count
 
 ## Profile enrichment — in progress
 
-41/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
+80/227 product profiles prepared; source review continues. [Browse profiles](docs/product-profiles.md), [field definitions and limits](docs/product-profile-methodology.md), [coverage manifest](research/enrichment-manifest.json). Profiles include four pricing roles, ownership/funding/history, investors, product reasons and moat assessments. Alternative profiles add sponsors, deployment requirements and installation shortcuts. Unknowns stay explicit.
 
 ## Data
 
@@ -22,7 +22,7 @@ Audience positions are editorial reach estimates, not measured market-size count
 
 Reviewed category inputs and uncertainty notes: `research/categories/`. Portable chronological command/website audits: `research/audits/`. Captured repository evidence: `research/github/`, `research/gitlab/`, `research/rsx/`; request log: `research/github-commands.jsonl`. Second-batch claim ledgers: `research/claims/` — 445 dated claims with page locators and evidence. Exact machine-local transcripts stay local; published paths are normalized.
 
-Website claims retain source URLs and decisions; second-batch claims also retain structured locators and evidence. not every live pricing/edition page is archived as a replayable body. Repository license evidence is pinned where available. [Known evidence improvements](docs/research-workflow.md#evidence-improvements-still-needed).
+Website claims retain source URLs and decisions; second-batch claims also retain structured locators and evidence. Not every live pricing/edition page is archived as a replayable body. Repository license evidence is pinned where available. [Known evidence improvements](docs/research-workflow.md#evidence-improvements-still-needed).
 
 ## Build and verify
 
@@ -33,6 +33,6 @@ npm ci --ignore-scripts
 make check
 ```
 
-The gate assembles source records, generates snapshots/schemas/docs, validates data and runs 21 contract tests. Seven regression guards additionally verified by restoring defects, observing failures and restoring fixes. [Mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
+The gate assembles source records, generates snapshots/schemas/docs, validates data and runs 34 contract tests. Seven regression guards additionally verified by restoring defects, observing failures and restoring fixes. [Mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
 
 Research refresh additionally uses authenticated `gh` and optional repository health analysis; neither is required for ordinary builds or queries. No website deployment is part of this seed.

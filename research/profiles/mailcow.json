@@ -1,0 +1,264 @@
+{
+  "id": "mailcow",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "The Infrastructure Company GmbH (Servercow / mailcow)",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Registered German GmbH operates Servercow and mailcow marks. Official project recap identifies Tinc team as company behind mailcow. Company incorporation date, ownership percentages and financing history not published in inspected sources; private legal form does not establish bootstrapping.",
+    "sources": [
+      "https://servercow.de/impressum/",
+      "https://mailcow.email/posts/2024/recap-2024/",
+      "https://servercow.de/ueber-uns/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "mailcow: dockerized",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "installation",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open-source integrated stack; server resources and mail operations separate.",
+      "sources": [
+        "https://docs.mailcow.email/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor hosting offerings",
+      "notes": "No public Most popular or Recommended plan designation found in the source inspected; no popularity inferred.",
+      "sources": [
+        "https://servercow.de/en/preisliste/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "managed mailcow base package (12 months)",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 625.92,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "dedicated managed server",
+      "minimumQuantity": null,
+      "scope": "vendor commercial managed hosting",
+      "notes": "Price list including 19% German VAT: €52.16/month with 12 months prepaid ×12=€625.92. No monthly-billed option (quarterly/semiannual/annual). Checkout observed different tax presentation, so confirm final local tax; not a software license.",
+      "sources": [
+        "https://servercow.de/en/preisliste/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Custom managed mailcow",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "EUR",
+      "unit": "managed server",
+      "minimumQuantity": null,
+      "scope": "vendor commercial managed hosting",
+      "notes": "Closest custom organizational offering: requests above published storage range require quote; no distinct Enterprise software edition inferred.",
+      "sources": [
+        "https://servercow.de/en/preisliste/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "An integrated control panel over mature mail components and built-in migration tools provides operational familiarity, though open protocols and components limit proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mailcow.email/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Domain and mailbox controls expose per-user spam scores, quarantine and temporary aliases in one interface.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mailcow.email/"
+      ]
+    },
+    {
+      "claim": "SOGo groupware combines mail with calendars, contacts and ActiveSync synchronization.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mailcow.email/"
+      ]
+    },
+    {
+      "claim": "Scheduled imapsync retrieval migrates or consolidates existing mailboxes into the stack.",
+      "basis": "assessment",
+      "sources": [
+        "https://docs.mailcow.email/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "ColbaNet Inc.",
+          "url": "https://www.colba.net/fr/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/README.md"
+        },
+        {
+          "name": "Garske Systems",
+          "url": "https://garske-systems.de/",
+          "relationship": "corporate-sponsor",
+          "source": "https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/README.md"
+        }
+      ],
+      "notes": "Official README explicitly lists linked businesses under $100/month Sponsors. Business identities verified on primary indexed ColbaNet and Garske pages. Maehdros also appears in roster, but company page failed to load and identity not independently verified here; roster not exhaustive.",
+      "sources": [
+        "https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/README.md",
+        "https://www.colba.net/fr/",
+        "https://garske-systems.de/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Docker Engine >=24 and Docker Compose >=2",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default dockerized install",
+          "notes": "Host packages git, OpenSSL, curl, awk, coreutils, grep, cut and jq required for installation; PHP/database run inside containers.",
+          "sources": [
+            "https://docs.mailcow.email/getstarted/install/"
+          ]
+        },
+        {
+          "component": "MariaDB 10.11",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default stack",
+          "notes": "Bundled SQL database, not a separate managed service requirement.",
+          "sources": [
+            "https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Redis 7.4",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default stack",
+          "notes": "Bundled spam, DKIM and application state/cache.",
+          "sources": [
+            "https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/docker-compose.yml"
+          ]
+        },
+        {
+          "component": "Postfix and Dovecot",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default mail stack",
+          "notes": "Bundled SMTP MTA and IMAP/POP MDA; no separate mail hosting service needed.",
+          "sources": [
+            "https://docs.mailcow.email/"
+          ]
+        },
+        {
+          "component": "Rspamd, Unbound and Netfilter",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default integrated stack",
+          "notes": "Spam filtering, DNS resolver and firewall abuse protection containers.",
+          "sources": [
+            "https://docs.mailcow.email/"
+          ]
+        },
+        {
+          "component": "nginx, PHP-FPM, SOGo and Memcached",
+          "necessity": "required",
+          "group": null,
+          "condition": "Default integrated webmail/groupware stack",
+          "notes": "Bundled web interface, webmail, calendars/contacts and webmail cache.",
+          "sources": [
+            "https://docs.mailcow.email/"
+          ]
+        },
+        {
+          "component": "ClamAV and Flatcurve full-text indexing",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Can disable with SKIP_CLAMD=y and SKIP_FTS=y",
+          "notes": "Default-enabled resource consumers, explicitly optional.",
+          "sources": [
+            "https://docs.mailcow.email/getstarted/prerequisite-system/"
+          ]
+        },
+        {
+          "component": "Olefy, ACME certificate automation, watchdog",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Default stack features enabled",
+          "notes": "Office attachment analysis, certificate issuance and container monitoring; bundled, configuration may disable optional scanner/certificate path.",
+          "sources": [
+            "https://docs.mailcow.email/"
+          ]
+        },
+        {
+          "component": "Public DNS and reachable SMTP networking",
+          "necessity": "required",
+          "group": null,
+          "condition": "Internet email operation",
+          "notes": "Domain/MX/SPF/DKIM/DMARC configuration and appropriate mail ports; operator controls delivery reputation.",
+          "sources": [
+            "https://docs.mailcow.email/getstarted/install/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": "1 GHz minimum; x86_64 or ARM64",
+        "memory": "6 GiB RAM + 1 GiB swap default minimum; 8 GiB recommended for ~5–10 users",
+        "storage": "20 GiB minimum excluding email data",
+        "os": "Debian 11–13, Ubuntu 22.04+, AlmaLinux 8/9, Rocky Linux 9; Alpine 3.19+ needs adjustments",
+        "notes": "Official tested-OS table dated August 2025. OpenVZ, Virtuozzo and LXC unsupported. SOGo/ActiveSync concurrency increases memory; example 50 IMAP connections/15 phones suggests 16 GiB.",
+        "sources": [
+          "https://docs.mailcow.email/getstarted/prerequisite-system/"
+        ]
+      },
+      "notes": "Default complete dockerized deployment includes SQL, Redis, web/groupware, SMTP/IMAP, antispam and DNS containers; no mandatory external database/cache. Host Docker requirements distinct from bundled runtimes. ClamAV and FTS explicitly optional. Reviewed current stable-family docs and current Compose, not a source build.",
+      "sources": [
+        "https://docs.mailcow.email/",
+        "https://docs.mailcow.email/getstarted/prerequisite-system/",
+        "https://docs.mailcow.email/getstarted/install/",
+        "https://raw.githubusercontent.com/mailcow/mailcow-dockerized/master/docker-compose.yml"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Official installation requires clone/configuration and Docker Compose startup. Docker installation script installs Docker only, not mailcow. Managed hosting purchase is not a self-host one-click installer.",
+      "sources": [
+        "https://docs.mailcow.email/getstarted/install/"
+      ]
+    }
+  }
+}

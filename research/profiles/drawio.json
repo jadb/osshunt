@@ -1,0 +1,228 @@
+{
+  "id": "drawio",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "draw.io Ltd and draw.io AG",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Official About names private UK and Swiss businesses. Diagram software history since 2005, not asserted company founding. Explicitly not VC-funded; other financing history unresolved, so funding unknown rather than bootstrapped.",
+    "sources": [
+      "https://www.drawio.com/docs/about/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "draw.io editor",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "Application/core available without a license subscription; optional distribution/hosting costs are separate.",
+      "sources": [
+        "https://www.drawio.com/docs/about/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No explicitly highlighted Most popular or Recommended plan found.",
+      "sources": [
+        "https://www.drawio.com/docs/about/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No named organizational edition for this exact product in checked official source; separate commercial products are not substituted.",
+      "sources": [
+        "https://www.drawio.com/docs/about/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free desktop/core",
+      "notes": "No separate enterprise edition identified for this exact product in checked official source.",
+      "sources": [
+        "https://www.drawio.com/docs/about/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Broad file compatibility, shape libraries and long-lived diagram formats create ecosystem value; open format/code constrains exclusive lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drawio.com/docs/features/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Extensive technical shape libraries support architecture, UML and process diagrams.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drawio.com/docs/features/"
+      ]
+    },
+    {
+      "claim": "Imports/exports across diagram formats help continue existing diagram work.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drawio.com/docs/features/"
+      ]
+    },
+    {
+      "claim": "Mermaid, CSV and SQL inputs can generate diagrams from structured sources.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.drawio.com/docs/features/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "business-fallback",
+      "organizations": [
+        {
+          "name": "draw.io Ltd",
+          "url": "https://www.drawio.com/",
+          "relationship": "business-steward",
+          "source": "https://www.drawio.com/docs/about/"
+        },
+        {
+          "name": "draw.io AG",
+          "url": "https://www.drawio.com/",
+          "relationship": "business-steward",
+          "source": "https://www.drawio.com/docs/about/"
+        }
+      ],
+      "notes": "Official sustainability/about source identifies commercial publishers, no corporate donor list. Paid Atlassian customers are not sponsors.",
+      "sources": [
+        "https://www.drawio.com/docs/about/"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Docker/Tomcat container",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Self-operated web editor",
+          "notes": "Official image bundles Tomcat; no SQL/cache/queue needed for default editor.",
+          "sources": [
+            "https://www.drawio.com/docs/security/diagrams-docker-app/"
+          ]
+        },
+        {
+          "component": "Desktop binary",
+          "necessity": "one-of",
+          "group": "runtime",
+          "condition": "Local desktop editing",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://www.drawio.com/docs/security/diagrams-docker-app/"
+          ]
+        },
+        {
+          "component": "Browser and local/chosen file storage",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://www.drawio.com/docs/security/diagrams-docker-app/"
+          ]
+        },
+        {
+          "component": "Google Drive or OneDrive",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Chosen external document storage",
+          "notes": "Not a required vendor repository.",
+          "sources": [
+            "https://www.drawio.com/docs/security/diagrams-docker-app/"
+          ]
+        },
+        {
+          "component": "Separate export server",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Only server-rendered exports or PDF embedded diagram copy",
+          "notes": "Default uses browser rendering/print-to-PDF, no export-server dependency.",
+          "sources": [
+            "https://www.drawio.com/docs/security/diagrams-docker-app/"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Container host; Windows/macOS/Linux desktop",
+        "notes": "No documented minima in checked page; example -m1g container flag is an example limit, not a minimum.",
+        "sources": [
+          "https://www.drawio.com/docs/security/diagrams-docker-app/"
+        ]
+      },
+      "notes": "Editor can run as desktop or self-operated web container. Default container exports in browser and uses local/chosen storage; no required database, Redis, queue or SMTP. Paid Atlassian integrations separate.",
+      "sources": [
+        "https://www.drawio.com/docs/security/diagrams-docker-app/"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "Docker run",
+          "url": "https://www.drawio.com/docs/security/diagrams-docker-app/",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Single documented container command after installing Docker; not true one-click.",
+          "sources": [
+            "https://www.drawio.com/docs/security/diagrams-docker-app/"
+          ]
+        }
+      ],
+      "notes": "Checked official deployment documentation; manual Docker Compose is not a one-click offer.",
+      "sources": [
+        "https://www.drawio.com/docs/security/diagrams-docker-app/"
+      ]
+    }
+  }
+}

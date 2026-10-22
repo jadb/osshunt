@@ -13,12 +13,13 @@
     "investors": [
       {
         "name": "Spectrum Equity",
-        "source": "https://lucid.co/about"
+        "source": "https://www.spectrumequity.com/portfolio/?sector=productivity-apps"
       }
     ],
     "notes": "Official About dates cofounding to 2010 and lists investors/board representation. Private-company classification based on company presentation; full current cap table not disclosed.",
     "sources": [
-      "https://lucid.co/about"
+      "https://lucid.co/about",
+      "https://www.spectrumequity.com/portfolio/?sector=productivity-apps"
     ]
   },
   "pricingTiers": [

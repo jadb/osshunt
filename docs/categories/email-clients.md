@@ -16,6 +16,8 @@ Identified edition is core Roundcube webmail: GPLv3-or-later with custom skins/p
 
 License: GPL-3.0-or-later; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/roundcube/roundcubemail/blob/d70bb19622238b206f0f636e847e80815a4d1f76/LICENSE.md), [edition evidence](https://roundcube.net/about/), [hosting](https://roundcube.net/about/), [repository](https://github.com/roundcube/roundcubemail).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/roundcube.md).
+
 Service costs/limits: Requires a web/PHP/database deployment plus compatible IMAP and SMTP services; Roundcube alone does not provide mailbox hosting or email delivery.; Calendar and multi-account extensions are listed as third-party additions; verify their licenses and availability separately.; Hosted mail services and enterprise support can cost money without restricting the core webmail software.
 
 Repository: pushed 2026-10-21T17:50:22Z; latest commit 2026-10-21T17:36:21Z; latest published release 1.7.5 (2026-10-19T07:02:13Z). Quick analysis: 6.2/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -27,6 +29,8 @@ Repository: pushed 2026-10-21T17:50:22Z; latest commit 2026-10-21T17:36:21Z; lat
 Desktop client operated locally on Windows, Linux, and macOS; A describes the freely available client functionality, not server hosting. Official pages call it free forever and link MPL 2.0. Dependencies/other-licenses have separate notices; not every bundled file is MPL. Current developer docs and repository identify thunderbird/thunderbird-desktop as official, superseding use of the experimental Mozilla GitHub copy as canonical.
 
 License: MPL-2.0; identified core OSI: yes; self-hostable: no; first-party hosted offer: no. [License](https://github.com/thunderbird/thunderbird-desktop/blob/453702ff89d8169eed2a94d19057a95613394df1/mail/base/content/aboutDialog.xhtml), [edition evidence](https://www.thunderbird.net/en-US/desktop/), [hosting](https://www.tb.pro/en-US/), [repository](https://github.com/thunderbird/thunderbird-desktop).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/thunderbird.md).
 
 Service costs/limits: Requires an existing email account/mail service; the desktop client is not an IMAP/SMTP server or hosted webmail.; Thundermail is a separate optional paid mail-hosting service in beta/waitlist; it does not paywall the desktop client.
 

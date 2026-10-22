@@ -1,0 +1,235 @@
+{
+  "id": "copyparty",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "9001 and copyparty contributors",
+    "kind": "individual",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "individual",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Public repository identifies maintainer9001 and contributors. Legal identity, exact start year and corporate financing not established. MIT community software, no verified company steward.",
+    "sources": [
+      "https://github.com/9001/copyparty"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "copyparty",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open program; infrastructure and third-party services are separate.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party organizational commercial software plan found in the checked project source.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party enterprise commercial software plan found in the checked project source.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Integrated protocol/media features offer niche usability differentiation; a portable MIT implementation provides limited exclusive defensibility.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Resumable browser uploads and content deduplication support unreliable connections and repeated large transfers.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    {
+      "claim": "WebDAV, SFTP, FTP and TFTP expose files through multiple client protocols.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    {
+      "claim": "Media indexing, thumbnails and browser playback combine file delivery with media browsing.",
+      "basis": "assessment",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "Python runtime",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Recommended copyparty-sfx.py distribution",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        },
+        {
+          "component": "Jinja2",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Mandatory template library bundled in SFX.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        },
+        {
+          "component": "SQLite local index",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Filesystem indexing enabled",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        },
+        {
+          "component": "FFmpeg/ffprobe",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Video/audio thumbnails, transcoding or media tag extraction selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        },
+        {
+          "component": "Pillow/pyvips",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Image thumbnails",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        },
+        {
+          "component": "Paramiko",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "SFTP server enabled",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        },
+        {
+          "component": "pyftpdlib; pyOpenSSL for FTPS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "FTP/FTPS server enabled",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux, Windows, macOS and other Python-supported systems",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://github.com/9001/copyparty"
+        ]
+      },
+      "notes": "SFX bundles Jinja2; Windows executable embeds Python. No separate SQL/Redis/queue needed for basic server. Optional media/protocol packages are feature-dependent.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "offered",
+      "options": [
+        {
+          "name": "pip installation",
+          "url": "https://github.com/9001/copyparty",
+          "kind": "one-command",
+          "officialStatus": "first-party",
+          "notes": "Official README documents pip install; command-line package install, not browser one-click.",
+          "sources": [
+            "https://github.com/9001/copyparty"
+          ]
+        }
+      ],
+      "notes": "Officially documented install options; one-command is separate from browser one-click.",
+      "sources": [
+        "https://github.com/9001/copyparty"
+      ]
+    }
+  }
+}

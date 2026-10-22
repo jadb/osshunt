@@ -4,16 +4,19 @@
   "organization": {
     "name": "Apple Inc.",
     "kind": "business",
-    "foundedYear": null,
-    "ageBasis": "unknown",
+    "foundedYear": 1976,
+    "ageBasis": "company-founded",
     "ownership": "public",
     "parent": null,
-    "stockSymbols": [],
+    "stockSymbols": [
+      "NASDAQ:AAPL"
+    ],
     "funding": "funded",
     "investors": [],
-    "notes": "Official investor FAQ confirms publicly held shares/dividends. Founding year and historical venture investors not established by checked primary pages; no guessed investor roster.",
+    "notes": "Apple official 2026 anniversary announcement dates founding to April1,1976; company age distinct from Final Cut launch. Investor FAQ confirms Nasdaq AAPL and December1980 IPO. Public equity funded; historical private-investor roster not established.",
     "sources": [
-      "https://investor.apple.com/faq/default.aspx"
+      "https://investor.apple.com/faq/default.aspx",
+      "https://www.apple.com/eg/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/"
     ]
   },
   "pricingTiers": [

@@ -16,12 +16,12 @@ Known equity investors: none listed in the reviewed evidence; this alone does no
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Pro | unknown | — | — | — | unspecified | paid product. Paid Pro exists; numeric prices render ellipses in extracted page. Free limited-access tier also offered. [1](https://smallpdf.com/pricing) |
-| popular | unknown | unknown | — | — | — | unspecified | paid product. No public designation or amount established from checked pricing page. [1](https://smallpdf.com/pricing) |
-| business | Team | unknown | — | — | — | 2 | paid product. 2–19 seats, centralized billing and member management; numeric price not rendered. [1](https://smallpdf.com/pricing) |
-| enterprise | Business | quote | — | — | — | 20 | paid product. Closest larger-organization tier; custom offer for 20+ users, not named Enterprise. [1](https://smallpdf.com/pricing) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Pro | unknown | — | — | — | — | unspecified | paid product. Paid Pro exists; numeric prices render ellipses in extracted page. Free limited-access tier also offered. [1](https://smallpdf.com/pricing) |
+| popular | unknown | unknown | — | — | — | — | unspecified | paid product. No public designation or amount established from checked pricing page. [1](https://smallpdf.com/pricing) |
+| business | Team | unknown | — | — | — | — | 2 | paid product. 2–19 seats, centralized billing and member management; numeric price not rendered. [1](https://smallpdf.com/pricing) |
+| enterprise | Business | quote | — | — | — | — | 20 | paid product. Closest larger-organization tier; custom offer for 20+ users, not named Enterprise. [1](https://smallpdf.com/pricing) |
 
 ## Defensibility assessments
 

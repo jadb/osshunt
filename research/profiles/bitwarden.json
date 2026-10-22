@@ -145,7 +145,7 @@
       "mode": "server",
       "requirements": [
         {
-          "component": "Docker Engine 26+ and Docker Compose",
+          "component": "Docker Engine26+",
           "necessity": "required",
           "group": null,
           "condition": "Always",
@@ -155,13 +155,73 @@
           ]
         },
         {
-          "component": "MSSQL Express bundled, or supported external SQL Server",
-          "necessity": "one-of",
-          "group": "database",
-          "condition": "Standard deployment",
+          "component": "Docker Compose",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Standard Docker stack; Lite may use docker run",
           "notes": "Documented deployment component.",
           "sources": [
             "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        },
+        {
+          "component": "Bundled MSSQL Express",
+          "necessity": "one-of",
+          "group": "standard-database",
+          "condition": "Standard deployment default",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        },
+        {
+          "component": "External MSSQL",
+          "necessity": "one-of",
+          "group": "standard-database",
+          "condition": "Standard deployment alternative SQL Server",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-on-premise-linux/"
+          ]
+        },
+        {
+          "component": "SQLite (embedded file)",
+          "necessity": "one-of",
+          "group": "lite-database",
+          "condition": "Lite deployment only; personal/home-lab scope",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-and-deploy-lite/"
+          ]
+        },
+        {
+          "component": "PostgreSQL",
+          "necessity": "one-of",
+          "group": "lite-database",
+          "condition": "Lite deployment only; personal/home-lab scope",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-and-deploy-lite/"
+          ]
+        },
+        {
+          "component": "MySQL/MariaDB",
+          "necessity": "one-of",
+          "group": "lite-database",
+          "condition": "Lite deployment only; personal/home-lab scope",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-and-deploy-lite/"
+          ]
+        },
+        {
+          "component": "MSSQL",
+          "necessity": "one-of",
+          "group": "lite-database",
+          "condition": "Lite deployment only; personal/home-lab scope",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://bitwarden.com/help/install-and-deploy-lite/"
           ]
         },
         {
@@ -180,14 +240,16 @@
         "memory": "2GB minimum; 4GB recommended",
         "storage": "12GB minimum; 25GB recommended",
         "os": "Linux; separate Windows installation documented",
-        "notes": "Official standard-deployment minimum and recommended values.",
+        "notes": "Values shown are Standard deployment minimum/recommendation. Lite separately requires at least200MB RAM,1GB storage and Docker26+; not interchangeable business sizing.",
         "sources": [
-          "https://bitwarden.com/help/install-on-premise-linux/"
+          "https://bitwarden.com/help/install-on-premise-linux/",
+          "https://bitwarden.com/help/install-and-deploy-lite/"
         ]
       },
-      "notes": "Standard Docker deployment uses bundled SQL Server Express. Other Bitwarden deployment editions may differ; not conflated with Vaultwarden.",
+      "notes": "Standard business deployment requires MSSQL; bundled Express default or external MSSQL. Lite (formerly Unified, exited beta/renamed December 2025) supports SQLite/PostgreSQL/MySQL/MariaDB/MSSQL and ARM. Official Lite warning: personal/home-labs, not business contexts. Database alternatives apply to their stated path, not simultaneously.",
       "sources": [
-        "https://bitwarden.com/help/install-on-premise-linux/"
+        "https://bitwarden.com/help/install-on-premise-linux/",
+        "https://bitwarden.com/help/install-and-deploy-lite/"
       ]
     },
     "oneClickInstall": {
@@ -206,7 +268,8 @@
       ],
       "notes": "Officially documented install options; one-command is separate from browser one-click.",
       "sources": [
-        "https://bitwarden.com/help/install-on-premise-linux/"
+        "https://bitwarden.com/help/install-on-premise-linux/",
+        "https://marketplace.digitalocean.com/apps/bitwarden"
       ]
     }
   }

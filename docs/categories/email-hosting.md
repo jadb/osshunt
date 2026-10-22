@@ -21,6 +21,8 @@ GPLv3 orchestration and mailcow UI with an integrated mail/groupware stack. Revi
 
 License: GPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/mailcow/mailcow-dockerized/blob/55982ac74bfd35581cc44b122ab5fc659e3ae90a/LICENSE), [edition evidence](https://docs.mailcow.email/), [hosting](https://docs.mailcow.email/#commercial-support), [repository](https://github.com/mailcow/mailcow-dockerized).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/mailcow.md).
+
 Service costs/limits: Server resources, DNS, backups, upgrades and mail delivery reputation remain operator responsibilities; paid managed hosting/support are optional services.
 
 Repository: pushed 2026-10-21T17:39:14Z; latest commit 2026-10-21T17:36:04Z; latest published release 2026-10 (2026-10-21T17:39:15Z). Quick analysis: 5.3/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -35,6 +37,8 @@ Repository: pushed 2026-10-21T17:39:14Z; latest commit 2026-10-21T17:36:04Z; lat
 Community source is AGPL-3.0-only, with per-file dual licensing and proprietary SEL enterprise sections. C because recovery and AI-assisted mail workflows require Enterprise, beyond administrative extras. Optional first-party managed hosting is announced, not confirmed generally available.
 
 License: AGPL-3.0-only; identified core OSI: yes; self-hostable: yes; first-party hosted offer: no. [License](https://github.com/stalwartlabs/stalwart/blob/aa47d8ef7bfba7200d3293198ac2592747b20e73/LICENSES/AGPL-3.0-only.txt), [edition evidence](https://www.stalw.art/compare/), [hosting](https://www.stalw.art/managed-email/), [repository](https://github.com/stalwartlabs/stalwart).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/stalwart.md).
 
 Paid restrictions: Enterprise license required for deleted-email restoration and account archiving/un-deletion.; Enterprise-only AI/LLM spam classification and Sieve scripting; standard rule/statistical spam filtering remains Community.; Additional enterprise administration includes multi-tenancy, SCIM provisioning, advanced telemetry and sharded/read-replica storage.
 

@@ -1,0 +1,207 @@
+{
+  "id": "restic",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "restic project",
+    "kind": "community",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Community backup program, not a verified commercial company. Project start year and formal capital history not established from checked homepage/repository; no bootstrapping inference.",
+    "sources": [
+      "https://restic.net/",
+      "https://github.com/restic/restic"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "restic",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free local command-line backup program",
+      "notes": "Open program; infrastructure and third-party services are separate.",
+      "sources": [
+        "https://restic.net/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://restic.net/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party organizational commercial software plan found in the checked project source.",
+      "sources": [
+        "https://restic.net/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party enterprise commercial software plan found in the checked project source.",
+      "sources": [
+        "https://restic.net/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Portable repository format, storage integrations and accumulated backup history create practical retention costs; open tooling limits exclusive control.",
+      "basis": "assessment",
+      "sources": [
+        "https://restic.net/",
+        "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Content-aware incremental transfers avoid reuploading unchanged parts of files.",
+      "basis": "assessment",
+      "sources": [
+        "https://restic.net/"
+      ]
+    },
+    {
+      "claim": "Encrypted repositories support both local and multiple remote storage backends.",
+      "basis": "assessment",
+      "sources": [
+        "https://restic.net/",
+        "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+      ]
+    },
+    {
+      "claim": "Repository verification allows operators to check backup restorability.",
+      "basis": "assessment",
+      "sources": [
+        "https://restic.net/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "sources": [
+        "https://github.com/restic/restic"
+      ]
+    },
+    "selfHosting": {
+      "mode": "desktop",
+      "requirements": [
+        {
+          "component": "restic standalone executable",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://restic.readthedocs.io/en/stable/020_installation.html"
+          ]
+        },
+        {
+          "component": "Local filesystem",
+          "necessity": "one-of",
+          "group": "storage",
+          "condition": "Local repository",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+          ]
+        },
+        {
+          "component": "SFTP / REST server",
+          "necessity": "one-of",
+          "group": "storage",
+          "condition": "Selected remote server backend",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+          ]
+        },
+        {
+          "component": "S3-compatible, Azure, B2, Google Cloud, Swift or rclone backend",
+          "necessity": "one-of",
+          "group": "storage",
+          "condition": "Selected object/cloud backend; provider credentials required",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+          ]
+        },
+        {
+          "component": "rclone executable",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "rclone backend selected",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux, BSD, macOS and Windows",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://restic.readthedocs.io/en/stable/020_installation.html"
+        ]
+      },
+      "notes": "CLI client, not an always-on server. No SQL, cache or queue required; schedule jobs externally. Storage endpoints and credentials depend on backend. Native binary download/package installation, not a server one-click service.",
+      "sources": [
+        "https://restic.readthedocs.io/en/stable/020_installation.html"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "not-applicable",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://restic.readthedocs.io/en/stable/020_installation.html"
+      ]
+    }
+  }
+}

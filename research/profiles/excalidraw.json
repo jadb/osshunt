@@ -1,0 +1,219 @@
+{
+  "id": "excalidraw",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Excalidraw s.r.o.",
+    "kind": "business",
+    "foundedYear": null,
+    "ageBasis": "unknown",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "unknown",
+    "investors": [],
+    "notes": "Terms identify Czech Excalidraw s.r.o. as accountable business. Exact company incorporation/project start and equity funding not established; donations are separate, no bootstrap inference.",
+    "sources": [
+      "https://plus.excalidraw.com/terms-of-service"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Excalidraw editor",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "MIT editor/client",
+      "notes": "Open editor independent of paid Plus cloud.",
+      "sources": [
+        "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "paid product",
+      "notes": "No public designation or amount established from checked pricing page.",
+      "sources": [
+        "https://plus.excalidraw.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Plus",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Plus includes teams and $6/month/user displayed, but extracted monthly/annual toggle selection not established; avoid guessing billing total.",
+      "sources": [
+        "https://plus.excalidraw.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No distinct enterprise terms verified from accessible pricing text.",
+      "sources": [
+        "https://plus.excalidraw.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Recognizable sketch style, shape libraries and an embedding ecosystem support adoption; open editor/export formats reduce exclusive lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Hand-drawn-style shapes produce informal explanatory sketches quickly.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+      ]
+    },
+    {
+      "claim": "Shape libraries and bound labeled arrows speed reusable technical diagrams.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+      ]
+    },
+    {
+      "claim": "PNG/SVG and editable JSON export move drawings between documents and future edits.",
+      "basis": "assessment",
+      "sources": [
+        "https://raw.githubusercontent.com/excalidraw/excalidraw/master/README.md"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "identified",
+      "organizations": [
+        {
+          "name": "Datadog",
+          "url": "https://www.datadoghq.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Craft Docs",
+          "url": "https://www.craft.do/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "Slite",
+          "url": "https://slite.com/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        },
+        {
+          "name": "MATHEMA GmbH",
+          "url": "https://www.mathema.de/",
+          "relationship": "corporate-sponsor",
+          "source": "https://opencollective.com/excalidraw"
+        }
+      ],
+      "notes": "Official repository links collective. Top organizational financial contributors include Datadog/Craft/Slite; MATHEMA recurring contribution dated 2026-10-20. Historical totals do not imply current recurring contracts.",
+      "sources": [
+        "https://opencollective.com/excalidraw"
+      ]
+    },
+    "selfHosting": {
+      "mode": "hybrid",
+      "requirements": [
+        {
+          "component": "Browser and static web/client hosting",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Local runtime component; bundled by official binary where applicable.",
+          "sources": [
+            "https://docs.excalidraw.com/docs/introduction/development"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "optional",
+          "group": null,
+          "condition": "Prebuilt client container deployment",
+          "notes": "Alternative to source build; frontend only.",
+          "sources": [
+            "https://docs.excalidraw.com/docs/introduction/development"
+          ]
+        },
+        {
+          "component": "Node.js and Yarn",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Build/development from source",
+          "notes": "Build tools, not external production database.",
+          "sources": [
+            "https://docs.excalidraw.com/docs/introduction/development"
+          ]
+        },
+        {
+          "component": "Excalidraw room WebSocket service",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Custom collaboration deployment",
+          "notes": "Official docs link separate excalidraw-room. Prebuilt self-host client does not enable collaboration/sharing by default; production persistence stack not established from these docs.",
+          "sources": [
+            "https://docs.excalidraw.com/docs/introduction/development"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Browser client; container-compatible host",
+        "notes": "Numeric hardware minimum not published in checked installation source; workload and file sizes determine practical needs.",
+        "sources": [
+          "https://docs.excalidraw.com/docs/introduction/development"
+        ]
+      },
+      "notes": "Client/library can operate locally or as static site. Official Docker self-host image lacks default sharing/collaboration; room backend is separate. Do not imply commercial Plus is included in self-hosted editor.",
+      "sources": [
+        "https://docs.excalidraw.com/docs/introduction/development"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official deployment documentation; manual Docker Compose is not a one-click offer.",
+      "sources": [
+        "https://docs.excalidraw.com/docs/introduction/development"
+      ]
+    }
+  }
+}

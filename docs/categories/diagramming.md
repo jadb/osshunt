@@ -17,6 +17,8 @@ Scope: Apache-2.0 general diagram editor, free to use and deploy yourself. Publi
 
 License: Apache-2.0; identified core OSI: yes; self-hostable: yes; first-party hosted offer: yes. [License](https://github.com/jgraph/drawio/blob/17b367b91dbab91804f852645788d7ffb46dcb79/LICENSE), [edition evidence](https://www.drawio.com/docs/about/), [hosting](https://www.drawio.com/docs/about/), [repository](https://github.com/jgraph/drawio).
 
+[Sponsors, requirements, installation options, pricing and product profile](../products/drawio.md).
+
 Service costs/limits: First-party app.diagrams.net serves the free editor; diagrams remain on your device or chosen storage, rather than a first-party document repository.; Paid Confluence/Jira integrations provide embedded Atlassian workflows and support; external storage and collaboration deployment must be evaluated separately.
 
 Repository: pushed 2026-10-18T10:53:15Z; latest commit 2026-10-18T10:53:02Z; latest published release v32.5.5 (2026-10-18T10:54:09Z). Quick analysis: 5.9/10; balanced policy passed. Automated repository signals; not a version-specific security audit.
@@ -29,6 +31,8 @@ Repository: pushed 2026-10-18T10:53:15Z; latest commit 2026-10-18T10:53:02Z; lat
 Scope: MIT text-to-diagram JavaScript library, installable and usable in your own pages; not a standalone collaboration server. All identified library functionality is open. First-party Mermaid Live Editor is linked by official docs. Mermaid Chart / Mermaid.ai commercial editor and collaboration plans are separate from this library.
 
 License: MIT; identified core OSI: yes; self-hostable: no; first-party hosted offer: yes. [License](https://github.com/mermaid-js/mermaid/blob/6d8921f94f9a12b76586eddcf45a566080d4767e/LICENSE), [edition evidence](https://mermaid.js.org/intro/), [hosting](https://mermaid.js.org/ecosystem/mermaid-chart.html), [repository](https://github.com/mermaid-js/mermaid).
+
+[Sponsors, requirements, installation options, pricing and product profile](../products/mermaid.md).
 
 Service costs/limits: Self-operated library can render locally or within your website; selfHostable=false records that the library is not a server application.; Mermaid.ai paid platform has hosted diagram, AI, collaboration and enterprise features; these are not bundled into the MIT library.
 

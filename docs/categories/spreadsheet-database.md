@@ -7,6 +7,7 @@ Audience: Operations, marketing, sales, HR, finance and project teams building s
 Use-case sources: [1](https://airtable.com/pricing), [2](https://baserow.io/pricing).
 
 - [Airtable](https://airtable.com): USD 20/seat/month, annual billing. Team starts at $20/user/month billed annually; free plan available; price checked October 21, 2026. [Pricing](https://airtable.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/airtable.md).
 
 ### Baserow Open Source Edition — C
 

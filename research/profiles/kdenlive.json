@@ -4,14 +4,14 @@
   "organization": {
     "name": "Kdenlive / KDE community",
     "kind": "community",
-    "foundedYear": null,
-    "ageBasis": "unknown",
+    "foundedYear": 2003,
+    "ageBasis": "product-launched",
     "ownership": "community",
     "parent": null,
     "stockSymbols": [],
     "funding": "not-applicable",
     "investors": [],
-    "notes": "Official homepage identifies Made by KDE; company founding not applicable. Precise project start not established. Community project; equity-funding classification not applicable; donors are not equity investors.",
+    "notes": "Current official history dates documented launch/version0.2.3 to October2003. KDE community project, not a business founding; no invented incorporation year or equity investors.",
     "sources": [
       "https://kdenlive.org/about/"
     ]

@@ -258,6 +258,18 @@
                         }
                       ]
                     },
+                    "usagePrice": {
+                      "default": null,
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
                     "currency": {
                       "type": "string",
                       "minLength": 1
@@ -1058,6 +1070,18 @@
                       ]
                     },
                     "oneTimePrice": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "usagePrice": {
+                      "default": null,
                       "anyOf": [
                         {
                           "type": "number",

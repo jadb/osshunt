@@ -1,0 +1,132 @@
+{
+  "id": "dropbox",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Dropbox, Inc.",
+    "kind": "business",
+    "foundedYear": 2007,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ: DBX"
+    ],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://www.accel.com/companies/dropbox"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://www.ycombinator.com/blog/dropbox-s07-raised-6-million-sequoia-led-seri/"
+      }
+    ],
+    "notes": "Current 2026 filing identifies founded/incorporated 2007 and NASDAQ:DBX; Nevada reincorporation 2025 does not reset company age. Historical venture backers include Accel and Sequoia; present holdings/control not inferred.",
+    "sources": [
+      "https://investors.dropbox.com/node/13601/html",
+      "https://www.accel.com/companies/dropbox",
+      "https://www.ycombinator.com/blog/dropbox-s07-raised-6-million-sequoia-led-seri/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Plus",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "account",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Page displays$9.99/month but billing selector monthly/yearly state not preserved; no normalized annual/monthly amount asserted. Basic free2GB plan also offered.",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Standard labelled Best Value; no explicit Most Popular/Recommended designation established under requested definition.",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Standard",
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": 1,
+      "scope": "vendor commercial product",
+      "notes": "Current page says1person or more and$15/user/month; selector term unresolved. Not using historical3seat minimum.",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "organization",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "Contact us for pricing; custom business security/integrations.",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Large collaborative installed base and accumulated team-folder/link workflows create network and switching effects, tempered by competing file-sync standards and exportability.",
+      "basis": "assessment",
+      "sources": [
+        "https://investors.dropbox.com/node/13601/html",
+        "https://www.dropbox.com/plans"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Cross-device synchronization and shared team folders support persistent collaborative file access.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    },
+    {
+      "claim": "Deleted-file restoration and plan-dependent history provide recovery from accidental changes.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    },
+    {
+      "claim": "File transfers, PDF editing and e-signatures combine common document handoff tasks.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

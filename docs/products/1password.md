@@ -16,12 +16,12 @@ Known investors: [ICONIQ Growth](https://www.prnewswire.com/news-releases/1passw
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Individual | published | — | USD 47.88/user | — | unspecified | personal password manager. Regular $3.99/month billed yearly multiplied by 12. New direct customers offered $2.99/month for first 12 months ($35.88 first year). Monthly billing amount not verified. [1](https://1password.com/pricing/personal) |
-| popular | unknown | unknown | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://1password.com/pricing/personal) |
-| business | Business | published | — | USD 107.88/user | — | 1 | vendor commercial product. $8.99/user/month billed annually multiplied by 12. [1](https://1password.com/pricing/business) |
-| enterprise | Enterprise Password Manager | quote | — | — | — | unspecified | vendor commercial product. Enterprise page requests a quote; platform products priced separately. [1](https://1password.com/pricing) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Individual | published | — | USD 47.88/user | — | — | unspecified | personal password manager. Regular $3.99/month billed yearly multiplied by 12. New direct customers offered $2.99/month for first 12 months ($35.88 first year). Monthly billing amount not verified. [1](https://1password.com/pricing/personal) |
+| popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://1password.com/pricing/personal) |
+| business | Business | published | — | USD 107.88/user | — | — | 1 | vendor commercial product. $8.99/user/month billed annually multiplied by 12. [1](https://1password.com/pricing/business) |
+| enterprise | Enterprise Password Manager | quote | — | — | — | — | unspecified | vendor commercial product. Enterprise page requests a quote; platform products priced separately. [1](https://1password.com/pricing) |
 
 ## Defensibility assessments
 

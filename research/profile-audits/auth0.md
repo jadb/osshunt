@@ -15,3 +15,11 @@
 - Public sources read/queried: https://auth0.com/blog/announcing-auth0/, https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/, https://auth0.com/blog/auth0-announces-120m-seriesf-funding/, https://auth0.com/pricing
 - Decision: prices preserve billing term and scope; unresolved facts remain null/unknown. Product reasons and moat labelled assessments.
 - Persisted profile and claim ledger; structural checks: exactly four unique pricing roles, exactly three reasons.
+
+- Final QA: preserved public-source facts, checked all required field shapes, four unique pricing roles and exactly three functional product assessments.
+- Public sources read/queried: https://auth0.com/blog/announcing-auth0/, https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/, https://auth0.com/blog/auth0-announces-120m-seriesf-funding/, https://auth0.com/pricing
+- Decision: prices preserve billing term and scope; unresolved facts remain null/unknown. Product reasons and moat labelled assessments.
+- Persisted profile and claim ledger; structural checks: exactly four unique pricing roles, exactly three reasons.
+
+- Local writes: apply_patch created build.py and numbered batch scripts in assigned temporary directory; Python batch scripts persisted JSON/JSONL/Markdown. No repository writes.
+- Final command: `python3 finalize.py`; local-only schema/count/URL checks follow.

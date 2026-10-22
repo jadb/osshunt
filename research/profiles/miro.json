@@ -50,15 +50,15 @@
     {
       "role": "entry",
       "name": "Starter",
-      "status": "unknown",
+      "status": "published",
       "monthlyPrice": null,
-      "annualPrice": null,
+      "annualPrice": 96,
       "oneTimePrice": null,
       "currency": "USD",
-      "unit": "user",
+      "unit": "member",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Named paid plan verified; current numeric prices not captured reliably. Free plan has 3 editable boards.",
+      "notes": "Current yearly-billed rate $8/month/member multiplied by 12; monthly cancellable amount not captured. Card billing has no seat minimum; invoice minimum differs.",
       "sources": [
         "https://miro.com/pricing/"
       ]
@@ -82,15 +82,15 @@
     {
       "role": "business",
       "name": "Business",
-      "status": "unknown",
+      "status": "published",
       "monthlyPrice": null,
-      "annualPrice": null,
+      "annualPrice": 240,
       "oneTimePrice": null,
       "currency": "USD",
-      "unit": "user",
+      "unit": "member",
       "minimumQuantity": null,
       "scope": "paid product",
-      "notes": "Named Business plan verified; numeric amount unresolved. Card subscriptions have no license minimum; invoice minimum 5.",
+      "notes": "Current yearly-billed rate $20/month/member multiplied by 12; monthly cancellable amount not captured. Card billing has no seat minimum; invoice minimum differs.",
       "sources": [
         "https://miro.com/pricing/"
       ]
@@ -104,9 +104,9 @@
       "oneTimePrice": null,
       "currency": "USD",
       "unit": "user",
-      "minimumQuantity": null,
+      "minimumQuantity": 30,
       "scope": "paid product",
-      "notes": "Enterprise custom controls; sales-led pricing, no verified numeric price.",
+      "notes": "Current pricing says custom pricing from 30 members; sales quote, no invented amount.",
       "sources": [
         "https://miro.com/pricing/"
       ]

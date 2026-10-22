@@ -7,6 +7,7 @@ Audience: Teams across business functions managing shared tasks.. Trello explici
 Use-case sources: [1](https://trello.com/pricing).
 
 - [Trello](https://trello.com/): USD 5/seat/month, annual billing. Standard USD5 per user/month annually; USD6 billed monthly. Free tier also available. [Pricing](https://trello.com/pricing).
+  [Pricing tiers, organization and product reasons](../products/trello.md).
 
 ### Kanboard — A
 

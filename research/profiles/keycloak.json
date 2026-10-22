@@ -1,0 +1,268 @@
+{
+  "id": "keycloak",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Keycloak project (CNCF)",
+    "kind": "foundation",
+    "foundedYear": 2013,
+    "ageBasis": "project-started",
+    "ownership": "community",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "not-applicable",
+    "investors": [],
+    "notes": "CNCF project page dates first commit July 2013; age refers to project start, not CNCF founding. First stable release 2014. Community project; no equity investment entity. Named financial/in-kind corporate sponsors not established by checked project/community pages.",
+    "sources": [
+      "https://www.cncf.io/projects/keycloak/",
+      "https://www.keycloak.org/"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Keycloak",
+      "status": "free",
+      "monthlyPrice": 0,
+      "annualPrice": 0,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "free self-hosted core",
+      "notes": "Open program; infrastructure and third-party services are separate.",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No explicit most-popular/recommended designation found on the checked page.",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "role": "business",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party organizational commercial software plan found in the checked project source.",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": null,
+      "status": "not-offered",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial product",
+      "notes": "No distinct first-party enterprise commercial software plan found in the checked project source.",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Long-lived standards implementation and ecosystem integrations create knowledge and migration costs; permissive open source limits proprietary lock-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keycloak.org/",
+        "https://www.cncf.io/projects/keycloak/"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Identity brokering combines social sign-in and existing OIDC/SAML providers through an administration console.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "claim": "LDAP/Active Directory federation allows existing workforce identities to participate in application sign-in.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    },
+    {
+      "claim": "Central administration covers realms, sessions, applications and fine-grained authorization policies.",
+      "basis": "assessment",
+      "sources": [
+        "https://www.keycloak.org/"
+      ]
+    }
+  ],
+  "alternativeDetails": {
+    "sponsorship": {
+      "status": "none-found",
+      "organizations": [],
+      "notes": "Checked official project source/sponsorship section; no named corporate sponsor identified. This does not establish absence of sponsors.",
+      "sources": [
+        "https://www.keycloak.org/community"
+      ]
+    },
+    "selfHosting": {
+      "mode": "server",
+      "requirements": [
+        {
+          "component": "OpenJDK17,21 or25 LTS",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Native Linux/Windows server installation; latest supported JDK25 recommended",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/supported-configurations"
+          ]
+        },
+        {
+          "component": "Docker",
+          "necessity": "one-of",
+          "group": "container-runtime",
+          "condition": "Container deployment; image bundles OpenJDK21",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/supported-configurations"
+          ]
+        },
+        {
+          "component": "Podman",
+          "necessity": "one-of",
+          "group": "container-runtime",
+          "condition": "Container deployment; image bundles OpenJDK21",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/supported-configurations"
+          ]
+        },
+        {
+          "component": "PostgreSQL 14\u201318; EnterpriseDB 17\u201318; Aurora PostgreSQL 15\u201317",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Production relational database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/db"
+          ]
+        },
+        {
+          "component": "MariaDB 10.6/10.11/11.4/11.8 LTS",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Production relational database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/db"
+          ]
+        },
+        {
+          "component": "MySQL 8.0/8.4 LTS",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Production relational database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/db"
+          ]
+        },
+        {
+          "component": "Microsoft SQL Server 2019/2022 or Azure SQL",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Production relational database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/db"
+          ]
+        },
+        {
+          "component": "Oracle 19c or 23.x",
+          "necessity": "one-of",
+          "group": "database",
+          "condition": "Production relational database",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/db"
+          ]
+        },
+        {
+          "component": "TLS certificates / HTTPS",
+          "necessity": "required",
+          "group": null,
+          "condition": "Always",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/containers"
+          ]
+        },
+        {
+          "component": "SMTP",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Email verification/password reset",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/"
+          ]
+        },
+        {
+          "component": "External Infinispan16.0.15",
+          "necessity": "conditional",
+          "group": null,
+          "condition": "Documented clustering/high-availability topology; not a single-node baseline requirement",
+          "notes": "Documented deployment component.",
+          "sources": [
+            "https://www.keycloak.org/server/supported-configurations"
+          ]
+        }
+      ],
+      "resources": {
+        "cpu": null,
+        "memory": null,
+        "storage": null,
+        "os": "Linux or Windows native server; Linux container images",
+        "notes": "No numerical hardware minimum established from the checked documentation.",
+        "sources": [
+          "https://www.keycloak.org/server/containers"
+        ]
+      },
+      "notes": "Native Linux/Windows JVM distribution or container deployment supported. Production relational database required; development file DB unsuitable. JVM bundled in official container (OpenJDK21), separately installed for native path (17/21/25 supported). No external Redis/queue baseline; documented HA topology adds Infinispan.",
+      "sources": [
+        "https://www.keycloak.org/server/containers",
+        "https://www.keycloak.org/server/supported-configurations",
+        "https://www.keycloak.org/getting-started/getting-started-zip"
+      ]
+    },
+    "oneClickInstall": {
+      "status": "none-found",
+      "options": [],
+      "notes": "Checked official installation documentation; manual installation/Compose alone is not a one-click offering.",
+      "sources": [
+        "https://www.keycloak.org/server/containers"
+      ]
+    }
+  }
+}

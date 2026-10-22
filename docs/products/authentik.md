@@ -16,12 +16,12 @@ Known investors: [Open Core Ventures](https://goauthentik.io/blog/2022-11-02-the
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Open Source | free | USD 0/user | USD 0/user | — | unspecified | self-hosted open-source core. Core software free; enterprise functionality separate. [1](https://goauthentik.io/pricing/) |
-| popular | unknown | unknown | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://goauthentik.io/pricing/) |
-| business | Enterprise | published | — | USD 60/user | — | unspecified | paid self-hosted enterprise subscription. Closest organizational plan; $5/internal user/month billed annually multiplied by 12. External users $0.02/month billed annually ($0.24/year); service accounts no cost. [1](https://goauthentik.io/pricing/) |
-| enterprise | Enterprise Plus | published | — | USD 20000/organization | — | unspecified | paid self-hosted enterprise contract. Published starting annual amount; final contract/custom terms require sales. [1](https://goauthentik.io/pricing/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Open Source | free | USD 0/user | USD 0/user | — | — | unspecified | self-hosted open-source core. Core software free; enterprise functionality separate. [1](https://goauthentik.io/pricing/) |
+| popular | unknown | unknown | — | — | — | — | unspecified | vendor commercial product. No explicit most-popular/recommended designation found on the checked page. [1](https://goauthentik.io/pricing/) |
+| business | Enterprise | published | — | USD 60/user | — | — | unspecified | paid self-hosted enterprise subscription. Closest organizational plan; $5/internal user/month billed annually multiplied by 12. External users $0.02/month billed annually ($0.24/year); service accounts no cost. [1](https://goauthentik.io/pricing/) |
+| enterprise | Enterprise Plus | published | — | USD 20000/organization | — | — | unspecified | paid self-hosted enterprise contract. Published starting annual amount; final contract/custom terms require sales. [1](https://goauthentik.io/pricing/) |
 
 ## Defensibility assessments
 
@@ -45,7 +45,8 @@ Mode: **server**. Current Compose guide documents PostgreSQL and server/worker d
 
 | Component | Requirement | Alternative group | Applies when | Detail and evidence |
 |---|---|---|---|---|
-| Docker Compose v2 or Podman | one-of | runtime | Container deployment | Documented deployment component. [1](https://docs.goauthentik.io/install-config/install/docker-compose/) |
+| Docker Composev2 | one-of | container-runtime | Compose installation | Documented deployment component. [1](https://docs.goauthentik.io/install-config/install/docker-compose/) |
+| Podman | one-of | container-runtime | Alternative container installation | Documented deployment component. [1](https://docs.goauthentik.io/install-config/install/docker-compose/) |
 | PostgreSQL | required | — | Always | Documented deployment component. [1](https://docs.goauthentik.io/install-config/install/docker-compose/) |
 | authentik server and worker processes | required | — | Always | Documented deployment component. [1](https://docs.goauthentik.io/install-config/install/docker-compose/) |
 | SMTP | conditional | — | Email notifications/account recovery flows | Documented deployment component. [1](https://docs.goauthentik.io/install-config/install/docker-compose/) |

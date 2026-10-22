@@ -1,0 +1,127 @@
+{
+  "id": "trello",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Atlassian Corporation",
+    "kind": "business",
+    "foundedYear": 2002,
+    "ageBasis": "company-founded",
+    "ownership": "public",
+    "parent": null,
+    "stockSymbols": [
+      "NASDAQ:TEAM"
+    ],
+    "funding": "mixed",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://www.accel.com/companies/atlassian"
+      }
+    ],
+    "notes": "Atlassian founded 2002; initially self-funded, later minority equity investment from Accel. Public since 2015, NASDAQ TEAM. Company age is used, not each product launch (Jira 2002, Confluence 2003; Trello acquired 2017). Accel is a historical investor; current holding not asserted.",
+    "sources": [
+      "https://www.atlassian.com/company",
+      "https://www.accel.com/companies/atlassian",
+      "https://www.atlassian.com/blog/news/2010/07/atlassian_closes_60_million_investment_from_accel_partners"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Standard",
+      "status": "published",
+      "monthlyPrice": 6,
+      "annualPrice": 60,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "5 per user/month annual-billed \u00d712; Free is separate.",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Premium",
+      "status": "published",
+      "monthlyPrice": 12.5,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Closest organizational plan; 10 annual-billed monthly \u00d712.",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 210,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "17.50 annual-billed monthly \u00d712; per-user rate varies with organization size. No monthly billing price claimed.",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "Accumulated boards, Power-Ups and automation rules make an established workspace costly to recreate.",
+      "basis": "assessment",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Capture email, Slack and Teams requests into a personal Inbox.",
+      "basis": "assessment",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    },
+    {
+      "claim": "Mirror cards across boards to coordinate the same work.",
+      "basis": "assessment",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    },
+    {
+      "claim": "Switch a board into calendar, timeline, dashboard and map views.",
+      "basis": "assessment",
+      "sources": [
+        "https://trello.com/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

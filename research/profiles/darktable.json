@@ -4,16 +4,17 @@
   "organization": {
     "name": "darktable community",
     "kind": "community",
-    "foundedYear": null,
-    "ageBasis": "unknown",
+    "foundedYear": 2009,
+    "ageBasis": "product-launched",
     "ownership": "community",
     "parent": null,
     "stockSymbols": [],
     "funding": "not-applicable",
     "investors": [],
-    "notes": "About and repository identify an open collaborative photography project. Exact start year not established from checked current sources. Community project; equity-funding classification not applicable; donors are not equity investors.",
+    "notes": "Official initial-release post dates public project debut to April8,2009. Community project rather than an equity-owned company; donations are not equity.",
     "sources": [
-      "https://www.darktable.org/about/"
+      "https://www.darktable.org/about/",
+      "https://www.darktable.org/2009/04/initial-release/"
     ]
   },
   "pricingTiers": [
@@ -116,7 +117,7 @@
   ],
   "alternativeDetails": {
     "sponsorship": {
-      "status": "none-found",
+      "status": "unknown",
       "organizations": [],
       "notes": "About/FAQ/repository checked; no corporate sponsor roster found. Donation URL failed; absence cannot establish no sponsors.",
       "sources": [

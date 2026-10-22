@@ -15,3 +15,16 @@
 - Public sources read/queried: https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/, https://www.okta.com/pricing/, https://www.okta.com/company/
 - Decision: prices preserve billing term and scope; unresolved facts remain null/unknown. Product reasons and moat labelled assessments.
 - Persisted profile and claim ledger; structural checks: exactly four unique pricing roles, exactly three reasons.
+
+- Refinement: open SEC2017 S-1/A URL; historical institutional investors from Principal Stockholders, separately from current NASDAQ listing. No current holder percentages asserted.
+- Public sources read/queried: https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/, https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm, https://www.okta.com/pricing/, https://www.okta.com/company/
+- Decision: prices preserve billing term and scope; unresolved facts remain null/unknown. Product reasons and moat labelled assessments.
+- Persisted profile and claim ledger; structural checks: exactly four unique pricing roles, exactly three reasons.
+
+- Final QA: preserved public-source facts, checked all required field shapes, four unique pricing roles and exactly three functional product assessments.
+- Public sources read/queried: https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/, https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm, https://www.okta.com/pricing/, https://www.okta.com/company/
+- Decision: prices preserve billing term and scope; unresolved facts remain null/unknown. Product reasons and moat labelled assessments.
+- Persisted profile and claim ledger; structural checks: exactly four unique pricing roles, exactly three reasons.
+
+- Local writes: apply_patch created build.py and numbered batch scripts in assigned temporary directory; Python batch scripts persisted JSON/JSONL/Markdown. No repository writes.
+- Final command: `python3 finalize.py`; local-only schema/count/URL checks follow.

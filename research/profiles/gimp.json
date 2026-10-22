@@ -4,16 +4,17 @@
   "organization": {
     "name": "GIMP community",
     "kind": "community",
-    "foundedYear": null,
-    "ageBasis": "unknown",
+    "foundedYear": 1995,
+    "ageBasis": "project-started",
     "ownership": "community",
     "parent": null,
     "stockSymbols": [],
     "funding": "not-applicable",
     "investors": [],
-    "notes": "Community development verified. Founding year not pinned by current About summary; historical links not sufficient for exact start. Community project; equity-funding classification not applicable; donors are not equity investors.",
+    "notes": "GIMP official prehistory documents development discussions in July1995; project age, not a company founding. Community project, GNOME fiscal agency separate; donations not equity.",
     "sources": [
-      "https://www.gimp.org/about/"
+      "https://www.gimp.org/about/",
+      "https://www.gimp.org/about/prehistory.html"
     ]
   },
   "pricingTiers": [

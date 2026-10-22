@@ -1,0 +1,128 @@
+{
+  "id": "linear",
+  "checkedAt": "2026-10-21",
+  "organization": {
+    "name": "Linear",
+    "kind": "business",
+    "foundedYear": 2019,
+    "ageBasis": "company-founded",
+    "ownership": "private",
+    "parent": null,
+    "stockSymbols": [],
+    "funding": "funded",
+    "investors": [
+      {
+        "name": "Accel",
+        "source": "https://linear.app/about"
+      },
+      {
+        "name": "Sequoia Capital",
+        "source": "https://linear.app/about"
+      }
+    ],
+    "notes": "Official About page gives 2019 foundation and named backers. Private venture-backed business; only institutional backers explicitly named on About page enumerated, not a complete cap table.",
+    "sources": [
+      "https://linear.app/about",
+      "https://linear.app/about"
+    ]
+  },
+  "pricingTiers": [
+    {
+      "role": "entry",
+      "name": "Basic",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 120,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "10 annual-billed per-user monthly \u00d712. Monthly-billing price not exposed. Free separate: 2 teams/250 issues.",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    },
+    {
+      "role": "popular",
+      "name": null,
+      "status": "unknown",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "No explicit Most popular or Recommended designation verified in the public pricing material read; role remains unknown.",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    },
+    {
+      "role": "business",
+      "name": "Business",
+      "status": "published",
+      "monthlyPrice": null,
+      "annualPrice": 192,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "16 annual-billed monthly \u00d712; monthly-billing figure not exposed.",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    },
+    {
+      "role": "enterprise",
+      "name": "Enterprise",
+      "status": "quote",
+      "monthlyPrice": null,
+      "annualPrice": null,
+      "oneTimePrice": null,
+      "currency": "USD",
+      "unit": "user",
+      "minimumQuantity": null,
+      "scope": "vendor commercial cloud",
+      "notes": "Custom; annual billing only; Contact sales.",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    }
+  ],
+  "moats": [
+    {
+      "claim": "A focused product-development workflow, connected intake and accumulated issue history create workflow switching costs.",
+      "basis": "assessment",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    }
+  ],
+  "productReasons": [
+    {
+      "claim": "Plan work as issues, cycles, projects and initiatives in one product hierarchy.",
+      "basis": "assessment",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    },
+    {
+      "claim": "Connect customer requests and Slack/email intake to engineering triage.",
+      "basis": "assessment",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    },
+    {
+      "claim": "Use integrated agent workflows, coding sessions and code intelligence alongside issue context.",
+      "basis": "assessment",
+      "sources": [
+        "https://linear.app/pricing"
+      ]
+    }
+  ],
+  "alternativeDetails": null
+}

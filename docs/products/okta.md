@@ -10,20 +10,20 @@ Started 2009 (company-founded); years active: 17; years in business: 17. Ages ar
 
 Listed symbols: NASDAQ: OKTA.
 
-Co-founder biography dates company founding to 2009. Current financial release verifies NASDAQ listing. Historical venture investor names not resolved from checked official funding queries; investor list left empty rather than implying no investors. [1](https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/) [2](https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-Second-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx) [3](https://www.okta.com/company/)
+Co-founder biography dates company founding to 2009. Current financial release verifies NASDAQ:OKTA.2017 SEC S-1/A Principal Stockholders identifies historical Sequoia, Andreessen Horowitz and Greylock holdings; current holdings/percentages not inferred. [1](https://www.okta.com/es-es/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/) [2](https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-Second-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx) [3](https://www.okta.com/company/) [4](https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm)
 
-Known equity investors: none listed in the reviewed evidence; this alone does not establish bootstrapping.
+Known investors: [Sequoia Capital](https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm), [Andreessen Horowitz](https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm), [Greylock Partners](https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm), [Khosla Ventures](https://www.sec.gov/Archives/edgar/data/1660134/000119312517110829/d289173ds1a.htm).
 
 ## Starting prices
 
 Monthly is the monthly-billed amount; annual is the full annual amount. Annual totals derived from annual-billed monthly rates are identified in notes. Minimum quantities, scope and usage denominators matter. A dash is unavailable or unresolved, not zero.
 
-| Role | Plan | Status | Monthly | Annual total | One-time | Minimum | Scope and evidence |
-|---|---|---|---|---|---|---|---|
-| entry | Starter | published | — | USD 72/user | — | unspecified | vendor commercial product. $6/user/month billed annually multiplied by 12; suite, not an individual SSO module. [1](https://www.okta.com/pricing/) |
-| popular | Essentials | published | — | USD 204/user | — | unspecified | vendor commercial product. Explicit Most Popular in comparison table; $17/user/month billed annually multiplied by 12. [1](https://www.okta.com/pricing/) |
-| business | Essentials | published | — | USD 204/user | — | unspecified | vendor commercial product. Closest named organizational suite; $17/user/month billed annually multiplied by 12. [1](https://www.okta.com/pricing/) |
-| enterprise | Enterprise | quote | — | — | — | unspecified | vendor commercial product. Inquire for pricing. [1](https://www.okta.com/pricing/) |
+| Role | Plan | Status | Monthly | Annual total | One-time | Usage rate | Minimum | Scope and evidence |
+|---|---|---|---|---|---|---|---|---|
+| entry | Starter | published | — | USD 72/user | — | — | unspecified | vendor commercial product. $6/user/month billed annually multiplied by 12; suite, not an individual SSO module. [1](https://www.okta.com/pricing/) |
+| popular | Essentials | published | — | USD 204/user | — | — | unspecified | vendor commercial product. Explicit Most Popular in comparison table; $17/user/month billed annually multiplied by 12. [1](https://www.okta.com/pricing/) |
+| business | Essentials | published | — | USD 204/user | — | — | unspecified | vendor commercial product. Closest named organizational suite; $17/user/month billed annually multiplied by 12. [1](https://www.okta.com/pricing/) |
+| enterprise | Enterprise | quote | — | — | — | — | unspecified | vendor commercial product. Inquire for pricing. [1](https://www.okta.com/pricing/) |
 
 ## Defensibility assessments
 
