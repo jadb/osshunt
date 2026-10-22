@@ -95,3 +95,36 @@ test('an in-progress initial reservation never reports a complete backfill', asy
   const result = await runBackfill({ ...options, fetchImpl });
   assert.equal(result.status, 'partial');
 });
+
+test('repeated failures stop the batch before touching more products', async () => {
+  const error = { status: 'error', frames: [], error: 'Archive unavailable', errorCode: 'archive_unavailable',
+    nextCheckAt: '2026-11-01T00:00:00Z' };
+  const { fetchImpl, calls } = mock({ alpha: error, beta: error, gamma: error, delta: ready });
+  const result = await runBackfill({ ...options, fetchImpl });
+  assert.equal(result.status, 'partial');
+  assert.equal(result.stoppedAfterErrors, 3);
+  assert.equal(result.products.length, 3);
+  assert.ok(!calls.some(path => path.includes('/delta')));
+});
+
+test('an old stored rate-limit failure does not prevent unrelated due products being checked', async () => {
+  const { fetchImpl } = mock({ alpha: { status: 'error', frames: [], error: 'Earlier limit',
+    errorCode: 'archive_rate_limited', checkedAt: '2026-10-01T00:00:00Z', nextCheckAt: '2026-10-31T00:00:00Z' },
+  beta: { status: 'pending' } }, () => json({ status: 'empty', frames: [], backfillComplete: true }));
+  const result = await runBackfill({ ...options, fetchImpl });
+  assert.equal(result.products.length, 2);
+  assert.equal(result.products[1].status, 'empty');
+  assert.equal(result.status, 'partial');
+});
+
+test('image error bodies retain the useful error and allow subsequent frames to cache', async () => {
+  const { fetchImpl } = mock({ alpha: { ...ready, frames: [{ id: 'one' }, { id: 'two' }] } }, ({ method, path }) => {
+    if (method === 'HEAD') return new Response(null, { status: 404 });
+    if (path.includes('/one/')) return json({ error: 'Image unavailable', code: 'archive_unavailable' }, { status: 502 });
+    return new Response(new Uint8Array([1]));
+  });
+  const result = await runBackfill({ ...options, fetchImpl, images: true });
+  assert.equal(result.status, 'partial');
+  assert.equal(result.imagesCached, 1);
+  assert.equal(result.products[0].error, 'Image retrieval failed: HTTP 502');
+});

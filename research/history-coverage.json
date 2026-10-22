@@ -1,0 +1,2071 @@
+{
+  "generatedAt": "2026-10-22T02:02:23.442Z",
+  "service": "https://osshunt-history.ideacrafters-llc.workers.dev",
+  "catalog": 227,
+  "counts": {
+    "pending": 218,
+    "empty": 3,
+    "error": 3,
+    "ready": 3
+  },
+  "frames": 86,
+  "cachedImages": 2,
+  "cachedBytes": 419549,
+  "initialBackfillComplete": false,
+  "products": [
+    {
+      "id": "1password",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "acronis-cyber-protect",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "activepieces",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "adobe-acrobat",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "adobe-lightroom",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "adobe-photoshop",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "adobe-premiere-pro",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "affine",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "aircall",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "airtable",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "akaunting",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "algolia",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "apache-superset",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "appflowy",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "appsmith",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "appwrite",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "asana",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "asterisk",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "auth0",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "authelia",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "authentik",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "backblaze-business-backup",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bamboohr",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "baserow",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bigbluebutton",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bigcommerce",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bitwarden",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bookstack",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "borgbackup",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "brandfolder",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bruno",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "budibase",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "buffer",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "bynder",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "cal-com",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "cal-diy",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "calendly",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "cap",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "chatwoot",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "cloudflare-access",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "collabora-online",
+      "status": "empty",
+      "frames": 0,
+      "checkedAt": "2026-10-22T01:57:35.561Z",
+      "nextCheckAt": "2026-11-21T01:57:35.561Z",
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "confluence",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "coolify",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "copyparty",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "darktable",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "datadog",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "docebo",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "docmost",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "documenso",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "docuseal",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "docusign",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "docuware",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "dokku",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "drawio",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "dropbox",
+      "status": "error",
+      "frames": 0,
+      "checkedAt": "2026-10-22T01:57:38.705Z",
+      "nextCheckAt": "2026-11-21T01:57:38.705Z",
+      "errorCode": "archive_bad_response",
+      "cached": []
+    },
+    {
+      "id": "drupal",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "easyappointments",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "elastic-cloud",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "element",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "erpnext",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "espocrm",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "excalidraw",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "expensify",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "fastmail",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "figjam",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "figma",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "final-cut-pro",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "firebase",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "fireflies",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "formbricks",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "frappe-hr",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "freescout",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "freeswitch",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "freshservice-itam",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "front",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "ghost",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "gimp",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "glitchtip",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "glpi",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "google-analytics-360",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "google-meet",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "google-workspace",
+      "status": "ready",
+      "frames": 13,
+      "checkedAt": "2026-10-22T01:57:41.441Z",
+      "nextCheckAt": "2026-11-21T01:57:41.441Z",
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "grafana",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "greenhouse",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "grist",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "harvest",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "headscale",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "heroku",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "heyform",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "hootsuite",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "hoppscotch",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "hubspot",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "huly",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "insomnia",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "intercom",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "invoice-ninja",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "jira",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "jitsi-meet",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "kanboard",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "kdenlive",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "keila",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "keycloak",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "kimai",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "kopia",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "krita",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "lansweeper",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "lever",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "limesurvey",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "linear",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "listmonk",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "looker",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "loom",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "lucidchart",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "m-files",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mailchimp",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mailcow",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "make",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "masv",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "matomo",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mattermost",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mautic",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mayan-edms",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "medusa",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mermaid",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "metabase",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "metabase-pro",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "microsoft-365",
+      "status": "error",
+      "frames": 0,
+      "checkedAt": "2026-10-22T01:57:45.293Z",
+      "nextCheckAt": "2026-11-21T01:57:45.293Z",
+      "errorCode": "archive_bad_response",
+      "cached": []
+    },
+    {
+      "id": "microsoft-outlook",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "microsoft-teams",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "microsoft-visio",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "miro",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "mixpost",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "moodle",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "n8n",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "netbird",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "nextcloud",
+      "status": "ready",
+      "frames": 19,
+      "checkedAt": "2026-10-22T01:57:48.602Z",
+      "nextCheckAt": "2026-11-21T01:57:48.602Z",
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "nocodb",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "node-red",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "notion",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "obs-studio",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "odoo-ce",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "okta",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "onlyoffice-docs",
+      "status": "empty",
+      "frames": 0,
+      "checkedAt": "2026-10-22T01:57:51.214Z",
+      "nextCheckAt": "2026-11-21T01:57:51.214Z",
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "open-edx",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "opencats",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "openproject",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "opensearch",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "opensign",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "orangehrm-starter",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "otter",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "outline",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "owncloud-ocis",
+      "status": "empty",
+      "frames": 0,
+      "checkedAt": "2026-10-22T01:57:54.436Z",
+      "nextCheckAt": "2026-11-21T01:57:54.436Z",
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "paperless-ngx",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "passbolt",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "pdf-arranger",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "pdfsam-basic",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "penpot",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "phraseanet",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "pingdom",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "plane",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "planka",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "plausible",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "pocketbase",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "posthog",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "postiz",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "postman",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "power-bi",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "prestashop",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "projectsend",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "quickbooks-online",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "resourcespace",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "restic",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "retool",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "ringcentral",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "rocket-chat",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "roundcube",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "salesforce",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "sap-concur",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "screenity",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "seafile",
+      "status": "error",
+      "frames": 0,
+      "checkedAt": "2026-10-22T01:58:02.984Z",
+      "nextCheckAt": "2026-11-21T01:58:02.984Z",
+      "errorCode": "archive_rate_limited",
+      "cached": []
+    },
+    {
+      "id": "sentry",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "shopify",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "shotcut",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "slack",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "smallpdf",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "snipe-it",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "solidtime",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "spendesk",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "squarespace",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "stalwart",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "stirling-pdf",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "suitecrm",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "supabase",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "tableau",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "taiga",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "tailscale",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "talentlms",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "teable",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "thunderbird",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "tldraw",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "toggl-track",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "tooljet",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "trello",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "twenty",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "typeform",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "typesense",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "umami",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "uptime-kuma",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "vaultwarden",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "vercel",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "vosk",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "webflow",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "wekan",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "wetransfer",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "whisper",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "windmill",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "wix",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "woocommerce",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "wordpress",
+      "status": "ready",
+      "frames": 54,
+      "checkedAt": "2026-10-22T01:57:21.628Z",
+      "nextCheckAt": "2026-11-21T01:57:21.628Z",
+      "errorCode": null,
+      "cached": [
+        {
+          "id": "20111221113549-WyJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxMTEyMjExMTM1NDlpZF8vaHR0cDovL3dlYi5hcmNoaXZlLm9yZy9zY3JlZW5zaG90L2h0dHA6Ly93b3JkcHJlc3Mub3JnLyIsIk1SMllLQ0xZVTNGQldQRDdWVTNRRVZFNklDUU5GMktFIl0",
+          "bytes": 201723,
+          "etag": "\"e86e01a58caf73f3faf3927b527a06730260fd87243a04067176ec789f8f974d\""
+        },
+        {
+          "id": "20120130192235-WyJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxMjAxMzAxOTIyMzVpZF8vaHR0cDovL3dlYi5hcmNoaXZlLm9yZy9zY3JlZW5zaG90L2h0dHA6Ly93b3JkcHJlc3Mub3JnLyIsIk9BT1JGQVg2TU9QVEJEVk40UlJQUjJQTEVTRENXNklFIl0",
+          "bytes": 217826,
+          "etag": "\"0d7e5612f29416d05b121b422cd2e817d0e0a0fc48ea7e4947ef859e0d6b516e\""
+        }
+      ]
+    },
+    {
+      "id": "xero",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zammad",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zapier",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zendesk",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zitadel",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zoho-mail",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zoom",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    },
+    {
+      "id": "zulip",
+      "status": "pending",
+      "frames": 0,
+      "checkedAt": null,
+      "nextCheckAt": null,
+      "errorCode": null,
+      "cached": []
+    }
+  ]
+}

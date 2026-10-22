@@ -25,6 +25,8 @@ The first successful lookup discovers all available historical screenshot record
 
 Later checks happen only when requested and at least 30 days after the previous attempt. One check can append at most one new eligible image. Shared landing URLs share the same reservation across products and visitors. Failed and empty checks also consume the interval. There is no automatic daily polling. Archived images already stored are never fetched again or overwritten.
 
+An Internet Archive rate limit also creates a shared cooldown across every product and visitor. Its stated retry interval is honored, with a one-hour minimum when absent or shorter. Checks denied before an archive request retain their unused monthly allowance. Existing image copies remain readable during the cooldown.
+
 Each image must have an allowed image format, valid dimensions and an exact archive replay timestamp; the stored CDX digest must match when present. Images larger than 10 MiB are refused. A failed first image retrieval gets a persisted cooldown of at least an hour. A failed image never replaces the previous visible image.
 
 ```sh
@@ -38,7 +40,7 @@ npm run history:backfill -- --images --image-limit 100
 npm run history:backfill -- --products slack,wordpress --base-url https://YOUR-WORKER.workers.dev
 ```
 
-The batch waits two seconds between products and new image copies. Archive rate limits stop the batch. Cache probes never contact the archive. Reports go to `.local/history-backfill-report.json` unless `--output` is supplied; partial failures produce a nonzero exit status. Reruns honor the same 30-day gate, including earlier failures. A completed metadata report does not imply that every image body has been downloaded.
+The batch waits one minute between products and new image copies (`--delay-ms` adjusts this). Archive rate limits stop the batch; three consecutive product failures also stop it. `--max-consecutive-errors` adjusts that threshold. Cache probes never contact the archive. Reports go to `.local/history-backfill-report.json` unless `--output` is supplied; partial failures produce a nonzero exit status. Reruns honor the same 30-day gate, including earlier failures. A completed metadata report does not imply that every image body has been downloaded.
 
 ## Embed
 
@@ -75,3 +77,5 @@ As checked 2026-10-21, R2 Standard includes 10 GB-month storage, one million Cla
 ## Verification
 
 `make check` runs the catalog gate and dependency-free history tests. History tests cover CDX pagination and namespaces, exact dates/digests, monthly selection, shared URL reservations, restart persistence, immutable filesystem/R2 writes, D1 atomic SQL, rate limits, stale image loads and failed refresh notices. Live probes are documented separately so normal checks remain offline and deterministic.
+
+[Live coverage snapshot](../research/history-coverage.json), [command/source audit and rollout findings](../research/history-operation-audit.md). The initial backfill is incomplete: at the recorded snapshot, three products have 86 selected frames, three have confirmed empty results, three checks failed, and 218 products await their initial lookup. Two original images are preserved in R2. Archive rate limiting stopped the batch; cached history remains usable. After the shared cooldown, rerunning the batch resumes eligible products and preserves the 30-day gate for actual failed archive attempts.

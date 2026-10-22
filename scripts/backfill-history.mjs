@@ -5,8 +5,8 @@ import { parseArgs } from 'node:util';
 
 const sleep = ms => new Promise(done => setTimeout(done, ms));
 
-export async function runBackfill({ baseUrl, productIds = [], images = false, imageLimit = 10000,
-  delayMs = 2000, fetchImpl = fetch, wait = sleep, log = () => {}, clock = () => new Date() }) {
+export async function runBackfill({ baseUrl, productIds = [], images = false, imageLimit = 10000, maxConsecutiveErrors = 3,
+  delayMs = 60000, fetchImpl = fetch, wait = sleep, log = () => {}, clock = () => new Date() }) {
   const base = new URL(baseUrl);
   if (!['http:', 'https:'].includes(base.protocol) || base.username || base.password || base.search || base.hash) {
     throw new Error('Use an HTTP(S) service URL without credentials, query or fragment.');
@@ -23,18 +23,21 @@ export async function runBackfill({ baseUrl, productIds = [], images = false, im
   for (const id of productIds) if (!known.has(id)) throw new Error(`Unknown product: ${id}`);
   const selected = productIds.length ? catalog.filter(p => productIds.includes(p.id)) : catalog;
   let outboundImageCount = 0;
+  let consecutiveErrors = 0;
   for (const product of selected) {
     const row = { id: product.id, status: 'error', frames: 0, cached: 0, reused: 0, error: null };
     try {
       let response = await request(`/api/history/${product.id}`);
       if (!response.ok) throw new Error(`History unavailable: HTTP ${response.status}`);
       let manifest = await response.json();
+      let refreshed = false;
       if (manifest.status === 'pending' || (manifest.nextCheckAt && Date.parse(manifest.nextCheckAt) <= +clock())) {
+        refreshed = true;
         response = await request(`/api/history/${product.id}/refresh`, { method: 'POST' });
         manifest = await response.json();
       }
-      const limited = response.status === 429 && manifest.error;
-      if (limited || /rate.?limit/i.test(manifest.errorCode ?? '')) {
+      const limited = response.status === 429;
+      if (limited || refreshed && /rate.?limit/i.test(manifest.errorCode ?? '')) {
         report.status = 'rate-limited';
         report.retryAfter = response.headers.get('retry-after') ?? manifest.retryAfter ?? null;
         row.error = manifest.error ?? 'Archive rate limit reached.';
@@ -59,11 +62,11 @@ export async function runBackfill({ baseUrl, productIds = [], images = false, im
           if (image.status === 429 || /rate.?limit/i.test(imageError?.code ?? '')) {
             report.status = 'rate-limited'; report.retryAfter = image.headers.get('retry-after');
             row.error = imageError?.error ?? 'Archive rate limit reached.';
-            await image.body?.cancel(); break;
+            if (!image.bodyUsed) await image.body?.cancel(); break;
           }
           if (!image.ok) {
             row.error = `Image retrieval failed: HTTP ${image.status}`;
-            report.status = 'partial'; await image.body?.cancel(); continue;
+            report.status = 'partial'; if (!image.bodyUsed) await image.body?.cancel(); continue;
           }
           await image.body?.cancel();
           row.cached++; report.imagesCached++;
@@ -74,6 +77,8 @@ export async function runBackfill({ baseUrl, productIds = [], images = false, im
       if (report.status !== 'rate-limited') report.status = 'partial';
     }
     report.products.push(row); log(row);
+    consecutiveErrors = row.error || row.status === 'error' ? consecutiveErrors + 1 : 0;
+    if (consecutiveErrors >= maxConsecutiveErrors) { report.stoppedAfterErrors = consecutiveErrors; break; }
     if (report.status === 'rate-limited' || report.imageLimitReached) break;
     await wait(delayMs);
   }
@@ -85,15 +90,17 @@ async function main() {
   const { values } = parseArgs({ options: {
     'base-url': { type: 'string', default: 'http://127.0.0.1:4173' },
     products: { type: 'string' }, images: { type: 'boolean', default: false },
-    'image-limit': { type: 'string', default: '10000' }, 'delay-ms': { type: 'string', default: '2000' },
+    'image-limit': { type: 'string', default: '10000' }, 'delay-ms': { type: 'string', default: '60000' },
+    'max-consecutive-errors': { type: 'string', default: '3' },
     output: { type: 'string', default: '.local/history-backfill-report.json' },
   } });
-  const delayMs = Number(values['delay-ms']), imageLimit = Number(values['image-limit']);
-  if (!Number.isInteger(delayMs) || delayMs < 1000 || !Number.isInteger(imageLimit) || imageLimit < 1) {
-    throw new Error('Delay must be at least 1000ms and image limit a positive integer.');
+  const delayMs = Number(values['delay-ms']), imageLimit = Number(values['image-limit']), maxConsecutiveErrors = Number(values['max-consecutive-errors']);
+  if (!Number.isInteger(delayMs) || delayMs < 1000 || !Number.isInteger(imageLimit) || imageLimit < 1
+    || !Number.isInteger(maxConsecutiveErrors) || maxConsecutiveErrors < 1) {
+    throw new Error('Delay must be at least 1000ms; image and consecutive-error limits must be positive integers.');
   }
   const report = await runBackfill({ baseUrl: values['base-url'], productIds: values.products?.split(',') ?? [],
-    images: values.images, imageLimit, delayMs, log: row => console.log(JSON.stringify(row)) });
+    images: values.images, imageLimit, maxConsecutiveErrors, delayMs, log: row => console.log(JSON.stringify(row)) });
   const output = resolve(values.output);
   await mkdir(dirname(output), { recursive: true });
   await writeFile(output, JSON.stringify(report, null, 2) + '\n');
