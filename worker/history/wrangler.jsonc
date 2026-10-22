@@ -11,7 +11,7 @@
   "d1_databases": [{
     "binding": "DB",
     "database_name": "osshunt-history",
-    "database_id": "00000000-0000-0000-0000-000000000000",
+    "database_id": "5fed2e9a-28fa-4761-9a95-406175663fd2",
     "migrations_dir": "migrations"
   }],
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "osshunt-history-images" }]

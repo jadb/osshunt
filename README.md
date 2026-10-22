@@ -9,6 +9,7 @@ A sourced seed for discovering open-source alternatives to software businesses p
 - [Audience ranking and openness criteria](docs/methodology.md)
 - [Refresh workflow, repeated steps and test opportunities](docs/research-workflow.md)
 - [Collections contract and queries](docs/collections.md)
+- [Website history player, preview and deployment](docs/website-history.md)
 
 Audience positions are editorial reach estimates, not measured market-size counts. A/B/C describe paid feature restrictions; S/U entries stay outside default OSS recommendations. Migration fit is recorded per mapping. A does not mean feature parity with the paid incumbent or free infrastructure.
 
@@ -33,6 +34,15 @@ npm ci --ignore-scripts
 make check
 ```
 
-The gate assembles source records, generates snapshots/schemas/docs, validates data and runs 37 contract tests. Seven regression guards additionally verified by restoring defects, observing failures and restoring fixes. [Mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
+The gate assembles source records, generates snapshots/schemas/docs and the history gallery catalog, validates data and runs contract and history tests. Regression guards verified by restoring defects, observing failures and restoring fixes. [Catalog mutation evidence](research/mutation-results.json), [dependency vetting](docs/dependencies.md).
 
-Research refresh additionally uses authenticated `gh` and optional repository health analysis; neither is required for ordinary builds or queries. No website deployment is part of this seed.
+Research refresh additionally uses authenticated `gh` and optional repository health analysis; neither is required for ordinary builds or queries.
+
+## Website histories
+
+```sh
+npm run history:serve
+# Open http://127.0.0.1:4173
+```
+
+Gallery for all 227 products and alternatives. Existing Internet Archive screenshot images only, actual dates at least 30 days apart, playback, stepping, scrubbing, speed and archive links. Initial history discovery on first visit; immutable image copies on demand. Shared persisted checks prevent repeated archive requests within 30 days, including failed checks. Local cache survives server restarts in `.local/history/`. [Operation, embedding and Cloudflare setup](docs/website-history.md).

@@ -1,0 +1,3229 @@
+[
+  {
+    "id": "collabora-online",
+    "name": "Collabora Online (CODE)",
+    "url": "https://www.collaboraonline.com/code/",
+    "kind": "oss",
+    "categories": [
+      "office-files"
+    ],
+    "categoryNames": [
+      "Office suite and files"
+    ],
+    "audienceRank": 1,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "url": "https://www.dropbox.com/plans",
+    "kind": "paid",
+    "categories": [
+      "office-files"
+    ],
+    "categoryNames": [
+      "Office suite and files"
+    ],
+    "audienceRank": 1
+  },
+  {
+    "id": "google-workspace",
+    "name": "Google Workspace",
+    "url": "https://workspace.google.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "email-hosting",
+      "office-files"
+    ],
+    "categoryNames": [
+      "Business email hosting",
+      "Office suite and files"
+    ],
+    "audienceRank": 1
+  },
+  {
+    "id": "microsoft-365",
+    "name": "Microsoft 365",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+    "kind": "paid",
+    "categories": [
+      "email-hosting",
+      "office-files"
+    ],
+    "categoryNames": [
+      "Business email hosting",
+      "Office suite and files"
+    ],
+    "audienceRank": 1
+  },
+  {
+    "id": "nextcloud",
+    "name": "Nextcloud Hub",
+    "url": "https://nextcloud.com/",
+    "kind": "oss",
+    "categories": [
+      "office-files"
+    ],
+    "categoryNames": [
+      "Office suite and files"
+    ],
+    "audienceRank": 1,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "onlyoffice-docs",
+    "name": "ONLYOFFICE Docs Community",
+    "url": "https://www.onlyoffice.com/docs",
+    "kind": "oss",
+    "categories": [
+      "office-files"
+    ],
+    "categoryNames": [
+      "Office suite and files"
+    ],
+    "audienceRank": 1,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "owncloud-ocis",
+    "name": "ownCloud Infinite Scale (oCIS source edition)",
+    "url": "https://owncloud.com/ocis/",
+    "kind": "oss",
+    "categories": [
+      "office-files"
+    ],
+    "categoryNames": [
+      "Office suite and files"
+    ],
+    "audienceRank": 1,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "seafile",
+    "name": "Seafile Community Edition",
+    "url": "https://www.seafile.com/",
+    "kind": "oss",
+    "categories": [
+      "office-files"
+    ],
+    "categoryNames": [
+      "Office suite and files"
+    ],
+    "audienceRank": 1,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "front",
+    "name": "Front",
+    "url": "https://front.com/",
+    "kind": "paid",
+    "categories": [
+      "email-clients"
+    ],
+    "categoryNames": [
+      "Email clients and webmail"
+    ],
+    "audienceRank": 2
+  },
+  {
+    "id": "microsoft-outlook",
+    "name": "Microsoft Outlook",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/outlook",
+    "kind": "paid",
+    "categories": [
+      "email-clients"
+    ],
+    "categoryNames": [
+      "Email clients and webmail"
+    ],
+    "audienceRank": 2
+  },
+  {
+    "id": "roundcube",
+    "name": "Roundcube",
+    "url": "https://roundcube.net/",
+    "kind": "oss",
+    "categories": [
+      "email-clients"
+    ],
+    "categoryNames": [
+      "Email clients and webmail"
+    ],
+    "audienceRank": 2,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "thunderbird",
+    "name": "Thunderbird",
+    "url": "https://www.thunderbird.net/en-US/desktop/",
+    "kind": "oss",
+    "categories": [
+      "email-clients"
+    ],
+    "categoryNames": [
+      "Email clients and webmail"
+    ],
+    "audienceRank": 2,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "1password",
+    "name": "1Password",
+    "url": "https://1password.com",
+    "kind": "paid",
+    "categories": [
+      "passwords"
+    ],
+    "categoryNames": [
+      "Password managers"
+    ],
+    "audienceRank": 3
+  },
+  {
+    "id": "bitwarden",
+    "name": "Bitwarden",
+    "url": "https://bitwarden.com",
+    "kind": "oss",
+    "categories": [
+      "passwords"
+    ],
+    "categoryNames": [
+      "Password managers"
+    ],
+    "audienceRank": 3,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "passbolt",
+    "name": "Passbolt Community Edition",
+    "url": "https://www.passbolt.com",
+    "kind": "oss",
+    "categories": [
+      "passwords"
+    ],
+    "categoryNames": [
+      "Password managers"
+    ],
+    "audienceRank": 3,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "vaultwarden",
+    "name": "Vaultwarden",
+    "url": "https://github.com/dani-garcia/vaultwarden",
+    "kind": "oss",
+    "categories": [
+      "passwords"
+    ],
+    "categoryNames": [
+      "Password managers"
+    ],
+    "audienceRank": 3,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "adobe-acrobat",
+    "name": "Adobe Acrobat",
+    "url": "https://www.adobe.com/acrobat.html",
+    "kind": "paid",
+    "categories": [
+      "pdf-tools"
+    ],
+    "categoryNames": [
+      "PDF editing and processing"
+    ],
+    "audienceRank": 4
+  },
+  {
+    "id": "pdf-arranger",
+    "name": "PDF Arranger",
+    "url": "https://github.com/pdfarranger/pdfarranger",
+    "kind": "oss",
+    "categories": [
+      "pdf-tools"
+    ],
+    "categoryNames": [
+      "PDF editing and processing"
+    ],
+    "audienceRank": 4,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "pdfsam-basic",
+    "name": "PDFsam Basic",
+    "url": "https://pdfsam.org/pdfsam-basic/",
+    "kind": "oss",
+    "categories": [
+      "pdf-tools"
+    ],
+    "categoryNames": [
+      "PDF editing and processing"
+    ],
+    "audienceRank": 4,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "smallpdf",
+    "name": "Smallpdf",
+    "url": "https://smallpdf.com/",
+    "kind": "paid",
+    "categories": [
+      "pdf-tools"
+    ],
+    "categoryNames": [
+      "PDF editing and processing"
+    ],
+    "audienceRank": 4
+  },
+  {
+    "id": "stirling-pdf",
+    "name": "Stirling PDF",
+    "url": "https://stirling.com/",
+    "kind": "oss",
+    "categories": [
+      "pdf-tools"
+    ],
+    "categoryNames": [
+      "PDF editing and processing"
+    ],
+    "audienceRank": 4,
+    "osi": false,
+    "tier": "U"
+  },
+  {
+    "id": "element",
+    "name": "Element Server Suite Community",
+    "url": "https://element.io/en/server-suite/community",
+    "kind": "oss",
+    "categories": [
+      "team-chat"
+    ],
+    "categoryNames": [
+      "Team chat"
+    ],
+    "audienceRank": 5,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "mattermost",
+    "name": "Mattermost Team Edition",
+    "url": "https://mattermost.com",
+    "kind": "oss",
+    "categories": [
+      "team-chat"
+    ],
+    "categoryNames": [
+      "Team chat"
+    ],
+    "audienceRank": 5,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "microsoft-teams",
+    "name": "Microsoft Teams",
+    "url": "https://www.microsoft.com/microsoft-teams",
+    "kind": "paid",
+    "categories": [
+      "team-chat"
+    ],
+    "categoryNames": [
+      "Team chat"
+    ],
+    "audienceRank": 5
+  },
+  {
+    "id": "rocket-chat",
+    "name": "Rocket.Chat Community",
+    "url": "https://www.rocket.chat",
+    "kind": "oss",
+    "categories": [
+      "team-chat"
+    ],
+    "categoryNames": [
+      "Team chat"
+    ],
+    "audienceRank": 5,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "url": "https://slack.com",
+    "kind": "paid",
+    "categories": [
+      "team-chat"
+    ],
+    "categoryNames": [
+      "Team chat"
+    ],
+    "audienceRank": 5
+  },
+  {
+    "id": "zulip",
+    "name": "Zulip",
+    "url": "https://zulip.com",
+    "kind": "oss",
+    "categories": [
+      "team-chat"
+    ],
+    "categoryNames": [
+      "Team chat"
+    ],
+    "audienceRank": 5,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "bigbluebutton",
+    "name": "BigBlueButton",
+    "url": "https://bigbluebutton.org/",
+    "kind": "oss",
+    "categories": [
+      "video-calls"
+    ],
+    "categoryNames": [
+      "Video calls"
+    ],
+    "audienceRank": 6,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "google-meet",
+    "name": "Google Meet",
+    "url": "https://workspace.google.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "video-calls"
+    ],
+    "categoryNames": [
+      "Video calls"
+    ],
+    "audienceRank": 6
+  },
+  {
+    "id": "jitsi-meet",
+    "name": "Jitsi Meet",
+    "url": "https://jitsi.org/jitsi-meet/",
+    "kind": "oss",
+    "categories": [
+      "video-calls"
+    ],
+    "categoryNames": [
+      "Video calls"
+    ],
+    "audienceRank": 6,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "url": "https://zoom.us/pricing",
+    "kind": "paid",
+    "categories": [
+      "video-calls"
+    ],
+    "categoryNames": [
+      "Video calls"
+    ],
+    "audienceRank": 6
+  },
+  {
+    "id": "drupal",
+    "name": "Drupal",
+    "url": "https://www.drupal.org/",
+    "kind": "oss",
+    "categories": [
+      "website-cms"
+    ],
+    "categoryNames": [
+      "Websites and CMS"
+    ],
+    "audienceRank": 7,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "url": "https://ghost.org/",
+    "kind": "oss",
+    "categories": [
+      "website-cms"
+    ],
+    "categoryNames": [
+      "Websites and CMS"
+    ],
+    "audienceRank": 7,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "squarespace",
+    "name": "Squarespace",
+    "url": "https://www.squarespace.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "website-cms"
+    ],
+    "categoryNames": [
+      "Websites and CMS"
+    ],
+    "audienceRank": 7
+  },
+  {
+    "id": "webflow",
+    "name": "Webflow",
+    "url": "https://webflow.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "website-cms"
+    ],
+    "categoryNames": [
+      "Websites and CMS"
+    ],
+    "audienceRank": 7
+  },
+  {
+    "id": "wix",
+    "name": "Wix",
+    "url": "https://www.wix.com/plans",
+    "kind": "paid",
+    "categories": [
+      "website-cms"
+    ],
+    "categoryNames": [
+      "Websites and CMS"
+    ],
+    "audienceRank": 7
+  },
+  {
+    "id": "wordpress",
+    "name": "WordPress",
+    "url": "https://wordpress.org/",
+    "kind": "oss",
+    "categories": [
+      "website-cms"
+    ],
+    "categoryNames": [
+      "Websites and CMS"
+    ],
+    "audienceRank": 7,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "acronis-cyber-protect",
+    "name": "Acronis Cyber Protect",
+    "url": "https://www.acronis.com/en/products/cyber-protect/",
+    "kind": "paid",
+    "categories": [
+      "backup-recovery"
+    ],
+    "categoryNames": [
+      "Backup and recovery"
+    ],
+    "audienceRank": 8
+  },
+  {
+    "id": "backblaze-business-backup",
+    "name": "Backblaze Business Backup",
+    "url": "https://www.backblaze.com/cloud-backup/business",
+    "kind": "paid",
+    "categories": [
+      "backup-recovery"
+    ],
+    "categoryNames": [
+      "Backup and recovery"
+    ],
+    "audienceRank": 8
+  },
+  {
+    "id": "borgbackup",
+    "name": "BorgBackup",
+    "url": "https://www.borgbackup.org/",
+    "kind": "oss",
+    "categories": [
+      "backup-recovery"
+    ],
+    "categoryNames": [
+      "Backup and recovery"
+    ],
+    "audienceRank": 8,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "kopia",
+    "name": "Kopia",
+    "url": "https://kopia.io/",
+    "kind": "oss",
+    "categories": [
+      "backup-recovery"
+    ],
+    "categoryNames": [
+      "Backup and recovery"
+    ],
+    "audienceRank": 8,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "restic",
+    "name": "restic",
+    "url": "https://restic.net/",
+    "kind": "oss",
+    "categories": [
+      "backup-recovery"
+    ],
+    "categoryNames": [
+      "Backup and recovery"
+    ],
+    "audienceRank": 8,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "affine",
+    "name": "AFFiNE (mixed-license stack; review required)",
+    "url": "https://affine.pro/",
+    "kind": "oss",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9,
+    "osi": false,
+    "tier": "U"
+  },
+  {
+    "id": "appflowy",
+    "name": "AppFlowy client core",
+    "url": "https://appflowy.com/",
+    "kind": "oss",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "bookstack",
+    "name": "BookStack",
+    "url": "https://www.bookstackapp.com/",
+    "kind": "oss",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "confluence",
+    "name": "Confluence",
+    "url": "https://www.atlassian.com/en/software/confluence/pricing",
+    "kind": "paid",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9
+  },
+  {
+    "id": "docmost",
+    "name": "Docmost Community",
+    "url": "https://docmost.com/",
+    "kind": "oss",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "url": "https://www.notion.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9
+  },
+  {
+    "id": "outline",
+    "name": "Outline (source-available)",
+    "url": "https://www.getoutline.com/",
+    "kind": "oss",
+    "categories": [
+      "docs-wiki"
+    ],
+    "categoryNames": [
+      "Docs and wiki"
+    ],
+    "audienceRank": 9,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "url": "https://asana.com",
+    "kind": "paid",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10
+  },
+  {
+    "id": "huly",
+    "name": "Huly",
+    "url": "https://huly.io",
+    "kind": "oss",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "jira",
+    "name": "Jira",
+    "url": "https://www.atlassian.com/software/jira",
+    "kind": "paid",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "url": "https://linear.app",
+    "kind": "paid",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10
+  },
+  {
+    "id": "openproject",
+    "name": "OpenProject",
+    "url": "https://www.openproject.org",
+    "kind": "oss",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "plane",
+    "name": "Plane Community",
+    "url": "https://plane.so",
+    "kind": "oss",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "taiga",
+    "name": "Taiga",
+    "url": "https://taiga.io",
+    "kind": "oss",
+    "categories": [
+      "project-management"
+    ],
+    "categoryNames": [
+      "Project management"
+    ],
+    "audienceRank": 10,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "copyparty",
+    "name": "copyparty",
+    "url": "https://github.com/9001/copyparty",
+    "kind": "oss",
+    "categories": [
+      "file-transfer"
+    ],
+    "categoryNames": [
+      "File transfer"
+    ],
+    "audienceRank": 11,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "masv",
+    "name": "MASV",
+    "url": "https://masv.io/",
+    "kind": "paid",
+    "categories": [
+      "file-transfer"
+    ],
+    "categoryNames": [
+      "File transfer"
+    ],
+    "audienceRank": 11
+  },
+  {
+    "id": "projectsend",
+    "name": "ProjectSend",
+    "url": "https://www.projectsend.org/",
+    "kind": "oss",
+    "categories": [
+      "file-transfer"
+    ],
+    "categoryNames": [
+      "File transfer"
+    ],
+    "audienceRank": 11,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "wetransfer",
+    "name": "WeTransfer",
+    "url": "https://wetransfer.com/",
+    "kind": "paid",
+    "categories": [
+      "file-transfer"
+    ],
+    "categoryNames": [
+      "File transfer"
+    ],
+    "audienceRank": 11
+  },
+  {
+    "id": "formbricks",
+    "name": "Formbricks Community Edition",
+    "url": "https://formbricks.com",
+    "kind": "oss",
+    "categories": [
+      "forms-surveys"
+    ],
+    "categoryNames": [
+      "Forms and surveys"
+    ],
+    "audienceRank": 12,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "heyform",
+    "name": "HeyForm",
+    "url": "https://heyform.net",
+    "kind": "oss",
+    "categories": [
+      "forms-surveys"
+    ],
+    "categoryNames": [
+      "Forms and surveys"
+    ],
+    "audienceRank": 12,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "limesurvey",
+    "name": "LimeSurvey Community Edition",
+    "url": "https://community.limesurvey.org/",
+    "kind": "oss",
+    "categories": [
+      "forms-surveys"
+    ],
+    "categoryNames": [
+      "Forms and surveys"
+    ],
+    "audienceRank": 12,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "typeform",
+    "name": "Typeform",
+    "url": "https://www.typeform.com",
+    "kind": "paid",
+    "categories": [
+      "forms-surveys"
+    ],
+    "categoryNames": [
+      "Forms and surveys"
+    ],
+    "audienceRank": 12
+  },
+  {
+    "id": "kanboard",
+    "name": "Kanboard",
+    "url": "https://kanboard.org/",
+    "kind": "oss",
+    "categories": [
+      "kanban"
+    ],
+    "categoryNames": [
+      "Kanban"
+    ],
+    "audienceRank": 13,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "planka",
+    "name": "PLANKA",
+    "url": "https://planka.app/",
+    "kind": "oss",
+    "categories": [
+      "kanban"
+    ],
+    "categoryNames": [
+      "Kanban"
+    ],
+    "audienceRank": 13,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "trello",
+    "name": "Trello",
+    "url": "https://trello.com/",
+    "kind": "paid",
+    "categories": [
+      "kanban"
+    ],
+    "categoryNames": [
+      "Kanban"
+    ],
+    "audienceRank": 13
+  },
+  {
+    "id": "wekan",
+    "name": "WeKan",
+    "url": "https://wekan.fi/",
+    "kind": "oss",
+    "categories": [
+      "kanban"
+    ],
+    "categoryNames": [
+      "Kanban"
+    ],
+    "audienceRank": 13,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "cal-com",
+    "name": "Cal.com",
+    "url": "https://cal.com",
+    "kind": "paid",
+    "categories": [
+      "scheduling"
+    ],
+    "categoryNames": [
+      "Appointment scheduling"
+    ],
+    "audienceRank": 14
+  },
+  {
+    "id": "cal-diy",
+    "name": "Cal.diy",
+    "url": "https://www.cal.diy",
+    "kind": "oss",
+    "categories": [
+      "scheduling"
+    ],
+    "categoryNames": [
+      "Appointment scheduling"
+    ],
+    "audienceRank": 14,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "calendly",
+    "name": "Calendly",
+    "url": "https://calendly.com",
+    "kind": "paid",
+    "categories": [
+      "scheduling"
+    ],
+    "categoryNames": [
+      "Appointment scheduling"
+    ],
+    "audienceRank": 14
+  },
+  {
+    "id": "easyappointments",
+    "name": "Easy!Appointments",
+    "url": "https://easyappointments.org",
+    "kind": "oss",
+    "categories": [
+      "scheduling"
+    ],
+    "categoryNames": [
+      "Appointment scheduling"
+    ],
+    "audienceRank": 14,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "documenso",
+    "name": "Documenso",
+    "url": "https://documenso.com",
+    "kind": "oss",
+    "categories": [
+      "e-signature"
+    ],
+    "categoryNames": [
+      "E-signature"
+    ],
+    "audienceRank": 15,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "docuseal",
+    "name": "DocuSeal",
+    "url": "https://www.docuseal.com",
+    "kind": "oss",
+    "categories": [
+      "e-signature"
+    ],
+    "categoryNames": [
+      "E-signature"
+    ],
+    "audienceRank": 15,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "docusign",
+    "name": "Docusign",
+    "url": "https://www.docusign.com/products/electronic-signature",
+    "kind": "paid",
+    "categories": [
+      "e-signature"
+    ],
+    "categoryNames": [
+      "E-signature"
+    ],
+    "audienceRank": 15
+  },
+  {
+    "id": "opensign",
+    "name": "OpenSign",
+    "url": "https://www.opensignlabs.com",
+    "kind": "oss",
+    "categories": [
+      "e-signature"
+    ],
+    "categoryNames": [
+      "E-signature"
+    ],
+    "audienceRank": 15,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "erpnext",
+    "name": "ERPNext",
+    "url": "https://frappe.io/erpnext",
+    "kind": "oss",
+    "categories": [
+      "accounting-erp",
+      "expense-reimbursements"
+    ],
+    "categoryNames": [
+      "Accounting and ERP",
+      "Expense reimbursements"
+    ],
+    "audienceRank": 16,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "expensify",
+    "name": "Expensify",
+    "url": "https://www.expensify.com/",
+    "kind": "paid",
+    "categories": [
+      "expense-reimbursements"
+    ],
+    "categoryNames": [
+      "Expense reimbursements"
+    ],
+    "audienceRank": 16
+  },
+  {
+    "id": "frappe-hr",
+    "name": "Frappe HR",
+    "url": "https://frappe.io/hr",
+    "kind": "oss",
+    "categories": [
+      "expense-reimbursements",
+      "hr",
+      "recruiting"
+    ],
+    "categoryNames": [
+      "Expense reimbursements",
+      "Human resources",
+      "Recruiting and applicant tracking"
+    ],
+    "audienceRank": 16,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "sap-concur",
+    "name": "SAP Concur",
+    "url": "https://www.concur.com/products/concur-expense",
+    "kind": "paid",
+    "categories": [
+      "expense-reimbursements"
+    ],
+    "categoryNames": [
+      "Expense reimbursements"
+    ],
+    "audienceRank": 16
+  },
+  {
+    "id": "spendesk",
+    "name": "Spendesk",
+    "url": "https://www.spendesk.com/",
+    "kind": "paid",
+    "categories": [
+      "expense-reimbursements"
+    ],
+    "categoryNames": [
+      "Expense reimbursements"
+    ],
+    "audienceRank": 16
+  },
+  {
+    "id": "docuware",
+    "name": "DocuWare",
+    "url": "https://start.docuware.com/",
+    "kind": "paid",
+    "categories": [
+      "document-management"
+    ],
+    "categoryNames": [
+      "Document Management"
+    ],
+    "audienceRank": 17
+  },
+  {
+    "id": "m-files",
+    "name": "M-Files",
+    "url": "https://www.m-files.com/",
+    "kind": "paid",
+    "categories": [
+      "document-management"
+    ],
+    "categoryNames": [
+      "Document Management"
+    ],
+    "audienceRank": 17
+  },
+  {
+    "id": "mayan-edms",
+    "name": "Mayan EDMS",
+    "url": "https://www.mayan-edms.com/",
+    "kind": "oss",
+    "categories": [
+      "document-management"
+    ],
+    "categoryNames": [
+      "Document Management"
+    ],
+    "audienceRank": 17,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "paperless-ngx",
+    "name": "Paperless-ngx",
+    "url": "https://docs.paperless-ngx.com/",
+    "kind": "oss",
+    "categories": [
+      "document-management"
+    ],
+    "categoryNames": [
+      "Document Management"
+    ],
+    "audienceRank": 17,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "fireflies",
+    "name": "Fireflies.ai",
+    "url": "https://fireflies.ai",
+    "kind": "paid",
+    "categories": [
+      "transcription"
+    ],
+    "categoryNames": [
+      "Transcription & Meeting Notes"
+    ],
+    "audienceRank": 18
+  },
+  {
+    "id": "otter",
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "kind": "paid",
+    "categories": [
+      "transcription"
+    ],
+    "categoryNames": [
+      "Transcription & Meeting Notes"
+    ],
+    "audienceRank": 18
+  },
+  {
+    "id": "vosk",
+    "name": "Vosk",
+    "url": "https://alphacephei.com/vosk/",
+    "kind": "oss",
+    "categories": [
+      "transcription"
+    ],
+    "categoryNames": [
+      "Transcription & Meeting Notes"
+    ],
+    "audienceRank": 18,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "whisper",
+    "name": "Whisper",
+    "url": "https://github.com/openai/whisper",
+    "kind": "oss",
+    "categories": [
+      "transcription"
+    ],
+    "categoryNames": [
+      "Transcription & Meeting Notes"
+    ],
+    "audienceRank": 18,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com",
+    "kind": "oss",
+    "categories": [
+      "whiteboard-design"
+    ],
+    "categoryNames": [
+      "Whiteboards and UI design"
+    ],
+    "audienceRank": 19,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "figjam",
+    "name": "FigJam",
+    "url": "https://www.figma.com/figjam/",
+    "kind": "paid",
+    "categories": [
+      "whiteboard-design"
+    ],
+    "categoryNames": [
+      "Whiteboards and UI design"
+    ],
+    "audienceRank": 19
+  },
+  {
+    "id": "figma",
+    "name": "Figma Design",
+    "url": "https://www.figma.com",
+    "kind": "paid",
+    "categories": [
+      "whiteboard-design"
+    ],
+    "categoryNames": [
+      "Whiteboards and UI design"
+    ],
+    "audienceRank": 19
+  },
+  {
+    "id": "miro",
+    "name": "Miro",
+    "url": "https://miro.com",
+    "kind": "paid",
+    "categories": [
+      "whiteboard-design"
+    ],
+    "categoryNames": [
+      "Whiteboards and UI design"
+    ],
+    "audienceRank": 19
+  },
+  {
+    "id": "penpot",
+    "name": "Penpot",
+    "url": "https://penpot.app",
+    "kind": "oss",
+    "categories": [
+      "whiteboard-design"
+    ],
+    "categoryNames": [
+      "Whiteboards and UI design"
+    ],
+    "audienceRank": 19,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "tldraw",
+    "name": "tldraw SDK",
+    "url": "https://tldraw.dev",
+    "kind": "oss",
+    "categories": [
+      "whiteboard-design"
+    ],
+    "categoryNames": [
+      "Whiteboards and UI design"
+    ],
+    "audienceRank": 19,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "akaunting",
+    "name": "Akaunting",
+    "url": "https://akaunting.com/",
+    "kind": "oss",
+    "categories": [
+      "accounting-erp"
+    ],
+    "categoryNames": [
+      "Accounting and ERP"
+    ],
+    "audienceRank": 20,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "invoice-ninja",
+    "name": "Invoice Ninja",
+    "url": "https://invoiceninja.com/",
+    "kind": "oss",
+    "categories": [
+      "accounting-erp"
+    ],
+    "categoryNames": [
+      "Accounting and ERP"
+    ],
+    "audienceRank": 20,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "odoo-ce",
+    "name": "Odoo Community",
+    "url": "https://www.odoo.com",
+    "kind": "oss",
+    "categories": [
+      "accounting-erp",
+      "crm"
+    ],
+    "categoryNames": [
+      "Accounting and ERP",
+      "CRM"
+    ],
+    "audienceRank": 20,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "quickbooks-online",
+    "name": "QuickBooks Online",
+    "url": "https://quickbooks.intuit.com/pricing/",
+    "kind": "paid",
+    "categories": [
+      "accounting-erp"
+    ],
+    "categoryNames": [
+      "Accounting and ERP"
+    ],
+    "audienceRank": 20
+  },
+  {
+    "id": "xero",
+    "name": "Xero",
+    "url": "https://www.xero.com/us/pricing-plans/",
+    "kind": "paid",
+    "categories": [
+      "accounting-erp"
+    ],
+    "categoryNames": [
+      "Accounting and ERP"
+    ],
+    "audienceRank": 20
+  },
+  {
+    "id": "harvest",
+    "name": "Harvest",
+    "url": "https://www.getharvest.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "time-tracking"
+    ],
+    "categoryNames": [
+      "Time tracking"
+    ],
+    "audienceRank": 21
+  },
+  {
+    "id": "kimai",
+    "name": "Kimai",
+    "url": "https://www.kimai.org/en/",
+    "kind": "oss",
+    "categories": [
+      "time-tracking"
+    ],
+    "categoryNames": [
+      "Time tracking"
+    ],
+    "audienceRank": 21,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "solidtime",
+    "name": "solidtime",
+    "url": "https://www.solidtime.io",
+    "kind": "oss",
+    "categories": [
+      "time-tracking"
+    ],
+    "categoryNames": [
+      "Time tracking"
+    ],
+    "audienceRank": 21,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "toggl-track",
+    "name": "Toggl Track",
+    "url": "https://toggl.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "time-tracking"
+    ],
+    "categoryNames": [
+      "Time tracking"
+    ],
+    "audienceRank": 21
+  },
+  {
+    "id": "docebo",
+    "name": "Docebo",
+    "url": "https://www.docebo.com",
+    "kind": "paid",
+    "categories": [
+      "learning-management"
+    ],
+    "categoryNames": [
+      "Learning management"
+    ],
+    "audienceRank": 22
+  },
+  {
+    "id": "moodle",
+    "name": "Moodle LMS",
+    "url": "https://moodle.org",
+    "kind": "oss",
+    "categories": [
+      "learning-management"
+    ],
+    "categoryNames": [
+      "Learning management"
+    ],
+    "audienceRank": 22,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "open-edx",
+    "name": "Open edX",
+    "url": "https://openedx.org",
+    "kind": "oss",
+    "categories": [
+      "learning-management"
+    ],
+    "categoryNames": [
+      "Learning management"
+    ],
+    "audienceRank": 22,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "talentlms",
+    "name": "TalentLMS",
+    "url": "https://www.talentlms.com",
+    "kind": "paid",
+    "categories": [
+      "learning-management"
+    ],
+    "categoryNames": [
+      "Learning management"
+    ],
+    "audienceRank": 22
+  },
+  {
+    "id": "espocrm",
+    "name": "EspoCRM",
+    "url": "https://www.espocrm.com",
+    "kind": "oss",
+    "categories": [
+      "crm"
+    ],
+    "categoryNames": [
+      "CRM"
+    ],
+    "audienceRank": 23,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "hubspot",
+    "name": "HubSpot",
+    "url": "https://www.hubspot.com/pricing/sales",
+    "kind": "paid",
+    "categories": [
+      "crm"
+    ],
+    "categoryNames": [
+      "CRM"
+    ],
+    "audienceRank": 23
+  },
+  {
+    "id": "salesforce",
+    "name": "Salesforce",
+    "url": "https://www.salesforce.com/sales/pricing/",
+    "kind": "paid",
+    "categories": [
+      "crm"
+    ],
+    "categoryNames": [
+      "CRM"
+    ],
+    "audienceRank": 23
+  },
+  {
+    "id": "suitecrm",
+    "name": "SuiteCRM",
+    "url": "https://suitecrm.com",
+    "kind": "oss",
+    "categories": [
+      "crm"
+    ],
+    "categoryNames": [
+      "CRM"
+    ],
+    "audienceRank": 23,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "twenty",
+    "name": "Twenty",
+    "url": "https://twenty.com",
+    "kind": "oss",
+    "categories": [
+      "crm"
+    ],
+    "categoryNames": [
+      "CRM"
+    ],
+    "audienceRank": 23,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "chatwoot",
+    "name": "Chatwoot",
+    "url": "https://www.chatwoot.com",
+    "kind": "oss",
+    "categories": [
+      "support-helpdesk"
+    ],
+    "categoryNames": [
+      "Support and helpdesk"
+    ],
+    "audienceRank": 24,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "freescout",
+    "name": "FreeScout",
+    "url": "https://freescout.net",
+    "kind": "oss",
+    "categories": [
+      "support-helpdesk"
+    ],
+    "categoryNames": [
+      "Support and helpdesk"
+    ],
+    "audienceRank": 24,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "intercom",
+    "name": "Intercom",
+    "url": "https://www.intercom.com",
+    "kind": "paid",
+    "categories": [
+      "support-helpdesk"
+    ],
+    "categoryNames": [
+      "Support and helpdesk"
+    ],
+    "audienceRank": 24
+  },
+  {
+    "id": "zammad",
+    "name": "Zammad",
+    "url": "https://zammad.com",
+    "kind": "oss",
+    "categories": [
+      "support-helpdesk"
+    ],
+    "categoryNames": [
+      "Support and helpdesk"
+    ],
+    "audienceRank": 24,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "zendesk",
+    "name": "Zendesk",
+    "url": "https://www.zendesk.com",
+    "kind": "paid",
+    "categories": [
+      "support-helpdesk"
+    ],
+    "categoryNames": [
+      "Support and helpdesk"
+    ],
+    "audienceRank": 24
+  },
+  {
+    "id": "keila",
+    "name": "Keila",
+    "url": "https://www.keila.io/",
+    "kind": "oss",
+    "categories": [
+      "email-marketing"
+    ],
+    "categoryNames": [
+      "Email marketing"
+    ],
+    "audienceRank": 25,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "listmonk",
+    "name": "listmonk",
+    "url": "https://listmonk.app/",
+    "kind": "oss",
+    "categories": [
+      "email-marketing"
+    ],
+    "categoryNames": [
+      "Email marketing"
+    ],
+    "audienceRank": 25,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "mailchimp",
+    "name": "Mailchimp",
+    "url": "https://mailchimp.com/",
+    "kind": "paid",
+    "categories": [
+      "email-marketing"
+    ],
+    "categoryNames": [
+      "Email marketing"
+    ],
+    "audienceRank": 25
+  },
+  {
+    "id": "mautic",
+    "name": "Mautic",
+    "url": "https://mautic.org/",
+    "kind": "oss",
+    "categories": [
+      "email-marketing"
+    ],
+    "categoryNames": [
+      "Email marketing"
+    ],
+    "audienceRank": 25,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "airtable",
+    "name": "Airtable",
+    "url": "https://airtable.com",
+    "kind": "paid",
+    "categories": [
+      "spreadsheet-database"
+    ],
+    "categoryNames": [
+      "Spreadsheet databases"
+    ],
+    "audienceRank": 26
+  },
+  {
+    "id": "baserow",
+    "name": "Baserow Open Source Edition",
+    "url": "https://baserow.io",
+    "kind": "oss",
+    "categories": [
+      "spreadsheet-database"
+    ],
+    "categoryNames": [
+      "Spreadsheet databases"
+    ],
+    "audienceRank": 26,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "grist",
+    "name": "Grist Community",
+    "url": "https://www.getgrist.com",
+    "kind": "oss",
+    "categories": [
+      "spreadsheet-database"
+    ],
+    "categoryNames": [
+      "Spreadsheet databases"
+    ],
+    "audienceRank": 26,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "nocodb",
+    "name": "NocoDB Community",
+    "url": "https://nocodb.com",
+    "kind": "oss",
+    "categories": [
+      "spreadsheet-database"
+    ],
+    "categoryNames": [
+      "Spreadsheet databases"
+    ],
+    "audienceRank": 26,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "teable",
+    "name": "Teable Community",
+    "url": "https://teable.ai",
+    "kind": "oss",
+    "categories": [
+      "spreadsheet-database"
+    ],
+    "categoryNames": [
+      "Spreadsheet databases"
+    ],
+    "audienceRank": 26,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "bigcommerce",
+    "name": "BigCommerce",
+    "url": "https://www.bigcommerce.com",
+    "kind": "paid",
+    "categories": [
+      "ecommerce"
+    ],
+    "categoryNames": [
+      "Ecommerce"
+    ],
+    "audienceRank": 27
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "url": "https://medusajs.com",
+    "kind": "oss",
+    "categories": [
+      "ecommerce"
+    ],
+    "categoryNames": [
+      "Ecommerce"
+    ],
+    "audienceRank": 27,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "prestashop",
+    "name": "PrestaShop",
+    "url": "https://prestashop.com/open-source/",
+    "kind": "oss",
+    "categories": [
+      "ecommerce"
+    ],
+    "categoryNames": [
+      "Ecommerce"
+    ],
+    "audienceRank": 27,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "url": "https://www.shopify.com",
+    "kind": "paid",
+    "categories": [
+      "ecommerce"
+    ],
+    "categoryNames": [
+      "Ecommerce"
+    ],
+    "audienceRank": 27
+  },
+  {
+    "id": "woocommerce",
+    "name": "WooCommerce",
+    "url": "https://woocommerce.com",
+    "kind": "oss",
+    "categories": [
+      "ecommerce"
+    ],
+    "categoryNames": [
+      "Ecommerce"
+    ],
+    "audienceRank": 27,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "adobe-lightroom",
+    "name": "Adobe Lightroom",
+    "url": "https://www.adobe.com/products/photoshop-lightroom/plans.html",
+    "kind": "paid",
+    "categories": [
+      "image-editing"
+    ],
+    "categoryNames": [
+      "Image editing"
+    ],
+    "audienceRank": 28
+  },
+  {
+    "id": "adobe-photoshop",
+    "name": "Adobe Photoshop",
+    "url": "https://www.adobe.com/products/photoshop/plans.html",
+    "kind": "paid",
+    "categories": [
+      "image-editing"
+    ],
+    "categoryNames": [
+      "Image editing"
+    ],
+    "audienceRank": 28
+  },
+  {
+    "id": "darktable",
+    "name": "darktable",
+    "url": "https://www.darktable.org/",
+    "kind": "oss",
+    "categories": [
+      "image-editing"
+    ],
+    "categoryNames": [
+      "Image editing"
+    ],
+    "audienceRank": 28,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "url": "https://www.gimp.org/",
+    "kind": "oss",
+    "categories": [
+      "image-editing"
+    ],
+    "categoryNames": [
+      "Image editing"
+    ],
+    "audienceRank": 28,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "krita",
+    "name": "Krita",
+    "url": "https://krita.org/",
+    "kind": "oss",
+    "categories": [
+      "image-editing"
+    ],
+    "categoryNames": [
+      "Image editing"
+    ],
+    "audienceRank": 28,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "drawio",
+    "name": "draw.io",
+    "url": "https://www.drawio.com",
+    "kind": "oss",
+    "categories": [
+      "diagramming"
+    ],
+    "categoryNames": [
+      "Diagramming"
+    ],
+    "audienceRank": 29,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "lucidchart",
+    "name": "Lucidchart",
+    "url": "https://lucid.co/lucidchart",
+    "kind": "paid",
+    "categories": [
+      "diagramming"
+    ],
+    "categoryNames": [
+      "Diagramming"
+    ],
+    "audienceRank": 29
+  },
+  {
+    "id": "mermaid",
+    "name": "Mermaid",
+    "url": "https://mermaid.js.org",
+    "kind": "oss",
+    "categories": [
+      "diagramming"
+    ],
+    "categoryNames": [
+      "Diagramming"
+    ],
+    "audienceRank": 29,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "microsoft-visio",
+    "name": "Microsoft Visio",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/visio",
+    "kind": "paid",
+    "categories": [
+      "diagramming"
+    ],
+    "categoryNames": [
+      "Diagramming"
+    ],
+    "audienceRank": 29
+  },
+  {
+    "id": "adobe-premiere-pro",
+    "name": "Adobe Premiere Pro",
+    "url": "https://www.adobe.com/products/premiere/plans.html",
+    "kind": "paid",
+    "categories": [
+      "video-editing"
+    ],
+    "categoryNames": [
+      "Video editing"
+    ],
+    "audienceRank": 30
+  },
+  {
+    "id": "final-cut-pro",
+    "name": "Final Cut Pro",
+    "url": "https://www.apple.com/final-cut-pro/",
+    "kind": "paid",
+    "categories": [
+      "video-editing"
+    ],
+    "categoryNames": [
+      "Video editing"
+    ],
+    "audienceRank": 30
+  },
+  {
+    "id": "kdenlive",
+    "name": "Kdenlive",
+    "url": "https://kdenlive.org/",
+    "kind": "oss",
+    "categories": [
+      "video-editing"
+    ],
+    "categoryNames": [
+      "Video editing"
+    ],
+    "audienceRank": 30,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "shotcut",
+    "name": "Shotcut",
+    "url": "https://shotcut.org/",
+    "kind": "oss",
+    "categories": [
+      "video-editing"
+    ],
+    "categoryNames": [
+      "Video editing"
+    ],
+    "audienceRank": 30,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "buffer",
+    "name": "Buffer",
+    "url": "https://buffer.com",
+    "kind": "paid",
+    "categories": [
+      "social-publishing"
+    ],
+    "categoryNames": [
+      "Social publishing"
+    ],
+    "audienceRank": 31
+  },
+  {
+    "id": "hootsuite",
+    "name": "Hootsuite",
+    "url": "https://www.hootsuite.com",
+    "kind": "paid",
+    "categories": [
+      "social-publishing"
+    ],
+    "categoryNames": [
+      "Social publishing"
+    ],
+    "audienceRank": 31
+  },
+  {
+    "id": "mixpost",
+    "name": "Mixpost Lite",
+    "url": "https://mixpost.app",
+    "kind": "oss",
+    "categories": [
+      "social-publishing"
+    ],
+    "categoryNames": [
+      "Social publishing"
+    ],
+    "audienceRank": 31,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "postiz",
+    "name": "Postiz",
+    "url": "https://postiz.com",
+    "kind": "oss",
+    "categories": [
+      "social-publishing"
+    ],
+    "categoryNames": [
+      "Social publishing"
+    ],
+    "audienceRank": 31,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "activepieces",
+    "name": "Activepieces",
+    "url": "https://www.activepieces.com",
+    "kind": "oss",
+    "categories": [
+      "automation"
+    ],
+    "categoryNames": [
+      "Workflow automation"
+    ],
+    "audienceRank": 32,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "make",
+    "name": "Make",
+    "url": "https://www.make.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "automation"
+    ],
+    "categoryNames": [
+      "Workflow automation"
+    ],
+    "audienceRank": 32
+  },
+  {
+    "id": "n8n",
+    "name": "n8n (source available)",
+    "url": "https://n8n.io",
+    "kind": "oss",
+    "categories": [
+      "automation"
+    ],
+    "categoryNames": [
+      "Workflow automation"
+    ],
+    "audienceRank": 32,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "node-red",
+    "name": "Node-RED",
+    "url": "https://nodered.org",
+    "kind": "oss",
+    "categories": [
+      "automation"
+    ],
+    "categoryNames": [
+      "Workflow automation"
+    ],
+    "audienceRank": 32,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "windmill",
+    "name": "Windmill (OSS source build)",
+    "url": "https://www.windmill.dev",
+    "kind": "oss",
+    "categories": [
+      "automation"
+    ],
+    "categoryNames": [
+      "Workflow automation"
+    ],
+    "audienceRank": 32,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "url": "https://zapier.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "automation"
+    ],
+    "categoryNames": [
+      "Workflow automation"
+    ],
+    "audienceRank": 32
+  },
+  {
+    "id": "google-analytics-360",
+    "name": "Google Analytics 360",
+    "url": "https://marketingplatform.google.com/about/analytics-360/",
+    "kind": "paid",
+    "categories": [
+      "web-analytics"
+    ],
+    "categoryNames": [
+      "Web analytics"
+    ],
+    "audienceRank": 33
+  },
+  {
+    "id": "matomo",
+    "name": "Matomo",
+    "url": "https://matomo.org",
+    "kind": "oss",
+    "categories": [
+      "web-analytics"
+    ],
+    "categoryNames": [
+      "Web analytics"
+    ],
+    "audienceRank": 33,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "plausible",
+    "name": "Plausible Community Edition",
+    "url": "https://plausible.io",
+    "kind": "oss",
+    "categories": [
+      "web-analytics"
+    ],
+    "categoryNames": [
+      "Web analytics"
+    ],
+    "audienceRank": 33,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "posthog",
+    "name": "PostHog core",
+    "url": "https://posthog.com",
+    "kind": "oss",
+    "categories": [
+      "web-analytics"
+    ],
+    "categoryNames": [
+      "Web analytics"
+    ],
+    "audienceRank": 33,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "umami",
+    "name": "Umami",
+    "url": "https://umami.is",
+    "kind": "oss",
+    "categories": [
+      "web-analytics"
+    ],
+    "categoryNames": [
+      "Web analytics"
+    ],
+    "audienceRank": 33,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "cap",
+    "name": "Cap",
+    "url": "https://cap.so",
+    "kind": "oss",
+    "categories": [
+      "screen-recording"
+    ],
+    "categoryNames": [
+      "Screen recording and asynchronous video"
+    ],
+    "audienceRank": 34,
+    "osi": true,
+    "tier": "U"
+  },
+  {
+    "id": "loom",
+    "name": "Loom",
+    "url": "https://www.loom.com",
+    "kind": "paid",
+    "categories": [
+      "screen-recording"
+    ],
+    "categoryNames": [
+      "Screen recording and asynchronous video"
+    ],
+    "audienceRank": 34
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio",
+    "url": "https://obsproject.com",
+    "kind": "oss",
+    "categories": [
+      "screen-recording"
+    ],
+    "categoryNames": [
+      "Screen recording and asynchronous video"
+    ],
+    "audienceRank": 34,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "screenity",
+    "name": "Screenity",
+    "url": "https://screenity.io",
+    "kind": "oss",
+    "categories": [
+      "screen-recording"
+    ],
+    "categoryNames": [
+      "Screen recording and asynchronous video"
+    ],
+    "audienceRank": 34,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "bamboohr",
+    "name": "BambooHR",
+    "url": "https://www.bamboohr.com/",
+    "kind": "paid",
+    "categories": [
+      "hr"
+    ],
+    "categoryNames": [
+      "Human resources"
+    ],
+    "audienceRank": 35
+  },
+  {
+    "id": "orangehrm-starter",
+    "name": "OrangeHRM Starter",
+    "url": "https://orangehrm.com/orangehrm-starter-open-source-software",
+    "kind": "oss",
+    "categories": [
+      "hr"
+    ],
+    "categoryNames": [
+      "Human resources"
+    ],
+    "audienceRank": 35,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "aircall",
+    "name": "Aircall",
+    "url": "https://aircall.io",
+    "kind": "paid",
+    "categories": [
+      "telephony"
+    ],
+    "categoryNames": [
+      "Telephony"
+    ],
+    "audienceRank": 36
+  },
+  {
+    "id": "asterisk",
+    "name": "Asterisk",
+    "url": "https://www.asterisk.org",
+    "kind": "oss",
+    "categories": [
+      "telephony"
+    ],
+    "categoryNames": [
+      "Telephony"
+    ],
+    "audienceRank": 36,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "freeswitch",
+    "name": "FreeSWITCH",
+    "url": "https://signalwire.com/developers/freeswitch",
+    "kind": "oss",
+    "categories": [
+      "telephony"
+    ],
+    "categoryNames": [
+      "Telephony"
+    ],
+    "audienceRank": 36,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "ringcentral",
+    "name": "RingCentral RingEX",
+    "url": "https://www.ringcentral.com",
+    "kind": "paid",
+    "categories": [
+      "telephony"
+    ],
+    "categoryNames": [
+      "Telephony"
+    ],
+    "audienceRank": 36
+  },
+  {
+    "id": "brandfolder",
+    "name": "Brandfolder",
+    "url": "https://brandfolder.com/",
+    "kind": "paid",
+    "categories": [
+      "digital-assets"
+    ],
+    "categoryNames": [
+      "Digital Asset Management"
+    ],
+    "audienceRank": 37
+  },
+  {
+    "id": "bynder",
+    "name": "Bynder",
+    "url": "https://www.bynder.com/",
+    "kind": "paid",
+    "categories": [
+      "digital-assets"
+    ],
+    "categoryNames": [
+      "Digital Asset Management"
+    ],
+    "audienceRank": 37
+  },
+  {
+    "id": "phraseanet",
+    "name": "Phraseanet",
+    "url": "https://www.phraseanet.com/",
+    "kind": "oss",
+    "categories": [
+      "digital-assets"
+    ],
+    "categoryNames": [
+      "Digital Asset Management"
+    ],
+    "audienceRank": 37,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "resourcespace",
+    "name": "ResourceSpace",
+    "url": "https://www.resourcespace.com/",
+    "kind": "oss",
+    "categories": [
+      "digital-assets"
+    ],
+    "categoryNames": [
+      "Digital Asset Management"
+    ],
+    "audienceRank": 37,
+    "osi": false,
+    "tier": "U"
+  },
+  {
+    "id": "apache-superset",
+    "name": "Apache Superset",
+    "url": "https://superset.apache.org/",
+    "kind": "oss",
+    "categories": [
+      "business-intelligence"
+    ],
+    "categoryNames": [
+      "Business intelligence"
+    ],
+    "audienceRank": 38,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "looker",
+    "name": "Looker",
+    "url": "https://cloud.google.com/looker",
+    "kind": "paid",
+    "categories": [
+      "business-intelligence"
+    ],
+    "categoryNames": [
+      "Business intelligence"
+    ],
+    "audienceRank": 38
+  },
+  {
+    "id": "metabase",
+    "name": "Metabase Open Source Edition",
+    "url": "https://www.metabase.com/",
+    "kind": "oss",
+    "categories": [
+      "business-intelligence"
+    ],
+    "categoryNames": [
+      "Business intelligence"
+    ],
+    "audienceRank": 38,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "metabase-pro",
+    "name": "Metabase Pro",
+    "url": "https://www.metabase.com/",
+    "kind": "paid",
+    "categories": [
+      "business-intelligence"
+    ],
+    "categoryNames": [
+      "Business intelligence"
+    ],
+    "audienceRank": 38
+  },
+  {
+    "id": "power-bi",
+    "name": "Power BI",
+    "url": "https://powerbi.microsoft.com/",
+    "kind": "paid",
+    "categories": [
+      "business-intelligence"
+    ],
+    "categoryNames": [
+      "Business intelligence"
+    ],
+    "audienceRank": 38
+  },
+  {
+    "id": "tableau",
+    "name": "Tableau",
+    "url": "https://www.tableau.com/",
+    "kind": "paid",
+    "categories": [
+      "business-intelligence"
+    ],
+    "categoryNames": [
+      "Business intelligence"
+    ],
+    "audienceRank": 38
+  },
+  {
+    "id": "greenhouse",
+    "name": "Greenhouse",
+    "url": "https://www.greenhouse.com/",
+    "kind": "paid",
+    "categories": [
+      "recruiting"
+    ],
+    "categoryNames": [
+      "Recruiting and applicant tracking"
+    ],
+    "audienceRank": 39
+  },
+  {
+    "id": "lever",
+    "name": "Lever",
+    "url": "https://www.lever.co/",
+    "kind": "paid",
+    "categories": [
+      "recruiting"
+    ],
+    "categoryNames": [
+      "Recruiting and applicant tracking"
+    ],
+    "audienceRank": 39
+  },
+  {
+    "id": "opencats",
+    "name": "OpenCATS",
+    "url": "https://www.opencats.org/",
+    "kind": "oss",
+    "categories": [
+      "recruiting"
+    ],
+    "categoryNames": [
+      "Recruiting and applicant tracking"
+    ],
+    "audienceRank": 39,
+    "osi": false,
+    "tier": "S"
+  },
+  {
+    "id": "fastmail",
+    "name": "Fastmail Business",
+    "url": "https://www.fastmail.com/pricing/us/",
+    "kind": "paid",
+    "categories": [
+      "email-hosting"
+    ],
+    "categoryNames": [
+      "Business email hosting"
+    ],
+    "audienceRank": 40
+  },
+  {
+    "id": "mailcow",
+    "name": "mailcow: dockerized",
+    "url": "https://mailcow.email/",
+    "kind": "oss",
+    "categories": [
+      "email-hosting"
+    ],
+    "categoryNames": [
+      "Business email hosting"
+    ],
+    "audienceRank": 40,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "stalwart",
+    "name": "Stalwart Community",
+    "url": "https://www.stalw.art/",
+    "kind": "oss",
+    "categories": [
+      "email-hosting"
+    ],
+    "categoryNames": [
+      "Business email hosting"
+    ],
+    "audienceRank": 40,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "zoho-mail",
+    "name": "Zoho Mail",
+    "url": "https://www.zoho.com/mail/zohomail-pricing.html",
+    "kind": "paid",
+    "categories": [
+      "email-hosting"
+    ],
+    "categoryNames": [
+      "Business email hosting"
+    ],
+    "audienceRank": 40
+  },
+  {
+    "id": "auth0",
+    "name": "Auth0",
+    "url": "https://auth0.com/",
+    "kind": "paid",
+    "categories": [
+      "login-sso"
+    ],
+    "categoryNames": [
+      "Login and single sign-on"
+    ],
+    "audienceRank": 41
+  },
+  {
+    "id": "authelia",
+    "name": "Authelia",
+    "url": "https://www.authelia.com/",
+    "kind": "oss",
+    "categories": [
+      "login-sso"
+    ],
+    "categoryNames": [
+      "Login and single sign-on"
+    ],
+    "audienceRank": 41,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "authentik",
+    "name": "authentik",
+    "url": "https://goauthentik.io/",
+    "kind": "oss",
+    "categories": [
+      "login-sso"
+    ],
+    "categoryNames": [
+      "Login and single sign-on"
+    ],
+    "audienceRank": 41,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "keycloak",
+    "name": "Keycloak",
+    "url": "https://www.keycloak.org/",
+    "kind": "oss",
+    "categories": [
+      "login-sso"
+    ],
+    "categoryNames": [
+      "Login and single sign-on"
+    ],
+    "audienceRank": 41,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "okta",
+    "name": "Okta Workforce Identity",
+    "url": "https://www.okta.com/",
+    "kind": "paid",
+    "categories": [
+      "login-sso"
+    ],
+    "categoryNames": [
+      "Login and single sign-on"
+    ],
+    "audienceRank": 41
+  },
+  {
+    "id": "zitadel",
+    "name": "ZITADEL",
+    "url": "https://zitadel.com/",
+    "kind": "oss",
+    "categories": [
+      "login-sso"
+    ],
+    "categoryNames": [
+      "Login and single sign-on"
+    ],
+    "audienceRank": 41,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "cloudflare-access",
+    "name": "Cloudflare Access",
+    "url": "https://www.cloudflare.com/sase/products/access/",
+    "kind": "paid",
+    "categories": [
+      "vpn-access"
+    ],
+    "categoryNames": [
+      "VPN and private network access"
+    ],
+    "audienceRank": 42
+  },
+  {
+    "id": "headscale",
+    "name": "Headscale",
+    "url": "https://headscale.net/stable/",
+    "kind": "oss",
+    "categories": [
+      "vpn-access"
+    ],
+    "categoryNames": [
+      "VPN and private network access"
+    ],
+    "audienceRank": 42,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "netbird",
+    "name": "NetBird Community Edition",
+    "url": "https://netbird.io/",
+    "kind": "oss",
+    "categories": [
+      "vpn-access"
+    ],
+    "categoryNames": [
+      "VPN and private network access"
+    ],
+    "audienceRank": 42,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "tailscale",
+    "name": "Tailscale",
+    "url": "https://tailscale.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "vpn-access"
+    ],
+    "categoryNames": [
+      "VPN and private network access"
+    ],
+    "audienceRank": 42
+  },
+  {
+    "id": "freshservice-itam",
+    "name": "Freshservice IT Asset Management",
+    "url": "https://www.freshworks.com/freshservice/itam/",
+    "kind": "paid",
+    "categories": [
+      "it-assets"
+    ],
+    "categoryNames": [
+      "IT asset management"
+    ],
+    "audienceRank": 43
+  },
+  {
+    "id": "glpi",
+    "name": "GLPI",
+    "url": "https://www.glpi-project.org/",
+    "kind": "oss",
+    "categories": [
+      "it-assets"
+    ],
+    "categoryNames": [
+      "IT asset management"
+    ],
+    "audienceRank": 43,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "lansweeper",
+    "name": "Lansweeper",
+    "url": "https://www.lansweeper.com/",
+    "kind": "paid",
+    "categories": [
+      "it-assets"
+    ],
+    "categoryNames": [
+      "IT asset management"
+    ],
+    "audienceRank": 43
+  },
+  {
+    "id": "snipe-it",
+    "name": "Snipe-IT",
+    "url": "https://snipeitapp.com/",
+    "kind": "oss",
+    "categories": [
+      "it-assets"
+    ],
+    "categoryNames": [
+      "IT asset management"
+    ],
+    "audienceRank": 43,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "appwrite",
+    "name": "Appwrite",
+    "url": "https://appwrite.io/",
+    "kind": "oss",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "coolify",
+    "name": "Coolify",
+    "url": "https://coolify.io/",
+    "kind": "oss",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "dokku",
+    "name": "Dokku",
+    "url": "https://dokku.com/",
+    "kind": "oss",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "firebase",
+    "name": "Firebase",
+    "url": "https://firebase.google.com/",
+    "kind": "paid",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44
+  },
+  {
+    "id": "heroku",
+    "name": "Heroku",
+    "url": "https://www.heroku.com/",
+    "kind": "paid",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44
+  },
+  {
+    "id": "pocketbase",
+    "name": "PocketBase",
+    "url": "https://pocketbase.io/",
+    "kind": "oss",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase self-hosted stack",
+    "url": "https://supabase.com/",
+    "kind": "oss",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "url": "https://vercel.com/",
+    "kind": "paid",
+    "categories": [
+      "hosting-backend"
+    ],
+    "categoryNames": [
+      "Application hosting and backends"
+    ],
+    "audienceRank": 44
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog",
+    "url": "https://www.datadoghq.com/",
+    "kind": "paid",
+    "categories": [
+      "monitoring"
+    ],
+    "categoryNames": [
+      "Monitoring and observability"
+    ],
+    "audienceRank": 45
+  },
+  {
+    "id": "glitchtip",
+    "name": "GlitchTip",
+    "url": "https://glitchtip.com/",
+    "kind": "oss",
+    "categories": [
+      "monitoring"
+    ],
+    "categoryNames": [
+      "Monitoring and observability"
+    ],
+    "audienceRank": 45,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana OSS",
+    "url": "https://grafana.com/oss/grafana/",
+    "kind": "oss",
+    "categories": [
+      "monitoring"
+    ],
+    "categoryNames": [
+      "Monitoring and observability"
+    ],
+    "audienceRank": 45,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "pingdom",
+    "name": "Pingdom",
+    "url": "https://www.pingdom.com/",
+    "kind": "paid",
+    "categories": [
+      "monitoring"
+    ],
+    "categoryNames": [
+      "Monitoring and observability"
+    ],
+    "audienceRank": 45
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry",
+    "url": "https://sentry.io/",
+    "kind": "paid",
+    "categories": [
+      "monitoring"
+    ],
+    "categoryNames": [
+      "Monitoring and observability"
+    ],
+    "audienceRank": 45
+  },
+  {
+    "id": "uptime-kuma",
+    "name": "Uptime Kuma",
+    "url": "https://uptime.kuma.pet/",
+    "kind": "oss",
+    "categories": [
+      "monitoring"
+    ],
+    "categoryNames": [
+      "Monitoring and observability"
+    ],
+    "audienceRank": 45,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "appsmith",
+    "name": "Appsmith",
+    "url": "https://www.appsmith.com",
+    "kind": "oss",
+    "categories": [
+      "internal-tools"
+    ],
+    "categoryNames": [
+      "Internal tools and low-code apps"
+    ],
+    "audienceRank": 46,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "budibase",
+    "name": "Budibase",
+    "url": "https://budibase.com",
+    "kind": "oss",
+    "categories": [
+      "internal-tools"
+    ],
+    "categoryNames": [
+      "Internal tools and low-code apps"
+    ],
+    "audienceRank": 46,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "retool",
+    "name": "Retool",
+    "url": "https://retool.com",
+    "kind": "paid",
+    "categories": [
+      "internal-tools"
+    ],
+    "categoryNames": [
+      "Internal tools and low-code apps"
+    ],
+    "audienceRank": 46
+  },
+  {
+    "id": "tooljet",
+    "name": "ToolJet",
+    "url": "https://tooljet.com",
+    "kind": "oss",
+    "categories": [
+      "internal-tools"
+    ],
+    "categoryNames": [
+      "Internal tools and low-code apps"
+    ],
+    "audienceRank": 46,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "url": "https://www.usebruno.com/",
+    "kind": "oss",
+    "categories": [
+      "api-testing"
+    ],
+    "categoryNames": [
+      "API clients and testing"
+    ],
+    "audienceRank": 47,
+    "osi": true,
+    "tier": "C"
+  },
+  {
+    "id": "hoppscotch",
+    "name": "Hoppscotch Community Edition",
+    "url": "https://hoppscotch.com/",
+    "kind": "oss",
+    "categories": [
+      "api-testing"
+    ],
+    "categoryNames": [
+      "API clients and testing"
+    ],
+    "audienceRank": 47,
+    "osi": true,
+    "tier": "B"
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia paid plans",
+    "url": "https://insomnia.rest/",
+    "kind": "paid",
+    "categories": [
+      "api-testing"
+    ],
+    "categoryNames": [
+      "API clients and testing"
+    ],
+    "audienceRank": 47
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "url": "https://www.postman.com/",
+    "kind": "paid",
+    "categories": [
+      "api-testing"
+    ],
+    "categoryNames": [
+      "API clients and testing"
+    ],
+    "audienceRank": 47
+  },
+  {
+    "id": "algolia",
+    "name": "Algolia",
+    "url": "https://www.algolia.com/pricing",
+    "kind": "paid",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "categoryNames": [
+      "Search infrastructure"
+    ],
+    "audienceRank": 48
+  },
+  {
+    "id": "elastic-cloud",
+    "name": "Elastic Cloud",
+    "url": "https://www.elastic.co/pricing/",
+    "kind": "paid",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "categoryNames": [
+      "Search infrastructure"
+    ],
+    "audienceRank": 48
+  },
+  {
+    "id": "opensearch",
+    "name": "OpenSearch",
+    "url": "https://opensearch.org/",
+    "kind": "oss",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "categoryNames": [
+      "Search infrastructure"
+    ],
+    "audienceRank": 48,
+    "osi": true,
+    "tier": "A"
+  },
+  {
+    "id": "typesense",
+    "name": "Typesense",
+    "url": "https://typesense.org/",
+    "kind": "oss",
+    "categories": [
+      "search-infrastructure"
+    ],
+    "categoryNames": [
+      "Search infrastructure"
+    ],
+    "audienceRank": 48,
+    "osi": true,
+    "tier": "C"
+  }
+]
