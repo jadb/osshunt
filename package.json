@@ -18,8 +18,9 @@
     "test": "node --test test/*.test.mjs && python3 -m unittest discover -s test -p '*_test.py'"
   },
   "dependencies": {
-    "zod": "4.6.5",
-    "yaml": "2.9.1"
+    "parse5": "8.0.1",
+    "yaml": "2.9.1",
+    "zod": "4.6.5"
   },
   "devDependencies": {
     "ajv": "8.20.0",
