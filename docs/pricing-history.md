@@ -95,6 +95,8 @@ Amounts remain exact decimal strings. `$` alone does not identify USD. Annual co
 
 The [ten-tool verification](../research/pricing-ten-tool-verification.md) produced **eight reviewed observations and 32 plans**. Dropbox, Zoom and Figma have matching landing/pricing archive digests. Notion, Asana, Trello, Airtable and Calendly retain explicit legacy integrity qualifications on one or both pages. Slack and Linear remain gaps in the sampled windows. These are bounded samples, not complete six-month histories. The [initial live audit](../research/pricing-live-audit.md) preserves earlier unsuccessful probes.
 
+The subsequent [blind twenty-tool verification](../research/pricing-twenty-tool-verification.md) completed all 20 tools in 78 source requests, then repeated with zero fetch attempts. Twelve tools had retained pricing material, but the unchanged parser produced **zero valid new observations**. Static layouts, embedded data and edition/discovery gaps prevent unattended price extraction. Collection, caching and audit checks can be automated; publication still requires evidence review. The eight earlier observations remain unchanged.
+
 Recheck retained evidence without network requests or changes to discovery gates:
 
 ```sh

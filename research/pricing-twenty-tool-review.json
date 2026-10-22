@@ -1,0 +1,454 @@
+{
+  "formatVersion": 1,
+  "mode": "independent-retained-source-review",
+  "confirmedObservations": 0,
+  "classificationCounts": {
+    "discovery_edition_gap": 1,
+    "source_unavailable": 6,
+    "embedded_data_unsupported": 2,
+    "static_pricing_unsupported": 10,
+    "missing_landing": 1
+  },
+  "offerPrecision": "Not estimable: no complete recurring-price tuples or valid proposals; raw fragments were not publishable offers.",
+  "mailchimp": {
+    "captures": 2,
+    "planFragments": 10,
+    "offerFragments": 17,
+    "completeRecurringTuples": 0,
+    "publishableObservations": 0,
+    "findings": [
+      "Duplicate tier identities blocked both captures",
+      "Trial CTA/terms and conditional overflow quote messages do not establish unconditional paid-plan prices",
+      "All offer fragments lack currency, billing period, commitment, unit and minimum quantity",
+      "Three numeric zeros refer to introductory free trials, not recurring paid rates"
+    ]
+  },
+  "manualEffort": {
+    "reviewMinutes": null,
+    "engineeringMinutes": null,
+    "note": "Active review and engineering time were not separately instrumented; source timestamps and deterministic command outputs are retained."
+  },
+  "products": [
+    {
+      "productId": "1password",
+      "classification": "discovery_edition_gap",
+      "finding": "Selected XAM quote-only modules and a competitor comparison; canonical general password-manager hints were not reached within the two-candidate budget.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630192807id_/https://1password.com/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250619130729id_/https://1password.com/pricing/xam",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        },
+        {
+          "url": "https://web.archive.org/web/20250619130843id_/https://1password.com/compare/password-manager",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "bitwarden",
+      "classification": "source_unavailable",
+      "finding": "Landing payload digest failed; no pricing body retained.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630085312id_/https://bitwarden.com/",
+      "landingIntegrity": null,
+      "pricingSources": []
+    },
+    {
+      "productId": "confluence",
+      "classification": "embedded_data_unsupported",
+      "finding": "Title-only visible body contains inline serialized plan, currency, billing-cycle and quantity data; units require a verified interpretation contract.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250629165214id_/https://www.atlassian.com/software/confluence",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250628091512id_/https://www.atlassian.com/software/confluence/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "jira",
+      "classification": "embedded_data_unsupported",
+      "finding": "Inline serialized pricing records include quantities, currencies, unitAmount and flatAmount; minor-unit normalization remains unresolved.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630040424id_/https://www.atlassian.com/software/jira",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250623023614id_/https://www.atlassian.com/software/jira/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "typeform",
+      "classification": "source_unavailable",
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": null,
+      "landingIntegrity": null,
+      "pricingSources": []
+    },
+    {
+      "productId": "miro",
+      "classification": "source_unavailable",
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": null,
+      "landingIntegrity": null,
+      "pricingSources": []
+    },
+    {
+      "productId": "hubspot",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static Sales tiers and promotional versus regular rates exist; allowed discovery points back to the Sales landing; pricing/sales is outside current product paths.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250627052208id_/https://www.hubspot.com/products/sales",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "intercom",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static seat tiers and separate resolution charges require separate offer units.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630153335id_/https://www.intercom.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250618201242id_/https://www.intercom.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "zendesk",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static pricing table and billing variants exist; hero/table Enterprise amounts require reconciliation. Accessibility Plan was a false pricing candidate.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250627060351id_/https://www.zendesk.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250625024934id_/https://www.zendesk.com/pricing/featured/",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        },
+        {
+          "url": "https://web.archive.org/web/20250625025002id_/https://www.zendesk.com/company/policies-and-guidelines/accessibility-plan/",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "mailchimp",
+      "classification": "static_pricing_unsupported",
+      "finding": "Two captures produced duplicate CTA/terms fragments instead of usable recurring-price tuples; duplicate-plan validation rejected both.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630163644id_/https://mailchimp.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250630162355id_/https://mailchimp.com/pricing/marketing/",
+          "integrity": "verified",
+          "outcome": "error",
+          "errorCode": "extraction_error"
+        },
+        {
+          "url": "https://web.archive.org/web/20250629171204id_/https://mailchimp.com/pricing/marketing/compare-plans/",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "error",
+          "errorCode": "extraction_error"
+        }
+      ]
+    },
+    {
+      "productId": "loom",
+      "classification": "source_unavailable",
+      "finding": "Archive returned HTTP 403 for the source query.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": null,
+      "landingIntegrity": null,
+      "pricingSources": []
+    },
+    {
+      "productId": "datadog",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static product groups include annual and on-demand prices with host-based units.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630172700id_/https://www.datadoghq.com/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250618082912id_/https://www.datadoghq.com/pricing/",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "sentry",
+      "classification": "missing_landing",
+      "finding": "No exact successful landing capture in the fixed June 2025 window.",
+      "baselineStatus": "missing_landing",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": null,
+      "landingIntegrity": null,
+      "pricingSources": []
+    },
+    {
+      "productId": "google-workspace",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static tiers include annual commitment, monthly commitment and promotional prices; these bases must remain distinct.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250630231325id_/https://workspace.google.com/",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        },
+        {
+          "url": "https://web.archive.org/web/20250630182909id_/https://workspace.google.com/pricing.html",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "microsoft-365",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static enterprise tiers include E3/E5 without Teams and F3; enterprise/edition scope must be retained.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630113113id_/https://www.microsoft.com/en-us/microsoft-365/business",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250629072914id_/https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "squarespace",
+      "classification": "source_unavailable",
+      "finding": "Pricing payload digest failed; body not retained for content classification.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630215929id_/https://www.squarespace.com/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250624193439id_/https://www.squarespace.com/pricing",
+          "integrity": "not retained",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ]
+    },
+    {
+      "productId": "webflow",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static Site, Ecommerce and Workspace groups include different price units and optional add-ons.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630040526id_/https://webflow.com/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250629213658id_/https://webflow.com/pricing",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "ghost",
+      "classification": "source_unavailable",
+      "finding": "Pricing payload digest failed; body not retained for content classification.",
+      "baselineStatus": "error",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630221056id_/https://ghost.org/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250630110730id_/https://ghost.org/pricing/",
+          "integrity": "not retained",
+          "outcome": "error",
+          "errorCode": "archive_digest_mismatch"
+        }
+      ]
+    },
+    {
+      "productId": "mattermost",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static paid self-hosted Professional license and enterprise quotes; distinguish from the free OSS edition.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630153551id_/https://mattermost.com/",
+      "landingIntegrity": "legacy_chunked_unverified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250624042646id_/https://mattermost.com/pricing/",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        },
+        {
+          "url": "https://web.archive.org/web/20250624034347id_/https://mattermost.com/compare/",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "productId": "passbolt",
+      "classification": "static_pricing_unsupported",
+      "finding": "Static self-hosted and cloud plans include bundled users and incremental user charges; currency selection and billing state need explicit evidence.",
+      "baselineStatus": "extraction_unavailable",
+      "confirmed": false,
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "landingArchiveUrl": "https://web.archive.org/web/20250630023104id_/https://www.passbolt.com/",
+      "landingIntegrity": "verified",
+      "pricingSources": [
+        {
+          "url": "https://web.archive.org/web/20250624103143id_/https://www.passbolt.com/pricing/pro",
+          "integrity": "verified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        },
+        {
+          "url": "https://web.archive.org/web/20250624043851id_/https://www.passbolt.com/pricing/cloud",
+          "integrity": "legacy_chunked_unverified",
+          "outcome": "extraction_unavailable",
+          "errorCode": null
+        }
+      ]
+    }
+  ]
+}
