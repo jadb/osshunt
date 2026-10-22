@@ -17,6 +17,15 @@ const { title, description } = Astro.props;
   <slot />
   <footer class="foot">
     <div class="wrap">
+      <div class="foot-row">
+        <p class="copy">© {new Date().getFullYear()} Idea Crafters LLC</p>
+        <nav class="legal" aria-label="Legal"><a href="/privacy/">Privacy policy</a><a href="/terms/">Terms of service</a></nav>
+        <div class="backed">
+          <span>Backed by</span>
+          <a href="https://ideacrafters.com"><img src="/logos/idea-crafters.jpg" alt="Idea Crafters" width="32" height="32" /></a>
+          <a href="https://lesexperts.ai"><img src="/logos/les-experts-ai.jpg" alt="Les Experts AI" width="32" height="32" /></a>
+        </div>
+      </div>
       <p>Fit is not feature parity. Unknown means unverified. Logos belong to their owners and appear only to identify the products.</p>
     </div>
   </footer>
@@ -31,7 +40,16 @@ const { title, description } = Astro.props;
   nav a:hover { text-decoration: underline; }
   .checked { margin: 0 0 0 auto; font-size: 0.875rem; font-weight: 600; }
   .foot { margin-top: clamp(40px, 6vw, 80px); border-top: var(--rule-8) solid var(--ink); padding-block: 22px 40px; }
-  .foot p { margin: 14px 0 0; font-size: 0.8125rem; color: var(--ink-2); max-width: 70ch; }
+  .foot-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px; }
+  .foot .foot-row .copy { line-height: 1.45; }
+  .foot .foot-row .copy { margin: 0; font-size: 0.875rem; font-weight: 600; color: var(--ink); max-width: none; }
+  .legal { display: flex; gap: 20px; font-size: 0.875rem; font-weight: 600; }
+  .backed { margin-left: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; font-size: 0.875rem; }
+  .backed > span { color: var(--ink-2); }
+  .backed a { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; text-decoration: none; }
+  .backed a:hover { text-decoration: underline; background: none; }
+  .backed img { width: 32px; height: 32px; display: block; }
+  .foot p { margin: 14px 0 0; font-size: 0.8125rem; color: var(--ink-2); }
 
   @media (max-width: 900px) { .checked { margin-left: 0; } }
 </style>

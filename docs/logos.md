@@ -35,3 +35,7 @@ Products without a usable logo show an initial. Where a brand colour was verifie
 | stalwart | #db2d54 | https://www.stalw.art/favicon.svg |
 | talentlms | #002c62 | https://images.www.talentlms.com/wp-content/themes/talentlms2021/front-end/src/assets/img/logo.svg |
 | tooljet | #4368e3 | https://tooljet.com/images/tooljetlogo.svg |
+
+## Sponsor marks
+
+`site/public/logos/idea-crafters.jpg` and `les-experts-ai.jpg` are the companies' own LinkedIn profile images (200 x 200), used in the footer to state the backing. They link to ideacrafters.com and lesexperts.ai.
