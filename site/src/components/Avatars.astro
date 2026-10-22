@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { LOGOS } from '../lib/logos';
 import { BRAND_COLORS } from '../lib/brandColors';
 interface Props { items: { id: string; name: string }[]; max?: number }
-const { items, max = 5 } = Astro.props;
+const { items, max = 3 } = Astro.props;
 
 // Wide wordmarks are unreadable in a 32px circle; those fall back to an initial.
 const mark = (file: string) => {
@@ -38,7 +38,7 @@ const more = all.length - head.length;
 
 <style>
   .avatars { display: inline-flex; align-items: center; }
-  img, .ini { width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); padding: 5px; object-fit: contain; margin-left: -9px; position: relative; }
+  img, .ini { width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); padding: 7px; object-fit: contain; margin-left: -9px; flex: none; position: relative; }
   img:first-child, .ini:first-child { margin-left: 0; }
   .ini { display: grid; place-items: center; padding: 0; font-size: 0.8125rem; font-weight: 700; color: var(--ink-2); background: #e6e6e6; border-style: dashed; }
   .ini.brand { border-style: solid; }
