@@ -97,6 +97,13 @@ test('player preserves a loaded image on failure, pauses, and ignores superseded
     assert.equal(await stale, false);
     assert.equal(player.index, 2);
     assert.equal(mount.children[0], images[3], 'late previous request cannot replace selected image');
+    player.manifest.error = 'History is temporarily unavailable.';
+    player.updateStatus();
+    assert.match(player.$('.status-message').textContent, /archive could not be checked/i, 'ready history retains failed-check notice');
+    assert.equal(mount.children[0], images[3], 'failed check preserves current image');
+    assert.equal(player.frames.length, 3, 'failed check preserves all known frames');
+    assert.equal(player.$('.reload').hidden, false);
+    player.manifest.error = null;
     assert.equal(player.$('.next').disabled, true);
     assert.equal(player.$('#history-position').getAttribute('aria-valuetext'), 'January 1, 2021, image 3 of 3');
     player.manifest.frames = [];

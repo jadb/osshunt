@@ -150,6 +150,7 @@ export class WebsiteHistory extends BaseElement {
   updateStatus() {
     const count = this.frames.length;
     const status = this.manifest?.status;
+    const failedCheck = this.failed || status === 'error' || Boolean(this.manifest?.error);
     const title = this.$('.empty-title');
     const copy = this.$('.empty-copy');
     if (this.imageError) {
@@ -158,7 +159,7 @@ export class WebsiteHistory extends BaseElement {
         title.textContent = 'An image is out of reach';
         copy.textContent = 'The archive has a record of this image, but it cannot be displayed just now.';
       }
-    } else if (this.failed || status === 'error') {
+    } else if (failedCheck) {
       this.setStatus(count ? 'The archive could not be checked. Preserved images are still available.' : 'The archive is temporarily unavailable. Please try again later.');
       title.textContent = 'History is out of reach';
       copy.textContent = 'We could not retrieve the archived images just now. No images have been invented or substituted.';
@@ -171,8 +172,8 @@ export class WebsiteHistory extends BaseElement {
       title.textContent = 'Not every past is pictured';
       copy.textContent = 'There are no archived screenshot images available here yet. This space stays empty until a real image is found.';
     } else this.setStatus(historySummary(this.frames));
-    this.$('.reload').hidden = !(this.imageError || this.failed || status === 'pending' || status === 'error');
-    this.$('.reload').textContent = status === 'pending' && !this.failed && !this.imageError ? 'Check again' : 'Try again';
+    this.$('.reload').hidden = !(this.imageError || failedCheck || status === 'pending');
+    this.$('.reload').textContent = status === 'pending' && !failedCheck && !this.imageError ? 'Check again' : 'Try again';
     const checked = this.manifest?.checkedAt;
     const next = this.manifest?.nextCheckAt;
     this.$('.check-message').textContent = checked ? `Last checked ${archiveDate(checked)}${next ? ` · Next check from ${archiveDate(next)}` : ''}` : 'Original archive dates · availability varies by website';
