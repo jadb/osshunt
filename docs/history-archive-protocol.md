@@ -28,9 +28,9 @@ Frame IDs encode the timestamp, exact image URL, and trusted digest using revers
 
 Queries request `timestamp,original,mimetype,statuscode,digest`, `matchType=exact`, JSON output and `showResumeKey=true`, without collapsing records. Only PNG, JPEG, GIF and WebP records become frames. The adapter follows opaque continuation tokens with unchanged query scope. The [CDX API documentation](https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server#resumption-key) specifies JSON continuation as a final empty array and single-element token array.
 
-`maxRecords` bounds records read across all namespace queries, including duplicate results returned for protocol variants. The default is 5,000, with a permitted maximum of 50,000. Pages contain at most 500 records; a request may read one additional record to prove that the configured bound was exceeded. Responses are capped at 4 MiB and each request has a 15-second deadline. Caller cancellation applies to both headers and body reads.
+`maxRecords` bounds records read across all namespace queries, including duplicate results returned for protocol variants. The default is 5,000, with a permitted maximum of 50,000. The six namespace lookups run concurrently; pagination remains sequential within each namespace. Shared page reservations keep consumed records plus outstanding requested records within `maxRecords + 1`, allowing only one extra record to prove truncation. Unused reservations become available to other queries. Small budgets reduce simultaneous requests rather than overrun that bound. Pages contain at most 500 records. Responses are capped at 4 MiB and each request has a 15-second deadline. Caller cancellation applies to both headers and body reads. A failure cancels peer requests; discovery awaits every namespace task settling before throwing, and never returns a partial inventory as complete.
 
-Successful enumeration returns `complete=true`, frames and query HTTP statuses. A validated `[]` or header-only result is empty history. A network failure, invalid metadata, rate limit, oversized response, repeated continuation, exhausted record budget or ambiguous full page without continuation throws a typed error instead of returning empty history. No incomplete partial list is labeled complete. Callers should retain previously stored frames when discovery fails. Supported error codes include:
+Successful enumeration returns `complete=true`, frames and query HTTP statuses. A validated `[]` or header-only result is empty history. With `showResumeKey=true`, a missing continuation indicates exhaustion even when the final page is full, as documented by the CDX API. A network failure, invalid metadata, rate limit, oversized response, repeated continuation or exhausted record budget throws a typed error instead of returning empty history. No incomplete partial list is labeled complete. Callers should retain previously stored frames when discovery fails. Supported error codes include:
 
 | Code | Meaning |
 | --- | --- |
@@ -92,7 +92,7 @@ CDX SHA-1 base32: AU55WVCJLG4RFYWWHPRXKLGLLBWIYK7N
 SHA-256: eed0d858bfa07d8349caad04762d3b28d301518a911c9c3a1d57af9e90b2a0e3
 ```
 
-Neither the CDX response nor the image response supplied `Access-Control-Allow-Origin`. Backend copying is therefore the usable byte-access path for this observed image. A full native discovery call also completed all six namespace/protocol queries with HTTP 200, finding actual screenshot timestamps from 2012-03-29 through 2024-03-26.
+Neither the CDX response nor the image response supplied `Access-Control-Allow-Origin`. Backend copying is therefore the usable byte-access path for this observed image. Full concurrent native discovery completed all six namespace/protocol queries with HTTP 200 in 4,739 milliseconds, finding 301 actual screenshot records from 2012-03-29 through 2024-03-26. This observed runtime is not an archive latency guarantee.
 
 ## Known limits
 

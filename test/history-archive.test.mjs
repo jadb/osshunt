@@ -50,20 +50,92 @@ test('discovery accepts screenshot dash status, preserves image dates and probes
 test('discovery follows opaque resume keys without changing query scope', async () => {
   const calls = [];
   const token = 'opaque%2F+token!';
+  const target = `http://web.archive.org/screenshot/http://webapps.stackexchange.com/`;
   const result = await discoverScreenshots(landing, { fetchImpl: async input => {
     const url = new URL(input);
     calls.push(url);
-    if (calls.length === 1) return json([FIELDS, first, [], [token]]);
-    if (calls.length === 2) {
+    if (url.searchParams.get('url') !== target) return json([]);
+    if (!url.searchParams.has('resumeKey')) return json([FIELDS, first, [], [token]]);
+    else {
       assert.equal(url.searchParams.get('resumeKey'), token);
-      assert.equal(url.searchParams.get('url'), calls[0].searchParams.get('url'));
+      assert.equal(url.searchParams.get('url'), target);
       return json([FIELDS, ['20120627200053', original, 'image/png', '-', '-']]);
     }
-    return json([]);
   } });
   assert.equal(result.frames.length, 2);
   assert.equal(result.frames[1].digest, null);
   assert.equal(calls.length, 7);
+});
+
+test('independent namespace lookups start concurrently while each continuation stays sequential', async () => {
+  let release;
+  const blocked = new Promise(resolve => { release = resolve; });
+  const calls = [];
+  const discovery = discoverScreenshots(landing, { fetchImpl: async input => {
+    const url = new URL(input);
+    calls.push(url);
+    if (url.searchParams.get('url') === `http://web.archive.org/screenshot/http://webapps.stackexchange.com/`) {
+      if (!url.searchParams.has('resumeKey')) { await blocked; return json([FIELDS, first, [], ['next-page']]); }
+      assert.equal(url.searchParams.get('resumeKey'), 'next-page');
+    }
+    return json([]);
+  } });
+  try {
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(calls.length, 6, 'all independent namespace requests start before the blocked first response');
+    assert.equal(calls.filter(url => url.searchParams.has('resumeKey')).length, 0);
+  } finally { release(); await discovery; }
+  assert.equal(calls.length, 7);
+});
+
+test('concurrent namespace requests share a strict record budget', async () => {
+  let requested = 0;
+  const maximum = 7;
+  await assert.rejects(discoverScreenshots(landing, { maxRecords: maximum, fetchImpl: async input => {
+    const url = new URL(input);
+    const limit = Number(url.searchParams.get('limit'));
+    requested += limit;
+    const target = url.searchParams.get('url');
+    const rows = Array.from({ length: limit }, () => [first[0], target, 'image/png', '-', '-']);
+    return json([FIELDS, ...rows, [], [`next-${target}-${requested}`]]);
+  } }), { code: 'archive_incomplete' });
+  assert.ok(requested <= maximum + 1, 'only one extra record may establish truncation across all requests');
+});
+
+test('a terminal full page without a resume key can fit a small global budget', async () => {
+  let calls = 0;
+  const result = await discoverScreenshots(landing, { maxRecords: 1, fetchImpl: async () =>
+    json(++calls === 1 ? [FIELDS, first] : []) });
+  assert.equal(result.complete, true);
+  assert.equal(result.frames.length, 1);
+  assert.equal(calls, 6);
+});
+
+test('a concurrent rate limit cancels and settles peer requests without returning partial frames', async () => {
+  let started = 0;
+  let settled = 0;
+  let release;
+  const ready = new Promise(resolve => { release = resolve; });
+  const discovery = discoverScreenshots(landing, { fetchImpl: async (_input, { signal }) => {
+    started++;
+    if (started === 6) release();
+    await ready;
+    try {
+      if (started && _input.includes('screenshot%3Ahttp%3A')) {
+        return new Response(null, { status: 429, headers: { 'retry-after': '30' } });
+      }
+      if (_input.includes('thumbnail%3A')) {
+        await new Promise((resolve, reject) => {
+          if (signal.aborted) reject(signal.reason);
+          else signal.addEventListener('abort', () => reject(signal.reason), { once: true });
+        });
+      }
+      return json([FIELDS, first]);
+    } finally { settled++; }
+  } });
+  await assert.rejects(discovery, { code: 'archive_rate_limited', retryAfter: 30 });
+  assert.equal(started, 6);
+  assert.equal(settled, started, 'no peer requests remain unsettled');
 });
 
 test('CDX leading-www aliases preserve the exact indexed source and catalog landing URL', async () => {
