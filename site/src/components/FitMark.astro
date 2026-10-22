@@ -1,0 +1,18 @@
+---
+import Icon from './Icon.astro';
+import Tip from './Tip.astro';
+import { FIT_LABEL, type Fit } from '../lib/home';
+// Icon for a fit value; the name and meaning live in the popup and the accessible label.
+interface Props { fit: Fit; size?: number; align?: 'left' | 'right' }
+const { fit, size = 22, align = 'right' } = Astro.props;
+const NAME: Record<Fit, string> = { 'drop-in': 'fit-drop', partial: 'fit-partial', 'different-approach': 'fit-diff' };
+const MEANING: Record<Fit, string> = {
+  'drop-in': 'Everyday workflows carry over with little rebuilding.',
+  partial: 'Core overlap exists; named gaps need replacing or rebuilding.',
+  'different-approach': 'Solves the same job differently; plan a redesign, not a copy.',
+};
+---
+<Tip label={`Fit: ${FIT_LABEL[fit]}. ${MEANING[fit]}`} align={align} class="fitmark">
+  <Icon name={NAME[fit]} size={size} />
+  <span slot="tip"><b>Fit: {FIT_LABEL[fit]}</b><span class="tdesc">{MEANING[fit]}</span><span class="tdesc">Fit is not feature parity.</span></span>
+</Tip>

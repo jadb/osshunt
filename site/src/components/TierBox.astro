@@ -1,0 +1,16 @@
+---
+import Tip from './Tip.astro';
+const TIER: Record<string, string> = {
+  A: 'No paid feature gates in the self-run edition',
+  B: 'Paid extras for admin, identity or audit',
+  C: 'Daily-workflow features need a paid edition',
+  S: 'Source-available license, not OSI',
+  U: 'License or parity scope unresolved',
+};
+interface Props { tier: string; align?: 'left' | 'right' }
+const { tier, align = 'right' } = Astro.props;
+---
+<Tip label={`Tier ${tier}: ${TIER[tier]}`} align={align}>
+  <b class="tierbox">{tier}</b>
+  <span slot="tip"><b>Tier {tier}</b><span class="tdesc">{TIER[tier]}</span></span>
+</Tip>

@@ -1,0 +1,49 @@
+---
+import { readFileSync } from 'node:fs';
+import { LOGOS } from '../lib/logos';
+import { BRAND_COLORS } from '../lib/brandColors';
+interface Props { items: { id: string; name: string }[]; max?: number }
+const { items, max = 3 } = Astro.props;
+
+// Wide wordmarks are unreadable in a 32px circle; those fall back to an initial.
+const mark = (file: string) => {
+  try {
+    const svg = readFileSync(`${process.cwd()}/public/logos/${file}.svg`, 'utf8');
+    const vb = svg.match(/viewBox="[-\d.]+[ ,]+[-\d.]+[ ,]+([\d.]+)[ ,]+([\d.]+)"/);
+    return vb ? Number(vb[1]) / Number(vb[2]) <= 1.8 : true;
+  } catch { return false; }
+};
+const initial = (n: string) => n.replace(/[^A-Za-z0-9]/g, '').charAt(0).toUpperCase();
+const ink = (hex: string) => {
+  const n = parseInt(hex.slice(1), 16);
+  return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255 > 0.6 ? '#0d0d0d' : '#ffffff';
+};
+const all = items.map((i) => ({ ...i, file: LOGOS[i.id] && mark(LOGOS[i.id]) ? LOGOS[i.id] : null, color: BRAND_COLORS[i.id] ?? null }));
+// Real logos first, then brand-coloured initials, then neutral initials; order is otherwise preserved.
+const rank = (i: (typeof all)[number]) => (i.file ? 0 : i.color ? 1 : 2);
+all.sort((a, b) => rank(a) - rank(b));
+const head = all.slice(0, max);
+const more = all.length - head.length;
+---
+{all.length > 0 && (
+  <span class="avatars" role="img" aria-label={all.map((i) => i.name).join(', ')}>
+    {head.map((i, n) => i.file
+      ? <span class="av dtip" data-tip={i.name} style={`z-index:${max - n}`}><img src={`/logos/${i.file}.svg`} alt="" width="28" height="28" loading="lazy" /></span>
+      : i.color
+        ? <span class="ini brand dtip" data-tip={i.name} style={`z-index:${max - n};background:${i.color};color:${ink(i.color)}`}>{initial(i.name)}</span>
+        : <span class="ini dtip" data-tip={i.name} style={`z-index:${max - n}`}>{initial(i.name)}</span>)}
+    {more > 0 && <span class="ini more">+{more}</span>}
+  </span>
+)}
+
+<style>
+  .avatars { display: inline-flex; align-items: center; }
+  /* Every circle is a flex item of the same row (the logo wrapper too), so they share one vertical centre. */
+  .av { display: inline-flex; position: relative; flex: none; margin-left: calc(var(--ov, 9px) * -1); }
+  .av:first-child, .ini:first-child { margin-left: 0; }
+  img, .ini { width: var(--av, 32px); height: var(--av, 32px); border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); padding: var(--avp, 7px); object-fit: contain; flex: none; display: block; }
+  .ini { margin-left: calc(var(--ov, 9px) * -1); position: relative; display: grid; }
+  .ini { place-items: center; padding: 0; font-size: 0.8125rem; font-weight: 700; color: var(--ink-2); background: #e6e6e6; border-style: dashed; }
+  .ini.brand { border-style: solid; }
+  .more { font-size: 0.6875rem; }
+</style>

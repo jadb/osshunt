@@ -1,0 +1,21 @@
+---
+import Page from './Page.astro';
+interface Props { title: string; description: string; updated: string }
+const { title, description, updated } = Astro.props;
+---
+<Page title={`${title} | OSSHunt`} description={description}>
+  <main id="main" class="wrap prose">
+    <h1>{title}</h1>
+    <p class="upd">Last updated {updated}</p>
+    <slot />
+  </main>
+</Page>
+
+<style is:global>
+  .prose { padding-block: 48px 64px; max-width: 760px; }
+  .prose h1 { font-size: clamp(2.25rem, 5vw, 4rem); font-family: var(--display); font-weight: 900; line-height: 1; }
+  .prose .upd { color: var(--ink-2); font-size: 0.875rem; margin: 10px 0 28px; }
+  .prose h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 32px 0 10px; }
+  .prose p, .prose li { max-width: 68ch; }
+  .prose li { margin-bottom: 6px; }
+</style>

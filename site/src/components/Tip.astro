@@ -1,0 +1,9 @@
+---
+// Focusable trigger with a styled popup; the popup is real content so it can hold lists.
+interface Props { label: string; align?: 'left' | 'right'; class?: string }
+const { label, align = 'right', class: cls } = Astro.props;
+---
+<span class:list={['tipwrap', cls]} tabindex="0" role="img" aria-label={label}>
+  <slot />
+  <span class={`tipbox ${align}`} aria-hidden="true"><slot name="tip" /></span>
+</span>

@@ -1,0 +1,125 @@
+---
+import Page from '../../layouts/Page.astro';
+import Switcher from '../../components/Switcher.astro';
+import SourceLinks from '../../components/SourceLinks.astro';
+import RunKit from '../../components/RunKit.astro';
+import FitMark from '../../components/FitMark.astro';
+import FactsLabel from '../../components/FactsLabel.astro';
+import { comparePaths, compareData, LOGOS, usd } from '../../lib/compare';
+
+export const getStaticPaths = comparePaths;
+const { pair } = Astro.params;
+const { map, inc, alt, siblings, fitLabel, CHECKED } = await compareData(pair!);
+
+const named = <T extends { name: string | null }>(ts: T[]) => ts.filter((t) => t.name);
+const incTiers = named(inc.profile?.pricingTiers ?? []);
+const altTiers = named(alt.profile?.pricingTiers ?? []);
+const host = alt.profile?.alternativeDetails?.selfHosting;
+const oneClick = alt.profile?.alternativeDetails?.oneClickInstall;
+const org = inc.profile?.organization;
+const price = (t: (typeof incTiers)[number]) =>
+  t.status === 'free' ? 'Free' : t.monthlyPrice != null ? `${usd(t.monthlyPrice)} / ${t.unit} / mo` :
+  t.annualPrice != null ? `${usd(t.annualPrice)} / ${t.unit} / yr` : t.status === 'quote' ? 'Quote only' : 'Not established';
+const required = host?.requirements.filter((r) => r.necessity === 'required') ?? [];
+const oneOf = host?.requirements.filter((r) => r.necessity === 'one-of') ?? [];
+const hw = host?.resources;
+const hasHw = !!hw && [hw.cpu, hw.memory, hw.storage, hw.os].some((v) => v != null);
+const logoOf = (id: string) => LOGOS[id];
+---
+<Page title={`${inc.name} vs ${alt.name}: fit, license and limits | OSSHunt`} description={`${inc.name} compared with ${alt.name}: ${fitLabel.toLowerCase()} fit, license, paid-feature tier, self-hosting needs and what is not established. Checked ${CHECKED}.`}>
+  <main id="main" class="wrap cmp">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/software/">Software</a><span>/</span><a href={`/software/${inc.id}/`}>{inc.name}</a><span>/</span><span aria-current="page">{alt.name}</span></nav>
+
+    <header class="cmp-head">
+      <h1>{inc.name} <span>vs</span> {alt.name}</h1>
+      <p class="fitline"><b class="fl">Fit: <FitMark fit={map.fit} size={24} align="left" /></b></p>
+    </header>
+
+    {siblings.length > 1 && <Switcher label={`All ${inc.name} comparisons`} items={siblings.map((x) => ({ href: `/compare/${x.id}/`, name: x.name, fit: x.fit }))} current={`/compare/${map.id}/`} />}
+
+    <section class="verdict" aria-labelledby="mig-h">
+      <h2 id="mig-h">Migration notes</h2>
+      <p>{map.migrationNotes}</p>
+      <p class="src">Sources: {map.sources.map((u, i) => <>{i ? ', ' : ''}<a href={u}>{new URL(u).hostname}</a></>)} · checked {CHECKED}</p>
+    </section>
+
+    <section class="sheets" aria-label="Side-by-side facts">
+      <div class="sheet-col">
+        <div class="who">{logoOf(inc.id) && <span class="tile"><img src={`/logos/${logoOf(inc.id)}.svg`} alt="" width="48" height="48" /></span>}<p><b><a href={`/software/${inc.id}/`}>{inc.name}</a></b><span>Paid incumbent</span></p></div>
+        <article class="facts">
+                    <div class="facts-row fit"><span>Entry price</span><span>{inc.pricing.entryAmount != null ? `${usd(inc.pricing.entryAmount)} / ${inc.pricing.unit} / ${inc.pricing.period}` : inc.pricing.model === 'usage' ? 'Usage-based' : 'Not established'}</span></div>
+          <div class="facts-row"><span>Pricing model</span><span>{inc.pricing.model}, billed {inc.pricing.billing}</span></div>
+          <div class="facts-row"><span>Owner</span>{org ? <span>{org.parent ?? org.name}</span> : <span class="u">Not established</span>}</div>
+          <p class="facts-foot">{inc.pricing.note} <a href={inc.pricing.source}>Source</a></p>
+        </article>
+        {incTiers.length > 0 && (
+          <table class="tiers"><caption>{inc.name} plans reviewed</caption><tbody>
+            {incTiers.map((t) => <tr><th scope="row">{t.name ?? <span class="u">Not identified</span>}</th><td>{t.role}</td><td>{price(t)}</td></tr>)}
+          </tbody></table>
+        )}
+      </div>
+
+      <div class="sheet-col">
+        <div class="who">{logoOf(alt.id) && <span class="tile"><img src={`/logos/${logoOf(alt.id)}.svg`} alt="" width="48" height="48" /></span>}<p><b><a href={`/alternatives/${alt.id}/`}>{alt.name}</a></b><span>Open-source alternative</span></p><SourceLinks url={alt.url} repo={alt.repo} name={alt.name} /></div>
+        <FactsLabel name={alt.name} fit={map.fit} license={alt.license} osi={alt.osi} tier={alt.tier}
+          selfHost={alt.selfHostable}
+          limits={alt.locked.length} incumbent={inc.name} hideHead />
+        {altTiers.length > 0 && (
+          <table class="tiers"><caption>{alt.name} plans reviewed</caption><tbody>
+            {altTiers.map((t) => <tr><th scope="row">{t.name ?? <span class="u">Not identified</span>}</th><td>{t.scope}</td><td>{price(t)}</td></tr>)}
+          </tbody></table>
+        )}
+      </div>
+    </section>
+
+    <div class="two">
+      <section aria-labelledby="give-h">
+        <h2 id="give-h">What you may give up</h2>
+        {alt.locked.length ? <ul>{alt.locked.map((l) => <li>{l}</li>)}</ul> : <p class="u">No paid-feature limits established for this edition.</p>}
+        {alt.serviceLimitations.length > 0 && <ul>{alt.serviceLimitations.map((l) => <li>{l}</li>)}</ul>}
+        <p class="note">Tier {alt.tier}: {alt.classificationReason} <a href={alt.sources.license}>License source</a></p>
+      </section>
+
+      <section aria-labelledby="run-h">
+        <h2 id="run-h">What running it takes</h2>
+        <RunKit hosted={alt.hostedOffer} selfHost={alt.selfHostable} oneClick={oneClick ? oneClick.hasVerifiedOneClick : null} hardware={hasHw}
+          required={required.map((r) => r.component)} oneOf={oneOf.map((r) => ({ group: r.group, name: r.component }))} />
+        {host && <p class="note">{host.notes} Infrastructure and staff time are not priced here; this page does not compare total cost.</p>}
+      </section>
+    </div>
+  </main>
+</Page>
+
+<style>
+  .cmp { padding-block: 48px clamp(32px, 5vw, 64px); }
+  .crumbs { display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.875rem; font-weight: 600; margin-bottom: 18px; }
+  .crumbs span { color: var(--ink-2); }
+  h1 { font-size: clamp(2.25rem, 5vw, 4.25rem); line-height: 1; font-family: var(--display); font-weight: 900; margin-bottom: 14px; }
+  h1 span { font-weight: 400; font-family: 'Archivo', sans-serif; font-size: 0.5em; vertical-align: 0.25em; }
+  .fl { display: inline-flex; align-items: center; gap: 6px; margin-right: 8px; }
+  .fitline { margin: 0 0 24px; font-size: 1.0625rem; background: var(--band); border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); padding: 8px 12px; display: inline-block; }
+  h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin-bottom: 10px; }
+  h3 { font-size: 0.9375rem; font-weight: 800; margin: 14px 0 4px; }
+  .verdict { margin-bottom: 32px; max-width: 80ch; }
+  .verdict p { margin: 0 0 8px; font-size: 1.0625rem; }
+  .src, .note { font-size: 0.8125rem; color: var(--ink-2); }
+  .note { margin: 10px 0 0; max-width: 80ch; }
+  .sheets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin-bottom: 36px; align-items: start; }
+  .who { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .who p { margin: 0; display: grid; font-size: 0.875rem; }
+  .who b a { text-decoration: none; }
+  .who b a:hover { text-decoration: underline; background: none; }
+  .who b { font-family: var(--display); font-weight: 900; font-size: 1.5rem; line-height: 1.1; }
+  .tile { width: 64px; height: 64px; display: grid; place-items: center; }
+  .tile img { width: 44px; height: 44px; object-fit: contain; }
+  .tiers { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 0.875rem; }
+  .tiers caption { text-align: left; font-weight: 800; padding-bottom: 4px; }
+  .tiers th, .tiers td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--ink); vertical-align: baseline; }
+  .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin-bottom: 32px; align-items: start; }
+  .two ul:not(.row) { margin: 8px 0 0; padding-left: 20px; }
+  .two li { margin-bottom: 4px; }
+  .sib { list-style: none; padding: 0 !important; border-top: 3px solid var(--ink); }
+  .sib li { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--ink); padding: 10px 0; margin: 0; }
+  .sib span { font-weight: 700; }
+  @media (max-width: 800px) { .two, .sheets { grid-template-columns: minmax(0, 1fr); } }
+</style>

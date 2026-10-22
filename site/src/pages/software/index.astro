@@ -1,0 +1,21 @@
+---
+import Page from '../../layouts/Page.astro';
+import { indexData } from '../../lib/compare';
+const { paid } = await indexData();
+---
+<Page title="Paid software and its open-source alternatives | OSSHunt" description={`${paid.length} paid tools with sourced open-source alternatives.`}>
+  <main id="main" class="wrap ix">
+    <h1>Software</h1>
+    <p class="lede">{paid.length} paid tools. The number is how many open-source alternatives are mapped to each.</p>
+    <ul>{paid.map((p) => <li><a href={`/software/${p.id}/`}>{p.name}<span>{p.n}</span></a></li>)}</ul>
+  </main>
+</Page>
+<style is:global>
+  .ix { padding-block: 48px 64px; }
+  .ix h1 { font-size: clamp(2.25rem, 5vw, 4rem); font-family: var(--display); font-weight: 900; line-height: 1; }
+  .ix .lede { color: var(--ink-2); margin: 10px 0 24px; }
+  .ix ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); border-top: 3px solid var(--ink); border-left: 1px solid var(--ink); }
+  .ix li { border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+  .ix li a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; text-decoration: none; font-weight: 600; }
+  .ix li a span { font-weight: 800; font-size: 0.8125rem; border: 1px solid currentColor; padding: 0 6px; align-self: center; }
+</style>
