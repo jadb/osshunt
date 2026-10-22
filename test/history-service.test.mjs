@@ -258,3 +258,30 @@ test('normalized landing URLs share one refresh reservation across catalog produ
   const result = await other.json(); assert.equal(result.product.id, 'other');
   assert.equal(result.frames.length, 2); assert.equal(f.state.discovers, 1);
 });
+
+test('simultaneous shared-URL refreshes return each caller product identity', async t => {
+  const shared = [catalog[0], { ...catalog[0], id: 'other', name: 'Other product' }];
+  const f = await fixture(t, { catalog: shared }); let release;
+  f.state.discoveryWait = new Promise(resolve => { release = resolve; });
+  const first = f.request('/refresh', 'POST');
+  while (!f.state.discovers) await new Promise(resolve => setTimeout(resolve, 1));
+  const second = f.direct('/api/history/other/refresh', 'POST');
+  release(); const [one, two] = await Promise.all([first, second]);
+  assert.notEqual(one, two);
+  const [a, b] = await Promise.all([one.json(), two.json()]);
+  assert.equal(a.product.id, 'example'); assert.equal(b.product.id, 'other');
+  assert.equal(b.product.name, 'Other product'); assert.equal(f.state.discovers, 1);
+  assert.deepEqual(a.frames, b.frames);
+});
+
+test('Memento-Datetime must exactly match the frame when the archive sends it', async t => {
+  for (const memento of ['Wed, 01 Jan 2020 00:00:01 GMT', 'invalid-date']) {
+    const f = await fixture(t); await f.request('/refresh', 'POST');
+    f.state.response = () => new Response(png, { headers: { 'Content-Type': 'image/png', 'Memento-Datetime': memento } });
+    assert.equal((await f.request(imagePath(a))).status, 502);
+    assert.equal((await f.request(`${imagePath(a)}?cached=1`)).status, 404);
+  }
+  const f = await fixture(t); await f.request('/refresh', 'POST');
+  f.state.response = () => new Response(png, { headers: { 'Content-Type': 'image/png', 'Memento-Datetime': 'Wed, 01 Jan 2020 00:00:00 GMT' } });
+  assert.equal((await f.request(imagePath(a))).status, 200);
+});
