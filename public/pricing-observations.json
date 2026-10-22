@@ -19996,6 +19996,1327 @@
     }
   },
   {
+    "id": "pricing-manual-813f795c05b44f6b52d2619736f768d05dad488d80b8a46ee05aae1ed3fc3ace",
+    "productId": "firebase",
+    "scope": {
+      "edition": null,
+      "deployment": "unknown"
+    },
+    "anchorAt": "2025-06-30T10:32:58.000Z",
+    "landingCapturedAt": "2025-06-30T10:32:58.000Z",
+    "pricingCapturedAt": "2025-06-25T08:44:13.000Z",
+    "evidenceAvailableAt": "2025-06-30T10:32:58.000Z",
+    "landingUrl": "https://firebase.google.com/",
+    "pricingUrl": "https://firebase.google.com/pricing/",
+    "landingArchiveUrl": "https://web.archive.org/web/20250630103258id_/https://firebase.google.com/",
+    "pricingArchiveUrl": "https://web.archive.org/web/20250625084413id_/https://firebase.google.com/pricing/",
+    "provenance": "archived-link",
+    "discovery": {
+      "label": "Pricing",
+      "locator": "offset:35765-36262"
+    },
+    "sourceSha256": "9795fe7243de48c218f2ca6d9b8d1bca5f95b35ecfe0647cfd449e7ee5ab25c6",
+    "landingSha256": "c314ceabde14b25868d773c8adc666628e3bacd4467e0404b8c64f6029aef9e1",
+    "sourceDigest": "NZWHYTNAJ3GOLQHBHL7MO4PDOWZHAJVI",
+    "landingDigest": "EDF7XWYJSKFNOEHYVUSO6OY2IGPFCCXK",
+    "fetchedAt": "2026-10-22T21:01:32.591Z",
+    "landingFetchedAt": "2026-10-22T21:01:14.512Z",
+    "sourceIntegrity": {
+      "status": "verified",
+      "expectedDigest": "NZWHYTNAJ3GOLQHBHL7MO4PDOWZHAJVI",
+      "actualDigest": "NZWHYTNAJ3GOLQHBHL7MO4PDOWZHAJVI"
+    },
+    "landingIntegrity": {
+      "status": "verified",
+      "expectedDigest": "EDF7XWYJSKFNOEHYVUSO6OY2IGPFCCXK",
+      "actualDigest": "EDF7XWYJSKFNOEHYVUSO6OY2IGPFCCXK"
+    },
+    "sourceTransport": {
+      "status": 200,
+      "mementoDatetime": "Wed, 25 Jun 2025 08:44:13 GMT",
+      "originalUrl": "https://firebase.google.com/pricing/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "LUX-029-2025-06-23-20250625074327450-00792-00836-wbgrp-crawl041/LUX-029-2025-06-23-20250625084007895-00818-1777502~wbgrp-crawl041.us.archive.org~8443.warc.gz",
+      "originalDigest": null
+    },
+    "landingTransport": {
+      "status": 200,
+      "mementoDatetime": "Mon, 30 Jun 2025 10:32:58 GMT",
+      "originalUrl": "https://firebase.google.com/",
+      "archivedTransferEncoding": null,
+      "originalContentEncoding": null,
+      "sourceWarc": "archiveteam_archivebot_go_20250701010023_6451d4c7/support.glitch.com-inf-20250630-034453-d0raz-00000.warc.gz",
+      "originalDigest": null
+    },
+    "aliasEvidenceAt": [],
+    "extractorVersion": "manual-1.0.0",
+    "reviewState": "confirmed",
+    "quality": "partial",
+    "issues": [
+      "Manually transcribed and reviewed from retained archive evidence; no reusable parser required.",
+      "Blaze numerical coverage is service usage pricing, not a fixed subscription base or complete invoice.",
+      "Dollar-only currency remains unknown; no USD borrowed from unrelated Google properties.",
+      "Per-request/GB/minute/hour denominations do not establish monthly invoicing or contract length; only explicit Cloud SQL monthly rate gets billingPeriod=month.",
+      "No-cost quotas are project-level with their own day/month/total units; paid usage rates remain above their qualified limits.",
+      "Future August1AppHosting bandwidth prices retained as dated rawfacts, not currentJune25offers. Translation metadata leaked into some source rows; excluded as non-product data.",
+      "Desktop/mobile representations deduplicated by named service row; mobile markup retained as exact evidence without claiming a selected viewport.",
+      "AppHosting storage row has no explicit effective date; quote retained with local date ambiguity qualification. No linked Google Cloud price table fetched."
+    ],
+    "plans": [
+      {
+        "name": "Spark",
+        "order": 0,
+        "popular": null,
+        "kind": "plan",
+        "status": "free",
+        "offers": [
+          {
+            "literal": "No-cost",
+            "amount": "0",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": null,
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Project-level no-cost quotas and product eligibility apply; Spark is not unlimited.",
+              "billingVariant": null
+            },
+            "source": {
+              "locator": "offset:546478-546557",
+              "text": "No-cost"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "App Hosting / Outgoing bandwidth Uncached Cached",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:547595-548355",
+              "text": "Outgoing bandwidth Uncached Cached Not applicable"
+            }
+          },
+          {
+            "name": "App Hosting / Storage",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:548367-548827",
+              "text": "Storage Not applicable"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Run",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:549254-549716",
+              "text": "Cloud Run Not applicable"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Build",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:549728-550192",
+              "text": "Cloud Build Not applicable"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Artifact Registry",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:550204-550674",
+              "text": "Artifact Registry Not applicable"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Logging",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:550686-551152",
+              "text": "Cloud Logging Not applicable"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Secrets Manager",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:551164-551657",
+              "text": "Cloud Secrets Manager Not applicable"
+            }
+          },
+          {
+            "name": "Authentication / Phone Auth - All regions",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:554071-554548",
+              "text": "Phone Auth - All regions Not applicable"
+            }
+          },
+          {
+            "name": "Authentication / Other Authentication services",
+            "value": "Available",
+            "source": {
+              "locator": "offset:554560-555101",
+              "text": "Other Authentication services check"
+            }
+          },
+          {
+            "name": "Authentication / With Identity Platform / Monthly active users",
+            "value": "50K MAUs",
+            "source": {
+              "locator": "offset:555536-555967",
+              "text": "Monthly active users 50K MAUs"
+            }
+          },
+          {
+            "name": "Authentication / With Identity Platform / Monthly active users - SAML/OIDC",
+            "value": "50 MAUs",
+            "source": {
+              "locator": "offset:555979-556421",
+              "text": "Monthly active users - SAML/OIDC 50 MAUs"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Stored data",
+            "value": "1 GiB total",
+            "source": {
+              "locator": "offset:557410-557835",
+              "text": "Stored data 1 GiB total"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Network egress",
+            "value": "10 GiB/month",
+            "source": {
+              "locator": "offset:557847-558276",
+              "text": "Network egress 10 GiB/month"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Document writes",
+            "value": "20K writes/day",
+            "source": {
+              "locator": "offset:558288-558720",
+              "text": "Document writes 20K writes/day"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Document reads",
+            "value": "50K reads/day",
+            "source": {
+              "locator": "offset:558732-559162",
+              "text": "Document reads 50K reads/day"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Document deletes",
+            "value": "20K deletes/day",
+            "source": {
+              "locator": "offset:559174-559608",
+              "text": "Document deletes 20K deletes/day"
+            }
+          },
+          {
+            "name": "Cloud Functions / Invocations",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:560597-561061",
+              "text": "Invocations Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Functions / GB-seconds",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:561073-561536",
+              "text": "GB-seconds Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Functions / CPU-seconds",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:561548-562012",
+              "text": "CPU-seconds Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Functions / Outbound networking",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:562024-562496",
+              "text": "Outbound networking Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Functions / Cloud Build minutes",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:562508-562980",
+              "text": "Cloud Build minutes Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Functions / Container storage in Artifact Registry",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:562992-563624",
+              "text": "Container storage in Artifact Registry Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / GB stored",
+            "value": "5 GB",
+            "source": {
+              "locator": "offset:565114-565530",
+              "text": "GB stored 5 GB"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / GB downloaded",
+            "value": "1 GB/day",
+            "source": {
+              "locator": "offset:565542-565966",
+              "text": "GB downloaded 1 GB/day"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / Upload operations",
+            "value": "20K/day",
+            "source": {
+              "locator": "offset:565978-566405",
+              "text": "Upload operations 20K/day"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / Download operations",
+            "value": "50K/day",
+            "source": {
+              "locator": "offset:566417-566846",
+              "text": "Download operations 50K/day"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / Multiple buckets per project",
+            "value": "Not available",
+            "source": {
+              "locator": "offset:566858-567396",
+              "text": "Multiple buckets per project close"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / GB stored",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:567956-568418",
+              "text": "GB stored Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / GB downloaded",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:568430-568896",
+              "text": "GB downloaded Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / Upload operations",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:568908-569378",
+              "text": "Upload operations Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / Download operations",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:569390-569862",
+              "text": "Download operations Not applicable"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / Multiple buckets per project",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:569874-570355",
+              "text": "Multiple buckets per project Not applicable"
+            }
+          },
+          {
+            "name": "Data Connect / Network egress",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:571338-571805",
+              "text": "Network egress Not applicable"
+            }
+          },
+          {
+            "name": "Data Connect / Operation count",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:571817-572285",
+              "text": "Operation count Not applicable"
+            }
+          },
+          {
+            "name": "Data Connect / Cloud SQL for PostgreSQL",
+            "value": "Not applicable",
+            "source": {
+              "locator": "offset:572297-572774",
+              "text": "Cloud SQL for PostgreSQL Not applicable"
+            }
+          },
+          {
+            "name": "Hosting / Storage",
+            "value": "10 GB",
+            "source": {
+              "locator": "offset:573737-574152",
+              "text": "Storage 10 GB"
+            }
+          },
+          {
+            "name": "Hosting / Data transfer",
+            "value": "360 MB/day",
+            "source": {
+              "locator": "offset:574164-574590",
+              "text": "Data transfer 360 MB/day"
+            }
+          },
+          {
+            "name": "Hosting / Custom domain & SSL",
+            "value": "Available",
+            "source": {
+              "locator": "offset:574602-575137",
+              "text": "Custom domain & SSL check"
+            }
+          },
+          {
+            "name": "Hosting / Multiple sites per project",
+            "value": "Available",
+            "source": {
+              "locator": "offset:575149-575687",
+              "text": "Multiple sites per project check"
+            }
+          },
+          {
+            "name": "Firebase ML / Custom Model Deployment",
+            "value": "Available",
+            "source": {
+              "locator": "offset:576657-577192",
+              "text": "Custom Model Deployment check"
+            }
+          },
+          {
+            "name": "Firebase ML / Cloud Vision APIs",
+            "value": "Not available",
+            "source": {
+              "locator": "offset:577204-577731",
+              "text": "Cloud Vision APIs close"
+            }
+          },
+          {
+            "name": "Realtime Database / Simultaneous connections",
+            "value": "100",
+            "source": {
+              "locator": "offset:578734-579164",
+              "text": "Simultaneous connections 100"
+            }
+          },
+          {
+            "name": "Realtime Database / GB stored",
+            "value": "1 GB",
+            "source": {
+              "locator": "offset:579176-579592",
+              "text": "GB stored 1 GB"
+            }
+          },
+          {
+            "name": "Realtime Database / GB downloaded",
+            "value": "10 GB/month",
+            "source": {
+              "locator": "offset:579604-580031",
+              "text": "GB downloaded 10 GB/month"
+            }
+          },
+          {
+            "name": "Realtime Database / Multiple databases per project",
+            "value": "Not available",
+            "source": {
+              "locator": "offset:580043-580583",
+              "text": "Multiple databases per project close"
+            }
+          },
+          {
+            "name": "Test Lab / Virtual Device Tests",
+            "value": "10 tests/day",
+            "source": {
+              "locator": "offset:581548-581983",
+              "text": "Virtual Device Tests 10 tests/day"
+            }
+          },
+          {
+            "name": "Test Lab / Physical Device Tests",
+            "value": "5 tests/day",
+            "source": {
+              "locator": "offset:581995-582430",
+              "text": "Physical Device Tests 5 tests/day"
+            }
+          },
+          {
+            "name": "Test Lab / Android Device Streaming",
+            "value": "30 no-cost minutes per project, per month",
+            "source": {
+              "locator": "offset:582442-583061",
+              "text": "Android Device Streaming 30 no-cost minutes per project, per month"
+            }
+          },
+          {
+            "name": "Google Cloud / BigQuery",
+            "value": "Available",
+            "source": {
+              "locator": "offset:585045-585565",
+              "text": "BigQuery check"
+            }
+          },
+          {
+            "name": "Google Cloud / Other IaaS",
+            "value": "Not available",
+            "source": {
+              "locator": "offset:585577-586097",
+              "text": "Other IaaS close"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:546121-546290",
+          "text": "Spark Plan"
+        }
+      },
+      {
+        "name": "Blaze",
+        "order": 1,
+        "popular": null,
+        "kind": "plan",
+        "status": "paid",
+        "offers": [
+          {
+            "literal": "No-cost up to 5 GB Then $0.10/GB",
+            "amount": "0.10",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB of App Hosting storage",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "App Hosting storage; no-cost up to5GB. Storage row has no separate effective date; outgoing bandwidth in the same section explicitly announces August1future rates. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:593071-593294|offset:640962-641086",
+              "text": "No-cost up to 5 GB Then $0.10/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 2M/month Then $0.40/million",
+            "amount": "0.40",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "million Cloud Functions invocations",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Functions invocations; no-cost up to2million/month. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:607306-607538|offset:640962-641086",
+              "text": "No-cost up to 2M/month Then $0.40/million"
+            }
+          },
+          {
+            "literal": "No-cost up to 5 GB/month Then $0.12/GB",
+            "amount": "0.12",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB of Cloud Functions outbound networking",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Functions outbound networking; no-cost up to5GB/month. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:609110-609339|offset:640962-641086",
+              "text": "No-cost up to 5 GB/month Then $0.12/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 120 min/day Then $0.003/min",
+            "amount": "0.003",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "Cloud Build minute",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Functions Cloud Build; no-cost up to120minutes/day. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:609614-609846|offset:640962-641086",
+              "text": "No-cost up to 120 min/day Then $0.003/min"
+            }
+          },
+          {
+            "literal": "No-cost up to 5 GB Then $0.026/GB",
+            "amount": "0.026",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB stored in *.appspot.com legacy bucket",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Storage legacy appspot bucket; no-cost up to5GB. Storage rate time denominator not stated. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:612420-612644|offset:640962-641086",
+              "text": "No-cost up to 5 GB Then $0.026/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 1 GB/day Then $0.12/GB",
+            "amount": "0.12",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB downloaded from *.appspot.com legacy bucket",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Storage legacy appspot bucket; no-cost up to1GB/day. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:612913-613159|offset:640962-641086",
+              "text": "No-cost up to 1 GB/day Then $0.12/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 20K/day Then $0.05/10K",
+            "amount": "0.05",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "10000 upload operations in *.appspot.com legacy bucket",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Storage legacy appspot bucket; no-cost up to20000upload operations/day. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:613432-613659|offset:640962-641086",
+              "text": "No-cost up to 20K/day Then $0.05/10K"
+            }
+          },
+          {
+            "literal": "No-cost up to 50K/day Then $0.004/10K",
+            "amount": "0.004",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "10000 download operations in *.appspot.com legacy bucket",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Cloud Storage legacy appspot bucket; no-cost up to50000download operations/day. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:613934-614162|offset:640962-641086",
+              "text": "No-cost up to 50K/day Then $0.004/10K"
+            }
+          },
+          {
+            "literal": "No-cost up to 250K operations per month Then $4.00 per million operations",
+            "amount": "4.00",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "million Data Connect operations",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Data Connect operation count; no-cost up to250000operations/month. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:620815-621117|offset:640962-641086",
+              "text": "No-cost up to 250K operations per month Then $4.00 per million operations"
+            }
+          },
+          {
+            "literal": "3 month no-cost trial for the first default Cloud SQL instance created using Firebase Data Connect. Then starting as low as $9.37 / month - pricing varies based on regions and configurations, see Google Cloud pricing.",
+            "amount": "9.37",
+            "currency": null,
+            "billingPeriod": "month",
+            "commitment": "unknown",
+            "unit": "first default Cloud SQL for PostgreSQL instance",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": "Three-month no-cost trial for the first default Cloud SQL instance created using Firebase Data Connect.",
+              "startingAt": true,
+              "range": null,
+              "volume": "Cloud SQL for PostgreSQL via Data Connect; starting as low as9.37/month; varies by region/configuration. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:621397-622435|offset:640962-641086",
+              "text": "3 month no-cost trial for the first default Cloud SQL instance created using Firebase Data Connect. Then starting as low as $9.37 / month - pricing varies based on regions and configurations, see Google Cloud pricing."
+            }
+          },
+          {
+            "literal": "No-cost up to 10 GB Then $0.026/GB",
+            "amount": "0.026",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB of Firebase Hosting storage",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Firebase Hosting storage; no-cost up to10GB. Storage rate time denominator not stated. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:623649-623874|offset:640962-641086",
+              "text": "No-cost up to 10 GB Then $0.026/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 360 MB/day Then $0.15/GB",
+            "amount": "0.15",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB of Firebase Hosting data transfer",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Firebase Hosting data transfer; no-cost up to360MB/day. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:624143-624372|offset:640962-641086",
+              "text": "No-cost up to 360 MB/day Then $0.15/GB"
+            }
+          },
+          {
+            "literal": "$1.50/K (See Cloud Vision pricing )",
+            "amount": "1.50",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "1000 Cloud Vision API calls",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Firebase ML Cloud Vision API; page tooltip says first1000calls/month no-cost. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:627247-627690|offset:640962-641086|offset:516666-516834",
+              "text": "$1.50/K (See Cloud Vision pricing )"
+            }
+          },
+          {
+            "literal": "No-cost up to 1 GB Then $5/GB",
+            "amount": "5",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB stored in Realtime Database",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Realtime Database stored data; no-cost up to1GB. Storage rate time denominator not stated. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:629402-629622|offset:640962-641086",
+              "text": "No-cost up to 1 GB Then $5/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 10 GB/month Then $1/GB",
+            "amount": "1",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "GB downloaded from Realtime Database",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Realtime Database downloads; no-cost up to10GB/month. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:629891-630118|offset:640962-641086",
+              "text": "No-cost up to 10 GB/month Then $1/GB"
+            }
+          },
+          {
+            "literal": "No-cost up to 60 min/day Then $1/device/hour",
+            "amount": "1",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "virtual-device-hour in Test Lab",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Test Lab virtual devices; no-cost up to60minutes/day; testing time rounded up to nearest minute. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:631901-632136|offset:640962-641086|offset:525048-525421",
+              "text": "No-cost up to 60 min/day Then $1/device/hour"
+            }
+          },
+          {
+            "literal": "No-cost up to 30 min/day Then $5/device/hour",
+            "amount": "5",
+            "currency": null,
+            "billingPeriod": "unknown",
+            "commitment": "unknown",
+            "unit": "physical-device-hour in Test Lab",
+            "minimumQuantity": null,
+            "qualifications": {
+              "region": null,
+              "locale": null,
+              "tax": null,
+              "promotion": null,
+              "startingAt": null,
+              "range": null,
+              "volume": "Test Lab physical devices; no-cost up to30minutes/day; testing time rounded up to nearest minute. No-cost quotas apply per project, not per app/resource.",
+              "billingVariant": "Service usage rate under Blaze; not a flat subscription base fee. Dollar currency and invoice/contract frequency unknown."
+            },
+            "source": {
+              "locator": "offset:632413-632686|offset:640962-641086|offset:525048-525421",
+              "text": "No-cost up to 30 min/day Then $5/device/hour"
+            }
+          }
+        ],
+        "features": [
+          {
+            "name": "App Hosting / Outgoing bandwidth Uncached Cached",
+            "value": "Starting August 1, 2025 No-cost up to 10 GiB/month, then $0.20/GiB $0.15/GiB",
+            "source": {
+              "locator": "offset:592020-592826",
+              "text": "Outgoing bandwidth Uncached Cached Starting August 1, 2025 No-cost up to 10 GiB/month, then $0.20/GiB $0.15/GiB"
+            }
+          },
+          {
+            "name": "App Hosting / Storage",
+            "value": "No-cost up to 5 GB Then $0.10/GB",
+            "source": {
+              "locator": "offset:592838-593312",
+              "text": "Storage No-cost up to 5 GB Then $0.10/GB"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Run",
+            "value": "Cloud Run pricing",
+            "source": {
+              "locator": "offset:593739-594290",
+              "text": "Cloud Run Cloud Run pricing"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Build",
+            "value": "Cloud Build pricing",
+            "source": {
+              "locator": "offset:594302-594859",
+              "text": "Cloud Build Cloud Build pricing"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Artifact Registry",
+            "value": "Artifact Registry pricing",
+            "source": {
+              "locator": "offset:594871-595452",
+              "text": "Artifact Registry Artifact Registry pricing"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Logging",
+            "value": "Cloud Logging pricing",
+            "source": {
+              "locator": "offset:595464-596067",
+              "text": "Cloud Logging Cloud Logging pricing"
+            }
+          },
+          {
+            "name": "App Hosting / Underlying Cloud Products / Cloud Secrets Manager",
+            "value": "Cloud Secrets Manager pricing",
+            "source": {
+              "locator": "offset:596079-596696",
+              "text": "Cloud Secrets Manager Cloud Secrets Manager pricing"
+            }
+          },
+          {
+            "name": "Authentication / Phone Auth - All regions",
+            "value": "Billed per SMS sent See current rates",
+            "source": {
+              "locator": "offset:598821-599513",
+              "text": "Phone Auth - All regions Billed per SMS sent See current rates"
+            }
+          },
+          {
+            "name": "Authentication / Other Authentication services",
+            "value": "Available",
+            "source": {
+              "locator": "offset:599525-600066",
+              "text": "Other Authentication services check"
+            }
+          },
+          {
+            "name": "Authentication / With Identity Platform / Monthly active users",
+            "value": "No-cost up to 50K MAUs Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:600501-601153",
+              "text": "Monthly active users No-cost up to 50K MAUs Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Authentication / With Identity Platform / Monthly active users - SAML/OIDC",
+            "value": "No-cost up to 50 MAUs Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:601165-601828",
+              "text": "Monthly active users - SAML/OIDC No-cost up to 50 MAUs Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Stored data",
+            "value": "No-cost up to 1 GiB total Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:602817-603455",
+              "text": "Stored data No-cost up to 1 GiB total Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Network egress",
+            "value": "No-cost up to 10 GiB/month Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:603467-604109",
+              "text": "Network egress No-cost up to 10 GiB/month Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Document writes",
+            "value": "No-cost up to 20K writes/day Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:604121-604766",
+              "text": "Document writes No-cost up to 20K writes/day Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Document reads",
+            "value": "No-cost up to 50K reads/day Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:604778-605421",
+              "text": "Document reads No-cost up to 50K reads/day Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Firestore / Document deletes",
+            "value": "No-cost up to 20K deletes/day Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:605433-606080",
+              "text": "Document deletes No-cost up to 20K deletes/day Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Functions / Invocations",
+            "value": "No-cost up to 2M/month Then $0.40/million",
+            "source": {
+              "locator": "offset:607069-607556",
+              "text": "Invocations No-cost up to 2M/month Then $0.40/million"
+            }
+          },
+          {
+            "name": "Cloud Functions / GB-seconds",
+            "value": "No-cost up to 400K/month Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:607568-608204",
+              "text": "GB-seconds No-cost up to 400K/month Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Functions / CPU-seconds",
+            "value": "No-cost up to 200K/month Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:608216-608853",
+              "text": "CPU-seconds No-cost up to 200K/month Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Functions / Outbound networking",
+            "value": "No-cost up to 5 GB/month Then $0.12/GB",
+            "source": {
+              "locator": "offset:608865-609357",
+              "text": "Outbound networking No-cost up to 5 GB/month Then $0.12/GB"
+            }
+          },
+          {
+            "name": "Cloud Functions / Cloud Build minutes",
+            "value": "No-cost up to 120 min/day Then $0.003/min",
+            "source": {
+              "locator": "offset:609369-609864",
+              "text": "Cloud Build minutes No-cost up to 120 min/day Then $0.003/min"
+            }
+          },
+          {
+            "name": "Cloud Functions / Container storage in Artifact Registry",
+            "value": "No-cost up to 500MB of storage Then Google Cloud pricing",
+            "source": {
+              "locator": "offset:609876-610695",
+              "text": "Container storage in Artifact Registry No-cost up to 500MB of storage Then Google Cloud pricing"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / GB stored",
+            "value": "No-cost up to 5 GB Then $0.026/GB",
+            "source": {
+              "locator": "offset:612185-612662",
+              "text": "GB stored No-cost up to 5 GB Then $0.026/GB"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / GB downloaded",
+            "value": "No-cost up to 1 GB/day Then $0.12/GB",
+            "source": {
+              "locator": "offset:612674-613177",
+              "text": "GB downloaded No-cost up to 1 GB/day Then $0.12/GB"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / Upload operations",
+            "value": "No-cost up to 20K/day Then $0.05/10K",
+            "source": {
+              "locator": "offset:613189-613677",
+              "text": "Upload operations No-cost up to 20K/day Then $0.05/10K"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / Download operations",
+            "value": "No-cost up to 50K/day Then $0.004/10K",
+            "source": {
+              "locator": "offset:613689-614180",
+              "text": "Download operations No-cost up to 50K/day Then $0.004/10K"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.appspot.com legacy buckets / Multiple buckets per project",
+            "value": "Available",
+            "source": {
+              "locator": "offset:614192-614732",
+              "text": "Multiple buckets per project check"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / GB stored",
+            "value": "No-cost up to 5 GB-months Then Cloud Storage pricing",
+            "source": {
+              "locator": "offset:615670-616313",
+              "text": "GB stored No-cost up to 5 GB-months Then Cloud Storage pricing"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / GB downloaded",
+            "value": "No-cost up to 100 GB/month Then Cloud Storage pricing",
+            "source": {
+              "locator": "offset:616325-616973",
+              "text": "GB downloaded No-cost up to 100 GB/month Then Cloud Storage pricing"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / Upload operations",
+            "value": "No-cost up to 5K/month Then Cloud Storage pricing",
+            "source": {
+              "locator": "offset:616985-617633",
+              "text": "Upload operations No-cost up to 5K/month Then Cloud Storage pricing"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / Download operations",
+            "value": "No-cost up to 50K/month Then Cloud Storage pricing",
+            "source": {
+              "locator": "offset:617645-618296",
+              "text": "Download operations No-cost up to 50K/month Then Cloud Storage pricing"
+            }
+          },
+          {
+            "name": "Cloud Storage / *.firebasestorage.app and additional buckets / Multiple buckets per project",
+            "value": "Available",
+            "source": {
+              "locator": "offset:618308-618848",
+              "text": "Multiple buckets per project check"
+            }
+          },
+          {
+            "name": "Data Connect / Network egress",
+            "value": "No-cost up to 10 GiB/month Then Google Cloud Internet Data Transfer Rate Premium Tier pricing",
+            "source": {
+              "locator": "offset:619831-620562",
+              "text": "Network egress No-cost up to 10 GiB/month Then Google Cloud Internet Data Transfer Rate Premium Tier pricing"
+            }
+          },
+          {
+            "name": "Data Connect / Operation count",
+            "value": "No-cost up to 250K operations per month Then $4.00 per million operations",
+            "source": {
+              "locator": "offset:620574-621135",
+              "text": "Operation count No-cost up to 250K operations per month Then $4.00 per million operations"
+            }
+          },
+          {
+            "name": "Data Connect / Cloud SQL for PostgreSQL",
+            "value": "3 month no-cost trial for the first default Cloud SQL instance created using Firebase Data Connect. Then starting as low as $9.37 / month - pricing varies based on regions and configurations, see Google Cloud pricing.",
+            "source": {
+              "locator": "offset:621147-622453",
+              "text": "Cloud SQL for PostgreSQL 3 month no-cost trial for the first default Cloud SQL instance created using Firebase Data Connect. Then starting as low as $9.37 / month - pricing varies based on regions and configurations, see Google Cloud pricing."
+            }
+          },
+          {
+            "name": "Hosting / Storage",
+            "value": "No-cost up to 10 GB Then $0.026/GB",
+            "source": {
+              "locator": "offset:623416-623892",
+              "text": "Storage No-cost up to 10 GB Then $0.026/GB"
+            }
+          },
+          {
+            "name": "Hosting / Data transfer",
+            "value": "No-cost up to 360 MB/day Then $0.15/GB",
+            "source": {
+              "locator": "offset:623904-624390",
+              "text": "Data transfer No-cost up to 360 MB/day Then $0.15/GB"
+            }
+          },
+          {
+            "name": "Hosting / Custom domain & SSL",
+            "value": "Available",
+            "source": {
+              "locator": "offset:624402-624937",
+              "text": "Custom domain & SSL check"
+            }
+          },
+          {
+            "name": "Hosting / Multiple sites per project",
+            "value": "Available",
+            "source": {
+              "locator": "offset:624949-625487",
+              "text": "Multiple sites per project check"
+            }
+          },
+          {
+            "name": "Firebase ML / Custom Model Deployment",
+            "value": "Available",
+            "source": {
+              "locator": "offset:626457-626992",
+              "text": "Custom Model Deployment check"
+            }
+          },
+          {
+            "name": "Firebase ML / Cloud Vision APIs",
+            "value": "$1.50/K (See Cloud Vision pricing )",
+            "source": {
+              "locator": "offset:627004-627708",
+              "text": "Cloud Vision APIs $1.50/K (See Cloud Vision pricing )"
+            }
+          },
+          {
+            "name": "Realtime Database / Simultaneous connections",
+            "value": "200K per database",
+            "source": {
+              "locator": "offset:628711-629155",
+              "text": "Simultaneous connections 200K per database"
+            }
+          },
+          {
+            "name": "Realtime Database / GB stored",
+            "value": "No-cost up to 1 GB Then $5/GB",
+            "source": {
+              "locator": "offset:629167-629640",
+              "text": "GB stored No-cost up to 1 GB Then $5/GB"
+            }
+          },
+          {
+            "name": "Realtime Database / GB downloaded",
+            "value": "No-cost up to 10 GB/month Then $1/GB",
+            "source": {
+              "locator": "offset:629652-630136",
+              "text": "GB downloaded No-cost up to 10 GB/month Then $1/GB"
+            }
+          },
+          {
+            "name": "Realtime Database / Multiple databases per project",
+            "value": "Available",
+            "source": {
+              "locator": "offset:630148-630690",
+              "text": "Multiple databases per project check"
+            }
+          },
+          {
+            "name": "Test Lab / Virtual Device Tests",
+            "value": "No-cost up to 60 min/day Then $1/device/hour",
+            "source": {
+              "locator": "offset:631655-632154",
+              "text": "Virtual Device Tests No-cost up to 60 min/day Then $1/device/hour"
+            }
+          },
+          {
+            "name": "Test Lab / Physical Device Tests",
+            "value": "No-cost up to 30 min/day Then $5/device/hour",
+            "source": {
+              "locator": "offset:632166-632704",
+              "text": "Physical Device Tests No-cost up to 30 min/day Then $5/device/hour"
+            }
+          },
+          {
+            "name": "Test Lab / Android Device Streaming",
+            "value": "30 no-cost minutes per project, per month 15 cents for each additional minute",
+            "source": {
+              "locator": "offset:632716-633403",
+              "text": "Android Device Streaming 30 no-cost minutes per project, per month 15 cents for each additional minute"
+            }
+          },
+          {
+            "name": "Google Cloud / BigQuery",
+            "value": "Available",
+            "source": {
+              "locator": "offset:635387-635907",
+              "text": "BigQuery check"
+            }
+          },
+          {
+            "name": "Google Cloud / Other IaaS",
+            "value": "Available",
+            "source": {
+              "locator": "offset:635919-636441",
+              "text": "Other IaaS check"
+            }
+          }
+        ],
+        "source": {
+          "locator": "offset:590224-590393",
+          "text": "Blaze Plan"
+        }
+      }
+    ],
+    "planIdentities": {},
+    "review": {
+      "reviewer": "osshunt-editorial",
+      "reviewedAt": "2026-10-22T21:07:26.772Z",
+      "decision": "confirmed"
+    }
+  },
+  {
     "id": "pricing-manual-81bdc75eff91777e661dd67743af821bc2571fa8e5906ec41618b7e131ac1a95",
     "productId": "fastmail",
     "scope": {

@@ -1,0 +1,189 @@
+[
+  {
+    "productId": "firebase",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630103258",
+      "capturedAt": "2025-06-30T10:32:58.000Z",
+      "originalUrl": "https://firebase.google.com/",
+      "digest": "EDF7XWYJSKFNOEHYVUSO6OY2IGPFCCXK",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "firebase",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250625084413",
+      "capturedAt": "2025-06-25T08:44:13.000Z",
+      "originalUrl": "https://firebase.google.com/pricing/",
+      "digest": "NZWHYTNAJ3GOLQHBHL7MO4PDOWZHAJVI",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "heroku",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630200641",
+      "capturedAt": "2025-06-30T20:06:41.000Z",
+      "originalUrl": "https://www.heroku.com/",
+      "digest": "C2FJJJBL4ZKFOTLR6VF7Z6VMLHQORXAY",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "heroku",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630111025",
+      "capturedAt": "2025-06-30T11:10:25.000Z",
+      "originalUrl": "https://www.heroku.com/pricing/",
+      "digest": "G4ED7NDQFH4MKNERNP5VFD5UKA4ICAKB",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "vercel",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630154022",
+      "capturedAt": "2025-06-30T15:40:22.000Z",
+      "originalUrl": "https://vercel.com/",
+      "digest": "ZMIQV5BLTCVEE3272QODMXYCHOKBJYV2",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "vercel",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250627083535",
+      "capturedAt": "2025-06-27T08:35:35.000Z",
+      "originalUrl": "https://vercel.com/pricing",
+      "digest": "RD5ETUZR6B5OKI3MGVNSSIJD7UCNXNI6",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "pingdom",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630130725",
+      "capturedAt": "2025-06-30T13:07:25.000Z",
+      "originalUrl": "https://www.pingdom.com/",
+      "digest": "OOOOJS6H5IVLJTF7IMHHZSPCWO5IFT46",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "pingdom",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250607070608",
+      "capturedAt": "2025-06-07T07:06:08.000Z",
+      "originalUrl": "https://www.pingdom.com/pricing/",
+      "digest": "4YQUTL7KWNMDFJZZGJFHGAOHNLVAWAH2",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "retool",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630110734",
+      "capturedAt": "2025-06-30T11:07:34.000Z",
+      "originalUrl": "https://retool.com/",
+      "digest": "ORCISMV35K63NMW4EQZCWJSIJPTRNPVD",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "retool",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250620035649",
+      "capturedAt": "2025-06-20T03:56:49.000Z",
+      "originalUrl": "https://retool.com/pricing",
+      "digest": "C7UHD3BWUPTWLUYUSBQGSBNEH2EB5JWI",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "insomnia",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250625235453",
+      "capturedAt": "2025-06-25T23:54:53.000Z",
+      "originalUrl": "https://insomnia.rest/",
+      "digest": "RBWBTUUCXWJDP6JZVMTXPMLG4C6JLALZ",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "insomnia",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250614045514",
+      "capturedAt": "2025-06-14T04:55:14.000Z",
+      "originalUrl": "https://insomnia.rest/pricing",
+      "digest": "WQZJO5GLFN4UOIGN2BMXHJG3OAY37VP3",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "postman",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250629231320",
+      "capturedAt": "2025-06-29T23:13:20.000Z",
+      "originalUrl": "https://www.postman.com/",
+      "digest": "I6PNB6Y3I3RTHN7E3RCBOVYNA6C5GVXU",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "postman",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250613021229",
+      "capturedAt": "2025-06-13T02:12:29.000Z",
+      "originalUrl": "https://www.postman.com/pricing/",
+      "digest": "DS6TE2X6VNZOTKIFRO3I5H3C4GQVSJTF",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "algolia",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250630230633",
+      "capturedAt": "2025-06-30T23:06:33.000Z",
+      "originalUrl": "https://www.algolia.com/",
+      "digest": "PQSJS2ZCM5ZBVOIKRA5BAC656Q2HOOV4",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "algolia",
+    "kind": "pricing",
+    "record": {
+      "timestamp": "20250630162234",
+      "capturedAt": "2025-06-30T16:22:34.000Z",
+      "originalUrl": "https://www.algolia.com/pricing",
+      "digest": "APTSIDQ2DEN3UTBZRJSSXPOIRTWY33A5",
+      "mimeType": "text/html"
+    }
+  },
+  {
+    "productId": "elastic-cloud",
+    "kind": "landing",
+    "record": {
+      "timestamp": "20250609060052",
+      "capturedAt": "2025-06-09T06:00:52.000Z",
+      "originalUrl": "https://www.elastic.co/cloud/",
+      "digest": "AO3JURDQNLJMRXGL7TVO6CEB4ZW5V4GY",
+      "mimeType": "text/html"
+    }
+  }
+]
