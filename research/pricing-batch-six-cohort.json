@@ -1,0 +1,331 @@
+{
+  "formatVersion": 1,
+  "baselineCommit": "0ba78e1ac02251a1506bac311c49f55569bc1a69",
+  "extractorVersion": "1.2.0",
+  "baselineFingerprint": "3fdc6e92e07c8d6a8d990e1f0a6773474aff89be656fc66b5b0bba372ce62196",
+  "selection": "Next ten previously unsampled paid catalog entries in audience order; all eighty earlier products excluded; no substitution based on capture or extraction success",
+  "window": {
+    "from": "2025-06-01T00:00:00.000Z",
+    "cutoff": "2025-06-30T23:59:59.000Z"
+  },
+  "products": [
+    {
+      "id": "greenhouse",
+      "name": "Greenhouse",
+      "url": "https://www.greenhouse.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.greenhouse.com/pricing"
+      ],
+      "audienceRank": 39
+    },
+    {
+      "id": "lever",
+      "name": "Lever",
+      "url": "https://www.lever.co/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.lever.co/pricing"
+      ],
+      "audienceRank": 39
+    },
+    {
+      "id": "fastmail",
+      "name": "Fastmail Business",
+      "url": "https://www.fastmail.com/business/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/business"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 40
+    },
+    {
+      "id": "zoho-mail",
+      "name": "Zoho Mail",
+      "url": "https://www.zoho.com/mail/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/mail"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.zoho.com/mail/zohomail-pricing.html",
+        "https://www.zoho.com/mail/zohomail-pricing.html?src=howto"
+      ],
+      "audienceRank": 40
+    },
+    {
+      "id": "auth0",
+      "name": "Auth0",
+      "url": "https://auth0.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://auth0.com/pricing"
+      ],
+      "audienceRank": 41
+    },
+    {
+      "id": "okta",
+      "name": "Okta Workforce Identity",
+      "url": "https://www.okta.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.okta.com/pricing/"
+      ],
+      "audienceRank": 41
+    },
+    {
+      "id": "cloudflare-access",
+      "name": "Cloudflare Access",
+      "url": "https://www.cloudflare.com/sase/products/access/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/sase/products/access"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [],
+      "audienceRank": 42
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "url": "https://tailscale.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://tailscale.com/pricing"
+      ],
+      "audienceRank": 42
+    },
+    {
+      "id": "freshservice-itam",
+      "name": "Freshservice IT Asset Management",
+      "url": "https://www.freshworks.com/freshservice/itam/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [
+        "/freshservice/itam"
+      ],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.freshworks.com/freshservice/itam/pricing/"
+      ],
+      "audienceRank": 43
+    },
+    {
+      "id": "lansweeper",
+      "name": "Lansweeper",
+      "url": "https://www.lansweeper.com/",
+      "kind": "paid",
+      "scope": {
+        "edition": null,
+        "deployment": "unknown"
+      },
+      "productPaths": [],
+      "allowedHosts": [],
+      "pricingHints": [
+        "https://www.lansweeper.com/pricing/"
+      ],
+      "audienceRank": 43
+    }
+  ],
+  "codeFiles": [
+    {
+      "file": "lib/history/archive.mjs",
+      "sha256": "23c35c47a701990bd7867ae4a3d87842353db3f9dcede5f92dd3324553d56e49"
+    },
+    {
+      "file": "lib/history/selection.mjs",
+      "sha256": "3ef385c71818fc3000d8b8a0aa2081f0872cd687972bd4ef543071c3810bb299"
+    },
+    {
+      "file": "lib/history/stores-file.mjs",
+      "sha256": "3505e048bc782c0fce9a432e437176c8dfe33f284d700bfec46c8374e65b27ca"
+    },
+    {
+      "file": "lib/pricing/aliases.mjs",
+      "sha256": "9534dc44a2aac2add908560610410b3b32ae153d63bc712e1668abe08c3bb212"
+    },
+    {
+      "file": "lib/pricing/application.mjs",
+      "sha256": "76a26800fb55c3d8aecf455e951e9a3c007014576637b7bddb63273be4472957"
+    },
+    {
+      "file": "lib/pricing/archive.mjs",
+      "sha256": "34718d2261c2dbac8ee8d002f151e22a8994a0d923f60fadb14c860fae2c8c7f"
+    },
+    {
+      "file": "lib/pricing/calendar.mjs",
+      "sha256": "c8348b0a95e9d31835bb9bbe4955963f3719456976383a5e8d1c35309918a5f2"
+    },
+    {
+      "file": "lib/pricing/checkpoint.mjs",
+      "sha256": "0f57a21f3decb45587747943ff39867b186eac24b1a607dd536e63774de476a4"
+    },
+    {
+      "file": "lib/pricing/compare.mjs",
+      "sha256": "a0dea1e997b3837584573db224f589e12519d9b578bb6d22af53536282c38745"
+    },
+    {
+      "file": "lib/pricing/extract-adapters.mjs",
+      "sha256": "9934dd423f318f09488efcd298558ff6b69b03d081414dd91ee54039991da5ea"
+    },
+    {
+      "file": "lib/pricing/extract-bounds.mjs",
+      "sha256": "68eeb23e5fdb9bb0763eeda566bbdfc3987abb128f72e499e3be121d399eaf51"
+    },
+    {
+      "file": "lib/pricing/extract-business.mjs",
+      "sha256": "5c918239c1d48217f71580a0440cde9d1be6959d56a775f661b815f70fcf94ed"
+    },
+    {
+      "file": "lib/pricing/extract-calendly.mjs",
+      "sha256": "65c34f1fb2b481cf69d0516bf08a44a090c78ee7b1b7cb8ae78551ecab445c8b"
+    },
+    {
+      "file": "lib/pricing/extract-generic.mjs",
+      "sha256": "273af766f82f15272c5d368237672a3841bfb1937bb670e46cefba43eed4bfc2"
+    },
+    {
+      "file": "lib/pricing/extract-hubspot.mjs",
+      "sha256": "e6b83e8d9735d98237178be0dda5c461e39d6c969e6e49b1557f4fb802bb90cf"
+    },
+    {
+      "file": "lib/pricing/extract-intercom.mjs",
+      "sha256": "5ebf0370c623be1c246797365bbcd4e84ee224e0e51aea80f270308735333ad5"
+    },
+    {
+      "file": "lib/pricing/extract-mattermost.mjs",
+      "sha256": "20f882e28d16d3bf7be812780b6be040aad018e7d197f464039026e08cb62522"
+    },
+    {
+      "file": "lib/pricing/extract-microsoft.mjs",
+      "sha256": "e0ee72a938e931ab78dfc7a4caf746e1cb5a6c18dd39494ab6213a64f4eece63"
+    },
+    {
+      "file": "lib/pricing/extract-modern.mjs",
+      "sha256": "8f71f93da800e5b3b18157cbf892e887ef197f9a06cc9d14e15376b1c134b80a"
+    },
+    {
+      "file": "lib/pricing/extract-offers.mjs",
+      "sha256": "5eaa55ac439e954b91e5415c592ee278dcf2a4dafc76fd3de1e11f8923cfd88c"
+    },
+    {
+      "file": "lib/pricing/extract-structured.mjs",
+      "sha256": "eb665a1d2e378fd03bcf523874132aba052c8d91bdad13b8402196f5688c6d10"
+    },
+    {
+      "file": "lib/pricing/extract-webflow.mjs",
+      "sha256": "61ff8efbabdb5c8a2bb00c5721c73d72b75b73ec05ebdb91d290c93d21f38948"
+    },
+    {
+      "file": "lib/pricing/extract.mjs",
+      "sha256": "ea36beb66556f59059e4d6a2cd6d6e8e8ad6640dc708edbbbc53e584789ec9df"
+    },
+    {
+      "file": "lib/pricing/html.mjs",
+      "sha256": "378c04b98f9622eb40da2386f7922d8aee129484104a22592d159eb5ea169ff6"
+    },
+    {
+      "file": "lib/pricing/links.mjs",
+      "sha256": "320a12b0be475cf96822730f6ee66436629170f79affdc1a6f3153709647b74e"
+    },
+    {
+      "file": "lib/pricing/proposal.mjs",
+      "sha256": "b8cf60f8194dacf39efcde2599144cfd63d480eb998117d38318d67841a120a3"
+    },
+    {
+      "file": "lib/pricing/review.mjs",
+      "sha256": "47fff99958585dffb21007b50fd46c8c8f6592aacd8b3346d03419b7bf661c71"
+    },
+    {
+      "file": "lib/pricing/sampling-support.mjs",
+      "sha256": "48771344a8001545059ac86b4ccb0815d7c2ce8cce310f61857a6c8524b48713"
+    },
+    {
+      "file": "lib/pricing/sampling.mjs",
+      "sha256": "1fcd8a5504004a560565110f0a7262276dccedf6a24cd6803127f017907fe346"
+    },
+    {
+      "file": "lib/pricing/schema.mjs",
+      "sha256": "5abff50c754f71ce92bfdcfdb95a9e6537773bbcf7df1527d94a71b8a478096d"
+    },
+    {
+      "file": "lib/pricing/scope.mjs",
+      "sha256": "e23c485d4998d3641821e135454cfe98148852b3efcd02bdc7ffaa2868f90473"
+    },
+    {
+      "file": "lib/pricing/service.mjs",
+      "sha256": "4bb00b9b3d3b2e9f757fbd313e96ae49745b468ca43ccdd0721130d7e398e97d"
+    },
+    {
+      "file": "lib/pricing/stores-cloudflare.mjs",
+      "sha256": "d4305365e2543e278e4428203ecedb6cd436fb116167b20e2c022188386dd58d"
+    },
+    {
+      "file": "lib/pricing/stores-file.mjs",
+      "sha256": "cf1652e40d6f69afeefe7816ed514da2318070a6a3c61f09c09aa2cf53588995"
+    },
+    {
+      "file": "scripts/sample-pricing.mjs",
+      "sha256": "71c14785ac42a4d3d3ed15849ecf62d004fd4a0bcbd631a3265c27b73fc5396a"
+    }
+  ],
+  "catalogSha256": "b1a290e3972086c1027208bdc650cdbc3f62732f5168e4644c538e92cd9b4e16",
+  "packageLockSha256": "696db2b12485fd635d39bb639e7bbee070a941eea2fe422240cc02f996e06d91",
+  "policy": {
+    "maxCandidates": 2,
+    "pricingLookbackDays": 30,
+    "minimumDiscoveryInterval": "six calendar months",
+    "rateLimit": "serial ten-second pacing; shared Archive cooldown",
+    "publication": "independent evidence review of numerical and partial structures; manual curation permitted; no automatic confirmation",
+    "baseline": "no source/collector/parser/catalog changes during live collection",
+    "repeat": "completed same-journal replay must make zero fetch attempts"
+  }
+}
