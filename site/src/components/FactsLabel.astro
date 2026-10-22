@@ -3,8 +3,7 @@ import { type Fit } from '../lib/home';
 import FitMark from './FitMark.astro';
 import TierBox from './TierBox.astro';
 import License from './License.astro';
-import Tip from './Tip.astro';
-import Icon from './Icon.astro';
+import SelfHost from './SelfHost.astro';
 import SourceLinks from './SourceLinks.astro';
 interface Props {
   id?: string; name: string; logo?: string; fit?: Fit; license: string; osi: boolean; tier: string;
@@ -18,10 +17,7 @@ const a = Astro.props;
   <div class="facts-row" class:list={[{ lead: a.noFit }]}><span>License</span><License license={a.license} osi={a.osi} /></div>
   <div class="facts-row"><span>Paid-feature tier</span><TierBox tier={a.tier} /></div>
   <div class="facts-row"><span>Self-host</span>
-    <Tip label={`Self-hostable: ${a.selfHost ? 'yes' : 'no'}`}>
-      <span class:list={['ic', a.selfHost ? 'yes' : 'no']}><Icon name="server" size={20} /></span>
-      <span slot="tip"><b>Self-hostable: {a.selfHost ? 'yes' : 'no'}</b><span class="tdesc">{a.selfHost ? 'You can run it on your own server.' : 'Not offered as software you run yourself.'}</span></span>
-    </Tip>
+    <SelfHost on={a.selfHost} />
   </div>
   <div class="facts-row"><span>Paid-feature limits</span>{a.limits ? <span data-fx>{a.limits} noted</span> : <span class="u" data-fx>None established</span>}</div>
 </article>

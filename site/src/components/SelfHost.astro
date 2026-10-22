@@ -1,0 +1,11 @@
+---
+import Tip from './Tip.astro';
+import Icon from './Icon.astro';
+// Server icon: solid when the project can be run on your own server, grey and hatched when not.
+interface Props { on: boolean; align?: 'left' | 'right' }
+const { on, align = 'right' } = Astro.props;
+---
+<Tip label={`Self-hostable: ${on ? 'yes' : 'no'}`} align={align}>
+  <span class:list={['ic', on ? 'yes' : 'no']}><Icon name="server" size={20} /></span>
+  <span slot="tip"><b>Self-hostable: {on ? 'yes' : 'no'}</b><span class="tdesc">{on ? 'You can run it on your own server.' : 'Not offered as software you run yourself.'}</span></span>
+</Tip>

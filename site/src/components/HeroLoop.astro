@@ -33,7 +33,7 @@ const { scenes } = Astro.props;
   .progress span { transition: width 0.1s linear; }
   .hero-loop.off .progress { visibility: hidden; }
   .inc { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-  .tile { width: 76px; height: 76px; border: var(--rule-3) solid var(--ink); display: grid; place-items: center; flex: none; }
+  .tile { width: 76px; height: 76px; display: grid; place-items: center; flex: none; }
   .tile img { width: 56px; height: 56px; object-fit: contain; }
   .inc-text { margin: 0; display: grid; font-size: 0.9375rem; }
   .inc-text b { font-size: 1.5rem; font-family: var(--display); font-weight: 900; line-height: 1.1; }
@@ -45,7 +45,7 @@ const { scenes } = Astro.props;
   const wrap = document.querySelector<HTMLElement>('.hero-loop');
   if (root && wrap) {
     const views = [...root.querySelectorAll<HTMLElement>('.view')];
-    const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
+    const chips = [...document.querySelectorAll<HTMLAnchorElement>('[data-chip]')];
     const strip = document.querySelector<HTMLElement>('[data-chips]');
     let limit = chips.length; // how many sample logos fit on the line; the cycle only visits those
     const still = matchMedia('(prefers-reduced-motion: reduce)');
@@ -78,7 +78,7 @@ const { scenes } = Astro.props;
         const on = Number(v.dataset.scene) === scene && Number(v.dataset.alt) === alt;
         v.classList.toggle('on', on); v.setAttribute('aria-hidden', String(!on));
       });
-      chips.forEach((c, n) => c.setAttribute('aria-pressed', String(n === scene)));
+      chips.forEach((c, n) => c.toggleAttribute('data-on', n === scene));
       const cur = views.find((v) => v.classList.contains('on'));
       if (cur && !still.matches) {
         const toolChanged = !prev || Number(prev.dataset.scene) !== scene; // the tool's logo only fades in when the tool changes
@@ -113,7 +113,8 @@ const { scenes } = Astro.props;
       if (elapsed >= SHOW) advance();
     }, TICK);
     if (still.matches) stop();
-    chips.forEach((c, n) => c.addEventListener('click', () => show(n, 0)));
+    // A sample logo is a link to that tool's page (the same place a search for it goes); hover or focus previews its sheet here.
+    chips.forEach((c, n) => { c.addEventListener('pointerenter', () => show(n, 0)); c.addEventListener('focus', () => show(n, 0)); });
     document.addEventListener('click', stop, { once: true, capture: true });
     document.addEventListener('keydown', stop, { once: true, capture: true });
     document.addEventListener('focusin', stop, { once: true });
