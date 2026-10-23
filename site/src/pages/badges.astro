@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import Prose from '../layouts/Prose.astro';
+import { badgeIndex, renderSvg } from '../../../lib/badges.mjs';
+
+const [prods, maps] = await Promise.all([getCollection('products'), getCollection('alternatives')]);
+const index = badgeIndex(prods.map((p) => p.data), maps.map((m) => m.data));
+const eligible = Object.keys(index).length;
+const listed = prods.filter((p) => p.data.kind === 'oss').length;
+const sample = (message: string) => `data:image/svg+xml;charset=utf-8,${encodeURIComponent(renderSvg({ message }))}`;
+---
+<Prose title="Badges" description="What the OSSHunt README badge means, which open-source projects can show it, and how to remove it or correct a listing." updated="2026-10-23">
+  <p>Open-source projects listed on OSSHunt can show a README badge naming the paid tools they are mapped against. The badge links to the project's OSSHunt page, where the fit, license, paid-feature tier and migration notes for each tool are shown with sources.</p>
+  <p><img src={sample('replaces Retool')} alt="OSSHunt: replaces Retool" height="20" /></p>
+  <p><img src={sample('replaces 6 paid tools')} alt="OSSHunt: replaces 6 paid tools" height="20" /></p>
+
+  <h2>What it means</h2>
+  <ul>
+    <li>OSSHunt lists the project as an open-source alternative to the paid tools named on the badge.</li>
+    <li>Each named tool has a mapping with partial fit or better. Partial means core overlap with named gaps; it is not feature parity.</li>
+    <li>It is an editorial listing from public sources at the date checked. It is not an endorsement by the paid vendors, a security review or a production recommendation.</li>
+    <li>Paid tools are named in text only. Names belong to their owners and identify the products.</li>
+  </ul>
+
+  <h2>Which projects are eligible</h2>
+  <p>All of these must hold. {eligible} of {listed} listed alternatives qualify today.</p>
+  <ul>
+    <li>The core edition uses an OSI-approved license: paid-feature tier A, B or C. Source-available (S) and unresolved (U) entries are excluded. <a href="/methodology/#tiers">Tiers explained</a>.</li>
+    <li>The repository is not archived or disabled.</li>
+    <li>At least one mapping to a paid tool has fit "drop-in" or "partial". Mappings marked "different approach" are not named. <a href="/methodology/#fit">Fit explained</a>.</li>
+  </ul>
+  <p>Up to three paid tools are named, in alphabetical order. With more than three, the badge shows the count, for example "replaces 6 paid tools"; the profile page lists them all.</p>
+
+  <h2>Adding it</h2>
+  <p>Each eligible project page has a "Selected by OSSHunt" section with Markdown, HTML and reStructuredText snippets. The image is <code>https://osshunt.com/badge/&lt;id&gt;.svg</code>; add <code>?style=flat-square</code>, <code>plastic</code> or <code>for-the-badge</code> to match a badge row. A <a href="https://shields.io/badges/endpoint-badge">Shields endpoint</a> is at <code>https://osshunt.com/badge/&lt;id&gt;.json</code>.</p>
+
+  <h2>Removing it</h2>
+  <p>Delete the badge line from your README. Nothing else is needed. Badge requests set no cookies.</p>
+  <p>If a project stops qualifying, for example after a license change or an archived repository, its badge shows "not listed" instead of the paid tools, so a README never keeps a stale claim.</p>
+
+  <h2>How listings are chosen and corrected</h2>
+  <p>Paid tools are chosen by how many businesses are likely to use them; alternatives are researched from license files, edition comparisons, pricing pages and repository activity, and every claim keeps its source and date. Fit is judged per pair of products. The <a href="/methodology/">method page</a> has the details.</p>
+  <p>If an entry about your project is wrong or out of date, or you want it removed from OSSHunt, open an issue at <a href="https://github.com/jadb/osshunt/issues">github.com/jadb/osshunt</a> with the source. We aim to correct verified errors; corrections show on the badge at the next update.</p>
+</Prose>

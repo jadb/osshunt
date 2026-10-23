@@ -3,6 +3,8 @@ import Page from '../../layouts/Page.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
 import FitMark from '../../components/FitMark.astro';
 import FactsLabel from '../../components/FactsLabel.astro';
+import BadgeMark from '../../components/BadgeMark.astro';
+import { badgeTools } from '../../../../lib/badges.mjs';
 import { alternativePaths, alternativeData, LOGOS, usd } from '../../lib/compare';
 
 export const getStaticPaths = alternativePaths;
@@ -10,6 +12,7 @@ const { id } = Astro.params;
 const { alt, replaces, CHECKED } = await alternativeData(id!);
 const host = alt.profile?.alternativeDetails?.selfHosting;
 const logo = LOGOS[alt.id];
+const badge = badgeTools(alt, replaces);
 const price = (p: (typeof replaces)[number]['pricing']) =>
   p.entryAmount != null ? `${usd(p.entryAmount)} / ${p.unit} / ${p.period}` : p.model === 'usage' ? 'Usage-based' : 'Not established';
 ---
@@ -22,6 +25,7 @@ const price = (p: (typeof replaces)[number]['pricing']) =>
       <div>
         <h1>{alt.name}</h1>
         <p class="lede">Open-source alternative · mapped from {replaces.length} paid tool{replaces.length === 1 ? '' : 's'}. Fit is not feature parity.</p>
+        {badge && <p class="stamp"><a href="#badge-h">Selected by OSSHunt</a></p>}
       </div>
       <SourceLinks url={alt.url} repo={alt.repo} name={alt.name} />
     </header>
@@ -51,6 +55,8 @@ const price = (p: (typeof replaces)[number]['pricing']) =>
         </ul>
       </section>
     </div>
+
+    {badge && <BadgeMark id={alt.id} name={alt.name} tools={badge} />}
   </main>
 </Page>
 
@@ -65,6 +71,9 @@ const price = (p: (typeof replaces)[number]['pricing']) =>
   .tile.sm img { width: 36px; height: 36px; }
   h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1; font-family: var(--display); font-weight: 900; }
   .lede { margin: 8px 0 0; color: var(--ink-2); }
+  .stamp { margin: 10px 0 0; }
+  .stamp a { display: inline-block; border: 3px solid var(--ink); padding: 2px 8px; font-size: 0.8125rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; text-decoration: none; }
+  .stamp a:hover { background: var(--band); }
   h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin-bottom: 12px; }
   .cols { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
   .locked { margin: 12px 0 0; padding-left: 20px; }
