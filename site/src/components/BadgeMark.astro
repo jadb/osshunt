@@ -1,0 +1,50 @@
+---
+import { badgeMessage, snippets } from '../../../lib/badges.mjs';
+interface Props { id: string; name: string; tools: string[] }
+const { id, name, tools } = Astro.props;
+const message = badgeMessage(tools);
+const s = snippets({ id, message });
+const formats = [
+  ['Markdown', s.markdown],
+  ['HTML', s.html],
+  ['reStructuredText', s.rst],
+] as const;
+const list = tools.length === 1 ? tools[0] : `${tools.slice(0, -1).join(', ')} and ${tools.at(-1)}`;
+---
+<section class="badge-mark" aria-labelledby="badge-h">
+  <h2 id="badge-h">Selected by OSSHunt</h2>
+  <p>{name} is listed as an open-source alternative to {list}, with partial fit or better. Maintainers can show this in a README; the badge links back to this page.</p>
+  <p class="preview"><img src={`/badge/${id}.svg`} alt={s.alt} height="20" /></p>
+  {formats.map(([label, code], i) => (
+    <div class="snip">
+      <div class="snip-head"><span id={`snip-${i}`}>{label}</span><button type="button" class="copy" data-copy={code} aria-describedby={`snip-${i}`} hidden>Copy</button></div>
+      <pre><code>{code}</code></pre>
+    </div>
+  ))}
+  <p class="note">Shields users: <code>{`https://img.shields.io/endpoint?url=${encodeURIComponent(`https://osshunt.com/badge/${id}.json`)}`}</code>. Styles: add <code>?style=flat-square</code>, <code>plastic</code> or <code>for-the-badge</code>. <a href="/badges/">What the badge means and how to remove it</a>.</p>
+</section>
+
+<script>
+  for (const b of document.querySelectorAll<HTMLButtonElement>('.badge-mark .copy')) {
+    if (!navigator.clipboard) continue;
+    b.hidden = false;
+    b.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(b.dataset.copy ?? ''); b.textContent = 'Copied'; }
+      catch { b.textContent = 'Select and copy'; }
+      setTimeout(() => { b.textContent = 'Copy'; }, 2000);
+    });
+  }
+</script>
+
+<style>
+  .badge-mark { margin-top: clamp(32px, 5vw, 56px); border-top: var(--rule-8) solid var(--ink); padding-top: 18px; }
+  .badge-mark h2 { display: block; font-size: 1.0625rem; font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 3px solid var(--ink); padding-bottom: 6px; margin: 0 0 12px; }
+  .badge-mark > p { max-width: 70ch; }
+  .preview img { display: block; height: 20px; width: auto; }
+  .snip { border: 1px solid var(--ink); margin-top: 12px; }
+  .snip-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--ink); padding: 4px 4px 4px 10px; font-size: 0.8125rem; font-weight: 700; }
+  .copy { font: inherit; font-weight: 700; background: var(--paper); color: var(--ink); border: 1px solid var(--ink); border-radius: 0; padding: 4px 10px; cursor: pointer; }
+  .copy:hover, .copy:focus-visible { background: var(--band); }
+  .snip pre { margin: 0; padding: 10px; font-size: 0.8125rem; line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .note { font-size: 0.8125rem; color: var(--ink-2); margin: 12px 0 0; overflow-wrap: anywhere; }
+</style>
