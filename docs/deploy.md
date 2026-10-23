@@ -1,6 +1,6 @@
 # Deploy the site
 
-The Astro site in `site/` builds to static files in `site/dist` and is served by a Cloudflare Worker with static assets, worker name `osshunt` (config: `site/wrangler.jsonc`). Cloudflare Pages is now delegated to Workers, so this is the current path.
+The Astro site in `site/` builds to static files in `site/dist` and is served by a Cloudflare Worker with static assets, worker name `osshunt` (config: `site/wrangler.jsonc`). Cloudflare Pages is now delegated to Workers, so this is the current path. A small worker script, `site/worker.mjs`, runs only for `/badge/*` (`run_worker_first`); every other path is served straight from the assets. [Badges](badges.md).
 
 - Live: https://osshunt.ideacrafters-llc.workers.dev
 - Push to `main` that touches `site/`, `data/collections/` or `lib/`: production deploy (`wrangler deploy`).

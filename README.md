@@ -11,6 +11,7 @@ A sourced seed for discovering open-source alternatives to software businesses p
 - [Collections contract and queries](docs/collections.md)
 - [Website history player, preview and deployment](docs/website-history.md)
 - [Embed a player on any page — snippets and requirements](docs/embedding.md)
+- [README badges for listed alternatives — eligibility, endpoints, preview](docs/badges.md)
 - [Historical pricing — six-month checks, evidence review and deployment](docs/pricing-history.md)
 
 Audience positions are editorial reach estimates, not measured market-size counts. A/B/C describe paid feature restrictions; S/U entries stay outside default OSS recommendations. Migration fit is recorded per mapping. A does not mean feature parity with the paid incumbent or free infrastructure.
