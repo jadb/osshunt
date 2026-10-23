@@ -46,4 +46,4 @@ npx --yes wrangler@4.148.0 dev --compatibility-date 2026-10-13
 
 ## Corrections and removal
 
-Removal: maintainers delete the README line. Listing corrections: the channel named on the terms page.
+Removal: maintainers delete the README line. Listing corrections and removal requests: hello@osshunt.com (Cloudflare Email Routing, forwarded to the owner), also named on the badges, terms and privacy pages.
