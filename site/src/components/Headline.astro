@@ -1,0 +1,22 @@
+---
+/**
+ * The home headline test. The page renders the control in its own `<h1 data-headline>`;
+ * a visitor who accepted analytics gets the flag's value for them once the
+ * stack's browser script has loaded it, and the text swaps once, in place.
+ * The flag's value is the headline itself (the control variation carries
+ * none and keeps the page text). A visitor without consent, a crawler or a
+ * failed request keeps the control and is never counted.
+ */
+---
+<script>
+  import { followAssignment, headlineFor } from '../lib/aaarrr/variant';
+  const h1 = document.querySelector<HTMLElement>('[data-headline]');
+  if (h1?.dataset.experiment) {
+    const control = h1.dataset.control ?? h1.textContent ?? '';
+    followAssignment(() => window, h1.dataset.experiment, (value) => {
+      const text = headlineFor(value, control);
+      if (h1.textContent !== text) h1.textContent = text;
+      h1.dataset.variant = text === control ? 'control' : 'variation';
+    });
+  }
+</script>

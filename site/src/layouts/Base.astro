@@ -1,7 +1,22 @@
 ---
 import '../styles/global.css';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import { consentForPage } from '../lib/aaarrr/consent';
+import { STACK } from '../lib/brand-stack';
 interface Props { title: string; description: string }
 const { title, description } = Astro.props;
+
+// The brand's consent banner configuration comes from the stack when the site is built. A production build
+// without it would ship a site with no banner and no analytics, so it fails instead.
+const consent = await consentForPage({
+  apiUrl: STACK.apiUrl,
+  cmsUrl: STACK.cmsUrl,
+  locale: 'en',
+  projectKey: STACK.projectKey,
+  tenant: STACK.tenant,
+  umami: STACK.umami,
+});
+if (!consent && import.meta.env.PROD) throw new Error(`consent configuration for ${STACK.tenant} unavailable from ${STACK.cmsUrl}`);
 ---
 <!doctype html>
 <html lang="en">
@@ -11,9 +26,19 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin />
+    {consent && (
+      <script
+        is:inline
+        src="/aaarrr.js"
+        data-api-url={consent.apiUrl}
+        data-api-key={consent.projectKey}
+        data-tenant={STACK.tenant}
+      ></script>
+    )}
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <slot />
+    {consent && <ConsentBanner consent={consent} />}
   </body>
 </html>

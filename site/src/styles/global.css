@@ -112,3 +112,36 @@ details.group > summary > * { margin: 0; }
 /* Breadcrumbs: the generic nav link padding made links sit lower than the separators and current page. */
 nav.crumbs { align-items: baseline; }
 nav.crumbs a { padding: 0; }
+
+/* Consent banner (vanilla-cookieconsent) in the site's frame: square, ink rules, yellow band. */
+#cc-main {
+  --cc-font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --cc-bg: #fff;
+  --cc-primary-color: #0d0d0d;
+  --cc-secondary-color: #3d3d3d;
+  --cc-btn-primary-bg: #0d0d0d;
+  --cc-btn-primary-color: #ffd400;
+  --cc-btn-primary-border-color: #0d0d0d;
+  --cc-btn-primary-hover-bg: #ffd400;
+  --cc-btn-primary-hover-color: #0d0d0d;
+  --cc-btn-primary-hover-border-color: #0d0d0d;
+  --cc-btn-secondary-bg: #fff;
+  --cc-btn-secondary-color: #0d0d0d;
+  --cc-btn-secondary-border-color: #0d0d0d;
+  --cc-btn-secondary-hover-bg: #ffd400;
+  --cc-btn-secondary-hover-color: #0d0d0d;
+  --cc-btn-secondary-hover-border-color: #0d0d0d;
+  --cc-btn-border-radius: 0;
+  --cc-modal-border-radius: 0;
+  --cc-separator-border-color: #0d0d0d;
+  --cc-toggle-on-bg: #0d0d0d;
+  --cc-toggle-off-bg: #3d3d3d;
+  --cc-toggle-readonly-bg: #c9c9c9;
+  --cc-cookie-category-block-bg: #fff;
+  --cc-cookie-category-block-border: #0d0d0d;
+  --cc-footer-bg: #fff;
+  --cc-footer-color: #0d0d0d;
+  --cc-footer-border-color: #0d0d0d;
+}
+#cc-main .cm, #cc-main .pm { border: 4px solid #0d0d0d; box-shadow: none; }
+#cc-main .cm .cm__btn, #cc-main .pm .pm__btn { font-weight: 800; border-width: 3px; }

@@ -1,0 +1,156 @@
+---
+/**
+ * The weekly list signup: one email, one opt-in checkbox left unticked (the
+ * visitor ticks it), a Cloudflare challenge and a honeypot. It posts to the
+ * stack's signup route with the brand's publishable key; the stack mails a
+ * confirmation link and keeps the consent record. On success it tracks
+ * `waitlist_joined` (the test's goal) through the browser script.
+ */
+import { STACK } from '../lib/brand-stack';
+interface Props { id?: string; heading?: string }
+const { id = 'waitlist', heading = 'One SaaS, its open-source alternatives, once a week' } = Astro.props;
+---
+<section class="wl wrap" aria-labelledby={`${id}-h`} data-waitlist data-form-id={id} data-lineup={STACK.lineup} data-topic={STACK.formTopic} data-challenge={STACK.challengeSiteKey}>
+  <div class="wl-box">
+    <h2 id={`${id}-h`}>{heading}</h2>
+    <p class="wl-lede">What changed, what it costs, who it fits. One email a week, unsubscribe in one click.</p>
+    <form class="wl-form" novalidate>
+      <label class="sr" for={`${id}-email`}>Email address</label>
+      <div class="wl-row">
+        <input id={`${id}-email`} name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required />
+        <button type="submit">Join the list</button>
+      </div>
+      <label class="wl-opt"><input type="checkbox" name="topic" required /> <span>Send me the weekly OSSHunt list.</span></label>
+      <div class="wl-hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+      <div class="wl-challenge" data-challenge-box></div>
+      <p class="wl-fine">We email only to confirm and to send the list. See the <a href="/privacy/">privacy policy</a>.</p>
+      <p class="wl-msg" role="status" data-msg hidden></p>
+    </form>
+  </div>
+</section>
+<script>
+  import { answerOf, capturedId, pageContext } from '../lib/aaarrr/identity';
+  import { signupBody, signupKey, signupOutcome, signupRequest, siteConfigOf, utmFrom } from '../lib/aaarrr/waitlist';
+
+  interface Turnstile { render(el: HTMLElement, o: { sitekey: string; callback: (t: string) => void; 'expired-callback'?: () => void; 'error-callback'?: () => void }): string; reset(id?: string): void }
+  const SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+  let turnstilePromise: Promise<Turnstile> | undefined;
+  const loadTurnstile = () => (turnstilePromise ??= new Promise<Turnstile>((resolve, reject) => {
+    const w = window as unknown as { turnstile?: Turnstile };
+    if (w.turnstile) return resolve(w.turnstile);
+    const script = Object.assign(document.createElement('script'), { src: SRC, async: true, defer: true });
+    script.addEventListener('load', () => (w.turnstile ? resolve(w.turnstile) : reject(new Error('turnstile missing'))));
+    script.addEventListener('error', () => reject(new Error('turnstile failed to load')));
+    document.head.appendChild(script);
+  }));
+
+  const MESSAGES: Record<string, string> = {
+    challenge: 'Please complete the check, then try again.',
+    invalid: 'Please check the address and try again.',
+    limited: 'Too many attempts. Please wait a minute and try again.',
+    blocked: 'Signups are not available right now.',
+    error: 'Something went wrong. Please try again.',
+  };
+
+  document.querySelectorAll<HTMLElement>('[data-waitlist]').forEach((root) => {
+    const form = root.querySelector<HTMLFormElement>('form')!;
+    const msg = root.querySelector<HTMLElement>('[data-msg]')!;
+    const button = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+    const box = root.querySelector<HTMLElement>('[data-challenge-box]')!;
+    const formId = root.dataset.formId ?? 'waitlist';
+    const lineup = root.dataset.lineup ?? 'waitlist';
+    const topic = root.dataset.topic ?? 'newsletter';
+    const renderedAt = Date.now();
+    let token: string | undefined;
+    let widget: string | undefined;
+    let key: string | null = null;
+    const show = (text: string, ok = false) => { msg.textContent = text; msg.hidden = false; msg.dataset.ok = String(ok); };
+
+    // The challenge loads on first interaction with the form, not on every page view.
+    let challengeStarted = false;
+    const startChallenge = () => {
+      if (challengeStarted || !root.dataset.challenge) return;
+      challengeStarted = true;
+      loadTurnstile().then((t) => {
+        widget = t.render(box, { sitekey: root.dataset.challenge!, callback: (v) => { token = v; }, 'expired-callback': () => { token = undefined; }, 'error-callback': () => { token = undefined; } });
+      }).catch((e) => console.error('waitlist: challenge unavailable', e));
+    };
+    form.addEventListener('focusin', startChallenge, { once: true });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const cfg = siteConfigOf(document.querySelector('script[src$="aaarrr.js"]'));
+      if (!cfg) return show(MESSAGES.blocked);
+      startChallenge();
+      if (root.dataset.challenge && !token) return show(MESSAGES.challenge);
+      button.disabled = true;
+      key ??= signupKey();
+      const data = new FormData(form);
+      const body = signupBody({
+        email: String(data.get('email') ?? ''),
+        lineup,
+        formId,
+        topics: { [topic]: form.querySelector<HTMLInputElement>('input[name=topic]')!.checked },
+        locale: 'en',
+        renderedAt,
+        website: String(data.get('website') ?? ''),
+        utm: utmFrom(window.location.search),
+        challengeToken: token,
+      });
+      let outcome = signupOutcome(0, undefined);
+      let answer: unknown;
+      try {
+        const { url, init } = signupRequest(cfg.apiUrl, cfg.projectKey, body, key);
+        const res = await fetch(url, init);
+        answer = await answerOf(res);
+        outcome = signupOutcome(res.status, answer);
+      } catch (e) {
+        console.error('waitlist: signup failed', e);
+        outcome = { kind: 'error' };
+      }
+      if (outcome.kind === 'joined' || outcome.kind === 'existing' || outcome.kind === 'pending') {
+        if (outcome.kind !== 'pending') key = null;
+        const props = { form_type: 'waitlist', form_id: formId, lineup, outcome: outcome.kind, ...pageContext() };
+        try {
+          const sdk = (window as unknown as { aaarrr?: { track(n: string, p: object): void; identify(id: string, t: object): Promise<void> | void } }).aaarrr;
+          sdk?.track('waitlist_joined', props);
+          const id = capturedId(answer);
+          if (id && sdk) await sdk.identify(id, { source: 'waitlist' });
+        } catch (e) { console.error('waitlist: analytics error', e); }
+        form.reset();
+        show(outcome.kind === 'existing' ? 'You are already on the list.' : outcome.kind === 'pending' ? 'Your spot is saved. The confirmation email follows shortly.' : 'Check your inbox: one email to confirm, then the list starts.', true);
+        button.disabled = false;
+        return;
+      }
+      if (outcome.kind === 'challenge' || outcome.kind === 'invalid') {
+        (window as unknown as { turnstile?: Turnstile }).turnstile?.reset(widget);
+        token = undefined;
+      }
+      show(MESSAGES[outcome.kind] ?? MESSAGES.error);
+      button.disabled = false;
+    });
+  });
+</script>
+
+<style>
+  .wl { margin-block: clamp(32px, 5vw, 64px) 0; }
+  .wl-box { border: 4px solid var(--ink); padding: clamp(18px, 3vw, 32px); background: var(--band); }
+  .wl h2 { font-family: var(--display); font-weight: 900; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.1; }
+  .wl-lede { margin: 10px 0 18px; max-width: 60ch; font-weight: 600; }
+  .wl-row { display: grid; grid-template-columns: 1fr auto; border: 4px solid var(--ink); background: var(--paper); max-width: 640px; }
+  .wl-row input { font: 500 1.125rem/1.2 'Archivo', sans-serif; padding: 14px 16px; border: 0; background: transparent; color: var(--ink); min-width: 0; }
+  .wl-row input:focus-visible { outline: none; box-shadow: none; }
+  .wl-row:focus-within { box-shadow: 0 0 0 6px var(--paper); }
+  .wl-row button { font: 800 1.0625rem/1 'Archivo', sans-serif; background: var(--ink); color: var(--band); border: 0; border-left: 4px solid var(--ink); padding: 0 clamp(16px, 3vw, 28px); cursor: pointer; }
+  .wl-row button:hover { background: var(--paper); color: var(--ink); }
+  .wl-row button:disabled { opacity: 0.6; cursor: wait; }
+  .wl-opt { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-weight: 700; }
+  .wl-opt input { width: 20px; height: 20px; accent-color: var(--ink); flex: none; }
+  .wl-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .wl-challenge { margin-top: 12px; }
+  .wl-fine { margin: 12px 0 0; font-size: 0.875rem; }
+  .wl-msg { margin: 12px 0 0; font-weight: 800; padding: 8px 12px; border: 3px solid var(--ink); background: var(--paper); max-width: 640px; }
+  .wl-msg[data-ok='false'] { background: var(--ink); color: var(--paper); }
+  @media (max-width: 520px) { .wl-row { grid-template-columns: 1fr; } .wl-row button { border-left: 0; border-top: 4px solid var(--ink); padding: 14px; } }
+</style>

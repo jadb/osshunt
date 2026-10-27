@@ -3,7 +3,10 @@ import Page from '../layouts/Page.astro';
 import HeroLoop from '../components/HeroLoop.astro';
 import Avatars from '../components/Avatars.astro';
 import ToolSearch from '../components/ToolSearch.astro';
+import Headline from '../components/Headline.astro';
+import Waitlist from '../components/Waitlist.astro';
 import { homeData, CHECKED } from '../lib/home';
+import { HEADLINE_CONTROL, STACK } from '../lib/brand-stack';
 
 const d = await homeData();
 const REACH: Record<string, string> = {
@@ -16,7 +19,8 @@ const REACH: Record<string, string> = {
     <div class="first">
     <section class="hero wrap" aria-labelledby="h1">
       <div class="hero-copy">
-        <h1 id="h1">Find the open-source alternative to what you pay for</h1>
+        <h1 id="h1" data-headline data-experiment={STACK.headlineExperiment} data-control={HEADLINE_CONTROL}>{HEADLINE_CONTROL}</h1>
+        <Headline />
         <ToolSearch tools={d.search} />
         <div class="samples" role="group" aria-label="Sample comparisons">
           <span class="slabel">Samples:</span>
@@ -40,6 +44,8 @@ const REACH: Record<string, string> = {
       </ul>
     </div>
     </div>
+
+    <Waitlist id="waitlist-home" />
 
     <section class="block wrap" aria-labelledby="price-h">
       <h2 id="price-h"><span>Entry prices, highest-reach categories first</span></h2>
