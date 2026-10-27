@@ -4,7 +4,7 @@ import FitMark from '../../components/FitMark.astro';
 import SelfHost from '../../components/SelfHost.astro';
 import TierBox from '../../components/TierBox.astro';
 import License from '../../components/License.astro';
-import Waitlist from '../../components/Waitlist.astro';
+import Newsletter from '../../components/Newsletter.astro';
 import { softwarePaths, softwareData, LOGOS, usd } from '../../lib/compare';
 
 export const getStaticPaths = softwarePaths;
@@ -96,7 +96,7 @@ const total = open.length + restricted.length;
         {categories.length > 0 && <p class="note">Category: {categories.map((c, i) => <>{i ? ', ' : ''}<a href={`/categories/${c.id}/`}>{c.name}</a></>)}</p>}
       </aside>
     </div>
-    <Waitlist id="waitlist-software" />
+    <Newsletter id="newsletter-software" />
   </main>
 </Page>
 
