@@ -12,7 +12,7 @@ export const STACK = {
   /** Cloudflare Turnstile site key of the stack's signup challenge (the widget lists osshunt.com). */
   challengeSiteKey: '0x4AAAAAAFiYqBRVFKMf2jRD',
   umami: { scriptUrl: 'https://stats.aaarrr.tools/script.js', websiteId: '7fa7359f-7ff0-4f18-b3ea-f676d409d0ee' },
-  lineup: 'waitlist',
+  lineup: 'newsletter',
   formTopic: 'newsletter',
   /** GrowthBook flag of the home headline test; its variations carry the headline text. */
   headlineExperiment: 'osshunt-headline',
