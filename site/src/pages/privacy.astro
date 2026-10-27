@@ -1,7 +1,8 @@
 ---
 import Prose from '../layouts/Prose.astro';
+import { PRIVACY_POLICY_VERSION } from '../lib/brand-stack';
 ---
-<Prose title="Privacy policy" description="What OSSHunt collects: standard server logs, and only if you choose, your email for the weekly newsletter and analytics. Analytics and the headline test run only after you accept." updated="2026-10-27">
+<Prose title="Privacy policy" description="What OSSHunt collects: standard server logs, and only if you choose, your email for the weekly newsletter and analytics. Analytics and the headline test run only after you accept." updated={PRIVACY_POLICY_VERSION}>
   <h2>Summary</h2>
   <p>OSSHunt is mostly a static reference site: no accounts, no comments, no advertising. It has two optional parts: a weekly newsletter and analytics (including a test of two headlines). Neither starts until you choose it.</p>
 
