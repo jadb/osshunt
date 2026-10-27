@@ -6,11 +6,11 @@
  * confirmation link and keeps the consent record. On success it tracks
  * `newsletter_subscribed` (the test's goal) through the browser script.
  */
-import { STACK } from '../lib/brand-stack';
+import { STACK, PRIVACY_POLICY_VERSION } from '../lib/brand-stack';
 interface Props { id?: string; heading?: string }
 const { id = 'newsletter', heading = 'One SaaS, its open-source alternatives, once a week' } = Astro.props;
 ---
-<section class="nl wrap" aria-labelledby={`${id}-h`} data-newsletter data-form-id={id} data-lineup={STACK.lineup} data-topic={STACK.formTopic} data-challenge={STACK.challengeSiteKey}>
+<section class="nl wrap" aria-labelledby={`${id}-h`} data-newsletter data-form-id={id} data-lineup={STACK.lineup} data-topic={STACK.formTopic} data-challenge={STACK.challengeSiteKey} data-policy={PRIVACY_POLICY_VERSION}>
   <div class="nl-box">
     <h2 id={`${id}-h`}>{heading}</h2>
     <p class="nl-lede">What changed, what it costs, who it fits. One email a week, unsubscribe in one click.</p>
@@ -98,6 +98,8 @@ const { id = 'newsletter', heading = 'One SaaS, its open-source alternatives, on
         utm: utmFrom(window.location.search),
         challengeToken: token,
       });
+      // The signup route records which policy version the visitor saw (required by the API).
+      body.consent = { ...(body.consent as object), policyVersion: root.dataset.policy };
       let outcome = signupOutcome(0, undefined);
       let answer: unknown;
       try {
@@ -127,7 +129,11 @@ const { id = 'newsletter', heading = 'One SaaS, its open-source alternatives, on
         (window as unknown as { turnstile?: Turnstile }).turnstile?.reset(widget);
         token = undefined;
       }
-      show(MESSAGES[outcome.kind] ?? MESSAGES.error);
+      // "Check the address" only when the address is what the API refused; any other refused field is our fault, not the visitor's.
+      const fields = ((answer as { error?: { details?: Array<{ field?: string }> } } | undefined)?.error?.details ?? []).map((d) => d.field);
+      const kind = outcome.kind === 'invalid' && fields.length > 0 && !fields.includes('email') ? 'error' : outcome.kind;
+      if (kind === 'error' && outcome.kind === 'invalid') console.error('newsletter: signup refused', fields);
+      show(MESSAGES[kind] ?? MESSAGES.error);
       button.disabled = false;
     });
   });

@@ -18,4 +18,7 @@ export const STACK = {
   headlineExperiment: 'osshunt-headline',
 } as const;
 
+/** Version of the privacy policy shown at signup (its last-updated date); recorded with the consent. Change it with the policy page. */
+export const PRIVACY_POLICY_VERSION = '2026-10-27';
+
 export const HEADLINE_CONTROL = 'Find the open-source alternative to what you pay for';
