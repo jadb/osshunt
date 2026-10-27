@@ -1,0 +1,36 @@
+---
+/**
+ * Consent banner and its "Privacy choices" control. Embeds the brand's banner
+ * configuration (read from the stack at build time); the bundled script asks
+ * the visitor, records each decision and loads Umami only after analytics
+ * consent. Withdrawing is as easy as giving: the control reopens the choices
+ * on every page.
+ */
+import type { EmbeddedConsent } from '../lib/aaarrr/consent-core';
+import { CONSENT_CONFIG_ID } from '../lib/aaarrr/consent-core';
+import { embedJson } from '../lib/aaarrr/consent';
+
+interface Props { consent: EmbeddedConsent }
+const { consent } = Astro.props;
+const t = consent.banner.texts;
+---
+<script type="application/json" id={CONSENT_CONFIG_ID} set:html={embedJson(consent)} />
+<nav class="consent-controls wrap" aria-label={t.preferencesTitle} lang={consent.banner.notice.language}>
+  <button type="button" data-consent-preferences>{t.preferencesLink}</button>
+  {consent.banner.policy.doNotSellLink && (
+    <Fragment>
+      <button type="button" data-consent-do-not-sell>{t.doNotSellLink}</button>
+      <p data-consent-do-not-sell-done role="status" hidden>{t.doNotSellDone}</p>
+    </Fragment>
+  )}
+</nav>
+<script>
+  import '../lib/aaarrr/consent-banner';
+</script>
+
+<style>
+  .consent-controls { display: flex; flex-wrap: wrap; gap: 6px 24px; padding-block: 0 28px; font-size: 0.875rem; font-weight: 600; }
+  .consent-controls button { background: none; border: 0; padding: 4px 0; font: inherit; color: var(--ink); cursor: pointer; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+  .consent-controls button:hover { background: var(--band); }
+  .consent-controls p { margin: 0; flex-basis: 100%; }
+</style>
